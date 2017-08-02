@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_14c538dfb0154944a274cd612e9c9084": {
+        "id": "AS_FlexContainer_14c538dfb0154944a274cd612e9c9084",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoshowLeaveRequestListDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3978576e5a374149b78989babaa77a86",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmPendingUIDW()).onClickOfLeaveReq();\n(new kony.apps.coe.ess.frmPendingUIDW()).filterPendingRequest(\"LEAVE\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

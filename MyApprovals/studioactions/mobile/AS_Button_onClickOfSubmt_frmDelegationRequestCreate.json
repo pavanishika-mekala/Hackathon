@@ -1,0 +1,25 @@
+{
+    "AS_Button_378358a011e0463195398c81c548f81f": {
+        "id": "AS_Button_378358a011e0463195398c81c548f81f",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Button_onClickOfSubmt_frmDelegationRequestCreate",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequestCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0c3e6ec9ceac49dc8624517119e5edeb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c0382a137e634f1a986793428d04771f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DelegationRequestCreate.Actions.getInstance().onClickOfSubmit();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

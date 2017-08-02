@@ -1,0 +1,31 @@
+{
+    "AS_Image_127da398aa454bb495ee972e9268aec9": {
+        "id": "AS_Image_127da398aa454bb495ee972e9268aec9",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Image_onTouchEndOfimgCancelFilter",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__efe713e94d2d438eb966d3689e3a37e1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n  \tif(kony.apps.coe.ess.globalVariables.isSPA) {\n      kony.apps.coe.ess.Approvals.spa.formController.getController().bindData(kony.apps.coe.ess.Approvals.spa.totalRequests);\n      kony.apps.coe.ess.Approvals.ApprovalsHome.onclickFilterIcon();\n      frmApprovalHome.segApprovalsList.top = \"0%\";\n      frmApprovalHome.forceLayout();\n    }\n  \telse{\n  \t  var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmApprovalHome\");\n\t  formController.loadDataAndShowForm();\n  }\n}catch(e){\n\thandleError(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.unableToLoadForm\"));\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Form_2a91a25f1bab438594273cc7ee7f1ac9": {
+        "id": "AS_Form_2a91a25f1bab438594273cc7ee7f1ac9",
+        "type": "ACTION_SEQUENCE",
+        "name": "FormLoginPostShowAnimationAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "db3f4d071c3541989dd5a510eda8b57e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f5ffadfbeb744447ba9e76fa9beda5aa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//#ifdef android\nnew kony.apps.coe.ess.loginAnimations().animationsForAndroid();\n//#endif\n//#ifdef iphone\nnew kony.apps.coe.ess.loginAnimations().animationsForIphone();\n//#endif\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

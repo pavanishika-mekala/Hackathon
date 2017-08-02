@@ -1,0 +1,25 @@
+{
+    "AS_Button_c0908caaa11b43388a829bca306fa0ca": {
+        "id": "AS_Button_c0908caaa11b43388a829bca306fa0ca",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionLoginBtnOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "reUsableLoginForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ccf4a7b9a231491faa856f48ca2c328d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__87e21150d47c4c2688a5b222de9d493a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.sdk.mvvm.LoginAction();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

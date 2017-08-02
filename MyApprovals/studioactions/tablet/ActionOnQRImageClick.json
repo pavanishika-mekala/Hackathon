@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c65dc40ad397451ea4cdef104b081938": {
+        "id": "AS_FlexContainer_c65dc40ad397451ea4cdef104b081938",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnQRImageClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginQR",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f68a42c69c5c4d69805025c1d3f5cc42"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cea8a9314f4e4ae8b7fb540abf65a608",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.QRCode()).QrCodeOnClickAction(); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

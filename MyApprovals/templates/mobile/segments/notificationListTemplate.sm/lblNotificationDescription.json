@@ -1,0 +1,81 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "28.80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "15.50%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s111f30d267a4db78d1b938f631eec47",
+    "_text_": "Your leave Request not submitted due to system error",
+    "_top_": {
+        "type": "string",
+        "value": "36%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "81.90%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "lineSpacing": 12,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "id": "lblNotificationDescription",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        },
+        "textStyle": {
+            "baseline": 0,
+            "letterSpacing": 0,
+            "lineSpacing": 12,
+            "strikeThrough": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "b1b699d9e78448e8b2134a994dff047e",
+    "maxnumberoflines": 2,
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxNotificationListTemplate",
+    "pf": "notificationListTemplate",
+    "textStyle": {
+        "baseline": 0,
+        "letterSpacing": 0,
+        "lineSpacing": 12,
+        "strikeThrough": false
+    },
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_540e356baebd42deb1cb25091224bc30": {
+        "id": "AS_FlexContainer_540e356baebd42deb1cb25091224bc30",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "d83449f601944c6190fe159242bfbd0b"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

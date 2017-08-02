@@ -1,0 +1,23 @@
+[ {
+  "sourceObject" : "approval_attachment",
+  "targetObject" : "ApprovalMedia",
+  "relationshipKeys" : [ {
+    "sourceField" : "media_id",
+    "targetField" : "name"
+  } ],
+  "name" : "approval_attachment_ApprovalMedia",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "approval_attachment",
+  "targetObject" : "attachment_type",
+  "relationshipKeys" : [ {
+    "sourceField" : "type_id",
+    "targetField" : "id"
+  } ],
+  "name" : "approval_attachment_attachment_type",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

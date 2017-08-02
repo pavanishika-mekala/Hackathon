@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        1,
+        0,
+        1
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "16.50%"
+    },
+    "_skin_": "s1442b9161a94c6884d7d2e83045f1f3",
+    "_text_": "",
+    "_top_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "32%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s1442b9161a94c6884d7d2e83045f1f3",
+    "id": "btnAttachments",
+    "ide_onClick": "AS_Button_45f5c11723b2417a97a55a809f6bb7b5",
+    "info": null,
+    "isvisible": true,
+    "kuid": "02eb7f4b98bb4fc081dfdc775fc79b13",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxHeaderSwitch",
+    "pf": "frmApprovalRequestDetail",
+    "texti18n": "i18n.ess.MyApprovals.frmApprovalRequestDetail.btnAttachments",
+    "wType": "Button",
+    "zindex": 2
+}

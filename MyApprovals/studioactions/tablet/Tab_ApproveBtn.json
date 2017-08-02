@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f4c78230d4794551a17ee58fa0df0cf1": {
+        "id": "AS_FlexContainer_f4c78230d4794551a17ee58fa0df0cf1",
+        "type": "ACTION_SEQUENCE",
+        "name": "Tab_ApproveBtn",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e6e3f40c91a74fd9978e9495a5331e1b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalRequests.tabDataoperations.approveRequest(selectedApprovalID);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

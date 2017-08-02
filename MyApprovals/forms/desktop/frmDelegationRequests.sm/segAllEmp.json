@@ -1,0 +1,207 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgTime": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "timesmall.png"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 Days"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp ID - 797955 "
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgTime": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "timesmall.png"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 Days"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp ID - 797955 "
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgTime": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "timesmall.png"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 Days"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp ID - 797955 "
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segAllEmp",
+    "ide_onRowClick": "AS_Segment_6111c6382d954700b6870142a455784c",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "bc36c41a30b04459b69fba87385fabd6",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegAllEmpAndAdd",
+    "pf": "frmDelegationRequests",
+    "retainselection": false,
+    "rowTemplateId": "b60dd368ca1b453e92305d47d4ecf00b",
+    "rowcounter": 2,
+    "rowfocusskin": "sd6c3d0c684f465dbf4556a42e5cf52a",
+    "rowskin": "s0facac303eb4f09aebf23bb8cba3768",
+    "rowtemplate": "flxDelegationReq",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxDelegationReq": "flxDelegationReq",
+        "flxEmpImg": "flxEmpImg",
+        "flxImagesReq": "flxImagesReq",
+        "imgEmp": "imgEmp",
+        "imgTime": "imgTime",
+        "lblDetail": "lblDetail",
+        "lblDetailType": "lblDetailType",
+        "lblEmpId": "lblEmpId",
+        "lblEmpName": "lblEmpName",
+        "lblSeparator": "lblSeparator",
+        "lblSumittedDate": "lblSumittedDate"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_d345ebc598ea4d4ebc9009e1a3b878a7": {
+        "id": "AS_FlexContainer_d345ebc598ea4d4ebc9009e1a3b878a7",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_FlxCancelOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f10519f87a604788ba10fbbb85b4c924",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.hideEmployeeFilter();\nkony.apps.coe.ess.Approvals.ApprovalsHome.clearDataofFilter();\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

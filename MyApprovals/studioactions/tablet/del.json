@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f7f0bc71fd2a4d1da63d782bfbbadcfc": {
+        "id": "AS_FlexContainer_f7f0bc71fd2a4d1da63d782bfbbadcfc",
+        "type": "ACTION_SEQUENCE",
+        "name": "del",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerWin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8856a45b5b0b41678501847962072cf2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b264671ac0cb4923bf64611753d191da",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "tabApprovalHistoryShow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Label_b133ac0d8be94bebab93c081a495285b": {
+        "id": "AS_Label_b133ac0d8be94bebab93c081a495285b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchEnd_05ef95a92bcf4e16b57beb0d0b457f84",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var requestedListObj = new kony.apps.coe.ess.Approvals.RequestedList();\nrequestedListObj.LoadFilterAndShowForm(\"All\");\n",
+            "callbackType": null
+        }]
+    }
+}

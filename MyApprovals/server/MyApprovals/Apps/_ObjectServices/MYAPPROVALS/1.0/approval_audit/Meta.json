@@ -1,0 +1,26 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "designTimeBackendMeta" : {
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodified"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "children" : "[]",
+      "businessObjectName" : "WF_AUDIT_TRIAL"
+    },
+    "SoftDeleteFlagField" : {
+      "InactiveValue" : "X",
+      "ActiveValue" : "",
+      "Name" : "softdeletedflag"
+    }
+  }
+}

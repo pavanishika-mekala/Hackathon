@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_3922ce87204647e48427c440db01d2ba": {
+        "id": "AS_FlexContainer_3922ce87204647e48427c440db01d2ba",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmLoginFlxLoginOnClickAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDesk",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__91271a9c474b49f083910378880b827b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalsDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

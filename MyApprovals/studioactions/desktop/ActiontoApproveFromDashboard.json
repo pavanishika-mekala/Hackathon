@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_6452dffb5b3a46a08c64a57e5a3c71a2": {
+        "id": "AS_FlexContainer_6452dffb5b3a46a08c64a57e5a3c71a2",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoApproveFromDashboard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalsDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "26bb64648ede4e03a8cf66a5883f7c6c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a1eb91a8d50d4036899e49a4e62c4bf7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DashboardDesktop.ApprovalRequestList.Obj.Approve();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_2421d1b2185d45578459f78f8f11b3e4": {
+        "id": "AS_FlexContainer_2421d1b2185d45578459f78f8f11b3e4",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinNavToPeopleFromDash",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_118f3cb4340e4260b0f562110f3e6f15",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabListView.flxLeftReqType.isVisible=false;\nfrmTabListView.flxLeftReqPeople.isVisible=true;\nfrmTabListView.flxRight.width=\"51%\";\ntabListViewShow();",
+            "callbackType": null
+        }]
+    }
+}

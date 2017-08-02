@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_99bc512a56424a38863d400e956d8b6d": {
+        "id": "AS_FlexContainer_99bc512a56424a38863d400e956d8b6d",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_onClickOfAuditTrailBtnOnDetails",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "95bd849701724d1abee374f8d1932154"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7416b653cdfc4b059e5bfe59da2a9d52",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showAuditTrailForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

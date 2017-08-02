@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_d0b54d90eeb1451ea0ddf8a2c33152b4": {
+        "id": "AS_FlexContainer_d0b54d90eeb1451ea0ddf8a2c33152b4",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_flxSPAFilter_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3595f1615b934b30ad0a542d0ee1fa63",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n  kony.apps.coe.ess.Approvals.ApprovalsHome.onclickFilterIcon();\n}catch(e){  \n   handleError(new appException(kony.i18n.getLocalizedString(\"i18n.ess.frmApprovalHome.errorMessages.FilterSearch\")));\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

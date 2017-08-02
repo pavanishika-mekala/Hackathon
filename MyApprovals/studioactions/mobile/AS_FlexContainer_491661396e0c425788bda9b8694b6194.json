@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_491661396e0c425788bda9b8694b6194": {
+        "id": "AS_FlexContainer_491661396e0c425788bda9b8694b6194",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "02db330ef3754e35979fa147399d7427"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a8afcd6303574268982f3f34e2671122",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

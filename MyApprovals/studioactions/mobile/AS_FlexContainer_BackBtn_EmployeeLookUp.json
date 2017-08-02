@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_e0a2ff7592b54b299ccb6958a4fe49b7": {
+        "id": "AS_FlexContainer_e0a2ff7592b54b299ccb6958a4fe49b7",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_BackBtn_EmployeeLookUp",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_9a733c4232ea465ead0622278061817d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showDelegationRequestListForm();",
+            "callbackType": null
+        }]
+    }
+}

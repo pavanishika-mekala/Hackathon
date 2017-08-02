@@ -1,0 +1,25 @@
+{
+    "AS_Form_28c8155388a8417fa05fce98e95a0dfe": {
+        "id": "AS_Form_28c8155388a8417fa05fce98e95a0dfe",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinAppSuiteDeviceBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerWin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8856a45b5b0b41678501847962072cf2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__206181aeee9d434c8d131cd8d2294f80",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"Device back disabled\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

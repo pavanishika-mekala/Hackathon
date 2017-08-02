@@ -1,0 +1,11 @@
+{
+  "background_image": "expense_oval.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sd6cae05a8904e8abd107c0e381bf333",
+  "wType": "FlexContainer"
+}

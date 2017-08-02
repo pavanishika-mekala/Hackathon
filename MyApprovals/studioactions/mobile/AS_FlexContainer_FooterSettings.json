@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_23dd7ebd253a46e0b18f4d3afd73b9bd": {
+        "id": "AS_FlexContainer_23dd7ebd253a46e0b18f4d3afd73b9bd",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_FooterSettings",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempNavigateFooter",
+            "type": "templates",
+            "KUID": "c7383eb2dfa548ee94bbf5dc90dc2c1e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__51ca96aced0742f489ee87f0ca43e672",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n\nvar formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmSettings\");\nformController.loadDataAndShowForm() \n}catch(e){\n  alert(e.message);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

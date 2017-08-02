@@ -1,0 +1,39 @@
+{
+  "operationConfig" : {
+    "name" : "deletemedia4867",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "name",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "applyCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"media\",\"entityName\":\"media\",\"fMap\":{},\"config\":{}}}",
+    "opcode" : "delete",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMP_PERSONAL_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "media"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "mediaEmployee",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

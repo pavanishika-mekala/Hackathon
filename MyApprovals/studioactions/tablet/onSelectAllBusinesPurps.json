@@ -1,0 +1,35 @@
+{
+    "AS_Label_af6cf83494134f93a4283349a3f4cce0": {
+        "id": "AS_Label_af6cf83494134f93a4283349a3f4cce0",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSelectAllBusinesPurps",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "486c20b1d92c44ba9cd4d5054648e273"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___4b8a1efbcdda42c68879fedc92b5eb70",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "selectAllCategories",
+            "display": "selectAllCategories",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

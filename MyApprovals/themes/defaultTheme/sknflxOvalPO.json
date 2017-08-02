@@ -1,0 +1,11 @@
+{
+  "background_image": "po_oval.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sf8c3f4a54cd43808f69b570342ffe8b",
+  "wType": "FlexContainer"
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_bae11c49aa56476f92517ba172b45ded": {
+        "id": "AS_FlexContainer_bae11c49aa56476f92517ba172b45ded",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnClickOfHamburgerMenuInNotificationList",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmNotificationsList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c7e404faab6d4d7c9207595c805f57f2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f22aa230517d4d87b22fdd87568eb751",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.notifications.getNotificationHistoryInstance().exitNotificationsScreen();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

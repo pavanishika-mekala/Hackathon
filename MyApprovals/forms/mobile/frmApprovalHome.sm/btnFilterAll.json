@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "89.70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8659eb2b91c40b3827146653e377d43",
+    "_text_": "All",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s8659eb2b91c40b3827146653e377d43",
+    "id": "btnFilterAll",
+    "ide_onClick": "AS_Button_ad046f9e72934f5bbe349c50fbea1d73",
+    "info": null,
+    "isvisible": true,
+    "kuid": "9b89f360b8a7442d9f6d132ee8b9b407",
+    "name": "kony.ui.Button",
+    "parent": "flxScrlCategory",
+    "pf": "frmApprovalHome",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_01a6f4c32ec245e38d72c370d2236960": {
+        "id": "AS_FlexContainer_01a6f4c32ec245e38d72c370d2236960",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoshowExpenselistPendingRequestDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3401094490004ddb94565b729bf147c6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmPendingUIDW()).onClickOfExpenseReq();\n(new kony.apps.coe.ess.frmPendingUIDW()).filterPendingRequest(\"EXPENSES\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

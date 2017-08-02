@@ -1,0 +1,25 @@
+{
+    "AS_Form_1965b0856e5740b29697b7ea1632711a": {
+        "id": "AS_Form_1965b0856e5740b29697b7ea1632711a",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionFrmTabListViewInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__17df5abe926e4a3ea8fe67b24a64d7bb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " var WidgetsArray = [\"imgSelection\", \"imgEmployee\", \"imgRequestType\", \"lblEmployeeName\", \"lblShortName\"];\n var SelectionBehaviourConfig = {\n        \"imageIdentifier\": \"imgSelection\",\n        \"selectedStateImage\": \"selected.png\",\n        \"unselectedStateImage\": \"select.png\"\n    }\n    kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch = new kony.apps.ess.DynamicSegment(kony.apps.ess.Constants.SEGUI_MULTI_SELECT_BEHAVIOR, SelectionBehaviourConfig, 3, flxEmployeeSelection, function() {}, WidgetsArray);\n    frmTabListView.flxScrlImages.add(kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch.getDynamicSegment());\n    kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch.WidgetDataMap = {\n        \"lblEmployeeName\": \"username\",\n        \"lblShortName\": \"shortName\"\n    };",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

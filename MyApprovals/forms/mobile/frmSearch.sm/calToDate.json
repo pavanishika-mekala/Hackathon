@@ -1,0 +1,86 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizDateField",
+    "DNDConfig": null,
+    "Image": "calbtn.png",
+    "__parentReadjusting__": false,
+    "_data_": null,
+    "_date_": [
+        "8",
+        "8",
+        "2016"
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sfd8532fc0c942ceb1754138aaf02ac0",
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "advview": "default",
+    "calendaricon": "calbtn.png",
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "38%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "69.60%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "datecomponents": [
+        "8",
+        "8",
+        "2016"
+    ],
+    "dateeditable": true,
+    "dateformat": "dd/MM/yyyy",
+    "day": "8",
+    "daytextalignmentincell": 5,
+    "entereddate": "08/08/2016",
+    "format": "dd/MM/yyyy",
+    "formatteddate": "08/08/2016",
+    "hidedaysheader": false,
+    "hidemonthsheader": false,
+    "hour": 0,
+    "id": "calToDate",
+    "ide_onTouchEnd": "AS_Calendar_505061f57c1147a4b192746fd1f42f8c",
+    "ide_onTouchStart": "AS_Calendar_429cab69b9bc4e78b7cdb599da84be80",
+    "info": null,
+    "isvisible": true,
+    "kuid": "60142ece7afc4ae59adecdf19590f472",
+    "luadate": [
+        "8",
+        "8",
+        "2016"
+    ],
+    "minutes": 0,
+    "month": "8",
+    "name": "kony.ui.Calendar",
+    "noofmonths": 1,
+    "pagedate": "/2016",
+    "parent": "flxToSelection",
+    "pf": "frmSearch",
+    "seconds": 0,
+    "selectdate": "//2016",
+    "viewtype": "default",
+    "wType": "Calendar",
+    "widgetalignment": 5,
+    "year": "2016",
+    "zindex": 1
+}

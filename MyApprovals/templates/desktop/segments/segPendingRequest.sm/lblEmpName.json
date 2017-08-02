@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "70px"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s191dd257b074ca7bcf4fc5891e66bc6",
+    "_text_": "Emp Name",
+    "_top_": {
+        "type": "string",
+        "value": "21px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblEmpName",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "54bf87ae967f4dd5b9777c1cddbd008f",
+    "name": "kony.ui.Label",
+    "parent": "flxPendingRequest",
+    "pf": "segPendingRequest",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

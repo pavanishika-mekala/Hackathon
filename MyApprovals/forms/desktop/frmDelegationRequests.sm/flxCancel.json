@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "32px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "365px"
+    },
+    "_skin_": "s43f02b17b1d470f8549e593339ad5c0",
+    "_width_": {
+        "type": "string",
+        "value": "32px"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "imgCancel"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCancel",
+    "ide_onTouchStart": "AS_FlexContainer_2e13db56499b462cb4b8bda30e419425",
+    "info": null,
+    "isvisible": true,
+    "kuid": "fd3e51d339b948c695dd05626657443d",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxSeparatorNewDelegationRequest",
+    "pf": "frmDelegationRequests",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

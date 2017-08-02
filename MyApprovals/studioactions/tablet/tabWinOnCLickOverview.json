@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_d87da55bddb5425db2048cbf7507b20f": {
+        "id": "AS_FlexContainer_d87da55bddb5425db2048cbf7507b20f",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinOnCLickOverview",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabReqTypeView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "a445104010e642868013c0c215af153b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6683adddf30048c49ce4f9204762cd40",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabReqTypeView.flxFulldetails.skin = \"slFbox\";\nfrmTabReqTypeView.lblFullDetails.skin = \"sknWinLblAttachment12636d\";\nfrmTabReqTypeView.flxAuditTrail.skin = \"slFbox\";\nfrmTabReqTypeView.lblAuditTrail.skin = \"sknWinLblAttachment12636d\";\nfrmTabReqTypeView.flxAttachments.skin = \"slFbox\";\nfrmTabReqTypeView.lblAttachments.skin = \"sknWinLblAttachment12636d\";\nfrmTabReqTypeView.flxOverview.skin = \"sknWinFlxOverviewFFFFFF\";\nfrmTabReqTypeView.lblOverview.skin = \"sknWinLblOverviewffffff\";\nkony.pprint(\"Flx 2 is executing\");\nfrmTabReqTypeView.flx2.isVisible = true;\nkony.print(\"Flx 2 executed\");\nfrmTabReqTypeView.flx3.isVisible = true;\nfrmTabReqTypeView.flxAttachment.isVisible = false;\nfrmTabReqTypeView.flxAudit.isVisible = false;\nfrmTabReqTypeView.flxDetails.isVisible = false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

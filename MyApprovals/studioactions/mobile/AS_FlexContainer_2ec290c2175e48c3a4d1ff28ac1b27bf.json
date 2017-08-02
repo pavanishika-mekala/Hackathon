@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_2ec290c2175e48c3a4d1ff28ac1b27bf": {
+        "id": "AS_FlexContainer_2ec290c2175e48c3a4d1ff28ac1b27bf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c69dce89016f49ebaaeee7c07e74625f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a2c46f04d29242d69e819368533ed3ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showNotificationsListForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

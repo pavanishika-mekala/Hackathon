@@ -1,0 +1,28 @@
+{
+    "AS_Button_5d4e29935634498f81c8a1107ee368a0": {
+        "id": "AS_Button_5d4e29935634498f81c8a1107ee368a0",
+        "type": "ACTION_SEQUENCE",
+        "name": "SegmentApproveBtnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpSegRequests",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1f6d3713a0a44fae8be4ed410c58f354"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e3dcc8481fb945afb051218e7f5233b1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var x = new kony.apps.coe.ess.Approvals.ExpenseReportDetail();\nx.OnApproveButtonClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

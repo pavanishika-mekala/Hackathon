@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_7319b07f3cd847b6b89e6c014e26f17e": {
+        "id": "AS_FlexContainer_7319b07f3cd847b6b89e6c014e26f17e",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionToClickAttachments",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5834dfa9c420442785e7cc7a27095059",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new (kony.apps.coe.ess.frmPendingUIDW)).onClickOfAttachments();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

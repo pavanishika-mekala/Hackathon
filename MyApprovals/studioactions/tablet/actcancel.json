@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_be248759b9fe47d2a8d7d69cc7649cf3": {
+        "id": "AS_FlexContainer_be248759b9fe47d2a8d7d69cc7649cf3",
+        "type": "ACTION_SEQUENCE",
+        "name": "actcancel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_1a426027604b4192981f51d359b10eb4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmDelegationTab.flxEmployeeData.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

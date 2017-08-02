@@ -1,0 +1,28 @@
+{
+    "AS_Button_8bf713c3bcf94f8ea427cf6864c6e307": {
+        "id": "AS_Button_8bf713c3bcf94f8ea427cf6864c6e307",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_purchase_order_approve",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegPurchaseOrder",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b73fe8d76a0f4a36920c238c699ad3e8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b96bc33b1bd943d0abe9c5c6755a3aa0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.updateApproval(frmApprovalHome.segApprovalsList.selectedRowItems[0].approval_id,\"0\",context.rowIndex);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

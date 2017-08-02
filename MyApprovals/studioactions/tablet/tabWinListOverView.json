@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_9794e5d639fa497ab94d4e83993158a7": {
+        "id": "AS_FlexContainer_9794e5d639fa497ab94d4e83993158a7",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinListOverView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c38abe79b02544718535832d2b668628",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myExpense.tabListViewUI()).flxOverViewOnClick();",
+            "callbackType": null
+        }]
+    }
+}

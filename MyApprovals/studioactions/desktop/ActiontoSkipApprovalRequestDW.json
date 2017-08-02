@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_1652bcfc479d4ca5a7eb9b891155f0c5": {
+        "id": "AS_FlexContainer_1652bcfc479d4ca5a7eb9b891155f0c5",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoSkipApprovalRequestDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApprovalsDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "26bb64648ede4e03a8cf66a5883f7c6c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f3660f4564d84ee4aa9f0286d2d98ca2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"Hi\");\nalert(kony.apps.coe.ess.Approvals.DashboardDesktop.ApprovalRequestList.Obj.selectedIndex);\n//kony.apps.coe.ess.Approvals.DashboardDesktop.ApprovalRequestList.removeAt();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

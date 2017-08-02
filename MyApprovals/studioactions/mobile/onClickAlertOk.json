@@ -1,0 +1,24 @@
+{
+    "AS_Button_22e0015cd40240709d861f744485c16f": {
+        "id": "AS_Button_22e0015cd40240709d861f744485c16f",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickAlertOk",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterAlertBtn",
+            "type": "templates",
+            "KUID": "5385413f9da94edb93d45a242e7c515c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7958407595fd4db6ad15edc2090f1c6f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupErrorAlert.dismiss();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

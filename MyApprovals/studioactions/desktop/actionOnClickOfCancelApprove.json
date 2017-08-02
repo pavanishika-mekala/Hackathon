@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_9459067a547042b49bb5b84002121fbf": {
+        "id": "AS_FlexContainer_9459067a547042b49bb5b84002121fbf",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfCancelApprove",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9b1d2a734bdf441cbb34a9e5a104a344",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmPendingRequest.flxBlank.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

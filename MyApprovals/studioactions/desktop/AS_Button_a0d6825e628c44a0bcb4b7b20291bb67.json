@@ -1,0 +1,24 @@
+{
+    "AS_Button_a0d6825e628c44a0bcb4b7b20291bb67": {
+        "id": "AS_Button_a0d6825e628c44a0bcb4b7b20291bb67",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fe62e7b2a2464a93ab9e4e555a30775e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myApprovals.frmDeligationDW()).stopdelegation();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

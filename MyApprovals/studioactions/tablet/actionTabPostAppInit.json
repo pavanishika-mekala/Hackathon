@@ -1,0 +1,23 @@
+{
+    "AS_AppEvents_2b05660de97248feb6ea4eceb2934709": {
+        "id": "AS_AppEvents_2b05660de97248feb6ea4eceb2934709",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionTabPostAppInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e9500491899d44b7aff290eff34f4de3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "initMbaasTabletApp",
+            "display": "initMbaasTabletApp",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "module"
+        }]
+    }
+}

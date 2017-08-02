@@ -1,0 +1,25 @@
+{
+    "AS_Button_68b441658bbd4fd58955187b7ebc7045": {
+        "id": "AS_Button_68b441658bbd4fd58955187b7ebc7045",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnClickOfSync",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "02db330ef3754e35979fa147399d7427"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__93661fb390e5474ea9ad2980fb638a0e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Sync.ManualSyncOnClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

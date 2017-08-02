@@ -1,0 +1,25 @@
+{
+    "AS_Button_3703caf54ec241b083477956ead47f0a": {
+        "id": "AS_Button_3703caf54ec241b083477956ead47f0a",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickContinueOffline",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterOffline",
+            "type": "templates",
+            "platform": "",
+            "KUID": "46040c6e9bee493e8692e5365a1cc447"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__530a17c6ce624478b8bb4d1f08441a09",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupOfflineAlert.dismiss();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

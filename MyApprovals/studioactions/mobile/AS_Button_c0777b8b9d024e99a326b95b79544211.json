@@ -1,0 +1,24 @@
+{
+    "AS_Button_c0777b8b9d024e99a326b95b79544211": {
+        "id": "AS_Button_c0777b8b9d024e99a326b95b79544211",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "02db330ef3754e35979fa147399d7427"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1283f1b726f949b6bf66748086f87e19",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getCurrentForm().flxOfflineAlert.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Button_3dbc2db2f9d048859f324e6fe98688ad": {
+        "id": "AS_Button_3dbc2db2f9d048859f324e6fe98688ad",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickApproveMultiSelect",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMultiSelection",
+            "type": "forms",
+            "platform": "",
+            "KUID": "3e2653b4fe284d008c2ff381c9ee7ee6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__21e18187617246409509c28e15b8321c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.MultiSelect.getSelectedID(frmMultiSelection.SegDetails.selectedRowItems, \"0\");\nshowApprovalHome();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

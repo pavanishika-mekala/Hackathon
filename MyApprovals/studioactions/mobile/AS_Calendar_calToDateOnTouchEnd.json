@@ -1,0 +1,31 @@
+{
+    "AS_Calendar_505061f57c1147a4b192746fd1f42f8c": {
+        "id": "AS_Calendar_505061f57c1147a4b192746fd1f42f8c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Calendar_calToDateOnTouchEnd",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4afef6d1bff45fa8183c0dfe78a691b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bebf4a72026e4260819389e5f69df111",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.Approvals.frmSelectBackendLogic()).onTouchEndOfToDate();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

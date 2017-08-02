@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_5d73dc37df174bf5be6f687f936d5aa7": {
+        "id": "AS_FlexContainer_5d73dc37df174bf5be6f687f936d5aa7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c2bf090780ad4f53b8bb2a1bb6c1ce44",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myApprovals.frmDeligationDW()).createdelegation();\nfrmDelegationRequests.flxNewDelegationRequests.setVisibility(false);\nfrmDelegationRequests.forceLayout();\nfrmDelegationRequests.flxMain.setVisibility(true);\nfrmDelegationRequests.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

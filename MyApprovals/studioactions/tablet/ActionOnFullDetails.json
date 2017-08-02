@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a50ca8e7ee58414eba37e77d51f7610a": {
+        "id": "AS_FlexContainer_a50ca8e7ee58414eba37e77d51f7610a",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnFullDetails",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewFilterHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd06540c87fd4a56879ca28ae3bb94c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fac0e27d92744f3a8e39b3b23016989d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myExpense.tabListViewUI()).flxFullDetailsOnClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

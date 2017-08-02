@@ -1,0 +1,78 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_render_": true,
+    "_right_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "button_active.png",
+    "_top_": {
+        "type": "string",
+        "value": "-38%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "android": {
+        "render": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "tablet",
+        "formID": "frmHamburger",
+        "platform": "ipad",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgToggleHamburgerPushNotifications",
+    "ide_onTouchEnd": "AS_Image_85ee21426ec34184b09ef43f7b3f3e69",
+    "imagescalemode": 1,
+    "info": null,
+    "invokedProperty": "src",
+    "ipad": {
+        "render": true
+    },
+    "isvisible": true,
+    "kuid": "5a3d54fbc14b44cca8dacf2081599ee7",
+    "name": "kony.ui.Image2",
+    "parent": "flxApplicationSettings",
+    "pf": "frmHamburger",
+    "spaandroidtablet": {
+        "render": true
+    },
+    "spaipad": {
+        "render": true
+    },
+    "spawindowstablet": {
+        "render": true
+    },
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "windows8": {
+        "render": true
+    },
+    "zindex": 5
+}

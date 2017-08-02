@@ -1,0 +1,40 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_REFERENCE_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_HOL_CALENDAR"
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodifiedts"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_REFERENCE_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[]",
+      "businessObjectName" : "HCM_HOL_CALENDAR"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeleteflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

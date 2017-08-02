@@ -1,0 +1,25 @@
+{
+    "AS_Form_a80ca9c1b399488d9f17f2e28ffe24f3": {
+        "id": "AS_Form_a80ca9c1b399488d9f17f2e28ffe24f3",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinDeviceBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabReqTypeView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "a445104010e642868013c0c215af153b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9ae4d58c2a7749f78702975338902505",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"Device Back Disabled\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        4,
+        4,
+        4,
+        4
+    ],
+    "_skin_": "scd56c3ec0bd4a58a4dd040c1d4faf6d",
+    "_text_": "Ok",
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s1316339ab1b4ea4b86ec6a19c1252a3",
+    "id": "btnOk",
+    "ide_onClick": "AS_Button_47cf27b1228a456284b7a0e92b3bbdd9",
+    "info": null,
+    "isvisible": true,
+    "kuid": "17a86352945a4417962c51496dd1943e",
+    "margininpixel": false,
+    "name": "kony.ui.Button",
+    "parent": "hboxfootertab",
+    "pf": "tempFooterAlertBtn",
+    "wType": "Button"
+}

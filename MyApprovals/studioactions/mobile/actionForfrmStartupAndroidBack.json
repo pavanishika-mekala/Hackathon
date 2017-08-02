@@ -1,0 +1,25 @@
+{
+    "AS_Form_6bd33fad3078439a989adcce4fa3e1c9": {
+        "id": "AS_Form_6bd33fad3078439a989adcce4fa3e1c9",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmStartupAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "02db330ef3754e35979fa147399d7427"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b3b688ffab5349a9820dac0fc1cbcb1d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in frmStartup--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

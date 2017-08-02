@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "65%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8dce8311e694e6f99ba6def6e2b2e74",
+    "_text_": "Clear",
+    "_top_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3cba0cfc29146afbc3db25338c2be14",
+    "id": "clearlbtn",
+    "ide_onClick": "AS_Button_7330e732e3d44654a2a738e45763c521",
+    "info": null,
+    "isvisible": true,
+    "kuid": "649069e2b81f457f9320266c99d100fc",
+    "name": "kony.ui.Button",
+    "parent": "flexFooterRepo",
+    "pf": "frmTabApprovalHistory",
+    "wType": "Button",
+    "zindex": 1
+}

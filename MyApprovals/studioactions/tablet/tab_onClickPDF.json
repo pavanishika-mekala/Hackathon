@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_370249d599fb47278b2eca206378202c": {
+        "id": "AS_FlexContainer_370249d599fb47278b2eca206378202c",
+        "type": "ACTION_SEQUENCE",
+        "name": "tab_onClickPDF",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9bb7aaf97d0940bd8f9e5bb58d9b89e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__73c7ca586cc540b9abafff6db9fe4403",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.ess.myApprovals.pdfOperationTab()).openPdfForTab();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

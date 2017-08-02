@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_7ef2de7ebc8d41b7b33a60e88de56588": {
+        "id": "AS_FlexContainer_7ef2de7ebc8d41b7b33a60e88de56588",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_FooterSearch",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempNavigateFooter",
+            "type": "templates",
+            "KUID": "c7383eb2dfa548ee94bbf5dc90dc2c1e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4990296238c44b448097a48eb87b5be4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmSearch\");\nformController.loadDataAndShowForm() \n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

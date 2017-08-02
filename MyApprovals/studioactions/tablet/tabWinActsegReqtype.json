@@ -1,0 +1,31 @@
+{
+    "AS_Segment_6a63843cc5a043d1a3d66a91d9eb92d1": {
+        "id": "AS_Segment_6a63843cc5a043d1a3d66a91d9eb92d1",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinActsegReqtype",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "d83449f601944c6190fe159242bfbd0b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9d8a9957fcd74160904370cd52410285",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.tabApprovalsListView.segRequestTypeOnClick(frmTabListView.segReqtype.selectedItems[0]);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

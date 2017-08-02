@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_3770d6e032c9408fb2a9d49411acf6e4": {
+        "id": "AS_FlexContainer_3770d6e032c9408fb2a9d49411acf6e4",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoFilterPOHistoryDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27c027d186034cfb876ffff441ae3ab1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c792d912d446497c8b4610845c0b5565",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmFilterHistoryUIDW()).onClickOfPOFilter();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

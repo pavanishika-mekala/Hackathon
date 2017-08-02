@@ -1,0 +1,35 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        4,
+        4,
+        4,
+        4
+    ],
+    "_skin_": "scd56c3ec0bd4a58a4dd040c1d4faf6d",
+    "_text_": "",
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s1316339ab1b4ea4b86ec6a19c1252a3",
+    "id": "btnOk",
+    "ide_onClick": "AS_Button_22e0015cd40240709d861f744485c16f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "9c7db530326141d6b0ee7fbcf7d6810e",
+    "margininpixel": false,
+    "name": "kony.ui.Button",
+    "parent": "HboxOuter",
+    "pf": "tempFooterAlertBtn",
+    "texti18n": "i18n.ess.myApproval.Ok.text",
+    "wType": "Button"
+}

@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "18px"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        4,
+        0,
+        4,
+        0
+    ],
+    "_skin_": "sfa4065109234ae8aee2df8bf4c3f92e",
+    "_text_": "Over View",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "16px"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblOverView",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "7f3ff048cc9b466093065dc8a9e1f744",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxOverView",
+    "pf": "frmPendingRequest",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Image_be0e6e697fe044788b4be0b374cdaddc": {
+        "id": "AS_Image_be0e6e697fe044788b4be0b374cdaddc",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionforDesktopLogout",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b59dc1b56858469682043a21820906fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__72526ab87e2643fe866517703a7f28f3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.sdk.mvvm.Logout_DW();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

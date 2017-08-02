@@ -1,0 +1,11 @@
+{
+  "background_image": "leave_oval.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "s1064dd175c34ae6973f3278462a4812",
+  "wType": "FlexScrollContainer"
+}

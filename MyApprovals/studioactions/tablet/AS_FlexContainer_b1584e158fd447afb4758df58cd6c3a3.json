@@ -1,0 +1,33 @@
+{
+    "AS_FlexContainer_b1584e158fd447afb4758df58cd6c3a3": {
+        "id": "AS_FlexContainer_b1584e158fd447afb4758df58cd6c3a3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_44a32cad5abf4522807888bd314802e8",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmWinTabDashboard",
+            "formKUID": "366bc654445b43abad6c9392ded61c94",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "disabled": true
+        }, {
+            "id": "NAVIGATE_TO_FORM___53abd9dc45524cfc8ed9cee1d6db1873",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmTabApprovalHistory",
+            "formKUID": "486c20b1d92c44ba9cd4d5054648e273",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

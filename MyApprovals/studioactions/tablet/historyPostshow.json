@@ -1,0 +1,25 @@
+{
+    "AS_Form_37f3732fe8e34ec0b1eb7af67a569a0b": {
+        "id": "AS_Form_37f3732fe8e34ec0b1eb7af67a569a0b",
+        "type": "ACTION_SEQUENCE",
+        "name": "historyPostshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "486c20b1d92c44ba9cd4d5054648e273"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__79d1b85e3ba044529c7fffa180c79e8f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

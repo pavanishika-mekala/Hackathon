@@ -1,0 +1,20 @@
+{
+  "android": {
+    "background_image": "team_focus.png",
+    "bg_type": "image"
+  },
+  "background_image": "team_focus.png",
+  "bg_type": "image",
+  "border_color": "1c739300",
+  "border_radius": 100,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "iphone": {
+    "background_image": "team_focus.png",
+    "bg_type": "image"
+  },
+  "isDefaultSkin": false,
+  "kuid": "s53a16cd0d0b49ff9827ce2b884eb26e",
+  "wType": "FlexContainer"
+}

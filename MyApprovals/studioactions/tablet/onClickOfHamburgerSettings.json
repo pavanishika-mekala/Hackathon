@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_bfce80e21def465cb6f9b7a7c4043a71": {
+        "id": "AS_FlexContainer_bfce80e21def465cb6f9b7a7c4043a71",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickOfHamburgerSettings",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "90bf097212b8402086e027964390ddc0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e411a37e94064a87b9a37acef46dd6ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSettings.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

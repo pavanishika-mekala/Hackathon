@@ -1,0 +1,66 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "57%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_skin_": "sb7435ebbfe54efb87a774fb8c7d5268",
+    "_top_": {
+        "type": "string",
+        "value": "34%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "lblConfirm"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxConfirm",
+    "ide_onClick": "AS_FlexContainer_49816442bf244c1fbdcdfc6866f4e83e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "755ac42b8bde473cb7753f706a3d7482",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxDecBtns",
+    "pf": "frmTabListView",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

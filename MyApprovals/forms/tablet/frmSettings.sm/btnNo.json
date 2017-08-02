@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s454b6d0bc7a42128f3268d64af46d84",
+    "_text_": "No",
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sa54c4b9eba545c39811ffe30d04f102",
+    "id": "btnNo",
+    "ide_onClick": "AS_Button_7813ce17d2bc4c988ff47c3eaef5a38d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "821e127d77f14164a47b67c184745bb7",
+    "name": "kony.ui.Button",
+    "parent": "flxNotificationPopUp",
+    "pf": "frmSettings",
+    "wType": "Button",
+    "zindex": 1
+}

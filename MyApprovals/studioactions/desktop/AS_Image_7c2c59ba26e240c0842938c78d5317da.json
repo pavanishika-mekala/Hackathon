@@ -1,0 +1,30 @@
+{
+    "AS_Image_7c2c59ba26e240c0842938c78d5317da": {
+        "id": "AS_Image_7c2c59ba26e240c0842938c78d5317da",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b59dc1b56858469682043a21820906fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a800e464f65a41269c0a7bc72896a062",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.sdk.mvvm.Logout_DW();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

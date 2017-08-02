@@ -1,0 +1,125 @@
+{
+  "operationConfig" : {
+    "name" : "createWFAPPROVALNOTE2636",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DOCID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SEQ_NO",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ADDED_ON",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "WF_APPROVAL_NOTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "SEQ_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">        <map inputpath=\"request_in\" outputpath=\"request_out\">                <exec-function name=\"kony.gen.obj.request_note__hierarchy.toLOBFields\" />                <set-param inputpath=\"comment\" outputpath=\"COMMENTS\" />                <set-param inputpath=\"createdts\" outputpath=\"ADDED_ON\" />                <set-param inputpath=\"employee_id\" outputpath=\"EMPNUMBER\" />                <!--set-param inputpath=\"id\" outputpath=\"\"/-->                         <!--comined value of the refwflow id and the docid and WFLOW_USER-->                <exec-function name=\"kony.string:substringAfter\" outputpath=\"REF_WFLOW_ID-DOCID-WFLOW_USER\" output=\"$vars\">                        <set-arg name=\"Name\" inputpath=\"approval_id\" />                        <set-arg name=\"Separator\" input=\"-\" />                </exec-function>                <!--comined value of the  docid and WFLOW_USER-->                <exec-function name=\"kony.string:substringAfter\" outputpath=\"DOCID-WFLOW_USER\" output=\"$vars\">                        <set-arg name=\"DOCID-WFLOW_USERKEY\" inputpath=\"$vars/REF_WFLOW_ID-DOCID-WFLOW_USER\" />                        <set-arg name=\"Separator\" input=\"-\" />                </exec-function>                <exec-function name=\"kony.string:substringBefore\" outputpath=\"DOCID\" output=\"$vars\">                        <set-arg name=\"DOCIDUSERKEY\" inputpath=\"$vars/DOCID-WFLOW_USER\" />                        <set-arg name=\"Separator\" input=\"-\" />                </exec-function>                 <set-param inputpath=\"$vars/DOCID\" outputpath=\"DOCID\" />      </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">          <map inputpath=\"response_in\" outputpath=\"response_out\">                    <map inputpath=\"WF_APPROVAL_NOTE\" outputpath=\"request_note\">                              <exec-function name=\"kony.gen.obj.request_note__hierarchy.fromLOBFields\"/>                    </map>          </map></mapper>",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_APPROVAL_NOTE\",\"fMap\":{\"DOCID\":\"WF_DISTRIBUTION.DOCID\"},\"sQuery\":\"WF_DISTRIBUTION.REF_WFLOW_ID\",\"config\":{}}}",
+    "opcode" : "create",
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "WF_APPROVAL_NOTE"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "request_note",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

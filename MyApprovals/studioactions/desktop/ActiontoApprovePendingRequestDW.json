@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_bfad148a68334532baf63f71cd1b1070": {
+        "id": "AS_FlexContainer_bfad148a68334532baf63f71cd1b1070",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoApprovePendingRequestDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__99e4e052bd4049d9a7f6f2c3e6ac08e3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmPendingUIDW()).ApprovePendingRequest();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

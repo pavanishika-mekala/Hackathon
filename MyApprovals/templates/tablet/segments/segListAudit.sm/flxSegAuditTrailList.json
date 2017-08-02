@@ -1,0 +1,65 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s668a344639148d5811db598b1f7d32c",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblBottomLine",
+        "imgStatus",
+        "lblEventName",
+        "lblEventDesc",
+        "lblPersonName",
+        "lblDate",
+        "flxVerticalLineTop",
+        "flxVerticalLineBottom"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSegAuditTrailList",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "dd799aa605a344febe505ebe08f09c37",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxAudit1",
+    "pf": "segListAudit",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_1973c12c7cbb4874898c4e2ccf1ca913": {
+        "id": "AS_FlexContainer_1973c12c7cbb4874898c4e2ccf1ca913",
+        "type": "ACTION_SEQUENCE",
+        "name": "actflxSearchIcon",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__30694d6e10d6456e817d1170b3fe2cd1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DynamicSegmentSetDatabyEmployeeHasApprovalRequests(kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch);\nfrmTabListView.flxEmployeeSearch.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

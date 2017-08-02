@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_2034df1f1f1e4b318f173b1496d6f1e5": {
+        "id": "AS_FlexContainer_2034df1f1f1e4b318f173b1496d6f1e5",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinNavToPeople",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ef64af7ae3054d4e8fa8d520588ac7e2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.Header.ItemOnClick(3);",
+            "callbackType": null
+        }]
+    }
+}

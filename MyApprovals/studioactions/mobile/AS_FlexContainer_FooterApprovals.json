@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_8fb3ef58f00d4abcb9427bebbe594d80": {
+        "id": "AS_FlexContainer_8fb3ef58f00d4abcb9427bebbe594d80",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_FooterApprovals",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempNavigateFooter",
+            "type": "templates",
+            "platform": "",
+            "KUID": "c7383eb2dfa548ee94bbf5dc90dc2c1e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d8fa79bdcdee4501b39f257cc028efc2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmApprovalHome\");\nformController.loadDataAndShowForm() ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

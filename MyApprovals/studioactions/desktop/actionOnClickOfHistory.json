@@ -1,0 +1,31 @@
+{
+    "AS_Image_24458849ba1640d7acf91a40dcc8c2db": {
+        "id": "AS_Image_24458849ba1640d7acf91a40dcc8c2db",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfHistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b59dc1b56858469682043a21820906fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0548fb023a9847a29537d3f9406762ef",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showHistory();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

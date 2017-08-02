@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_68a33f6e891947ab8932d38ce4a2e31d": {
+        "id": "AS_FlexContainer_68a33f6e891947ab8932d38ce4a2e31d",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoShowTimesheetPendingRequest",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__737cdb3173f247bb8f8791b76a3629a8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmPendingUIDW()).onClickOfTimeReq();\n(new kony.apps.coe.ess.frmPendingUIDW()).filterPendingRequest(\"TIMESHEET\");\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

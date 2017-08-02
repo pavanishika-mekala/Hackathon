@@ -1,0 +1,24 @@
+{
+    "AS_Form_379dce66cf634e4ab5a4777027dbd2bb": {
+        "id": "AS_Form_379dce66cf634e4ab5a4777027dbd2bb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a494b835b79c442c88152b104cd65305",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myExpense.tabListViewUI()).ApplyGestureandSwipeAnimation();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_ff38debf198248239a416df2cbe5e4d5": {
+        "id": "AS_FlexContainer_ff38debf198248239a416df2cbe5e4d5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "486c20b1d92c44ba9cd4d5054648e273"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e868ace84c5241cbb5a430f2a2015bd5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.ApprovalHistoryTab.selectedPpls=[];\nfrmTabApprovalHistory.flexDynamicPplsLayout.setVisibility(false);\nfrmTabApprovalHistory.flxbottomPplSelection.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

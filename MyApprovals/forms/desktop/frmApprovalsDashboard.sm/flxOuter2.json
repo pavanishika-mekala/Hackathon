@@ -1,0 +1,59 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s5a3a525cefc476cb0cc2279a6257958",
+    "_top_": {
+        "type": "string",
+        "value": "50px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "96%"
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "flxNoOfAllRequests",
+        "flxApprovalRequestList",
+        "flxExpiry"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxOuter2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "2bb2b7661c0547e9ab8bced8c68f0070",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxOuterDashboard",
+    "pf": "frmApprovalsDashboard",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

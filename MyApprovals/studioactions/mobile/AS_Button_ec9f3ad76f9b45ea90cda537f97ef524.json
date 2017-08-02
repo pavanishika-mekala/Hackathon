@@ -1,0 +1,24 @@
+{
+    "AS_Button_ec9f3ad76f9b45ea90cda537f97ef524": {
+        "id": "AS_Button_ec9f3ad76f9b45ea90cda537f97ef524",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "95bd849701724d1abee374f8d1932154"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ad4e673057c746cbbef40ea153d53a85",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalHome.show();\nfrmExpenseReportDetail.btnBackToHome.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

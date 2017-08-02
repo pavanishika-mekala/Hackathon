@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_020f91b167984aa8a85577fe70902bd7": {
+        "id": "AS_FlexContainer_020f91b167984aa8a85577fe70902bd7",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_SelectPeople",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_1be543175baa45f590295a8ddd454181",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\n filterobj.onClickPeople();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_1dd7a5503daa415f85bf2c19d4b2fd96": {
+        "id": "AS_FlexContainer_1dd7a5503daa415f85bf2c19d4b2fd96",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_29213ea848504d6cb032cf6c92c15fe8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmPendingUIDW()).onclickEmployeename();",
+            "callbackType": null
+        }]
+    }
+}

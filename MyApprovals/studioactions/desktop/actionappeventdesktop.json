@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_8d27b5327875491e8edcd7697de9988e": {
+        "id": "AS_AppEvents_8d27b5327875491e8edcd7697de9988e",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionappeventdesktop",
+        "params": [{
+            "name": "eventobject",
+            "datatype": "collection"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d04aa6408d524d899e74aec221ae1d14",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.net.setNetworkCallbacks(kony.apps.coe.ess.globalVariables.checkNetwork.config);\n//return kony.apps.ess.deepLinkingSSO.appServicesAction(eventobject);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

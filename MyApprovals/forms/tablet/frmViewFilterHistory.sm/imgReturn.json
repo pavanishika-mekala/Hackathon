@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "number",
+        "value": "37"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sea2742539b1409a89cc57dbd7c64252",
+    "_src_": "back.png",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "number",
+        "value": "53"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "35%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "tablet",
+        "formID": "frmViewFilterHistory",
+        "platform": "tabrcandroid",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgReturn",
+    "ide_onTouchStart": "AS_Image_d52b9cbd27f74d8dafafcb279566049d",
+    "imagescalemode": 1,
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": true,
+    "kuid": "b2a89fc934514081850a6ee17de34e62",
+    "name": "kony.ui.Image2",
+    "parent": "flxReturn",
+    "pf": "frmViewFilterHistory",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

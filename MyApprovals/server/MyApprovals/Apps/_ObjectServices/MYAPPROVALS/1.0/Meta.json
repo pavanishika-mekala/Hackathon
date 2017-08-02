@@ -1,0 +1,7 @@
+{
+  "description" : "This for the approvals object service configurartion",
+  "config" : {
+    "metadataSecurity" : "authorized_app_user",
+    "conflict_policy" : "none"
+  }
+}

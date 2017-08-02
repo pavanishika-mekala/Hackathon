@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_136796a76751498783b9c584acf1c480": {
+        "id": "AS_FlexContainer_136796a76751498783b9c584acf1c480",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_DoneButton",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4afef6d1bff45fa8183c0dfe78a691b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dd2a57c8df7d4910bce5f141685239a1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

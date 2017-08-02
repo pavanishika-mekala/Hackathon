@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_91b3892c3e744b4cb57f0336ab86b8fd": {
+        "id": "AS_FlexContainer_91b3892c3e744b4cb57f0336ab86b8fd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e8ba8ef60b20418ab8850b556bb6ac08",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myApprovals.frmDeligationDW()).onclickEmployeeselecttick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_311b8849483c4293a736b6a86de78024": {
+        "id": "AS_FlexContainer_311b8849483c4293a736b6a86de78024",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_2de471629e144bb5a5353806debfa3c6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n  kony.apps.coe.ess.Approvals.ApprovalsHome.onclickFilterIcon();\n}catch(e){  \n   handleError(new appException(kony.i18n.getLocalizedString(\"i18n.ess.frmApprovalHome.errorMessages.FilterSearch\")));\n}",
+            "callbackType": null
+        }]
+    }
+}

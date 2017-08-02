@@ -1,0 +1,35 @@
+{
+    "AS_FlexContainer_b3def4427a734a1a921bffe644bee185": {
+        "id": "AS_FlexContainer_b3def4427a734a1a921bffe644bee185",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfCalendar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApprovalsDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "26bb64648ede4e03a8cf66a5883f7c6c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___6a3fa057efc14774af6ae0d1695f6434",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmTeamCalendar",
+            "formKUID": "af8826d3940e43d09697556a6cd86694",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

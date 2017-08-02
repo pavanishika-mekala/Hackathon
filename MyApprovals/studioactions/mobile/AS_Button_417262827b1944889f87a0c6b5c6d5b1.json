@@ -1,0 +1,24 @@
+{
+    "AS_Button_417262827b1944889f87a0c6b5c6d5b1": {
+        "id": "AS_Button_417262827b1944889f87a0c6b5c6d5b1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2cd457a59aa641b2af285630ec6e6bef",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.sliderAnimationToNow();\n//clear filter Data\nkony.apps.coe.ess.Approvals.ApprovalsHome.clearDataofFilter();\nkony.apps.coe.ess.Approvals.ApprovalsHome.SPAPreshow();\nfrmApprovalHome.flxFiter.isVisible = false;\nfrmApprovalHome.imgSPAFilter.src = \"filter_unselected.png\";\nfrmApprovalHome.segApprovalsList.top = \"0%\";\nfrmApprovalHome.flxFooterOptions.isVisible = false;\nfrmApprovalHome.imgOption1.src = \"circleinactive.png\";\nfrmApprovalHome.imgOption2.src = \"circleinactive.png\";\nfrmApprovalHome.imgOption3.src = \"circleinactive.png\";\nfrmApprovalHome.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

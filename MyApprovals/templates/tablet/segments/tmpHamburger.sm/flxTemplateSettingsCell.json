@@ -1,0 +1,46 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sf6fdc88264945f69dbbcca3bc5fe769",
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxRequestType",
+        "imgRequestType",
+        "lblRequestType"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxTemplateSettingsCell",
+    "info": null,
+    "isvisible": true,
+    "kuid": "41828ebeb5bd4e9c923d30b0a0d96255",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "tmpHamburger",
+    "pf": "tmpHamburger",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

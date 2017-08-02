@@ -1,0 +1,17 @@
+{
+    "AS_Button_487e95a4535841a085a08c603dc661dd": {
+        "id": "AS_Button_487e95a4535841a085a08c603dc661dd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d8480e7ac3a14c74bd7f3a556d2fc867",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {\n  kony.application.getCurrentForm().flxOfflineAlert.setVisibility(false);\t\n  kony.apps.coe.ess.frmLogin.manualSyncOnClick();\n}\n        ",
+            "callbackType": null
+        }]
+    }
+}

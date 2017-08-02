@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_d854104d0f5e4c8f961e82066f221d12": {
+        "id": "AS_FlexContainer_d854104d0f5e4c8f961e82066f221d12",
+        "type": "ACTION_SEQUENCE",
+        "name": "actApprove",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8b055e13edbf472b9ee55d127bef8d2f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.Approvals.getApprovalsRequestList()).onClickApprove();",
+            "callbackType": null
+        }]
+    }
+}

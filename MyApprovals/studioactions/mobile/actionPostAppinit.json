@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_409239e47971492e8f583cdcb835a924": {
+        "id": "AS_AppEvents_409239e47971492e8f583cdcb835a924",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionPostAppinit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8900574808944f27a41877ac8fb63501",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " kony.application.setApplicationInitializationEvents({\n        appservice: kony.apps.ess.deepLinkingSSO.appServiceCallback\n    });",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

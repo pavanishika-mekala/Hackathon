@@ -1,0 +1,25 @@
+{
+    "AS_Form_769ba3234a314456837e470ea5e71e73": {
+        "id": "AS_Form_769ba3234a314456837e470ea5e71e73",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionTabLoginInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b43279e60a264f0696dad83ff9674443"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f521ec3d77d540f580b829c9ded2d159",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.frmLogin.Init();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

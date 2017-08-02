@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_42743d0fff5a4076b4326fc7cea1f5bc": {
+        "id": "AS_FlexContainer_42743d0fff5a4076b4326fc7cea1f5bc",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnReconfigure",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b43279e60a264f0696dad83ff9674443"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7bafcfaf776f45c9994c5f3810a9b756",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmStartUp.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

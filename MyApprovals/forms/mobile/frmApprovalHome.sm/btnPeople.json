@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "32dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "1.50%"
+    },
+    "_skin_": "s620932425c949c98f170e8c07be1b3d",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "32dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sf3a94a11a634cb7a503dc85fc9cc44f"
+    },
+    "displaytext": true,
+    "id": "btnPeople",
+    "ide_onClick": "AS_Button_543c048c4f344998b6ffc480c60f1521",
+    "info": null,
+    "isvisible": true,
+    "kuid": "87d73e5c08a0428aaf7276a53dcb9e93",
+    "name": "kony.ui.Button",
+    "parent": "flxTxtBoxSearch",
+    "pf": "frmApprovalHome",
+    "wType": "Button",
+    "zindex": 5
+}

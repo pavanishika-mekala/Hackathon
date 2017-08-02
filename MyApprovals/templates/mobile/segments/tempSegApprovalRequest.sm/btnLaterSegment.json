@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "12.20%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "see131c5f0c5412aa4e56e93b18ef2e4",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "22%"
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s29734b129734227a6a416b9eb4f6a3e",
+    "id": "btnLaterSegment",
+    "ide_onClick": "AS_Button_bc65354eee554d87a735e40db727e581",
+    "info": null,
+    "isvisible": true,
+    "kuid": "fa22f0a228a6475380e1df7b9e4d9a01",
+    "name": "kony.ui.Button",
+    "parent": "flxApprovalRequest",
+    "pf": "tempSegApprovalRequest",
+    "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.later",
+    "wType": "Button",
+    "zindex": 1
+}

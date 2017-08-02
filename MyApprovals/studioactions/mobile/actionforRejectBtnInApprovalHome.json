@@ -1,0 +1,28 @@
+{
+    "AS_Button_f2323d07756c49a5a4daad7e146b14cf": {
+        "id": "AS_Button_f2323d07756c49a5a4daad7e146b14cf",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionforRejectBtnInApprovalHome",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegApprovalRequest",
+            "type": "templates",
+            "platform": "",
+            "KUID": "5d0a0db1b8d041bba55f7d944db264ac"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3cfeeacbd5564a629ef30f6482f37f87",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.rejectRequest(context);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

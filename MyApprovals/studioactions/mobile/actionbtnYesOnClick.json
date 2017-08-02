@@ -1,0 +1,25 @@
+{
+    "AS_Button_07144ecfa06443748d0161614c891e24": {
+        "id": "AS_Button_07144ecfa06443748d0161614c891e24",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionbtnYesOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "02db330ef3754e35979fa147399d7427"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7db36f1d49704ef08ff6a95e51023130",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmSettings.resetData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

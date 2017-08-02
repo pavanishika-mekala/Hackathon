@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_29f9e2cbae9f48e18ffed28b618cb2d9": {
+        "id": "AS_FlexContainer_29f9e2cbae9f48e18ffed28b618cb2d9",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinOnClickListFullDetails",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "d83449f601944c6190fe159242bfbd0b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bea15d0077474a80ac0022a013d9de30",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabListView.flxFulldetails.skin = \"sknWinFlxOverviewFFFFFF\";\nfrmTabListView.lblFullDetails.skin = \"sknWinLblOverviewffffff\";\nfrmTabListView.flxAuditTrail.skin = \"slFbox\";\nfrmTabListView.lblAuditTrail.skin = \"sknWinLblAttachment12636d\";\nfrmTabListView.flxAttachments.skin = \"slFbox\";\nfrmTabListView.lblAttachments.skin = \"sknWinLblAttachment12636d\";\nfrmTabListView.flxOverview.skin = \"slFbox\";\nfrmTabListView.lblOverview.skin = \"sknWinLblAttachment12636d\";\nfrmTabListView.flxAttachment.isVisible = false;\nfrmTabListView.flxAudit.isVisible = false;\nfrmTabListView.flxDetails.isVisible = true;\nfrmTabListView.flx2.isVisible = false;\nfrmTabListView.flx3.isVisible = false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

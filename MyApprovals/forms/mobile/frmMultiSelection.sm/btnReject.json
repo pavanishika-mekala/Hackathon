@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6618e1102d641ae864b6cc13dafd7c6",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s69512350d1b4eea8f31e263afee0c95",
+    "id": "btnReject",
+    "ide_onClick": "AS_Button_cffd3ce5ab724b738b20e28482a6213e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d4b33b22271642bea3d6ca459fdf3a83",
+    "name": "kony.ui.Button",
+    "parent": "flxBottomBar",
+    "pf": "frmMultiSelection",
+    "texti18n": "i18n.ess.MyApprovals.frmMultiSelection.btnReject",
+    "wType": "Button"
+}

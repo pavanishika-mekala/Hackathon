@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_fff487c3c4064514b54f14de63f256a2": {
+        "id": "AS_AppEvents_fff487c3c4064514b54f14de63f256a2",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionpreAppinit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6f608c64a6da4bf3bab0b5aa4d9ed413",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "initMbaasApp();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0b66c8199ae348888fe3c2ac1af32259": {
+        "id": "AS_FlexContainer_0b66c8199ae348888fe3c2ac1af32259",
+        "type": "ACTION_SEQUENCE",
+        "name": "flxQrCodeOnClickAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8681ec0917414ba494646c6414cb9ce7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__76e3eda5e10c4bbc991ae29473680f69",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmStartUp.flxMainQR.flxLabelQrCode.top==\"72.5%\") {\n}\n  else{\nnew kony.apps.coe.ess.NavigationAnimations().onClickflxQr();\n  }\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

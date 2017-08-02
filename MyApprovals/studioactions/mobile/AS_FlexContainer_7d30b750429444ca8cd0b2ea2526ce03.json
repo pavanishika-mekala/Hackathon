@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_7d30b750429444ca8cd0b2ea2526ce03": {
+        "id": "AS_FlexContainer_7d30b750429444ca8cd0b2ea2526ce03",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4afef6d1bff45fa8183c0dfe78a691b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7734fd0ce9d34bd298c67e297ec02f86",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmSearch.flxHamburgerButton);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

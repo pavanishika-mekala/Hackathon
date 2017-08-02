@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_ca3630b4762c4b57ae9337e62c7b42fb": {
+        "id": "AS_FlexContainer_ca3630b4762c4b57ae9337e62c7b42fb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_01981c1c7f044ebbb51bf409be653034",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmDelegationRequests.imgDeselect.src= \"select_green.png\";",
+            "callbackType": null
+        }]
+    }
+}

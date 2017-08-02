@@ -1,0 +1,24 @@
+{
+    "AS_Button_10f27b5971b14fc494a3f03b5551bff2": {
+        "id": "AS_Button_10f27b5971b14fc494a3f03b5551bff2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27c027d186034cfb876ffff441ae3ab1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__be465fb5423d42818d5a2af6df81edb3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.ApprovalHistoryDW()).searchHistory();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

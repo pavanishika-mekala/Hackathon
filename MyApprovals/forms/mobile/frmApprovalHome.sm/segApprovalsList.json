@@ -1,0 +1,414 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "btnAdditionalInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "American Express"
+            },
+            "btnApprove": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approve"
+            },
+            "btnLaterSegment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnReject": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Reject"
+            },
+            "imgCategory": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "expense.png"
+            },
+            "imgLeaveInfo": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "expense_info.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people_selected.png"
+            },
+            "lblBorder1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblBorder2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblCategory": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Days"
+            },
+            "lblCreateDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 06:30 pm"
+            },
+            "lblDelegated": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblDueDateHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblDueDateValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblDummy": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblExipresHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Expires in"
+            },
+            "lblRemainingHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "8"
+            },
+            "lblRequest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblRequestInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 5000.00"
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "A"
+            },
+            "lblTimeUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "H"
+            },
+            "lblUserName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Alexander Jones"
+            }
+        },
+        {
+            "btnAdditionalInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "American Express"
+            },
+            "btnApprove": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approve"
+            },
+            "btnLaterSegment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnReject": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Reject"
+            },
+            "imgCategory": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "expense.png"
+            },
+            "imgLeaveInfo": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "expense_info.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people_selected.png"
+            },
+            "lblBorder1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblBorder2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblCategory": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Days"
+            },
+            "lblCreateDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 06:30 pm"
+            },
+            "lblDelegated": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblDueDateHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblDueDateValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblDummy": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblExipresHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Expires in"
+            },
+            "lblRemainingHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "8"
+            },
+            "lblRequest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblRequestInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 5000.00"
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "A"
+            },
+            "lblTimeUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "H"
+            },
+            "lblUserName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Alexander Jones"
+            }
+        },
+        {
+            "btnAdditionalInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "American Express"
+            },
+            "btnApprove": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approve"
+            },
+            "btnLaterSegment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Button"
+            },
+            "btnReject": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Reject"
+            },
+            "imgCategory": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "expense.png"
+            },
+            "imgLeaveInfo": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "expense_info.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people_selected.png"
+            },
+            "lblBorder1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblBorder2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblCategory": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Days"
+            },
+            "lblCreateDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 06:30 pm"
+            },
+            "lblDelegated": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblDueDateHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblDueDateValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblDummy": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblExipresHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Expires in"
+            },
+            "lblRemainingHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "8"
+            },
+            "lblRequest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblRequestInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 5000.00"
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "A"
+            },
+            "lblTimeUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "H"
+            },
+            "lblUserName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Alexander Jones"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0.03%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "disabledSkins": {},
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segApprovalsList",
+    "ide_onRowClick": "AS_Segment_0f8920983173463d979264248484625c",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "1b96a1311ff7403182069706cf0b4199",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxApprovalSegments",
+    "pf": "frmApprovalHome",
+    "retainselection": false,
+    "rowTemplateId": "5d0a0db1b8d041bba55f7d944db264ac",
+    "rowcounter": 2,
+    "rowfocusskin": "sfc44c3b4f4842739cddf1acad940bcf",
+    "rowskin": "sfc44c3b4f4842739cddf1acad940bcf",
+    "rowtemplate": "flxApprovalRequest",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s20909b94437408b9889666220e63a2a",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnAdditionalInfo": "btnAdditionalInfo",
+        "btnApprove": "btnApprove",
+        "btnLaterSegment": "btnLaterSegment",
+        "btnReject": "btnReject",
+        "flexRemainingHours": "flexRemainingHours",
+        "flexTimerInnerCircle": "flexTimerInnerCircle",
+        "flxApprovalRequest": "flxApprovalRequest",
+        "flxBorder": "flxBorder",
+        "flxBorder1": "flxBorder1",
+        "flxBorder2": "flxBorder2",
+        "flxImages": "flxImages",
+        "flxRequestInfo": "flxRequestInfo",
+        "flxTimer": "flxTimer",
+        "flxTimerOuterCircle": "flxTimerOuterCircle",
+        "flxUserImg": "flxUserImg",
+        "imgCategory": "imgCategory",
+        "imgLeaveInfo": "imgLeaveInfo",
+        "imgUser": "imgUser",
+        "lblBorder1": "lblBorder1",
+        "lblBorder2": "lblBorder2",
+        "lblCategory": "lblCategory",
+        "lblCount": "lblCount",
+        "lblCreateDate": "lblCreateDate",
+        "lblDelegated": "lblDelegated",
+        "lblDueDateHeader": "lblDueDateHeader",
+        "lblDueDateValue": "lblDueDateValue",
+        "lblDummy": "lblDummy",
+        "lblDummyInnerLabel": "lblDummyInnerLabel",
+        "lblExipresHeader": "lblExipresHeader",
+        "lblRemainingHours": "lblRemainingHours",
+        "lblRequest": "lblRequest",
+        "lblRequestInfo": "lblRequestInfo",
+        "lblShortName": "lblShortName",
+        "lblTimeUnit": "lblTimeUnit",
+        "lblUserName": "lblUserName"
+    }
+}

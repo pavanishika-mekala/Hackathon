@@ -1,0 +1,25 @@
+{
+    "AS_Form_a792efa861e847ba9d303b96818579c3": {
+        "id": "AS_Form_a792efa861e847ba9d303b96818579c3",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Form_AppInitFrmSettings",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "02db330ef3754e35979fa147399d7427"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b7f30dcc028b47f8ad0536bb01e38e16",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var WidgetsArray=[\"flxRequestType\",\"lblRequestType\",\"imgRequestType\"];\nkony.apps.coe.ess.globalVariables.SettingsSegments=new kony.apps.ess.DynamicSegment(kony.apps.ess.Constants.SEGUI_SINGLE_SELECT_BEHAVIOR,{},5,flxTemplateSettingsCell,kony.apps.coe.ess.Approvals.frmSettings.onClick,WidgetsArray);\nfrmSettings.flxDynamicSegment.add(kony.apps.coe.ess.globalVariables.SettingsSegments.getDynamicSegment())\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

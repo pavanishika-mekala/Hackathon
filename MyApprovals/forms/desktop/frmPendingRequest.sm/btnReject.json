@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "5px"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "75px"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s93071aa8bfc46d492d49850820a587f",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "5px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "220px"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s031b56724bd465c859168d289ba5b3e",
+    "id": "btnReject",
+    "ide_onClick": "AS_Button_75ddd7a869c148fe9b3e67c13a062819",
+    "info": null,
+    "isvisible": true,
+    "kuid": "3bb2d0225c07400f8412f6ec7fa7a508",
+    "name": "kony.ui.Button",
+    "parent": "flxBtnRejectApprove",
+    "pf": "frmPendingRequest",
+    "texti18n": "i18n.ess.frmPendingReqDW.Reject",
+    "wType": "Button",
+    "zindex": 1
+}

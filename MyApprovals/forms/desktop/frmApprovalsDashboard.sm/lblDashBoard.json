@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "8px"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        15,
+        0
+    ],
+    "_skin_": "s28fb59d785c4342b38cff0f8d3c967d",
+    "_text_": "Label",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblDashBoard",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "09e2c2de4b284671924e07b234f7c6ad",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxOuterHeaderDashboard",
+    "pf": "frmApprovalsDashboard",
+    "texti18n": "i18n.ess.frmApprovalsDashBoardDW.Dashboard",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

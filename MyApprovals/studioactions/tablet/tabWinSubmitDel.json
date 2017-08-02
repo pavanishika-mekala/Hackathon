@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_6aa53a908be44ebd96ca5a8701c06956": {
+        "id": "AS_FlexContainer_6aa53a908be44ebd96ca5a8701c06956",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinSubmitDel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "e7c44e8f489240c1ab2a02b95d7d04d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__286dce361a5a4daa99682aac11ada5ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DelegationTab.UI.getInstance().onClickOfSubmit();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,76 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "designTimeBackendMeta" : {
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodifiedts"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_SUBSTITUTE",
+      "libraryName" : "_SKYTECH_WF",
+      "children" : "[]",
+      "businessObjectName" : "WF_SUBSTITUTE"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "",
+      "InactiveValue" : "X",
+      "Name" : "softdeletedflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "comments",
+    "targetField" : "COMMENTS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "createdts",
+    "targetField" : "CREATED_TS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "delegation_group_id",
+    "targetField" : "WF_GROUP_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "delegator_id",
+    "targetField" : "WF_USER_EMPID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "employee_id",
+    "targetField" : "DEL_TO_EMPID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "end_date",
+    "targetField" : "DELEGATE_TODATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "id",
+    "targetField" : "WF_UPLOAD_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "request_type_id",
+    "targetField" : "REQUEST_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "start_date",
+    "targetField" : "DELEGATE_FRDATE",
+    "type" : "request_response"
+  } ]
+}

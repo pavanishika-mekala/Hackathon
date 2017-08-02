@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_708cbf9e25124f2a8addc5309601b07c": {
+        "id": "AS_FlexContainer_708cbf9e25124f2a8addc5309601b07c",
+        "type": "ACTION_SEQUENCE",
+        "name": "actchange",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2022fbab9588483fa0d3e4496b028183"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a4847332f39e422397bc34e4fe90ddc5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DelegationTab.UI.getInstance().setDataInList();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

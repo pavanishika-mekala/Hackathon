@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_5de6e70f73e14f5ebe43bf8a20c0c846": {
+        "id": "AS_FlexContainer_5de6e70f73e14f5ebe43bf8a20c0c846",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f256ad4e45534d8cb891cf87cadc92f2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.apps.coe.ess.Approvals.ApprovalsHome.employeeFilter();\nfrmPendingRequest.flxEmployeeSearch.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

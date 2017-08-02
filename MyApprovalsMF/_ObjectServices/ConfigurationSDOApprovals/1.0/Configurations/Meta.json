@@ -1,0 +1,18 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "designTimeBackendMeta" : { },
+    "backendMeta" : {
+      "serviceVersion" : "1.0",
+      "operationName" : "getConfigurations",
+      "serviceName" : "GetCOnfigurations"
+    }
+  }
+}

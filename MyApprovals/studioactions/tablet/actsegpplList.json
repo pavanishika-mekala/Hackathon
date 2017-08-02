@@ -1,0 +1,31 @@
+{
+    "AS_Segment_88a815620ebf4160b49e41990c2964de": {
+        "id": "AS_Segment_88a815620ebf4160b49e41990c2964de",
+        "type": "ACTION_SEQUENCE",
+        "name": "actsegpplList",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a57894cb0d854c9f82a7a335f01c4579",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.tabApprovalsListView.segPeopleOnClick(frmTabListView.segpplList.selectedItems[0]);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

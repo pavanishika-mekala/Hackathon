@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a856f67d03ce4d96b18b2c9f2903c18b": {
+        "id": "AS_FlexContainer_a856f67d03ce4d96b18b2c9f2903c18b",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoshowExpenseRequesttypeDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

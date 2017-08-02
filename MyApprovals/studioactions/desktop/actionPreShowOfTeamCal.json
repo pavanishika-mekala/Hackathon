@@ -1,0 +1,25 @@
+{
+    "AS_Form_5a4be928f8ea445b94630ef99308407e": {
+        "id": "AS_Form_5a4be928f8ea445b94630ef99308407e",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionPreShowOfTeamCal",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamCalendar",
+            "type": "forms",
+            "platform": null,
+            "KUID": "af8826d3940e43d09697556a6cd86694"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__df5bd2576530494aad1cfd36671b7b41",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTeamCalendar.flxSegEmployee.forceLayout();\nfrmTeamCalendar.flxTeamCalendar.forceLayout();\nfrmTeamCalendar.forceLayout();\n(new kony.apps.coe.ess.frmTeamCalUiDW()).fillDays();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

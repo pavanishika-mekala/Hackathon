@@ -1,0 +1,25 @@
+{
+    "AS_Button_45f5c11723b2417a97a55a809f6bb7b5": {
+        "id": "AS_Button_45f5c11723b2417a97a55a809f6bb7b5",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_actionforbtnAttachmentOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "95bd849701724d1abee374f8d1932154"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fd5aef068ab946549df27d849ca49682",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.displayPDFSegment();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

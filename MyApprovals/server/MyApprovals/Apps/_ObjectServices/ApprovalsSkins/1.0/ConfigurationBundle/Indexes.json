@@ -1,0 +1,10 @@
+[{
+  "unique": true,
+  "name": "id",
+  "description": "",
+  "fields": [
+    "bundle_id",
+    "id"
+  ],
+  "selected": true
+}]

@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_fea3fda241524e248f8aefca7573a96c": {
+        "id": "AS_FlexContainer_fea3fda241524e248f8aefca7573a96c",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfPendingRequest",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5675ffaaa8ac49fd9571237efe5be290",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showPendingRequest();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

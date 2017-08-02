@@ -1,0 +1,31 @@
+{
+    "AS_Image_75e908d858ec4a60a370172c0c1967cc": {
+        "id": "AS_Image_75e908d858ec4a60a370172c0c1967cc",
+        "type": "ACTION_SEQUENCE",
+        "name": "togglePushOnClickHamburgerTablet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "90bf097212b8402086e027964390ddc0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d02f8b7ed19b4d308fd01ab9b18e554a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.Hamburger.togglePushNotificationsHamburgerStatus();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

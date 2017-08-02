@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_11143cc389d04cfdafddd73aff5ff31e": {
+        "id": "AS_FlexContainer_11143cc389d04cfdafddd73aff5ff31e",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickOfFlxImgPushNotification",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "02db330ef3754e35979fa147399d7427"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__829245eadd394bc7b4f461e49ef66b53",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.settings.getSettingsObject().togglePushNotificationsStatus();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

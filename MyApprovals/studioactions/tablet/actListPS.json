@@ -1,0 +1,25 @@
+{
+    "AS_Form_bffb3ea717464d9f89194f18908ad3ea": {
+        "id": "AS_Form_bffb3ea717464d9f89194f18908ad3ea",
+        "type": "ACTION_SEQUENCE",
+        "name": "actListPS",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__43ccd42aa4674b6b9e928119bc33f0ba",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "SetDataToUIDefault(frmTabListView);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

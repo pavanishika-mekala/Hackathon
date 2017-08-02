@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "68px"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        4,
+        0
+    ],
+    "_skin_": "s5b07109c9c2406fb8c3fb321d60a73c",
+    "_text_": "Time",
+    "_top_": {
+        "type": "string",
+        "value": "37px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblReqTypeTime",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "662893636cef4c59af074bf51b3780e0",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxTimeRequest",
+    "pf": "frmApprovalsDashboard",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

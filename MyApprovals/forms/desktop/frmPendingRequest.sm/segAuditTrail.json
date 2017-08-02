@@ -1,0 +1,207 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgAT": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "edit.png"
+            },
+            "lblDateAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30pm"
+            },
+            "lblDescriptionAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description of event or system message."
+            },
+            "lblEventCreationAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Event Creation"
+            },
+            "lblHorizontalLineAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLineAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLineAT2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPersonNameAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Person Name"
+            }
+        },
+        {
+            "imgAT": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "edit.png"
+            },
+            "lblDateAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30pm"
+            },
+            "lblDescriptionAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description of event or system message."
+            },
+            "lblEventCreationAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Event Creation"
+            },
+            "lblHorizontalLineAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLineAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLineAT2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPersonNameAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Person Name"
+            }
+        },
+        {
+            "imgAT": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "edit.png"
+            },
+            "lblDateAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30pm"
+            },
+            "lblDescriptionAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Description of event or system message."
+            },
+            "lblEventCreationAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Event Creation"
+            },
+            "lblHorizontalLineAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLineAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLineAT2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPersonNameAT": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Person Name"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "02",
+    "disabledSkins": {
+        "rowFocusSkin": "sd6c3d0c684f465dbf4556a42e5cf52a"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segAuditTrail",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "2c4161d0876848728611e1070d6ad0bb",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxAuditTrailDetails",
+    "pf": "frmPendingRequest",
+    "retainselection": false,
+    "rowTemplateId": "d62f97b84fef4e4da3856f8f065c97a7",
+    "rowcounter": 2,
+    "rowskin": "s98ce061a4b246aa84d4d2394e1585ad",
+    "rowtemplate": "flxTmpAuditTrail",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxImgAT": "flxImgAT",
+        "flxTmpAuditTrail": "flxTmpAuditTrail",
+        "imgAT": "imgAT",
+        "lblDateAT": "lblDateAT",
+        "lblDescriptionAT": "lblDescriptionAT",
+        "lblEventCreationAT": "lblEventCreationAT",
+        "lblHorizontalLineAT": "lblHorizontalLineAT",
+        "lblLineAT": "lblLineAT",
+        "lblLineAT2": "lblLineAT2",
+        "lblPersonNameAT": "lblPersonNameAT"
+    },
+    "zindex": 1
+}

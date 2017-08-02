@@ -1,0 +1,35 @@
+{
+    "AS_Image_d52b9cbd27f74d8dafafcb279566049d": {
+        "id": "AS_Image_d52b9cbd27f74d8dafafcb279566049d",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavToAppHistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmViewFilterHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd06540c87fd4a56879ca28ae3bb94c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___149318dbdc324ce9a22ee1fc4245c104",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmTabApprovalHistory",
+            "formKUID": "486c20b1d92c44ba9cd4d5054648e273",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_70be022bd3bc4e13b558aae100f2b249": {
+        "id": "AS_FlexContainer_70be022bd3bc4e13b558aae100f2b249",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_BackButtonOfDelegationRequestCreateForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequestCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0c3e6ec9ceac49dc8624517119e5edeb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__909375a1f0e942478a930964bc157d2f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showDelegationRequestListForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_40758f56ed4742058d9351d6b65e94ff": {
+        "id": "AS_FlexContainer_40758f56ed4742058d9351d6b65e94ff",
+        "type": "ACTION_SEQUENCE",
+        "name": "actflxCancelButton",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ea443d56df2d48cdaa0bec8a3e7f438b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.tabApprovalsListView.segPeopleOnClickCancelReset();\nfrmTabListView.flxEmployeeSearch.setVisibility(false);\nfrmTabListView.txtSearchPeople.text = null;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

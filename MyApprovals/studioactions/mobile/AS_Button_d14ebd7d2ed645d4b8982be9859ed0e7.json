@@ -1,0 +1,17 @@
+{
+    "AS_Button_d14ebd7d2ed645d4b8982be9859ed0e7": {
+        "id": "AS_Button_d14ebd7d2ed645d4b8982be9859ed0e7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f982bd81e2854988b00046b2dce3fb32",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress == true) {\n        kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.setVisibility(false);\n        kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress = false;\n}\nelse\n\tkony.application.getCurrentForm().flxOfflineAlert.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

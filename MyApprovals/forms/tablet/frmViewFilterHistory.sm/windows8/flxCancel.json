@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s848831453e54e36a9f8fd93df902d8a",
+    "_top_": {
+        "type": "string",
+        "value": "34%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblCancel"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCancel",
+    "ide_onClick": "AS_FlexContainer_70f90019045a4dc987e8b5ce13038dfb",
+    "info": null,
+    "isvisible": true,
+    "kuid": "73792c0670fe4b3898a8a0e87e5cd926",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxDecBtns",
+    "pf": "frmViewFilterHistory",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

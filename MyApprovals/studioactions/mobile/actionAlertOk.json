@@ -1,0 +1,25 @@
+{
+    "AS_Button_1ecc9c7c786443f5a259cc5fe39902b7": {
+        "id": "AS_Button_1ecc9c7c786443f5a259cc5fe39902b7",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionAlertOk",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "popupErrorAlert",
+            "type": "popups",
+            "platform": "",
+            "KUID": "1896884c50b0463cb6d18243f14102bb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__34555a606ac747078ff04d418051b7ba",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupErrorAlert.dismiss();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

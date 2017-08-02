@@ -1,0 +1,31 @@
+{
+    "AS_Segment_8aedcc1246484f6188d52ab888344712": {
+        "id": "AS_Segment_8aedcc1246484f6188d52ab888344712",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_SegDetails_RowClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmRequestedList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "48a0dbc7f7b74ca89f3aaceff6cdfc0f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b2459d3bf1f04e2589665088a512a540",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n\tvar formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmApprovalRequestDetail\");\n\tvar selectedApprovalId=frmRequestedList.SegDetails.selectedRowItems[0].ID;  \n  \tformController.loadDataAndShowForm(selectedApprovalId)\n}catch(e){\n  \thandleError(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.unableToLoadForm\"));\n}\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

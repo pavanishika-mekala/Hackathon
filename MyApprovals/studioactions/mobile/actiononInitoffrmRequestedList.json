@@ -1,0 +1,25 @@
+{
+    "AS_Form_2676772caad748ca85d9204f75d32178": {
+        "id": "AS_Form_2676772caad748ca85d9204f75d32178",
+        "type": "ACTION_SEQUENCE",
+        "name": "actiononInitoffrmRequestedList",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRequestedList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "48a0dbc7f7b74ca89f3aaceff6cdfc0f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__764adab4981d4c43a1ec02f295d1d263",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n  kony.apps.coe.ess.Approvals.RequestedList.applyGestureandSwipeAnimation();\n}catch(e){\n  handleError(e);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

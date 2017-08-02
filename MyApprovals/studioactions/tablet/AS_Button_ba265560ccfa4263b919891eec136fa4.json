@@ -1,0 +1,23 @@
+{
+    "AS_Button_ba265560ccfa4263b919891eec136fa4": {
+        "id": "AS_Button_ba265560ccfa4263b919891eec136fa4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewFilterHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "5eb2ceb8367a45a89cd53ef01ef13082"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b708a2a480a04a68ba4f7070c92c41fb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.RequestType()).onClickFullDetails(frmViewFilterHistory);",
+            "callbackType": null
+        }]
+    }
+}

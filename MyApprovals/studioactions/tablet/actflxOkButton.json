@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_20d24634fecf4377a45f91dac27e4b1d": {
+        "id": "AS_FlexContainer_20d24634fecf4377a45f91dac27e4b1d",
+        "type": "ACTION_SEQUENCE",
+        "name": "actflxOkButton",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bca1cbb906d249ed947ea00969334e19",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.tabApprovalsListView.employeeFilterTab();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

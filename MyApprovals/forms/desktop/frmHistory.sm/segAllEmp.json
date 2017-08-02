@@ -1,0 +1,257 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgRequestType": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgStatus": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "oktick.png"
+            },
+            "lblCost": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$1000"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblPurpose": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Business Purpose"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved on 20 Jan'16"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgRequestType": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgStatus": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "oktick.png"
+            },
+            "lblCost": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$1000"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblPurpose": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Business Purpose"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved on 20 Jan'16"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgRequestType": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgStatus": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "oktick.png"
+            },
+            "lblCost": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$1000"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblPurpose": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Business Purpose"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved on 20 Jan'16"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgRequestType": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgStatus": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "oktick.png"
+            },
+            "lblCost": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$1000"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblPurpose": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Business Purpose"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved on 20 Jan'16"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "605dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "03",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segAllEmp",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "4687ae4a2d1f448390230c3f75a78638",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegEmployee",
+    "pf": "frmHistory",
+    "retainselection": false,
+    "rowTemplateId": "e4274ef143c64fb892c5669d6001d9d0",
+    "rowcounter": 3,
+    "rowfocusskin": "s0071dd5b7b043d19a6856554666a14c",
+    "rowskin": "s43978fedd9849519f2180e9f30bfe00",
+    "rowtemplate": "flxDelegationHistory",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxDelegationHistory": "flxDelegationHistory",
+        "flxEmpImg": "flxEmpImg",
+        "flxStatusImg": "flxStatusImg",
+        "imgEmp": "imgEmp",
+        "imgRequestType": "imgRequestType",
+        "imgStatus": "imgStatus",
+        "lblCost": "lblCost",
+        "lblEmpName": "lblEmpName",
+        "lblPurpose": "lblPurpose",
+        "lblSep": "lblSep",
+        "lblStatus": "lblStatus",
+        "lblSumittedDate": "lblSumittedDate"
+    },
+    "zindex": 1
+}

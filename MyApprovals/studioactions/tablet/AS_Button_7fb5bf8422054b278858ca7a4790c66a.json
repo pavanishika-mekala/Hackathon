@@ -1,0 +1,18 @@
+{
+    "AS_Button_7fb5bf8422054b278858ca7a4790c66a": {
+        "id": "AS_Button_7fb5bf8422054b278858ca7a4790c66a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterOffline",
+            "type": "templates",
+            "platform": "",
+            "KUID": "46040c6e9bee493e8692e5365a1cc447"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

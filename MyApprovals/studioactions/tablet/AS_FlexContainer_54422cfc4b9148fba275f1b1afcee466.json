@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_54422cfc4b9148fba275f1b1afcee466": {
+        "id": "AS_FlexContainer_54422cfc4b9148fba275f1b1afcee466",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewFilterHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "5eb2ceb8367a45a89cd53ef01ef13082"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_2c114858f89d4e56b40721ab8e867d63",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.RequestType()).onClickAttachments(frmTabReqTypeView);",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Button_678b3f2879b546028dadeb6f7a8aaa84": {
+        "id": "AS_Button_678b3f2879b546028dadeb6f7a8aaa84",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionforbtnBackInApprovalRequestDetail",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "95bd849701724d1abee374f8d1932154"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6206149a4d3f47699270744d6fdd3f86",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.getPreviousFormID());\nfrmController.loadDataAndShowForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

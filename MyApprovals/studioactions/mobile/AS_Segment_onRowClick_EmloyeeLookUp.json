@@ -1,0 +1,31 @@
+{
+    "AS_Segment_48d58daf3e0d4f069ff5e610e9d6e953": {
+        "id": "AS_Segment_48d58daf3e0d4f069ff5e610e9d6e953",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Segment_onRowClick_EmloyeeLookUp",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmEmployeeLookUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "16306e7df6e84105bb7e828ec3cb7ca3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__09ca9cedacdb43b783f0a9f1e8ac71a7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.EmployeeLookUp.getInstance().onRowClickOfList();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

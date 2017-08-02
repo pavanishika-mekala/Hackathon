@@ -1,0 +1,28 @@
+{
+    "AS_Calendar_71f3e045f61a4fbe9836c18a8bb4f72b": {
+        "id": "AS_Calendar_71f3e045f61a4fbe9836c18a8bb4f72b",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Calendar_FromDate",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "boolean",
+            "name": "isValidDateSelected"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4afef6d1bff45fa8183c0dfe78a691b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d9fec653279a4e27beb35f5dbc579de4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.Approvals.frmSelectBackendLogic()).onFromClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

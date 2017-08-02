@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_88e96e96e8fb47cbaf578316a16d90bd": {
+        "id": "AS_FlexContainer_88e96e96e8fb47cbaf578316a16d90bd",
+        "type": "ACTION_SEQUENCE",
+        "name": "actflxRejectOpt",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8d70738786b54eec94c84240a532651e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.Approvals.getApprovalsRequestList()).onClickReject();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

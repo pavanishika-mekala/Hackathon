@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "User Name",
+    "_skin_": "s10fea296a3748dd8e5d7f7b350ee5c5",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "11%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s10fea296a3748dd8e5d7f7b350ee5c5",
+    "id": "tbUsername",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "cd9fb301db994dc1b45d03fef1767972",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxUsername",
+    "pf": "frmLoginDesk",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

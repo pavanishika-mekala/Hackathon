@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_93c5e5b50ed748e09a121f439fc5cbb9": {
+        "id": "AS_FlexContainer_93c5e5b50ed748e09a121f439fc5cbb9",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinViewHistoryFullDetails",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f2ffc0e1200245beb3b575f90997067b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myExpense.tabListViewUI()).flxFullDetailsOnClick();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Form_ad49e962d6e34accbf2ef8a9da0627f7": {
+        "id": "AS_Form_ad49e962d6e34accbf2ef8a9da0627f7",
+        "type": "ACTION_SEQUENCE",
+        "name": "FrmLoginPostShowAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "db3f4d071c3541989dd5a510eda8b57e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0ffebe49b5d74864b293445d2a97e21e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLogin.flxImgApllicationLogo.setVisibility(true);\n//kony.timer.schedule(timerid, function(){frmLogin.flxImgApllicationLogo.setVisibility(true);}, 0.3, false);\nkony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "ADD_SNIPPET__b05a470e3583462088bbbfb8869a20d5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.loginAnimations().preAnimations();\nnew kony.apps.coe.ess.loginAnimations().preAnimationsRotationOne();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_Form_fbbdf95aff1848af9f17b19aee67a66b": {
+        "id": "AS_Form_fbbdf95aff1848af9f17b19aee67a66b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d3c837b2b36045cbb90ca3aee32a8205",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"user tried to click back !!!\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

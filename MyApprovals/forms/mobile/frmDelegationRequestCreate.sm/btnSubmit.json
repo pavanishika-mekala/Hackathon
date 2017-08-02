@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "8.10%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf991d745d624a8eb053e3f537786015",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd41cd637f7b410fb3746b0064f42cf2",
+    "id": "btnSubmit",
+    "ide_onClick": "AS_Button_378358a011e0463195398c81c548f81f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "2eb79d14d3874628baacd6cc852912ea",
+    "name": "kony.ui.Button",
+    "parent": "flxMain",
+    "pf": "frmDelegationRequestCreate",
+    "texti18n": "i18n.ess.myapproval.submit",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,30 @@
+{
+    "AS_Image_5388ec8ab867456692e5b489cc1169e8": {
+        "id": "AS_Image_5388ec8ab867456692e5b489cc1169e8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmRequestedList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "48a0dbc7f7b74ca89f3aaceff6cdfc0f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5e02d78362c841da9ef1fc269fad53f1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalHome.show();\nfrmRequestedList.destroy();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,253 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgPeople": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 Jan, 2016"
+            },
+            "lblDelegated": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DELEGATED"
+            },
+            "lblDueDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblPeopleDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblPeopleName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Edd Senior"
+            },
+            "lblPeoplePosition": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ab"
+            },
+            "lblSubmitDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblTotalDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 DAYS "
+            }
+        },
+        {
+            "imgPeople": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 Jan, 2016"
+            },
+            "lblDelegated": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DELEGATED"
+            },
+            "lblDueDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblPeopleDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblPeopleName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Edd Senior"
+            },
+            "lblPeoplePosition": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ab"
+            },
+            "lblSubmitDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblTotalDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 DAYS "
+            }
+        },
+        {
+            "imgPeople": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 Jan, 2016"
+            },
+            "lblDelegated": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "DELEGATED"
+            },
+            "lblDueDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblPeopleDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblPeopleName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Edd Senior"
+            },
+            "lblPeoplePosition": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Ab"
+            },
+            "lblSubmitDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblTotalDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 DAYS "
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "hiddencolumns": {},
+    "id": "segMentListView",
+    "ide_onRowClick": "AS_Segment_4c2d34a1f4224c1f8532ba5a9046dea9",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "11a9ee57bd1a4d9ea85c87c559c6e4d0",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegment",
+    "pf": "frmTabListView",
+    "retainselection": false,
+    "rowTemplateId": "ca0fd36698a342698626e23e80c4c8b0",
+    "rowcounter": 2,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
+    "rowskin": "sde0c536efbc469793f8b311692cfb55",
+    "rowtemplate": "flexRow",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "FlexContainer0ef789493318446": "FlexContainer0ef789493318446",
+        "flexRow": "flexRow",
+        "flx1": "flx1",
+        "flx2": "flx2",
+        "flx3": "flx3",
+        "flx4": "flx4",
+        "flxDelegated": "flxDelegated",
+        "flxImage": "flxImage",
+        "flxTotalDays": "flxTotalDays",
+        "imgPeople": "imgPeople",
+        "lblDate": "lblDate",
+        "lblDelegated": "lblDelegated",
+        "lblDueDate": "lblDueDate",
+        "lblPeopleDate": "lblPeopleDate",
+        "lblPeopleName": "lblPeopleName",
+        "lblPeoplePosition": "lblPeoplePosition",
+        "lblSep": "lblSep",
+        "lblShortName": "lblShortName",
+        "lblSubmitDate": "lblSubmitDate",
+        "lblTotalDays": "lblTotalDays"
+    },
+    "zindex": 1
+}

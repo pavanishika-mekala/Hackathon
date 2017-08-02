@@ -1,0 +1,435 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblDate1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1"
+            },
+            "lblDate10": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "11"
+            },
+            "lblDate11": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12"
+            },
+            "lblDate12": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "13"
+            },
+            "lblDate13": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "14"
+            },
+            "lblDate14": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "15"
+            },
+            "lblDate15": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16"
+            },
+            "lblDate16": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "17"
+            },
+            "lblDate17": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "18"
+            },
+            "lblDate18": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "19"
+            },
+            "lblDate19": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "18"
+            },
+            "lblDate2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2"
+            },
+            "lblDate20": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "19"
+            },
+            "lblDate21": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20"
+            },
+            "lblDate22": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "21"
+            },
+            "lblDate23": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22"
+            },
+            "lblDate24": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23"
+            },
+            "lblDate25": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "24"
+            },
+            "lblDate26": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "25"
+            },
+            "lblDate27": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "26"
+            },
+            "lblDate28": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "27"
+            },
+            "lblDate29": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "28"
+            },
+            "lblDate3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3"
+            },
+            "lblDate30": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "29"
+            },
+            "lblDate4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4"
+            },
+            "lblDate5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5"
+            },
+            "lblDate6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "6"
+            },
+            "lblDate7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7"
+            },
+            "lblDate8": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "8"
+            },
+            "lblDate9": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay10": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay11": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay12": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay13": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay14": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay15": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay16": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay17": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay18": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay19": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Mo"
+            },
+            "lblDay20": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay21": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay22": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay23": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay24": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay25": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay26": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay27": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay28": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay29": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay30": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay8": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Su"
+            },
+            "lblDay9": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "9"
+            },
+            "lblEmployeeHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Employee"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segDates",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "ea10ec8123b549eeb7ff2f68abd0db6c",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxEmployee",
+    "pf": "frmTeamCalendar",
+    "retainselection": false,
+    "rowTemplateId": "66d566b84d974d1e9e52329136890e05",
+    "rowcounter": 0,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
+    "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "flxSegTeamViewHeader30",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxDay1": "flxDay1",
+        "flxDay10": "flxDay10",
+        "flxDay11": "flxDay11",
+        "flxDay12": "flxDay12",
+        "flxDay13": "flxDay13",
+        "flxDay14": "flxDay14",
+        "flxDay15": "flxDay15",
+        "flxDay16": "flxDay16",
+        "flxDay17": "flxDay17",
+        "flxDay18": "flxDay18",
+        "flxDay19": "flxDay19",
+        "flxDay2": "flxDay2",
+        "flxDay20": "flxDay20",
+        "flxDay21": "flxDay21",
+        "flxDay22": "flxDay22",
+        "flxDay23": "flxDay23",
+        "flxDay24": "flxDay24",
+        "flxDay25": "flxDay25",
+        "flxDay26": "flxDay26",
+        "flxDay27": "flxDay27",
+        "flxDay28": "flxDay28",
+        "flxDay29": "flxDay29",
+        "flxDay3": "flxDay3",
+        "flxDay30": "flxDay30",
+        "flxDay4": "flxDay4",
+        "flxDay5": "flxDay5",
+        "flxDay6": "flxDay6",
+        "flxDay7": "flxDay7",
+        "flxDay8": "flxDay8",
+        "flxDay9": "flxDay9",
+        "flxEmployeeHeader": "flxEmployeeHeader",
+        "flxSegTeamViewHeader30": "flxSegTeamViewHeader30",
+        "flxWeekData": "flxWeekData",
+        "lblDate1": "lblDate1",
+        "lblDate10": "lblDate10",
+        "lblDate11": "lblDate11",
+        "lblDate12": "lblDate12",
+        "lblDate13": "lblDate13",
+        "lblDate14": "lblDate14",
+        "lblDate15": "lblDate15",
+        "lblDate16": "lblDate16",
+        "lblDate17": "lblDate17",
+        "lblDate18": "lblDate18",
+        "lblDate19": "lblDate19",
+        "lblDate2": "lblDate2",
+        "lblDate20": "lblDate20",
+        "lblDate21": "lblDate21",
+        "lblDate22": "lblDate22",
+        "lblDate23": "lblDate23",
+        "lblDate24": "lblDate24",
+        "lblDate25": "lblDate25",
+        "lblDate26": "lblDate26",
+        "lblDate27": "lblDate27",
+        "lblDate28": "lblDate28",
+        "lblDate29": "lblDate29",
+        "lblDate3": "lblDate3",
+        "lblDate30": "lblDate30",
+        "lblDate4": "lblDate4",
+        "lblDate5": "lblDate5",
+        "lblDate6": "lblDate6",
+        "lblDate7": "lblDate7",
+        "lblDate8": "lblDate8",
+        "lblDate9": "lblDate9",
+        "lblDay1": "lblDay1",
+        "lblDay10": "lblDay10",
+        "lblDay11": "lblDay11",
+        "lblDay12": "lblDay12",
+        "lblDay13": "lblDay13",
+        "lblDay14": "lblDay14",
+        "lblDay15": "lblDay15",
+        "lblDay16": "lblDay16",
+        "lblDay17": "lblDay17",
+        "lblDay18": "lblDay18",
+        "lblDay19": "lblDay19",
+        "lblDay2": "lblDay2",
+        "lblDay20": "lblDay20",
+        "lblDay21": "lblDay21",
+        "lblDay22": "lblDay22",
+        "lblDay23": "lblDay23",
+        "lblDay24": "lblDay24",
+        "lblDay25": "lblDay25",
+        "lblDay26": "lblDay26",
+        "lblDay27": "lblDay27",
+        "lblDay28": "lblDay28",
+        "lblDay29": "lblDay29",
+        "lblDay3": "lblDay3",
+        "lblDay30": "lblDay30",
+        "lblDay4": "lblDay4",
+        "lblDay5": "lblDay5",
+        "lblDay6": "lblDay6",
+        "lblDay7": "lblDay7",
+        "lblDay8": "lblDay8",
+        "lblDay9": "lblDay9",
+        "lblEmployeeHeader": "lblEmployeeHeader"
+    },
+    "zindex": 1
+}

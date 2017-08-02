@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_632d12bf8c8f4cf99322613d3abfbb86": {
+        "id": "AS_FlexContainer_632d12bf8c8f4cf99322613d3abfbb86",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5346c592761f49f0955555e05a3b96c2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmApprovalHome.flxHamburgerButton);\n//frmApprovalHome.flxHamburgerButton.onClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

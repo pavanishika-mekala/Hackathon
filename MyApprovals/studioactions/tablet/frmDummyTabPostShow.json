@@ -1,0 +1,25 @@
+{
+    "AS_Form_ba9ed878bd9e4371873118b41b4ca1a5": {
+        "id": "AS_Form_ba9ed878bd9e4371873118b41b4ca1a5",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmDummyTabPostShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDummyTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "5c2894e34b174f5fb20425cfc2975aa3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b54677ea1a344a7291ef8b6ce139290d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.frmDummyPostShow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

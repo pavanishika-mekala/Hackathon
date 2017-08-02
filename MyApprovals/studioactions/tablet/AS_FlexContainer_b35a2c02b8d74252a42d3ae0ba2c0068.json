@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_b35a2c02b8d74252a42d3ae0ba2c0068": {
+        "id": "AS_FlexContainer_b35a2c02b8d74252a42d3ae0ba2c0068",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_570005ebdbb54864ba024df2a6ca21d3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showDelegationTabForm();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_Button_7813ce17d2bc4c988ff47c3eaef5a38d": {
+        "id": "AS_Button_7813ce17d2bc4c988ff47c3eaef5a38d",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickbtnNoNotificationPopup",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_64ab37f716ec44a089965087ab176a08",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSettings.flxPopUp.isVisible=false;",
+            "callbackType": null
+        }]
+    }
+}

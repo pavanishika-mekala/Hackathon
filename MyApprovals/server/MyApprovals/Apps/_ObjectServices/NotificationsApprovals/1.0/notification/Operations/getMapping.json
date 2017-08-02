@@ -1,0 +1,191 @@
+{
+  "operationConfig" : {
+    "name" : "querynotification4733",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "WF_NOTIFICATIONS",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIFICATION_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIF_MODULE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_NOTIFDATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "DATA_KEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DATA_VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIFICATION_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"request_in\" outputpath=\"request_out\">    <exec-function name=\"kony.gen.obj.notification__hierarchy.toLOBFields\"/>  </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">  <map inputpath=\"response_in\" outputpath=\"response_out\">    <map inputpath=\"WF_NOTIFICATIONS\" outputpath=\"notification\">      <exec-function name=\"kony.gen.obj.notification__hierarchy.fromLOBFields\"/>      <set-param inputpath=\"TIMESTAMP\" outputpath=\"lastmodifiedts\"/>                  <set-param inputpath=\"TIMESTAMP\" outputpath=\"createdts\"/>    </map>  </map></mapper>",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"fMap\":{\"EMPNUMBER\":\"WF_DISTRIBUTION.WFLOW_EMPNO\"},\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"WF_DO_NOTIFICATION\",\"relationshipKeys\":[{\"parentKey\":\"NOTIFICATION_ID\",\"childKey\":\"NOTIFICATION_ID\"}],\"entityName\":\"WF_NOTIFDATA\"}],\"sQuery\":\"WF_DISTRIBUTION.REF_WFLOW_ID\",\"service\":\"WF_DO_NOTIFICATION\",\"config\":{},\"entityName\":\"WF_NOTIFICATIONS\"}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_NOTIFICATION",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "WF_NOTIFICATIONS"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "notification_data",
+        "selected" : true
+      } ],
+      "name" : "notification",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

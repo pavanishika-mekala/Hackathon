@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_712255be83a44d5997e6052bef962210": {
+        "id": "AS_FlexContainer_712255be83a44d5997e6052bef962210",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateToHistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "90bf097212b8402086e027964390ddc0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__33265e9b7548435ca1506958ebb89a52",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "tabApprovalHistoryShow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

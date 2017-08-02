@@ -1,0 +1,146 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgApproval": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "leave_list.png"
+            },
+            "lblRequesType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "LEAVE REQUESTS "
+            },
+            "lblRequestCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "imgApproval": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "expense_list.png"
+            },
+            "lblRequesType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "TIMESHEET REQUESTS"
+            },
+            "lblRequestCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "imgApproval": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "time_list.png"
+            },
+            "lblRequesType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EXPENSES"
+            },
+            "lblRequestCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "89.46%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "enabledictionary": false,
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segLaterApprovals",
+    "ide_onRowClick": "AS_Segment_9acd96f75153499ebfc1ac12a6df05c4",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "enableDictionary": false,
+            "indicator": "none",
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "25f7f95253bb426296d46bca24d1046e",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxLaterApprovals",
+    "pf": "frmApprovalHome",
+    "retainselection": false,
+    "rowTemplateId": "708892defe394d14b98c38c2a79f32cb",
+    "rowcounter": 2,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
+    "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "flxLaterApprove",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s20909b94437408b9889666220e63a2a",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showprogressindicator": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxLaterApprove": "flxLaterApprove",
+        "flxSeparator": "flxSeparator",
+        "imgApproval": "imgApproval",
+        "lblRequesType": "lblRequesType",
+        "lblRequestCount": "lblRequestCount"
+    }
+}

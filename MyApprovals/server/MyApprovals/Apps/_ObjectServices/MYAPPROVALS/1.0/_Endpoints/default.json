@@ -1,0 +1,19 @@
+{
+  "name" : "default",
+  "type" : "sky",
+  "url" : "http://connect.kony.com:45099/v1/",
+  "encryptSecureInfo" : false,
+  "config" : {
+    "authservicetype" : "IdentityProvider",
+    "Scheme" : "http",
+    "HeaderPrefix" : "KonySAP",
+    "UserName" : "demopc2",
+    "Password" : "Kony@123",
+    "CallerId" : "ess",
+    "CallerGroup" : "ess",
+    "identityProvider" : "ESSIDENTITY",
+    "Gatewayaddress" : "connect.kony.com",
+    "Port" : "45099",
+    "identityProviderType" : "sky"
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Form_302d7b447ba443898e345b510096940a": {
+        "id": "AS_Form_302d7b447ba443898e345b510096940a",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionfrmEmployeeLookUpPostShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmployeeLookUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "16306e7df6e84105bb7e828ec3cb7ca3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ad31cc421eaa42a8bcca4ba730278c30",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

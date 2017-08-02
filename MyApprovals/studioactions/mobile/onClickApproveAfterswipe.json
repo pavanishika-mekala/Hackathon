@@ -1,0 +1,28 @@
+{
+    "AS_Button_9fe04ac569c64955b70da8653aab96a4": {
+        "id": "AS_Button_9fe04ac569c64955b70da8653aab96a4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickApproveAfterswipe",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpSegRequests",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1f6d3713a0a44fae8be4ed410c58f354"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c24fad72847f41c9bd9d569c0a157f4b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n   kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.approveRequest(frmRequestedList.SegDetails.selectedRowItems[0].ID);\n}catch(e){\n  handleError(e);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

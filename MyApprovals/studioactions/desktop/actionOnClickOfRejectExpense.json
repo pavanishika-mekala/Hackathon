@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_07170d62c5fe42beaf6bfd68e0507a54": {
+        "id": "AS_FlexContainer_07170d62c5fe42beaf6bfd68e0507a54",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfRejectExpense",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApprovalsDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "26bb64648ede4e03a8cf66a5883f7c6c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__53869160b9be4a1f956f1d597c83113c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmAppDashboardUIDW()).onClickOfRejectExpense();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        3,
+        1,
+        3,
+        1
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "28.50%"
+    },
+    "_skin_": "s5a3302f4f704e4c95e08e7ef294976f",
+    "_text_": "Requested",
+    "_top_": {
+        "type": "string",
+        "value": "81px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblRequested",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "93388c865b784664bd92610c2ed710de",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxSelectedEmpDetails",
+    "pf": "frmPendingRequest",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

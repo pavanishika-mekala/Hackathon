@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_20b7ede81de04cb8a11fc0e7eef681b5": {
+        "id": "AS_FlexContainer_20b7ede81de04cb8a11fc0e7eef681b5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_23e4a5df47a7437e96d309bab4349d97",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabListView.flxStatusTraffic.setVisibility(true);\nfrmTabListView.lblStatusTraffic.setVisibility(true);\nfrmTabListView.imgPdf.setVisibility(true);\nfrmTabListView.flx2.setVisibility(true);\nfrmTabListView.flx3.setVisibility(true);\nfrmTabListView.flx4.setVisibility(true);\nfrmTabListView.flxAttachment.setVisibility(false);\nfrmTabListView.flxAudit.setVisibility(false);\nfrmTabListView.flxDetails.setVisibility(false);\n",
+            "callbackType": null
+        }]
+    }
+}

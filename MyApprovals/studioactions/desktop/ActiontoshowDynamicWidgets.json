@@ -1,0 +1,25 @@
+{
+    "AS_Form_08792440ed4a4bb4ade62aa689762ee3": {
+        "id": "AS_Form_08792440ed4a4bb4ade62aa689762ee3",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoshowDynamicWidgets",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3e4359b60645413f98c80e6ae598a770",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myApprovals.frmDeligationDW()).initAddDelegation();\n(new kony.apps.coe.ess.myApprovals.frmDeligationDW()).initdatefromto();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

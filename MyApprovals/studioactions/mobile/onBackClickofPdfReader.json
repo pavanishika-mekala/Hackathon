@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c46528136bcf480988042b96484d5ea3": {
+        "id": "AS_FlexContainer_c46528136bcf480988042b96484d5ea3",
+        "type": "ACTION_SEQUENCE",
+        "name": "onBackClickofPdfReader",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPdfReader",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8c56a79b9f4a4a1ea137c7856b6ed82f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__80c19023f5534b4493881f24d7b349ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var showformObj = new kony.apps.ess.myApprovals.pdfOperation();\nshowformObj.showPreviousForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

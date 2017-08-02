@@ -1,0 +1,73 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1.50%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s3577a9da6274c29a7e8d018e372c336",
+    "_top_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgPurchageOrder",
+        "imgPOIcon",
+        "lblPurchaseOrder",
+        "lblPOSkiip",
+        "flxPOExpiry",
+        "flxPOProfile",
+        "flxPOStatus",
+        "lblPONum",
+        "flxPOAmount",
+        "flxPODays",
+        "lblPOProfileName",
+        "lblPOTimeDate",
+        "lblPODueDate",
+        "lblPODueDateVal",
+        "flxPOReject",
+        "flxPOApprove",
+        "flxPODetailView"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flexCard5",
+    "info": null,
+    "isvisible": false,
+    "kuid": "66fcef77750a49529d4e652a783ba3bc",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxMiddle",
+    "pf": "frmTabDashboard",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

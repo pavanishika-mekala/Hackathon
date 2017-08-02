@@ -1,0 +1,27 @@
+{
+    "AS_TextField_129add62ef19463a8cd7313e566ad2cf": {
+        "id": "AS_TextField_129add62ef19463a8cd7313e566ad2cf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a9cdb703f70b46a8a237f9aa72c2da01",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.LaterSearch();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

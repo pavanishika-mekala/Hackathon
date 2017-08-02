@@ -1,0 +1,31 @@
+{
+    "AS_Image_4d6c3e7463c045e3b35106639c0c51db": {
+        "id": "AS_Image_4d6c3e7463c045e3b35106639c0c51db",
+        "type": "ACTION_SEQUENCE",
+        "name": "actiontoOpenPDFInApprovalRequestDetail",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "95bd849701724d1abee374f8d1932154"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4539408d53ff4ef6b553618a678558ab",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n\tkony.apps.coe.ess.Approvals.frmApprovalRequestDetail.openPdf(kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.systemGeneratedAttachments[0].Media, true);\n}catch(e){\n  handleError(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.pdfErrorMsg\"));\n  kony.print(\"Error while fetching pdf \"+e.message);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

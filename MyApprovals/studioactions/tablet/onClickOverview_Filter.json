@@ -1,0 +1,25 @@
+{
+    "AS_Button_6b34b5fc47f544fbbc1b83873f28d061": {
+        "id": "AS_Button_6b34b5fc47f544fbbc1b83873f28d061",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickOverview_Filter",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewFilterHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd06540c87fd4a56879ca28ae3bb94c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f11c24177390473eb764d80ab7e556a5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.RequestType()).onClickOverview(frmViewFilterHistory);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

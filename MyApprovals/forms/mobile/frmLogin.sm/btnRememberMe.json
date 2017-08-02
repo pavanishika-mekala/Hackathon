@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "120%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_skin_": "s78e5b0fa9d04bafa9b3d04ee06b7836",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "19%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s78e5b0fa9d04bafa9b3d04ee06b7836",
+    "id": "btnRememberMe",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b6fbc0d3e74c468d8d07eefa755fb9c7",
+    "name": "kony.ui.Button",
+    "parent": "flxRememberMeContainer",
+    "pf": "frmLogin",
+    "wType": "Button",
+    "zindex": 1
+}

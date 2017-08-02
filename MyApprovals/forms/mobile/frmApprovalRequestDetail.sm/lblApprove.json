@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_skin_": "s3e75d4804f949b8953f069e0f2ee150",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s685c3e3d34e46c895289663ded0a831",
+    "id": "lblApprove",
+    "ide_onClick": "AS_Button_8738beaccb464b128f262b027a3c2490",
+    "info": null,
+    "isvisible": true,
+    "kuid": "47eaff8fec3d4a0595210095641297f8",
+    "name": "kony.ui.Button",
+    "parent": "flxBottomBar",
+    "pf": "frmApprovalRequestDetail",
+    "texti18n": "i18n.ess.MyApprovals.frmApprovalRequestDetail.btnApprove",
+    "wType": "Button"
+}

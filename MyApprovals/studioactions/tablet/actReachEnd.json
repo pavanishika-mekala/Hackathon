@@ -1,0 +1,25 @@
+{
+    "AS_Segment_580460c98c564c199f8373756704ee46": {
+        "id": "AS_Segment_580460c98c564c199f8373756704ee46",
+        "type": "ACTION_SEQUENCE",
+        "name": "actReachEnd",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewFilterHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd06540c87fd4a56879ca28ae3bb94c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fc4eff5c33f04632b57c380307f909c5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.FilterHistory()).onReachingEndOfSegment();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

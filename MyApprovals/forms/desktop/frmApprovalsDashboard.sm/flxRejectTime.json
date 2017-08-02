@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "15px"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "17px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "19px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
+    "_width_": {
+        "type": "string",
+        "value": "47px"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblRejectTime"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxRejectTime",
+    "ide_onClick": "AS_FlexContainer_3015d91af90c458abfb4ab7804679f21",
+    "info": null,
+    "isvisible": true,
+    "kuid": "796f33cdb2764f82a1126e5a9519fa49",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTimeRequest",
+    "pf": "frmApprovalsDashboard",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

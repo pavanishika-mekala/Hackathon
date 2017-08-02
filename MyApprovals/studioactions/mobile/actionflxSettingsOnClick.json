@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_3d10497d90fe4ecc8a3a1329abe67ea0": {
+        "id": "AS_FlexContainer_3d10497d90fe4ecc8a3a1329abe67ea0",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionflxSettingsOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c69dce89016f49ebaaeee7c07e74625f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8d32ddd688cc4e80b4d1a78e3a6fd9e5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n  kony.apps.coe.ess.Hamburger.prototype.hideHamburger();\n  var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmSettings\");\n  formController.loadDataAndShowForm();\n}catch(e){\n  alert(e.message);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

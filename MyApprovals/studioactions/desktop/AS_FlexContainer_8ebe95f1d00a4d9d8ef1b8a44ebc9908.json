@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_8ebe95f1d00a4d9d8ef1b8a44ebc9908": {
+        "id": "AS_FlexContainer_8ebe95f1d00a4d9d8ef1b8a44ebc9908",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a4cda48deea24e958ec3c95bb8b6398e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// var searchText=frmPendingRequest.txtSrchByName.text;\n// frmPendingRequest.flxEmployeeSearch.setVisibility(true);\n// kony.apps.coe.ess.frmPendingUIDW.DynamicSegmentForEmployeeSearchCreation();\n(new kony.apps.coe.ess.frmPendingUIDW()).onclickEmployeesearch();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

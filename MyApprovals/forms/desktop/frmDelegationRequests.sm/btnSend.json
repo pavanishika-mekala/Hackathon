@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40px"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_skin_": "s93071aa8bfc46d492d49850820a587f",
+    "_text_": "Stop",
+    "_top_": {
+        "type": "string",
+        "value": "16px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "24%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sdc10d4553a74a419b7353f31dc6d0f2",
+    "id": "btnSend",
+    "ide_onClick": "AS_Button_a0d6825e628c44a0bcb4b7b20291bb67",
+    "info": null,
+    "isvisible": true,
+    "kuid": "153b835e5ab149d4b75fecc016e8f1b1",
+    "name": "kony.ui.Button",
+    "parent": "flxTypeAndSend",
+    "pf": "frmDelegationRequests",
+    "wType": "Button",
+    "zindex": 1
+}

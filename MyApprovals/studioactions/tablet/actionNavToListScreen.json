@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_5280c129d8624558a40f39ebe8922a58": {
+        "id": "AS_FlexContainer_5280c129d8624558a40f39ebe8922a58",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionNavToListScreen",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmWinTabDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "366bc654445b43abad6c9392ded61c94"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__65004973a9ca4ef1b951df45e9279492",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "tabListViewShow();\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

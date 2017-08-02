@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_5870b098ebb34946aaec072b5589f67e": {
+        "id": "AS_FlexContainer_5870b098ebb34946aaec072b5589f67e",
+        "type": "ACTION_SEQUENCE",
+        "name": "actFullDetailClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_7b506b89d24b4a9cbc3a4e175da2d1f2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myExpense.tabListViewUI()).flxFullDetailsOnClick();",
+            "callbackType": null
+        }]
+    }
+}

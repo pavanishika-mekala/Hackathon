@@ -1,0 +1,231 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgTime": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "timeappsuitewin.png"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 Days"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp ID - 797955 "
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgTime": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "timeappsuitewin.png"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 Days"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp ID - 797955 "
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "imgTime": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "timeappsuitewin.png"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "23 May - 29 May"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 Days"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp ID - 797955 "
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Emp Name"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {
+        "psp": {
+            "dockSectionHeaders": false
+        }
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "docksectionheaders": false,
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segRequestsListReceived",
+    "ide_onRowClick": "AS_Segment_8d30bcbe957e4c99b06551c2bf50823b",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "none",
+            "showProgressIndicator": true
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": false,
+    "kuid": "ffc186f6fe1243419f6387d4d9435ac5",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegAllEmpAndAdd",
+    "pf": "frmDelegationTab",
+    "retainselection": true,
+    "rowTemplateId": "c84cbc2cdac14b01b98a6c699634d503",
+    "rowcounter": 2,
+    "rowfocusskin": "s73267f4295148a9a5dc4f03aa29dd70",
+    "rowskin": "s3c46cd4bf2c4271890c5c4552d52fc5",
+    "rowtemplate": "flxDelegationReqTab",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showprogressindicator": true,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxDelegationReqTab": "flxDelegationReqTab",
+        "flxEmpImg": "flxEmpImg",
+        "flxImagesReq": "flxImagesReq",
+        "flxStatusIcon": "flxStatusIcon",
+        "imgEmp": "imgEmp",
+        "imgTime": "imgTime",
+        "lblDetail": "lblDetail",
+        "lblDetailType": "lblDetailType",
+        "lblEmpId": "lblEmpId",
+        "lblEmpName": "lblEmpName",
+        "lblSeparator": "lblSeparator",
+        "lblStatus": "lblStatus",
+        "lblSumittedDate": "lblSumittedDate"
+    },
+    "zindex": 1
+}

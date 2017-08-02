@@ -1,0 +1,380 @@
+{
+  "android": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "background_color": "7e7e7e",
+  "bg_type": "one",
+  "border_color": "ffffffff",
+  "desktopweb": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isCustomCSSEnabled": false,
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "ipad": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "iphone": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "kuid": "sf9e5f2515b844909c5d378ca2db69ae",
+  "spaan": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isCustomCSSEnabled": false,
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "spaandroidtablet": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isCustomCSSEnabled": false,
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "spabb": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isCustomCSSEnabled": false,
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "spaip": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isCustomCSSEnabled": false,
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "spaipad": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isCustomCSSEnabled": false,
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "spawindowstablet": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isCustomCSSEnabled": false,
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "spawinphone8": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isCustomCSSEnabled": false,
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "tabrcandroid": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "wType": "Form",
+  "windows8": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "winphone8": {
+    "background_color": {
+      "angle": 90,
+      "colors": [
+        "eaeaeaff",
+        "eaeaeaff",
+        "eaeaeaff"
+      ],
+      "cs": [
+        3,
+        3,
+        3
+      ],
+      "gradientType": "toRight",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  }
+}

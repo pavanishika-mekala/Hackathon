@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_b6b5ba4e5e1245958ae8573cc2419e28": {
+        "id": "AS_FlexContainer_b6b5ba4e5e1245958ae8573cc2419e28",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinNavToCateFromDash",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_3d3bf3dbfec54e72bdde84e638dfd518",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabListView.flxLeftReqType.isVisible=true;\nfrmTabListView.flxLeftReqPeople.isVisible=false;\nfrmTabListView.flxRight.width=\"51%\";\ntabListViewShow();\n\n\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_5d004ed7b8ff4b14be2aae039a96b920": {
+        "id": "AS_FlexContainer_5d004ed7b8ff4b14be2aae039a96b920",
+        "type": "ACTION_SEQUENCE",
+        "name": "actWinNavDelToCate",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_510b1f03af5a450a817b87c2bb6139fd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.Header.ItemOnClick(2);",
+            "callbackType": null
+        }]
+    }
+}

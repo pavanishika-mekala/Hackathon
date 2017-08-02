@@ -1,0 +1,25 @@
+{
+    "AS_Form_29d8e372346943a5b7b39ebd6c3a7920": {
+        "id": "AS_Form_29d8e372346943a5b7b39ebd6c3a7920",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmSearchAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4afef6d1bff45fa8183c0dfe78a691b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e80fe6016faf4edf908b629ad8e5ad09",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in frmSearch--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

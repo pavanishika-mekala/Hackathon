@@ -1,0 +1,18 @@
+{
+    "AS_Form_c4c08929ca4043c0a23d7145dc8f712b": {
+        "id": "AS_Form_c4c08929ca4043c0a23d7145dc8f712b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "486c20b1d92c44ba9cd4d5054648e273"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

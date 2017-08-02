@@ -1,0 +1,65 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "createBinary" : "createBinaryMapping",
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "getBinary" : "getBinaryMapping",
+    "partialupdate" : "partialupdateMapping",
+    "delete" : "deleteMapping",
+    "deleteBinary" : "deleteBinaryMapping",
+    "updateBinary" : "updateBinaryMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "media"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "media"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "classValue",
+    "targetField" : "classValue",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "extension",
+    "targetField" : "extension",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "name",
+    "targetField" : "name",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "description",
+    "targetField" : "description",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "type",
+    "targetField" : "type",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ondemand",
+    "targetField" : "ondemand",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "url",
+    "targetField" : "url",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "classField",
+    "targetField" : "classField",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "group",
+    "targetField" : "group",
+    "type" : "request_response"
+  } ]
+}

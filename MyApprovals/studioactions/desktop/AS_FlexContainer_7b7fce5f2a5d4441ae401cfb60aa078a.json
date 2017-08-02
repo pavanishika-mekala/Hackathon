@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_7b7fce5f2a5d4441ae401cfb60aa078a": {
+        "id": "AS_FlexContainer_7b7fce5f2a5d4441ae401cfb60aa078a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d0ea3dc9469f46e8a4821800f528f1bc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmPendingRequest.flxEmployeeSearch.setVisibility(false);\n\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "107.74%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Type App Key",
+    "_skin_": "s55ba5f10298484aacbf9233cad4cb18",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "android": {},
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s55ba5f10298484aacbf9233cad4cb18",
+    "id": "txtAppKey",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "252291337acb4905ae027a8e83f73d48",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "flxAppKey",
+    "pf": "frmStartUp",
+    "placeholderi18n": "i18n.ess.myApprovalsTab.loginQR.TypeAppKey",
+    "placeholderskin": "s55ba5f10298484aacbf9233cad4cb18",
+    "securetextentry": false,
+    "texti18n": "i18n.ess.myApprovalsTab.loginQR.TypeAppKey",
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

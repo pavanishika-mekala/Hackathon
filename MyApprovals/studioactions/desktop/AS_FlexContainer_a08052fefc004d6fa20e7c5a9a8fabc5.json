@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_a08052fefc004d6fa20e7c5a9a8fabc5": {
+        "id": "AS_FlexContainer_a08052fefc004d6fa20e7c5a9a8fabc5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDesk",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__414b7d7363ca489e851b7e56b9afe19e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmLoginDesk.imgRememberMe.src === \"checkactive_dw.png\")\n  {\n    frmLoginDesk.imgRememberMe.src = \"uncheck.png\";\n  }\nelse if(frmLoginDesk.imgRememberMe.src === \"uncheck.png\")\n  {\n    frmLoginDesk.imgRememberMe.src = \"checkactive_dw.png\";\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

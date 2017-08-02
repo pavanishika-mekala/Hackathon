@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_3c39d29abe9b40f3b14d503bbb5a7700": {
+        "id": "AS_FlexContainer_3c39d29abe9b40f3b14d503bbb5a7700",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_Clear2",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSelect",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6fd6c938ff6444ffba5779bccc68b55f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b5ab80ed563f431b8c5dc9cf8b2726cc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.Select.onDone2();\nif(countofticks2 ==0){\n  frmSearch.lblLeaveStatus.skin=\"sknLblMobCCCCCC100OFS36px\";\n}\nelse{\nfrmSearch.lblLeaveStatus.skin=\"sknLblMobFC333333Op100FS100\";\n}",
+            "callbackType": null
+        }]
+    }
+}

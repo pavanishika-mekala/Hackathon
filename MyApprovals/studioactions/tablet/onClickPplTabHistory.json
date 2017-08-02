@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_baf92afa32b6437da30ce06a17a3ac26": {
+        "id": "AS_FlexContainer_baf92afa32b6437da30ce06a17a3ac26",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickPplTabHistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "486c20b1d92c44ba9cd4d5054648e273"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8f839351113b47e3af0b23b256c27cb9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.ApprovalHistoryTab()).onClickPplsel(eventobject);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

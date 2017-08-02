@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s94a4300b66542ee91f58f5b1757adaf",
+    "_text_": "demopc7 demouser",
+    "_top_": {
+        "type": "string",
+        "value": "63%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblemp3name",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "8913c6ca81e3426fae2186d5fcc0d4e7",
+    "name": "kony.ui.Label",
+    "parent": "flxemp2",
+    "pf": "frmDelegationRequests",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_4d27f64e28234c6492469a728bb0a828": {
+        "id": "AS_FlexContainer_4d27f64e28234c6492469a728bb0a828",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavDelToPeople",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2022fbab9588483fa0d3e4496b028183"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__de852db90a3340109ca4b7b35aba600a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.Header.ItemOnClick(3);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

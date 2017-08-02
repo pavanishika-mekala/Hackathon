@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_69b43f0681c3480cabd8b948e2bcf25d": {
+        "id": "AS_FlexContainer_69b43f0681c3480cabd8b948e2bcf25d",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnOverView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6997fdf97c244bd298a8a6a75e236208",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myExpense.tabListViewUI()).flxOverViewOnClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

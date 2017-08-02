@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_b30fbf2a747f4a658dca76bbf60062c4": {
+        "id": "AS_FlexContainer_b30fbf2a747f4a658dca76bbf60062c4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickpplCancelHTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "486c20b1d92c44ba9cd4d5054648e273"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__79f81083eb194ebdb470243fcb8b9712",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var id=eventobject.id;id=id.replace(\"fc\",\"\");\nfrmTabApprovalHistory[\"flexppl\"+id].setVisibility(false);\ndelete kony.apps.coe.ess.ApprovalHistoryTab.selectedPpls[id];",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a65fc7351c824da69b95bd84d7dcfddd": {
+        "id": "AS_FlexContainer_a65fc7351c824da69b95bd84d7dcfddd",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_flxOptionsLogout_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0a46d42f11c448b69c2335cfa122bb12",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.sdk.mvvm.LogoutAction();\nfrmApprovalHome.flxFooterOptions.isVisible = false;\nfrmApprovalHome.imgOption1.src = \"circleinactive.png\";\nfrmApprovalHome.imgOption2.src = \"circleinactive.png\";\nfrmApprovalHome.imgOption3.src = \"circleinactive.png\";\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

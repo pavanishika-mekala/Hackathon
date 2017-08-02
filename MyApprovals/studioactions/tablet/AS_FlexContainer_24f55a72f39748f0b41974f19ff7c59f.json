@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_24f55a72f39748f0b41974f19ff7c59f": {
+        "id": "AS_FlexContainer_24f55a72f39748f0b41974f19ff7c59f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmWinTabDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "366bc654445b43abad6c9392ded61c94"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8435d313a1f746428fbe360fd6700b10",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabReqTypeView.show();\nfrmTabReqTypeView.flxLeftReqppl.isVisible = true;\nfrmTabReqTypeView.flxLeftReqType.isVisible = false;\nfrmTabReqTypeView.flxCategory.skin = \"sknWinFlx1091C1\"; //sknWinFlx1091C1\nfrmTabReqTypeView.flxPeople.skin = \"sknWinFlx08739AHighlight\"; //sknWinFlx08739AHighlight\n",
+            "callbackType": null
+        }]
+    }
+}

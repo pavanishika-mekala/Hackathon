@@ -1,0 +1,31 @@
+{
+    "AS_Segment_19e43486f0a84ed78fdcabfc4925e0f1": {
+        "id": "AS_Segment_19e43486f0a84ed78fdcabfc4925e0f1",
+        "type": "ACTION_SEQUENCE",
+        "name": "settingDataTOsegTabListView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c06edba255574114b4c1a13b96065eec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabListView.lblNoComments.setVisibility(false);\nfrmTabListView.flxDecision.setVisibility(true);\nfrmTabListView.txtComments.text = \"\";\nfrmTabListView.flxComments.height = \"50%\";\nSetDataToUI();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

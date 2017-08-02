@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_1a521c7bd434499d82a62e1f5219f49e": {
+        "id": "AS_FlexContainer_1a521c7bd434499d82a62e1f5219f49e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmWinTabDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "366bc654445b43abad6c9392ded61c94"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

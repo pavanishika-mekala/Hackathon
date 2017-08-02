@@ -1,0 +1,28 @@
+{
+    "AS_Button_b2b7d98da1584ffb98d8f73be9f4ce20": {
+        "id": "AS_Button_b2b7d98da1584ffb98d8f73be9f4ce20",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_purchase_order_later",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegPurchaseOrder",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b73fe8d76a0f4a36920c238c699ad3e8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__087805f57e3a4718a3ac5d7d50522236",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.markAsLater(frmApprovalHome.segApprovalsList.selectedRowItems[0].approval_id,context.rowIndex);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

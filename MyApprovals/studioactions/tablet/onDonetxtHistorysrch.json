@@ -1,0 +1,28 @@
+{
+    "AS_TextField_ec5b31094f7346908f240ab8e3cf0105": {
+        "id": "AS_TextField_ec5b31094f7346908f240ab8e3cf0105",
+        "type": "ACTION_SEQUENCE",
+        "name": "onDonetxtHistorysrch",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "486c20b1d92c44ba9cd4d5054648e273"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0f396d1a779a4e59b374085f70aaef4c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var text=frmTabApprovalHistory.txtsrchbox.text;\n(new kony.apps.coe.ess.ApprovalHistoryTab()).DynamicSegmentSetDatabyEmployeeSearch(text,kony.apps.coe.ess.globalVariables.FrmTabApprovalsPeopleSearch);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

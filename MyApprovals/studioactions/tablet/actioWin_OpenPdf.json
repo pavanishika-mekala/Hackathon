@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_b70941292cf94043b6f74a08a98c7f11": {
+        "id": "AS_FlexContainer_b70941292cf94043b6f74a08a98c7f11",
+        "type": "ACTION_SEQUENCE",
+        "name": "actioWin_OpenPdf",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "d83449f601944c6190fe159242bfbd0b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__43dab692ba9c4f399b4fd3f8a915c148",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabPdfReader.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

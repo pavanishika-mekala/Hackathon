@@ -1,0 +1,11 @@
+{
+  "background_image": "time_oval.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sedb34f1a2c54e05baf3db61df36035d",
+  "wType": "FlexContainer"
+}

@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_54889e3e896c41a497486183f99ede58": {
+        "id": "AS_FlexContainer_54889e3e896c41a497486183f99ede58",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c8a0a1b5d6c44302b2486d417982c4af",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.FilterHistory()).updateApproval(frmTabReqTypeView.segMentListView,\"1\");",
+            "callbackType": null
+        }]
+    }
+}

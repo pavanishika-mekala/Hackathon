@@ -1,0 +1,24 @@
+{
+    "AS_Button_bda93a4fa97149d9a57992f2df554af4": {
+        "id": "AS_Button_bda93a4fa97149d9a57992f2df554af4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterOffline",
+            "type": "templates",
+            "platform": "",
+            "KUID": "46040c6e9bee493e8692e5365a1cc447"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e14424c45b824b108cad4baa03f97359",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupOfflineAlert.dismiss();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

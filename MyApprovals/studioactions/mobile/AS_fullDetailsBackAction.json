@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_4f6e57f3eaf04f43a4941ef692c37c5c": {
+        "id": "AS_FlexContainer_4f6e57f3eaf04f43a4941ef692c37c5c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_fullDetailsBackAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmFullDetails",
+            "type": "forms",
+            "platform": "",
+            "KUID": "df462a64fd7e4df6973ea92db5da2ff0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b0027617b15b4a769dd585407805695f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmExpenseReportDetail.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

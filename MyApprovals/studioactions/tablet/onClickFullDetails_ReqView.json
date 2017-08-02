@@ -1,0 +1,25 @@
+{
+    "AS_Button_59e1a492a8c74ca3b6eda3083b07a061": {
+        "id": "AS_Button_59e1a492a8c74ca3b6eda3083b07a061",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickFullDetails_ReqView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabReqTypeView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "84bf52cbf63c46819488f5c7e7a066fb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5808a52d3f5447a3bff409a17809e110",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.RequestType()).onClickFullDetails(frmTabReqTypeView);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

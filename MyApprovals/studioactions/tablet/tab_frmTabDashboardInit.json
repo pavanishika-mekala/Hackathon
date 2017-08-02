@@ -1,0 +1,25 @@
+{
+    "AS_Form_96d47192d0d44f43a0d05dfd731e5cf6": {
+        "id": "AS_Form_96d47192d0d44f43a0d05dfd731e5cf6",
+        "type": "ACTION_SEQUENCE",
+        "name": "tab_frmTabDashboardInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9bb7aaf97d0940bd8f9e5bb58d9b89e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__82b46bea34404fe8a8b17583add7e85b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.modules.loadFunctionalModule(\"librarymodules\");\n//kony.modules.loadFunctionalModule(\"appjsmodules\"); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

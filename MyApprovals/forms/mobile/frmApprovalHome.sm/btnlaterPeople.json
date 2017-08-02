@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "32dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "13%"
+    },
+    "_skin_": "s620932425c949c98f170e8c07be1b3d",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "32dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sf3a94a11a634cb7a503dc85fc9cc44f"
+    },
+    "displaytext": true,
+    "id": "btnlaterPeople",
+    "ide_onClick": "AS_Button_c9df5be044bb4fc3b06cfecc2da9777f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "911e4ca82c0e482794aa225d02919591",
+    "name": "kony.ui.Button",
+    "parent": "flxLaterFilter",
+    "pf": "frmApprovalHome",
+    "wType": "Button",
+    "zindex": 5
+}

@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_1bbbcf19891440778e158912e475f079": {
+        "id": "AS_FlexContainer_1bbbcf19891440778e158912e475f079",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfDashBoard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dca9a41db284487bade27e3e0bfbb715",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalsDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

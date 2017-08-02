@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_60170e30d76e4328b6f6cb4ad994922c": {
+        "id": "AS_FlexContainer_60170e30d76e4328b6f6cb4ad994922c",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionToSetDataToSentByMeList",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ec04e168fd8d4145bd50bbb4e0e4ca99",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myApprovals.frmDeligationDW()).naviagateToSentByMe();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

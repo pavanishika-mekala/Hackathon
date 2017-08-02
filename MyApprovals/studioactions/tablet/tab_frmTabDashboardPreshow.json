@@ -1,0 +1,35 @@
+{
+    "AS_Form_ec1bd521edcd47e4be3803b8eebbf088": {
+        "id": "AS_Form_ec1bd521edcd47e4be3803b8eebbf088",
+        "type": "ACTION_SEQUENCE",
+        "name": "tab_frmTabDashboardPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9bb7aaf97d0940bd8f9e5bb58d9b89e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___d761f73aec204a61aae71933e6babca1",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "swipeApprovals",
+            "display": "swipeApprovals",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": true,
+            "source": "module"
+        }, {
+            "id": "ADD_SNIPPET__b35cf0792a324927a7473823e1629fd5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.ess.Approvals.tabApprovalsDashboard();\nobj.getApprovalsDetailsPreshow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "background_image": "pr_oval.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "s0a50501c0fb499eb6891c08a02b75b0",
+  "wType": "FlexContainer"
+}

@@ -1,0 +1,45 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "partialupdate" : "partialupdateMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMP_PERSONAL_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_EMP_ASSIGNMENT"
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodifiedts"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMP_PERSONAL_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[{\"children\":[{\"children\":[{\"children\":[],\"name\":\"media\",\"selected\":true}],\"name\":\"HCM_PERSDATA_ATTACHMENTS\",\"selected\":true}],\"name\":\"HCM_PERSONAL_DATA\",\"selected\":true},{\"children\":[],\"name\":\"HCM_EMP_MOREORG_DATA\",\"selected\":true},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"name\":\"media\",\"selected\":true}],\"name\":\"HCM_SUB_ATTACHMENTS\",\"selected\":true}],\"name\":\"HCM_SUB_PERS_DATA\",\"selected\":true}],\"name\":\"HCM_PROFILE_PERS_SUB\",\"selected\":true},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"name\":\"media\",\"selected\":true}],\"name\":\"HCM_MGRDATA_ATTACHMENTS\",\"selected\":true},{\"children\":[{\"children\":[{\"children\":[{\"children\":[],\"name\":\"media\",\"selected\":true}],\"name\":\"HCM_TEAM_ATTACHMENTS\",\"selected\":true}],\"name\":\"HCM_TEAM_PERS_DATA\",\"selected\":true}],\"name\":\"HCM_PROFILE_TEAM\",\"selected\":true},{\"children\":[],\"name\":\"HCM_MGR_COMMUNICATION\",\"selected\":true}],\"name\":\"HCM_MGR_PERSONAL_DATA\",\"selected\":true}],\"name\":\"HCM_PROFILE_MGR_SUBORD\",\"selected\":true},{\"children\":[],\"name\":\"HCM_EMP_MEDICAL_DATA\",\"selected\":true},{\"children\":[],\"name\":\"HCM_COMMUNICATION_DETAILS\",\"selected\":true}]",
+      "businessObjectName" : "HCM_EMP_ASSIGNMENT"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeleteflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "Id",
+    "targetField" : "EMPNUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

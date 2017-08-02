@@ -1,0 +1,30 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_MASTER_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_STATUS"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_MASTER_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_STATUS"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

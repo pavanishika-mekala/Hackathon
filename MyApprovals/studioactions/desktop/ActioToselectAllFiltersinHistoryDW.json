@@ -1,0 +1,31 @@
+{
+    "AS_Label_2116b564660247ff8d3338d1c46af0ac": {
+        "id": "AS_Label_2116b564660247ff8d3338d1c46af0ac",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActioToselectAllFiltersinHistoryDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27c027d186034cfb876ffff441ae3ab1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__40496ebcb99e4566a1b5df177a97443a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//(new kony.apps.coe.ess.frmFilterHistoryUIDW()).onClickSelectAll();\nkony.apps.coe.ess.ApprovalHistoryDW.selectAll();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

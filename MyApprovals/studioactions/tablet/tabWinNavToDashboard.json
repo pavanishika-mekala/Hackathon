@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_681c26a44019403d9676119fb4301fe7": {
+        "id": "AS_FlexContainer_681c26a44019403d9676119fb4301fe7",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinNavToDashboard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "59c53bdc895042d288d691790af462f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___8ac5ac0f106e466f81f77a99287e280e",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmWinTabDashboard",
+            "formKUID": "366bc654445b43abad6c9392ded61c94",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

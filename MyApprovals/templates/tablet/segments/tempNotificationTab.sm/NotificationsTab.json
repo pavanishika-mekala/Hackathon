@@ -1,0 +1,49 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxNotificationImageTab",
+        "lblNotificationNameTab",
+        "lblNotificationPersonName",
+        "lblNotificationDescriptionTab",
+        "lblNotificationTime"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "NotificationsTab",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "f51bbda40d2c42e6bb31a9b274610ace",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "tempNotificationTab",
+    "pf": "tempNotificationTab",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

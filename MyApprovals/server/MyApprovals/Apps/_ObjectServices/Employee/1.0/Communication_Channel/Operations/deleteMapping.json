@@ -1,0 +1,57 @@
+{
+  "operationConfig" : {
+    "name" : "deleteCommunicationChannel19696",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "applyCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_COMMUNICATION_DETAILS\",\"fMap\":{\"EMPNUMBER\":\"HCM_DISTRIBUTION_MASTER.EMPNUMBER\"},\"sQuery\":\"HCM_DISTRIBUTION_MASTER.DIST_KEY,HCM_EMP_ASSIGNMENT.USER_ID\",\"config\":{}}}",
+    "opcode" : "delete",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMP_PERSONAL_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_COMMUNICATION_DETAILS"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Communication_Channel",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

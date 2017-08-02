@@ -1,0 +1,26 @@
+{
+  "background_color": "e4e4e4ff",
+  "bg_type": "one",
+  "border_color": "e4e4e400",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "desktopweb": {
+    "bottom_left_border_color": "e4e4e400",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "e4e4e400",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "isForked": true,
+    "top_left_border_color": "e4e4e400",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "e4e4e400",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
+  },
+  "isDefaultSkin": false,
+  "kuid": "s0071dd5b7b043d19a6856554666a14c",
+  "wType": "Segment"
+}

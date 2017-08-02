@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_2916e2397d4e447cbd705b1af2f6d360": {
+        "id": "AS_FlexContainer_2916e2397d4e447cbd705b1af2f6d360",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmLoginflxNavigateToLoginOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDesk",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5859372c499245089deb7a770d3cced1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLoginDesk.flxReconfigure.setVisibility(false);\nfrmLoginDesk.flxLoginMain.setVisibility(true);\nfrmLoginDesk.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

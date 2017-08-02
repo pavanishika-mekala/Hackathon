@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "70px"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa58fe72ee784994b8c6b19d936dd48a",
+    "_text_": "Emp ID - 797955 ",
+    "_top_": {
+        "type": "string",
+        "value": "50px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblEmpId",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "71d738dcc0d34f86aa088220af2a365f",
+    "name": "kony.ui.Label",
+    "parent": "flxDelegationReq",
+    "pf": "segDelegationReq",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,30 @@
+{
+    "AS_Label_1a1995962d2043ec8be31abb37b06430": {
+        "id": "AS_Label_1a1995962d2043ec8be31abb37b06430",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmMultiSelection",
+            "type": "forms",
+            "platform": "",
+            "KUID": "3e2653b4fe284d008c2ff381c9ee7ee6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c8a6a438f2724a08a9d4bff77e9cfc2c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmRequestedList.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

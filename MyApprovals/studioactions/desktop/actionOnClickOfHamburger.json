@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_0aacfb6efb164941a4102a6390b15590": {
+        "id": "AS_FlexContainer_0aacfb6efb164941a4102a6390b15590",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfHamburger",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApprovalsDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "26bb64648ede4e03a8cf66a5883f7c6c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b8091d4a86974e2286c2cd333f590068",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmHamUIDW()).onClickOfMenu();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

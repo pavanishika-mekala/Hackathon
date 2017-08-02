@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_0e9a8556f70a4d52819c241e45dc765c": {
+        "id": "AS_FlexContainer_0e9a8556f70a4d52819c241e45dc765c",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabNavToHistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_6ef2918d75bf4f9e81c65b933d57dd40",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabListView.show();",
+            "callbackType": null
+        }]
+    }
+}

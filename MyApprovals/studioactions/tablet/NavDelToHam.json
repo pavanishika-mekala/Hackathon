@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_bed39ca82cd8477199108d29bf490416": {
+        "id": "AS_FlexContainer_bed39ca82cd8477199108d29bf490416",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavDelToHam",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_2e93890208d34a29b63979fc7bc2eb01",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.ess.Hamburger(kony.application.getCurrentForm().flxHamburger);",
+            "callbackType": null
+        }]
+    }
+}

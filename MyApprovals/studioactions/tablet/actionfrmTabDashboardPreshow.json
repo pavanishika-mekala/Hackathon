@@ -1,0 +1,25 @@
+{
+    "AS_Form_7e6f348108fb4f0dbba54a7be603e77d": {
+        "id": "AS_Form_7e6f348108fb4f0dbba54a7be603e77d",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionfrmTabDashboardPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9bb7aaf97d0940bd8f9e5bb58d9b89e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__841d8b0259854dabaec3ac0daa76650f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.FilterHistory()).loadEmployees(); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

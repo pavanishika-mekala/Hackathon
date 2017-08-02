@@ -1,0 +1,25 @@
+{
+    "AS_Form_b1822609b53048b9ba53ec002408c0f1": {
+        "id": "AS_Form_b1822609b53048b9ba53ec002408c0f1",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionFrmLoginPostShowTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b43279e60a264f0696dad83ff9674443"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1e7c8692d3f2452ca3c1dc971e91f4b8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.QRCode()).onPostShowOfLogin();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

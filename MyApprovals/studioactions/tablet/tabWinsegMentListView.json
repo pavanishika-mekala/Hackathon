@@ -1,0 +1,24 @@
+{
+    "AS_Segment_4c2d34a1f4224c1f8532ba5a9046dea9": {
+        "id": "AS_Segment_4c2d34a1f4224c1f8532ba5a9046dea9",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinsegMentListView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_7b89654fe41d4bdcadb2b75c8c8c19a0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabListView.lblNoComments.setVisibility(false);\nfrmTabListView.flxDecision.setVisibility(true);\nfrmTabListView.txtComments.text = \"\";\n//#ifndef windows8\nfrmTabListView.flxComments.height = \"50%\";\n//#endif\nSetDataToUI();",
+            "callbackType": null
+        }]
+    }
+}

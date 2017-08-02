@@ -1,0 +1,23 @@
+{
+    "AS_Form_faf9913969e74487a9c10cd17d08cb81": {
+        "id": "AS_Form_faf9913969e74487a9c10cd17d08cb81",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabPdfReader",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "2b9999497bcb4506927d2615001b957a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_eb430f8fff5741f898bb86f4b7ba7ab5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.ess.myApprovals.pdfOperationTab()).postShowfrmTabPdfReader();",
+            "callbackType": null
+        }]
+    }
+}

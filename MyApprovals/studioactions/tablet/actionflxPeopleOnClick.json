@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_6844527b866c488b8ed5c1134ad9b0bd": {
+        "id": "AS_FlexContainer_6844527b866c488b8ed5c1134ad9b0bd",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionflxPeopleOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_97812d76535f4a12ba5203a02a3b9f61",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.Header.ItemOnClick(3);\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "AS_Segment_9ca759ee9e7b4b9182ee63586a4c5ea2": {
+        "id": "AS_Segment_9ca759ee9e7b4b9182ee63586a4c5ea2",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinViewHistorySegOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmViewFilterHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "5eb2ceb8367a45a89cd53ef01ef13082"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_8f9c4aba935b443d9776656764076257",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmViewFilterHistory.lblNoComments.setVisibility(false);\nfrmViewFilterHistory.flxDecision.setVisibility(true);\nfrmViewFilterHistory.txtComments.text = \"\";\nfrmViewFilterHistory.flxComments.height = \"50%\";\nSetDataToUI();",
+            "callbackType": null
+        }]
+    }
+}

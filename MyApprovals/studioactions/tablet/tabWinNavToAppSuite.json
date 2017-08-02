@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_d8fd7c5858d94201b4813d6453354554": {
+        "id": "AS_FlexContainer_d8fd7c5858d94201b4813d6453354554",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinNavToAppSuite",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmWinTabDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "366bc654445b43abad6c9392ded61c94"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f2fc4c70b0c2404184860c217ceaa4c7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.ess.Hamburger(kony.application.getCurrentForm().flxHamburger);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

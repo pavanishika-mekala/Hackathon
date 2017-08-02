@@ -1,0 +1,25 @@
+{
+    "AS_Form_5155797e7bf941b3b5bc0a2ebc3afc39": {
+        "id": "AS_Form_5155797e7bf941b3b5bc0a2ebc3afc39",
+        "type": "ACTION_SEQUENCE",
+        "name": "preshowExpenseReportDetail",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "95bd849701724d1abee374f8d1932154"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d7c5c196fa714b9690a3e2a9ec174d58",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "trialobj();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

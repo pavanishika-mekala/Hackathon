@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_3ef6d20994b1461dadfdc16aac041f7f": {
+        "id": "AS_FlexContainer_3ef6d20994b1461dadfdc16aac041f7f",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinNavToDel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_84f16afc6b9c4cdb87f519c060f3d40b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showDelegationTabForm();",
+            "callbackType": null
+        }]
+    }
+}

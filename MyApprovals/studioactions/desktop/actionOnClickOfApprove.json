@@ -1,0 +1,25 @@
+{
+    "AS_Button_065bb6f5fa4d4eba985a37791242bf23": {
+        "id": "AS_Button_065bb6f5fa4d4eba985a37791242bf23",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfApprove",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4df4e2c4542142d9b5a5569cb7c1f188",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmPendingRequest.flxBlank.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

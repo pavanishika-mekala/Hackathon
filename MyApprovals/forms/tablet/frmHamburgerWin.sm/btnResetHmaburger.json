@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_skin_": "s407fe2df63648058bdb492cc206639b",
+    "_text_": "Reset",
+    "_top_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sf3a94a11a634cb7a503dc85fc9cc44f",
+    "id": "btnResetHmaburger",
+    "ide_onClick": "AS_Button_8747bc8fc3f5432e9e11532ee2f6ad26",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f4d9bf33ab5e4599a283a1f385d738ed",
+    "name": "kony.ui.Button",
+    "parent": "flxApplicationSettings",
+    "pf": "frmHamburgerWin",
+    "texti18n": "i18n.ess.common.settings.reset",
+    "wType": "Button",
+    "zindex": 5
+}

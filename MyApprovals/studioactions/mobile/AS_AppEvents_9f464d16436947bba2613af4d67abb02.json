@@ -1,0 +1,18 @@
+{
+    "AS_AppEvents_9f464d16436947bba2613af4d67abb02": {
+        "id": "AS_AppEvents_9f464d16436947bba2613af4d67abb02",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7a550f3718bb4513aa58321b1aa3634c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "return kony.apps.ess.deepLinkingSSO.appServicesAction(eventobject);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

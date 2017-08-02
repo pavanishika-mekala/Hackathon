@@ -1,0 +1,12 @@
+CREATE TABLE `ConfigurationBundle`(
+	`configurationBundle_id` VARCHAR(10),
+	`CreatedBy` VARCHAR(32),
+	`CreatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+	`id` BIGINT NOT NULL AUTO_INCREMENT,
+	`LastUpdatedBy` VARCHAR(32),
+	`LastUpdatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+	`SoftDeleteFlag` BOOLEAN,
+	PRIMARY KEY(`id`)
+);
+ALTER TABLE `ConfigurationBundle`
+	ADD CONSTRAINT `9644ca54b3f1f9aa702d151bbcf72a` UNIQUE KEY(`id`);

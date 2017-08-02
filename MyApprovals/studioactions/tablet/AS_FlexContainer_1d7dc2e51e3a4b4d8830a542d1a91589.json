@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_1d7dc2e51e3a4b4d8830a542d1a91589": {
+        "id": "AS_FlexContainer_1d7dc2e51e3a4b4d8830a542d1a91589",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_34356ebc5043429bbbd1dcb7a8dfce6e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var frmobj=kony.application.getCurrentForm();\nfrmobj.flxStatusTraffic.setVisibility(false);\nfrmobj.lblStatusTraffic.setVisibility(false);\nfrmobj.imgPdf.setVisibility(false);\nfrmobj.flx2.setVisibility(false);\nfrmobj.flx3.setVisibility(false);\nfrmobj.flx4.setVisibility(false);\nfrmobj.flxDetails.setVisibility(true);\nfrmobj.flxAttachment.setVisibility(false);\nfrmobj.flxAudit.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

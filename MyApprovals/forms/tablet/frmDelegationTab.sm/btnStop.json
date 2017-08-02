@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6618e1102d641ae864b6cc13dafd7c6",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s69512350d1b4eea8f31e263afee0c95",
+    "id": "btnStop",
+    "ide_onClick": "AS_Button_ff2a66eb553241478001578fa021dd5a",
+    "info": null,
+    "isvisible": true,
+    "kuid": "27315ad209614d7782f14895c0799587",
+    "name": "kony.ui.Button",
+    "parent": "flxBottomButtons",
+    "pf": "frmDelegationTab",
+    "texti18n": "i18n.ess.myApprovals.stop",
+    "wType": "Button",
+    "zindex": 1
+}

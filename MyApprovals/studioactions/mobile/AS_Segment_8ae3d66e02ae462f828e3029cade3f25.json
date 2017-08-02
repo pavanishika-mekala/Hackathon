@@ -1,0 +1,23 @@
+{
+    "AS_Segment_8ae3d66e02ae462f828e3029cade3f25": {
+        "id": "AS_Segment_8ae3d66e02ae462f828e3029cade3f25",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_5477f9b50e7a48d48214cacbdca72566",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(JSON.stringify(frmApprovalHome.segLaterApprovals.selectedRowItems));",
+            "callbackType": null
+        }]
+    }
+}

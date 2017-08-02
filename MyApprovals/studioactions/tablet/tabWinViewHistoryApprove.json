@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_e9c60c4d645e4d809d42f223a7c9868c": {
+        "id": "AS_FlexContainer_e9c60c4d645e4d809d42f223a7c9868c",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinViewHistoryApprove",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_890822b1f3154fd98f78e8e3a2703f69",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.Approvals.getApprovalsRequestList()).onClickApprove();",
+            "callbackType": null
+        }]
+    }
+}

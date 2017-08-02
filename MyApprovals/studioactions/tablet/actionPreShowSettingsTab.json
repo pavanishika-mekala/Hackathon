@@ -1,0 +1,25 @@
+{
+    "AS_Form_b1602a3e8b3342eba4183275611a3578": {
+        "id": "AS_Form_b1602a3e8b3342eba4183275611a3578",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionPreShowSettingsTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9d4e8de360614513a1f6bfa287c67a4b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__78ad212ef877404db1d55fbd3c54c6ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "Settings.prototype.preShowSettingsTab();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

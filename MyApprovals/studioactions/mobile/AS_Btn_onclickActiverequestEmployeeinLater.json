@@ -1,0 +1,18 @@
+{
+    "AS_Button_c9df5be044bb4fc3b06cfecc2da9777f": {
+        "id": "AS_Button_c9df5be044bb4fc3b06cfecc2da9777f",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Btn_onclickActiverequestEmployeeinLater",
+        "params": [{
+            "name": "eventobject",
+            "datatype": "collection"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_0b0aa854bffa417dbdc65c3330be4977",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DynamicSegmentSetDatabyEmployeeHasApprovalRequests(kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch);\nkony.apps.coe.ess.Approvals.ApprovalsHome.showEmployeeFilter();",
+            "callbackType": null
+        }]
+    }
+}

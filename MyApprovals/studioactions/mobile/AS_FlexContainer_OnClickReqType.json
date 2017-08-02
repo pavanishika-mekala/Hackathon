@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_5bbfaeeb17d24565b29c63e18902828d": {
+        "id": "AS_FlexContainer_5bbfaeeb17d24565b29c63e18902828d",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_OnClickReqType",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_980cb6c5ba7f46679549c08b9f4b162b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\n   filterobj.onClickRequestType();\n",
+            "callbackType": null
+        }]
+    }
+}

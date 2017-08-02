@@ -1,0 +1,28 @@
+{
+    "AS_Button_35f1b675809b4e15bfb62ba477829dbf": {
+        "id": "AS_Button_35f1b675809b4e15bfb62ba477829dbf",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_work_order_later",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegWorkOrder",
+            "type": "templates",
+            "platform": "",
+            "KUID": "0f1dc5c2134e4067b812d352e1148301"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c4b67ec83aeb4cd1a4135211be8adee5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.markAsLater(frmApprovalHome.segApprovalsList.selectedRowItems[0].approval_id,context.rowIndex);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

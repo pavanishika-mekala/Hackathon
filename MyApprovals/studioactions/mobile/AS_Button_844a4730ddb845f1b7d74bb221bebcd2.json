@@ -1,0 +1,24 @@
+{
+    "AS_Button_844a4730ddb845f1b7d74bb221bebcd2": {
+        "id": "AS_Button_844a4730ddb845f1b7d74bb221bebcd2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee9bbd505eeb4d888bfbe04e4b1321fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d41dea7019434e109646df7669a1a98e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {\nkony.apps.coe.ess.frmLogin.manualSyncOnClick();\n}\n        ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_7de6d99c53ff4952a9bcd99559f2a108": {
+        "id": "AS_FlexContainer_7de6d99c53ff4952a9bcd99559f2a108",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickRejectTypetab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabReqTypeView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "84bf52cbf63c46819488f5c7e7a066fb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__86c7c278ed3a4bafb4018490459f2983",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.FilterHistory()).updateApproval(frmTabReqTypeView.segMentListView,\"1\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

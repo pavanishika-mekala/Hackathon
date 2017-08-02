@@ -1,0 +1,17 @@
+{
+    "AS_Button_5a030f71b6b84eafaeec0e8502d863f9": {
+        "id": "AS_Button_5a030f71b6b84eafaeec0e8502d863f9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_39b4c9f886d34bb48ddcb95c7b69c426",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.selectType(this);\nfrmApprovalHome.flxScrlCategory.scrollToWidget(frmApprovalHome.btnFilterAll);",
+            "callbackType": null
+        }]
+    }
+}

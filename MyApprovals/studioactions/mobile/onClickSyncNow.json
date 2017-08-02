@@ -1,0 +1,25 @@
+{
+    "AS_Button_58b18f8a01c9466da64130c9960783f4": {
+        "id": "AS_Button_58b18f8a01c9466da64130c9960783f4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickSyncNow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterOffline",
+            "type": "templates",
+            "platform": "",
+            "KUID": "46040c6e9bee493e8692e5365a1cc447"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2e91e7ea7a5a4c8e8337d50bf2cab2d8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {\n  popupOfflineAlert.dismiss();\n  //kony.application.getCurrentForm().flxOfflineAlert.setVisibility(false);\t\n  kony.apps.coe.ess.frmLogin.manualSyncOnClick();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

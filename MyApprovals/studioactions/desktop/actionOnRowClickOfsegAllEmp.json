@@ -1,0 +1,31 @@
+{
+    "AS_Segment_b47fef185355485c9098a919f27cf276": {
+        "id": "AS_Segment_b47fef185355485c9098a919f27cf276",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnRowClickOfsegAllEmp",
+        "params": [{
+            "name": "eventobject",
+            "datatype": "collection"
+        }, {
+            "name": "sectionNumber",
+            "datatype": "number"
+        }, {
+            "name": "rowNumber",
+            "datatype": "number"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cb14770aaf904bb1ad3d4b5e53aa4ca2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//(new kony.apps.coe.ess.frmPendingUIDW()).onRowClickOfSegEmp(frmPendingRequest.segAllEmp);\n(new kony.apps.coe.ess.frmPendingUIDW()).onRowClickOfSegEmp();\n//kony.print(\"---- eventObject: \"+JSON.stringify(data));",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

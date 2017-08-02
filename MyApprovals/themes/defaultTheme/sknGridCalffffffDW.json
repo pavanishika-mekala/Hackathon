@@ -1,0 +1,17 @@
+{
+  "background_color": "ffffffff",
+  "bg_type": "one",
+  "border_color": "e6e6e6ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "font_color": "2ebaeeff",
+  "font_name": "Helvetica",
+  "font_size": 156,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "gridLineColor": "ffffffff",
+  "isDefaultSkin": false,
+  "kuid": "sd78d00c6ef44c568403cdbfc5564013",
+  "wType": "Grid Calendar"
+}

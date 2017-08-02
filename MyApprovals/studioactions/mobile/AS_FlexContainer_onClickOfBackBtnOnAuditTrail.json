@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_412fa21f996845f8b7149f4f73d3a1ed": {
+        "id": "AS_FlexContainer_412fa21f996845f8b7149f4f73d3a1ed",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_onClickOfBackBtnOnAuditTrail",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "edeabb481e9d4d4b9d7de7772d9cd1f8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__97b35959ef1a4fa4b20b26c5f370da54",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

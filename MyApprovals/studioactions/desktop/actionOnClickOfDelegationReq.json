@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_e4c0b3ae67fc42518d649139c82ceb31": {
+        "id": "AS_FlexContainer_e4c0b3ae67fc42518d649139c82ceb31",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfDelegationReq",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fe620830053f4aa8a73f26b717589308",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showDeligationRequests();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

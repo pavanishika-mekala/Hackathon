@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3e75d4804f949b8953f069e0f2ee150",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s685c3e3d34e46c895289663ded0a831",
+    "id": "btnEdit",
+    "info": null,
+    "isvisible": false,
+    "kuid": "0e9517487489413c86ea6eccfe73c176",
+    "name": "kony.ui.Button",
+    "parent": "flxBottomButtons",
+    "pf": "frmDelegationTab",
+    "texti18n": "i18n.ess.myApprovals.edit",
+    "wType": "Button"
+}

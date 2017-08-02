@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_cc3b2072b1bb4dfba9cc5ef909cd8f97": {
+        "id": "AS_FlexContainer_cc3b2072b1bb4dfba9cc5ef909cd8f97",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinEmpOk",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "e7c44e8f489240c1ab2a02b95d7d04d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d0e60ca643b54403a87b124d3095b99b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DelegationTab.UI.getInstance().onRowClickOfList(\"\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_ebc2b8d7ce2e4cbf9e3b28ba3b959f67": {
+        "id": "AS_FlexContainer_ebc2b8d7ce2e4cbf9e3b28ba3b959f67",
+        "type": "ACTION_SEQUENCE",
+        "name": "actflxImg",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_28615e7d6eac457ea0d339b4567c28d4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmDelegationTab.flxEmployeeData.setVisibility(true);",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Button_7fa1004a79514dbebcf95767844f1920": {
+        "id": "AS_Button_7fa1004a79514dbebcf95767844f1920",
+        "type": "ACTION_SEQUENCE",
+        "name": "segmentbtnRejectClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpSegRequests",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1f6d3713a0a44fae8be4ed410c58f354"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b8e654f0b4274b428281c553cc85226e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var x = new kony.apps.coe.ess.Approvals.ExpenseReportDetail();\nx.OnRejectButtonClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

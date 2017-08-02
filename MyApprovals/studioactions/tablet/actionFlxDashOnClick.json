@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_fe316329c00540faa866f5166499cd32": {
+        "id": "AS_FlexContainer_fe316329c00540faa866f5166499cd32",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionFlxDashOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_2010d350f8ec4fde85bcf0b982f400af",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.Header.ItemOnClick(0);\n",
+            "callbackType": null
+        }]
+    }
+}

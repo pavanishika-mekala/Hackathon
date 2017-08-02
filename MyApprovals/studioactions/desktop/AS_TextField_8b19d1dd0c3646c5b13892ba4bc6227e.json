@@ -1,0 +1,27 @@
+{
+    "AS_TextField_8b19d1dd0c3646c5b13892ba4bc6227e": {
+        "id": "AS_TextField_8b19d1dd0c3646c5b13892ba4bc6227e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__019340d2d9994ca2ab49664a473b5b5e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nvar searchText=frmPendingRequest.txtSrchByName.text;\nfrmPendingRequest.flxEmployeeSearch.setVisibility(true);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

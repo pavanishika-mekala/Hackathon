@@ -1,0 +1,24 @@
+{
+    "AS_Segment_7ebd912a65b54663941f860a9e10edb1": {
+        "id": "AS_Segment_7ebd912a65b54663941f860a9e10edb1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "486c20b1d92c44ba9cd4d5054648e273"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c1822654470b409cb4efe44ce8f7c96d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.ApprovalHistoryTab()).onReachingEndOfSegment();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

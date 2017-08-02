@@ -1,0 +1,31 @@
+{
+    "AS_Label_34f315fa898d42c6b44ce6282d7142ae": {
+        "id": "AS_Label_34f315fa898d42c6b44ce6282d7142ae",
+        "type": "ACTION_SEQUENCE",
+        "name": "TimeOnclick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmRequestedList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "48a0dbc7f7b74ca89f3aaceff6cdfc0f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3239284dbef047c3a3612f0cd6607cb6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var requestedListObj = new kony.apps.coe.ess.Approvals.RequestedList();\nrequestedListObj.LoadFilterAndShowForm(\"Time\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

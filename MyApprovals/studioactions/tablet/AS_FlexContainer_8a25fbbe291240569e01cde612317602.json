@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_8a25fbbe291240569e01cde612317602": {
+        "id": "AS_FlexContainer_8a25fbbe291240569e01cde612317602",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_614ab2294a174df9bdf292327cc0cd3e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "tabApprovalHistoryShow();",
+            "callbackType": null
+        }]
+    }
+}

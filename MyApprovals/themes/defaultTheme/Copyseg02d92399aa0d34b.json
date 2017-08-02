@@ -1,0 +1,14 @@
+{
+  "background_color": "ffffffff",
+  "bg_type": "one",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "ipad": {
+    "font_name": "AmericanTypewriter"
+  },
+  "isDefaultSkin": false,
+  "kuid": "s1af3f80d73540f28809d5a74fdfa0f0",
+  "wType": "Segment"
+}

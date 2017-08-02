@@ -1,0 +1,220 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "lblDateDue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 May- 3 May"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 Days"
+            },
+            "lblDueDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 Jan, 2016"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Edd Senior"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "15 Jan 6:30 PM"
+            },
+            "lblTypeReq": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "lblDateDue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "18 May"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Day"
+            },
+            "lblDueDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 Jan, 2016"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Alexander Jones"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblTypeReq": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Weekly Timesheet"
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "photo.png"
+            },
+            "lblDateDue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Due Date"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$ 5000.00"
+            },
+            "lblDetailType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "American Express"
+            },
+            "lblDueDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 Jan, 2016"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose Grey"
+            },
+            "lblSep": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSumittedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblTypeReq": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Business Travel"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "470dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "50px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "disabledSkins": {},
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segAllEmp",
+    "ide_onRowClick": "AS_Segment_b47fef185355485c9098a919f27cf276",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "bb5f5792e6fe4dfb805c8317fb116582",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxInnerPending",
+    "pf": "frmPendingRequest",
+    "retainselection": false,
+    "rowTemplateId": "829b7fad8ec44ac9ae51f293e5290fe1",
+    "rowcounter": 2,
+    "rowfocusskin": "s0071dd5b7b043d19a6856554666a14c",
+    "rowskin": "s43978fedd9849519f2180e9f30bfe00",
+    "rowtemplate": "flxPendingRequest",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxEmpImg": "flxEmpImg",
+        "flxPendingRequest": "flxPendingRequest",
+        "imgEmp": "imgEmp",
+        "lblDateDue": "lblDateDue",
+        "lblDetail": "lblDetail",
+        "lblDetailType": "lblDetailType",
+        "lblDueDate": "lblDueDate",
+        "lblEmpName": "lblEmpName",
+        "lblSep": "lblSep",
+        "lblSumittedDate": "lblSumittedDate",
+        "lblTypeReq": "lblTypeReq"
+    },
+    "zindex": 1
+}

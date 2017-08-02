@@ -1,0 +1,25 @@
+{
+    "AS_Form_f50ba9e515414947b24805b89dd89ecc": {
+        "id": "AS_Form_f50ba9e515414947b24805b89dd89ecc",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionPreShowFrmLoginDesk",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDesk",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c0739d26432346e0a74d952988d8321b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");\nkony.apps.coe.ess.frmLogin.frmLoginPreshow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

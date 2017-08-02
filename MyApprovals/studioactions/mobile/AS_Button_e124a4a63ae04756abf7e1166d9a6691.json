@@ -1,0 +1,27 @@
+{
+    "AS_Button_e124a4a63ae04756abf7e1166d9a6691": {
+        "id": "AS_Button_e124a4a63ae04756abf7e1166d9a6691",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegmentCasualLeave",
+            "type": "templates",
+            "platform": "",
+            "KUID": "cb157dcb7c5a4ed98c2aed8b19143ad0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3762ec1e09a24bf68fc4dbff95ff17b0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.markAsLater(frmApprovalHome.segApprovalsList.selectedRowItems[0].approval_id,context.rowIndex);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

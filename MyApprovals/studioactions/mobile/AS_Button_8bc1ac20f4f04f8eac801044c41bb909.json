@@ -1,0 +1,17 @@
+{
+    "AS_Button_8bc1ac20f4f04f8eac801044c41bb909": {
+        "id": "AS_Button_8bc1ac20f4f04f8eac801044c41bb909",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_50dd6005396d477a984edce86288219a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " if (kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress == true) {\n        kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.setVisibility(false);\n        kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress = false;\n}\nelse \n  kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.setVisibility(false);\nif (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {\n  kony.apps.coe.ess.frmLogin.manualSyncOnClick();\n}\n        ",
+            "callbackType": null
+        }]
+    }
+}

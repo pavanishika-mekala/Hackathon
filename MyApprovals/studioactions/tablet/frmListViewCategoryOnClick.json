@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_d3037255d1bf4dfd9bfa4f0162e00a54": {
+        "id": "AS_FlexContainer_d3037255d1bf4dfd9bfa4f0162e00a54",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmListViewCategoryOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c1ae459ec3a84fb29e75aff2ede9440c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.Header.ItemOnClick(2);\n",
+            "callbackType": null
+        }]
+    }
+}

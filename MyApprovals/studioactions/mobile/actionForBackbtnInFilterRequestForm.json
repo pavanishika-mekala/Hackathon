@@ -1,0 +1,25 @@
+{
+    "AS_Button_2f0b2fe1b74f4951889068044c1f7358": {
+        "id": "AS_Button_2f0b2fe1b74f4951889068044c1f7358",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForBackbtnInFilterRequestForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRequestedList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "48a0dbc7f7b74ca89f3aaceff6cdfc0f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__23cc84f0f96c41a4a0027019f1660c1c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalHome.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

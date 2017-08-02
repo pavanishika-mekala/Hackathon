@@ -1,0 +1,28 @@
+{
+    "AS_TextField_3556a23824984684a14ac75e20a4902c": {
+        "id": "AS_TextField_3556a23824984684a14ac75e20a4902c",
+        "type": "ACTION_SEQUENCE",
+        "name": "acttxtSearchPeople",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "6acc611e28bb44bf93624d8ef2451bdb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8715f4c7480b4b6f8fb4e9afcb082895",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var searchText=frmTabListView.txtSearchPeople.text;\nkony.apps.coe.ess.Approvals.DynamicSegmentSetDatabyEmployeeSearch(searchText,kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch);\nfrmTabListView.flxEmployeeSearch.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

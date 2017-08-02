@@ -1,0 +1,25 @@
+{
+    "AS_Form_64901ca91d3844d1a045318d6bf3980b": {
+        "id": "AS_Form_64901ca91d3844d1a045318d6bf3980b",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabWinApprHistoryPS",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApprovalHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "60147cd241784a5d96b42db7d6537e18"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e9502a4c5fa64f7288df09b1747ccf36",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

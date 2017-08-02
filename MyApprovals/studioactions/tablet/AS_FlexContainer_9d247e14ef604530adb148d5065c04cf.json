@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_9d247e14ef604530adb148d5065c04cf": {
+        "id": "AS_FlexContainer_9d247e14ef604530adb148d5065c04cf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_4649402b739b4380ab8d7bdb2e768f0d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabReqTypeView.show();\nfrmTabReqTypeView.flxLeftReqppl.isVisible = true;\nfrmTabReqTypeView.flxLeftReqType.isVisible = false;\nfrmTabReqTypeView.flxCategory.skin = \"sknWinFlx1091C1\"; //sknWinFlx1091C1\nfrmTabReqTypeView.flxPeople.skin = \"sknWinFlx08739AHighlight\"; //sknWinFlx08739AHighlight\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Form_156a6820f0af4a978215a58eb98dfa48": {
+        "id": "AS_Form_156a6820f0af4a978215a58eb98dfa48",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionDatePickerPosition",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4ea85581b81445b7a6b2ca2a9d6a7f8e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var context1={\"widget\":frmDelegationRequests.flxCalendarRendererOne,\"anchor\":\"bottom\"};       \nfrmDelegationRequests.datePickerFrom.setContext(context1);\nvar context2={\"widget\":frmDelegationRequests.flxCalendarRendererTwo,\"anchor\":\"bottom\"};       \nfrmDelegationRequests.datePickerTo.setContext(context2);\nfrmDelegationRequests.flxNewDelegationRequests.setVisibility(false);\nfrmDelegationRequests.forceLayout();\nfrmDelegationRequests.flxMain.setVisibility(true);\nfrmDelegationRequests.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

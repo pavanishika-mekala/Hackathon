@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_2be34fa7889943ea97b82f7b50d32809": {
+        "id": "AS_FlexContainer_2be34fa7889943ea97b82f7b50d32809",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfAddNewDelegationRequests",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7fe1e44bec1f406cacf10e91ba04bdb4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmDelegationRequests.flxNewDelegationRequests.setVisibility(true);\nfrmDelegationRequests.forceLayout();\nfrmDelegationRequests.flxMain.setVisibility(false);\nfrmDelegationRequests.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

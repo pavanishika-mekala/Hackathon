@@ -1,0 +1,120 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizDateField",
+    "DNDConfig": null,
+    "Image": "calbtn.png",
+    "__id": "frmSearch_Calendar016af3d1594ee49",
+    "__input": "Calendar016af3d1594ee49",
+    "__parentReadjusting__": false,
+    "_data_": null,
+    "_date_": [
+        "1",
+        "8",
+        "2016"
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "sfd8532fc0c942ceb1754138aaf02ac0",
+    "_startG": [
+        0,
+        "8",
+        "2016"
+    ],
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "advview": "default",
+    "calendaricon": "calbtn.png",
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "38%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "69.6%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "datecomponents": [
+        "1",
+        "8",
+        "2016"
+    ],
+    "dateeditable": true,
+    "dateformat": "dd/MM/yyyy",
+    "datesGroup": [],
+    "datesState": 0,
+    "day": "1",
+    "daytextalignmentincell": 5,
+    "displayedMonths": [
+        8,
+        2016
+    ],
+    "entereddate": [
+        "1",
+        "8",
+        "2016",
+        0,
+        0,
+        0
+    ],
+    "format": "dd/MM/yyyy",
+    "formatteddate": "01/08/2016",
+    "hidedaysheader": false,
+    "hidemonthsheader": false,
+    "hour": 14,
+    "id": "calFromDate",
+    "ide_onSelection": "AS_Calendar_71f3e045f61a4fbe9836c18a8bb4f72b",
+    "ide_onTouchEnd": "AS_Calendar_ed63971195d44f709300d71e7f567112",
+    "ide_onTouchStart": "AS_Calendar_eb72b88d38094f4eb9a73d4ffb5ae6ee",
+    "info": null,
+    "isvisible": true,
+    "kuid": "26a8fbf635bd4aae8958125fd0e635b7",
+    "minutes": 41,
+    "month": "8",
+    "monthsinrow": 3,
+    "name": "kony.ui.Calendar",
+    "navigatorAlert": "Invalid Selection",
+    "noofmonths": 1,
+    "pagedate": "/2016",
+    "parent": "flxFromSection",
+    "pf": "frmSearch",
+    "popupHeight": "auto",
+    "popupWidth": "auto",
+    "seconds": 37,
+    "selectdate": "//2016",
+    "startDay": 0,
+    "viewconfig": {
+        "gridConfig": {},
+        "gridconfig": ""
+    },
+    "viewtype": "default",
+    "wType": "Calendar",
+    "widgetalignment": 5,
+    "widths": [
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;"
+    ],
+    "year": "2016"
+}

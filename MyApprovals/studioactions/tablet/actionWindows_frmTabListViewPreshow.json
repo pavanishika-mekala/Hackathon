@@ -1,0 +1,25 @@
+{
+    "AS_Form_5124c9d3f3db4a66b71e99431bb9bfef": {
+        "id": "AS_Form_5124c9d3f3db4a66b71e99431bb9bfef",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionWindows_frmTabListViewPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabListView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "d83449f601944c6190fe159242bfbd0b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__29c2719004c14eaea4583f3dd1e7290c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.ess.Approvals.tabApprovalsListView();\nobj.getApprovalsListDetailsPreshow();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_2233e1969ced4497965714f65c19fbb5": {
+        "id": "AS_FlexContainer_2233e1969ced4497965714f65c19fbb5",
+        "type": "ACTION_SEQUENCE",
+        "name": "myLeaveFlxOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "90bf097212b8402086e027964390ddc0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__19ee5bf1cc3c416dba0f5a4ebf50eecb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myLeave\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

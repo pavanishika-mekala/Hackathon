@@ -1,0 +1,25 @@
+{
+    "AS_Button_75ddd7a869c148fe9b3e67c13a062819": {
+        "id": "AS_Button_75ddd7a869c148fe9b3e67c13a062819",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoRejectPendingLeaveRequestDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__64ee7be472b34c438f5757d664ee7fa6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.frmPendingUIDW()).PendingReject();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

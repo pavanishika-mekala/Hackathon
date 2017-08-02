@@ -1,0 +1,25 @@
+{
+    "AS_Button_d35a8e5635354a878cdee28455b9cbad": {
+        "id": "AS_Button_d35a8e5635354a878cdee28455b9cbad",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiontoClearAllFiltersInHistoryDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27c027d186034cfb876ffff441ae3ab1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ff0766a264384abd9a1ef901b83b7c02",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//(new kony.apps.coe.ess.frmFilterHistoryUIDW()).onClickClearAll();\n\nkony.apps.coe.ess.ApprovalHistoryDW.clearAll();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Form_475a6b86eb07477db1422ad418abdd51": {
+        "id": "AS_Form_475a6b86eb07477db1422ad418abdd51",
+        "type": "ACTION_SEQUENCE",
+        "name": "logininitactiondesktop",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDesk",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6b3fbdb87b974a2f850e834fb9112914",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.frmLogin.Init();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

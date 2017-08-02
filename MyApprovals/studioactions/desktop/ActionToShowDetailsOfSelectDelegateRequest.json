@@ -1,0 +1,31 @@
+{
+    "AS_Segment_6111c6382d954700b6870142a455784c": {
+        "id": "AS_Segment_6111c6382d954700b6870142a455784c",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionToShowDetailsOfSelectDelegateRequest",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequests",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4eb411583cd34540b34ba67b14ec1497"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5b68f0332dc04d0eb3dfe7a99cb5b706",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myApprovals.frmDeligationDW()).onRowClickOfSegEmp();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

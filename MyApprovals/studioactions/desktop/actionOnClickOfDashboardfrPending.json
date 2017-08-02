@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_746bb4897026432eb57fa681b0f37ded": {
+        "id": "AS_FlexContainer_746bb4897026432eb57fa681b0f37ded",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfDashboardfrPending",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmPendingRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e7f992c5f6b54ce29c97bb12232e35fa"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e07cf350835e435fbf49d4ecf5bb2e0e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalsDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
