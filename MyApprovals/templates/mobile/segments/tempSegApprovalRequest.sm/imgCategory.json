@@ -45,7 +45,7 @@
     "id": "imgCategory",
     "imagescalemode": 1,
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "4c152398bc2b4c5a8f75a4b75e899b70",
     "name": "kony.ui.Image2",
     "parent": "flxImages",

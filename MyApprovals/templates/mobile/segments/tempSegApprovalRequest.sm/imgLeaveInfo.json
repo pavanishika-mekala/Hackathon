@@ -45,7 +45,7 @@
     "id": "imgLeaveInfo",
     "imagescalemode": 1,
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "566f95c7d41842a28dfa2422aaa6690a",
     "name": "kony.ui.Image2",
     "parent": "flxImages",

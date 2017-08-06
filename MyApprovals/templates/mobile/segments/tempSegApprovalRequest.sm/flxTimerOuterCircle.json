@@ -44,7 +44,7 @@
     "enablescrolling": true,
     "id": "flxTimerOuterCircle",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "33b0535c60fd40a38863ba267f416ff9",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

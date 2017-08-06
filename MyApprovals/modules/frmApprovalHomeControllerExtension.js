@@ -271,7 +271,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
             //setting the data to the approval request Segement
             var WidgetDatamap = {
                 "lblShortName": "CreatedUserShortName",
-                "imgCategory": "requestTypeImage",
+               // "imgCategory": "requestTypeImage",
                 "lblUserName": "UserName",
                 "lblCreateDate": "RequestDate",
                 "lblDueDateValue": "dueDate",
@@ -280,9 +280,9 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
                 "btnAdditionalInfo": "AdditionalData",
                 "flxTimer": "FlxTimerUi",
                 "lblCategory": "category",
-                "flxBorder1": "requestTypeBorderSkin",
-                "flxBorder2": "requestTypeBorderSkin2",
-                "imgLeaveInfo": "requestTypeInfoImage",
+                //"flxBorder1": "requestTypeBorderSkin",
+               // "flxBorder2": "requestTypeBorderSkin2",
+                //"imgLeaveInfo": "requestTypeInfoImage",
                 "lblRemainingHours": "remaingHours",
                 "lblDelegated": "Delegated",
                 "imgUser": "imgUser",
