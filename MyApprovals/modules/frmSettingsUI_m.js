@@ -359,4 +359,76 @@ Settings.prototype.preShowSettingsTab = function() {
       	handleError(err);
     });
   	kony.print("----End preShowSettingsTab ---------");
-}
+};
+
+/**
+ *  @ Author  : Vaishali Kammeta
+ *  @ Desc : changing application locale en,fr_FR and nl_NL
+ */
+Settings.prototype.languageSelection = function(src1,src2,src3,currentLocale){
+  var setLocale = "";
+   //#ifdef android 
+  if(currentLocale["language"].length > 1){
+      //setLocale = currentLocale["language"]+"_"+currentLocale["country"];
+      setLocale = kony.apps.coe.ess.locale.getCurrentLocale(currentLocale["language"]);
+    }
+    //#endif
+    //#ifdef iphone
+    if(currentLocale.length > 1){
+      currentLocale = currentLocale.split("-");
+      //setLocale = currentLocale[0]+"_"+currentLocale[1];
+      setLocale = kony.apps.coe.ess.locale.getCurrentLocale(currentLocale[0]);	
+    }
+  //#endif
+  //set the selected language to all forms
+  kony.i18n.setCurrentLocaleAsync(lang, kony.apps.coe.ess.settings.getSettingsObject().destroyForms(), kony.apps.coe.ess.settings.getSettingsObject().failureCallBack(), null);
+  //store the language selected in device storage
+  kony.store.setItem("localeToBeSet",lang);  
+  frmSettings.lblHeader.text = kony.i18n.getLocalizedString("i18n.ess.common.Settings");
+  frmSettings.lblShowFirst.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.lblShowFirst");
+  frmSettings.lblPushNotification.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.lblPushNotification.text");
+  frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.setting.resetDBText");
+  frmSettings.btnReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.reset");
+  frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.SelectLanguage");
+  frmSettings.imgEnglish.src = src1;
+  frmSettings.imgFrench.src = src2;
+  frmSettings.imgNederlands.src = src3;
+  kony.print("VVV Success");
+};
+
+/**
+ * To destroy all the forms to refresh the locale when navigated to the screen
+ */
+Settings.prototype.destroyForms = function(){
+  try{
+  frmApprovalHome.destroy();
+  frmApprovalRequestDetail.destroy();
+  frmAudit.destroy();
+  frmAuditTrail.destroy();
+  frmDelegationRequestCreate.destroy();
+  frmDelegationRequestDetails.destroy();
+  frmDelegationRequestList.destroy();
+  frmEmployeeLookUp.destroy();
+  frmFullDetails.destroy();
+  frmHamburger.destroy();
+  frmIsLaterSearch.destroy();
+  frmLogin.destroy();
+  frmMultiSelection.destroy();
+  frmNotificationsList.destroy();
+  frmPdfReader.destroy();
+  frmRequestedList.destroy();
+  frmSearch.destroy();
+  frmSelect.destroy();
+  frmStartUp.destroy();
+  }catch(e){
+    kony.print("V e"+e);
+  }
+    
+};
+
+/*
+ * faliure in Setting of locale
+ */
+Settings.prototype.failureCallBack = function(){
+  kony.print("Error in setting locale");
+};

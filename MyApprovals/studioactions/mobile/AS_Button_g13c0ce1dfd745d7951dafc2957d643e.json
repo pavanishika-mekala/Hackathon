@@ -1,6 +1,6 @@
 {
-    "AS_Form_3202d0b2b2c74e748d76db11f4f0fa10": {
-        "id": "AS_Form_3202d0b2b2c74e748d76db11f4f0fa10",
+    "AS_Button_g13c0ce1dfd745d7951dafc2957d643e": {
+        "id": "AS_Button_g13c0ce1dfd745d7951dafc2957d643e",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -14,9 +14,9 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__8705022d458a45d385141a8746b4e7e7",
+            "id": "ADD_SNIPPET__b4107912b3384fbf927f9dc0c246c0d0",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");\nkony.apps.coe.ess.frmLogin.frmLoginPreshow();\nkony.apps.coe.ess.locale.getLocaleInformation();\n",
+            "codeSnippet": "kony.apps.coe.ess.locale.getLocaleInformation();",
             "parentId": null,
             "callbackType": null
         }]

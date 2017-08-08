@@ -31,7 +31,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "10%"
+        "value": "9%"
     },
     "canUpdateUI": true,
     "containerweight": 100,

@@ -36,13 +36,14 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "imgEnglishh",
+        "imgEnglish",
         "lblEnglish"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxEnglish",
+    "ide_onClick": "AS_FlexContainer_ab84c4a03cc04bfb93406a44e40b54ff",
     "info": null,
     "isvisible": true,
     "kuid": "eebc15b64f3f430d812af3468e75171e",

@@ -59,6 +59,7 @@
     "name": "kony.ui.Label",
     "parent": "flxNederlands",
     "pf": "frmSettings",
+    "texti18n": "i18n.ess.MyApprovals.frmSettings.Nederlands",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

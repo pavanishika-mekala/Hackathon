@@ -43,6 +43,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxFrench",
+    "ide_onClick": "AS_FlexContainer_i840f65905364cdc838a1fb6187668f3",
     "info": null,
     "isvisible": true,
     "kuid": "h54b8f70eb2e4c3d90a9932ef3787ec4",
