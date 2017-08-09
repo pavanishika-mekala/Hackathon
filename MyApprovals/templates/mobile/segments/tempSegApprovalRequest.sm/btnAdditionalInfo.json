@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "77.78%"
+        "value": "80.70%"
     },
     "_left_": {
         "type": "string",
@@ -17,9 +17,9 @@
         6
     ],
     "_padding_": [
+        1,
         0,
-        0,
-        0,
+        1,
         0
     ],
     "_skin_": "s9fd242638f342079f9a04041e55621b",
@@ -31,7 +31,7 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "55%"
     },
     "containerId": true,
     "containerweight": 100,
@@ -45,6 +45,7 @@
     "isvisible": true,
     "kuid": "3a3069efe1c34a47b099f8b7e44e6e89",
     "name": "kony.ui.Button",
+    "paddinginpixel": false,
     "parent": "flxRequestInfo",
     "pf": "tempSegApprovalRequest",
     "wType": "Button",
