@@ -363,37 +363,17 @@ Settings.prototype.preShowSettingsTab = function() {
 
 /**
  *  @ Author  : Vaishali Kammeta
- *  @ Desc : changing application locale en,fr_FR and nl_NL
+ *  @ Desc : changing application locale en,fr_BE and nl_BE
  */
-Settings.prototype.languageSelection = function(src1,src2,src3,currentLocale){
-  var setLocale = "";
-   //#ifdef android 
-  if(currentLocale["language"].length > 1){
-      //setLocale = currentLocale["language"]+"_"+currentLocale["country"];
-      setLocale = kony.apps.coe.ess.locale.getCurrentLocale(currentLocale["language"]);
-    }
-    //#endif
-    //#ifdef iphone
-    if(currentLocale.length > 1){
-      currentLocale = currentLocale.split("-");
-      //setLocale = currentLocale[0]+"_"+currentLocale[1];
-      setLocale = kony.apps.coe.ess.locale.getCurrentLocale(currentLocale[0]);	
-    }
-  //#endif
+Settings.prototype.languageSelection = function(src1,src2,src3,Sellocale){
+  kony.print("V locale "+Sellocale);
   //set the selected language to all forms
-  kony.i18n.setCurrentLocaleAsync(lang, kony.apps.coe.ess.settings.getSettingsObject().destroyForms(), kony.apps.coe.ess.settings.getSettingsObject().failureCallBack(), null);
+  kony.i18n.setCurrentLocaleAsync(Sellocale,kony.apps.coe.ess.settings.getSettingsObject().destroyForms,kony.apps.coe.ess.settings.getSettingsObject().failureCallBack, null);
   //store the language selected in device storage
-  kony.store.setItem("localeToBeSet",lang);  
-  frmSettings.lblHeader.text = kony.i18n.getLocalizedString("i18n.ess.common.Settings");
-  frmSettings.lblShowFirst.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.lblShowFirst");
-  frmSettings.lblPushNotification.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.lblPushNotification.text");
-  frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.setting.resetDBText");
-  frmSettings.btnReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.reset");
-  frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.SelectLanguage");
+  kony.store.setItem("localeToBeSet",Sellocale);  
   frmSettings.imgEnglish.src = src1;
   frmSettings.imgFrench.src = src2;
   frmSettings.imgNederlands.src = src3;
-  kony.print("VVV Success");
 };
 
 /**
@@ -420,6 +400,12 @@ Settings.prototype.destroyForms = function(){
   frmSearch.destroy();
   frmSelect.destroy();
   frmStartUp.destroy();
+  frmSettings.lblHeader.text = kony.i18n.getLocalizedString("i18n.ess.common.Settings");
+  frmSettings.lblShowFirst.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.lblShowFirst");
+  frmSettings.lblPushNotification.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.lblPushNotification.text");
+  frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.setting.resetDBText");
+  frmSettings.btnReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.reset");
+  frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.SelectLang");
   }catch(e){
     kony.print("V e"+e);
   }
@@ -429,6 +415,7 @@ Settings.prototype.destroyForms = function(){
 /*
  * faliure in Setting of locale
  */
-Settings.prototype.failureCallBack = function(){
-  kony.print("Error in setting locale");
+Settings.prototype.failureCallBack = function(errCode,errMsg){
+  kony.print("Error in setting locale"+JSOn.stringify(errCode)+JSON.stringify(errMsg));
 };
+
