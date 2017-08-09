@@ -20,13 +20,13 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "6%"
+        "value": "3%"
     },
     "_skin_": "s5f289942ffa40238fba42db6877ddf0",
     "_text_": "Pending",
     "_top_": {
         "type": "string",
-        "value": "75.30%"
+        "value": "70.30%"
     },
     "_width_": {
         "type": "ref",
