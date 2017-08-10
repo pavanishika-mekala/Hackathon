@@ -1,1 +1,3 @@
 en
+fr_BE
+nl_BE
