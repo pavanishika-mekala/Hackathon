@@ -366,7 +366,6 @@ Settings.prototype.preShowSettingsTab = function() {
  *  @ Desc : changing application locale en,fr_BE and nl_BE
  */
 Settings.prototype.languageSelection = function(src1,src2,src3,Sellocale){
-  kony.print("V locale "+Sellocale);
   //set the selected language to all forms
   kony.i18n.setCurrentLocaleAsync(Sellocale,kony.apps.coe.ess.settings.getSettingsObject().destroyForms,kony.apps.coe.ess.settings.getSettingsObject().failureCallBack, null);
   //store the language selected in device storage
@@ -422,15 +421,24 @@ Settings.prototype.failureCallBack = function(errCode,errMsg){
 Settings.prototype.setLanginPostShow = function(){
   var selecLang = kony.store.getItem("localeToBeSet");
   if(null !== selecLang){
-    if(selecLang == "en"){
-      kony.apps.coe.ess.settings.getSettingsObject().setImage("selectit.png","unselectit.png","unselectit.png");
-    }else if(selecLang == "fr_BE"){
-      kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","selectit.png","unselectit.png");
-    }else if(selecLang == "nl_BE"){
-      kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","unselectit.png","selectit.png");
-    }else{
-      kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","unselectit.png","unselectit.png");
-    }
+    kony.apps.coe.ess.settings.getSettingsObject().getSelectedLocale(selecLang,true);
+  }else{
+    kony.apps.coe.ess.settings.getSettingsObject().getSelectedLocale(kony.i18n.getCurrentDeviceLocale(),false);
+  }
+};
+
+Settings.prototype.getSelectedLocale = function(selecLang,flag){
+  if(false === flag){
+    selecLang = kony.apps.coe.ess.locale.getSelectedLocale(selecLang);
+  }
+  if(selecLang == "en"){
+    kony.apps.coe.ess.settings.getSettingsObject().setImage("selectit.png","unselectit.png","unselectit.png");
+  }else if(selecLang == "fr_BE"){
+    kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","selectit.png","unselectit.png");
+  }else if(selecLang == "nl_BE"){
+    kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","unselectit.png","selectit.png");
+  }else{
+    kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","unselectit.png","unselectit.png");
   }
 };
 
