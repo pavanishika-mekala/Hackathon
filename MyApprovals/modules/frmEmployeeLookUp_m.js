@@ -61,9 +61,8 @@ setDataInList = function() {
       	frmEmployeeLookUp.segEmployeeList.widgetDataMap = this.widgetDataMap;
 		var query = "SELECT (First_Name || ' ' || Middle_Name || ' ' ||Last_Name ) as empName , Id as empId from employee where IsEmployee = '0'"; 		
       	kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, function(res) {
-            scopeObj.employeeList = res;
+          	scopeObj.employeeList = res;
           	scopeObj.totalEmployesList=res;
-          //kony.print("soumya totalEmployessList"+JSON.stringify(employeeList));
         	frmEmployeeLookUp.segEmployeeList.setData(res);
     	}, function(error){
           	handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.errorMessages.fetchApprovalRequest") + JSON.stringify(error)));
@@ -77,27 +76,23 @@ setDataInList = function() {
 
 kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.
 searchDataInList = function(str) {
-  alert("in serach");
-  kony.print("soumya inside function");
   var scopeObj = this;
-  var masterData=scopeObj.employeeList;
+  var masterData=scopeObj.totalEmployesList;
   var serachData=[];
-    kony.print("soumya masterdata"+JSON.stringify(masterData));
-  	kony.print("soumya --Start: kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.searchDataInList--");
+   // kony.print("soumya masterdata"+JSON.stringify(masterData));
+  	kony.print("--Start: kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.searchDataInList--");
     try {
       	frmEmployeeLookUp.segEmployeeList.widgetDataMap = this.widgetDataMap;
 		if(isEmpty(str)){
-          kony.print("soumya if block");
-          	//scopeObj.employeeList = masterData;
+          //	scopeObj.employeeList = masterData;
       		frmEmployeeLookUp.segEmployeeList.setData(masterData);
     	}else{
-          kony.print("soumya else block");
         for(var j=0;j<masterData.length;j++){
           if((masterData[j]["empName"]!=undefined)&&(masterData[j]["empName"].search(new RegExp(str,"i")))!==-1){
             serachData.push(masterData[j]);
           }
         }
-         	scopeObj.employeeList = serachData;
+         	//scopeObj.employeeList = serachData;
           frmEmployeeLookUp.segEmployeeList.setData(serachData);
         }
     } catch(err) {
