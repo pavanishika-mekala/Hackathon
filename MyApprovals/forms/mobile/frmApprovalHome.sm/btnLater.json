@@ -1,14 +1,15 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "55%"
+        "value": "0%"
     },
     "_margin_": [
         6,
@@ -26,25 +27,25 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "21.25%"
-    },
-    "_width_": {
-        "type": "string",
-        "value": "20%"
+        "value": "0%"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
     "disabledSkins": {},
     "displaytext": true,
     "focusskin": "sf300815551f426598b009d641728cbf",
     "id": "btnLater",
-    "ide_onClick": "AS_Button_c8fcbadbaf534a928d46c4a85aae4e86",
+    "ide_onClick": "AS_Button_h7c679c5a76c41baa05510594158953b",
     "info": null,
     "isvisible": true,
     "kuid": "13578c50d71e4893ba277c4fa57e628c",
     "name": "kony.ui.Button",
-    "parent": "flxHeader",
+    "parent": "flxLater",
     "pf": "frmApprovalHome",
     "texti18n": "i18n.ess.frmApprovalHome.btnLater",
     "wType": "Button",

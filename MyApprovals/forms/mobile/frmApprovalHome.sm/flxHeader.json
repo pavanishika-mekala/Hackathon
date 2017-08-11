@@ -37,10 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxHamburgerButton",
-        "btnNow",
-        "flxNowCount",
-        "btnLater",
-        "flxLaterCount",
+        "flxNow",
+        "flxLater",
         "flxSlider",
         "flxFilterButton",
         "flxOptions"

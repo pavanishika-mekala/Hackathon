@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "70%"
     },
     "_left_": {
         "type": "string",
@@ -26,11 +26,11 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "21.25%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
-        "value": "25%"
+        "value": "35%"
     },
     "canUpdateUI": true,
     "containerweight": 100,

@@ -3,8 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "15%"
     },
     "_margin_": [
         1,
@@ -13,16 +17,16 @@
         1
     ],
     "_padding_": [
-        0,
+        2,
         0,
         0,
         0
     ],
     "_skin_": "sc6f1bcf9c7549fd9124b8abc0c5ff56",
-    "_text_": "",
+    "_text_": "Quitter les détails de la demande de congé",
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "75%"
     },
     "_wrapping_": 2,
     "android": {
@@ -32,16 +36,12 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "centery": {
         "type": "string",
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "lblHeader",
     "info": null,
     "ipad": {
@@ -57,6 +57,7 @@
     "isvisible": true,
     "kuid": "b8d2bb1299d8403b857c4070f6ac2737",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxHeader",
     "pf": "frmApprovalRequestDetail",
     "texti18n": "i18n.ess.MyApprovals.frmApprovalRequestDetail.title",
