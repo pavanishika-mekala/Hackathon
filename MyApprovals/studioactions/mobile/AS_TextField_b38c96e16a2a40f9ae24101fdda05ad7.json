@@ -1,0 +1,27 @@
+{
+    "AS_TextField_b38c96e16a2a40f9ae24101fdda05ad7": {
+        "id": "AS_TextField_b38c96e16a2a40f9ae24101fdda05ad7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmEmployeeLookUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "16306e7df6e84105bb7e828ec3cb7ca3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__h881fdc3ff7d43a899c24769cc56e046",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"1\");\nvar searchText=frmEmployeeLookUp.txtSearchDelegate.text;\nkony.print(\"soumya text\"+searchText);\nkony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.searchDataInList(searchText);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

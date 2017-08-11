@@ -36,6 +36,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
+        "flxSearchDelegate",
         "segEmployeeList"
     ],
     "clipbounds": true,
@@ -45,7 +46,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "2f86dd43b34b40f9aeb2f8296e75175d",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMain",
     "pf": "frmEmployeeLookUp",
