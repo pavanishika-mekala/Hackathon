@@ -46,6 +46,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmNotificationsList",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },

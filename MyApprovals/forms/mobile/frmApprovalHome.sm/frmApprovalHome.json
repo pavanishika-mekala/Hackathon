@@ -36,7 +36,7 @@
     ],
     "configureExtendBottom": true,
     "containerweight": 100,
-    "currentLocale": "nl_BE",
+    "currentLocale": "en",
     "desktopweb": {
         "needAppMenu": false
     },

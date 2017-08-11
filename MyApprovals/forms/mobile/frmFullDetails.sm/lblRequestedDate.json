@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "50%"
     },
     "_margin_": [
         1,
@@ -26,11 +26,11 @@
     "_text_": "16 Jan 06:30 PM",
     "_top_": {
         "type": "string",
-        "value": "65%"
+        "value": "2%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_wrapping_": 2,
     "android": {
@@ -41,7 +41,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 7,
+    "contentalignment": 5,
     "id": "lblRequestedDate",
     "info": null,
     "ipad": {
