@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__8705022d458a45d385141a8746b4e7e7",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");\nkony.apps.coe.ess.frmLogin.frmLoginPreshow();\n",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");\nkony.apps.coe.ess.frmLogin.frmLoginPreshow();\nkony.apps.coe.ess.locale.getLocaleInformation();\n",
             "parentId": null,
             "callbackType": null
         }]
