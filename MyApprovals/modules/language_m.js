@@ -9,19 +9,36 @@ kony.apps.coe.ess = kony.apps.coe.ess || {};
 kony.apps.coe.ess.locale = kony.apps.coe.ess.locale || {};
 
 kony.apps.coe.ess.locale.getSelectedLocale = function(currentLocale){
-  var deviceInfo = kony.os.deviceInfo();
-  if(deviceInfo.name == "android"){
-    if(currentLocale["language"].length > 1){
-      return kony.apps.coe.ess.locale.getCurrentLocale(currentLocale["language"]);
-    }
-  }
-  if(deviceInfo.name == "iphone" ||deviceInfo.name == "ipad"){
+   var device = kony.apps.coe.ess.locale.checkDevice();
+  if(device == "iOS"){
     if(currentLocale.length > 1){
       currentLocale = currentLocale.split("-");
       return kony.apps.coe.ess.locale.getCurrentLocale(currentLocale[0]);
     }
   }
+  if(device == "Android"){
+    if(currentLocale["language"].length > 1){
+      return kony.apps.coe.ess.locale.getCurrentLocale(currentLocale["language"]);
+    }
+  }
 };
+
+kony.apps.coe.ess.locale.checkDevice = function(){
+		var deviceType = "";
+		//ifdef iphone
+			deviceType = "iOS";
+		//endif
+		//ifdef ipad
+			deviceType = "iOS";
+		//endif
+		//ifdef tabrcandroid
+			deviceType = "Android";
+		//endif
+		//ifdef android
+			deviceType = "Android";
+		//endif
+		return deviceType;
+	};
 
 kony.apps.coe.ess.locale.setLocaleInformation = function(currentLocale,successCallback,failureCallback){
   var setLocale = "";
