@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-GA-7.3.2_v201706230520_r0*******************
-// ****************Generated On Wed Jul 19 05:29:38 UTC 2017mediaEmployee*******************
+//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
+// ****************Generated On Wed Aug 09 07:41:08 UTC 2017mediaEmployee*******************
 // **********************************Start mediaEmployee's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -449,7 +449,7 @@ com.ess.EMPLOYEE.mediaEmployee.updateAll = function(inputArray, successcallback,
 	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "10000000252a67608";
+	var dbname = "100004737b2bb0f56";
 	var tbname = "mediaEmployee";
 	var isError = false;
 	var errObject = null;
@@ -924,9 +924,9 @@ com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath = function(colName, pks, config
 	function mySuccCallback(res){
 		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath success callback function"
 			+"for columns :"+colName+" of tablename :"+tbname+" with response"+ res);
-		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filePath)) {
-			sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath user success callback function"+ res.filePath);
-			successcallback(res.filePath);
+		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filepath)) {
+			sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath user success callback function"+ res.filepath);
+			successcallback(res.filepath);
 		}
 		else {
 			sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath error callback function"+ res);

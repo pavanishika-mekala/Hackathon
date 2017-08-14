@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -24,9 +24,13 @@
     ],
     "_skin_": "s098061f5e654da286da07893e1c5525",
     "_text_": "Akhil,Peter,husodazam  & 3 more ",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
     "_width_": {
         "type": "string",
-        "value": "80%"
+        "value": "75%"
     },
     "_wrapping_": 2,
     "android": {
@@ -36,10 +40,6 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "id": "lblPeopleSelected",

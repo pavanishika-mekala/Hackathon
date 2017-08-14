@@ -29,11 +29,11 @@
         "flxMain"
     ],
     "containerweight": 100,
-    "currentLocale": "default",
+    "currentLocale": "fr_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone6",
+    "device": "iPhone4",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmIsLaterSearch",
@@ -77,7 +77,7 @@
     "prevDevice": "iPhone6",
     "prevPlatform": "iphone",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone6",
+    "shellCSS": "iOS_iPhone4",
     "snapgridsize": 10,
     "snaptogrid": true,
     "titleBarSkin": "s01a3c761ed44dcab0d6537d1b55b621",

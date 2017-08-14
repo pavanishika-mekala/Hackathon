@@ -253,7 +253,7 @@ function userDetailsSucess(response) {
                                     kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
                                 }
                                 //#endif
-                            }
+                            };
                             updateSyncDate();
                             if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
                                 kony.apps.coe.ess.globalVariables.updateTabEmployeeID(); // open approvals dashboard form

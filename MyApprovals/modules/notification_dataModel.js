@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-GA-7.3.2_v201706230520_r0*******************
-// ****************Generated On Wed Jul 19 05:29:40 UTC 2017notification_data*******************
+//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
+// ****************Generated On Wed Aug 09 07:41:09 UTC 2017notification_data*******************
 // **********************************Start notification_data's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -481,7 +481,7 @@ com.kony.MYAPPROVALS.notification_data.updateAll = function(inputArray, successc
 	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.notification_data.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "10000000252a67608";
+	var dbname = "100004737b2bb0f56";
 	var tbname = "notification_data";
 	var isError = false;
 	var errObject = null;

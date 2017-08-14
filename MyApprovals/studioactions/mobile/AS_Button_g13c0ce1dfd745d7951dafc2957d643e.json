@@ -1,0 +1,24 @@
+{
+    "AS_Button_g13c0ce1dfd745d7951dafc2957d643e": {
+        "id": "AS_Button_g13c0ce1dfd745d7951dafc2957d643e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "db3f4d071c3541989dd5a510eda8b57e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b4107912b3384fbf927f9dc0c246c0d0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.locale.getLocaleInformation();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -39,7 +39,8 @@
         "flxSeetingsCard",
         "flxDynamicSegment",
         "flxPushNotification",
-        "flxLocalDBReset"
+        "flxLocalDBReset",
+        "flxLangSelection"
     ],
     "clipbounds": true,
     "containerweight": 100,

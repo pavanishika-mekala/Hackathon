@@ -56,7 +56,7 @@ selectSentByMe = function (callback) {
 		frmDelegationRequestList.flxSlider.animate(
 			kony.ui.createAnimation({
 				100: {
-					left: "17.7%",
+					left: "17%",
 					width: "25.1%"
 				}
 			}), {
@@ -98,7 +98,7 @@ selectReceived = function (callback) {
 		frmDelegationRequestList.flxSlider.animate(
 			kony.ui.createAnimation({
 				100: {
-					left: "57.8%",
+					left: "62.2%",
 					width: "19.7%"
 				}
 			}), {

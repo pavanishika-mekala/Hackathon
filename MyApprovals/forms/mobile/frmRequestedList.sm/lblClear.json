@@ -3,8 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "70%"
     },
     "_margin_": [
         1,
@@ -26,11 +30,11 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "13dp"
+        "value": "0dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "26%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,12 +44,8 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 5,
     "id": "lblClear",
     "ide_onTouchEnd": "AS_Label_1d8c3f79c95c43a28408bd4f8f735a82",
     "info": null,

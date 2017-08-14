@@ -29,15 +29,15 @@ var syncUse = false;
  * @throws Exception if something goes wrong,
  */
 kony.apps.coe.ess.frmLogin.isValidInputs =
-    function(username, password) {
-        kony.print("-- start kony.apps.coe.ess.isValidInputs-- ");
-        if (!(kony.apps.coe.ess.Validation.checkForNull(username) && kony.apps.coe.ess.Validation.checkForNull(password))) {
-            return false;
-        } else {
-            return true;
-        }
-        kony.print("-- End kony.apps.coe.ess.isValidInputs-- ");
-    };
+  function(username, password) {
+  kony.print("-- start kony.apps.coe.ess.isValidInputs-- ");
+  if (!(kony.apps.coe.ess.Validation.checkForNull(username) && kony.apps.coe.ess.Validation.checkForNull(password))) {
+    return false;
+  } else {
+    return true;
+  }
+  kony.print("-- End kony.apps.coe.ess.isValidInputs-- ");
+};
 // %Region - Methods in frmLogin
 /**
  * @member of  frmLogin
@@ -46,53 +46,53 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
  */
 
 kony.apps.coe.ess.frmLogin.btnLoginOnclick =
-    function() {
-        try {
-            kony.print("-- start kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
-            //kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-            //If wrong credentials are given previously, reset skins
-            if (kony.apps.coe.ess.globalVariables.isSPA === true || kony.apps.coe.ess.globalVariables.isNative === true)  {
-    if(frmLogin.lblLoginErrorMessage.isVisible === true) {
-      //We are checking above condition to avoid setting skins everytime.
-      //Error message is visible only if wrong credentials entered previously
-      frmLogin.lblLoginErrorMessage.isVisible = false; //Hide wrong message lable
-      frmLogin.tbUsername.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
-      frmLogin.tbPassword.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
-    }
-    var username = frmLogin.tbUsername.text;
-    var password = frmLogin.tbPassword.text;
-    if (this.isValidInputs(username, password)) {
-       kony.apps.coe.ess.frmLogin.username = username.trim();
-      kony.apps.coe.ess.frmLogin.password = password;
-       //#ifdef windows8
-       		frmLogin.flxLogin.onClick = function(){};
-      //#else
-      		frmLogin.btnLogin.onClick = function(){};
-      //#endif
-      kony.sdk.mvvm.LoginAction();
-    } else {
-      frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.validateCredentials");
-      frmLogin.lblLoginErrorMessage.isVisible = true;
-      kony.application.dismissLoadingScreen();
-    }
+  function() {
+  try {
+    kony.print("-- start kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
+    //kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    //If wrong credentials are given previously, reset skins
+    if (kony.apps.coe.ess.globalVariables.isSPA === true || kony.apps.coe.ess.globalVariables.isNative === true)  {
+      if(frmLogin.lblLoginErrorMessage.isVisible === true) {
+        //We are checking above condition to avoid setting skins everytime.
+        //Error message is visible only if wrong credentials entered previously
+        frmLogin.lblLoginErrorMessage.isVisible = false; //Hide wrong message lable
+        frmLogin.tbUsername.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
+        frmLogin.tbPassword.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
+      }
+      var username = frmLogin.tbUsername.text;
+      var password = frmLogin.tbPassword.text;
+      if (this.isValidInputs(username, password)) {
+        kony.apps.coe.ess.frmLogin.username = username.trim();
+        kony.apps.coe.ess.frmLogin.password = password;
+        //#ifdef windows8
+        frmLogin.flxLogin.onClick = function(){};
+        //#else
+        frmLogin.btnLogin.onClick = function(){};
+        //#endif
+        kony.sdk.mvvm.LoginAction();
+      } else {
+        frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.validateCredentials");
+        frmLogin.lblLoginErrorMessage.isVisible = true;
+        kony.application.dismissLoadingScreen();
+      }
     }
     else{
-    var username = frmLoginDesk.tbUsername.text;
-    var password = frmLoginDesk.tbPassword.text;
-    if (this.isValidInputs(username, password)) {
-      kony.apps.coe.ess.frmLoginDesk.username = username.trim();
-      kony.apps.coe.ess.frmLoginDesk.password = password;
-      frmLoginDesk.imgLogin.onTouchStart = function(){};
-      kony.sdk.mvvm.LoginAction();
-    } else {
-      kony.application.dismissLoadingScreen();
+      var username = frmLoginDesk.tbUsername.text;
+      var password = frmLoginDesk.tbPassword.text;
+      if (this.isValidInputs(username, password)) {
+        kony.apps.coe.ess.frmLoginDesk.username = username.trim();
+        kony.apps.coe.ess.frmLoginDesk.password = password;
+        frmLoginDesk.imgLogin.onTouchStart = function(){};
+        kony.sdk.mvvm.LoginAction();
+      } else {
+        kony.application.dismissLoadingScreen();
+      }
     }
-    }
-            kony.print("-- End  kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
-        } catch (e) {
-            kony.application.dismissLoadingScreen();
-        }
-    };
+    kony.print("-- End  kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
+  } catch (e) {
+    kony.application.dismissLoadingScreen();
+  }
+};
 // %Region - Methods in frmLogin
 /**
  * @member of  frmLogin
@@ -156,21 +156,21 @@ kony.apps.coe.ess.frmLogin.afterloginSuccess =
  * @throws Exception if something goes wrong,
  */
 kony.apps.coe.ess.frmLogin.Init =
-    function() {
-        kony.print("-- start kony.apps.coe.ess.frmLogin.Init-- ");
-        try {
-            if (kony.store.getItem("useTouchID") === true) { //If User Enabled TouchID for App
-                if (kony.apps.coe.ess.QRCode.isReconfiguredClicked == true || applaunchMode == 3 || kony.apps.ess.deepLinkingSSO.ssotoken) {
-                    frmLogin.flxTouchIDPopup.isVisible = false;
-                } else {
-                    kony.apps.coe.ess.TouchID.authenticateThroughTouch();
-                }
-            }
-        } catch (e) {
-            handleError(e);
-        }
-        kony.print("-- End kony.apps.coe.ess.frmLogin.Init-- ");
-    };
+  function() {
+  kony.print("-- start kony.apps.coe.ess.frmLogin.Init-- ");
+  try {
+    if (kony.store.getItem("useTouchID") === true) { //If User Enabled TouchID for App
+      if (kony.apps.coe.ess.QRCode.isReconfiguredClicked == true || applaunchMode == 3 || kony.apps.ess.deepLinkingSSO.ssotoken) {
+        frmLogin.flxTouchIDPopup.isVisible = false;
+      } else {
+        kony.apps.coe.ess.TouchID.authenticateThroughTouch();
+      }
+    }
+  } catch (e) {
+    handleError(e);
+  }
+  kony.print("-- End kony.apps.coe.ess.frmLogin.Init-- ");
+};
 // %Region - Methods in frmLogin
 /**
  * @member of  frmLogin
@@ -178,153 +178,153 @@ kony.apps.coe.ess.frmLogin.Init =
  * @throws Exception if something goes wrong,
  */
 kony.apps.coe.ess.frmLogin.frmLoginPreshow =
-    function() {
-  	   kony.print("-- start kony.apps.coe.ess.frmLogin.frmLoginPreshow -- ");
-       if(kony.apps.coe.ess.globalVariables.isNativeTablet === false && kony.apps.coe.ess.globalVariables.isWebDesktop === false){
-  	   if(kony.apps.coe.ess.appconfig.isDemo === true){
-           //frmLogin.flxReconfigure.isVisible = true;
-       }
-  	   else{
-           //frmLogin.flxReconfigure.isVisible = false;
-       }
-       }
-       if (kony.apps.coe.ess.globalVariables.isWebDesktop === true) {
+  function() {
+  kony.print("-- start kony.apps.coe.ess.frmLogin.frmLoginPreshow -- ");
+  if(kony.apps.coe.ess.globalVariables.isNativeTablet === false && kony.apps.coe.ess.globalVariables.isWebDesktop === false){
+    if(kony.apps.coe.ess.appconfig.isDemo === true){
+      //frmLogin.flxReconfigure.isVisible = true;
+    }
+    else{
+      //frmLogin.flxReconfigure.isVisible = false;
+    }
+  }
+  if (kony.apps.coe.ess.globalVariables.isWebDesktop === true) {
     if (kony.store.getItem("rememberme") === true) {
       if(kony.store.getItem("username")!==null && kony.store.getItem("password")!==null){
-     var securityObj = new kony.apps.coe.ess.syncFunctions();
-      var username = securityObj.decryptDataDW(kony.store.getItem("username"));
-      var password = securityObj.decryptDataDW(kony.store.getItem("password"));
-      frmLoginDesk.imgRememberMe.src = "checkactive_dw.png";
-      frmLoginDesk.tbUsername.text = username;
-      frmLoginDesk.tbPassword.text = password;
-        }
+        var securityObj = new kony.apps.coe.ess.syncFunctions();
+        var username = securityObj.decryptDataDW(kony.store.getItem("username"));
+        var password = securityObj.decryptDataDW(kony.store.getItem("password"));
+        frmLoginDesk.imgRememberMe.src = "checkactive_dw.png";
+        frmLoginDesk.tbUsername.text = username;
+        frmLoginDesk.tbPassword.text = password;
+      }
     } else {
       frmLoginDesk.imgRememberMe.src = "uncheck.png";
       frmLoginDesk.tbUsername.text = "";
       frmLoginDesk.tbPassword.text = "";
     }
-         frmLoginDesk.imgLogin.onTouchStart = this.btnLoginOnclick.bind(this);
-         return;
-       }
-        var securityObj = new kony.apps.coe.ess.syncFunctions();
-        //#ifndef windows8
-        if (kony.apps.coe.ess.QRCode.navigatingThroughQRCode === true) {
-            frmLogin.imgRememberMe.src = "on.png";
-            frmLogin.tbUsername.text = kony.apps.coe.ess.frmLogin.username;
-            frmLogin.tbPassword.text = kony.apps.coe.ess.frmLogin.password;
-        } else {
-            if (kony.store.getItem("rememberme") === true) {
-                var username = securityObj.decryptData(kony.store.getItem("username"));
-                var password = securityObj.decryptData(kony.store.getItem("password"));
-                frmLogin.imgRememberMe.src = "on.png";
-                frmLogin.tbUsername.text = username;
-                frmLogin.tbPassword.text = password;
-            } else {
-                frmLogin.imgRememberMe.src = "off.png";
-                frmLogin.tbUsername.text = "";
-                frmLogin.tbPassword.text = "";
-                //     kony.store.setItem("rememberme", false);
-            }
-        }
-        //#else
-        if (kony.store.getItem("rememberme") === true) {
-            var username = securityObj.decryptData(kony.store.getItem("username"));
-            var password = securityObj.decryptData(kony.store.getItem("password"));
-            frmLogin.imgRememberMe.src = "on.png";
-            frmLogin.tbUsername.text = username;
-            frmLogin.tbPassword.text = password;
-        } else {
-            frmLogin.imgRememberMe.src = "off.png";
-            frmLogin.tbUsername.text = "";
-            frmLogin.tbPassword.text = "";
-            kony.store.setItem("rememberme", false);
-        }
-        //#endif
-        frmLogin.lblLoginErrorMessage.isVisible = false;
+    frmLoginDesk.imgLogin.onTouchStart = this.btnLoginOnclick.bind(this);
+    return;
+  }
+  var securityObj = new kony.apps.coe.ess.syncFunctions();
+  //#ifndef windows8
+  if (kony.apps.coe.ess.QRCode.navigatingThroughQRCode === true) {
+    frmLogin.imgRememberMe.src = "on.png";
+    frmLogin.tbUsername.text = kony.apps.coe.ess.frmLogin.username;
+    frmLogin.tbPassword.text = kony.apps.coe.ess.frmLogin.password;
+  } else {
+    if (kony.store.getItem("rememberme") === true) {
+      var username = securityObj.decryptData(kony.store.getItem("username"));
+      var password = securityObj.decryptData(kony.store.getItem("password"));
+      frmLogin.imgRememberMe.src = "on.png";
+      frmLogin.tbUsername.text = username;
+      frmLogin.tbPassword.text = password;
+    } else {
+      frmLogin.imgRememberMe.src = "off.png";
+      frmLogin.tbUsername.text = "";
+      frmLogin.tbPassword.text = "";
+      //     kony.store.setItem("rememberme", false);
+    }
+  }
+  //#else
+  if (kony.store.getItem("rememberme") === true) {
+    var username = securityObj.decryptData(kony.store.getItem("username"));
+    var password = securityObj.decryptData(kony.store.getItem("password"));
+    frmLogin.imgRememberMe.src = "on.png";
+    frmLogin.tbUsername.text = username;
+    frmLogin.tbPassword.text = password;
+  } else {
+    frmLogin.imgRememberMe.src = "off.png";
+    frmLogin.tbUsername.text = "";
+    frmLogin.tbPassword.text = "";
+    kony.store.setItem("rememberme", false);
+  }
+  //#endif
+  frmLogin.lblLoginErrorMessage.isVisible = false;
 
 
 
-        //#ifdef windows8
-        frmLogin.flxLogin.onClick = this.btnLoginOnclick.bind(this);
-        frmLogin.flxRemMe.onClick = function() {
-            frmLogin.imgRememberMe.src = (frmLogin.imgRememberMe.src === "on.png") ? ("off.png") : ("on.png");
-        }
-        //#else
-        frmLogin.btnLogin.onClick = this.btnLoginOnclick.bind(this);
-        frmLogin.btnRememberMe.onClick = function() {
-            frmLogin.imgRememberMe.src = (frmLogin.imgRememberMe.src === "on.png") ? ("off.png") : ("on.png");
-            if (frmLogin.imgRememberMe.src === "off.png")
-                kony.apps.ess.deepLinkingSSO.isRememberMeEnabled = false;
-        };
-        //#endif
-        if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
-        {
-            return;
-        }
+  //#ifdef windows8
+  frmLogin.flxLogin.onClick = this.btnLoginOnclick.bind(this);
+  frmLogin.flxRemMe.onClick = function() {
+    frmLogin.imgRememberMe.src = (frmLogin.imgRememberMe.src === "on.png") ? ("off.png") : ("on.png");
+  }
+  //#else
+  frmLogin.btnLogin.onClick = this.btnLoginOnclick.bind(this);
+  frmLogin.btnRememberMe.onClick = function() {
+    frmLogin.imgRememberMe.src = (frmLogin.imgRememberMe.src === "on.png") ? ("off.png") : ("on.png");
+    if (frmLogin.imgRememberMe.src === "off.png")
+      kony.apps.ess.deepLinkingSSO.isRememberMeEnabled = false;
+  };
+  //#endif
+  if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
+  {
+    return;
+  }
 
-        try {
-            //#ifndef windows8
-            //ToDo. Show TouchID buttons if it is supported
-            if (kony.apps.coe.ess.TouchID.isTouchAuthenticationSupported()) {
-                //Show TouchID Message & Icon
-                frmLogin.flxTouchIDText.isVisible = true;
-                frmLogin.imgTouchId.isVisible = true;
-                frmLogin.imgTouchId.onTouchEnd = kony.apps.coe.ess.TouchID.authenticateThroughTouch;
-                //#ifdef ipad
-                frmLogin.imgOR.isVisible = true;
-                frmLogin.flxLoginLeft.isVisible = true;
-                frmLogin.flxBottomKonyLogo.isVisible = false;
-                frmLogin.flxLoginRight.left = "0%";
-                frmLogin.flxMain.skin = "sknTabFlxLognBg";
-                //#endif
-                //#ifdef tabrcandroid
-                frmLogin.imgOR.isVisible = true;
-                frmLogin.flxLoginLeft.isVisible = true;
-                frmLogin.flxBottomKonyLogo.isVisible = false;
-                frmLogin.flxLoginRight.left = "0%";
-                frmLogin.flxMain.skin = "sknTabFlxLognBg";
-                //#endif
-            } else {
+  try {
+    //#ifndef windows8
+    //ToDo. Show TouchID buttons if it is supported
+    if (kony.apps.coe.ess.TouchID.isTouchAuthenticationSupported()) {
+      //Show TouchID Message & Icon
+      frmLogin.flxTouchIDText.isVisible = true;
+      frmLogin.imgTouchId.isVisible = true;
+      frmLogin.imgTouchId.onTouchEnd = kony.apps.coe.ess.TouchID.authenticateThroughTouch;
+      //#ifdef ipad
+      frmLogin.imgOR.isVisible = true;
+      frmLogin.flxLoginLeft.isVisible = true;
+      frmLogin.flxBottomKonyLogo.isVisible = false;
+      frmLogin.flxLoginRight.left = "0%";
+      frmLogin.flxMain.skin = "sknTabFlxLognBg";
+      //#endif
+      //#ifdef tabrcandroid
+      frmLogin.imgOR.isVisible = true;
+      frmLogin.flxLoginLeft.isVisible = true;
+      frmLogin.flxBottomKonyLogo.isVisible = false;
+      frmLogin.flxLoginRight.left = "0%";
+      frmLogin.flxMain.skin = "sknTabFlxLognBg";
+      //#endif
+    } else {
 
-                //Hide TouchID Message & Icon
-                frmLogin.flxTouchIDText.isVisible = false;
-                frmLogin.imgTouchId.isVisible = false;
-                //#ifdef ipad
-                frmLogin.imgOR.isVisible = false;
-                frmLogin.flxLoginLeft.isVisible = false;
-                frmLogin.flxBottomKonyLogo.isVisible = true;
-                frmLogin.flxLoginRight.left = "30%";
-                frmLogin.flxMain.skin = "sknTabFlxLognBgWhite";
-                //#endif
-                //#ifdef tabrcandroid
-                frmLogin.imgOR.isVisible = false;
-                frmLogin.flxLoginLeft.isVisible = false;
-                frmLogin.flxBottomKonyLogo.isVisible = true;
-                frmLogin.flxLoginRight.left = "30%";
-                frmLogin.flxMain.skin = "sknTabFlxLognBgWhite";
-                //#endif
-            }
-            //#endif
-            if (kony.apps.coe.ess.QRCode.navigatingThroughQRCode === true) {
-          		frmLogin.btnLogin.onClick = function() {};
-            }
-        } catch (e) { //In Android, Some exception may be thrown
-            //Hide TouchID Message & Icon
-          	kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
-          	frmLogin.btnLogin.onClick = function() {
-                kony.apps.coe.ess.frmLogin.btnLoginOnclick();
-            };
-            frmLogin.flxTouchIDText.isVisible = false;
-            frmLogin.imgTouchId.isVisible = false;
-        }
-
-        //ToDo : FInd appropriate place to InitializeSync
-
-        kony.print("-- End kony.apps.coe.ess.frmLogin.frmLoginPreshow -- ");
+      //Hide TouchID Message & Icon
+      frmLogin.flxTouchIDText.isVisible = false;
+      frmLogin.imgTouchId.isVisible = false;
+      //#ifdef ipad
+      frmLogin.imgOR.isVisible = false;
+      frmLogin.flxLoginLeft.isVisible = false;
+      frmLogin.flxBottomKonyLogo.isVisible = true;
+      frmLogin.flxLoginRight.left = "30%";
+      frmLogin.flxMain.skin = "sknTabFlxLognBgWhite";
+      //#endif
+      //#ifdef tabrcandroid
+      frmLogin.imgOR.isVisible = false;
+      frmLogin.flxLoginLeft.isVisible = false;
+      frmLogin.flxBottomKonyLogo.isVisible = true;
+      frmLogin.flxLoginRight.left = "30%";
+      frmLogin.flxMain.skin = "sknTabFlxLognBgWhite";
+      //#endif
+    }
+    //#endif
+    if (kony.apps.coe.ess.QRCode.navigatingThroughQRCode === true) {
+      frmLogin.btnLogin.onClick = function() {};
+    }
+  } catch (e) { //In Android, Some exception may be thrown
+    //Hide TouchID Message & Icon
+    kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
+    frmLogin.btnLogin.onClick = function() {
+      kony.apps.coe.ess.frmLogin.btnLoginOnclick();
     };
+    frmLogin.flxTouchIDText.isVisible = false;
+    frmLogin.imgTouchId.isVisible = false;
+  }
+
+  //ToDo : FInd appropriate place to InitializeSync
+
+  kony.print("-- End kony.apps.coe.ess.frmLogin.frmLoginPreshow -- ");
+};
 
 kony.apps.coe.ess.frmLogin.confirmedLogout = function(response) {
-    kony.print("-- start kony.apps.coe.ess.frmLogin.confirmedLogout -- ");
+  kony.print("-- start kony.apps.coe.ess.frmLogin.confirmedLogout -- ");
 
 };
 // %Region - Methods in frmLogin
@@ -334,21 +334,21 @@ kony.apps.coe.ess.frmLogin.confirmedLogout = function(response) {
  * @throws Exception if something goes wrong,
  */
 kony.apps.coe.ess.frmLogin.onLogout = function() {
-    kony.print("-- start kony.apps.coe.ess.frmLogin.onLogout -- ");
-    var alert = kony.ui.Alert({
-        "message": "",
-        "alertType": constants.ALERT_TYPE_CONFIRMATION,
-        "alertTitle": "Are you sure you want to logout ?",
-        "yesLabel": "Yes",
-        "noLabel": "No",
-        "alertIcon": "",
-        "alertHandler": this.confirmedLogout
-    }, {});
-    kony.print("-- End kony.apps.coe.ess.frmLogin.onLogout -- ");
+  kony.print("-- start kony.apps.coe.ess.frmLogin.onLogout -- ");
+  var alert = kony.ui.Alert({
+    "message": "",
+    "alertType": constants.ALERT_TYPE_CONFIRMATION,
+    "alertTitle": "Are you sure you want to logout ?",
+    "yesLabel": "Yes",
+    "noLabel": "No",
+    "alertIcon": "",
+    "alertHandler": this.confirmedLogout
+  }, {});
+  kony.print("-- End kony.apps.coe.ess.frmLogin.onLogout -- ");
 };
 
 kony.apps.coe.ess.frmLogin.disableBackbutton = function() {
-    return;
+  return;
 };
 
 /**
@@ -357,115 +357,115 @@ kony.apps.coe.ess.frmLogin.disableBackbutton = function() {
  *		Callback after performing new user check
  */
 kony.apps.coe.ess.frmLogin.resetDbIncaseOfNewUser = function(callback) {
-    try {
-        if (kony.apps.coe.ess.QRCode.navigatingThroughQRCode == true) {
-            callback(true);
-            kony.store.setItem("useTouchID", false);
-        }
-        //Read Previous Logged in Username
-        else {
-            var securityObj = new kony.apps.coe.ess.syncFunctions();
-            var storedUsername = kony.store.getItem("username");
-            if (storedUsername === null) {
-                //Whihc means, No user logged-in before after app is installed. Hence, Current user becomes new user
-                callback(true);
-                return;
-            }
-            var previousUsername = securityObj.decryptData(storedUsername);
-            //Check if Currenlty Authenticated & Previously Logged In user are same
-            if (previousUsername === kony.apps.coe.ess.frmLogin.username) {
-                //If same, Reset is Not Needed. Send false in callback as user is not new
-                callback(false);
-            } else {
-                //If not same, Means New User is trying to Logging in. Disabl TouchID
-                if (kony.apps.ess.deepLinkingSSO.isTouchIdEnabled != true) {
-                    kony.store.setItem("useTouchID", false);
-                }
-                //Reset Database & Call the callback on success with "true" as parameter to callback
-                kony.apps.coe.ess.Sync.resetSyncDb(function() {
-                    //On Sync reset Success
-                    //pass true as parameter - as user is new
-                    callback(true);
-                }, function() {
-                    //On Sync reset fail
-                    // some internal error occured & couldn't able to remove old user information. Still user is new. So pass "true" as parameter.
-                    callback(true);
-                });
-            }
-
-        }
-    } catch (e) {
-        kony.print("Exception in resetDbIncaseOfNewUser :: " + JSON.stringify(e));
+  try {
+    if (kony.apps.coe.ess.QRCode.navigatingThroughQRCode == true) {
+      callback(true);
+      kony.store.setItem("useTouchID", false);
     }
+    //Read Previous Logged in Username
+    else {
+      var securityObj = new kony.apps.coe.ess.syncFunctions();
+      var storedUsername = kony.store.getItem("username");
+      if (storedUsername === null) {
+        //Whihc means, No user logged-in before after app is installed. Hence, Current user becomes new user
+        callback(true);
+        return;
+      }
+      var previousUsername = securityObj.decryptData(storedUsername);
+      //Check if Currenlty Authenticated & Previously Logged In user are same
+      if (previousUsername === kony.apps.coe.ess.frmLogin.username) {
+        //If same, Reset is Not Needed. Send false in callback as user is not new
+        callback(false);
+      } else {
+        //If not same, Means New User is trying to Logging in. Disabl TouchID
+        if (kony.apps.ess.deepLinkingSSO.isTouchIdEnabled != true) {
+          kony.store.setItem("useTouchID", false);
+        }
+        //Reset Database & Call the callback on success with "true" as parameter to callback
+        kony.apps.coe.ess.Sync.resetSyncDb(function() {
+          //On Sync reset Success
+          //pass true as parameter - as user is new
+          callback(true);
+        }, function() {
+          //On Sync reset fail
+          // some internal error occured & couldn't able to remove old user information. Still user is new. So pass "true" as parameter.
+          callback(true);
+        });
+      }
+
+    }
+  } catch (e) {
+    kony.print("Exception in resetDbIncaseOfNewUser :: " + JSON.stringify(e));
+  }
 };
 /**
  * Show Enable TouchID Popup
  */
 kony.apps.coe.ess.frmLogin.showEnableTouchIDPopup = function(callback) {
-    if (kony.apps.coe.ess.globalVariables.isNative) {
-      //#ifdef iphone
-      frmLogin.lblEnableTouchIdDescription.text = kony.i18n.getLocalizedString('i18n.ess.Login.enableTouchIDDescription');
-      frmLogin.lblEnableTouchIdTitle.text = kony.i18n.getLocalizedString('i18n.ess.Login.useTouchId');
-      //#endif
-      //#ifdef android
-      frmLogin.lblEnableTouchIdDescription.text = kony.i18n.getLocalizedString('i18n.ess.Login.enableTouchIDDescription_android');
-      frmLogin.lblEnableTouchIdTitle.text = kony.i18n.getLocalizedString('i18n.ess.Login.useTouchId_android');
-      //#endif
+  if (kony.apps.coe.ess.globalVariables.isNative) {
+    //#ifdef iphone
+    frmLogin.lblEnableTouchIdDescription.text = kony.i18n.getLocalizedString('i18n.ess.Login.enableTouchIDDescription');
+    frmLogin.lblEnableTouchIdTitle.text = kony.i18n.getLocalizedString('i18n.ess.Login.useTouchId');
+    //#endif
+    //#ifdef android
+    frmLogin.lblEnableTouchIdDescription.text = kony.i18n.getLocalizedString('i18n.ess.Login.enableTouchIDDescription_android');
+    frmLogin.lblEnableTouchIdTitle.text = kony.i18n.getLocalizedString('i18n.ess.Login.useTouchId_android');
+    //#endif
+  }
+  frmLogin.flxPopups.isVisible = true;
+  frmLogin.flxEnableTouchIDPopup.isVisible = true;
+  frmLogin.btnNotNow.onClick = function() {
+    kony.store.setItem("useTouchID", false);
+    kony.apps.coe.ess.frmLogin.hidePopups();
+    if (callback)
+      callback();
+  };
+  frmLogin.btnEnable.onClick = function() {
+    kony.store.setItem("useTouchID", true);
+    kony.apps.coe.ess.frmLogin.hidePopups();
+    var username = kony.apps.coe.ess.frmLogin.username;
+    var password = kony.apps.coe.ess.frmLogin.password;
+    var isValid = kony.apps.coe.ess.frmLogin.isValidInputs(
+      username,
+      password
+    );
+    // Auto select RememberMe
+    frmLogin.imgRememberMe.src = "on.png";
+    if (isValid) { //This will be the case when User Enables TouchID after successful authentication.
+      var securityObj = new kony.apps.coe.ess.syncFunctions();
+      kony.store.setItem("username", securityObj.encryptData(username));
+      kony.store.setItem("password", securityObj.encryptData(password));
+    } else { //This is the case when user try to enable TouchID before authenticating
+      frmLogin.lblTouchIDPopupDescription.text = kony.i18n.getLocalizedString("i18n.ess.Login.registerUserForTouchId");
+      kony.apps.coe.ess.frmLogin.showTouchIdPopup(kony.i18n.getLocalizedString("i18n.ess.Login.loginNow"));
+      //In this case, We have to show user Popup with Message
+      return;
     }
-    frmLogin.flxPopups.isVisible = true;
-    frmLogin.flxEnableTouchIDPopup.isVisible = true;
-    frmLogin.btnNotNow.onClick = function() {
-        kony.store.setItem("useTouchID", false);
-        kony.apps.coe.ess.frmLogin.hidePopups();
-        if (callback)
-            callback();
-    };
-    frmLogin.btnEnable.onClick = function() {
-        kony.store.setItem("useTouchID", true);
-        kony.apps.coe.ess.frmLogin.hidePopups();
-        var username = kony.apps.coe.ess.frmLogin.username;
-        var password = kony.apps.coe.ess.frmLogin.password;
-        var isValid = kony.apps.coe.ess.frmLogin.isValidInputs(
-            username,
-            password
-        );
-        // Auto select RememberMe
-        frmLogin.imgRememberMe.src = "on.png";
-        if (isValid) { //This will be the case when User Enables TouchID after successful authentication.
-            var securityObj = new kony.apps.coe.ess.syncFunctions();
-            kony.store.setItem("username", securityObj.encryptData(username));
-            kony.store.setItem("password", securityObj.encryptData(password));
-        } else { //This is the case when user try to enable TouchID before authenticating
-            frmLogin.lblTouchIDPopupDescription.text = kony.i18n.getLocalizedString("i18n.ess.Login.registerUserForTouchId");
-            kony.apps.coe.ess.frmLogin.showTouchIdPopup(kony.i18n.getLocalizedString("i18n.ess.Login.loginNow"));
-            //In this case, We have to show user Popup with Message
-            return;
-        }
-        //Call the callback if provided
-        if (callback)
-            callback();
-    };
+    //Call the callback if provided
+    if (callback)
+      callback();
+  };
 };
 /**
  * Hides popup on Login screen
  */
 kony.apps.coe.ess.frmLogin.hidePopups = function() {
-    frmLogin.flxPopups.isVisible = false;
-    frmLogin.flxEnableTouchIDPopup.isVisible = false;
-    frmLogin.flxTouchIDPopup.isVisible = false;
+  frmLogin.flxPopups.isVisible = false;
+  frmLogin.flxEnableTouchIDPopup.isVisible = false;
+  frmLogin.flxTouchIDPopup.isVisible = false;
 };
 /**
  * Shows TouchID Custom Design Popup
  */
 kony.apps.coe.ess.frmLogin.showTouchIdPopup = function(okButtonText) {
-    frmLogin.flxPopups.isVisible = true;
-    frmLogin.flxTouchIDPopup.isVisible = true;
-    frmLogin.btnTouchIDCancel.onClick = kony.apps.coe.ess.frmLogin.hidePopups;
-    if (okButtonText) {
-        frmLogin.btnTouchIDCancel.text = okButtonText;
-    } else {
-        frmLogin.btnTouchIDCancel.text = kony.i18n.getLocalizedString("i18n.ess.Login.Cancel");
-    }
+  frmLogin.flxPopups.isVisible = true;
+  frmLogin.flxTouchIDPopup.isVisible = true;
+  frmLogin.btnTouchIDCancel.onClick = kony.apps.coe.ess.frmLogin.hidePopups;
+  if (okButtonText) {
+    frmLogin.btnTouchIDCancel.text = okButtonText;
+  } else {
+    frmLogin.btnTouchIDCancel.text = kony.i18n.getLocalizedString("i18n.ess.Login.Cancel");
+  }
 };
 
 /**
@@ -476,86 +476,86 @@ kony.apps.coe.ess.frmLogin.showTouchIdPopup = function(okButtonText) {
  */
 
 kony.apps.coe.ess.frmLogin.manualSyncOnClick = function(successCall, errorCall) {
-    kony.print("--Start manualSyncOnClick--");
-    if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-        kony.application.showLoadingScreen("", "Syncing . . .", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-        var syncSuccess = function(successCallback, res) {
-            //Generally, background sync will do nothing after successful sync. In any special cases, You can specify actions to be performed after sync success in background
-            var updateSyncDate = function() {
-                var months = [
-                    "Jan", "Feb", "Mar",
-                    "Apr", "May", "Jun", "Jul",
-                    "Aug", "Sep", "Oct",
-                    "Nov", "Dec"
-                ];
+  kony.print("--Start manualSyncOnClick--");
+  if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+    kony.application.showLoadingScreen("", "Syncing . . .", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    var syncSuccess = function(successCallback, res) {
+      //Generally, background sync will do nothing after successful sync. In any special cases, You can specify actions to be performed after sync success in background
+      var updateSyncDate = function() {
+        var months = [
+          "Jan", "Feb", "Mar",
+          "Apr", "May", "Jun", "Jul",
+          "Aug", "Sep", "Oct",
+          "Nov", "Dec"
+        ];
 
-                var currDate = new Date();
-                var currDay = currDate.getDate();
-                var currMonth = months[currDate.getMonth()];
-                var currYear = currDate.getFullYear();
-                var currTime = currDate.toHHMMSS(":");
-                var suffix;
-                if (parseInt(currDate.getHours()) >= 12) {
-                    suffix = "PM";
-                } else {
-                    suffix = "AM";
-                }
-                if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
-                    kony.application.getCurrentForm().lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
-                    kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
-                }
-            }
-            updateSyncDate();
-            successCallback();
-            kony.application.dismissLoadingScreen();
-        };
-        var successcallback = function() {};
-        if (successCall) { //If Successcall is provided, It will be executed immediately
-            successcallback = successCall;
+        var currDate = new Date();
+        var currDay = currDate.getDate();
+        var currMonth = months[currDate.getMonth()];
+        var currYear = currDate.getFullYear();
+        var currTime = currDate.toHHMMSS(":");
+        var suffix;
+        if (parseInt(currDate.getHours()) >= 12) {
+          suffix = "PM";
+        } else {
+          suffix = "AM";
         }
-        var errorcallback = function() {};
-        if (errorCall) {
-            errorcallback = errorCall;
+        if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
+          kony.application.getCurrentForm().lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
+          kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
         }
-        kony.apps.coe.ess.Sync.startSyncSession(syncSuccess.bind(this, successcallback, errorcallback), function() {
-            //Sync Session Failed
-            kony.application.dismissLoadingScreen();
-        });
-    } else {
-        // If there is no internet connections, What are the actions to be done ?
-        kony.apps.coe.ess.frmLogin.offlinePopup();
-        kony.application.dismissLoadingScreen();
+      }
+      updateSyncDate();
+      successCallback();
+      kony.application.dismissLoadingScreen();
+    };
+    var successcallback = function() {};
+    if (successCall) { //If Successcall is provided, It will be executed immediately
+      successcallback = successCall;
     }
-    kony.print("--End manualSyncOnClick--");
+    var errorcallback = function() {};
+    if (errorCall) {
+      errorcallback = errorCall;
+    }
+    kony.apps.coe.ess.Sync.startSyncSession(syncSuccess.bind(this, successcallback, errorcallback), function() {
+      //Sync Session Failed
+      kony.application.dismissLoadingScreen();
+    });
+  } else {
+    // If there is no internet connections, What are the actions to be done ?
+    kony.apps.coe.ess.frmLogin.offlinePopup();
+    kony.application.dismissLoadingScreen();
+  }
+  kony.print("--End manualSyncOnClick--");
 };
 
 
 
 kony.apps.coe.ess.frmLogin.getSyncState = function() {
-    return syncUse;
+  return syncUse;
 };
 
 /**
  * Called when Session/Token expires in backend. It will ask user to re-login
  */
 kony.apps.coe.ess.frmLogin.handleSessionExpairyError = function() {
-    try {
-        kony.print("kony.apps.coe.ess.frmLogin.handleSessionExpairyError - Start");
-        var alertUI = kony.ui.Alert({
-            "message": kony.i18n.getLocalizedString("i18n.ess.Login.sessionInvalidateErrorMessage"),
-            "alertType": constants.ALERT_TYPE_ERROR,
-            "alertTitle": kony.i18n.getLocalizedString("i18n.ess.Login.sessionInvalidateErrorTitle"),
-            "yesLabel": kony.i18n.getLocalizedString("i18n.ess.Login.loginNow"),
-            "alertHandler": function() {
-                kony.print("kony.apps.coe.ess.frmLogin.handleSessionExpairyError - Aert Handler Executed.");
-                kony.sdk.mvvm.LogoutAction();
-            }
-        }, {});
-        kony.print("kony.apps.coe.ess.frmLogin.handleSessionExpairyError - End");
-    } catch (e) {
+  try {
+    kony.print("kony.apps.coe.ess.frmLogin.handleSessionExpairyError - Start");
+    var alertUI = kony.ui.Alert({
+      "message": kony.i18n.getLocalizedString("i18n.ess.Login.sessionInvalidateErrorMessage"),
+      "alertType": constants.ALERT_TYPE_ERROR,
+      "alertTitle": kony.i18n.getLocalizedString("i18n.ess.Login.sessionInvalidateErrorTitle"),
+      "yesLabel": kony.i18n.getLocalizedString("i18n.ess.Login.loginNow"),
+      "alertHandler": function() {
+        kony.print("kony.apps.coe.ess.frmLogin.handleSessionExpairyError - Aert Handler Executed.");
         kony.sdk.mvvm.LogoutAction();
-        kony.print("Exception occured : kony.apps.coe.ess.frmLogin.handleSessionExpairyError : " + JSON.stringify(e));
-    }
+      }
+    }, {});
+    kony.print("kony.apps.coe.ess.frmLogin.handleSessionExpairyError - End");
+  } catch (e) {
+    kony.sdk.mvvm.LogoutAction();
+    kony.print("Exception occured : kony.apps.coe.ess.frmLogin.handleSessionExpairyError : " + JSON.stringify(e));
+  }
 };
 
 /**
@@ -564,18 +564,18 @@ kony.apps.coe.ess.frmLogin.handleSessionExpairyError = function() {
  * @Desc - function to display popup
  */
 kony.apps.coe.ess.frmLogin.offlinePopup = function() {
-    kony.print("-- current form:" + kony.application.getCurrentForm().id + " --");
-    kony.print("-- value " + kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress + " --");
-    if (kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress == true) {
-        // Disable clicking on Hamburger menu items.
-        kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(false);
-        // Show offline alert
-        popupOfflineAlert.show();
-        kony.apps.coe.ess.globalVariables.ifOfflinePopUpVisible = true;
-    } else {
-        popupOfflineAlert.show();
-        kony.apps.coe.ess.globalVariables.ifOfflinePopUpVisible = true;
-    }
+  kony.print("-- current form:" + kony.application.getCurrentForm().id + " --");
+  kony.print("-- value " + kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress + " --");
+  if (kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress == true) {
+    // Disable clicking on Hamburger menu items.
+    kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(false);
+    // Show offline alert
+    popupOfflineAlert.show();
+    kony.apps.coe.ess.globalVariables.ifOfflinePopUpVisible = true;
+  } else {
+    popupOfflineAlert.show();
+    kony.apps.coe.ess.globalVariables.ifOfflinePopUpVisible = true;
+  }
 };
 
 /**
@@ -584,9 +584,9 @@ kony.apps.coe.ess.frmLogin.offlinePopup = function() {
  * @Desc - return the UserName.
  */
 kony.apps.coe.ess.frmLogin.getUserDetails = function() {
-    kony.print("kony.apps.coe.ess.frmLogin.getUserDetails - Start");
-    kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceName).getProfile(true, this.userDetailsSucess, this.userDetailsError);
-    kony.print("kony.apps.coe.ess.frmLogin.getUserDetails - End");
+  kony.print("kony.apps.coe.ess.frmLogin.getUserDetails - Start");
+  kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceName).getProfile(true, this.userDetailsSucess, this.userDetailsError);
+  kony.print("kony.apps.coe.ess.frmLogin.getUserDetails - End");
 };
 /**
  * @function userDetailsSucess
@@ -594,9 +594,9 @@ kony.apps.coe.ess.frmLogin.getUserDetails = function() {
  * @Desc - function to be executed on sucess of getProfile Method.
  */
 kony.apps.coe.ess.frmLogin.userDetailsSucess = function(response) {
-    kony.print("-- Start kony.apps.coe.ess.frmLogin.userDetailsSucess  --");
-    kony.apps.coe.ess.frmLogin.username = response.userid;
-    kony.print("-- End kony.apps.coe.ess.frmLogin.userDetailsSucess  --");
+  kony.print("-- Start kony.apps.coe.ess.frmLogin.userDetailsSucess  --");
+  kony.apps.coe.ess.frmLogin.username = response.userid;
+  kony.print("-- End kony.apps.coe.ess.frmLogin.userDetailsSucess  --");
 };
 /**
  * @function userDetailsSucess
@@ -604,7 +604,16 @@ kony.apps.coe.ess.frmLogin.userDetailsSucess = function(response) {
  * @Desc - function to be executed on Error of getProfile Method.
  */
 kony.apps.coe.ess.frmLogin.userDetailsError = function(err) {
-    kony.print("-- Start kony.apps.coe.ess.frmLogin.userDetailsError  --");
-    kony.print(JSON.stringify(err));
-    kony.print("-- End kony.apps.coe.ess.frmLogin.userDetailsError --");
+  kony.print("-- Start kony.apps.coe.ess.frmLogin.userDetailsError  --");
+  kony.print(JSON.stringify(err));
+  kony.print("-- End kony.apps.coe.ess.frmLogin.userDetailsError --");
+};
+
+kony.apps.coe.ess.frmLogin.seti18nText = function(){
+  frmLogin.tbUsername.placeholder=kony.i18n.getLocalizedString("i18n.ess.Login.username");
+  frmLogin.tbPassword.placeholder=kony.i18n.getLocalizedString("i18n.ess.Login.password");
+  frmLogin.lblReconfigure.text=kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmIsLaterSearch.lblReconfigure");
+  frmLogin.lblRememberMe.text=kony.i18n.getLocalizedString("i18n.ess.Login.rememberMe");
+  frmLogin.btnLogin.text=kony.i18n.getLocalizedString("i18n.ess.Login.signin");
+  frmLogin.lblTouchIdText.text=kony.i18n.getLocalizedString("i18n.ess.Login.loginWithTouchId");
 };

@@ -10,7 +10,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__7a550f3718bb4513aa58321b1aa3634c",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "return kony.apps.ess.deepLinkingSSO.appServicesAction(eventobject);",
+            "codeSnippet": "return kony.apps.ess.deepLinkingSSO.appServicesAction(eventobject);\n",
             "parentId": null,
             "callbackType": null
         }]

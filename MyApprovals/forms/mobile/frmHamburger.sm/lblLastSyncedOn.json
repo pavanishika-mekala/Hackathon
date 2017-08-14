@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "10%"
+        "value": "8%"
     },
     "_margin_": [
         1,
@@ -20,17 +20,17 @@
         0,
         0,
         0,
-        0
+        2
     ],
     "_skin_": "s98d0d20e8624e4b9326ba6cfc2e9cc0",
-    "_text_": "",
+    "_text_": "Continue Offline~|~Continuer hors ligne~|~Ga verder offline~|~",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "75%"
     },
     "_wrapping_": 2,
     "android": {
@@ -56,7 +56,9 @@
     },
     "isvisible": true,
     "kuid": "adbe33ea6043476794cc295db2772c64",
+    "maxnumberoflines": 2,
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxSyncDateTime",
     "pf": "frmHamburger",
     "texti18n": "i18n.ess.frmHamburger.LastSyncedOn",

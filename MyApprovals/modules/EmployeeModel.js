@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-GA-7.3.2_v201706230520_r0*******************
-// ****************Generated On Wed Jul 19 05:29:38 UTC 2017Employee*******************
+//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
+// ****************Generated On Wed Aug 09 07:41:08 UTC 2017Employee*******************
 // **********************************Start Employee's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -728,7 +728,7 @@ com.ess.EMPLOYEE.Employee.updateAll = function(inputArray, successcallback, erro
 	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Employee.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "10000000252a67608";
+	var dbname = "100004737b2bb0f56";
 	var tbname = "Employee";
 	var isError = false;
 	var errObject = null;

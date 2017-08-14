@@ -36,8 +36,9 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "btnBack",
-        "lblHeader"
+        "btnBack1",
+        "lblHeader",
+        "btnBack"
     ],
     "clipbounds": true,
     "containerweight": 100,
