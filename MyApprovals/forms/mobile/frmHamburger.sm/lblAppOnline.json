@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "4.40%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_margin_": [
         1,
@@ -13,20 +13,20 @@
         1
     ],
     "_padding_": [
-        1,
         0,
-        1,
+        0,
+        0,
         0
     ],
     "_right_": {
         "type": "string",
-        "value": "17.50%"
+        "value": "23%"
     },
     "_skin_": "s2639049699d492b87a26a8ab7d361cf",
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "5.60%"
+        "value": "6%"
     },
     "_width_": {
         "type": "ref",

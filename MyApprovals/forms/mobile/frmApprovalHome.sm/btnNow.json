@@ -5,11 +5,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "80%"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "17%"
     },
     "_margin_": [
         6,
@@ -27,7 +27,7 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "10%"
     },
     "_width_": {
         "type": "ref",
@@ -44,12 +44,13 @@
     "displaytext": true,
     "focusskin": "s6fd8bc185124dd5b19a2c4d4ddd437b",
     "id": "btnNow",
-    "ide_onClick": "AS_Button_ab7ac174ee954217b4a7a0cf95d0790f",
+    "ide_onClick": "AS_Button_j938af8f7cdb4e4b881d436f1ba62305",
     "info": null,
     "isvisible": true,
     "kuid": "de769fb58ce6477580334d18f5c5d615",
     "name": "kony.ui.Button",
-    "parent": "flxNow",
+    "paddinginpixel": false,
+    "parent": "flxNowTxt",
     "pf": "frmApprovalHome",
     "texti18n": "i18n.ess.frmApprovalHome.btnNow",
     "wType": "Button"

@@ -18,8 +18,7 @@
             }],
             "parentId": null,
             "callbackType": null,
-            "disabled": null,
-            "source": "module"
+            "disabled": null
         }]
     }
 }

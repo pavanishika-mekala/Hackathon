@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "16dp"
+        "value": "18dp"
     },
     "_left_": {
         "type": "string",
-        "value": "-1.70%"
+        "value": "2%"
     },
     "_margin_": [
         0,
@@ -31,7 +31,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "16dp"
+        "value": "18dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -48,7 +48,7 @@
     "kuid": "fb66d945b8d345f3af312600f78e67cc",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxNow",
+    "parent": "flxNowTxt",
     "pf": "frmApprovalHome",
     "snapgridsize": 10,
     "snaptogrid": true,

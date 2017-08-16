@@ -30,11 +30,11 @@
         "flxHamburger"
     ],
     "containerweight": 100,
-    "currentLocale": "default",
+    "currentLocale": "fr_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone4",
+    "device": "GalaxyNote",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmHamburger",
@@ -74,11 +74,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "iphone",
-    "prevDevice": "iPhone6",
-    "prevPlatform": "android",
+    "platform": "android",
+    "prevDevice": "GalaxyS5",
+    "prevPlatform": "iphone",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone4",
+    "shellCSS": "and_GalaxyNote",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

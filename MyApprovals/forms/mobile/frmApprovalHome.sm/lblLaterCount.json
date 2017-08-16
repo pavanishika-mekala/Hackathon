@@ -42,7 +42,7 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "id": "lblLaterCount",
     "info": null,
     "ipad": {

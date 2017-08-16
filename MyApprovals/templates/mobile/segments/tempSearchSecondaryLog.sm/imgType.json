@@ -5,11 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "15%"
     },
     "_left_": {
         "type": "string",
-        "value": "23%"
+        "value": "22%"
     },
     "_margin_": [
         0,
@@ -27,11 +27,11 @@
     "_src_": "expense_details.png",
     "_top_": {
         "type": "string",
-        "value": "46.70%"
+        "value": "47.70%"
     },
     "_width_": {
         "type": "string",
-        "value": "5%"
+        "value": "7%"
     },
     "canUpdateUI": true,
     "containerId": true,

@@ -20,13 +20,13 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "4%"
+        "value": "3%"
     },
     "_skin_": "s981e888d79145b6ac0828fc5148f01d",
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "5.30%"
+        "value": "0.50%"
     },
     "_width_": {
         "type": "ref",

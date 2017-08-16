@@ -1,14 +1,15 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
         "value": "preferred"
     },
     "_left_": {
-        "type": "number",
-        "value": "1"
+        "type": "string",
+        "value": "2dp"
     },
     "_margin_": [
         1,
@@ -38,7 +39,7 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "57%"
+        "value": "50%"
     },
     "containerId": true,
     "containerweight": 100,
@@ -58,7 +59,7 @@
     "isvisible": true,
     "kuid": "ffb0f35cce0e435899d389e10223386a",
     "name": "kony.ui.Label",
-    "parent": "flexRemainingHours",
+    "parent": "flxTimer",
     "pf": "tempSegApprovalRequest",
     "tooltip": "",
     "wType": "Label",

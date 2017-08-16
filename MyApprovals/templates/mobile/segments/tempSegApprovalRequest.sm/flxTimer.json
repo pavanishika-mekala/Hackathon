@@ -3,11 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "33%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "79%"
+        "value": "40dp"
     },
     "_margin_": [
         0,
@@ -23,21 +19,26 @@
         0
     ],
     "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "3%"
+    },
     "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "_top_": {
         "type": "string",
-        "value": "40%"
+        "value": "39%"
     },
     "_width_": {
         "type": "string",
-        "value": "21%"
+        "value": "55dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "flxTimerOuterCircle",
-        "flexTimerInnerCircle"
+        "flexTimerInnerCircle",
+        "lblTimeUnit"
     ],
     "clipbounds": true,
     "containerId": true,
@@ -47,7 +48,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "a4206b4cb26949858105819165d3a29a",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxApprovalRequest",
     "pf": "tempSegApprovalRequest",

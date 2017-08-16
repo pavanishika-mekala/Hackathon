@@ -1,5 +1,5 @@
 /*
-  * kony-sdk-ide Version SDK-GA-7.3.0.11
+  * kony-sdk-ide Version SDK-GA-7.3.0
   */
         
 /**
@@ -166,7 +166,7 @@ kony.sdk.isInitialized = false;
 kony.sdk.currentInstance = null;
 kony.sdk.isLicenseUrlAvailable = true;
 kony.sdk.constants = kony.sdk.constants || {};
-kony.sdk.version = "SDK-GA-7.3.0.11";
+kony.sdk.version = "SDK-GA-7.3.0";
 kony.sdk.logger = new konyLogger();
 kony.sdk.syncService = null;
 kony.sdk.nativestore = kony.sdk.nativestore || new konyDataStore();
@@ -438,6 +438,13 @@ kony.sdk.prototype.init = function(appKey, appSecret, serviceUrl, successCallbac
 			konyRef.mainRef.config = data;
 			konyRef.servicedoc = data;
 			konyRef.mainRef.appId = data.appId;
+
+            if(!kony.sdk.isNullOrUndefined(data.reportingsvc)) {
+
+                kony.sdk.setLicenseCall(appKey,appSecret,data);
+            }
+
+
 			var processServiceDocResult = konyRef.initWithServiceDoc(appKey, appSecret, data);
 			if (processServiceDocResult === true) {
 				logger.log("### init::_doInit processing service document successful");
@@ -558,12 +565,7 @@ kony.sdk.prototype.initWithServiceDoc = function(appKey, appSecret, serviceDoc) 
 			if (konyRef.internalSdkObject) {
 				konyRef.internalSdkObject.initWithServiceDoc(appKey, appSecret, servConfig);
 				if (konyRef.internalSdkObject.setClientParams) {
-					if(appConfig){
-						konyRef.internalSdkObject.setClientParams({"aid":appConfig.appId, "aname":appConfig.appName});
-					} else {
-						konyRef.internalSdkObject.setClientParams(konyRef.getClientParams());
-					}
-					
+					konyRef.internalSdkObject.setClientParams(konyRef.getClientParams());
 				}
 				logger.log("### init::internal sdk object initialized");
 			}
@@ -577,7 +579,6 @@ kony.sdk.prototype.initWithServiceDoc = function(appKey, appSecret, serviceDoc) 
 			if(!kony.sdk.isNullOrUndefined(servConfig.reportingsvc) )
 			{
 			    kony.sdk.saveMetadatainDs(appKey,appSecret,servConfig);
-				kony.sdk.setLicenseCall(appKey,appSecret,servConfig);
 			}
 
 			if(kony.sdk.getSdkType() == "js"){
@@ -701,34 +702,6 @@ kony.sdk.error.getIntegrationErrObj = function(errResponse) {
 		}
 		if (mfcode) {
 			return kony.sdk.error.getMFcodeErrObj(mfcode, message, details, errorMessagePrefixForIntegration);
-		}
-		return errResponse;
-	} catch (err) {
-		return errResponse;
-	}
-}
-
-kony.sdk.error.getLogicErrObj = function(errResponse) {
-	try {
-		var mfcode = errResponse["mfcode"];
-		var message = errResponse["errmsg"];
-		var details = errResponse["mferrmsg"];
-		var service = errResponse["service"];
-		if (!service) {
-			service = "";
-		}
-		if (!details) {
-			details = "";
-		}
-		
-		var errorMessagePrefixForLogic = "";
-		if (service) {
-			errorMessagePrefixForLogic = "Logic Service Request Failed for " + service + ":";
-		} else {
-			errorMessagePrefixForLogic = "Logic Service Request Failed:";
-		}
-		if (mfcode) {
-			return kony.sdk.error.getMFcodeErrObj(mfcode, message, details, errorMessagePrefixForLogic);
 		}
 		return errResponse;
 	} catch (err) {
@@ -997,6 +970,8 @@ function IdentityService(konyRef, rec) {
 	 * @param {function} failureCallback - Callback method on failure
 	 */
 	this.login = function(options, successCallback, failureCallback) {
+		
+		konyRef.isAnonymousProvider = false;
 		var continueOnRefreshError = true;
 		logger.log("### AuthService::login Invoked login for provider " + _providerName + " of type " + _type);
 		if (typeof(options) == 'undefined') {
@@ -1186,7 +1161,7 @@ function IdentityService(konyRef, rec) {
 	var processMultipleProvidersResponse = function(data, providerName){
 
         if (data && data.profiles) {
-        	//konyRef.isAnonymousProvider = false;
+        	konyRef.isAnonymousProvider = false;
             for (var provider in data.profiles) {
                 if (!konyRef.tokens[provider]) {
                     konyRef.tokens[provider] = {};
@@ -1194,7 +1169,7 @@ function IdentityService(konyRef, rec) {
                 konyRef.tokens[provider].profile = data.profiles[provider];
             }
         } else if (data && providerName && data.profile) {
-            //konyRef.isAnonymousProvider = false;
+            konyRef.isAnonymousProvider = false;
             konyRef.tokens[providerName].profile = data.profile;
         }
 
@@ -1304,6 +1279,7 @@ function IdentityService(konyRef, rec) {
 	 */
     this.anonymousLoginSync = function(options) {
 
+		konyRef.isAnonymousProvider = false;
 		logger.log("### AuthService::login Invoked login for provider " + _providerName + " of type " + _type);
 		if (typeof(options) == 'undefined') {
 			throw new Exception(Errors.AUTH_FAILURE, "Missing required number of arguments to login function");
@@ -1377,11 +1353,11 @@ function IdentityService(konyRef, rec) {
             if(_type == "oauth2" && kony.sdk.getSdkType() == "js"){
                 url = _serviceUrl + "/oauth2/logout?provider=" + _providerName;
             }else{
-                url = _serviceUrl + "/logout?provider=" + _providerName;
+                url = _serviceUrl + "/logout?provider=" + _providerName
             }
 
             networkProvider.post(url, formdata, {
-                "X-Kony-Authorization": claimsTokenValue,
+                "Authorization": claimsTokenValue,
                 "Accept": "*/*"
             },
             function(data) {
@@ -1753,15 +1729,23 @@ kony.sdk.prototype.getLogicService = function(serviceName) {
             return new kony.sdk.LogicService(this, serviceName);
         }
     }
+
     throw new Exception(Errors.LOGIC_SERVICE_FAILURE, "Invalid serviceName:"+serviceName);
 };
+
+/**
+ * Method which returns the Logic Service object
+ * @param konyRef
+ * @param serviceName
+ * @constructor
+ */
 kony.sdk.LogicService = function(konyRef, serviceName){
     this.konyRef = konyRef;
     this.serviceName = serviceName;
     this.logicServiceUrl = null;
     var logger = new konyLogger();
 
-	this.getLogicServiceUrl = function(){
+    this.getLogicServiceUrl = function(){
         if (this.logicServiceUrl == null) {
             this.logicServiceUrl = stripTrailingCharacter(konyRef.logicsvc[serviceName], "/");
         }
@@ -1769,252 +1753,7 @@ kony.sdk.LogicService = function(konyRef, serviceName){
     };
 
     logger.log(" ###LogicService Created & LogicService Url = " + this.getLogicServiceUrl());
-	var networkProvider = new konyNetworkProvider();
-    this.invokeOperation = function(serviceName, path, methodType, headers, data, successCallback, failureCallback, options) {
-		function invokeOperationHandler() {
-			_invokeOperation(serviceName, path, methodType, headers, data, true, successCallback, failureCallback, options);
-		}
-		kony.sdk.claimsRefresh(invokeOperationHandler, failureCallback);
-	};
-	function invokeOperationRetry(serviceName, path, methodType, headers, data, successCallback, failureCallback, options) {
-		function invokeOperationRetryHandler() {
-			_invokeOperation(serviceName, path, methodType, headers, data, false, successCallback, failureCallback, options);
-		}
-		kony.sdk.claimsAndProviderTokenRefresh(invokeOperationRetryHandler, failureCallback);
-	}
-	
-	function retryServiceCall(errorResponse){
-		if(errorResponse["mfcode"]){
-				// check for the mf code for which,
-				// retry should be done.
-		} else {
-			if(errorResponse["httpStatusCode"] && errorResponse["httpStatusCode"] === 401){
-				return true;
-			}
-		}
-	}
-	
-	function _invokeOperation(serviceName, path, methodType, headers, data, isRetryNeeded, successCallback, failureCallback, options) {
-
-		var requestData = {};
-		var logger = new konyLogger();
-		logger.log("Entered into _invokeOperation servicePath: " + serviceName + ", methodType: " + methodType + ", path" + path + ", isRetryNeeded: " + isRetryNeeded);
-		var reportingData = kony.sdk.getPayload(konyRef);
-		var sessionId = kony.ds.read("konyUUID");
-		if(sessionId){
-		  reportingData.rsid = sessionId[0];
-		}
-		if(!reportingData.rsid)
-		{
-			logger.log("rsid is either empty,null or undefined");
-		}
-		if (kony.sdk.metric) {
-			if (kony.sdk.metric.reportEventBufferBackupArray.length === 0) {
-				kony.sdk.metric.readFromDS();
-			}
-			kony.sdk.metric.pushEventsToBufferArray();
-			requestData.events = kony.sdk.metric.reportEventBufferBackupArray;
-		}
-		for (var key in data) {
-			requestData[key] = data[key];
-		}
-		reportingData.svcid = serviceName;
-		var token;
-		for (var i in konyRef.tokens) {
-			if (konyRef.tokens.hasOwnProperty(i) && typeof(i) !== 'function') {
-				token = konyRef.tokens[i];
-				break;
-			}
-		}
-
-		requestData["konyreportingparams"] = JSON.stringify(reportingData);
-		var defaultHeaders = {
-			"Content-Type": "application/x-www-form-urlencoded",
-			"X-Kony-Authorization": konyRef.currentClaimToken
-		};
-		if(typeof(svcObj) === 'object' &&  svcObj.version){
-			defaultHeaders["X-Kony-API-Version"] = svcObj.version;
-		}
-
-		// if the user has defined his own headers, use them
-		if (headers) {
-			for (var header in headers) {
-				defaultHeaders[header] = headers[header];
-			}
-		}
-		
-		if (methodType == "GET")
-		{
-			networkProvider.get(konyRef.logicsvc[serviceName]+ path,
-			requestData, defaultHeaders,
-			function(res) {
-				if (kony.sdk.metric) {
-					kony.sdk.metric.clearBufferEvents();
-				}
-				kony.sdk.verifyAndCallClosure(successCallback, res);
-			},
-			function(xhr, status, err) {
-				if(isRetryNeeded === true && retryServiceCall(xhr) === true){
-					invokeOperationRetry(serviceName, path, methodType, headers, data, successCallback, failureCallback, options);
-					return;
-				}
-				kony.sdk.processLogicErrorResponse(xhr,true,failureCallback);
-			}, null, options);
-		}
-		else if (methodType == "PUT")
-		{
-			networkProvider.put(konyRef.logicsvc[serviceName]+ path,
-			requestData, defaultHeaders,
-			function(res) {
-				if (kony.sdk.metric) {
-					kony.sdk.metric.clearBufferEvents();
-				}
-				kony.sdk.verifyAndCallClosure(successCallback, res);
-			},
-			function(xhr, status, err) {
-				if(isRetryNeeded === true && retryServiceCall(xhr) === true){
-					invokeOperationRetry(serviceName, path, methodType, headers, data, successCallback, failureCallback, options);
-					return;
-				}
-				kony.sdk.processLogicErrorResponse(xhr,true,failureCallback);
-			}, null, options);
-		}
-		else if (methodType == "DELETE")
-		{
-			networkProvider.invokeDeleteRequest(konyRef.logicsvc[serviceName]+ path,
-			requestData, defaultHeaders,
-			function(res) {
-				if (kony.sdk.metric) {
-					kony.sdk.metric.clearBufferEvents();
-				}
-				kony.sdk.verifyAndCallClosure(successCallback, res);
-			},
-			function(xhr, status, err) {
-				if(isRetryNeeded === true && retryServiceCall(xhr) === true){
-					invokeOperationRetry(serviceName, path, methodType, headers, data, successCallback, failureCallback, options);
-					return;
-				}
-				kony.sdk.processLogicErrorResponse(xhr,true,failureCallback);
-			}, null, options);
-		}
-		else{
-		networkProvider.post(konyRef.logicsvc[serviceName]+ path,
-			requestData, defaultHeaders,
-			function(res) {
-				if (kony.sdk.metric) {
-					kony.sdk.metric.clearBufferEvents();
-				}
-				kony.sdk.verifyAndCallClosure(successCallback, res);
-			},
-			function(xhr, status, err) {
-				if(isRetryNeeded === true && retryServiceCall(xhr) === true){
-					invokeOperationRetry(serviceName, path, methodType, headers, data, successCallback, failureCallback, options);
-					return;
-				}
-				kony.sdk.processLogicErrorResponse(xhr,true,failureCallback);
-			}, null, options);
-		}
-	}
-
-	kony.sdk.processLogicErrorResponse = function(err,isAsync,callBack){
-		if (kony.sdk.metric) {
-			if (kony.sdk.metric.errorCodeMap[err.opstatus]) {
-				kony.sdk.metric.saveInDS();
-			}
-		}
-		if(err["mfcode"]){
-			var konyRef = kony.sdk.getCurrentInstance();
-			//clear the cache if the error code related to session/token expiry
-			if (kony.sdk.isSessionOrTokenExpired(err["mfcode"])) {
-				logger.log("###LogicService::invokeOperationFailure  Session/Token expired. Authenticate and Try again");
-				//kony.sdk.resetCacheKeys(konyRef);
-			}
-		}
-		if(!isAsync){
-            return kony.sdk.error.getLogicErrObj(err);
-		}
-		else if(callBack){
-		  kony.sdk.verifyAndCallClosure(callBack, kony.sdk.error.getLogicErrObj(err));
-		}
-	};
-
-	//This is an internal api to invoke an service synchronously
-   	this.invokeOperationSync = function(serviceName, path, headers, data) {
-		var res=null;
-		res = kony.sdk.claimsRefreshSync();
-		if(res && res.message && res.message == "success")
-		{
-			return _invokeOperationSync(serviceName, path, headers, data);
-		}
-		else{
-			return res;
-		} 
-	};
-
-	function _invokeOperationSync(serviceName, path, headers, data) {
-		var requestData = {};
-		var logger = new konyLogger();
-		var konyRef = kony.sdk.getCurrentInstance();
-		var reportingData = kony.sdk.getPayload(konyRef);
-		var sessionId = kony.ds.read("konyUUID");
-		if(sessionId){
-		  reportingData.rsid = sessionId[0];
-		}
-		if(!reportingData.rsid)
-		{
-			logger.log("rsid is either empty,null or undefined");
-		}
-		if (kony.sdk.metric) {
-			if (kony.sdk.metric.reportEventBufferBackupArray.length === 0) {
-				kony.sdk.metric.readFromDS();
-			}
-			kony.sdk.metric.pushEventsToBufferArray();
-			requestData.events = kony.sdk.metric.reportEventBufferBackupArray;
-		}
-		for (var key in data) {
-			requestData[key] = data[key];
-		}
-		reportingData.svcid = serviceName;
-		var token;
-		for (var i in konyRef.tokens) {
-			if (konyRef.tokens.hasOwnProperty(i) && typeof(i) !== 'function') {
-				token = konyRef.tokens[i];
-				break;
-			}
-		}
-
-		requestData["konyreportingparams"] = JSON.stringify(reportingData);
-		var defaultHeaders = {
-			"Content-Type": "application/x-www-form-urlencoded",
-			"X-Kony-Authorization": konyRef.currentClaimToken
-		};
-
-		if(typeof(svcObj) === 'object' &&  svcObj.version){
-			defaultHeaders["X-Kony-API-Version"] = svcObj.version;
-		}
-		// if the user has defined his own headers, use them
-		if (headers) {
-			for (var header in headers) {
-				defaultHeaders[header] = headers[header];
-			}
-		}
-        var res = null;
-		res = networkProvider.postSync(konyRef.logicsvc[serviceName]+ path,
-			requestData, defaultHeaders);
-     	if(res.opstatus == 0){
-			if (kony.sdk.metric) {
-					kony.sdk.metric.clearBufferEvents();
-				}
-			return res;
-		}
-		else{
-			return kony.sdk.processLogicErrorResponse(res,false);
-		}
-	}
-
-
 };
-
 kony.sdk.prototype.registerObjectService = function(objectServiceType, objectServiceClass) {
 	kony.sdk.registeredobjsvcs = kony.sdk.registeredobjsvcs || {};
 	kony.sdk.registeredobjsvcs[objectServiceType] = objectServiceClass;
@@ -3068,19 +2807,9 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 			headers = {};
 		}
 
-		var isKonyApiVersionAvailable = false;
-                if (typeof(headers) !== 'undefined' && headers !== null) {
-                    //check for x-kony-api-version case insensitive
-                    for (var header in headers) {
-                        if(header !== null && header !=='undefined'){
-                            if (header.toLowerCase() === "x-kony-api-version")
-                                isKonyApiVersionAvailable = true
-                        }
-                    }
-                    if (!isKonyApiVersionAvailable) {
-                        headers["X-Kony-API-Version"] = currentObject.getVersion();
-                    }
-                }
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
+
 		function invokeSuccessCallback(response){
 			logger.log("### OnlineObjectService::_getBinaryContent::invokeSuccessCallback Response:" + JSON.stringify(response));
 			kony.sdk.verifyAndCallClosure(successCallback,response["data"]);
@@ -3133,19 +2862,9 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 			headers = {};
 		}
 
-        var isKonyApiVersionAvailable = false;
-        if (typeof(headers) !== 'undefined' && headers !== null) {
-                    //check for x-kony-api-version case insensitive
-            for (var header in headers) {
-                    if(header !== null && header !=='undefined'){
-                            if (header.toLowerCase() === "x-kony-api-version")
-                                isKonyApiVersionAvailable = true
-                    }
-            }
-            if (!isKonyApiVersionAvailable) {
-                headers["X-Kony-API-Version"] = currentObject.getVersion();
-            }
-        }
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
+
 		var formData = new kony.sdk.getFormData(jsonPayload);
 
 		if(queryParams != undefined && queryParams != null) {
@@ -3204,19 +2923,9 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 			headers = {};
 		}
 		headers["X-HTTP-Method-Override"] = "PUT";
-        var isKonyApiVersionAvailable = false;
-        if (typeof(headers) !== 'undefined' && headers !== null) {
-            //check for x-kony-api-version case insensitive
-            for (var header in headers) {
-                if(header !== null && header !=='undefined'){
-                      if (header.toLowerCase() === "x-kony-api-version")
-                        isKonyApiVersionAvailable = true
-                }
-            }
-            if (!isKonyApiVersionAvailable) {
-                headers["X-Kony-API-Version"] = currentObject.getVersion();
-            }
-        }
+
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 		var formData = new kony.sdk.getFormData(jsonPayload);
 
@@ -3257,19 +2966,8 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 			headers = {};
 		}
 
-		var isKonyApiVersionAvailable = false;
-        if (typeof(headers) !== 'undefined' && headers !== null) {
-                    //check for x-kony-api-version case insensitive
-                    for (var header in headers) {
-                        if(header !== null && header !=='undefined'){
-                              if (header.toLowerCase() === "x-kony-api-version")
-                                isKonyApiVersionAvailable = true
-                        }
-                    }
-                    if (!isKonyApiVersionAvailable) {
-                        headers["X-Kony-API-Version"] = currentObject.getVersion();
-                    }
-        }
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 		var formData = new kony.sdk.getFormData(record, null);
 
@@ -3314,19 +3012,9 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 			//if headers not sent by the deveolper
 			headers = {};
 		}
-        var isKonyApiVersionAvailable = false;
-        if (typeof(headers) !== 'undefined' && headers !== null) {
-            //check for x-kony-api-version case insensitive
-            for (var header in headers) {
-                if(header !== null && header !=='undefined'){
-                	if (header.toLowerCase() === "x-kony-api-version")
-                		isKonyApiVersionAvailable = true
-                }
-            }
-            if (!isKonyApiVersionAvailable) {
-                headers["X-Kony-API-Version"] = currentObject.getVersion();
-            }
-        }
+
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 		function invokeSuccessCallback(response){
 			logger.log("### OnlineObjectService::_fetch::invokeSuccessCallback Response:" + JSON.stringify(response));
@@ -3356,19 +3044,8 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 			headers = {};
 		}
 
-		var isKonyApiVersionAvailable = false;
-        if (typeof(headers) !== 'undefined' && headers !== null) {
-                    //check for x-kony-api-version case insensitive
-        	for (var header in headers) {
-        		if(header !== null && header !=='undefined'){
-        			if (header.toLowerCase() === "x-kony-api-version")
-        				isKonyApiVersionAvailable = true
-                }
-            }
-            if (!isKonyApiVersionAvailable) {
-        		headers["X-Kony-API-Version"] = currentObject.getVersion();
-            }
-        }
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 		headers["X-HTTP-Method-Override"] = "PUT";
 		var formData = new kony.sdk.getFormData(dataObject.getRecord(), null);
@@ -3407,19 +3084,8 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 		}
 		headers["X-HTTP-Method-Override"] = "PATCH";
 
-	    var isKonyApiVersionAvailable = false;
-        if (typeof(headers) !== 'undefined' && headers !== null) {
-                    //check for x-kony-api-version case insensitive
-        	for (var header in headers) {
-        		if(header !== null && header !=='undefined'){
-        			if (header.toLowerCase() === "x-kony-api-version")
-        				isKonyApiVersionAvailable = true
-                }
-            }
-            if (!isKonyApiVersionAvailable) {
-        		headers["X-Kony-API-Version"] = currentObject.getVersion();
-            }
-        }
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 		var formData = new kony.sdk.getFormData(dataObject.getRecord(), null);
 
@@ -3486,19 +3152,8 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 			headers = {};
 		}
 
-	    var isKonyApiVersionAvailable = false;
-        if (typeof(headers) !== 'undefined' && headers !== null) {
-                    //check for x-kony-api-version case insensitive
-        	for (var header in headers) {
-        		if(header !== null && header !=='undefined'){
-        			if (header.toLowerCase() === "x-kony-api-version")
-        				isKonyApiVersionAvailable = true
-                }
-            }
-            if (!isKonyApiVersionAvailable) {
-        		headers["X-Kony-API-Version"] = currentObject.getVersion();
-            }
-        }
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 		headers["X-HTTP-Method-Override"] = "DELETE";
 
@@ -3529,19 +3184,9 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 			//if headers not sent by the deveolper
 			headers = {};
 		}
-        var isKonyApiVersionAvailable = false;
-        if (typeof(headers) !== 'undefined' && headers !== null) {
-                    //check for x-kony-api-version case insensitive
-        	for (var header in headers) {
-        		if(header !== null && header !=='undefined'){
-        			if (header.toLowerCase() === "x-kony-api-version")
-        				isKonyApiVersionAvailable = true
-                }
-            }
-            if (!isKonyApiVersionAvailable) {
-        		headers["X-Kony-API-Version"] = currentObject.getVersion();
-            }
-        }
+
+		if(!headers["X-Kony-API-Version"])
+			headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 		var formData = new kony.sdk.getFormData(dataObject.getRecord(), null);
 
@@ -3584,19 +3229,8 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 				headers = {};
 			}
 
-		    var isKonyApiVersionAvailable = false;
-            if (typeof(headers) !== 'undefined' && headers !== null) {
-                        //check for x-kony-api-version case insensitive
-            	for (var header in headers) {
-            		if(header !== null && header !=='undefined'){
-            			if (header.toLowerCase() === "x-kony-api-version")
-            				isKonyApiVersionAvailable = true
-                    }
-                }
-                if (!isKonyApiVersionAvailable) {
-            		headers["X-Kony-API-Version"] = currentObject.getVersion();
-                }
-            }
+			if(!headers["X-Kony-API-Version"])
+				headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 			var url = tmpMetadataUrl;
 			/*if(lastFetchTime !== undefined && lastFetchTime !== null){
@@ -3648,19 +3282,8 @@ kony.sdk.OnlineObjectService = function(konyRef, serviceName) {
 				headers = {};
 			}
 
-	        var isKonyApiVersionAvailable = false;
-            if (typeof(headers) !== 'undefined' && headers !== null) {
-                        //check for x-kony-api-version case insensitive
-            	for (var header in headers) {
-            		if(header !== null && header !=='undefined'){
-            			if (header.toLowerCase() === "x-kony-api-version")
-            				isKonyApiVersionAvailable = true
-                    }
-                }
-                if (!isKonyApiVersionAvailable) {
-            		headers["X-Kony-API-Version"] = currentObject.getVersion();
-                }
-            }
+			if(!headers["X-Kony-API-Version"])
+				headers["X-Kony-API-Version"] = currentObject.getVersion();
 
 			var url =  tmpMetadataUrl + "/"+ objectName;
 
@@ -3723,29 +3346,17 @@ function invokeObjectOperation(url, svcid, headers, formData, httpMethod, succes
 		}
 	}
 	// if the user has defined his own headers, use them
-	   if (headers) {
-            var tempHeader = "";
-            for (var header in headers) {
-                if ("Accept".toLowerCase() === header.toLowerCase()) {
-                    defaultHeaders[header] = headers[header];
-                } else if ("x-kony-authorization" === header.toLowerCase()) {
-                    tempHeader = "X-Kony-Authorization";
-                    if (defaultHeaders[tempHeader] !== headers[header]) {
-                        defaultHeaders[tempHeader] = headers[header];
-                    }
-                } else if ("content-type" === header.toLowerCase()) {
-                    tempHeader = "Content-Type";
-                    if (defaultHeaders[tempHeader] !== headers[header]) {
-                        defaultHeaders[tempHeader] = defaultHeaders[tempHeader] + "," + headers[header];
-                    }
-                } else {
-                    if (defaultHeaders[header] !== headers[header]) {
-                        defaultHeaders[header] = headers[header];
-                    }
-                }
-            }
-        }
-
+	if (headers) {
+		for (var header in headers) {
+			if ("Accept"!=header) {
+				defaultHeaders[header] = headers[header];
+			} else {
+				if (defaultHeaders[header] !== headers[header]) {
+					defaultHeaders[header] = defaultHeaders[header] + "," + headers[header];
+				}
+			}
+		}
+	}
 	function networksuccess(res) {
 		if (kony.sdk.metric) {
 			kony.sdk.metric.clearBufferEvents();
@@ -7191,7 +6802,7 @@ kony.sdk.OfflineObjects = function(objServiceList){
 
 //#endif
 kony.sdk.util = kony.sdk.util || {};
- 
+
 //#ifdef iphone
 //#define KONYSYNC_IOS
 //#endif
@@ -7383,37 +6994,15 @@ kony.sdk.util = kony.sdk.util || {};
 	};
 
 function konyNetworkProvider() {
-		this.post = function(url, params, headers, successCallback, failureCallback, konyContentType, options) {
+	this.post = function(url, params, headers, successCallback, failureCallback, konyContentType, options) {
         //Appending global params
         if(kony.sdk.isNullOrUndefined(params))
             params = {};
         url = konyRef.appendGlobalParams(url, headers, params);
 		if (typeof(XMLHttpRequest) !== 'undefined') {
-			konyXMLHttpRequest(url, params, headers, "POST", konyContentType, successCallback, failureCallback, options);
+			konyXMLHttpRequestWrapper(url, params, headers, "POST", konyContentType, successCallback, failureCallback, options);
 		} else {
 			konyNetHttpRequest(url, params, headers, "POST", konyContentType, successCallback, failureCallback, options);
-		}
-	};
-	this.put = function(url, params, headers, successCallback, failureCallback, konyContentType, options) {
-        //Appending global params
-        if(kony.sdk.isNullOrUndefined(params))
-            params = {};
-        url = konyRef.appendGlobalParams(url, headers, params);
-		if (typeof(XMLHttpRequest) !== 'undefined') {
-			konyXMLHttpRequest(url, params, headers, "PUT", konyContentType, successCallback, failureCallback, options);
-		} else {
-			konyNetHttpRequest(url, params, headers, "PUT", konyContentType, successCallback, failureCallback, options);
-		}
-	};
-	this.invokeDeleteRequest = function(url, params, headers, successCallback, failureCallback, konyContentType, options) {
-        //Appending global params
-        if(kony.sdk.isNullOrUndefined(params))
-            params = {};
-        url = konyRef.appendGlobalParams(url, headers, params);
-		if (typeof(XMLHttpRequest) !== 'undefined') {
-            konyXMLHttpRequest(url, params, headers, "DELETE", konyContentType, successCallback, failureCallback, options);
-		} else {
-			konyNetHttpRequest(url, params, headers, "DELETE", konyContentType, successCallback, failureCallback, options);
 		}
 	};
     //postSync will only work for Richclients like Android,IOS
@@ -7428,7 +7017,7 @@ function konyNetworkProvider() {
         //Appending global params
 		url = konyRef.appendGlobalParams(url, headers, params);
 		if (typeof(XMLHttpRequest) !== 'undefined') {
-			konyXMLHttpRequest(url, params, headers, "GET", konyContentType, successCallback, failureCallback, options);
+			konyXMLHttpRequestWrapper(url, params, headers, "GET", konyContentType, successCallback, failureCallback, options);
 		} else {
 			konyNetHttpRequest(url, params, headers, "GET", konyContentType, successCallback, failureCallback, options);
 		}
@@ -7468,20 +7057,9 @@ function konyNetHttpRequest(url, params, headers, httpMethod, konyContentType, s
 	}else {
 		httpRequest = new kony.net.HttpRequest();
 	}
-	// check for the deprecated property if set in appmiddlewaresecureinvokerasync() API
-	if(options && options["httpconfig_old"]){
-		if(options["httpconfig_old"]["timeout"]){
-			httpRequest.timeout = options["httpconfig_old"]["timeout"] * 1000;
-		}
-	}
-	//#ifdef  KONYSYNC_IOS
-	if(options && options["httpRequestOptions"] && options["httpRequestOptions"] instanceof Object && options["httpRequestOptions"]["timeoutIntervalForRequest"]){
-		httpRequest.timeout = options["httpRequestOptions"]["timeoutIntervalForRequest"] * 1000;
-	}
-	//#endif
 	//#ifdef  KONYSYNC_WINDOWS
 	if(options && options["httpRequestOptions"] && options["httpRequestOptions"] instanceof Object && options["httpRequestOptions"]["timeoutIntervalForRequest"]){
-		httpRequest.timeout = options["httpRequestOptions"]["timeoutIntervalForRequest"] * 1000;
+		httpRequest.timeout = options["httpRequestOptions"]["timeoutIntervalForRequest"];
 	}
 	//#endif
 	var isInvalidJSON = false;
@@ -7500,13 +7078,7 @@ function konyNetHttpRequest(url, params, headers, httpMethod, konyContentType, s
 			} else if (httpRequest.response) {
 				response = kony.sdk.cloneObject(httpRequest.response);
 			}
-
-			//Handling other response types apart from JSON
-            if(options && options["httpResponseType"] && options["httpResponseType"] === result.responseType && result.responseType !== 'json') {
-                response = {};
-                response.rawResponse = result.response;
-                isInvalidJSON = false;
-            }else if (response && typeof(response) === 'string') {
+			if (response && typeof(response) === 'string') {
 				if(kony.sdk.isJson(response)){
 					response = JSON.parse(response);
 				}
@@ -7514,7 +7086,6 @@ function konyNetHttpRequest(url, params, headers, httpMethod, konyContentType, s
 					isInvalidJSON = true;
 				}
 			}
-
 			if(response && !(isInvalidJSON)){
 				response.httpresponse = {};
 				response.httpresponse.headers = httpRequest.getAllResponseHeaders();
@@ -7747,7 +7318,7 @@ function konyXMLHttpRequest(url, params, headers, httpMethod, konyContentType, s
 				if(!resultTable.opstatus){
 					resultTable.opstatus = 0;
 				}
-				if (resultTable["opstatus"] == 0) {
+				if (resultTable["opstatus"] === 0) {
 					successCallback(resultTable);
 				} else {
 					errorCallback(resultTable);
@@ -7790,19 +7361,15 @@ function konyXMLHttpRequest(url, params, headers, httpMethod, konyContentType, s
 	httpRequest.withCredentials = xmlHttpRequestOptions["enableWithCredentials"] || false;
 
 	httpRequest.open(httpMethod, url, true);
+	if (typeof(headers) !== 'undefined' && headers !== null) {
+		if (typeof(headers["Content-Type"]) === 'undefined') {
+			headers["Content-Type"] = "application/json";
+		}
+		for (var header in headers) {
+			httpRequest.setRequestHeader(header, headers[header]);
+		}
+	}
 
-    var isContentTypeAvailable = false;
-    if (typeof(headers) !== 'undefined' && headers !== null) {
-        //check content-type for case insensitive
-        for (var header in headers) {
-            if (header.toLowerCase() === "content-type")
-                isContentTypeAvailable = true
-            httpRequest.setRequestHeader(header, headers[header]);
-        }
-        if (!isContentTypeAvailable) {
-            headers["Content-Type"] = "application/json";
-        }
-    }
 	if (params && params.httpconfig && params.httpconfig.timeout) {
 
 		httpRequest.timeout = params.httpconfig.timeout * 1000;
@@ -7810,28 +7377,26 @@ function konyXMLHttpRequest(url, params, headers, httpMethod, konyContentType, s
 	}
 	if (konyContentType == undefined || konyContentType == null || konyContentType != 'formdata') {
 		//preparing params for other than object services
-
-        if (headers["Content-Type"] === "application/x-www-form-urlencoded" || headers["Content-Type"] === "application/json") {
-                var paramsTable = "";
-                var firstVal = true;
-                for (var key in params) {
-                    if (!firstVal) {
-                        paramsTable += "&";
-                    }
-                    firstVal = false;
-                    if (typeof(params[key])!= "undefined") {
-                        if(typeof(params[key]) !== "string"){
-                            if(!(params[key] instanceof Array && typeof(options) != "undefined" && options != null && typeof(options["enablePreMFCompat"]) != "undefined" && options["enablePreMFCompat"] === true))
-                                params[key] = JSON.stringify(params[key]);
-                        }
-                        paramsTable = paramsTable + key + "=" + encodeURIComponent(params[key]);
-                    }
-                }
-                params = paramsTable;
-        } else if (typeof(params) !== "string") {
-                params = JSON.stringify(params);
-        }
-
+		if (headers["Content-Type"] === "application/x-www-form-urlencoded" || headers["Content-Type"] === "application/json") {
+			var paramsTable = "";
+			var firstVal = true;
+			for (var key in params) {
+				if (!firstVal) {
+					paramsTable += "&";
+				}
+				firstVal = false;
+				if (typeof(params[key])!= "undefined") {
+					if(typeof(params[key]) !== "string"){
+						if(!(params[key] instanceof Array && typeof(options) != "undefined" && options != null && typeof(options["enablePreMFCompat"]) != "undefined" && options["enablePreMFCompat"] === true))
+							params[key] = JSON.stringify(params[key]);
+					}
+					paramsTable = paramsTable + key + "=" + encodeURIComponent(params[key]);
+				}
+			}
+			params = paramsTable;
+		} else if (typeof(params) !== "string") {
+			params = JSON.stringify(params);
+		}
 	} else if (konyContentType == "formdata"){
 		//for specific requests like object services we will get formdata object
 		//for object services we are getting kony.net.FormData as params so using the same.
@@ -7922,15 +7487,9 @@ kony.sdk.getPayload = function(konyRef) {
     payload.dm = kony.os.deviceInfo().model;
     payload.did = kony.sdk.getDeviceId(kony.os.deviceInfo().name);
     payload.ua = kony.os.userAgent();
-	if(appConfig){
-		payload.aid =  appConfig.appId;
-		payload.aname = appConfig.appName;
-	} else {
-		var clientParams = konyRef.getClientParams();
-		payload.aid =  clientParams.aid ? clientParams.aid : konyRef.mainRef.baseId;
-		payload.aname = clientParams.aname ? clientParams.aname : konyRef.mainRef.name;
-	}
-	
+	var clientParams = konyRef.getClientParams();
+	payload.aid =  clientParams.aid ? clientParams.aid : konyRef.mainRef.baseId;
+	payload.aname = clientParams.aname ? clientParams.aname : konyRef.mainRef.name;
 	payload.chnl = kony.sdk.getChannelType();
 	payload.plat = kony.sdk.getPlatformName();
 	if(payload.plat === "ios"  && kony.os.deviceInfo().name !== "thinclient") {
@@ -8012,15 +7571,7 @@ kony.mbaas.invokeMbaasServiceFromKonyStudio = function(url, inputParam, serviceI
 		throw new Exception(Errors.INIT_FAILURE, "Please call init before invoking this service");
 	}
 	var integrationService = currentInstance.getIntegrationService(serviceID);
-	var options = {};
-	if (inputParam && inputParam["httpconfig"]) {
-		options["httpconfig_old"] = inputParam["httpconfig"];
-		delete inputParam["httpconfig"];
-	}
-	if (inputParam && inputParam["httpRequestOptions"] && inputParam["httpRequestOptions"] instanceof Object) {
-		options["httpRequestOptions"] = inputParam["httpRequestOptions"];
-		delete inputParam["httpRequestOptions"];
-	}
+
 	var headers = null;
 	if (inputParam && inputParam["httpheaders"]) {
 		headers = inputParam["httpheaders"];
@@ -8036,7 +7587,7 @@ kony.mbaas.invokeMbaasServiceFromKonyStudio = function(url, inputParam, serviceI
 		if (typeof(callBack) === 'function') {
 			callBack(400, res, infoObject);
 		}
-	}, options);
+	});
 }
 kony.mbaas.invokeMbaasServiceFromKonyStudioSync = function(url,inputParam, serviceID, operationID) {
 	var currentInstance = kony.sdk.getCurrentInstance();
@@ -8183,7 +7734,7 @@ kony.sdk.cloneObject = function(obj){
 kony.sdk.setLicenseCall = function(appKey,appSecret,data){
 		//Changing isturlbase for new server.
 		var reportingServiceUrl = data.reportingsvc.session;
-		if(typeof(appConfig) != "undefined" && appConfig.isturlbase != reportingServiceUrl.replace("/IST", "")) {
+		if(typeof(appConfig) != "undefined") {
 			appConfig.isturlbase = reportingServiceUrl.replace("/IST", "");
 
 			if ((appKey != appConfig.appKey) && (appSecret != appConfig.appSecret)) {
@@ -8383,7 +7934,7 @@ kony.sdk.metric.flushEvents = function() {
 
 	function flushCallback(status, response) {
 		if (status === 400) {
-			if (response.opstatus == 0) {
+			if (response.opstatus === 0) {
 				kony.sdk.metric.clearBufferEvents();
 			} else if (kony.sdk.metric.errorCodeMap[response.opstatus]) {
 				kony.sdk.metric.saveInDS();
@@ -8572,46 +8123,29 @@ function IntegrationService(konyRef, serviceName) {
 			requestData[key] = data[key];
 		}
 		reportingData.svcid = operationName;
-		var token = konyRef.currentClaimToken;
-		if(!token){
-			token = kony.sdk.getCurrentInstance().currentClaimToken;
+		var token;
+		for (var i in konyRef.tokens) {
+			if (konyRef.tokens.hasOwnProperty(i) && typeof(i) !== 'function') {
+				token = konyRef.tokens[i];
+				break;
+			}
 		}
 
 		requestData["konyreportingparams"] = JSON.stringify(reportingData);
 		var defaultHeaders = {
 			"Content-Type": "application/x-www-form-urlencoded",
-			"X-Kony-Authorization": token
+			"X-Kony-Authorization": konyRef.currentClaimToken
 		};
 		if(typeof(svcObj) === 'object' &&  svcObj.version){
 			defaultHeaders["X-Kony-API-Version"] = svcObj.version;
 		}
 
 		// if the user has defined his own headers, use them
-		if(!kony.sdk.isNullOrUndefined(headers)){
-		    if((Object.keys(headers)).length !== 0 && typeof(headers)==="object") {
-                        var defaultKeys = [];
-                        defaultKeys = Object.keys(defaultHeaders);
-                        var defaultkeyLower = {};
-                        defaultkeyLower = defaultKeys.map(function (x) {
-                         return x.toLowerCase()
-                        });
-
-                        for (var header in headers) {
-                            const headerConst = header
-                            if (defaultkeyLower.indexOf(headerConst.toLowerCase()) !== -1) {
-                                for (var i = 0; i < defaultKeys.length; i++) {
-                                    var tempKey = defaultKeys[i];
-                                    if (tempKey.toLowerCase() === headerConst.toLowerCase()) {
-                                        defaultHeaders[tempKey] = headers[header];
-                                    }
-                                }
-                            }else {
-                                defaultHeaders[header] = headers[header];
-                            }
-                    }
-		    }
-
-        }
+		if (headers) {
+			for (var header in headers) {
+				defaultHeaders[header] = headers[header];
+			}
+		}
 
 		networkProvider.post(homeUrl + "/" + operationName,
 			requestData, defaultHeaders,
@@ -8707,28 +8241,11 @@ function IntegrationService(konyRef, serviceName) {
 			defaultHeaders["X-Kony-API-Version"] = svcObj.version;
 		}
 		// if the user has defined his own headers, use them
-		if((Object.keys(headers)).length !== 0){
-                    var defaultKeys = [];
-                    defaultKeys = Object.keys(defaultHeaders);
-                    var defaultkeyLower = {};
-                    defaultkeyLower = defaultKeys.map(function (x) {
-                        return x.toLowerCase()
-                    });
-
-                    for (var header in headers) {
-                        const headerConst = header
-                        if (defaultkeyLower.indexOf(headerConst.toLowerCase()) !== -1) {
-                            for (var i = 0; i < defaultKeys.length; i++) {
-                                var tempKey = defaultKeys[i];
-                                if (tempKey.toLowerCase() === headerConst.toLowerCase()) {
-                                    defaultHeaders[tempKey] = headers[header];
-                                }
-                            }
-                        } else {
-                            defaultHeaders[header] = headers[header];
-                        }
-                    }
-                }
+		if (headers) {
+			for (var header in headers) {
+				defaultHeaders[header] = headers[header];
+			}
+		}
         var res = null;
 		res = networkProvider.postSync(homeUrl + "/" + operationName,
 			requestData, defaultHeaders);
@@ -9504,10 +9021,7 @@ function MetricsService(konyRef) {
 		"exception": "Exception",
 		"crash": "Crash",
 		"custom": "Custom",
-		"servicecall": "ServiceCall",
-		"apptransition": "AppTransition",
-		"appload": "AppLoad",
-		"component": "Component"
+		"servicecall": "ServiceCall"
 	};
 	var errorCodeMap = {
 		"1000": true,
@@ -9694,7 +9208,7 @@ function MetricsService(konyRef) {
 
 		function flushCallback(status, response) {
 			if (status === 400) {
-				if (response.opstatus == 0) {
+				if (response.opstatus === 0) {
 					ref.clearBufferEvents();
 				} else if (errorCodeMap[response.opstatus]) {
 					ref.saveInDS();

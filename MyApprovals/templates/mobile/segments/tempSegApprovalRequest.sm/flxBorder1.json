@@ -44,7 +44,7 @@
     "enablescrolling": true,
     "id": "flxBorder1",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "6d1559b00c5f4294b09549a13a453e30",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

@@ -1,11 +1,10 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
@@ -27,7 +26,7 @@
     "_text_": "28 Sep 2016",
     "_top_": {
         "type": "string",
-        "value": "0"
+        "value": "71%"
     },
     "_width_": {
         "type": "ref",
@@ -58,7 +57,8 @@
     "isvisible": true,
     "kuid": "be169eb039ce4274adb3d6baece9ebcf",
     "name": "kony.ui.Label",
-    "parent": "flxSyncTime",
+    "paddinginpixel": false,
+    "parent": "flxSyncDateTime",
     "pf": "frmHamburger",
     "tooltip": "",
     "wType": "Label",

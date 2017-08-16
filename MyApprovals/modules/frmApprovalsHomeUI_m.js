@@ -665,7 +665,7 @@ sliderAnimationToLater = function() {
         frmApprovalHome.flxSlider.animate(
             kony.ui.createAnimation({
                 100: {
-                    left: "66.5%",//"58.5%",
+                    left: "57%",
                     widht: "13%"
                 }
             }), {
@@ -701,7 +701,7 @@ sliderAnimationToNow = function() {
         frmApprovalHome.flxSlider.animate(
             kony.ui.createAnimation({
                 100: {
-                    left: "28.55%",
+                    left: "27%",
                     widht: "12.5%"
                 }
             }), {
@@ -973,7 +973,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.set_data_ForNowSegment = function(resp
         }
         var WidgetDatamap = {
             "lblShortName": "CreatedUserShortName",
-            "imgCategory": "requestTypeImage",
+           // "imgCategory": "requestTypeImage",
             "lblUserName": "UserName",
             "lblCreateDate": "RequestDate",
             "lblDueDateValue": "dueDate",
@@ -981,9 +981,9 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.set_data_ForNowSegment = function(resp
             "btnAdditionalInfo": "AdditionalData",
             "flxTimer": "FlxTimerUi",
             "lblCategory": "category",
-            "flxBorder1": "requestTypeBorderSkin",
-            "flxBorder2": "requestTypeBorderSkin2",
-            "imgLeaveInfo": "requestTypeInfoImage",
+           // "flxBorder1": "requestTypeBorderSkin",
+           // "flxBorder2": "requestTypeBorderSkin2",
+           // "imgLeaveInfo": "requestTypeInfoImage",
             "lblRemainingHours": "remaingHours",
             "lblDelegated": "Delegated",
             "imgUser": "imgUser",

@@ -5,7 +5,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "80%"
     },
     "_left_": {
         "type": "string",
@@ -27,25 +27,25 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "disabledSkins": {},
     "displaytext": true,
     "focusskin": "sf300815551f426598b009d641728cbf",
     "id": "btnLater",
-    "ide_onClick": "AS_Button_h7c679c5a76c41baa05510594158953b",
+    "ide_onClick": "AS_Button_hf22e50ccb0e4666b93ce38a710bb40e",
     "info": null,
     "isvisible": true,
     "kuid": "13578c50d71e4893ba277c4fa57e628c",
     "name": "kony.ui.Button",
-    "parent": "flxLater",
+    "parent": "flxLaterTab",
     "pf": "frmApprovalHome",
     "texti18n": "i18n.ess.frmApprovalHome.btnLater",
     "wType": "Button",

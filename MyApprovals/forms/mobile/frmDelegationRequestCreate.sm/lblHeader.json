@@ -17,7 +17,7 @@
         1
     ],
     "_padding_": [
-        2,
+        0,
         0,
         0,
         0
@@ -26,11 +26,11 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "80%"
+        "value": "75%"
     },
     "_wrapping_": 2,
     "android": {
@@ -57,7 +57,6 @@
     "isvisible": true,
     "kuid": "c199622f7d074668b6460e97819f38b9",
     "name": "kony.ui.Label",
-    "paddinginpixel": false,
     "parent": "flxHeader",
     "pf": "frmDelegationRequestCreate",
     "texti18n": "i18n.ess.myapproval.newdelegationrequest",

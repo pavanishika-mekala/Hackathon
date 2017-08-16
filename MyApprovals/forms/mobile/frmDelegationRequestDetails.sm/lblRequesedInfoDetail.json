@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "70%"
+        "value": "100%"
     },
     "_left_": "0%",
     "_margin_": [
@@ -23,7 +23,7 @@
     "_text_": "My Time",
     "_top_": {
         "type": "string",
-        "value": "29%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",

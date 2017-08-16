@@ -15,7 +15,7 @@ kony.apps.coe.ess.Approvals.RequestedLists.MakeSegmentMultipleSelect=function(){
     
     var WidgetDatamap = {
 					"lblShortName" : "CreatedUserShortName",
-					"imgCategory" : "requestTypeImage",
+					//"imgCategory" : "requestTypeImage",
 					"lblUserName" : "UserName",
 					"lblCreateDate" : "RequestDate",
 					"lblDueDateValue" : "dueDate",
@@ -23,9 +23,9 @@ kony.apps.coe.ess.Approvals.RequestedLists.MakeSegmentMultipleSelect=function(){
 					"btnAdditionalInfo" : "AdditionalData",
 					"flxTimer" : "FlxTimerUi",
 					"lblCategory" : "category",
-					"flxBorder1" : "requestTypeBorderSkin",
-					"flxBorder2" : "requestTypeBorderSkin2",
-					"imgLeaveInfo" : "requestTypeInfoImage",
+					//"flxBorder1" : "requestTypeBorderSkin",
+					//"flxBorder2" : "requestTypeBorderSkin2",
+					//"imgLeaveInfo" : "requestTypeInfoImage",
 					"lblRemainingHours" : "remaingHours",
                   	"imgSelection":"imgSelection",
       				"imgUser" : "imgUser"
@@ -514,7 +514,7 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
             //setting the data to the approval request Segement
             var WidgetDatamap = {
                 "lblShortName": "CreatedUserShortName",
-                "imgCategory": "requestTypeImage",
+                //"imgCategory": "requestTypeImage",
                 "lblUserName": "UserName",
                 "lblCreateDate": "RequestDate",
                 "lblDueDateValue": "dueDate",
@@ -522,9 +522,9 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
                 "btnAdditionalInfo": "AdditionalData",
                 "flxTimer": "FlxTimerUi",
                 "lblCategory": "category",
-                "flxBorder1": "requestTypeBorderSkin",
-                "flxBorder2": "requestTypeBorderSkin2",
-                "imgLeaveInfo": "requestTypeInfoImage",
+                //"flxBorder1": "requestTypeBorderSkin",
+                //"flxBorder2": "requestTypeBorderSkin2",
+                //"imgLeaveInfo": "requestTypeInfoImage",
                 "lblRemainingHours": "remaingHours",
                 "imgSelection": "imgSelection"
             };

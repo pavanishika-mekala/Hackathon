@@ -15,7 +15,7 @@
     "_padding_": [
         0,
         0,
-        0,
+        1,
         0
     ],
     "_right_": {
@@ -57,6 +57,7 @@
     "isvisible": true,
     "kuid": "ba03c1cb8f354971a115b149c4349c85",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxIndefiniteToggle",
     "pf": "frmDelegationRequestCreate",
     "texti18n": "i18n.ess.myapproval.indefinite",

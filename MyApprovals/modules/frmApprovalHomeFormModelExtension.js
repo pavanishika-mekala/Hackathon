@@ -51,7 +51,7 @@ kony.sdk.mvvm.frmApprovalHomeFormModelExtension = Class({
 				frmApprovalHome.flxFilterButton.setVisibility(true);      
                 frmApprovalHome.flxFiter.setVisibility(false);
               	frmApprovalHome.lblNoRecordsFound.setVisibility(false);             	
-              	frmApprovalHome.flxSlider.left="28.55%";
+              	frmApprovalHome.flxSlider.left="27%";
               	kony.apps.coe.ess.Approvals.ApprovalsHome.sliderAnimationToNow();
               	//resetting the textboxes
               	frmApprovalHome.tbxLaterFilter.text="";

@@ -17,13 +17,17 @@
         1
     ],
     "_padding_": [
-        2,
+        0,
         0,
         0,
         0
     ],
     "_skin_": "sc6f1bcf9c7549fd9124b8abc0c5ff56",
-    "_text_": "Quitter les détails de la demande de congé",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
         "type": "string",
         "value": "75%"
@@ -36,10 +40,6 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "id": "lblHeader",
@@ -57,7 +57,6 @@
     "isvisible": true,
     "kuid": "b8d2bb1299d8403b857c4070f6ac2737",
     "name": "kony.ui.Label",
-    "paddinginpixel": false,
     "parent": "flxHeader",
     "pf": "frmApprovalRequestDetail",
     "texti18n": "i18n.ess.MyApprovals.frmApprovalRequestDetail.title",

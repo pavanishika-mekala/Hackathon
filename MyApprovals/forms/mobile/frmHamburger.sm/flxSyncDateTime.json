@@ -2,8 +2,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
@@ -26,18 +26,19 @@
     "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "_top_": {
         "type": "string",
-        "value": "4%"
+        "value": "2%"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 1,
+    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "lblLastSyncedOn",
-        "flxSyncTime"
+        "lblSyncDate",
+        "lblSyncTime"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -46,7 +47,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "50542dbddb414d869f67969a16be06d1",
-    "layouttype": 4,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMenuHamburger",
     "pf": "frmHamburger",

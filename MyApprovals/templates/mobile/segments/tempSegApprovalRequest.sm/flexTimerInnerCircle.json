@@ -3,7 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "74.57%"
+        "value": "35dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -22,15 +26,11 @@
     "_skin_": "sb52b35849c54c1aaa99afc9947e4936",
     "_width_": {
         "type": "string",
-        "value": "74.43%"
+        "value": "35dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "centery": {
         "type": "string",
         "value": "50%"

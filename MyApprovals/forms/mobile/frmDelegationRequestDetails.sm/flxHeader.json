@@ -36,8 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxBack",
-        "lblHeader"
+        "lblHeader",
+        "flxBack"
     ],
     "clipbounds": true,
     "containerweight": 100,

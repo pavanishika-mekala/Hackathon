@@ -189,7 +189,7 @@ kony.sdk.mvvm.frmIsLaterSearchControllerExtension = Class(kony.sdk.mvvm.BaseForm
 				//setting the data to the approval request Segement
 				var WidgetDatamap = {
 					"lblShortName": "CreatedUserShortName",
-					"imgCategory": "requestTypeImage",
+					//"imgCategory": "requestTypeImage",
 					"lblUserName": "UserName",
 					"lblCreateDate": "RequestDate",
 					"lblDueDateValue": "dueDate",
@@ -197,9 +197,9 @@ kony.sdk.mvvm.frmIsLaterSearchControllerExtension = Class(kony.sdk.mvvm.BaseForm
 					"btnAdditionalInfo": "AdditionalData",
 					"flxTimer": "FlxTimerUi",
 					"lblCategory": "category",
-					"flxBorder1": "requestTypeBorderSkin",
-					"flxBorder2": "requestTypeBorderSkin2",
-					"imgLeaveInfo": "requestTypeInfoImage",
+					//"flxBorder1": "requestTypeBorderSkin",
+					//"flxBorder2": "requestTypeBorderSkin2",
+					//"imgLeaveInfo": "requestTypeInfoImage",
 					"lblRemainingHours": "remaingHours",
 					"imgSelection": "imgSelection",
                   	"flxApprovalRequest" : "flxApprovalRequest"

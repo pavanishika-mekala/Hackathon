@@ -6,10 +6,6 @@
         "type": "string",
         "value": "100%"
     },
-    "_left_": {
-        "type": "string",
-        "value": "70%"
-    },
     "_margin_": [
         1,
         1,
@@ -33,8 +29,8 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "26%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -45,7 +41,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "id": "lblClear",
     "ide_onTouchEnd": "AS_Label_1d8c3f79c95c43a28408bd4f8f735a82",
     "info": null,

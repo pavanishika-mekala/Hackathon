@@ -19,6 +19,7 @@
         0,
         0
     ],
+    "_render_": true,
     "_skin_": "sda0c04ae5814098a8111842b264a413",
     "_src_": "expense.png",
     "_top_": {
@@ -28,6 +29,9 @@
     "_width_": {
         "type": "string",
         "value": "32dp"
+    },
+    "android": {
+        "render": false
     },
     "canUpdateUI": true,
     "centerx": {
@@ -45,13 +49,31 @@
     "id": "imgCategory",
     "imagescalemode": 1,
     "info": null,
-    "isvisible": true,
+    "iphone": {
+        "render": false
+    },
+    "isvisible": false,
     "kuid": "4c152398bc2b4c5a8f75a4b75e899b70",
     "name": "kony.ui.Image2",
     "parent": "flxImages",
     "pf": "tempSegApprovalRequest",
+    "spaan": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
     "srcType": 1,
     "wType": "Image",
     "widgetalignment": 5,
+    "winphone8": {
+        "render": false
+    },
     "zindex": 1
 }

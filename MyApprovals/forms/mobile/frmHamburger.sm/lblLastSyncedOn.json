@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "70%"
     },
     "_left_": {
         "type": "string",
@@ -20,13 +20,13 @@
         0,
         0,
         0,
-        2
+        0
     ],
     "_skin_": "s98d0d20e8624e4b9326ba6cfc2e9cc0",
-    "_text_": "Continue Offline~|~Continuer hors ligne~|~Ga verder offline~|~",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
@@ -56,9 +56,7 @@
     },
     "isvisible": true,
     "kuid": "adbe33ea6043476794cc295db2772c64",
-    "maxnumberoflines": 2,
     "name": "kony.ui.Label",
-    "paddinginpixel": false,
     "parent": "flxSyncDateTime",
     "pf": "frmHamburger",
     "texti18n": "i18n.ess.frmHamburger.LastSyncedOn",
