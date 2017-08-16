@@ -25,18 +25,18 @@ kony.apps.coe.ess.locale.getSelectedLocale = function(currentLocale){
 
 kony.apps.coe.ess.locale.checkDevice = function(){
 		var deviceType = "";
-		//ifdef iphone
+		//#ifdef iphone
 			deviceType = "iOS";
-		//endif
-		//ifdef ipad
+		//#endif
+		//#ifdef ipad
 			deviceType = "iOS";
-		//endif
-		//ifdef tabrcandroid
+		//#endif
+		//#ifdef tabrcandroid
 			deviceType = "Android";
-		//endif
-		//ifdef android
+		//#endif
+		//#ifdef android
 			deviceType = "Android";
-		//endif
+		//#endif
 		return deviceType;
 	};
 
