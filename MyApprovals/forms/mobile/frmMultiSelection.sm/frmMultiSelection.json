@@ -33,11 +33,11 @@
         "flxOfflineAlert"
     ],
     "containerweight": 100,
-    "currentLocale": "en",
+    "currentLocale": "nl_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone6",
+    "device": "iPhone4",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
@@ -82,10 +82,10 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "GalaxyS2",
+    "prevDevice": "iPhone6PlusZoomed",
     "prevPlatform": "android",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone6",
+    "shellCSS": "iOS_iPhone4",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
