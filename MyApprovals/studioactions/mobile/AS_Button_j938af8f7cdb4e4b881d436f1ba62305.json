@@ -1,0 +1,17 @@
+{
+    "AS_Button_j938af8f7cdb4e4b881d436f1ba62305": {
+        "id": "AS_Button_j938af8f7cdb4e4b881d436f1ba62305",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_df9b5a202799452fb7d96bae5f68c617",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.sliderAnimationToNow();\n//clear filter Data\nkony.apps.coe.ess.Approvals.ApprovalsHome.clearDataofFilter();\nkony.apps.coe.ess.Approvals.ApprovalsHome.SPAPreshow();\nfrmApprovalHome.flxFiter.isVisible = false;\nfrmApprovalHome.imgSPAFilter.src = \"filter_unselected.png\";\nfrmApprovalHome.segApprovalsList.top = \"0%\";\nfrmApprovalHome.flxFooterOptions.isVisible = false;\nfrmApprovalHome.imgOption1.src = \"circleinactive.png\";\nfrmApprovalHome.imgOption2.src = \"circleinactive.png\";\nfrmApprovalHome.imgOption3.src = \"circleinactive.png\";\nfrmApprovalHome.forceLayout();",
+            "callbackType": null
+        }]
+    }
+}
