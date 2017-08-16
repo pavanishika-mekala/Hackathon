@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "shift4_outline.png",
+    "_width_": {
+        "type": "string",
+        "value": "9%"
+    },
+    "canUpdateUI": true,
+    "centery": "44%",
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "frmShiftChangeRequestDetails",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "ImgShiftOne",
+    "imagescalemode": 1,
+    "info": null,
+    "isvisible": true,
+    "kuid": "7d14899b208a4520bc5d00ec78e107d7",
+    "name": "kony.ui.Image2",
+    "parent": "flxShiftTime",
+    "pf": "frmShiftChangeRequestDetails",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

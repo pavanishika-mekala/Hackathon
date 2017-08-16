@@ -1,0 +1,18 @@
+{
+    "AS_Button_0f25e4d9395a4cb4912b59aff7612b15": {
+        "id": "AS_Button_0f25e4d9395a4cb4912b59aff7612b15",
+        "type": "ACTION_SEQUENCE",
+        "name": "btnApplyFilterTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8fe58aedd61841caa563c4295bdefc24",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.myLeave.leaveHistory()).done();",
+            "callbackType": null
+        }]
+    }
+}

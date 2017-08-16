@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0556b5133543461d83c26a567604295d": {
+        "id": "AS_FlexContainer_0556b5133543461d83c26a567604295d",
+        "type": "ACTION_SEQUENCE",
+        "name": "flexApprovedOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6ac6359ab1924fcb8db6849ba6c42fd2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n\nif(frmHistory.flexApproved.skin==\"sknFlxApproveStatusUnselected\")\n  {\n    frmHistory.flexApproved.skin=\"sknFlxApprovedStatus\";\n    frmHistory.Apprlbl.skin=\"sknLblFFFFFF100Op36Px\";\n    frmHistory.selimg1.src=\"selectapprove.png\";\n    approved=0;arrStatus.push(\"0\");\n  }\nelse\n{\n  frmHistory.flexApproved.skin=\"sknFlxApproveStatusUnselected\";\n  frmHistory.Apprlbl.skin=\"sknLblApproveStatusUnselected\";\n  frmHistory.selimg1.src=\"approvedoutline.png\";\n  approved=-1;\n    for(var j=0;j<arrStatus.length;j++)\n      {\n\t\tif(\"0\"==arrStatus[j])\n          arrStatus.splice(j,1);\n      }\n}\n//alert(\"\"+arrStatus);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

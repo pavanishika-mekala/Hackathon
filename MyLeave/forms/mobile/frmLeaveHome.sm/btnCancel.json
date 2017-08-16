@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "17%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sbe6e79536d9487c88f6ae014a12fb3a",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "83%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "51%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd2678a55e9a4505855f37357589ed61",
+    "id": "btnCancel",
+    "ide_onClick": "AS_Button_d461b3dc649b4986b27cf16f47f0872b",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d87984f822954e3d93c0b6f8528c4f5a",
+    "name": "kony.ui.Button",
+    "parent": "flxWithdraw",
+    "pf": "frmLeaveHome",
+    "texti18n": "i18n.ess.common.cancel.valueKA",
+    "wType": "Button",
+    "zindex": 16
+}

@@ -1,0 +1,19 @@
+{
+  "background_image": "blueround.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "ipad": {
+    "background_image": "blueround.png",
+    "bg_type": "image"
+  },
+  "isDefaultSkin": false,
+  "kuid": "sd96182b31eb4251affec2c8ca596c9d",
+  "tabrcandroid": {
+    "background_image": "blueround.png",
+    "bg_type": "image"
+  },
+  "wType": "FlexContainer"
+}

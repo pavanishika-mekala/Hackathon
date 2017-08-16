@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_fc9f9b97e85244adad0a08d4e9705c3f": {
+        "id": "AS_FlexContainer_fc9f9b97e85244adad0a08d4e9705c3f",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickhiftinwallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_5f98a5b62f434404bfab6071061652ea",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmMyShiftDashboard.show();",
+            "callbackType": null
+        }]
+    }
+}

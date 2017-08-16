@@ -1,0 +1,37 @@
+[ {
+  "sourceObject" : "leave",
+  "targetObject" : "leave_attachments",
+  "relationshipKeys" : [ {
+    "sourceField" : "id",
+    "targetField" : "leavel_id"
+  } ],
+  "name" : "leave_leave_attachments",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "leave",
+  "targetObject" : "leave_audit",
+  "relationshipKeys" : [ {
+    "sourceField" : "id",
+    "targetField" : "leave_id"
+  } ],
+  "name" : "leave_leave_audit",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "leave",
+  "targetObject" : "leave_note",
+  "relationshipKeys" : [ {
+    "sourceField" : "employee_id",
+    "targetField" : "employee_id"
+  }, {
+    "sourceField" : "id",
+    "targetField" : "leave_id"
+  } ],
+  "name" : "leave_leave_note",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

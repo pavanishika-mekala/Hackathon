@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_bed75021b41b4cabbfb39273dcb88265": {
+        "id": "AS_FlexContainer_bed75021b41b4cabbfb39273dcb88265",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickteamleaveMar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "",
+            "KUID": "235427254b1b464fa9c878825c7d3919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d00ecfcd485242b5b1f9c981e84be0e8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//selectedMonth = 3;\n(new kony.apps.ess.myLeave.frmTeamLeaveCalendarUI()).onClickOfMonth(\"Mar\");\n//(new kony.apps.ess.myLeave.frmTeamLeaveCalendarUI()).getTeamData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

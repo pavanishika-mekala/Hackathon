@@ -1,0 +1,71 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s02ed74c5c82452ea64adc1d35642310",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblSubcatDays",
+        "lblSubcatDaysAvail",
+        "lblSubcatName1",
+        "lblSubcatDays2",
+        "lblSubcatDaysAvail2",
+        "lblSubcatName2",
+        "lblSubcatDays3",
+        "lblSubcatDaysAvail3",
+        "lblSubcatName3",
+        "lblSubcatDays4",
+        "lblSubcatDaysAvail4",
+        "lblSubcatName4",
+        "lblVerticalLine1",
+        "lblVerticalLine2",
+        "lblCenterLine"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxLeaveDetails",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ceb5f07927d641228adfcbf2952b3d86",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxMain",
+    "pf": "frmTabLeaveWalletDetail",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

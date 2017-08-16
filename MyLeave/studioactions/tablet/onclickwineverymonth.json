@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_6043dc5d4a3f4ca5a8bef95ca3a141dd": {
+        "id": "AS_FlexContainer_6043dc5d4a3f4ca5a8bef95ca3a141dd",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickwineverymonth",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "0865d0ff69da4e3f87b5f98982566507"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__647e96b471604b098ade25ca835f39b3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (frmTabApplyLeave.flxEveryMonth.skin === sknFlx2EBAEE100){\n  frmTabApplyLeave.flxEveryMonth.skin = sknFlx2EBAEEOp100;\n  frmTabApplyLeave.lblEveryMonth.skin = sknLblffffffF32AvenirLTStdRoman;\n}else{\n  frmTabApplyLeave.flxEveryMonth.skin = sknFlx2EBAEE100;\n  frmTabApplyLeave.lblEveryMonth.skin = sknlbl2EBAEEOp100S32pxRoman;\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Label_572df24906424acdad34a3ced4dcff78": {
+        "id": "AS_Label_572df24906424acdad34a3ced4dcff78",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnLblReconfigure",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7c505ca7a7eb4dae8057be56f7e1c78c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__86ad490c6eb74c97b96d1993cc4b069e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmStartUp.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

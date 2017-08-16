@@ -1,0 +1,24 @@
+{
+    "AS_TextArea_5b4cfcbe18524170aed7babffcddd306": {
+        "id": "AS_TextArea_5b4cfcbe18524170aed7babffcddd306",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f5021e86ef384afca52c13c057b5f87e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6811977b70044f7b8562ff6b7ded30f8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.onclickoftxtComments();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

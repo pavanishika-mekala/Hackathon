@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_6447c6a7fbb24cccad626085640fdac0": {
+        "id": "AS_FlexContainer_6447c6a7fbb24cccad626085640fdac0",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickLeaveTypeRightScrollApplyLeave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": null,
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4ee9f54de9a34be3894ab21aa261ddf6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.leaveTypeRightScroll();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_0be927d105914f7b85e1e3059450e976": {
+        "id": "AS_FlexContainer_0be927d105914f7b85e1e3059450e976",
+        "type": "ACTION_SEQUENCE",
+        "name": "actSelectAll",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_5d115a5f0fd54dab95056e2618993467",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.myLeave.leaveHistory()).selectAllLeavevTypes();",
+            "callbackType": null
+        }]
+    }
+}

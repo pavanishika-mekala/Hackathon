@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_5401e38640b5476e94570a2c267f81c0": {
+        "id": "AS_FlexContainer_5401e38640b5476e94570a2c267f81c0",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickhistoryinwallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_50235e69933f4f2a92fe17ea147e1c00",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.show();",
+            "callbackType": null
+        }]
+    }
+}

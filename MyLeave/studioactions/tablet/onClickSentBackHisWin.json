@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_abefdf318c3d4b5f9c9d52c2659b484d": {
+        "id": "AS_FlexContainer_abefdf318c3d4b5f9c9d52c2659b484d",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickSentBackHisWin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e2eed0c3c59645c1b6389968ca42cd0a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(frmHistory.flxSentBack.skin==\"sknFlxSentBackUnselectedWin\")\n  {\n    frmHistory.flxSentBack.skin=\"sknFlxSentBackSelectedWin\";\n    frmHistory.lblSentBack.skin=\"sknLblFFFFFF100Op36Px\";\n    frmHistory.imgSel4.src=\"select_pendingcopy.png\";\n    sentBack=4;\n    arrStatus.push(\"4\");\n  }\nelse\n{\n  frmHistory.flxSentBack.skin=\"sknFlxSentBackUnselectedWin\";\n  frmHistory.lblSentBack.skin=\"sknLblSentBackUnselected\";\n  frmHistory.imgSel4.src=\"selectblue.png\";sentBack=-1;\n   for(var j=0;j<arrStatus.length;j++)\n      {\n\t\tif(\"4\"==arrStatus[j])\n          arrStatus.splice(j,1);\n      }\n}\n//alert(\"\"+arrStatus);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

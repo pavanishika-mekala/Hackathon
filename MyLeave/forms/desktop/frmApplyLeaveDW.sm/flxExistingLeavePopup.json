@@ -1,0 +1,62 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "263dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s890d93ca4ca4f75bc2c4a51a89cd0e1",
+    "_width_": {
+        "type": "string",
+        "value": "350dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "imgAlertIcon",
+        "lblExistingLeave",
+        "lblDateDuration",
+        "lblWithdrawLeavePopupQuestion",
+        "lblSwitchQuestion",
+        "flxPopupActions"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxExistingLeavePopup",
+    "info": null,
+    "isvisible": false,
+    "kuid": "9cde3beb6d154916b34748347778dba5",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmApplyLeaveDW",
+    "pf": "frmApplyLeaveDW",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 11
+}

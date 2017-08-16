@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f85227a0d4eb46479d854567fe956f9f": {
+        "id": "AS_FlexContainer_f85227a0d4eb46479d854567fe956f9f",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickshiftinmenuwin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "84f75836cc6542a09238ee771552a222"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ad3738ddf7c045f793239af9c9b53531",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmMyShiftDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

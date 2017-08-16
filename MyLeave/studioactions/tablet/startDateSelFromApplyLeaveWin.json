@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0628362892d44fa4809741d2e341cbb7": {
+        "id": "AS_FlexContainer_0628362892d44fa4809741d2e341cbb7",
+        "type": "ACTION_SEQUENCE",
+        "name": "startDateSelFromApplyLeaveWin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "0865d0ff69da4e3f87b5f98982566507"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a8ad52aa25d2469bb4aa118172c560fb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "onClickStartWinDate();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

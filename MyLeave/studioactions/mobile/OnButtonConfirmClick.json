@@ -1,0 +1,18 @@
+{
+    "AS_Button_a4bc9a4900134542b3d981350be285f8": {
+        "id": "AS_Button_a4bc9a4900134542b3d981350be285f8",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnButtonConfirmClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_57b44ec3e6a841d98b7e1bc01c839af4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj=new kony.apps.coe.ess.myLeave.leaveRequestDetailsUI();\nobj.onClickConfirm();",
+            "callbackType": null
+        }]
+    }
+}

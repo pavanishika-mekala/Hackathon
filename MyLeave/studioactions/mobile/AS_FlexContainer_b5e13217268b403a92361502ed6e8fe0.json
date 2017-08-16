@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_b5e13217268b403a92361502ed6e8fe0": {
+        "id": "AS_FlexContainer_b5e13217268b403a92361502ed6e8fe0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveBalance",
+            "type": "forms",
+            "platform": "",
+            "KUID": "46e3a0ad969746938c5bc6f9df4cdbec"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f16453c2fbfe44e093714907f10268cb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHolidays.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

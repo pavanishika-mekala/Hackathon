@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0402db1241354010847b2d9e63907cab": {
+        "id": "AS_FlexContainer_0402db1241354010847b2d9e63907cab",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHistroyFromDashBoard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "986f6bcc1c3c405ba7b6890da2ff8d3b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__53e458881b6f4b68a407d45c3bd04123",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

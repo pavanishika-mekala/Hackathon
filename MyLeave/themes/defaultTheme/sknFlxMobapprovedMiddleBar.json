@@ -1,0 +1,19 @@
+{
+  "android": {
+    "background_image": "approvedmiddlebar.png",
+    "bg_type": "image"
+  },
+  "background_image": "approvedmiddlebar.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "iphone": {
+    "background_image": "approvedmiddlebar.png",
+    "bg_type": "image"
+  },
+  "isDefaultSkin": false,
+  "kuid": "s2757d80143e4e03aa18681a00606897",
+  "wType": "FlexContainer"
+}

@@ -1,0 +1,20 @@
+{
+  "android": {
+    "background_image": "me_focus.png",
+    "bg_type": "image"
+  },
+  "background_image": "me_focus.png",
+  "bg_type": "image",
+  "border_color": "1c739300",
+  "border_radius": 100,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "iphone": {
+    "background_image": "me_focus.png",
+    "bg_type": "image"
+  },
+  "isDefaultSkin": false,
+  "kuid": "s96ddb0fa9834022b2d267b6b94827ac",
+  "wType": "FlexContainer"
+}

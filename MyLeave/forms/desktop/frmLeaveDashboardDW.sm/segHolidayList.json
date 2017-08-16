@@ -1,0 +1,190 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        [
+            {
+                "imgHolidayListSectionHeader": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "holidays.png"
+                },
+                "lblDummyDivider": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                },
+                "lblHolidaySectionHeader": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Holidays"
+                }
+            },
+            [
+                {
+                    "lblHolidayDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "abc"
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "abv"
+                    }
+                },
+                {
+                    "lblHolidayDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    }
+                },
+                {
+                    "lblHolidayDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    }
+                },
+                {
+                    "lblHolidayDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    }
+                },
+                {
+                    "lblHolidayDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    }
+                },
+                {
+                    "lblHolidayDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "05",
+    "disabledSkins": {
+        "rowFocusSkin": "sb7ffe11a1764f7ab48e37cbf9b9796e",
+        "rowSkin": "s8b0607da68b4f149ec5830b0f65d291",
+        "sectionHeaderSkin": "sdbc0b13ffcf419d9faa75f92b8f832b"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "2b92a4a4a3c84e37a6159fde3931465a",
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segHolidayList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "0baccf972e6047b4a07d149317c0fcf4",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom",
+        "vdistance": 1
+    },
+    "parent": "flxSplDateContainer",
+    "pf": "frmLeaveDashboardDW",
+    "retainselection": false,
+    "rowTemplateId": "26dac834b81a4983b3417477af108c69",
+    "rowcounter": 5,
+    "rowtemplate": "flxSegHolidayList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": "e864bde3a6654bc9ae1b60360c81c920",
+    "sectionheadertemplate": "flxHolidaySectionHeader",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "swipeContext": {
+        "currentPage": 0,
+        "imageWidth": 657,
+        "widthRatio": 0
+    },
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxHolidaySectionHeader": "flxHolidaySectionHeader",
+        "flxSegHolidayList": "flxSegHolidayList",
+        "imgHolidayListSectionHeader": "imgHolidayListSectionHeader",
+        "lblDummyDivider": "lblDummyDivider",
+        "lblHolidayDate": "lblHolidayDate",
+        "lblHolidayName": "lblHolidayName",
+        "lblHolidaySectionHeader": "lblHolidaySectionHeader"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,59 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "7.50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s644cb3d310540ad82627e727e190ee4",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "CopyflxTeamCalendarShiftSlotBorder0c4bc1ecae9a045",
+        "CopylblEmployeeShiftPeriod056a3aa919b7942",
+        "CopyflxTeamCalendarShiftSlotLeave086770e9b9d974a"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "CopyflxTeamCalendarShiftSlot044f9efbbcb114f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c6134c58ab2749cb95e0b3c3c03d035d",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTeamCalendarCol2",
+    "pf": "frmTeamShiftCalendar",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

@@ -1,0 +1,17 @@
+{
+  "background_color": "ffededff",
+  "bg_type": "one",
+  "border_color": "42424200",
+  "border_radius": 3,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "font_color": "424242ff",
+  "font_name": "Helvetica",
+  "font_size": 214,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "s465e68aad0a4e58bb7eec2a1b0bc779",
+  "wType": "Label"
+}

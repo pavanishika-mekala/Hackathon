@@ -1,0 +1,38 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizHBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "sb703e1c66c44a6fa0a08d4086f8545f",
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "txtComments"
+    ],
+    "containerweight": 100,
+    "contextmenu": null,
+    "id": "hboxComments",
+    "info": null,
+    "isvisible": true,
+    "kuid": "56af67c1a0274cb1a5ee61baefe7d5ad",
+    "layouttype": 0,
+    "name": "kony.ui.Box",
+    "parent": "popWithDrawLeave",
+    "pf": "popWithDrawLeave",
+    "vexpand": true,
+    "wType": "HBox",
+    "widgetalignment": 1
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ce4d74b9c2f749a48498df9552f5c91b": {
+        "id": "AS_FlexContainer_ce4d74b9c2f749a48498df9552f5c91b",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_onEditLeave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "986f6bcc1c3c405ba7b6890da2ff8d3b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__096d61979d614587bf94204cd8eb763a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.myLeave.tabApplyLeaveUI.checkIfEditLeaveMode.editMode=true;\nshowTabApplyLeaveForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Form_23729376f6774246ac7ff40b4e942dc5": {
+        "id": "AS_Form_23729376f6774246ac7ff40b4e942dc5",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmLeaveHomeAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d483f6ce958944679c00e5e7ec85d42f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in frmLeaveHome--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

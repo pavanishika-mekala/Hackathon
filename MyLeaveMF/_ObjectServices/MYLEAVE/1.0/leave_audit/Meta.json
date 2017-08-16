@@ -1,0 +1,40 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_LEAVE_AUDIT"
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[]",
+      "businessObjectName" : "HCM_LEAVE_AUDIT"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "sofsdeleteflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "sofsdeleteflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  } ]
+}

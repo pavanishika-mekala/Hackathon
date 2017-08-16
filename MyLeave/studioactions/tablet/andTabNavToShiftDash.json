@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_83b329b4cac24e5884d1dd22921c7b8b": {
+        "id": "AS_FlexContainer_83b329b4cac24e5884d1dd22921c7b8b",
+        "type": "ACTION_SEQUENCE",
+        "name": "andTabNavToShiftDash",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__17040437b3184a60b2ea8283dd32efcf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmMyShiftDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_Button_35d471dd4bd34cfebfd16d84bcd93292": {
+        "id": "AS_Button_35d471dd4bd34cfebfd16d84bcd93292",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickcanceltabapplyleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f256c33bb7dc421e9662f536580fb296",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.myLeave.tabApplyLeaveUI.Attachment.onClickOfCancel();",
+            "callbackType": null
+        }]
+    }
+}

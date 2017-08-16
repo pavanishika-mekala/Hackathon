@@ -1,0 +1,25 @@
+{
+    "AS_Form_b20421a522f94d14ae3217cca63ad55c": {
+        "id": "AS_Form_b20421a522f94d14ae3217cca63ad55c",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionfrmHistoryinit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d8d9c3411e9441c29b3c556de12cc94b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "// (new kony.apps.coe.myLeave.leaveHistory()).initLeaveHistory();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

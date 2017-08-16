@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "23%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2f757e65437422d9042da6318c4b38d",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "se26ccc4ba1a4d18a2e20ff3cdc09d2d",
+    "id": "btnOffline",
+    "ide_onClick": "AS_Button_c30eb111c418407e8c4b18a6fd8673e7",
+    "info": null,
+    "isvisible": true,
+    "kuid": "7e32cdad73e24d6591c1d4aa0d071a2e",
+    "name": "kony.ui.Button",
+    "parent": "flxOuterFlex",
+    "pf": "frmHamburger",
+    "texti18n": "i18n.ess.offline.offlinemode.text",
+    "wType": "Button",
+    "zindex": 1
+}

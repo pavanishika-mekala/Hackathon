@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_d4322bf857dc4fc78fc29eb1c4fee9a4": {
+        "id": "AS_FlexContainer_d4322bf857dc4fc78fc29eb1c4fee9a4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickOfHamburgerMenuInSettings",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b7baf7af92984d9e84a928b9f7d98642"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__01bf840308024388bcd5123c5275b35b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

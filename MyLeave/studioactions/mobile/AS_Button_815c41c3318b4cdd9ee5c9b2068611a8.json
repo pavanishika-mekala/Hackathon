@@ -1,0 +1,24 @@
+{
+    "AS_Button_815c41c3318b4cdd9ee5c9b2068611a8": {
+        "id": "AS_Button_815c41c3318b4cdd9ee5c9b2068611a8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f5021e86ef384afca52c13c057b5f87e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7c58a7dc35f8474f8a27b651bc845e41",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveHome.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

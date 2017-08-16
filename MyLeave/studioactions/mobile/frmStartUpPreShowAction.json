@@ -1,0 +1,25 @@
+{
+    "AS_Form_1421c4c914664943b43d9aa64e356ea0": {
+        "id": "AS_Form_1421c4c914664943b43d9aa64e356ea0",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmStartUpPreShowAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8681ec0917414ba494646c6414cb9ce7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__be65fa0f2df14493bff85b70e3e11237",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s4bcc2c620d549a9894a6e948029b152",
+    "_top_": {
+        "type": "string",
+        "value": "56.21%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblDetailCard2Cnt",
+        "lblAvailDetailCard2",
+        "lblTitleDetail2"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxDetailCard2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "4b0a82dd36a043d0b00c6e05c206af0b",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxLeaveDetails",
+    "pf": "frmTabLeaveWalletDetail",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

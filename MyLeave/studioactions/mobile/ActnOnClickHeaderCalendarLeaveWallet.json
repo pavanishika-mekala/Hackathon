@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_2f31a80d4a994cda9b1d6748331ad5ce": {
+        "id": "AS_FlexContainer_2f31a80d4a994cda9b1d6748331ad5ce",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnOnClickHeaderCalendarLeaveWallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_9ec396e63b4e4631be1b484c6aa17122",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveHome.show();",
+            "callbackType": null
+        }]
+    }
+}

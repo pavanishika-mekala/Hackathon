@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_72a16018f6e94f64a216c0ca31b6d643": {
+        "id": "AS_FlexContainer_72a16018f6e94f64a216c0ca31b6d643",
+        "type": "ACTION_SEQUENCE",
+        "name": "flexB8OnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6a7eb1e33d6a4efc8903fb3e38d0042b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n\nif(frmHistory.flexB8.skin==\"sknFlxLeaveTypeSelected\")\n  {\n\tfrmHistory.flexB8.skin=\"sknFlxLeaveTypeUnselected\";\n  \tfrmHistory.desc8.skin=\"sknLblLeaveTypeUnselected\";\n    frmHistory.selectimg8.src=\"selectblue.png\";\n  }\nelse\n  {\n    frmHistory.flexB8.skin=\"sknFlxLeaveTypeSelected\";\n  \tfrmHistory.desc8.skin=\"sknLblLeaveTypeSelected\";\n    frmHistory.selectimg8.src=\"select_pendingcopy.png\";\n    \n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

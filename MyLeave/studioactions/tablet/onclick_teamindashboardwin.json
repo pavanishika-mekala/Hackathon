@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_2947b53439bc4a4ebc80417fa048e2ef": {
+        "id": "AS_FlexContainer_2947b53439bc4a4ebc80417fa048e2ef",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclick_teamindashboardwin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "a15a63ac67e5448189f868765f26014b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0cbd60be14984a03aaa423831a55b4d4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTeamLeaveCalendar.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_1f06a2101f1946dab9a080dcceb72f00": {
+        "id": "AS_FlexContainer_1f06a2101f1946dab9a080dcceb72f00",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickwinapplyleavetype",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "0865d0ff69da4e3f87b5f98982566507"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b652921167454f9c8e72ee6eaf14a79f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmTabApplyLeave.flxLeaveType3.skin === slFbox){\n  frmTabApplyLeave.flxLeaveType3.skin = sknFlex2ebaeeRad9px;\n}else{\n  frmTabApplyLeave.flxLeaveType3.skin = slFbox;\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

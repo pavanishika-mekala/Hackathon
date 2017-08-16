@@ -1,0 +1,25 @@
+{
+    "AS_Form_5df22235c0b54c4c884c3a4321d7693a": {
+        "id": "AS_Form_5df22235c0b54c4c884c3a4321d7693a",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmCalendarTeamViewPreShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarTeamViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e45156393f1a420682281dff0ee875ae"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5680ceb045054def80ffd75d316ce347",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmCalendarTeamView.populateData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

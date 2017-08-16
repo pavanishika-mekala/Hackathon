@@ -1,0 +1,216 @@
+{
+  "background_color": "2ebaeeff",
+  "bg_type": "one",
+  "border_color": "ffffffff",
+  "desktopweb": {
+    "background_color": {
+      "angle": 180,
+      "colors": [
+        "2ebaeeff",
+        "2ebaeeff",
+        "ffffffff",
+        "ffffffff"
+      ],
+      "cs": [
+        0,
+        28,
+        54,
+        100
+      ],
+      "gradientType": "toBottom",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "ipad": {
+    "background_color": {
+      "angle": 180,
+      "colors": [
+        "2ebaeeff",
+        "2ebaeeff",
+        "ffffffff",
+        "ffffffff"
+      ],
+      "cs": [
+        0,
+        28,
+        54,
+        100
+      ],
+      "gradientType": "toBottom",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "background_color": {
+      "angle": 180,
+      "colors": [
+        "2ebaeeff",
+        "2ebaeeff",
+        "ffffffff",
+        "ffffffff"
+      ],
+      "cs": [
+        0,
+        28,
+        54,
+        100
+      ],
+      "gradientType": "toBottom",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "kuid": "s1993efc7b404fc4a22df100419a3784",
+  "spaandroidtablet": {
+    "background_color": {
+      "angle": 180,
+      "colors": [
+        "2ebaeeff",
+        "2ebaeeff",
+        "ffffffff",
+        "ffffffff"
+      ],
+      "cs": [
+        0,
+        28,
+        54,
+        100
+      ],
+      "gradientType": "toBottom",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "spaipad": {
+    "background_color": {
+      "angle": 180,
+      "colors": [
+        "2ebaeeff",
+        "2ebaeeff",
+        "ffffffff",
+        "ffffffff"
+      ],
+      "cs": [
+        0,
+        28,
+        54,
+        100
+      ],
+      "gradientType": "toBottom",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "spawindowstablet": {
+    "background_color": {
+      "angle": 180,
+      "colors": [
+        "2ebaeeff",
+        "2ebaeeff",
+        "ffffffff",
+        "ffffffff"
+      ],
+      "cs": [
+        0,
+        28,
+        54,
+        100
+      ],
+      "gradientType": "toBottom",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "bottom_left_border_color": "ffffffff",
+    "bottom_left_border_style": "plain",
+    "bottom_right_border_color": "ffffffff",
+    "bottom_right_border_style": "plain",
+    "isForked": true,
+    "top_left_border_color": "ffffffff",
+    "top_left_border_style": "plain",
+    "top_right_border_color": "ffffffff",
+    "top_right_border_style": "plain"
+  },
+  "tabrcandroid": {
+    "background_color": {
+      "angle": 180,
+      "colors": [
+        "2ebaeeff",
+        "2ebaeeff",
+        "ffffffff",
+        "ffffffff"
+      ],
+      "cs": [
+        0,
+        28,
+        54,
+        100
+      ],
+      "gradientType": "toBottom",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  },
+  "wType": "Form",
+  "windows8": {
+    "background_color": {
+      "angle": 180,
+      "colors": [
+        "2ebaeeff",
+        "2ebaeeff",
+        "ffffffff",
+        "ffffffff"
+      ],
+      "cs": [
+        0,
+        28,
+        54,
+        100
+      ],
+      "gradientType": "toBottom",
+      "gt": "linear"
+    },
+    "background_style": "linear",
+    "bg_type": "ms_gradient",
+    "isForked": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_703216eda17447b3ab8667b4a58a6492": {
+        "id": "AS_FlexContainer_703216eda17447b3ab8667b4a58a6492",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmLeaveDashboardDWAllHolidaysClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveDashboardDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54ba10ab382645bb834f2212cd41f775"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9a164cf6ad4546efa8967c77b869f202",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.navigateToAllHolidaysForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

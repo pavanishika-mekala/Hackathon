@@ -1,0 +1,49 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "update" : "updateMapping",
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_LVREQ_ATTACHMENTS"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_LVREQ_ATTACHMENTS"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "media_id",
+    "targetField" : "BINARY_NAME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "leavel_id",
+    "targetField" : "LEAVE_ENTRY_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "createdts",
+    "targetField" : "EXTRACT_TSTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LV_ATTCH_SEQNO",
+    "targetField" : "LV_ATTCH_SEQNO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_86c7aa133bf04e7aa71319d8c321fdc0": {
+        "id": "AS_FlexContainer_86c7aa133bf04e7aa71319d8c321fdc0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "a15a63ac67e5448189f868765f26014b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f769bdb6d0a64769adb303fc1de86a16",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.myLeave.leaveHistory()).initLeaveHistory();\nshowTabHistoryForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

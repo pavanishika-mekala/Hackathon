@@ -1,0 +1,46 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "52dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s8e5a82c2aff4748a8cefff7cd105df6",
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblHolidayName",
+        "lblHolidayDate"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSegHolidayList",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "3d66f9d4fd6441d4a983a4158f621010",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "tempSegHolidayList",
+    "pf": "tempSegHolidayList",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

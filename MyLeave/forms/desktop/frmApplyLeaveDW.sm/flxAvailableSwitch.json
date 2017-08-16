@@ -1,0 +1,59 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "6.70%"
+    },
+    "_skin_": "s1fd9f6feb3e42f086106d1ea7ef3640",
+    "_width_": {
+        "type": "string",
+        "value": "124dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "lblRecurringYes",
+        "imgRecurringYesCheckbox"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxAvailableSwitch",
+    "ide_onClick": "AS_FlexContainer_adc65359c01b4b10a53aea4413bc7cf9",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e358f88c602646789b9c0f2c2bf27c2a",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxRecurringLeave",
+    "pf": "frmApplyLeaveDW",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

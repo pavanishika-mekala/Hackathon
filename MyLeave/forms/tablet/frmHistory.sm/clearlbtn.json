@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s0f052aea1394217ad2863c57ecc9def",
+    "_text_": "Clear",
+    "_top_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s3cba0cfc29146afbc3db25338c2be14",
+    "id": "clearlbtn",
+    "ide_onClick": "AS_Button_56d3f622ace9414398d804f12c194ed6",
+    "info": null,
+    "isvisible": true,
+    "kuid": "21ba798b6a8a4ba6805bbde29c2db129",
+    "name": "kony.ui.Button",
+    "parent": "flexFooterRepo",
+    "pf": "frmHistory",
+    "wType": "Button",
+    "zindex": 1
+}

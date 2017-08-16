@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ef2e41a62cb94a379f48b31472b114f4": {
+        "id": "AS_FlexContainer_ef2e41a62cb94a379f48b31472b114f4",
+        "type": "ACTION_SEQUENCE",
+        "name": "flexPenOrangeOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__89da7eb37ee547169a4f2853ed0ea734",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(frmHistory.flexPenOrange.skin==\"sknFlxPendingUnselected\")\n  {\n    frmHistory.flexPenOrange.skin=\"sknFlxOrangePending\";\n    frmHistory.penlbl1.skin=\"sknLblFFFFFF100Op36Px\";\n    frmHistory.imgsel2.src=\"select_pending.png\";\n    pending=2;arrStatus.push(\"2\");\n  }\nelse\n{\n  frmHistory.flexPenOrange.skin=\"sknFlxPendingUnselected\";\n  frmHistory.penlbl1.skin=\"sknLblPendingUnselected\";\n  frmHistory.imgsel2.src=\"selectyellow.png\";pending=-1;\n    for(var j=0;j<arrStatus.length;j++)\n      {\n\t\tif(\"2\"==arrStatus[j])\n          arrStatus.splice(j,1);\n      }\n}\n//alert(\"\"+arrStatus);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

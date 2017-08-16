@@ -1,0 +1,19 @@
+{
+    "AS_FlexContainer_9f30f1c0cda54b90ae96cbff826a3ff2": {
+        "id": "AS_FlexContainer_9f30f1c0cda54b90ae96cbff826a3ff2",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_myleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "90bf097212b8402086e027964390ddc0"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

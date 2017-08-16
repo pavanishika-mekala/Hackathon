@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_96882efebdfe4f3b9cf74197f2031ca9": {
+        "id": "AS_FlexContainer_96882efebdfe4f3b9cf74197f2031ca9",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnClickWithdrawPendingLeaveRequest_DW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveDashboardDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54ba10ab382645bb834f2212cd41f775"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d126a078fea1468dbfe6e4acb0494f1b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"withdraw\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

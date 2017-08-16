@@ -1,0 +1,25 @@
+{
+    "AS_Button_6e2a90c5429f48e5ae935ffc0dbb7271": {
+        "id": "AS_Button_6e2a90c5429f48e5ae935ffc0dbb7271",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickClearFilterHisWin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b7d4d1be4a1d43679f153ccce4a1e526",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.myLeave.leaveHistory()).clearFilterHistory();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

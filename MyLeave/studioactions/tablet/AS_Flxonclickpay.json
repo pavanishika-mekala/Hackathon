@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_3b682beaa14241bfac2ea1ee64d08081": {
+        "id": "AS_FlexContainer_3b682beaa14241bfac2ea1ee64d08081",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Flxonclickpay",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "90bf097212b8402086e027964390ddc0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cfd2d1ab5b6c4a7ebc19f151c509b8e1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myPay\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

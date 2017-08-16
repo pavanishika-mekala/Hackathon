@@ -1,0 +1,31 @@
+{
+    "AS_Label_95475796ae8f44ce8721903708e2fa5f": {
+        "id": "AS_Label_95475796ae8f44ce8721903708e2fa5f",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickstartdate",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e3d260d5e5574ddcbd2a781e56dbe4d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__880bb6840ebb4e5eb774f09eac25eb41",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabApplyLeave.lblFrmCal.skin=sknlbldateselectfocus;\nfrmTabApplyLeave.flxOverlay.setVisibility(false);\nfrmTabApplyLeave.flxCalendar.setVisibility(true);\n(new kony.apps.ess.myLeave.calendarUI(frmTabApplyLeave.lblFrmCal)).addDynamicCalendar();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

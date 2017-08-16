@@ -1,0 +1,17 @@
+{
+  "background_color": "ecececf9",
+  "bg_type": "one",
+  "border_color": "999999ff",
+  "border_radius": 100,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "isDefaultSkin": false,
+  "kuid": "s444ca8e9c704b7e824edfdc1fe0ce94",
+  "wType": "FlexContainer",
+  "windows8": {
+    "border_radius": 0,
+    "border_style": "custom",
+    "isForked": true
+  }
+}

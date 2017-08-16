@@ -1,0 +1,31 @@
+{
+    "AS_FlexContainer_290932d48a7643e78ec241145b3a813e": {
+        "id": "AS_FlexContainer_290932d48a7643e78ec241145b3a813e",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickOfBackButtonFrmApplyScreen",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f5021e86ef384afca52c13c057b5f87e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a819792a973f4a6c953a83fe60005679",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//used to enable the hamburger icon on leave home screen if it is invisible\nif(frmLeaveHome.flxHamburgerMenu.isVisible === false){\n  frmLeaveHome.flxHamburgerMenu.isVisible = true;\n}\nkony.application.getPreviousForm().show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

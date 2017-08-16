@@ -1,0 +1,45 @@
+CREATE TABLE `ConfigurationBundle`(
+	`bundle_id` BIGINT,
+	`CreatedBy` VARCHAR(32),
+	`CreatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+	`id` BIGINT NOT NULL AUTO_INCREMENT,
+	`LastUpdatedBy` VARCHAR(32),
+	`LastUpdatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+	`name` VARCHAR(10),
+	`SoftDeleteFlag` BOOLEAN,
+	PRIMARY KEY(`id`)
+);
+ALTER TABLE `ConfigurationBundle`
+	ADD CONSTRAINT `410935f2c42fc3afcc55a199aa61c5` UNIQUE KEY(`id`);
+ALTER TABLE `ConfigurationBundle` ADD UNIQUE INDEX `id` (`bundle_id`,`id`);
+CREATE TABLE `Configurations`(
+	`configkey` VARCHAR(50),
+	`configurationBundle_id` BIGINT,
+	`CreatedBy` VARCHAR(32),
+	`CreatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+	`id` BIGINT NOT NULL AUTO_INCREMENT,
+	`LastUpdatedBy` VARCHAR(32),
+	`LastUpdatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+	`SoftDeleteFlag` BOOLEAN,
+	`type` VARCHAR(30),
+	`value` VARCHAR(2000),
+	PRIMARY KEY(`id`)
+);
+ALTER TABLE `Configurations`
+	ADD CONSTRAINT `cdd78f0d4a81ea60a885c7fa7f88ec` UNIQUE KEY(`id`);
+CREATE TABLE `ConfigurationMaster`(
+	`app_id` VARCHAR(50),
+	`app_version` VARCHAR(30),
+	`bundles` VARCHAR(10),
+	`CreatedBy` VARCHAR(32),
+	`CreatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
+	`id` BIGINT NOT NULL AUTO_INCREMENT,
+	`LastUpdatedBy` VARCHAR(32),
+	`LastUpdatedDateTime` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3) ON UPDATE CURRENT_TIMESTAMP(3),
+	`role_id` VARCHAR(20),
+	`SoftDeleteFlag` BOOLEAN,
+	`user_id` VARCHAR(10),
+	PRIMARY KEY(`id`)
+);
+ALTER TABLE `ConfigurationMaster`
+	ADD CONSTRAINT `92a3d535752d57154943ffad7111b2` UNIQUE KEY(`id`);

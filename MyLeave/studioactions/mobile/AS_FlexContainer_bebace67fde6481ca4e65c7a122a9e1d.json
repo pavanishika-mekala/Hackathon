@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_bebace67fde6481ca4e65c7a122a9e1d": {
+        "id": "AS_FlexContainer_bebace67fde6481ca4e65c7a122a9e1d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__34a1714b795d4aeeabbabef8d47b88eb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHolidays.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

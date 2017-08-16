@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_70d71f43374640d2b26eb77a85b1bb34": {
+        "id": "AS_FlexContainer_70d71f43374640d2b26eb77a85b1bb34",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickwinavailtab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWalletTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "d528ba6fb5fb4b46b806b5a3ebb9236e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__21e78d5f4b9d45389acdf42795fab44b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveWallet.lblAvailTitle.skin = sknLblTab2ebaeeF36AveirLTStdRoman;\nfrmTabLeaveWallet.flxBlue.setVisibility(true);\n\nfrmTabLeaveWallet.lblProjTitle.skin = sknlblwin979797AvenirRoman12;\nfrmTabLeaveWallet.flxBlue2.setVisibility(false);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_Form_814e539bf3724629a96a736d2b920aee": {
+        "id": "AS_Form_814e539bf3724629a96a736d2b920aee",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveDashboardDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54ba10ab382645bb834f2212cd41f775"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7a7990d7be9046518b3dfa179bc632a4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.initializeUI();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

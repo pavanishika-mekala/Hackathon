@@ -1,0 +1,25 @@
+{
+    "AS_Button_10951cafa69945fe84a0e35146f6de20": {
+        "id": "AS_Button_10951cafa69945fe84a0e35146f6de20",
+        "type": "ACTION_SEQUENCE",
+        "name": "BtnConnectOnClickAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8681ec0917414ba494646c6414cb9ce7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c790d073b63b4f5c96d04643ba54bc09",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.QRCode()).verifyAppDetails();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

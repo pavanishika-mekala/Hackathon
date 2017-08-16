@@ -1,0 +1,49 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s83d658e470f40a79ff731433754c0a7",
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxCircleDate",
+        "lblHolidaySepratorLine",
+        "lblSeparator2",
+        "lblHolidayMonth",
+        "lblHolidayOccasion"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxEventsMain",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "fa9b9bca7b184bc498be8c1ae409abf3",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "winEvents",
+    "pf": "winEvents",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

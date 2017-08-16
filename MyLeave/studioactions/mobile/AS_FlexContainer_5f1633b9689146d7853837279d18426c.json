@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_5f1633b9689146d7853837279d18426c": {
+        "id": "AS_FlexContainer_5f1633b9689146d7853837279d18426c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_7203a056cd134d96aa0d039a0d91ee8a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfCamera();\n//frmApplyLeave.flxCameraOptions.isVisible = true;",
+            "callbackType": null
+        }]
+    }
+}

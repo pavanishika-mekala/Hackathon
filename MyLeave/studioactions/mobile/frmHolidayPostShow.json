@@ -1,0 +1,25 @@
+{
+    "AS_Form_bf2872bbc9c6405c8ebd6f4f6620848e": {
+        "id": "AS_Form_bf2872bbc9c6405c8ebd6f4f6620848e",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmHolidayPostShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHolidays",
+            "type": "forms",
+            "platform": "",
+            "KUID": "899df64e504c4df49055993347a5a7c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__aceebacb4c914a589fabd410a999af6b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

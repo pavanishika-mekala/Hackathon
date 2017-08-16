@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0b01881dbb984156b65c5aac42476cac": {
+        "id": "AS_FlexContainer_0b01881dbb984156b65c5aac42476cac",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickPendingHisWin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5ade86363f8c4270b1796d6021e87315",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(frmHistory.flexPenOrange.skin==\"sknFlxPendingUnselectedWin\")\n  {\n    frmHistory.flexPenOrange.skin=\"sknFlxOrangePendingWIn\";\n    frmHistory.penlbl1.skin=\"sknLblFFFFFF100Op36Px\";\n    frmHistory.imgsel2.src=\"select_pending.png\";\n    pending=2;arrStatus.push(\"2\");\n  }\nelse\n{\n  frmHistory.flexPenOrange.skin=\"sknFlxPendingUnselectedWin\";\n  frmHistory.penlbl1.skin=\"sknLblPendingUnselected\";\n  frmHistory.imgsel2.src=\"selectyellow.png\";pending=-1;\n    for(var j=0;j<arrStatus.length;j++)\n      {\n\t\tif(\"2\"==arrStatus[j])\n          arrStatus.splice(j,1);\n      }\n}\n//alert(\"\"+arrStatus);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_8eba128902a9435eb5862046f1350230": {
+        "id": "AS_FlexContainer_8eba128902a9435eb5862046f1350230",
+        "type": "ACTION_SEQUENCE",
+        "name": "clickedHistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyShiftDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4f2d8f8443b7428893d6bb17ff95d664"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fd47aedc10cf40bb8128765f9c0ed9c9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

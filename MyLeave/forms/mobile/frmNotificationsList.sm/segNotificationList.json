@@ -1,0 +1,212 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgNotificationImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "mail.png"
+            },
+            "lblHorizontalLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 days"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your leave request has been submitted to Manager"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "System"
+            },
+            "lblVerticalLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgNotificationImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "team_active.png"
+            },
+            "lblHorizontalLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Days"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your Shift Change Request has been rejected as primary resource is not available"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Aethelred Ray"
+            },
+            "lblVerticalLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgNotificationImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wallet_active.png"
+            },
+            "lblHorizontalLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Days"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your Leave Request has been approved"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Aethelred Ray"
+            },
+            "lblVerticalLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "enabledictionary": false,
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segNotificationList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "enableDictionary": false,
+            "indicator": "none",
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "fbe19ed17b8b426ea4c4bee179de10f7",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxMain",
+    "pf": "frmNotificationsList",
+    "retainselection": false,
+    "rowTemplateId": "bfc698d8696f4a72918aa6b45922c735",
+    "rowcounter": 2,
+    "rowfocusskin": "sb7ffe11a1764f7ab48e37cbf9b9796e",
+    "rowskin": "s6b4ccfba4b74b92a47fb8ff20352168",
+    "rowtemplate": "flxNotificationItem",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdbc0b13ffcf419d9faa75f92b8f832b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showprogressindicator": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxImage": "flxImage",
+        "flxNotificationItem": "flxNotificationItem",
+        "imgNotificationImage": "imgNotificationImage",
+        "lblHorizontalLine": "lblHorizontalLine",
+        "lblNotificationDates": "lblNotificationDates",
+        "lblNotificationDays": "lblNotificationDays",
+        "lblNotificationDescription": "lblNotificationDescription",
+        "lblNotificationTime": "lblNotificationTime",
+        "lblNotificationTitle": "lblNotificationTitle",
+        "lblVerticalLine": "lblVerticalLine"
+    },
+    "zindex": 1
+}

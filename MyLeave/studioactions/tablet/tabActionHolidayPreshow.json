@@ -1,0 +1,25 @@
+{
+    "AS_Form_b802b54cfd364d91a4ac3975beffeb2e": {
+        "id": "AS_Form_b802b54cfd364d91a4ac3975beffeb2e",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabActionHolidayPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabHolidayList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "433485de69b44bd0b6cb89ce6c3e2cee"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b35d8993f850432aba5dd1119c0e7480",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

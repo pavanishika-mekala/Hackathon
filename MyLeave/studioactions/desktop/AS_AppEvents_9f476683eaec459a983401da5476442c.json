@@ -1,0 +1,18 @@
+{
+    "AS_AppEvents_9f476683eaec459a983401da5476442c": {
+        "id": "AS_AppEvents_9f476683eaec459a983401da5476442c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e860a96cf1a345189c64dd0ceaec61a2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"init\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

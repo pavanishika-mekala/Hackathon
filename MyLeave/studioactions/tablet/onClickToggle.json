@@ -1,0 +1,31 @@
+{
+    "AS_Image_44daeb057cb7425cb247614483a8b2d5": {
+        "id": "AS_Image_44daeb057cb7425cb247614483a8b2d5",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickToggle",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9d4e8de360614513a1f6bfa287c67a4b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4288b3745112498a83f7ce3eb3c0a0ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.settings.getSettingsObject().togglePushNotificationsStatus();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

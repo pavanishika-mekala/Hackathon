@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_5d4bc30949d244938fe898e07fb42946": {
+        "id": "AS_FlexContainer_5d4bc30949d244938fe898e07fb42946",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnClickOfShiftMangementInLeaveHome",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__71d90050f2dc46a6981824af02ea11ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmShiftManagement.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

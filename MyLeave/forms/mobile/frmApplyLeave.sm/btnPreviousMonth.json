@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s11d49284c124b81ba9ba91ffc8c7165",
+    "_text_": "<",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s1b77350c864454fa96941c0d11b595f"
+    },
+    "displaytext": true,
+    "id": "btnPreviousMonth",
+    "ide_onClick": "AS_Button_dcdee6e289054188830ec31185004a38",
+    "info": null,
+    "isvisible": true,
+    "kuid": "420aeb25fd6745cdaa1d2f8478f468ab",
+    "name": "kony.ui.Button",
+    "parent": "flxCalendarHeader",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 7
+}

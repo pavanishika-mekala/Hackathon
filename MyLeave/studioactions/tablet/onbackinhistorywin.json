@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_8dc5f14f812f42309ca6f77fdc9f6b3a": {
+        "id": "AS_FlexContainer_8dc5f14f812f42309ca6f77fdc9f6b3a",
+        "type": "ACTION_SEQUENCE",
+        "name": "onbackinhistorywin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d2da817ef35343fd9d0306dc18c3a723",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var previousForm = kony.application.getPreviousForm();\npreviousForm.show();",
+            "callbackType": null
+        }]
+    }
+}

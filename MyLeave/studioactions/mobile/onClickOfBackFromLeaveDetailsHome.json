@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_1532491a72854bda9b3f6861be291717": {
+        "id": "AS_FlexContainer_1532491a72854bda9b3f6861be291717",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickOfBackFromLeaveDetailsHome",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_270c9d7fcff848b3a68f2a39ea21260d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hideLeaveViewDetails();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_margin_": [
+        1,
+        3,
+        1,
+        3
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s63a2d9a87db4cf181d6f609a841874f",
+    "_text_": "",
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblOfflineTitle",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "950739c2600845c682ffe4741de7d7cf",
+    "margininpixel": false,
+    "name": "kony.ui.Label",
+    "parent": "popupOfflineAlert",
+    "pf": "popupOfflineAlert",
+    "texti18n": "i18n.ess.offline.title.text",
+    "tooltip": "",
+    "wType": "Label"
+}

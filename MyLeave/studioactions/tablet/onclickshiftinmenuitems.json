@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_67a8a2be2f1349dbaa4b3bcaaea7f4ca": {
+        "id": "AS_FlexContainer_67a8a2be2f1349dbaa4b3bcaaea7f4ca",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickshiftinmenuitems",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4901001ad63a4ba49f0343d7108b98d1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmMyShiftDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

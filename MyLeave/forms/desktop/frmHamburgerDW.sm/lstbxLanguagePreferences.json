@@ -1,0 +1,82 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_skin_": "s5df364cf46b4303854bdf4148151d8f",
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "context": {
+        "channel": "desktop",
+        "formID": "frmHamburgerDW",
+        "platform": "desktopweb",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "groupcells": false,
+    "id": "lstbxLanguagePreferences",
+    "info": null,
+    "isvisible": true,
+    "kuid": "1abc8ff15d954035a6dc9f0c21049979",
+    "masterdata": [
+        [
+            "Key232",
+            "English"
+        ],
+        [
+            "Key608",
+            "French"
+        ],
+        [
+            "Key268",
+            "German"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "flxLanguagePreferences",
+    "pf": "frmHamburgerDW",
+    "selectedkey": "Key232",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "Key232",
+        "English"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

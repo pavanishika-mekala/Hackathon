@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_94bbe22f20594510ac926ca19308f6a5": {
+        "id": "AS_FlexContainer_94bbe22f20594510ac926ca19308f6a5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_bfd78635e9804182bb941137aae14e1e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveWallet.show();",
+            "callbackType": null
+        }]
+    }
+}

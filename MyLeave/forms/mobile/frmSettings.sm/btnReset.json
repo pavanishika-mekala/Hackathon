@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "s4a57dbe479d47b0959d54465cfb3406",
+    "_text_": "Reset",
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s5748a52102f4d0e886209319d87b639",
+    "id": "btnReset",
+    "ide_onClick": "AS_Button_04c27cd38d004dfcbd61dcd4180e2e51",
+    "info": null,
+    "isvisible": true,
+    "kuid": "eb065532f9da46adaa4a772a614f3101",
+    "name": "kony.ui.Button",
+    "parent": "flxLocalDBReset",
+    "pf": "frmSettings",
+    "texti18n": "i18n.ess.common.settings.reset",
+    "wType": "Button",
+    "zindex": 1
+}

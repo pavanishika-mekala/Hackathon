@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_33fb313af7d24001b81a16d447c834c8": {
+        "id": "AS_FlexContainer_33fb313af7d24001b81a16d447c834c8",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickCloseReconfigFrmLoginDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDeskDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e7ba9a6f95db40eeace1de598f6f206b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.frmLoginDesk.hideReconfigFlex();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

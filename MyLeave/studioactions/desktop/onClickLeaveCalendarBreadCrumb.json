@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a8ab22ab62cb47c79fb14e6706365ca1": {
+        "id": "AS_FlexContainer_a8ab22ab62cb47c79fb14e6706365ca1",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickLeaveCalendarBreadCrumb",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3b3f99eb012e4c72bda27e590ada921e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.navigateToLeaveDashboard();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c4c3e532a72f4207ac2acba2bf1bd67e": {
+        "id": "AS_FlexContainer_c4c3e532a72f4207ac2acba2bf1bd67e",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickWinHisApprove",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f349336420824d72961eb87beda72dcc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmHistory.flexApproved.skin==\"sknFlxApproveStatusUnselectedWin\")\n  {\n    frmHistory.flexApproved.skin=\"sknFlxApprovedStatusWin\";\n    frmHistory.Apprlbl.skin=\"sknLblFFFFFF100Op36Px\";\n    frmHistory.selimg1.src=\"selectapprove.png\";\n    approved=0;arrStatus.push(\"0\");\n  }\nelse\n{\n  frmHistory.flexApproved.skin=\"sknFlxApproveStatusUnselectedWin\";\n  frmHistory.Apprlbl.skin=\"sknLblApproveStatusUnselected\";\n  frmHistory.selimg1.src=\"approvedoutline.png\";\n  approved=-1;\n    for(var j=0;j<arrStatus.length;j++)\n      {\n\t\tif(\"0\"==arrStatus[j])\n          arrStatus.splice(j,1);\n      }\n}\n//alert(\"\"+arrStatus);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

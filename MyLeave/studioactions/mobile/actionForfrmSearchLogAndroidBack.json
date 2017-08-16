@@ -1,0 +1,25 @@
+{
+    "AS_Form_ff4818c52e2c46f2aca4f5f61db556bf": {
+        "id": "AS_Form_ff4818c52e2c46f2aca4f5f61db556bf",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmSearchLogAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchLog",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4afef6d1bff45fa8183c0dfe78a691b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b992fe0c90974df69fbd56a7063610aa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in search log--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

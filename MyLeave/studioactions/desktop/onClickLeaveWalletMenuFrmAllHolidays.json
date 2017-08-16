@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f0c4775919b74d2d9ed611bedee9ac56": {
+        "id": "AS_FlexContainer_f0c4775919b74d2d9ed611bedee9ac56",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickLeaveWalletMenuFrmAllHolidays",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAllHolidaysAndEventsDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e09514daaf1d4b9a81518c69cae18d67"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6060d275100a4122977ba1596e368a1b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveWalletDW.navigateToLeaveWalletForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

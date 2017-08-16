@@ -1,0 +1,25 @@
+{
+    "AS_Form_5285fa72afee4588907a1997df3d753e": {
+        "id": "AS_Form_5285fa72afee4588907a1997df3d753e",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmStatusSearchAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStatusSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2d300e74cccb41179e8872160edcd4d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__72fe68932cf84be9ba1a344dce217ede",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in statusSearch--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

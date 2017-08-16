@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_163b35d259b0402091630c2d6648c2a0": {
+        "id": "AS_FlexContainer_163b35d259b0402091630c2d6648c2a0",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickEmpSearchCalendarTeamView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarTeamViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e45156393f1a420682281dff0ee875ae"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6c758d4827964f59a46204bc2dd7ef10",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmCalendarTeamView.expandTeamSearch();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

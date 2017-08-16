@@ -1,0 +1,1 @@
+function AS_Calendar_a8ef6c03cadc4df79765aeab73f5cf7c(eventobject, isValidDateSelected) {}

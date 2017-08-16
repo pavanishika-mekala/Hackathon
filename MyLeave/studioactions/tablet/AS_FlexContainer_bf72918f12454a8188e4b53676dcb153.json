@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_bf72918f12454a8188e4b53676dcb153": {
+        "id": "AS_FlexContainer_bf72918f12454a8188e4b53676dcb153",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyShiftDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4f2d8f8443b7428893d6bb17ff95d664"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

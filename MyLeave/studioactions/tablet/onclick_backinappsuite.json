@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_92ed7f3d17db442bba1374e3d19410a1": {
+        "id": "AS_FlexContainer_92ed7f3d17db442bba1374e3d19410a1",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclick_backinappsuite",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAppSuite",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8856a45b5b0b41678501847962072cf2"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b7019ae40a904854a448cc876a99c838",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var previousForm = kony.application.getPreviousForm();\npreviousForm.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

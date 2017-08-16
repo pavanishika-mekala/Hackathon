@@ -1,0 +1,28 @@
+{
+    "AS_Calendar_f5ac0a36278e4b318dac0623f32d6590": {
+        "id": "AS_Calendar_f5ac0a36278e4b318dac0623f32d6590",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSelectionToDateFrmApplyLeaveDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "boolean",
+            "name": "isValidDateSelected"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__21467307391241b2b8cd891575132797",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.onSelectionOfToDate();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

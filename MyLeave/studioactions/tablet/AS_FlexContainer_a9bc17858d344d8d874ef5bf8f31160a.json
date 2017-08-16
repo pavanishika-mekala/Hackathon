@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_a9bc17858d344d8d874ef5bf8f31160a": {
+        "id": "AS_FlexContainer_a9bc17858d344d8d874ef5bf8f31160a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_23554f852dd5459ea79b43e3b8a3cf97",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmMyShiftDashboard.show();",
+            "callbackType": null
+        }]
+    }
+}

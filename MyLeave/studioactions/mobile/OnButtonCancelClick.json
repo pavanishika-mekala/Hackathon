@@ -1,0 +1,18 @@
+{
+    "AS_Button_5ec864c4ada340739506a37c87c7a87b": {
+        "id": "AS_Button_5ec864c4ada340739506a37c87c7a87b",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnButtonCancelClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_fa04a7efb19f4339adb1e94e0734428c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.ess.myLeave.leaveRequestDetailsUI();\nobj.onClickCancel();",
+            "callbackType": null
+        }]
+    }
+}

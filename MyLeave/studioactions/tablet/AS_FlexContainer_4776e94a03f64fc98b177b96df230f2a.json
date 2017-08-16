@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_4776e94a03f64fc98b177b96df230f2a": {
+        "id": "AS_FlexContainer_4776e94a03f64fc98b177b96df230f2a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_5c88ff1a1032410899d0d7293aaa613c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveWallet.lblAvailTitle.skin = sknLblTab2ebaeeF36AveirLTStdRoman;\nfrmTabLeaveWallet.flxBlue.setVisibility(true);\n\nfrmTabLeaveWallet.lblProjTitle.skin = sknlblwin979797AvenirRoman12;\nfrmTabLeaveWallet.flxBlue2.setVisibility(false);\n",
+            "callbackType": null
+        }]
+    }
+}

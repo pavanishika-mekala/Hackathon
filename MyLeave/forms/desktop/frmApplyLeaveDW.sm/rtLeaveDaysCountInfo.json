@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3fa3ee3cb944446a377710cae694132",
+    "_text_": "Applying for <b>100 days</b> leave.",
+    "_top_": {
+        "type": "string",
+        "value": "8dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "rtLeaveDaysCountInfo",
+    "info": null,
+    "isvisible": true,
+    "kuid": "623675556920439f9dec8644c17deb76",
+    "name": "kony.ui.RichText",
+    "parent": "flxLeaveTypeInfoRow",
+    "pf": "frmApplyLeaveDW",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

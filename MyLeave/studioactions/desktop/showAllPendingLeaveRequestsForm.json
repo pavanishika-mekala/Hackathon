@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0a7ca0b9f87e4e34945dc1d2562c25fc": {
+        "id": "AS_FlexContainer_0a7ca0b9f87e4e34945dc1d2562c25fc",
+        "type": "ACTION_SEQUENCE",
+        "name": "showAllPendingLeaveRequestsForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveDashboardDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54ba10ab382645bb834f2212cd41f775"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b3db55de45e848429230701a4dd406ce",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmPendingLeaveRequestsDW\");\n    formController.loadDataAndShowForm(); \n ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

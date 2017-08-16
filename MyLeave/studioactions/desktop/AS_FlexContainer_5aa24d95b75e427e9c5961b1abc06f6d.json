@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_5aa24d95b75e427e9c5961b1abc06f6d": {
+        "id": "AS_FlexContainer_5aa24d95b75e427e9c5961b1abc06f6d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_aa24e47bc54c414193ed66dca3d4caa8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.addAttachment();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_3c71df2573c442aa99c40c965cefc79b": {
+        "id": "AS_AppEvents_3c71df2573c442aa99c40c965cefc79b",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionAppServiceCallBackFOrTablet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fe464cbfc9394d1da32ecfae0ba83e7b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "return kony.apps.ess.deepLinkingSSO.appServiceActions(eventobject);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

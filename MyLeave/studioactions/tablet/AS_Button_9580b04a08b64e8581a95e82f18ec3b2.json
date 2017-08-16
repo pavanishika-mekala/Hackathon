@@ -1,0 +1,24 @@
+{
+    "AS_Button_9580b04a08b64e8581a95e82f18ec3b2": {
+        "id": "AS_Button_9580b04a08b64e8581a95e82f18ec3b2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e3d260d5e5574ddcbd2a781e56dbe4d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__83c86001809946aaac88990e6d241ea9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.myLeave.tabApplyLeaveUI.preshowtabApplyLeave.editLeave();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

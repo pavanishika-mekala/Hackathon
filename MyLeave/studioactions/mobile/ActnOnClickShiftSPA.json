@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_40cf8aeb6de14f59bda1c378df5fccbf": {
+        "id": "AS_FlexContainer_40cf8aeb6de14f59bda1c378df5fccbf",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnOnClickShiftSPA",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d8b3e33d52a14379bda0a4fff9054b9e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

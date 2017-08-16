@@ -1,0 +1,25 @@
+{
+    "AS_Form_5c4601f4822d4c898cb6a663d6d3a3ee": {
+        "id": "AS_Form_5c4601f4822d4c898cb6a663d6d3a3ee",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmSearchLeaveTypeAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchLeaveType",
+            "type": "forms",
+            "platform": "",
+            "KUID": "44ad11d4a65c4ac29b2c4b5ef7b976cb"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a88a54b9465f4bb592078c31c2d563cf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in frmSearchLeaveType--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "27%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4337cb72ec44b21a73b8f00b880a32d",
+    "_text_": "Hours",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s4337cb72ec44b21a73b8f00b880a32d",
+    "id": "btnHours",
+    "ide_onClick": "AS_Button_bd6d4cca03b7496bb2214e077ec693a0",
+    "info": null,
+    "isvisible": true,
+    "kuid": "3fd08cde27854d28a9e93be75ae3fdea",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxFullHalfDay",
+    "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.common.hours.valueKA",
+    "wType": "Button",
+    "zindex": 1
+}

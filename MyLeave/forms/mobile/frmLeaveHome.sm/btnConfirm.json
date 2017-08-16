@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "17%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4a57dbe479d47b0959d54465cfb3406",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "83%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "51%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s44e643fd2cb4dfcadf4d02e9c682a0c",
+    "id": "btnConfirm",
+    "ide_onClick": "AS_Button_292dafee94394098ae3a2af8d1003f67",
+    "info": null,
+    "isvisible": true,
+    "kuid": "503ba1f41dea4fd7b12148336cd0d791",
+    "name": "kony.ui.Button",
+    "parent": "flxWithdraw",
+    "pf": "frmLeaveHome",
+    "texti18n": "i18n.ess.common.confirm.valueKA",
+    "wType": "Button",
+    "zindex": 16
+}

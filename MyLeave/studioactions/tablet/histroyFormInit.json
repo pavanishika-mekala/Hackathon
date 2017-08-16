@@ -1,0 +1,25 @@
+{
+    "AS_Form_bb540c1dc9f546ce8caf0252575da3fe": {
+        "id": "AS_Form_bb540c1dc9f546ce8caf0252575da3fe",
+        "type": "ACTION_SEQUENCE",
+        "name": "histroyFormInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0a08bdeeaf4d40d88d7a252d67d15afe",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

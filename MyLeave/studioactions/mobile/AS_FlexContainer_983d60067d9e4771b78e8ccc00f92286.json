@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_983d60067d9e4771b78e8ccc00f92286": {
+        "id": "AS_FlexContainer_983d60067d9e4771b78e8ccc00f92286",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchLog",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4afef6d1bff45fa8183c0dfe78a691b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ba2956f643d24e5bb649386f10e2d26e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj=new kony.apps.coe.myLeave.search();\nobj.done();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

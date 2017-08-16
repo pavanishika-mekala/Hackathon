@@ -1,0 +1,14 @@
+{
+  "name" : "ESSIDENTITY",
+  "displayName" : "ESSIDENTITY",
+  "type" : "sky",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"scheme\":\"http\",\"port\":\"11599\",\"prefix\":\"KonySAP\",\"is_custom\":false,\"gateway\":\"connect.kony.com\"}",
+  "policyConfig" : "{\"max_login_fail\":5,\"def_user_status\":\"pending\"}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : true
+  },
+  "ssoenabled" : true
+}

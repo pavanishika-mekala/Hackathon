@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_912cab938b48475d9079f0bbf3c1cfe8": {
+        "id": "AS_FlexContainer_912cab938b48475d9079f0bbf3c1cfe8",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabHolidayList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "433485de69b44bd0b6cb89ce6c3e2cee"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d48168319ddf4534bf47324425271384",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

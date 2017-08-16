@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_d29fa3f8f9c943cbbec7ab767e7caa45": {
+        "id": "AS_FlexContainer_d29fa3f8f9c943cbbec7ab767e7caa45",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segPending",
+            "type": "templates",
+            "platform": "",
+            "KUID": "5be70fc42fcb4b3b92450e945514f807"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c2f524bf6e3345868eee6c650de3d6bb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj=new kony.apps.coe.ess.myLeave.PendingLeaveRequestUI();\nobj.onClickOfDelete();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

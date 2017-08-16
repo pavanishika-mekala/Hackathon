@@ -1,0 +1,25 @@
+{
+    "AS_Form_c0195011c71944bc89e72ac81da09c32": {
+        "id": "AS_Form_c0195011c71944bc89e72ac81da09c32",
+        "type": "ACTION_SEQUENCE",
+        "name": "InitActions",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyShiftDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4f2d8f8443b7428893d6bb17ff95d664"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d8e463c0335d4d4e8b3ee5fbbbff14e0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

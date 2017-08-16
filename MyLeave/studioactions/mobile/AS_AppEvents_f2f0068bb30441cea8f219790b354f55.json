@@ -1,0 +1,18 @@
+{
+    "AS_AppEvents_f2f0068bb30441cea8f219790b354f55": {
+        "id": "AS_AppEvents_f2f0068bb30441cea8f219790b354f55",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3f55c56ddd254106b6701adf09116cb7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "initMbaasApp();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

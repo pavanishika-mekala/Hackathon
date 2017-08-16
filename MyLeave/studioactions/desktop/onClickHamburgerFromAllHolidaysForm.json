@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c771dfe6af034bcfa4358b1bf72a17bb": {
+        "id": "AS_FlexContainer_c771dfe6af034bcfa4358b1bf72a17bb",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHamburgerFromAllHolidaysForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAllHolidaysAndEventsDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e09514daaf1d4b9a81518c69cae18d67"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7b37ae6e09df4539a747b7527fd31415",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHamburgerDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

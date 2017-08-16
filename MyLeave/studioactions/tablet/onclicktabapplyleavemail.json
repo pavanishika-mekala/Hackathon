@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0d4b55a1320a4e74aed824dd3170ef2d": {
+        "id": "AS_FlexContainer_0d4b55a1320a4e74aed824dd3170ef2d",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclicktabapplyleavemail",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e3d260d5e5574ddcbd2a781e56dbe4d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c0c2e6bda716464598a6cea94bd85e77",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.myLeave.tabApplyLeaveUI.MailandPhone.onClickOfMail();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

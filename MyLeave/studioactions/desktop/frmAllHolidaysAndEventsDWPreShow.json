@@ -1,0 +1,25 @@
+{
+    "AS_Form_d77f65fd1d70474398f7aaa586d8436e": {
+        "id": "AS_Form_d77f65fd1d70474398f7aaa586d8436e",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmAllHolidaysAndEventsDWPreShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAllHolidaysAndEventsDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e09514daaf1d4b9a81518c69cae18d67"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__466bd0b80f7e43a3b73f94bada554f66",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmAllHolidaysAndEvents.removeLastConnectors();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_4ea6b16e559d4b71a1c9918788b23a1d": {
+        "id": "AS_FlexContainer_4ea6b16e559d4b71a1c9918788b23a1d",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionflxMyTimeOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c69dce89016f49ebaaeee7c07e74625f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c44e3f810c89437895f81eb85f1dae5d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myTime\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

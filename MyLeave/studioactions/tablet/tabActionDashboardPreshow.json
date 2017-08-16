@@ -1,0 +1,25 @@
+{
+    "AS_Form_568a9594a4f0483bb40fdb1a64103252": {
+        "id": "AS_Form_568a9594a4f0483bb40fdb1a64103252",
+        "type": "ACTION_SEQUENCE",
+        "name": "tabActionDashboardPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "986f6bcc1c3c405ba7b6890da2ff8d3b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a41bb7b10dbf4bc498395a0d517c6105",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).addCalendarOnLeaveHome();\n(new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).isValidMonthandYearforCalender();\n(new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).getLeaveDashboardData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

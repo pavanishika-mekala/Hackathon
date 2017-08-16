@@ -1,0 +1,12 @@
+[ {
+  "sourceObject" : "leave_attachments",
+  "targetObject" : "MyLeaveMedia",
+  "relationshipKeys" : [ {
+    "sourceField" : "media_id",
+    "targetField" : "name"
+  } ],
+  "name" : "leave_attachments_media",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

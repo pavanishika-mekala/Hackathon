@@ -1,0 +1,25 @@
+{
+    "AS_Form_c0adbff53aa34f65bd01071a5733b607": {
+        "id": "AS_Form_c0adbff53aa34f65bd01071a5733b607",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmSettingsAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b7baf7af92984d9e84a928b9f7d98642"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__94981bbd059f49fa85bea0c136bc69ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in settings--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

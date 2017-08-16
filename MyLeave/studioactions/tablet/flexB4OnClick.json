@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_8dda0d886b864686a1c57370bdd360ef": {
+        "id": "AS_FlexContainer_8dda0d886b864686a1c57370bdd360ef",
+        "type": "ACTION_SEQUENCE",
+        "name": "flexB4OnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1d264fbd448d43139e00e99cdd2b5327",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n\nif(frmHistory.flexB4.skin==\"sknFlxLeaveTypeSelected\")\n  {\n\tfrmHistory.flexB4.skin=\"sknFlxLeaveTypeUnselected\";\n  \tfrmHistory.desc4.skin=\"sknLblLeaveTypeUnselected\";\n    frmHistory.selectimg4.src=\"selectblue.png\";\n  }\nelse\n  {\n    frmHistory.flexB4.skin=\"sknFlxLeaveTypeSelected\";\n  \tfrmHistory.desc4.skin=\"sknLblLeaveTypeSelected\";\n    frmHistory.selectimg4.src=\"select_pendingcopy.png\";\n    \n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

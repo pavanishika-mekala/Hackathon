@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_ae8dd8729be14e19b742e4ca5b8896fa": {
+        "id": "AS_FlexContainer_ae8dd8729be14e19b742e4ca5b8896fa",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnOnClickOnLeaveWalletInShiftManagement",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_0280fad24e6f4829ab9779a44d1151e7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveWallet.show();\n",
+            "callbackType": null
+        }]
+    }
+}

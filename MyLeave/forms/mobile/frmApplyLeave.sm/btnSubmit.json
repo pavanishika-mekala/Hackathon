@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "7.90%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sababfa280da4a098bec9a22657492a6",
+    "_text_": "Submit",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s6fa758bd60242b6b3a8678ead57830e",
+    "id": "btnSubmit",
+    "ide_onClick": "AS_Button_30deee6a0af344568ed634e603e4b2c2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "4a38dca71c964002b152c3ac45b809f1",
+    "name": "kony.ui.Button",
+    "parent": "frmApplyLeave",
+    "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.common.submit.valueKA",
+    "wType": "Button",
+    "zindex": 1
+}

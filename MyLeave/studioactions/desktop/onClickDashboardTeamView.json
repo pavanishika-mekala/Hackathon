@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f18d0350d87c49b39708f21511064205": {
+        "id": "AS_FlexContainer_f18d0350d87c49b39708f21511064205",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickDashboardTeamView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveDashboardDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54ba10ab382645bb834f2212cd41f775"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5b688434f4bb4f7b866be1418fcd9846",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.navigateToTeamViewForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

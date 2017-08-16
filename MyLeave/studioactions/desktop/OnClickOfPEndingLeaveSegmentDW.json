@@ -1,0 +1,31 @@
+{
+    "AS_Segment_20559e7108ca4058afef8d78ef66fb73": {
+        "id": "AS_Segment_20559e7108ca4058afef8d78ef66fb73",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnClickOfPEndingLeaveSegmentDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmPendingLeaveRequestsDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abcda1bc2a94443a8d974ebc98157bef"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__84015cfe7b66445aac25a1dc6334fa9f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var ind = frmPendingLeaveRequestsDW.segPendingLeaves.selectedRowIndex[1];\nkony.apps.coe.ess.myLeave.frmPendingLeaveRequests.OnClick(frmPendingLeaveRequestsDW.segPendingLeaves,0,ind);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

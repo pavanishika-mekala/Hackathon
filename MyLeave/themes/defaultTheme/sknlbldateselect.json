@@ -1,0 +1,26 @@
+{
+  "background_color": "0e78a0ff",
+  "bg_type": "one",
+  "border_color": "0e78a0ff",
+  "border_radius": 6,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "fontSizeInPx": false,
+  "font_color": "ffffffff",
+  "font_name": "Helvetica",
+  "font_size": 107,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "ipad": {
+    "font_name": "AvenirLTStd-Roman"
+  },
+  "isDefaultSkin": false,
+  "kuid": "sc43d5b2ca7a4962b7f2e1a7911725f4",
+  "wType": "Label",
+  "windows8": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 86,
+    "isForked": true
+  }
+}

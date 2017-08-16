@@ -1,0 +1,24 @@
+{
+    "AS_Button_292dafee94394098ae3a2af8d1003f67": {
+        "id": "AS_Button_292dafee94394098ae3a2af8d1003f67",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9ec430d7b1864c6c8f1daea95cf4d5c5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.deleteLeave();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

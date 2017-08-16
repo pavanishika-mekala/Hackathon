@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_849aa5364be14f7d87f785ea43994c59": {
+        "id": "AS_FlexContainer_849aa5364be14f7d87f785ea43994c59",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclicktabshiftreqinhistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2e203294894342e8bb6b5abf5cf224a7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.lblAvailTitle.skin = sknLblTab2ebaeeF36AveirLTStdRoman;\nfrmHistory.lblProjTitle.skin = sknlblwin979797AvenirRoman12;\nfrmHistory.flxBlue2.setVisibility(false);\nfrmHistory.flxBlue1.setVisibility(true);\nfrmHistory.lblHeaderLabel.text = \"Shift Leave Request History\"",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_23fe90db4f924c28b7d070c13ed802bd": {
+        "id": "AS_FlexContainer_23fe90db4f924c28b7d070c13ed802bd",
+        "type": "ACTION_SEQUENCE",
+        "name": "flxLoginOnClickAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8681ec0917414ba494646c6414cb9ce7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___21f6f105890648dc9bf1e1a67104bc86",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmLogin",
+            "formKUID": "db3f4d071c3541989dd5a510eda8b57e",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

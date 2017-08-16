@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_5bfb09521f19428a92a57459871f6008": {
+        "id": "AS_FlexContainer_5bfb09521f19428a92a57459871f6008",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclick_rememberme",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "59c53bdc895042d288d691790af462f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9d0a6ddd3a2049699cd404ea10971810",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmLogin.imgRem.src===\"uncheck.png\"){\n  frmLogin.imgRem.src=\"check.png\";\n}else{\n  frmLogin.imgRem.src=\"uncheck.png\";\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

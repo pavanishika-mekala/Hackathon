@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_1722b4d032d84ff8996ecdedd2a71bf4": {
+        "id": "AS_FlexContainer_1722b4d032d84ff8996ecdedd2a71bf4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickswitchwinapplyleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "0865d0ff69da4e3f87b5f98982566507"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__aa533e85458d43a4a81edac86f784c45",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmTabApplyLeave.imgOnOff.src === \"on.png\"){\n  frmTabApplyLeave.imgOnOff.src = \"off.png\"\n}else{\n  frmTabApplyLeave.imgOnOff.src = \"on.png\"\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

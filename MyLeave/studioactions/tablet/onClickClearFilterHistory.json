@@ -1,0 +1,25 @@
+{
+    "AS_Button_3acd96c280b44fec8c622e7109c1ea45": {
+        "id": "AS_Button_3acd96c280b44fec8c622e7109c1ea45",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickClearFilterHistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9bbc181ad0634cdbb604088d7b9b0eae",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "clearFilterHistory();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

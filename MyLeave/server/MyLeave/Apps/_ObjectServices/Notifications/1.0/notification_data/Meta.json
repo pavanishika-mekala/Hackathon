@@ -1,0 +1,49 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "designTimeBackendMeta" : { },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodifiedts"
+    },
+    "backendMeta" : {
+      "libraryName" : "_SKYTECH_HCM",
+      "dataObjectName" : "HCM_EMP_NOTIFICATION",
+      "children" : "[]",
+      "businessObjectName" : "HCM_NOTIFDATA"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : "",
+      "InactiveValue" : "X",
+      "Name" : "softdeleteflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "data_key",
+    "targetField" : "DATA_KEY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "data_value",
+    "targetField" : "DATA_VALUE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "id",
+    "targetField" : "ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "notification_id",
+    "targetField" : "NOTIFICATION_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  } ]
+}

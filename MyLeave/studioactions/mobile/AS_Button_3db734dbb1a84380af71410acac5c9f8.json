@@ -1,0 +1,17 @@
+{
+    "AS_Button_3db734dbb1a84380af71410acac5c9f8": {
+        "id": "AS_Button_3db734dbb1a84380af71410acac5c9f8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_95324d69e18a4edc932e674a97760ab8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.deleteLeave();",
+            "callbackType": null
+        }]
+    }
+}

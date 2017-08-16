@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_adc65359c01b4b10a53aea4413bc7cf9": {
+        "id": "AS_FlexContainer_adc65359c01b4b10a53aea4413bc7cf9",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickRecurringSwitchFrmApplyLeave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__57d8b42f95184fc984f101bca116f737",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.reccurringLeaveSwitch();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

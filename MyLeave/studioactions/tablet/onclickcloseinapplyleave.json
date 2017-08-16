@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c4fe9e1f5f0b485fafd1afcb3cf524cf": {
+        "id": "AS_FlexContainer_c4fe9e1f5f0b485fafd1afcb3cf524cf",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickcloseinapplyleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e3d260d5e5574ddcbd2a781e56dbe4d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d45b9200bc2b4b648dbd240d2ba53ab4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveDashboard.show();\nfrmTabApplyLeave.destroy();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "AS_FlexContainer_fcd3d75ddb9f454ca1c2bca9c1e72e8a": {
+        "id": "AS_FlexContainer_fcd3d75ddb9f454ca1c2bca9c1e72e8a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "segLeaveHistory",
+            "type": "templates",
+            "platform": "",
+            "KUID": "8e9b5f891cf24b9fbd31bb4ca277d9af"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ff28ca213e284d1d83cb9319aa2a5775": {
+        "id": "AS_FlexContainer_ff28ca213e284d1d83cb9319aa2a5775",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHamburgerfrmLeaveWallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWalletDetailsDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ef19e96151b6474bb0032c5a7cf92f15"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1ca87e5288834c0b938aece2a66d74ba",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHamburgerDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

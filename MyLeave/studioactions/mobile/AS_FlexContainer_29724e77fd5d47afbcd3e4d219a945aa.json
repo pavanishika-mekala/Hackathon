@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_29724e77fd5d47afbcd3e4d219a945aa": {
+        "id": "AS_FlexContainer_29724e77fd5d47afbcd3e4d219a945aa",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8d4b0482aa274479b88a61e6511da913",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeave.TeamViewUI()).toggleSkin(frmLeaveHome,true);\nvar FormLoadObj = new kony.sdk.mvvm.NavigationObject();\nvar qp = {\n           \"employeeId\" : kony.apps.coe.ess.globalVariables.employeeId\n  \t\t\t\t\n                };\n                FormLoadObj.setQueryParams(\"segTeamView\", qp);\nvar formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmTeamView\");\nformController.loadDataAndShowForm(FormLoadObj);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

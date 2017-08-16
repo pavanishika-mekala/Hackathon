@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_db08ae67375948d4b6941b61537e6a8f": {
+        "id": "AS_FlexContainer_db08ae67375948d4b6941b61537e6a8f",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHoursSwitchApplyLeave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a4ac6f51dc414a72a79c5aac24ffd36e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.hoursOnClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

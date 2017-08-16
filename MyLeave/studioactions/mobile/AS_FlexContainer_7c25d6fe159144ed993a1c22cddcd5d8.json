@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_7c25d6fe159144ed993a1c22cddcd5d8": {
+        "id": "AS_FlexContainer_7c25d6fe159144ed993a1c22cddcd5d8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_66e9aabc56034aad896e854f23375d9b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();",
+            "callbackType": null
+        }]
+    }
+}

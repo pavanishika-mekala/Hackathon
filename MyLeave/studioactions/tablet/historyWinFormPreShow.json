@@ -1,0 +1,25 @@
+{
+    "AS_Form_85686678c56b4d4c88263d338fd92eb5": {
+        "id": "AS_Form_85686678c56b4d4c88263d338fd92eb5",
+        "type": "ACTION_SEQUENCE",
+        "name": "historyWinFormPreShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b69c2fd1a63b463eb184bfe57709797b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//  if (frmHistroyShown == false) {\n//         getLeaveHistoryType();\n//    getLeaveHistoryData();\n//         frmHistroyShown = true;\n//     }\n// else\n//   {\n//     clearFilterHistory();\n//   }\n    ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

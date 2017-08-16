@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_5a9efb2cfbae4cf3b1849873a6320c27": {
+        "id": "AS_FlexContainer_5a9efb2cfbae4cf3b1849873a6320c27",
+        "type": "ACTION_SEQUENCE",
+        "name": "FlexDeleteAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveRequestDetails",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b9aab769c20845c1845b8a6439092c08"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__000299bfb671474796e49f8b663a9c70",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveRequestDetails.flxPopUp.isVisible=true;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
