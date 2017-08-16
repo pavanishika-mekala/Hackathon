@@ -1,5 +1,5 @@
 //****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Wed Aug 09 07:41:09 UTC 2017attachment_type*******************
+// ****************Generated On Wed Aug 16 06:50:31 UTC 2017attachment_type*******************
 // **********************************Start attachment_type's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};

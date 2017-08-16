@@ -37,13 +37,11 @@
     "canUpdateUI": true,
     "children": [
         "flxHamburgerButton",
-        "btnNow",
-        "flxNowCount",
-        "btnLater",
-        "flxLaterCount",
         "flxSlider",
         "flxFilterButton",
-        "flxOptions"
+        "flxOptions",
+        "flxNowTxt",
+        "flxLaterTab"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -1,14 +1,15 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "80%"
     },
     "_left_": {
         "type": "string",
-        "value": "25%"
+        "value": "17%"
     },
     "_margin_": [
         6,
@@ -26,25 +27,30 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "21.25%"
+        "value": "10%"
     },
     "_width_": {
-        "type": "string",
-        "value": "20%"
+        "type": "ref",
+        "value": "preferred"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
     "disabledSkins": {},
     "displaytext": true,
     "focusskin": "s6fd8bc185124dd5b19a2c4d4ddd437b",
     "id": "btnNow",
-    "ide_onClick": "AS_Button_417262827b1944889f87a0c6b5c6d5b1",
+    "ide_onClick": "AS_Button_j938af8f7cdb4e4b881d436f1ba62305",
     "info": null,
     "isvisible": true,
     "kuid": "de769fb58ce6477580334d18f5c5d615",
     "name": "kony.ui.Button",
-    "parent": "flxHeader",
+    "paddinginpixel": false,
+    "parent": "flxNowTxt",
     "pf": "frmApprovalHome",
     "texti18n": "i18n.ess.frmApprovalHome.btnNow",
     "wType": "Button"

@@ -416,3 +416,7 @@
 "i18n.ess.frmHamburger.Version"="V 1.0";
 "i18n.ess.segment.typeofrequest"="Soort verzoeken";
 "i18n.ess.MyApprovals.frmStartUp.lblVersion"="Sync Versie";
+"i18n.ess.MyApprovals.frmSettings.English"="English";
+"i18n.ess.MyApprovals.frmSettings.French"="Français";
+"i18n.ess.MyApprovals.frmSettings.Nederlands"="Nederlands";
+"i18n.ess.MyApprovals.frmSettings.SelectLang"="Kies uw taal :";

@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_text_": "8:30 AM ET",
     "_top_": {
         "type": "string",
-        "value": "45%"
+        "value": "71%"
     },
     "_width_": {
         "type": "ref",
