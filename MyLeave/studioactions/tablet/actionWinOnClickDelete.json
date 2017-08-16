@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_a5a5bedd630941e3a60789b45a5f2d2d": {
+        "id": "AS_FlexContainer_a5a5bedd630941e3a60789b45a5f2d2d",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionWinOnClickDelete",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_2a3be474d7b94d21bccdc4a3c7e029d6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).deleteLeave();",
+            "callbackType": null
+        }]
+    }
+}

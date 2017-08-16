@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_de3a97ad843d4714b89e31ab69868f9c": {
+        "id": "AS_FlexContainer_de3a97ad843d4714b89e31ab69868f9c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Flexshifthambuerger",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyShiftDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4f2d8f8443b7428893d6bb17ff95d664"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b8cc9f13db194b2399073bcb709ff946",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.ess.Hamburger(kony.application.getCurrentForm().flxHamburger);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

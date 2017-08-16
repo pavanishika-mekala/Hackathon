@@ -1,0 +1,62 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s62da35a53d94cf6b3c99ad59aae91be",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "children": [
+        "segPendingLeaves",
+        "flxFilter"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxPendingLeaveRequests",
+    "info": null,
+    "isvisible": true,
+    "kuid": "2779f2bc6b2b4612a137d4e7fc6622be",
+    "layouttype": 2,
+    "minheight": {
+        "type": "string",
+        "value": "700dp"
+    },
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxMain",
+    "pf": "frmPendingLeaveRequestsDW",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

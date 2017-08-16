@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_0b0072df3aca47eab0d27ebfaf014260": {
+        "id": "AS_FlexContainer_0b0072df3aca47eab0d27ebfaf014260",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e43e6b2435dc49ad8e3e4d7d65576dcd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.modifyLeaveDetails();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

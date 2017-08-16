@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f58a6fbd66174f64963d498fe3d560f8": {
+        "id": "AS_FlexContainer_f58a6fbd66174f64963d498fe3d560f8",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickwindeleteleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabPendingList",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "a1add503572f48b7a098650db27a98e0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2a3fcec0c1c54d9b86db9b3913cabe38",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeave.tabPendingLeaveRequestUI()).deleteLeave();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

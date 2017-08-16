@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a10f331ead8b45f08f196f0c583753eb": {
+        "id": "AS_FlexContainer_a10f331ead8b45f08f196f0c583753eb",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickindicalshift",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamShiftCalendar",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "064d8aba52e04f4dae1687c5c9cae812"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ed75aa985b7b4b45a5563264a6030274",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmMyShiftDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "12.34%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        3
+    ],
+    "_skin_": "sc7133c7dbc14177be0c093c8eea8b00",
+    "_text_": "Submitted on 15 may 2016 ,3.00pm",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "id": "lblapplieddate",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "a69bbd603ba345c599b8a81046ce947f",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flexnotes",
+    "pf": "tempheaderleavenote",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_75022febed624fdaba152bbde9ac4930": {
+        "id": "AS_AppEvents_75022febed624fdaba152bbde9ac4930",
+        "type": "ACTION_SEQUENCE",
+        "name": "appPostShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__70aac6e1658d4fdf8fe2b691c4a727e0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "addPreshowToAllForms();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

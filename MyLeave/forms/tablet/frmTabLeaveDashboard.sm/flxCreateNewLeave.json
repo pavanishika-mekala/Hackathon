@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_top_": {
+        "type": "string",
+        "value": "72.57%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "13%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgCreateNewLeave"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCreateNewLeave",
+    "ide_onClick": "AS_FlexContainer_0c52b2b4a2b146e7b3092c356a257790",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d55b0792f68246df8d26f7acf19323bc",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCalendarContainer",
+    "pf": "frmTabLeaveDashboard",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

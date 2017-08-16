@@ -1,0 +1,31 @@
+{
+    "AS_Image_dbcf1a4f7ff345d5b37313091723b8dc": {
+        "id": "AS_Image_dbcf1a4f7ff345d5b37313091723b8dc",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickReconfigureAcceptFrmLoginDesk",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmLoginDeskDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1b5a5aa1abf849ac9430fcd766d3f9b1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.frmLoginDesk.acceptReconfig();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

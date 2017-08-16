@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_810ebdb043904bdba3b1d6ba4a84051e": {
+        "id": "AS_FlexContainer_810ebdb043904bdba3b1d6ba4a84051e",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickhistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "986f6bcc1c3c405ba7b6890da2ff8d3b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__391cd9e04fce4872a512bf429b5510c3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

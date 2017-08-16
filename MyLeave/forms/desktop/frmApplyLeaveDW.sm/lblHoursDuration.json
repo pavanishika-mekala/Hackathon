@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "130dp"
+    },
+    "_skin_": "sf69d814452a4bdd8479f459304d260f",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "120dp"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 6,
+    "id": "lblHoursDuration",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": false,
+    "kuid": "475af3e93fb14e0e93b3bcc2ff2fb41e",
+    "name": "kony.ui.Label",
+    "parent": "flxHoursDurationContainer",
+    "pf": "frmApplyLeaveDW",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

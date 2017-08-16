@@ -1,0 +1,70 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2983493128e45cab9e325108a683763",
+    "_text_": "Leave Calendar",
+    "_top_": {
+        "type": "string",
+        "value": "34%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblLeaveCalendarBreadCrumb",
+    "ide_onTouchStart": "AS_Label_19c16f6eebcf458a80905a04ae85bdce",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "578032e86d5f42bbb27819445e59a749",
+    "name": "kony.ui.Label",
+    "parent": "flxBreadCrumbs",
+    "pf": "frmAllHolidaysAndEventsDW",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

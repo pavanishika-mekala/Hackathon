@@ -1,0 +1,57 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sf7b0d4fa80f48088d7ad3f106c40684",
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "lblEmployeeShiftLeaveLabel"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxTeamCalendarShiftSlotLeave",
+    "info": null,
+    "isvisible": false,
+    "kuid": "c857b88e678d400ca6b6ac470d2f9117",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTeamCalendarShiftSlot",
+    "pf": "frmTeamShiftCalendar",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_8d9860e672ae4d9a904d91fc54ba3cea": {
+        "id": "AS_FlexContainer_8d9860e672ae4d9a904d91fc54ba3cea",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHistoryFromShiftDB",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b36230a649be4fd2a43b8bfc91f7557c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.show();",
+            "callbackType": null
+        }]
+    }
+}

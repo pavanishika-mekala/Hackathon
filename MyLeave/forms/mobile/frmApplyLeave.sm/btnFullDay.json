@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s9cd4c56f1e94b11abe6b7d8fc92d57c",
+    "_text_": "Full Day",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s4337cb72ec44b21a73b8f00b880a32d",
+    "id": "btnFullDay",
+    "ide_onClick": "AS_Button_39be2caafb6f40ceb6f9ef19b945b587",
+    "info": null,
+    "isvisible": true,
+    "kuid": "246cf0300c6a49b2831b7123d12b16dc",
+    "name": "kony.ui.Button",
+    "parent": "flxFullHalfDay",
+    "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.common.fullDay.valueKA",
+    "wType": "Button"
+}

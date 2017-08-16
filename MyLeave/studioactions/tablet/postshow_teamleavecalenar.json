@@ -1,0 +1,25 @@
+{
+    "AS_Form_5ba8988539a848df8dfcc8bd0abbfc81": {
+        "id": "AS_Form_5ba8988539a848df8dfcc8bd0abbfc81",
+        "type": "ACTION_SEQUENCE",
+        "name": "postshow_teamleavecalenar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "",
+            "KUID": "235427254b1b464fa9c878825c7d3919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f7ef1c197ca2441485bd982734d86945",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//#ifdef windows8\n(new kony.apps.ess.myLeave.teamLeaveCalendarWin()).fillDays();\n(new kony.apps.ess.myLeave.teamLeaveCalendarWin()).createEmpLeaveCalendar1(teamMembers,kony.apps.ess.myLeave.teamLeaveData);\n//(new kony.apps.ess.myLeave.teamLeaveCalendarWin()).fetchImageValueByMediaId(teamMembers);\n//#else\n(new kony.apps.ess.myLeave.frmTeamLeaveCalendarUI()).fillDays1();\n(new kony.apps.ess.myLeave.frmTeamLeaveCalendarUI()).createEmpLeaveCalendar1(teamMembers,kony.apps.ess.myLeave.teamLeaveData);\n//#endif\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "imagedrag.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "desktop",
+        "formID": "tempSegComments",
+        "platform": "desktopweb",
+        "templateType": "segments",
+        "topLevelBox": null
+    },
+    "id": "imgapprover",
+    "imagescalemode": 0,
+    "info": null,
+    "isvisible": true,
+    "kuid": "d15cc618a57d4eb4a5a408b3c4afb680",
+    "name": "kony.ui.Image2",
+    "parent": "flximg",
+    "pf": "tempSegComments",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

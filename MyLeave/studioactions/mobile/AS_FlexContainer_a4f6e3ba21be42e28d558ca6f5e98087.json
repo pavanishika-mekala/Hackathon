@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_a4f6e3ba21be42e28d558ca6f5e98087": {
+        "id": "AS_FlexContainer_a4f6e3ba21be42e28d558ca6f5e98087",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_6bcc529e35bb460898ed61695f74d377",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var walletObj =new kony.apps.coe.ess.myLeave.leaveWallet();\nwalletObj.showWalletForm();",
+            "callbackType": null
+        }]
+    }
+}

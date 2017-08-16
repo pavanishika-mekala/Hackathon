@@ -1,0 +1,29 @@
+{
+  "subType" : "customapp",
+  "description" : "MYLEAVE_V_3.1.1",
+  "intSvcs" : [ {
+    "name" : "NewService",
+    "version" : "1.0"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "getConfigurationsForMyLeave",
+    "version" : "1.0"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "Notifications",
+    "version" : "1.0"
+  }, {
+    "name" : "Employee",
+    "version" : "1.0"
+  }, {
+    "name" : "LeaveDynamicSkins",
+    "version" : "1.0"
+  }, {
+    "name" : "LeaveConfigurations",
+    "version" : "1.0"
+  }, {
+    "name" : "MYLEAVE",
+    "version" : "1.0"
+  } ],
+  "identity" : [ "ESSIDENTITY" ]
+}

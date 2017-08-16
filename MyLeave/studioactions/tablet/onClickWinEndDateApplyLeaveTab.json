@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_739ccb47807a4cb59b6592b503f61bb9": {
+        "id": "AS_FlexContainer_739ccb47807a4cb59b6592b503f61bb9",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickWinEndDateApplyLeaveTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "0865d0ff69da4e3f87b5f98982566507"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3a0da52a27d64e50bb53453fbe0f1de9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "onClickEndWinDate();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

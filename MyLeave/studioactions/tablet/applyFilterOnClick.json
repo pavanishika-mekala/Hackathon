@@ -1,0 +1,25 @@
+{
+    "AS_Button_a4d3f72b11b447da8225062ff94becec": {
+        "id": "AS_Button_a4d3f72b11b447da8225062ff94becec",
+        "type": "ACTION_SEQUENCE",
+        "name": "applyFilterOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__51299df1690a4bffb37fe14be070dda4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.myLeave.leaveHistory()).done();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

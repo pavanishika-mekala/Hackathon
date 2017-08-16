@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_2040f3b190b14443a8a344c4688e9eb1": {
+        "id": "AS_FlexContainer_2040f3b190b14443a8a344c4688e9eb1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_e21413381f6149c09f6a6008f3741a41",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.myLeave.search();\nobj.clear();\nfrmSearchLog.show();",
+            "callbackType": null
+        }]
+    }
+}

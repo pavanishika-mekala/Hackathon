@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_33d7c3c7dc484024accef91600079316": {
+        "id": "AS_FlexContainer_33d7c3c7dc484024accef91600079316",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclick_backwin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmShiftChange",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "acd69f0e327d4e9c87a2f8bd9f5da91c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dcb0bee79fdc4457bf73d21ebafae145",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var previousForm = kony.application.getPreviousForm();\npreviousForm.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

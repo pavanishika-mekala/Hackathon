@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_38fc0eeccc2146baab337ae182b2fd98": {
+        "id": "AS_FlexContainer_38fc0eeccc2146baab337ae182b2fd98",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionWInOnClickHolidayEvents",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "a15a63ac67e5448189f868765f26014b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2befe225357940adb73e4248118620ed",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeave.tabHolidayUI()).getData();\n(new kony.apps.coe.ess.myLeave.tabHolidayUI()).getDataEvents();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

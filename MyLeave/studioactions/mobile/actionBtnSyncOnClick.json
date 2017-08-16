@@ -1,0 +1,18 @@
+{
+    "AS_Button_2787e0ec03c14f868fa3e44bcce1ceb5": {
+        "id": "AS_Button_2787e0ec03c14f868fa3e44bcce1ceb5",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionBtnSyncOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_6f4dd4250428440882bf4f046fd84b89",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.Hamburger()).btnSyncOnClick();",
+            "callbackType": null
+        }]
+    }
+}

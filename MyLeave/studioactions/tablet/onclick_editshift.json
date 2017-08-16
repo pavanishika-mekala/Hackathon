@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ec12f778c4d14904aeb7d71f759e9bf0": {
+        "id": "AS_FlexContainer_ec12f778c4d14904aeb7d71f759e9bf0",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclick_editshift",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyShiftDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4f2d8f8443b7428893d6bb17ff95d664"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__423e13233b0c4e9cb4603ddbe3df0b65",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmShiftChange.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "background_color": "fafafaff",
+  "bg_type": "one",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "font_color": "333333ff",
+  "font_name": "Helvetica",
+  "font_size": 100,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "iphone": {
+    "font_name": "AvenirLTStd-Medium"
+  },
+  "isDefaultSkin": false,
+  "kuid": "s28d10f3ef4142fb914ee75e206ff2f4",
+  "wType": "Camera"
+}

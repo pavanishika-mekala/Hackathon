@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_6dff879da7364bb984e91869842e8413": {
+        "id": "AS_FlexContainer_6dff879da7364bb984e91869842e8413",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickHamburger",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ad84a959dabc4ad48931783ec7211f79",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmAppSuite.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

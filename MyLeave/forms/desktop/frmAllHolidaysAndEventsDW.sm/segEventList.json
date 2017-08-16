@@ -1,0 +1,241 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        [
+            {
+                "imgHolidayIcon": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "eventswhite.png"
+                },
+                "lblHolidays": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Events"
+                },
+                "lblLine": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                },
+                "lblYear": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "2017"
+                }
+            },
+            [
+                {
+                    "lblDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "7"
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "All Hands Meet"
+                    },
+                    "lblLine": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblMonth": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "September"
+                    }
+                },
+                {
+                    "lblDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "10"
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Meeting"
+                    },
+                    "lblLine": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblMonth": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "October"
+                    }
+                },
+                {
+                    "lblDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "19"
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Conference"
+                    },
+                    "lblLine": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblMonth": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "October"
+                    }
+                },
+                {
+                    "lblDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "21"
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Event"
+                    },
+                    "lblLine": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblMonth": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "October"
+                    }
+                },
+                {
+                    "lblDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "7"
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Event2"
+                    },
+                    "lblLine": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblMonth": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "November"
+                    }
+                },
+                {
+                    "lblDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "31"
+                    },
+                    "lblHolidayName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "New Year"
+                    },
+                    "lblLine": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblMonth": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "December"
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "05",
+    "disabledSkins": {
+        "rowFocusSkin": "sb7ffe11a1764f7ab48e37cbf9b9796e",
+        "rowSkin": "s6b4ccfba4b74b92a47fb8ff20352168",
+        "sectionHeaderSkin": "sdbc0b13ffcf419d9faa75f92b8f832b"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segEventList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "c8800c99465b4b468e1bbdac72908b72",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxEventList",
+    "pf": "frmAllHolidaysAndEventsDW",
+    "retainselection": false,
+    "rowTemplateId": "96cd8897859441cab05b15e67ec1555b",
+    "rowcounter": 5,
+    "rowtemplate": "flxSegAllEventsList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": "c73c13710e9d4caba72458719697f942",
+    "sectionheadertemplate": "flxSegAllEventsListHeader",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": null,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxDate": "flxDate",
+        "flxHeaderHeader": "flxHeaderHeader",
+        "flxHolidayIcon": "flxHolidayIcon",
+        "flxLine": "flxLine",
+        "flxSegAllEventsList": "flxSegAllEventsList",
+        "flxSegAllEventsListHeader": "flxSegAllEventsListHeader",
+        "imgHolidayIcon": "imgHolidayIcon",
+        "lblDate": "lblDate",
+        "lblHolidayName": "lblHolidayName",
+        "lblHolidays": "lblHolidays",
+        "lblLine": "lblLine",
+        "lblMonth": "lblMonth",
+        "lblYear": "lblYear"
+    },
+    "zindex": 1
+}

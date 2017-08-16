@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_d3829f36fd744fcf8de5d6b92a7daae1": {
+        "id": "AS_FlexContainer_d3829f36fd744fcf8de5d6b92a7daae1",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickTimeSliderRightScrollApplyLeave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b4c1c968928f484d9a59545515a5d135",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.timeSliderRightScroll();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

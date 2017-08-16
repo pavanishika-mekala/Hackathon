@@ -1,0 +1,23 @@
+{
+  "background_color": "ffffffff",
+  "bg_type": "one",
+  "border_color": "e6e6e6ff",
+  "border_radius": 6,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "fontSizeInPx": false,
+  "font_color": "333333ff",
+  "font_name": "Helvetica",
+  "font_size": 107,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "sabf9f0d62cc4edbaaf2772495756f06",
+  "wType": "Label",
+  "windows8": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 86,
+    "isForked": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_Button_bbe5fa4426394af0b07eb0560e6fe921": {
+        "id": "AS_Button_bbe5fa4426394af0b07eb0560e6fe921",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickokinpopupalerttab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempAlertFooterBtn",
+            "type": "templates",
+            "platform": null,
+            "KUID": "6669ef94c0dc4217acb9950a89a4bb0e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_209523ca3c8b462895a17a240ae14660",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupErrorAlert.dismiss();",
+            "callbackType": null
+        }]
+    }
+}

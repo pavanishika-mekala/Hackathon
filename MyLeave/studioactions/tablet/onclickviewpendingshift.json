@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_5bcfeb53735d4d77895e05f598f36c64": {
+        "id": "AS_FlexContainer_5bcfeb53735d4d77895e05f598f36c64",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickviewpendingshift",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b9b0def9ed56435992d771e00249375f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabPendingList.show();",
+            "callbackType": null
+        }]
+    }
+}

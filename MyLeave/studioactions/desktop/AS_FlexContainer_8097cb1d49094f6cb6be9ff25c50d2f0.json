@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_8097cb1d49094f6cb6be9ff25c50d2f0": {
+        "id": "AS_FlexContainer_8097cb1d49094f6cb6be9ff25c50d2f0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_0efd4afa90ea4ebabcd6929e917da9f6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveWalletDW.navigateToLeaveWalletForm();",
+            "callbackType": null
+        }]
+    }
+}

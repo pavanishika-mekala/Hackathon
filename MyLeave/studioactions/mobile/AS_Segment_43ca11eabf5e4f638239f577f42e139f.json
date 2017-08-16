@@ -1,0 +1,30 @@
+{
+    "AS_Segment_43ca11eabf5e4f638239f577f42e139f": {
+        "id": "AS_Segment_43ca11eabf5e4f638239f577f42e139f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmStatusSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2d300e74cccb41179e8872160edcd4d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9db83c3f04fe4d62bbb56f4bfe013fa3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.myLeave.searchStatus();\nobj.rowClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

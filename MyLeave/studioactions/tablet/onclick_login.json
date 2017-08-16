@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_87dbcb9118fb444d964569ce9afc8212": {
+        "id": "AS_FlexContainer_87dbcb9118fb444d964569ce9afc8212",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclick_login",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "59c53bdc895042d288d691790af462f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d3f31c9557984aba9e0213aaf499a02c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

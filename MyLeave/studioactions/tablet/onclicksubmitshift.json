@@ -1,0 +1,18 @@
+{
+    "AS_Button_5aca8a04691149d6957eb8e96b34d473": {
+        "id": "AS_Button_5aca8a04691149d6957eb8e96b34d473",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclicksubmitshift",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a8a127aee39b463f80b1a089756f901b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.apps.ess.myLeave.tabApplyLeaveUI.submitLeave.onClickOfSubmit();",
+            "callbackType": null
+        }]
+    }
+}

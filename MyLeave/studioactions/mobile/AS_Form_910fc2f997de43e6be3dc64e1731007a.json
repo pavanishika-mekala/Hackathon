@@ -1,0 +1,24 @@
+{
+    "AS_Form_910fc2f997de43e6be3dc64e1731007a": {
+        "id": "AS_Form_910fc2f997de43e6be3dc64e1731007a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchLog",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4afef6d1bff45fa8183c0dfe78a691b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ea3ddb1b5a30404d9ca244e24bdb0c29",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.globalVariables.previousFormForLeaveRequestDetails=kony.application.getCurrentForm().id;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

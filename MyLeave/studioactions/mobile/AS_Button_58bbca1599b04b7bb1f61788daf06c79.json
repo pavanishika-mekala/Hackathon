@@ -1,0 +1,24 @@
+{
+    "AS_Button_58bbca1599b04b7bb1f61788daf06c79": {
+        "id": "AS_Button_58bbca1599b04b7bb1f61788daf06c79",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingLeaveRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e94bf3430c3347fa992b41d3c7cfce48"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__955bc55dddb142d5893629cbf7a41f82",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.deleteLeave();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_094df91692014c229c5b29cdfe0c3d27": {
+        "id": "AS_FlexContainer_094df91692014c229c5b29cdfe0c3d27",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickwalletinshiftdash",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b60ef7245c414c75bba28d0ff8fcd945",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showLeaveWalletTabForm();",
+            "callbackType": null
+        }]
+    }
+}

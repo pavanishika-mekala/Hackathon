@@ -1,0 +1,31 @@
+{
+    "AS_Segment_3b3ad2a50be34b9a9eea711a7183a927": {
+        "id": "AS_Segment_3b3ad2a50be34b9a9eea711a7183a927",
+        "type": "ACTION_SEQUENCE",
+        "name": "onRowClickOfSettingsSegment",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cc9ce8fe21344a2bb352566ce044a7f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3ef68f94738247e788712fabd203af70",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "Settings.prototype.onRowClickTab();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

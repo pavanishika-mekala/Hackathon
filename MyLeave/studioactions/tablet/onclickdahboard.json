@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_d2ffccf9d8af4bb788e2bd1865a81daf": {
+        "id": "AS_FlexContainer_d2ffccf9d8af4bb788e2bd1865a81daf",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickdahboard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyShiftDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "4f2d8f8443b7428893d6bb17ff95d664"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8a53a93c3af44d35aff27f7117c6c018",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

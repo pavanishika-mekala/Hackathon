@@ -1,0 +1,25 @@
+{
+    "AS_Button_c2de50ad5308454b9f9fcf43f9de6cbd": {
+        "id": "AS_Button_c2de50ad5308454b9f9fcf43f9de6cbd",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfLoginBtnOnFrmStartupTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0832e7aaaf2e4397a9e062b491d2d23b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7f605d2487f54a399742ae866af24a23",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLogin.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

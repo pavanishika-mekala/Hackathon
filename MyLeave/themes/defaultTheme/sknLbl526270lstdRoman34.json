@@ -1,0 +1,97 @@
+{
+  "android": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "desktopweb": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "fontSizeInPx": false,
+  "font_color": "526270ff",
+  "font_name": "Helvetica",
+  "font_size": 121,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "ipad": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 106,
+    "isForked": true
+  },
+  "iphone": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "font_name": "AvenirLTStd-Book",
+    "font_size": 106,
+    "isForked": true
+  },
+  "kuid": "s5f18d51bad44e599de86eed9226ab59",
+  "spaan": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "spaandroidtablet": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "spabb": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "spaip": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "spaipad": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "spawindowstablet": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "spawinphone8": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "tabrcandroid": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 106,
+    "isForked": true
+  },
+  "wType": "Label",
+  "watchos": {
+    "font_name": "Helvetica",
+    "font_size": 106,
+    "isForked": true
+  },
+  "windows8": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 106,
+    "isForked": true
+  },
+  "winphone8": {
+    "font_name": "GenericMonospace",
+    "font_size": 106,
+    "isForked": true
+  }
+}

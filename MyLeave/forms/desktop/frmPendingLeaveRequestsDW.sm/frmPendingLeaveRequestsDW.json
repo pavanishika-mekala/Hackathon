@@ -1,0 +1,76 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sc48fd957b9241f18ae8c45b7001d2e5",
+    "_title_": "Pending Leave List",
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "android": {
+        "psp": {
+            "windowSoftInputMode": 2
+        }
+    },
+    "canUpdateUI": true,
+    "canvasWidth": 1400,
+    "children": [
+        "flxBreadCrumbs",
+        "flxMain",
+        "flxMenuBar",
+        "flxSuccessAction"
+    ],
+    "containerweight": 100,
+    "currentLocale": "default",
+    "desktopweb": {
+        "needAppMenu": false
+    },
+    "device": "desktopweb",
+    "displayorientation": 1,
+    "enabledforidletimeout": false,
+    "id": "frmPendingLeaveRequestsDW",
+    "ide_postShow": "AS_Form_9636fa59bd1c470fbe800807f4648ac6",
+    "ide_preShow": "AS_Form_d34d817614604525994b86f61759cca6",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "ipad": {
+        "psp": {
+            "inputAccessoryViewType": 4
+        }
+    },
+    "iphone": {
+        "psp": {
+            "inputAccessoryViewType": 4
+        }
+    },
+    "isvisible": true,
+    "kuid": "abcda1bc2a94443a8d974ebc98157bef",
+    "layouttype": 2,
+    "name": "kony.ui.Form2",
+    "needappmenu": true,
+    "paddinginpixel": false,
+    "platform": "desktopweb",
+    "prevDevice": "desktopweb",
+    "prevPlatform": "desktopweb",
+    "retainscrollposition": false,
+    "shellCSS": "desktop",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "titleBarSkin": "s01a3c761ed44dcab0d6537d1b55b621",
+    "titlebar": true,
+    "type": 3,
+    "wType": "Form"
+}

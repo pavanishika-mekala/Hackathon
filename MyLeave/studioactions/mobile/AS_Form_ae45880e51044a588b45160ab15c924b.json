@@ -1,0 +1,24 @@
+{
+    "AS_Form_ae45880e51044a588b45160ab15c924b": {
+        "id": "AS_Form_ae45880e51044a588b45160ab15c924b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2d03ec97b8524bcd809436ad26c355f0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.leaveHomeInit();\n\nvar obj = new kony.apps.coe.ess.myLeave.PendingLeaveRequestUI();\nobj.initShow();            ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

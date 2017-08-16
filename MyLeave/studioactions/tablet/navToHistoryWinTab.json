@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_5ec7f62c258642bc9fe0da0d5b69fe93": {
+        "id": "AS_FlexContainer_5ec7f62c258642bc9fe0da0d5b69fe93",
+        "type": "ACTION_SEQUENCE",
+        "name": "navToHistoryWinTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyShiftDashboard",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "bfccdb7754e941f58192f1f462c98621"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0715734bbfa8466c945c6682c2415e2a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

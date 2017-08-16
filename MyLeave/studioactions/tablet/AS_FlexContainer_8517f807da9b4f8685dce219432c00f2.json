@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_8517f807da9b4f8685dce219432c00f2": {
+        "id": "AS_FlexContainer_8517f807da9b4f8685dce219432c00f2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_5332aca4143f475e91bd4c879fdb577b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTeamLeaveCalendar.show();",
+            "callbackType": null
+        }]
+    }
+}

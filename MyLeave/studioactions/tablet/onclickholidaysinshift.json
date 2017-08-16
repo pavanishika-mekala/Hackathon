@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_4db26bee763341e7ac362e0a566c693c": {
+        "id": "AS_FlexContainer_4db26bee763341e7ac362e0a566c693c",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickholidaysinshift",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ddd15bad58d24bc7ace8680759cd2e4c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabHolidayList.show();",
+            "callbackType": null
+        }]
+    }
+}

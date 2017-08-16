@@ -1,0 +1,31 @@
+{
+  "android": {
+    "border_style": "plain",
+    "isForked": true
+  },
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "05c8afff",
+  "border_radius": 100,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 2,
+  "iphone": {
+    "border_style": "plain",
+    "isForked": true
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "border_style": "plain",
+    "isForked": true
+  },
+  "kuid": "saa52f748faf4361b00c9f2a2f2b8605",
+  "tabrcandroid": {
+    "isForked": true
+  },
+  "wType": "FlexContainer",
+  "winphone8": {
+    "border_style": "plain",
+    "isForked": true
+  }
+}

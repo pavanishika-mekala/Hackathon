@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f1d73680d6d34016bb5202ae17ba37c2": {
+        "id": "AS_FlexContainer_f1d73680d6d34016bb5202ae17ba37c2",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickFrmApplyLeaveMonthly",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__93a70d6f23eb425084677d73767f337c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.recurringTypeSelector(\"Monthly\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

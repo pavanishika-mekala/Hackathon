@@ -1,0 +1,14 @@
+{
+  "appleprodmode" : "true",
+  "iphonecertprod" : {
+    "name" : "myleave.p12",
+    "passwd" : "kony123"
+  },
+  "android" : {
+    "key" : "AIzaSyCl4RbRr9hsMnduqqDIRpWgPHJBZOnxTQA"
+  },
+  "iphoneDevCertNameModified" : false,
+  "iphoneProdCertNameModified" : true,
+  "ipadDevCertNameModified" : false,
+  "ipadProdCertNameModified" : false
+}

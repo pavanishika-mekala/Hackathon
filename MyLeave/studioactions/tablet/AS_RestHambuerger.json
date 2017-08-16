@@ -1,0 +1,25 @@
+{
+    "AS_Button_1f7396b1f8004ef2b43b282828ac78cc": {
+        "id": "AS_Button_1f7396b1f8004ef2b43b282828ac78cc",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_RestHambuerger",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "90bf097212b8402086e027964390ddc0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4aea69a06f184478bc14164a28706b78",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.Hamburger.resetData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

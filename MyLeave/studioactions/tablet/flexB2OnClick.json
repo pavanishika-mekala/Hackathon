@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_509799c11260468d893ce96fdadd2b6c": {
+        "id": "AS_FlexContainer_509799c11260468d893ce96fdadd2b6c",
+        "type": "ACTION_SEQUENCE",
+        "name": "flexB2OnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__318924bb669b4caa8b960c30c31dc1ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "onClickOfLeaveType(eventobject);\n\n// if(frmHistory.flexB2.skin==\"sknFlxLeaveTypeSelected\")\n//   {\n// \tfrmHistory.flexB2.skin=\"sknFlxLeaveTypeUnselected\";\n//   \tfrmHistory.desc2.skin=\"sknLblLeaveTypeUnselected\";\n//     frmHistory.selectimg2.src=\"selectblue.png\";\n//     medicalLev=\"unselect\";\n//   }\n// else\n//   {\n//     frmHistory.flexB2.skin=\"sknFlxLeaveTypeSelected\";\n//   \tfrmHistory.desc2.skin=\"sknLblLeaveTypeSelected\";\n//     frmHistory.selectimg2.src=\"select_pendingcopy.png\";\n//     medicalLev=\"select\";\n//   }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

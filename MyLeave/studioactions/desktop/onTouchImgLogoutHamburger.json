@@ -1,0 +1,31 @@
+{
+    "AS_Image_ef8dea32006548e8a1418f20b5b4451e": {
+        "id": "AS_Image_ef8dea32006548e8a1418f20b5b4451e",
+        "type": "ACTION_SEQUENCE",
+        "name": "onTouchImgLogoutHamburger",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b59dc1b56858469682043a21820906fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dd2a1d3962ee424f9142333fd7a33d79",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.sdk.mvvm.Logout_DW();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

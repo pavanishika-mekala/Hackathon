@@ -1,0 +1,126 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgBubbleStart": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "left_corner.png"
+            },
+            "imgEmpPic": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "lblComment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "I have submitted expense report for NY travel."
+            },
+            "lblCommentTimestamp": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Created on 17 Jan’16 2:30 pm"
+            },
+            "lblUserName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "-1dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "disabledSkins": {
+        "rowSkin": "s6b4ccfba4b74b92a47fb8ff20352168"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segLeaveComments",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "f75eeefcadbc4958b4e6c2452a7d2548",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxComments",
+    "pf": "frmLeaveDashboardDW",
+    "retainselection": false,
+    "rowTemplateId": "749b0a17ba324749a9fba0142bfcffad",
+    "rowcounter": 0,
+    "rowfocusskin": "sb7ffe11a1764f7ab48e37cbf9b9796e",
+    "rowtemplate": "flxSegCommentsSelf",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdbc0b13ffcf419d9faa75f92b8f832b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxComment": "flxComment",
+        "flxCommentBlock": "flxCommentBlock",
+        "flxSegCommentsSelf": "flxSegCommentsSelf",
+        "flximg": "flximg",
+        "imgBubbleStart": "imgBubbleStart",
+        "imgEmpPic": "imgEmpPic",
+        "lblComment": "lblComment",
+        "lblCommentTimestamp": "lblCommentTimestamp",
+        "lblUserName": "lblUserName"
+    },
+    "zindex": 1
+}

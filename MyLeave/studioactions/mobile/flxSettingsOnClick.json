@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_5683690ffac04d45bb2ca78a1e7c109a": {
+        "id": "AS_FlexContainer_5683690ffac04d45bb2ca78a1e7c109a",
+        "type": "ACTION_SEQUENCE",
+        "name": "flxSettingsOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c69dce89016f49ebaaeee7c07e74625f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2d385d6e6bdd46189929ea01c7ed5d36",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.hideHamburger();\nfrmSettings.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_c25cc16a2e4c4a77a440d88aa8ca88af": {
+        "id": "AS_FlexContainer_c25cc16a2e4c4a77a440d88aa8ca88af",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnHideButtonFilter",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_674706632ef74757acd681c711e2f86a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmPendingLeaveRequestsDW.flxFilter.setVisibility(false);\nfrmPendingLeaveRequestsDW.segPendingLeaves.top=\"0dp\";\nfrmPendingLeaveRequestsDW.segPendingLeaves.height=\"700dp\";\n        ",
+            "callbackType": null
+        }]
+    }
+}

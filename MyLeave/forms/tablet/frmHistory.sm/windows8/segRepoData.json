@@ -1,0 +1,285 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblAppliedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblChevron": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ">"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "May 01 - May 31"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 days"
+            },
+            "lblLeaveId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REJECTED"
+            }
+        },
+        {
+            "lblAppliedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblChevron": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ">"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "May 01 - May 31"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 days"
+            },
+            "lblLeaveId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REJECTED"
+            }
+        },
+        {
+            "lblAppliedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblChevron": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ">"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "May 01 - May 31"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 days"
+            },
+            "lblLeaveId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REJECTED"
+            }
+        },
+        {
+            "lblAppliedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblChevron": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ">"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "May 01 - May 31"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 days"
+            },
+            "lblLeaveId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REJECTED"
+            }
+        },
+        {
+            "lblAppliedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblChevron": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ">"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "May 01 - May 31"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 days"
+            },
+            "lblLeaveId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REJECTED"
+            }
+        },
+        {
+            "lblAppliedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblChevron": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ">"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "May 01 - May 31"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 days"
+            },
+            "lblLeaveId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "REJECTED"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "05",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segRepoData",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "da6a026d8786424eadb1be21bba644a8",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flexDash2",
+    "pf": "frmHistory",
+    "retainselection": false,
+    "rowTemplateId": "96e840d972d346fc95c7f7b993ae5532",
+    "rowcounter": 5,
+    "rowfocusskin": "s89f46289e004c138a463c315ef0ead3",
+    "rowskin": "s41960a8e39c4232903b2545b7175d06",
+    "rowtemplate": "flxLeaveHistoryWin",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s0cb5e5c0e404fd9b72eaa8d57a09ec1",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxLeaveHistoryWin": "flxLeaveHistoryWin",
+        "flxStatusBtn": "flxStatusBtn",
+        "flxTimeContainer": "flxTimeContainer",
+        "lblAppliedDate": "lblAppliedDate",
+        "lblChevron": "lblChevron",
+        "lblDates": "lblDates",
+        "lblDays": "lblDays",
+        "lblLeaveId": "lblLeaveId",
+        "lblLeaveType": "lblLeaveType",
+        "lblLine1": "lblLine1",
+        "lblStatus": "lblStatus"
+    },
+    "zindex": 1
+}

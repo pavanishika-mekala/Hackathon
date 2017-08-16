@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_a60e21f85d6b4bafa3f5b12f180523ad": {
+        "id": "AS_FlexContainer_a60e21f85d6b4bafa3f5b12f180523ad",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickdashboardinwallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_19af31dcbcab4b1b855c613e72795d85",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveDashboard.show();",
+            "callbackType": null
+        }]
+    }
+}

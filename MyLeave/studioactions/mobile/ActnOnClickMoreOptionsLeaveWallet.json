@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_efc0ecfed1ab4e658b57ba9837d16c7f": {
+        "id": "AS_FlexContainer_efc0ecfed1ab4e658b57ba9837d16c7f",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnOnClickMoreOptionsLeaveWallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_e43fd1ae6bc7430c88a9427064c27e2a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.onClickMoreOptions();\n",
+            "callbackType": null
+        }]
+    }
+}

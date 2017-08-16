@@ -1,0 +1,19 @@
+{
+  "background_color": "2eabeeff",
+  "bg_type": "one",
+  "border_color": "e6e6e6ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "desktopweb": {
+    "font_name": "AvenirLTStd-Roman"
+  },
+  "font_color": "ffffffff",
+  "font_name": "Helvetica",
+  "font_size": 156,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "sc1fbb7eb70442a5b5317f4a42bb1075",
+  "wType": "Grid Calendar Cell Skin"
+}

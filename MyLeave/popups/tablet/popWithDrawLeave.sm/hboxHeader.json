@@ -1,0 +1,37 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizHBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "s7e1ba0002ff4574b2b7889e50c8b2b6",
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "lblHeader"
+    ],
+    "containerweight": 100,
+    "contextmenu": null,
+    "id": "hboxHeader",
+    "info": null,
+    "isvisible": true,
+    "kuid": "5b4c35f04c654608bc2b1a4fafa82da8",
+    "layouttype": 0,
+    "name": "kony.ui.Box",
+    "parent": "popWithDrawLeave",
+    "pf": "popWithDrawLeave",
+    "wType": "HBox",
+    "widgetalignment": 1
+}

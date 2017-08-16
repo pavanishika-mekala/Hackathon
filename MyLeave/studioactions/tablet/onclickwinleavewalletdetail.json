@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_d17283a68f8943be9ca9b47e7fc95041": {
+        "id": "AS_FlexContainer_d17283a68f8943be9ca9b47e7fc95041",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickwinleavewalletdetail",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWalletTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "d528ba6fb5fb4b46b806b5a3ebb9236e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5b09ef2aafd9451bb9de2b4684c3bedc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveWalletDetail.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

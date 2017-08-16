@@ -1,0 +1,25 @@
+{
+    "AS_Button_af29c2307f774039b1fa99829b0b1593": {
+        "id": "AS_Button_af29c2307f774039b1fa99829b0b1593",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickbtnNoNotificationPopup",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9d4e8de360614513a1f6bfa287c67a4b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__aedba6ba3fba4ebc8395a270c207b732",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSettings.flxPopUp.isVisible=false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "16dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "116dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7be3ceab85244e483d58c4c0675a2b8",
+    "_top_": {
+        "type": "string",
+        "value": "55dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblLeaveDuration"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxDurationContainer",
+    "info": null,
+    "isvisible": true,
+    "kuid": "7bfd2ce4a70d4a89be0459c5d7660b7a",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxSegLeaveList",
+    "pf": "tempSegLeaveList",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

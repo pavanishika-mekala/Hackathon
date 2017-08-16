@@ -1,0 +1,286 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgRightArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "chevronyellow.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblDateRange": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Jan - 27 Jan"
+            },
+            "lblDummyDivider": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLeaveDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 days"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical"
+            },
+            "lblStatusButton": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pending"
+            }
+        },
+        {
+            "imgRightArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "chevronyellow.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblDateRange": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Jan - 27 Jan"
+            },
+            "lblDummyDivider": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLeaveDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 days"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical"
+            },
+            "lblStatusButton": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pending"
+            }
+        },
+        {
+            "imgRightArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "chevronyellow.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblDateRange": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Jan - 27 Jan"
+            },
+            "lblDummyDivider": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLeaveDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 days"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical"
+            },
+            "lblStatusButton": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pending"
+            }
+        },
+        {
+            "imgRightArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "chevronyellow.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblDateRange": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Jan - 27 Jan"
+            },
+            "lblDummyDivider": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLeaveDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 days"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical"
+            },
+            "lblStatusButton": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pending"
+            }
+        },
+        {
+            "imgRightArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "chevronyellow.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblDateRange": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Jan - 27 Jan"
+            },
+            "lblDummyDivider": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLeaveDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 days"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical"
+            },
+            "lblStatusButton": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pending"
+            }
+        },
+        {
+            "imgRightArrow": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "chevronyellow.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblDateRange": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Jan - 27 Jan"
+            },
+            "lblDummyDivider": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblLeaveDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 days"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical"
+            },
+            "lblStatusButton": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pending"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "05",
+    "disabledSkins": {},
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segPendingLeaves",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "96b93efaa0a045c6851052d172379051",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxLeaveList",
+    "pf": "frmHistoryLeaveRequestDW",
+    "retainselection": false,
+    "rowTemplateId": "1454ef882aa449209d0ee4e3ecd0f233",
+    "rowcounter": 5,
+    "rowfocusskin": "s9cfe046cec1485692ee8e783ec2f587",
+    "rowskin": "sbf719f2644c4e8184cb8c78d6bf36fb",
+    "rowtemplate": "flxSegLeaveList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdbc0b13ffcf419d9faa75f92b8f832b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxDurationContainer": "flxDurationContainer",
+        "flxSegLeaveList": "flxSegLeaveList",
+        "flxViewDetails": "flxViewDetails",
+        "imgRightArrow": "imgRightArrow",
+        "lblAppliedOn": "lblAppliedOn",
+        "lblDateRange": "lblDateRange",
+        "lblDummyDivider": "lblDummyDivider",
+        "lblLeaveDuration": "lblLeaveDuration",
+        "lblLeaveType": "lblLeaveType",
+        "lblStatusButton": "lblStatusButton"
+    },
+    "zindex": 1
+}

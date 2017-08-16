@@ -1,0 +1,23 @@
+{
+  "background_color": "ffffffff",
+  "bg_type": "one",
+  "border_color": "2ebaeeff",
+  "border_radius": 100,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 2,
+  "fontSizeInPx": false,
+  "font_color": "2ebaeeff",
+  "font_name": "Helvetica",
+  "font_size": 120,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "s2e8a469b97e4264a2f822c0ef986b61",
+  "wType": "Button",
+  "windows8": {
+    "border_style": "plain",
+    "font_size": 90,
+    "isForked": true
+  }
+}

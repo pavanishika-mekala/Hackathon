@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_635496317d994754b3c8039fdf55bdfe": {
+        "id": "AS_FlexContainer_635496317d994754b3c8039fdf55bdfe",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnClickOfShiftManagementInLeaveWallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWallet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd9ff412b9f64d38860d47275c0dd8ce"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__955425d0850d4f3abe264e78f3f38398",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmShiftManagement.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

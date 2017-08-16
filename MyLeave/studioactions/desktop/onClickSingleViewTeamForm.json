@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_b79ad4d7bd94460e94af9d28ca99ca0d": {
+        "id": "AS_FlexContainer_b79ad4d7bd94460e94af9d28ca99ca0d",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickSingleViewTeamForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarTeamViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e45156393f1a420682281dff0ee875ae"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__873c696cbc8e430195c755cc6c4f0fab",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.navigateToLeaveDashboard();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "AS_Calendar_5ed9b19d8d2e4e0294fd4a1e00d89980": {
+        "id": "AS_Calendar_5ed9b19d8d2e4e0294fd4a1e00d89980",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "boolean",
+            "name": "isValidDateSelected"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

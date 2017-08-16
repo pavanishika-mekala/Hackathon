@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_aff14da5280343aca641df90dc7a9c7b": {
+        "id": "AS_FlexContainer_aff14da5280343aca641df90dc7a9c7b",
+        "type": "ACTION_SEQUENCE",
+        "name": "flxReconfigureOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "db3f4d071c3541989dd5a510eda8b57e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__db37c00d3fbb418387a04e5c41a1b208",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.NavigationAnimations().onClickReconfigure();\n\n\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

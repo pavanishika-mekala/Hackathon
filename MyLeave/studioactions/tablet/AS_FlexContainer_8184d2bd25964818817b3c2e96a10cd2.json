@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_8184d2bd25964818817b3c2e96a10cd2": {
+        "id": "AS_FlexContainer_8184d2bd25964818817b3c2e96a10cd2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "",
+            "KUID": "235427254b1b464fa9c878825c7d3919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_65b43628b8074c40ab40097adb3e04d0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "selectedMonth = 3;",
+            "callbackType": null
+        }]
+    }
+}

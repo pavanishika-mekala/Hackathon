@@ -1,0 +1,25 @@
+{
+    "AS_Form_6f2d7b5698ac4f7182f2a5cff700e580": {
+        "id": "AS_Form_6f2d7b5698ac4f7182f2a5cff700e580",
+        "type": "ACTION_SEQUENCE",
+        "name": "preshowfrmteamcalendar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "",
+            "KUID": "235427254b1b464fa9c878825c7d3919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bab6cc3042324f48a33fa1a6b60bc364",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\n\tkony.modules.loadFunctionalModule(\"appjsmodules\");\n(new kony.apps.ess.myLeave.frmTeamLeaveCalendarUI()).applyGesture();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

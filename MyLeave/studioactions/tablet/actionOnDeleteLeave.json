@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_42e76336f034411784d636befb1d2cd5": {
+        "id": "AS_FlexContainer_42e76336f034411784d636befb1d2cd5",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnDeleteLeave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "986f6bcc1c3c405ba7b6890da2ff8d3b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__45027f83be534ae0acd19d99db020ffa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).deleteLeave();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_3ed388a51e9841fb85b6ec8e6e859642": {
+        "id": "AS_FlexContainer_3ed388a51e9841fb85b6ec8e6e859642",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickLeaveDashboard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "",
+            "KUID": "235427254b1b464fa9c878825c7d3919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b5406ed986bb41e684848ed665678742",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveDashboard.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

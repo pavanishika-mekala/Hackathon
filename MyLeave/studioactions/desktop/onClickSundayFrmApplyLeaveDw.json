@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_9055df581fad4503b5c9307e7a65844d": {
+        "id": "AS_FlexContainer_9055df581fad4503b5c9307e7a65844d",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickSundayFrmApplyLeaveDw",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b4be027e287c4fc7b1312442c9716f4f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.weekdaySelectionOnclick(this);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

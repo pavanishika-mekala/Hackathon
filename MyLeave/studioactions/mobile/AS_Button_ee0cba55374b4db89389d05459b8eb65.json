@@ -1,0 +1,24 @@
+{
+    "AS_Button_ee0cba55374b4db89389d05459b8eb65": {
+        "id": "AS_Button_ee0cba55374b4db89389d05459b8eb65",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "edeabb481e9d4d4b9d7de7772d9cd1f8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ca83183195df42ac958cd6caaa46af83",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

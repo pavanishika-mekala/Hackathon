@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_1b9d5c89a8c14bd3a36735ad4c09437b": {
+        "id": "AS_FlexContainer_1b9d5c89a8c14bd3a36735ad4c09437b",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionWinOnRightClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "a15a63ac67e5448189f868765f26014b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8009201c17534ba48cd7f8b47c93e8eb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.Reusable.calendarWIDGET()).rightShift(calendarIndex, monthDetailsJson);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

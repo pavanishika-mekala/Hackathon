@@ -1,0 +1,25 @@
+{
+    "AS_Button_88041134243541489efb388e50a8a1fb": {
+        "id": "AS_Button_88041134243541489efb388e50a8a1fb",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickContinueOffline",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterOffline",
+            "type": "templates",
+            "platform": "",
+            "KUID": "22f10474948e4f08aa68be4a4a4d1241"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b25c1d5e41a44675adea7aa75a62c036",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.Hamburger()).btnOfflineOnClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

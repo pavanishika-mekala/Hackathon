@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_ad902ad6e32443beab2f3b6f66a3e896": {
+        "id": "AS_FlexContainer_ad902ad6e32443beab2f3b6f66a3e896",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickteaminshift",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8f6392861a1840178a75316aabf0b387",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTeamShiftCalendar.show();",
+            "callbackType": null
+        }]
+    }
+}

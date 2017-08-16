@@ -1,0 +1,20 @@
+{
+    "AS_FlexContainer_4d2ed77e2b104e1187373039b62382dc": {
+        "id": "AS_FlexContainer_4d2ed77e2b104e1187373039b62382dc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ec1b0946e1054d9298d83129a833cf89",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.OnclickOfEdit();",
+            "callbackType": null
+        }]
+    }
+}

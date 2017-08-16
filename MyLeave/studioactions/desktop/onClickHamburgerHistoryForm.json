@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ba821c38c881465aa2814252ea99756b": {
+        "id": "AS_FlexContainer_ba821c38c881465aa2814252ea99756b",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHamburgerHistoryForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistoryLeaveRequestDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4ffcc08df6a43d898268f18a383c658"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__622ad34b6e844930a0623e582d60da14",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHamburgerDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

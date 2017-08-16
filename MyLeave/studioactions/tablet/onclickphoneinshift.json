@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_5e41412cd0174cdbb29efed3aa993e3c": {
+        "id": "AS_FlexContainer_5e41412cd0174cdbb29efed3aa993e3c",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickphoneinshift",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_31910932f65f406abdfd3ddf774eb2f5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.myLeave.tabApplyLeaveUI.MailandPhone.onClickOfPhone();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_5a025af5f15c473d98f7b607bfcd94a9": {
+        "id": "AS_FlexContainer_5a025af5f15c473d98f7b607bfcd94a9",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickBlurredBackgoundDashboard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveDashboardDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54ba10ab382645bb834f2212cd41f775"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__17715f48b8434b0e81c6bd7a01e69316",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.closeRequestDetails();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

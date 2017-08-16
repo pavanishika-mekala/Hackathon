@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s551a027d7c34e68ac403e49123bdefc",
+    "_text_": "Mo",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "11%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s86c4b4fe429464094372af193b6730a"
+    },
+    "displaytext": true,
+    "id": "btnMonday",
+    "ide_onClick": "AS_Button_72819b6b1d554c8fb99503bd158fdd13",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f0e600df42c1473dbdc9aa45cd95062a",
+    "name": "kony.ui.Button",
+    "parent": "flxWeekly",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

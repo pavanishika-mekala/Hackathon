@@ -1,0 +1,65 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_skin_": "s4946aa8a8aa496bb253666a9d695d2f",
+    "_text_": "8 AM - 4 PM",
+    "_top_": {
+        "type": "string",
+        "value": "32%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblLeaveDetailPartialOrFullDay",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "3eba71edc0cd425e98fb288d472544d9",
+    "name": "kony.ui.Label",
+    "parent": "flxLeaveDetailHeader",
+    "pf": "frmMyShiftDashboard",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

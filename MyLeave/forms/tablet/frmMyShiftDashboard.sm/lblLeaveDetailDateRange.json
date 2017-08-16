@@ -1,0 +1,69 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "43%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "40.04%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd42705349184a1f84f34ccb57ff639e",
+    "_text_": "4 NOV",
+    "_top_": {
+        "type": "string",
+        "value": "53%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "22%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblLeaveDetailDateRange",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "88d1142e7d3f419b8ad13a56cf90b64f",
+    "name": "kony.ui.Label",
+    "parent": "flxLeaveDetailDateRangeContainer",
+    "pf": "frmMyShiftDashboard",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,19 @@
+{
+  "android": {
+    "background_image": "publicholiday.png",
+    "bg_type": "image"
+  },
+  "background_image": "publicholiday.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "iphone": {
+    "background_image": "publicholiday.png",
+    "bg_type": "image"
+  },
+  "isDefaultSkin": false,
+  "kuid": "s2871b8f9c43431abaf33bd7d21e4147",
+  "wType": "FlexContainer"
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_e61e40cc4185487ba345c8c8e05fe146": {
+        "id": "AS_FlexContainer_e61e40cc4185487ba345c8c8e05fe146",
+        "type": "ACTION_SEQUENCE",
+        "name": "flexB3OnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__452f875778b648e68e07e30dc674366f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n\nif(frmHistory.flexB3.skin==\"sknFlxLeaveTypeSelected\")\n  {\n\tfrmHistory.flexB3.skin=\"sknFlxLeaveTypeUnselected\";\n  \tfrmHistory.desc3.skin=\"sknLblLeaveTypeUnselected\";\n    frmHistory.selectimg3.src=\"selectblue.png\";\n    personalLev=\"unselect\";\n  }\nelse\n  {\n    frmHistory.flexB3.skin=\"sknFlxLeaveTypeSelected\";\n  \tfrmHistory.desc3.skin=\"sknLblLeaveTypeSelected\";\n    frmHistory.selectimg3.src=\"select_pendingcopy.png\";\n    personalLev=\"select\";\n    \n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

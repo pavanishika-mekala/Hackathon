@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_3237747c95aa4e5787433610bed3aced": {
+        "id": "AS_FlexContainer_3237747c95aa4e5787433610bed3aced",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickCloseExistingLeavePopupFrmApplyLeave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ad551bc9176b4aef9fc586de5170a6ce",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmApplyLeaveDW.closeInvalidDatesPopup();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

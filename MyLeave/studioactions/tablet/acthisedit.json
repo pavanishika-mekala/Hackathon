@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_239e35a1d5934e7386c9a5f4791b4583": {
+        "id": "AS_FlexContainer_239e35a1d5934e7386c9a5f4791b4583",
+        "type": "ACTION_SEQUENCE",
+        "name": "acthisedit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabPendingList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54760838be04472083561ec048e91271"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__94593b421c734b95a27cbc52f316800e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeave.tabPendingLeaveRequestUI()).editLeave();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

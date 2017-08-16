@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_af0051dcbb894fe796730f785363fe60": {
+        "id": "AS_FlexContainer_af0051dcbb894fe796730f785363fe60",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnOnClickLeaveHomeInShiftMangement",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_7b478c5aff6843d1897d039f99cae1a7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveHome.show();",
+            "callbackType": null
+        }]
+    }
+}

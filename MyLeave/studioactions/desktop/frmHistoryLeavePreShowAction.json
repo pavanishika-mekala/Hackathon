@@ -1,0 +1,25 @@
+{
+    "AS_Form_0ce83da4e6354fbd80d85fdae60fab02": {
+        "id": "AS_Form_0ce83da4e6354fbd80d85fdae60fab02",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmHistoryLeavePreShowAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistoryLeaveRequestDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4ffcc08df6a43d898268f18a383c658"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e199bf0dfc5f40849b064dc1476abbfe",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmHistoryLeaveRequestDW.setCalendarContexts();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0e82df742a814b0885180cf4e45de58c": {
+        "id": "AS_FlexContainer_0e82df742a814b0885180cf4e45de58c",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickRememberMeFrmLogin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDeskDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5e928798d9804223ac6c26078a596731",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.frmLoginDesk.rememberMeOn();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,482 @@
+kony = kony || {};
+kony.sdk = kony.sdk || {};
+kony.sdk.mvvm = kony.sdk.mvvm || {};
+kony.sdk.mvvm.log = kony.sdk.mvvm.log || {};
+kony.sdk.mvvm.constants = kony.sdk.mvvm.constants || {};
+kony.sdk.mvvm.constants["ENABLE_JSON_STRINGIFY_PRINTS"] = false;
+kony.sdk.mvvm.constants["ENABLE_LAZY_LOADING"] = true;
+kony.sdk.mvvm.constants["DYNAMIC_THEME_ENABLED"] = false;
+
+kony.sdk.mvvm.LoginAction = function(status) {
+    kony.print("---------------------In LoginAction MFLogin.js-------------");
+    var options = {};
+    var authConfig;
+    var identityServiceName = kony.apps.coe.ess.appconfig.identityServiceName;
+    if (kony.apps.coe.ess.globalVariables.isNative === true) {
+        if (status == "DeepLink") {
+            kony.apps.coe.ess.frmLogin.username = appserviceUsername;
+            kony.apps.coe.ess.frmLogin.password = appservicePassword;
+            options = {
+                "access": "offline"
+            };
+            authConfig = {
+                "authParams": {
+                    "userid": appserviceUsername,
+                    "password": appservicePassword,
+                    "callerId": appserviceUsername + kony.sdk.mvvm.Utils.getDeviceID(),
+                    "loginOptions": {
+                        "isOfflineEnabled": true,
+                        "isSSOEnabled": true,
+                        "include_profile": true,
+                    }
+                },
+                "options": options,
+                "identityServiceName": identityServiceName
+            };
+        }
+        else if (status == "ssoEnable") {
+            if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+                var unique_id = null;
+                var sso_token = kony.sdk.util.getSSOToken();
+                if (kony.apps.coe.ess.frmLogin.username === null || kony.apps.coe.ess.frmLogin.username === " " || kony.apps.coe.ess.frmLogin.username === undefined) {
+                    unique_id = sso_token;
+                }
+                else {
+                    unique_id = kony.apps.coe.ess.frmLogin.username;
+                }
+                options = {
+                    "access": "online"
+                };
+                authConfig = {
+                    "authParams": {
+                        "callerId": unique_id + kony.sdk.mvvm.Utils.getDeviceID(),
+                        "loginOptions": {
+                            "isOfflineEnabled": false,
+                            "isSSOEnabled": true,
+                            "include_profile": true,
+                        }
+                    },
+                    "options": options,
+                    "identityServiceName": identityServiceName
+                };
+            }
+            else {
+
+                options = {
+                    "access": "offline"
+                };
+                var username = kony.apps.coe.ess.frmLogin.username;
+                var password = kony.apps.coe.ess.frmLogin.password;
+                authConfig = {
+                    "authParams": {
+                        "userid": username,
+                        "password": password,
+                        "callerId": username + kony.sdk.mvvm.Utils.getDeviceID(),
+                        "loginOptions": {
+                            "isOfflineEnabled": true,
+                            "isSSOEnabled": true,
+                            "include_profile": true,
+                        }
+                    },
+                    "options": options,
+                    "identityServiceName": identityServiceName
+                };
+
+            }
+        }
+        else {
+
+            //#ifdef windows8
+            var options = {
+                "access": "online"
+            };
+            //#else
+            var options = {
+                "access": "offline"
+            };
+            //#endif
+            var username = kony.apps.coe.ess.frmLogin.username;
+            var password = kony.apps.coe.ess.frmLogin.password;
+
+            authConfig = {
+                "authParams": {
+                    "userid": username,
+                    "password": password,
+                    "callerId": username + kony.sdk.mvvm.Utils.getDeviceID(),
+                    "loginOptions": {
+                        //#ifdef windows8
+                        "isOfflineEnabled": false,
+                        "isSSOEnabled": false,
+                        //#else
+                        "isOfflineEnabled": true,
+                        "isSSOEnabled": true,
+                        //#endif
+
+                        "include_profile": true,
+                    }
+                },
+                "options": options,
+                "identityServiceName": identityServiceName
+            };
+
+        }
+    }
+    else if (kony.apps.coe.ess.globalVariables.isSPA === true) {
+        options = {
+            "access": "online"
+        };
+        var username = kony.apps.coe.ess.frmLogin.username;
+        var password = kony.apps.coe.ess.frmLogin.password;
+        authConfig = {
+            "authParams": {
+                "userid": username,
+                "password": password,
+                "callerId": username + kony.sdk.mvvm.Utils.getDeviceID(),
+                "loginOptions": {
+                    "isOfflineEnabled": false,
+                    "isSSOEnabled": false,
+                    "include_profile": true,
+                }
+            },
+            "options": options,
+            "identityServiceName": identityServiceName
+        };
+    }
+    else if (kony.apps.coe.ess.globalVariables.isWebDesktop === true) {
+        options = {
+            "access": "online"
+        };
+        var username = kony.apps.coe.ess.frmLogin.username;
+        var password = kony.apps.coe.ess.frmLogin.password;
+        authConfig = {
+            "authParams": {
+                "userid": username,
+                "password": password,
+                "callerId": username + kony.sdk.mvvm.Utils.getDeviceID(),
+                "loginOptions": {
+                    "isOfflineEnabled": false,
+                    "isSSOEnabled": false,
+                    "include_profile": true,
+                }
+            },
+            "options": options,
+            "identityServiceName": identityServiceName
+        };
+    }
+
+    kony.sdk.mvvm.KonyApplicationContext.init();
+    var appFactory = kony.sdk.mvvm.KonyApplicationContext.getFactorySharedInstance();
+    var initManager = appFactory.createAppInitManagerObject();
+    initManager.registerService("AuthenticationServiceManager", {
+        "object": appFactory.createAuthManager(),
+        "params": authConfig
+    });
+    initManager.registerService("MetadataServiceManager", {
+        "object": appFactory.createMetadataServiceManagerObject(),
+        "params": {
+            "options": options
+        }
+    });
+    initManager.executeRegistedServices(applicationSuccessCallback, applicationErrorCallback);
+
+    kony.apps.coe.ess.Validation.setChannel();
+};
+
+function applicationSuccessCallback() {
+    if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+        kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceName).getProfile(true, userDetailsSucess, userDetailsSucess);
+    }
+    else {
+        userDetailsSucess();
+    }
+}
+
+//Dynamic skinning success call back function
+function dynamicSkinningSuccess(resp) {
+    kony.print(resp);
+}
+
+function userDetailsSucess(response) {
+    try {
+        if (response != undefined) {
+            kony.apps.coe.ess.frmLogin.username = response.userid;
+        }
+        var appInstance = kony.sdk.mvvm.KonyApplicationContext.getAppInstance();
+        if (appInstance) {
+            kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.initializing"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+            //Initialize ApplicationForms
+            kony.sdk.mvvm.initApplicationForms(appInstance);
+            if (kony.apps.coe.ess.globalVariables.isNative === true) {
+                kony.apps.coe.ess.Sync.initializeSync(function() {
+                    //SyncInit Success
+                    kony.apps.coe.ess.Sync.doDownload = true;
+                    //Check if New User is loging in device and reset old users database
+                    kony.apps.coe.ess.frmLogin.resetDbIncaseOfNewUser(function(isNewUser) {
+
+                        var syncSessionSuccess = function() {
+                            kony.apps.coe.ess.frmLogin.afterloginSuccess();
+                            kony.apps.coe.ess.globalVariables.Status.updateStatus();
+                            //After Sync Session is Successfully completed, Check for initialize & show landing form
+                            var sqlquery = "select Id, Designation_Id, First_Name , Last_Name from Employee where IsEmployee = 1";
+                            kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
+                                if (data.length !== 0) {
+                                    kony.apps.coe.ess.globalVariables.employeeId = data[0].Id;
+                                    gblempId = data[0].Id;
+                                    kony.apps.coe.ess.globalVariables.designation_id = data[0].Designation_Id;
+                                    //Invoking Dynamic Skinning Configurations
+                                    //If network is available
+                                    if(kony.apps.coe.ess.globalVariables.isNativeTablet === false){
+                                    if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+                                        kony.servicesapp.loadAndConfigureApp(kony.apps.coe.ess.appconfig.runtimeurl, dynamicSkinningSuccess);
+                                    }
+                                    //If network is not available
+                                    else {
+                                        var themeString = kony.store.getItem("dynamicSkinningTheme");
+                                        var jsonObj1 = JSON.parse(themeString);
+                                        kony.theme.createThemeFromJSONString(JSON.stringify(jsonObj1), "MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
+                                        kony.theme.setCurrentTheme("MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
+                                    }
+                                    }
+                                    kony.apps.coe.ess.globalVariables.employeeName = data[0].First_Name + data[0].Last_Name;
+                                    var currDate = new Date();
+                                    var currYear = currDate.getFullYear().toString().trim(0, 4);
+
+                                    if (kony.apps.coe.ess.globalVariables.isNativeTablet === false) {
+
+                                        var getHolidaysQuery = "select count(Holiday_Date) as allHolidays from Holiday where Name !=\"Non Working Day\" and (Holiday_Date between '" + currYear + "0101' AND '" + currYear + "1231')";
+                                        kony.sync.single_select_execute(kony.sync.getDBName(), getHolidaysQuery, null, function(res) {
+                                            frmLeaveHome.lblAllHolidaysCount.text = res[0].allHolidays + "";
+                                        }, function(err) {}, false);
+                                        var getPendingRequestsQuery = "select count(l.id) as allPending from leave l join Status s on l.status_id = s.id " +
+                                            "where s.Status_Name = 'PENDING' and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " and ((l.start_date between '" + (parseInt(currYear) - 1).toString() + "0101'" +
+                                            " AND '" + (parseInt(currYear) + 1).toString() + "1231') OR (l.end_date between '" + (parseInt(currYear) - 1).toString() + "0101' AND '" + (parseInt(currYear) + 1).toString() + "1231'))";
+                                        kony.sync.single_select_execute(kony.sync.getDBName(), getPendingRequestsQuery, null, function(res) {
+                                            frmLeaveHome.lblAllPendingRequestsCount.text = res[0].allPending + "";
+                                        }, function(err) {}, false);
+                                    }
+                                }
+                                else {
+                                    kony.apps.coe.ess.globalVariables.employeeId = "";
+                                    kony.apps.coe.ess.globalVariables.employeeName = "";
+                                }
+                                var updateSyncDate = function() {
+                                    var months = [
+                                        "Jan", "Feb", "Mar",
+                                        "Apr", "May", "Jun", "Jul",
+                                        "Aug", "Sep", "Oct",
+                                        "Nov", "Dec"
+                                    ];
+
+                                    var currDate = new Date();
+                                    var currDay = currDate.getDate();
+                                    var currMonth = months[currDate.getMonth()];
+                                    var currYear = currDate.getFullYear();
+                                    var currTime = currDate.toHHMMSS(":");
+                                    var suffix;
+                                    if (parseInt(currDate.getHours(), 10) >= 12) {
+                                        suffix = kony.i18n.getLocalizedString("i18n.ess.myLeave.PM");
+                                    }
+                                    else {
+                                        suffix = kony.i18n.getLocalizedString("i18n.ess.myLeave.AM");
+                                    }
+                                    //#ifndef windows8
+                                        frmHamburger.lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
+                                        frmHamburger.lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
+                                   
+                                    //#endif
+
+                                };
+                                updateSyncDate();
+                                  if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
+                                    (new kony.apps.ess.myLeave.frmTeamLeaveCalendarUI()).getTeamData();
+                                    (new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).addCalendarOnLeaveHome();
+                                    (new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).isValidMonthandYearforCalender();
+                                    showTabLeaveDashboardForm();
+                                    }
+                                if (isNewUser) {
+                                    kony.apps.coe.ess.KMS.enablePushNotifications();
+                                }
+                                kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
+
+
+                            }, function(err) {
+                                kony.print("-----Error in getting employee id----" + err);
+                            }, false);
+
+                        };
+                        var syncSessionFailure = function(err) {
+                            //Incase of Any Sync Failure
+                            //ToDo : What to show on Sync Failure
+                            kony.application.dismissLoadingScreen();
+                            kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
+                            //#ifdef windows8
+                            frmLogin.flxLogin.onClick = function() {
+                                kony.apps.coe.ess.frmLogin.btnLoginOnclick();
+                            };
+                            //#else
+                            frmLogin.btnLogin.onClick = function() {
+                                kony.apps.coe.ess.frmLogin.btnLoginOnclick();
+                            };
+                            //#endif
+                            handleError(err);
+                        };
+                        var syncAndShowLandingForm = function() {
+                            //As Login is success, Call afterloginSuccess
+                            if (!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+                                syncSessionSuccess();
+                            }
+                            else {
+                                // //After Successfull verification of New user, Start Sync Session
+                                kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+                                kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
+                            }
+                        };
+                        try {
+                            //#ifdef windows8
+                            syncAndShowLandingForm();
+                            //#else
+                            if (isNewUser) {
+                                if (kony.apps.coe.ess.TouchID.isTouchAuthenticationSupported()) {
+                                    //Show ToucID enable popup only if it's not enabled
+                                    if (applaunchMode == 3 || kony.apps.ess.deepLinkingSSO.ssotoken) {
+                                        syncAndShowLandingForm();
+                                        return;
+                                    }
+                                    else {
+                                        if (kony.store.getItem("useTouchID") === null || kony.store.getItem("useTouchID") === false) {
+                                            if (kony.application.getCurrentForm() === frmLogin) {
+                                                kony.apps.coe.ess.frmLogin.showEnableTouchIDPopup(syncAndShowLandingForm);
+                                                kony.application.dismissLoadingScreen();
+                                                return;
+                                            }
+                                        }
+                                    }
+                                }
+                                syncAndShowLandingForm();
+                            }
+                            else {
+                                //kony.apps.coe.ess.Sync.syncAsynchronously();
+                                kony.apps.coe.ess.Sync.syncOnLandingForm = true;
+                                syncSessionSuccess();
+                            }
+                            //#endif
+                        }
+                        catch (e) { //In android, exceptio may be thrown for touchID functions
+                            kony.print("Error occured while using touch_id functions : MFLogin.js : " + JSON.stringify(e));
+                        }
+
+                    });
+                }, function(err) {
+                    //Sync InitFailed
+                    kony.sdk.mvvm.log.error("Sync is not initialized");
+                    applicationErrorCallback("Application is not initialized");
+                });
+            }
+            else if (kony.apps.coe.ess.globalVariables.isSPA == true) {
+                frmLeaveHome.show();
+            }
+            else if (kony.apps.coe.ess.globalVariables.isWebDesktop == true) {
+                var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmLeaveDashboardDW");
+                formController.loadDataAndShowForm();
+            }
+
+
+        }
+        else {
+            //If appInstance is null/undefined, It means app is not initialized properly
+            kony.sdk.mvvm.log.error("Application is not initialized");
+            applicationErrorCallback("Application is not initialized");
+        }
+    }
+    catch (excp) {
+        kony.sdk.mvvm.log.error("Exception Occured in applicationSuccessCallback of LoginAction " + JSON.stringify(excp));
+        kony.application.dismissLoadingScreen();
+    }
+}
+
+function applicationErrorCallback(error) {
+    kony.sdk.mvvm.log.error("failed to load app");
+    error = error.getRootErrorObj();
+    if (kony.apps.coe.ess.globalVariables.isWebDesktop == true) {
+        kony.apps.coe.ess.frmLoginDesk.invalidLoginAction(error);
+        return;
+    }
+    frmLogin.lblLoginErrorMessage.isVisible = true;
+    frmLogin.tbUsername.skin = "sknTbWrongCredentials";
+    frmLogin.tbPassword.skin = "sknTbWrongCredentials";
+    if (error.mfcode == "Auth-4") {
+        if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+            frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.wrongCredentials");
+        }
+        else {
+            frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.offlineLoginFailure");
+        }
+    }
+    else {
+        //Clear SSO Cache
+        kony.sdk.resetCacheKeys(kony.sdk.getCurrentInstance());
+        kony.sdk.util.deleteSSOToken();
+    }
+
+    if (kony.application.getCurrentForm() !== frmLogin) {
+        frmLogin.show();
+    }
+    kony.print("Error Occured on LoginAction : " + JSON.stringify(error));
+    kony.application.dismissLoadingScreen();
+    kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
+    //#ifdef windows8
+    frmLogin.flxLogin.onClick = function() {
+        kony.apps.coe.ess.frmLogin.btnLoginOnclick();
+    };
+    //#else
+    frmLogin.btnLogin.onClick = function() {
+        kony.apps.coe.ess.frmLogin.btnLoginOnclick();
+    };
+    //#endif
+}
+
+
+kony.sdk.mvvm.LogoutAction = function() {
+    sync.stopSession(function() {
+        kony.apps.coe.ess.Sync.UI.stopSyncProgressBar();
+    });
+    options = {};
+    options.slo = true;
+    kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+
+    function sucCallback() {
+        frmLogin.show();
+        frmLeaveHome.destroy();
+    }
+
+    function errCallback(err) {
+        frmLogin.show();
+        frmLeaveHome.destroy();
+        kony.print(JSON.stringify(err));
+    }
+};
+
+kony.sdk.mvvm.Logout_DW = function() {
+    frmAllHolidaysAndEventsDW.destroy()
+    frmApplyLeaveDW.destroy()
+    frmCalendarTeamViewDW.destroy()
+    frmHamburgerDW.destroy()
+    frmHistoryLeaveRequestDW.destroy()
+    frmLeaveDashboardDW.destroy()
+    frmLeaveWalletDW.destroy()
+    frmPendingLeaveRequestsDW.destroy()
+    frmLoginDeskDW.destroy()
+    frmLoginDeskDW.show();
+    kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.calendarWidgetObj = null;
+}
+
+//In case of offline it retains previous configurations and navigates to home screen
+function onThemeSettingSuccessCallback(successresp) {
+    //navigate to home page
+    kony.apps.coe.ess.myLeave.applyLeave.preShow.getManagerName();
+    kony.apps.coe.ess.myLeave.MyLeaveHomeUI.showLeaveHome();
+}
+
+function onThemeSettingErrorCallback(errorresp) {
+    kony.print(errorresp);
+}

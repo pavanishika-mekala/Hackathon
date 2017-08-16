@@ -1,0 +1,125 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgapplier": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "adduserpic.png"
+            },
+            "labelnotes": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblapplieddate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Submitted on 15 may 2016 ,3.00pm"
+            },
+            "lblapplier": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Me"
+            },
+            "txtApplierComments": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "I have submitted the report to the manager"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "57.80%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segComments",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "86d5c09e3b744259adff4b0d995bf8bd",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxMain",
+    "pf": "frmShiftChangeRequestDetails",
+    "retainselection": false,
+    "rowTemplateId": "ec576c10d04249cbb1f85328076cffc2",
+    "rowcounter": 0,
+    "rowfocusskin": "sb7ffe11a1764f7ab48e37cbf9b9796e",
+    "rowskin": "s6b4ccfba4b74b92a47fb8ff20352168",
+    "rowtemplate": "flexleavenote",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdbc0b13ffcf419d9faa75f92b8f832b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flexAppliedDateandName": "flexAppliedDateandName",
+        "flexleavenote": "flexleavenote",
+        "flexnotes": "flexnotes",
+        "flximg": "flximg",
+        "imgapplier": "imgapplier",
+        "labelnotes": "labelnotes",
+        "lblapplieddate": "lblapplieddate",
+        "lblapplier": "lblapplier",
+        "txtApplierComments": "txtApplierComments"
+    },
+    "zindex": 2
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Form_7b26fa9c502840c78b6258561089e922": {
+        "id": "AS_Form_7b26fa9c502840c78b6258561089e922",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnPostShowShiftManagement",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmShiftManagement",
+            "type": "forms",
+            "platform": "",
+            "KUID": "265bb999f44e4fa087b0f543141e2499"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b289cdeaf4dc4f77b9c204b882313eb2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveDataSPA();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_53f4de5d1a654d7c913e679e2bb94519": {
+        "id": "AS_FlexContainer_53f4de5d1a654d7c913e679e2bb94519",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickleavewalletinmenu",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "986f6bcc1c3c405ba7b6890da2ff8d3b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7b46cc5b535f4026a0a86e8d5c20be4b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showLeaveWalletTabForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

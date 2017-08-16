@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ade7732ef48a4ba9b21ce8eaccf9e212": {
+        "id": "AS_FlexContainer_ade7732ef48a4ba9b21ce8eaccf9e212",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickleavereqinhistory",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e9de393c309d4ea3a10908f7745f18b3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.lblAvailTitle.skin = sknlblwin979797AvenirRoman12;\nfrmHistory.lblProjTitle.skin = sknLblTab2ebaeeF36AveirLTStdRoman;\nfrmHistory.flxBlue2.setVisibility(true);\nfrmHistory.flxBlue1.setVisibility(false);\nfrmHistory.lblHeaderLabel.text = \"Leave Request History\"",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

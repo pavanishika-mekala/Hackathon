@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_44d459a44fe04b38aec785569abdb13c": {
+        "id": "AS_FlexContainer_44d459a44fe04b38aec785569abdb13c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__efd07b184de44a9388830f75779a9e9d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var walletObj =new kony.apps.coe.ess.myLeave.leaveWallet();\nwalletObj.showWalletForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ed1f7d1e57d54375a994841685fe53d7": {
+        "id": "AS_FlexContainer_ed1f7d1e57d54375a994841685fe53d7",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickweek2On",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "",
+            "KUID": "235427254b1b464fa9c878825c7d3919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4d4cc87212064805974726c604cbc3b8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var showWeek2=1;\nif(frmTeamLeaveCalendar.imgDownWeek.src===\"toggle_on.png\"){\n  frmTeamLeaveCalendar.imgDownWeek.src===\"toggle_off.png\";\n  showWeek2=0;\n}else{\n  frmTeamLeaveCalendar.imgDownWeek.src===\"toggle_on.png\"\n  showWeek2=1;\n}\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

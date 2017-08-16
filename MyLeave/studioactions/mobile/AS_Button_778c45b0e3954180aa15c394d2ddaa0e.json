@@ -1,0 +1,17 @@
+{
+    "AS_Button_778c45b0e3954180aa15c394d2ddaa0e": {
+        "id": "AS_Button_778c45b0e3954180aa15c394d2ddaa0e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c1b60c46fd744748bd2e47d7f5a60a88",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.weeklyMonthlyDaySelection.onClickofWeeklyDays(eventobject);",
+            "callbackType": null
+        }]
+    }
+}

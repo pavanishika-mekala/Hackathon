@@ -1,0 +1,31 @@
+{
+    "AS_Image_92cabc06f79847128bea75bd7a27511e": {
+        "id": "AS_Image_92cabc06f79847128bea75bd7a27511e",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickSearchButtonHamburger",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b59dc1b56858469682043a21820906fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d6c21dfd19dd41f7b0c533f4ae937e95",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmHistoryLeaveRequestDW.showForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

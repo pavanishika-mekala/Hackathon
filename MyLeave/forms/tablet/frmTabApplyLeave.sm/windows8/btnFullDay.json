@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "6.70%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2fc67ce94ef4caf8853dfb6ec3b8c03",
+    "_text_": "Full Day",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s15769b379ba409a946142505656f116",
+    "id": "btnFullDay",
+    "ide_onClick": "AS_Button_751e682a3976489b9f15c3e30d86c786",
+    "info": null,
+    "isvisible": true,
+    "kuid": "9d5e249cd2f34cf1930a0f36df04b9c6",
+    "name": "kony.ui.Button",
+    "parent": "flxDaysHours",
+    "pf": "frmTabApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

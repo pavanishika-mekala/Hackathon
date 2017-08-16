@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_d58c1269efb941efa65e94d0de8f654e": {
+        "id": "AS_FlexContainer_d58c1269efb941efa65e94d0de8f654e",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnClickMoreOptionInShiftManagement",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c512c92e1d2946bd820e961eca800959",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.onClickMoreOptions();\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_694c12447eae4ee9a4e0703ba81b241f": {
+        "id": "AS_AppEvents_694c12447eae4ee9a4e0703ba81b241f",
+        "type": "ACTION_SEQUENCE",
+        "name": "appservicee",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5bde274e78124dc7bec21cbc67c84172",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.KMS.setPushNotificationCallbacks();\nreturn kony.apps.ess.deepLinkingSSO.appServiceCallback(eventobject);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

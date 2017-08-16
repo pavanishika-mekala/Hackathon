@@ -1,0 +1,17 @@
+{
+    "AS_Button_7ccc05d28c7f43b498b6f4ca197d5482": {
+        "id": "AS_Button_7ccc05d28c7f43b498b6f4ca197d5482",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_50a50d14df4c48639d8ef1552731f1ed",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.RecurringLeave.onClickOfBiweekly();",
+            "callbackType": null
+        }]
+    }
+}

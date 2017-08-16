@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_8ad2154d21744154ae3e9d8672291356": {
+        "id": "AS_FlexContainer_8ad2154d21744154ae3e9d8672291356",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickwineveryweek",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "0865d0ff69da4e3f87b5f98982566507"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__99fcb440b8d440ab8dd3b7b66618e830",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (frmTabApplyLeave.flxEveryWeek.skin === sknFlx2EBAEE100){\n  frmTabApplyLeave.flxEveryWeek.skin = sknFlx2EBAEEOp100;\n  frmTabApplyLeave.lblEveryWeek.skin = sknLblffffffF32AvenirLTStdRoman;\n}else{\n  frmTabApplyLeave.flxEveryWeek.skin = sknFlx2EBAEE100;\n  frmTabApplyLeave.lblEveryWeek.skin = sknlbl2EBAEEOp100S32pxRoman;\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

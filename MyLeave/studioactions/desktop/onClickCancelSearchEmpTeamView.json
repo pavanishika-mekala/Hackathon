@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_806cf7db4e6f4f72b8f1c432043d2bf5": {
+        "id": "AS_FlexContainer_806cf7db4e6f4f72b8f1c432043d2bf5",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickCancelSearchEmpTeamView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarTeamViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e45156393f1a420682281dff0ee875ae"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6f366a191b6d4fbe90229c52cf4c4be3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmCalendarTeamView.closeTeamSearch();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

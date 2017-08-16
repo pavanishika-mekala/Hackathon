@@ -1,0 +1,18 @@
+{
+    "AS_Button_c0732a379cc7469dba9db223860e60a4": {
+        "id": "AS_Button_c0732a379cc7469dba9db223860e60a4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickallerytabapplyleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_cc37ecbc46f347afa126adf107a1d7d2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.myLeave.tabApplyLeaveUI.Attachment.onClickOfSelecfromGallery();",
+            "callbackType": null
+        }]
+    }
+}

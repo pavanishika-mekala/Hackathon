@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_29d5d47d16484d538f9dd91c80536563": {
+        "id": "AS_AppEvents_29d5d47d16484d538f9dd91c80536563",
+        "type": "ACTION_SEQUENCE",
+        "name": "MyLeavePostAppinit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b9b7b20672534979899d195008f5229e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.setApplicationInitializationEvents({\n        appservice: kony.apps.ess.deepLinkingSSO.appServiceCallback\n});",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

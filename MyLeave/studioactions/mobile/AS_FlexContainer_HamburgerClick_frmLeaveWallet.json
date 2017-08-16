@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_28191df71f5e42b794533cc778757f6c": {
+        "id": "AS_FlexContainer_28191df71f5e42b794533cc778757f6c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_HamburgerClick_frmLeaveWallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWallet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd9ff412b9f64d38860d47275c0dd8ce"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4e249dcee67842d3820e349933c5652d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmLeaveWallet.flxHamburgerBtn);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

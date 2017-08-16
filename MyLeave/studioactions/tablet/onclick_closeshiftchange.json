@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_b14030cd7cb14fc984679bf40c6957e4": {
+        "id": "AS_FlexContainer_b14030cd7cb14fc984679bf40c6957e4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclick_closeshiftchange",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_07a911fece5346f1ad27e971452c6413",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmMyShiftDashboard.show();",
+            "callbackType": null
+        }]
+    }
+}

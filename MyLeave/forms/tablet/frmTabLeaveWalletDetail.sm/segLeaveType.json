@@ -1,0 +1,232 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblAvl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblTitleAvail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available"
+            },
+            "lblTitleTotal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Total . "
+            },
+            "lblTot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "lblAvl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblTitleAvail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available"
+            },
+            "lblTitleTotal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Total . "
+            },
+            "lblTot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "lblAvl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblTitleAvail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available"
+            },
+            "lblTitleTotal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Total . "
+            },
+            "lblTot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "lblAvl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblTitleAvail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available"
+            },
+            "lblTitleTotal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Total . "
+            },
+            "lblTot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "lblAvl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblTitleAvail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available"
+            },
+            "lblTitleTotal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Total . "
+            },
+            "lblTot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "lblAvl": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblTitleAvail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Available"
+            },
+            "lblTitleTotal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Total . "
+            },
+            "lblTot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "614dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "05",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segLeaveType",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "f09e7fd3a8124ee584bd63d2c5c60f6e",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxMain",
+    "pf": "frmTabLeaveWalletDetail",
+    "retainselection": false,
+    "rowTemplateId": "94669fc1cdb849afa9f20e86bb1cdf52",
+    "rowcounter": 5,
+    "rowfocusskin": "sb7ffe11a1764f7ab48e37cbf9b9796e",
+    "rowskin": "s6b4ccfba4b74b92a47fb8ff20352168",
+    "rowtemplate": "flxMainTemp",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdbc0b13ffcf419d9faa75f92b8f832b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxMainTemp": "flxMainTemp",
+        "lblAvl": "lblAvl",
+        "lblLeaveName": "lblLeaveName",
+        "lblTitleAvail": "lblTitleAvail",
+        "lblTitleTotal": "lblTitleTotal",
+        "lblTot": "lblTot"
+    },
+    "zindex": 1
+}

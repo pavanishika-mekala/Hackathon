@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_50898379469b4f18811a35eb67a9ab25": {
+        "id": "AS_FlexContainer_50898379469b4f18811a35eb67a9ab25",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickCancelFrmApplyLeave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeaveDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8260c8ddeb2441359847d28a81ab275b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__43aa60b5b35b4fa8bce56746e8eeeb2d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.navigateToLeaveDashboard();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

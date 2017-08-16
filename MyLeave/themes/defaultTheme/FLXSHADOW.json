@@ -1,0 +1,13 @@
+{
+  "android": {},
+  "background_image": "card.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "iphone": {},
+  "isDefaultSkin": false,
+  "kuid": "s6644768204a47bbae88c416669c8beb",
+  "wType": "FlexContainer"
+}

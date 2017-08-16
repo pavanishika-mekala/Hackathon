@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "27dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa3a0aad8a384272aa8ce49be2ce7cce",
+    "_text_": "Select from Gallery",
+    "_top_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sec42466c35e411b8a34ddde0ebe714f",
+    "id": "btnOpenGallery",
+    "ide_onClick": "AS_Button_184049afee7d4235817b6519299e6118",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b02070a4150a4ce9aec18221b8abe655",
+    "name": "kony.ui.Button",
+    "parent": "flxouter",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

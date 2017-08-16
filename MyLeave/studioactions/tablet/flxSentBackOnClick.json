@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_e168ee47cb52492cb8076a27c5b00902": {
+        "id": "AS_FlexContainer_e168ee47cb52492cb8076a27c5b00902",
+        "type": "ACTION_SEQUENCE",
+        "name": "flxSentBackOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6209a500c81f436fbcfeda5ae022c502",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(frmHistory.flxSentBack.skin==\"sknFlxSentBackUnselected\")\n  {\n    frmHistory.flxSentBack.skin=\"sknFlxSentBackSelected\";\n    frmHistory.lblSentBack.skin=\"sknLblFFFFFF100Op36Px\";\n    frmHistory.imgSel4.src=\"select_pendingcopy.png\";\n    sentBack=4;\n    arrStatus.push(\"4\");\n  }\nelse\n{\n  frmHistory.flxSentBack.skin=\"sknFlxSentBackUnselected\";\n  frmHistory.lblSentBack.skin=\"sknLblSentBackUnselected\";\n  frmHistory.imgSel4.src=\"selectblue.png\";sentBack=-1;\n   for(var j=0;j<arrStatus.length;j++)\n      {\n\t\tif(\"4\"==arrStatus[j])\n          arrStatus.splice(j,1);\n      }\n}\n//alert(\"\"+arrStatus);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Form_d2f06a9d1cae4b2a833c65a81a4f3ffa": {
+        "id": "AS_Form_d2f06a9d1cae4b2a833c65a81a4f3ffa",
+        "type": "ACTION_SEQUENCE",
+        "name": "preshow_winDashboard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "a15a63ac67e5448189f868765f26014b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__00fae84d9c9d47ce835eff7ddca019ff",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard();\nobj.addCalendarOnLeaveHome();\nobj.isValidMonthandYearforCalender();\nobj.getLeaveDashboardData();\n//(new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).isValidMonthandYearforCalender();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

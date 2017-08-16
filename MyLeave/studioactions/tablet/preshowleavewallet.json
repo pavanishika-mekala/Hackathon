@@ -1,0 +1,25 @@
+{
+    "AS_Form_b7b7601aacb9494fae0e945618968591": {
+        "id": "AS_Form_b7b7601aacb9494fae0e945618968591",
+        "type": "ACTION_SEQUENCE",
+        "name": "preshowleavewallet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWalletTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a2a388a096f44b6bb48b37d1a5df31f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__94c8cc2dba9642c590044951fc76e691",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.ess.myLeave.tabLeaveWalletUI()).getLeaveWalletData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

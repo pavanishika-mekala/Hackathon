@@ -1,0 +1,31 @@
+{
+    "AS_Label_2e50353508844cafbb21b4a8aa1e160b": {
+        "id": "AS_Label_2e50353508844cafbb21b4a8aa1e160b",
+        "type": "ACTION_SEQUENCE",
+        "name": "ontouchleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWalletTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a2a388a096f44b6bb48b37d1a5df31f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d5a3bfce8cf044149047a2346382e716",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTabLeaveWalletDetail.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

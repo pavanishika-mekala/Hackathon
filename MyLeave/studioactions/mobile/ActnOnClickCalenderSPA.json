@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_6b6ba4521d9d439ebdf7c01c0356c197": {
+        "id": "AS_FlexContainer_6b6ba4521d9d439ebdf7c01c0356c197",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnOnClickCalenderSPA",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a982edf1e3e1495d92adffe9ea8db883",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveHome.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

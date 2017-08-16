@@ -1,0 +1,31 @@
+{
+    "AS_Label_19c16f6eebcf458a80905a04ae85bdce": {
+        "id": "AS_Label_19c16f6eebcf458a80905a04ae85bdce",
+        "type": "ACTION_SEQUENCE",
+        "name": "onTouchStartBreadCrumbLeaveCalendarfrmAllHolidaysDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmAllHolidaysAndEventsDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e09514daaf1d4b9a81518c69cae18d67"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f99802d03a2940bd9c749ca6839b77bc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.navigateToLeaveDashboard();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

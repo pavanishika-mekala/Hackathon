@@ -1,0 +1,55 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "37%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20.50%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s660cef315584bcfbb834af811ef2287",
+    "_top_": {
+        "type": "string",
+        "value": "24%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "26%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCalendar",
+    "info": null,
+    "isvisible": false,
+    "kuid": "b3ac4fba4c804742ac16c804610f0479",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmTabApplyLeave",
+    "pf": "frmTabApplyLeave",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 10
+}

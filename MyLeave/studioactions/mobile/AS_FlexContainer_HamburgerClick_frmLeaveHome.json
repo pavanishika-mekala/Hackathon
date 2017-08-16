@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_812c67ac17a54ef8adadbc55c8848557": {
+        "id": "AS_FlexContainer_812c67ac17a54ef8adadbc55c8848557",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_HamburgerClick_frmLeaveHome",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e977041cc7ba4706bc4506865cb4715b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmLeaveHome.flxHamburgerMenu);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

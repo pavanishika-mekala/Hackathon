@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_e24a44ebe09145df82657aab5e529954": {
+        "id": "AS_FlexContainer_e24a44ebe09145df82657aab5e529954",
+        "type": "ACTION_SEQUENCE",
+        "name": "flexRejRed",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__edff06b415df45329907b53a67121f86",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nif(frmHistory.flexRejRed.skin==\"sknFlxRejectUnselected\")\n  {\n    frmHistory.flexRejRed.skin=\"sknFlxRejectStatus\";\n    frmHistory.rejlbl2.skin=\"sknLblFFFFFF100Op36Px\";\n    frmHistory.imgsel3.src=\"selectapprovecopy.png\";\n    rejected=1;arrStatus.push(\"1\");\n  }\nelse\n{\n  frmHistory.flexRejRed.skin=\"sknFlxRejectUnselected\";\n  frmHistory.rejlbl2.skin=\"sknLblLeaveStatusRejected\";\n  frmHistory.imgsel3.src=\"selectred.png\";\n  rejected=-1;\n    for(var j=0;j<arrStatus.length;j++)\n      {\n\t\tif(\"1\"==arrStatus[j])\n          arrStatus.splice(j,1);\n      }\n}\n//alert(\"\"+arrStatus);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

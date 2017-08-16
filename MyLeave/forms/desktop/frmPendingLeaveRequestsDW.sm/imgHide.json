@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "20px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-1.07%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "closesmall.png",
+    "_width_": {
+        "type": "string",
+        "value": "20px"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "40.00%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "desktop",
+        "formID": "frmPendingLeaveRequestsDW",
+        "platform": "desktopweb",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgHide",
+    "imagescalemode": 0,
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": true,
+    "kuid": "f819496832614ff39d719fe3943e42ed",
+    "name": "kony.ui.Image2",
+    "parent": "flxHideButton",
+    "pf": "frmPendingLeaveRequestsDW",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 8
+}

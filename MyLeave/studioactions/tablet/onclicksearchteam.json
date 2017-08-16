@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_88adb08f9615497c9f82d3ffa09954a7": {
+        "id": "AS_FlexContainer_88adb08f9615497c9f82d3ffa09954a7",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclicksearchteam",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "84f75836cc6542a09238ee771552a222"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f5c5a9b3a453473c9dd59661f2c30043",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": null,
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

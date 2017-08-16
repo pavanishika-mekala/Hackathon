@@ -1,0 +1,25 @@
+{
+    "AS_Form_da1fe1d49054481689460fc1cf03605f": {
+        "id": "AS_Form_da1fe1d49054481689460fc1cf03605f",
+        "type": "ACTION_SEQUENCE",
+        "name": "preshow_frmtabapplyleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e3d260d5e5574ddcbd2a781e56dbe4d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fef828c0996045bebe5fbd7dc9675d94",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.myLeave.tabApplyLeaveUI.preshowtabApplyLeave.getManagerName();\nkony.apps.ess.myLeave.tabApplyLeaveUI.preshowtabApplyLeave.setDefaultValues();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

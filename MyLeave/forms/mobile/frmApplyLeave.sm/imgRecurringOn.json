@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb852ed37a3c47609dcf72f7da1d935e",
+    "_src_": "toggle_on.png",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "frmApplyLeave",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgRecurringOn",
+    "ide_onTouchEnd": "AS_Image_6528c678ac74408586bb6aa3368f02a9",
+    "imagescalemode": 0,
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": false,
+    "kuid": "e9f211c851894c3fb2e8a304bfdb641a",
+    "name": "kony.ui.Image2",
+    "parent": "flxRecurringLeave",
+    "pf": "frmApplyLeave",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

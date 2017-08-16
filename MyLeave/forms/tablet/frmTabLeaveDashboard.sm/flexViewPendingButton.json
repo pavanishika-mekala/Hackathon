@@ -1,0 +1,68 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s3be4af540f249e1863be54b59110344",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "lblViewPendingButtonLabel",
+        "flxPendingLeaveCount",
+        "flxPendingLeaveCountNext"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flexViewPendingButton",
+    "ide_onClick": "AS_FlexContainer_bf392d4b0e3a46acb113bdb1333f51c4",
+    "info": null,
+    "isvisible": true,
+    "kuid": "eb4195bb509e4edb831b59194b54fb0f",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flexViewPending",
+    "pf": "frmTabLeaveDashboard",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 2
+}

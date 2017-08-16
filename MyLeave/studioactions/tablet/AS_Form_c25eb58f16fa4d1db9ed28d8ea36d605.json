@@ -1,0 +1,18 @@
+{
+    "AS_Form_c25eb58f16fa4d1db9ed28d8ea36d605": {
+        "id": "AS_Form_c25eb58f16fa4d1db9ed28d8ea36d605",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyShiftDashboard",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "bfccdb7754e941f58192f1f462c98621"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

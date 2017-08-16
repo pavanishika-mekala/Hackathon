@@ -1,0 +1,18 @@
+{
+    "AS_Button_c1fff157162c49ebbe96a7a7bf92cb00": {
+        "id": "AS_Button_c1fff157162c49ebbe96a7a7bf92cb00",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickhourstabapplyleave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c189bf9c02fb46499fab4aebea55478e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.myLeave.tabApplyLeaveUI.fullDayHoursSelection.onClickOfHours();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "CopyflxSearchEmployeePictureRec019ccfe8949364e",
+        "CopyflxSearchEmployeeInitialsRec0ad1ea38b8dfc48",
+        "CopylblSearchEmployeeNameRec0dd7b94ae8b6f47",
+        "CopyflxSearchEmployeeSelectedRec0312159c4ccda44"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "CopyflxSearchEmployeeRow0f07af671f77b42",
+    "info": null,
+    "isvisible": true,
+    "kuid": "883935089da447fd89e698f79e348ef5",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxSearchEmployeeRow1",
+    "pf": "frmTeamLeaveCalendar",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

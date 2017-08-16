@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_188580b3863140fabf63a6dce751ce90": {
+        "id": "AS_FlexContainer_188580b3863140fabf63a6dce751ce90",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_FooterNavigationOnClick1",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterNavigation",
+            "type": "templates",
+            "KUID": "823c18189bb4465998fbae1b4419626f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a371d4b1ee8f46718218bcdf1fef8749",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.MyLeave.Footer.navigateFooter(1);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

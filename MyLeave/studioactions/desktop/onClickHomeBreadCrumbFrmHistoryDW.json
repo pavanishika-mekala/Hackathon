@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a7e1a819363e4458bf430a16e1f98232": {
+        "id": "AS_FlexContainer_a7e1a819363e4458bf430a16e1f98232",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHomeBreadCrumbFrmHistoryDW",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistoryLeaveRequestDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e4ffcc08df6a43d898268f18a383c658"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a1db33341b284163bebf635e5ed5bd98",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.navigateToLeaveDashboard();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

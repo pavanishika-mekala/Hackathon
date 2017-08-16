@@ -1,0 +1,186 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgwallet": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wallet_blue.png"
+            },
+            "lblLeaveCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Total . 5 Available"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            }
+        },
+        {
+            "imgwallet": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wallet_pink.png"
+            },
+            "lblLeaveCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Total . 5 Available"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical Leave"
+            }
+        },
+        {
+            "imgwallet": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wallet_green.png"
+            },
+            "lblLeaveCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Total . 5 Available"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical Leave"
+            }
+        },
+        {
+            "imgwallet": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wallet_medical_leave.png"
+            },
+            "lblLeaveCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Total . 5 Available"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical Leave"
+            }
+        },
+        {
+            "imgwallet": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wallet_pink.png"
+            },
+            "lblLeaveCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Total . 5 Available"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical Leave"
+            }
+        },
+        {
+            "imgwallet": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "wallet_casual_leave.png"
+            },
+            "lblLeaveCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Total . 5 Available"
+            },
+            "lblLeaveName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Medical Leave"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "05",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segLeaveType",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "de54eeaea4a24bccad4d2e4c8ba493fb",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxLeaveType",
+    "pf": "frmTabLeaveWalletDetail",
+    "retainselection": false,
+    "rowTemplateId": "9ba3702ece0f498c80ee06719b13b317",
+    "rowcounter": 5,
+    "rowfocusskin": "sb7ffe11a1764f7ab48e37cbf9b9796e",
+    "rowskin": "s2e9fc0c2e9d43b082b67c1db7f22d9c",
+    "rowtemplate": "flxlt",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdbc0b13ffcf419d9faa75f92b8f832b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxProgressBack": "flxProgressBack",
+        "flxProgressMain": "flxProgressMain",
+        "flxlt": "flxlt",
+        "imgwallet": "imgwallet",
+        "lblLeaveCount": "lblLeaveCount",
+        "lblLeaveName": "lblLeaveName"
+    },
+    "widgetskin": "s2e9fc0c2e9d43b082b67c1db7f22d9c",
+    "zindex": 1
+}

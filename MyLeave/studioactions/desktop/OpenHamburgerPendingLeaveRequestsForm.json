@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_52b9569916554d069d4dd13d85896f48": {
+        "id": "AS_FlexContainer_52b9569916554d069d4dd13d85896f48",
+        "type": "ACTION_SEQUENCE",
+        "name": "OpenHamburgerPendingLeaveRequestsForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPendingLeaveRequestsDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abcda1bc2a94443a8d974ebc98157bef"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4042143857c6482b840525c580fa9598",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHamburgerDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_42a876c17ddd4361891a99223518dcbc": {
+        "id": "AS_FlexContainer_42a876c17ddd4361891a99223518dcbc",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmLeaveWalletMedicalTileOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWalletDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "855e03bc86234ae5a73a10702d0a861b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__14d7094fbe434dde91f50460e974e131",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveWalletDetails.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_e84d73cb427e449fa4f97713299ba431": {
+        "id": "AS_FlexContainer_e84d73cb427e449fa4f97713299ba431",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickcancelsearchemployee",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamLeaveCalendar",
+            "type": "forms",
+            "platform": "",
+            "KUID": "235427254b1b464fa9c878825c7d3919"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__68ddebe6b97f43a783238178dc5d4ae0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTeamLeaveCalendar.flxSearchEmployee.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

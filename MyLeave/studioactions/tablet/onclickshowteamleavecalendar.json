@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c249279da03c44f281ff107d61b1d2aa": {
+        "id": "AS_FlexContainer_c249279da03c44f281ff107d61b1d2aa",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickshowteamleavecalendar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "986f6bcc1c3c405ba7b6890da2ff8d3b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c4512cc4930b44ee8b15f8f8117950fe",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTeamLeaveCalendarForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

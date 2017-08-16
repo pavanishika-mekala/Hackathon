@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a211b63e8a824efda728be713dd8f961": {
+        "id": "AS_FlexContainer_a211b63e8a824efda728be713dd8f961",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnFlxLoginClickTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0832e7aaaf2e4397a9e062b491d2d23b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4e175cf79ac348d5b7151a27c5339b71",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLogin.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

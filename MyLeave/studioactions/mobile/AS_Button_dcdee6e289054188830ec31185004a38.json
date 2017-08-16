@@ -1,0 +1,17 @@
+{
+    "AS_Button_dcdee6e289054188830ec31185004a38": {
+        "id": "AS_Button_dcdee6e289054188830ec31185004a38",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_9fe2f2043b384749be9ca1b955853b3f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.Initialization.onLeftSwipe();",
+            "callbackType": null
+        }]
+    }
+}

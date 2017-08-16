@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c1486e321e7341e9a11cddaccbe49f14": {
+        "id": "AS_FlexContainer_c1486e321e7341e9a11cddaccbe49f14",
+        "type": "ACTION_SEQUENCE",
+        "name": "onActionWinBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabPendingList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54760838be04472083561ec048e91271"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5ec708e7fee843f791d6a2be6bc3da5a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.application.getPreviousForm().id!==\"frmHistory\")\n    showTabLeaveDashboardForm();\nelse\n    showTabHistoryForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "background_color": "2ebaeeff",
+  "bg_type": "one",
+  "border_color": "2ebaeeff",
+  "border_style": "rc",
+  "border_type": 0,
+  "border_width": 2,
+  "fontSizeInPx": false,
+  "font_color": "ffffffff",
+  "font_name": "Helvetica",
+  "font_size": 100,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "sd7d01d9f8794661b8c59280a22575fe",
+  "wType": "RichText",
+  "windows8": {
+    "font_name": "AvenirLTStd-Black",
+    "font_size": 70,
+    "isForked": true
+  }
+}

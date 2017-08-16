@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_3ba468af9fc549438bab7b4173026fb5": {
+        "id": "AS_FlexContainer_3ba468af9fc549438bab7b4173026fb5",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickeditshift",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_fe85effdfa6449f8a5a67beb6346367f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmShiftChange.show();",
+            "callbackType": null
+        }]
+    }
+}

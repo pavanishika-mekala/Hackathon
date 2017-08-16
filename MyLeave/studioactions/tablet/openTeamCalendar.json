@@ -1,0 +1,25 @@
+{
+    "AS_Button_1cab00d755cf454091a0d6ab6ea6f4b9": {
+        "id": "AS_Button_1cab00d755cf454091a0d6ab6ea6f4b9",
+        "type": "ACTION_SEQUENCE",
+        "name": "openTeamCalendar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e3d260d5e5574ddcbd2a781e56dbe4d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c56f6afcdc804b529c8a54b290dbfd29",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTeamLeaveCalendar.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

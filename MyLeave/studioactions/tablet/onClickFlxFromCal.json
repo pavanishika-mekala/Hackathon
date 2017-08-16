@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_509dfba3ec2a41f9a115b39dc3ea097c": {
+        "id": "AS_FlexContainer_509dfba3ec2a41f9a115b39dc3ea097c",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickFlxFromCal",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e3d260d5e5574ddcbd2a781e56dbe4d6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__886eef5b28a54d928012beb93a1d85cf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.showLoadingScreen(\"\", kony.i18n.getLocalizedString(\"i18n.ess.myLeave.PleaseWait\"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});\nfrmTabApplyLeave.lblFrmCal.skin=sknlbldateselectfocus;\nfrmTabApplyLeave.flxOverlay.setVisibility(false);\n(new kony.apps.ess.myLeave.calendarUI(frmTabApplyLeave.lblFrmCal)).addDynamicCalendar();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Label_bb38472606294f85a388dd8c2dc50354": {
+        "id": "AS_Label_bb38472606294f85a388dd8c2dc50354",
+        "type": "ACTION_SEQUENCE",
+        "name": "onTouchEndDate",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "abafc7ea44a14ae0b92118d51aed2ee5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ccb7c51d6c0e408dbf4a56a337e1e02e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHistory.flxCalendar.setVisibility(true);\nfrmHistory.flxFilter.setVisibility(false);\nkony.apps.coe.myLeave.leaveHistory.endDateRef=frmHistory.lblToCal;\n(new kony.apps.ess.myLeave.historyCalendarUI(frmHistory.lblToCal)).addDynamicCalendar();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

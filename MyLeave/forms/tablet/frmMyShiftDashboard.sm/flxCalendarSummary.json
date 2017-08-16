@@ -1,0 +1,68 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s071f16c8c444e39b6081f38a67312e4",
+    "_top_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxCalendarSummaryApproved",
+        "flxCalendarSummaryPending",
+        "flxCalendarSummaryRejected",
+        "flxCalendarSummarySubmitted",
+        "lblShiftMorning",
+        "lblShiftMorningPeriod",
+        "CopylblShiftMorningPeriod065271dfe452147",
+        "CopylblShiftMorningPeriod0a08632ab647946",
+        "CopylblShiftMorningPeriod062ecbc8b583e47",
+        "lblCalendarSummaryPending",
+        "lblCalendarSummaryRejected",
+        "lblCalendarSummarySubmitted"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCalendarSummary",
+    "info": null,
+    "isvisible": true,
+    "kuid": "2630a66f63e7468aa77b5e7fa0015f9d",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCalendarContainer",
+    "pf": "frmMyShiftDashboard",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Segment_85adc388ed75482d9bae0312bf751203": {
+        "id": "AS_Segment_85adc388ed75482d9bae0312bf751203",
+        "type": "ACTION_SEQUENCE",
+        "name": "onRowClickPendingList",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTabPendingList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "54760838be04472083561ec048e91271"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f629adedd880473bab896c49fd6bf5d1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var x = new kony.apps.coe.ess.myLeave.tabPendingLeaveRequestUI();\nx.onSegClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

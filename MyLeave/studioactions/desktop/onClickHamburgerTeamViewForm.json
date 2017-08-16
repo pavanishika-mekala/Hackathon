@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_9d4aff242bb0406286f1a7e5ef1aecb8": {
+        "id": "AS_FlexContainer_9d4aff242bb0406286f1a7e5ef1aecb8",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHamburgerTeamViewForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarTeamViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e45156393f1a420682281dff0ee875ae"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c9bc8fc5871542a8b5970e5389d79281",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmHamburgerDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

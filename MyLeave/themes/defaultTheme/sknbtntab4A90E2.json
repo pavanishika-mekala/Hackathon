@@ -1,0 +1,29 @@
+{
+  "background_color": "4a90e2ff",
+  "bg_type": "one",
+  "border_color": "4a90e2ff",
+  "border_radius": 100,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "fontSizeInPx": false,
+  "font_color": "ffffffff",
+  "font_name": "Helvetica",
+  "font_size": 120,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "s657a445943949488d64e0c0ff583cd6",
+  "wType": "Button",
+  "windows8": {
+    "background_color": "2ebaeeff",
+    "bg_type": "one",
+    "border_color": "2ebaeeff",
+    "border_radius": 9,
+    "border_style": "custom",
+    "border_type": 0,
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 106,
+    "isForked": true
+  }
+}

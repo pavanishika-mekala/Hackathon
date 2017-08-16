@@ -1,0 +1,41 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        4,
+        4,
+        4,
+        4
+    ],
+    "_skin_": "sc17b9c6cb2348a6b8a306b0306fc7fa",
+    "_text_": "",
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 50,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s01a3de39ada45edbb7d4d4f3b474997",
+    "id": "btnOffline",
+    "ide_onClick": "AS_Button_88041134243541489efb388e50a8a1fb",
+    "info": null,
+    "isvisible": true,
+    "kuid": "4400eb889289462abed2b86ec9338529",
+    "margininpixel": false,
+    "name": "kony.ui.Button",
+    "paddInPixel": [
+        30,
+        30,
+        30,
+        30
+    ],
+    "parent": "HboxOfflineOuter",
+    "pf": "tempFooterOffline",
+    "texti18n": "i18n.ess.offline.offlinemode.text",
+    "wType": "Button"
+}

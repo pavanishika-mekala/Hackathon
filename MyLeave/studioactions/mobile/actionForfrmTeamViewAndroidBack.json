@@ -1,0 +1,25 @@
+{
+    "AS_Form_d7f2e8c4f73243a4bd61c9eb225da0b9": {
+        "id": "AS_Form_d7f2e8c4f73243a4bd61c9eb225da0b9",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmTeamViewAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8edf69ac3e6b4a27af7f605ae9e4ee9f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__960fbff903764b4a9922e12d3a1e2547",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in teamview--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

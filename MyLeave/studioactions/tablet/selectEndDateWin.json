@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ed785d15f6814691b29c39e8f00f3ecd": {
+        "id": "AS_FlexContainer_ed785d15f6814691b29c39e8f00f3ecd",
+        "type": "ACTION_SEQUENCE",
+        "name": "selectEndDateWin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHistory",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7129a3ad486e47dabc0baaad2317f95d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__af63d1bace13453585f31baf8abb288f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.ess.myLeave.historyCalendarUI(frmHistory.lblToDate)).addDynamicCalendar();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

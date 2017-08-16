@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_e725f7b5bc5341da8daf6dc2cdc7b90c": {
+        "id": "AS_FlexContainer_e725f7b5bc5341da8daf6dc2cdc7b90c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Flexhambuerger",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTabLeaveDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "986f6bcc1c3c405ba7b6890da2ff8d3b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5bbeccb2ad134685af6a4cae4b1d8698",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.ess.Hamburger(kony.application.getCurrentForm().flxHamburger);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

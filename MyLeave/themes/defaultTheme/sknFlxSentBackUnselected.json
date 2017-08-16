@@ -1,0 +1,46 @@
+{
+  "android": {
+    "border_color": "1c7393ff",
+    "border_style": "rc",
+    "border_type": 0,
+    "border_width": 2,
+    "isForked": true
+  },
+  "background_color": "f8f8f8ff",
+  "bg_type": "one",
+  "border_color": "1c7393ff",
+  "border_style": "rc",
+  "border_type": 0,
+  "border_width": 2,
+  "iphone": {
+    "border_color": "1c7393ff",
+    "border_style": "rc",
+    "border_type": 0,
+    "border_width": 2,
+    "isForked": true
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "border_color": "1c7393ff",
+    "border_style": "rc",
+    "border_type": 0,
+    "border_width": 2,
+    "isForked": true
+  },
+  "kuid": "sbc46366f85f4918b3389eb40859a79b",
+  "wType": "FlexContainer",
+  "windows8": {
+    "border_color": "1c7393ff",
+    "border_style": "rc",
+    "border_type": 0,
+    "border_width": 2,
+    "isForked": true
+  },
+  "winphone8": {
+    "border_color": "1c7393ff",
+    "border_style": "rc",
+    "border_type": 0,
+    "border_width": 2,
+    "isForked": true
+  }
+}
