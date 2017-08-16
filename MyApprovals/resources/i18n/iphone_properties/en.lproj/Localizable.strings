@@ -42,7 +42,7 @@
 "i18n.ess.MyApprovals.common.Days.text"="Days";
 "i18n.ess.MyApprovals.common.Day.text"="Day";
 "i18n.ess.MyApprovals.frmExpenseReportDetail.NoAttachment"="No attachments found.";
-"i18n.ess.MyApprovals.common.Due_Date.Format"="dd mm, yyyy";
+"i18n.ess.MyApprovals.common.Due_Date.Format"="dd mm yyyy";
 "i18n.ess.MyApprovals.common.Full_Date.Format"="yyyymmddhhMMss";
 "i18n.ess.MyApprovals.common.Applied_Date.Format"="dd mmm' yy";
 "i18n.ess.MyApprovals.common.Full_Time.Format"="hh:MM am/pm";
@@ -102,7 +102,7 @@
 "i18n.ess.frmApprovalHome.errorMessages.fetchApprovalRequest"="Error in fetching the approval requests";
 "i18n.ess.frmApprovalHome.errorMessages.fetchIslaterApprovalRequest"="Error in fetching the ISlater requests";
 "i18n.ess.frmApprovalHome.errorMessages.BindingData"="Error in binding  the approval requests";
-"i18n.ess.frmApprovalRequestDetail.errorMessages.EmployeeRetival"="Unable to retrive the employee id ";
+"i18n.ess.frmApprovalRequestDetail.errorMessages.EmployeeRetival"="Unable to retrive the employee id";
 "i18n.ess.Date.Month.january"="January";
 "i18n.ess.Date.Month.Febrauary"="February";
 "i18n.ess.Date.Month.March"="March";
@@ -270,7 +270,7 @@
 "i18n.ess.Date.shortmonth.oct"="Oct";
 "i18n.ess.Date.shortmonth.nov"="Nov";
 "i18n.ess.Date.shortmonth.dec"="Dec";
-"i18n.ess.myApprovals.DataOperations.ErrorMessage.MarkAsLater"="Unable to mark it as later ";
+"i18n.ess.myApprovals.DataOperations.ErrorMessage.MarkAsLater"="Unable to mark it as later";
 "i18n.ess.myApprovals.DataOperations.ErrorMessage.ApproveRequest"="Unable to Approve the Approval request";
 "i18n.ess.myApprovals.DataOperations.ErrorMessage.RejectRequest"="unable to Reject the Approval Request";
 "i18n.ess.myApprovals.unableToLoadForm"="Unable to load form";
@@ -291,7 +291,7 @@
 "i18n.ess.frmApprovalsDashBoardDW.Dashboard"="Dashboard";
 "i18n.ess.frmApprovalsDashBoardDW.PendingRequests"="All Pending Requests";
 "i18n.ess.frmApprovalsDashBoardDW.DelegationRequests"="Delegation Requests";
-"i18n.ess.frmApprovalsDashBoardDW.LeaveRequests"="LEAVE REQUESTS                                ";
+"i18n.ess.frmApprovalsDashBoardDW.LeaveRequests"="LEAVE REQUESTS";
 "i18n.ess.frmApprovalsDashBoardDW.ExpenseRequests"="EXPENSE REQUESTS";
 "i18n.ess.frmApprovalsDashBoardDW.TimeRequests"="TIME REQUESTS";
 "i18n.ess.frmApprovalsDashBoardDW.PurchaseRequests"="PURCHASE REQUESTS";
@@ -394,8 +394,8 @@
 "i18n.myPay.tab.hamburger.USD"="USD";
 "i18n.myPay.tab.hamburger.english"="English";
 "i18n.ess.myLeave.frmSettings.MinimumTaskDuration"="Minimum task duration on timeline";
-"i18n.ess.myLeave.frmSettings.MinimumTaskDurationOption1"="0:15";
-"i18n.ess.myLeave.frmSettings.MinimumTaskDurationOption2"="1:00";
+"i18n.ess.myLeave.frmSettings.MinimumTaskDurationOption1"="0,010416667";
+"i18n.ess.myLeave.frmSettings.MinimumTaskDurationOption2"="0,041666667";
 "i18n.ess.myLeave.frmSettings.DefaultHoursSelection"="Default task selection on timeline (hours)";
 "i18n.ess.myLeave.frmSettings.DefaultHourseSelectionOption1"="1";
 "i18n.ess.myLeave.frmSettings.DefaultHourseSelectionOption2"="2";

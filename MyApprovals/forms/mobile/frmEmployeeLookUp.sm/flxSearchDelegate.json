@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
+    "_skin_": "s6c1437716c34d429fc6b9ab6b91b7e1",
     "_top_": {
         "type": "string",
         "value": "0%"
@@ -36,19 +36,18 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxHeader",
-        "flxDetails"
+        "txtSearchDelegate"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxMain",
+    "id": "flxSearchDelegate",
     "info": null,
     "isvisible": true,
-    "kuid": "1b46f05825ef44d0a0ff1757123bba8e",
-    "layouttype": 4,
+    "kuid": "cc05e9b5e8b849ac9d25ea714aa7abb5",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmEmployeeLookUp",
+    "parent": "flxDetails",
     "pf": "frmEmployeeLookUp",
     "snapgridsize": 10,
     "snaptogrid": true,
