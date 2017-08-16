@@ -15,9 +15,10 @@ kony.apps.coe.ess.frmAllPendingRequestsdata.requestsPending = {
 };
 
 kony.apps.coe.ess.appconfig = {
-    appkey: "15437d195a89d1197c790552e4b61eee",
-    appsecret: "547d3210d90478fe6b03f58aa8d7f44a",
-    serviceurl: "https://100017816.auth.konycloud.com/appconfig",
+    appkey: "9097ff6db84d7bb312bc78eebbcdf32c",
+    appsecret: "e45f525b0662a32c9bc1ae7707a3c738",
+    serviceurl: "https://100004737.auth.konycloud.com/appconfig",
+
     isDemo : true,
     isSingleQrCode: true,
   	/* Steps to obtain the runtime url
@@ -27,7 +28,7 @@ kony.apps.coe.ess.appconfig = {
 	4.It will navigate to request and response page.
 	5.Besides get there is a url and select upto v1 and copy it to runtimeurl.
    	*/
-   	runtimeurl : "https://empselfservice1.konycloud.com:443/services/data/v1",
+   	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",
 
 	ACFAppID :"MYAPPROVALS",   
   	identityServiceName:"ESSIDENTITY",

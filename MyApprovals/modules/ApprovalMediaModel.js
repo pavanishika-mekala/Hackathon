@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-GA-7.3.2_v201706230520_r0*******************
-// ****************Generated On Wed Jul 19 05:29:39 UTC 2017ApprovalMedia*******************
+//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
+// ****************Generated On Wed Aug 09 07:41:09 UTC 2017ApprovalMedia*******************
 // **********************************Start ApprovalMedia's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -449,7 +449,7 @@ com.kony.MYAPPROVALS.ApprovalMedia.updateAll = function(inputArray, successcallb
 	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.ApprovalMedia.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "10000000252a67608";
+	var dbname = "100004737b2bb0f56";
 	var tbname = "ApprovalMedia";
 	var isError = false;
 	var errObject = null;
@@ -884,9 +884,9 @@ com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath = function(colName, pks, co
 	function mySuccCallback(res){
 		sync.log.trace("Entering com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath success callback function"
 			+"for columns :"+colName+" of tablename :"+tbname+" with response"+ res);
-		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filePath)) {
-			sync.log.trace("Entering com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath user success callback function"+ res.filePath);
-			successcallback(res.filePath);
+		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filepath)) {
+			sync.log.trace("Entering com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath user success callback function"+ res.filepath);
+			successcallback(res.filepath);
 		}
 		else {
 			sync.log.error("Entering com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath error callback function"+ res);

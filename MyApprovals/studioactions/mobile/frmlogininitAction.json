@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__5c4e254b92834f4b97fc05bcd961a1c9",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.frmLogin.Init();",
+            "codeSnippet": "kony.apps.coe.ess.frmLogin.Init();\n",
             "parentId": null,
             "callbackType": null
         }]

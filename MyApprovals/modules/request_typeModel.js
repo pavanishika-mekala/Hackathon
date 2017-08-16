@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-GA-7.3.2_v201706230520_r0*******************
-// ****************Generated On Wed Jul 19 05:29:39 UTC 2017request_type*******************
+//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
+// ****************Generated On Wed Aug 09 07:41:09 UTC 2017request_type*******************
 // **********************************Start request_type's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -455,7 +455,7 @@ com.kony.MYAPPROVALS.request_type.updateAll = function(inputArray, successcallba
 	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.request_type.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "10000000252a67608";
+	var dbname = "100004737b2bb0f56";
 	var tbname = "request_type";
 	var isError = false;
 	var errObject = null;
