@@ -37,21 +37,21 @@ kony.apps.coe.ess.Approvals.SPA.Search.processData = function(data) {
 
             switch (totalRequests[index].StatusId) {
                 case "0":
-                    request.status_value = "Approved";
+                    request.status_value = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")};//"Approved";
                      request.imgStatus = {
                         src: "approved_audit.png"
                     };
                      
                     break;
                 case "1":
-                    request.status_value = "Rejected";
+                    request.status_value = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")};//"Rejected";
                     request.imgStatus = {
                         src: "rejected_audit.png"
                     };
                     
                     break;
                 case "2":
-                    request.status_value = "Pending";
+                    request.status_value = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")};//"Pending";
                                       
                     break;
                                  

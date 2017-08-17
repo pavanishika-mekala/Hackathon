@@ -206,13 +206,22 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
         popupErrorAlert.show();
     }
 
-}
+};
 
 /**
  * @function
  *
  */
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.bindApprovalRequestDetails = function(ProcessedRequestDetail) {
+  	kony.print("ProcessedRequestDetail"+JSON.stringify(ProcessedRequestDetail)+JSON.stringify(ProcessedRequestDetail.statusText));
+  	var statusText = ProcessedRequestDetail.statusText["text"];
+  	if(statusText == "Pending"){
+      ProcessedRequestDetail.statusText = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")};
+    }else if(statusText == "Approved"){
+      ProcessedRequestDetail.statusText = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")};
+    }else if(statusText == "Rejected"){
+      ProcessedRequestDetail.statusText = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")};
+    }
     kony.apps.coe.ess.WidgetPropertyBinding(frmApprovalRequestDetail.lblUserName, ProcessedRequestDetail.UserName);
     kony.apps.coe.ess.WidgetPropertyBinding(frmApprovalRequestDetail.imgTitleicon, ProcessedRequestDetail.Titleicon);
     kony.apps.coe.ess.WidgetPropertyBinding(frmApprovalRequestDetail.lblTitle, ProcessedRequestDetail.Title);
@@ -224,7 +233,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.bindApprovalRequestDetails 
     kony.apps.coe.ess.WidgetPropertyBinding(frmApprovalRequestDetail.lblDueOnDate, ProcessedRequestDetail.DueOnDate);
     kony.apps.coe.ess.WidgetPropertyBinding(frmApprovalRequestDetail.flxStatusicon, ProcessedRequestDetail.statusFlx);
     kony.apps.coe.ess.WidgetPropertyBinding(frmApprovalRequestDetail.lblStatus, ProcessedRequestDetail.statusText);
-}
+};
 
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.changeSkins = function(request_type) {
     try {

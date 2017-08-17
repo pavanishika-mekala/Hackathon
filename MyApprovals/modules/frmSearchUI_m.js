@@ -80,7 +80,8 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                 processedRequest.CreatedUserShortName = processedRequest.CreatedUserShortName.toUpperCase();
             }
 
-            if (response_data[index].StatusName == "Pending") {
+            //if (response_data[index].StatusName == "Pending") {
+          if (response_data[index].StatusName == kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")) {
                 processedRequest.status_value = response_data[index].StatusName;
             } else {
                 var approvedDate = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].ApprovedDate).toDDmmmYY();
