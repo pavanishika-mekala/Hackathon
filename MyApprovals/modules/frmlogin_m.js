@@ -500,6 +500,9 @@ kony.apps.coe.ess.frmLogin.manualSyncOnClick = function(successCall, errorCall) 
         } else {
           suffix = "AM";
         }
+        //bbe-101 menu sync
+        kony.apps.coe.ess.globalVariables.lastSyncDate=currDay + " " + currMonth + " " + currYear;
+		kony.apps.coe.ess.globalVariables.lastSyncTime= currTime.substring(0, 5) + " " + suffix;
         if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
           kony.application.getCurrentForm().lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
           kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
