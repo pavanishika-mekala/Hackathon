@@ -135,16 +135,20 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
       };
       if(null !== data && undefined !== data && " !== data"){
         for(var i = 0;i<data.length;i++){
-          var status = String(data[i].status_value);
-          status = status.split(" ",2);
-          var statusText = status[0];
-          kony.print("VV tet"+status[1]);
-          if(statusText == "Pending"){
-            data[i].status_value = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")};
-          }else if(statusText == "Approved"){
-            data[i].status_value = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")};
-          }else if(statusText == "Rejected"){
-            data[i].status_value = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")};
+          var statusText = String(data[i].status_value);
+          var status = statusText.indexOf(" ");
+          var firstPart = statusText.substring(0, status);
+          var secondPart = statusText.substring(status+1);
+          if(firstPart === ""){
+            firstPart = secondPart;
+            secondPart = "";
+          }
+          if(firstPart == "Pending"){
+            data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")+" "+secondPart;
+          }else if(firstPart == "Approved"){
+            data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+secondPart;
+          }else if(firstPart == "Rejected"){
+            data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+secondPart;
           }
         }
       }
