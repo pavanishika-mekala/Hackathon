@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxPushNotification",
-        "flxLocalDBReset"
+        "flxLocalDBReset",
+        "flxLangSelection"
     ],
     "clipbounds": true,
     "containerweight": 100,

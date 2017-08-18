@@ -47,7 +47,7 @@
     "enablescrolling": true,
     "id": "flxInputSetUpManually",
     "info": null,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "b48e409113184270b713d9a67d3fc617",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "121dp"
+        "value": "2%"
     },
     "_margin_": [
         1,
@@ -22,15 +22,15 @@
         0,
         0
     ],
-    "_skin_": "sc39d1ae20ff49cc964c22c148ad1a1c",
-    "_text_": "Settings",
+    "_skin_": "sf3aa67ac1c646219adc1b453d522eaf",
+    "_text_": "Nederlands",
     "_top_": {
         "type": "string",
-        "value": "10dp"
+        "value": "2%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "75%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,17 +40,9 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblSettings",
+    "id": "lblNederlands",
     "info": null,
     "ipad": {
         "psp": {
@@ -63,11 +55,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "99980500d548468e850df29960da1961",
+    "kuid": "j8ee44ba9afd48329e8be9d8bec7cd4e",
     "name": "kony.ui.Label",
-    "parent": "flxHeader",
+    "parent": "flxNederlands",
     "pf": "frmSettings",
-    "texti18n": "i18n.ess.common.Settings",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

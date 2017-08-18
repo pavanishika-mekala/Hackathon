@@ -5,11 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "9dp"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,25 +23,17 @@
         0,
         0
     ],
-    "_skin_": "s82580abaae041919a6f0dcd806a8358",
-    "_src_": "back.png",
+    "_skin_": "s1aab495af8848e7b11c81a28675dc7f",
+    "_src_": "unselectit.png",
     "_top_": {
         "type": "string",
-        "value": "5dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "9%"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "context": {
         "channel": "mobile",
@@ -50,14 +42,14 @@
         "templateType": "forms",
         "topLevelBox": null
     },
-    "id": "imgBack",
+    "id": "imgFrench",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "7d631e9d6c1842f0862fefce1c57e3d7",
+    "kuid": "h85b5300a719443aab0d03d71f355333",
     "name": "kony.ui.Image2",
-    "parent": "flxHamburgerMenu",
+    "parent": "flxFrench",
     "pf": "frmSettings",
     "srcType": 1,
     "wType": "Image",
