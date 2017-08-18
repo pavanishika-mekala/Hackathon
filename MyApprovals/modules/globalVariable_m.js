@@ -97,5 +97,4 @@ kony.apps.coe.ess.globalVariables.updateTabEmployeeID = function()
 
 //bbe-101 menu sync
 kony.apps.coe.ess.globalVariables.lastSyncDate="";
-kony.apps.coe.ess.globalVariables.lastSyncTime="";
 

@@ -482,30 +482,31 @@ kony.apps.coe.ess.frmLogin.manualSyncOnClick = function(successCall, errorCall) 
     var syncSuccess = function(successCallback, res) {
       //Generally, background sync will do nothing after successful sync. In any special cases, You can specify actions to be performed after sync success in background
       var updateSyncDate = function() {
-        var months = [
-          "Jan", "Feb", "Mar",
-          "Apr", "May", "Jun", "Jul",
-          "Aug", "Sep", "Oct",
-          "Nov", "Dec"
-        ];
+        kony.apps.coe.ess.globalVariables.lastSyncDate=new Date();
+//         var months = [
+//           "Jan", "Feb", "Mar",
+//           "Apr", "May", "Jun", "Jul",
+//           "Aug", "Sep", "Oct",
+//           "Nov", "Dec"
+//         ];
 
-        var currDate = new Date();
-        var currDay = currDate.getDate();
-        var currMonth = months[currDate.getMonth()];
-        var currYear = currDate.getFullYear();
-        var currTime = currDate.toHHMMSS(":");
-        var suffix;
-        if (parseInt(currDate.getHours()) >= 12) {
-          suffix = "PM";
-        } else {
-          suffix = "AM";
-        }
-        //bbe-101 menu sync
-        kony.apps.coe.ess.globalVariables.lastSyncDate=currDay + " " + currMonth + " " + currYear;
-		kony.apps.coe.ess.globalVariables.lastSyncTime= currTime.substring(0, 5) + " " + suffix;
+//         var currDate = new Date();
+//         var currDay = currDate.getDate();
+//         var currMonth =currDate.getMonthNameShort(kony.store.getItem("localeToBeSet"));// months[currDate.getMonth()];
+//         var currYear = currDate.getFullYear();
+//         var currTime = currDate.toHHMMSS(":");
+//         var suffix;
+//         if (parseInt(currDate.getHours()) >= 12) {
+//           suffix = "PM";
+//         } else {
+//           suffix = "AM";
+//         }
+//         //bbe-101 menu sync
+//         kony.apps.coe.ess.globalVariables.lastSyncDate=currDay + " " + currMonth + " " + currYear;
+// 		kony.apps.coe.ess.globalVariables.lastSyncTime= currTime.substring(0, 5) + " "; //+ suffix;
         if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
-          kony.application.getCurrentForm().lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
-          kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
+          kony.application.getCurrentForm().lblSyncDate.text =formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
+          kony.application.getCurrentForm().lblSyncTime.text = formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);
         }
       }
       updateSyncDate();
