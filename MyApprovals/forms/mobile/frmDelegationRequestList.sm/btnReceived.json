@@ -1,10 +1,11 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "80%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +27,7 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -39,7 +40,7 @@
     "displaytext": true,
     "focusskin": "sf300815551f426598b009d641728cbf",
     "id": "btnReceived",
-    "ide_onClick": "AS_Button_150c733f69ca430f8a9a8983a594d869",
+    "ide_onClick": "AS_Button_e28d8b18992a4af1befd7390003c997b",
     "info": null,
     "isvisible": true,
     "kuid": "5c3028fc5dad49d09bc831d6df555ed5",
