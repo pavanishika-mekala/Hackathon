@@ -396,7 +396,8 @@ kony.apps.coe.ess.ApprovalHistoryTab.prototype.processHistoryData = function(res
                 processedRequest.CreatedUserShortName = processedRequest.CreatedUserShortName.toUpperCase();
             }
 
-            if (response_data[index].StatusName == "Pending") {
+            //if (response_data[index].StatusName == "Pending") {
+          if (response_data[index].StatusName == kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")) {
                 processedRequest.status_value = response_data[index].StatusName;
             }
             else {
