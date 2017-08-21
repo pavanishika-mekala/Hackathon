@@ -224,7 +224,8 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
         if (frmApprovalHome[id]) {
           kony.print(" Already exsisting to the form ");
         } else {
-
+		//this if condition has to be removed for getting timesheets
+					if(ISLaterRequestsData[index].NAME == "LEAVE"){
           var lblBasic = {
             "id": id,
             "left": "3%",
@@ -243,7 +244,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
           }, {});
           btn_filter.onClick = kony.apps.coe.ess.Approvals.ApprovalsHome.filterApprovalDetails.bind(this, btn_filter, request_type)
           frmApprovalHome.flxScrlCategory.add(btn_filter);
-
+			}
         }
 
       }

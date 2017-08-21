@@ -242,7 +242,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegRequestDat
                 id: "All",
                 request_name: "All",
                 imgSelected: "close.png"
-            }].concat(data);
+             }].concat(data[0]);//this [0] has to be removed for getting timesheet
             for (var i = 0; i < newData.length; i++) {
                 newData[i].imgSelected = "close.png";
             }
