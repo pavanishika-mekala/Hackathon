@@ -19,7 +19,7 @@ kony.apps.coe.ess.appconfig = {
     appsecret: "e45f525b0662a32c9bc1ae7707a3c738",
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
 
-    isDemo : true,
+    isDemo : false,
     isSingleQrCode: true,
   	/* Steps to obtain the runtime url
 	1.Go to publish tab in the Mobile Fabric App.
