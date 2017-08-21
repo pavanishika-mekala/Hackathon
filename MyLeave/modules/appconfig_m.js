@@ -9,13 +9,13 @@ kony.apps = kony.apps || {};
 kony.apps.coe = kony.apps.coe || {};
 kony.apps.coe.ess = kony.apps.coe.ess || {};
 kony.apps.coe.ess.appconfig = {
-    appkey: "8399ab64030ebd5c371ab824f3491bff",
-    appsecret: "66cb17537d742549daec96ba97535cce",
-    serviceurl: "https://100017816.auth.konycloud.com/appconfig",
+    appkey: "94818e005bfcf11ea589d81f86d714fe",
+    appsecret: "e194b44975e97b29b220bbc4128acbb8",
+    serviceurl: "https://100004737.auth.konycloud.com/appconfig",
 	identityServiceName:"ESSIDENTITY",
     listOfApps:["myProfile", "myTime", "myPay", "myExpenses", "myApprovals"],
     appversion : "v3.1.1",
-  	isDemo : true,
+  	isDemo : false,
     isSingleQrCode: true,
     workingHours:8,
   /* Steps to obtain the runtime url
@@ -26,7 +26,7 @@ kony.apps.coe.ess.appconfig = {
 	5.Besides get there is a url and select upto v1 and copy it to runtimeurl.
    	*/
     isRecurringSupported:true,
-   	runtimeurl : "https://empselfservice1.konycloud.com:443/services/data/v1",
+   	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",
 	ACFAppID :"MYLEAVE",   
     isSingleQrCode:true,
     isShowDeepLinkingAppBeforeInstall:false,
