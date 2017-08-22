@@ -34,6 +34,9 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     if (hamburgerButton != undefined) {
         hamburgerButton.onClick = function() {
             kony.print("-- Start hamburgerButton.onClick --");
+          	//bbe-101 menu sync
+          	kony.application.getCurrentForm().flxHamburger.lblSyncDate.text=formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
+		   	kony.application.getCurrentForm().flxHamburger.lblSyncTime.text=formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);
             // Disable clicking on Hamburger.
               if (kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.isVisible) {
                 kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(true); // Enable clicking on Hamburger menu items.
@@ -461,4 +464,3 @@ kony.apps.coe.ess.Approvals.btnAppStatus = function() {
     kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(status);
 	}
 };
-
