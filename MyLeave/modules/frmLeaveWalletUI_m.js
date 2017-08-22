@@ -12,31 +12,21 @@ kony.apps.coe.ess.myLeave = kony.apps.coe.ess.myLeave || {};
  * @param {JSON} data - data passed after fetching.
  */
 kony.apps.coe.ess.myLeave.leaveWalletUI = function(frmname, widgets, data) {
-
   this.data = data;
   this.frmname = frmname;
   this.widgets = widgets;
   var curntDate = new Date();
-  var dateToshow = curntDate.getFullYear();
-  var diffinMonths = Number(curntDate.getMonth()-1);
-  var currentDate = curntDate.getDate();
-  var noOfWeeks=0,weeksInMonth=0;
-  // to get the number of weeks in the year till last month
-  for(var i=diffinMonths;i>=0;i--){
-    weeksInMonth = kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getWeeksInMonth(i,dateToshow);
-    var curntDateVal = new Date(dateToshow, i+1, 0);
-    curntDateVal = curntDateVal.getDay();
-    if(Number(curntDateVal) !== 0 || i===diffinMonths){
-      weeksInMonth = weeksInMonth-1;
-    }
-    noOfWeeks = weeksInMonth+noOfWeeks;
-  }
-  // to get the current week of the month
-  var currDay = curntDate.getDay();
-  var offsetDate = currentDate + currDay - 1;
-  var weekinMonth = Math.floor(offsetDate / 7); // 21 aug : w3
-  var WeeksinYear = noOfWeeks+weekinMonth;
-  this.frmname[this.widgets.lblTop].text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveWallet.Y")+dateToshow+" - "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveWallet.W")+WeeksinYear;
+  var d = new Date(Date.UTC(curntDate.getFullYear(), curntDate.getMonth(), curntDate.getDate()));
+  // Set to nearest Thursday: current date + 4 - current day number
+  // Make Sunday's day number 7
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay()||7));
+  // Get first day of year
+  var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
+  // Calculate full weeks to nearest Thursday
+  var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
+  weekNo = Number(weekNo).tofixed(); // as weekno is coming as 34.0
+  var yearToShow = curntDate.getFullYear();
+  this.frmname[this.widgets.lblTop].text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveWallet.Y")+yearToShow+" - "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveWallet.W")+weekNo;
   //this.frmname[this.widgets.lblTop].text = "FY" + dateToshow + "-" + ((curntDate.getFullYear()+1).toString()).slice(2, 4);
 };
 // %Region - Methods in leaveWalletUI
