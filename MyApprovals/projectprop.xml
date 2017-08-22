@@ -122,7 +122,7 @@
     <attributes name="wp10pfxkey" value=""/>
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="MOUNT_FORMAT_FILESYSTEMS" value="false"/>
-    <attributes name="lastmodifiedtime" value="1503322888238"/>
+    <attributes name="lastmodifiedtime" value="1503385337961"/>
     <attributes name="wp10microphone" value="false"/>
     <attributes name="ID_REQ_NFC" value="false"/>
     <attributes name="devicemsg" value="This device is currently not supported"/>
@@ -143,7 +143,7 @@
     <attributes name="splashlogokey" value=""/>
     <attributes name="wp81stoastcapablekey" value="Not set"/>
     <attributes name="SEND_SMS" value="false"/>
-    <attributes name="iphonebundleidentifierkey" value="com.kony.myapprovals"/>
+    <attributes name="iphonebundleidentifierkey" value="com.kone.myapprovals"/>
     <attributes name="SUBSCRIBED_FEEDS_READ" value="false"/>
     <attributes name="READ_HISTORY_BOOKMARKS" value="false"/>
     <attributes name="WP8_ID_CAP_SPEECH_RECOGNITION" value="true"/>
@@ -291,7 +291,7 @@
     <attributes name="wp8packagepublisherkey" value="Kony"/>
     <attributes name="WP8_ID_CAP_PHONEDIALER" value="true"/>
     <attributes name="bb10urlscheme" value=""/>
-    <attributes name="apppackagekey" value="com.kony.myapprovals"/>
+    <attributes name="apppackagekey" value="com.kone.myapprovals"/>
     <attributes name="andtargetsdkkey" value="6.0"/>
     <attributes name="win8bgagentclassname" value=""/>
     <attributes name="wp81sdescriptionkey" value="Sample Test Application"/>

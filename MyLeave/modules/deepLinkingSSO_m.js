@@ -7,7 +7,7 @@
  kony.apps = kony.apps || {};
  kony.apps.ess = kony.apps.ess || {};
  kony.apps.ess.deepLinkingSSO = kony.apps.ess.deepLinkingSSO || {};
- kony.apps.ess.deepLinkingSSO.staticUrl = "com.kony.";
+ kony.apps.ess.deepLinkingSSO.staticUrl = "com.kone.";
  var appserviceUsername;
  var appservicePassword;
  var applaunchMode;
