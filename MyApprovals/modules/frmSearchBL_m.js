@@ -82,7 +82,6 @@ kony.apps.coe.ess.Approvals.frmSearchBackendLogic.prototype.ProcessData = functi
  */
 kony.apps.coe.ess.Approvals.frmSearchBackendLogic.prototype.bindData = function(data)
 {
-  
    var widgetDataMap = {
         "imgUser": "imgUser",
         "lblCreatedDate": "Request_date",
@@ -94,7 +93,7 @@ kony.apps.coe.ess.Approvals.frmSearchBackendLogic.prototype.bindData = function(
      	"imgPurpose":"imgPurpose"
       };  
       frmSearch.segList.widgetDataMap = widgetDataMap;
-  if(data!="" && data!=null) {
+  if(data!=="" && data!==null) {
       frmSearch.segList.setData(data);
   }
   else

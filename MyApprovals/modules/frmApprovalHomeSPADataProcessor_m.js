@@ -215,28 +215,27 @@ kony.apps.coe.ess.Approvals.spa.beautifyEachLaterRequest = function(processedReq
                 switch (processed_request_type.TYPE) {
                     case 'LEAVE':
                         processed_request_type.Image = "leave_list.png";
-                        processed_request_type.NAME = "LEAVE";
-
+                        processed_request_type.NAME = kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.Title.Leave");//"LEAVE";
                         break;
                     case 'TIMESHEET':
                         processed_request_type.Image = "time_list.png";
-                        processed_request_type.NAME = "TIMESHEET";
+                        processed_request_type.NAME = kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.Title.Timesheet");//"TIMESHEET";
                         break;
                     case 'EXPENSES':
                         processed_request_type.Image = "expense_list.png";
-                        processed_request_type.NAME = "EXPENSE";
+                        processed_request_type.NAME = kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.Title.Expense");//"EXPENSE";
                         break;
                     case 'PURCHASEORDER':
                         processed_request_type.Image = "po_list.png";
-                        processed_request_type.NAME = "PURCHASE ORDER";
+                        processed_request_type.NAME = kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.Title.PurchaseOrder");//PURCHASE ORDER";
                         break;
                     case 'WORKORDER':
                         processed_request_type.Image = "wo_list.png";
-                        processed_request_type.NAME = "WORK ORDER";
+                        processed_request_type.NAME = kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.Title.WorkOrder");//"WORK ORDER";
                         break;
                     case 'PURCHASEREQUISITION':
                         processed_request_type.Image = "purchase_requisition.png";
-                        processed_request_type.NAME = "PURCHASE REQUISITION";
+                        processed_request_type.NAME = kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.Title.PurchaseRequisition");//"PURCHASE REQUISITION";
                         break;
                     default:
                         continue;
@@ -262,18 +261,19 @@ kony.apps.coe.ess.Approvals.spa.beautifyEachLaterRequest = function(processedReq
     }
 }
 kony.apps.coe.ess.Approvals.spa.beautifyEachRequest = function(processedRequest) {
+  alert(kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later"));
     try {
         kony.print("---- beautifyEachRequest start ----");
         processedRequest.btnLaterSegment = {
-            "text": "Later",
+            "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later"),//"Later",
             "skin": "sknBtnMob0OBor1DB6C928px"
         };
         processedRequest.btnReject = {
-            "text": "Reject",
+            "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject"),//"Reject",
             "skin": "sknBtnMob0OBorFEADA81pxFSFEADA8"
         };
         processedRequest.btnApprove = {
-            "text": "Approve",
+            "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve"),//"Approve",
             "skin": "sknBtnMob3EBEA3100OFSFFFFFF100O28px"
         };
         processedRequest.lblBorder1 = {
@@ -584,15 +584,16 @@ kony.apps.coe.ess.Approvals.spa.beautifyEachRequest = function(processedRequest)
 
 //Fuction used to beaytify the Response for Desktop web
 kony.apps.coe.ess.Approvals.spa.beautifyEachRequest1 = function(processedRequest) {
+  alert("1"+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later"));
     try {
         kony.print("---- beautifyEachRequest start ----");
-        processedRequest.btnLaterSegment = "Later"
+        processedRequest.btnLaterSegment = {"text" : kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};//"Later"
 
-        processedRequest.btnReject = "Reject";
+        processedRequest.btnReject = {"text" : kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmApprovalRequestDetail.btnReject")};//"Reject";
 
         processedRequest.btnSkip = "Skip";
 
-        processedRequest.btnApprove = "Approve";
+        processedRequest.btnApprove = {"text" : kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmApprovalRequestDetail.btnApprove")};//"Approve";
 
 
         switch (processedRequest.request_type) {
@@ -753,7 +754,7 @@ kony.apps.coe.ess.Approvals.spa.ProcessEachSPARequest = function(request) {
         processedRequest.requestTypeBorderSkin = "";
         processedRequest.ID = request.id;
         processedRequest.isLater = request.IsLater;
-        processedRequest.Audit = "Pending";
+        processedRequest.Audit = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending");
         processedRequest.Auditimage = "edit.png";
       
         

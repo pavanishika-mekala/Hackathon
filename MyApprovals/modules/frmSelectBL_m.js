@@ -242,7 +242,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegRequestDat
                 id: "All",
                 request_name: "All",
                 imgSelected: "close.png"
-            }].concat(data);
+             }].concat(data[0]);//this [0] has to be removed for getting timesheet
             for (var i = 0; i < newData.length; i++) {
                 newData[i].imgSelected = "close.png";
             }
@@ -276,6 +276,18 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegRequestDat
  */
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegStatusData = function() {
     function successCallback(data) {
+      if(null !== data && undefined !== data && " !== data"){
+        for(var i = 0;i<data.length;i++){
+          var statusText = data[i].status_name;
+          if(statusText == "Pending"){
+            data[i].status_name = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")};
+          }else if(statusText == "Approved"){
+            data[i].status_name = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")};
+          }else if(statusText == "Rejected"){
+            data[i].status_name = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")};
+          }
+        }
+      }
         if (data != null && data != "" && data.length > 0) {
             var newData = [{
                 id: "All",

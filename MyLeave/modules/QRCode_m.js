@@ -279,11 +279,16 @@ kony.apps.coe.ess.QRCode.prototype.verifyAppDetails = function() {
 kony.apps.coe.ess.QRCode.prototype.onPostShowOfLogin = function() {
   if(kony.store.getItem("useTouchID") !== true){
   if(kony.apps.coe.ess.QRCode.navigatingThroughQRCode === true){
-    initMbaasApp(function(){kony.sdk.mvvm.LoginAction();kony.store.setItem("isMyLeaveFirstTimeLaunch", false);});
+    //initMbaasApp(function(){
+      kony.sdk.mvvm.LoginAction();
+      kony.store.setItem("isMyLeaveFirstTimeLaunch", false);
+   // });
   }
   else{
     (new kony.apps.coe.ess.QRCode()).getStoredAppConfig();
-    initMbaasApp(function(){kony.store.setItem("isMyLeaveFirstTimeLaunch", false);});
+   // initMbaasApp(function(){
+      kony.store.setItem("isMyLeaveFirstTimeLaunch", false);
+    //});
   }
 }
 };

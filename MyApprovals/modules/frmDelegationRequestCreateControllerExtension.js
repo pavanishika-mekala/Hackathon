@@ -103,7 +103,15 @@ kony.sdk.mvvm.frmDelegationRequestCreateControllerExtension = Class(kony.sdk.mvv
             var formmodel = this.getController().getFormModel();
             formmodel.clear();
             this.getController().getFormModel().formatUI();
-            frmDelegationRequestCreate.segTypeOfRequestList.setData(data);
+           //this code has to be removed for getting timesheet change result to data
+          	var result=[]
+          	for(index in data){
+              if(kony.string.equalsIgnoreCase(data[index]["name"],"LEAVE")){
+                result.push(data[index]);
+              }
+            }
+           //this code has to be removed for getting timesheet change result to data
+            frmDelegationRequestCreate.segTypeOfRequestList.setData(result);
             if(contextData.openInEditMode === true) {
                 var query = "select dl.delegation_group_id as groupId, dl.employee_id as empId, dl.request_type_id as requestTypeId, dl.start_date as startDate, dl.end_date as endDate, dl.comments as comments from delegate dl " + 
                     " where dl.status_id = '2' " +

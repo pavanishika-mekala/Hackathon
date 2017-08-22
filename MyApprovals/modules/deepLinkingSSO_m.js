@@ -8,7 +8,7 @@ kony = kony || {};
 kony.apps = kony.apps || {};
 kony.apps.ess = kony.apps.ess || {};
 kony.apps.ess.deepLinkingSSO = kony.apps.ess.deepLinkingSSO || {};
-kony.apps.ess.deepLinkingSSO.staticUrl = "com.kony.";
+kony.apps.ess.deepLinkingSSO.staticUrl = "com.kone.";
 var appserviceUsername;
 var appservicePassword;
 var applaunchMode;
@@ -102,9 +102,9 @@ kony.apps.ess.deepLinkingSSO.frmDummyPostShow =
         }
     if (kony.apps.ess.deepLinkingSSO.ssotoken) {
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-      initMbaasApp(function() {
+     // initMbaasApp(function() {
         kony.sdk.mvvm.LoginAction("ssoEnable");
-      });
+     // });
     } else {
       frmLogin.show();
     }
@@ -114,14 +114,14 @@ kony.apps.ess.deepLinkingSSO.frmDummyPostShow =
       if (result === true) {
         frmLogin.show();
       } else {
-        initMbaasApp(function() {
+       // initMbaasApp(function() {
           kony.sdk.mvvm.LoginAction("DeepLink");
-        });
+       // });
       }
     } else {
-      initMbaasApp(function() {
+     // initMbaasApp(function() {
         kony.sdk.mvvm.LoginAction("DeepLink");
-      });
+      //});
     }
   }
   kony.print("---frmDummyPostShow:End--------");

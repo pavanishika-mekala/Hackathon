@@ -55,8 +55,12 @@ initApprovalStatusBasesHistory = function() {
     "lblRequestTypes": "TYPE",
     "imgTicks": "imgTicks"
   };
+  var Response = [{TYPE:{"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")},imgTicks: {"src":"select.png"}},{TYPE:{"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")},imgTicks: {"src":"select.png"}},{TYPE:{"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")},imgTicks: {"src":"select.png"}}];
+  kony.apps.coe.ess.globalVariables.statusTypeSegementsDW.setData(Response);
+  /* commented as the text ar hardcoded 
   var Response = [{TYPE:{"text":"Approved"},imgTicks: {"src":"select.png"}},{TYPE:{"text":"Rejected"},imgTicks: {"src":"select.png"}},{TYPE:{"text":"Pending"},imgTicks: {"src":"select.png"}}];
   kony.apps.coe.ess.globalVariables.statusTypeSegementsDW.setData(Response);
+  */
 };
 
 kony.apps.coe.ess.ApprovalHistoryDW.prototype.searchHistory=function(){
@@ -117,15 +121,18 @@ kony.apps.coe.ess.ApprovalHistoryDW.prototype.searchHistory=function(){
     {
       var filterStatusParam=selectedRequestsBasedOnStatus[j].TYPE.text;
       if (filterStatusParam !== null && filterStatusParam !== undefined) {
-        if(filterStatusParam==="Approved")
+        //if(filterStatusParam==="Approved")
+        if(filterStatusParam === kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved"))
         {
           filterStatusParam="0";
         }
-        if(filterStatusParam==="Rejected")
+        //if(filterStatusParam==="Rejected")
+        if(filterStatusParam === kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected"))
         {
           filterStatusParam="1";
         }
-        if(filterStatusParam==="Pending")
+        //if(filterStatusParam==="Pending")
+        if(filterStatusParam === kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending"))
         {
           filterStatusParam="2";
         }
