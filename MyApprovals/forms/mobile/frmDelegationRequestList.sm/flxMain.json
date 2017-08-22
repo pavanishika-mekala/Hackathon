@@ -37,6 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxHeader",
+        "flxHeaderNav",
+        "flxSlider",
         "flxAddNewDelegationRequest",
         "flxRequestsList"
     ],

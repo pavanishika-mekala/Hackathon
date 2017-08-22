@@ -6,6 +6,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         1,
         1,
@@ -18,19 +22,15 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "string",
-        "value": "11.58%"
-    },
     "_skin_": "s4d9c05bcd534a73997edb0a98e909a8",
     "_text_": "MyTime, 2 more",
     "_top_": {
         "type": "string",
-        "value": "6.32%"
+        "value": "7%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "96%"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,7 +42,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 6,
+    "contentalignment": 5,
     "id": "lblRequestTypes",
     "info": null,
     "ipad": {

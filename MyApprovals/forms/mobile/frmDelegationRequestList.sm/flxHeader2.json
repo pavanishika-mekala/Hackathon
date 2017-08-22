@@ -1,9 +1,10 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "50%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -26,17 +27,16 @@
     "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "flxSlider",
         "btnSentByMe",
         "btnReceived"
     ],
@@ -49,7 +49,7 @@
     "kuid": "268a172cc78a4cdc80ce0d7c426ee1e0",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxHeader",
+    "parent": "flxHeaderNav",
     "pf": "frmDelegationRequestList",
     "snapgridsize": 10,
     "snaptogrid": true,

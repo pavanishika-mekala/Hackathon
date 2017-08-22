@@ -407,7 +407,7 @@ Settings.prototype.destroyForms = function(){
     frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.SelectLang");
   	frmSettings.lblSyncDate.text =formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
   }catch(e){
-    kony.print("V e"+e);
+    kony.print("error"+e);
   }
 
 };
@@ -416,7 +416,7 @@ Settings.prototype.destroyForms = function(){
  * faliure in Setting of locale
  */
 Settings.prototype.failureCallBack = function(errCode,errMsg){
-  kony.print("Error in setting locale"+JSOn.stringify(errCode)+JSON.stringify(errMsg));
+  kony.print("Error in setting locale");
 };
 
 Settings.prototype.setLanginPostShow = function(){

@@ -20,7 +20,7 @@
         0,
         0,
         0,
-        0
+        1
     ],
     "_skin_": "se175ccee9874b5ca88c0d301a6e7131",
     "_text_": "",
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "92%"
+        "value": "91%"
     },
     "_wrapping_": 2,
     "android": {
@@ -61,6 +61,7 @@
     "isvisible": true,
     "kuid": "ac72cb30742b4dc894b9e67173abd50f",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxRequestLabel",
     "pf": "frmSearch",
     "texti18n": "i18n.ess.MyApprovals.frmSearch.lblRequestType",

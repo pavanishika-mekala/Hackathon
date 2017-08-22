@@ -6,6 +6,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         1,
         1,
@@ -18,10 +22,6 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "string",
-        "value": "11.58%"
-    },
     "_skin_": "s3b8241cfd8d4107b70cab8aba75986d",
     "_text_": "12 Dec’16 6:30 PM",
     "_top_": {
@@ -29,8 +29,8 @@
         "value": "14.79%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "97%"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,7 +42,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 6,
+    "contentalignment": 5,
     "id": "lblCreatedDate",
     "info": null,
     "ipad": {

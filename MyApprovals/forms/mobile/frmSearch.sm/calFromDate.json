@@ -15,6 +15,10 @@
         "type": "string",
         "value": "40%"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         0,
         0,
@@ -34,21 +38,17 @@
         "8",
         "2016"
     ],
+    "_top_": {
+        "type": "string",
+        "value": "50%"
+    },
     "_width_": {
         "type": "string",
-        "value": "80%"
+        "value": "77%"
     },
     "advview": "default",
     "calendaricon": "calbtn.png",
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "38%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "69.6%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "datecomponents": [
