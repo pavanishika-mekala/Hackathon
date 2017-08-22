@@ -50,7 +50,7 @@ kony.apps.coe.ess.locale.getCurrentLocale = function(currentLocale){
   switch(currentLocale) 
   {
     case "en" : 
-      setCurrentLocale = "en_US";
+      setCurrentLocale = "en";
       break;
     case "nl"  :
       setCurrentLocale = "nl_BE";
@@ -59,7 +59,7 @@ kony.apps.coe.ess.locale.getCurrentLocale = function(currentLocale){
       setCurrentLocale = "fr_BE";
       break;
     default : 
-      setCurrentLocale = "en_US";
+      setCurrentLocale = "en";
       break;
   }
   return setCurrentLocale;

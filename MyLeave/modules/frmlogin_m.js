@@ -566,3 +566,12 @@ kony.apps.coe.ess.frmLogin.userDetailsError = function(err) {
     kony.print(JSON.stringify(err));
     kony.print("kony.apps.coe.ess.frmLogin.userDetailsError  - End");
 };
+
+kony.apps.coe.ess.frmLogin.seti18nText = function(){
+  frmLogin.tbUsername.placeholder=kony.i18n.getLocalizedString("i18n.ess.Login.username");
+  frmLogin.tbPassword.placeholder=kony.i18n.getLocalizedString("i18n.ess.Login.password");
+  frmLogin.lblReconfigure.text=kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmIsLaterSearch.lblReconfigure");
+  frmLogin.lblRememberMe.text=kony.i18n.getLocalizedString("i18n.ess.Login.rememberMe");
+  frmLogin.btnLogin.text=kony.i18n.getLocalizedString("i18n.ess.Login.signin");
+  frmLogin.lblTouchIdText.text=kony.i18n.getLocalizedString("i18n.ess.Login.loginWithTouchId");
+};
