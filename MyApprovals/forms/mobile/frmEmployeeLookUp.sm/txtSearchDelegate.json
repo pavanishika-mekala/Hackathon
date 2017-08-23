@@ -18,7 +18,7 @@
         0,
         0
     ],
-    "_placeholder_": "Search by name",
+    "_placeholder_": "",
     "_skin_": "sf0ca675ae094defa063a7f47accf8e8",
     "_text_": "",
     "_width_": {
@@ -54,6 +54,7 @@
     "name": "kony.ui.TextBox2",
     "parent": "flxSearchDelegate",
     "pf": "frmEmployeeLookUp",
+    "placeholderi18n": "i18n.ess.myApprovals.frmTabListview.SearchByName",
     "placeholderskin": "sd80b0ef6a174f33bf33f5ea667f229d",
     "securetextentry": false,
     "textinputmode": "A",
