@@ -1,5 +1,5 @@
 // -- SDK File : KonySyncLib.js 
-//  --Generated On Mon Jul 10 18:44:17 IST 2017******************* 
+//  --Generated On Wed Apr 05 16:30:40 IST 2017******************* 
 //  **************** Start jsonWriter.js*******************
 //#ifdef iphone
 	//#define KONYSYNC_IOS
@@ -340,7 +340,7 @@ sync.startSession = function(config) {
 	
 	function registerDeviceCallback(serverResponse) {
 		sync.log.trace("Entering registerDeviceCallback");
-		if (!kony.sync.isNullOrUndefined(serverResponse.opstatus) && serverResponse.opstatus != 0) {
+		if (!kony.sync.isNullOrUndefined(serverResponse.opstatus) && serverResponse.opstatus !== 0) {
 			if (!kony.sync.isNullOrUndefined(serverResponse.d)) {
 				sync.log.error("Register Device Response : ", serverResponse); 
 				
@@ -3391,7 +3391,7 @@ if(typeof(kony.sync.blobManager) === "undefined") {
 //Checks whether download response is eligible for chunking or not
 kony.sync.eligibleForChunking = function(result){
 	sync.log.trace("Entering kony.sync.eligibleForChunking");
-	if(!kony.sync.isNull(result.opstatus) && result.opstatus != 0){
+	if(!kony.sync.isNull(result.opstatus) && result.opstatus !== 0){
 		return false;
 	}
 	return (!kony.sync.isNull(result.d) && 
@@ -3662,7 +3662,7 @@ kony.sync.downloadChunks = function(url, serviceParams, payloadId, chunkCount, h
 				}
 			}
 
-			if(!kony.sync.isNull(result.opstatus) && result.opstatus != 0){
+			if(!kony.sync.isNull(result.opstatus) && result.opstatus !== 0){
 				chunkingFailed++;
 				sync.log.error("Error occurred while downloading chunks: Code=" + result.opstatus + ", message=" + result.errmsg);
 				chunkErrorMap[chunkId] = result.errmsg;
@@ -4707,7 +4707,7 @@ kony.sync.checkForRegisterDevice = function(onRegisterSuccessCallback){
 
 	function registerDeviceCallback(serverResponse) {
 		sync.log.trace("Entering registerDeviceCallback");
-		if (!kony.sync.isNullOrUndefined(serverResponse.opstatus) && serverResponse.opstatus != 0) {
+		if (!kony.sync.isNullOrUndefined(serverResponse.opstatus) && serverResponse.opstatus !== 0) {
 			if (!kony.sync.isNullOrUndefined(serverResponse.d)) {
 				sync.log.error("Register Device Response : ", serverResponse);
 				kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onReconciliationError], kony.sync.getServerError(
@@ -4943,7 +4943,7 @@ kony.sync.syncDownloadReconcileScopes = function(serverblob){
 		serverChanges = serverChangesResult;
 		sync.log.info("ServerChanges:", serverChanges);
 
-		if (!kony.sync.isNullOrUndefined(serverChanges.opstatus) && serverChanges.opstatus != 0) {
+		if (!kony.sync.isNullOrUndefined(serverChanges.opstatus) && serverChanges.opstatus !== 0) {
 
 			if (!kony.sync.isNullOrUndefined(serverChanges.d)) {
 				kony.sync.reconcileCompletedCallback(true, kony.sync.getServerError(serverChanges.d, "download"));
@@ -5754,7 +5754,7 @@ kony.sync.applyReconcileDownloadChanges =function(serverblob,filterParams,contex
 		
 		sync.log.info("ServerChanges:", serverChanges);
 		
-		if (!kony.sync.isNullOrUndefined(serverChanges.opstatus) && serverChanges.opstatus != 0) {
+		if (!kony.sync.isNullOrUndefined(serverChanges.opstatus) && serverChanges.opstatus !== 0) {
 			
 			if (!kony.sync.isNullOrUndefined(serverChanges.d)) {
 				kony.sync.reconcileCompletedCallback(true, kony.sync.getServerError(serverChanges.d, "download"));
@@ -7172,7 +7172,7 @@ kony.sync.syncDownloadchangesGetLastSynctime = function(rowItem) {
 			&& kony.sync.currentScope[kony.sync.syncStrategy] !== kony.sync.syncStrategy_OTA ) {
 				recsToBeDeletedAfterUploadForPersistentStrategy(serverChanges);
 		}
-		if (!kony.sync.isNullOrUndefined(serverChanges.opstatus) && serverChanges.opstatus != 0) {
+		if (!kony.sync.isNullOrUndefined(serverChanges.opstatus) && serverChanges.opstatus !== 0) {
 			kony.sync.globalIsDownloadStarted = true;
 			if(kony.sync.isSyncStopped){
 				sync.log.debug("Sync stopped in downloadcallback in opstatus check");		
@@ -8474,7 +8474,7 @@ kony.sync.reconcileForeignKeyForChildren = function(tx,pksetwcs,pkwcs,tablename,
 	for(var j = currentIndex+1; j < endposition;j++){
 	
 		var childPkwcs = [];
-		var childPkset = {};
+		var childPkset = [];
 
 		var childRow = results[j];
 		var childMetaData = childRow.__metadata;
@@ -9537,7 +9537,6 @@ kony.sync.httprequestsession = null;
 
 kony.sync.DDL556to559Update = [];
 kony.sync.DDL559to560Update = [];
-kony.sync.DDL6xto70Update = [];
 
 kony.sync.scopeDict = {};
 
@@ -9717,14 +9716,9 @@ kony.sync.getDeviceID = function () {
 	//#else
 		//#ifdef KONYSYNC_ANDROID
 		if(deviceInfo.APILevel >= 23){
-			try {
-				if(!kony.sync.isNullOrUndefined(deviceInfo.uid)){
-					return deviceInfo.uid;
-				} else {
-					return deviceInfo.deviceid;
-				}
-			} catch(error_device){
-				sync.log.warn("Permission denied to get the IMEI number of the device, returning AndroidID");
+			if(!kony.sync.isNullOrUndefined(deviceInfo.uid)){
+				return deviceInfo.uid;
+			} else {
 				return deviceInfo.deviceid;
 			}
 		}
@@ -11639,10 +11633,6 @@ sync.init = function(on_sync_init_success, on_sync_init_error) {
 			if(kony.sync.checkForUpdate559to560Schema(tx) === false){
 				isError = true;
 			}
-			//Check for Sync Version 6.x
-			if(kony.sync.checkForUpdate6xto70Schema(tx) === false){
-				isError = true;
-			}
         }
 
         function loadSyncScopeSuccess() {
@@ -12210,13 +12200,6 @@ kony.sync.checkForUpdate559to560Schema = function(tx){
 	return kony.sync.executeQueriesInTransaction(tx, kony.sync.DDL559to560Update);
 };
 
-kony.sync.checkForUpdate6xto70Schema = function(tx){
-	// create table named konysyncBLOBSTOREMANAGER if doesn't exist in sync DB.
-	kony.sync.DDL6xto70Update = [
-		"CREATE TABLE IF NOT EXISTS \"konysyncBLOBSTOREMANAGER\" (\"id\" integer not null,\"localPath\" text,\"tableName\"text,\"columnName\" text,\"type\" text,\"state\" integer,\"status\" integer,\"size\" integer,\"retry\" integer,\"lastUpdatedTimeStamp\" TIMESTAMP default CURRENT_TIMESTAMP,primary key (\"id\"))"
-		];
-	return kony.sync.executeQueriesInTransaction(tx, kony.sync.DDL6xto70Update);
-};
 /**
  * Method is used to fetch the records whose binary operation has failed
  * @param isDownload {boolean} true for download/ false for upload
@@ -12579,8 +12562,7 @@ kony.sync.log.ALL = {
 }; 
 
 //Global to maintain current loglevel
-kony.sync.currentLogLevel = kony.sync.log.NONE;
-kony.sync.currentFFILogLevel = kony.sync.log.NONE;
+kony.sync.currentLogLevel = kony.sync.log.ALL;
 
 
 sync.log.trace = function (msg, params) {
@@ -12609,9 +12591,6 @@ sync.log.fatal = function (msg, params) {
 
 kony.sync.logger = function (logLevel, msg, params) {
 	
-	if(kony.sync.currentLogLevel === kony.sync.log.NONE) {
-        return ;
-      }
 	params = (typeof(params) === "undefined") ? "" : params;
 
 	//Stringify object
@@ -12619,17 +12598,17 @@ kony.sync.logger = function (logLevel, msg, params) {
 		params = JSON.stringify(params, null, " ");
 	}
 	//#ifndef KONYSYNC_WINDOWS
-	if (logLevel.value <= kony.sync.currentFFILogLevel.value) {
 		sync.log.invokeKonySyncLogger(logLevel, msg + " " + params);
 	//#else
 		if (logLevel.value >= kony.sync.currentLogLevel.value) {
 			var date = new Date().toLocaleDateString();
 			var time = new Date().toLocaleTimeString();
 			var level = logLevel.code;
+
 			var formattedMessage = "[KonySync][" + level + "][" + date + "][" + time + "] : " + msg + " " + params;
 			kony.print(formattedMessage);
+		}
 	//#endif
-	}
 };
 
 sync.log.invokeKonySyncLogger = function (logLevel, message) {
@@ -12691,42 +12670,34 @@ sync.log.setLogLevel = function (level, logSuccessCallback, logFailureCallback) 
 	switch (level) {
 	case kony.sync.log.NONE:
 		kony.sync.currentLogLevel = kony.sync.log.NONE;
-        kony.sync.currentFFILogLevel = kony.sync.log.NONE;
 		break;
 	case kony.sync.log.TRACE:
-		kony.sync.currentLogLevel = kony.sync.log.TRACE;
-        kony.sync.currentFFILogLevel = kony.sync.log.TRACE_AND_ABOVE;
+		kony.sync.currentLogLevel = kony.sync.log.TRACE_AND_ABOVE;
 		break;
 	case kony.sync.log.DEBUG:
-		kony.sync.currentLogLevel = kony.sync.log.DEBUG;
-        kony.sync.currentFFILogLevel = kony.sync.log.DEBUG_AND_ABOVE;
+		kony.sync.currentLogLevel = kony.sync.log.DEBUG_AND_ABOVE;
 		break;
 	case kony.sync.log.INFO:
-		kony.sync.currentLogLevel = kony.sync.log.INFO;
-        kony.sync.currentFFILogLevel = kony.sync.log.INFO_AND_ABOVE;
+		kony.sync.currentLogLevel = kony.sync.log.INFO_AND_ABOVE;
 		break;
 	case kony.sync.log.WARN:
-		kony.sync.currentLogLevel = kony.sync.log.WARN;
-        kony.sync.currentFFILogLevel = kony.sync.log.WARN_AND_ABOVE;
+		kony.sync.currentLogLevel = kony.sync.log.WARN_AND_ABOVE;
 		break;
 	case kony.sync.log.ERROR:
-		kony.sync.currentLogLevel = kony.sync.log.ERROR;
-        kony.sync.currentFFILogLevel = kony.sync.log.ERROR_AND_ABOVE;
+		kony.sync.currentLogLevel = kony.sync.log.ERROR_AND_ABOVE;
 		break;
 	case kony.sync.log.FATAL:
-		kony.sync.currentLogLevel = kony.sync.log.FATAL;
-        kony.sync.currentFFILogLevel = kony.sync.log.FATAL_AND_ABOVE;
+		kony.sync.currentLogLevel = kony.sync.log.FATAL_AND_ABOVE;
 		break;
 	case kony.sync.log.ALL:
 		kony.sync.currentLogLevel = kony.sync.log.ALL;
-        kony.sync.currentFFILogLevel = kony.sync.log.ALL;
 		break;
 	default :
 		sync.log.error("Failed in setting log level "+ level);
 		kony.sync.verifyAndCallClosure(logFailureCallback, "Failed in setting log level " + level);
 		return;
 	}
-	sync.log.setLogLevelForLoggerEngine(kony.sync.currentFFILogLevel.value);
+  	sync.log.setLogLevelForLoggerEngine(kony.sync.currentLogLevel.value);
 	sync.log.info("Log Level successfully set to " + kony.sync.currentLogLevel.name);
 	kony.sync.verifyAndCallClosure(logSuccessCallback, "Log Level successfully set to " + kony.sync.currentLogLevel.name);
 };
@@ -14483,21 +14454,21 @@ kony.sync.qb_compile = function(query) {
 	var ret = null;
     if ((kony.sync.isParameter)) {
         ret = "";
-		if ((query.operationtype === "insert")) {        
-			var insertstring = "";
-            //#ifdef android
-                insertstring = "insert into ";
-            //#else
-                //#ifdef tabrcandroid
-                insertstring = "insert into ";
-                //#else
-                insertstring = "insert or ignore into ";
-                //#endif
-            //#endif            
+		if ((query.operationtype === "insert")) {           
+			var insertstring =  "insert into ";
             if(query.isPurge === true){
 				if(!kony.sync.isNullOrUndefined(kony.sync.queryStore[query.tablename+"purgeInsert"])){
 					return [kony.sync.queryStore[query.tablename+"purgeInsert"], query.purgeValues];
 				}
+            //#ifdef android
+				insertstring = "insert into ";
+			//#else
+				//#ifdef tabrcandroid
+				insertstring = "insert into ";
+				//#else
+				insertstring = "insert or ignore into ";
+				//#endif
+			//#endif
             }
 			var itable = kony.sync.qb_getparaminsertvalues(query);
             var iv = itable[0];
@@ -15539,7 +15510,7 @@ kony.sync.executeQueriesInTransaction = function(tx, queries){
 //this API is for developers who want to execute custom sql SELECT queries
 sync.executeSelectQuery = function (query, successcallback, errorcallback) {
 	sync.log.trace("Entering sync.executeSelectQuery -> main function");
-	var dbname = kony.sync.getDBName();
+	var dbname = kony.sync.scopes[0][kony.sync.scopeDataSource];
 	var connection = kony.sync.getConnectionOnly(dbname, dbname);
 	var resultItems = [];
 	var isError = false;
@@ -15555,13 +15526,9 @@ sync.executeSelectQuery = function (query, successcallback, errorcallback) {
 			isError = true;
 			return;
 		}
-		// Adding a null check as in some cases resultSet is not null but it does not contains rows.
-		if(!kony.sync.isNullOrUndefined(resultSet) && resultSet.rows ){
-			for (var i = 0; i < resultSet.rows.length; i++) {
-				resultItems[i] = kony.db.sqlResultsetRowItem(tx, resultSet, i);
-			}
+		for (var i = 0; i < resultSet.rows.length; i++) {
+			resultItems[i] = kony.db.sqlResultsetRowItem(tx, resultSet, i);
 		}
-
 	}
 
 	function executeSelectQuerySuccessCallback() {
@@ -16116,7 +16083,7 @@ kony.sync.upgradeSchema = function (callback) {
 	}
 	
 	function schemaUpgradeCallback(serverResponse) {
-		if (!kony.sync.isNullOrUndefined(serverResponse.opstatus) && serverResponse.opstatus != 0) {
+		if (!kony.sync.isNullOrUndefined(serverResponse.opstatus) && serverResponse.opstatus !== 0) {
 			sync.log.error("Schema Upgrade Response : ", serverResponse);
 			if (!kony.sync.isNullOrUndefined(serverResponse.d)) {
 				kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onUpgradeQueriesDownloadErrorKey], kony.sync.getServerError(
@@ -16396,7 +16363,7 @@ sync.isUpgradeRequired = function (config) {
 	}
 	
 	function schemaUpgradeCallback(serverResponse) {
-		if (!kony.sync.isNullOrUndefined(serverResponse.opstatus) && serverResponse.opstatus != 0) {
+		if (!kony.sync.isNullOrUndefined(serverResponse.opstatus) && serverResponse.opstatus !== 0) {
 			sync.log.error("Schema Upgrade Response : ", serverResponse);
 			if (!kony.sync.isNullOrUndefined(serverResponse.d)) {
 				kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onIsUpgradeRequiredErrorKey], kony.sync.getServerError(
@@ -16467,469 +16434,471 @@ kony.sync.isSchemaUpgradeTimeStampEmpty = function(val){
 
 //  **************** Start konySyncServiceProvider.js*******************
 if (typeof(kony.sync) === "undefined") {
-    kony.sync = {};
+	kony.sync = {};
 }
 if (typeof(sync) === "undefined") {
-    sync = {};
+	sync = {};
 }
 
-kony.sync.konyDownloadChanges = function (serverblob, scope, downloadNetworkCallback, isInitialized, schemaUpgradeServerblob) {
-    sync.log.trace("Entering kony.sync.konyDownloadChanges ");
-    if (kony.sync.isSyncStopped) {
-        kony.sync.stopSyncSession();
-        return;
-    }
-    var retries = kony.sync.currentSyncConfigParams[kony.sync.numberOfRetriesKey];
+kony.sync.konyDownloadChanges = function(serverblob, scope, downloadNetworkCallback, isInitialized, schemaUpgradeServerblob) {
+	sync.log.trace("Entering kony.sync.konyDownloadChanges ");
+	if (kony.sync.isSyncStopped) {
+		kony.sync.stopSyncSession();
+		return;
+	}
+	var retries = kony.sync.currentSyncConfigParams[kony.sync.numberOfRetriesKey];
 
-    function downloadNetworkCallbackStatus(status, result) {
-        if (status === 400) {
-            sync.log.trace("Entering kony.sync.konyDownloadChanges->downloadNetworkCallbackStatus");
+	function downloadNetworkCallbackStatus(status, result) {
+		if (status === 400) {
+			sync.log.trace("Entering kony.sync.konyDownloadChanges->downloadNetworkCallbackStatus");
 
-            //fallback when opstatus < 0
-            if (result.opstatus < 0) {
-                sync.log.info("Got result.opstatus:" + result.opstatus + " and result.errcode:" + result.errcode + "setting errcode to opstatus");
-                result.opstatus = result.errcode;
-            }
+			//fallback when opstatus < 0
+			if(result.opstatus < 0){
+				sync.log.info("Got result.opstatus:" + result.opstatus + " and result.errcode:" + result.errcode + "setting errcode to opstatus");
+				result.opstatus = result.errcode;
+			}
 
-            if (kony.sync.eligibleForRetry(result.opstatus, retries)) {
-                retries--;
-                kony.sync.retryServiceCall(kony.sync.getDownloadURL(), result, null, retries, checkForChunking, params);
-            } else {
-                if (kony.sync.eligibleForChunking(result)) {
-                    kony.sync.startChunking(kony.sync.getChunkDownloadURL(), params, result, downloadNetworkCallback);
-                } else {
-                    kony.sync.setSessionID(result);
-                    downloadNetworkCallback(result);
-                }
-            }
-        } else if (status === 300) {
-            sync.log.warn("Got status 300 for Download, Network call Cancelled.");
+			if (kony.sync.eligibleForRetry(result.opstatus, retries)) {
+				retries--;
+				kony.sync.retryServiceCall(kony.sync.getDownloadURL(), result, null, retries, checkForChunking, params);
+			} else {
+				if (kony.sync.eligibleForChunking(result)) {
+					kony.sync.startChunking(kony.sync.getChunkDownloadURL(), params, result, downloadNetworkCallback);
+				} else {
+					kony.sync.setSessionID(result);
+					downloadNetworkCallback(result);
+				}
+			}
+		} else if (status === 300) {
+			sync.log.warn("Got status 300 for Download, Network call Cancelled.");
 			if(!kony.sync.isNullOrUndefined(retries) && (retries > 0)){
-                retries--;
-                var infoObj = {};
-                infoObj.retryOnNetworkCancel = true;
-                sync.log.debug("Retrying the network call for status 300 ");
+				retries--;
+				var infoObj = {};
+				infoObj.retryOnNetworkCancel = true;
+				sync.log.debug("Retrying the network call for status 300 ");
 				if(kony.sync.isNullOrUndefined(result)){
-                    result = kony.sync.getNetworkCancelError();
-                }
-                kony.sync.retryServiceCall(kony.sync.getDownloadURL(), result, infoObj, retries, checkForChunking, params);
-            } else {
-                downloadNetworkCallback(kony.sync.getNetworkCancelError());
-            }
-        }
-    }
+					result = kony.sync.getNetworkCancelError();
+				}
+				kony.sync.retryServiceCall(kony.sync.getDownloadURL(), result, infoObj, retries, checkForChunking, params);
+			} else {
+				downloadNetworkCallback(kony.sync.getNetworkCancelError());
+			}			
+		}
+	}
 
-    function checkForChunking(result, info, retry) {
-        sync.log.trace("Entering kony.sync.konyDownloadChanges->checkForChunking");
-        retries = retry;
-        downloadNetworkCallbackStatus(400, result, info);
-    }
+	function checkForChunking(result, info, retry) {
+		sync.log.trace("Entering kony.sync.konyDownloadChanges->checkForChunking");
+		retries = retry;
+		downloadNetworkCallbackStatus(400, result, info);
+	}
 
-    if (kony.sync.isNullOrUndefined(serverblob)) {
-        serverblob = "";
-    }
+	if (kony.sync.isNullOrUndefined(serverblob)) {
+		serverblob = "";
+	}
 
-    var params = {};
+	var params = {};
 
-    //check for pending chunks
-    kony.sync.checkForChunkingBeforeDownload(serverblob, normaldownloadCallback, downloadNetworkCallback, schemaUpgradeServerblob);
+	//check for pending chunks
+	kony.sync.checkForChunkingBeforeDownload(serverblob, normaldownloadCallback, downloadNetworkCallback, schemaUpgradeServerblob);
 
-    function normaldownloadCallback(payloadId) {
-        sync.log.trace("Entering kony.sync.konyDownloadChanges->normaldownloadCallback");
-        var jsonContext = null;
-        if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncScopeFilter)) {
-            var scopejsonfilter = {
-                "d": {
-                    Filters: kony.sync.currentSyncScopeFilter
-                }
-            };
-            jsonContext = JSON.stringify(scopejsonfilter);
-        }
-        if (isInitialized === false) {
-            kony.sync.downloadClientContext.InitialSync = "true";
-        } else {
-            delete kony.sync.downloadClientContext.InitialSync;
-        }
-        params.clientcontext = kony.sync.downloadClientContext;
-        kony.sync.commonServiceParams(params);
-        params.context = jsonContext;
-        params.enablebatching = "true";
-        params.batchsize = kony.sync.getBatchSize();
-        if (kony.sync.schemaUpgradeDownloadPending) {
-            params.tickcount = schemaUpgradeServerblob;
-            params.uppertickcount = serverblob;
-            if (!kony.sync.isNullOrUndefined(kony.sync.schemaUpgradeContext)) {
-                params.upgradecontext = kony.sync.schemaUpgradeContext;
-            }
-        } else {
-            params.tickcount = serverblob;
-        }
-        params.scopename = kony.sync.currentScope[kony.sync.scopeName];
-        params.strategy = kony.sync.currentScope[kony.sync.syncStrategy];
-        params.instanceid = kony.sync.getInstanceID();
-        params.clientid = kony.sync.getDeviceID();
-        params.appVersion = kony.sync.currentSyncConfigParams.appVersion;
-        params[kony.sync.chunkSizeKey] = kony.sync.getChunkSize();
+	function normaldownloadCallback(payloadId) {
+		sync.log.trace("Entering kony.sync.konyDownloadChanges->normaldownloadCallback");
+		var jsonContext = null;
+		if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncScopeFilter)) {
+			var scopejsonfilter = {
+				"d": {
+					Filters: kony.sync.currentSyncScopeFilter
+				}
+			};
+			jsonContext = JSON.stringify(scopejsonfilter);
+		}
+		if (isInitialized === false) {
+			kony.sync.downloadClientContext.InitialSync = "true";
+		} else {
+			delete kony.sync.downloadClientContext.InitialSync;
+		}
+		params.clientcontext = kony.sync.downloadClientContext;
+		kony.sync.commonServiceParams(params);
+		params.context = jsonContext;
+		params.enablebatching = "true";
+		params.batchsize = kony.sync.getBatchSize();
+		if (kony.sync.schemaUpgradeDownloadPending) {
+			params.tickcount = schemaUpgradeServerblob;
+			params.uppertickcount = serverblob;
+			if (!kony.sync.isNullOrUndefined(kony.sync.schemaUpgradeContext)) {
+				params.upgradecontext = kony.sync.schemaUpgradeContext;
+			}
+		} else {
+			params.tickcount = serverblob;
+		}
+		params.scopename = kony.sync.currentScope[kony.sync.scopeName];
+		params.strategy = kony.sync.currentScope[kony.sync.syncStrategy];
+		params.instanceid = kony.sync.getInstanceID();
+		params.clientid = kony.sync.getDeviceID();
+		params.appVersion = kony.sync.currentSyncConfigParams.appVersion;
+		params[kony.sync.chunkSizeKey] = kony.sync.getChunkSize();
 
-        //include payloadid if it is not null
-        if (!kony.sync.isNull(payloadId)) {
-            params.deletechunkpayloadid = payloadId;
-        }
+		//include payloadid if it is not null
+		if (!kony.sync.isNull(payloadId)) {
+			params.deletechunkpayloadid = payloadId;
+		}
 
-        if (!kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey])) {
-            params.httpconfig = {
-                timeout: kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey]
-            };
-        }
+		if (!kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey])) {
+			params.httpconfig = {
+				timeout: kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey]
+			};
+		}
 
-        if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.sessionTasks]) && !kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.sessionTasks][kony.sync.currentScope[kony.sync.scopeName]])) {
-            params[kony.sync.sessionTaskUploadErrorPolicy] = kony.sync.currentSyncConfigParams[kony.sync.sessionTasks][kony.sync.currentScope[kony.sync.scopeName]][kony.sync.sessionTaskUploadErrorPolicy];
-        }
+		if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.sessionTasks]) &&
+			!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.sessionTasks][kony.sync.currentScope[kony.sync.scopeName]])) {
+			params[kony.sync.sessionTaskUploadErrorPolicy] = kony.sync.currentSyncConfigParams[kony.sync.sessionTasks][kony.sync.currentScope[kony.sync.scopeName]][kony.sync.sessionTaskUploadErrorPolicy];
+		}
 
-        var paramsToSend = null;
-        var currentSyncReturnParamsTemp = kony.sync.currentSyncReturnParams;
-        currentSyncReturnParamsTemp.downloadRequest = params;
-        kony.sync.deleteMapKey(currentSyncReturnParamsTemp, kony.sync.serverDetails);
-        if (kony.sync.globalIsDownloadStarted) {
-            paramsToSend = kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onDownloadStart], currentSyncReturnParamsTemp);
-            kony.sync.globalIsDownloadStarted = false;
-            if (!kony.sync.isNullOrUndefined(paramsToSend)) {
-                params = paramsToSend;
-                kony.sync.downloadClientContext = params.clientcontext;
-            }
-        }
-        currentSyncReturnParamsTemp.downloadRequest = params;
-        kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onBatchProcessingStart], kony.sync.currentSyncReturnParams);
-        if (paramsToSend != null) {
-            params = paramsToSend;
-            kony.sync.downloadClientContext = params.clientcontext;
-        }
+		var paramsToSend = null;
+		var currentSyncReturnParamsTemp = kony.sync.currentSyncReturnParams;
+		currentSyncReturnParamsTemp.downloadRequest = params;
+		kony.sync.deleteMapKey(currentSyncReturnParamsTemp, kony.sync.serverDetails);
+		if (kony.sync.globalIsDownloadStarted) {
+			paramsToSend = kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onDownloadStart], currentSyncReturnParamsTemp);
+			kony.sync.globalIsDownloadStarted = false;
+			if (!kony.sync.isNullOrUndefined(paramsToSend)) {
+				params = paramsToSend;
+				kony.sync.downloadClientContext = params.clientcontext;
+			}
+		}
+		currentSyncReturnParamsTemp.downloadRequest = params;
+		kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onBatchProcessingStart], kony.sync.currentSyncReturnParams);
+		if (paramsToSend != null) {
+			params = paramsToSend;
+			kony.sync.downloadClientContext = params.clientcontext;
+		}
 
-        currentSyncReturnParamsTemp = null;
-        paramsToSend = null;
-        params.clientcontext = JSON.stringify(kony.sync.downloadClientContext);
+		currentSyncReturnParamsTemp = null;
+		paramsToSend = null;
+		params.clientcontext = JSON.stringify(kony.sync.downloadClientContext);
 
-        sync.log.info("Hitting the service with URL " + kony.sync.getDownloadURL(), params);
-        kony.sync.invokeServiceAsync(kony.sync.getDownloadURL(), params, downloadNetworkCallbackStatus, null);
-    }
+		sync.log.info("Hitting the service with URL " + kony.sync.getDownloadURL(), params);
+		kony.sync.invokeServiceAsync(kony.sync.getDownloadURL(), params, downloadNetworkCallbackStatus, null);
+	}
 };
 
-kony.sync.konyUploadChanges = function (changes, uploadNetworkcallback, lastBatch, lastjson) {
-    sync.log.trace("Entering kony.sync.konyUploadChanges");
-    if (kony.sync.isSyncStopped) {
-        kony.sync.stopSyncSession();
-        return;
-    }
-    var results1 = [];
-    var retries = kony.sync.currentSyncConfigParams[kony.sync.numberOfRetriesKey];
-    var jsonLua = null;
-    var json = null;
+kony.sync.konyUploadChanges = function(changes, uploadNetworkcallback, lastBatch, lastjson) {
+	sync.log.trace("Entering kony.sync.konyUploadChanges");
+	if (kony.sync.isSyncStopped) {
+		kony.sync.stopSyncSession();
+		return;
+	}
+	var results1 = [];
+	var retries = kony.sync.currentSyncConfigParams[kony.sync.numberOfRetriesKey];
+	var jsonLua = null;
+	var json = null;
 
-    function uploadNetworkCallbackStatus(status, result, info) {
-        if (status === 400) {
-            sync.log.trace("Entering kony.sync.konyUploadChanges->uploadNetworkCallbackStatus");
+	function uploadNetworkCallbackStatus(status, result, info) {
+		if (status === 400) {
+			sync.log.trace("Entering kony.sync.konyUploadChanges->uploadNetworkCallbackStatus");
 
-            //fallback when opstatus < 0
-            if (result.opstatus < 0) {
-                sync.log.info("Got result.opstatus:" + result.opstatus + " and result.errcode:" + result.errcode + "setting errcode to opstatus");
-                result.opstatus = result.errcode;
-            }
+			//fallback when opstatus < 0
+			if(result.opstatus < 0){
+				sync.log.info("Got result.opstatus:" + result.opstatus + " and result.errcode:" + result.errcode + "setting errcode to opstatus");
+				result.opstatus = result.errcode;
+			}
 
-            if (kony.sync.eligibleForRetry(result.opstatus, retries)) {
-                retries--;
-                kony.sync.retryServiceCall(kony.sync.getUploadURL(), result, info, retries, retryCallback, params);
-            } else {
-                kony.sync.setSessionID(result);
-                uploadNetworkcallback(result, json);
-                results1 = null;
-                jsonLua = null;
-            }
-        } else if (status === 300) {
-            uploadNetworkcallback(kony.sync.getNetworkCancelError(), json);
-        }
-    }
+			if (kony.sync.eligibleForRetry(result.opstatus, retries)) {
+				retries--;
+				kony.sync.retryServiceCall(kony.sync.getUploadURL(), result, info, retries, retryCallback, params);
+			} else {
+				kony.sync.setSessionID(result);
+				uploadNetworkcallback(result, json);
+				results1 = null;
+				jsonLua = null;
+			}
+		} else if (status === 300) {
+			uploadNetworkcallback(kony.sync.getNetworkCancelError(), json);
+		}
+	}
 
-    function retryCallback(result, info, retry) {
-        sync.log.trace("Entering kony.sync.konyUploadChanges->retryCallback");
-        retries = retry;
-        uploadNetworkCallbackStatus(400, result);
-    }
+	function retryCallback(result, info, retry) {
+		sync.log.trace("Entering kony.sync.konyUploadChanges->retryCallback");
+		retries = retry;
+		uploadNetworkCallbackStatus(400, result);
+	}
 
-    if (lastjson === null) {
-        if (!kony.sync.isNullOrUndefined(changes.tables)) {
-            for (var i = 0; i < changes.tables.length; i++) {
-                var tableChange = changes.tables[i];
-                var tableName = tableChange.tableName;
-                if (!kony.sync.isNullOrUndefined(tableChange.changes)) {
-                    for (var j = 0; j < tableChange.changes.length; j++) {
-                        var rowChange = tableChange.changes[j];
-                        if (kony.sync.isNullOrUndefined(rowChange.syncConflict)) {
-                            rowChange.syncConflict = "";
-                        }
-                        var result = {
-                            metadata: {
-                                type: tableName,
-                                uri: changes.uri,
-                                changetype: rowChange.changeType,
-                                syncConflict: rowChange.syncConflict
-                            }
-                        };
-                        if (!kony.sync.isNullOrUndefined(rowChange.fields)) {
-                            var fcount = kony.sync.getArrayCount(rowChange.fields);
-                            for (var k = 0; k < fcount; k++) {
-                                if (rowChange.fields[k] !== "ServerId" && rowChange.fields[k] !== "UpdateId") {
-                                    result[rowChange.fields[k]] = rowChange.values[k];
-                                }
-                            }
-                        }
-                        results1.push(result);
-                    }
-                }
-            }
-        }
-        var moreChangesAvailable = null;
-        if (lastBatch === true) {
-            moreChangesAvailable = false;
-        } else {
-            moreChangesAvailable = true;
-        }
-        jsonLua = {
-            d: {
-                results: results1,
-                sync: "not implemented",
-                scopeName: changes.scopeName,
-                serverBlob: changes.serverblob,
-                clientid: changes.clientid,
-                SequenceNumber: changes.SequenceNumber,
-                moreChangesAvailable: moreChangesAvailable
-            }
-        };
-        json = JSON.stringify(jsonLua);
-    } else {
-        json = lastjson;
-    }
+	if (lastjson === null) {
+		if (!kony.sync.isNullOrUndefined(changes.tables)) {
+			for (var i = 0; i < changes.tables.length; i++) {
+				var tableChange = changes.tables[i];
+				var tableName = tableChange.tableName;
+				if (!kony.sync.isNullOrUndefined(tableChange.changes)) {
+					for (var j = 0; j < tableChange.changes.length; j++) {
+						var rowChange = tableChange.changes[j];
+						if (kony.sync.isNullOrUndefined(rowChange.syncConflict)) {
+							rowChange.syncConflict = "";
+						}
+						var result = {
+							metadata: {
+								type: tableName,
+								uri: changes.uri,
+								changetype: rowChange.changeType,
+								syncConflict: rowChange.syncConflict
+							}
+						};
+						if (!kony.sync.isNullOrUndefined(rowChange.fields)) {
+							var fcount = kony.sync.getArrayCount(rowChange.fields);
+							for (var k = 0; k < fcount; k++) {
+								if (rowChange.fields[k] !== "ServerId" && rowChange.fields[k] !== "UpdateId") {
+									result[rowChange.fields[k]] = rowChange.values[k];
+								}
+							}
+						}
+						results1.push(result);
+					}
+				}
+			}
+		}
+		var moreChangesAvailable = null;
+		if (lastBatch === true) {
+			moreChangesAvailable = false;
+		} else {
+			moreChangesAvailable = true;
+		}
+		jsonLua = {
+			d: {
+				results: results1,
+				sync: "not implemented",
+				scopeName: changes.scopeName,
+				serverBlob: changes.serverblob,
+				clientid: changes.clientid,
+				SequenceNumber: changes.SequenceNumber,
+				moreChangesAvailable: moreChangesAvailable
+			}
+		};
+		json = JSON.stringify(jsonLua);
+	} else {
+		json = lastjson;
+	}
 
-    var params = {};
-    kony.sync.commonServiceParams(params);
-    params.UploadRequest = json;
-    params.scopename = kony.sync.currentScope[kony.sync.scopeName];
-    params.strategy = kony.sync.currentScope[kony.sync.syncStrategy];
-    params.instanceid = kony.sync.getInstanceID();
-    params.clientid = kony.sync.getDeviceID();
-    params.appVersion = kony.sync.currentSyncConfigParams.appVersion;
-    if (kony.sync.forceUpload || kony.sync.forceUploadUpgrade) {
-        params.usehistoryconfig = "true";
-    }
-    if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.sessionTasks]) && !kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.sessionTasks][kony.sync.currentScope[kony.sync.scopeName]])) {
-        params[kony.sync.sessionTaskUploadErrorPolicy] = kony.sync.currentSyncConfigParams[kony.sync.sessionTasks][kony.sync.currentScope[kony.sync.scopeName]][kony.sync.sessionTaskUploadErrorPolicy];
-    }
+	var params = {};
+	kony.sync.commonServiceParams(params);
+	params.UploadRequest = json;
+	params.scopename = kony.sync.currentScope[kony.sync.scopeName];
+	params.strategy = kony.sync.currentScope[kony.sync.syncStrategy];
+	params.instanceid = kony.sync.getInstanceID();
+	params.clientid = kony.sync.getDeviceID();
+	params.appVersion = kony.sync.currentSyncConfigParams.appVersion;
+	if (kony.sync.forceUpload || kony.sync.forceUploadUpgrade) {
+		params.usehistoryconfig = "true";
+	}
+	if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.sessionTasks]) &&
+		!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.sessionTasks][kony.sync.currentScope[kony.sync.scopeName]])) {
+		params[kony.sync.sessionTaskUploadErrorPolicy] = kony.sync.currentSyncConfigParams[kony.sync.sessionTasks][kony.sync.currentScope[kony.sync.scopeName]][kony.sync.sessionTaskUploadErrorPolicy];
+	}
 
-    if (!kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey])) {
-        params.httpconfig = {
-            timeout: kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey]
-        };
-    }
+	if (!kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey])) {
+		params.httpconfig = {
+			timeout: kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey]
+		};
+	}
 
-    params.clientcontext = kony.sync.uploadClientContext;
-    var paramsToSend = null;
-    var currentSyncReturnParamsTemp = kony.sync.currentSyncReturnParams;
-    currentSyncReturnParamsTemp.uploadRequest = params;
-    kony.sync.deleteMapKey(currentSyncReturnParamsTemp, kony.sync.serverDetails);
-    if (kony.sync.isUploadStarted) {
-        paramsToSend = kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onUploadStart], currentSyncReturnParamsTemp);
-        if (paramsToSend != null) {
-            params = paramsToSend;
-            kony.sync.uploadClientContext = params.clientcontext;
-        }
-        kony.sync.isUploadStarted = false;
-    }
+	params.clientcontext = kony.sync.uploadClientContext;
+	var paramsToSend = null;
+	var currentSyncReturnParamsTemp = kony.sync.currentSyncReturnParams;
+	currentSyncReturnParamsTemp.uploadRequest = params;
+	kony.sync.deleteMapKey(currentSyncReturnParamsTemp, kony.sync.serverDetails);
+	if (kony.sync.isUploadStarted) {
+		paramsToSend = kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onUploadStart], currentSyncReturnParamsTemp);
+		if (paramsToSend != null) {
+			params = paramsToSend;
+			kony.sync.uploadClientContext = params.clientcontext;
+		}
+		kony.sync.isUploadStarted = false;
+	}
 
-    currentSyncReturnParamsTemp.uploadRequest = params;
-    paramsToSend = kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onUploadBatchStart], currentSyncReturnParamsTemp);
-    if (!kony.sync.isNullOrUndefined(paramsToSend)) {
-        params = paramsToSend;
-        kony.sync.uploadClientContext = params.clientcontext;
-    }
-    params.clientcontext = JSON.stringify(kony.sync.uploadClientContext);
-    currentSyncReturnParamsTemp = null;
-    paramsToSend = null;
+	currentSyncReturnParamsTemp.uploadRequest = params;
+	paramsToSend = kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onUploadBatchStart], currentSyncReturnParamsTemp);
+	if (!kony.sync.isNullOrUndefined(paramsToSend)) {
+		params = paramsToSend;
+		kony.sync.uploadClientContext = params.clientcontext;
+	}
+	params.clientcontext = JSON.stringify(kony.sync.uploadClientContext);
+	currentSyncReturnParamsTemp = null;
+	paramsToSend = null;
 
-    sync.log.info("Hitting the service with URL : " + kony.sync.getUploadURL(), params);
-    kony.sync.invokeServiceAsync(kony.sync.getUploadURL(), params, uploadNetworkCallbackStatus, null);
+	sync.log.info("Hitting the service with URL : " + kony.sync.getUploadURL(), params);
+	kony.sync.invokeServiceAsync(kony.sync.getUploadURL(), params, uploadNetworkCallbackStatus, null);
 };
 
-kony.sync.konyRegisterDevice = function (registerDeviceCallback) {
-    sync.log.trace("Entering kony.sync.konyRegisterDevice");
-    if (kony.sync.isSyncStopped) {
-        kony.sync.stopSyncSession();
-        return;
-    }
-    var retries = kony.sync.currentSyncConfigParams[kony.sync.numberOfRetriesKey];
+kony.sync.konyRegisterDevice = function(registerDeviceCallback) {
+	sync.log.trace("Entering kony.sync.konyRegisterDevice");
+	if (kony.sync.isSyncStopped) {
+		kony.sync.stopSyncSession();
+		return;
+	}
+	var retries = kony.sync.currentSyncConfigParams[kony.sync.numberOfRetriesKey];
 
-    function registerDeviceCallbackStatus(status, result) {
-        if (status === 400) {
-            sync.log.trace("Entering kony.sync.konyRegisterDevice->registerDeviceCallbackStatus");
+	function registerDeviceCallbackStatus(status, result) {
+		if (status === 400) {
+			sync.log.trace("Entering kony.sync.konyRegisterDevice->registerDeviceCallbackStatus");
 
-            //fallback when opstatus < 0
-            if (result.opstatus < 0) {
-                sync.log.info("Got result.opstatus:" + result.opstatus + " and result.errcode:" + result.errcode + "setting errcode to opstatus");
-                result.opstatus = result.errcode;
-            }
+			//fallback when opstatus < 0
+			if(result.opstatus < 0){
+				sync.log.info("Got result.opstatus:" + result.opstatus + " and result.errcode:" + result.errcode + "setting errcode to opstatus");
+				result.opstatus = result.errcode;
+			}
 
-            if (kony.sync.eligibleForRetry(result.opstatus, retries)) {
-                retries--;
-                kony.sync.retryServiceCall(kony.sync.getRegisterDeviceURL(), result, null, retries, retryCallback, params);
-            } else {
-                kony.sync.setSessionID(result);
-                registerDeviceCallback(result);
-            }
-        } else if (status === 300) {
-            registerDeviceCallback(kony.sync.getNetworkCancelError());
-        }
-    }
+			if (kony.sync.eligibleForRetry(result.opstatus, retries)) {
+				retries--;
+				kony.sync.retryServiceCall(kony.sync.getRegisterDeviceURL(), result, null, retries, retryCallback, params);
+			} else {
+				kony.sync.setSessionID(result);
+				registerDeviceCallback(result);
+			}
+		} else if (status === 300) {
+			registerDeviceCallback(kony.sync.getNetworkCancelError());
+		}
+	}
 
-    function retryCallback(result, info, retry) {
-        sync.log.trace("Entering kony.sync.konyRegisterDevice->retryCallback");
-        retries = retry;
-        registerDeviceCallbackStatus(400, result, info);
-    }
+	function retryCallback(result, info, retry) {
+		sync.log.trace("Entering kony.sync.konyRegisterDevice->retryCallback");
+		retries = retry;
+		registerDeviceCallbackStatus(400, result, info);
+	}
+	var params = {};
+	kony.sync.commonServiceParams(params);
+	params.os = kony.os.deviceInfo().name;
+	params.model = kony.os.deviceInfo().model;
+	params.version = kony.os.deviceInfo().version + "";
+	params.deviceID = kony.sync.getDeviceID();
+	params.userAgent = kony.os.userAgent();
+	params.channel = kony.sync.getChannelName();
+	params.platform = kony.sync.getPlatformName();
+	if (!kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey])) {
+		params.httpconfig = {
+			timeout: kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey]
+		};
+	}
 
-    var params = {};
-    kony.sync.commonServiceParams(params);
-    params.os = kony.os.deviceInfo().name;
-    params.model = kony.os.deviceInfo().model;
-    params.version = kony.os.deviceInfo().version + "";
-    params.deviceID = kony.sync.getDeviceID();
-    params.userAgent = kony.os.userAgent();
-    params.channel = kony.sync.getChannelName();
-    params.platform = kony.sync.getPlatformName();
-    if (!kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey])) {
-        params.httpconfig = {
-            timeout: kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey]
-        };
-    }
+	sync.log.info("Hitting the service with URL :" + kony.sync.getRegisterDeviceURL(), params);
 
-    sync.log.info("Hitting the service with URL :" + kony.sync.getRegisterDeviceURL(), params);
-
-    kony.sync.invokeServiceAsync(kony.sync.getRegisterDeviceURL(), params, registerDeviceCallbackStatus, null);
+	kony.sync.invokeServiceAsync(kony.sync.getRegisterDeviceURL(), params, registerDeviceCallbackStatus, null);
 };
 
-kony.sync.callSchemaUpgradeService = function (schemaUpgradeCallback, scriptsRequired) {
-    sync.log.trace("Entering kony.sync.callSchemaUpgradeService");
-    if (kony.sync.isSyncStopped) {
-        kony.sync.stopSyncSession();
-        return;
-    }
-    var retries = kony.sync.currentSyncConfigParams[kony.sync.numberOfRetriesKey];
+kony.sync.callSchemaUpgradeService = function(schemaUpgradeCallback, scriptsRequired) {
+	sync.log.trace("Entering kony.sync.callSchemaUpgradeService");
+	if (kony.sync.isSyncStopped) {
+		kony.sync.stopSyncSession();
+		return;
+	}
+	var retries = kony.sync.currentSyncConfigParams[kony.sync.numberOfRetriesKey];
 
-    function schemaUpgradeServiceStatus(status, result) {
-        if (status === 400) {
-            sync.log.trace("Entering kony.sync.callSchemaUpgradeService->schemaUpgradeServiceStatus");
+	function schemaUpgradeServiceStatus(status, result) {
+		if (status === 400) {
+			sync.log.trace("Entering kony.sync.callSchemaUpgradeService->schemaUpgradeServiceStatus");
 
-            //fallback when opstatus < 0
-            if (result.opstatus < 0) {
-                sync.log.info("Got result.opstatus:" + result.opstatus + " and result.errcode:" + result.errcode + "setting errcode to opstatus");
-                result.opstatus = result.errcode;
-            }
+			//fallback when opstatus < 0
+			if(result.opstatus < 0){
+				sync.log.info("Got result.opstatus:" + result.opstatus + " and result.errcode:" + result.errcode + "setting errcode to opstatus");
+				result.opstatus = result.errcode;
+			}
 
-            if (kony.sync.eligibleForRetry(result.opstatus, retries)) {
-                retries--;
-                kony.sync.retryServiceCall(kony.sync.getSchemaUpgradeURL(), result, null, retries, retryCallback, params);
-            } else {
-                kony.sync.setSessionID(result);
-                schemaUpgradeCallback(result);
-            }
-        }
-    }
+			if (kony.sync.eligibleForRetry(result.opstatus, retries)) {
+				retries--;
+				kony.sync.retryServiceCall(kony.sync.getSchemaUpgradeURL(), result, null, retries, retryCallback, params);
+			} else {
+				kony.sync.setSessionID(result);
+				schemaUpgradeCallback(result);
+			}
+		}
+	}
 
-    function retryCallback(result, info, retry) {
-        sync.log.trace("Entering kony.sync.callSchemaUpgradeService->retryCallback");
-        retries = retry;
-        schemaUpgradeServiceStatus(400, result, info);
-    }
+	function retryCallback(result, info, retry) {
+		sync.log.trace("Entering kony.sync.callSchemaUpgradeService->retryCallback");
+		retries = retry;
+		schemaUpgradeServiceStatus(400, result, info);
+	}
+	var params = {};
+	kony.sync.commonServiceParams(params);
+	params.clientid = kony.sync.getDeviceID();
+	params.appversion = konysyncClientSyncConfig.Version;
+	params.dbversion = kony.sync.configVersion;
+	params.scriptsrequired = (scriptsRequired === false) ? "false" : "true";
+	var paramsToSend = null;
+	paramsToSend = kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onUpgradeQueriesDownloadStartKey], params);
+	if (!kony.sync.isNullOrUndefined(paramsToSend)) {
+		params = paramsToSend;
+	}
 
-    var params = {};
-    kony.sync.commonServiceParams(params);
-    params.clientid = kony.sync.getDeviceID();
-    params.appversion = konysyncClientSyncConfig.Version;
-    params.dbversion = kony.sync.configVersion;
-    params.scriptsrequired = (scriptsRequired === false) ? "false" : "true";
-    var paramsToSend = null;
-    paramsToSend = kony.sync.verifyAndCallClosure(kony.sync.currentSyncConfigParams[kony.sync.onUpgradeQueriesDownloadStartKey], params);
-    if (!kony.sync.isNullOrUndefined(paramsToSend)) {
-        params = paramsToSend;
-    }
+	if (!kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey])) {
+		params.httpconfig = {
+			timeout: kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey]
+		};
+	}
 
-    if (!kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey])) {
-        params.httpconfig = {
-            timeout: kony.sync.currentSyncConfigParams[kony.sync.networkTimeOutKey]
-        };
-    }
+	sync.log.info("Hitting the service with URL :" + kony.sync.getSchemaUpgradeURL(), params);
 
-    sync.log.info("Hitting the service with URL :" + kony.sync.getSchemaUpgradeURL(), params);
-
-    kony.sync.invokeServiceAsync(kony.sync.getSchemaUpgradeURL(), params, schemaUpgradeServiceStatus, null);
+	kony.sync.invokeServiceAsync(kony.sync.getSchemaUpgradeURL(), params, schemaUpgradeServiceStatus, null);
 };
 
-kony.sync.getServerURL = function () {
+kony.sync.getServerURL = function() {
 
-    sync.log.trace("Entering kony.sync.getServerURL ");
-
-    if (!kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance()) && !kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance().sync) && !kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance().sync.url)) {
-        sync.log.trace("Fetching sync url from mbaas-sdk service docs instance");
-        return kony.sdk.getCurrentInstance().sync.url + "/";
-    }
-
-
-    if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.serverurl)) {
-        return kony.sync.currentSyncConfigParams.serverurl;
-    }
-    var server = "";
-    if (kony.sync.currentSyncConfigParams.issecure === true) {
-        server = "https://" + kony.sync.currentSyncConfigParams.serverhost;
-    } else {
-        server = "http://" + kony.sync.currentSyncConfigParams.serverhost;
-    }
-    if (kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.serverport)) {
-        server = server + ":80";
-    } else if (kony.sync.currentSyncConfigParams.serverport !== "") {
-        server = server + ":" + kony.sync.currentSyncConfigParams.serverport;
-    }
-    if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.authTokenKey])) {
-        return server + "/syncservice/api/v1/" + kony.sync.getAppId() + "/";
-    } else {
-        return server + "/syncservice/resources/";
-    }
+	sync.log.trace("Entering kony.sync.getServerURL ");
+	
+	if(!kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance()) &&
+			!kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance().sync) &&
+				!kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance().sync.url)) {
+		sync.log.trace("Fetching sync url from mbaas-sdk service docs instance");
+		return kony.sdk.getCurrentInstance().sync.url+"/";			
+	}
+		
+	
+	if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.serverurl)) {
+		return kony.sync.currentSyncConfigParams.serverurl;
+	}
+	var server = "";
+	if (kony.sync.currentSyncConfigParams.issecure === true) {
+		server = "https://" + kony.sync.currentSyncConfigParams.serverhost;
+	} else {
+		server = "http://" + kony.sync.currentSyncConfigParams.serverhost;
+	}
+	if (kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.serverport)) {
+		server = server + ":80";
+	} else if (kony.sync.currentSyncConfigParams.serverport !== "") {
+		server = server + ":" + kony.sync.currentSyncConfigParams.serverport;
+	}
+	if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.authTokenKey])) {
+		return server + "/syncservice/api/v1/" + kony.sync.getAppId() + "/";
+	} else {
+		return server + "/syncservice/resources/";
+	}
 };
 
-kony.sync.getUploadURL = function () {
-    sync.log.trace("Entering kony.sync.getUploadURL ");
-    var server = kony.sync.getServerURL();
-    if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.uploadwebcontext)) {
-        return server + kony.sync.currentSyncConfigParams.uploadwebcontext;
-    }
-    return server + "upload";
+kony.sync.getUploadURL = function() {
+	sync.log.trace("Entering kony.sync.getUploadURL ");
+	var server = kony.sync.getServerURL();
+	if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.uploadwebcontext)) {
+		return server + kony.sync.currentSyncConfigParams.uploadwebcontext;
+	}
+	return server + "upload";
 };
 
-kony.sync.getDownloadURL = function () {
-    sync.log.trace("Entering kony.sync.getDownloadURL ");
-    var server = kony.sync.getServerURL();
-    if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.downloadwebcontext)) {
-        return server + kony.sync.currentSyncConfigParams.downloadwebcontext;
-    }
-    return server + "download";
+kony.sync.getDownloadURL = function() {
+	sync.log.trace("Entering kony.sync.getDownloadURL ");
+	var server = kony.sync.getServerURL();
+	if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.downloadwebcontext)) {
+		return server + kony.sync.currentSyncConfigParams.downloadwebcontext;
+	}
+	return server + "download";
 };
 
-kony.sync.getRegisterDeviceURL = function () {
-    sync.log.trace("Entering kony.sync.getRegisterDeviceURL ");
-    var server = kony.sync.getServerURL();
-    return server + "registerdevice";
+kony.sync.getRegisterDeviceURL = function() {
+	sync.log.trace("Entering kony.sync.getRegisterDeviceURL ");
+	var server = kony.sync.getServerURL();
+	return server + "registerdevice";
 };
 
-kony.sync.getSchemaUpgradeURL = function () {
-    sync.log.trace("Entering kony.sync.getSchemaUpgradeURL ");
-    var server = kony.sync.getServerURL();
-    return server + "upgrade";
+kony.sync.getSchemaUpgradeURL = function() {
+	sync.log.trace("Entering kony.sync.getSchemaUpgradeURL ");
+	var server = kony.sync.getServerURL();
+	return server + "upgrade";
 };
 
 
@@ -16937,198 +16906,180 @@ kony.sync.httprequest = null;
 kony.sync.httprequestsinglesession = false;
 //IF user passes his own function instead of using kony.net.invokeServiceAsync
 //this is how it would be called.
-kony.sync.invokeServiceAsync = function (url, params, callback, context) {
-    if (kony.sync.isMbaasEnabled) {
-        kony.sdk.claimsRefresh(claimsRefreshSuccessCallBack, claimsRefreshFailureCallBack);
+kony.sync.invokeServiceAsync = function(url, params, callback, context) {
+	if (kony.sync.isMbaasEnabled) {
+		kony.sdk.claimsRefresh(claimsRefreshSuccessCallBack, claimsRefreshFailureCallBack);
 
-        function claimsRefreshSuccessCallBack() {
-            if (params && params.httpheaders) {
-                var currentClaimToken = kony.sdk.getCurrentInstance().currentClaimToken;
-                if (kony.sync.currentSyncConfigParams[kony.sync.authTokenKey] != currentClaimToken) {
-                    kony.sync.currentSyncConfigParams[kony.sync.authTokenKey] = currentClaimToken;
-                }
-                params.httpheaders["X-Kony-Authorization"] = currentClaimToken;
-                invokeServiceAsyncHelper(url, params, callback, context);
-            }
-        }
+		function claimsRefreshSuccessCallBack() {
+			if (params && params.httpheaders) {
+				var currentClaimToken = kony.sdk.getCurrentInstance().currentClaimToken;
+				if (kony.sync.currentSyncConfigParams[kony.sync.authTokenKey] != currentClaimToken) {
+					kony.sync.currentSyncConfigParams[kony.sync.authTokenKey] = currentClaimToken;
+				}
+				params.httpheaders["X-Kony-Authorization"] = currentClaimToken;
+				invokeServiceAsyncHelper(url, params, callback, context);
+			}
+		}
 
-        function claimsRefreshFailureCallBack(res) {
-            callback(400, res, context);
-        }
-    } else {
-        invokeServiceAsyncHelper(url, params, callback, context);
-    }
+		function claimsRefreshFailureCallBack(res) {
+			callback(400, res, context);
+		}
+	} else {
+		invokeServiceAsyncHelper(url, params, callback, context);
+	}
 
-    function invokeServiceAsyncHelper(url, params, callback, context) {
-        if (kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.invokeServiceFunctionKey])) {
-            //#ifdef KONYSYNC_IOS
-            var deviceInfo = kony.os.deviceInfo();
-            var timeoutValue = 0;
-            var paramsHttpheaders = null;
-            if (kony.sync.isPhonegap || deviceInfo.osversion < 7) {
-                kony.net.invokeServiceAsync(url, params, callback, context);
-            } else {
+	function invokeServiceAsyncHelper(url, params, callback, context) {
+			if (kony.sync.isNull(kony.sync.currentSyncConfigParams[kony.sync.invokeServiceFunctionKey])) {
+				//#ifdef KONYSYNC_IOS
+				var deviceInfo = kony.os.deviceInfo();
+				var timeoutValue = 0;
+				var paramsHttpheaders = null;
+				if (kony.sync.isPhonegap || deviceInfo.osversion < 7) {
+					kony.net.invokeServiceAsync(url, params, callback, context);
+				} else {
 					if(!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY) ) {
 						var response = {'opstatus':1011, 'errmsg':"Device has no WIFI or mobile connectivity. Please try the operation after establishing connectivity."};
-                    callback(400, response, context);
+						callback(400, response, context);
 						return ;
-                }
-                var paramsTable = new kony.net.FormData();
-                for (var key in params) {
-                    if (!kony.sync.isNull(params[key])) {
-                        if (key.toLowerCase() === "httpheaders") {
-                            paramsHttpheaders = params[key];
-                            continue;
-                        }
-                        if (key.toLowerCase() === "httpconfig") {
-                            timeoutValue = kony.sync.tonumber(params[key]["timeout"]);
-                            continue;
-                        }
-                        paramsTable.append((key), (params[key]));
-                    }
-                }
+					}
+					var paramsTable = new kony.net.FormData();
+					for (var key in params) {
+						if (!kony.sync.isNull(params[key])) {
+							if (key === "httpheaders") {
+								paramsHttpheaders = params[key];
+								continue;
+							}
+							if (key === "httpconfig") {
+								timeoutValue = kony.sync.tonumber(params[key]["timeout"]);
+								continue;
+							}
+							paramsTable.append((key), (params[key]));
+						}
+					}
 
-                function createNewHttpRequest(sessionid, paramsHttpheaders, localRequestCallback, url, timeoutValue) {
-                    var httprequest = null;
-                    httprequest = (sessionid === null) ? new kony.net.HttpRequest() : new kony.net.HttpRequest(sessionid);
-                    //
-                    if (timeoutValue !== 0) {
-                        try {
-                            httprequest.timeoutIntervalForRequest = timeoutValue;
-                            httprequest.timeoutIntervalForResource = timeoutValue;
-                        } catch(err){
-                            sync.log.warn("timeout property is not being honoured. Please upgrade the Kony iOS plugin to resolve the issue.");
-                            sync.log.error("error is: " + JSON.stringify(err));
-                        }
-                        
-                    }
-                    //
-                    httprequest.backgroundTransfer = true;
-                    httprequest.onReadyStateChange = localRequestCallback;
-                    httprequest.open(constants.HTTP_METHOD_POST, url);
-                    if (paramsHttpheaders !== null) {
-                        for (var key in paramsHttpheaders) {
-                            httprequest.setRequestHeader(key, paramsHttpheaders[key]);
-                        }
-                    }
-                    var isContentTypeAvailable = false;
-                    if (typeof(paramsHttpheaders) !== 'undefined' && paramsHttpheaders !== null) {
-                        //check for content-type case insensitive
-                        for (var header in paramsHttpheaders) {
-                            if(header !== null && header !=='undefined'){
-                                if (header.toLowerCase() === "content-type")
-                                    isContentTypeAvailable = true
-                            }
-                        }
-                        if (!isContentTypeAvailable) {
-                            httprequest.setRequestHeader("Content-Type", "application/json");
-                        }
-                    }
+					function createNewHttpRequest(sessionid, paramsHttpheaders, localRequestCallback, url, timeoutValue) {
+						var httprequest = null;
+						httprequest = (sessionid === null) ? new kony.net.HttpRequest() : new kony.net.HttpRequest(sessionid);
+						httprequest.backgroundTransfer = true;
+						httprequest.onReadyStateChange = localRequestCallback;
+						httprequest.open(constants.HTTP_METHOD_POST, url);
+						//
+						if (timeoutValue !== 0) {
+							httprequest.timeout = timeoutValue * 1000;
+						}
+						//
+						if (paramsHttpheaders !== null) {
+							for (var key in paramsHttpheaders) {
+								httprequest.setRequestHeader(key, paramsHttpheaders[key]);
+							}
+						}
+						if (paramsHttpheaders === null || typeof(paramsHttpheaders["Content-Type"]) === 'undefined') {
+							httprequest.setRequestHeader("Content-Type", "application/json");
+						}
+						return httprequest;
+					};
+					var httprequest = kony.sync.httprequest;
+					if (null === httprequest) {
+						httprequest = createNewHttpRequest(null, paramsHttpheaders, localRequestCallback, url, timeoutValue);
+						kony.sync.httprequest = httprequest;
+						kony.sync.httprequestsession = httprequest.getSession();
+					} else if (false === kony.sync.httprequestsinglesession) {
+						if (kony.sync.httprequestsession) {
+							httprequest = createNewHttpRequest(kony.sync.httprequestsession, paramsHttpheaders, localRequestCallback, url, timeoutValue);
+							kony.sync.httprequest = httprequest;
+							kony.sync.httprequestsinglesession = true;
+						}
+					} else {
+						httprequest.abort();
+						httprequest.onReadyStateChange = localRequestCallback;
+						httprequest.open(constants.HTTP_METHOD_POST, url);
+					}
+					httprequest.send(paramsTable);
+				}
+				//#else
+				kony.net.invokeServiceAsync(url, params, callback, context);
+				//#endif
+			} else {
+				kony.sync.currentSyncConfigParams[kony.sync.invokeServiceFunctionKey](url, params, callback, context);
+			}
 
-                    return httprequest;
-                };
-                var httprequest = kony.sync.httprequest;
-                if (null === httprequest) {
-                    httprequest = createNewHttpRequest(null, paramsHttpheaders, localRequestCallback, url, timeoutValue);
-                    kony.sync.httprequest = httprequest;
-                    kony.sync.httprequestsession = httprequest.getSession();
-                } else if (false === kony.sync.httprequestsinglesession) {
-                    if (kony.sync.httprequestsession) {
-                        httprequest = createNewHttpRequest(kony.sync.httprequestsession, paramsHttpheaders, localRequestCallback, url, timeoutValue);
-                        kony.sync.httprequest = httprequest;
-                        kony.sync.httprequestsinglesession = true;
-                    }
-                } else {
-                    httprequest.abort();
-                    httprequest.onReadyStateChange = localRequestCallback;
-                    httprequest.open(constants.HTTP_METHOD_POST, url);
-                }
-                httprequest.send(paramsTable);
-            }
-            //#else
-            kony.net.invokeServiceAsync(url, params, callback, context);
-            //#endif
-        } else {
-            kony.sync.currentSyncConfigParams[kony.sync.invokeServiceFunctionKey](url, params, callback, context);
-        }
-
-        function localRequestCallback(httprequest) {
-            if (httprequest.readyState === 4 && httprequest.status === 200) {
+			function localRequestCallback(httprequest) {
+				if (httprequest.readyState === 4 && httprequest.status === 200) {
 					if(kony.sync.isNullOrUndefined(httprequest.response)){
 						httprequest.response = {'opstatus':1012};
 					}					
-                callback(400, httprequest.response, context);
-            } else if (httprequest.readyState === 4) {
-                httprequest.response = {
-                    'opstatus': 1012
-                };
-                callback(400, httprequest.response, context);
-            }
-        }
-    } //end of invokeServiceAsyncHelper
+					callback(400, httprequest.response, context);
+				} else if (httprequest.readyState === 4) {
+					httprequest.response = {
+						'opstatus': 1012
+					};
+					callback(400, httprequest.response, context);
+				}
+			}
+		} //end of invokeServiceAsyncHelper
 };
 
 kony.sync.commonServiceParams = function(params) {
-    sync.log.trace("Entering kony.sync.commonServiceParams ");
-    var httpheaders = {};
+	sync.log.trace("Entering kony.sync.commonServiceParams ");
+	var httpheaders = {};
     if( !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.userid)) && 
         !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.password)) ) {
         params.userid = kony.sync.currentSyncConfigParams.userid;
         params.password = kony.sync.genHash(kony.sync.currentSyncConfigParams[kony.sync.passwordHashingAlgo], kony.sync.currentSyncConfigParams.password);
     }
 	if(!kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance())
-        && !kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance().currentClaimToken)) {
-        sync.log.trace("mbaas sdk instance is alive so adding current claims token");
-        if (!kony.sync.isMbaasEnabled) {
-            kony.sync.isMbaasEnabled = true;
-        }
-        httpheaders["X-Kony-Authorization"] = kony.sdk.getCurrentInstance().currentClaimToken;
-    }
-    else if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams)) {
+		&& !kony.sync.isNullOrUndefined(kony.sdk.getCurrentInstance().currentClaimToken)) {
+		sync.log.trace("mbaas sdk instance is alive so adding current claims token");
+		if (!kony.sync.isMbaasEnabled) {
+			kony.sync.isMbaasEnabled = true;
+		}
+		httpheaders["X-Kony-Authorization"] = kony.sdk.getCurrentInstance().currentClaimToken;
+	}
+	else if (!kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams)) {
 		if(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams[kony.sync.authTokenKey])) {
-            sync.log.trace("Neither Mbaas sdk instance and sync config auth token are not there, so adding userid, password and appid instead of token");
-            params.AppID = kony.sync.getAppId();
-        }
-        else {
-            if (!kony.sync.isMbaasEnabled) {
-                kony.sync.isMbaasEnabled = true;
-            }
-            params.AppID = kony.sync.getAppId();
-            httpheaders["X-Kony-Authorization"] = kony.sync.currentSyncConfigParams[kony.sync.authTokenKey];
-        }
-    }
+			sync.log.trace("Neither Mbaas sdk instance and sync config auth token are not there, so adding userid, password and appid instead of token");
+			params.AppID = kony.sync.getAppId();
+		}
+		else {
+			if (!kony.sync.isMbaasEnabled) {
+				kony.sync.isMbaasEnabled = true;
+			}
+			params.AppID = kony.sync.getAppId();
+			httpheaders["X-Kony-Authorization"] = kony.sync.currentSyncConfigParams[kony.sync.authTokenKey];
+		}
+	}
 	if (!kony.sync.isNullOrUndefined(kony.sync.sessionMap[kony.sync.konySyncSessionID]) &&
 			!kony.sync.isNullOrUndefined(kony.sync.sessionMap[kony.sync.konySyncRequestNumber])) {
-        params.konysyncsessionid = kony.sync.sessionMap[kony.sync.konySyncSessionID];
-        params.konysyncrequestnumber = kony.sync.sessionMap[kony.sync.konySyncRequestNumber];
+		params.konysyncsessionid = kony.sync.sessionMap[kony.sync.konySyncSessionID];
+		params.konysyncrequestnumber = kony.sync.sessionMap[kony.sync.konySyncRequestNumber];
 	}	
-    httpheaders["Content-Type"] = "application/json";
-    params.httpheaders = httpheaders;
+	httpheaders["Content-Type"] = "application/json";
+	params.httpheaders = httpheaders;
 };
 
 kony.sync.setSessionID = function(response) {
-    if (!kony.sync.isNullOrUndefined(response.d) && !kony.sync.isNullOrUndefined(response.d.__session)) {
-        kony.sync.sessionMap[kony.sync.konySyncSessionID] = response.d.__session.id;
-        kony.sync.sessionMap[kony.sync.konySyncRequestNumber] = response.d.__session.requestnumber;
-    }
+	if (!kony.sync.isNullOrUndefined(response.d) && !kony.sync.isNullOrUndefined(response.d.__session)) {
+		kony.sync.sessionMap[kony.sync.konySyncSessionID] = response.d.__session.id;
+		kony.sync.sessionMap[kony.sync.konySyncRequestNumber] = response.d.__session.requestnumber;
+	}
 };
 
 kony.sync.resetSessionVars = function() {
-    kony.sync.sessionMap = {};
+	kony.sync.sessionMap = {};
 };
 
 
 kony.sync.getDownloadBinaryURL = function() {
 	
-    sync.log.trace("Entering kony.sync.getDownloadBinaryURL ");
-    var server = kony.sync.getServerURL();
+	sync.log.trace("Entering kony.sync.getDownloadBinaryURL ");
+	var server = kony.sync.getServerURL();
 	sync.log.trace("server url created -> kony.sync.getDownloadBinaryURL "+server);
-    return server + "downloadBinary";
+	return server + "downloadBinary";
 };
 
 kony.sync.getUploadBinaryURL = function() {
-    sync.log.trace("Entering kony.sync.getUploadBinaryURL ");
-    var server = kony.sync.getServerURL();
+	sync.log.trace("Entering kony.sync.getUploadBinaryURL ");
+	var server = kony.sync.getServerURL();
 	sync.log.trace("server url created -> kony.sync.getUploadBinaryURL "+server);
 	return server + "uploadBinary";	
 }
@@ -17772,7 +17723,7 @@ kony.sync.syncUploadChangesForBatch = function(rowItem, previousUpload, limit) {
 	function uploadAllTransactionSuccess(otaServerChanges, oldJson) {
 		sync.log.trace("Entering kony.sync.syncUploadChangesForBatch->uploadAllTransactionSuccess");
 		sync.log.info("Upload response:", otaServerChanges);
-		if (!kony.sync.isNullOrUndefined(otaServerChanges.opstatus) && otaServerChanges.opstatus != 0){
+		if (!kony.sync.isNullOrUndefined(otaServerChanges.opstatus) && otaServerChanges.opstatus !== 0){
 			if (!kony.sync.isNullOrUndefined(otaServerChanges.d)) {
 				kony.sync.deleteLastUploadRequestWithNewTransaction(deleteLastUploadRequestCallback);
 			} else {
@@ -18500,7 +18451,7 @@ kony.sync.getBatchChanges = function(tx, scope, offset, limit, changeset, lastSe
 					var	childTableNames = currentOperation.Children;
 
 					if(isRoot(currentOperation) === false){
-						var parentsTable = kony.sync.createClone(currentOperation.Parents);
+						var parentsTable = currentOperation.Parents;
 						if(parentsTable ===  undefined){
 							sync.log.info("no parents defined for "+syncTableName+" table with changetype " +changeType );
 							continue;//no parents defined for a child

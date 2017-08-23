@@ -1,8 +1,8 @@
 {
-    "AS_Form_1b0a1bf2600a4eff9a7560f3655296bb": {
-        "id": "AS_Form_1b0a1bf2600a4eff9a7560f3655296bb",
+    "AS_FlexContainer_ba2248c2059f4494a81320280d41df92": {
+        "id": "AS_FlexContainer_ba2248c2059f4494a81320280d41df92",
         "type": "ACTION_SEQUENCE",
-        "name": "onPostShowOfFrmSettings",
+        "name": "actions_English",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
@@ -15,9 +15,9 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__691214d4be0d4d6c8d8f4b856a302193",
+            "id": "ADD_SNIPPET__cfa373ce3a044a478717fade099dcc08",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.settings.getSettingsObject().setLanginPostShow();",
+            "codeSnippet": "kony.apps.coe.ess.settings.getSettingsObject().languageSelection(\"selectit.png\",\"unselectit.png\",\"unselectit.png\",\"en\");",
             "parentId": null,
             "callbackType": null
         }]

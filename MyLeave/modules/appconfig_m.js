@@ -28,7 +28,6 @@ kony.apps.coe.ess.appconfig = {
     isRecurringSupported:true,
    	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",
 	ACFAppID :"MYLEAVE",   
-    isSingleQrCode:true,
     isShowDeepLinkingAppBeforeInstall:false,
     /* variable is used to enable or disable the Team Leave.Currently frmLeaveHome using this Variable.
     If we assign the variable value to false then Team Leave Feature is not Available.
