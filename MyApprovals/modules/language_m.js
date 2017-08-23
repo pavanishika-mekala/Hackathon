@@ -68,12 +68,10 @@ kony.apps.coe.ess.locale.getCurrentLocale = function(currentLocale){
 
 kony.apps.coe.ess.locale.getLocaleInformation = function(){
   var _localeInformation=kony.store.getItem("localeToBeSet");
-  kony.print("_localeInformation : "+_localeInformation+typeof(_localeInformation));
   if (_localeInformation!==null) {
     var localInfo=_localeInformation;
-    kony.print("localInfo: "+localInfo+typeof(localInfo));
     kony.i18n.setCurrentLocaleAsync(localInfo, function(){
-      kony.print("Success in setting locale");}, function(){kony.print("Error in setting locale");}, null);
+    kony.print("Success in setting locale");}, function(){kony.print("Error in setting locale");}, null);
     return localInfo;
   }
   else{ 

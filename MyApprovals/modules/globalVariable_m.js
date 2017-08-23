@@ -95,5 +95,6 @@ kony.apps.coe.ess.globalVariables.updateTabEmployeeID = function()
   kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", "select emp.Id from Employee emp where emp.IsEmployee='1';",successcallback, function(err){alert(JSON.stringify(err));});
 };
 
-
+//bbe-101 menu sync
+kony.apps.coe.ess.globalVariables.lastSyncDate="";
 

@@ -56,10 +56,18 @@ Date.prototype.getMonthNameShort = function(lang) {
 };
 
 Date.locale = {
-    en: {
-        month_names: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-        month_names_short: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    }
+  en: {
+    month_names: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    month_names_short: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  },
+  fr: {
+    month_names: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+    month_names_short: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc']
+  },
+  nl: {
+    month_names: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'],
+    month_names_short: ['Jan', 'Feb', 'Maart', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec']
+  }
 
 };
 /**
@@ -323,4 +331,30 @@ function refreshCureentFormbypassingAsysncParams() {
   var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.application.getCurrentForm().id);
   formController.loadDataAndShowForm({"message":"Async"}) ;
   kony.print("--End refreshCureentFormbypassingAsysnc --");  
+}
+
+
+/*
+ * @Function formatDate
+ * @Param  
+ * @Desc this is used to change the date to dd Mon yyyy based on locale
+ */
+function formatDate(date) {
+  var currDate = date;
+  var currDay = currDate.getDate();
+  var currMonth = currDate.getMonthNameShort(kony.i18n.getCurrentLocale().substring(0, 2));//months[currDate.getMonth()];
+  var currYear = currDate.getFullYear();
+  var currTime = currDate.toHHMMSS(":");
+  return currDay + " " + currMonth + " " + currYear;
+}
+
+/*
+ * @Function formatTime
+ * @Param  
+ * @Desc this is used to get the time HH:MM 
+ */
+function formatTime(date) {
+  var currDate = date;
+  var currTime = currDate.toHHMMSS(":");
+  return currTime.substring(0, 5);
 }

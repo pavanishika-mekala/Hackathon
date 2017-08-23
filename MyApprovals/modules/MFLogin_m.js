@@ -229,31 +229,35 @@ function userDetailsSucess(response) {
                             kony.apps.coe.ess.frmLogin.afterloginSuccess();
                             //After Sync Session is Successfully completed, Check for initialize & show landing form
                             var updateSyncDate = function() {
-                                var months = [
-                                    "Jan", "Feb", "Mar",
-                                    "Apr", "May", "Jun", "Jul",
-                                    "Aug", "Sep", "Oct",
-                                    "Nov", "Dec"
-                                ];
+                              kony.apps.coe.ess.globalVariables.lastSyncDate=new Date();
+//                                 var months = [
+//                                     "Jan", "Feb", "Mar",
+//                                     "Apr", "May", "Jun", "Jul",
+//                                     "Aug", "Sep", "Oct",
+//                                     "Nov", "Dec"
+//                                 ];
 
-                                var currDate = new Date();
-                                var currDay = currDate.getDate();
-                                var currMonth = months[currDate.getMonth()];
-                                var currYear = currDate.getFullYear();
-                                var currTime = currDate.toHHMMSS(":");
-                                var suffix;
-                                if (parseInt(currDate.getHours()) >= 12) {
-                                    suffix = "PM";
-                                } else {
-                                    suffix = "AM";
-                                }
-                                //#ifndef windows8
-                                if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
-                                    kony.application.getCurrentForm().lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
-                                    kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
-                                }
-                                //#endif
-                            };
+//                                 var currDate = new Date();
+//                                 var currDay = currDate.getDate();
+//                                 var currMonth = currDate.getMonthNameShort(kony.store.getItem("localeToBeSet"));//months[currDate.getMonth()];
+//                                 var currYear = currDate.getFullYear();
+//                                 var currTime = currDate.toHHMMSS(":");
+//                                 var suffix;
+//                                 if (parseInt(currDate.getHours()) >= 12) {
+//                                     suffix = "PM";
+//                                 } else {
+//                                     suffix = "AM";
+//                                 }
+//                               	//bbe-101 menu sync
+//                               	kony.apps.coe.ess.globalVariables.lastSyncDate=currDay + " " + currMonth + " " + currYear;
+// 								kony.apps.coe.ess.globalVariables.lastSyncTime= currTime.substring(0, 5);// + " " + suffix;
+//                                 //#ifndef windows8
+//                                 if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
+//                                     kony.application.getCurrentForm().lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
+//                                     kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5); //+ " " + suffix;
+//                                 }
+//                                 //#endif
+                            }
                             updateSyncDate();
                             if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
                                 kony.apps.coe.ess.globalVariables.updateTabEmployeeID(); // open approvals dashboard form

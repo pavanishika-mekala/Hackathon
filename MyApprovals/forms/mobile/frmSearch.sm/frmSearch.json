@@ -32,11 +32,11 @@
         "flxSearch"
     ],
     "containerweight": 100,
-    "currentLocale": "en",
+    "currentLocale": "fr_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone6",
+    "device": "GalaxyS5",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "footer": "frmSearch_footer",
@@ -81,11 +81,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "iphone",
-    "prevDevice": "iPhone6",
+    "platform": "android",
+    "prevDevice": "iPhone4",
     "prevPlatform": "iphone",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone6",
+    "shellCSS": "and_GalaxyS5",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
