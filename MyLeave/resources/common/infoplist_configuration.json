@@ -1,20 +1,5 @@
-
 {
-/*
-    "NSAppTransportSecurity" :
-    {
-        "NSAllowsArbitraryLoads" : true ,
-        "NSExceptionDomains" :
-            {
-                "example.com" :
-                    {
-                        "NSIncludesSubdomains" : true ,
-                        "NSExceptionAllowsInsecureHTTPLoads" : true
-                    }
-            }
-    } ,
- 
-    "NSCameraUsageDescription" : "This is a dummy description"
-*/
+	"LSApplicationQueriesSchemes" : [
+		"myLeaveengie","myTimeengie","mypayengie","myProfileengie","myExpensesengie","myApprovalsengie"
+	]
 }
-

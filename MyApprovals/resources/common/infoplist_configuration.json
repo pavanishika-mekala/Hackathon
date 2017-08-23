@@ -1,7 +1,5 @@
 {
 	"LSApplicationQueriesSchemes" : [
-		"myLeave","myTime","myPay","myProfile","myExpenses","myApprovals"
+		"myLeaveengie","myTimeengie","mypayengie","myProfileengie","myExpensesengie","myApprovalsengie"
 	]
 }
-
-
