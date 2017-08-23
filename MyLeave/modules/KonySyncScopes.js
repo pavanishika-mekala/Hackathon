@@ -43,8 +43,8 @@ Notifications.reset = function(successcallback,errorcallback){
 
 // **********************************Start Scope definition************************
 konysyncClientSyncConfig ={
-     "AppID": "100000002f852f9b9",
-     "Version": "80d35f15eb8e81e8a72219996b67a34f761810e18be66a68e522bdc1ce8b3286",
+     "AppID": "10000473715010d0b",
+     "Version": "9c0349be663ccc3108c4af1882ceb497ea9dc0da0da2cffb8d9cc0346da308e7",
      "ArrayOfSyncScope": [
           {
                "ScopeName": "Employee",
@@ -520,8 +520,8 @@ konysyncClientSyncConfig ={
                     }
                ],
                "Strategy": "OTA_SYNC",
-               "ScopeDatabaseName": "100000002f852f9b9",
-               "DataSource": "b66987d8-93f4-42d2-8485-74a049499092"
+               "ScopeDatabaseName": "10000473715010d0b",
+               "DataSource": "27621049-049f-4a61-b74e-d3308961a128"
           },
           {
                "ScopeName": "MYLEAVE",
@@ -1096,8 +1096,8 @@ konysyncClientSyncConfig ={
                     }
                ],
                "Strategy": "OTA_SYNC",
-               "ScopeDatabaseName": "100000002f852f9b9",
-               "DataSource": "0e062532-31b4-4816-ba44-23ba12a0dd0c"
+               "ScopeDatabaseName": "10000473715010d0b",
+               "DataSource": "0097e117-3c28-4e6a-95ae-a147a14ba2b8"
           },
           {
                "ScopeName": "Notifications",
@@ -1212,21 +1212,21 @@ konysyncClientSyncConfig ={
                     }
                ],
                "Strategy": "OTA_SYNC",
-               "ScopeDatabaseName": "100000002f852f9b9",
-               "DataSource": "f8b0857c-56f4-474e-9dbd-81ca7be58cef"
+               "ScopeDatabaseName": "10000473715010d0b",
+               "DataSource": "1c4da841-44b2-4b5b-885c-2d00dd9b64a8"
           }
      ],
      "ArrayOfDataSource": [
           {
-               "ID": "b66987d8-93f4-42d2-8485-74a049499092",
+               "ID": "27621049-049f-4a61-b74e-d3308961a128",
                "type": "MIDDLEWARE"
           },
           {
-               "ID": "0e062532-31b4-4816-ba44-23ba12a0dd0c",
+               "ID": "0097e117-3c28-4e6a-95ae-a147a14ba2b8",
                "type": "MIDDLEWARE"
           },
           {
-               "ID": "f8b0857c-56f4-474e-9dbd-81ca7be58cef",
+               "ID": "1c4da841-44b2-4b5b-885c-2d00dd9b64a8",
                "type": "MIDDLEWARE"
           }
      ]

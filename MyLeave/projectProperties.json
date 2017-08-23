@@ -169,12 +169,12 @@
     "createdVizVersion": "7.1.0",
     "createdgaversion": "7.0.0",
     "currentgaversion": "7.3.0.7",
-    "defaultlocalekey": "en_US",
+    "defaultlocalekey": "en",
     "defaulttheme": "defaultTheme",
     "desktopstartupformkey": "frmLoginDeskDW",
     "desktopwebbasefontsize": "12",
     "enableCordova": false,
-    "enableIdForAutomation": true,
+    "enableIdForAutomation": false,
     "enableactionbar": false,
     "export.type": "studioviz",
     "ide_appEvents": {
@@ -193,13 +193,14 @@
     "mfappguid": {
         "147abad9-e5d0-4108-ab0b-70743455dc49": "3b9f022b-3d82-4ae9-8610-cf6afbd04c1b",
         "5d005816-04e8-44ce-8f0b-15bfdecddcd2": "71a19a4c-1cfa-4ead-8a30-d8ec500621ff",
-        "68dce0d6-ca64-4db3-a594-a8d2745feb91": "93920d6f-6300-4030-b15c-8bc090211c97"
+        "68dce0d6-ca64-4db3-a594-a8d2745feb91": "93920d6f-6300-4030-b15c-8bc090211c97",
+        "9fd52ffe-5103-4bd4-9032-78d6a5fd116a": "15010d0b-b309-4d84-baf9-cc8cf102acba"
     },
     "mwaddrkey": "",
     "mwhttpsportkey": "",
     "mwportkey": "",
     "nativeContainerProperties": {
-        "isModified": true,
+        "isModified": false,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false

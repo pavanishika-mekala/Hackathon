@@ -183,4 +183,91 @@ Settings.prototype.preShowTab = function() {
 	} else {
       frmSettings.imgToggleButton.src = "off.png";
     }     
-}
+};
+
+/**
+ *  @ Author  : Vaishali Kammeta
+ *  @ Desc : changing application locale en,fr_BE and nl_BE
+ */
+Settings.prototype.languageSelection = function(src1,src2,src3,Sellocale){
+  //set the selected language to all forms
+  kony.i18n.setCurrentLocaleAsync(Sellocale,kony.apps.coe.ess.settings.getSettingsObject().destroyForms,kony.apps.coe.ess.settings.getSettingsObject().failureCallBack, null);
+  //store the language selected in device storage
+  kony.store.setItem("localeToBeSet",Sellocale);  
+  frmSettings.imgEnglish.src = src1;
+  frmSettings.imgFrench.src = src2;
+  frmSettings.imgNederlands.src = src3;
+};
+
+/**
+ * To destroy all the forms to refresh the locale when navigated to the screen
+ */
+Settings.prototype.destroyForms = function(){
+  try{
+    frmApprovalHome.destroy();
+    frmApprovalRequestDetail.destroy();
+    frmAudit.destroy();
+    frmAuditTrail.destroy();
+    frmDelegationRequestCreate.destroy();
+    frmDelegationRequestDetails.destroy();
+    frmDelegationRequestList.destroy();
+    frmEmployeeLookUp.destroy();
+    frmFullDetails.destroy();
+    frmHamburger.destroy();
+    frmIsLaterSearch.destroy();
+    frmLogin.destroy();
+    frmMultiSelection.destroy();
+    frmNotificationsList.destroy();
+    frmPdfReader.destroy();
+    frmRequestedList.destroy();
+    frmSearch.destroy();
+    frmSelect.destroy();
+    frmStartUp.destroy();
+    frmSettings.lblHeader.text = kony.i18n.getLocalizedString("i18n.ess.common.Settings");
+    frmSettings.lblShowFirst.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.lblShowFirst");
+    frmSettings.lblPushNotification.text = kony.i18n.getLocalizedString("18n.ess.MyApprovals.frmSettings.lblPushNotification.text");
+    frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.resetDBText");
+    frmSettings.btnReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.reset");
+    frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.SelectLang");
+  }catch(e){
+    kony.print("V e"+e);
+  }
+
+};
+
+/*
+ * faliure in Setting of locale
+ */
+Settings.prototype.failureCallBack = function(errCode,errMsg){
+  kony.print("Error in setting locale"+JSON.stringify(errCode)+JSON.stringify(errMsg));
+};
+
+Settings.prototype.setLanginPostShow = function(){
+  var selecLang = kony.store.getItem("localeToBeSet");
+  if(null !== selecLang){
+    kony.apps.coe.ess.settings.getSettingsObject().getSelectedLocale(selecLang,true);
+  }else{
+    kony.apps.coe.ess.settings.getSettingsObject().getSelectedLocale(kony.i18n.getCurrentDeviceLocale(),false);
+  }
+};
+
+Settings.prototype.getSelectedLocale = function(selecLang,flag){
+  if(false === flag){
+    selecLang = kony.apps.coe.ess.locale.getSelectedLocale(selecLang);
+  }
+  if(selecLang == "en"){
+    kony.apps.coe.ess.settings.getSettingsObject().setImage("selectit.png","unselectit.png","unselectit.png");
+  }else if(selecLang == "fr_BE"){
+    kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","selectit.png","unselectit.png");
+  }else if(selecLang == "nl_BE"){
+    kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","unselectit.png","selectit.png");
+  }else{
+    kony.apps.coe.ess.settings.getSettingsObject().setImage("unselectit.png","unselectit.png","unselectit.png");
+  }
+};
+
+Settings.prototype.setImage = function(src1,src2,src3){
+  frmSettings.imgEnglish.src = src1;
+  frmSettings.imgFrench.src = src2;
+  frmSettings.imgNederlands.src = src3;
+};
