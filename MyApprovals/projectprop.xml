@@ -53,7 +53,7 @@
     <attributes name="win8bgagentnamespace" value=""/>
     <attributes name="apmgestureswipe" value="true"/>
     <attributes name="appnamekey" value="MyApprovals"/>
-    <attributes name="currentgaversion" value="7.3.0.GA_v201707211605_r8"/>
+    <attributes name="currentgaversion" value="7.3.0.GA_v201704051416"/>
     <attributes name="wp10sharedUserCertificates" value="false"/>
     <attributes name="winphone_allowselfsignedcertificate" value="None"/>
     <attributes name="SET_TIME" value="false"/>
@@ -122,7 +122,7 @@
     <attributes name="wp10pfxkey" value=""/>
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="MOUNT_FORMAT_FILESYSTEMS" value="false"/>
-    <attributes name="lastmodifiedtime" value="1503385337961"/>
+    <attributes name="lastmodifiedtime" value="1503556407831"/>
     <attributes name="wp10microphone" value="false"/>
     <attributes name="ID_REQ_NFC" value="false"/>
     <attributes name="devicemsg" value="This device is currently not supported"/>
@@ -256,7 +256,7 @@
     <attributes name="DUMP" value="false"/>
     <attributes name="WRITE_SYNC_SETTINGS" value="false"/>
     <attributes name="WRITE_GSERVICES" value="false"/>
-    <attributes name="iphoneurlscheme" value="myApprovals"/>
+    <attributes name="iphoneurlscheme" value="myApprovalsengie"/>
     <attributes name="CLEAR_APP_CACHE" value="false"/>
     <attributes name="enableIdForAutomation" value="false"/>
     <attributes name="READ_FRAME_BUFFER" value="false"/>
