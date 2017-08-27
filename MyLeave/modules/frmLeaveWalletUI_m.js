@@ -24,7 +24,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI = function(frmname, widgets, data) {
   var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
   // Calculate full weeks to nearest Thursday
   var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
-  weekNo = Number(weekNo).tofixed(); // as weekno is coming as 34.0
+  weekNo = Number(weekNo).toFixed(); // as weekno is coming as 34.0
   var yearToShow = curntDate.getFullYear();
   this.frmname[this.widgets.lblTop].text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveWallet.Y")+yearToShow+" - "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveWallet.W")+weekNo;
   //this.frmname[this.widgets.lblTop].text = "FY" + dateToshow + "-" + ((curntDate.getFullYear()+1).toString()).slice(2, 4);
@@ -313,7 +313,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "left": "61%",
         "width": "40%",
         "height": "15%",
-        "text": (Number(data[i].LEAVEBALANCE)).toFixed(),
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
         "zIndex": 2,
         isVisible: true,
       }, {
@@ -331,7 +331,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "left": "61%",
         "width": "40%",
         "height": "15%",
-        "text": (Number(data[i].LEAVEBALANCE)).toFixed(),
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
         "zIndex": 2,
         isVisible: true,
       }, {
@@ -349,7 +349,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "left": "61%",
         "width": "40%",
         "height": "15%",
-        "text": (Number(data[i].LEAVEBALANCE)).toFixed(),
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
         "zIndex": 2,
         isVisible: true,
       }, {
@@ -367,7 +367,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "left": "61%",
         "width": "40%",
         "height": "15%",
-        "text": (Number(data[i].LEAVEBALANCE)).toFixed(),
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
         "zIndex": 2,
         isVisible: true,
       }, {
@@ -681,7 +681,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createChartJSObjectAcc = funct
       },
 
       "data": {
-        "Accounts": [Number(data.LEAVETAKEN), Number(data.LEAVEBALANCE),5],
+        "Accounts": [Number(data.LEAVETAKEN), Number(data.LEAVEBALANCE),5],//FIXME static variable 5
       },
 
       "rowNames": {
