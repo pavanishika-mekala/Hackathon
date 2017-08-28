@@ -280,11 +280,11 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegStatusData
         for(var i = 0;i<data.length;i++){
           var statusText = data[i].status_name;
           if(statusText == "Pending"){
-            data[i].status_name = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")};
+            data[i].status_name = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending");
           }else if(statusText == "Approved"){
-            data[i].status_name = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")};
+            data[i].status_name = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved");
           }else if(statusText == "Rejected"){
-            data[i].status_name = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")};
+            data[i].status_name = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected");
           }
         }
       }
