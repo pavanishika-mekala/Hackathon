@@ -8,7 +8,7 @@ kony = kony || {};
 kony.apps = kony.apps || {};
 kony.apps.ess = kony.apps.ess || {};
 kony.apps.ess.deepLinkingSSO = kony.apps.ess.deepLinkingSSO || {};
-kony.apps.ess.deepLinkingSSO.staticUrl = "com.kone.";
+kony.apps.ess.deepLinkingSSO.staticUrl = "com.engie.";//com.engie.eTimeSheetMyApprovals
 var appserviceUsername;
 var appservicePassword;
 var applaunchMode;
@@ -167,9 +167,9 @@ kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick = function(status) {
             if ((appCheckerObject === null) || (appCheckerObject === undefined))
                 appCheckerObject = new AppChecker.AppChecker();
             var returnedValue = false;
-            returnedValue = appCheckerObject.isAppExist(status+"engie" + "://");
+            returnedValue = appCheckerObject.isAppExist(status + "://");
             if (returnedValue === true) {
-                kony.application.openURL(status+"engie" + "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus);
+                kony.application.openURL(status+ "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus);
             } else {
                 if (status == "myPay") {
                     url = kony.apps.coe.ess.appconfig.myPayUrl;
@@ -187,20 +187,20 @@ kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick = function(status) {
         } else if (kony.os.deviceInfo().name === "android") {
             var changeStatus = "" + status;
             changeStatus = changeStatus.toLowerCase();
-            var modifiedAppName = "ess" + changeStatus + "mobile";
-            var appstoreUrl = kony.apps.ess.deepLinkingSSO.staticUrl + modifiedAppName;
+          //  var modifiedAppName = "ess" + changeStatus + "mobile";
+            //var appstoreUrl = kony.apps.ess.deepLinkingSSO.staticUrl + modifiedAppName;
             var verticalappsUrl = kony.apps.ess.deepLinkingSSO.staticUrl + changeStatus;
-            var checkifExistObject = new AppCheckerAndroid.checkifExist(appstoreUrl);
-            var appstoreReturnedValue = checkifExistObject.appInstalledOrNot();
+            //var checkifExistObject = new AppCheckerAndroid.checkifExist(appstoreUrl);
+            //var appstoreReturnedValue = checkifExistObject.appInstalledOrNot();
             var checkifExistObject1 = new AppCheckerAndroid.checkifExist(verticalappsUrl);
             var verticalAppsReturnedValue = checkifExistObject1.appInstalledOrNot();
-            if (appstoreReturnedValue === true || verticalAppsReturnedValue === true) {
+            if (/*appstoreReturnedValue === true ||*/ verticalAppsReturnedValue === true) {
                 url = status + "://" + status + "." + "com";
                 kony.application.openURL(url + "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus);
             } else {
-                kony.application.openURL("https://play.google.com/store/apps/details?id=" + appstoreUrl);
+                //kony.application.openURL("https://play.google.com/store/apps/details?id=" + appstoreUrl);
             }
-            checkifExistObject = null;
+            //checkifExistObject = null;
             checkifExistObject1 = null;
         }
     }
@@ -228,13 +228,13 @@ kony.apps.ess.deepLinkingSSO.appExistedOrNot = function() {
         var playStoreAppReturnedValue = false;
         var verticalAppReturnedValue = false;
         if (kony.os.deviceInfo().name === "iPad" || kony.os.deviceInfo().name === "iPhone") {
-            status = appCheckerObject.isAppExist(kony.apps.coe.ess.appconfig.listOfApps[i]+"engie" + "://");
+            status = appCheckerObject.isAppExist(kony.apps.coe.ess.appconfig.listOfApps[i] + "://");
         } else if (kony.os.deviceInfo().name === "android") {
             var changeUrl = "" + kony.apps.coe.ess.appconfig.listOfApps[i].toLowerCase();
-            var playStoreUrl = kony.apps.ess.deepLinkingSSO.staticUrl + "ess" + changeUrl + "mobile";
+           // var playStoreUrl = kony.apps.ess.deepLinkingSSO.staticUrl + "ess" + changeUrl + "mobile";
             var verticalAppsUrl = kony.apps.ess.deepLinkingSSO.staticUrl + changeUrl;
-            var checkifExistObject = new AppCheckerAndroid.checkifExist(playStoreUrl);
-            playStoreAppReturnedValue = checkifExistObject.appInstalledOrNot();
+           // var checkifExistObject = new AppCheckerAndroid.checkifExist(playStoreUrl);
+           // playStoreAppReturnedValue = checkifExistObject.appInstalledOrNot();
             var checkifExistObject1 = new AppCheckerAndroid.checkifExist(verticalAppsUrl);
             verticalAppReturnedValue = checkifExistObject1.appInstalledOrNot();
         }
@@ -256,7 +256,7 @@ kony.apps.ess.deepLinkingSSO.appExistedOrNot = function() {
                     }
                 }
                 break;
-            case "myTime":
+            case "eTimeSheetMyTime":
                 if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
                     if (status === true || playStoreAppReturnedValue === true || verticalAppReturnedValue === true) {
                         listOfAvailableApps.push({
@@ -307,7 +307,7 @@ kony.apps.ess.deepLinkingSSO.appExistedOrNot = function() {
                     }
                 }
                 break;
-            case "myLeave":
+            case "eTimeSheetMyLeave":
                 if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
                     if (status === true || playStoreAppReturnedValue === true || verticalAppReturnedValue === true) {
                         listOfAvailableApps.push({
