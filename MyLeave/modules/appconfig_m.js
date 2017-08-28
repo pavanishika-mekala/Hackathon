@@ -13,7 +13,7 @@ kony.apps.coe.ess.appconfig = {
     appsecret: "e194b44975e97b29b220bbc4128acbb8",
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
 	identityServiceName:"ESSIDENTITY",
-    listOfApps:["myProfile", "myTime", "myPay", "myExpenses", "myApprovals"],
+    listOfApps:["myProfile", "eTimeSheetMyTime", "myPay", "myExpenses", "eTimeSheetMyApprovals"],
     appversion : "v3.1.1",
   	isDemo : false,
     isSingleQrCode: true,

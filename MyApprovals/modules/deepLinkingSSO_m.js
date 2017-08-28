@@ -189,7 +189,7 @@ kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick = function(status) {
             changeStatus = changeStatus.toLowerCase();
           //  var modifiedAppName = "ess" + changeStatus + "mobile";
             //var appstoreUrl = kony.apps.ess.deepLinkingSSO.staticUrl + modifiedAppName;
-            var verticalappsUrl = kony.apps.ess.deepLinkingSSO.staticUrl + changeStatus;
+            var verticalappsUrl = kony.apps.ess.deepLinkingSSO.staticUrl + status;
             //var checkifExistObject = new AppCheckerAndroid.checkifExist(appstoreUrl);
             //var appstoreReturnedValue = checkifExistObject.appInstalledOrNot();
             var checkifExistObject1 = new AppCheckerAndroid.checkifExist(verticalappsUrl);
@@ -232,7 +232,7 @@ kony.apps.ess.deepLinkingSSO.appExistedOrNot = function() {
         } else if (kony.os.deviceInfo().name === "android") {
             var changeUrl = "" + kony.apps.coe.ess.appconfig.listOfApps[i].toLowerCase();
            // var playStoreUrl = kony.apps.ess.deepLinkingSSO.staticUrl + "ess" + changeUrl + "mobile";
-            var verticalAppsUrl = kony.apps.ess.deepLinkingSSO.staticUrl + changeUrl;
+            var verticalAppsUrl = kony.apps.ess.deepLinkingSSO.staticUrl + kony.apps.coe.ess.appconfig.listOfApps[i];
            // var checkifExistObject = new AppCheckerAndroid.checkifExist(playStoreUrl);
            // playStoreAppReturnedValue = checkifExistObject.appInstalledOrNot();
             var checkifExistObject1 = new AppCheckerAndroid.checkifExist(verticalAppsUrl);

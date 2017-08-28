@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__20db1203e66a41c39132b7a429ca69c8",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myApprovals\");",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"eTimeSheetMyApprovals\");",
             "parentId": null,
             "callbackType": null
         }]

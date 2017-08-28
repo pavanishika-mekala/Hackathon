@@ -1,6 +1,6 @@
 {
 	"LSApplicationQueriesSchemes" : [
-		"myLeaveengie","myTimeengie","mypayengie","myProfileengie","myExpensesengie","myApprovalsengie"
+		"eTimeSheetMyLeave","eTimeSheetMyTime","mypayengie","myProfileengie","myExpensesengie","eTimeSheetMyApprovals"
 	],
 	"NSCalendarsUsageDescription" : " ",
 	"NSCameraUsageDescription" : " ",

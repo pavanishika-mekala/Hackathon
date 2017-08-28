@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__4f57af7a90d34427aa561c8c9913dff6",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myLeave\");",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"eTimeSheetMyLeave\");",
             "parentId": null,
             "callbackType": null
         }]
