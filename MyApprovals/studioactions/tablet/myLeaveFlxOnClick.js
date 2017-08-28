@@ -3,5 +3,5 @@ function myLeaveFlxOnClick(eventobject) {
 }
 
 function AS_FlexContainer_2233e1969ced4497965714f65c19fbb5(eventobject) {
-    kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick("myLeave");
+    kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick("eTimeSheetMyLeave");
 }
