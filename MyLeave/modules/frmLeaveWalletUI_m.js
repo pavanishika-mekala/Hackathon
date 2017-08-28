@@ -24,7 +24,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI = function(frmname, widgets, data) {
   var yearStart = new Date(Date.UTC(d.getUTCFullYear(),0,1));
   // Calculate full weeks to nearest Thursday
   var weekNo = Math.ceil(( ( (d - yearStart) / 86400000) + 1)/7);
-  weekNo = Number(weekNo).tofixed(); // as weekno is coming as 34.0
+  weekNo = Number(weekNo).toFixed(); // as weekno is coming as 34.0
   var yearToShow = curntDate.getFullYear();
   this.frmname[this.widgets.lblTop].text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveWallet.Y")+yearToShow+" - "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveWallet.W")+weekNo;
   //this.frmname[this.widgets.lblTop].text = "FY" + dateToshow + "-" + ((curntDate.getFullYear()+1).toString()).slice(2, 4);
@@ -45,7 +45,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createChart = function(data, c
       "isVisible": true,
       "height": "100%",
       "width": "100%",
-      "top":"-11%",
+      //"top":"-11%",
       "chartheight": "100%",
       "chartwidth": "100%",
       "enableScrolling": false
@@ -165,14 +165,16 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
           skn = "LBLMOB3BD1D7";
           colors = [
             ["0xE8F8F8ff", "0xE8F8F8ff"],
-            ["0x3BD1D7ff", "0x51F1B7ff"]
+            ["0x3BD1D7ff", "0x51F1B7ff"],
+             ["0x6C7A89ff","0x95A5A6ff"]
           ];
           flag1 = 1;
         } else if (flag1 === 1) {
           skn = "LBLMOB3BD1D7";
           colors = [
             ["0xEAF9FDff", "0xEAF9FDff"],
-            ["0x41B1EEff", "0x51D2F1ff"]
+            ["0x41B1EEff", "0x51D2F1ff"],
+            ["0x6C7A89ff","0x95A5A6ff"]
           ];
           flag1 = 0;
         }
@@ -181,21 +183,40 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
           skn = "LBLMOBF74A4A";
           colors = [
             ["0xFFEDEDff", "0xFFEDEDff"],
-            ["0xF74A4Aff", "0xF78686ff"]
+            ["0xF74A4Aff", "0xF78686ff"],
+            ["0x6C7A89ff","0x95A5A6ff"]
           ];
           flag2 = 1;
         } else if (flag2 === 1) {
           skn = "LBLMOBF74A4A";
           colors = [
             ["0xFFEBF3ff", "0xFFEBF3ff"],
-            ["0xF82B7Bff", "0xF56DD5ff"]
+            ["0xF82B7Bff", "0xF56DD5ff"],
+            ["0x6C7A89ff","0x95A5A6ff"]
           ];
           flag2 = 0;
         }
       }
       var chartWidget = this.createChart(this.data[i], colors);
       kony.print("--------------------Created chart widget " + i);
-
+      
+	  var flxChart = new kony.ui.FlexContainer({
+          "id": "flxChart" + i,
+          "top": 12.6 + "%",
+          "letf": 0 + "%",
+          "width": "100%",
+          "height": "50%",
+          "zIndex": 1,
+          "isVisible": true,
+          "clipbounds": true,
+          "skin":"slFbox",
+          "layoutType": kony.flex.FREE_FORM
+        }, {
+          "padding": [0, 0, 0, 0],
+          "marginInPixel": false,
+          "paddingInPixel": false
+        }, {});
+	  flxChart.add(chartWidget);
 
       var charttitle = new kony.ui.Label({
         id: "lblCT" + i,
@@ -230,14 +251,15 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "paddingInPixel": false,
         contentAlignment: constants.CONTENT_ALIGN_CENTER
       }, {});
+      flxChart.add(label1);
       var label = new kony.ui.Label({
         id: "lblD2" + i,
         skin: "LBLMOB555555PX24",
-        "top": "52.26%",
+        "top": "65.26%",
         "left": "0%",
         "width": "100%",
         "height": "20%",
-        "text": "Available",
+        "text": "Total",//"Available",
         "zIndex": 2,
         isVisible: true,
       }, {
@@ -246,14 +268,15 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "paddingInPixel": false,
         contentAlignment: constants.CONTENT_ALIGN_CENTER
       }, {});
+      flxChart.add(label);
       //#ifdef iphone
       var labelTotalValue = new kony.ui.Label({
         id: "lblLTV"+i,
         skin: "LBLMOB555555PX24",
-        "top": "78%",
+        "top": "65%",
         "left": "61%",
-        "width": "100%",
-        "height": "20%",
+        "width": "40%",
+        "height": "15%",
         "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
         "zIndex": 2,
         isVisible: true,
@@ -261,16 +284,17 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "padding": [0, 0, 0, 0],
         "marginInPixel": false,
         "paddingInPixel": false,
+        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
       }, {});
       //#endif
       //#ifdef android
       var labelTotalValue = new kony.ui.Label({
         id: "lblLTV"+i,
         skin: "LBLMOB555555PX24",
-        "top": "84.8%",
+        "top": "65%",
         "left": "61%",
-        "width": "100%",
-        "height": "20%",
+        "width": "40%",
+        "height": "15%",
         "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
         "zIndex": 2,
         isVisible: true,
@@ -278,24 +302,129 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "padding": [0, 0, 0, 0],
         "marginInPixel": false,
         "paddingInPixel": false,
+        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
       }, {});
       //#endif
-      var labelTotal = new kony.ui.Label({
-        id: "lblLT"+i,
+       //#ifdef iphone
+      var labelPlannedValue = new kony.ui.Label({
+        id: "lblLPV"+i,
         skin: "LBLMOB555555PX24",
-        "top": "78%",
-        "left": "-4%",
-        "width": "100%",
-        "height": "20%",
-        "text": "Total :",
+        "top": "75%",
+        "left": "61%",
+        "width": "40%",
+        "height": "15%",
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
         "zIndex": 2,
         isVisible: true,
       }, {
         "padding": [0, 0, 0, 0],
         "marginInPixel": false,
         "paddingInPixel": false,
-        contentAlignment: constants.CONTENT_ALIGN_CENTER
+        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
       }, {});
+     //#endif
+      //#ifdef android
+      var labelPlannedValue = new kony.ui.Label({
+        id: "lblLPV"+i,
+        skin: "LBLMOB555555PX24",
+        "top": "75%",
+        "left": "61%",
+        "width": "40%",
+        "height": "15%",
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "zIndex": 2,
+        isVisible: true,
+      }, {
+        "padding": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
+      }, {});
+      //#endif
+     //#ifdef iphone
+      var labelAvailableValue = new kony.ui.Label({
+        id: "lblLAV"+i,
+        skin: "LBLMOB555555PX24",
+        "top": "85%",
+        "left": "61%",
+        "width": "40%",
+        "height": "15%",
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "zIndex": 2,
+        isVisible: true,
+      }, {
+        "padding": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
+      }, {});
+     //#endif
+      //#ifdef android
+      var labelAvailableValue = new kony.ui.Label({
+        id: "lblLAV"+i,
+        skin: "LBLMOB555555PX24",
+        "top": "85%",
+        "left": "61%",
+        "width": "40%",
+        "height": "15%",
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "zIndex": 2,
+        isVisible: true,
+      }, {
+        "padding": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
+      }, {});
+      //#endif
+      var labelTaken = new kony.ui.Label({
+        id: "lblLT"+i,
+        skin: "LBLMOB555555PX24",
+        "top": "65%",
+        "left": "0%",
+        "width": "55%",
+        "height": "15%",
+        "text": "Taken :",//"Total :",
+        "zIndex": 2,
+        isVisible: true,
+      }, {
+        "padding": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "paddingInPixel": false,
+         contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT
+      }, {});
+       var labelPlanned = new kony.ui.Label({
+        id: "lblLPlanned"+i,
+        skin: "LBLMOB555555PX24",
+        "top": "75%",
+        "left": "0%",
+        "width": "55%",
+        "height": "15%",
+        "text": "Planned :",//"Total :",
+        "zIndex": 2,
+        isVisible: true,
+      }, {
+        "padding": [0, 0, 0, 0],
+        "marginInPixel": false,
+        "paddingInPixel": false,
+        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT
+      }, {});
+     var labelAvailable = new kony.ui.Label({
+        id: "lblLAvailable"+i,
+        skin: "LBLMOB555555PX24",
+        "top": "85%",
+        "left": "0%",
+        "width": "55%",
+        "height": "15%",
+        "text": "Available :",//"Total :",
+         "zIndex": 2,
+          isVisible: true,
+        }, {
+          "padding": [0, 0, 0, 0],
+          "marginInPixel": false,
+          "paddingInPixel": false,
+          contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT
+        }, {});
       var flxCover = new kony.ui.FlexContainer({
         "onClick": this.onflxClick,
         "id": "flxCoverForAction" + i,
@@ -315,11 +444,17 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
       }, {});
 
       flxlist.add(charttitle);
-      flxlist.add(label);
-      flxlist.add(label1);
-      flxlist.add(chartWidget);
-      flxlist.add(labelTotal);
+      //flxlist.add(label);
+     // flxlist.add(label1);
+      flxlist.add(flxChart);
+      flxlist.add(labelTaken);
+      flxlist.add(labelPlanned);
+      flxlist.add(labelAvailable);
+      //flxlist.add(chartWidget);
+      //flxlist.add(labelTotal);
       flxlist.add(labelTotalValue);
+      flxlist.add(labelPlannedValue);
+      flxlist.add(labelAvailableValue);
       flxlist.add(flxCover);
       this.frmname[this.widgets.flxChartContainer].add(flxlist);
     }
@@ -444,35 +579,35 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createChartJSObjectAcc = funct
     "chartProperties": {
       "enableScrolling": true,
       "drawEntities": ["donutChart"],
-      "chartHeight": "100%",
+      //"chartHeight": "100%",
       "chartwidth": "100%",
-      "bottom": 11.6 + "%",
-      "title": {
-        "visible": true,
-        "text": "",
-        "position": "top",
-        "alignment": "center",
-        "direction": "up",
-        "containerWt": 20,
-        "top": 10 + "%",
-        "margin": [0, 0, 0, 0],
-        "background": {
-          "fillType": "gradient",
-          "transparency": 100,
-          "gradientType": "linearTopToBottom",
-          "gradientRatios": [0, 100],
-          "color": ["0xFFFFFFFF",
-                    "0xFFFFFFFF"
-                   ]
-        },
-        "font": {
-          "size": ["86%"],
-          "family": ["AvenirLTStd-Medium"],
-          "style": ["normal"],
-          "color": ["0x555555ff"],
-          "transparency": [0]
-        }
-      },
+      //"bottom": 11.6 + "%",
+//       "title": {
+//         "visible": true,
+//         "text": "",
+//         "position": "top",
+//         "alignment": "center",
+//         "direction": "up",
+//         "containerWt": 20,
+//         "top": 10 + "%",
+//         "margin": [0, 0, 0, 0],
+//         "background": {
+//           "fillType": "gradient",
+//           "transparency": 100,
+//           "gradientType": "linearTopToBottom",
+//           "gradientRatios": [0, 100],
+//           "color": ["0xFFFFFFFF",
+//                     "0xFFFFFFFF"
+//                    ]
+//         },
+//         "font": {
+//           "size": ["86%"],
+//           "family": ["AvenirLTStd-Medium"],
+//           "style": ["normal"],
+//           "color": ["0x555555ff"],
+//           "transparency": [0]
+//         }
+//       },
       "layerArea": {
         "border": {
           "visible": false,
@@ -546,11 +681,11 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createChartJSObjectAcc = funct
       },
 
       "data": {
-        "Accounts": [Number(data.LEAVETAKEN), Number(data.LEAVEBALANCE)],
+        "Accounts": [Number(data.LEAVETAKEN), Number(data.LEAVEBALANCE),5],//FIXME static variable 5
       },
 
       "rowNames": {
-        "values": ["Total Leave", " Leave Taken"]
+        "values": ["Total Leave", " Leave Taken","static data"]
       }
 
     }
