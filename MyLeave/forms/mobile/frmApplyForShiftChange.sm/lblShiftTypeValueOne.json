@@ -59,6 +59,7 @@
     "name": "kony.ui.Label",
     "parent": "flxShiftTypeOne",
     "pf": "frmApplyForShiftChange",
+    "texti18n": "i18n.ess.MyLeave.frmApplyForShiftChange.MORNING",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

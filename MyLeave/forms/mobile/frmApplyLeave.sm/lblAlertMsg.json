@@ -60,6 +60,7 @@
     "paddinginpixel": false,
     "parent": "flxAlertMsg",
     "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.MyLeave.frmApplyLeave.LeaveExists",
     "tooltip": "",
     "wType": "Label"
 }
