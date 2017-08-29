@@ -26,7 +26,7 @@
     "_text_": "Medical Leave Balance",
     "_width_": {
         "type": "string",
-        "value": "85%"
+        "value": "75%"
     },
     "_wrapping_": 2,
     "android": {

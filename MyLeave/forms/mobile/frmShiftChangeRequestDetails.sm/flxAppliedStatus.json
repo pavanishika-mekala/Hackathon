@@ -46,7 +46,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "45e3cffef5634d1d829e9707e8d07a50",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxApprovalStatus",
     "pf": "frmShiftChangeRequestDetails",

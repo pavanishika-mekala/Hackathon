@@ -29,8 +29,8 @@
         "value": "0%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "80%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,10 +40,6 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "id": "lblHeader",
