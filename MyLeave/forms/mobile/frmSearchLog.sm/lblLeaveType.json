@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "8%"
+        "value": "7%"
     },
     "_margin_": [
         1,
@@ -24,9 +24,13 @@
     ],
     "_skin_": "s0a7142e0f9249f4b80c987f1c1fede3",
     "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "89%"
     },
     "_wrapping_": 2,
     "android": {
