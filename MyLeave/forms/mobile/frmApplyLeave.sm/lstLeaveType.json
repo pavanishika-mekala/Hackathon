@@ -41,6 +41,7 @@
         "templateType": "forms",
         "topLevelBox": null
     },
+    "dropdownimage": "dropdown_arrow.png",
     "groupcells": false,
     "id": "lstLeaveType",
     "info": null,
