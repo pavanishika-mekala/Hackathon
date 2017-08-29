@@ -57,6 +57,7 @@
     "isvisible": true,
     "kuid": "1a165b219c33445dbe6fd9bd37c46894",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxHeader",
     "pf": "frmShiftChangeRequestDetails",
     "texti18n": "i18n.ess.myLeave.frmShiftChangeRequestDetails.lblHeader.valueKA",

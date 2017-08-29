@@ -60,6 +60,7 @@
     "name": "kony.ui.Label",
     "parent": "flxLangSelection",
     "pf": "frmSettings",
+    "texti18n": "i18n.ess.MyLeave.frmSettings.SelectLang",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
