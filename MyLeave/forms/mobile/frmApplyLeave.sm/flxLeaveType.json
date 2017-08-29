@@ -37,7 +37,9 @@
     "allowverticalbounce": true,
     "bounces": false,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "lstLeaveType"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "decelerat": false,

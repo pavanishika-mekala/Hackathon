@@ -48,6 +48,7 @@
     "isvisible": true,
     "kuid": "3fd08cde27854d28a9e93be75ae3fdea",
     "name": "kony.ui.Button",
+    "paddinginpixel": false,
     "parent": "flxFullHalfDay",
     "pf": "frmApplyLeave",
     "texti18n": "i18n.ess.common.hours.valueKA",
