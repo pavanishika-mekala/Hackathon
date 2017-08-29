@@ -35,11 +35,11 @@
         "btnSubmit"
     ],
     "containerweight": 100,
-    "currentLocale": "en_US",
+    "currentLocale": "fr_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone5",
+    "device": "iPhone4",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmApplyLeave",
@@ -85,10 +85,10 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhone6",
+    "prevDevice": "iPhone5",
     "prevPlatform": "android",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone5",
+    "shellCSS": "iOS_iPhone4",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

@@ -37,8 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "lblLastSyncedOn",
-        "lblSyncDate",
-        "lblSyncTime"
+        "flxSync"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -47,7 +46,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "b6fe3ac53f5842d1ae5dc8106643feab",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMenuHamburger",
     "pf": "frmHamburger",
