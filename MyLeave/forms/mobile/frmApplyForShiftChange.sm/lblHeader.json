@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "10%"
+        "value": "13%"
     },
     "_margin_": [
         1,
@@ -29,8 +29,8 @@
         "value": "0%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "75%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,10 +40,6 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "id": "lblHeader",
@@ -65,5 +61,6 @@
     "pf": "frmApplyForShiftChange",
     "texti18n": "i18n.ess.frmApplyForShiftChange.lblHeader.valueKA",
     "tooltip": "",
-    "wType": "Label"
+    "wType": "Label",
+    "zindex": 1
 }

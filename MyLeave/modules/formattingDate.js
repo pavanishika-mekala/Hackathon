@@ -21,7 +21,7 @@ kony.apps.ess.myLeave.formattingDate.prototype.toFormatTabDateCal = function(inp
     try {
       
         var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        var days = ["Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun"];
         input_date = input_date.split(" ");
         var input_date_year = input_date[3];//2016
         var input_date_month = months.indexOf(input_date[1])+1 ;
@@ -36,7 +36,7 @@ kony.apps.ess.myLeave.formattingDate.prototype.getSelectedMonthYear = function(i
     try {
       
         var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        var days = ["Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun"];
         input_date = input_date.split(" ");
       var input_date_day = input_date[0];
         var input_date_year = input_date[2];//2016

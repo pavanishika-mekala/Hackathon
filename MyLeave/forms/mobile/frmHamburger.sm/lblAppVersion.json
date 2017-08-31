@@ -63,7 +63,6 @@
     "name": "kony.ui.Label",
     "parent": "flxAppName",
     "pf": "frmHamburger",
-    "texti18n": "i18n.ess.frmHamburger.Version",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

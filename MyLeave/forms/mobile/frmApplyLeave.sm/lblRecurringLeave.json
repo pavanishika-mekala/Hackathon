@@ -59,6 +59,7 @@
     "name": "kony.ui.Label",
     "parent": "flxRecurringLeave",
     "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.MyLeave.frmApplyLeave.RecurringLeave",
     "tooltip": "",
     "wType": "Label"
 }

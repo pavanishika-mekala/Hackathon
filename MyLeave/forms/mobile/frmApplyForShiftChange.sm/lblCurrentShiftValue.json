@@ -63,6 +63,7 @@
     "name": "kony.ui.Label",
     "parent": "flxCurrentShift",
     "pf": "frmApplyForShiftChange",
+    "texti18n": "i18n.ess.eveningShift.text",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
