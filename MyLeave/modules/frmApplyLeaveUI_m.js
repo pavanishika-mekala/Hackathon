@@ -444,7 +444,7 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
 
     selectedLeaveType: "",
     mappingLeaveTypeData: function(data) {
-      var lstMasterData=[];
+		var lstMasterData=[];
         for (var i = 0; i < data.selectleavetype.length; i++) {
             var btnLeaveTypeObj = new kony.ui.Button({
                 id: "btnLeaveType" + data.selectleavetype[i].id,
@@ -465,17 +465,19 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
                 "paddingInPixel": false,
                 "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT
             }, {});
-          lstMasterData.push([data.selectleavetype[i].id,data.selectleavetype[i].name]);
+			lstMasterData.push([data.selectleavetype[i].id,data.selectleavetype[i].name]);
             //frmApplyLeave.flxLeaveType.add(btnLeaveTypeObj);
         }
       	frmApplyLeave.lstLeaveType.masterData=lstMasterData;
        	// frmApplyLeave.flxLeaveType["btnLeaveType" + data.selectleavetype[0].id].skin = "sknBtnBg1C7393S28pxRoman";
-        frmApplyLeave.lblLeaveTypeBalance.text = "Available " + /*frmApplyLeave["btnLeaveType" + */data.selectleavetype[0].id/*].text */+ " leave";
-       // this.onClickOfLeaveType(frmApplyLeave["btnLeaveType" + data.selectleavetype[0].id]);
+		// frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave["btnLeaveType" + data.selectleavetype[0].id].text + " leave";
+        frmApplyLeave.lblLeaveTypeBalance.text = "Available " + data.selectleavetype[0].id+ " leave";
+        //this.onClickOfLeaveType(frmApplyLeave["btnLeaveType" + data.selectleavetype[0].id]);
       	frmApplyLeave.lstLeaveType.selectedKey=	data.selectleavetype[0].id;
       	frmApplyLeave.lstLeaveType.onSelection=this.onClickOfLeaveType(frmApplyLeave.lstLeaveType.selectedKey)
       	this.onClickOfLeaveType(data.selectleavetype[0].id); 
-      	this.selectedLeaveType = /*"btnLeaveType" +*/ data.selectleavetype[0].id;
+		//this.selectedLeaveType = "btnLeaveType" + data.selectleavetype[0].id;
+      	this.selectedLeaveType =  data.selectleavetype[0].id;
     },
 
     onClickOfLeaveType: function(id) {
@@ -490,7 +492,8 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
         kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
             if (data.length > 0 && data !== undefined && data[0].balance !== undefined) {
                 frmApplyLeave.lblLeaveTypeBalance.text = data[0].balance - data[0].availed;
-                frmApplyLeave.lblLeaveTypeBalance.text = "Available " + id/*frmApplyLeave[eventobject.id].text */+ " leave";
+				//frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave[eventobject.id].text + " leave";
+                frmApplyLeave.lblLeaveTypeBalance.text = "Available " + id+ " leave";
                 frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
             } else {
                 frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
@@ -1084,7 +1087,8 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
             }
             dataToForward.start_date = leaveEntryData.start_date;
             dataToForward.end_date = leaveEntryData.end_date;
-            dataToForward.leave_type = (/*frmApplyLeave[*/kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType/*].text*/).trim();
+			//dataToForward.leave_type = (frmApplyLeave[kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType].text).trim();
+            dataToForward.leave_type = (kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType).trim();
             leaveEntryData.leave_type_id = (kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType);//.split("btnLeaveType")[1];
             var time = kony.apps.coe.ess.myLeave.applyLeave.convertTo24Hour(kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.start_time);
             if (parseInt(time) < 10) {
