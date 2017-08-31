@@ -38,7 +38,7 @@ kony.apps.coe.ess.myLeave.modifyLeave.updateUI = {
      
      setLeaveType : function(){
           var id = this.leaveData[0].LeaveTypeId;
-          kony.apps.coe.ess.myLeave.applyLeave.LeaveType.onClickOfLeaveType(frmApplyLeave["btnLeaveType"+id]);
+          kony.apps.coe.ess.myLeave.applyLeave.LeaveType.onClickOfLeaveType(this.leaveData[0].LeaveTypeId);
      },
      
      setCalendarData : function(){
