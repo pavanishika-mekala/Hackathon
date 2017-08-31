@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "150dp"
+        "value": "13%"
     },
     "_margin_": [
         1,
@@ -26,11 +26,11 @@
     "_text_": "Search",
     "_top_": {
         "type": "string",
-        "value": "7dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "40%"
+        "value": "70%"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,14 +40,6 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "id": "lblHeader",
