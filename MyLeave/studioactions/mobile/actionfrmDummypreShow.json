@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__51dbc0da626b439f8ff5dc642a9e48cb",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");\nkony.apps.coe.ess.locale.getLocaleInformation();",
             "parentId": null,
             "callbackType": null
         }]
