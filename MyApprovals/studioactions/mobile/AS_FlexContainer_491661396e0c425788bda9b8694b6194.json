@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__a8afcd6303574268982f3f34e2671122",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "codeSnippet": "var previousForm=kony.application.getPreviousForm();\nvar formController=kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(previousForm.id);\npreviousForm.destroy();\nformController.loadDataAndShowForm();\n",
             "parentId": null,
             "callbackType": null
         }]
