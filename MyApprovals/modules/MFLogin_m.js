@@ -411,7 +411,7 @@ function applicationErrorCallback(error) {
         }
     } else {
         //Clear SSO Cache
-        //kony.sdk.resetCacheKeys(kony.sdk.getCurrentInstance());
+        kony.sdk.resetCacheKeys(kony.sdk.getCurrentInstance());
         kony.sdk.util.deleteSSOToken();
     }
 
