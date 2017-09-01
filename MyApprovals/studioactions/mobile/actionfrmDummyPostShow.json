@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__28f7ce5740ef46ac81fe0a0eddde5535",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.ess.deepLinkingSSO.frmDummyPostShow();\nkony.apps.coe.ess.locale.getLocaleInformation();",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.frmDummyPostShow();\n",
             "parentId": null,
             "callbackType": null
         }]
