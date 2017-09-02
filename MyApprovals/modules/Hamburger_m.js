@@ -30,10 +30,10 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     this.generateHamburger(callBackForHamburger);
     var scopeObj = this;
     kony.application.getCurrentForm().flxHamburger.setEnabled(false);
-    this.hamburgerMenuItemsShow();
     if (hamburgerButton != undefined) {
         hamburgerButton.onClick = function() {
             kony.print("-- Start hamburgerButton.onClick --");
+          	this.hamburgerMenuItemsShow();
           	//bbe-101 menu sync
           	kony.application.getCurrentForm().flxHamburger.lblSyncDate.text=formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
 		   	kony.application.getCurrentForm().flxHamburger.lblSyncTime.text=formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);

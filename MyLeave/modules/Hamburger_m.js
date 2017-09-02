@@ -30,10 +30,10 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     this.generateHamburger(callBackForHamburger);
     var scopeObj = this;
     kony.application.getCurrentForm().flxHamburger.setEnabled(false);
-    this.hamburgerMenuItemsShow();
     if (hamburgerButton != undefined) {
         hamburgerButton.onClick = function() {
             kony.print("-- Start hamburgerButton.onClick --");
+			this.hamburgerMenuItemsShow();
             // Disable clicking on Hamburger.
               if (kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.isVisible) {
                 kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(true); // Enable clicking on Hamburger menu items.
