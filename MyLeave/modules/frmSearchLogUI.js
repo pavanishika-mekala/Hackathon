@@ -31,7 +31,7 @@ kony.apps.coe.myLeave.search.prototype.onDone = function () {
 				value = value + "," + selData[i].lblSearchTxt;
 	}
 	if (value === "") {
-		frmSearchLog.lblLeaveTypes.text = "Select leave type";
+		frmSearchLog.lblLeaveTypes.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA");
 		frmSearchLog.lblLeaveTypes.skin = "sknLblMob8d8faa100OFS36px";
 	} else {
 		frmSearchLog.lblLeaveTypes.text = value;
@@ -65,7 +65,7 @@ kony.apps.coe.myLeave.search.prototype.onDone2 = function () {
 	}
 
 	if (value === "") {
-		frmSearchLog.lblLeaveStatus.text = "Select status";
+		frmSearchLog.lblLeaveStatus.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmStatusSearch.lblTitle.valueKA");
 		frmSearchLog.lblLeaveStatus.skin = "sknLblMob8d8faa100OFS36px";
 	} else {
 		frmSearchLog.lblLeaveStatus.text = value;
@@ -95,8 +95,8 @@ kony.apps.coe.myLeave.search.prototype.clear = function () {
 	frmSearchLog.calToDate.dateComponents = [31, 12, new Date().getFullYear()];
 	frmSearchLog.calToDate.validStartDate = [01, 01, (new Date().getFullYear() - 1)];
 	frmSearchLog.calToDate.validEndDate = [31, 12, (new Date().getFullYear() + 1)];
-	frmSearchLog.lblLeaveStatus.text = "All";
-	frmSearchLog.lblLeaveTypes.text = "All";
+	frmSearchLog.lblLeaveStatus.text = kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All");
+	frmSearchLog.lblLeaveTypes.text = kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All");
 
 	kony.print("----------out of clear");
 };
@@ -154,12 +154,12 @@ kony.apps.coe.myLeave.search.prototype.done = function () {
 			toDate = "0" + toDate;
 		var to = "" + toYear + toMonth + toDate;
 		var sqlquery = "";
-		if (statuses === "All" || statuses === "Select status") {
-			if (leaveTypes === "All" || leaveTypes === "Select leave type")
+		if (statuses === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || statuses === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmStatusSearch.lblTitle.valueKA")) {
+			if (leaveTypes === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || leaveTypes === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA"))
 				sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
 			else
 				sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and lt.name in (" + lCondition + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
-		} else if (leaveTypes === "All" || leaveTypes === "Select leave type")
+		} else if (leaveTypes === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || leaveTypes === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA"))
 			sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and s.Id in (" + sCondition + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
 		else
 			sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and s.Id in (" + sCondition + ") and lt.name in (" + lCondition + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";

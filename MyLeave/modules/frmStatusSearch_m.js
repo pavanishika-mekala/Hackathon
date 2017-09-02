@@ -45,16 +45,16 @@ kony.apps.coe.myLeave.searchStatus.prototype.showForm = function () {
 kony.apps.coe.myLeave.searchStatus.prototype.widMap = function (data) {
 	kony.print("-------------in searchStatus widMap");
 	var processedData = [];
-	if (kony.apps.coe.myLeave.searchStatus.data.indexOf("All") != -1)
+	if (kony.apps.coe.myLeave.searchStatus.data.indexOf(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All")) != -1)
 		processedData = [{
-				"lblSearchTxt" : "All",
+				"lblSearchTxt" : kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All"),
 				"imgStatusSelection" : "checkboxactive.png",
 				"lblLine1" : " "
 			}
 		];
 	else
 		processedData = [{
-				"lblSearchTxt" : "All",
+				"lblSearchTxt" : kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All"),
 				"imgStatusSelection" : "checkboxinactive.png",
 				"lblLine1" : " "
 			}
@@ -71,7 +71,7 @@ kony.apps.coe.myLeave.searchStatus.prototype.widMap = function (data) {
             status.lblSearchTxt = kony.i18n.getLocalizedString("i18n.ess.common.pending.valueKA");
           else if(data.segStatus[i].Id == 3)
             status.lblSearchTxt = kony.i18n.getLocalizedString("i18n.ess.common.cancelled.valueKA");
-			if (kony.apps.coe.myLeave.searchStatus.data === "select status") {
+			if (kony.apps.coe.myLeave.searchStatus.data === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmStatusSearch.lblTitle.valueKA")) {
 				status.imgStatusSelection = "checkboxinactive.png";
 			} else {
 				if (kony.apps.coe.myLeave.searchStatus.data.indexOf(status.lblSearchTxt) != -1) {
@@ -142,7 +142,7 @@ kony.apps.coe.myLeave.searchStatus.prototype.rowClick = function() {
             var index = frmStatusSearch.segStatus.selectedRowIndex[1];
             var sData = frmStatusSearch.segStatus.data[index];
             var selData = frmStatusSearch.segStatus.data;
-            if (sData.lblSearchTxt.toLowerCase() === "all") {
+            if (sData.lblSearchTxt === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All")) {
                 if (sData.imgStatusSelection === "checkboxinactive.png") {
                     for (var i in selData) {
                         if (i === 0) {
