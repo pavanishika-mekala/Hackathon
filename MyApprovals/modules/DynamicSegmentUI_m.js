@@ -113,20 +113,12 @@ kony.apps.ess.DynamicSegment = function (type, selectionBehaviorConfig, Coloums,
  *@desc		:	Populate the data in the segments (Cells) accoriding to the given inputs
  */
 
-kony.apps.ess.DynamicSegment.prototype.setData = function (dataVal) {
+kony.apps.ess.DynamicSegment.prototype.setData = function (data) {
 	try {
 		kony.print("--start setData--");
 		this.ParentScrollFlexContainer.removeAll();
 		this.SelectedItems = [];
 		this.SelectedIndexs = [];
-      //this code has to be removed for getting timesheet change dataVal to data
-      var data=[];
-      for(var t in dataVal){
-        if(kony.string.equalsIgnoreCase(dataVal[t]["request_type"]["name"],"LEAVE")){
-          data.push(dataVal[t]);
-       }
-      }
-      //this code has to be removed for getting timesheet
       if (isEmpty(data)) {
 			//invalid input or data length is null
 			kony.print("--invalid input to the method setData--");
