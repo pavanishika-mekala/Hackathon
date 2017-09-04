@@ -43,6 +43,8 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 1,
+    "disabledSkins": {},
+    "focusskin": "s457d94334bc467d987406a8b79c8849",
     "id": "txtareaComments",
     "ide_onTextChange": "AS_TextArea_ffd9432f246d4f3c95547dbed8ca46f7",
     "info": null,

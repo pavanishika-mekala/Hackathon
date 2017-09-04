@@ -14,7 +14,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_0e52862075ff46be8e00661efb8c8ce6",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "if(frmApprovalRequestDetail.txtareaComments.text === \"\"){\n\talert(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.frmMyAopprovalsHome.isMandatoryComment\"));\n}else{\n\tkony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickReject();\n}",
+            "codeSnippet": "if(frmApprovalRequestDetail.txtareaComments.text === \"\"){\n\ttoastMsg.showToastMsg(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.frmMyAopprovalsHome.isMandatoryComment\"), 3000);\t\n}else{\n\tkony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickReject();\n}",
             "callbackType": null
         }]
     }
