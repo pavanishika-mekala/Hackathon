@@ -44,6 +44,7 @@
     "containerweight": 100,
     "contentalignment": 1,
     "id": "txtareaComments",
+    "ide_onTextChange": "AS_TextArea_ffd9432f246d4f3c95547dbed8ca46f7",
     "info": null,
     "iphone": {
         "psp": {
