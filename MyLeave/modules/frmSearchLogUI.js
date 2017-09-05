@@ -115,8 +115,12 @@ kony.apps.coe.myLeave.search.prototype.done = function () {
 
 	try {
 		var statuses = frmSearchLog.lblLeaveStatus.text;
-        statuses = statuses.replace("Cancelled","Cancel");
-      	statuses = statuses.replace("Approved","Accepted");
+        //statuses = statuses.replace("Cancelled","Cancel");
+      	//statuses = statuses.replace("Approved","Accepted");
+      	statuses = statuses.replace(kony.i18n.getLocalizedString("i18n.ess.common.cancelled.valueKA"),"CANCEL");
+		statuses = statuses.replace(kony.i18n.getLocalizedString("i18n.ess.common.approved.valueKA"),"ACCEPTED");
+		statuses = statuses.replace(kony.i18n.getLocalizedString("i18n.ess.common.rejected.valueKA"),"REJECTED");
+		statuses = statuses.replace(kony.i18n.getLocalizedString("i18n.ess.common.pending.valueKA"),"PENDING");
 		var sCondition = "";
 		var status = statuses.split(",");
 		var statusArray = {"ACCEPTED":0, "REJECTED":1, "PENDING":2, "CANCEL":3, "SENTBACK":4, "SAVED":5, "ERROR":6, "Submitted":7};
