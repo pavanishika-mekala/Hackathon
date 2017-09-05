@@ -484,7 +484,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "clipBounds": true,
         "height": "20%",
-        "id": "flxTotal"+i,
+        "id": this.data[i].LEAVETYPETITLE,
         "isVisible": true,
         "layoutType": kony.flex.FREE_FORM,
         "left": "58%",
@@ -825,8 +825,8 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
 
     var label1 = new kony.ui.Label({
       id: "lblD1",
-      skin: skn,
-      "top": "44%",
+      skin: "LBLMOB555555PX24",//skn,
+      "top": "57%",
       "centerX": "50%",
       "width": "preffered",
       "height": "preffered",
@@ -842,11 +842,11 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
     var label = new kony.ui.Label({
       id: "lblD2",
       skin: "LBLMOB555555PX24",
-      "top": "67.26%",
+      "top": "38.26%",
       "left": "0%",
       "width": "100%",
       "height": "20%",
-      "text": "Available",
+      "text": kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA"),
       "zIndex": 2,
       isVisible: true,
     }, {

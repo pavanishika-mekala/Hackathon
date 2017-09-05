@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "60%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "66.60%"
     },
     "_margin_": [
         0,
@@ -26,33 +26,38 @@
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "33.30%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblAvailedLeave",
-        "lblIndicatorAvailed",
-        "lblAvailed"
+        "lblAvailable",
+        "lblAvailable1"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxLeaveAvailed",
+    "id": "flxAvailable",
     "info": null,
-    "isvisible": false,
-    "kuid": "f971eb307d204cc49e3addf66f0b686b",
-    "layouttype": 2,
+    "isvisible": true,
+    "kuid": "e815c0eb0a704453b26f400e123b8935",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxLeaveDetail",
     "pf": "frmLeaveBalance",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "winphone8": {
+        "psp": {
+            "enableCache": false
+        }
+    },
+    "zindex": 1
 }
