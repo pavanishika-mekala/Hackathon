@@ -386,6 +386,7 @@ kony.apps.coe.ess.myLeave.applyLeave.preShow = {
        //to disable the recurring option if it is not supported
        if(kony.apps.coe.ess.appconfig.isRecurringSupported===false) {
            frmApplyLeave.flxRecurringLeave.setVisibility(false);
+           frmApplyLeave.lblBorderweekly.setVisibility(false);
            frmApplyLeave.flxRecurringLeaveOptions.setVisibility(false);
        }
         /* It check whether the Attachements is enable or not.
