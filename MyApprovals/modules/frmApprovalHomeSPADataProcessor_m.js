@@ -264,7 +264,7 @@ kony.apps.coe.ess.Approvals.spa.beautifyEachRequest = function(processedRequest)
   try {
     kony.print("---- beautifyEachRequest start ----");
     var btnNoticedvis = false,visibility= true;
-      if(processedRequest.category == "Annual Leave"){
+      if(processedRequest.category == "Sick Leave"){
         visibility = false;
         btnNoticedvis = true;
     }

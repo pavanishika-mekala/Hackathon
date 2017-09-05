@@ -179,7 +179,7 @@ kony.apps.coe.ess.Approvals.tabApprovalsDashboard.prototype.process_ApprovalRequ
     var btnNoticedvis = false,visibility= true;
     if (approvalRequest.Category) {
       processedRequest.category = approvalRequest.Category;
-      if(processedRequest.category == "Annual Leave"){
+      if(processedRequest.category == "Sick Leave"){
         visibility = false;
         btnNoticedvis = true;
       }
