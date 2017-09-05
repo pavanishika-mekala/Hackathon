@@ -295,8 +295,8 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
         "lblBorder2": "lblBorder2",
         "btnLaterSegment" : "btnLaterSegment",
         "btnReject" : "btnReject",
-        "btnApprove" : "btnApprove"
-
+        "btnApprove" : "btnApprove",
+      	"btnNoticed" : "btnNoticed"
       };
       if (kony.apps.coe.ess.globalVariables.isSPA === true) {
         WidgetDatamap.btnLaterSegment = "btnLaterSegment";

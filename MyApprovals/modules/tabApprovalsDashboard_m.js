@@ -148,9 +148,9 @@ kony.apps.coe.ess.Approvals.tabApprovalsDashboard.prototype.process_ApprovalRequ
     processedRequest = approvalRequest;
     kony.print("processedRequestt data is:::" + JSON.stringify(processedRequest));
     //common segment values
-    processedRequest.btnLaterSegment = {"skin" : "sknBtnMob0OBor1DB6C928px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};
-    processedRequest.btnReject = {"skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject")};
-    processedRequest.btnApprove = {"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")};
+    //  processedRequest.btnLaterSegment = {"skin" : "sknBtnMob0OBor1DB6C928px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};
+    //  processedRequest.btnReject = {"skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject")};
+    // processedRequest.btnApprove = {"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")};
     processedRequest.StatusId = approvalRequest.StatusId;
     processedRequest.StatusName = approvalRequest.StatusName;
     processedRequest.ISLater = processedRequest.ISLater;
@@ -176,12 +176,22 @@ kony.apps.coe.ess.Approvals.tabApprovalsDashboard.prototype.process_ApprovalRequ
     processedRequest.FlxTimerUi = {
       isVisible: false
     };
+    var btnNoticedvis = false,visibility= true;
     if (approvalRequest.Category) {
       processedRequest.category = approvalRequest.Category;
+      if(processedRequest.category == "Annual Leave"){
+        visibility = false;
+        btnNoticedvis = true;
+      }
     }
     else {
       processedRequest.category = "";
     }
+    processedRequest.btnLaterSegment = {"isVisible": visibility,"skin" : "sknBtnMob0OBor1DB6C928px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};
+    processedRequest.btnReject = {"isVisible": visibility,"skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject")};
+    processedRequest.btnApprove = {"isVisible": visibility,"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")};
+    processedRequest.btnNoticed = {"isVisible": btnNoticedvis,"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Noticed")};
+
     //delegation
     if (approvalRequest.Delegated) {
       processedRequest.Delegated = {

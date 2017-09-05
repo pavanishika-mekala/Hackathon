@@ -97,12 +97,13 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_data_ForSegement = function(re
  */
 kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(approvalRequest) {
   try {
+    kony.print("in kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest");
     var processedRequest = {};
     processedRequest = approvalRequest;
     //common segment values
-    processedRequest.btnLaterSegment = {"skin" : "sknBtnMob0OBor1DB6C928px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};
-    processedRequest.btnReject = {"skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject")};
-    processedRequest.btnApprove = {"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")};
+  //  processedRequest.btnLaterSegment = {"skin" : "sknBtnMob0OBor1DB6C928px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};
+  //  processedRequest.btnReject = {"skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject")};
+  //  processedRequest.btnApprove = {"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")};
     processedRequest.StatusId = approvalRequest.StatusId;
     processedRequest.StatusName = approvalRequest.StatusName;
     processedRequest.request_type = approvalRequest.Type;
@@ -130,11 +131,22 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
     processedRequest.FlxTimerUi = {
       isVisible: false
     };
+    var btnNoticedvis = false,visibility= true;
     if (approvalRequest.Category) {
       processedRequest.category = approvalRequest.Category;
-    } else {
+      if(processedRequest.category == "Annual Leave"){
+        visibility = false;
+        btnNoticedvis = true;
+      }
+    }
+    else {
       processedRequest.category = "";
     }
+    processedRequest.btnLaterSegment = {"isVisible": visibility,"skin" : "sknBtnMob0OBor1DB6C928px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};
+    processedRequest.btnReject = {"isVisible": visibility,"skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject")};
+    processedRequest.btnApprove = {"isVisible": visibility,"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")};
+    processedRequest.btnNoticed = {"isVisible": btnNoticedvis,"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Noticed")};
+
     //delegation
     if (approvalRequest.Delegated) {
       processedRequest.Delegated = {
@@ -963,6 +975,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.changeSkinsForNowSegment = function(re
  */
 kony.apps.coe.ess.Approvals.ApprovalsHome.set_data_ForNowSegment = function(response) {
   try {
+    kony.print("in kony.apps.coe.ess.Approvals.ApprovalsHome.set_data_ForNowSegment");
     var processedData = kony.apps.coe.ess.Approvals.ApprovalsHome.process_data_ForSegement(response);
     //setting the data to the approval request Segement
     if (processedData == null || processedData == undefined) {
@@ -994,7 +1007,8 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.set_data_ForNowSegment = function(resp
       "flxUserImg": "flxUserImg",
       "btnLaterSegment" : "btnLaterSegment",
       "btnReject" : "btnReject",
-      "btnApprove" : "btnApprove"
+      "btnApprove" : "btnApprove",
+      "btnNoticed" : "btnNoticed"
     };
     frmApprovalHome.segApprovalsList.widgetDataMap = WidgetDatamap;
     frmApprovalHome.segApprovalsList.setData(processedData);
