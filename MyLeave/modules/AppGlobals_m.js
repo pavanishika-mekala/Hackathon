@@ -117,3 +117,11 @@ kony.apps.coe.ess.globalVariables.Status = {
 String.prototype.replaceAll = function(f, r) {
   return this.split(f).join(r);
 };
+kony.apps.coe.ess.globalVariables.leaveWalletcolors=[
+                ["0xD74B14ff", "0xD74B14ff"],
+				["0xFFC300ff", "0xFFC300ff"],
+				["0x69AF23ff","0x69AF23ff"]
+            ];
+kony.apps.coe.ess.globalVariables.leaveWalletconsumedSkn="LBLBgD74B14";
+kony.apps.coe.ess.globalVariables.leaveWalletPlanedSkn="LBLFFC300";
+kony.apps.coe.ess.globalVariables.leaveWalletAvailableSkn="LBL69AF23";

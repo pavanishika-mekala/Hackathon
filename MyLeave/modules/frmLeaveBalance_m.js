@@ -48,27 +48,11 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
                 ["0xF82B7Bff", "0xF56DD5ff"]
             ]
         ];*/
-      	var colors = [
-            [
-                ["0xD74B14ff", "0xD74B14ff"],
-				["0xFFC300ff", "0xFFC300ff"],
-				["0x69AF23ff","0x69AF23ff"]
-            ],
-            [
-                ["0xD74B14ff", "0xD74B14ff"],
-				["0xFFC300ff", "0xFFC300ff"],
-				["0x69AF23ff","0x69AF23ff"]
-            ],
-            [
-                ["0xD74B14ff", "0xD74B14ff"],
-				["0xFFC300ff", "0xFFC300ff"],
-				["0x69AF23ff","0x69AF23ff"]
-            ],
-            [
-                ["0xD74B14ff", "0xD74B14ff"],
-				["0xFFC300ff", "0xFFC300ff"],
-				["0x69AF23ff","0x69AF23ff"]
-            ]
+        var colors = [
+            kony.apps.coe.ess.globalVariables.leaveWalletcolors,
+            kony.apps.coe.ess.globalVariables.leaveWalletcolors,
+            kony.apps.coe.ess.globalVariables.leaveWalletcolors,
+            kony.apps.coe.ess.globalVariables.leaveWalletcolors
         ];
         if (Number(objectId[1]) % 2 === 0) {
 

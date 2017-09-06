@@ -163,37 +163,21 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
       if (i % 2 === 0) {
         if (flag1 === 0) {
           skn = "LBLMOB3BD1D7";
-          colors = [
-            ["0xD74B14ff", "0xD74B14ff"],
-			["0xFFC300ff", "0xFFC300ff"],
-			["0x69AF23ff","0x69AF23ff"]
-          ];
+          colors = kony.apps.coe.ess.globalVariables.leaveWalletcolors;
           flag1 = 1;
         } else if (flag1 === 1) {
           skn = "LBLMOB3BD1D7";
-          colors = [
-            ["0xD74B14ff", "0xD74B14ff"],
-			["0xFFC300ff", "0xFFC300ff"],
-			["0x69AF23ff","0x69AF23ff"]
-          ];
+          colors = kony.apps.coe.ess.globalVariables.leaveWalletcolors;
           flag1 = 0;
         }
       } else {
         if (flag2 === 0) {
           skn = "LBLMOBF74A4A";
-          colors = [
-            ["0xD74B14ff", "0xD74B14ff"],
-			["0xFFC300ff", "0xFFC300ff"],
-			["0x69AF23ff","0x69AF23ff"]
-          ];
+          colors = kony.apps.coe.ess.globalVariables.leaveWalletcolors;
           flag2 = 1;
         } else if (flag2 === 1) {
           skn = "LBLMOBF74A4A";
-          colors = [
-            ["0xD74B14ff", "0xD74B14ff"],
-			["0xFFC300ff", "0xFFC300ff"],
-			["0x69AF23ff","0x69AF23ff"]
-          ];
+          colors = kony.apps.coe.ess.globalVariables.leaveWallet.colors;
           flag2 = 0;
         }
       }
@@ -268,7 +252,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "id": "lblConsumed1"+i,
         "isVisible": true,
         "left": "1%",
-        "skin": "LBLBgD74B14",
+        "skin": kony.apps.coe.ess.globalVariables.leaveWalletconsumedSkn,
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -324,7 +308,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "id": "lblPlanned1"+i,
         "isVisible": true,
         "left": "1%",
-        "skin": "LBLFFC300",
+        "skin": kony.apps.coe.ess.globalVariables.leaveWalletPlanedSkn,
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -380,7 +364,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "id": "lblAvailable1"+i,
         "isVisible": true,
         "left": "1%",
-        "skin": "LBL69AF23",
+        "skin": kony.apps.coe.ess.globalVariables.leaveWalletAvailableSkn,
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
