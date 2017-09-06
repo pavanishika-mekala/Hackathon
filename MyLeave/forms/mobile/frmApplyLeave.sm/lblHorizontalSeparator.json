@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "2px"
+        "value": "1dp"
     },
     "_wrapping_": 2,
     "android": {

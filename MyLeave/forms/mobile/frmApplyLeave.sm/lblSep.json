@@ -8,7 +8,7 @@
     },
     "_height_": {
         "type": "string",
-        "value": "2px"
+        "value": "1dp"
     },
     "_left_": {
         "type": "string",
