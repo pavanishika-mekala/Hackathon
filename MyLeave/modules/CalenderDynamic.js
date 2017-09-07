@@ -257,7 +257,7 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
         }.bind(this));
         var basicconfig_cell = {
             "id": "",
-            "top": "-16.66%",
+            "top": "-13.66%",
             "left": "0%",
             "width": "14.29%",
             "height": "16.65%",
