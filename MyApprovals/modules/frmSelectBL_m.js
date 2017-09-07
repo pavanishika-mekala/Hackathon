@@ -13,6 +13,27 @@ kony.apps.coe.ess.Approvals = kony.apps.coe.ess.Approvals || {};
  */
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic = function() {};
 
+// /***
+//  *@function
+//  * @class	 :  frmSelectBackendLogic
+//  * @returns	 :	None
+//  * @desc	 :	get single instance for people object
+//  */
+// kony.apps.coe.ess.Approvals.frmSelectBackendLogic.getPeopleInstance = function() {
+//     kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.getPeopleInstance--");
+//     try {
+//         if(kony.apps.coe.ess.Approvals.frmSelectBackendLogic.singletonObj !== undefined) {
+//             return kony.apps.coe.ess.Approvals.frmSelectBackendLogic.singletonObj;
+//         } else {
+//             kony.apps.coe.ess.Approvals.frmSelectBackendLogic.singletonObj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();
+//             return kony.apps.coe.ess.Approvals.frmSelectBackendLogic.singletonObj;
+//         }
+//     } catch(err) {
+//         handleError(err);
+//     }
+//     kony.print("--End: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.getPeopleInstance--");
+// };
+
 /***
  *@function
  * @class	 :  frmSelectBackendLogic
@@ -101,6 +122,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickRequestType =
         }
         frmSearch.show();
     }
+  	frmSelect.segSearch.setVisibility(false);
     frmSelect.SegRequestsType.isVisible = true;
     frmSelect.SegStatusType.isVisible = false;
     frmSelect.segSearchPeople.isVisible = false;
@@ -140,6 +162,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickStatusType = 
         }
         frmSearch.show();
     }
+  	frmSelect.segSearch.setVisibility(false);
     frmSelect.SegRequestsType.isVisible = false;
     frmSelect.SegStatusType.isVisible = true;
     frmSelect.segSearchPeople.isVisible = false;
@@ -179,6 +202,8 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickPeople = func
         }
         frmSearch.show();
     }
+  	frmSelect.segSearch.setVisibility(false);
+  	frmSelect.txtSearch.text="";
     frmSelect.SegRequestsType.isVisible = false;
     frmSelect.SegStatusType.isVisible = false;
     frmSelect.segSearchPeople.isVisible = true;
@@ -316,6 +341,129 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegStatusData
 };
 /***
  *@function
+ * @class	 :  frmSelectpeople search logic
+ * @returns	 :	None
+ * @desc	 :	search based on first name and last name
+ */
+kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople = function(str) {
+  var masterData=frmSelect.segSearchPeople.data;
+  var searchData=[];
+   kony.print("soumya 11111 masterdata"+JSON.stringify(masterData));
+  kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople--");
+  try {
+    var widgetDataMap = {
+      lblName: "Name",
+      imgSelected: "imgSelected",
+      lblIntials: "lblIntials"
+    };
+    frmSelect.segSearchPeople.widgetDataMap = widgetDataMap;
+    frmSelect.segSearch.widgetDataMap=widgetDataMap;
+    if(isEmpty(str)){
+      alert("12345");
+      frmSelect.segSearchPeople.setVisibility(true);
+      frmSelect.segSearch.setVisibility(false);
+    }else{
+      for(var j=0;j<masterData.length;j++){
+        if((masterData[j]["Name"]!=undefined)&&(masterData[j]["Name"].search(new RegExp(str,"i")))!==-1){
+          searchData.push(masterData[j]);
+        }
+      }
+      //scopeObj.employeeList = serachData;
+      frmSelect.segSearch.setData(searchData);
+      //frmSelect.segSearchPeople.setVisibility(false);
+      frmSelect.segSearch.setVisibility(true);
+    }
+  } catch(err) {
+    handleError(err);
+  }
+  kony.print("--End: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople--");
+};
+/***
+ *@function
+ * @class	 :  frmSelectpeople search logic
+ * @returns	 :	None
+ * @desc	 :	onrowclick of search segment
+ */
+kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick = function() {
+  var masterData=frmSelect.segSearchPeople.data;
+  var searchData=frmSelect.segSearch.data;
+  var selectedSearchItems=frmSelect.segSearch.selectedRowItems;
+  var searchData=[];
+   kony.print("soumya 22222  selectedSearchItems"+JSON.stringify(selectedSearchItems));
+  kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick--");
+  try {
+    var widgetDataMap = {
+      lblName: "Name",
+      imgSelected: "imgSelected",
+      lblIntials: "lblIntials"
+    };
+    frmSelect.segSearchPeople.widgetDataMap = widgetDataMap;
+    frmSelect.segSearch.widgetDataMap=widgetDataMap;
+    var unselectedItems=[];
+    var count=0;
+    for(var a=0;a<searchData.length;a++){
+      count=0
+      for(var b=0;b<selectedSearchItems.length;b++){
+        	if(searchData[a]["id"] == selectedSearchItems[b]["id"] ){
+              	count=1;
+              	break;
+            }
+      }
+      if(count == 0){
+        unselectedItems.push(searchData[a]);
+      }
+    }
+     var count1=0;
+    for(var i=0;i<selectedSearchItems.length;i++){
+//       if(frmSelect.segSearchPeople.selectedRowIndices != null || frmSelect.segSearchPeople.selectedRowIndices != undefined){
+//         for(var k=0;k<frmSelect.segSearchPeople.selectedRowIndices.length;k++){
+//           if(selectedSearchItems[i]["id"]== frmSelect.segSearchPeople.selectedRowIndices[k]["id"]){
+//             count1=1;
+//             break;
+//           }
+//         }
+//         if(count1 == 0){
+//         frmSelect.segSearchPeople.selectedRowIndices.push(selectedSearchItems[i]);
+//         }
+//       }else{
+//         frmSelect.segSearchPeople.selectedRowIndices=[selectedSearchItems[i]];
+//       }
+//     }
+        for(var k=0;k<masterData.length;k++){
+			if(selectedSearchItems[i]["id"]== masterData[k]["id"]){
+              kony.print("soumya selectedData"+JSON.stringify(masterData[k])+"test :"+JSON.stringify(selectedSearchItems[i]));
+              masterData[k]["imgSelected"]="ok.png";
+              break;
+            }
+        }
+  }
+    for(var x=0;x<unselectedItems.length;x++){
+        for(var y=0;y<masterData.length;y++){
+			if(unselectedItems[x]["id"]== masterData[y]["id"]){
+              kony.print("soumya selectedData"+JSON.stringify(masterData[y])+"test :"+JSON.stringify(unselectedItems[x]));
+              masterData[y]["imgSelected"]= unselectedItems[x]["imgSelected"];
+              break;
+            }
+        }
+    }
+     kony.print("soumya 33333  masterData"+JSON.stringify(masterData));
+   frmSelect.segSearchPeople.setData(masterData);
+   frmSelect.forceLayout();
+  } catch(err) {
+    handleError(err);
+  }
+  kony.print("--End: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople--");
+};
+/***
+ *@function
+ * @class	 :  frmSelectpeople search logic
+ * @returns	 :	None
+ * @desc	 :	search based on first name and last name
+ */
+kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.loadPeople = function(str) {
+};
+/***
+ *@function
  * @class	 :  frmSelectBackendLogic
  * @returns	 :	None
  * @desc	 :	called on Click of FromCalendar
@@ -330,7 +478,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegPeopleData
                 Name: "All"
             }].concat(data);
             for (var i = 0; i < newData.length; i++) {
-                newData[i].imgSelected = "close.png";
+                newData[i].imgSelected = "ok.png";
             }
             var widgetDataMap = {
                 lblName: "Name",
@@ -338,6 +486,8 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegPeopleData
                 lblIntials: "lblIntials"
             };
             frmSelect.segSearchPeople.widgetDataMap = widgetDataMap;
+          	this.totalPeopleList=newData;
+          	kony.print("soumya newData"+JSON.stringify(newData));
             frmSelect.segSearchPeople.setData(newData);
         }
 

@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "92%"
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s001219a37834d1587fa56d3e61a8fc9",
+    "_skin_": "s6c1437716c34d429fc6b9ab6b91b7e1",
     "_top_": {
         "type": "string",
         "value": "0%"
@@ -36,22 +36,18 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "SegRequestsType",
-        "SegStatusType",
-        "segSearchPeople",
-        "segSearch",
-        "flxPeopleSearch"
+        "txtSearch"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxSelectRequestType",
+    "id": "flxPeopleSearch",
     "info": null,
     "isvisible": true,
-    "kuid": "8cc42b30da04489b8c37e7e2608e5777",
+    "kuid": "e7a75c9214184879a3c7aec4d71caa2c",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxSelect",
+    "parent": "flxSelectRequestType",
     "pf": "frmSelect",
     "snapgridsize": 10,
     "snaptogrid": true,

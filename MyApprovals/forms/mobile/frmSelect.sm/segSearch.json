@@ -52,12 +52,13 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "counter": "00",
+    "disabledSkins": {},
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
     "hasSections": false,
-    "id": "segSearchPeople",
-    "ide_onRowClick": "AS_Segment_d81705ee57e54f1baaa8ba810dfda43d",
+    "id": "segSearch",
+    "ide_onRowClick": "AS_Segment_acf0a63aec3f43b3b13a30cdd8682f11",
     "info": null,
     "invokedProperty": "unselectedStateImage",
     "ipad": {
@@ -70,8 +71,8 @@
             "indicator": "none"
         }
     },
-    "isvisible": false,
-    "kuid": "3f242de277b1430e8852e06294a61b58",
+    "isvisible": true,
+    "kuid": "fffc5d6a05964acbaa8c8cf7a8cd5767",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -96,7 +97,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectimage": "ok.png",
     "selectionbehavior": "multiselect",
     "selectionbehaviorconfig": {
@@ -107,7 +108,7 @@
     "selectionindicator": "imgSelected",
     "separatorcolor": "64646444",
     "separatorrequired": true,
-    "separatorthickness": 1,
+    "separatorthickness": 10,
     "showscrollbars": false,
     "unselectimage": "close.png",
     "viewtype": "tableview",
@@ -121,5 +122,5 @@
         "lblIntials": "lblIntials",
         "lblName": "lblName"
     },
-    "zindex": 1
+    "zindex": 2
 }
