@@ -38,13 +38,14 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "segTemp",
+        "platform": "iphone",
         "templateType": "segments",
         "topLevelBox": null
     },
     "id": "imgPic",
     "imagescalemode": 1,
     "info": null,
+    "invokedProperty": "src",
     "isvisible": true,
     "kuid": "f06f9830a40448ba9f691686f09e96a4",
     "name": "kony.ui.Image2",
