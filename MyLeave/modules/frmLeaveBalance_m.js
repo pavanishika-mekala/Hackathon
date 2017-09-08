@@ -30,7 +30,8 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
         var objectData = new Array(1);
         var skn = "";
-       /* var colors = [
+       /* remove 
+          var colors = [
             [
                 ["0xE8F8F8ff", "0xE8F8F8ff"],
                 ["0x3BD1D7ff", "0x51F1B7ff"]
@@ -81,8 +82,8 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
         var frmLeaveBalObj = new kony.apps.coe.ess.myLeave.leaveWalletUI(frmLeaveBalance, widgetObj, objectData[0]);
         frmLeaveBalObj.createSingleChart(objectData[0], colors[Number(objectId[1]) % 4], skn);
         frmLeaveBalance.lblTitle.text = (object.widgets())[3].id + " Balance";
-       	//frmLeaveBalance.lblTotalLeave.text = Number(objectData[0].TOTALLEAVE).toFixed();
-       	//frmLeaveBalance.lblAvailedLeave.text = Number(objectData[0].LEAVETAKEN).toFixed();
+        //remove frmLeaveBalance.lblTotalLeave.text = Number(objectData[0].TOTALLEAVE).toFixed();
+        //remove frmLeaveBalance.lblAvailedLeave.text = Number(objectData[0].LEAVETAKEN).toFixed();
       	var totalleaves=Number(objectData[0].TOTALLEAVE).toFixed();
         frmLeaveBalance.lblTotalText.text=kony.i18n.getLocalizedString("i18n.ess.common.total.valueKA")+" : "+totalleaves;
       	frmLeaveBalance.lblCountAvailable.text=Number(objectData[0].LEAVETAKEN).toFixed();
