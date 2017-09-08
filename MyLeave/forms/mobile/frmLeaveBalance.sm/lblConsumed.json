@@ -1,14 +1,15 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "80%"
+        "value": "7dp"
     },
     "_left_": {
         "type": "string",
-        "value": "11.90%"
+        "value": "5%"
     },
     "_margin_": [
         1,
@@ -22,11 +23,11 @@
         0,
         0
     ],
-    "_skin_": "s236b012e9ee41e7bab661d7211a8a1f",
+    "_skin_": "s22867809641469895d14d0ec8b49557",
     "_text_": "",
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "7dp"
     },
     "_wrapping_": 2,
     "android": {
@@ -36,17 +37,13 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "centery": {
         "type": "string",
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lblTitle",
+    "contentalignment": 4,
+    "id": "lblConsumed",
     "info": null,
     "ipad": {
         "psp": {
@@ -59,11 +56,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "f9d6a23449394c04b9e1d3f00265c0c6",
+    "kuid": "h31069c037b64a28ae7e207de641aeb5",
     "name": "kony.ui.Label",
-    "parent": "flxHeader",
-    "pf": "frmLeaveWallet",
-    "texti18n": "i18n.ess.myLeave.frmLeaveWallet.lblTitle.valueKA",
+    "parent": "flxConsumed",
+    "pf": "frmLeaveBalance",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

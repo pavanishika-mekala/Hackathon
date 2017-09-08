@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxChart",
-        "flxLeaveDetail"
+        "flxLeaveDetail",
+        "lblTotalText"
     ],
     "clipbounds": true,
     "containerweight": 100,
