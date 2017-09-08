@@ -6,10 +6,6 @@
         "type": "string",
         "value": "20%"
     },
-    "_left_": {
-        "type": "string",
-        "value": "46%"
-    },
     "_margin_": [
         6,
         6,
@@ -17,37 +13,42 @@
         6
     ],
     "_padding_": [
+        1,
         0,
-        0,
-        0,
+        1,
         0
     ],
-    "_skin_": "sc54c861d07848deabee85174d15e5d2",
+    "_skin_": "sac463e4f3d941fbb774cd57e810b414",
     "_text_": "",
     "_top_": {
         "type": "string",
         "value": "75%"
     },
     "_width_": {
-        "type": "string",
-        "value": "22%"
+        "type": "ref",
+        "value": "preferred"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
     "disabledSkins": {},
     "displaytext": true,
-    "focusskin": "s3c6051d01954ddcb5f09ac654fda881",
-    "id": "btnReject",
-    "ide_onClick": "AS_Button_f2323d07756c49a5a4daad7e146b14cf",
+    "focusskin": "s97e63c377094920b5a2b2d56f92c9a0",
+    "id": "btnNoticed",
+    "ide_onClick": "AS_Button_dd8ee38b71624e049ecceeb1df851f89",
     "info": null,
-    "isvisible": true,
-    "kuid": "1e7e30ada8d646f2a5bb64beac1d492f",
+    "isvisible": false,
+    "kuid": "c62e20c6d1674a0a9f87de20b111e710",
     "name": "kony.ui.Button",
+    "paddinginpixel": false,
     "parent": "flxApprovalRequest",
     "pf": "tempSegApprovalRequest",
-    "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.Reject",
+    "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.Noticed",
     "wType": "Button",
     "zindex": 1
 }
