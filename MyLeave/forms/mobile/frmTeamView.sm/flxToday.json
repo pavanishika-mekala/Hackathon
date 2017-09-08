@@ -1,10 +1,9 @@
 {
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
@@ -27,7 +26,7 @@
     "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "2%"
     },
     "_width_": {
         "type": "string",

@@ -19,9 +19,9 @@
     ],
     "_padding_": [
         0,
+        1,
         0,
-        0,
-        0
+        1
     ],
     "_skin_": "s82580abaae041919a6f0dcd806a8358",
     "_src_": "calendar_white.png",
@@ -38,6 +38,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmTeamView",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -48,6 +49,7 @@
     "isvisible": true,
     "kuid": "f3a945c6da8647ff9b0ffb1dbfdd284b",
     "name": "kony.ui.Image2",
+    "paddinginpixel": false,
     "parent": "flxToday",
     "pf": "frmTeamView",
     "srcType": 1,

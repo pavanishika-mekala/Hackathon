@@ -1,6 +1,5 @@
 {
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
@@ -24,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_skin_": "s5e9ab71f1ee4c9d9dd74a92b2164cb4",
     "_top_": {
         "type": "string",
         "value": "9%"
@@ -47,6 +46,7 @@
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
+    "focusskin": "s6fbe08f7dd24665a2bd692db8cabe71",
     "id": "flxTodayCal",
     "ide_onClick": "AS_FlexContainer_c2c3ece0cf354784b075517ce0eb8800",
     "info": null,

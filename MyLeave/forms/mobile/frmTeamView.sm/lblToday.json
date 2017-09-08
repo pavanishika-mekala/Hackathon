@@ -1,11 +1,10 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "97%"
     },
     "_left_": {
         "type": "string",
@@ -18,7 +17,7 @@
         1
     ],
     "_padding_": [
-        0,
+        1,
         0,
         0,
         0
@@ -31,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "55%"
     },
     "_wrapping_": 2,
     "android": {
@@ -58,6 +57,7 @@
     "isvisible": true,
     "kuid": "d87e81fa9e3f4eefa94d2658dc89049f",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxTodayCal",
     "pf": "frmTeamView",
     "texti18n": "i18n.ess.myLeave.frmLeaveHome.lblToday",
