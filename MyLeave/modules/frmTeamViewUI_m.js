@@ -47,7 +47,7 @@ kony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar = function
     var widgetInfo = {
         "MONTH": currentMonth,
         "YEAR": currentYear,
-        "noOfWeekstobedisplayed": 7,
+        "noOfWeekstobedisplayed": 12,
         "previous": 1,
         "weekNamelength": 1
     };

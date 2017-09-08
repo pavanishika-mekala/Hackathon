@@ -49,10 +49,20 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
 	this.weekLabelFocusSkin = skinInfo.weekLabelFocusSkin;
 	this.weekNameCurrentSkin = skinInfo.weekNameCurrentSkin;
 	this.weekDayCurrentSkin = skinInfo.weekDayCurrentSkin;
-    this.weekDaySkin = skinInfo.weekDaySkin;
-    this.weekNameSkin = skinInfo.weekNameSkin;
+	this.weekDaySkin = skinInfo.weekDaySkin;
+	this.weekNameSkin = skinInfo.weekNameSkin;
 	this.data = [];
-
+  frmTeamView.flxGestureRecognizer.setGestureRecognizer(2, {
+    fingers: 1,
+    swipedistance: 70,
+    swipevelocity: 30
+  },function swipeCallback(commonWidget, gestureInfo,context){
+    if (gestureInfo.swipeDirection == 1) {
+      this.shift(this.previous);
+    } else if (gestureInfo.swipeDirection == 2) {
+      this.shift(-1);
+    }
+  }.bind(this));
 	for (var i = 0; i < this.noOfWeekstobedisplayed; i++) {
 		this.data[i] = {
 			"text" : "NA",
@@ -88,9 +98,17 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
 		"skin" : skinInfo.weeklabelContainerSkin,
 		"isVisible" : true,
 		"clipBounds" : true,
-		"layoutType" : kony.flex.FLOW_HORIZONTAL
+		"layoutType" : kony.flex.FLOW_HORIZONTAL,
+		"allowHorizontalBounce": false,
+		"allowVerticalBounce": false,
+		"bounces": false,
+		"enableScrolling": true,
+		"horizontalScrollIndicator": true,
+		"pagingEnabled": false,
+		"scrollDirection": kony.flex.SCROLL_HORIZONTAL,
+		"verticalScrollIndicator": false
 	};
-	this.weekLabelContainer = new kony.ui.FlexContainer(basicconfig_Main, {}, {});
+	this.weekLabelContainer = new kony.ui.FlexScrollContainer(basicconfig_Main, {}, {});
 
 	this.containerWidget.add(this.weekLabelContainer);
 
@@ -295,7 +313,7 @@ kony.apps.coe.Reusable.WeekHeader.prototype.leftshift = function (shiftIndex) {
 	datajson.text = newStartDate.getDate() + "-" + newendDate.getDate();
 	this.data[this.noOfWeekstobedisplayed - 1] = datajson;
 	//alert("the data json is" + JSON.stringify(this.data));
-
+	frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
 	this.changeWeekLabelsUiatIndex(this.noOfWeekstobedisplayed - 1);
 	this.daysIntialize();
 	this.highlightTheCurrentWeek();
@@ -328,6 +346,7 @@ kony.apps.coe.Reusable.WeekHeader.prototype.rightshift = function (shiftIndex) {
 	datajson.text = newStartDate.getDate() + "-" + newendDate.getDate();
 
 	this.data[0] = datajson;
+  	frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
 	this.changeWeekLabelsUiatIndex(0);
 	this.daysIntialize();
 	this.highlightTheCurrentWeek();
@@ -391,7 +410,6 @@ kony.apps.coe.Reusable.WeekHeader.prototype.changeWeekLabelsUiatIndex = function
 };
 
 kony.apps.coe.Reusable.WeekHeader.prototype.highlightTheCurrentWeek = function () {
-
 	var selectedIndex = this.previous;
 	attributesJson = {};
 	//resetting all the weeklabel skins to normal
