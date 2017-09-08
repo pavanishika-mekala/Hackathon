@@ -1,0 +1,26 @@
+{
+    "AS_Button_dd8ee38b71624e049ecceeb1df851f89": {
+        "id": "AS_Button_dd8ee38b71624e049ecceeb1df851f89",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegApprovalRequest",
+            "type": "templates",
+            "platform": "",
+            "KUID": "5d0a0db1b8d041bba55f7d944db264ac"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_df306ca23eb349e4927c89986d85a03f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.approveRequest(context);\n",
+            "callbackType": null
+        }]
+    }
+}
