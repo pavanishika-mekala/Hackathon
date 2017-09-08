@@ -203,7 +203,7 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
         "top": "0%",
         "left": "0%",
         "width": "100%",
-        "height": "80.39%%",
+        "height": "79%%",
         "zIndex": 1,
         "skin": calendarFlex_skin,
         "isVisible": true,
@@ -257,10 +257,10 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
         }.bind(this));
         var basicconfig_cell = {
             "id": "",
-            "top": "-13.66%",
+            "top": "-16.01%",
             "left": "0%",
             "width": "14.29%",
-            "height": "16.65%",
+            "height": "16%",
             "zIndex": 1,
             "isVisible": true,
             "skin": this.cellSkin,
@@ -397,6 +397,7 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
             this[basicconfig_cell.id].add(this[basicconfig_status.id]);
             this[basicconfig_calendar.id].add(this[basicconfig_cell.id]);
         }
+      kony.print("VVV id"+basicconfig_calendar.id);
         this.mainFlex_name.add(this[basicconfig_calendar.id]);
     }
     this.DataConstructorIntializate();
@@ -414,7 +415,6 @@ kony.apps.coe.Reusable.calendarWIDGET.prototype.MonthDataConstructorIntializate 
         var monthYearKeyPair = kony.apps.coe.Reusable.calendar.HelperFunction.retriveMonthDetails(this.month, this.year, diff)
         this.MonthData[i].MONTH = monthYearKeyPair.MONTH;
         this.MonthData[i].YEAR = monthYearKeyPair.YEAR;
-
     }
     this.updateMonthHeaders();
 }
