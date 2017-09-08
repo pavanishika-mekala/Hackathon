@@ -1,13 +1,14 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "73.20%"
+        "value": "5%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -23,50 +24,41 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sc7cb427eb094b0799dea6fd9eb2ffb3",
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "33.90%"
+        "value": "9%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "50%"
     },
     "allboxes": [],
-    "allowhorizontalbounce": false,
-    "allowverticalbounce": false,
-    "bounces": false,
-    "bouncesZoom": false,
+    "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "52%"
+    },
     "children": [
-        "segTeamView"
+        "flxToday",
+        "lblToday"
     ],
     "clipbounds": true,
     "containerweight": 100,
-    "decelerat": false,
-    "dragg": false,
     "enablescrolling": true,
-    "horizontalscrollindicator": true,
-    "id": "flxScrollSegTeamView",
+    "id": "flxTodayCal",
+    "ide_onClick": "AS_FlexContainer_c2c3ece0cf354784b075517ce0eb8800",
     "info": null,
-    "iphone": {
-        "psp": {
-            "bouncesZoom": false
-        }
-    },
     "isvisible": true,
-    "kuid": "6878ff8902a84ad3b58a0b82c5cd5f2b",
-    "layouttype": 2,
-    "name": "kony.ui.FlexScrollContainer",
-    "pagingenabled": false,
+    "kuid": "fe52513d23064872b7d77bbfd8b83061",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
     "parent": "flxCompleteForm",
     "pf": "frmTeamView",
-    "scrolldirection": 2,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "track": false,
-    "verticalscrollindicator": true,
-    "wType": "FlexScrollContainer",
+    "wType": "FlexContainer",
     "widgetalignment": 1,
     "zindex": 1
 }

@@ -1,14 +1,15 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "65%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "17%"
+        "value": "0%"
     },
     "_margin_": [
         1,
@@ -22,15 +23,15 @@
         0,
         0
     ],
-    "_skin_": "s14dd2efdc8e4a488dced62842d73aaa",
-    "_text_": "Team Leave",
+    "_skin_": "sd2d50dc95f84985b9ebf4ff78ce3739",
+    "_text_": "Submitted",
     "_top_": {
         "type": "string",
-        "value": "5%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
-        "value": "65%"
+        "value": "60%"
     },
     "_wrapping_": 2,
     "android": {
@@ -41,8 +42,8 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 2,
-    "id": "lblTitle",
+    "contentalignment": 4,
+    "id": "lblToday",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,12 +56,12 @@
         }
     },
     "isvisible": true,
-    "kuid": "9a2e0dbf24bf46cea0568795de9a0483",
+    "kuid": "d87e81fa9e3f4eefa94d2658dc89049f",
     "name": "kony.ui.Label",
-    "parent": "flxHeader",
+    "parent": "flxTodayCal",
     "pf": "frmTeamView",
-    "texti18n": "i18n.ess.myLeave.frmTeamView.lblTitle.valueKA",
+    "texti18n": "i18n.ess.myLeave.frmLeaveHome.lblToday",
     "tooltip": "",
     "wType": "Label",
-    "zindex": 2
+    "zindex": 1
 }

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c2c3ece0cf354784b075517ce0eb8800": {
+        "id": "AS_FlexContainer_c2c3ece0cf354784b075517ce0eb8800",
+        "type": "ACTION_SEQUENCE",
+        "name": "action_CurrMonthCalendar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8edf69ac3e6b4a27af7f605ae9e4ee9f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__i118f03efff14788a133ee9c4d18b41e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
