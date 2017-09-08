@@ -13,27 +13,6 @@ kony.apps.coe.ess.Approvals = kony.apps.coe.ess.Approvals || {};
  */
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic = function() {};
 
-// /***
-//  *@function
-//  * @class	 :  frmSelectBackendLogic
-//  * @returns	 :	None
-//  * @desc	 :	get single instance for people object
-//  */
-// kony.apps.coe.ess.Approvals.frmSelectBackendLogic.getPeopleInstance = function() {
-//     kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.getPeopleInstance--");
-//     try {
-//         if(kony.apps.coe.ess.Approvals.frmSelectBackendLogic.singletonObj !== undefined) {
-//             return kony.apps.coe.ess.Approvals.frmSelectBackendLogic.singletonObj;
-//         } else {
-//             kony.apps.coe.ess.Approvals.frmSelectBackendLogic.singletonObj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();
-//             return kony.apps.coe.ess.Approvals.frmSelectBackendLogic.singletonObj;
-//         }
-//     } catch(err) {
-//         handleError(err);
-//     }
-//     kony.print("--End: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.getPeopleInstance--");
-// };
-
 /***
  *@function
  * @class	 :  frmSelectBackendLogic
@@ -122,7 +101,10 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickRequestType =
         }
         frmSearch.show();
     }
-  	frmSelect.segSearch.setVisibility(false);
+    frmSelect.flxPeopleSearch.setVisibility(false);
+    frmSelect.segSearch.setVisibility(false);
+    frmSelect.flxHidePeopleSearch.setVisibility(false);
+    frmSelect.lblNorecords.setVisibility(false);
     frmSelect.SegRequestsType.isVisible = true;
     frmSelect.SegStatusType.isVisible = false;
     frmSelect.segSearchPeople.isVisible = false;
@@ -162,7 +144,10 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickStatusType = 
         }
         frmSearch.show();
     }
-  	frmSelect.segSearch.setVisibility(false);
+    frmSelect.flxPeopleSearch.setVisibility(false);
+    frmSelect.segSearch.setVisibility(false);
+    frmSelect.flxHidePeopleSearch.setVisibility(false);
+    frmSelect.lblNorecords.setVisibility(false);
     frmSelect.SegRequestsType.isVisible = false;
     frmSelect.SegStatusType.isVisible = true;
     frmSelect.segSearchPeople.isVisible = false;
@@ -202,8 +187,11 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickPeople = func
         }
         frmSearch.show();
     }
-  	frmSelect.segSearch.setVisibility(false);
-  	frmSelect.txtSearch.text="";
+    frmSelect.flxPeopleSearch.setVisibility(true);
+    frmSelect.segSearch.setVisibility(false);
+    frmSelect.flxHidePeopleSearch.setVisibility(false);
+    frmSelect.lblNorecords.setVisibility(false);
+    frmSelect.txtSearch.text="";
     frmSelect.SegRequestsType.isVisible = false;
     frmSelect.SegStatusType.isVisible = false;
     frmSelect.segSearchPeople.isVisible = true;
@@ -348,7 +336,6 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegStatusData
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople = function(str) {
   var masterData=frmSelect.segSearchPeople.data;
   var searchData=[];
-   kony.print("soumya 11111 masterdata"+JSON.stringify(masterData));
   kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople--");
   try {
     var widgetDataMap = {
@@ -359,19 +346,35 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople =
     frmSelect.segSearchPeople.widgetDataMap = widgetDataMap;
     frmSelect.segSearch.widgetDataMap=widgetDataMap;
     if(isEmpty(str)){
-      alert("12345");
       frmSelect.segSearchPeople.setVisibility(true);
       frmSelect.segSearch.setVisibility(false);
+      frmSelect.flxHidePeopleSearch.setVisibility(false);
+      frmSelect.lblNorecords.setVisibility(false);
     }else{
       for(var j=0;j<masterData.length;j++){
         if((masterData[j]["Name"]!=undefined)&&(masterData[j]["Name"].search(new RegExp(str,"i")))!==-1){
           searchData.push(masterData[j]);
         }
       }
-      //scopeObj.employeeList = serachData;
-      frmSelect.segSearch.setData(searchData);
-      //frmSelect.segSearchPeople.setVisibility(false);
+      //copying selected rows of segsearchpeople into segSearch
+      var searchdataSelectedIndex=[];
+      for(var k=0;k<searchData.length;k++){
+        if(frmSelect.segSearchPeople.selectedRowItems != null && frmSelect.segSearchPeople.selectedRowItems != undefined){
+          for(var l=0;l<frmSelect.segSearchPeople.selectedRowItems.length;l++){
+            if(searchData[k]["id"]==frmSelect.segSearchPeople.selectedRowItems[l]["id"]){
+              searchdataSelectedIndex.push(k);
+            }
+          }
+        }
+      }
+      
+      frmSelect.segSearch.data=searchData;
+      frmSelect.segSearch.selectedRowIndices=[[0,searchdataSelectedIndex]];
       frmSelect.segSearch.setVisibility(true);
+      frmSelect.flxHidePeopleSearch.setVisibility(true);
+      if(searchData.length<=0){
+        frmSelect.lblNorecords.setVisibility(true);
+      }
     }
   } catch(err) {
     handleError(err);
@@ -388,8 +391,6 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
   var masterData=frmSelect.segSearchPeople.data;
   var searchData=frmSelect.segSearch.data;
   var selectedSearchItems=frmSelect.segSearch.selectedRowItems;
-  var searchData=[];
-   kony.print("soumya 22222  selectedSearchItems"+JSON.stringify(selectedSearchItems));
   kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick--");
   try {
     var widgetDataMap = {
@@ -399,55 +400,63 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     };
     frmSelect.segSearchPeople.widgetDataMap = widgetDataMap;
     frmSelect.segSearch.widgetDataMap=widgetDataMap;
+    //separating selected and unselected data in segSearch
     var unselectedItems=[];
     var count=0;
-    for(var a=0;a<searchData.length;a++){
-      count=0
-      for(var b=0;b<selectedSearchItems.length;b++){
-        	if(searchData[a]["id"] == selectedSearchItems[b]["id"] ){
-              	count=1;
-              	break;
-            }
-      }
-      if(count == 0){
-        unselectedItems.push(searchData[a]);
+    if(searchData.length != null){
+      for(var a=0;a<searchData.length;a++){
+        count=0
+        if(selectedSearchItems.length != null){
+          for(var b=0;b<selectedSearchItems.length;b++){
+                if(searchData[a]["id"] == selectedSearchItems[b]["id"] ){
+                    count=1;
+                    break;
+                }
+          }
+          if(count == 0){
+            unselectedItems.push(searchData[a]);
+          }
+        }
       }
     }
-     var count1=0;
-    for(var i=0;i<selectedSearchItems.length;i++){
-//       if(frmSelect.segSearchPeople.selectedRowIndices != null || frmSelect.segSearchPeople.selectedRowIndices != undefined){
-//         for(var k=0;k<frmSelect.segSearchPeople.selectedRowIndices.length;k++){
-//           if(selectedSearchItems[i]["id"]== frmSelect.segSearchPeople.selectedRowIndices[k]["id"]){
-//             count1=1;
-//             break;
-//           }
-//         }
-//         if(count1 == 0){
-//         frmSelect.segSearchPeople.selectedRowIndices.push(selectedSearchItems[i]);
-//         }
-//       }else{
-//         frmSelect.segSearchPeople.selectedRowIndices=[selectedSearchItems[i]];
-//       }
-//     }
-        for(var k=0;k<masterData.length;k++){
-			if(selectedSearchItems[i]["id"]== masterData[k]["id"]){
-              kony.print("soumya selectedData"+JSON.stringify(masterData[k])+"test :"+JSON.stringify(selectedSearchItems[i]));
-              masterData[k]["imgSelected"]="ok.png";
-              break;
+    var temp=[];
+    if(frmSelect.segSearchPeople.selectedRowIndices != null || frmSelect.segSearchPeople.selectedRowIndices != undefined){
+      temp=frmSelect.segSearchPeople.selectedRowIndices[0][1];
+    }
+    //copying selectedData of segSearch to selectedData of segSearchPeople
+    var selectedPeopleArray=[];
+    selectedPeopleArray=selectedPeopleArray.concat(temp); 
+    if(selectedSearchItems.length != null){
+      for(var i=0;i<selectedSearchItems.length;i++){
+          if(masterData.length != null){
+            for(var k=0;k<masterData.length;k++){
+              if(selectedSearchItems[i]["id"]== masterData[k]["id"]){
+                selectedPeopleArray.push(k);
+                break;
+              }
             }
-        }
-  }
+          }
+      }
+    }
+    //removing duplicates
+    var uniquePeopleArray = selectedPeopleArray.filter(function(elem, index, self) {
+    return index == self.indexOf(elem);
+    });
+    //copy unselected data of segSearch to unselected data of segSearchPeople
+    var unselectedPeopleArray=[];
     for(var x=0;x<unselectedItems.length;x++){
         for(var y=0;y<masterData.length;y++){
-			if(unselectedItems[x]["id"]== masterData[y]["id"]){
-              kony.print("soumya selectedData"+JSON.stringify(masterData[y])+"test :"+JSON.stringify(unselectedItems[x]));
-              masterData[y]["imgSelected"]= unselectedItems[x]["imgSelected"];
+             if(unselectedItems[x]["id"]== masterData[y]["id"]){
+              unselectedPeopleArray.push(y);
               break;
             }
         }
     }
-     kony.print("soumya 33333  masterData"+JSON.stringify(masterData));
-   frmSelect.segSearchPeople.setData(masterData);
+    //removing selectedPeopleArray-unselectedPeopleArray
+    uniquePeopleArray = uniquePeopleArray.filter( function( el ) {
+    return !unselectedPeopleArray.includes( el );
+    } );
+    frmSelect.segSearchPeople.selectedRowIndices=[[0,uniquePeopleArray]]
    frmSelect.forceLayout();
   } catch(err) {
     handleError(err);

@@ -97,7 +97,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectimage": "ok.png",
     "selectionbehavior": "multiselect",
     "selectionbehaviorconfig": {
@@ -108,7 +108,7 @@
     "selectionindicator": "imgSelected",
     "separatorcolor": "64646444",
     "separatorrequired": true,
-    "separatorthickness": 10,
+    "separatorthickness": 1,
     "showscrollbars": false,
     "unselectimage": "close.png",
     "viewtype": "tableview",
@@ -122,5 +122,5 @@
         "lblIntials": "lblIntials",
         "lblName": "lblName"
     },
-    "zindex": 2
+    "zindex": 3
 }

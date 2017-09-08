@@ -20,10 +20,6 @@
     ],
     "_skin_": "sf778437578a4755a595b2ff9af5c7b0",
     "_text_": "",
-    "_top_": {
-        "type": "string",
-        "value": "0%"
-    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -46,7 +42,7 @@
     },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblNoRecordsFound",
+    "id": "lblNorecords",
     "info": null,
     "ipad": {
         "psp": {
@@ -59,12 +55,12 @@
         }
     },
     "isvisible": false,
-    "kuid": "4f87b3c7d48f47669f95fee37e452831",
+    "kuid": "e45a9bd1623c4f3585efd629f316f4cb",
     "name": "kony.ui.Label",
-    "parent": "flxApprovalList",
-    "pf": "frmApprovalHome",
+    "parent": "flxHidePeopleSearch",
+    "pf": "frmSelect",
     "texti18n": "i18n.ess.MyApprovals.frmIsLaterSearch.lblNoRecordsFound",
     "tooltip": "",
     "wType": "Label",
-    "zindex": 10
+    "zindex": 1
 }
