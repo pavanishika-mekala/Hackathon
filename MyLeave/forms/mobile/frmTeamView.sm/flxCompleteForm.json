@@ -39,9 +39,9 @@
         "flxHeader",
         "flxHeaderShadow",
         "flxDayBar",
-        "flxScrollSegTeamView",
         "flxFooterShadow",
-        "flxFooter"
+        "flxFooter",
+        "flxGestureRecognizer"
     ],
     "clipbounds": true,
     "containerweight": 100,
