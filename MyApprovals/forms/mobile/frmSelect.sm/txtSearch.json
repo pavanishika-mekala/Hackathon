@@ -46,6 +46,7 @@
     "disabledSkins": {},
     "id": "txtSearch",
     "ide_onDone": "AS_TextField_fed40fe607fe4586a625c7fce06f2c47",
+    "ide_onTextChange": "AS_TextField_c391cd8e4799426b83b09553dc840ec1",
     "info": null,
     "isvisible": true,
     "keyboardtype": "A",

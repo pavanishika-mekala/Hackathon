@@ -403,10 +403,10 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     //separating selected and unselected data in segSearch
     var unselectedItems=[];
     var count=0;
-    if(searchData.length != null){
+    if(searchData != null){
       for(var a=0;a<searchData.length;a++){
         count=0
-        if(selectedSearchItems.length != null){
+        if(selectedSearchItems != null){
           for(var b=0;b<selectedSearchItems.length;b++){
                 if(searchData[a]["id"] == selectedSearchItems[b]["id"] ){
                     count=1;
@@ -426,9 +426,9 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     //copying selectedData of segSearch to selectedData of segSearchPeople
     var selectedPeopleArray=[];
     selectedPeopleArray=selectedPeopleArray.concat(temp); 
-    if(selectedSearchItems.length != null){
+    if(selectedSearchItems != null){
       for(var i=0;i<selectedSearchItems.length;i++){
-          if(masterData.length != null){
+          if(masterData != null){
             for(var k=0;k<masterData.length;k++){
               if(selectedSearchItems[i]["id"]== masterData[k]["id"]){
                 selectedPeopleArray.push(k);
@@ -454,7 +454,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     }
     //removing selectedPeopleArray-unselectedPeopleArray
     uniquePeopleArray = uniquePeopleArray.filter( function( el ) {
-    return !unselectedPeopleArray.includes( el );
+    return unselectedPeopleArray.indexOf( el ) < 0;
     } );
     frmSelect.segSearchPeople.selectedRowIndices=[[0,uniquePeopleArray]]
    frmSelect.forceLayout();
