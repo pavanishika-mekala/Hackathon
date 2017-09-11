@@ -1,9 +1,10 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "73.20%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +27,7 @@
     "_skin_": "sc7cb427eb094b0799dea6fd9eb2ffb3",
     "_top_": {
         "type": "string",
-        "value": "28.90%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
@@ -59,7 +60,7 @@
     "layouttype": 2,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
-    "parent": "flxCompleteForm",
+    "parent": "flxGestureRecognizer",
     "pf": "frmTeamView",
     "scrolldirection": 2,
     "snapgridsize": 10,

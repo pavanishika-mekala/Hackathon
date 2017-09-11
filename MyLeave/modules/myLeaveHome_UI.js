@@ -715,10 +715,10 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.onSuccessCallbackForEvents = function(re
                 "text": kony.apps.coe.ess.myLeave.MyLeaveHomeUI.data[i].Date
             };
             tempJSON.lblHoliday = {
-                "skin": "sknlblFF72A9Op100S32pxRoman",
+                "skin": "sknlbl00AAFFOp100S32pxRoman",
                 "text": kony.apps.coe.ess.myLeave.MyLeaveHomeUI.data[i].Name
             };
-            tempJSON.imgPic = "baloon.png";
+            tempJSON.imgPic = "starblue_white.png";
             formatedData.push(tempJSON);
         } else if (kony.apps.coe.ess.myLeave.MyLeaveHomeUI.data[i].Type.toLowerCase() === "event") {
             tempJSON.lblDate = {

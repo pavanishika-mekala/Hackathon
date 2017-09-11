@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "73.20%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -26,7 +26,7 @@
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "26.90%"
     },
     "_width_": {
         "type": "string",
@@ -36,26 +36,22 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxHeader",
-        "flxHeaderShadow",
-        "flxDayBar",
-        "flxFooterShadow",
-        "flxFooter",
-        "flxGestureRecognizer"
+        "flxScrollSegTeamView"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxCompleteForm",
+    "id": "flxGestureRecognizer",
     "info": null,
     "isvisible": true,
-    "kuid": "92e5e0eb075a4f198995babba16cfddd",
+    "kuid": "d1b2d6f481c4459fb26fcbeace77275a",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmTeamView",
+    "parent": "flxCompleteForm",
     "pf": "frmTeamView",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 50
 }

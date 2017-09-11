@@ -33,7 +33,6 @@
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [],
     "clipbounds": true,
@@ -49,6 +48,7 @@
     "pf": "frmTeamView",
     "snapgridsize": 10,
     "snaptogrid": true,
+    "vizProps": {},
     "wType": "FlexContainer",
     "widgetalignment": 1,
     "zindex": 1
