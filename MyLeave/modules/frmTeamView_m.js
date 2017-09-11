@@ -325,6 +325,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(i
                 }
                 callback(nonWorkingDays);
             }
+            //additional code
             else{
              callback(nonWorkingDays);
            }
