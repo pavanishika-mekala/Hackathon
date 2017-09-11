@@ -44,6 +44,7 @@
     "containerweight": 100,
     "contentalignment": 4,
     "disabledSkins": {},
+    "focusskin": "sf0ca675ae094defa063a7f47accf8e8",
     "id": "txtSearch",
     "ide_onDone": "AS_TextField_fed40fe607fe4586a625c7fce06f2c47",
     "ide_onTextChange": "AS_TextField_c391cd8e4799426b83b09553dc840ec1",
