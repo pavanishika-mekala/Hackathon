@@ -3,11 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "18.90%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
+        "value": "15%"
     },
     "_margin_": [
         0,
@@ -23,14 +19,18 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_right_": {
+        "type": "string",
+        "value": "26%"
+    },
+    "_skin_": "s2726703c4504970aee148d8d80b5816",
     "_top_": {
         "type": "string",
         "value": "10%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "7%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -39,17 +39,17 @@
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxDayBar",
+    "id": "flxTop2",
     "info": null,
     "isvisible": true,
-    "kuid": "56a0e04c12de45baa804ae9de8e4cab5",
+    "kuid": "jd1f934d99bb4621aa26d9595703a384",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCompleteForm",
-    "pf": "frmTeamView",
+    "parent": "flxTodayCalendar",
+    "pf": "frmLeaveHome",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 2
 }

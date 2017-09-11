@@ -9,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "7%"
     },
     "_margin_": [
         1,
@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "sc9ea0032af94a49bcde824534b2b27b",
-    "_text_": "",
+    "_text_": "11",
     "_top_": {
         "type": "string",
         "value": "15%"
@@ -56,10 +56,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "d34cecd4d9ec4a64916b9f1ae77f4d40",
+    "kuid": "d2503de3714547fa871f4a8f82a8b0dd",
     "name": "kony.ui.Label",
     "parent": "flxCalender",
-    "pf": "frmTeamView",
+    "pf": "frmLeaveHome",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

@@ -580,3 +580,10 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.formatEmployeeName = function(first
         handleError(e);
     }
 };
+
+kony.apps.coe.ess.myLeave.TeamView.prototype.setCurrentDate = function(){
+  var currDate = new Date();
+  currDate = currDate.getDate();
+  currDate = currDate.toFixed();
+  frmTeamView.lblToday.text = currDate;
+};

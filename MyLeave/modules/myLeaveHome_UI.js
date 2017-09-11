@@ -1433,9 +1433,16 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.deleteLeaveSuccess = function(leaveData,
         alertType : constants.ALERT_TYPE_CONFIRMATION,
         message : kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
         alertHandler : alertCallback
-      }
+      };
       var pspConfig={};
       kony.ui.Alert(basicConfig,pspConfig);
     }    
   }
-}
+};
+
+kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCurrentDate = function(){
+  var currDate = new Date();
+  currDate = currDate.getDate();
+  currDate = currDate.toFixed();
+  frmLeaveHome.lblToday.text = currDate.toFixed();
+};

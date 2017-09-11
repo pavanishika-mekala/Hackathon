@@ -40,7 +40,8 @@
         "lblTitle",
         "lblMonth",
         "flxIndividualView",
-        "flxTeamView"
+        "flxTeamView",
+        "flxTodayCalendar"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_e1ec7c04fd554eb791b36d71113383d9": {
+        "id": "AS_FlexContainer_e1ec7c04fd554eb791b36d71113383d9",
+        "type": "ACTION_SEQUENCE",
+        "name": "actions_TeamViewGoToday",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8edf69ac3e6b4a27af7f605ae9e4ee9f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fa9bf1932bf5499ab9c102783bd8b955",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

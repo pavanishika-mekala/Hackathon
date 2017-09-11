@@ -41,8 +41,7 @@
         "flxDayBar",
         "flxScrollSegTeamView",
         "flxFooterShadow",
-        "flxFooter",
-        "flxTodayCal"
+        "flxFooter"
     ],
     "clipbounds": true,
     "containerweight": 100,
