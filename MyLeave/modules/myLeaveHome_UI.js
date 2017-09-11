@@ -718,7 +718,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.onSuccessCallbackForEvents = function(re
                 "skin": "sknlbl00AAFFOp100S32pxRoman",
                 "text": kony.apps.coe.ess.myLeave.MyLeaveHomeUI.data[i].Name
             };
-            tempJSON.imgPic = "starblue.png";
+            tempJSON.imgPic = "starblue_white.png";
             formatedData.push(tempJSON);
         } else if (kony.apps.coe.ess.myLeave.MyLeaveHomeUI.data[i].Type.toLowerCase() === "event") {
             tempJSON.lblDate = {
