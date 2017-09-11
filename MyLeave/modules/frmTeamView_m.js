@@ -325,7 +325,10 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(i
                 }
                 callback(nonWorkingDays);
             }
-
+            //additional code
+            else{
+             callback(nonWorkingDays);
+           }
         }.bind(this), function(err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             handleError(err);
@@ -579,4 +582,11 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.formatEmployeeName = function(first
     } catch (e) {
         handleError(e);
     }
+};
+
+kony.apps.coe.ess.myLeave.TeamView.prototype.setCurrentDate = function(){
+  var currDate = new Date();
+  currDate = currDate.getDate();
+  currDate = currDate.toFixed();
+  frmTeamView.lblToday.text = currDate;
 };

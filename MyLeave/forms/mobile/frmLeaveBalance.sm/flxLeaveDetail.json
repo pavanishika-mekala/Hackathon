@@ -3,11 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "20%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
+        "value": "10%"
     },
     "_margin_": [
         0,
@@ -30,14 +26,24 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "70%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "flxTotalLeave",
-        "flxLeaveAvailed"
+        "flxLeaveAvailed",
+        "flxConsumed",
+        "flxPlanned",
+        "flxAvailable",
+        "lblCountConsumed",
+        "lblCountPlanned",
+        "lblCountAvailable"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -46,7 +52,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "dfe7061d4a7344e7a19e8d3f7a833de7",
-    "layouttype": 3,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxmidChart",
     "pf": "frmLeaveBalance",

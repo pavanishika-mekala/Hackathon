@@ -41,6 +41,7 @@
     "enabledforidletimeout": false,
     "footer": "frmSettings_footer",
     "footeroverlap": false,
+    "footersId": "823c18189bb4465998fbae1b4419626f",
     "id": "frmSettings",
     "ide_postShow": "AS_Form_1b0a1bf2600a4eff9a7560f3655296bb",
     "ide_preShow": "AS_Form_d10afb4ce4894aae9c8bda48e27247aa",

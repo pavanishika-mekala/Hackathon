@@ -44,6 +44,7 @@
     "dropdownimage": "dropdown_arrow.png",
     "groupcells": false,
     "id": "lstLeaveType",
+    "ide_onSelection": "AS_ListBox_gdcc681e6422488e930f1d96478b0d8e",
     "info": null,
     "isvisible": true,
     "kuid": "db82e819c8364ab08c37e5a11e6a753e",

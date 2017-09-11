@@ -20,7 +20,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__3cfeeacbd5564a629ef30f6482f37f87",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.rejectRequest(context);",
+            "codeSnippet": "//kony.apps.coe.ess.Approvals.ApprovalsHome.rejectRequest(context);\ntry {\n    var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmApprovalRequestDetail\");\n    if (kony.apps.coe.ess.globalVariables.isSPA) {\n        var selectedApprovalId = frmApprovalHome.segApprovalsList.selecteditems[0].ID\n    } else {\n        var selectedApprovalId = frmApprovalHome.segApprovalsList.selectedRowItems[0].ID;\n    }\n    formController.loadDataAndShowForm(selectedApprovalId)\n} catch (e) {\n    handleError(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.unableToLoadForm\"));\n}",
             "parentId": null,
             "callbackType": null
         }]

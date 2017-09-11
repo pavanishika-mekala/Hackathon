@@ -26,14 +26,13 @@
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "8%"
+        "value": "10%"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [],
     "clipbounds": true,
@@ -49,6 +48,7 @@
     "pf": "frmTeamView",
     "snapgridsize": 10,
     "snaptogrid": true,
+    "vizProps": {},
     "wType": "FlexContainer",
     "widgetalignment": 1,
     "zindex": 1

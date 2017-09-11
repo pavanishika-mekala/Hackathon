@@ -110,7 +110,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
   kony.print("--------------------in kony.apps.coe.ess.myLeave.leaveWalletUI.bindData LeaveWalletUI_m.js");
   try {
     var top = 10;
-    var left = 4.0;
+    var left = 2.0;
     var flag1 = 0;
     var flag2 = 0;
     var flxlist;
@@ -119,18 +119,18 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
       var skn = "";
       if (i % 2 === 0) {
         if (i === 0) {
-          left = 4.0;
+          left = 2.0;
         } else {
-          left = 4.0;
-          top += 2.64 + 44.50;
+          left = 2.0;
+          top += 1.0 + 40;
         }
 
         flxlist = new kony.ui.FlexContainer({
           "id": "flxComplete" + i,
           "top": top + "%",
           "left": left + "%",
-          "width": "44%",
-          "height": "44.50%",
+          "width": "47%",
+          "height": "40%",
           "zIndex": 1,
           "isVisible": true,
           "clipbounds": true,
@@ -146,8 +146,8 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
           "id": "flxComplete" + i,
           "top": top + "%",
           "right": left + "%",
-          "width": "44%",
-          "height": "44.50%",
+          "width": "47%",
+          "height": "40%",
           "zIndex": 1,
           "isVisible": true,
           "clipbounds": true,
@@ -163,37 +163,21 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
       if (i % 2 === 0) {
         if (flag1 === 0) {
           skn = "LBLMOB3BD1D7";
-          colors = [
-            ["0xE8F8F8ff", "0xE8F8F8ff"],
-            ["0x3BD1D7ff", "0x51F1B7ff"],
-             ["0x6C7A89ff","0x95A5A6ff"]
-          ];
+          colors = kony.apps.coe.ess.globalVariables.leaveWalletcolors;
           flag1 = 1;
         } else if (flag1 === 1) {
           skn = "LBLMOB3BD1D7";
-          colors = [
-            ["0xEAF9FDff", "0xEAF9FDff"],
-            ["0x41B1EEff", "0x51D2F1ff"],
-            ["0x6C7A89ff","0x95A5A6ff"]
-          ];
+          colors = kony.apps.coe.ess.globalVariables.leaveWalletcolors;
           flag1 = 0;
         }
       } else {
         if (flag2 === 0) {
           skn = "LBLMOBF74A4A";
-          colors = [
-            ["0xFFEDEDff", "0xFFEDEDff"],
-            ["0xF74A4Aff", "0xF78686ff"],
-            ["0x6C7A89ff","0x95A5A6ff"]
-          ];
+          colors = kony.apps.coe.ess.globalVariables.leaveWalletcolors;
           flag2 = 1;
         } else if (flag2 === 1) {
           skn = "LBLMOBF74A4A";
-          colors = [
-            ["0xFFEBF3ff", "0xFFEBF3ff"],
-            ["0xF82B7Bff", "0xF56DD5ff"],
-            ["0x6C7A89ff","0x95A5A6ff"]
-          ];
+          colors = kony.apps.coe.ess.globalVariables.leaveWallet.colors;
           flag2 = 0;
         }
       }
@@ -205,7 +189,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
           "top": 12.6 + "%",
           "letf": 0 + "%",
           "width": "100%",
-          "height": "50%",
+          "height": "60%",
           "zIndex": 1,
           "isVisible": true,
           "clipbounds": true,
@@ -234,11 +218,310 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "paddingInPixel": false,
         contentAlignment: constants.CONTENT_ALIGN_CENTER
       }, {});
-
+	  var flxLegend = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "20%",
+        "id": "flxLegend"+i,
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "5%",
+        "skin": "slFbox",
+        "top": "75%",
+        "width": "57%",
+        "zIndex": 1
+    }, {}, {});
+     flxLegend.setDefaultUnit(kony.flex.DP);
+    var flxConsumed = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "30%",
+        "id": "flxConsumed"+i,
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0%",
+        "skin": "slFbox",
+        "top": "0%",
+        "width": "76%",
+        "zIndex": 1
+    }, {}, {});
+     flxConsumed.setDefaultUnit(kony.flex.DP);
+    var lblConsumed1 = new kony.ui.Label({
+        "centerY": "50%",
+        "height": "7dp",
+        "id": "lblConsumed1"+i,
+        "isVisible": true,
+        "left": "1%",
+        "skin": kony.apps.coe.ess.globalVariables.leaveWalletconsumedSkn,
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": "7dp",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblConsumed2 = new kony.ui.Label({
+        "centerY": "60%",
+        "id": "lblConsumed2"+i,
+        "isVisible": true,
+        "left": "16%",
+        "skin": "LblSkn555555Px57M",
+        "text": kony.i18n.getLocalizedString("i18n.ess.graph.consumed.valueKA"), FIX ME
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    flxConsumed.add(lblConsumed1, lblConsumed2);
+    var flxPlanned = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "30%",
+        "id": "flxPlanned"+i,
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0%",
+        "skin": "slFbox",
+        "top": "30%",
+        "width": "76%",
+        "zIndex": 1
+    }, {}, {});
+    flxPlanned.setDefaultUnit(kony.flex.DP);
+    var lblPlanned1 = new kony.ui.Label({
+        "centerY": "50%",
+        "height": "7dp",
+        "id": "lblPlanned1"+i,
+        "isVisible": true,
+        "left": "1%",
+        "skin": kony.apps.coe.ess.globalVariables.leaveWalletPlanedSkn,
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": "7dp",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblPlanned2 = new kony.ui.Label({
+        "centerY": "60%",
+        "id": "lblPlanned2"+i,
+        "isVisible": true,
+        "left": "16%",
+        "skin": "LblSkn555555Px57M",
+        "text": kony.i18n.getLocalizedString("i18n.ess.graph.planned.valueKA"),
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    flxPlanned.add(lblPlanned1, lblPlanned2);
+    var flxAvailable = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "30%",
+        "id": "flxAvailable"+i,
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "0%",
+        "skin": "slFbox",
+        "top": "60%",
+        "width": "76%",
+        "zIndex": 1
+    }, {}, {});
+    flxAvailable.setDefaultUnit(kony.flex.DP);
+    var lblAvailable1 = new kony.ui.Label({
+        "centerY": "50%",
+        "height": "7dp",
+        "id": "lblAvailable1"+i,
+        "isVisible": true,
+        "left": "1%",
+        "skin": kony.apps.coe.ess.globalVariables.leaveWalletAvailableSkn,
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": "7dp",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblAvailable2 = new kony.ui.Label({
+        "centerY": "60%",
+        "id": "lblAvailable2"+i,
+        "isVisible": true,
+        "left": "16%",
+        "skin": "LblSkn555555Px57M",
+        "text": kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA"),
+      	//"height":"100%",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    flxAvailable.add(lblAvailable1, lblAvailable2);
+    var lblCountConsumed = new kony.ui.Label({
+        "height": "30%",
+        "id": "lblCountConsumed"+i,
+        "isVisible": true,
+        "left": "78%",
+        "skin": "LblSkn555555Px57M",
+        "text": "230",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "2%",
+        "width": "20%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblCountPlanned = new kony.ui.Label({
+        "height": "30%",
+        "id": "lblCountPlanned"+i,
+        "isVisible": true,
+        "left": "78%",
+        "skin": "LblSkn555555Px57M",
+        "text": "360",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "32%",
+        "width": "20%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblCountAvailable = new kony.ui.Label({
+        "height": "30%",
+        "id": "lblCountAvailable"+i,
+        "isVisible": true,
+        "left": "78%",
+        "skin": "LblSkn555555Px57M",
+        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "top": "62%",
+        "width": "20%",
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    flxLegend.add(flxConsumed, flxPlanned, flxAvailable, lblCountConsumed, lblCountPlanned, lblCountAvailable);
+    var flxTotal = new kony.ui.FlexContainer({
+        "autogrowMode": kony.flex.AUTOGROW_NONE,
+        "clipBounds": true,
+        "height": "20%",
+        "id": this.data[i].LEAVETYPETITLE,
+        "isVisible": true,
+        "layoutType": kony.flex.FREE_FORM,
+        "left": "58%",
+        "skin": "slFbox",
+        "top": "75%",
+        "width": "40%",
+        "zIndex": 1
+    }, {}, {});
+    var lblTotal = new kony.ui.Label({
+        "centerX": "50%",
+        "centerY": "28%",
+        "id": "lblTotal"+i,
+        "isVisible": true,
+        "skin": "LBLMOB555555PX24",
+        "text": kony.i18n.getLocalizedString("i18n.ess.common.total.valueKA"),
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    var lblCountTotal = new kony.ui.Label({
+        "centerX": "50%",
+        "centerY": "60%",
+        "id": "lblCountTotal"+i,
+        "isVisible": true,
+        "skin": "LBLMOB555555PX24",
+        "text": "12",
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        },
+        "width": kony.flex.USE_PREFFERED_SIZE,
+        "zIndex": 1
+    }, {
+        "contentAlignment": constants.CONTENT_ALIGN_MIDDLE_LEFT,
+        "padding": [0, 0, 0, 0],
+        "paddingInPixel": false
+    }, {
+        "textCopyable": false
+    });
+    flxTotal.setDefaultUnit(kony.flex.DP);
+    flxTotal.add(lblTotal, lblCountTotal);
       var label1 = new kony.ui.Label({
         id: "lblD1" + i,
-        skin: skn,
-        "top": "37%",
+        //skin: skn,
+        skin:"LBLMOB555555PX24",
+        "top": "57%",
         "centerX": "50%",
         "width": "preffered",
         "height": "preffered",
@@ -255,11 +538,11 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
       var label = new kony.ui.Label({
         id: "lblD2" + i,
         skin: "LBLMOB555555PX24",
-        "top": "65.26%",
+        "top": "38.26%",
         "left": "0%",
         "width": "100%",
         "height": "20%",
-        "text": "Total",//"Available",
+        "text": kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA"),
         "zIndex": 2,
         isVisible: true,
       }, {
@@ -269,162 +552,6 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         contentAlignment: constants.CONTENT_ALIGN_CENTER
       }, {});
       flxChart.add(label);
-      //#ifdef iphone
-      var labelTotalValue = new kony.ui.Label({
-        id: "lblLTV"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "65%",
-        "left": "61%",
-        "width": "40%",
-        "height": "15%",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
-        "zIndex": 2,
-        isVisible: true,
-      }, {
-        "padding": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "paddingInPixel": false,
-        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
-      }, {});
-      //#endif
-      //#ifdef android
-      var labelTotalValue = new kony.ui.Label({
-        id: "lblLTV"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "65%",
-        "left": "61%",
-        "width": "40%",
-        "height": "15%",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
-        "zIndex": 2,
-        isVisible: true,
-      }, {
-        "padding": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "paddingInPixel": false,
-        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
-      }, {});
-      //#endif
-       //#ifdef iphone
-      var labelPlannedValue = new kony.ui.Label({
-        id: "lblLPV"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "75%",
-        "left": "61%",
-        "width": "40%",
-        "height": "15%",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
-        "zIndex": 2,
-        isVisible: true,
-      }, {
-        "padding": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "paddingInPixel": false,
-        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
-      }, {});
-     //#endif
-      //#ifdef android
-      var labelPlannedValue = new kony.ui.Label({
-        id: "lblLPV"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "75%",
-        "left": "61%",
-        "width": "40%",
-        "height": "15%",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
-        "zIndex": 2,
-        isVisible: true,
-      }, {
-        "padding": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "paddingInPixel": false,
-        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
-      }, {});
-      //#endif
-     //#ifdef iphone
-      var labelAvailableValue = new kony.ui.Label({
-        id: "lblLAV"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "85%",
-        "left": "61%",
-        "width": "40%",
-        "height": "15%",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
-        "zIndex": 2,
-        isVisible: true,
-      }, {
-        "padding": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "paddingInPixel": false,
-        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
-      }, {});
-     //#endif
-      //#ifdef android
-      var labelAvailableValue = new kony.ui.Label({
-        id: "lblLAV"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "85%",
-        "left": "61%",
-        "width": "40%",
-        "height": "15%",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
-        "zIndex": 2,
-        isVisible: true,
-      }, {
-        "padding": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "paddingInPixel": false,
-        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_LEFT
-      }, {});
-      //#endif
-      var labelTaken = new kony.ui.Label({
-        id: "lblLT"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "65%",
-        "left": "0%",
-        "width": "55%",
-        "height": "15%",
-        "text": "Taken :",//"Total :",
-        "zIndex": 2,
-        isVisible: true,
-      }, {
-        "padding": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "paddingInPixel": false,
-         contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT
-      }, {});
-       var labelPlanned = new kony.ui.Label({
-        id: "lblLPlanned"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "75%",
-        "left": "0%",
-        "width": "55%",
-        "height": "15%",
-        "text": "Planned :",//"Total :",
-        "zIndex": 2,
-        isVisible: true,
-      }, {
-        "padding": [0, 0, 0, 0],
-        "marginInPixel": false,
-        "paddingInPixel": false,
-        contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT
-      }, {});
-     var labelAvailable = new kony.ui.Label({
-        id: "lblLAvailable"+i,
-        skin: "LBLMOB555555PX24",
-        "top": "85%",
-        "left": "0%",
-        "width": "55%",
-        "height": "15%",
-        "text": "Available :",//"Total :",
-         "zIndex": 2,
-          isVisible: true,
-        }, {
-          "padding": [0, 0, 0, 0],
-          "marginInPixel": false,
-          "paddingInPixel": false,
-          contentAlignment: constants.CONTENT_ALIGN_MIDDLE_RIGHT
-        }, {});
       var flxCover = new kony.ui.FlexContainer({
         "onClick": this.onflxClick,
         "id": "flxCoverForAction" + i,
@@ -446,15 +573,15 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
       flxlist.add(charttitle);
       //flxlist.add(label);
      // flxlist.add(label1);
-      flxlist.add(flxChart);
-      flxlist.add(labelTaken);
-      flxlist.add(labelPlanned);
-      flxlist.add(labelAvailable);
+      flxlist.add(flxChart, flxLegend, flxTotal);
+     // flxlist.add(labelTaken);
+     // flxlist.add(labelPlanned);
+     // flxlist.add(labelAvailable);
       //flxlist.add(chartWidget);
       //flxlist.add(labelTotal);
-      flxlist.add(labelTotalValue);
-      flxlist.add(labelPlannedValue);
-      flxlist.add(labelAvailableValue);
+//       flxlist.add(labelTotalValue);
+//       flxlist.add(labelPlannedValue);
+//       flxlist.add(labelAvailableValue);
       flxlist.add(flxCover);
       this.frmname[this.widgets.flxChartContainer].add(flxlist);
     }
@@ -524,8 +651,8 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
 
     var label1 = new kony.ui.Label({
       id: "lblD1",
-      skin: skn,
-      "top": "44%",
+      skin: "LBLMOB555555PX24",//skn,
+      "top": "57%",
       "centerX": "50%",
       "width": "preffered",
       "height": "preffered",
@@ -541,11 +668,11 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
     var label = new kony.ui.Label({
       id: "lblD2",
       skin: "LBLMOB555555PX24",
-      "top": "67.26%",
+      "top": "38.26%",
       "left": "0%",
       "width": "100%",
       "height": "20%",
-      "text": "Available",
+      "text": kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA"),
       "zIndex": 2,
       isVisible: true,
     }, {
@@ -650,7 +777,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createChartJSObjectAcc = funct
         "columnId": [0],
         "spinWheel": false,
         "direction": "clockWise",
-        "holeRadius": 92.5,
+        "holeRadius": 80.5,
         "border": {
           "line": {
             "color": ["0xffffffff"],

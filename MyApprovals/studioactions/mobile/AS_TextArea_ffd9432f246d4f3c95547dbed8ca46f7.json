@@ -1,0 +1,24 @@
+{
+    "AS_TextArea_ffd9432f246d4f3c95547dbed8ca46f7": {
+        "id": "AS_TextArea_ffd9432f246d4f3c95547dbed8ca46f7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "95bd849701724d1abee374f8d1932154"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e471300abe484af29fcdd88543c6853c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmApprovalRequestDetail.txtareaComments.text == \"\"){\n  frmApprovalRequestDetail.txtareaComments.placeholder = \"Type Comments here\";\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

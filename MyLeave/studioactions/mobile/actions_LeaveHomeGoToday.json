@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_ee270827027d450dafa0a6f695e37486": {
+        "id": "AS_FlexContainer_ee270827027d450dafa0a6f695e37486",
+        "type": "ACTION_SEQUENCE",
+        "name": "actions_LeaveHomeGoToday",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e21a6cc1209c40dca6e80244dcc9574b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f6d03c61a43a4a99b757ba32c5aabbf5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.prototype.addCalendarOnLeaveHome();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
