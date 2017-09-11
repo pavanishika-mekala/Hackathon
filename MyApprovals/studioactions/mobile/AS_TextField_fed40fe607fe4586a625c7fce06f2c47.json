@@ -19,7 +19,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__ife58395c3af4b819e0180c7abcec4d6",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "var searchText=frmSelect.txtSearch.text;\nvar filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\nfilterobj.searchDataInPeople(searchText);\n//kony.apps.coe.ess.Approvals.frmSelectBackendLogic.getPeopleInstance().searchDataInPeople(searchText);",
+            "codeSnippet": "var searchText=frmSelect.txtSearch.text;\nvar filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\nfilterobj.searchDataInPeople(searchText);",
             "parentId": null,
             "callbackType": null
         }]
