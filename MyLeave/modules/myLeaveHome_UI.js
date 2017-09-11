@@ -531,7 +531,10 @@ MyLeaveHomeUI.getWeeksInMonth = function(month, year) {
  */
 kony.apps.coe.ess.myLeave.
 MyLeaveHomeUI.shiftMonthDetailsFlex = function(weeksInMonth) { 
-  	if (weeksInMonth === 6) {
+        frmLeaveHome.flxLeaveMonthDetailsMain.height = 44 + "%";
+        frmLeaveHome.flxLeaveMonthDetailsMain.top = 56 + "%";
+  	/*
+	if (weeksInMonth === 6) {
         frmLeaveHome.flxLeaveMonthDetailsMain.height = 45.5 + "%";
         frmLeaveHome.flxLeaveMonthDetailsMain.top = 54.5 + "%";
       	frmLeaveHome.flxLeaveMonthDetailsMain.forceLayout();
@@ -545,6 +548,7 @@ MyLeaveHomeUI.shiftMonthDetailsFlex = function(weeksInMonth) {
         frmLeaveHome.flxLeaveMonthDetailsMain.top = 44.5 + "%";
       	frmLeaveHome.flxLeaveMonthDetailsMain.forceLayout();
     }
+	*/
 };
 /**
  * @class       MyLeaveHomeUI
