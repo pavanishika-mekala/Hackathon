@@ -6,10 +6,6 @@
         "type": "ref",
         "value": "preferred"
     },
-    "_left_": {
-        "type": "string",
-        "value": "0%"
-    },
     "_margin_": [
         1,
         1,
@@ -23,7 +19,7 @@
         0
     ],
     "_skin_": "sf778437578a4755a595b2ff9af5c7b0",
-    "_text_": "Aaron Miller",
+    "_text_": "",
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -36,14 +32,17 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "centery": {
         "type": "string",
         "value": "50%"
     },
-    "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblEmpName",
+    "id": "lblNorecords",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +55,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "da56ed4dfdb94ac09c0b92c99743be1c",
+    "kuid": "c92cbfc39bb1414aa1d0cf5b64b7455d",
     "name": "kony.ui.Label",
-    "parent": "flxEmpNameAndDesignation",
-    "pf": "tempSegEmployeeList",
+    "parent": "flxHideSearch",
+    "pf": "frmEmployeeLookUp",
+    "texti18n": "i18n.ess.MyApprovals.frmIsLaterSearch.lblNoRecordsFound",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

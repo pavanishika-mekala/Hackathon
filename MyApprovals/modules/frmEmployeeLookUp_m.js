@@ -79,26 +79,32 @@ searchDataInList = function(str) {
   var scopeObj = this;
   var masterData=scopeObj.totalEmployesList;
   var serachData=[];
-   // kony.print("soumya masterdata"+JSON.stringify(masterData));
-  	kony.print("--Start: kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.searchDataInList--");
-    try {
-      	frmEmployeeLookUp.segEmployeeList.widgetDataMap = this.widgetDataMap;
-		if(isEmpty(str)){
-          //	scopeObj.employeeList = masterData;
-      		frmEmployeeLookUp.segEmployeeList.setData(masterData);
-    	}else{
-        for(var j=0;j<masterData.length;j++){
-          if((masterData[j]["empName"]!=undefined)&&(masterData[j]["empName"].search(new RegExp(str,"i")))!==-1){
-            serachData.push(masterData[j]);
-          }
+  frmEmployeeLookUp.flxHideSearch.setVisibility(false);
+  // kony.print("soumya masterdata"+JSON.stringify(masterData));
+  kony.print("--Start: kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.searchDataInList--");
+  try {
+    frmEmployeeLookUp.segEmployeeList.widgetDataMap = this.widgetDataMap;
+    if(isEmpty(str)){
+      //	scopeObj.employeeList = masterData;
+      frmEmployeeLookUp.segEmployeeList.setData(masterData);
+    }else{
+      for(var j=0;j<masterData.length;j++){
+        if((masterData[j]["empName"]!=undefined)&&(masterData[j]["empName"].search(new RegExp(str,"i")))!==-1){
+          serachData.push(masterData[j]);
         }
-         	//scopeObj.employeeList = serachData;
-          frmEmployeeLookUp.segEmployeeList.setData(serachData);
-        }
-    } catch(err) {
-        handleError(err);
+      }
+      //scopeObj.employeeList = serachData;
+      if(serachData.length <= 0){
+        frmEmployeeLookUp.flxHideSearch.setVisibility(true);
+      }else{
+        frmEmployeeLookUp.flxHideSearch.setVisibility(false);
+      }
+      frmEmployeeLookUp.segEmployeeList.setData(serachData);
     }
-    kony.print("--End: kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.setDataInList--");
+  } catch(err) {
+    handleError(err);
+  }
+  kony.print("--End: kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.setDataInList--");
 };
 
 kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.

@@ -254,6 +254,7 @@ function showDelegationRequestDetailsForm(contextData) {
 function showEmployeeLookUpForm() {
     kony.apps.coe.ess.Approvals.EmployeeLookUp.getInstance().setDataInList();
   	frmEmployeeLookUp.txtSearchDelegate.text="";
+  	frmEmployeeLookUp.flxHideSearch.setVisibility(false);
     frmEmployeeLookUp.show();
 }
 

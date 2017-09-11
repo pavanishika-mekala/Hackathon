@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxSearchDelegate",
-        "segEmployeeList"
+        "segEmployeeList",
+        "flxHideSearch"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -46,7 +47,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "2f86dd43b34b40f9aeb2f8296e75175d",
-    "layouttype": 4,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMain",
     "pf": "frmEmployeeLookUp",
