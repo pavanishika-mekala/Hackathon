@@ -93,7 +93,7 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
   var basicconfig_Main = {
     "id" : "Weeks_LABEL_container",
     "top" : "11.33%",
-    "left" : "-8.5%",
+    "left" : "0%",// removed "-8.5%",
     "width" : "120%",
     "height" : DimensionInfo.weekLabelContainerHeight,
     "zIndex" : 1,
