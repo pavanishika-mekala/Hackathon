@@ -1576,7 +1576,7 @@ kony.apps.coe.ess.myLeave.applyLeave.RecurringLeave = {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        frmApplyLeave.flxWeekly.add(flxFirstSecondWeek, btnSunday, btnMonday, btnTuesday, btnWednesday, btnThursday, btnFriday, btnSaturday);
+        frmApplyLeave.flxWeekly.add(flxFirstSecondWeek, btnMonday, btnTuesday, btnWednesday, btnThursday, btnFriday, btnSaturday, btnSunday);
         this.currentSelectedOption = "weekly";
         frmApplyLeave.btnSunday.left = "0%";
         frmApplyLeave.flxWeekly.flxFirstSecondWeek.isVisible = false;
@@ -1776,7 +1776,7 @@ kony.apps.coe.ess.myLeave.applyLeave.RecurringLeave = {
             "padding": [0, 0, 0, 0],
             "paddingInPixel": false
         }, {});
-        frmApplyLeave.flxWeekly.add(flxFirstSecondWeek, btnSunday, btnMonday, btnTuesday, btnWednesday, btnThursday, btnFriday, btnSaturday);
+        frmApplyLeave.flxWeekly.add(flxFirstSecondWeek, btnMonday, btnTuesday, btnWednesday, btnThursday, btnFriday, btnSaturday, btnSunday);
         this.currentSelectedOption = "biweekly";
         frmApplyLeave.btnSunday.left = "2%";
         frmApplyLeave.flxWeekly.flxFirstSecondWeek.isVisible = false;
