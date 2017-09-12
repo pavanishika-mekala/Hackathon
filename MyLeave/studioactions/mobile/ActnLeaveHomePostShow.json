@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__5790c9e9d2474f3b99832fdf75143e65",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveDataSPA();",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveDataSPA();\nkony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCurrentDate();",
             "parentId": null,
             "callbackType": null
         }]
