@@ -39,6 +39,7 @@ addCalendarOnLeaveHome = function() {
         kony.print("-- Start addCalendarOnLeaveHome --");
         var currDate = new Date();
         kony.apps.coe.ess.myLeave.MyLeaveHomeUI.calendarWidget = new kony.apps.coe.Reusable.calendarWIDGET(currDate.getMonth(), currDate.getFullYear().toString().trim(0, 4), "flxCalendarWidget", "sknFlxMobOp0", "sknFlxFocus", "sknFlxMobOp0", "sknFlxMobOp100BgColD8F4FF", "sknBtnMobBg0OpFC777777Op100S79", "sknBtnMobOp100Bg2EBAEFFcFFFFFF", "sknLblMobFC333333Op100FS90", "sknBtnMobBg0OpFC333333Op100S24px", "sknBtnMobBg0OpFCC3C4CCOp100S24px", this.isValidMonthandYearforCalender, this.errorIsValidMonthandYearforCalender, this.onSwipeCallback, this.onTouchEndCallback, this.monthRefresh, this.totalCalenderRefresh);
+        frmLeaveHome.flxCalendar.removeAll();
         frmLeaveHome.flxCalendar.add(kony.apps.coe.ess.myLeave.MyLeaveHomeUI.calendarWidget.getcalendar());
         kony.print("-- End addCalendarOnLeaveHome --");
     } catch (e) {
