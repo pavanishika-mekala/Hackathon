@@ -37,13 +37,13 @@
     "canUpdateUI": true,
     "children": [
         "flxFirstSecondWeek",
-        "btnSunday",
         "btnMonday",
         "btnTuesday",
         "btnWednesday",
         "btnThursday",
         "btnFriday",
-        "btnSaturday"
+        "btnSaturday",
+        "btnSunday"
     ],
     "clipbounds": true,
     "containerweight": 100,
