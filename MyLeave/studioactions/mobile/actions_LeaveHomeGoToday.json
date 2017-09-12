@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__f6d03c61a43a4a99b757ba32c5aabbf5",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.prototype.addCalendarOnLeaveHome();",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.prototype.addCalendarOnLeaveHome();\nkony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();",
             "parentId": null,
             "callbackType": null
         }]
