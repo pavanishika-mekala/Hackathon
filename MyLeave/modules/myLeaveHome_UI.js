@@ -155,9 +155,9 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                     if (!isNaN(data.data.CellData.Hours) && data.data.CellData.Hours !== null && data.data.CellData.Hours !== "") {
 
                         if (parseFloat(data.data.CellData.Hours) >= kony.apps.coe.ess.appconfig.workingHours) {
-                            frmLeaveHome.lblFullDay.text = "Full Day";
+                            frmLeaveHome.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.fullDay.valueKA"); //"Full Day";
                         } else {
-                            frmLeaveHome.lblFullDay.text = "Partial";
+                            frmLeaveHome.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.partial.valueKA"); //"Partial";
                         }
 
                         if (data.data.CellData.StartDate == data.data.CellData.EndDate) {
@@ -178,7 +178,7 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                             frmLeaveHome.lblFullDay.text = " ";
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3);
                         } else {
-                            frmLeaveHome.lblFullDay.text = "Full Day";
+                            frmLeaveHome.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.fullDay.valueKA");// "Full Day";
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3) + " - " + data.data.CellData.EndDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.EndDate.substring(4, 6) + ""]).substring(0, 3);
                         }
                     }
