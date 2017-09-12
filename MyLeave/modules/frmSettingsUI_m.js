@@ -193,7 +193,7 @@ Settings.prototype.languageSelection = function(src1,src2,src3,Sellocale){
   //set the selected language to all forms
   kony.i18n.setCurrentLocaleAsync(Sellocale,kony.apps.coe.ess.settings.getSettingsObject().destroyForms,kony.apps.coe.ess.settings.getSettingsObject().failureCallBack, null);
   //store the language selected in device storage
-  kony.store.setItem("localeToBeSet",Sellocale);  
+  kony.store.setItem("localeToBeSetLeave",Sellocale);  
   frmSettings.imgEnglish.src = src1;
   frmSettings.imgFrench.src = src2;
   frmSettings.imgNederlands.src = src3;
@@ -243,7 +243,7 @@ Settings.prototype.failureCallBack = function(errCode,errMsg){
 };
 
 Settings.prototype.setLanginPostShow = function(){
-  var selecLang = kony.store.getItem("localeToBeSet");
+  var selecLang = kony.store.getItem("localeToBeSetLeave");
   if(null !== selecLang){
     kony.apps.coe.ess.settings.getSettingsObject().getSelectedLocale(selecLang,true);
   }else{

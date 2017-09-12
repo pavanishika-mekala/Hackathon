@@ -66,7 +66,7 @@ kony.apps.coe.ess.locale.getCurrentLocale = function(currentLocale){
 };
 
 kony.apps.coe.ess.locale.getLocaleInformation = function(){
-  var _localeInformation=kony.store.getItem("localeToBeSet");
+  var _localeInformation=kony.store.getItem("localeToBeSetLeave");
   kony.print("_localeInformation : "+_localeInformation+typeof(_localeInformation));
   if (_localeInformation!==null) {
     var localInfo=_localeInformation;
