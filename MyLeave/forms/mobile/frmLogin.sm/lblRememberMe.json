@@ -25,8 +25,8 @@
     "_skin_": "sf3d4223de144eeb859a8d32cfbc7e24",
     "_text_": "Remember Me",
     "_width_": {
-        "type": "string",
-        "value": "25%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -62,5 +62,5 @@
     "texti18n": "i18n.ess.Login.rememberMe",
     "tooltip": "",
     "wType": "Label",
-    "zindex": 1
+    "zindex": 2
 }

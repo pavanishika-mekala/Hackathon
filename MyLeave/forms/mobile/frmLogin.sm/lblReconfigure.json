@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "75%"
+        "value": "50%"
     },
     "_wrapping_": 2,
     "android": {
