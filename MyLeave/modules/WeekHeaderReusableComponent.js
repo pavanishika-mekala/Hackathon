@@ -59,8 +59,10 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
   },function swipeCallback(commonWidget, gestureInfo,context){
     if (gestureInfo.swipeDirection == 1) {
       this.shift(this.previous);
+      frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
     } else if (gestureInfo.swipeDirection == 2) {
       this.shift(-1);
+      frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
     }
   }.bind(this));
   for (var i = 0; i < this.noOfWeekstobedisplayed; i++) {
