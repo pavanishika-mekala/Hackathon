@@ -1449,5 +1449,5 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCurrentDate = function(){
   var currDate = new Date();
   currDate = currDate.getDate();
   currDate = currDate.toFixed();
-  frmLeaveHome.lblToday.text = currDate.toFixed();
+  frmLeaveHome.lblToday.text = currDate;
 };
