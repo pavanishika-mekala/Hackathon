@@ -272,7 +272,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "16%",
         "skin": "LblSkn555555Px57M",
-        "text": kony.i18n.getLocalizedString("i18n.ess.graph.consumed.valueKA"), FIX ME
+        "text": kony.i18n.getLocalizedString("i18n.ess.graph.consumed.valueKA"), //FIX ME
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
