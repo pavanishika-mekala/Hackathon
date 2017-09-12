@@ -59,6 +59,7 @@
     "name": "kony.ui.Label",
     "parent": "flxAppliedStatus",
     "pf": "frmLeaveHome",
+    "texti18n": "i18n.ess.common.applied.valueKA",
     "tooltip": "",
     "wType": "Label"
 }

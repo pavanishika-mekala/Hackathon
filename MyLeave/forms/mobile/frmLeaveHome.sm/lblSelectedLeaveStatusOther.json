@@ -59,6 +59,7 @@
     "name": "kony.ui.Label",
     "parent": "flxSelectedLeaveStatusOther",
     "pf": "frmLeaveHome",
+    "texti18n": "i18n.ess.common.rejected.valueKA",
     "tooltip": "",
     "wType": "Label"
 }
