@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__01bf840308024388bcd5123c5275b35b",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "//kony.application.getPreviousForm().show();\nvar previousForm = kony.application.getPreviousForm();\nvar formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(previousForm.id);\npreviousForm.destroy();\nformController.loadDataAndShowForm();\n",
+            "codeSnippet": "//kony.application.getPreviousForm().show();\n    var previousForm = kony.application.getPreviousForm();\n    var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(previousForm.id);\n    previousForm.destroy();\n    if (previousForm.id == \"frmSearchLog\") {\n        kony.apps.coe.ess.MyLeave.Footer.navigateFooter(3)\n    } \n    else if (previousForm.id == \"frmTeamView\") {\n        (new kony.apps.coe.ess.myLeave.TeamViewUI()).toggleSkin(frmLeaveHome, true);\n        var FormLoadObj = new kony.sdk.mvvm.NavigationObject();\n        var qp = {\n            \"employeeId\": kony.apps.coe.ess.globalVariables.employeeId\n        };\n        FormLoadObj.setQueryParams(\"segTeamView\", qp);\n        var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmTeamView\");\n        formController.loadDataAndShowForm(FormLoadObj)\n    }\n\telse {\n        formController.loadDataAndShowForm();\n    }\n",
             "parentId": null,
             "callbackType": null
         }]
