@@ -1,7 +1,7 @@
 {
   "android": {
-    "font_name": "AvenirLTStd-Roman",
-	"font_size": 71,
+    "font_name": "Helvetica",
+    "font_size": 107,
     "isForked": false
   },
   "background_color": "56a9dd00",
@@ -11,65 +11,87 @@
   "border_type": 0,
   "border_width": 0,
   "desktopweb": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
-  "fontSizeInPx": true,
+  "fontSizeInPx": false,
   "font_color": "2ebaefff",
   "font_name": "Helvetica",
   "font_size": 107,
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
   "iphone": {
-    "font_name": "AvenirLTStd-Roman",
-	"font_size": 107,
+    "font_name": "Helvetica",
+    "font_size": 107,
     "isForked": false
   },
   "isDefaultSkin": false,
   "kiosk": {
     "font_name": "GenericMonospace",
-    "font_size": 188,
+    "font_size": 107,
     "isForked": false
   },
   "kuid": "sb22abea3bb04020b616dae6249c4081",
   "spaan": {
     "font_name": "Helvetica",
-    "font_size": 125,
+    "font_size": 107,
     "isForked": false
   },
   "spaandroidtablet": {
     "font_name": "Helvetica",
-    "font_size": 125,
+    "font_size": 107,
     "isForked": false
   },
   "spabb": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
   "spaip": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
   "spaipad": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
   "spawindowstablet": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
   "spawinphone8": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
   "tabrcandroid": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
   "wType": "Button",
   "watchos": {
-    "font_name": "Helvetica"
+    "font_name": "Helvetica",
+    "font_size": 107,
+    "isForked": false
   },
   "windows8": {
-    "font_name": "AvenirLTStd-Black"
+    "font_name": "AvenirLTStd-Black",
+    "font_size": 107,
+    "isForked": false
   },
   "winphone8": {
-    "font_name": "AvenirLTStd-Roman"
+    "font_name": "GenericMonospace",
+    "font_size": 107,
+    "isForked": false
   }
 }

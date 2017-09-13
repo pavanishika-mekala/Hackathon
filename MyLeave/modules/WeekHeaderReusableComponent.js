@@ -450,8 +450,17 @@ kony.apps.coe.Reusable.WeekHeader.prototype.changeDayUiatIndex = function (index
       "text" : dayDate.getDate().toFixed(),
       "skin" : this.weekDaySkin
     };
+    //added code since week stars from monday so the day value should change accordingly
+    var currentDay = dayDate.getDay();
+    if(Number(currentDay) === 0){
+      currentDay = 6;
+    }else{
+      currentDay = Number(dayDate.getDay())-1;
+    }
+    var weekNameid = "WEEKNAME" + currentDay.toString();
+    
     //alert("tjje"+this.weekDaySkin);
-    var weekNameid = "WEEKNAME" + dayDate.getDay().toString();
+    //var weekNameid = "WEEKNAME" + dayDate.getDay().toString();
 
     if (diff == 0) {
       weekLabelJson.skin = this.weekDayCurrentSkin;
