@@ -5,11 +5,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "35%"
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
-        "value": "33.30%"
+        "value": "60%"
     },
     "_margin_": [
         1,
@@ -23,11 +23,11 @@
         0,
         0
     ],
-    "_skin_": "sf41124c9751491682e052b9ce667516",
+    "_skin_": "s42c653cffd64002a401b23787265c31",
     "_text_": "40",
     "_top_": {
         "type": "string",
-        "value": "60%"
+        "value": "30%"
     },
     "_width_": {
         "type": "string",
@@ -42,7 +42,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 6,
+    "contentalignment": 4,
     "id": "lblCountPlanned",
     "info": null,
     "ipad": {

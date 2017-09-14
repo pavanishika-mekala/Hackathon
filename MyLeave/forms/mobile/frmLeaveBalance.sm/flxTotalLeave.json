@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -49,7 +49,7 @@
     "kuid": "a5f2a8fe1c4c4dbda9f6e88b7a5f4218",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxLeaveDetail",
+    "parent": "flxmidChart",
     "pf": "frmLeaveBalance",
     "snapgridsize": 10,
     "snaptogrid": true,
