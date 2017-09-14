@@ -7,7 +7,7 @@
         {
             "btnAdditionalInfo": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "American Express"
+                "text": ""
             },
             "btnApprove": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -101,7 +101,7 @@
         {
             "btnAdditionalInfo": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "American Express"
+                "text": ""
             },
             "btnApprove": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -195,7 +195,7 @@
         {
             "btnAdditionalInfo": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "American Express"
+                "text": ""
             },
             "btnApprove": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
