@@ -203,7 +203,7 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
         "top": "0%",
         "left": "0%",
         "width": "100%",
-        "height": "79%%",
+        "height": "79%",
         "zIndex": 1,
         "skin": calendarFlex_skin,
         "isVisible": true,

@@ -521,7 +521,11 @@ MyLeaveHomeUI.getWeeksInMonth = function(month, year) {
         if (end > numDays)
             end = numDays;
     }
-    return weeks.length;
+  var weeksinMonth = weeks.length;
+  if(firstDate.getDay() === 0){
+    weeksinMonth = Number(weeksinMonth)+1;
+  }
+    return weeksinMonth;
 };
 /**
  * @class       MyLeaveHomeUI
@@ -532,8 +536,8 @@ MyLeaveHomeUI.getWeeksInMonth = function(month, year) {
  */
 kony.apps.coe.ess.myLeave.
 MyLeaveHomeUI.shiftMonthDetailsFlex = function(weeksInMonth) { 
-        frmLeaveHome.flxLeaveMonthDetailsMain.height = 44 + "%";
-        frmLeaveHome.flxLeaveMonthDetailsMain.top = 56 + "%";
+        frmLeaveHome.flxLeaveMonthDetailsMain.height = 46 + "%";
+        frmLeaveHome.flxLeaveMonthDetailsMain.top = 54 + "%";
   	/*
 	if (weeksInMonth === 6) {
         frmLeaveHome.flxLeaveMonthDetailsMain.height = 45.5 + "%";
