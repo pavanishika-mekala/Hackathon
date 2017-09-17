@@ -1,6 +1,6 @@
 {
   "android": {
-    "background_color": "1db6c9ff",
+    "background_color": "00aaffff",
     "bg_type": "one",
     "isForked": true
   },
@@ -33,7 +33,7 @@
     "isForked": true
   },
   "iphone": {
-    "background_color": "1db6c9ff",
+    "background_color": "00aaffff",
     "bg_type": "one",
     "isForked": true
   },
