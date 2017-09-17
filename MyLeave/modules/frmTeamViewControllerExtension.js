@@ -61,7 +61,7 @@ kony.sdk.mvvm.frmTeamViewControllerExtension = Class(kony.sdk.mvvm.BaseFormContr
             var todayDate = new Date();
             var tempIntervalDate = todayDate.thisWeekInterval(0);
             //tempIntervalDate[1] = new Date(Date.parse(tempIntervalDate[1]) - 172800000);
-          	if(typeof data.segTeamView != "undefined" && data.segTeamView !== null && data.segTeamView.length !== null && data.segTeamView.length > 0)
+            if(typeof data.segTeamView != "undefined" && data.segTeamView !== null && data.segTeamView.length !== null && data.segTeamView.length > 0)
             {
               (new kony.apps.coe.ess.myLeave.TeamView()).generateFormattedData(data.segTeamView,tempIntervalDate[0],tempIntervalDate[1],true, function(res) {
                   this.getController().bindData(res);
@@ -89,8 +89,9 @@ kony.sdk.mvvm.frmTeamViewControllerExtension = Class(kony.sdk.mvvm.BaseFormContr
      */
     bindData: function(data) {
         try {
-            var formmodel = this.getController().getFormModel();
-            formmodel.clear();
+            //for bbe-118 MyLeave_App crashes on click of 'Team view' after changing the locale.
+            //var formmodel = this.getController().getFormModel();
+            //formmodel.clear();
             (new kony.apps.coe.ess.myLeave.TeamView()).mapAndBindData(data);
             //this.$class.$superp.bindData.call(this, data);
             //this.getController().getFormModel().formatUI();
