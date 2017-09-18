@@ -1,7 +1,7 @@
 {
-  "background_color": "f6f6f6ff",
+  "background_color": "ffffffff",
   "bg_type": "one",
-  "border_color": "e0e0e0ff",
+  "border_color": "ffffffff",
   "border_style": "plain",
   "border_type": 0,
   "border_width": 1,
