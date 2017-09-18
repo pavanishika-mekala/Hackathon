@@ -52,19 +52,6 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
   this.weekDaySkin = skinInfo.weekDaySkin;
   this.weekNameSkin = skinInfo.weekNameSkin;
   this.data = [];
-  frmTeamView.flxGestureRecognizer.setGestureRecognizer(2, {
-    fingers: 1,
-    swipedistance: 70,
-    swipevelocity: 30
-  },function swipeCallback(commonWidget, gestureInfo,context){
-    if (gestureInfo.swipeDirection == 1) {
-      this.shift(this.previous);
-      frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
-    } else if (gestureInfo.swipeDirection == 2) {
-      this.shift(-1);
-      frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
-    }
-  }.bind(this));
   for (var i = 0; i < this.noOfWeekstobedisplayed; i++) {
     this.data[i] = {
       "text" : "NA",
@@ -73,7 +60,21 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
       "endDate" : undefined
     };
   }
-
+  frmTeamView.flxGestureRecognizer.setGestureRecognizer(2, {
+    fingers: 1,
+    swipedistance: 70,
+    swipevelocity: 30
+  },function swipeCallback(commonWidget, gestureInfo,context){
+    if (gestureInfo.swipeDirection == 1) {
+      this.shift(this.previous);
+      frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
+      callBackFunctions.OnWeekLabelClick.call(this,this.data[this.previous]);
+    } else if (gestureInfo.swipeDirection == 2) {
+      this.shift(-1);
+      frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
+      callBackFunctions.OnWeekLabelClick.call(this,this.data[this.previous]);
+    }
+  }.bind(this));
   //creation of the WeekHeader container flex
   var basicconfig_Main = {
     "id" : "WeekHeader_Reusable",
@@ -315,7 +316,6 @@ kony.apps.coe.Reusable.WeekHeader.prototype.leftshift = function (shiftIndex) {
   datajson.text = newStartDate.getDate() + "-" + newendDate.getDate();
   this.data[this.noOfWeekstobedisplayed - 1] = datajson;
   //alert("the data json is" + JSON.stringify(this.data));
-  frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
   this.changeWeekLabelsUiatIndex(this.noOfWeekstobedisplayed - 1);
   this.daysIntialize();
   this.highlightTheCurrentWeek();
@@ -348,7 +348,6 @@ kony.apps.coe.Reusable.WeekHeader.prototype.rightshift = function (shiftIndex) {
   datajson.text = newStartDate.getDate() + "-" + newendDate.getDate();
 
   this.data[0] = datajson;
-  frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
   this.changeWeekLabelsUiatIndex(0);
   this.daysIntialize();
   this.highlightTheCurrentWeek();
