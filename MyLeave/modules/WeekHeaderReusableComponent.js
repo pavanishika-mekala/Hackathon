@@ -95,7 +95,7 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
     "id" : "Weeks_LABEL_container",
     "top" : "11.33%",
     "left" : "0%",// removed "-8.5%",
-    "width" : "125%",
+    "width" : "123.9%",
     "height" : DimensionInfo.weekLabelContainerHeight,
     "zIndex" : 1,
     "skin" : skinInfo.weeklabelContainerSkin,
