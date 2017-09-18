@@ -316,6 +316,7 @@ kony.apps.coe.Reusable.WeekHeader.prototype.leftshift = function (shiftIndex) {
   datajson.text = newStartDate.getDate() + "-" + newendDate.getDate();
   this.data[this.noOfWeekstobedisplayed - 1] = datajson;
   //alert("the data json is" + JSON.stringify(this.data));
+  frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
   this.changeWeekLabelsUiatIndex(this.noOfWeekstobedisplayed - 1);
   this.daysIntialize();
   this.highlightTheCurrentWeek();
@@ -346,8 +347,9 @@ kony.apps.coe.Reusable.WeekHeader.prototype.rightshift = function (shiftIndex) {
   datajson.endDate = newendDate;
 
   datajson.text = newStartDate.getDate() + "-" + newendDate.getDate();
-
+  
   this.data[0] = datajson;
+  frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
   this.changeWeekLabelsUiatIndex(0);
   this.daysIntialize();
   this.highlightTheCurrentWeek();
