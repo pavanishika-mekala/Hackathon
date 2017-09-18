@@ -90,8 +90,10 @@ kony.sdk.mvvm.frmTeamViewControllerExtension = Class(kony.sdk.mvvm.BaseFormContr
     bindData: function(data) {
         try {
             //for bbe-118 MyLeave_App crashes on click of 'Team view' after changing the locale.
-            //var formmodel = this.getController().getFormModel();
-            //formmodel.clear();
+            if (kony.os.deviceInfo().name === "iPad" || kony.os.deviceInfo().name === "iPhone") {
+              var formmodel = this.getController().getFormModel();
+              formmodel.clear();
+            }
             (new kony.apps.coe.ess.myLeave.TeamView()).mapAndBindData(data);
             //this.$class.$superp.bindData.call(this, data);
             //this.getController().getFormModel().formatUI();

@@ -217,14 +217,16 @@ Settings.prototype.destroyForms = function(){
     frmLogin.destroy();
     frmNotificationsList.destroy();
     frmPendingLeaveRequest.destroy();
-    frmSearchLeaveType.destroy();
     frmSearchLog.destroy();
     frmShiftChangeRequestDetails.destroy();
     frmShiftManagement.destroy();
     frmStartUp.destroy();
     //bbe-111 Android_ ML_App crashes when search is done by selecting different status while switching the languages.
-    //frmStatusSearch.destroy();
-    //frmTeamView.destroy();
+    if (kony.os.deviceInfo().name === "iPad" || kony.os.deviceInfo().name === "iPhone") {
+      frmSearchLeaveType.destroy();
+      frmStatusSearch.destroy();
+      frmTeamView.destroy();
+    }
     frmSettings.lblSettings.text = kony.i18n.getLocalizedString("i18n.ess.common.Settings");
     frmSettings.lblPushNotification.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.pushNotificationsText");
     frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.resetDBText");
