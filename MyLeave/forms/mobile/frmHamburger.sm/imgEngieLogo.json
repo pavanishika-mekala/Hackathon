@@ -7,6 +7,10 @@
         "type": "string",
         "value": "100%"
     },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_margin_": [
         0,
         0,
@@ -19,42 +23,34 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "string",
-        "value": "6%"
-    },
     "_skin_": "s82580abaae041919a6f0dcd806a8358",
-    "_src_": "engie_cofely_gradient_blue_rgb.png",
+    "_src_": "engie_cofely_logo.png",
     "_top_": {
         "type": "string",
-        "value": "7dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "21%"
+        "value": "100%"
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "formID": "frmLogin",
+        "formID": "frmHamburger",
         "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },
-    "id": "imgBottomLogo",
-    "imagescalemode": 1,
+    "id": "imgEngieLogo",
+    "imagescalemode": 0,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "1016a040a86b4e12984fbb6431a7be99",
+    "kuid": "ebc19e41cdc04e71b143ec1b95c2da0e",
     "name": "kony.ui.Image2",
-    "parent": "flxBottom",
-    "pf": "frmLogin",
+    "parent": "flxEngieLogo",
+    "pf": "frmHamburger",
     "srcType": 1,
     "wType": "Image",
     "widgetalignment": 5,

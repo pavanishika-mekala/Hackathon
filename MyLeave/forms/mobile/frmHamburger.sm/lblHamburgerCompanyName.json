@@ -54,7 +54,7 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "23ad94aef93345e8b3282cd111a5a7a3",
     "name": "kony.ui.Label",
     "parent": "flxMenuHamburger",
