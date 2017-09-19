@@ -84,10 +84,11 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
         frmLeaveBalance.lblTitle.text = (object.widgets())[3].id + " Balance";
         //remove frmLeaveBalance.lblTotalLeave.text = Number(objectData[0].TOTALLEAVE).toFixed();
         //remove frmLeaveBalance.lblAvailedLeave.text = Number(objectData[0].LEAVETAKEN).toFixed();
-      	var totalleaves=Number(objectData[0].TOTALLEAVE).toFixed();
-        frmLeaveBalance.lblTotalText.text=kony.i18n.getLocalizedString("i18n.ess.common.total.valueKA")+" : "+totalleaves;
-      	frmLeaveBalance.lblCountAvailable.text=Number(objectData[0].LEAVETAKEN).toFixed();
-      	var totalColor=(colors[Number(objectId[1]) % 4][1][0]).substring(2,8);
+        var totalleaves=Number(objectData[0].TOTALLEAVE).toFixed();
+        frmLeaveBalance.lblTotalText.text=totalleaves;
+        frmLeaveBalance.lblCountConsumed.text=Number(objectData[0].LEAVETAKEN).toFixed();
+        frmLeaveBalance.lblCountAvailable.text=Number(objectData[0].LEAVEBALANCE).toFixed();
+        var totalColor=(colors[Number(objectId[1]) % 4][1][0]).substring(2,8);
         var availedColor=(colors[Number(objectId[1]) % 4][0][1]).substring(2,8);
         kony.print("-----" +availedColor+"-----"+totalColor);
         switch(totalColor)

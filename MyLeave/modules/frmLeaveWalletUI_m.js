@@ -615,10 +615,10 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
     this.frmname[this.widgets.flxChartContainer].removeAll();
     flxlist = new kony.ui.FlexContainer({
       "id": "flxComplete",
-      "top": top + "%",
-      "left": left + "%",
+      "top": 15 + "%",
+      "left": 0 + "%",
       "width": "100%",
-      "height": "100%",
+      "height": "84%",
       "zIndex": 1,
       "isVisible": true,
       "clipbounds": true,
@@ -630,11 +630,9 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
     }, {});
     var chartWidget = this.createChartonLeaveBalance(data, color);
     kony.print("--------------------Created chart widget ");
-
-
     var charttitle = new kony.ui.Label({
       id: "lblCT",
-      skin: "LBLMOB555555PX24",
+      skin: "LblSkn555555Px30M",//removed "LBLMOB555555PX24",
       "top": "5%",
       "centerX": "50%",
       "width": "preffered",
@@ -651,7 +649,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
 
     var label1 = new kony.ui.Label({
       id: "lblD1",
-      skin: "LBLMOB555555PX24",//skn,
+      skin: "LblSkn555555Px80M",//skn,
       "top": "57%",
       "centerX": "50%",
       "width": "preffered",
@@ -667,7 +665,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
     }, {});
     var label = new kony.ui.Label({
       id: "lblD2",
-      skin: "LBLMOB555555PX24",
+      skin: "LblSkn555555Px80M",
       "top": "38.26%",
       "left": "0%",
       "width": "100%",
@@ -682,10 +680,10 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
       contentAlignment: constants.CONTENT_ALIGN_CENTER
     }, {});
 
-    flxlist.add(charttitle);
+    flxlist.add(chartWidget);
     flxlist.add(label);
     flxlist.add(label1);
-    flxlist.add(chartWidget);
+    this.frmname[this.widgets.flxChartContainer].add(charttitle);
     this.frmname[this.widgets.flxChartContainer].add(flxlist);
 
     kony.print("--------------------out kony.apps.coe.ess.myLeave.leaveWalletUI.bindData LeaveWalletUI_m.js");
