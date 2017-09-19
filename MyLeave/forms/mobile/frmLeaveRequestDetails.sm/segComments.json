@@ -6,11 +6,11 @@
         {
             "imgapprover": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": "imagedrag.png"
+                "src": ""
             },
             "labelapprovernotes": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": ""
             },
             "lblapproveddate": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -76,7 +76,7 @@
             "indicator": "none"
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "4231dcec22b4435a9e8d8585ba2b809f",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",

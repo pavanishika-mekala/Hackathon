@@ -53,7 +53,7 @@ kony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar = function
   };
   var DimensionInfo = {
     "weekLabelContainerHeight": "32%",
-    "weekLabelPadding": "0%",
+    "weekLabelPadding": "0.3%",
     "weekNameContainerheight": kony.flex.USE_PREFERED_SIZE,
     "weekNamePadding": "0%",
     "weekNameContainerWidth": "73.9%",
