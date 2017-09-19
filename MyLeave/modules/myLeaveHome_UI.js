@@ -582,6 +582,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData = function() {
         kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate = null;
         kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId = null;
         frmLeaveHome.flxLeaveDetail.isVisible = false;
+      	frmLeaveHome.flxHamburgerMenu.isVisible = true;
         frmLeaveHome.footers[0].setVisibility(true);
         frmLeaveHome.flxLeaveMonthDetailsMain.setEnabled(true);
         var currDate = new Date();
