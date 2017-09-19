@@ -1,11 +1,12 @@
 {
   "android": {
+    "font_name": "AvenirLTStd-Roman",
     "font_size": 93,
     "isForked": false
   },
-  "background_color": "156f91ff",
+  "background_color": "005a78ff",
   "bg_type": "one",
-  "border_color": "156f91ff",
+  "border_color": "005a78ff",
   "border_radius": 33,
   "border_style": "custom",
   "border_type": 0,
