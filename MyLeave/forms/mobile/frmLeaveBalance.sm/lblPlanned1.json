@@ -23,8 +23,8 @@
         0,
         0
     ],
-    "_skin_": "sf41124c9751491682e052b9ce667516",
-    "_text_": "planned",
+    "_skin_": "s42c653cffd64002a401b23787265c31",
+    "_text_": "",
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -39,7 +39,7 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "55%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 4,
@@ -60,6 +60,7 @@
     "name": "kony.ui.Label",
     "parent": "flxPlanned",
     "pf": "frmLeaveBalance",
+    "texti18n": "i18n.ess.graph.planned.valueKA",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

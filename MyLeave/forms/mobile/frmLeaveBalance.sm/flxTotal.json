@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "70%"
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "60%"
     },
     "_margin_": [
         0,
@@ -23,38 +23,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sd3799980f1842f9badced3b16e4c76a",
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "70%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "20%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxChart",
-        "flxLeaveDetail",
-        "flxTotalLeave",
-        "flxTotal"
+        "lblTotal1",
+        "lblTotalText"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxmidChart",
+    "id": "flxTotal",
     "info": null,
     "isvisible": true,
-    "kuid": "cffb8cafb76c4c5b9a5513b0b3ea9f16",
+    "kuid": "b4d7d7e626454a56b686746517164837",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxmidBody",
+    "parent": "flxmidChart",
     "pf": "frmLeaveBalance",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 2
+    "zindex": 1
 }

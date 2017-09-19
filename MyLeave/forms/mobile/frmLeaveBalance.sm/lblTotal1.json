@@ -1,7 +1,6 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -20,7 +19,7 @@
         0
     ],
     "_skin_": "s7d66e5cff804de6a4e8b0a834db6f55",
-    "_text_": "567",
+    "_text_": "",
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -35,15 +34,15 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "51%"
+        "value": "50%"
     },
     "centery": {
         "type": "string",
-        "value": "58%"
+        "value": "30%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lblTotalText",
+    "contentalignment": 4,
+    "id": "lblTotal1",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,10 +55,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "jd81b0626b294be186c4e1cb853b1e01",
+    "kuid": "b923ada2b4a244f19ee95e080cd80bd1",
     "name": "kony.ui.Label",
     "parent": "flxTotal",
     "pf": "frmLeaveBalance",
+    "texti18n": "i18n.ess.common.total.valueKA",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
