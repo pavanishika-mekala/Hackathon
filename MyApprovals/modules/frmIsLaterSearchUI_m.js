@@ -75,10 +75,14 @@ kony.apps.coe.ess.Approvals.IsLaterSearch.changeSkinsForLaterSegment = function 
 			frmIsLaterSearch.flxFiter.skin = "sknFlxMob0284B5ff";
             frmIsLaterSearch.skin = "sknFlxMob0284B5ff";
 			break;
-		default:
+         default:
+			frmIsLaterSearch.flxHeader.skin = "sknFlx7986CBff";
+			frmIsLaterSearch.flxFiter.skin = "sknFlx7986CBff";
+            frmIsLaterSearch.skin = "sknFlx7986CBff";
+		/*default:
 			frmIsLaterSearch.flxHeader.skin = "sknFlxMob0284B5ff";
 			frmIsLaterSearch.flxFiter.skin = "sknFlxMob0284B5ff";
-            frmIsLaterSearch.skin = "sknFlxMob0284B5ff";
+            frmIsLaterSearch.skin = "sknFlxMob0284B5ff";*/
 		}
 	} catch (e) {
 		handleError(kony.i18n.getLocalizedString("i18n.ess.myApprovals.errorChangeSkin"));
