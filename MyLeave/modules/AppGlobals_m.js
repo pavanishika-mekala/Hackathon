@@ -48,7 +48,7 @@ kony.apps.coe.ess.globalVariables.isRightShift = false;
 	//#ifdef ipad
     	kony.apps.coe.ess.globalVariables.isNativeIpad = true;
     	kony.apps.coe.ess.globalVariables.isNative = true;
-		kony.apps.coe.ess.globalVariables.isNativeTablet = true;
+		//kony.apps.coe.ess.globalVariables.isNativeTablet = true; //commented as we have cloned mobile forms to tablet
     //#endif
     //#ifdef windows8
     	kony.apps.coe.ess.globalVariables.isNativeWinTab = true;
@@ -58,7 +58,7 @@ kony.apps.coe.ess.globalVariables.isRightShift = false;
     //#ifdef tabrcandroid
     	kony.apps.coe.ess.globalVariables.isNativeAndroidTab = true;
     	kony.apps.coe.ess.globalVariables.isNative = true;
-		kony.apps.coe.ess.globalVariables.isNativeTablet = true;
+		//kony.apps.coe.ess.globalVariables.isNativeTablet = true; //commented as we have cloned mobile forms to tablet
     //#endif
 //-------for native end--------------
 //--------------for SPA start-----------------
