@@ -49,7 +49,7 @@
     "id": "flxReconfigure",
     "ide_onClick": "AS_FlexContainer_7f5b3e9ab9bd463881e04a9479c53ac1",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "786c0b0a8b5d4b949f1241d00d20fc02",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
