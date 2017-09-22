@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_ba5a7ee566a64bdf97b13b54f89c016e": {
+        "id": "AS_FlexContainer_ba5a7ee566a64bdf97b13b54f89c016e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamView",
+            "type": "forms",
+            "platform": null,
+            "KUID": "da651f17c18d44369e8d8836b21764a0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ge754dde08524870933ae9ba4750c4c4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmTeamView.flxHamburgerMenu);",
+            "callbackType": null
+        }]
+    }
+}

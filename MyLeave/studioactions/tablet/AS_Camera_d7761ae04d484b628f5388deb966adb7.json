@@ -1,0 +1,23 @@
+{
+    "AS_Camera_d7761ae04d484b628f5388deb966adb7": {
+        "id": "AS_Camera_d7761ae04d484b628f5388deb966adb7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onCapture_ge72517eaab34e7a953cabcdd06d5cd0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApplyLeave.flxCameraOptions.isVisible = false;\nkony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture(frmApplyLeave.camTakePicture.base64);",
+            "callbackType": null
+        }]
+    }
+}

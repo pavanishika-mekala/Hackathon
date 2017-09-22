@@ -1,0 +1,62 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "18.40%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4.70%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_top_": {
+        "type": "string",
+        "value": "70dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "6.10%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "imgNotificationImage"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxImage",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f0e0b72163c5408f915a0b2861a68dfd",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxNotificationItem",
+    "pf": "tmpNotificationItem",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

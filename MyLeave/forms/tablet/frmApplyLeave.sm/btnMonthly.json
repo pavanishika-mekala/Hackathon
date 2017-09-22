@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "75%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "s9cd4c56f1e94b11abe6b7d8fc92d57c",
+    "_text_": "Monthly",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s4337cb72ec44b21a73b8f00b880a32d",
+    "id": "btnMonthly",
+    "ide_onClick": "AS_Button_deafdd6c6716403997b37b9adfcadf43",
+    "info": null,
+    "isvisible": true,
+    "kuid": "hb222917edfd4cb8b64dba66e1dd2457",
+    "name": "kony.ui.Button",
+    "parent": "flxRecurringLeaveOptions",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

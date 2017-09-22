@@ -1,0 +1,63 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s34489b89516444e94560c82de15a518",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "lblClear"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "focusskin": "s9ef8bc6979a48f196e920b95acc25e1",
+    "id": "flxClear",
+    "ide_onClick": "AS_FlexContainer_ibb6a72db6a74f79933f1745e9540487",
+    "info": null,
+    "isvisible": true,
+    "kuid": "eb09a20a741c4eaba346ca54ea6ebd46",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxDoneButton",
+    "pf": "frmSearchLog",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

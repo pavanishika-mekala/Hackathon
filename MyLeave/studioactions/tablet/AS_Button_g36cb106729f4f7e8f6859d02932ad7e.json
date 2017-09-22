@@ -1,0 +1,23 @@
+{
+    "AS_Button_g36cb106729f4f7e8f6859d02932ad7e": {
+        "id": "AS_Button_g36cb106729f4f7e8f6859d02932ad7e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ad90a50dca4743df9d2e65c194c818d9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApplyLeave.flxAlertPopup.isVisible = false;",
+            "callbackType": null
+        }]
+    }
+}

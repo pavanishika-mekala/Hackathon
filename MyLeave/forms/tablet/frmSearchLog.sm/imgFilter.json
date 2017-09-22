@@ -1,0 +1,63 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "filter.png",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "tablet",
+        "formID": "frmSearchLog",
+        "platform": "ipad",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgFilter",
+    "ide_onTouchEnd": "AS_Image_caa362a5b9094f71994ffe139f689f86",
+    "imagescalemode": 1,
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": true,
+    "kuid": "d740cbfdfa0e42c8b12a7250f8538d7c",
+    "name": "kony.ui.Image2",
+    "parent": "flxHeader",
+    "pf": "frmSearchLog",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

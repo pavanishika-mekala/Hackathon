@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s53f8e0e50524020a825b800723557d8",
+    "_text_": "2nd",
+    "_top_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sa88ebd568de4703ae082d8317c50923",
+    "id": "btnSecondWeek",
+    "ide_onClick": "AS_Button_b5fc4d85d3204945bbea54f59b05cc42",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f2b6dc96cba44d9cb7bc2352d30f1ebc",
+    "name": "kony.ui.Button",
+    "parent": "flxFirstSecondWeek",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s551a027d7c34e68ac403e49123bdefc",
+    "_text_": "We",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "11%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s47436b1d586429683b592a2e64ca25b",
+    "id": "btnWednesday",
+    "ide_onClick": "AS_Button_fc983e4d56e744baa5ce778c889d2900",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b907255f3d304bf89547694a7a06eacc",
+    "name": "kony.ui.Button",
+    "parent": "flxWeekly",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

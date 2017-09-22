@@ -1,0 +1,59 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "33.33%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s20d3408478949d08e2c1142508b8926",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "33.33%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgleavewallet",
+        "lblIndicator4"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flximgleaveWallet",
+    "ide_onClick": "AS_FlexContainer_f9b2353965e248158233cf0c144291bb",
+    "info": null,
+    "isvisible": true,
+    "kuid": "g2fcd13b6cb94ebeafc4d9779c5660fe",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxFooter",
+    "pf": "frmSearchLog",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

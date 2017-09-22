@@ -1,0 +1,64 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s2af74511bd04b218621484a03d96339",
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "children": [
+        "lblLeaveInfo",
+        "lblLineAddToDeviceCalendarPopup",
+        "imgSuccess",
+        "lblFromAndToLeaveDate",
+        "lblLeaveSubmittedSuccess",
+        "lblAddLeaveToDevice",
+        "btnClose",
+        "btnAdd"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxAddToDeviceCalendarPopup",
+    "info": null,
+    "isvisible": true,
+    "kuid": "j85246452e4044e4a3c3d8ce316fbd2e",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxAddToDeviceCalendarPopupMain",
+    "pf": "frmLeaveHome",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

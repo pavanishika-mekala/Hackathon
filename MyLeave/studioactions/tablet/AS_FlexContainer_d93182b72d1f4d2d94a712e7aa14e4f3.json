@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_d93182b72d1f4d2d94a712e7aa14e4f3": {
+        "id": "AS_FlexContainer_d93182b72d1f4d2d94a712e7aa14e4f3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b9260ab9820440e2a187256757a7fb06"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f8128697b2ef4e729e67e3c781c3a3da",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"eTimeSheetMyTime\");",
+            "callbackType": null
+        }]
+    }
+}

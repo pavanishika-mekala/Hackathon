@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s44ccb64424a4312aeabfcd8f27fc5ef",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "20.80%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblApplied",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "gb667cad4d60446fbba6523792d24b31",
+    "name": "kony.ui.Label",
+    "parent": "flxAppliedStatus",
+    "pf": "frmShiftChangeRequestDetails",
+    "texti18n": "i18n.ess.common.applied.valueKA",
+    "tooltip": "",
+    "wType": "Label"
+}

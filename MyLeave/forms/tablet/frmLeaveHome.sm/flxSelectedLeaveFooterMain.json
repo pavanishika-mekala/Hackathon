@@ -1,0 +1,60 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "16.57%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sfeec85212a641dd8b4ad4133597be7e",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxSelectedLeaveFooterPending",
+        "flxSelectedLeaveFooterOthers",
+        "flxSelectedLeaveFooterBack",
+        "flxSelectedLeaveFooterBackFocus"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSelectedLeaveFooterMain",
+    "info": null,
+    "isvisible": true,
+    "kuid": "icf2e591aaa1418f858f2f3d9caa32a9",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxLeaveDetail",
+    "pf": "frmLeaveHome",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Button_fc983e4d56e744baa5ce778c889d2900": {
+        "id": "AS_Button_fc983e4d56e744baa5ce778c889d2900",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f1c3588e46c245b1b276e05c40505f7b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.weeklyMonthlyDaySelection.onClickofWeeklyDays(eventobject);",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "75%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "47%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s9cd4c56f1e94b11abe6b7d8fc92d57c",
+    "_text_": "Bi-Weekly",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "28%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s4337cb72ec44b21a73b8f00b880a32d",
+    "id": "btnBiweekly",
+    "ide_onClick": "AS_Button_aedcdc99c96c494da1e8060f26eb6193",
+    "info": null,
+    "isvisible": true,
+    "kuid": "fade3f02c5af4c2dbd4c7a5a6a620657",
+    "name": "kony.ui.Button",
+    "parent": "flxRecurringLeaveOptions",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

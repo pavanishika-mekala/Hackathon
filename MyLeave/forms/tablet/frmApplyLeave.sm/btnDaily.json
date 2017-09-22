@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "75%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1.80%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s9cd4c56f1e94b11abe6b7d8fc92d57c",
+    "_text_": "Daily",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s4337cb72ec44b21a73b8f00b880a32d",
+    "id": "btnDaily",
+    "ide_onClick": "AS_Button_f0ab6cecd29e4900b83dfdbcdd39e956",
+    "info": null,
+    "isvisible": true,
+    "kuid": "bab5354f3f4346cb9d0f4e72716ee356",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxRecurringLeaveOptions",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

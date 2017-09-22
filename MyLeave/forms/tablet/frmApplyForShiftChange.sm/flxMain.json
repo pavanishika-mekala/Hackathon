@@ -1,0 +1,70 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "92.10%"
+    },
+    "_left_": "0%",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s5d8f3c8650143af8c1178b95711c4ee",
+    "_top_": {
+        "type": "string",
+        "value": "8.50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": false,
+    "bounces": false,
+    "canUpdateUI": true,
+    "children": [
+        "flxFromToDate",
+        "flxCurrentShift",
+        "flxNewShift",
+        "flxComments",
+        "flxTxtComments",
+        "lblApprover",
+        "flxContactApprover"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "flxMain",
+    "info": null,
+    "isvisible": true,
+    "kuid": "i5e6846b2ee1492c92be479786198c53",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "frmApplyForShiftChange",
+    "pf": "frmApplyForShiftChange",
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": false,
+    "vizProps": {},
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 15
+}
