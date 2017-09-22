@@ -2,7 +2,7 @@
   "background_color": "ffffffff",
   "bg_type": "one",
   "border_color": "ffffffff",
-  "border_radius": 99,
+  "border_radius": 100,
   "border_style": "custom",
   "border_type": 0,
   "border_width": 2,

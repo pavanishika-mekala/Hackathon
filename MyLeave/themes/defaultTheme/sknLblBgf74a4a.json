@@ -4,7 +4,7 @@
     "font_size": 214,
     "isForked": false
   },
-  "background_color": "f74a4aff",
+  "background_color": "e10019ff",
   "bg_type": "one",
   "border_color": "42424200",
   "border_radius": 5,
@@ -17,7 +17,7 @@
     "isForked": false
   },
   "fontSizeInPx": false,
-  "font_color": "f74a4aff",
+  "font_color": "e10019ff",
   "font_name": "Helvetica",
   "font_size": 214,
   "font_style": "normal",
