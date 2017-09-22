@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "35dp"
     },
     "_left_": {
         "type": "string",
@@ -31,14 +31,22 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "35dp"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmHamburger",
-        "platform": "ipad",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -47,7 +55,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "03e460892dd3475cbaead3aadd30db65",
+    "kuid": "i88e32cbf59d46088c1db58376d612ca",
     "name": "kony.ui.Image2",
     "parent": "flxSyncNow",
     "pf": "frmHamburger",

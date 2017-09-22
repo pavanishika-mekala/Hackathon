@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "s098061f5e654da286da07893e1c5525",
-    "_text_": "Employee Self Service",
+    "_text_": "",
     "_top_": {
         "type": "string",
         "value": "19%"
@@ -40,6 +40,10 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblAppName",
@@ -50,10 +54,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "c6cbc1198e0f4d5d9dd5f180afd40714",
+    "kuid": "f332838b07cc4aeabf277d14d533b49a",
     "name": "kony.ui.Label",
-    "parent": "flxHamburger",
+    "parent": "flxAppName",
     "pf": "frmHamburger",
+    "texti18n": "i18n.ess.frmHamburger.title",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

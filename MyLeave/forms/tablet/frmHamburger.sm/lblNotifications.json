@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "2.90%"
+        "value": "31%"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "s669d117b50948ca8b1c95d7230a8020",
-    "_text_": "Notifications",
+    "_skin_": "s21695ed1a2a4b038ee8d7602bbbf706",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "4.60%"
+        "value": "30%"
     },
     "_width_": {
         "type": "ref",
@@ -40,6 +40,10 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblNotifications",
@@ -49,16 +53,12 @@
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "isvisible": true,
-    "kuid": "1f708355ea424f4fbdaffb6060b1570f",
+    "kuid": "i37060e2a9024de68bd71ca13b073ca7",
     "name": "kony.ui.Label",
-    "parent": "flxNotifications",
+    "parent": "flxMyNotifications",
     "pf": "frmHamburger",
+    "texti18n": "i18n.ess.frmHamburger.Notifications",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

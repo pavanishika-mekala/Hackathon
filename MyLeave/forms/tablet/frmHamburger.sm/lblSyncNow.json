@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "30%"
     },
     "_margin_": [
         1,
@@ -19,18 +19,18 @@
     "_padding_": [
         0,
         0,
-        2,
+        0,
         0
     ],
     "_skin_": "s21695ed1a2a4b038ee8d7602bbbf706",
-    "_text_": "Sync",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "14%"
+        "value": "30%"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -41,7 +41,7 @@
     },
     "canUpdateUI": true,
     "containerweight": 100,
-    "contentalignment": 5,
+    "contentalignment": 4,
     "id": "lblSyncNow",
     "info": null,
     "ipad": {
@@ -49,12 +49,12 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
-    "kuid": "eca727abee00497b9feed162c74f5626",
+    "isvisible": false,
+    "kuid": "e1f9e3b72a624383880f43e831a00de9",
     "name": "kony.ui.Label",
-    "paddinginpixel": false,
     "parent": "flxSyncNow",
     "pf": "frmHamburger",
+    "texti18n": "i18n.ess.frmHamburger.SyncNow",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

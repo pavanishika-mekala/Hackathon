@@ -2,17 +2,13 @@
     "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "3%"
-    },
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "37dp"
     },
     "_margin_": [
         6,
@@ -26,34 +22,34 @@
         0,
         0
     ],
-    "_skin_": "s3c4bca3f21740e9853fdbabbf5a157d",
+    "_skin_": "s32608f8ca9744a1935a6d0c7c169131",
     "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "4%"
+    },
     "_width_": {
         "type": "string",
-        "value": "70%"
+        "value": "86%"
     },
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
         "value": "50%"
     },
-    "centery": {
-        "type": "string",
-        "value": "53%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "s3c4bca3f21740e9853fdbabbf5a157d",
-    "id": "btnConnect",
-    "ide_onClick": "AS_Button_3f1ad71ba37841d4aae28eb16dcb0871",
+    "focusskin": "s32608f8ca9744a1935a6d0c7c169131",
+    "id": "BtnConnect",
+    "ide_onClick": "AS_Button_d861a0db29ec4cb2883842191c067b00",
     "info": null,
     "isvisible": true,
-    "kuid": "db01e1fe21e54a70be50d2bdec9a1c1c",
+    "kuid": "if4172579b20486a989857d0eef181c0",
     "name": "kony.ui.Button",
-    "parent": "flxConnect",
+    "parent": "flxInputSetUpManually",
     "pf": "frmStartUp",
     "texti18n": "i18n.ess.myLeave.frmStartUp.btnConnect",
     "wType": "Button",
-    "zindex": 1
+    "zindex": 3
 }

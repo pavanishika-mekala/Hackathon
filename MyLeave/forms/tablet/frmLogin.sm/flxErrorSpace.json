@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "2%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,7 +26,7 @@
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -44,14 +44,14 @@
     "id": "flxErrorSpace",
     "info": null,
     "isvisible": true,
-    "kuid": "bc501508ef6d465ea5bb9abdb32bb0ce",
+    "kuid": "fe418054b1804f978b8d9b2bad4d6ce5",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmLogin",
+    "parent": "flxMain",
     "pf": "frmLogin",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 2
+    "zindex": 1
 }

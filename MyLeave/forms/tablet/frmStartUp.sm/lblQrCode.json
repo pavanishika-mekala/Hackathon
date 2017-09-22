@@ -2,17 +2,13 @@
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "31%"
-    },
     "_height_": {
-        "type": "string",
-        "value": "56.82%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -26,21 +22,18 @@
         0,
         0
     ],
-    "_skin_": "sf3d4223de144eeb859a8d32cfbc7e25",
-    "_text_": "Login Using Touch ID",
+    "_skin_": "sb21c2342fa34ec6b6e45816b45052e9",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "59.99%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
-        "psp": {
-            "includeFontPadding": true
-        },
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -58,7 +51,6 @@
     "containerweight": 100,
     "contentalignment": 5,
     "id": "lblQrCode",
-    "includeFontPadding": true,
     "info": null,
     "ipad": {
         "psp": {
@@ -66,12 +58,12 @@
         }
     },
     "isvisible": true,
-    "kuid": "75fbc417e1714acda36fc14ab50eaf33",
+    "kuid": "h90ce7e053894dc8a4455b69cd221a30",
     "name": "kony.ui.Label",
     "parent": "flxLabelQrCode",
     "pf": "frmStartUp",
     "texti18n": "i18n.ess.frmStartup.lblQrCode.valueKA",
     "tooltip": "",
     "wType": "Label",
-    "zindex": 1
+    "zindex": 2
 }

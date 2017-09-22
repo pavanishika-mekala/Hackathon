@@ -25,7 +25,7 @@
     ],
     "containerId": true,
     "containerweight": 100,
-    "currentLocale": "en_US",
+    "currentLocale": "en",
     "device": "iPad3",
     "displayorientation": 3,
     "enabledforidletimeout": false,
@@ -37,7 +37,7 @@
         "formTransition": "None"
     },
     "isvisible": true,
-    "kuid": "cacdbe9c7c0543c79653d227a54f7b2f",
+    "kuid": "fc296873b8a24a4383c9028b9532a398",
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "outtransitionconfig": {

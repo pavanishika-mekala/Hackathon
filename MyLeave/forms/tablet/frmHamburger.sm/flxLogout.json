@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "32%"
+        "value": "20%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -42,13 +42,14 @@
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
+    "focusskin": "scc31c54b4ea40858d2865a43fa32f34",
     "id": "flxLogout",
     "info": null,
     "isvisible": true,
-    "kuid": "1ffbf266414e42c99ebceb4b84188c3b",
-    "layouttype": 4,
+    "kuid": "ga43f45e009b420993d60e58639844cb",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCommonHamburger",
+    "parent": "flxOptions",
     "pf": "frmHamburger",
     "snapgridsize": 10,
     "snaptogrid": true,

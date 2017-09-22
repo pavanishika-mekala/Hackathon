@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "8%"
     },
     "_left_": {
         "type": "string",
-        "value": "34.80%"
+        "value": "8%"
     },
     "_margin_": [
         0,
@@ -23,33 +23,34 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s2d71c81acb34bb090e2f26a50f959d7",
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "12.40%"
+        "value": "1%"
     },
     "_width_": {
         "type": "string",
-        "value": "29.46%"
+        "value": "50%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblTime",
-        "imgTime"
+        "imgMyTime",
+        "lblMyTime"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
+    "focusskin": "scc31c54b4ea40858d2865a43fa32f34",
     "id": "flxMyTime",
-    "ide_onClick": "AS_FlexContainer_e191be8b4f494c81b5b91f2698a17465",
+    "ide_onClick": "AS_FlexContainer_d93182b72d1f4d2d94a712e7aa14e4f3",
     "info": null,
     "isvisible": false,
-    "kuid": "81386dc2705d418cb66a106b027a3d6b",
+    "kuid": "d1bd92864eab4a47af15320b367f886b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxMenuForIntegratedMode",
+    "parent": "flxMenuHamburger",
     "pf": "frmHamburger",
     "snapgridsize": 10,
     "snaptogrid": true,

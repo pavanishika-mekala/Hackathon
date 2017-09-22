@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "107.74%"
+        "value": "40%"
     },
     "_left_": {
         "type": "string",
-        "value": "2%"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -23,17 +23,16 @@
         0
     ],
     "_placeholder_": "Type App Key",
-    "_skin_": "s55ba5f10298484aacbf9233cad4cb18",
+    "_skin_": "s07135ddbd614ac884c7c4a40a6d7c5d",
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "40%"
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "97%"
     },
-    "android": {},
     "autocapitalize": "none",
     "autocomplete": false,
     "autocorrect": false,
@@ -43,20 +42,18 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
-    "focusskin": "s55ba5f10298484aacbf9233cad4cb18",
+    "disabledSkins": {},
+    "focusskin": "s3fa98f769714df2aa9a79cd3fb4f9d9",
     "id": "txtAppKey",
     "info": null,
     "isvisible": true,
     "keyboardtype": "A",
-    "kuid": "252291337acb4905ae027a8e83f73d48",
+    "kuid": "hde7cfabfa44457590174f55cebcd3ee",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "paddinginpixel": false,
-    "parent": "flxAppKey",
+    "parent": "flxInputAppKey",
     "pf": "frmStartUp",
-    "placeholderskin": "s55ba5f10298484aacbf9233cad4cb18",
     "securetextentry": false,
-    "texti18n": "i18n.ess.myLeave.loginQR.TypeAppKey",
     "textinputmode": "A",
     "viewtype": "default",
     "wType": "TextField",

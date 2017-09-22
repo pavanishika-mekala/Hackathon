@@ -40,7 +40,7 @@
     "id": "btnTouchIDCancel",
     "info": null,
     "isvisible": true,
-    "kuid": "ea5fa23edb22421ea680c5b1342f5cca",
+    "kuid": "c9f28b51b5bc430dbfed2d1059b5388d",
     "name": "kony.ui.Button",
     "parent": "flxTouchIDButtons",
     "pf": "frmLogin",

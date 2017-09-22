@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "8.20%"
     },
     "_left_": {
         "type": "string",
-        "value": "3%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,11 +26,11 @@
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "13%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "85%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -44,10 +44,10 @@
     "id": "flxSignIn",
     "info": null,
     "isvisible": true,
-    "kuid": "bb9487b933844d4ba2ad9f6c1ec0db6e",
+    "kuid": "dbdcc2bb608c4eb2b83b6a4f77b3e772",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxLoginRight",
+    "parent": "flxMain",
     "pf": "frmLogin",
     "snapgridsize": 10,
     "snaptogrid": true,

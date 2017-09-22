@@ -23,7 +23,7 @@
         }
     },
     "canUpdateUI": true,
-    "containerweight": 90,
+    "containerweight": 100,
     "contentalignment": 2,
     "hexpand": false,
     "id": "lblMessage",
@@ -33,13 +33,8 @@
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "isvisible": true,
-    "kuid": "d672c67e00f444cf9b1f9b5a6b945fbb",
+    "kuid": "f50a20737f1a4c3cb0d8f0ffcb157630",
     "margininpixel": false,
     "name": "kony.ui.Label",
     "parent": "scrlBxMsg",

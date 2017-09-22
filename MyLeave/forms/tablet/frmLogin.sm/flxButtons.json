@@ -45,7 +45,7 @@
     "id": "flxButtons",
     "info": null,
     "isvisible": true,
-    "kuid": "58c27153513b4f07b57b04ff41992585",
+    "kuid": "d24ea702d5f84c0993997958b8ece2c6",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxEnableTouchIDPopup",

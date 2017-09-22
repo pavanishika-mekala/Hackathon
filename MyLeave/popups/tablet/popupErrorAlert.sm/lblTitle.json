@@ -33,13 +33,8 @@
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "isvisible": true,
-    "kuid": "1c42a02b890b45ad8bde62ece1b6dc43",
+    "kuid": "ff93267108404714ba6913bd85917490",
     "margininpixel": false,
     "name": "kony.ui.Label",
     "parent": "popupErrorAlert",
