@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_text_": "28 Sep 2016",
     "_top_": {
         "type": "string",
-        "value": "26%"
+        "value": "71%"
     },
     "_width_": {
         "type": "ref",
@@ -50,9 +50,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "e59d015c12c846238b6d603060ecdd80",
+    "kuid": "g234aa7d4d0b47869fc9499c56279d7a",
     "name": "kony.ui.Label",
-    "parent": "flxSyncAndVersionInfo",
+    "paddinginpixel": false,
+    "parent": "flxSyncDateTime",
     "pf": "frmHamburger",
     "tooltip": "",
     "wType": "Label",

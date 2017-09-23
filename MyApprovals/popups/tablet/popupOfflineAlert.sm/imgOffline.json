@@ -19,8 +19,8 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
-        "platform": "ipad",
+        "channel": "mobile",
+        "platform": "iphone",
         "templateType": "popups",
         "topLevelBox": null
     },
@@ -29,7 +29,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "046cedcfb91542b38040eae5678f61e7",
+    "kuid": "a0edb391b7cb482bb761f0e2323bc7a2",
     "margininpixel": false,
     "name": "kony.ui.Image2",
     "parent": "popupOfflineAlert",

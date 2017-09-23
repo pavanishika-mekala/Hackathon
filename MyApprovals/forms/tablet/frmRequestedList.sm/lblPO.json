@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        4,
+        1,
+        4,
+        1
+    ],
+    "_skin_": "se532155365b47ef930672d93dd7fea8",
+    "_text_": "",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblPO",
+    "ide_onTouchEnd": "AS_Label_58344dfa2c514e6393c35b2bb5028b1f",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "7aecc86c3a3d42a0a4a365f27c692ad9",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxOption1",
+    "pf": "frmRequestedList",
+    "texti18n": "18n.ess.MyApprovals.frmRequestList.lblPO.text",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

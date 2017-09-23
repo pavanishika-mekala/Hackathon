@@ -5,11 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "133.97%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "60%"
+        "value": "120%"
     },
     "_margin_": [
         0,
@@ -31,7 +27,7 @@
     "_src_": "on.png",
     "_top_": {
         "type": "string",
-        "value": "11%"
+        "value": "3dp"
     },
     "_width_": {
         "type": "string",
@@ -44,9 +40,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmLogin",
-        "platform": "ipad",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -55,9 +51,9 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "5569bdd152ce401ba948c0206b636c89",
+    "kuid": "ga23b5a05b1049b3887f242c1dcd69e2",
     "name": "kony.ui.Image2",
-    "parent": "flxRemMe",
+    "parent": "flxRememberMeContainer",
     "pf": "frmLogin",
     "srcType": 1,
     "wType": "Image",

@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "55%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf300815551f426598b009d641728cbf",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sf300815551f426598b009d641728cbf",
+    "id": "btnReceived",
+    "ide_onClick": "AS_Button_a8b67496ee404bdbbf3894a70040ccc0",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f95e8dec5596432d874f3f50bf1d0412",
+    "name": "kony.ui.Button",
+    "parent": "flxHeader2",
+    "pf": "frmDelegationRequestList",
+    "texti18n": "i18n.ess.myapproval.received",
+    "wType": "Button",
+    "zindex": 1
+}

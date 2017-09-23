@@ -14,7 +14,7 @@
         4
     ],
     "_skin_": "scd56c3ec0bd4a58a4dd040c1d4faf6d",
-    "_text_": "Ok",
+    "_text_": "",
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
@@ -22,13 +22,14 @@
     "displaytext": true,
     "focusskin": "s1316339ab1b4ea4b86ec6a19c1252a3",
     "id": "btnOk",
-    "ide_onClick": "AS_Button_47cf27b1228a456284b7a0e92b3bbdd9",
+    "ide_onClick": "AS_Button_a5def1de615e47118b6006780869ee86",
     "info": null,
     "isvisible": true,
-    "kuid": "17a86352945a4417962c51496dd1943e",
+    "kuid": "j4f09548da034c5ebb2597f9cb2cddc3",
     "margininpixel": false,
     "name": "kony.ui.Button",
-    "parent": "hboxfootertab",
+    "parent": "CopyHboxOuter0jd2789b58b4a41",
     "pf": "tempFooterAlertBtn",
+    "texti18n": "i18n.ess.myApproval.Ok.text",
     "wType": "Button"
 }

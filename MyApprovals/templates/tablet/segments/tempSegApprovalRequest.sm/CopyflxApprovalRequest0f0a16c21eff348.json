@@ -1,0 +1,63 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "110dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s75347c753ed4c3baf42d329393f21f0",
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxImages",
+        "lblUserName",
+        "lblCreateDate",
+        "lblCategory",
+        "lblDueDateHeader",
+        "lblDueDateValue",
+        "flxRequestInfo",
+        "flxTimer",
+        "btnLaterSegment",
+        "btnReject",
+        "btnApprove",
+        "btnNoticed",
+        "flxBorder",
+        "lblExipresHeader",
+        "lblCount",
+        "lblDelegated"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "disabledSkins": {
+        "focusSkin": "s0d07c96eee4492d93c0ddac849461da"
+    },
+    "enablescrolling": true,
+    "id": "CopyflxApprovalRequest0f0a16c21eff348",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "d69d56da3c3c49ea99196cbf4b700f36",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "tempSegApprovalRequest",
+    "pf": "tempSegApprovalRequest",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

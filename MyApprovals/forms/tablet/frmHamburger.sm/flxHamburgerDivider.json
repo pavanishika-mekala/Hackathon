@@ -26,7 +26,7 @@
     "_skin_": "se25d422e68b4546831b9b19550875ed",
     "_top_": {
         "type": "string",
-        "value": "23.20%"
+        "value": "1%"
     },
     "_width_": {
         "type": "string",
@@ -42,10 +42,10 @@
     "id": "flxHamburgerDivider",
     "info": null,
     "isvisible": true,
-    "kuid": "b44647a62c12426aaca675f0f6bf97c2",
+    "kuid": "f4d1aadabd4e45348ab388ff6322552d",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxHamburger",
+    "parent": "flxMenuHamburger",
     "pf": "frmHamburger",
     "snapgridsize": 10,
     "snaptogrid": true,

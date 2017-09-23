@@ -1,8 +1,6 @@
 {
     "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
     "DNDConfig": null,
-    "_footers_": [],
-    "_headers_": [],
     "_margin_": [
         0,
         0,
@@ -17,12 +15,11 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s1993efc7b404fc4a22df100419a3786",
+    "_skin_": "s1993efc7b404fc4a22df100419a3784",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
-        "displayOrientation": 2,
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
@@ -30,38 +27,34 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxMain",
-        "flxAppLogo",
-        "flxHeaderImage",
-        "lblHeading",
-        "flxWhite",
-        "imgOR",
-        "flxSetupManually",
-        "flxQrCodeSetup",
-        "lblMessage"
+        "flxApplicationLabel",
+        "flxImgApllicationLogo",
+        "flxMainQR",
+        "flxLoginIcon"
     ],
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "tablet"
+        }
+    },
     "currentLocale": "en",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPad3",
-    "displayorientation": 2,
+    "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
-    "footer": "frmStartUp_footer",
-    "forks": [],
-    "header": "frmStartUp_header",
     "id": "frmStartUp",
-    "ide_preShow": "AS_Form_5ffb5e0321894be79a020aa3443db464",
+    "ide_postShow": "AS_Form_g3ce6cd56fe241aa80d7073f6219e7f3",
+    "ide_preShow": "AS_Form_cd4d3a49b2204189a55a347e99a4b23b",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
     "ipad": {
-        "displayOrientation": 2,
         "needAppMenu": false,
         "psp": {
-            "inputAccessoryViewType": 1,
+            "inputAccessoryViewType": 4,
             "titleBarConfig": {
                 "buttonClosureLeftSideView": "",
                 "buttonClosureRightSideView": "",
@@ -81,16 +74,13 @@
         "titleBar": false
     },
     "isvisible": true,
-    "kuid": "0832e7aaaf2e4397a9e062b491d2d23b",
+    "kuid": "ba304b6fb0e14c089d453221c8a25135",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "ipad",
-    "prevDevice": "GalaxyTab7",
-    "prevPlatform": "tabrcandroid",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "iOS_iPhone6PlusZoomed",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

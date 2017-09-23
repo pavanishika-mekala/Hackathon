@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "130.20%"
+        "value": "66%"
     },
     "_margin_": [
         0,
@@ -24,14 +24,14 @@
         "value": "6%"
     },
     "_skin_": "s82580abaae041919a6f0dcd806a8358",
-    "_src_": "konylogo.png",
+    "_src_": "engie_cofely_gradient_blue_rgb.png",
     "_top_": {
         "type": "string",
         "value": "7dp"
     },
     "_width_": {
         "type": "string",
-        "value": "15%"
+        "value": "21%"
     },
     "canUpdateUI": true,
     "centery": {
@@ -40,9 +40,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmLogin",
-        "platform": "ipad",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -51,7 +51,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "e9f2c7b0b24f43e48c56a5e76843d95b",
+    "kuid": "c86931ce754a4490927f0fd1298451f2",
     "name": "kony.ui.Image2",
     "parent": "flxBottom",
     "pf": "frmLogin",

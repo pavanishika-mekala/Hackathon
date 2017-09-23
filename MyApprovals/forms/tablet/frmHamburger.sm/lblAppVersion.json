@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "59%"
+        "value": "65%"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "s650494736114ec0901a036527ed996a",
-    "_text_": "3.1.2",
+    "_skin_": "s98d0d20e8624e4b9326ba6cfc2e9cc0",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "78%"
+        "value": "19%"
     },
     "_width_": {
         "type": "ref",
@@ -40,6 +40,10 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblAppVersion",
@@ -50,10 +54,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "1205a5366b7a4eab991a227cfb703fef",
+    "kuid": "c8a334f47bc948d3b4a5d85fdf68207e",
     "name": "kony.ui.Label",
-    "parent": "flxSyncAndVersionInfo",
+    "parent": "flxAppName",
     "pf": "frmHamburger",
+    "texti18n": "i18n.ess.frmHamburger.Version",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

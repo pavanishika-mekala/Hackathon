@@ -5,7 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "40%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -20,10 +24,14 @@
         0
     ],
     "_skin_": "sda0c04ae5814098a8111842b264a413",
-    "_src_": "backwhite.png",
+    "_src_": "back.png",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "40%"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -36,9 +44,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmSettings",
-        "platform": "tabrcandroid",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -47,9 +55,9 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "322125c134ba4ac190140d07dc57d4f5",
+    "kuid": "fbf7031a07744c10a2c5d4edbc6fe131",
     "name": "kony.ui.Image2",
-    "parent": "flxBack",
+    "parent": "flxHamburgerButton",
     "pf": "frmSettings",
     "srcType": 1,
     "wType": "Image",

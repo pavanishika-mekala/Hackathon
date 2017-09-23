@@ -15,11 +15,12 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s3f768fd25ab44b297054cc4d6ed59a4",
+    "_skin_": "sd6f49d86cd5465ea7358a36576b3d82",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
+        "ide_onDeviceBack": "AS_Form_d052eac70fa848fb9956a029b9449a6e",
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
@@ -27,28 +28,34 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxMain",
+        "flxSettings",
+        "flxOfflineAlert",
         "flxPopUp"
     ],
     "containerweight": 100,
-    "currentLocale": "default",
+    "controllerInfo": {
+        "default": {
+            "channel": "tablet"
+        }
+    },
+    "currentLocale": "en",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GalaxyTab7",
-    "displayorientation": 2,
+    "displayorientation": 1,
     "enabledforidletimeout": false,
-    "footeroverlap": false,
     "id": "frmSettings",
-    "ide_preShow": "AS_Form_b1602a3e8b3342eba4183275611a3578",
+    "ide_init": "AS_Form_c3c9c6823e4d45da8436e467e3aa5274",
+    "ide_postShow": "AS_Form_g89bae7d1dbf4188957e7083e3ea7510",
+    "ide_preShow": "AS_Form_i1437fef4811414388ed15a05ac81231",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
+    "invokedProperty": "footers",
     "ipad": {
         "needAppMenu": false,
         "psp": {
-            "inputAccessoryViewType": 4,
-            "needsIndicatorDuringPostShow": true,
+            "inputAccessoryViewType": 1,
             "titleBarConfig": {
                 "buttonClosureLeftSideView": "",
                 "buttonClosureRightSideView": "",
@@ -67,24 +74,14 @@
         },
         "titleBar": false
     },
-    "iphone": {
-        "psp": {
-            "inputAccessoryViewType": 4
-        }
-    },
     "isvisible": true,
-    "kuid": "9d4e8de360614513a1f6bfa287c67a4b",
+    "kuid": "fc073bd7862245bb91cdcc28efd5b02d",
     "layouttype": 2,
-    "menuposition": 2,
     "name": "kony.ui.Form2",
     "needappmenu": true,
-    "needsindicatorduringpostshow": true,
     "paddinginpixel": false,
-    "platform": "tabrcandroid",
-    "prevDevice": "iPad3",
-    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "and_Tab_Galaxy7",
+    "shellCSS": "iOS_iPhone5",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {
@@ -97,9 +94,8 @@
         "needAppMenu": false
     },
     "titleBarSkin": "s01a3c761ed44dcab0d6537d1b55b621",
-    "titlebar": false,
+    "titlebar": true,
     "type": 3,
-    "verticalscrollindicator": true,
     "wType": "Form",
     "windows8": {
         "needAppMenu": false

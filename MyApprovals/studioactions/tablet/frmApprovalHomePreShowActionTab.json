@@ -1,0 +1,24 @@
+{
+    "AS_Form_a03073f662a847cc88c3c7e1c1d7fe2a": {
+        "id": "AS_Form_a03073f662a847cc88c3c7e1c1d7fe2a",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmApprovalHomePreShowActionTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "idba9b019cd64be3aa807f62046fd80f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__aa8f77a8df4247959c9ca1529f37f8bc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.apps.coe.ess.Approvals.ApprovalsHome.PreShow();\nkony.apps.coe.ess.Approvals.ApprovalsHome.SPAPreshow();",
+            "parentId": null
+        }]
+    }
+}

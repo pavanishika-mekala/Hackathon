@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "35dp"
     },
     "_left_": {
         "type": "string",
@@ -31,14 +31,22 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "35dp"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmHamburger",
-        "platform": "ipad",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -47,7 +55,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "afd42331439942059787cb36db281681",
+    "kuid": "e7c3787dfc764456a62ac948450ca377",
     "name": "kony.ui.Image2",
     "parent": "flxLogout",
     "pf": "frmHamburger",

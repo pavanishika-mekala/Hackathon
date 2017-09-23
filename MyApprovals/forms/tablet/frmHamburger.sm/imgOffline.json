@@ -40,9 +40,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmHamburger",
-        "platform": "ipad",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -51,7 +51,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "3affd49113c74ff1bdf12f184e2fc62f",
+    "kuid": "feb8cc6f6a8f4ed681c4119570c88491",
     "name": "kony.ui.Image2",
     "parent": "flxOuter",
     "pf": "frmHamburger",

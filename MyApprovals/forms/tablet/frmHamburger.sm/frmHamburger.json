@@ -30,12 +30,16 @@
         "flxHamburger"
     ],
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "tablet"
+        }
+    },
     "currentLocale": "en",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPad3",
-    "displayorientation": 2,
+    "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmHamburger",
     "info": null,
@@ -64,16 +68,13 @@
         "titleBar": false
     },
     "isvisible": true,
-    "kuid": "90bf097212b8402086e027964390ddc0",
-    "layouttype": 4,
+    "kuid": "cfcb66dc01e54e17baebbffc7ddc6146",
+    "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "ipad",
-    "prevDevice": "iPad3",
-    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "iOS_iPhone4",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

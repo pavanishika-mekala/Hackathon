@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "30.14%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sda0c04ae5814098a8111842b264a413",
+    "_src_": "back.png",
+    "_top_": {
+        "type": "string",
+        "value": "9.62%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "frmFullDetails",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgHam",
+    "imagescalemode": 1,
+    "info": null,
+    "isvisible": true,
+    "kuid": "e0c626dedaba4c12b0605393b1b463e5",
+    "name": "kony.ui.Image2",
+    "parent": "flxBackArrow",
+    "pf": "frmFullDetails",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

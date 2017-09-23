@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sda0c04ae5814098a8111842b264a413",
+    "_src_": "leave_title.png",
+    "_width_": {
+        "type": "string",
+        "value": "18.87%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "platform": "iphone",
+        "templateType": "segments",
+        "topLevelBox": null
+    },
+    "id": "imgRequestType",
+    "imagescalemode": 1,
+    "info": null,
+    "isvisible": true,
+    "kuid": "ce8d2e35417d4d85829a98f59224a30e",
+    "name": "kony.ui.Image2",
+    "parent": "flxRequestType",
+    "pf": "tempSettings",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

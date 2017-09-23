@@ -1,0 +1,39 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizHBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "s83b962b02b64785bfbe5cac82700f98",
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "btnOffline",
+        "btnSync"
+    ],
+    "containerId": true,
+    "containerweight": 100,
+    "contextmenu": null,
+    "id": "CopyHboxOfflineOuter0a0e744b8ea8d4c",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d96b9da71197456db171f738e93d3d20",
+    "layouttype": 0,
+    "name": "kony.ui.Box",
+    "parent": "tempFooterOffline",
+    "pf": "tempFooterOffline",
+    "wType": "HBox",
+    "widgetalignment": 1
+}

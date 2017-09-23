@@ -21,12 +21,11 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "hboxfootertab"
+        "CopyHboxOuter0jd2789b58b4a41"
     ],
     "containerId": true,
     "containerweight": 100,
     "currentLocale": "default",
-    "device": "iPad3",
     "displayorientation": 3,
     "enabledforidletimeout": false,
     "id": "tempFooterAlertBtn",
@@ -37,18 +36,15 @@
         "formTransition": "None"
     },
     "isvisible": true,
-    "kuid": "6669ef94c0dc4217acb9950a89a4bb0e",
+    "kuid": "a469ea4b57ad4efab4f267a8a5aa68ad",
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "outtransitionconfig": {
         "formTransition": "None"
     },
     "paddinginpixel": false,
-    "platform": "ipad",
-    "prevDevice": "iPad3",
-    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "iOS_iPhone6",
     "titleBarSkin": "s01a3c761ed44dcab0d6537d1b55b621",
     "titlebar": true,
     "type": 3,

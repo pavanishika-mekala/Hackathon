@@ -44,9 +44,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmLogin",
-        "platform": "ipad",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -55,7 +55,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "da061365da124ea78c5821c2662354b5",
+    "kuid": "edb7dbb55c434f3789b4f675a1c9fba3",
     "name": "kony.ui.Image2",
     "parent": "flxTouchIDPopup",
     "pf": "frmLogin",

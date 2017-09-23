@@ -22,10 +22,10 @@
     "displaytext": true,
     "focusskin": "s01a3de39ada45edbb7d4d4f3b474997",
     "id": "btnOffline",
-    "ide_onClick": "AS_Button_bda93a4fa97149d9a57992f2df554af4",
+    "ide_onClick": "AS_Button_eb19c0b82b11483a8c21bd867e74ce1c",
     "info": null,
     "isvisible": true,
-    "kuid": "5243b6dce166404694d7f2a509c35757",
+    "kuid": "ef08215ecebf482581acc86a17b71d21",
     "margininpixel": false,
     "name": "kony.ui.Button",
     "paddInPixel": [
@@ -34,7 +34,7 @@
         30,
         30
     ],
-    "parent": "HboxOfflineOuter",
+    "parent": "CopyHboxOfflineOuter0a0e744b8ea8d4c",
     "pf": "tempFooterOffline",
     "texti18n": "i18n.ess.Offline.continue.text",
     "wType": "Button"

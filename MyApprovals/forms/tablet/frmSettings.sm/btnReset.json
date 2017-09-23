@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "45%"
+        "value": "60%"
     },
     "_margin_": [
         6,
@@ -20,32 +20,32 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "4.60%"
+        "value": "5%"
     },
-    "_skin_": "s407fe2df63648058bdb492cc206639b",
+    "_skin_": "s4446737ad234368aae4f63e0fd102f3",
     "_text_": "Reset",
-    "_top_": {
-        "type": "string",
-        "value": "4%"
-    },
     "_width_": {
         "type": "string",
-        "value": "20%"
+        "value": "30%"
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "sf3a94a11a634cb7a503dc85fc9cc44f",
+    "focusskin": "s4446737ad234368aae4f63e0fd102f3",
     "id": "btnReset",
-    "ide_onClick": "AS_Button_90768fd6081d4cedbaba3b554293fe68",
+    "ide_onClick": "AS_Button_jbb63ce8dfea4af782342d2a7cf90e6c",
     "info": null,
     "isvisible": true,
-    "kuid": "16cd6622e3b04d0aa9f7ccd12849da15",
+    "kuid": "a679fd09c8c04e57b6b61c549e715b99",
     "name": "kony.ui.Button",
-    "parent": "flxApplicationReset",
+    "parent": "flxLocalDBReset",
     "pf": "frmSettings",
-    "texti18n": "i18n.ess.myLeave.frmSettings.Reset",
+    "texti18n": "i18n.ess.common.settings.reset",
     "wType": "Button",
     "zindex": 1
 }

@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "7.31%"
+        "value": "12.80%"
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,32 +23,31 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_skin_": "s05a71418c994d01a103104ff66a7966",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxReconfigure",
-        "flxRemMe"
+        "flxRememberMeContainer"
     ],
-    "clipbounds": true,
+    "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxRememberMe",
     "info": null,
     "isvisible": true,
-    "kuid": "536bde3da93645f78aec360962dae8cc",
+    "kuid": "ee65dded56c74cdfa7970d813877840e",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxLoginRight",
+    "parent": "flxMain",
     "pf": "frmLogin",
     "snapgridsize": 10,
     "snaptogrid": true,

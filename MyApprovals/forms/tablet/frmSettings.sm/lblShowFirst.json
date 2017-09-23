@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "37dp"
+        "value": "4%"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "s2a4bf3045874ecbb1856f82dd34c08c",
-    "_text_": "Label",
+    "_skin_": "s88c03da732442ef98be1766ea5218f6",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "18dp"
+        "value": "19.60%"
     },
     "_width_": {
         "type": "ref",
@@ -49,18 +49,12 @@
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "isvisible": true,
-    "kuid": "c98fc820434c4530acd37447b0063128",
+    "kuid": "b5e22fcef6b649989f6320d59f0d3fe4",
     "name": "kony.ui.Label",
-    "parent": "flxApplicationPreferences",
+    "parent": "flxSeetingsCard",
     "pf": "frmSettings",
     "texti18n": "i18n.ess.MyApprovals.frmSettings.lblShowFirst",
     "tooltip": "",
-    "wType": "Label",
-    "zindex": 1
+    "wType": "Label"
 }

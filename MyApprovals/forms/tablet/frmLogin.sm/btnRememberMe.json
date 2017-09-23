@@ -4,11 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "145.16%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "60%"
+        "value": "120%"
     },
     "_margin_": [
         6,
@@ -28,18 +24,14 @@
     },
     "_skin_": "s78e5b0fa9d04bafa9b3d04ee06b7836",
     "_text_": "",
-    "_top_": {
-        "type": "string",
-        "value": "11%"
-    },
     "_width_": {
         "type": "string",
-        "value": "28.20%"
+        "value": "19%"
     },
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "51%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 5,
@@ -48,9 +40,9 @@
     "id": "btnRememberMe",
     "info": null,
     "isvisible": true,
-    "kuid": "cb496857a0ea4febbb0592ebd4644ac1",
+    "kuid": "i53f44aa98434f13a04ade331eb342ef",
     "name": "kony.ui.Button",
-    "parent": "flxRemMe",
+    "parent": "flxRememberMeContainer",
     "pf": "frmLogin",
     "wType": "Button",
     "zindex": 1

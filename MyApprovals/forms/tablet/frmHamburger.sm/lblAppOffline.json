@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "seea61642a5b478286db2e7745c91c5d",
-    "_text_": "OFFLINE MODE",
+    "_text_": "",
     "_top_": {
         "type": "string",
         "value": "6%"
@@ -50,11 +50,12 @@
         }
     },
     "isvisible": false,
-    "kuid": "55a3aeb44aea4512aae4a60ef581f9ad",
+    "kuid": "b2b187dc4c5844bea02c615d333bee99",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
-    "parent": "flxHamburger",
+    "parent": "flxMenuHamburger",
     "pf": "frmHamburger",
+    "texti18n": "i18n.ess.frmHamburger.AppOffline",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
