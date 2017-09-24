@@ -1,0 +1,27 @@
+{
+    "AS_Calendar_ba703cf6727c46788a1733afbeb8dd8d": {
+        "id": "AS_Calendar_ba703cf6727c46788a1733afbeb8dd8d",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Calendar_onSelectionFromClndDelegationRequestCreateTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "boolean",
+            "name": "isValidDateSelected"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequestCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "eda7c8944955470b957eb39f2f649e15"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f8f09b0b44db4c9a8f313c35570226ef",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DelegationRequestCreate.Actions.getInstance().onSelectionOfDateInFromCalendar();",
+            "parentId": null
+        }]
+    }
+}
