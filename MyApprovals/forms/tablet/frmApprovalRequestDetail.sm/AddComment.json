@@ -1,9 +1,13 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "2%"
+    },
     "_height_": {
         "type": "string",
-        "value": "52.50%"
+        "value": "27%"
     },
     "_left_": {
         "type": "string",
@@ -23,48 +27,32 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s3ff01c73c3d4e558d7b5ff7e9225764",
-    "_top_": {
-        "type": "string",
-        "value": "0.00%"
-    },
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "allboxes": [],
-    "allowhorizontalbounce": false,
-    "allowverticalbounce": true,
-    "bounces": false,
+    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxinfoSection1",
-        "flxinfoSection2",
-        "flxDescriptionLink",
-        "SegChat",
-        "AddComment"
+        "lblYou",
+        "txtareaComments"
     ],
     "clipbounds": true,
     "containerweight": 100,
-    "decelerat": false,
-    "dragg": false,
     "enablescrolling": true,
-    "horizontalscrollindicator": true,
-    "id": "flxScrollBottom",
+    "id": "AddComment",
     "info": null,
     "isvisible": true,
-    "kuid": "52a96a63af6a4dcdbd7b9c3c9a31e9c1",
+    "kuid": "f7b8f737f4c0404083cfcbaefeba5b61",
     "layouttype": 4,
-    "name": "kony.ui.FlexScrollContainer",
-    "pagingenabled": false,
-    "parent": "flxMain",
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxScrollBottom",
     "pf": "frmApprovalRequestDetail",
-    "scrolldirection": 2,
     "snapgridsize": 10,
     "snaptogrid": true,
-    "track": false,
-    "verticalscrollindicator": false,
-    "wType": "FlexScrollContainer",
+    "wType": "FlexContainer",
     "widgetalignment": 1,
     "zindex": 2
 }

@@ -1,0 +1,76 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextArea2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "78%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_padding_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_placeholder_": "Type Comments here ",
+    "_skin_": "s3297c9c210a48bfa4da6d936f332189",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "closebuttontext": "",
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "disabledSkins": {},
+    "focusskin": "s457d94334bc467d987406a8b79c8849",
+    "id": "txtareaComments",
+    "ide_onTextChange": "AS_TextArea_h06f3f88ba6446e99f67f6eb7d760857",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "closeButtonText": ""
+        }
+    },
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "d409920c4dc24dbaa4c744c8572cc41c",
+    "maxtextlength": 140,
+    "minheight": {
+        "type": "string",
+        "value": "80%"
+    },
+    "mode": "A",
+    "name": "kony.ui.TextArea2",
+    "numberofvisiblelines": 3,
+    "parent": "AddComment",
+    "pf": "frmApprovalRequestDetail",
+    "securetextentry": false,
+    "showoprogressindicator": false,
+    "showprogressindicator": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextArea"
+}

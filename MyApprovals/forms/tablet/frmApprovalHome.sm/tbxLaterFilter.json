@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Search by name",
+    "_skin_": "sf0ca675ae094defa063a7f47accf8e8",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "78.10%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "sc8851c22087495ea2fbc9ffec2fab77",
+    "id": "tbxLaterFilter",
+    "ide_onDone": "AS_TextField_d12526e53c4f495eb88d7d52651d7f92",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "showCloseButton": false
+        }
+    },
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "c5de6dda50d940398b99ce86505ac3de",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxLaterFilter",
+    "pf": "frmApprovalHome",
+    "placeholderskin": "sd80b0ef6a174f33bf33f5ea667f229d",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField"
+}

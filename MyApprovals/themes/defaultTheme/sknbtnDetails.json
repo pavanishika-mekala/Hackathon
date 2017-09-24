@@ -77,31 +77,6 @@
   "font_size": 114,
   "font_style": "normal",
   "font_weight": "normal",
-  "ipad": {
-    "background_color": {
-      "angle": 0,
-      "colors": [
-        "56a9ddff",
-        "3a83a7ff",
-        "4aa8d1ff"
-      ],
-      "cs": [
-        0,
-        50,
-        100
-      ],
-      "gt": "linear"
-    },
-    "background_style": "linear",
-    "bg_type": "ms_gradient",
-    "isForked": true,
-    "text_shadow": {
-      "br": 0,
-      "color": "000000ff",
-      "x": 0,
-      "y": -1
-    }
-  },
   "iphone": {
     "font_size": 114,
     "isForked": false

@@ -1,0 +1,30 @@
+{
+    "AS_Segment_c12223a2ce584a299b472e7868275d96": {
+        "id": "AS_Segment_c12223a2ce584a299b472e7868275d96",
+        "type": "ACTION_SEQUENCE",
+        "name": "onRowClickOfAttachmentSegemntTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b6fcd86cf2d64e94aa18b33e0414c648"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__jbc4740dbb0d44e2b703273274cdfef6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n\tkony.apps.coe.ess.Approvals.frmApprovalRequestDetail.openPdf(frmApprovalRequestDetail.SegAttachments.selectedRowItems[0].Media, false);\n}catch(e){\n  handleError(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.pdfErrorMsg\"));\n  kony.print(\"Error while fetching pdf \"+e.message);\n}",
+            "parentId": null
+        }]
+    }
+}

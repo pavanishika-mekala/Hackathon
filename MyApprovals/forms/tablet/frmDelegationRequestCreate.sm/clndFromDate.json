@@ -1,0 +1,81 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizDateField",
+    "DNDConfig": null,
+    "Image": "cal_blank.png",
+    "__parentReadjusting__": false,
+    "_data_": null,
+    "_date_": [
+        null,
+        null,
+        null
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "55%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5.53%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Select",
+    "_skin_": "sfd8532fc0c942ceb1754138aaf02ac0",
+    "_top_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "130%"
+    },
+    "advview": "default",
+    "calendaricon": "cal_blank.png",
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "datecomponents": null,
+    "dateeditable": true,
+    "dateformat": "dd/MMM/yyyy",
+    "day": null,
+    "daytextalignmentincell": 5,
+    "disabledSkins": {},
+    "entereddate": null,
+    "format": "dd/MMM/yyyy",
+    "formatteddate": null,
+    "hidedaysheader": false,
+    "hidemonthsheader": false,
+    "hour": null,
+    "id": "clndFromDate",
+    "ide_onSelection": "AS_Calendar_aec1f01ff4474cbc9e927c56998d383f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e46e70206f1b47e585935de70a74a22c",
+    "minutes": null,
+    "month": null,
+    "name": "kony.ui.Calendar",
+    "noofmonths": 1,
+    "pagedate": "/2017",
+    "parent": "flxFromDate",
+    "pf": "frmDelegationRequestCreate",
+    "seconds": null,
+    "selectdate": "//2017",
+    "viewconfig": {
+        "gridConfig": {}
+    },
+    "viewtype": "default",
+    "wType": "Calendar",
+    "widgetalignment": 5,
+    "year": null,
+    "zindex": 1
+}
