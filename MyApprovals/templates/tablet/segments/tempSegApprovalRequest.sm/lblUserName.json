@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "d6e01ccbef454190bf62d0a6848dbb64",
     "name": "kony.ui.Label",
-    "parent": "CopyflxApprovalRequest0f0a16c21eff348",
+    "parent": "flxApprovalRequest",
     "pf": "tempSegApprovalRequest",
     "texttruncateposition": 3,
     "tooltip": "",

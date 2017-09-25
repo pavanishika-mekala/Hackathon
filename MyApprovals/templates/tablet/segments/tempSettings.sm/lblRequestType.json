@@ -61,7 +61,7 @@
     "kuid": "e257827eff984bbd83a4d4b000203ab7",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
-    "parent": "CopyflxTemplateSettingsCell0j6d0f467335f41",
+    "parent": "flxTemplateSettingsCell",
     "pf": "tempSettings",
     "tooltip": "",
     "wType": "Label",

@@ -37,8 +37,9 @@
     "containerId": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
-        "platform": "iphone",
+        "channel": "tablet",
+        "formID": "tempSegAuditTrailList",
+        "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
     },
@@ -48,7 +49,7 @@
     "isvisible": true,
     "kuid": "h7ef276c8e724c0bbddc314fe70e4c08",
     "name": "kony.ui.Image2",
-    "parent": "CopyflxSegAuditTrailList0ac1bfd02455748",
+    "parent": "flxSegAuditTrailList",
     "pf": "tempSegAuditTrailList",
     "srcType": 1,
     "wType": "Image",

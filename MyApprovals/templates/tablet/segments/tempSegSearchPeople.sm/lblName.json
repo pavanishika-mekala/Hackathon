@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "cbb510b3593043ccb75a6d92f34b0c7b",
     "name": "kony.ui.Label",
-    "parent": "CopyflxSearchPeople0a11ba77391374c",
+    "parent": "flxSearchPeople",
     "pf": "tempSegSearchPeople",
     "tooltip": "",
     "wType": "Label",

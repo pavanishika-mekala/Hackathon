@@ -54,7 +54,7 @@
     "kuid": "f80ccc82be6e40ee9313afa3e47a3846",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
-    "parent": "CopyflxApprovalRequest0f0a16c21eff348",
+    "parent": "flxApprovalRequest",
     "pf": "tempSegApprovalRequest",
     "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.lblDeligated",
     "tooltip": "",

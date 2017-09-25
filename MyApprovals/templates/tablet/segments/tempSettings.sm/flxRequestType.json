@@ -52,7 +52,7 @@
     "kuid": "i356fa1747974ba38d906240a4845d77",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxTemplateSettingsCell0j6d0f467335f41",
+    "parent": "flxTemplateSettingsCell",
     "pf": "tempSettings",
     "snapgridsize": 10,
     "snaptogrid": true,

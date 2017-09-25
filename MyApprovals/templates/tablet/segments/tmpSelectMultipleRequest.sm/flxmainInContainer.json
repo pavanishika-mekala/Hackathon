@@ -49,7 +49,7 @@
     "kuid": "bbd1b2d5267e469998d6c4c986f16843",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxMultipleSelect0d7c140d3994a4e",
+    "parent": "flxMultipleSelect",
     "pf": "tmpSelectMultipleRequest",
     "snapgridsize": 10,
     "snaptogrid": true,

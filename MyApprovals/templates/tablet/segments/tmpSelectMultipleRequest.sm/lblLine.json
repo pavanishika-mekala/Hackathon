@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "cf038df1e9fa499db976139b2620dc53",
     "name": "kony.ui.Label",
-    "parent": "CopyflxMultipleSelect0d7c140d3994a4e",
+    "parent": "flxMultipleSelect",
     "pf": "tmpSelectMultipleRequest",
     "tooltip": "",
     "wType": "Label",

@@ -48,7 +48,7 @@
     "kuid": "e685b3551c1d4f90b2c57ed7eea8d277",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxRequesterComments0b99de6100c254a",
+    "parent": "flxRequesterComments",
     "pf": "tempSegRequesterComments",
     "snapgridsize": 10,
     "snaptogrid": true,

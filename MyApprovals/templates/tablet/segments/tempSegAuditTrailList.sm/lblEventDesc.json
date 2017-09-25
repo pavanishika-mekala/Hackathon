@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "f1e3fa744bb84001b826f56cd3bcf799",
     "name": "kony.ui.Label",
-    "parent": "CopyflxSegAuditTrailList0ac1bfd02455748",
+    "parent": "flxSegAuditTrailList",
     "pf": "tempSegAuditTrailList",
     "tooltip": "",
     "wType": "Label",

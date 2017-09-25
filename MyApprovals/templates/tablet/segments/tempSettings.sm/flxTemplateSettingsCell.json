@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "21%"
+        "value": "40%"
     },
     "_margin_": [
         0,
@@ -18,33 +18,26 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s669c17528e6453087943711ecbc673f",
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblNotificationTitle",
-        "lblNotificationTime",
-        "lblNotificationDescription",
-        "lblNotificationPeriod",
-        "lblNotificationDuration",
-        "lblNotificationHLine",
-        "lblNotificationVLine",
-        "flxNotificationIconMack"
+        "flxRequestType",
+        "lblRequestType"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxNotificationListTemplate0j350df4165bc4c",
+    "id": "flxTemplateSettingsCell",
     "info": null,
-    "isTemplate": true,
     "isvisible": true,
-    "kuid": "ged63488bff9490cb794e87246554b4a",
-    "layouttype": 2,
+    "kuid": "d73f515e12494bbc8a06f4fd127630dd",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "notificationListTemplate",
-    "pf": "notificationListTemplate",
+    "parent": "tempSettings",
+    "pf": "tempSettings",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

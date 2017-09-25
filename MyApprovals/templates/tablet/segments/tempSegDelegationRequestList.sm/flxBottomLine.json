@@ -46,7 +46,7 @@
     "kuid": "c97969c2dd824a85a13b2a6af5581ef0",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxSegDelegationRequestList0j6c74a68bc6f42",
+    "parent": "flxSegDelegationRequestList",
     "pf": "tempSegDelegationRequestList",
     "snapgridsize": 10,
     "snaptogrid": true,

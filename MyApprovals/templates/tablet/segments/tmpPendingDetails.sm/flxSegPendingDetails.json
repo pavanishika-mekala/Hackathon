@@ -1,8 +1,13 @@
 {
     "DNDConfig": null,
+    "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "70dp"
+        "value": "32%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -18,28 +23,37 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s6b54cf4110545949d31f50f11e34f38",
+    "_skin_": "s57acf34cf5540318b49bffcbd1accc4",
+    "_top_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblName",
-        "imgSelected",
-        "flxImg"
+        "lblPendingNames",
+        "lblPendingAmnt",
+        "lblVerSep7",
+        "lblHorSep7"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxSearchPeople0a11ba77391374c",
+    "id": "flxSegPendingDetails",
     "info": null,
     "isTemplate": true,
     "isvisible": true,
-    "kuid": "ia05c8ee72674c129587ebf117899dc8",
+    "kuid": "bddf520df90645e7aa7182c630fff727",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "tempSegSearchPeople",
-    "pf": "tempSegSearchPeople",
+    "parent": "tmpPendingDetails",
+    "pf": "tmpPendingDetails",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

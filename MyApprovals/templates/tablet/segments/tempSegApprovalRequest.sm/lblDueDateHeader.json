@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "j6ae8326b1e54c39941170034c80eebb",
     "name": "kony.ui.Label",
-    "parent": "CopyflxApprovalRequest0f0a16c21eff348",
+    "parent": "flxApprovalRequest",
     "pf": "tempSegApprovalRequest",
     "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.lblDueDateHeader",
     "tooltip": "",

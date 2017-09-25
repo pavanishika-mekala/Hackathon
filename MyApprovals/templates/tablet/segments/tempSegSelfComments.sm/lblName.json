@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "fff190782eae4f328bcfdc5a1b167e6f",
     "name": "kony.ui.Label",
-    "parent": "CopyflxSelfComments0c3d8758b888041",
+    "parent": "flxSelfComments",
     "pf": "tempSegSelfComments",
     "tooltip": "",
     "wType": "Label",

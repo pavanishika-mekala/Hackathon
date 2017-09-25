@@ -1,13 +1,8 @@
 {
     "DNDConfig": null,
-    "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "9%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "1dp"
+        "value": "22.86%"
     },
     "_margin_": [
         0,
@@ -23,36 +18,28 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s57acf34cf5540318b49bffcbd1accc4",
-    "_top_": {
-        "type": "string",
-        "value": "2dp"
-    },
-    "_width_": {
-        "type": "string",
-        "value": "99.78%"
-    },
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblType",
-        "lblVerSep1",
-        "lblValue"
+        "lblName",
+        "imgSelectionIndicator",
+        "flxBotttomLine"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxFullDesc0e12787433c7e44",
+    "id": "flxSegTypeOfRequest",
     "info": null,
     "isTemplate": true,
     "isvisible": true,
-    "kuid": "f3597727d3b64088b1f721e5de66a2f1",
+    "kuid": "ebe768dc37c640ec92f59d9698593601",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "tempFullDetails",
-    "pf": "tempFullDetails",
+    "parent": "tempSegTypeOfRequest",
+    "pf": "tempSegTypeOfRequest",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

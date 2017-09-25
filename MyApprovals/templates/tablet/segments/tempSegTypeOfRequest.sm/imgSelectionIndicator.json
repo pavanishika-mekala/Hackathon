@@ -37,8 +37,9 @@
     "containerId": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
-        "platform": "iphone",
+        "channel": "tablet",
+        "formID": "tempSegTypeOfRequest",
+        "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
     },
@@ -49,7 +50,7 @@
     "isvisible": true,
     "kuid": "de70249b44e44e41806ea392b247aec0",
     "name": "kony.ui.Image2",
-    "parent": "CopyflxSegTypeOfRequest0e9a78da1702941",
+    "parent": "flxSegTypeOfRequest",
     "pf": "tempSegTypeOfRequest",
     "srcType": 1,
     "wType": "Image",

@@ -46,7 +46,7 @@
     "kuid": "ja839f4cda724b09b2dcddc6c4f49959",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxSegAuditTrailList0ac1bfd02455748",
+    "parent": "flxSegAuditTrailList",
     "pf": "tempSegAuditTrailList",
     "snapgridsize": 10,
     "snaptogrid": true,

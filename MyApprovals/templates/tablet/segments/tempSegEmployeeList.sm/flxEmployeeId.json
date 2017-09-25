@@ -49,7 +49,7 @@
     "kuid": "f30d667944d448fc8496ebadbfbf65b2",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxSegEmployeeList0a48067610ac445",
+    "parent": "flxSegEmployeeList",
     "pf": "tempSegEmployeeList",
     "snapgridsize": 10,
     "snaptogrid": true,

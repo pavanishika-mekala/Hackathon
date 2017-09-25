@@ -50,7 +50,7 @@
     "kuid": "c9599a371c0f481baade5fb8f43b94a4",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxSegDelegationRequestList0j6c74a68bc6f42",
+    "parent": "flxSegDelegationRequestList",
     "pf": "tempSegDelegationRequestList",
     "snapgridsize": 10,
     "snaptogrid": true,

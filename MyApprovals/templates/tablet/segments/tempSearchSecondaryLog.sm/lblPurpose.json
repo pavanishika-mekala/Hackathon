@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "j7df58ba13674edab8eb2bd37bdcceb2",
     "name": "kony.ui.Label",
-    "parent": "CopyflxSecondarySearchLog0b9234cce11174f",
+    "parent": "flxSecondarySearchLog",
     "pf": "tempSearchSecondaryLog",
     "tooltip": "",
     "wType": "Label",

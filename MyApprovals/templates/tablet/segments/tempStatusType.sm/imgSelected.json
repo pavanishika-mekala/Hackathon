@@ -37,9 +37,9 @@
     "containerId": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
+        "channel": "tablet",
         "formID": "tempStatusType",
-        "platform": "iphone",
+        "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
     },
@@ -50,7 +50,7 @@
     "isvisible": true,
     "kuid": "a6ea1674e71d4cedb05e3e0b7014143e",
     "name": "kony.ui.Image2",
-    "parent": "CopyflxStatusType0ba07935908c24c",
+    "parent": "flxStatusType",
     "pf": "tempStatusType",
     "srcType": 1,
     "wType": "Image",

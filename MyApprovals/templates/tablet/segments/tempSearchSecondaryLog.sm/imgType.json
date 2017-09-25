@@ -37,8 +37,9 @@
     "containerId": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
-        "platform": "iphone",
+        "channel": "tablet",
+        "formID": "tempSearchSecondaryLog",
+        "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
     },
@@ -49,7 +50,7 @@
     "isvisible": true,
     "kuid": "geaca3db0bed4914bf90415973aa4054",
     "name": "kony.ui.Image2",
-    "parent": "CopyflxSecondarySearchLog0b9234cce11174f",
+    "parent": "flxSecondarySearchLog",
     "pf": "tempSearchSecondaryLog",
     "srcType": 1,
     "wType": "Image",

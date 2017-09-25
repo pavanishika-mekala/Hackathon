@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "23%"
     },
     "_margin_": [
         0,
@@ -18,27 +18,29 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
+    "_skin_": "s3663ccb17034129bc345d9a3f122ed9",
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxImgEmployee",
-        "imgSelection",
-        "lblEmployeeName"
+        "flxColumn1",
+        "flxColumn2",
+        "flxColumn3",
+        "flxBottomLine"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxEmployeeSelection0cb70ceb7fda94f",
+    "id": "flxSegDelegationRequestList",
     "info": null,
+    "isTemplate": true,
     "isvisible": true,
-    "kuid": "e89b0b3b39ef4b988457d9191692edef",
+    "kuid": "j63a14c987e64243a6470d51b8d24480",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "TempEmployeeSelection",
-    "pf": "TempEmployeeSelection",
+    "parent": "tempSegDelegationRequestList",
+    "pf": "tempSegDelegationRequestList",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

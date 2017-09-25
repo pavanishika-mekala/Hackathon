@@ -45,7 +45,7 @@
     "isvisible": true,
     "kuid": "j55ea9df834c4b69aef9f1b0ec0c80e8",
     "name": "kony.ui.Button",
-    "parent": "CopyflxApprovalRequest0f0a16c21eff348",
+    "parent": "flxApprovalRequest",
     "pf": "tempSegApprovalRequest",
     "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.Reject",
     "wType": "Button",

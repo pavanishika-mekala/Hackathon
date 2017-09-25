@@ -56,7 +56,7 @@
     "kuid": "a692799845004e05910edc26f44ef99a",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxNotificationListTemplate0j350df4165bc4c",
+    "parent": "flxNotificationListTemplate",
     "pf": "notificationListTemplate",
     "snapgridsize": 10,
     "snaptogrid": true,

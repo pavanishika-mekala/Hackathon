@@ -54,7 +54,7 @@
     "kuid": "gdc31c6e039a4d81aada9a4b73df37f9",
     "name": "kony.ui.Label",
     "noteId": "3568-96c1-5c41-22f3-33b4-7c55",
-    "parent": "CopyflxSearchLog0cce2d89231bb4a",
+    "parent": "flxSearchLog",
     "pf": "tempSearchLog",
     "tooltip": "",
     "wType": "Label",

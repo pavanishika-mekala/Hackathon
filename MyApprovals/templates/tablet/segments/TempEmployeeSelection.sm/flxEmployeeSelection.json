@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "80dp"
+        "value": "30%"
     },
     "_margin_": [
         0,
@@ -18,34 +18,27 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s001219a37834d1587fa56d3e61a8fc9",
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblName",
-        "flxBorder",
-        "lblCreatedDate",
-        "lblPurpose",
-        "lblApproved",
-        "flxExpense",
-        "imgType",
-        "imgTick",
-        "flxUserImg"
+        "flxImgEmployee",
+        "imgSelection",
+        "lblEmployeeName"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxSecondarySearchLog0b9234cce11174f",
+    "id": "flxEmployeeSelection",
     "info": null,
-    "isTemplate": true,
     "isvisible": true,
-    "kuid": "h6a6d2ea45c649a2be99a8f1c003af60",
+    "kuid": "e89b0b3b39ef4b988457d9191692edef",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "tempSearchSecondaryLog",
-    "pf": "tempSearchSecondaryLog",
+    "parent": "TempEmployeeSelection",
+    "pf": "TempEmployeeSelection",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

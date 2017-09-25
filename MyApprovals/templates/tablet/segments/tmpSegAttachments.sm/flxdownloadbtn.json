@@ -48,7 +48,7 @@
     "kuid": "c8a2eced10a54933b712701b2a94d611",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "Copyflxattachmentmain0h578701ff14a41",
+    "parent": "flxattachmentmain",
     "pf": "tmpSegAttachments",
     "snapgridsize": 10,
     "snaptogrid": true,

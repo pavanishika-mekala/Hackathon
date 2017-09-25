@@ -62,7 +62,7 @@
     "maxnumberoflines": 2,
     "name": "kony.ui.Label",
     "paddinginpixel": false,
-    "parent": "CopyflxNotificationListTemplate0j350df4165bc4c",
+    "parent": "flxNotificationListTemplate",
     "pf": "notificationListTemplate",
     "textStyle": {
         "baseline": 0,

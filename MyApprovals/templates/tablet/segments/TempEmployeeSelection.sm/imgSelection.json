@@ -41,8 +41,9 @@
     "containerId": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
-        "platform": "iphone",
+        "channel": "tablet",
+        "formID": "TempEmployeeSelection",
+        "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
     },
@@ -52,7 +53,7 @@
     "isvisible": false,
     "kuid": "a5eceac01b2b44ef8d6e8c6c5b785c35",
     "name": "kony.ui.Image2",
-    "parent": "CopyflxEmployeeSelection0cb70ceb7fda94f",
+    "parent": "flxEmployeeSelection",
     "pf": "TempEmployeeSelection",
     "srcType": 1,
     "wType": "Image",

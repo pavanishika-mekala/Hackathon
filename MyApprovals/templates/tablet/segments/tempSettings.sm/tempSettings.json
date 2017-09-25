@@ -21,11 +21,12 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "CopyflxTemplateSettingsCell0j6d0f467335f41"
+        "flxTemplateSettingsCell"
     ],
     "containerId": true,
     "containerweight": 100,
     "currentLocale": "default",
+    "device": "iPad3",
     "displayorientation": 3,
     "enabledforidletimeout": false,
     "id": "tempSettings",
@@ -43,8 +44,11 @@
         "formTransition": "None"
     },
     "paddinginpixel": false,
+    "platform": "ipad",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone6",
+    "shellCSS": "iOS_iPad3",
     "titleBarSkin": "s01a3c761ed44dcab0d6537d1b55b621",
     "titlebar": true,
     "type": 3,

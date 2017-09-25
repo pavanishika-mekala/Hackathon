@@ -46,7 +46,7 @@
     "kuid": "e9a68cb4a57f493d8418894cac907059",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxSecondarySearchLog0b9234cce11174f",
+    "parent": "flxSecondarySearchLog",
     "pf": "tempSearchSecondaryLog",
     "snapgridsize": 10,
     "snaptogrid": true,

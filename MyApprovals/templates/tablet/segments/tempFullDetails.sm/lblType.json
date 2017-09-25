@@ -57,7 +57,7 @@
     "isvisible": true,
     "kuid": "c0f7cd716a4a479bb0e7380985a7c884",
     "name": "kony.ui.Label",
-    "parent": "CopyflxFullDesc0e12787433c7e44",
+    "parent": "flxFullDesc",
     "pf": "tempFullDetails",
     "texti18n": "i18n.ess.MyApprovals.tempFullDetails.lblType",
     "tooltip": "",

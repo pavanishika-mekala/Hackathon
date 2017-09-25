@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "a531aeec6d9f46f0b9747d0e16c4e940",
     "name": "kony.ui.Label",
-    "parent": "CopyflxRequesterComments0b99de6100c254a",
+    "parent": "flxRequesterComments",
     "pf": "tempSegRequesterComments",
     "tooltip": "",
     "wType": "Label",

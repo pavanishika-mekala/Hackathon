@@ -53,7 +53,7 @@
     "isvisible": false,
     "kuid": "d51e757292674fc385edb08332337a72",
     "name": "kony.ui.Label",
-    "parent": "CopyflxSegPendingDetails0he26d6ea5e264b",
+    "parent": "flxSegPendingDetails",
     "pf": "tmpPendingDetails",
     "tooltip": "",
     "wType": "Label",

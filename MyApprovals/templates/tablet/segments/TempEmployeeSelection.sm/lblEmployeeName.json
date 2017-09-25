@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "ic040f2636fe4ba6b3dd20a450199117",
     "name": "kony.ui.Label",
-    "parent": "CopyflxEmployeeSelection0cb70ceb7fda94f",
+    "parent": "flxEmployeeSelection",
     "pf": "TempEmployeeSelection",
     "tooltip": "",
     "wType": "Label",

@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "cc34c71e8a114dd0a2b8949da2d529b4",
     "name": "kony.ui.Label",
-    "parent": "CopyflxNotificationListTemplate0j350df4165bc4c",
+    "parent": "flxNotificationListTemplate",
     "pf": "notificationListTemplate",
     "tooltip": "",
     "wType": "Label",

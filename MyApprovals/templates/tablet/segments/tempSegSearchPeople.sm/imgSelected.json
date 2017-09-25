@@ -37,8 +37,9 @@
     "containerId": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
-        "platform": "iphone",
+        "channel": "tablet",
+        "formID": "tempSegSearchPeople",
+        "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
     },
@@ -49,7 +50,7 @@
     "isvisible": true,
     "kuid": "h91fe86dbf5c484cae83ac4806bb9984",
     "name": "kony.ui.Image2",
-    "parent": "CopyflxSearchPeople0a11ba77391374c",
+    "parent": "flxSearchPeople",
     "pf": "tempSegSearchPeople",
     "srcType": 1,
     "wType": "Image",

@@ -41,8 +41,9 @@
     "containerId": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
-        "platform": "iphone",
+        "channel": "tablet",
+        "formID": "tempSegLaterApprove",
+        "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
     },
@@ -53,7 +54,7 @@
     "isvisible": true,
     "kuid": "e9e3ea7f4e7c464caea32f9ab16ab918",
     "name": "kony.ui.Image2",
-    "parent": "CopyflxLaterApprove0d4155d2802dd41",
+    "parent": "flxLaterApprove",
     "pf": "tempSegLaterApprove",
     "srcType": 1,
     "wType": "Image",

@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "23%"
+        "value": "14.88%"
     },
     "_margin_": [
         0,
@@ -18,29 +18,33 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s3663ccb17034129bc345d9a3f122ed9",
+    "_skin_": "s668a344639148d5811db598b1f7d32c",
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxColumn1",
-        "flxColumn2",
-        "flxColumn3",
-        "flxBottomLine"
+        "lblBottomLine",
+        "imgStatus",
+        "lblEventName",
+        "lblEventDesc",
+        "lblPersonName",
+        "lblDate",
+        "flxVerticalLineTop",
+        "flxVerticalLineBottom"
     ],
     "clipbounds": true,
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CopyflxSegDelegationRequestList0j6c74a68bc6f42",
+    "id": "flxSegAuditTrailList",
     "info": null,
     "isTemplate": true,
     "isvisible": true,
-    "kuid": "j63a14c987e64243a6470d51b8d24480",
+    "kuid": "bb27dca9802f4eec96038aed152446d7",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "tempSegDelegationRequestList",
-    "pf": "tempSegDelegationRequestList",
+    "parent": "tempSegAuditTrailList",
+    "pf": "tempSegAuditTrailList",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

@@ -21,7 +21,7 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "CopyflxSegRequests0a0cc35a9dcd04d"
+        "flxSegRequests"
     ],
     "containerId": true,
     "containerweight": 100,
