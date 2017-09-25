@@ -6,7 +6,7 @@
   },
   "background_color": "ffffffff",
   "bg_type": "one",
-  "border_color": "549ce5ff",
+  "border_color": "5fc3ebff",
   "border_radius": 40,
   "border_style": "custom",
   "border_type": 0,
@@ -58,7 +58,7 @@
     "top_right_border_width": 0
   },
   "fontSizeInPx": false,
-  "font_color": "549ce5ff",
+  "font_color": "5fc3ebff",
   "font_name": "Helvetica",
   "font_size": 100,
   "font_style": "normal",

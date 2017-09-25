@@ -27,7 +27,7 @@
   },
   "background_color": "f4f4f4ff",
   "bg_type": "one",
-  "border_color": "2ebaeeff",
+  "border_color": "00aaffff",
   "border_radius": 100,
   "border_style": "custom",
   "border_type": 0,
@@ -79,7 +79,7 @@
     "top_right_border_width": 0
   },
   "fontSizeInPx": false,
-  "font_color": "2ebaeeff",
+  "font_color": "00aaffff",
   "font_name": "Helvetica",
   "font_size": 107,
   "font_style": "normal",
