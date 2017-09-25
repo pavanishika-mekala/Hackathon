@@ -3,7 +3,24 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_data_": [
-        {}
+        {
+            "imgSelected": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ok.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblIntials": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -45,7 +62,7 @@
     "groupcells": false,
     "hasSections": false,
     "id": "segSearch",
-    "ide_onRowClick": "AS_Segment_j2fcb0a29456445bb443e32676e64050",
+    "ide_onRowClick": "AS_Segment_e0f894390f314caf80192f1a6d6d0e7d",
     "info": null,
     "invokedProperty": "unselectedStateImage",
     "ipad": {
@@ -66,9 +83,11 @@
     "parent": "flxSelectRequestType",
     "pf": "frmSelect",
     "retainselection": true,
+    "rowTemplateId": "eae0f8a1fb904e048d9e85e2aa268f35",
     "rowcounter": 0,
     "rowfocusskin": "s12100649aba4186864dfd4f3e24dba0",
     "rowskin": "s12100649aba4186864dfd4f3e24dba0",
+    "rowtemplate": "CopyflxSearchPeople0a11ba77391374c",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -77,7 +96,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectimage": "ok.png",
     "selectionbehavior": "multiselect",
     "selectionindicator": "imgSelected",
@@ -89,6 +108,13 @@
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {},
+    "widgetdatamap": {
+        "CopyflxSearchPeople0a11ba77391374c": "CopyflxSearchPeople0a11ba77391374c",
+        "flxImg": "flxImg",
+        "imgSelected": "imgSelected",
+        "imgUser": "imgUser",
+        "lblIntials": "lblIntials",
+        "lblName": "lblName"
+    },
     "zindex": 3
 }

@@ -46,7 +46,7 @@
     "id": "btnPeopleSearch",
     "info": null,
     "isvisible": true,
-    "kuid": "4574821ebae940ed950457e7f45092ae",
+    "kuid": "e30ae4ae19404de8a1672ab687230528",
     "name": "kony.ui.Button",
     "parent": "flxTxtBoxSearch",
     "pf": "frmIsLaterSearch",

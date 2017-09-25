@@ -49,16 +49,16 @@
     "contentalignment": 4,
     "focusskin": "sc8851c22087495ea2fbc9ffec2fab77",
     "id": "tbxLaterFilter",
-    "ide_onDone": "AS_TextField_1cfac89a52d0403690cefda29d9de6b6",
+    "ide_onDone": "AS_TextField_d191276f929d4d79a584c945453269f3",
     "info": null,
-    "iphone": {
+    "ipad": {
         "psp": {
             "showCloseButton": false
         }
     },
     "isvisible": true,
     "keyboardtype": "A",
-    "kuid": "d29e6cb00eed4c85993b91a4ed694af1",
+    "kuid": "g75c6e28c1224360868c9e0686389710",
     "mode": "A",
     "name": "kony.ui.TextBox2",
     "parent": "flxLaterFilter",

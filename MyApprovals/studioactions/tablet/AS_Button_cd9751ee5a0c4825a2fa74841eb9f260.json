@@ -1,0 +1,23 @@
+{
+    "AS_Button_cd9751ee5a0c4825a2fa74841eb9f260": {
+        "id": "AS_Button_cd9751ee5a0c4825a2fa74841eb9f260",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMultiSelection",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h460abdfd6834be69f5e8deb7f05fa9c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c3ab782b01334780926e1fa576f9f567",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {\n  kony.application.getCurrentForm().flxOfflineAlert.setVisibility(false);\t\n  kony.apps.coe.ess.frmLogin.manualSyncOnClick();\n}\n        ",
+            "parentId": null
+        }]
+    }
+}

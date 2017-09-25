@@ -4,10 +4,142 @@
     "__parentReadjusting__": false,
     "_bounces_": false,
     "_data_": [
-        {},
-        {},
-        {},
-        {}
+        {
+            "imgNotificationIcon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "systemerror.png"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your leave Request not submitted due to system error"
+            },
+            "lblNotificationDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 days"
+            },
+            "lblNotificationHLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationPeriod": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "System"
+            },
+            "lblNotificationVLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgNotificationIcon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "systemerror.png"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your leave Request not submitted due to system error"
+            },
+            "lblNotificationDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 days"
+            },
+            "lblNotificationHLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationPeriod": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "System"
+            },
+            "lblNotificationVLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgNotificationIcon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "systemerror.png"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your leave Request not submitted due to system error"
+            },
+            "lblNotificationDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 days"
+            },
+            "lblNotificationHLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationPeriod": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "System"
+            },
+            "lblNotificationVLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgNotificationIcon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "systemerror.png"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your leave Request not submitted due to system error"
+            },
+            "lblNotificationDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 days"
+            },
+            "lblNotificationHLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationPeriod": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "System"
+            },
+            "lblNotificationVLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -70,9 +202,11 @@
     "parent": "flxBody",
     "pf": "frmNotificationsList",
     "retainselection": false,
+    "rowTemplateId": "aac62d99177f4b32b78e2e045c785825",
     "rowcounter": 3,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "CopyflxNotificationListTemplate0j350df4165bc4c",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -89,6 +223,17 @@
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {},
+    "widgetdatamap": {
+        "CopyflxNotificationListTemplate0j350df4165bc4c": "CopyflxNotificationListTemplate0j350df4165bc4c",
+        "flxNotificationIconMack": "flxNotificationIconMack",
+        "imgNotificationIcon": "imgNotificationIcon",
+        "lblNotificationDescription": "lblNotificationDescription",
+        "lblNotificationDuration": "lblNotificationDuration",
+        "lblNotificationHLine": "lblNotificationHLine",
+        "lblNotificationPeriod": "lblNotificationPeriod",
+        "lblNotificationTime": "lblNotificationTime",
+        "lblNotificationTitle": "lblNotificationTitle",
+        "lblNotificationVLine": "lblNotificationVLine"
+    },
     "zindex": 1
 }

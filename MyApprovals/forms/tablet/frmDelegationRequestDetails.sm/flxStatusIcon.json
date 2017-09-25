@@ -42,7 +42,7 @@
     "id": "flxStatusIcon",
     "info": null,
     "isvisible": true,
-    "kuid": "d638a8b4e2cd4558a5ee8d1b56645a6d",
+    "kuid": "b3dc163d44cb40c096e26bc921e71eef",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxStatus",

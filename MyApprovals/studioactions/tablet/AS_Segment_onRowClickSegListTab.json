@@ -1,0 +1,30 @@
+{
+    "AS_Segment_d6537fe54400465c9b5b00876f13ccec": {
+        "id": "AS_Segment_d6537fe54400465c9b5b00876f13ccec",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Segment_onRowClickSegListTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cae2e35ca5a84217ab07ff12e27fbc49"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b82100ef52b94182a38fa5a12d8d26a9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n\tvar formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmApprovalRequestDetail\");  \n  \tvar contextData=frmSearch.segList.selectedItems[0];\n\tformController.loadDataAndShowForm(contextData.ID)\n}catch(e){\n\thandleError(new appException(kony.i18n.getLocalizedString(\"i18n.ess.frmSearch.ErrorMessage.requestDetails\")));\n}\n",
+            "parentId": null
+        }]
+    }
+}

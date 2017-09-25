@@ -2,28 +2,29 @@
     "@class": "com.kony.gen.viz.model.container.KVizSegment2",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bounces_": false,
     "_data_": [
         {
             "btnAdditionalInfo": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "btnAdditionalInfo"
             },
             "btnApprove": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.btnApprove",
                 "text": ""
             },
             "btnReject": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.btnReject",
                 "text": ""
             },
             "imgUser": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
-                "src": ""
+                "src": "people.png"
             },
             "lblCategory": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "Category"
             },
             "lblCircle": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -31,11 +32,11 @@
             },
             "lblCreateDate": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "16 Jan 06:30 pm"
             },
             "lblDueDateValue": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "30 jan, 2015 "
             },
             "lblLine": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -43,15 +44,134 @@
             },
             "lblMidRight": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.lblDueDate",
                 "text": ""
             },
             "lblRequestInfo": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "lblRequestInfo"
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AA"
             },
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "User Name"
+            }
+        },
+        {
+            "btnAdditionalInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "btnAdditionalInfo"
+            },
+            "btnApprove": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.btnApprove",
                 "text": ""
+            },
+            "btnReject": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.btnReject",
+                "text": ""
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblCategory": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblCircle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblCreateDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 06:30 pm"
+            },
+            "lblDueDateValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 jan, 2015 "
+            },
+            "lblLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblMidRight": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.lblDueDate",
+                "text": ""
+            },
+            "lblRequestInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "lblRequestInfo"
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AA"
+            },
+            "lblUserName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "User Name"
+            }
+        },
+        {
+            "btnAdditionalInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "btnAdditionalInfo"
+            },
+            "btnApprove": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.btnApprove",
+                "text": ""
+            },
+            "btnReject": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.btnReject",
+                "text": ""
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblCategory": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblCircle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblCreateDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 06:30 pm"
+            },
+            "lblDueDateValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 jan, 2015 "
+            },
+            "lblLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblMidRight": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.lblDueDate",
+                "text": ""
+            },
+            "lblRequestInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "lblRequestInfo"
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AA"
+            },
+            "lblUserName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "User Name"
             }
         }
     ],
@@ -88,27 +208,26 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "00",
+    "counter": "02",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
     "hasSections": false,
     "id": "SegDetails",
-    "ide_onRowClick": "AS_Segment_8aedcc1246484f6188d52ab888344712",
+    "ide_onRowClick": "AS_Segment_g26635b4e77242e089adfa26ffa5e2b3",
     "info": null,
     "ipad": {
         "psp": {
-            "indicator": "rowselect"
+            "indicator": "none"
         }
     },
     "iphone": {
         "psp": {
-            "bounces": false,
-            "indicator": "none"
+            "indicator": "rowselect"
         }
     },
     "isvisible": true,
-    "kuid": "bc521dc1040f4fed98c191f4e2150a90",
+    "kuid": "effc5e0cc00c4c049ea89089bba106cc",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -120,11 +239,11 @@
     "parent": "flxSegment",
     "pf": "frmRequestedList",
     "retainselection": false,
-    "rowTemplateId": "1f6d3713a0a44fae8be4ed410c58f354",
-    "rowcounter": 0,
-    "rowfocusskin": "s12100649aba4186864dfd4f3e24dba0",
+    "rowTemplateId": "b623f53cee0b47bdbc3f981d336176dc",
+    "rowcounter": 2,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
-    "rowtemplate": "flxSegRequests",
+    "rowtemplate": "CopyflxSegRequests0a0cc35a9dcd04d",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -136,12 +255,12 @@
     "selectedsectionindex": 0,
     "selectionbehavior": "default",
     "separatorrequired": false,
-    "separatorthickness": 0,
     "showscrollbars": false,
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "CopyflxSegRequests0a0cc35a9dcd04d": "CopyflxSegRequests0a0cc35a9dcd04d",
         "btnAdditionalInfo": "btnAdditionalInfo",
         "btnApprove": "btnApprove",
         "btnReject": "btnReject",
@@ -149,7 +268,6 @@
         "flxBottomLeft": "flxBottomLeft",
         "flxButtons": "flxButtons",
         "flxForanimation": "flxForanimation",
-        "flxSegRequests": "flxSegRequests",
         "flxmainInContainer": "flxmainInContainer",
         "flxpeople": "flxpeople",
         "imgUser": "imgUser",
@@ -162,5 +280,6 @@
         "lblRequestInfo": "lblRequestInfo",
         "lblShortName": "lblShortName",
         "lblUserName": "lblUserName"
-    }
+    },
+    "zindex": 1
 }

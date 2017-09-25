@@ -45,7 +45,7 @@
     "id": "AddComment",
     "info": null,
     "isvisible": false,
-    "kuid": "e014f86b8aac4dbc96b3a66b0756753b",
+    "kuid": "a01284d92fca4714a84399861e553c0a",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxComments",

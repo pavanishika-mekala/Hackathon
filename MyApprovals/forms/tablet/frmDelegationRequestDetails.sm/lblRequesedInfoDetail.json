@@ -46,13 +46,8 @@
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "isvisible": true,
-    "kuid": "df2fe6542d2f419b915713d712b4d5a7",
+    "kuid": "f8e4e5f8eedf4bff8db11553916727ce",
     "name": "kony.ui.Label",
     "parent": "flxTypeOfRequest",
     "pf": "frmDelegationRequestDetails",

@@ -23,7 +23,7 @@
         0
     ],
     "_placeholder_": "",
-    "_skin_": "sbb2c4fdc0b14b608d8bbed020eab3ad",
+    "_skin_": "sf5b39517e9b4a7898ee6f81c13262b7",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -46,7 +46,7 @@
     "info": null,
     "isvisible": false,
     "keyboardtype": "A",
-    "kuid": "5acb139d993b42d895a03698040134f8",
+    "kuid": "b33dbfc5cd6f4f1db7db400729eecfae",
     "mode": "A",
     "name": "kony.ui.TextBox2",
     "parent": "flxFilterBar",

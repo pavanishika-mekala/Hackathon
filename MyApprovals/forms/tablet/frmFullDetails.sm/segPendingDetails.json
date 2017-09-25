@@ -3,9 +3,60 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_data_": [
-        {},
-        {},
-        {}
+        {
+            "lblHorSep7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblPendingAmnt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPendingNames": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblVerSep7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblHorSep7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblPendingAmnt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPendingNames": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblVerSep7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblHorSep7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblPendingAmnt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblPendingNames": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblVerSep7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -65,9 +116,11 @@
     "parent": "flxViewDetails",
     "pf": "frmFullDetails",
     "retainselection": false,
+    "rowTemplateId": "a2ac899cdd7f4f97a079687f5859b7df",
     "rowcounter": 2,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "s0490e93cc2c41ddb12821848e64ca7f",
+    "rowtemplate": "CopyflxSegPendingDetails0he26d6ea5e264b",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -85,6 +138,12 @@
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {},
+    "widgetdatamap": {
+        "CopyflxSegPendingDetails0he26d6ea5e264b": "CopyflxSegPendingDetails0he26d6ea5e264b",
+        "lblHorSep7": "lblHorSep7",
+        "lblPendingAmnt": "lblPendingAmnt",
+        "lblPendingNames": "lblPendingNames",
+        "lblVerSep7": "lblVerSep7"
+    },
     "zindex": 1
 }

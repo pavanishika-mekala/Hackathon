@@ -5,6 +5,10 @@
     "_bounces_": false,
     "_data_": [
         {
+            "imgCorner": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "corner_blue_left.png"
+            },
             "imgUser": {
                 "@class": "com.viz.ide.model.segment.ImageSegmentData",
                 "src": "people.png"
@@ -23,13 +27,65 @@
             },
             "lblShortName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": ""
+                "text": "AB"
+            }
+        },
+        {
+            "imgCorner": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "corner_blue_left.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Applies on 12 May ' 16 2:30 pm "
+            },
+            "lblChat": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "I am Attendig the Meeting freiend wedding Need a leave on 16th April "
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose "
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AB"
+            }
+        },
+        {
+            "imgCorner": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "corner_blue_left.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Applies on 12 May ' 16 2:30 pm "
+            },
+            "lblChat": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "I am Attendig the Meeting freiend wedding Need a leave on 16th April "
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose "
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AB"
             }
         }
     ],
     "_height_": {
         "type": "string",
-        "value": "65.57%"
+        "value": "65.50%"
     },
     "_indicator_": "none",
     "_left_": {
@@ -60,8 +116,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "00",
-    "disabledSkins": {},
+    "counter": "02",
     "focusedindex": null,
     "focuseditem": null,
     "groupcells": false,
@@ -70,17 +125,17 @@
     "info": null,
     "ipad": {
         "psp": {
-            "indicator": "rowselect"
-        }
-    },
-    "iphone": {
-        "psp": {
             "bounces": false,
             "indicator": "none"
         }
     },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
     "isvisible": true,
-    "kuid": "f8a006e97fa04f9fb4f11a78dcba6d29",
+    "kuid": "j61ddaab496449bbb4c44bad2fd0ffc0",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -92,11 +147,11 @@
     "parent": "flxComments",
     "pf": "frmDelegationRequestDetails",
     "retainselection": false,
-    "rowTemplateId": "b2b0458a8a494174a515e2ae7136b8fc",
-    "rowcounter": 0,
-    "rowfocusskin": "s5539e4f39cb431db674889452749650",
+    "rowTemplateId": "c4a7af55e5d54a13acb5ac193aad0bd8",
+    "rowcounter": 2,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
-    "rowtemplate": "flxSelfComments",
+    "rowtemplate": "CopyflxRequesterComments0b99de6100c254a",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -109,15 +164,15 @@
     "selectionbehavior": "default",
     "separatorcolor": "64646464",
     "separatorrequired": true,
-    "separatorthickness": 0,
+    "separatorthickness": 1,
     "showscrollbars": false,
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "CopyflxRequesterComments0b99de6100c254a": "CopyflxRequesterComments0b99de6100c254a",
         "flxCornerShape": "flxCornerShape",
         "flxImg": "flxImg",
-        "flxSelfComments": "flxSelfComments",
         "flxcomment": "flxcomment",
         "imgCorner": "imgCorner",
         "imgUser": "imgUser",
@@ -126,5 +181,5 @@
         "lblName": "lblName",
         "lblShortName": "lblShortName"
     },
-    "zindex": 2
+    "zindex": 1
 }

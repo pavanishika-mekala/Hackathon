@@ -3,10 +3,70 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_data_": [
-        {},
-        {},
-        {},
-        {}
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblType",
+                "text": ""
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblValue",
+                "text": ""
+            },
+            "lblVerSep1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblType",
+                "text": ""
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblValue",
+                "text": ""
+            },
+            "lblVerSep1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblType",
+                "text": ""
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblValue",
+                "text": ""
+            },
+            "lblVerSep1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblType",
+                "text": ""
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblValue",
+                "text": ""
+            },
+            "lblVerSep1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -66,9 +126,11 @@
     "parent": "flxContainerSection",
     "pf": "frmFullDetails",
     "retainselection": false,
+    "rowTemplateId": "f44e3db01449450f843f252986a08ba7",
     "rowcounter": 3,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "s0490e93cc2c41ddb12821848e64ca7f",
+    "rowtemplate": "CopyflxFullDesc0e12787433c7e44",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -86,6 +148,11 @@
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {},
+    "widgetdatamap": {
+        "CopyflxFullDesc0e12787433c7e44": "CopyflxFullDesc0e12787433c7e44",
+        "lblType": "lblType",
+        "lblValue": "lblValue",
+        "lblVerSep1": "lblVerSep1"
+    },
     "zindex": 1
 }

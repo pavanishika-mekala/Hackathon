@@ -44,7 +44,7 @@
     "id": "flxDescriptionLink",
     "info": null,
     "isvisible": true,
-    "kuid": "a304b25d92d245b6bf8806156a1bb7ab",
+    "kuid": "fe319bb16d85462da23d653045f56a91",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxRequestDetails",

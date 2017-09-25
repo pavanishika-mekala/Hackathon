@@ -43,20 +43,15 @@
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblTime",
-    "ide_onTouchEnd": "AS_Label_fe67229972c44ec4b07f09d7e54bad9a",
+    "ide_onTouchEnd": "AS_Label_j905824961364f8ba116fc94bd1e4f70",
     "info": null,
     "ipad": {
         "psp": {
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "isvisible": true,
-    "kuid": "b388b6a888d94a06abdbb2a263730d92",
+    "kuid": "b91ebb9c327a4171bfa71717379dc22c",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
     "parent": "flxOption1",

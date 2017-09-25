@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "72.93%"
+        "value": "72.50%"
     },
     "_left_": {
         "type": "string",
@@ -44,7 +44,7 @@
     "id": "flxSegment",
     "info": null,
     "isvisible": true,
-    "kuid": "39c5b431adef4db2af581997ba7fbe9f",
+    "kuid": "bb4f4c277e754b7796947bbf2e59856e",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMain",

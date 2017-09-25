@@ -36,9 +36,9 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
+        "channel": "tablet",
         "formID": "frmRequestedList",
-        "platform": "iphone",
+        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -47,7 +47,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "a2d426c8c45e4d7db8a662b3100180bd",
+    "kuid": "f571cbf40694457892d5d8e2a35afe8a",
     "name": "kony.ui.Image2",
     "parent": "flxpeople",
     "pf": "frmRequestedList",

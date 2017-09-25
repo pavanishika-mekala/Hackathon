@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_ee123c97b8494dc2b6b4e63791a9985c": {
+        "id": "AS_FlexContainer_ee123c97b8494dc2b6b4e63791a9985c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_onClickOfAddNewDelegationRequestTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequestList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cab76f26495647c489337b6bdce85d76"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ba65dbfaae314aff9003b95efc7122a7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showEmployeeLookUpForm();",
+            "parentId": null
+        }]
+    }
+}

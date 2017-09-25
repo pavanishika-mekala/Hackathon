@@ -1,0 +1,18 @@
+{
+    "AS_Button_af059851792740578d729b4d8c0aa3b0": {
+        "id": "AS_Button_af059851792740578d729b4d8c0aa3b0",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForBackbtnInFilterRequestFormTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ef91ab5ce43b4723af1fcd6d9cc115b5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalHome.show();",
+            "callbackType": null
+        }]
+    }
+}

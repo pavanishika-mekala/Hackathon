@@ -18,7 +18,7 @@
         0,
         0
     ],
-    "_skin_": "s8dd0f1c3fce463ca7365e619bd4cb23",
+    "_skin_": "scc2f1c93dfb4996b9caf2cf88e0ca95",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -53,13 +53,8 @@
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "isvisible": true,
-    "kuid": "af90542ac2d74a1c934487597f95cec3",
+    "kuid": "b4f3a456759f4f799cb0f3f58f577c75",
     "name": "kony.ui.Label",
     "parent": "flxSegment",
     "pf": "frmIsLaterSearch",

@@ -40,10 +40,11 @@
     "desktopweb": {
         "needAppMenu": false
     },
+    "device": "iPad3",
     "displayorientation": 3,
     "enabledforidletimeout": false,
     "id": "frmPdfReader",
-    "ide_postShow": "AS_Form_c143f5d062604f1a899068338812ef94",
+    "ide_postShow": "AS_Form_d3a0b2b12a0e44c8ab50439f4a834233",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 1,
@@ -76,8 +77,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
+    "platform": "ipad",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone6",
+    "shellCSS": "iOS_iPad3",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

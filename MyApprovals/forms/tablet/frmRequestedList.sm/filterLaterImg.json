@@ -40,9 +40,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
+        "channel": "tablet",
         "formID": "frmRequestedList",
-        "platform": "iphone",
+        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -51,7 +51,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "251698b442fe472eaa22a4c9ba3a5dd0",
+    "kuid": "d8011ecdab6b44658f6dd0ff3332a0fa",
     "name": "kony.ui.Image2",
     "parent": "flxLaterFilter",
     "pf": "frmRequestedList",

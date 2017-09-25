@@ -44,7 +44,7 @@
     "id": "flxOfflineAlert",
     "info": null,
     "isvisible": false,
-    "kuid": "3afdbb1643d747b2b7b3bc123eef4c8f",
+    "kuid": "hfaf6782e44240589723037b95a7be0b",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "frmRequestedList",

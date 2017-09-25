@@ -7,7 +7,7 @@
     "defaultlocalekey": "en",
     "apppackagekey": "",
     "nativeContainerProperties": {
-        "isModified": true,
+        "isModified": false,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false
@@ -162,7 +162,7 @@
     "defaulttheme": "defaultTheme",
     "watchos_shortlooknotificationicon_38": "",
     "appaddrkey": "",
-    "tabletstartupformkey": "frmStartUp",
+    "tabletstartupformkey": "frmLogin",
     "appnamekey": "MyApprovals",
     "currentgaversion": "7.3.0.7",
     "enableCordova": false,

@@ -42,12 +42,13 @@
     "desktopweb": {
         "needAppMenu": false
     },
+    "device": "iPad3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
     "id": "frmStartUp",
-    "ide_postShow": "AS_Form_g3ce6cd56fe241aa80d7073f6219e7f3",
-    "ide_preShow": "AS_Form_cd4d3a49b2204189a55a347e99a4b23b",
+    "ide_postShow": "AS_Form_ef7b4f5011ad4783a18c38dde4d216ee",
+    "ide_preShow": "AS_Form_hb38aefd6fe0463ab41bfbe43a4a9821",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -79,8 +80,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
+    "platform": "ipad",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone6PlusZoomed",
+    "shellCSS": "iOS_iPad3",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

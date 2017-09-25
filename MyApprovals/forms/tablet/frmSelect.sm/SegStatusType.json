@@ -3,7 +3,16 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_data_": [
-        {}
+        {
+            "imgSelected": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ok.png"
+            },
+            "lblRequest": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Leave"
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -44,7 +53,7 @@
     "groupcells": false,
     "hasSections": false,
     "id": "SegStatusType",
-    "ide_onRowClick": "AS_Segment_da9a4536a2cd4fbe8a43a0ace5b03d23",
+    "ide_onRowClick": "AS_Segment_a43638af5cc641399de475aaf148e551",
     "info": null,
     "invokedProperty": "selectedStateImage",
     "ipad": {
@@ -65,9 +74,11 @@
     "parent": "flxSelectRequestType",
     "pf": "frmSelect",
     "retainselection": true,
+    "rowTemplateId": "b6e019e74cb643e78018ad4ce1180347",
     "rowcounter": 0,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "s12100649aba4186864dfd4f3e24dba0",
+    "rowtemplate": "CopyflxRequestType0i3b0c5040f7943",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -76,7 +87,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectimage": "ok.png",
     "selectionbehavior": "multiselect",
     "selectionindicator": "imgSelected",
@@ -87,5 +98,9 @@
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {}
+    "widgetdatamap": {
+        "CopyflxRequestType0i3b0c5040f7943": "CopyflxRequestType0i3b0c5040f7943",
+        "imgSelected": "imgSelected",
+        "lblRequest": "lblRequest"
+    }
 }

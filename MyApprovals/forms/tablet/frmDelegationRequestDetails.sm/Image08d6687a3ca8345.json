@@ -36,9 +36,9 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
+        "channel": "tablet",
         "formID": "frmDelegationRequestDetails",
-        "platform": "iphone",
+        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -47,7 +47,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "bd8bc9e9e31f4cc2959f91b5a5a49cf0",
+    "kuid": "cc75857b46ff4f1b84ec4b5789f5997c",
     "name": "kony.ui.Image2",
     "parent": "flxPostComment",
     "pf": "frmDelegationRequestDetails",

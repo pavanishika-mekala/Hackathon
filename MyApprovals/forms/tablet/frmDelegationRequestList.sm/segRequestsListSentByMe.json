@@ -4,9 +4,135 @@
     "__parentReadjusting__": false,
     "_bounces_": false,
     "_data_": [
-        {},
-        {},
-        {}
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "lblCreatedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12 Dec’16 6:30 PM"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 DAYS"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "857464"
+            },
+            "lblEmpIdKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EMP ID -"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose Grey"
+            },
+            "lblRequestTypes": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MyTime, 2 more"
+            },
+            "lblStartAndEndDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Jan - 30 Jan"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Active"
+            },
+            "lblTypeOfRequestHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.segment.typeofrequest",
+                "text": ""
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "lblCreatedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12 Dec’16 6:30 PM"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 DAYS"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "857464"
+            },
+            "lblEmpIdKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EMP ID -"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose Grey"
+            },
+            "lblRequestTypes": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MyTime, 2 more"
+            },
+            "lblStartAndEndDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Jan - 30 Jan"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Active"
+            },
+            "lblTypeOfRequestHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.segment.typeofrequest",
+                "text": ""
+            }
+        },
+        {
+            "imgEmp": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "lblCreatedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "12 Dec’16 6:30 PM"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 DAYS"
+            },
+            "lblEmpId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "857464"
+            },
+            "lblEmpIdKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EMP ID -"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose Grey"
+            },
+            "lblRequestTypes": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "MyTime, 2 more"
+            },
+            "lblStartAndEndDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10 Jan - 30 Jan"
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Active"
+            },
+            "lblTypeOfRequestHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.segment.typeofrequest",
+                "text": ""
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -47,7 +173,7 @@
     "groupcells": false,
     "hasSections": false,
     "id": "segRequestsListSentByMe",
-    "ide_onRowClick": "AS_Segment_a9679e57f68749ccb4160b3da17dc0c2",
+    "ide_onRowClick": "AS_Segment_ab3088d8119641528b360deb5b78b1ff",
     "info": null,
     "ipad": {
         "psp": {
@@ -68,9 +194,11 @@
     "parent": "flxRequestsList",
     "pf": "frmDelegationRequestList",
     "retainselection": false,
+    "rowTemplateId": "gc49c6c2b44e4875a3c6c9e994855c32",
     "rowcounter": 2,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "CopyflxSegDelegationRequestList0j6c74a68bc6f42",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -79,13 +207,35 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectionbehavior": "default",
     "separatorrequired": false,
     "showscrollbars": false,
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {},
+    "widgetdatamap": {
+        "CopyflxSegDelegationRequestList0j6c74a68bc6f42": "CopyflxSegDelegationRequestList0j6c74a68bc6f42",
+        "flxBottomLine": "flxBottomLine",
+        "flxColumn1": "flxColumn1",
+        "flxColumn2": "flxColumn2",
+        "flxColumn3": "flxColumn3",
+        "flxEmpId": "flxEmpId",
+        "flxImage": "flxImage",
+        "flxImageInner": "flxImageInner",
+        "flxRequestDuration": "flxRequestDuration",
+        "flxStatus": "flxStatus",
+        "flxStatusIcon": "flxStatusIcon",
+        "imgEmp": "imgEmp",
+        "lblCreatedDate": "lblCreatedDate",
+        "lblDays": "lblDays",
+        "lblEmpId": "lblEmpId",
+        "lblEmpIdKey": "lblEmpIdKey",
+        "lblEmpName": "lblEmpName",
+        "lblRequestTypes": "lblRequestTypes",
+        "lblStartAndEndDate": "lblStartAndEndDate",
+        "lblStatus": "lblStatus",
+        "lblTypeOfRequestHeader": "lblTypeOfRequestHeader"
+    },
     "zindex": 1
 }

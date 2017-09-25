@@ -46,7 +46,7 @@
     "focusskin": "s3297c9c210a48bfa4da6d936f332189",
     "id": "txtareaComments",
     "info": null,
-    "iphone": {
+    "ipad": {
         "psp": {
             "closeButtonText": ""
         }
@@ -54,7 +54,7 @@
     "isvisible": true,
     "keyboardstyle": "A",
     "keyboardtype": "A",
-    "kuid": "6fda79a5723245fc9cb4daf4f33dd195",
+    "kuid": "f60e4ce6103247349c6a3e1dcf9a571f",
     "maxtextlength": 140,
     "mode": "A",
     "name": "kony.ui.TextArea2",

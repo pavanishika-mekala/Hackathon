@@ -36,9 +36,9 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
+        "channel": "tablet",
         "formID": "frmRequestedList",
-        "platform": "iphone",
+        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -48,7 +48,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "7ad0849a667f405a9ae751b411454253",
+    "kuid": "ce41ed5652b94dafb8e5340d9d4902ae",
     "name": "kony.ui.Image2",
     "parent": "flxFilterBar",
     "pf": "frmRequestedList",

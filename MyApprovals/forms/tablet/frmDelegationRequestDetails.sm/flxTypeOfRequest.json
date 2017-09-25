@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "safa4e311f024c5b81179420eefa7dd2",
+    "_skin_": "s285eed3c6b548859dbc44f9a2f0f0c1",
     "_top_": {
         "type": "string",
         "value": "50%"
@@ -49,7 +49,7 @@
     "id": "flxTypeOfRequest",
     "info": null,
     "isvisible": true,
-    "kuid": "60969cc160c24c5b9f1f52c1b6641585",
+    "kuid": "e85ef8733a7a4a00a71cbbb346a2261a",
     "layouttype": 4,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,

@@ -1,0 +1,29 @@
+{
+    "AS_Label_a2d4bdb4d57d48ebb61aa7a18a5e8029": {
+        "id": "AS_Label_a2d4bdb4d57d48ebb61aa7a18a5e8029",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmRequestedList",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f3667525a905489b91f62480a4d0b626"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c08b3d4f1acf42849be28504dbf08da2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var requestedListObj = new kony.apps.coe.ess.Approvals.RequestedList();\nrequestedListObj.LoadFilterAndShowForm(\"Expense\");",
+            "parentId": null
+        }]
+    }
+}

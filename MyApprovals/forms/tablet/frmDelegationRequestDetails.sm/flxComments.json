@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "47.14%"
+        "value": "47.10%"
     },
     "_left_": {
         "type": "string",
@@ -45,10 +45,10 @@
     "id": "flxComments",
     "info": null,
     "isvisible": true,
-    "kuid": "aecb32896d1d440d9d0772865a47ac90",
+    "kuid": "h0aae65661a54311854276f98f5e747b",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxMain",
+    "parent": "flxRequestDetails",
     "pf": "frmDelegationRequestDetails",
     "snapgridsize": 10,
     "snaptogrid": true,

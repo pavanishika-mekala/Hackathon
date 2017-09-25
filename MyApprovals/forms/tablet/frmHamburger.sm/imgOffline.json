@@ -40,9 +40,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
+        "channel": "tablet",
         "formID": "frmHamburger",
-        "platform": "android",
+        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },

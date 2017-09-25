@@ -27,7 +27,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sf0f0a64f41a4e7fa38aa507c4d259c1",
+    "_skin_": "s285eed3c6b548859dbc44f9a2f0f0c1",
     "_width_": {
         "type": "string",
         "value": "100%"
@@ -49,7 +49,7 @@
     "id": "flxScrlCategory",
     "info": null,
     "isvisible": true,
-    "kuid": "2fd220b49ed749f79eae107fcad49ff4",
+    "kuid": "d7cf2d9ab8674d0685293afe7aee6e6e",
     "layouttype": 3,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,

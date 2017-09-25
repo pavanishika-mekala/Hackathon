@@ -37,7 +37,9 @@
     "canUpdateUI": true,
     "children": [
         "flxInfoSection",
-        "flxDescriptionLink"
+        "flxDescriptionLink",
+        "flxComments",
+        "flxBottomButtons"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -45,7 +47,7 @@
     "id": "flxRequestDetails",
     "info": null,
     "isvisible": true,
-    "kuid": "a3ccc88787874088b562b78c7f680390",
+    "kuid": "e8a2b547aac544a09ba6eddbd8ecb6e4",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMain",

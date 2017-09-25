@@ -39,9 +39,7 @@
         "flxHeader",
         "flxTop",
         "flxLine1",
-        "flxRequestDetails",
-        "flxComments",
-        "flxBottomButtons"
+        "flxRequestDetails"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -49,7 +47,7 @@
     "id": "flxMain",
     "info": null,
     "isvisible": true,
-    "kuid": "e7631590af214e4fb38b685628af259e",
+    "kuid": "caddcd9445a84e85b40e30b647dadae3",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "frmDelegationRequestDetails",

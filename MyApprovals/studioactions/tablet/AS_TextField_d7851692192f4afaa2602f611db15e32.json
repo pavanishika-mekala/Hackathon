@@ -1,0 +1,26 @@
+{
+    "AS_TextField_d7851692192f4afaa2602f611db15e32": {
+        "id": "AS_TextField_d7851692192f4afaa2602f611db15e32",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmEmployeeLookUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee7dab23de1c48d595c511f33558925a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f0e4e374d5d94e0fa47129d18750ec77",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var searchText=frmEmployeeLookUp.txtSearchDelegate.text;\nkony.apps.coe.ess.Approvals.EmployeeLookUp.getInstance().searchDataInList(searchText);\n",
+            "parentId": null
+        }]
+    }
+}
