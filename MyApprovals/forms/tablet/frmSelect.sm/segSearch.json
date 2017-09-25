@@ -87,7 +87,7 @@
     "rowcounter": 0,
     "rowfocusskin": "s12100649aba4186864dfd4f3e24dba0",
     "rowskin": "s12100649aba4186864dfd4f3e24dba0",
-    "rowtemplate": "CopyflxSearchPeople0a11ba77391374c",
+    "rowtemplate": "flxSearchPeople",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -109,8 +109,8 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
-        "CopyflxSearchPeople0a11ba77391374c": "CopyflxSearchPeople0a11ba77391374c",
         "flxImg": "flxImg",
+        "flxSearchPeople": "flxSearchPeople",
         "imgSelected": "imgSelected",
         "imgUser": "imgUser",
         "lblIntials": "lblIntials",

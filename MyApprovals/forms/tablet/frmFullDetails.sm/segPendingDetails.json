@@ -120,7 +120,7 @@
     "rowcounter": 2,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "s0490e93cc2c41ddb12821848e64ca7f",
-    "rowtemplate": "CopyflxSegPendingDetails0he26d6ea5e264b",
+    "rowtemplate": "flxSegPendingDetails",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -139,7 +139,7 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
-        "CopyflxSegPendingDetails0he26d6ea5e264b": "CopyflxSegPendingDetails0he26d6ea5e264b",
+        "flxSegPendingDetails": "flxSegPendingDetails",
         "lblHorSep7": "lblHorSep7",
         "lblPendingAmnt": "lblPendingAmnt",
         "lblPendingNames": "lblPendingNames",

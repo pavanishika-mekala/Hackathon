@@ -117,7 +117,7 @@
     "rowcounter": 2,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
-    "rowtemplate": "CopyflxLaterApprove0d4155d2802dd41",
+    "rowtemplate": "flxLaterApprove",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -135,7 +135,7 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
-        "CopyflxLaterApprove0d4155d2802dd41": "CopyflxLaterApprove0d4155d2802dd41",
+        "flxLaterApprove": "flxLaterApprove",
         "flxSeparator": "flxSeparator",
         "imgApproval": "imgApproval",
         "lblRequesType": "lblRequesType",
