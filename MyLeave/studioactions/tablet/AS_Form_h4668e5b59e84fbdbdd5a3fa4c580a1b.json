@@ -1,0 +1,23 @@
+{
+    "AS_Form_h4668e5b59e84fbdbdd5a3fa4c580a1b": {
+        "id": "AS_Form_h4668e5b59e84fbdbdd5a3fa4c580a1b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__i1f3f6ff78a446e9bb012b27fa2cb265",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApplyLeave.flexMain.enableScrolling = true;\nkony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "parentId": null
+        }]
+    }
+}

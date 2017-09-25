@@ -41,6 +41,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
+    "device": "iPad3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
@@ -83,8 +84,11 @@
     "needappmenu": true,
     "needsindicatorduringpostshow": false,
     "paddinginpixel": false,
+    "platform": "ipad",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "and_GalaxyS2",
+    "shellCSS": "iOS_iPad3",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

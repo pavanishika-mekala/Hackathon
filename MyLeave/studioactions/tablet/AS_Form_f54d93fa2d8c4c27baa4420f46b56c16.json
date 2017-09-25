@@ -1,0 +1,23 @@
+{
+    "AS_Form_f54d93fa2d8c4c27baa4420f46b56c16": {
+        "id": "AS_Form_f54d93fa2d8c4c27baa4420f46b56c16",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHolidays",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e6d46dde85e44c7b897ad86a3a9fcb4a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__i2a688aa631e47eabfa2eedb75a85d76",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.myLeave.HolidayUI().getData();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Form_be51d4263f0d47e48b30dc0714bac61b": {
+        "id": "AS_Form_be51d4263f0d47e48b30dc0714bac61b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d0e51b9f51f7438c9827a364689a6ca6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ff9d53051dd74213bdda8258adcfa4be",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.settings.getSettingsObject().setLanginPostShow();",
+            "parentId": null
+        }]
+    }
+}

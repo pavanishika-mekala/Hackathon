@@ -1,0 +1,30 @@
+{
+    "AS_TextArea_af3f5e4f2f764db8abdd5bb553e75128": {
+        "id": "AS_TextArea_af3f5e4f2f764db8abdd5bb553e75128",
+        "type": "ACTION_SEQUENCE",
+        "name": "act_txtAreaComments",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d4dc7ab602364bd4bebbac6e3ae50c6d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e771d7dd197744a89d65bb24043019c2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCommentInPopup();",
+            "parentId": null
+        }]
+    }
+}

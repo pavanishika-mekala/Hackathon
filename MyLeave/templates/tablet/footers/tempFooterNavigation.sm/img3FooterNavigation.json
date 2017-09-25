@@ -46,7 +46,6 @@
     "containerweight": 100,
     "context": {
         "channel": "tablet",
-        "formID": "tempFooterNavigation",
         "platform": "ipad",
         "templateType": "footers",
         "topLevelBox": null

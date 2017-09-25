@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_df3e10cea30e4303994dd8a567b141d3": {
+        "id": "AS_FlexContainer_df3e10cea30e4303994dd8a567b141d3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d4dc7ab602364bd4bebbac6e3ae50c6d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__da42018701b3423ba06b2dc1fdade3bc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmPendingLeaveRequest.show();",
+            "parentId": null
+        }]
+    }
+}

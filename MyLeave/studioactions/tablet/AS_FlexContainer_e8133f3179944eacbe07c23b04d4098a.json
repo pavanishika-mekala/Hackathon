@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_e8133f3179944eacbe07c23b04d4098a": {
+        "id": "AS_FlexContainer_e8133f3179944eacbe07c23b04d4098a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "da651f17c18d44369e8d8836b21764a0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__db05f9c8b7a34d0ea758be7bf81cfce8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.os.deviceInfo().name === \"iPhone\"){\nfrmTeamView.flxDayBar.removeAll();\n}\nkony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar();",
+            "parentId": null
+        }]
+    }
+}

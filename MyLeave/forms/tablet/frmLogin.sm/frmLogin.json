@@ -20,7 +20,7 @@
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
-        "ide_onDeviceBack": "AS_Form_ebb39a94519547b9bd9e93ed45473de0",
+        "ide_onDeviceBack": "AS_Form_b096a255f4c1483caba023c36cc5475e",
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
@@ -43,13 +43,14 @@
     "desktopweb": {
         "needAppMenu": false
     },
+    "device": "iPad3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
     "id": "frmLogin",
-    "ide_init": "AS_Form_b201859270ea4b6194b5b665a7a2e994",
-    "ide_postShow": "AS_Form_j55c4d23c493483595444ccdae5f6a37",
-    "ide_preShow": "AS_Form_jf4ad0f0f1734773a2fa4df7b17d4e11",
+    "ide_init": "AS_Form_e4d05dee3ef54d3a9e81b8fb90b39907",
+    "ide_postShow": "AS_Form_f9173b8eafd34d969199b3e384cfee1d",
+    "ide_preShow": "AS_Form_d8a610e1d0ce49a7bb0c8fa5fd0e72c7",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
@@ -83,8 +84,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
+    "platform": "ipad",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone4",
+    "shellCSS": "iOS_iPad3",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

@@ -1,0 +1,29 @@
+{
+    "AS_Image_h04ce59c8c7b442687b2eda1a9a90cac": {
+        "id": "AS_Image_h04ce59c8c7b442687b2eda1a9a90cac",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c7e2c0492b184ae6ae5b036cecc4f82e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfCamera();",
+            "parentId": null
+        }]
+    }
+}

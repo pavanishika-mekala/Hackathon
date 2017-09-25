@@ -14,10 +14,10 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET_ide_onClick_ia3eabc2a4f447f2a8139818bf600fe6",
+            "id": "ADD_SNIPPET__f966aac810234724b4c7be4a83aa44c3",
             "type": "ADD_SNIPPET",
             "codeSnippet": "frmLeaveHome.show();",
-            "callbackType": null
+            "parentId": null
         }]
     }
 }

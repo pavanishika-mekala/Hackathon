@@ -1,0 +1,23 @@
+{
+    "AS_Form_f4ea9440cb3140e1b1d6e43b7e22fe5d": {
+        "id": "AS_Form_f4ea9440cb3140e1b1d6e43b7e22fe5d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmNotificationsList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f26e6266181544dc872d12afd85669ba"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__eeb77fbc67b74cddba1534b617e3ea3d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "parentId": null
+        }]
+    }
+}

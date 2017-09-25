@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_g88954213e4242e69aa0e35aa5324e19": {
+        "id": "AS_FlexContainer_g88954213e4242e69aa0e35aa5324e19",
+        "type": "ACTION_SEQUENCE",
+        "name": "actions_header2Nav",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d4dc7ab602364bd4bebbac6e3ae50c6d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__h83ef8fc323d47fc88b37774ce95ac69",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmShiftManagement.show();",
+            "parentId": null
+        }]
+    }
+}

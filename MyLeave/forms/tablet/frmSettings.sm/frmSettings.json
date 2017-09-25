@@ -20,7 +20,7 @@
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
-        "ide_onDeviceBack": "AS_Form_g1293f8cd3034bbe994aa0bfb81e96d9",
+        "ide_onDeviceBack": "AS_Form_f506069ef41d40c0b80b373a9aa6702a",
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
@@ -47,8 +47,8 @@
     "footeroverlap": false,
     "footersId": "e8e218a6c8f34dd4a2570a1c20a42e8d",
     "id": "frmSettings",
-    "ide_postShow": "AS_Form_j8c7bab7d490413ab348fc6667771433",
-    "ide_preShow": "AS_Form_b127f905d4474308a7d0be122106489b",
+    "ide_postShow": "AS_Form_be51d4263f0d47e48b30dc0714bac61b",
+    "ide_preShow": "AS_Form_b27f95d887e8434b86c953aac37503e0",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,

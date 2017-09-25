@@ -1,0 +1,23 @@
+{
+    "AS_Form_ec7126ce04f848a8b2514aa5a906bfff": {
+        "id": "AS_Form_ec7126ce04f848a8b2514aa5a906bfff",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "da651f17c18d44369e8d8836b21764a0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d403fa3db96f468e9fa8121616266eb8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeave.TeamViewUI()).preShow();",
+            "parentId": null
+        }]
+    }
+}

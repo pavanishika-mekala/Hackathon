@@ -1,0 +1,23 @@
+{
+    "AS_Form_f506069ef41d40c0b80b373a9aa6702a": {
+        "id": "AS_Form_f506069ef41d40c0b80b373a9aa6702a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d0e51b9f51f7438c9827a364689a6ca6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b6875c00ac4540538726ebcbd6fc79cd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in settings--\");",
+            "parentId": null
+        }]
+    }
+}

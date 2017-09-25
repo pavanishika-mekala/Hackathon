@@ -1,0 +1,23 @@
+{
+    "AS_Form_b27f95d887e8434b86c953aac37503e0": {
+        "id": "AS_Form_b27f95d887e8434b86c953aac37503e0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d0e51b9f51f7438c9827a364689a6ca6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e24cd6075c29409cafd23237eabced19",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.settings.getSettingsObject().preShow();",
+            "parentId": null
+        }]
+    }
+}

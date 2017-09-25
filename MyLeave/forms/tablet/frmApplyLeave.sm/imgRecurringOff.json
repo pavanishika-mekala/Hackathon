@@ -40,14 +40,14 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
+        "channel": "tablet",
         "formID": "frmApplyLeave",
-        "platform": "iphone",
+        "platform": "tabrcandroid",
         "templateType": "forms",
         "topLevelBox": null
     },
     "id": "imgRecurringOff",
-    "ide_onTouchEnd": "AS_Image_dfaa31bacf104723bcb7069bc9daa59e",
+    "ide_onTouchEnd": "AS_Image_j4b166996c1d4c929ae1348a24f96a52",
     "imagescalemode": 0,
     "info": null,
     "invokedProperty": "src",

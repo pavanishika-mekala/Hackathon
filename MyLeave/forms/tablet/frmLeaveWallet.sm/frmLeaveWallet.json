@@ -22,7 +22,7 @@
     "allowhorizontalbounce": false,
     "allowverticalbounce": false,
     "android": {
-        "ide_onDeviceBack": "AS_Form_d9229dc3145047a7bb3a9c84b455a845",
+        "ide_onDeviceBack": "AS_Form_d440e6849085446ea755940c8dd40818",
         "inTransitionConfig": {
             "formAnimation": 0
         },
@@ -54,7 +54,7 @@
     "footer": "frmLeaveWallet_footer",
     "footersId": "e8e218a6c8f34dd4a2570a1c20a42e8d",
     "id": "frmLeaveWallet",
-    "ide_postShow": "AS_Form_cbace47670a443c291f7e0fe44a6672c",
+    "ide_postShow": "AS_Form_b32d8930365a4d349a9d41456177d2a8",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 1,

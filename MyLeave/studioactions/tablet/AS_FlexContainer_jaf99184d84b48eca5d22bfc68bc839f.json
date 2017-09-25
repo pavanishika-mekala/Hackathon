@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_jaf99184d84b48eca5d22bfc68bc839f": {
+        "id": "AS_FlexContainer_jaf99184d84b48eca5d22bfc68bc839f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmNotificationsList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f26e6266181544dc872d12afd85669ba"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a1a7f58037774eb086d62ac20ffd21c6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.notifications.getNotificationHistoryInstance().exitNotificationsScreen();\n",
+            "parentId": null
+        }]
+    }
+}

@@ -98,7 +98,7 @@
     "groupcells": false,
     "hasSections": false,
     "id": "segStatus",
-    "ide_onRowClick": "AS_Segment_b43d7d11cc7f44e7bd626e0fbe76bb63",
+    "ide_onRowClick": "AS_Segment_ef7ce0c5e7d249aab9fcab1dda0575ff",
     "info": null,
     "invokedProperty": "unselectedStateImage",
     "ipad": {
@@ -134,7 +134,7 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": null,
+    "selectedsectionindex": 0,
     "selectimage": "checkboxactive.png",
     "selectionbehavior": "multiselect",
     "selectionindicator": "imgStatusSelection",

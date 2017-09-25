@@ -1,0 +1,23 @@
+{
+    "AS_Form_a13f4fa923304ab789e050d31e329547": {
+        "id": "AS_Form_a13f4fa923304ab789e050d31e329547",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveBalance",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a6f6e3fc6e2540e7b04f8ab5030946e8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e437ce9973e64c2a9435548cb05450d8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "parentId": null
+        }]
+    }
+}

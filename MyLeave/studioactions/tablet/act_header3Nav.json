@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_d3134519f5c440218aed45fc3d4635b8": {
+        "id": "AS_FlexContainer_d3134519f5c440218aed45fc3d4635b8",
+        "type": "ACTION_SEQUENCE",
+        "name": "act_header3Nav",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWallet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d56acef7fe31412086f0f32d493f51a3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ha4e95c40f77491682c6bf3317689046",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmShiftManagement.show();",
+            "parentId": null
+        }]
+    }
+}

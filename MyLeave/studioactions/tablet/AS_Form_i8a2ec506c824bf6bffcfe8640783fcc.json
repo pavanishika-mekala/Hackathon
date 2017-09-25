@@ -1,0 +1,18 @@
+{
+    "AS_Form_i8a2ec506c824bf6bffcfe8640783fcc": {
+        "id": "AS_Form_i8a2ec506c824bf6bffcfe8640783fcc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWallet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d56acef7fe31412086f0f32d493f51a3"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

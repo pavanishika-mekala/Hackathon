@@ -20,7 +20,7 @@
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
-        "ide_onDeviceBack": "AS_Form_a1c2c69653cd43fe8fe1b0db6a0a9742",
+        "ide_onDeviceBack": "AS_Form_d43c5f1748e749ab98250dcc8a0a819d",
         "inTransitionConfig": {
             "formAnimation": 0
         },
@@ -55,7 +55,7 @@
     "footer": "frmSearchLog_footer",
     "footersId": "e8e218a6c8f34dd4a2570a1c20a42e8d",
     "id": "frmSearchLog",
-    "ide_postShow": "AS_Form_d4c0bb37cb084bed986486dcfb29d21c",
+    "ide_postShow": "AS_Form_ged8c268d0f449768eabb980458f4b34",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 1,

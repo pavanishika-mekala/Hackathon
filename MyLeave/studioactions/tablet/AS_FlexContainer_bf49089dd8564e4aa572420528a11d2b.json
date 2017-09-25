@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_bf49089dd8564e4aa572420528a11d2b": {
+        "id": "AS_FlexContainer_bf49089dd8564e4aa572420528a11d2b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveRequestDetails",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a63e769512d4473dba317999596660d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ic9d0daaf4e64e63bf5c15ad4b090e44",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showAuditTrailForm();",
+            "parentId": null
+        }]
+    }
+}

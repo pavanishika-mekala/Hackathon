@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_d820ec68202f4e2fb31e901bf1da873d": {
+        "id": "AS_FlexContainer_d820ec68202f4e2fb31e901bf1da873d",
+        "type": "ACTION_SEQUENCE",
+        "name": "act_CalenderFooter",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWallet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d56acef7fe31412086f0f32d493f51a3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c19e127c44ae46d1b59cd88ca185946a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveHome.show();",
+            "parentId": null
+        }]
+    }
+}

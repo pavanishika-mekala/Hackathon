@@ -1,0 +1,18 @@
+{
+    "AS_Button_ed48cce10c3b4cc2812a6ed6e9854eff": {
+        "id": "AS_Button_ed48cce10c3b4cc2812a6ed6e9854eff",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

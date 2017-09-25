@@ -1,0 +1,29 @@
+{
+    "AS_Image_b541f1dff3ef45e3a56808d6cc954c14": {
+        "id": "AS_Image_b541f1dff3ef45e3a56808d6cc954c14",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__id9cd15358a54af28fe76450e5384a8d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.MailandPhone.onClickOfMail();",
+            "parentId": null
+        }]
+    }
+}

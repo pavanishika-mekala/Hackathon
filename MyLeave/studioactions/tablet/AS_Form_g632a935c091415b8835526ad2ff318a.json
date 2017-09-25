@@ -1,0 +1,23 @@
+{
+    "AS_Form_g632a935c091415b8835526ad2ff318a": {
+        "id": "AS_Form_g632a935c091415b8835526ad2ff318a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDummy",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e0ef9e4317f04aa19148900ab6cffea7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d94332275a5d471f80445ced78575a2a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.frmDummyPostShow();\nkony.apps.coe.ess.locale.getLocaleInformation();",
+            "parentId": null
+        }]
+    }
+}

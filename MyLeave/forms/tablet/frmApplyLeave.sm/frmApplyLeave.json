@@ -40,16 +40,17 @@
             "channel": "tablet"
         }
     },
-    "currentLocale": "fr_BE",
+    "currentLocale": "en",
     "desktopweb": {
         "needAppMenu": false
     },
+    "device": "GalaxyTab7",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmApplyLeave",
-    "ide_init": "AS_Form_e27b70a35a704576964a0fd77bcde54c",
-    "ide_postShow": "AS_Form_dc6ca97fc12a44298a219c50853d0079",
-    "ide_preShow": "AS_Form_g2529c37d49c48729f1f15d8566fad32",
+    "ide_init": "AS_Form_j28aa42625fb4371be0910ee3d0858e7",
+    "ide_postShow": "AS_Form_h4668e5b59e84fbdbdd5a3fa4c580a1b",
+    "ide_preShow": "AS_Form_a879e5ae69f941769d00692231e57cc3",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 1,
@@ -83,8 +84,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
+    "platform": "tabrcandroid",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone5",
+    "shellCSS": "and_Tab_Galaxy7",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

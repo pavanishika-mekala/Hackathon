@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_b65e22e1dd9543e1b7b70e6452e89c05": {
+        "id": "AS_FlexContainer_b65e22e1dd9543e1b7b70e6452e89c05",
+        "type": "ACTION_SEQUENCE",
+        "name": "actions_header1Nav",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveHome",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d4dc7ab602364bd4bebbac6e3ae50c6d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a58c22b161ce43a8beb39141a1b65cf4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveHome.show();",
+            "callbackType": null
+        }]
+    }
+}

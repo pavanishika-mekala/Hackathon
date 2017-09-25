@@ -1,0 +1,30 @@
+{
+    "AS_Image_df21431207994be3b24f41ac8d729805": {
+        "id": "AS_Image_df21431207994be3b24f41ac8d729805",
+        "type": "ACTION_SEQUENCE",
+        "name": "act_RecurringOn",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f3f06e3dc78442809c923e54cc83f903",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.RecurringLeave.onClickofRecurring();",
+            "parentId": null
+        }]
+    }
+}
