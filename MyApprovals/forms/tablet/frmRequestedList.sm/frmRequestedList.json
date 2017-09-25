@@ -38,12 +38,15 @@
     "device": "iPad3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "footer": "frmRequestedList_footer",
+    "footersId": "b982e3c62df9403f909bab30e23c4e9d",
     "id": "frmRequestedList",
     "ide_init": "AS_Form_b110d76278484911999d4004c455fb2f",
     "ide_postShow": "AS_Form_i40f65d6fa834e0089cd3cf153beaf1e",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
+    "invokedProperty": "footers",
     "ipad": {
         "needAppMenu": false,
         "psp": {

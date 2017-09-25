@@ -28,7 +28,7 @@
     "kuid": "j4f09548da034c5ebb2597f9cb2cddc3",
     "margininpixel": false,
     "name": "kony.ui.Button",
-    "parent": "CopyHboxOuter0jd2789b58b4a41",
+    "parent": "HboxOuter",
     "pf": "tempFooterAlertBtn",
     "texti18n": "i18n.ess.myApproval.Ok.text",
     "wType": "Button"

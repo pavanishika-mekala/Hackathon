@@ -20,7 +20,7 @@
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
-        "ide_onDeviceBack": "AS_Form_dd6202800e3d437fabd830bc8210e24e",
+        "ide_onDeviceBack": "AS_Form_babc90263acd41aba71d7884f3f821ae",
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
@@ -43,6 +43,8 @@
     "device": "iPad3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "footer": "frmDelegationRequestList_footer",
+    "footersId": "b982e3c62df9403f909bab30e23c4e9d",
     "id": "frmDelegationRequestList",
     "ide_postShow": "AS_Form_c26eeba7294f488eb349b76f368972ab",
     "info": null,

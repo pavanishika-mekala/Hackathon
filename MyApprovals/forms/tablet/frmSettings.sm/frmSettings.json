@@ -45,6 +45,8 @@
     "device": "iPad3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "footer": "frmSettings_footer",
+    "footersId": "b982e3c62df9403f909bab30e23c4e9d",
     "id": "frmSettings",
     "ide_init": "AS_Form_jc40b0c95e1e4fa697330f35f4332d91",
     "ide_postShow": "AS_Form_ccccb502ff9c4922bf1f782051019878",

@@ -34,7 +34,7 @@
         30,
         30
     ],
-    "parent": "CopyHboxOfflineOuter0a0e744b8ea8d4c",
+    "parent": "HboxOfflineOuter",
     "pf": "tempFooterOffline",
     "texti18n": "i18n.ess.Offline.continue.text",
     "wType": "Button"

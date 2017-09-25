@@ -28,7 +28,7 @@
     "kuid": "e745a93a68a64eeaafc2357cf5d4ee94",
     "margininpixel": false,
     "name": "kony.ui.Button",
-    "parent": "CopyHboxOfflineOuter0a0e744b8ea8d4c",
+    "parent": "HboxOfflineOuter",
     "pf": "tempFooterOffline",
     "texti18n": "i18n.ess.Offline.sync.text",
     "wType": "Button"

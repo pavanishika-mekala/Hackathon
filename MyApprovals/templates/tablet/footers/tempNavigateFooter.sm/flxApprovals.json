@@ -51,7 +51,7 @@
     "kuid": "cbb21adc382f4a86a2518e940739b0aa",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "CopyflxNavigateFooter0j0ae2649222944",
+    "parent": "flxNavigateFooter",
     "pf": "tempNavigateFooter",
     "snapgridsize": 10,
     "snaptogrid": true,

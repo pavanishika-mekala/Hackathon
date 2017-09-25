@@ -20,20 +20,19 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "btnOffline",
-        "btnSync"
+        "btnOk"
     ],
     "containerId": true,
     "containerweight": 100,
     "contextmenu": null,
-    "id": "CopyHboxOfflineOuter0a0e744b8ea8d4c",
+    "id": "HboxOuter",
     "info": null,
     "isvisible": true,
-    "kuid": "d96b9da71197456db171f738e93d3d20",
+    "kuid": "f2704c005a384ea093189f778f927f88",
     "layouttype": 0,
     "name": "kony.ui.Box",
-    "parent": "tempFooterOffline",
-    "pf": "tempFooterOffline",
+    "parent": "tempFooterAlertBtn",
+    "pf": "tempFooterAlertBtn",
     "wType": "HBox",
     "widgetalignment": 1
 }

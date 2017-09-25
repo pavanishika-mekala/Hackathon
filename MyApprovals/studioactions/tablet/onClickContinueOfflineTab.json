@@ -1,0 +1,24 @@
+{
+    "AS_Button_h7c354a1223742bea8a16fab76106f3b": {
+        "id": "AS_Button_h7c354a1223742bea8a16fab76106f3b",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickContinueOfflineTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterOffline",
+            "type": "templates",
+            "platform": "",
+            "KUID": "g14a33703ac142ec99b585f0886c07e9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a0965648ff32472db2baf7f554695af8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupOfflineAlert.dismiss();",
+            "parentId": null
+        }]
+    }
+}

@@ -21,7 +21,7 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "CopyHboxOfflineOuter0a0e744b8ea8d4c"
+        "HboxOfflineOuter"
     ],
     "containerId": true,
     "containerweight": 100,

@@ -189,8 +189,7 @@
     "APPLICATION_THEME": "default",
     "ide_appEvents": {
         "tablet": {
-            "postappinit": "AS_AppEvents_2b05660de97248feb6ea4eceb2934709",
-            "appservice": "AS_AppEvents_10cb6c7e701e40a3a3ac9f45419b8f44"
+            "appservice": "AS_AppEvents_ce6532bcb5224e5295fd11e6c437d39d"
         },
         "mobile": {
             "postappinit": "AS_AppEvents_h9d2b6aadb1d42a8b6c6a56cdc253821",

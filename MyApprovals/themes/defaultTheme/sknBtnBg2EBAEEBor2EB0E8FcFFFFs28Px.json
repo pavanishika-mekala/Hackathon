@@ -64,25 +64,6 @@
   "font_size": 148,
   "font_style": "normal",
   "font_weight": "normal",
-  "ipad": {
-    "background_color": "2ebaeeff",
-    "bg_type": "one",
-    "border_color": "2eb0e8ff",
-    "border_radius": 100,
-    "border_style": "custom",
-    "border_type": 0,
-    "border_width": 2,
-    "font_name": "Helvetica",
-    "font_size": 100,
-    "isForked": true,
-    "text_shadow": {
-      "br": 0,
-      "color": "000000ff",
-      "nm": 0,
-      "x": 0,
-      "y": 0
-    }
-  },
   "iphone": {
     "background_color": "2ebaeeff",
     "bg_type": "one",

@@ -21,7 +21,7 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "CopyHboxOuter0jd2789b58b4a41"
+        "HboxOuter"
     ],
     "containerId": true,
     "containerweight": 100,
