@@ -1,0 +1,26 @@
+{
+    "AS_Calendar_df930cf76d5b42239f06f0615a4cde31": {
+        "id": "AS_Calendar_df930cf76d5b42239f06f0615a4cde31",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "boolean",
+            "name": "isValidDateSelected"
+        }],
+        "contextObj": {
+            "name": "frmSearchLog",
+            "type": "forms",
+            "platform": null,
+            "KUID": "fe318b6be21c4b449c848d6072b0cd84"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onSelection_ieac0fd1c62546a19ef50f3f90ab628e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.myLeave.search().setValidDate();",
+            "callbackType": null
+        }]
+    }
+}

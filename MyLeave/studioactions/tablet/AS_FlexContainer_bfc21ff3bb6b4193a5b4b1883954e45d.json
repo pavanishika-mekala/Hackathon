@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_bfc21ff3bb6b4193a5b4b1883954e45d": {
+        "id": "AS_FlexContainer_bfc21ff3bb6b4193a5b4b1883954e45d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterNavigation",
+            "type": "templates",
+            "platform": null,
+            "KUID": "e8e218a6c8f34dd4a2570a1c20a42e8d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_cba3eb66678d4134a21c7718371e5f7a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.MyLeave.Footer.navigateFooter(1);",
+            "callbackType": null
+        }]
+    }
+}

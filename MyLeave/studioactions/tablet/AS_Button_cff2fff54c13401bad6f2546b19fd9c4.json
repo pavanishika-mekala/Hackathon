@@ -1,0 +1,23 @@
+{
+    "AS_Button_cff2fff54c13401bad6f2546b19fd9c4": {
+        "id": "AS_Button_cff2fff54c13401bad6f2546b19fd9c4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b9260ab9820440e2a187256757a7fb06"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_edec08a7508e4a3fbff2ddac99283b2b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.Hamburger()).btnSyncOnClick();",
+            "callbackType": null
+        }]
+    }
+}

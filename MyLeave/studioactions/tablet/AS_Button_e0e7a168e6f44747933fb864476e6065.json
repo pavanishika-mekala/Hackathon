@@ -1,0 +1,23 @@
+{
+    "AS_Button_e0e7a168e6f44747933fb864476e6065": {
+        "id": "AS_Button_e0e7a168e6f44747933fb864476e6065",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a4a28366f5c9445c824f56ca55fdcee7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {\n  kony.apps.coe.ess.frmLogin.manualSyncOnClick();\n};",
+            "callbackType": null
+        }]
+    }
+}

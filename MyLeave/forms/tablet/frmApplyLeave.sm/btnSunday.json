@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s551a027d7c34e68ac403e49123bdefc",
+    "_text_": "Su",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "11%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s47436b1d586429683b592a2e64ca25b",
+    "id": "btnSunday",
+    "ide_onClick": "AS_Button_ddd83b0ea94e4ba8842f66fd1d4a026f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "jcbff385613049a685c5b4c098c5ad85",
+    "name": "kony.ui.Button",
+    "parent": "flxWeekly",
+    "pf": "frmApplyLeave",
+    "wType": "Button"
+}

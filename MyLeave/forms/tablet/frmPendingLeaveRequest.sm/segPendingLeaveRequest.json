@@ -1,0 +1,149 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgCal": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cal.png"
+            },
+            "imgDelete": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "cancel_white.png"
+            },
+            "imgEdit": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "edit_white.png"
+            },
+            "lblAppliedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 2016, 6:30 PM"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 May - 22 May"
+            },
+            "lblDays": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7 Days"
+            },
+            "lblLeaveId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblLeaveType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Casual Leave"
+            },
+            "lblLine1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblStatus": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.common.pending.valueKA",
+                "text": "Pending"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "91.80%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "alternaterowskin": "sbf719f2644c4e8184cb8c78d6bf36fb",
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segPendingLeaveRequest",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "d9689758971843dcb49f10a9fe083e6e",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxPendingLeaveRequest",
+    "pf": "frmPendingLeaveRequest",
+    "retainselection": false,
+    "rowTemplateId": "gcfc5a16e1c04d47b888bc3405d41498",
+    "rowcounter": 0,
+    "rowfocusskin": "sbbd4919ce5c46a2b9438507fabe3f65",
+    "rowskin": "s9d2da7fea7c4a789892dda8a7db4ee7",
+    "rowtemplate": "flxSegPending",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdbc0b13ffcf419d9faa75f92b8f832b",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxDelete": "flxDelete",
+        "flxEdit": "flxEdit",
+        "flxImgHidden": "flxImgHidden",
+        "flxOuter": "flxOuter",
+        "flxSegPending": "flxSegPending",
+        "imgCal": "imgCal",
+        "imgDelete": "imgDelete",
+        "imgEdit": "imgEdit",
+        "lblAppliedDate": "lblAppliedDate",
+        "lblDates": "lblDates",
+        "lblDays": "lblDays",
+        "lblLeaveId": "lblLeaveId",
+        "lblLeaveType": "lblLeaveType",
+        "lblLine1": "lblLine1",
+        "lblStatus": "lblStatus"
+    },
+    "zindex": 1
+}

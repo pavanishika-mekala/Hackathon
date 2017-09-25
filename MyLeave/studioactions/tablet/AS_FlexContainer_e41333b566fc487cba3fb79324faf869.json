@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_e41333b566fc487cba3fb79324faf869": {
+        "id": "AS_FlexContainer_e41333b566fc487cba3fb79324faf869",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": null,
+            "KUID": "eba1cc29577c44689eb243f9ea0003e6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_e29b3ae4945648b1a25d21e5b0cb114d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "callbackType": null
+        }]
+    }
+}

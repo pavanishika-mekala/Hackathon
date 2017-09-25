@@ -5,7 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "9dp"
     },
     "_margin_": [
         0,
@@ -19,11 +23,15 @@
         0,
         0
     ],
-    "_skin_": "sda0c04ae5814098a8111842b264a413",
-    "_src_": "backwhite.png",
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "back.png",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "50%"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -38,7 +46,7 @@
     "context": {
         "channel": "tablet",
         "formID": "frmSettings",
-        "platform": "tabrcandroid",
+        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -47,9 +55,9 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "322125c134ba4ac190140d07dc57d4f5",
+    "kuid": "h42e097e15cc46668bd51d7d145c4717",
     "name": "kony.ui.Image2",
-    "parent": "flxBack",
+    "parent": "flxHamburgerMenu",
     "pf": "frmSettings",
     "srcType": 1,
     "wType": "Image",

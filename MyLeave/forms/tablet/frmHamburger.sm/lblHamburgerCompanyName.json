@@ -23,10 +23,10 @@
         0
     ],
     "_skin_": "sad40cf4fab14d9a9c66bd935ebe91ea",
-    "_text_": "Kony Inc.",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "12.30%"
+        "value": "1%"
     },
     "_width_": {
         "type": "ref",
@@ -49,11 +49,12 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
-    "kuid": "6b96cd6f65894674a546e62abeebedcb",
+    "isvisible": false,
+    "kuid": "jfeefe30078944b6b6ace51125a9f27b",
     "name": "kony.ui.Label",
-    "parent": "flxHamburger",
+    "parent": "flxMenuHamburger",
     "pf": "frmHamburger",
+    "texti18n": "i18n.ess.frmHamburger.companyName",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

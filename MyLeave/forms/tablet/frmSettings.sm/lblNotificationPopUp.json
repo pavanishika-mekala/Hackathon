@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "s513629878ce4ce2b790ee2be41d3696",
-    "_text_": "Delete all data from the device and download it again?",
+    "_text_": "",
     "_top_": {
         "type": "string",
         "value": "10%"
@@ -50,10 +50,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "613c6f66afdd45ad9a690f2a36c0a506",
+    "kuid": "c83e9bd26a2d40bf8b0a7b195204cb92",
     "name": "kony.ui.Label",
     "parent": "flxNotificationPopUp",
     "pf": "frmSettings",
+    "texti18n": "i18n.ess.myLeave.frmSettings.Popup.lblNotification",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

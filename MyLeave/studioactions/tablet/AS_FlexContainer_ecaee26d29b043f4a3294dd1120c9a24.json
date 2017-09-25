@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_ecaee26d29b043f4a3294dd1120c9a24": {
+        "id": "AS_FlexContainer_ecaee26d29b043f4a3294dd1120c9a24",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamView",
+            "type": "forms",
+            "platform": null,
+            "KUID": "da651f17c18d44369e8d8836b21764a0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_j1f7fca33d5946b180b1ff4840d8d9fd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myLeave.TeamViewUI()).toggleSkin(frmTeamView,false);\nkony.apps.coe.ess.myLeave.MyLeaveHomeUI.showLeaveHome();",
+            "callbackType": null
+        }]
+    }
+}

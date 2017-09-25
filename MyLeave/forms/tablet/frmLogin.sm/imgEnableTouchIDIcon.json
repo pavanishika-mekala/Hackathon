@@ -44,9 +44,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmLogin",
-        "platform": "tabrcandroid",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -55,7 +55,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "706b0d2639f04fee99569e12b93681c4",
+    "kuid": "ab3c7949d17c458d9e50a5397494d86a",
     "name": "kony.ui.Image2",
     "parent": "flxEnableTouchIDPopup",
     "pf": "frmLogin",

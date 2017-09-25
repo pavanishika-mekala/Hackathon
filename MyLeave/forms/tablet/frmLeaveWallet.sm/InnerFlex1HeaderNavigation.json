@@ -1,0 +1,55 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s4e26a1eb5a44921a7a7c9f6d829e29a",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "img1",
+        "lblHeaderLine1"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "InnerFlex1HeaderNavigation",
+    "ide_onClick": "AS_FlexContainer_afab43b0598042c99cd20662ddba1a1c",
+    "info": null,
+    "isvisible": true,
+    "kuid": "cfcc33f75c304b06b6d235911b218445",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "FlexHeaderNavigation",
+    "pf": "frmLeaveWallet",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

@@ -18,7 +18,7 @@
         0,
         0
     ],
-    "_skin_": "s81888d97ee346d1867697871d04aef2",
+    "_skin_": "s9061e82e7df451b8797c8da9096814d",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -50,10 +50,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "35dadc282d5049638b6beea36567f159",
+    "kuid": "jd753ab7bf2b4e49b533ddc905686849",
     "name": "kony.ui.Label",
-    "parent": "flxOuter",
+    "parent": "flxOuterFlex",
     "pf": "frmHamburger",
+    "texti18n": "i18n.ess.offline.message.text",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

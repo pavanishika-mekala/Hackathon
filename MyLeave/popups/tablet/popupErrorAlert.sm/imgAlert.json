@@ -20,7 +20,7 @@
     "containerweight": 100,
     "context": {
         "channel": "tablet",
-        "platform": "ipad",
+        "platform": "spaipad",
         "templateType": "popups",
         "topLevelBox": null
     },
@@ -29,7 +29,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "009b19f391814381af27c294bc3ae6ee",
+    "kuid": "f76b2e548aae43288fc62f798c0a410c",
     "margininpixel": false,
     "name": "kony.ui.Image2",
     "paddinginpixel": false,

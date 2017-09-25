@@ -1,0 +1,23 @@
+{
+    "AS_Button_ace8a5adb2aa4489bfac2481a9fe5361": {
+        "id": "AS_Button_ace8a5adb2aa4489bfac2481a9fe5361",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d726b16f306a44c1bca91abeb2eedcc8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickOfHours();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "AS_Calendar_ab0741bd0299412d8cab4bdfb7623228": {
+        "id": "AS_Calendar_ab0741bd0299412d8cab4bdfb7623228",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmSearchLog",
+            "type": "forms",
+            "platform": null,
+            "KUID": "fe318b6be21c4b449c848d6072b0cd84"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchStart_db091787d1fc440c81a08f1f0dc4ba2f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.myLeave.search().setValidDate();",
+            "callbackType": null
+        }]
+    }
+}

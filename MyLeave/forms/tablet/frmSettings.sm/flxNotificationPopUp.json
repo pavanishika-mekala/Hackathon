@@ -50,7 +50,7 @@
     "id": "flxNotificationPopUp",
     "info": null,
     "isvisible": true,
-    "kuid": "cf5938d325b6435ea2f43d715459da46",
+    "kuid": "ae840f446f8f43e392ea7524cb45f761",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxPopUp",

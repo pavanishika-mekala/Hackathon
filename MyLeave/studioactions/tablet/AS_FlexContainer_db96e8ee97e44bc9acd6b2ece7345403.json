@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_db96e8ee97e44bc9acd6b2ece7345403": {
+        "id": "AS_FlexContainer_db96e8ee97e44bc9acd6b2ece7345403",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a4e6ce3e8e734d0e88a2002780fdd7b6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfCamera();\n//frmApplyLeave.flxCameraOptions.isVisible = true;",
+            "callbackType": null
+        }]
+    }
+}

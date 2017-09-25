@@ -1,0 +1,23 @@
+{
+    "AS_Button_dcfbddef93154eef88afe766ba347c48": {
+        "id": "AS_Button_dcfbddef93154eef88afe766ba347c48",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d218c862ae534edebfc84b906fd5ad61"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_geb67f54494540b7857ebb79b3881878",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.RecurringLeave.onClickOfWeekly();",
+            "callbackType": null
+        }]
+    }
+}

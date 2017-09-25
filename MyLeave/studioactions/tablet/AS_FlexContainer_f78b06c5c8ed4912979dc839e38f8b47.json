@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_f78b06c5c8ed4912979dc839e38f8b47": {
+        "id": "AS_FlexContainer_f78b06c5c8ed4912979dc839e38f8b47",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d0e51b9f51f7438c9827a364689a6ca6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f5d4dad4c3864a6aa03bcb65a3a608ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.settings.getSettingsObject().languageSelection(\"unselectit.png\",\"selectit.png\",\"unselectit.png\",\"fr_BE\");",
+            "callbackType": null
+        }]
+    }
+}

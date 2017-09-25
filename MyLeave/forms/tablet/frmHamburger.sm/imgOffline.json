@@ -23,7 +23,7 @@
         0,
         0
     ],
-    "_skin_": "s4a6302343d540ddb5d0f1517da5be09",
+    "_skin_": "s89eaf3ef88740369b805d14a80907a9",
     "_src_": "cloudoff.png",
     "_top_": {
         "type": "string",
@@ -40,9 +40,9 @@
     },
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmHamburger",
-        "platform": "ipad",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -51,9 +51,9 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "3affd49113c74ff1bdf12f184e2fc62f",
+    "kuid": "e49ad8215a944255ab410694ee8e9da1",
     "name": "kony.ui.Image2",
-    "parent": "flxOuter",
+    "parent": "flxOuterFlex",
     "pf": "frmHamburger",
     "srcType": 1,
     "wType": "Image",

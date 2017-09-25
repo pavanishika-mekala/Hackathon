@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_e930ccd118984e45ab8a77df465f7cd7": {
+        "id": "AS_FlexContainer_e930ccd118984e45ab8a77df465f7cd7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveRequestDetails",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a63e769512d4473dba317999596660d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b8f983a0ac78437693cb75e405d63b90",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveRequestDetails.flxPopUp.isVisible=true;",
+            "callbackType": null
+        }]
+    }
+}

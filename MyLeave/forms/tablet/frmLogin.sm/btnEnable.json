@@ -40,7 +40,7 @@
     "id": "btnEnable",
     "info": null,
     "isvisible": true,
-    "kuid": "500a8999693d4c3c870fc67c1102ac00",
+    "kuid": "g043f7cf155b43cd99d0a7433f08b098",
     "name": "kony.ui.Button",
     "parent": "flxButtons",
     "pf": "frmLogin",

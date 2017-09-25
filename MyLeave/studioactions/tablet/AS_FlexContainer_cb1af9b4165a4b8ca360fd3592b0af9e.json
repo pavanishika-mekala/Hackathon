@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_cb1af9b4165a4b8ca360fd3592b0af9e": {
+        "id": "AS_FlexContainer_cb1af9b4165a4b8ca360fd3592b0af9e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveBalance",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a6f6e3fc6e2540e7b04f8ab5030946e8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_e49827f7e06f43498c9a90ca2762ea63",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveWallet.show();",
+            "callbackType": null
+        }]
+    }
+}

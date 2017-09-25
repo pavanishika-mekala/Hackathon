@@ -27,7 +27,7 @@
         0
     ],
     "_skin_": "sbe6e79536d9487c88f6ae014a12fb3a",
-    "_text_": "Yes",
+    "_text_": "",
     "_width_": {
         "type": "string",
         "value": "50%"
@@ -38,13 +38,14 @@
     "displaytext": true,
     "focusskin": "sd2678a55e9a4505855f37357589ed61",
     "id": "btnYes",
-    "ide_onClick": "AS_Button_4cb1fdb9c46c4ccb988d602adf410a85",
+    "ide_onClick": "AS_Button_f0e5a6cfbfc3410abf1b6e44d2d6e083",
     "info": null,
     "isvisible": true,
-    "kuid": "89e770befb464d7798bc12269f4bf03e",
+    "kuid": "c7a82c3255e14561b9cc3c1f91ed10d0",
     "name": "kony.ui.Button",
     "parent": "flxNotificationPopUp",
     "pf": "frmSettings",
+    "texti18n": "i18n.ess.common.Yes.valueKA",
     "wType": "Button",
     "zindex": 1
 }

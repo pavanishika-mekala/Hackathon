@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_dc7c1fcc9769457b9df2509f7272f103": {
+        "id": "AS_FlexContainer_dc7c1fcc9769457b9df2509f7272f103",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmShiftManagement",
+            "type": "forms",
+            "platform": null,
+            "KUID": "h6538314ecc049a1b471e9c6384c7e38"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_bc04d0da15434f4d94bbfbc7ed20c714",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveWallet.show();\n",
+            "callbackType": null
+        }]
+    }
+}

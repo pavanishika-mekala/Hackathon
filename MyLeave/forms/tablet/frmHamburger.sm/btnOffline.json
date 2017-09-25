@@ -26,7 +26,7 @@
         0,
         0
     ],
-    "_skin_": "se212d6ccf4e4207b22629ec6ec7998b",
+    "_skin_": "s2f757e65437422d9042da6318c4b38d",
     "_text_": "",
     "_width_": {
         "type": "string",
@@ -36,14 +36,16 @@
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
-    "focusskin": "s8d7d0d54fc44f03940e5fe72058384d",
+    "focusskin": "se26ccc4ba1a4d18a2e20ff3cdc09d2d",
     "id": "btnOffline",
+    "ide_onClick": "AS_Button_d596515e58544380b10aa77016f297dd",
     "info": null,
     "isvisible": true,
-    "kuid": "1f4463600a4f4532bc748419fe2972a2",
+    "kuid": "hc4c02b2ebcf49c3b923f4ea3a02c9cf",
     "name": "kony.ui.Button",
-    "parent": "flxOuter",
+    "parent": "flxOuterFlex",
     "pf": "frmHamburger",
+    "texti18n": "i18n.ess.offline.offlinemode.text",
     "wType": "Button",
     "zindex": 1
 }

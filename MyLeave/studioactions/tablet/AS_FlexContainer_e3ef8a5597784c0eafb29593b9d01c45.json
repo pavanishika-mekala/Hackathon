@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_e3ef8a5597784c0eafb29593b9d01c45": {
+        "id": "AS_FlexContainer_e3ef8a5597784c0eafb29593b9d01c45",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchLog",
+            "type": "forms",
+            "platform": null,
+            "KUID": "fe318b6be21c4b449c848d6072b0cd84"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_jc6c1f34b811439f9e362164bc8049a8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmSearchLog.flxHamMenu);",
+            "callbackType": null
+        }]
+    }
+}

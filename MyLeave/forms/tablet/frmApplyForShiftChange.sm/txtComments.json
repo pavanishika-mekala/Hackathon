@@ -1,0 +1,84 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextArea2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "4"
+    },
+    "_margin_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_padding_": [
+        2,
+        2,
+        2,
+        2
+    ],
+    "_placeholder_": "",
+    "_skin_": "sb183b27cee942c6b015c00f3e8092e4",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "android": {
+        "psp": {
+            "placeholderSkin": "s5fade15b97544a69e448a03e83cab28"
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "closebuttontext": "",
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "focusskin": "s7132afa9bdf46df86c078d319026a81",
+    "id": "txtComments",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "closeButtonText": "",
+            "keyboardActionLabel": 1,
+            "showCloseButton": true
+        }
+    },
+    "isvisible": true,
+    "keyboardactionlabel": 1,
+    "keyboardstyle": "chatpad",
+    "keyboardtype": "A",
+    "kuid": "c5aaaf7789dd48d3925aa04c8256d12f",
+    "mode": "A",
+    "name": "kony.ui.TextArea2",
+    "numberofvisiblelines": 3,
+    "parent": "flxTxtComments",
+    "pf": "frmApplyForShiftChange",
+    "placeholderi18n": "i18n.ess.common.placeholderTypeHere.valueKA",
+    "placeholderskin": "s5fade15b97544a69e448a03e83cab28",
+    "securetextentry": false,
+    "showoprogressindicator": false,
+    "showprogressindicator": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextArea",
+    "zindex": 1
+}

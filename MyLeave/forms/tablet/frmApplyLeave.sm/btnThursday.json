@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s551a027d7c34e68ac403e49123bdefc",
+    "_text_": "Th",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "11%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s47436b1d586429683b592a2e64ca25b",
+    "id": "btnThursday",
+    "ide_onClick": "AS_Button_cbe4b23a9391416987a2a4f4ab4a8423",
+    "info": null,
+    "isvisible": true,
+    "kuid": "aa6c5c7ebe59479aaea751bbeaec5a3b",
+    "name": "kony.ui.Button",
+    "parent": "flxWeekly",
+    "pf": "frmApplyLeave",
+    "wType": "Button",
+    "zindex": 1
+}

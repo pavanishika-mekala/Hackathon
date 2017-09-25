@@ -50,7 +50,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "d4c1e565dac74d34868f91a92e4b4143",
+    "kuid": "be8334bc00af4067beaec6fbc50aebad",
     "name": "kony.ui.Label",
     "parent": "flxPopUpTitle",
     "pf": "frmLogin",
