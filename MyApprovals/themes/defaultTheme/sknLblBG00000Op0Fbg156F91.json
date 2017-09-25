@@ -1,5 +1,6 @@
 {
   "android": {
+    "font_name": "AvenirLTStd-Roman",
     "font_size": 257,
     "isForked": false
   },
@@ -14,7 +15,7 @@
     "isForked": false
   },
   "fontSizeInPx": false,
-  "font_color": "156f91ff",
+  "font_color": "005a78ff",
   "font_name": "Helvetica",
   "font_size": 257,
   "font_style": "normal",

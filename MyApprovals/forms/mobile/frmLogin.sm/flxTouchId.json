@@ -44,7 +44,7 @@
     "enablescrolling": true,
     "id": "flxTouchId",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "0f9be869f2d947da955c12accee8b25a",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

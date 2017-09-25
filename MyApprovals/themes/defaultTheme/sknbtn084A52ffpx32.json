@@ -6,6 +6,7 @@
     "border_style": "cr",
     "border_type": 0,
     "border_width": 1,
+    "font_color": "005a78ff",
     "font_name": "AvenirLTStd-Book",
     "isForked": true,
     "text_shadow": {
@@ -85,6 +86,7 @@
     "border_style": "cr",
     "border_type": 0,
     "border_width": 1,
+    "font_color": "005a78ff",
     "font_name": "AvenirLTStd-Book",
     "isForked": true,
     "text_shadow": {

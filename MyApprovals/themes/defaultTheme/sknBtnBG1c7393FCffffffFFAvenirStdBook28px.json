@@ -1,6 +1,6 @@
 {
   "android": {
-    "background_color": "1c7393ff",
+    "background_color": "005a78ff",
     "bg_type": "one",
     "font_name": "AvenirLTStd-Book",
     "font_size": 100,
@@ -74,7 +74,7 @@
     }
   },
   "iphone": {
-    "background_color": "1c7393ff",
+    "background_color": "005a78ff",
     "bg_type": "one",
     "font_name": "AvenirLTStd-Book",
     "font_size": 100,

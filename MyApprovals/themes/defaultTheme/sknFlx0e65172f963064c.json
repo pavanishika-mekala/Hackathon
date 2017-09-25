@@ -1,14 +1,14 @@
 {
   "android": {
-    "background_color": "039be5ff",
+    "background_color": "00aaffff",
     "bg_type": "one",
-    "border_color": "039be5ff",
+    "border_color": "00aaffff",
     "border_style": "rc",
     "border_type": 0,
     "border_width": 1,
     "isForked": true
   },
-  "background_color": "7986cb00",
+  "background_color": "6ebeaa00",
   "bg_type": "one",
   "border_color": "000000ff",
   "border_style": "plain",
