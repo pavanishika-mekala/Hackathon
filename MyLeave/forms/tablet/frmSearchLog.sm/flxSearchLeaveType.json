@@ -44,7 +44,7 @@
     "enablescrolling": true,
     "id": "flxSearchLeaveType",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "b4e8d3cce7dd43eeb9aa0f9272f917e7",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
