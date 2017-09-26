@@ -41,7 +41,7 @@
     "id": "btnNotNow",
     "info": null,
     "isvisible": true,
-    "kuid": "12c1157482374a1f81fa6724f4d6d4f9",
+    "kuid": "b7200c2ed93540adba44d97198282ac8",
     "name": "kony.ui.Button",
     "parent": "flxButtons",
     "pf": "frmLogin",

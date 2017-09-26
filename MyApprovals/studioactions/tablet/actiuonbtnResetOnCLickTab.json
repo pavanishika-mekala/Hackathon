@@ -1,0 +1,24 @@
+{
+    "AS_Button_b22cc4a3092d4f8c9094d4012cf72538": {
+        "id": "AS_Button_b22cc4a3092d4f8c9094d4012cf72538",
+        "type": "ACTION_SEQUENCE",
+        "name": "actiuonbtnResetOnCLickTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fc073bd7862245bb91cdcc28efd5b02d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d856cba0094348b98896cff3dff236be",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSettings.flxPopUp.isVisible=true;",
+            "parentId": null
+        }]
+    }
+}

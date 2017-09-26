@@ -1,0 +1,17 @@
+{
+    "AS_Button_j7aa6a586bac493b921749677cc5ccaf": {
+        "id": "AS_Button_j7aa6a586bac493b921749677cc5ccaf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_h473381c231249039d9183cc90482db7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getCurrentForm().flxOfflineAlert.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

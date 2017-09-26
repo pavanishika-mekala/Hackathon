@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_d62c8b9a39e94c659f67ac0ff7c1cb34": {
+        "id": "AS_FlexContainer_d62c8b9a39e94c659f67ac0ff7c1cb34",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionflxMyLeaveOnClickTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cfcb66dc01e54e17baebbffc7ddc6146"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e0390bc2122143ffb346d46b3f591562",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"eTimeSheetMyLeave\")",
+            "parentId": null
+        }]
+    }
+}

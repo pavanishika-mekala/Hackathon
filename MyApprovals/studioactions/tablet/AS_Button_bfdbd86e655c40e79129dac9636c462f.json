@@ -1,0 +1,17 @@
+{
+    "AS_Button_bfdbd86e655c40e79129dac9636c462f": {
+        "id": "AS_Button_bfdbd86e655c40e79129dac9636c462f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_df688241de6d4e0c82acef3d487a9e10",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalHome.show();\nfrmRequestedList.destroy();",
+            "callbackType": null
+        }]
+    }
+}

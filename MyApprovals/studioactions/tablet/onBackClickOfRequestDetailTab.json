@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_i8f0e3c748054f73b8151eaba4ebda4c": {
+        "id": "AS_FlexContainer_i8f0e3c748054f73b8151eaba4ebda4c",
+        "type": "ACTION_SEQUENCE",
+        "name": "onBackClickOfRequestDetailTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c1a29fd7fca346149c9b0863f8c10c69",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.getPreviousFormID());\nfrmController.loadDataAndShowForm();",
+            "callbackType": null
+        }]
+    }
+}

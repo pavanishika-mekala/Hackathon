@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_ff3ed00ffda34cbdb9daaf6431fbecbe": {
+        "id": "AS_FlexContainer_ff3ed00ffda34cbdb9daaf6431fbecbe",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequestList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cab76f26495647c489337b6bdce85d76"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a3716a6c3e0f4087b9f27bd3f9ea7476",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmDelegationRequestList.flxHamburgerButton);\n",
+            "parentId": null
+        }]
+    }
+}

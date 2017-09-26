@@ -1,0 +1,161 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "btnAdditionalInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "btnAdditionalInfo"
+            },
+            "imgSelection": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblCategory": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Category"
+            },
+            "lblCircle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblCreateDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 06:30 pm"
+            },
+            "lblDueDateValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 jan, 2015 "
+            },
+            "lblLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblMidRight": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.MyApprovals.tempSegRequests.lblDueDate",
+                "text": ""
+            },
+            "lblRequestInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "lblRequestInfo"
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblUserName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "User Name"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "SegDetails",
+    "info": null,
+    "invokedProperty": "unselectedStateImage",
+    "ipad": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "d9cbad56ad0647dd9328da52e2a0ac7e",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegment",
+    "pf": "frmMultiSelection",
+    "retainselection": false,
+    "rowTemplateId": "bb7ee60397dc4d5e889a3f2ae71f78bf",
+    "rowcounter": 0,
+    "rowfocusskin": "s12100649aba4186864dfd4f3e24dba0",
+    "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "flxMultipleSelect",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectimage": "select_green.png",
+    "selectionbehavior": "multiselect",
+    "selectionindicator": "imgSelection",
+    "separatorcolor": "64646464",
+    "separatorrequired": true,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "unselectimage": "select.png",
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnAdditionalInfo": "btnAdditionalInfo",
+        "flxAllWidgets": "flxAllWidgets",
+        "flxBottomLeft": "flxBottomLeft",
+        "flxMultipleSelect": "flxMultipleSelect",
+        "flxmainInContainer": "flxmainInContainer",
+        "flxpeople": "flxpeople",
+        "imgSelection": "imgSelection",
+        "imgUser": "imgUser",
+        "lblCategory": "lblCategory",
+        "lblCircle": "lblCircle",
+        "lblCreateDate": "lblCreateDate",
+        "lblDueDateValue": "lblDueDateValue",
+        "lblLine": "lblLine",
+        "lblMidRight": "lblMidRight",
+        "lblRequestInfo": "lblRequestInfo",
+        "lblShortName": "lblShortName",
+        "lblUserName": "lblUserName"
+    }
+}

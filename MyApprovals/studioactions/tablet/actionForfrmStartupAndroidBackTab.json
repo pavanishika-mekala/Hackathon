@@ -1,0 +1,24 @@
+{
+    "AS_Form_ee75e66df892484bb86be3efe8c04d7f": {
+        "id": "AS_Form_ee75e66df892484bb86be3efe8c04d7f",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmStartupAndroidBackTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd7b5eea0c904cc2b51c5f2ebb89a011"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f22cebd325524c57ada27cf7c0ad7971",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in frmStartup--\");",
+            "parentId": null
+        }]
+    }
+}

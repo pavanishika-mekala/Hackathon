@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "sf0ca675ae094defa063a7f47accf8e8",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {},
+    "focusskin": "sf0ca675ae094defa063a7f47accf8e8",
+    "id": "txtSearch",
+    "ide_onDone": "AS_TextField_g7ea001955c24797b359920cdad922dc",
+    "ide_onTextChange": "AS_TextField_e85fc747c04a4e84b17085648b9c00c3",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "hab173a9bda54f928fce1a1eda244311",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxPeopleSearch",
+    "pf": "frmSelect",
+    "placeholderi18n": "i18n.ess.myApprovals.frmTabListview.SearchByName",
+    "placeholderskin": "sd80b0ef6a174f33bf33f5ea667f229d",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

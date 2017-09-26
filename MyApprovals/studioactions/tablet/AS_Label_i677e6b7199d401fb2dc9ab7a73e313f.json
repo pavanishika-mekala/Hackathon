@@ -1,0 +1,29 @@
+{
+    "AS_Label_i677e6b7199d401fb2dc9ab7a73e313f": {
+        "id": "AS_Label_i677e6b7199d401fb2dc9ab7a73e313f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmRequestedList",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f3667525a905489b91f62480a4d0b626"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d27fe976f59e4e2096cd6b33cf0dfbcc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var requestedListObj = new kony.apps.coe.ess.Approvals.RequestedList();\nrequestedListObj.LoadFilterAndShowForm(\"Leave\");\n",
+            "parentId": null
+        }]
+    }
+}

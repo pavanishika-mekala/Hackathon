@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "6.30%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sda0c04ae5814098a8111842b264a413",
+    "_src_": "people.png",
+    "_width_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "tablet",
+        "formID": "tempSegSearchPeople",
+        "platform": "ipad",
+        "templateType": "segments",
+        "topLevelBox": null
+    },
+    "id": "imgUser",
+    "imagescalemode": 0,
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": true,
+    "kuid": "hc99dcb1eb444330964037084f5183ae",
+    "name": "kony.ui.Image2",
+    "parent": "flxImg",
+    "pf": "tempSegSearchPeople",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

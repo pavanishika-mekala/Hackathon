@@ -1,0 +1,30 @@
+{
+    "AS_Segment_f83fab03133b42c7851223323289ddf4": {
+        "id": "AS_Segment_f83fab03133b42c7851223323289ddf4",
+        "type": "ACTION_SEQUENCE",
+        "name": "onRowClickSegRequestSelectTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmSelect",
+            "type": "forms",
+            "platform": "",
+            "KUID": "becc36dd3b6e41f7b5ea9d657fbe325c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bb2c4ccdd55b46fc9b79d27b4709a2c7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSelect.forceLayout();",
+            "parentId": null
+        }]
+    }
+}

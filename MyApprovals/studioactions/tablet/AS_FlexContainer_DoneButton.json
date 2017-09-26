@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_ja119d91a611414288af9b1868779315": {
+        "id": "AS_FlexContainer_ja119d91a611414288af9b1868779315",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_DoneButton",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cae2e35ca5a84217ab07ff12e27fbc49"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__h49f0816b13444f08fe6d659bdee43c3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch();\n",
+            "parentId": null
+        }]
+    }
+}

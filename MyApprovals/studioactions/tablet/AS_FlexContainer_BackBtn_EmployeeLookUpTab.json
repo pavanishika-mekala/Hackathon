@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_e1a59aa05c62420a93dde8e8e4cdf443": {
+        "id": "AS_FlexContainer_e1a59aa05c62420a93dde8e8e4cdf443",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_BackBtn_EmployeeLookUpTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmployeeLookUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee7dab23de1c48d595c511f33558925a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d5816c3522a44662bb706f1ac7d04249",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showDelegationRequestListForm();",
+            "parentId": null
+        }]
+    }
+}

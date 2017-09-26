@@ -1,0 +1,30 @@
+{
+    "AS_Segment_i99d6fea8d52493eb58c0da269788c2c": {
+        "id": "AS_Segment_i99d6fea8d52493eb58c0da269788c2c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Segment_onRowClickSeg_DelegationRequestListReceivedTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequestList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cab76f26495647c489337b6bdce85d76"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c857c892a7b0433f8cd536be9057d61b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DelegationRequestList.Actions.getInstance().onRowClickOfReceivedList();",
+            "parentId": null
+        }]
+    }
+}

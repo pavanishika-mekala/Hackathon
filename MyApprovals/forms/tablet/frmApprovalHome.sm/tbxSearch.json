@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "sf0ca675ae094defa063a7f47accf8e8",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "sc8851c22087495ea2fbc9ffec2fab77",
+    "id": "tbxSearch",
+    "ide_onDone": "AS_TextField_a2b16373b7ad4f34bfb58dbd078f8c34",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "showCloseButton": false
+        }
+    },
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "c76431c966e04616b016935376dc6759",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxTxtBoxSearch",
+    "pf": "frmApprovalHome",
+    "placeholderi18n": "i18n.ess.myApprovals.frmTabListview.SearchByName",
+    "placeholderskin": "sd80b0ef6a174f33bf33f5ea667f229d",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField"
+}

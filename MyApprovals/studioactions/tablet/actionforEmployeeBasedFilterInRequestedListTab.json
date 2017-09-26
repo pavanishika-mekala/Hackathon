@@ -1,0 +1,21 @@
+{
+    "AS_TextField_d191276f929d4d79a584c945453269f3": {
+        "id": "AS_TextField_d191276f929d4d79a584c945453269f3",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionforEmployeeBasedFilterInRequestedListTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onDone_a2a6c2b256794e3385b6b701a4cba6df",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.RequestedList.searchEmployee(frmRequestedList.tbxLaterFilter.text);",
+            "callbackType": null
+        }]
+    }
+}

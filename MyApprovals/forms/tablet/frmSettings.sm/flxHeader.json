@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "8%"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s35dffc1cc0e4336b2d0f1acb1527e60",
+    "_skin_": "s7c4803501a143dd9e46ba612414a114",
     "_top_": {
         "type": "string",
         "value": "0%"
@@ -36,8 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxBack",
-        "lblSettings"
+        "flxHamburgerButton",
+        "lblHeader"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -45,14 +45,13 @@
     "id": "flxHeader",
     "info": null,
     "isvisible": true,
-    "kuid": "73047128fcc343e09e6c57bf52fae804",
-    "layouttype": 3,
+    "kuid": "hb470bb9b849488998fa48776afd9e69",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxMain",
+    "parent": "flxSettings",
     "pf": "frmSettings",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

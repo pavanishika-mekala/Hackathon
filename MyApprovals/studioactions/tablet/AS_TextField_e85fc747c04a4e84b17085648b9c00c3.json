@@ -1,0 +1,26 @@
+{
+    "AS_TextField_e85fc747c04a4e84b17085648b9c00c3": {
+        "id": "AS_TextField_e85fc747c04a4e84b17085648b9c00c3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmSelect",
+            "type": "forms",
+            "platform": "",
+            "KUID": "becc36dd3b6e41f7b5ea9d657fbe325c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d9ee644d4ed14e9d8d18c6da2d121222",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var searchText=frmSelect.txtSearch.text;\nvar filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\nfilterobj.searchDataInPeople(searchText);",
+            "parentId": null
+        }]
+    }
+}

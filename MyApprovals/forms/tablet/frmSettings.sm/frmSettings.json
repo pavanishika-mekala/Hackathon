@@ -15,11 +15,12 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s3f768fd25ab44b297054cc4d6ed59a4",
+    "_skin_": "sd6f49d86cd5465ea7358a36576b3d82",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
+        "ide_onDeviceBack": "AS_Form_fb8bb4013754401ba26cbe773536e0a0",
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
@@ -27,28 +28,37 @@
     },
     "canUpdateUI": true,
     "children": [
-        "flxMain",
+        "flxSettings",
+        "flxOfflineAlert",
         "flxPopUp"
     ],
     "containerweight": 100,
-    "currentLocale": "default",
+    "controllerInfo": {
+        "default": {
+            "channel": "tablet"
+        }
+    },
+    "currentLocale": "en",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GalaxyTab7",
-    "displayorientation": 2,
+    "device": "iPad3",
+    "displayorientation": 1,
     "enabledforidletimeout": false,
-    "footeroverlap": false,
+    "footer": "frmSettings_footer",
+    "footersId": "b982e3c62df9403f909bab30e23c4e9d",
     "id": "frmSettings",
-    "ide_preShow": "AS_Form_b1602a3e8b3342eba4183275611a3578",
+    "ide_init": "AS_Form_jc40b0c95e1e4fa697330f35f4332d91",
+    "ide_postShow": "AS_Form_ccccb502ff9c4922bf1f782051019878",
+    "ide_preShow": "AS_Form_c642537812704d1383f2a3546be90daf",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
+    "invokedProperty": "footers",
     "ipad": {
         "needAppMenu": false,
         "psp": {
-            "inputAccessoryViewType": 4,
-            "needsIndicatorDuringPostShow": true,
+            "inputAccessoryViewType": 1,
             "titleBarConfig": {
                 "buttonClosureLeftSideView": "",
                 "buttonClosureRightSideView": "",
@@ -67,24 +77,17 @@
         },
         "titleBar": false
     },
-    "iphone": {
-        "psp": {
-            "inputAccessoryViewType": 4
-        }
-    },
     "isvisible": true,
-    "kuid": "9d4e8de360614513a1f6bfa287c67a4b",
+    "kuid": "fc073bd7862245bb91cdcc28efd5b02d",
     "layouttype": 2,
-    "menuposition": 2,
     "name": "kony.ui.Form2",
     "needappmenu": true,
-    "needsindicatorduringpostshow": true,
     "paddinginpixel": false,
-    "platform": "tabrcandroid",
+    "platform": "ipad",
     "prevDevice": "iPad3",
     "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "and_Tab_Galaxy7",
+    "shellCSS": "iOS_iPad3",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {
@@ -97,9 +100,8 @@
         "needAppMenu": false
     },
     "titleBarSkin": "s01a3c761ed44dcab0d6537d1b55b621",
-    "titlebar": false,
+    "titlebar": true,
     "type": 3,
-    "verticalscrollindicator": true,
     "wType": "Form",
     "windows8": {
         "needAppMenu": false

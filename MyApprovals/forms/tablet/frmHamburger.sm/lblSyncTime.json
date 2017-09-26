@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
-        "value": "54%"
+        "value": "35%"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "sc2a8b33e30d4b94afbaecfcce90b03f",
-    "_text_": "8:30 PM",
+    "_skin_": "s1c16b4d8f1d4f22920a6f36ad818994",
+    "_text_": "8:30 AM ET",
     "_top_": {
         "type": "string",
-        "value": "26%"
+        "value": "71%"
     },
     "_width_": {
         "type": "ref",
@@ -50,9 +50,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "933f606e49414b5ba5d35785fa44993a",
+    "kuid": "j4391d463ce94b35a807f1d52962b626",
     "name": "kony.ui.Label",
-    "parent": "flxSyncAndVersionInfo",
+    "parent": "flxSyncDateTime",
     "pf": "frmHamburger",
     "tooltip": "",
     "wType": "Label",

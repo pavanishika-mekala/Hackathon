@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -34,6 +34,14 @@
         "value": "100%"
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "context": {
         "channel": "tablet",
@@ -47,7 +55,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "03e460892dd3475cbaead3aadd30db65",
+    "kuid": "i36a9914f0944e1d9b72c25029b2c88d",
     "name": "kony.ui.Image2",
     "parent": "flxSyncNow",
     "pf": "frmHamburger",

@@ -1,0 +1,159 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "btnDownload": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Download"
+            },
+            "imgDetail": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "pdf_icon.png"
+            },
+            "lblAddeed": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "btnDownload": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Download"
+            },
+            "imgDetail": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "pdf_icon.png"
+            },
+            "lblAddeed": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "btnDownload": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Download"
+            },
+            "imgDetail": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "pdf_icon.png"
+            },
+            "lblAddeed": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblDetail": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "SegAttachments",
+    "ide_onRowClick": "AS_Segment_c12223a2ce584a299b472e7868275d96",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "gf4f24eb069c4028934b103388de54a1",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxattachmentDetails",
+    "pf": "frmApprovalRequestDetail",
+    "retainselection": false,
+    "rowTemplateId": "j00736c2abe1414aa22c10cb395be881",
+    "rowcounter": 2,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
+    "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "flxattachmentmain",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "6464644f",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnDownload": "btnDownload",
+        "flxAttachments": "flxAttachments",
+        "flxattachmentmain": "flxattachmentmain",
+        "flxdownloadbtn": "flxdownloadbtn",
+        "imgDetail": "imgDetail",
+        "lblAddeed": "lblAddeed",
+        "lblDetail": "lblDetail"
+    },
+    "zindex": 1
+}

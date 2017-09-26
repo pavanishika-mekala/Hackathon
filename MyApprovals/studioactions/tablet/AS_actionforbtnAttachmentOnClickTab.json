@@ -1,0 +1,18 @@
+{
+    "AS_Button_eca1618c1e9e425e9ed9f910c9c17c32": {
+        "id": "AS_Button_eca1618c1e9e425e9ed9f910c9c17c32",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_actionforbtnAttachmentOnClickTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_edaf369cd03045b29f0e3038edf923e0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.displayPDFSegment();",
+            "callbackType": null
+        }]
+    }
+}

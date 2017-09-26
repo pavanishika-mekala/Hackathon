@@ -1,0 +1,147 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgTick": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "ok.png"
+            },
+            "imgType": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "expense_details.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblApproved": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pending"
+            },
+            "lblCreatedDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Jun 2017"
+            },
+            "lblIntials": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "SS"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Soumya Sriram"
+            },
+            "lblPurpose": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "sick levae"
+            },
+            "lblRequestInfo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "25 jun"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segList",
+    "ide_onReachingEnd": "AS_Segment_b18f7713dccf44ae9379dbe4d727a87e",
+    "ide_onRowClick": "AS_Segment_d6537fe54400465c9b5b00876f13ccec",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none",
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "f325791cff4b4e5c9fa423f14a8e974b",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSearch",
+    "pf": "frmSearch",
+    "retainselection": false,
+    "rowTemplateId": "aaf2ec86c8ca46debd37f20908d47c7e",
+    "rowcounter": 0,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
+    "rowskin": "s12100649aba4186864dfd4f3e24dba0",
+    "rowtemplate": "flxSecondarySearchLog",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646464",
+    "separatorrequired": true,
+    "separatorthickness": 0,
+    "showprogressindicator": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxBorder": "flxBorder",
+        "flxExpense": "flxExpense",
+        "flxSecondarySearchLog": "flxSecondarySearchLog",
+        "flxUserImg": "flxUserImg",
+        "imgTick": "imgTick",
+        "imgType": "imgType",
+        "imgUser": "imgUser",
+        "lblApproved": "lblApproved",
+        "lblCreatedDate": "lblCreatedDate",
+        "lblIntials": "lblIntials",
+        "lblName": "lblName",
+        "lblPurpose": "lblPurpose",
+        "lblRequestInfo": "lblRequestInfo"
+    },
+    "zindex": 1
+}

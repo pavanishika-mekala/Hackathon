@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_skin_": "s5f289942ffa40238fba42db6877ddf0",
+    "_text_": "Pending",
+    "_top_": {
+        "type": "string",
+        "value": "70.30%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblApproved",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "f4f3bad805194d56aa9f659d7dcbe445",
+    "name": "kony.ui.Label",
+    "parent": "flxSecondarySearchLog",
+    "pf": "tempSearchSecondaryLog",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

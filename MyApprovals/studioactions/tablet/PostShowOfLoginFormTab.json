@@ -1,0 +1,24 @@
+{
+    "AS_Form_c13f24807678423ba1d60f23e6c9ced1": {
+        "id": "AS_Form_c13f24807678423ba1d60f23e6c9ced1",
+        "type": "ACTION_SEQUENCE",
+        "name": "PostShowOfLoginFormTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd7b5eea0c904cc2b51c5f2ebb89a011"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__h8d9c8edb053469a822ae019e004d6ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.loginAnimations().animationLoginScreen();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.Approvals.ApprovalsHome.DelegationShow();\nkony.apps.coe.ess.frmLogin.seti18nText();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "78.70%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
+    "_top_": {
+        "type": "string",
+        "value": "36dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgCorner"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCornerShape",
+    "info": null,
+    "isvisible": true,
+    "kuid": "g66654b8fb874fa4a78674308d41f060",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxSelfComments",
+    "pf": "tempSegSelfComments",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 2
+}

@@ -21,7 +21,7 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "flxTempSettingsMain"
+        "flxTemplateSettingsCell"
     ],
     "containerId": true,
     "containerweight": 100,
@@ -37,7 +37,7 @@
         "formTransition": "None"
     },
     "isvisible": true,
-    "kuid": "6ef985f5c59548e6ab95c94c45a4aec4",
+    "kuid": "f149c050512d46dcb55680729a46966c",
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "outtransitionconfig": {

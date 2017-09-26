@@ -1,0 +1,178 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgEmpImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblEmpDesignation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Manager"
+            },
+            "lblEmpIdKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EMP ID -"
+            },
+            "lblEmpIdValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "857464"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Aaron Miller"
+            },
+            "lblEmpNameAndDesignationHyphen": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "imgEmpImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblEmpDesignation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Manager"
+            },
+            "lblEmpIdKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EMP ID -"
+            },
+            "lblEmpIdValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "857464"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Aaron Miller"
+            },
+            "lblEmpNameAndDesignationHyphen": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "imgEmpImage": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblEmpDesignation": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Manager"
+            },
+            "lblEmpIdKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EMP ID -"
+            },
+            "lblEmpIdValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "857464"
+            },
+            "lblEmpName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Aaron Miller"
+            },
+            "lblEmpNameAndDesignationHyphen": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segEmployeeList",
+    "ide_onRowClick": "AS_Segment_i627ded5b28e497b8dcf6b25e3bea888",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "j85f560db4294075a931c0fe5b3f9d3a",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxDetails",
+    "pf": "frmEmployeeLookUp",
+    "retainselection": false,
+    "rowTemplateId": "h2b60ddc4d174a8db8d78a878ad82bf3",
+    "rowcounter": 2,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
+    "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "flxSegEmployeeList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxBotttomLine": "flxBotttomLine",
+        "flxEmpImage": "flxEmpImage",
+        "flxEmpNameAndDesignation": "flxEmpNameAndDesignation",
+        "flxEmployeeId": "flxEmployeeId",
+        "flxSegEmployeeList": "flxSegEmployeeList",
+        "imgEmpImage": "imgEmpImage",
+        "lblEmpDesignation": "lblEmpDesignation",
+        "lblEmpIdKey": "lblEmpIdKey",
+        "lblEmpIdValue": "lblEmpIdValue",
+        "lblEmpName": "lblEmpName",
+        "lblEmpNameAndDesignationHyphen": "lblEmpNameAndDesignationHyphen"
+    },
+    "zindex": 1
+}

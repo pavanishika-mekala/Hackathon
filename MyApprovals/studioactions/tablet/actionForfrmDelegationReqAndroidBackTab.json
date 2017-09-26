@@ -1,0 +1,24 @@
+{
+    "AS_Form_babc90263acd41aba71d7884f3f821ae": {
+        "id": "AS_Form_babc90263acd41aba71d7884f3f821ae",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForfrmDelegationReqAndroidBackTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDelegationRequestList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cab76f26495647c489337b6bdce85d76"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__j4d82af2f8f8440e92e3665150452421",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in frmDelegationReq--\");",
+            "parentId": null
+        }]
+    }
+}

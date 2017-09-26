@@ -1,0 +1,185 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgCorner": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "corner_blue_left.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Applies on 12 May ' 16 2:30 pm "
+            },
+            "lblChat": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "I am Attendig the Meeting freiend wedding Need a leave on 16th April "
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose "
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AB"
+            }
+        },
+        {
+            "imgCorner": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "corner_blue_left.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Applies on 12 May ' 16 2:30 pm "
+            },
+            "lblChat": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "I am Attendig the Meeting freiend wedding Need a leave on 16th April "
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose "
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AB"
+            }
+        },
+        {
+            "imgCorner": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "corner_blue_left.png"
+            },
+            "imgUser": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "people.png"
+            },
+            "lblAppliedOn": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Applies on 12 May ' 16 2:30 pm "
+            },
+            "lblChat": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "I am Attendig the Meeting freiend wedding Need a leave on 16th April "
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rose "
+            },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AB"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "65.50%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "SegChat",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "j61ddaab496449bbb4c44bad2fd0ffc0",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxComments",
+    "pf": "frmDelegationRequestDetails",
+    "retainselection": false,
+    "rowTemplateId": "c4a7af55e5d54a13acb5ac193aad0bd8",
+    "rowcounter": 2,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
+    "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "flxRequesterComments",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646464",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxCornerShape": "flxCornerShape",
+        "flxImg": "flxImg",
+        "flxRequesterComments": "flxRequesterComments",
+        "flxcomment": "flxcomment",
+        "imgCorner": "imgCorner",
+        "imgUser": "imgUser",
+        "lblAppliedOn": "lblAppliedOn",
+        "lblChat": "lblChat",
+        "lblName": "lblName",
+        "lblShortName": "lblShortName"
+    },
+    "zindex": 1
+}

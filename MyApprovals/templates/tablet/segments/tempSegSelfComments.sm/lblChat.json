@@ -1,0 +1,70 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5.17%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        1,
+        2,
+        1,
+        2
+    ],
+    "_skin_": "s3828b2796b74a198dcfa2b82b8f71bf",
+    "_text_": "I am Attendig the Meeting freiend wedding Need a leave on 16th April ",
+    "_width_": {
+        "type": "string",
+        "value": "94%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "lineSpacing": 2,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "id": "lblChat",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 1
+        },
+        "textStyle": {
+            "baseline": 0,
+            "letterSpacing": 0,
+            "lineSpacing": 2,
+            "strikeThrough": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "ja5edc5a39a748bb95b3d588c1e07e13",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxcomment",
+    "pf": "tempSegSelfComments",
+    "textStyle": {
+        "baseline": 0,
+        "letterSpacing": 0,
+        "lineSpacing": 2,
+        "strikeThrough": false
+    },
+    "tooltip": "",
+    "wType": "Label"
+}

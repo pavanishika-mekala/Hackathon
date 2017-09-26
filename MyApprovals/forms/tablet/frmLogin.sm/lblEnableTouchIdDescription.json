@@ -50,7 +50,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "4712481b9d5f48f5aedeb2ec54b8bf21",
+    "kuid": "ae586dc29a744680a9b8a5ce5cbffa01",
     "name": "kony.ui.Label",
     "parent": "flxEnableTouchIDPopup",
     "pf": "frmLogin",

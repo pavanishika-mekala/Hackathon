@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_d08c687e91814ed08f9e05660e149e82": {
+        "id": "AS_FlexContainer_d08c687e91814ed08f9e05660e149e82",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_ClearSearchTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cae2e35ca5a84217ab07ff12e27fbc49"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bdfd7a015a224f118eeb740635fd14dc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSearch.flxClear.setVisibility(false);\nfrmSearch.flxHide.setVisibility(true);\nfrmSearch.flxSearchContainer.setVisibility(false);\n",
+            "parentId": null
+        }]
+    }
+}

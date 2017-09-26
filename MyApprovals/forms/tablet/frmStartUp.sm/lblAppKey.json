@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "40dp"
+        "value": "3.20%"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "sa08999895d1416ca114298323d2be22",
-    "_text_": "Label",
+    "_skin_": "sf406e4e3c044b0697c610fb6c077d71",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "5.20%"
+        "value": "6.21%"
     },
     "_width_": {
         "type": "ref",
@@ -49,18 +49,12 @@
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "isvisible": true,
-    "kuid": "38888c4757064b2a9b490dd7d8e426b4",
+    "kuid": "ba1a8aa4a369421cb584f205ff30ce56",
     "name": "kony.ui.Label",
-    "parent": "flxLoginRight",
+    "parent": "flxInputAppKey",
     "pf": "frmStartUp",
     "texti18n": "i18n.ess.MyApprovals.frmStartUp.lblAppKey",
     "tooltip": "",
-    "wType": "Label",
-    "zindex": 5
+    "wType": "Label"
 }

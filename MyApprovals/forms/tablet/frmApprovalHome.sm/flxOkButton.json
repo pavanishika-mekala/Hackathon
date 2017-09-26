@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "18.70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sff76ea5c07348e4b138bad2cf9354e8",
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgTick"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxOkButton",
+    "ide_onClick": "AS_FlexContainer_cca990b724a140f3b2ee28f7d33da654",
+    "info": null,
+    "isvisible": true,
+    "kuid": "h163c76bb569431f805b9fb8cbef76e7",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxEmployeeSearch",
+    "pf": "frmApprovalHome",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

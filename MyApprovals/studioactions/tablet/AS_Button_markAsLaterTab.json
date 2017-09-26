@@ -1,0 +1,27 @@
+{
+    "AS_Button_edf435a6e9dd4d559458f3df496d829e": {
+        "id": "AS_Button_edf435a6e9dd4d559458f3df496d829e",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Button_markAsLaterTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegApprovalRequest",
+            "type": "templates",
+            "platform": "",
+            "KUID": "e76fb25d87d542b59a6946cf0c83a42b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__hf59674f35b04b4bb743dea0fcf39156",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.MarkAsLater(context);",
+            "parentId": null
+        }]
+    }
+}

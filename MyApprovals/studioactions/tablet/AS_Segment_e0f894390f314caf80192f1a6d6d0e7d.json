@@ -1,0 +1,29 @@
+{
+    "AS_Segment_e0f894390f314caf80192f1a6d6d0e7d": {
+        "id": "AS_Segment_e0f894390f314caf80192f1a6d6d0e7d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmSelect",
+            "type": "forms",
+            "platform": "",
+            "KUID": "becc36dd3b6e41f7b5ea9d657fbe325c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ed6fe3b43d074b19899caeb84aec7ad9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\nfilterobj.searchDataRowClick()",
+            "parentId": null
+        }]
+    }
+}

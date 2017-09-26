@@ -1,0 +1,24 @@
+{
+    "AS_Form_ef60d6194a9d43a19f381e7ab0da470a": {
+        "id": "AS_Form_ef60d6194a9d43a19f381e7ab0da470a",
+        "type": "ACTION_SEQUENCE",
+        "name": "onPreShowOfNotificationListTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmNotificationsList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "jae51f063a6f496c8bfbd8497876ecd3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__h2e9de577cd34007b3669bc38356953c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_ea3828aab289429d8205d11992131548": {
+        "id": "AS_FlexContainer_ea3828aab289429d8205d11992131548",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_SelectPeopleTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cae2e35ca5a84217ab07ff12e27fbc49"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__g359fd4d912446fe9740fdf8fb2253e7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\n filterobj.onClickPeople();",
+            "parentId": null
+        }]
+    }
+}

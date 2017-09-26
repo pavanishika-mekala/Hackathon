@@ -116,7 +116,7 @@ kony.apps.coe.ess.globalVariables.isNative=true;
 //#ifdef ipad
 	kony.apps.coe.ess.globalVariables.isNativeIpad = true;
 	kony.apps.coe.ess.globalVariables.isNative = true;
-	kony.apps.coe.ess.globalVariables.isNativeTablet = true;
+	//kony.apps.coe.ess.globalVariables.isNativeTablet = true;
 //#endif
 
 //#ifdef windows8
@@ -128,7 +128,7 @@ kony.apps.coe.ess.globalVariables.isNative=true;
 //#ifdef tabrcandroid
 	kony.apps.coe.ess.globalVariables.isNativeAndroidTab = true;
 	kony.apps.coe.ess.globalVariables.isNative = true;
-	kony.apps.coe.ess.globalVariables.isNativeTablet = true;
+	//kony.apps.coe.ess.globalVariables.isNativeTablet = true;
 //#endif
 
 //for native both

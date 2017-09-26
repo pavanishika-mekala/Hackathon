@@ -1,0 +1,20 @@
+{
+    "AS_Button_bafc95ee24c84853b66876124818ef82": {
+        "id": "AS_Button_bafc95ee24c84853b66876124818ef82",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_j6a120ad3e9144f89c05e20630ecd71d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmApprovalRequestDetail.txtareaComments.text === \"\"){\n\ttoastMsg.showToastMsg(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.frmMyAopprovalsHome.isMandatoryComment\"), 3000);\t\n}else{\n\tkony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickReject();\n}",
+            "callbackType": null
+        }]
+    }
+}

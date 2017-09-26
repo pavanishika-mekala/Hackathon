@@ -1,0 +1,24 @@
+{
+    "AS_Form_g5bcd63d65da43be8618921cbb42e79c": {
+        "id": "AS_Form_g5bcd63d65da43be8618921cbb42e79c",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmApprovalHomePostShowActionTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "idba9b019cd64be3aa807f62046fd80f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c88c6360018e4714bb0818310f49681e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.Approvals.ApprovalsHome.PreShow();",
+            "parentId": null
+        }]
+    }
+}

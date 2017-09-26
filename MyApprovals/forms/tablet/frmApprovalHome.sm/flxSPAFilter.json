@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "se5926293712468590f65f1ea45c6ca4",
+    "_top_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgSPAFilter"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSPAFilter",
+    "ide_onClick": "AS_FlexContainer_e1aee0ffb4b24b67921774bcac0b6ad7",
+    "info": null,
+    "isvisible": false,
+    "kuid": "c05ed143ef4146bfb6705ac5a04d8262",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmApprovalHome",
+    "pf": "frmApprovalHome",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 20
+}

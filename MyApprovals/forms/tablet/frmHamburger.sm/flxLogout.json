@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "23%"
+        "value": "20%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -45,10 +45,10 @@
     "id": "flxLogout",
     "info": null,
     "isvisible": true,
-    "kuid": "1ffbf266414e42c99ebceb4b84188c3b",
-    "layouttype": 4,
+    "kuid": "c5f2c1755e38445eae87e5d61b37b638",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCommonHamburger",
+    "parent": "flxOptions",
     "pf": "frmHamburger",
     "snapgridsize": 10,
     "snaptogrid": true,

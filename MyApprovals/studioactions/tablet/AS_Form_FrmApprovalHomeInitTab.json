@@ -1,0 +1,24 @@
+{
+    "AS_Form_e85d336ed119436ea4bfc1419e180340": {
+        "id": "AS_Form_e85d336ed119436ea4bfc1419e180340",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Form_FrmApprovalHomeInitTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "idba9b019cd64be3aa807f62046fd80f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fd8aa78e766d48b1a87ad7c2be963c6a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var WidgetsArray=[\"imgSelection\",\"imgEmployee\",\"imgRequestType\",\"lblEmployeeName\",\"lblShortName\"];\nvar SelectionBehaviourConfig={\"imageIdentifier\":\"imgSelection\",\"selectedStateImage\":\"select_green.png\",\"unselectedStateImage\":\"select.png\"}\nkony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch=new kony.apps.ess.DynamicSegment(kony.apps.ess.Constants.SEGUI_MULTI_SELECT_BEHAVIOR,SelectionBehaviourConfig,3,flxEmployeeSelection,function(){},WidgetsArray);\nfrmApprovalHome.flxScrlImages.add(kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch.getDynamicSegment());\nkony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch.WidgetDataMap={\"lblEmployeeName\":\"username\",\"lblShortName\":\"shortName\"};",
+            "parentId": null
+        }]
+    }
+}
