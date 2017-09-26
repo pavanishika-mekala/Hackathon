@@ -1,0 +1,24 @@
+{
+    "AS_Button_a1073f1e2e9a4f62bc84fb3908f5c53b": {
+        "id": "AS_Button_a1073f1e2e9a4f62bc84fb3908f5c53b",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Btn_onclickActiverequestEmployeeTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "idba9b019cd64be3aa807f62046fd80f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f688f0334df943db90e89e39d82727bd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.DynamicSegmentSetDatabyEmployeeHasApprovalRequests(kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch);\nkony.apps.coe.ess.Approvals.ApprovalsHome.showEmployeeFilter();",
+            "parentId": null
+        }]
+    }
+}

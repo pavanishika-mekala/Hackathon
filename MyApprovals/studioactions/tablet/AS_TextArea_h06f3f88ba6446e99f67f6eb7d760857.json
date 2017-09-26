@@ -1,0 +1,17 @@
+{
+    "AS_TextArea_h06f3f88ba6446e99f67f6eb7d760857": {
+        "id": "AS_TextArea_h06f3f88ba6446e99f67f6eb7d760857",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTextChange_bdfb2f0baaf54868a4cd101e63f6ee41",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmApprovalRequestDetail.txtareaComments.text == \"\"){\n  frmApprovalRequestDetail.txtareaComments.placeholder = \"Type Comments here\";\n}",
+            "callbackType": null
+        }]
+    }
+}

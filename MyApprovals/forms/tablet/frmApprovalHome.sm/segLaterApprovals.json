@@ -1,0 +1,145 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgApproval": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "leave_list.png"
+            },
+            "lblRequesType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Leave Request"
+            },
+            "lblRequestCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "imgApproval": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "leave_list.png"
+            },
+            "lblRequesType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Leave Request"
+            },
+            "lblRequestCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        },
+        {
+            "imgApproval": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "leave_list.png"
+            },
+            "lblRequesType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Leave Request"
+            },
+            "lblRequestCount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "89.40%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segLaterApprovals",
+    "ide_onRowClick": "AS_Segment_ea1647382781400f8f11be029b06c794",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none",
+            "showProgressIndicator": false
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "ib6c0d591b824e82b0784c4dd782ae41",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxLaterApprovals",
+    "pf": "frmApprovalHome",
+    "retainselection": false,
+    "rowTemplateId": "ge9f8a65d6f748fd85a57e5db2fb9e99",
+    "rowcounter": 2,
+    "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
+    "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "flxLaterApprove",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showprogressindicator": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxLaterApprove": "flxLaterApprove",
+        "flxSeparator": "flxSeparator",
+        "imgApproval": "imgApproval",
+        "lblRequesType": "lblRequesType",
+        "lblRequestCount": "lblRequestCount"
+    },
+    "zindex": 1
+}

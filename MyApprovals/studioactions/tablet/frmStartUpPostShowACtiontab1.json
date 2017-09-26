@@ -1,0 +1,24 @@
+{
+    "AS_Form_ef7b4f5011ad4783a18c38dde4d216ee": {
+        "id": "AS_Form_ef7b4f5011ad4783a18c38dde4d216ee",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmStartUpPostShowACtiontab1",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ba304b6fb0e14c089d453221c8a25135"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__i3c8b665f49449eb9b32fc4d83908675",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.loginAnimations().animationQrScreen();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\n",
+            "parentId": null
+        }]
+    }
+}

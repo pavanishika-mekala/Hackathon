@@ -1,0 +1,27 @@
+{
+    "AS_Button_gf9013b571574a29bb7a28fa3e701d6b": {
+        "id": "AS_Button_gf9013b571574a29bb7a28fa3e701d6b",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionforRejectBtnInApprovalHomeTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegApprovalRequest",
+            "type": "templates",
+            "platform": "",
+            "KUID": "e76fb25d87d542b59a6946cf0c83a42b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ab5201ab3151484d9b70770e69c9ab38",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.apps.coe.ess.Approvals.ApprovalsHome.rejectRequest(context);\ntry {\n    var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmApprovalRequestDetail\");\n    if (kony.apps.coe.ess.globalVariables.isSPA) {\n        var selectedApprovalId = frmApprovalHome.segApprovalsList.selecteditems[0].ID\n    } else {\n        var selectedApprovalId = frmApprovalHome.segApprovalsList.selectedRowItems[0].ID;\n    }\n    formController.loadDataAndShowForm(selectedApprovalId)\n} catch (e) {\n    handleError(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.unableToLoadForm\"));\n}",
+            "parentId": null
+        }]
+    }
+}

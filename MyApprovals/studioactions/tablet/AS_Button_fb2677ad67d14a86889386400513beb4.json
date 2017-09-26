@@ -1,0 +1,23 @@
+{
+    "AS_Button_fb2677ad67d14a86889386400513beb4": {
+        "id": "AS_Button_fb2677ad67d14a86889386400513beb4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMultiSelection",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h460abdfd6834be69f5e8deb7f05fa9c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__jf7a4bbab29e40f3a76b5fe46f0f9522",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getCurrentForm().flxOfflineAlert.setVisibility(false);",
+            "parentId": null
+        }]
+    }
+}

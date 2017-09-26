@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_c67a88132a0441728508d7e654ccd73a": {
+        "id": "AS_FlexContainer_c67a88132a0441728508d7e654ccd73a",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_ApplySearchTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearch",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cae2e35ca5a84217ab07ff12e27fbc49"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ee03ff7416104e47aa64dc055a8cf5c1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();",
+            "parentId": null
+        }]
+    }
+}

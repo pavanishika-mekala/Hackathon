@@ -44,7 +44,7 @@
         "value": "50%"
     },
     "children": [
-        "lblTitleOfflineAlert",
+        "CopylblTitleOfflineAlert",
         "flxLine",
         "imgOffline",
         "lblOfflineMessage",
@@ -57,7 +57,7 @@
     "id": "flxOuter",
     "info": null,
     "isvisible": true,
-    "kuid": "6b21634d1e434522a029e73516a297e8",
+    "kuid": "e0e32724edd84201a4dfaedc8f3d35ff",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxOfflineAlert",

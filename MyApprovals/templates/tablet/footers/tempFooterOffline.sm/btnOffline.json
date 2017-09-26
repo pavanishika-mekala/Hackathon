@@ -22,10 +22,10 @@
     "displaytext": true,
     "focusskin": "s01a3de39ada45edbb7d4d4f3b474997",
     "id": "btnOffline",
-    "ide_onClick": "AS_Button_bda93a4fa97149d9a57992f2df554af4",
+    "ide_onClick": "AS_Button_h7c354a1223742bea8a16fab76106f3b",
     "info": null,
     "isvisible": true,
-    "kuid": "5243b6dce166404694d7f2a509c35757",
+    "kuid": "ef08215ecebf482581acc86a17b71d21",
     "margininpixel": false,
     "name": "kony.ui.Button",
     "paddInPixel": [

@@ -1,0 +1,29 @@
+{
+    "AS_Segment_ea1647382781400f8f11be029b06c794": {
+        "id": "AS_Segment_ea1647382781400f8f11be029b06c794",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmApprovalHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "idba9b019cd64be3aa807f62046fd80f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__j93077c1795d408791940cf9c7eb7c3e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var selectedItem=eventobject.selectedRowItems[0]\nvar formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmRequestedList\");\nvar formConfig={\"Type\":\"RequestType\",\"selectedItem\":selectedItem};\nformController.loadDataAndShowForm(formConfig);\n\n",
+            "parentId": null
+        }]
+    }
+}

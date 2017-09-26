@@ -1,0 +1,18 @@
+{
+    "AS_Button_aa4454c4be1b480b8936c88a85c96579": {
+        "id": "AS_Button_aa4454c4be1b480b8936c88a85c96579",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Button_onClickOfEditBtn_DelegationDetailsTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_gb72cd8ae8fd4e489ce99851a8f9ad7c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmDelegationRequestDetails.Actions.getInstance().onClickOfEditBtn();",
+            "callbackType": null
+        }]
+    }
+}

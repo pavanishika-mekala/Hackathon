@@ -5,11 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "21%"
+        "value": "55.56%"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "118dp"
     },
     "_margin_": [
         0,
@@ -27,11 +27,11 @@
     "_src_": "touchwithbg.png",
     "_top_": {
         "type": "string",
-        "value": "20%"
+        "value": "46.15%"
     },
     "_width_": {
         "type": "string",
-        "value": "50dp"
+        "value": "150dp"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -51,9 +51,9 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "75eecae9285a4a30b5742f1234a05e5d",
+    "kuid": "b92193715aad4766bb10d13f8e11381a",
     "name": "kony.ui.Image2",
-    "parent": "flxLoginLeft",
+    "parent": "flxTouchId",
     "pf": "frmLogin",
     "srcType": 1,
     "wType": "Image",

@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_b3324dad800c4b6c9eb6e551ec88cd92": {
+        "id": "AS_FlexContainer_b3324dad800c4b6c9eb6e551ec88cd92",
+        "type": "ACTION_SEQUENCE",
+        "name": "flxLoginOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ba304b6fb0e14c089d453221c8a25135"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a893763ece944ebdb684b45274a8625c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.QRCode()).NavigateToLoginForm();",
+            "parentId": null
+        }]
+    }
+}

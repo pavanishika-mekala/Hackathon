@@ -19,8 +19,8 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
-        "platform": "ipad",
+        "channel": "mobile",
+        "platform": "iphone",
         "templateType": "popups",
         "topLevelBox": null
     },
@@ -29,7 +29,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "009b19f391814381af27c294bc3ae6ee",
+    "kuid": "f3b0356297014312bae75a994b675171",
     "margininpixel": false,
     "name": "kony.ui.Image2",
     "paddinginpixel": false,

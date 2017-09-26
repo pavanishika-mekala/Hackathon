@@ -21,7 +21,7 @@
     "allboxes": [],
     "canUpdateUI": true,
     "children": [
-        "hboxfootertab"
+        "HboxOuter"
     ],
     "containerId": true,
     "containerweight": 100,
@@ -37,7 +37,7 @@
         "formTransition": "None"
     },
     "isvisible": true,
-    "kuid": "6669ef94c0dc4217acb9950a89a4bb0e",
+    "kuid": "a469ea4b57ad4efab4f267a8a5aa68ad",
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "outtransitionconfig": {

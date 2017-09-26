@@ -15,12 +15,12 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s1993efc7b404fc4a22df100419a3786",
+    "_skin_": "s1993efc7b404fc4a22df100419a3784",
     "_title_": null,
     "addWidgetsdone": false,
     "allboxes": [],
     "android": {
-        "displayOrientation": 2,
+        "ide_onDeviceBack": "AS_Form_ee75e66df892484bb86be3efe8c04d7f",
         "needAppMenu": false,
         "psp": {
             "windowSoftInputMode": 2
@@ -29,37 +29,32 @@
     "canUpdateUI": true,
     "children": [
         "flxMain",
-        "flxErrorSpace",
-        "flxAppLogo",
-        "flxHeaderImage",
-        "lblHeading",
-        "flxWhite",
-        "imgOR",
-        "flxSignLbl",
-        "flxBottomKonyLogo",
-        "flxPopups"
+        "flxPopups",
+        "flxSplash",
+        "flxAfterSplash"
     ],
     "containerweight": 100,
-    "currentLocale": "en",
+    "controllerInfo": {
+        "default": {
+            "channel": "tablet"
+        }
+    },
+    "currentLocale": "nl_BE",
     "desktopweb": {
         "needAppMenu": false
     },
     "device": "iPad3",
-    "displayorientation": 2,
+    "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
-    "forks": [
-        "windows8"
-    ],
     "id": "frmLogin",
-    "ide_init": "AS_Form_769ba3234a314456837e470ea5e71e73",
-    "ide_postShow": "AS_Form_684425209b374159b462553849035d7d",
-    "ide_preShow": "AS_Form_735221bc49434d329940f2a13deaabf8",
+    "ide_init": "AS_Form_iaf7e771c16644a1b84be83d7c491b7d",
+    "ide_postShow": "AS_Form_c13f24807678423ba1d60f23e6c9ced1",
+    "ide_preShow": "AS_Form_a2b4f08dbaa84111ab864a50822a51c9",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
     "ipad": {
-        "displayOrientation": 2,
         "needAppMenu": false,
         "psp": {
             "inputAccessoryViewType": 1,
@@ -82,14 +77,14 @@
         "titleBar": false
     },
     "isvisible": true,
-    "kuid": "b43279e60a264f0696dad83ff9674443",
+    "kuid": "fd7b5eea0c904cc2b51c5f2ebb89a011",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "ipad",
-    "prevDevice": "GalaxyTab7",
-    "prevPlatform": "tabrcandroid",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
     "shellCSS": "iOS_iPad3",
     "snapgridsize": 10,

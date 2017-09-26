@@ -1,0 +1,63 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "sf0ca675ae094defa063a7f47accf8e8",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "txtSearchDelegate",
+    "ide_onDone": "AS_TextField_d7851692192f4afaa2602f611db15e32",
+    "ide_onTextChange": "AS_TextField_i5bb6eaccda24ba280276c8627c68294",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "e30639fbc561468c9c6963f5f3635020",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxSearchDelegate",
+    "pf": "frmEmployeeLookUp",
+    "placeholderi18n": "i18n.ess.myApprovals.frmTabListview.SearchByName",
+    "placeholderskin": "sd80b0ef6a174f33bf33f5ea667f229d",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

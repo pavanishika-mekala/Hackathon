@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "107.74%"
+        "value": "40%"
     },
     "_left_": {
         "type": "string",
-        "value": "2%"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -22,18 +22,17 @@
         0,
         0
     ],
-    "_placeholder_": "",
-    "_skin_": "s55ba5f10298484aacbf9233cad4cb18",
+    "_placeholder_": "Type Service URL",
+    "_skin_": "s07135ddbd614ac884c7c4a40a6d7c5d",
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "40%"
     },
     "_width_": {
         "type": "string",
-        "value": "90%"
+        "value": "97%"
     },
-    "android": {},
     "autocapitalize": "none",
     "autocomplete": false,
     "autocorrect": false,
@@ -43,21 +42,17 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
-    "focusskin": "s55ba5f10298484aacbf9233cad4cb18",
+    "focusskin": "s3fa98f769714df2aa9a79cd3fb4f9d9",
     "id": "txtServiceUrl",
     "info": null,
     "isvisible": true,
     "keyboardtype": "A",
-    "kuid": "56d9f9d22bed4477b453c1f3bac184e0",
+    "kuid": "a6100e7adf9a4d0095851279b03d7c3e",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "paddinginpixel": false,
-    "parent": "flxServiceUrl",
+    "parent": "flxInputServiceUrl",
     "pf": "frmStartUp",
-    "placeholderi18n": "i18n.ess.myApprovals.login.username.tab",
-    "placeholderskin": "s55ba5f10298484aacbf9233cad4cb18",
     "securetextentry": false,
-    "texti18n": "i18n.ess.myApprovalsTab.loginQR.TypeServiceUrl",
     "textinputmode": "A",
     "viewtype": "default",
     "wType": "TextField",

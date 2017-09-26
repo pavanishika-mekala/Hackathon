@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "23%"
+        "value": "20%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -43,13 +43,13 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxSettings",
-    "ide_onClick": "AS_FlexContainer_bfce80e21def465cb6f9b7a7c4043a71",
+    "ide_onClick": "AS_FlexContainer_f0a9032a7c4041a7ba4dd92e63cf3c09",
     "info": null,
     "isvisible": true,
-    "kuid": "cd73b24b1ac444af96f203d513377883",
-    "layouttype": 4,
+    "kuid": "c5cbe94fabe94991802c9f92b1af7690",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCommonHamburger",
+    "parent": "flxOptions",
     "pf": "frmHamburger",
     "snapgridsize": 10,
     "snaptogrid": true,

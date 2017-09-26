@@ -1,0 +1,18 @@
+{
+    "AS_Button_d51c43415d0c4a61ab3776a99e97e755": {
+        "id": "AS_Button_d51c43415d0c4a61ab3776a99e97e755",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Button_onClickOfStopBtn_DelegationDetailsTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_cdb7f139113c436090d444b44f382461",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmDelegationRequestDetails.Actions.getInstance().onClickOfStopBtn();",
+            "callbackType": null
+        }]
+    }
+}

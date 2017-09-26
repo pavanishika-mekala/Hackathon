@@ -1,0 +1,30 @@
+{
+    "AS_Label_a4a5424b5a9047229a060a2863fba517": {
+        "id": "AS_Label_a4a5424b5a9047229a060a2863fba517",
+        "type": "ACTION_SEQUENCE",
+        "name": "frmRequestedListSelectonClickTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmRequestedList",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f3667525a905489b91f62480a4d0b626"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__da29afe313b94ae897b8679954ee2472",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{kony.apps.coe.ess.Approvals.RequestedLists.MakeSegmentMultipleSelect();}\ncatch(e){\n  alert(e.message);\n}",
+            "parentId": null
+        }]
+    }
+}

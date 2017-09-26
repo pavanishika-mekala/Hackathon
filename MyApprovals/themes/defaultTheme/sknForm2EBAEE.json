@@ -1,5 +1,5 @@
 {
-  "background_color": "00aaffff",
+  "background_color": "2ebaeeff",
   "bg_type": "one",
   "border_color": "ffffffff",
   "desktopweb": {
@@ -31,28 +31,6 @@
     "top_left_border_style": "plain",
     "top_right_border_color": "ffffffff",
     "top_right_border_style": "plain"
-  },
-  "ipad": {
-    "background_color": {
-      "angle": 180,
-      "colors": [
-        "2ebaeeff",
-        "2ebaeeff",
-        "ffffffff",
-        "ffffffff"
-      ],
-      "cs": [
-        0,
-        28,
-        54,
-        100
-      ],
-      "gradientType": "toBottom",
-      "gt": "linear"
-    },
-    "background_style": "linear",
-    "bg_type": "ms_gradient",
-    "isForked": true
   },
   "isDefaultSkin": false,
   "kiosk": {

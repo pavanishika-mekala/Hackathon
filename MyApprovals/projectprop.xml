@@ -547,7 +547,7 @@
     <attributes name="WRITE_CONTACTS" value="false"/>
     <attributes name="androidscreenanydensity" value="true"/>
     <attributes name="androidscreenlarge" value="true"/>
-    <attributes name="ipadportraitmodekey" value="false"/>
+    <attributes name="ipadportraitmodekey" value="true"/>
     <attributes name="INTERNET" value="true"/>
     <attributes name="pathpatternkey" value=""/>
     <attributes name="wp10initialRotationPreferenceKey" value="landscape"/>

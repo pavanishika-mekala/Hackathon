@@ -1,0 +1,18 @@
+{
+    "AS_Button_j72b67e6ef0f4c898ff557905987d08f": {
+        "id": "AS_Button_j72b67e6ef0f4c898ff557905987d08f",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForBackBtnInIsLaterSearchFormTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a3f4f9fe24f448bdabbfa6fd112f8a72",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApprovalHome.show();\nfrmRequestedList.destroy();",
+            "callbackType": null
+        }]
+    }
+}
