@@ -75,6 +75,7 @@
     "seconds": null,
     "selectdate": "//2016",
     "viewconfig": {
+        "gridConfig": {},
         "gridconfig": ""
     },
     "viewtype": "default",
