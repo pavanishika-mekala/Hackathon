@@ -122,7 +122,7 @@
     <attributes name="wp10pfxkey" value=""/>
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="MOUNT_FORMAT_FILESYSTEMS" value="false"/>
-    <attributes name="lastmodifiedtime" value="1503909881937"/>
+    <attributes name="lastmodifiedtime" value="1506403261915"/>
     <attributes name="wp10microphone" value="false"/>
     <attributes name="ID_REQ_NFC" value="false"/>
     <attributes name="devicemsg" value="This device is currently not supported"/>
@@ -142,6 +142,7 @@
     <attributes name="FACTORY_TEST" value="false"/>
     <attributes name="splashlogokey" value=""/>
     <attributes name="wp81stoastcapablekey" value="Not set"/>
+    <attributes name="windesktop_disableapplicationminimize" value="false"/>
     <attributes name="SEND_SMS" value="false"/>
     <attributes name="iphonebundleidentifierkey" value="com.kony.myleave"/>
     <attributes name="SUBSCRIBED_FEEDS_READ" value="false"/>
@@ -276,7 +277,7 @@
     <attributes name="wp8cycle8key" value=""/>
     <attributes name="winphn8bgagentclassname" value=""/>
     <attributes name="wp10phoneCall" value="false"/>
-    <attributes name="ipadlandscapemodekey" value="true"/>
+    <attributes name="ipadlandscapemodekey" value="false"/>
     <attributes name="BLUETOOTH" value="false"/>
     <attributes name="CHANGE_NETWORK_STATE" value="false"/>
     <attributes name="CHANGE_WIFI_MULTICAST_STATE" value="false"/>
@@ -445,6 +446,7 @@
     <attributes name="blockedChatMessages" value="false"/>
     <attributes name="win8packagelogokey" value=""/>
     <attributes name="WAKE_LOCK" value="false"/>
+    <attributes name="winDisableApplicationScreenshot" value="false"/>
     <attributes name="win8lockscreennotificationskey" value="Not set"/>
     <attributes name="WP8_ID_CAP_WALLET_PAYMENTINSTRUMENTS" value="false"/>
     <attributes name="ID_CAP_APPOINTMENTS" value="true"/>
@@ -547,7 +549,7 @@
     <attributes name="WRITE_CONTACTS" value="false"/>
     <attributes name="androidscreenanydensity" value="true"/>
     <attributes name="androidscreenlarge" value="true"/>
-    <attributes name="ipadportraitmodekey" value="false"/>
+    <attributes name="ipadportraitmodekey" value="true"/>
     <attributes name="INTERNET" value="true"/>
     <attributes name="pathpatternkey" value=""/>
     <attributes name="wp10initialRotationPreferenceKey" value="landscape"/>
