@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_f3f2f5bd29b341caa986cccdc52d7f9a": {
+        "id": "AS_FlexContainer_f3f2f5bd29b341caa986cccdc52d7f9a",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionflxMyProfileOnClickTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cfcb66dc01e54e17baebbffc7ddc6146"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d6c1809e87a8421d9980955c9d5a9c20",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myProfile\");",
+            "parentId": null
+        }]
+    }
+}
