@@ -38,7 +38,7 @@
     "context": {
         "channel": "tablet",
         "formID": "frmTeamView",
-        "platform": "ipad",
+        "platform": "tabrcandroid",
         "templateType": "forms",
         "topLevelBox": null
     },

@@ -20,9 +20,9 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__g2f235c5e350407d83d06760c56ce7a2",
+            "id": "ADD_SNIPPET__bcece1f4f01e41188af04db0c3829dbc",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "var obj=new kony.apps.coe.myLeave.search();\nobj.onDone2();",
+            "codeSnippet": "(new kony.apps.coe.myLeave.searchStatus()).rowClick();",
             "parentId": null
         }]
     }

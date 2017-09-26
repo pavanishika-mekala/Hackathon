@@ -22,7 +22,7 @@
     "_text_": "Rejected",
     "_top_": {
         "type": "string",
-        "value": "20.80%"
+        "value": "20.96%"
     },
     "_width_": {
         "type": "ref",
@@ -38,7 +38,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "50.03%"
     },
     "containerweight": 100,
     "contentalignment": 4,

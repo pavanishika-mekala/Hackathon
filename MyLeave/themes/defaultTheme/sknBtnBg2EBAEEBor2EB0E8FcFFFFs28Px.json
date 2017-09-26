@@ -18,12 +18,13 @@
       "y": 0
     }
   },
-  "background_color": "5fc3ebff",
+  "background_color": "00aaffff",
   "bg_type": "one",
-  "border_color": "ffffffff",
-  "border_style": "plain",
+  "border_color": "00aaffff",
+  "border_radius": 30,
+  "border_style": "custom",
   "border_type": 0,
-  "border_width": 0,
+  "border_width": 2,
   "desktopweb": {
     "background_color": "2ebaeeff",
     "bg_type": "one",
@@ -64,25 +65,6 @@
   "font_size": 148,
   "font_style": "normal",
   "font_weight": "normal",
-  "ipad": {
-    "background_color": "2ebaeeff",
-    "bg_type": "one",
-    "border_color": "2eb0e8ff",
-    "border_radius": 100,
-    "border_style": "custom",
-    "border_type": 0,
-    "border_width": 2,
-    "font_name": "Helvetica",
-    "font_size": 100,
-    "isForked": true,
-    "text_shadow": {
-      "br": 0,
-      "color": "000000ff",
-      "nm": 0,
-      "x": 0,
-      "y": 0
-    }
-  },
   "iphone": {
     "background_color": "2ebaeeff",
     "bg_type": "one",
@@ -251,9 +233,6 @@
     "top_right_border_color": "ffffffff",
     "top_right_border_style": "plain",
     "top_right_border_width": 0
-  },
-  "tabrcandroid": {
-    "isForked": true
   },
   "wType": "Button",
   "watchos": {

@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "43.63%"
+        "value": "45%"
     },
     "_margin_": [
         0,
@@ -22,11 +22,11 @@
     "_skin_": "s6dc0f85ca9a402d99e8141b6b27c4d8",
     "_top_": {
         "type": "string",
-        "value": "12.9%"
+        "value": "12.90%"
     },
     "_width_": {
         "type": "string",
-        "value": "25%"
+        "value": "20%"
     },
     "allboxes": [],
     "autogrowmode": 0,

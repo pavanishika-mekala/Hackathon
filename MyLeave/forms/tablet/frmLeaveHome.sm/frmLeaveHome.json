@@ -44,7 +44,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPad3",
+    "device": "GoogleNexus10",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
@@ -89,11 +89,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "ipad",
-    "prevDevice": "iPad3",
+    "platform": "tabrcandroid",
+    "prevDevice": "GalaxyTab7",
     "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "and_Tab_GoogleNexus10",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

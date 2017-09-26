@@ -43,8 +43,10 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sa820447eb3549b7864762118918ca0b"
+    },
     "displaytext": true,
-    "focusskin": "sa820447eb3549b7864762118918ca0b",
     "id": "btnBack",
     "ide_onClick": "AS_Button_e63f9b06ce6743e2b0874b7484ea0640",
     "info": null,

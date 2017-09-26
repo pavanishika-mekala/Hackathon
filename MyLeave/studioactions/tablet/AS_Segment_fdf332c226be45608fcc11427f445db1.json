@@ -20,7 +20,7 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__a719f2f9854e4ea187d158f6ab765726",
+            "id": "ADD_SNIPPET__e0269747f320451799de3899708f252b",
             "type": "ADD_SNIPPET",
             "codeSnippet": "var obj = new kony.apps.coe.ess.myLeave.searchLeaveType();\nobj.rowClick(); ",
             "parentId": null
