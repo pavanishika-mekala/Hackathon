@@ -44,8 +44,11 @@
             }
         }
     },
+    "device": "iPad3",
     "displayorientation": 3,
     "enabledforidletimeout": false,
+    "footer": "popupOfflineAlert_footer",
+    "footersId": "g14a33703ac142ec99b585f0886c07e9",
     "id": "popupOfflineAlert",
     "info": null,
     "initdone": false,
@@ -56,8 +59,11 @@
     "kuid": "f670a5a976b746cdb9e53fd4d8c8926f",
     "name": "kony.ui.Popup",
     "paddinginpixel": false,
+    "platform": "ipad",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone6",
+    "shellCSS": "iOS_iPad3",
     "titlebar": true,
     "transparencybehindthepopup": 60,
     "wType": "Popup"

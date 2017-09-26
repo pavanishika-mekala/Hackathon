@@ -16,7 +16,7 @@
     ],
     "_percent_": true,
     "_position_": 3,
-    "_skin_": "s658edb7a6374fe0bad82c60618d1c9e",
+    "_skin_": "s187f9a7ee83419fac48d997c098107d",
     "allboxes": [],
     "bounces": false,
     "canUpdateUI": true,
@@ -46,7 +46,7 @@
     "scrolldirection": 2,
     "scrollingevents": null,
     "showscrollbars": false,
-    "totalWt": 90,
+    "totalWt": 100,
     "wType": "ScrollBox",
     "widgetalignment": 5
 }
