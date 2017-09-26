@@ -413,9 +413,17 @@ hamburgerMenuItemsShow = function() {
         //#ifdef android
        kony.apps.ess.deepLinkingSSO.appExistedOrNot();
         //#else
+		//#ifdef tabrcandroid
+		kony.apps.ess.deepLinkingSSO.appExistedOrNot();
+		//#else
+		//#ifdef ipad
+		kony.apps.ess.deepLinkingSSO.appExistedOrNot();
+		//#else
         this.changeHamburgerMenuItemsVisibility();
         //#endif
         //#endif
+      	//#endif
+      	//#endif
     } else {
         this.changeHamburgerMenuItemsVisibility();
     }
