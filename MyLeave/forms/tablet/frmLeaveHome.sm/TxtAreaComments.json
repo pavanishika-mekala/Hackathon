@@ -53,6 +53,7 @@
     "containerweight": 100,
     "contentalignment": 1,
     "disabledSkins": {},
+    "focusskin": "s4fc3ab63e004cc3a97d672e0b83a420",
     "id": "TxtAreaComments",
     "ide_onTouchStart": "AS_TextArea_af3f5e4f2f764db8abdd5bb553e75128",
     "info": null,

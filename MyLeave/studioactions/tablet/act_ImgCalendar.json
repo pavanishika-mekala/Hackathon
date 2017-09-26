@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_ff711569feb540259c37b0e1b153afd0": {
+        "id": "AS_FlexContainer_ff711569feb540259c37b0e1b153afd0",
+        "type": "ACTION_SEQUENCE",
+        "name": "act_ImgCalendar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveBalance",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a6f6e3fc6e2540e7b04f8ab5030946e8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__de8e20b9c30440d3af10add3510494b1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.myLeave.search();\nobj.clear();\nfrmSearchLog.show();",
+            "parentId": null
+        }]
+    }
+}
