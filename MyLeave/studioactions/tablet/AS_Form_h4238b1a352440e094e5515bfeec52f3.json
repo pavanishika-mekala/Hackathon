@@ -1,0 +1,18 @@
+{
+    "AS_Form_h4238b1a352440e094e5515bfeec52f3": {
+        "id": "AS_Form_h4238b1a352440e094e5515bfeec52f3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTeamView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "da651f17c18d44369e8d8836b21764a0"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

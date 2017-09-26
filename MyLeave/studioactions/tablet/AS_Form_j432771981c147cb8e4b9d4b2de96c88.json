@@ -1,0 +1,23 @@
+{
+    "AS_Form_j432771981c147cb8e4b9d4b2de96c88": {
+        "id": "AS_Form_j432771981c147cb8e4b9d4b2de96c88",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchLeaveType",
+            "type": "forms",
+            "platform": "",
+            "KUID": "dbe262ca2d9d4389b8cd33831514dfc4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ea39aec4fa5746cfab32eefd0c15232d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in frmSearchLeaveType--\");",
+            "parentId": null
+        }]
+    }
+}

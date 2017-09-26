@@ -1,0 +1,29 @@
+{
+    "AS_Segment_g6f506353a86469fa49f2fb0edc4e15d": {
+        "id": "AS_Segment_g6f506353a86469fa49f2fb0edc4e15d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmSearchLeaveType",
+            "type": "forms",
+            "platform": "",
+            "KUID": "dbe262ca2d9d4389b8cd33831514dfc4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cd2db0d46bd748e3925a42da24b51320",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.ess.myLeave.searchLeaveType();\nobj.rowClick(); ",
+            "parentId": null
+        }]
+    }
+}

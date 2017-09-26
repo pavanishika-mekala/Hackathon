@@ -1,0 +1,23 @@
+{
+    "AS_Form_ad08fad789c449cf9261e19998b4215d": {
+        "id": "AS_Form_ad08fad789c449cf9261e19998b4215d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveWallet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d56acef7fe31412086f0f32d493f51a3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d52ee8d478e64fb3831a9cb75785ebf4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button in frmLeaveWallet--\");",
+            "parentId": null
+        }]
+    }
+}

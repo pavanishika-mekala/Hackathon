@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_j7134d1e82d4498bb4d421ad92ce3bdf": {
+        "id": "AS_FlexContainer_j7134d1e82d4498bb4d421ad92ce3bdf",
+        "type": "ACTION_SEQUENCE",
+        "name": "act_balCalendar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveBalance",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a6f6e3fc6e2540e7b04f8ab5030946e8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d65152bf06014980ab9cd35931f47116",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveHome.show();",
+            "parentId": null
+        }]
+    }
+}

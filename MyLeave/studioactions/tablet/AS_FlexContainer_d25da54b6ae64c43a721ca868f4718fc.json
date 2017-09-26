@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_d25da54b6ae64c43a721ca868f4718fc": {
+        "id": "AS_FlexContainer_d25da54b6ae64c43a721ca868f4718fc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "bdde0d9722fd4f2e8d8a28fb92c20f10"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_bbf71286732f47d584d3c858dc178d7e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.NavigationAnimations().onClickReconfigure();\n\n\n\n",
+            "callbackType": null
+        }]
+    }
+}

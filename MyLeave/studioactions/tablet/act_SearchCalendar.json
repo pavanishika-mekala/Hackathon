@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_af97ef58259d4d1d99f54825ab6a1221": {
+        "id": "AS_FlexContainer_af97ef58259d4d1d99f54825ab6a1221",
+        "type": "ACTION_SEQUENCE",
+        "name": "act_SearchCalendar",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchLog",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fe318b6be21c4b449c848d6072b0cd84"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ca5af2fd9ee648e68993dca8334de3ae",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.showLeaveHome();",
+            "parentId": null
+        }]
+    }
+}
