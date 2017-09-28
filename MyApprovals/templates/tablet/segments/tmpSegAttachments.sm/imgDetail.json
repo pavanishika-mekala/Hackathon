@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "30dp"
+        "value": "40dp"
     },
     "_left_": {
         "type": "string",
@@ -31,7 +31,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "25dp"
+        "value": "35dp"
     },
     "canUpdateUI": true,
     "centery": {
@@ -42,7 +42,6 @@
     "containerweight": 100,
     "context": {
         "channel": "tablet",
-        "formID": "tmpSegAttachments",
         "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
