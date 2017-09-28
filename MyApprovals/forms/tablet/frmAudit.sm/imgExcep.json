@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "40px"
+        "value": "55px"
     },
     "_margin_": [
         0,
@@ -23,7 +23,7 @@
     "_src_": "alert_icon.png",
     "_width_": {
         "type": "string",
-        "value": "45px"
+        "value": "60px"
     },
     "canUpdateUI": true,
     "centerx": {
