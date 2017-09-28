@@ -51,10 +51,10 @@
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
-    "background_color": "2ebaefff",
+    "background_color": "00aaffff",
     "bg_type": "one",
     "font_name": "Helvetica",
-    "font_size": 100,
+    "font_size": 120,
     "isForked": true,
     "text_shadow": {
       "br": 0,
@@ -201,10 +201,10 @@
     "isForked": false
   },
   "tabrcandroid": {
-    "background_color": "2ebaefff",
+    "background_color": "00aaffff",
     "bg_type": "one",
     "font_name": "Helvetica",
-    "font_size": 100,
+    "font_size": 120,
     "isForked": true,
     "text_shadow": {
       "br": 0,
