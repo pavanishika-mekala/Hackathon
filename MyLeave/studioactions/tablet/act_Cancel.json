@@ -1,0 +1,24 @@
+{
+    "AS_Button_cc1732ef1ceb4719805682b2b49aaa40": {
+        "id": "AS_Button_cc1732ef1ceb4719805682b2b49aaa40",
+        "type": "ACTION_SEQUENCE",
+        "name": "act_Cancel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLeaveRequestDetails",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a63e769512d4473dba317999596660d4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d65d56c4d5f54beda2536cc1212c8683",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var obj = new kony.apps.coe.ess.myLeave.leaveRequestDetailsUI();\nobj.onClickCancel();",
+            "parentId": null
+        }]
+    }
+}

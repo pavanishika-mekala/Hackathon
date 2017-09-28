@@ -1,0 +1,25 @@
+{
+    "AS_Button_aa746fbe5a264b828ad8003de3de5667": {
+        "id": "AS_Button_aa746fbe5a264b828ad8003de3de5667",
+        "type": "ACTION_SEQUENCE",
+        "name": "actions_BtnOffline",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f5021e86ef384afca52c13c057b5f87e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0349aa0137d24461a35abc3b9c88d2f7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getCurrentForm().flxOfflineAlert.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

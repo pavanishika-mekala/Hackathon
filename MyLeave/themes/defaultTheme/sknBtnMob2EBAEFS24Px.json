@@ -32,9 +32,6 @@
   "ipad": {
     "isForked": true
   },
-  "iphone": {
-    "isForked": true
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "isForked": true
