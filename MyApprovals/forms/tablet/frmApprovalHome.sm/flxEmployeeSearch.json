@@ -45,7 +45,7 @@
     "enablescrolling": true,
     "id": "flxEmployeeSearch",
     "info": null,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "ie05c3a1b6e84f3487be63fa64a33801",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

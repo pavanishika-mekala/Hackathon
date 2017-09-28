@@ -32,11 +32,11 @@
         "flxHome"
     ],
     "containerweight": 100,
-    "currentLocale": "default",
+    "currentLocale": "nl_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPad3",
+    "device": "iPadMini",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "footer": "frmApprovalHome_footer",
@@ -86,7 +86,7 @@
     "prevDevice": "iPad3",
     "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "iOS_iPadMini",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {
