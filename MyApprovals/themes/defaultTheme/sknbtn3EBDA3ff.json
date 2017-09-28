@@ -61,7 +61,8 @@
   "ipad": {
     "background_color": "6ebeaaff",
     "bg_type": "one",
-    "font_size": 114,
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 134,
     "isForked": true,
     "text_shadow": {
       "br": 0,
@@ -327,7 +328,8 @@
   "tabrcandroid": {
     "background_color": "6ebeaaff",
     "bg_type": "one",
-    "font_size": 114,
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 134,
     "isForked": true,
     "text_shadow": {
       "br": 0,

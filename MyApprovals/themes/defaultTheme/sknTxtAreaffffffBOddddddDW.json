@@ -29,7 +29,13 @@
   "font_size": 140,
   "font_style": "normal",
   "font_weight": "normal",
+  "ipad": {
+    "isForked": true
+  },
   "isDefaultSkin": false,
   "kuid": "s13792883f42474a94408f63d9c3eb81",
+  "tabrcandroid": {
+    "isForked": true
+  },
   "wType": "TextArea"
 }
