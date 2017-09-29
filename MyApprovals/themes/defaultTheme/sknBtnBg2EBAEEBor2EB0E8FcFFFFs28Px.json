@@ -64,6 +64,18 @@
   "font_size": 148,
   "font_style": "normal",
   "font_weight": "normal",
+  "ipad": {
+    "background_color": "00aaffff",
+    "bg_type": "one",
+    "border_color": "00aaffff",
+    "border_radius": 100,
+    "border_style": "custom",
+    "border_type": 0,
+    "border_width": 2,
+    "font_name": "AvenirLTStd-Medium",
+    "font_size": 120,
+    "isForked": true
+  },
   "iphone": {
     "background_color": "2ebaeeff",
     "bg_type": "one",
@@ -234,6 +246,15 @@
     "top_right_border_width": 0
   },
   "tabrcandroid": {
+    "background_color": "00aaffff",
+    "bg_type": "one",
+    "border_color": "00aaffff",
+    "border_radius": 100,
+    "border_style": "custom",
+    "border_type": 0,
+    "border_width": 2,
+    "font_name": "AvenirLTStd-Medium",
+    "font_size": 120,
     "isForked": true
   },
   "wType": "Button",

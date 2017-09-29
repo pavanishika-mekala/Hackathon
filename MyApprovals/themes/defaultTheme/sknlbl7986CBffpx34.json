@@ -1,20 +1,10 @@
 {
-  "android": {
-    "font_name": "AvenirLTStd-Roman",
-    "font_size": 121,
-    "isForked": false
-  },
   "background_color": "1d265200",
   "bg_type": "one",
   "border_color": "424242ff",
   "border_style": "plain",
   "border_type": 0,
   "border_width": 0,
-  "desktopweb": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
   "fontSizeInPx": false,
   "font_color": "6ebeaaff",
   "font_name": "Helvetica",
@@ -23,75 +13,15 @@
   "font_weight": "normal",
   "ipad": {
     "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
-  "iphone": {
-    "font_name": "AvenirLTStd-Roman",
-    "font_size": 121,
-    "isForked": false
+    "font_size": 141,
+    "isForked": true
   },
   "isDefaultSkin": false,
-  "kiosk": {
-    "font_name": "GenericMonospace",
-    "font_size": 121,
-    "isForked": false
-  },
   "kuid": "s0d1677c35614817941a05703fea8efa",
-  "spaan": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
-  "spaandroidtablet": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
-  "spabb": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
-  "spaip": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
-  "spaipad": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
-  "spawindowstablet": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
-  "spawinphone8": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
   "tabrcandroid": {
     "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
+    "font_size": 141,
+    "isForked": true
   },
-  "wType": "Label",
-  "watchos": {
-    "font_name": "Helvetica",
-    "font_size": 121,
-    "isForked": false
-  },
-  "windows8": {
-    "font_name": "GenericMonospace",
-    "font_size": 121,
-    "isForked": false
-  },
-  "winphone8": {
-    "font_name": "GenericMonospace",
-    "font_size": 121,
-    "isForked": false
-  }
+  "wType": "Label"
 }
