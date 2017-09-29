@@ -30,6 +30,7 @@
     "containerId": true,
     "containerweight": 100,
     "enablescrolling": true,
+    "focusskin": "s57dea6bc3b64576af1207b699681ac9",
     "id": "flxSegRequests",
     "info": null,
     "isTemplate": true,

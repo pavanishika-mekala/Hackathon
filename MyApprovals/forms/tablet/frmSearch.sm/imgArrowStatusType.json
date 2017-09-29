@@ -25,15 +25,15 @@
     },
     "_skin_": "sda0c04ae5814098a8111842b264a413",
     "_src_": "arrow.png",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_width_": {
         "type": "string",
         "value": "50dp"
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "context": {
         "channel": "tablet",

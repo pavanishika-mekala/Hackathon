@@ -5,11 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "15%"
+        "value": "20%"
     },
     "_left_": {
         "type": "string",
-        "value": "22%"
+        "value": "23%"
     },
     "_margin_": [
         0,
@@ -31,7 +31,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "7%"
+        "value": "5%"
     },
     "canUpdateUI": true,
     "containerId": true,

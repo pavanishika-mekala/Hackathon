@@ -111,6 +111,11 @@
     "selectedsectionindex": null,
     "selectimage": "tick_active.png",
     "selectionbehavior": "multiselect",
+    "selectionbehaviorconfig": {
+        "imageIdentifier": "imgSelectionIndicator",
+        "selectedStateImage": "tick_active.png",
+        "unselectedStateImage": "tick_inactive.png"
+    },
     "selectionindicator": "imgSelectionIndicator",
     "separatorrequired": false,
     "showscrollbars": false,

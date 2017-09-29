@@ -39,7 +39,9 @@
         "flxHeader",
         "flxTop",
         "flxLine1",
-        "flxRequestDetails"
+        "flxRequestDetails",
+        "flxComments",
+        "flxBottomButtons"
     ],
     "clipbounds": true,
     "containerweight": 100,

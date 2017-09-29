@@ -37,9 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "flxInfoSection",
-        "flxDescriptionLink",
-        "flxComments",
-        "flxBottomButtons"
+        "flxDescriptionLink"
     ],
     "clipbounds": true,
     "containerweight": 100,

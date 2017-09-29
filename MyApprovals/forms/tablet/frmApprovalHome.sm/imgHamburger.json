@@ -46,7 +46,7 @@
     "context": {
         "channel": "tablet",
         "formID": "frmApprovalHome",
-        "platform": "ipad",
+        "platform": "tabrcandroid",
         "templateType": "forms",
         "topLevelBox": null
     },

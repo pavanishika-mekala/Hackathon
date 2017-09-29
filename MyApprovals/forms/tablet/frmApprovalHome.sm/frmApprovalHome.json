@@ -36,7 +36,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPadMini",
+    "device": "GalaxyTab7",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "footer": "frmApprovalHome_footer",
@@ -82,11 +82,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "ipad",
+    "platform": "tabrcandroid",
     "prevDevice": "iPad3",
-    "prevPlatform": "ipad",
+    "prevPlatform": "spaipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPadMini",
+    "shellCSS": "and_Tab_Galaxy7",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

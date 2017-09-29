@@ -39,10 +39,9 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "disabledSkins": {
-        "focusSkin": "sf3a94a11a634cb7a503dc85fc9cc44f"
-    },
+    "disabledSkins": {},
     "displaytext": true,
+    "focusskin": "s620932425c949c98f170e8c07be1b3d",
     "id": "btnlaterPeople",
     "ide_onClick": "AS_Button_a70eded5aadc43ae96ff5039413422c7",
     "info": null,

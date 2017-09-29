@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
@@ -39,7 +40,7 @@
     "displaytext": true,
     "focusskin": "s685c3e3d34e46c895289663ded0a831",
     "id": "btnEdit",
-    "ide_onClick": "AS_Button_aa4454c4be1b480b8936c88a85c96579",
+    "ide_onClick": "AS_Button_a3c03b4805b542aa9b9da40475f7c65b",
     "info": null,
     "isvisible": false,
     "kuid": "d9d8df156154486c848df973921302df",
