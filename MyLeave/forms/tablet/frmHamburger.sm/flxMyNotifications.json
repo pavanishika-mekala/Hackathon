@@ -48,7 +48,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "d8953e269bf54034b81fc7e0a33c1926",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMenuHamburger",
     "pf": "frmHamburger",

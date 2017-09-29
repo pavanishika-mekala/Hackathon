@@ -5,11 +5,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "60%"
+        "value": "10%"
     },
     "_margin_": [
         1,
@@ -27,7 +27,7 @@
     "_text_": "40",
     "_top_": {
         "type": "string",
-        "value": "60%"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "fbc58c91a6b14d408eae78091a78c246",
     "name": "kony.ui.Label",
-    "parent": "flxLeaveDetail",
+    "parent": "flxAvailable",
     "pf": "frmLeaveBalance",
     "tooltip": "",
     "wType": "Label",

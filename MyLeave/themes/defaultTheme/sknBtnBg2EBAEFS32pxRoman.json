@@ -1,9 +1,4 @@
 {
-  "android": {
-    "font_name": "AvenirLTStd-Roman",
-    "font_size": 120,
-    "isForked": false
-  },
   "background_color": "00aaffff",
   "bg_type": "one",
   "border_color": "ffffffff",
@@ -34,6 +29,7 @@
     "bottom_right_border_style": "plain",
     "bottom_right_border_width": 0,
     "font_name": "Helvetica",
+    "font_size": 145,
     "isForked": true,
     "shadow": {
       "br": 2,
@@ -63,13 +59,8 @@
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
-    "font_size": 120,
-    "isForked": false
-  },
-  "iphone": {
-    "font_name": "AvenirLTStd-Roman",
-    "font_size": 120,
-    "isForked": false
+    "font_size": 145,
+    "isForked": true
   },
   "isDefaultSkin": false,
   "kiosk": {
@@ -90,31 +81,17 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "font_name": "GenericMonospace",
+    "font_size": 145,
     "isForked": true
   },
   "kuid": "sababfa280da4a098bec9a22657492a6",
-  "spaan": {
-    "font_name": "Helvetica",
-    "font_size": 120,
-    "isForked": false
-  },
   "spaandroidtablet": {
-    "font_size": 120,
-    "isForked": false
-  },
-  "spabb": {
-    "font_name": "Helvetica",
-    "font_size": 120,
-    "isForked": false
-  },
-  "spaip": {
-    "font_name": "Helvetica",
-    "font_size": 120,
-    "isForked": false
+    "font_size": 145,
+    "isForked": true
   },
   "spaipad": {
-    "font_size": 120,
-    "isForked": false
+    "font_size": 145,
+    "isForked": true
   },
   "spawindowstablet": {
     "background_color": {
@@ -140,6 +117,7 @@
     "bottom_right_border_style": "plain",
     "bottom_right_border_width": 0,
     "font_name": "Helvetica",
+    "font_size": 145,
     "isForked": true,
     "shadow": {
       "br": 2,
@@ -162,20 +140,15 @@
     "top_right_border_style": "plain",
     "top_right_border_width": 0
   },
-  "spawinphone8": {
-    "font_name": "Helvetica",
-    "font_size": 120,
-    "isForked": false
-  },
   "tabrcandroid": {
-    "font_size": 120,
-    "isForked": false
+    "font_size": 145,
+    "isForked": true
   },
   "wType": "Button",
   "watchos": {
     "font_name": "Helvetica",
-    "font_size": 120,
-    "isForked": false
+    "font_size": 145,
+    "isForked": true
   },
   "windows8": {
     "background_color": {
@@ -195,11 +168,7 @@
     "background_style": "linear",
     "bg_type": "ms_gradient",
     "font_name": "AvenirLTStd-Black",
+    "font_size": 145,
     "isForked": true
-  },
-  "winphone8": {
-    "font_name": "GenericMonospace",
-    "font_size": 120,
-    "isForked": false
   }
 }

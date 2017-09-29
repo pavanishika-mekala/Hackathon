@@ -39,10 +39,7 @@
         "flxLeaveAvailed",
         "flxConsumed",
         "flxPlanned",
-        "flxAvailable",
-        "lblCountConsumed",
-        "lblCountPlanned",
-        "lblCountAvailable"
+        "flxAvailable"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -5,11 +5,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "60%"
+        "value": "10%"
     },
     "_margin_": [
         1,
@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "i4c298c126c14becb29b3ced0569a113",
     "name": "kony.ui.Label",
-    "parent": "flxLeaveDetail",
+    "parent": "flxConsumed",
     "pf": "frmLeaveBalance",
     "tooltip": "",
     "wType": "Label",

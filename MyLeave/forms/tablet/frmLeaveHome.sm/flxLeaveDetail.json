@@ -48,7 +48,7 @@
     "enablescrolling": true,
     "id": "flxLeaveDetail",
     "info": null,
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "fbc010b2fd944fb7aa0f84a8b903f0fe",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
