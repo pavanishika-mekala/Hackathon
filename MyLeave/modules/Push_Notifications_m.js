@@ -40,6 +40,13 @@ kony.apps.coe.ess.KMS = {
       //#ifdef iphone
       config = [0,1,2];
       //#endif
+      //#ifdef tabrcandroid
+      config = {senderid : "881052403649"};
+      //#endif
+
+      //#ifdef ipad
+      config = [0,1,2];
+      //#endif
 
       kony.push.register(config);
     } catch(err) {
@@ -63,6 +70,14 @@ kony.apps.coe.ess.KMS = {
 
     //#ifdef iphone
     deviceType = "iphone";
+    //#endif
+    
+     //#ifdef tabrcandroid
+    deviceType = "androidgcm";
+    //#endif
+
+    //#ifdef ipad
+    deviceType = "ipad";
     //#endif
     var pnsId = kony.store.getItem(kony.apps.coe.ess.KMS.storeUidString);
     if(!pnsId) {
@@ -156,6 +171,20 @@ kony.apps.coe.ess.KMS = {
     notificationData.module = res.module;
     notificationData.contextData = res.contextData;
     //#endif
+    //#ifdef tabrcandroid
+    //Android Code
+    notificationData.title = res["title"];
+    notificationData.description = res["content"];
+    notificationData.module = res.module;
+    notificationData.contextData = res.contextData;
+    //#endif
+    //#ifdef ipad
+    //iPhone Code
+    notificationData.title = res.alert.title;
+    notificationData.description = res.alert.body;
+    notificationData.module = res.module;
+    notificationData.contextData = res.contextData;
+    //#endif
     kony.print("End - kony.apps.coe.ess.KMS.getNotoficationData");
     return notificationData;
 
@@ -193,6 +222,14 @@ kony.apps.coe.ess.KMS = {
           cData = JSON.parse(data.contextData);
           //#endif
           //#ifdef iphone
+          //iPhone Code
+          cData = data.contextData;
+          //#endif
+          //#ifdef tabrcandroid
+          //Android Code
+          cData = JSON.parse(data.contextData);
+          //#endif
+          //#ifdef ipad
           //iPhone Code
           cData = data.contextData;
           //#endif
