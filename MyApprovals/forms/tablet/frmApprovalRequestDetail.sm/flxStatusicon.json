@@ -7,7 +7,7 @@
     },
     "_height_": {
         "type": "string",
-        "value": "14dp"
+        "value": "20dp"
     },
     "_left_": {
         "type": "string",
@@ -30,7 +30,7 @@
     "_skin_": "sfa4cb6e6dce410b8dd5cbecc6d42290",
     "_width_": {
         "type": "string",
-        "value": "14dp"
+        "value": "20dp"
     },
     "allboxes": [],
     "autogrowmode": 0,

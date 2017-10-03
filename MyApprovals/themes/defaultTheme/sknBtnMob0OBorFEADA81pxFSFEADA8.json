@@ -69,6 +69,7 @@
     "border_type": 0,
     "font_color": "e10019ff",
     "font_name": "Helvetica",
+    "font_size": 125,
     "isForked": true,
     "text_shadow": {
       "br": 0,
@@ -350,6 +351,7 @@
     "border_type": 0,
     "font_color": "e10019ff",
     "font_name": "Helvetica",
+    "font_size": 125,
     "isForked": true,
     "text_shadow": {
       "br": 0,

@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "18dp"
+        "value": "20dp"
     },
     "_left_": {
         "type": "string",
@@ -31,7 +31,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "18dp"
+        "value": "20dp"
     },
     "allboxes": [],
     "autogrowmode": 0,

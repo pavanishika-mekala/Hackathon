@@ -77,9 +77,11 @@
   "font_size": 114,
   "font_style": "normal",
   "font_weight": "normal",
-  "iphone": {
-    "font_size": 114,
-    "isForked": false
+  "ipad": {
+    "background_color": "ffffff0a",
+    "bg_type": "one",
+    "font_size": 135,
+    "isForked": true
   },
   "isDefaultSkin": false,
   "kiosk": {
@@ -418,22 +420,9 @@
     "top_right_border_width": 0
   },
   "tabrcandroid": {
-    "background_color": {
-      "angle": 0,
-      "colors": [
-        "56a9ddff",
-        "3a83a7ff",
-        "4aa8d1ff"
-      ],
-      "cs": [
-        0,
-        50,
-        100
-      ],
-      "gt": "linear"
-    },
-    "background_style": "linear",
-    "bg_type": "ms_gradient",
+    "background_color": "ffffff0a",
+    "bg_type": "one",
+    "font_size": 135,
     "isForked": true,
     "text_shadow": {
       "br": 0,
@@ -443,10 +432,6 @@
     }
   },
   "wType": "Button",
-  "watchos": {
-    "font_size": 114,
-    "isForked": false
-  },
   "windows8": {
     "background_color": {
       "angle": 0,

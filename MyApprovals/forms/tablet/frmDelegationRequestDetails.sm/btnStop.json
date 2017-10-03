@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizButton",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
@@ -39,7 +40,7 @@
     "displaytext": true,
     "focusskin": "s69512350d1b4eea8f31e263afee0c95",
     "id": "btnStop",
-    "ide_onClick": "AS_Button_d51c43415d0c4a61ab3776a99e97e755",
+    "ide_onClick": "AS_Button_fa84410609dd473d9cdefcc9882696da",
     "info": null,
     "isvisible": true,
     "kuid": "je0ab3a8091946678626b7a40a50df6e",

@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizTextArea2",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",

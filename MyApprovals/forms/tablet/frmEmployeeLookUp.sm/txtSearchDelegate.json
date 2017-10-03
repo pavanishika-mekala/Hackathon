@@ -42,6 +42,7 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
+    "focusskin": "sf0ca675ae094defa063a7f47accf8e8",
     "id": "txtSearchDelegate",
     "ide_onDone": "AS_TextField_d7851692192f4afaa2602f611db15e32",
     "ide_onTextChange": "AS_TextField_i5bb6eaccda24ba280276c8627c68294",

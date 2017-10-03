@@ -5,11 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "15%"
+        "value": "20%"
     },
     "_left_": {
         "type": "string",
-        "value": "22%"
+        "value": "23%"
     },
     "_margin_": [
         0,
@@ -27,18 +27,17 @@
     "_src_": "expense_details.png",
     "_top_": {
         "type": "string",
-        "value": "47.70%"
+        "value": "57.70%"
     },
     "_width_": {
         "type": "string",
-        "value": "7%"
+        "value": "5%"
     },
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
     "context": {
         "channel": "tablet",
-        "formID": "tempSearchSecondaryLog",
         "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null

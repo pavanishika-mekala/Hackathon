@@ -1,6 +1,6 @@
 {
   "android": {
-    "font_name": "AvenirLTStd-Roman"
+    "font_name": "AvenirLTStd-Book"
   },
   "background_color": "56a9dd00",
   "bg_type": "one",
@@ -19,10 +19,12 @@
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
-    "font_name": "Helvetica"
+    "font_name": "AvenirLTStd-Book",
+    "font_size": 120,
+    "isForked": true
   },
   "iphone": {
-    "font_name": "AvenirLTStd-Roman"
+    "font_name": "AvenirLTStd-Book"
   },
   "isDefaultSkin": false,
   "kiosk": {
@@ -51,7 +53,9 @@
     "font_name": "Helvetica"
   },
   "tabrcandroid": {
-    "font_name": "Helvetica"
+    "font_name": "AvenirLTStd-Book",
+    "font_size": 120,
+    "isForked": true
   },
   "wType": "Button",
   "watchos": {

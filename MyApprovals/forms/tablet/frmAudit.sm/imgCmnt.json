@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "33px"
+        "value": "55px"
     },
     "_margin_": [
         0,
@@ -27,7 +27,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "44px"
+        "value": "60px"
     },
     "canUpdateUI": true,
     "centerx": {

@@ -65,8 +65,8 @@
     "background_color": "ffffff00",
     "bg_type": "one",
     "font_color": "005faaff",
-    "font_name": "Helvetica",
-    "font_size": 110,
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 130,
     "isForked": true,
     "text_shadow": {
       "br": 0,
@@ -335,8 +335,8 @@
     "background_color": "ffffff00",
     "bg_type": "one",
     "font_color": "005faaff",
-    "font_name": "Helvetica",
-    "font_size": 110,
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 130,
     "isForked": true,
     "text_shadow": {
       "br": 0,

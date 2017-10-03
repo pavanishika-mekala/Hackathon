@@ -96,9 +96,14 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectimage": "ok.png",
     "selectionbehavior": "multiselect",
+    "selectionbehaviorconfig": {
+        "imageIdentifier": "imgSelected",
+        "selectedStateImage": "ok.png",
+        "unselectedStateImage": "close.png"
+    },
     "selectionindicator": "imgSelected",
     "separatorcolor": "64646444",
     "separatorrequired": true,

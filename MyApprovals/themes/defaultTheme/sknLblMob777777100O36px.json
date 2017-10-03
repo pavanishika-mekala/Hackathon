@@ -1,8 +1,7 @@
 {
   "android": {
-    "font_name": "AvenirLTStd-Roman",
     "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "background_color": "00000000",
   "bg_type": "one",
@@ -11,9 +10,20 @@
   "border_type": 0,
   "border_width": 0,
   "desktopweb": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "bottom_left_border_color": "424242ff",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "424242ff",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "font_size": 149,
+    "isForked": true,
+    "top_left_border_color": "424242ff",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "424242ff",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
   },
   "fontSizeInPx": false,
   "font_color": "7e7e7eff",
@@ -23,75 +33,147 @@
   "font_weight": "normal",
   "ipad": {
     "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "font_size": 149,
+    "isForked": true
   },
   "iphone": {
-    "font_name": "AvenirLTStd-Roman",
     "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "isDefaultSkin": false,
   "kiosk": {
-    "font_name": "GenericMonospace",
-    "font_size": 129,
-    "isForked": false
+    "font_size": 149,
+    "isForked": true
   },
   "kuid": "s237cfa2ed9743beb8d0847c7a050c13",
   "spaan": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "bottom_left_border_color": "424242ff",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "424242ff",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "font_size": 149,
+    "isForked": true,
+    "top_left_border_color": "424242ff",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "424242ff",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
   },
   "spaandroidtablet": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "bottom_left_border_color": "424242ff",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "424242ff",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "font_size": 149,
+    "isForked": true,
+    "top_left_border_color": "424242ff",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "424242ff",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
   },
   "spabb": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "bottom_left_border_color": "424242ff",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "424242ff",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "font_size": 149,
+    "isForked": true,
+    "top_left_border_color": "424242ff",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "424242ff",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
   },
   "spaip": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "bottom_left_border_color": "424242ff",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "424242ff",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "font_size": 149,
+    "isForked": true,
+    "top_left_border_color": "424242ff",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "424242ff",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
   },
   "spaipad": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "bottom_left_border_color": "424242ff",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "424242ff",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "font_size": 149,
+    "isForked": true,
+    "top_left_border_color": "424242ff",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "424242ff",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
   },
   "spawindowstablet": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "bottom_left_border_color": "424242ff",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "424242ff",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "font_size": 149,
+    "isForked": true,
+    "top_left_border_color": "424242ff",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "424242ff",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
   },
   "spawinphone8": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "bottom_left_border_color": "424242ff",
+    "bottom_left_border_style": "plain",
+    "bottom_left_border_width": 0,
+    "bottom_right_border_color": "424242ff",
+    "bottom_right_border_style": "plain",
+    "bottom_right_border_width": 0,
+    "font_size": 149,
+    "isForked": true,
+    "top_left_border_color": "424242ff",
+    "top_left_border_style": "plain",
+    "top_left_border_width": 0,
+    "top_right_border_color": "424242ff",
+    "top_right_border_style": "plain",
+    "top_right_border_width": 0
   },
   "tabrcandroid": {
     "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "font_size": 149,
+    "isForked": true
   },
   "wType": "Label",
   "watchos": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "font_size": 149,
+    "isForked": true
   },
   "windows8": {
-    "font_name": "GenericMonospace",
-    "font_size": 129,
-    "isForked": false
+    "font_size": 149,
+    "isForked": true
   },
   "winphone8": {
-    "font_name": "GenericMonospace",
-    "font_size": 129,
-    "isForked": false
+    "font_size": 149,
+    "isForked": true
   }
 }

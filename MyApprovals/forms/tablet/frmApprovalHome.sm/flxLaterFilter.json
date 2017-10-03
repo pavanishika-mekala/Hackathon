@@ -44,7 +44,7 @@
     "enablescrolling": true,
     "id": "flxLaterFilter",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ibb74cbe448b4f2c82d4a7443bbc1ff6",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

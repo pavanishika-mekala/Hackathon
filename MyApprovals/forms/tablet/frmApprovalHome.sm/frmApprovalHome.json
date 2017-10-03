@@ -32,11 +32,11 @@
         "flxHome"
     ],
     "containerweight": 100,
-    "currentLocale": "default",
+    "currentLocale": "nl_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPad3",
+    "device": "GalaxyTab7",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "footer": "frmApprovalHome_footer",
@@ -82,11 +82,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "ipad",
+    "platform": "tabrcandroid",
     "prevDevice": "iPad3",
-    "prevPlatform": "ipad",
+    "prevPlatform": "spaipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "and_Tab_Galaxy7",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

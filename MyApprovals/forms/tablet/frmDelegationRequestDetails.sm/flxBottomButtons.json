@@ -1,5 +1,6 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_bottom_": {
         "type": "string",
@@ -49,7 +50,7 @@
     "kuid": "ca93f663d9b24130b41aedc2359938e3",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxRequestDetails",
+    "parent": "flxMain",
     "pf": "frmDelegationRequestDetails",
     "snapgridsize": 10,
     "snaptogrid": true,

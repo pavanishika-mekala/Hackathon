@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "20px"
+        "value": "30px"
     },
     "_left_": {
         "type": "string",
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "20px"
+        "value": "30px"
     },
     "allboxes": [],
     "autogrowmode": 0,

@@ -4,9 +4,36 @@
     "__parentReadjusting__": false,
     "_bounces_": false,
     "_data_": [
-        {},
-        {},
-        {}
+        {
+            "imgSelectionIndicator": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick_active.png"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgSelectionIndicator": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick_active.png"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgSelectionIndicator": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick_active.png"
+            },
+            "lblName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
     ],
     "_height_": {
         "type": "string",
@@ -68,9 +95,11 @@
     "parent": "flxTypeOfRequest",
     "pf": "frmDelegationRequestCreate",
     "retainselection": false,
+    "rowTemplateId": "f37c216c81d44a4fad7025964ebb10fe",
     "rowcounter": 2,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "sf4d7dbeaf384fbbb37f31a0f150f80e",
+    "rowtemplate": "flxSegTypeOfRequest",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "s6d63f9c63284d1cafd5b2620d971fbb",
@@ -79,9 +108,14 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectimage": "tick_active.png",
     "selectionbehavior": "multiselect",
+    "selectionbehaviorconfig": {
+        "imageIdentifier": "imgSelectionIndicator",
+        "selectedStateImage": "tick_active.png",
+        "unselectedStateImage": "tick_inactive.png"
+    },
     "selectionindicator": "imgSelectionIndicator",
     "separatorrequired": false,
     "showscrollbars": false,
@@ -89,6 +123,11 @@
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {},
+    "widgetdatamap": {
+        "flxBotttomLine": "flxBotttomLine",
+        "flxSegTypeOfRequest": "flxSegTypeOfRequest",
+        "imgSelectionIndicator": "imgSelectionIndicator",
+        "lblName": "lblName"
+    },
     "zindex": 1
 }

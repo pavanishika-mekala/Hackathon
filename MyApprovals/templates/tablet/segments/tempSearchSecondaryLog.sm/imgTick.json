@@ -27,7 +27,7 @@
     "_src_": "ok.png",
     "_top_": {
         "type": "string",
-        "value": "75.30%"
+        "value": "76.30%"
     },
     "_width_": {
         "type": "string",
@@ -38,7 +38,6 @@
     "containerweight": 100,
     "context": {
         "channel": "tablet",
-        "formID": "tempSearchSecondaryLog",
         "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null

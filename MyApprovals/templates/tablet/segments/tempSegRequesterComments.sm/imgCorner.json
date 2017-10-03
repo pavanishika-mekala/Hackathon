@@ -38,7 +38,6 @@
     "containerweight": 100,
     "context": {
         "channel": "tablet",
-        "formID": "tempSegRequesterComments",
         "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null

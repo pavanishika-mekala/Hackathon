@@ -62,6 +62,7 @@
     "background_color": "ffffff00",
     "bg_type": "one",
     "font_name": "Helvetica",
+    "font_size": 125,
     "isForked": true,
     "text_shadow": {
       "br": 0,
@@ -314,6 +315,7 @@
     "background_color": "ffffff00",
     "bg_type": "one",
     "font_name": "Helvetica",
+    "font_size": 125,
     "isForked": true,
     "text_shadow": {
       "br": 0,
