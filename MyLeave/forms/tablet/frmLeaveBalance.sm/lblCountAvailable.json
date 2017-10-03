@@ -25,10 +25,6 @@
     ],
     "_skin_": "s42c653cffd64002a401b23787265c31",
     "_text_": "40",
-    "_top_": {
-        "type": "string",
-        "value": "0%"
-    },
     "_width_": {
         "type": "string",
         "value": "15%"
@@ -41,6 +37,10 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblCountAvailable",

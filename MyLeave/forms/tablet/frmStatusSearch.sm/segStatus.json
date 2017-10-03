@@ -134,9 +134,14 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectimage": "checkboxactive.png",
     "selectionbehavior": "multiselect",
+    "selectionbehaviorconfig": {
+        "imageIdentifier": "imgStatusSelection",
+        "selectedStateImage": "checkboxactive.png",
+        "unselectedStateImage": "checkboxinactive.png"
+    },
     "selectionindicator": "imgStatusSelection",
     "separatorrequired": false,
     "separatorthickness": 0,
