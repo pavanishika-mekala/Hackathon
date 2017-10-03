@@ -42,7 +42,7 @@
     },
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "lblAllHolidaysCount",
+    "id": "lblAllHolidaysCount1",
     "info": null,
     "ipad": {
         "psp": {
@@ -50,9 +50,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "b549d21dfb7f48c3bbb9d65e46bdf126",
+    "kuid": "gfa14ebb9d5844ecae01538d983b2a70",
     "name": "kony.ui.Label",
-    "parent": "flxAllHolidaysCount",
+    "parent": "flxAllHolidaysCount1",
     "pf": "frmLeaveHome",
     "tooltip": "",
     "wType": "Label"

@@ -25,6 +25,10 @@
     },
     "_skin_": "s82580abaae041919a6f0dcd806a8358",
     "_src_": "list_arrow.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
         "type": "string",
         "value": "2.02%"
@@ -42,14 +46,14 @@
         "templateType": "forms",
         "topLevelBox": null
     },
-    "id": "imgArrow2",
+    "id": "imgArrow222",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "e70c1010bf584817b2bfe8919ee1f59b",
+    "kuid": "i0fa0cf0c9464075be366fc7be8c8766",
     "name": "kony.ui.Image2",
-    "parent": "flxAllHolidays",
+    "parent": "flxAllHolidays1",
     "pf": "frmLeaveHome",
     "srcType": 1,
     "wType": "Image",

@@ -3,9 +3,10 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "60%"
     },
+    "_left_": "4.30%",
     "_margin_": [
         1,
         1,
@@ -18,11 +19,15 @@
         0,
         0
     ],
-    "_skin_": "s776ba00a220425b91ddaed7717aef56",
-    "_text_": "0",
+    "_skin_": "s93517f54c604eee908071107b8328f0",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "70%"
     },
     "_wrapping_": 2,
     "android": {
@@ -32,17 +37,10 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
+    "centery": "50%",
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lblAllHolidaysCount",
+    "contentalignment": 4,
+    "id": "lblAllHolidays1",
     "info": null,
     "ipad": {
         "psp": {
@@ -50,10 +48,12 @@
         }
     },
     "isvisible": true,
-    "kuid": "b549d21dfb7f48c3bbb9d65e46bdf126",
+    "kuid": "g0328f0734bf467da62808502de43ba9",
     "name": "kony.ui.Label",
-    "parent": "flxAllHolidaysCount",
+    "parent": "flxAllHolidays1",
     "pf": "frmLeaveHome",
+    "texti18n": "i18n.ess.common.allHolidays.valueKA",
     "tooltip": "",
-    "wType": "Label"
+    "wType": "Label",
+    "zindex": 1
 }
