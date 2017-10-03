@@ -183,7 +183,13 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
       }
       var chartWidget = this.createChart(this.data[i], colors);
       kony.print("--------------------Created chart widget " + i);
-      
+      var countTop = 2;
+      //#ifdef tabrcandroid
+      countTop = 6;
+      //#endif
+      //#ifdef ipad
+      countTop = 4;
+      //#endif
 	  var flxChart = new kony.ui.FlexContainer({
           "id": "flxChart" + i,
           "top": 12.6 + "%",
@@ -409,7 +415,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
             "letterSpacing": 0,
             "strikeThrough": false
         },
-        "top": "2%",
+        "top": countTop+"%",
         "width": "20%",
         "zIndex": 1
     }, {
@@ -430,7 +436,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
             "letterSpacing": 0,
             "strikeThrough": false
         },
-        "top": "32%",
+        "top": (30+countTop)+"%",
         "width": "20%",
         "zIndex": 1
     }, {
@@ -451,7 +457,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
             "letterSpacing": 0,
             "strikeThrough": false
         },
-        "top": "62%",
+        "top": (60+countTop)+"%",
         "width": "20%",
         "zIndex": 1
     }, {
