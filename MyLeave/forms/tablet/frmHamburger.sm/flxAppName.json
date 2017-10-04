@@ -1,5 +1,6 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
@@ -7,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,10 +24,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_skin_": "sa1c963a731d446dbe2869277ff7bbe2",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -36,6 +37,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
+        "flxUsername",
         "lblAppName",
         "lblAppVersion"
     ],
@@ -45,8 +47,9 @@
     "id": "flxAppName",
     "info": null,
     "isvisible": true,
-    "kuid": "if3c4d455aad4ca88a56cc7326d0d6c1",
+    "kuid": "i94e4343a0e640fc9461db9c635cbf50",
     "layouttype": 2,
+    "masterType": 1,
     "name": "kony.ui.FlexContainer",
     "parent": "flxMenuHamburger",
     "pf": "frmHamburger",

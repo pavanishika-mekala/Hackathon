@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "5%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -23,10 +23,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s98b20df2ffd4a49a5548dbe47e6fd7e",
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_width_": {
         "type": "string",
@@ -36,32 +36,19 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblAppOnline",
-        "lblAppOffline",
-        "lblHamburgerCompanyName",
-        "flxEngieLogo",
-        "flxAppName",
-        "flxAppName1",
-        "flxHamburgerDivider",
-        "flxMyTime",
-        "flxMyPay",
-        "flxMyProfile",
-        "flxMyExpenses",
-        "flxMyApprovals",
-        "flxMyNotifications",
-        "flxSyncDateAndTime",
-        "flxOptions"
+        "lblAppName1",
+        "lblAppVersion1"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxMenuHamburger",
+    "id": "flxAppName1",
     "info": null,
-    "isvisible": true,
-    "kuid": "e9ae39504c4b4cbcbd44eb7559e381b1",
-    "layouttype": 4,
+    "isvisible": false,
+    "kuid": "if3c4d455aad4ca88a56cc7326d0d6c1",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxHamburger",
+    "parent": "flxMenuHamburger",
     "pf": "frmHamburger",
     "snapgridsize": 10,
     "snaptogrid": true,

@@ -1,7 +1,6 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -23,7 +22,7 @@
         0,
         0
     ],
-    "_skin_": "s0188ba2c57048188a212ac651cc8171",
+    "_skin_": "s098061f5e654da286da07893e1c5525",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -47,23 +46,17 @@
     },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblAppName",
+    "id": "lblAppName1",
     "info": null,
     "ipad": {
         "psp": {
             "wrapping": 2
         }
     },
-    "iphone": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
-    "isvisible": false,
-    "kuid": "hcf3f659655c47e4a1a4cb3f7b1eeeef",
-    "masterType": 1,
+    "isvisible": true,
+    "kuid": "f332838b07cc4aeabf277d14d533b49a",
     "name": "kony.ui.Label",
-    "parent": "flxAppName",
+    "parent": "flxAppName1",
     "pf": "frmHamburger",
     "texti18n": "i18n.ess.frmHamburger.title",
     "tooltip": "",

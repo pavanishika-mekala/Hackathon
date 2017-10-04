@@ -4,12 +4,12 @@
     "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "8.50%"
+        "value": "0%"
     },
     "_margin_": [
         1,
@@ -24,14 +24,14 @@
         0
     ],
     "_skin_": "s0188ba2c57048188a212ac651cc8171",
-    "_text_": "",
+    "_text_": "Welcome engiebc1",
     "_top_": {
         "type": "string",
-        "value": "19%"
+        "value": "0%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_wrapping_": 2,
     "android": {
@@ -41,13 +41,9 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblAppName",
+    "id": "lblUsername",
     "info": null,
     "ipad": {
         "psp": {
@@ -59,13 +55,11 @@
             "wrapping": 2
         }
     },
-    "isvisible": false,
-    "kuid": "hcf3f659655c47e4a1a4cb3f7b1eeeef",
-    "masterType": 1,
+    "isvisible": true,
+    "kuid": "i237beaae4c04f00a547d6d807974bc8",
     "name": "kony.ui.Label",
-    "parent": "flxAppName",
+    "parent": "flxUsername",
     "pf": "frmHamburger",
-    "texti18n": "i18n.ess.frmHamburger.title",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
