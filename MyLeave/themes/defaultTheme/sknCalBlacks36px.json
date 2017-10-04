@@ -1,9 +1,4 @@
 {
-  "android": {
-    "font_name": "AvenirLTStd-Medium",
-    "font_size": 129,
-    "isForked": true
-  },
   "background_color": "00000000",
   "bg_type": "one",
   "border_color": "000000ff",
@@ -21,11 +16,6 @@
   "font_size": 129,
   "font_style": "normal",
   "font_weight": "normal",
-  "iphone": {
-    "font_name": "AvenirLTStd-Medium",
-    "font_size": 129,
-    "isForked": true
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "font_name": "GenericMonospace",
@@ -33,35 +23,10 @@
     "isForked": true
   },
   "kuid": "s86346f1476340978fbdc4a27c50aba7",
-  "spaan": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": true
-  },
-  "spabb": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": true
-  },
-  "spaip": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": true
-  },
-  "spawinphone8": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": true
-  },
   "wType": "Calendar",
   "watchos": {
     "font_name": "Helvetica",
     "font_size": 129,
     "isForked": false
-  },
-  "winphone8": {
-    "font_name": "GenericMonospace",
-    "font_size": 129,
-    "isForked": true
   }
 }
