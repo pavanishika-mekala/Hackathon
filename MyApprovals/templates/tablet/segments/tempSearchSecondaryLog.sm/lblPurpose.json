@@ -24,7 +24,10 @@
     ],
     "_skin_": "s1af9d8f871e4b708b0e52f921f7724b",
     "_text_": "sick levae",
-    "_top_": "56.70%",
+    "_top_": {
+        "type": "string",
+        "value": "57.70%"
+    },
     "_width_": {
         "type": "ref",
         "value": "preferred"

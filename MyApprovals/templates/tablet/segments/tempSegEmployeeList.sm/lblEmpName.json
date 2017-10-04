@@ -24,6 +24,10 @@
     ],
     "_skin_": "sf778437578a4755a595b2ff9af5c7b0",
     "_text_": "Aaron Miller",
+    "_top_": {
+        "type": "string",
+        "value": "2%"
+    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
