@@ -25,10 +25,6 @@
     },
     "_skin_": "s82580abaae041919a6f0dcd806a8358",
     "_src_": "list_arrow.png",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_width_": {
         "type": "string",
         "value": "2.02%"
@@ -51,7 +47,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "i0fa0cf0c9464075be366fc7be8c8766",
+    "kuid": "e70c1010bf584817b2bfe8919ee1f59b",
     "name": "kony.ui.Image2",
     "parent": "flxAllHolidays",
     "pf": "frmLeaveHome",

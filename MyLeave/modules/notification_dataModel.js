@@ -1,5 +1,5 @@
-//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Mon Jul 24 09:45:26 UTC 2017notification_data*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
+// ****************Generated On Fri Sep 29 13:51:33 UTC 2017notification_data*******************
 // **********************************Start notification_data's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -482,7 +482,7 @@ notification_data.updateAll = function(inputArray, successcallback, errorcallbac
 	if(!kony.sync.validateInput(arguments, "notification_data.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "100000002f852f9b9";
+	var dbname = "10000473715010d0b";
 	var tbname = "notification_data";
 	var isError = false;
 	var errObject = null;

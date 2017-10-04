@@ -9,11 +9,19 @@
   "border_style": "plain",
   "border_type": 0,
   "border_width": 0,
+  "ipad": {
+    "background_image": "ovalfocus.png",
+    "bg_type": "image"
+  },
   "iphone": {
     "background_image": "ovalfocus.png",
     "bg_type": "image"
   },
   "isDefaultSkin": false,
   "kuid": "sbc6f67801424001b715d37230eec019",
+  "tabrcandroid": {
+    "background_image": "ovalfocus.png",
+    "bg_type": "image"
+  },
   "wType": "FlexContainer"
 }

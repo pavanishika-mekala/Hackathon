@@ -344,7 +344,30 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getImageSuccess = function(employeeID, r
  * desc         Method generates comment rows without image
  */
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
-
+	frmLeaveHome.segLeaveComments.widgetDataMap = {
+            "labelnotes": "labelnotes",
+            "lblapplier": "lblapplier",
+            "txtApplierComments": "txtApplierComments",
+            //"imgapprover": "imgapprover",
+           // "labelapprovernotes": "labelapprovernotes",
+           // "lblapprovername": "lblapprovername",
+           // "txtComments": "txtComments",
+          //  "lblapproveddate": "lblapproveddate",
+            "lblapplieddate": "lblapplieddate",
+            "imgapplier": "imgapplier"
+        };
+  frmLeaveHome.segLeaveComments2.widgetDataMap = {
+            "labelnotes": "labelnotes",
+            "lblapplier": "lblapplier",
+            "txtApplierComments": "txtApplierComments",
+            "imgapprover": "imgapprover",
+            "labelapprovernotes": "labelapprovernotes",
+            "lblapprovername": "lblapprovername",
+            "txtComments": "txtComments",
+            "lblapproveddate": "lblapproveddate",
+            "lblapplieddate": "lblapplieddate",
+            "imgapplier": "imgapplier"
+        };
     var data = kony.apps.coe.ess.myLeave.MyLeaveHomeUI.EmployeeData;
     var monthsJSON = Date.getMonthMapNumberToMonth;
     var commentData1 = [];
@@ -1060,12 +1083,15 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.mappingBackendDataToCalendar = function(
                         break;
                     }
                 } else {
+					//alert(currCellData.LABEL.isMothDay);
                     if (currCellData.LABEL.isMothDay) {
                         var currDate = new Date();
                         var currYear = currDate.getFullYear().toString().trim(0, 4);
                         var currMonth = "0" + (currDate.getMonth() + 1).toString();
                         var formattedCurrDate = currYear + currMonth.slice(-2) + ("0" + currDate.getDate().toString()).slice(-2);
+						//alert(formattedCurrDate+"->"+currCellDateFormatted);
                         if (formattedCurrDate == currCellDateFormatted) {
+                          kony.print("VVVV "+formattedCurrDate);
                             cellData = {
                                 "CELL": {
                                     "skin": "sknFlxMobOp0"

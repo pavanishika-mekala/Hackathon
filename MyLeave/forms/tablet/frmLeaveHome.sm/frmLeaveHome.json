@@ -40,11 +40,11 @@
             "channel": "tablet"
         }
     },
-    "currentLocale": "nl_BE",
+    "currentLocale": "fr_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GoogleNexus10",
+    "device": "GalaxyTab7",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
@@ -90,10 +90,10 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "tabrcandroid",
-    "prevDevice": "GalaxyTab7",
+    "prevDevice": "iPad3",
     "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "and_Tab_GoogleNexus10",
+    "shellCSS": "and_Tab_Galaxy7",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

@@ -2,7 +2,7 @@
   "android": {
     "font_name": "AvenirLTStd-Medium",
     "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "background_color": "00000000",
   "bg_type": "one",
@@ -13,7 +13,7 @@
   "desktopweb": {
     "font_name": "Helvetica",
     "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "fontSizeInPx": false,
   "font_color": "000000ff",
@@ -21,62 +21,37 @@
   "font_size": 129,
   "font_style": "normal",
   "font_weight": "normal",
-  "ipad": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
-  },
   "iphone": {
     "font_name": "AvenirLTStd-Medium",
     "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "isDefaultSkin": false,
   "kiosk": {
     "font_name": "GenericMonospace",
     "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "kuid": "s86346f1476340978fbdc4a27c50aba7",
   "spaan": {
     "font_name": "Helvetica",
     "font_size": 129,
-    "isForked": false
-  },
-  "spaandroidtablet": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "spabb": {
     "font_name": "Helvetica",
     "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "spaip": {
     "font_name": "Helvetica",
     "font_size": 129,
-    "isForked": false
-  },
-  "spaipad": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
-  },
-  "spawindowstablet": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "spawinphone8": {
     "font_name": "Helvetica",
     "font_size": 129,
-    "isForked": false
-  },
-  "tabrcandroid": {
-    "font_name": "Helvetica",
-    "font_size": 129,
-    "isForked": false
+    "isForked": true
   },
   "wType": "Calendar",
   "watchos": {
@@ -84,14 +59,9 @@
     "font_size": 129,
     "isForked": false
   },
-  "windows8": {
-    "font_name": "AvenirLTStd-Black",
-    "font_size": 129,
-    "isForked": false
-  },
   "winphone8": {
     "font_name": "GenericMonospace",
     "font_size": 129,
-    "isForked": false
+    "isForked": true
   }
 }

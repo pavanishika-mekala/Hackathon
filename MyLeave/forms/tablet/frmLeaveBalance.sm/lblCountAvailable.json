@@ -5,11 +5,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "30%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "60%"
+        "value": "10%"
     },
     "_margin_": [
         1,
@@ -25,10 +25,6 @@
     ],
     "_skin_": "s42c653cffd64002a401b23787265c31",
     "_text_": "40",
-    "_top_": {
-        "type": "string",
-        "value": "60%"
-    },
     "_width_": {
         "type": "string",
         "value": "15%"
@@ -41,6 +37,10 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblCountAvailable",
@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "fbc58c91a6b14d408eae78091a78c246",
     "name": "kony.ui.Label",
-    "parent": "flxLeaveDetail",
+    "parent": "flxAvailable",
     "pf": "frmLeaveBalance",
     "tooltip": "",
     "wType": "Label",

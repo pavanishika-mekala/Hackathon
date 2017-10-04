@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxAllPendingRequests",
-        "flxAllHolidays"
+        "flxAllHolidays",
+        "flxAllHolidays1"
     ],
     "clipbounds": true,
     "containerweight": 100,

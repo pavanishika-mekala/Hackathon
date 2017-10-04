@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "40%"
+        "value": "50%"
     },
     "_margin_": [
         0,
@@ -44,7 +44,7 @@
     "id": "flxAllHolidaysCount",
     "info": null,
     "isvisible": true,
-    "kuid": "jbf1bef6d5464f1c90476dbda2c66fd8",
+    "kuid": "b31707862b3a4e87bb95df266640aca6",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxAllHolidays",

@@ -115,7 +115,7 @@ kony.apps.coe.ess.myLeave.searchLeaveType.prototype.dataProcess = function (data
 	for (var i = 0; i < data.length; i++) {
 		var leaveData = {};
 		leaveData.lblSearchTxt = data[i].name;
-		if (kony.apps.coe.ess.myLeave.searchLeaveType.data === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA")) {
+		if (kony.apps.coe.ess.myLeave.searchLeaveType.data === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSearchLeaveType.lblTitle.valueKA")) {
 			leaveData.imgStatusSelection = "checkboxinactive.png";
 		} else {
 			if (kony.apps.coe.ess.myLeave.searchLeaveType.data.indexOf(leaveData.lblSearchTxt) != -1) {

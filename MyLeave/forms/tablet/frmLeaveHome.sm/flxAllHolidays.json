@@ -22,7 +22,7 @@
     "_skin_": "sa8bc7d651164072b343b3500b427bb3",
     "_top_": {
         "type": "string",
-        "value": "-1%"
+        "value": "11.50%"
     },
     "_width_": {
         "type": "string",
@@ -45,10 +45,10 @@
     "enablescrolling": true,
     "focusskin": "s405469b32474b83b2e0cf069b00916e",
     "id": "flxAllHolidays",
-    "ide_onClick": "AS_FlexContainer_dbe8cb9ebe414cca92edc60b7688e621",
+    "ide_onClick": "AS_FlexContainer_abdecf732c6b4d9a8d0c3b9adf4dbce6",
     "info": null,
     "isvisible": true,
-    "kuid": "ib8fff718bb94b868b8367d752cd8bcb",
+    "kuid": "f412769b108d41b0b622c21023e076c8",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxRequestsAndHolidays",

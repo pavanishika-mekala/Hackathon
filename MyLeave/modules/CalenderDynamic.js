@@ -253,13 +253,15 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
                 }
             }
             this.MonthDataConstructorIntializate();
-            onswipeCallBackFunction.call(this, myWidget, gestureInfo, context)
+            onswipeCallBackFunction.call(this, myWidget, gestureInfo, context);
         }.bind(this));
+      
+      
         var basicconfig_cell = {
             "id": "",
             "top": "-16.01%",
             "left": "0%",
-            "width": "14.29%",
+            "width": "14.28%",
             "height": "16%",
             "zIndex": 1,
             "isVisible": true,

@@ -128,7 +128,7 @@ kony.apps.coe.ess.frmLogin.Init =
         kony.print("-- start kony.apps.coe.ess.frmLogin.Init-- ");
         try {
             if (kony.store.getItem("useTouchID") === true) { //If User Enabled TouchID for App
-                if (kony.apps.coe.ess.QRCode.isReconfiguredClicked == true || applaunchMode == 3) { // ||kony.apps.ess.frmDummy.ssotoken) {
+                if (kony.apps.coe.ess.QRCode.isReconfiguredClicked === true || applaunchMode == 3) { // ||kony.apps.ess.frmDummy.ssotoken) {
                     frmLogin.flxTouchIDPopup.isVisible = false;
                 } else {
                     kony.apps.coe.ess.TouchID.authenticateThroughTouch();
@@ -360,8 +360,8 @@ kony.apps.coe.ess.frmLogin.showEnableTouchIDPopup = function(callback) {
       frmLogin.lblEnableTouchIdTitle.text = kony.i18n.getLocalizedString('i18n.ess.Login.useTouchId_android');
       //#endif
     }
-    frmLogin.flxPopups.isVisible = true;
-    frmLogin.flxEnableTouchIDPopup.isVisible = true;
+    //frmLogin.flxPopups.isVisible = true; //commenting as touch id is not need (eTimesheet)
+    //frmLogin.flxEnableTouchIDPopup.isVisible = true;
 
 
     frmLogin.btnNotNow.onClick = function() {
@@ -389,7 +389,7 @@ kony.apps.coe.ess.frmLogin.showEnableTouchIDPopup = function(callback) {
             //             kony.store.setItem("password", password);
         } else { //This is the case when user try to enable TouchID before authenticating
             frmLogin.lblTouchIDPopupDescription.text = kony.i18n.getLocalizedString("i18n.ess.Login.registerUserForTouchId");
-            kony.apps.coe.ess.frmLogin.showTouchIdPopup(kony.i18n.getLocalizedString("i18n.ess.Login.loginNow"));
+            //kony.apps.coe.ess.frmLogin.showTouchIdPopup(kony.i18n.getLocalizedString("i18n.ess.Login.loginNow"));
             //In this case, We have to show user Popup with Message
             return;
         }
@@ -410,8 +410,8 @@ kony.apps.coe.ess.frmLogin.hidePopups = function() {
  * Shows TouchID Custom Design Popup
  */
 kony.apps.coe.ess.frmLogin.showTouchIdPopup = function(okButtonText) {
-    frmLogin.flxPopups.isVisible = true;
-    frmLogin.flxTouchIDPopup.isVisible = true;
+   // frmLogin.flxPopups.isVisible = true;
+//frmLogin.flxTouchIDPopup.isVisible = true;
     frmLogin.btnTouchIDCancel.onClick = kony.apps.coe.ess.frmLogin.hidePopups;
     if (okButtonText) {
         frmLogin.btnTouchIDCancel.text = okButtonText;

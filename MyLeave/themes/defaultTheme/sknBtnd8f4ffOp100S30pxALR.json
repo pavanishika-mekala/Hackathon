@@ -11,7 +11,15 @@
   "font_size": 107,
   "font_style": "normal",
   "font_weight": "normal",
+  "ipad": {
+    "font_size": 125,
+    "isForked": true
+  },
   "isDefaultSkin": false,
   "kuid": "s22d0232ad2e47b48fc70cc98366077e",
+  "tabrcandroid": {
+    "font_size": 125,
+    "isForked": true
+  },
   "wType": "Button"
 }

@@ -1,9 +1,4 @@
 {
-  "android": {
-    "font_name": "AvenirLTStd-Roman",
-    "font_size": 130,
-    "isForked": true
-  },
   "background_color": "00000000",
   "bg_type": "one",
   "border_color": "424242ff",
@@ -26,11 +21,6 @@
     "font_size": 130,
     "isForked": true
   },
-  "iphone": {
-    "font_name": "AvenirLTStd-Roman",
-    "font_size": 130,
-    "isForked": true
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "font_name": "GenericMonospace",
@@ -38,22 +28,7 @@
     "isForked": true
   },
   "kuid": "sdea3215af064ed6a2e644fb842d7095",
-  "spaan": {
-    "font_name": "Helvetica",
-    "font_size": 130,
-    "isForked": true
-  },
   "spaandroidtablet": {
-    "font_name": "Helvetica",
-    "font_size": 130,
-    "isForked": true
-  },
-  "spabb": {
-    "font_name": "Helvetica",
-    "font_size": 130,
-    "isForked": true
-  },
-  "spaip": {
     "font_name": "Helvetica",
     "font_size": 130,
     "isForked": true
@@ -64,11 +39,6 @@
     "isForked": true
   },
   "spawindowstablet": {
-    "font_name": "Helvetica",
-    "font_size": 130,
-    "isForked": true
-  },
-  "spawinphone8": {
     "font_name": "Helvetica",
     "font_size": 130,
     "isForked": true
@@ -86,11 +56,6 @@
   },
   "windows8": {
     "font_name": "AvenirLTStd-Black",
-    "font_size": 130,
-    "isForked": true
-  },
-  "winphone8": {
-    "font_name": "GenericMonospace",
     "font_size": 130,
     "isForked": true
   }

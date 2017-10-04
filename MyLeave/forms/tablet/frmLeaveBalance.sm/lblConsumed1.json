@@ -26,8 +26,8 @@
     "_skin_": "s42c653cffd64002a401b23787265c31",
     "_text_": "",
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "50%"
     },
     "_wrapping_": 2,
     "android": {
