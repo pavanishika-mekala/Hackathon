@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -22,7 +23,7 @@
         0,
         0
     ],
-    "_skin_": "s98d0d20e8624e4b9326ba6cfc2e9cc0",
+    "_skin_": "s199d8aa76d04121b0105a7e32269f6f",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -53,12 +54,17 @@
             "wrapping": 2
         }
     },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
     "isvisible": true,
-    "kuid": "c8a334f47bc948d3b4a5d85fdf68207e",
+    "kuid": "d78999a606664ecbb502cc17dc8a9422",
+    "masterType": 1,
     "name": "kony.ui.Label",
     "parent": "flxAppName",
     "pf": "frmHamburger",
-    "texti18n": "i18n.ess.frmHamburger.Version",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
