@@ -1,7 +1,8 @@
 {
-    "AS_Segment_a43638af5cc641399de475aaf148e551": {
-        "id": "AS_Segment_a43638af5cc641399de475aaf148e551",
+    "AS_Segment_de436e6be3c14e659880c06aeab08283": {
+        "id": "AS_Segment_de436e6be3c14e659880c06aeab08283",
         "type": "ACTION_SEQUENCE",
+        "name": "onRowClickSegStatusSelect",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
@@ -16,14 +17,15 @@
             "name": "frmSelect",
             "type": "forms",
             "platform": "",
-            "KUID": "becc36dd3b6e41f7b5ea9d657fbe325c"
+            "KUID": "6fd6c938ff6444ffba5779bccc68b55f"
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__a8bbb5e3a7e848c2b3542ca2609ee8c1",
+            "id": "ADD_SNIPPET__fb85478346cc49ca82047f3349454fe0",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "var filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\nfilterobj.statusTypeDataRowClick();\nfrmSelect.forceLayout();\n",
-            "parentId": null
+            "codeSnippet": "var filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\nfilterobj.statusTypeDataRowClick()\nfrmSelect.forceLayout();\n",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

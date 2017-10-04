@@ -22,7 +22,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__d973c01ee1a14bcd9e2ab999b7b5ed9a",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "frmSelect.forceLayout();",
+            "codeSnippet": "var filterobj = new kony.apps.coe.ess.Approvals.frmSelectBackendLogic();\nfilterobj.peopleDataRowClick();\nfrmSelect.forceLayout();\n",
             "parentId": null
         }]
     }
