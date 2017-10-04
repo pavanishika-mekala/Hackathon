@@ -13,6 +13,12 @@
             "KUID": "d218c862ae534edebfc84b906fd5ad61"
         },
         "language": "js",
-        "actions": []
+        "actions": [{
+            "id": "ADD_SNIPPET__ge2a999dcb3147eca0673e799c844468",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.RecurringLeave.onClickOfBiweekly();",
+            "parentId": null,
+            "callbackType": null
+        }]
     }
 }
