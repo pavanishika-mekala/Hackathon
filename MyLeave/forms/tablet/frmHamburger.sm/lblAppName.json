@@ -27,7 +27,7 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "19%"
+        "value": "19dp"
     },
     "_width_": {
         "type": "ref",
@@ -41,10 +41,6 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblAppName",
@@ -63,6 +59,7 @@
     "kuid": "hcf3f659655c47e4a1a4cb3f7b1eeeef",
     "masterType": 1,
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxAppName",
     "pf": "frmHamburger",
     "texti18n": "i18n.ess.frmHamburger.title",

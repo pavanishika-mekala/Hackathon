@@ -4,8 +4,8 @@
     "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -23,11 +23,11 @@
         0,
         0
     ],
-    "_skin_": "s0188ba2c57048188a212ac651cc8171",
+    "_skin_": "s0ef22f7c11742ff9927e3f52ca21f52",
     "_text_": "Welcome engiebc1",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
