@@ -32,6 +32,7 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     kony.application.getCurrentForm().flxHamburger.setEnabled(false);
     if (hamburgerButton != undefined) {
         hamburgerButton.onClick = function() {
+          kony.application.getCurrentForm().flxHamburger.lblUsername.text = "Welcome "+kony.apps.coe.ess.frmLogin.username;
             kony.print("-- Start hamburgerButton.onClick --");
 			this.hamburgerMenuItemsShow();
             // Disable clicking on Hamburger.
@@ -40,9 +41,9 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
                 kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.setVisibility(false);
             }
             if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = "APP ONLINE";
+                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = kony.i18n.getLocalizedString("i18n.ess.Login.appOnline");//"APP ONLINE";
             } else {
-                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = "APP OFFLINE";
+                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = kony.i18n.getLocalizedString("i18n.ess.Login.appOffline");//"APP OFFLINE";
             }
             if (scopeObj.isHamburgerVisible == false) {
                 kony.application.getCurrentForm().flxHamburger.setEnabled(true);

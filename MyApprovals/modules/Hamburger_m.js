@@ -34,6 +34,7 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
         hamburgerButton.onClick = function() {
             kony.print("-- Start hamburgerButton.onClick --");
           	this.hamburgerMenuItemsShow();
+            kony.application.getCurrentForm().flxHamburger.lblUsername.text = "Welcome "+kony.apps.coe.ess.frmLogin.username;
           	//bbe-101 menu sync
           	kony.application.getCurrentForm().flxHamburger.lblSyncDate.text=formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
 		   	kony.application.getCurrentForm().flxHamburger.lblSyncTime.text=formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);
@@ -44,9 +45,9 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
                 kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.syncHamburger = 0;
             }
             if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = "APP ONLINE";
+                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = kony.i18n.getLocalizedString("i18n.ess.Login.appOnline");//"APP ONLINE";
             } else {
-                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = "APP OFFLINE";
+                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = kony.i18n.getLocalizedString("i18n.ess.Login.appOffline");//"APP OFFLINE";
             }
             if (scopeObj.isHamburgerVisible == false) {
                 kony.application.getCurrentForm().flxHamburger.setEnabled(true);

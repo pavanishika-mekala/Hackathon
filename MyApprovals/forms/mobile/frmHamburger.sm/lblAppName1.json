@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
-        "value": "8.50%"
+        "value": "8%"
     },
     "_margin_": [
         1,
@@ -46,7 +46,7 @@
     },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblAppName",
+    "id": "lblAppName1",
     "info": null,
     "ipad": {
         "psp": {
@@ -58,10 +58,10 @@
             "wrapping": 2
         }
     },
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "6c2165bf7f24475b92ad6919f7370c0c",
     "name": "kony.ui.Label",
-    "parent": "flxAppName",
+    "parent": "flxAppName1",
     "pf": "frmHamburger",
     "texti18n": "i18n.ess.frmHamburger.title",
     "tooltip": "",

@@ -1,14 +1,15 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "8%"
+        "value": "8.50%"
     },
     "_margin_": [
         1,
@@ -22,7 +23,7 @@
         0,
         0
     ],
-    "_skin_": "s098061f5e654da286da07893e1c5525",
+    "_skin_": "sa3ea170a10344d992f93dbeccb5c101",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -58,8 +59,9 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
-    "kuid": "6c2165bf7f24475b92ad6919f7370c0c",
+    "isvisible": false,
+    "kuid": "bfec2099f54c41b887eb8e667bbd866e",
+    "masterType": 1,
     "name": "kony.ui.Label",
     "parent": "flxAppName",
     "pf": "frmHamburger",
