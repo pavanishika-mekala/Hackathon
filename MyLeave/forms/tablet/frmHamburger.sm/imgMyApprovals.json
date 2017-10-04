@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "35dp"
+        "value": "45dp"
     },
     "_left_": {
         "type": "string",
@@ -31,7 +31,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "35dp"
+        "value": "45dp"
     },
     "canUpdateUI": true,
     "centery": {
