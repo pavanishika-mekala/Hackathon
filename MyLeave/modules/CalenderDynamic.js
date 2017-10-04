@@ -255,19 +255,13 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
             this.MonthDataConstructorIntializate();
             onswipeCallBackFunction.call(this, myWidget, gestureInfo, context);
         }.bind(this));
-      var countwidth = "14.29%";
-      //#ifdef tabrcandroid
-       countwidth = "12%";
-      //#endif
-      //#ifdef ipad
-       countwidth = "10%";
-      //#endif
+      
       
         var basicconfig_cell = {
             "id": "",
             "top": "-16.01%",
             "left": "0%",
-            "width": countwidth,
+            "width": "14.28%",
             "height": "16%",
             "zIndex": 1,
             "isVisible": true,
