@@ -1,0 +1,27 @@
+{
+    "AS_Button_b60ae81b2b3b411d8391e195435dee39": {
+        "id": "AS_Button_b60ae81b2b3b411d8391e195435dee39",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpSegRequests",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1f6d3713a0a44fae8be4ed410c58f354"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__jdb5d211f95244769684d26d8e4051e2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.application.getCurrentForm().id == \"frmRequestedList\"){\nkony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.approveRequest(frmRequestedList.SegDetails.selectedRowItems[0].ID);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

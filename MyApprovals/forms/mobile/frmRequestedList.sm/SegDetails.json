@@ -49,6 +49,10 @@
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": ""
             },
+            "lblShortName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "AA"
+            },
             "lblUserName": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                 "text": ""
@@ -144,6 +148,8 @@
     "widgetdatamap": {
         "btnAdditionalInfo": "btnAdditionalInfo",
         "btnApprove": "btnApprove",
+        "btnLaterApprove": "btnLaterApprove",
+        "btnLaterReject": "btnLaterReject",
         "btnReject": "btnReject",
         "flxAllWidgets": "flxAllWidgets",
         "flxBottomLeft": "flxBottomLeft",

@@ -141,9 +141,15 @@ kony.apps.coe.ess.Approvals.IsLaterSearch.set_data_ForLaterSegment = function (r
 			//"imgLeaveInfo": "requestTypeInfoImage",
 			"lblRemainingHours": "remaingHours",
 			"imgSelection": "imgSelection",
-          	"flxApprovalRequest" : "flxApprovalRequest"
+          	"flxApprovalRequest" : "flxApprovalRequest",
+          	"btnLaterReject":"btnLaterReject",
+          	"btnLaterApprove":"btnLaterApprove"
 		};
 		frmIsLaterSearch.SegDetails.widgetDataMap = WidgetDatamap;
+      	for(var i=0;i<processedData.length;i++){
+          processedData[i]["btnLaterReject"]={"isVisible":false};
+          processedData[i]["btnLaterApprove"]={"isVisible":false};
+        }
 		frmIsLaterSearch.SegDetails.setData(processedData);
 	} catch (err) {
 		handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.peopleSearch.ErrorMessage.bindData")));
