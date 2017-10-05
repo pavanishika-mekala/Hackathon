@@ -53,36 +53,36 @@ kony.apps.coe.ess.Approvals.IsLaterSearch.changeSkinsForLaterSegment = function 
 		case "LEAVE":
 			frmIsLaterSearch.flxHeader.skin = "sknFlx7986CBff";
 			frmIsLaterSearch.flxFiter.skin = "sknFlx7986CBff";
-            frmIsLaterSearch.skin = "sknFlx7986CBff";
+			frmIsLaterSearch.skin = "sknFlx7986CBff";
 			break;
 		case "TIMESHEET":
 			frmIsLaterSearch.flxHeader.skin = "sknflxBA68C8po100";
 			frmIsLaterSearch.flxFiter.skin = "sknflxBA68C8po100";
-            frmIsLaterSearch.skin = "sknflxBA68C8po100";
+			frmIsLaterSearch.skin = "sknflxBA68C8po100";
 			break;
 		case "EXPENSES":
 			frmIsLaterSearch.flxHeader.skin = "skn1DB6C9ff";
 			frmIsLaterSearch.flxFiter.skin = "skn1DB6C9ff";
-            frmIsLaterSearch.skin = "skn1DB6C9ff";
+			frmIsLaterSearch.skin = "skn1DB6C9ff";
 			break;
 		case "PURCHASEORDER":
 			frmIsLaterSearch.flxHeader.skin = "sknFlxMob058594ff";
 			frmIsLaterSearch.flxFiter.skin = "sknFlxMob058594ff";
-            frmIsLaterSearch.skin = "sknFlxMob058594ff";
+			frmIsLaterSearch.skin = "sknFlxMob058594ff";
 			break;
 		case "WORKORDER":
 			frmIsLaterSearch.flxHeader.skin = "sknFlxMob0284B5ff";
 			frmIsLaterSearch.flxFiter.skin = "sknFlxMob0284B5ff";
-            frmIsLaterSearch.skin = "sknFlxMob0284B5ff";
+			frmIsLaterSearch.skin = "sknFlxMob0284B5ff";
 			break;
-         default:
+		default:
 			frmIsLaterSearch.flxHeader.skin = "sknFlx7986CBff";
 			frmIsLaterSearch.flxFiter.skin = "sknFlx7986CBff";
-            frmIsLaterSearch.skin = "sknFlx7986CBff";
+			frmIsLaterSearch.skin = "sknFlx7986CBff";
 		/*default:
 			frmIsLaterSearch.flxHeader.skin = "sknFlxMob0284B5ff";
 			frmIsLaterSearch.flxFiter.skin = "sknFlxMob0284B5ff";
-            frmIsLaterSearch.skin = "sknFlxMob0284B5ff";*/
+			frmIsLaterSearch.skin = "sknFlxMob0284B5ff";*/
 		}
 	} catch (e) {
 		handleError(kony.i18n.getLocalizedString("i18n.ess.myApprovals.errorChangeSkin"));
@@ -103,7 +103,7 @@ kony.apps.coe.ess.Approvals.IsLaterSearch.onClickOfAll = function () {
 	query_data_Forall.totalPeoples = [];
 	query_data_Forall.attribute_section_id = "1";
 	query_data_Forall.status_id = "2";
-  	query_data_Forall.isLater = "1";
+	query_data_Forall.isLater = "1";
 	var selectedPeople = kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch.SelectedItems;
 	for (var index in selectedPeople) {
 		query_data_Forall.totalPeoples.push(selectedPeople[index].Id);
@@ -141,15 +141,15 @@ kony.apps.coe.ess.Approvals.IsLaterSearch.set_data_ForLaterSegment = function (r
 			//"imgLeaveInfo": "requestTypeInfoImage",
 			"lblRemainingHours": "remaingHours",
 			"imgSelection": "imgSelection",
-          	"flxApprovalRequest" : "flxApprovalRequest",
-          	"btnLaterReject":"btnLaterReject",
-          	"btnLaterApprove":"btnLaterApprove"
+			"flxApprovalRequest" : "flxApprovalRequest",
+			"btnLaterReject":"btnLaterReject",
+			"btnLaterApprove":"btnLaterApprove"
 		};
 		frmIsLaterSearch.SegDetails.widgetDataMap = WidgetDatamap;
-      	for(var i=0;i<processedData.length;i++){
-          processedData[i]["btnLaterReject"]={"isVisible":false};
-          processedData[i]["btnLaterApprove"]={"isVisible":false};
-        }
+		for(var i=0;i<processedData.length;i++){
+			processedData[i]["btnLaterReject"]={"isVisible":false};
+			processedData[i]["btnLaterApprove"]={"isVisible":false};
+		}
 		frmIsLaterSearch.SegDetails.setData(processedData);
 	} catch (err) {
 		handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.peopleSearch.ErrorMessage.bindData")));
