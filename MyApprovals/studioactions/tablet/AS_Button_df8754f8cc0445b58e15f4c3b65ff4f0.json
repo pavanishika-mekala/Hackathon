@@ -1,0 +1,20 @@
+{
+    "AS_Button_df8754f8cc0445b58e15f4c3b65ff4f0": {
+        "id": "AS_Button_df8754f8cc0445b58e15f4c3b65ff4f0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_bcfa8dfa4aa44513b2da06e882180715",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.application.getCurrentForm().id == \"frmRequestedList\"){\nkony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.approveRequest(frmRequestedList.SegDetails.selectedRowItems[0].ID);\n}",
+            "callbackType": null
+        }]
+    }
+}

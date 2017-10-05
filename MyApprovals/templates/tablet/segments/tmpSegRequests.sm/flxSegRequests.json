@@ -24,7 +24,9 @@
     "canUpdateUI": true,
     "children": [
         "flxForanimation",
-        "lblLine"
+        "lblLine",
+        "btnLaterReject",
+        "btnLaterApprove"
     ],
     "clipbounds": true,
     "containerId": true,
