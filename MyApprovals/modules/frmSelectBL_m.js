@@ -330,7 +330,9 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegStatusData
  * @desc	 :	search based on first name and last name
  */
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople = function(str) {
-  var masterData=frmSelect.segSearchPeople.data;
+  var tempMasterData=frmSelect.segSearchPeople.data;
+  tempMasterData.splice(0, 1);
+  var masterData=tempMasterData;
   var searchData=[];
   kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople--");
   try {
@@ -384,7 +386,9 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople =
  * @desc	 :	onrowclick of search segment
  */
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick = function() {
-  var masterData=frmSelect.segSearchPeople.data;
+  var tempMasterData=frmSelect.segSearchPeople.data;
+  tempMasterData.splice(0, 1);
+  var masterData=tempMasterData;
   var searchData=frmSelect.segSearch.data;
   var selectedSearchItems=frmSelect.segSearch.selectedRowItems;
   kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick--");
@@ -396,6 +400,18 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     };
     frmSelect.segSearchPeople.widgetDataMap = widgetDataMap;
     frmSelect.segSearch.widgetDataMap=widgetDataMap;
+    //For All functionality
+    var index = frmSelect.segSearch.selectedRowIndex[1];
+    var sData = frmSelect.segSearch.data[index];
+    if (sData.imgSelected === "close.png") {
+      var tempSearchData=frmSelect.segSearchPeople.selectedRowIndices[0][1];
+      var index = tempSearchData.indexOf(0);
+      if (index > -1) {
+        tempSearchData.splice(index, 1);
+        frmSelect.segSearchPeople.selectedRowIndices=[[0,tempSearchData]]
+      }
+    }else{
+    }
     //separating selected and unselected data in segSearch
     var unselectedItems=[];
     var count=0;
@@ -433,7 +449,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
         if(masterData != null){
           for(var k=0;k<masterData.length;k++){
             if(selectedSearchItems[i]["id"]== masterData[k]["id"]){
-              selectedPeopleArray.push(k);
+              selectedPeopleArray.push(k+1);
               break;
             }
           }
@@ -449,7 +465,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     for(var x=0;x<unselectedItems.length;x++){
       for(var y=0;y<masterData.length;y++){
         if(unselectedItems[x]["id"]== masterData[y]["id"]){
-          unselectedPeopleArray.push(y);
+          unselectedPeopleArray.push(y+1);
           break;
         }
       }
