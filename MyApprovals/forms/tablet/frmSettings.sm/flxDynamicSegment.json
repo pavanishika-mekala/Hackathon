@@ -45,7 +45,7 @@
     "enablescrolling": true,
     "id": "flxDynamicSegment",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "b0e311fd3c654ba5834da04b13011de1",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

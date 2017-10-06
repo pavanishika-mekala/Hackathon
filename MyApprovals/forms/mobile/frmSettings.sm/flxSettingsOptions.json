@@ -40,7 +40,8 @@
         "flxDynamicSegment",
         "flxPushNotification",
         "flxLocalDBReset",
-        "flxLangSelection"
+        "flxLangSelection",
+        "btnChangeLanguage"
     ],
     "clipbounds": true,
     "containerweight": 100,
