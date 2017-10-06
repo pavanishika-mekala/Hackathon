@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_ba962a4db4b84bd9b93b04919ab609cc",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "var obj=new kony.apps.coe.myLeave.search();\nobj.done();",
+            "codeSnippet": "var obj=new kony.apps.coe.myLeave.search();\nobj.done(\"selectedFilterIcon\");",
             "callbackType": null
         }]
     }

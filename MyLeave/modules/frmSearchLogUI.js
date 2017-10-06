@@ -109,7 +109,7 @@ kony.apps.coe.myLeave.search.prototype.clear = function () {
  * desc         This method displays the reult in the segment based on the filters selected when apply is clicked.
  */
 
-kony.apps.coe.myLeave.search.prototype.done = function () {
+kony.apps.coe.myLeave.search.prototype.done = function (filterIcon) {
 
 	kony.print("----------- in Done");
 
@@ -168,7 +168,7 @@ kony.apps.coe.myLeave.search.prototype.done = function () {
 		else
 			sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and s.Id in (" + sCondition + ") and lt.name in (" + lCondition + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
 		if (parseInt(from) <= parseInt(to))
-			new kony.apps.coe.myLeave.search().execQuery(sqlquery);
+			new kony.apps.coe.myLeave.search().execQuery(sqlquery,filterIcon);
 	} catch (err) {
 		kony.print("-----------error: " + err);
       	handleError(err);
@@ -184,7 +184,7 @@ kony.apps.coe.myLeave.search.prototype.done = function () {
  * desc         This method executes a query
  */
 
-kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery) {
+kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery,filterIcon) {
 
 	kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function (res) {
 
@@ -306,7 +306,11 @@ kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery) {
 		frmSearchLog.flxStatus.isVisible = false;
 		frmSearchLog.flxSearchLeaveType.isVisible = false;
 		frmSearchLog.flxDoneButton.isVisible = false;
-		frmSearchLog.imgFilter.src = "filter.png";
+      if(filterIcon === "selectedFilterIcon"){
+		frmSearchLog.imgFilter.src = "filter_selected.png";
+      }else{
+        frmSearchLog.imgFilter.src = "filter.png";
+      }  
 	}, function (err) {
       	handleError(err);
 	}, false);

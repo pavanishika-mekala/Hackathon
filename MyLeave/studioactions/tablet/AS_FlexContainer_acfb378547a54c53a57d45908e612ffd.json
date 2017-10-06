@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_g8765c37f4534e6b838ce0368d309bba",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "(new kony.apps.coe.myLeave.search()).clear();\neval(String(kony.apps.coe.ess.globalVariables.previousFormForLeaveRequestDetails) + \".show();\");",
+            "codeSnippet": "//(new kony.apps.coe.myLeave.search()).clear();\neval(String(kony.apps.coe.ess.globalVariables.previousFormForLeaveRequestDetails) + \".show();\");",
             "callbackType": null
         }]
     }
