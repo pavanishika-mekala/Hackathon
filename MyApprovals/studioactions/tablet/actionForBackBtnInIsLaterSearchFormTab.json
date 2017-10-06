@@ -11,7 +11,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_a3f4f9fe24f448bdabbfa6fd112f8a72",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "frmApprovalHome.show();\nfrmRequestedList.destroy();",
+            "codeSnippet": "frmApprovalHome.tbxLaterFilter.text=\"\";\nfrmApprovalHome.tbxSearch.text=\"\";\nfrmApprovalHome.show();\nfrmRequestedList.destroy();",
             "callbackType": null
         }]
     }

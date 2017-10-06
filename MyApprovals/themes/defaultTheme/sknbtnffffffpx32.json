@@ -66,7 +66,7 @@
     "bg_type": "one",
     "font_color": "ffffffff",
     "font_name": "AvenirLTStd-Roman",
-    "font_size": 134,
+    "font_size": 145,
     "isForked": true,
     "text_shadow": {
       "br": 0,
@@ -351,7 +351,7 @@
     "bg_type": "one",
     "font_color": "ffffffff",
     "font_name": "AvenirLTStd-Roman",
-    "font_size": 134,
+    "font_size": 145,
     "isForked": true,
     "text_shadow": {
       "br": 0,

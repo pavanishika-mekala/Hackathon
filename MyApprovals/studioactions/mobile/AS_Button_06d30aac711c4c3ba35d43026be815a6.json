@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__d85b40bec3a2440ba46b02d441c40ccb",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "frmRequestedList.show();",
+            "codeSnippet": "frmRequestedList.tbxLaterFilter.text=\"\";\nfrmRequestedList.show();",
             "parentId": null,
             "callbackType": null
         }]

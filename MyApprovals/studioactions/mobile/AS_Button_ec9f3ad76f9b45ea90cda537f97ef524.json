@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__ad4e673057c746cbbef40ea153d53a85",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "frmApprovalHome.show();\nfrmExpenseReportDetail.btnBackToHome.setVisibility(false);",
+            "codeSnippet": "frmApprovalHome.tbxLaterFilter.text=\"\";\nfrmApprovalHome.tbxSearch.text=\"\";\nfrmApprovalHome.show();\nfrmExpenseReportDetail.btnBackToHome.setVisibility(false);",
             "parentId": null,
             "callbackType": null
         }]

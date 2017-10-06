@@ -22,7 +22,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__5e02d78362c841da9ef1fc269fad53f1",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "frmApprovalHome.show();\nfrmRequestedList.destroy();",
+            "codeSnippet": "frmApprovalHome.tbxLaterFilter.text=\"\";\nfrmApprovalHome.tbxSearch.text=\"\";\nfrmApprovalHome.show();\nfrmRequestedList.destroy();",
             "parentId": null,
             "callbackType": null
         }]

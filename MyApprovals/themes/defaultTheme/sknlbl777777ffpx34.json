@@ -12,13 +12,13 @@
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
-    "font_size": 145,
+    "font_size": 160,
     "isForked": true
   },
   "isDefaultSkin": false,
   "kuid": "se825740e6d24ee096343b21f9aa9551",
   "tabrcandroid": {
-    "font_size": 145,
+    "font_size": 160,
     "isForked": true
   },
   "wType": "Label"

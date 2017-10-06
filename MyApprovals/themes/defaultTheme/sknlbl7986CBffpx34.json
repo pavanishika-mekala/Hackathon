@@ -13,14 +13,14 @@
   "font_weight": "normal",
   "ipad": {
     "font_name": "Helvetica",
-    "font_size": 141,
+    "font_size": 150,
     "isForked": true
   },
   "isDefaultSkin": false,
   "kuid": "s0d1677c35614817941a05703fea8efa",
   "tabrcandroid": {
     "font_name": "Helvetica",
-    "font_size": 141,
+    "font_size": 150,
     "isForked": true
   },
   "wType": "Label"

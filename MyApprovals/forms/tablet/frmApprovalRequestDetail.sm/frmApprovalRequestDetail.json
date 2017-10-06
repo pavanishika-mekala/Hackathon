@@ -36,7 +36,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPad3",
+    "device": "iPad2",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmApprovalRequestDetail",
@@ -82,7 +82,7 @@
     "prevDevice": "iPad3",
     "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "iOS_iPad2",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

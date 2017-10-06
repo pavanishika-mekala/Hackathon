@@ -9,7 +9,7 @@
     },
     "_height_": {
         "type": "string",
-        "value": "60dp"
+        "value": "75dp"
     },
     "_margin_": [
         0,
@@ -31,7 +31,7 @@
     "_src_": "pdf_download.png",
     "_width_": {
         "type": "string",
-        "value": "60dp"
+        "value": "75dp"
     },
     "canUpdateUI": true,
     "centerx": {

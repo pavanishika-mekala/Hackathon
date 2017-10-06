@@ -1,6 +1,6 @@
 {
   "android": {
-    "font_size": 100,
+    "font_size": 64,
     "isForked": true
   },
   "background_color": "00000000",
@@ -33,11 +33,11 @@
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
-    "font_size": 100,
+    "font_size": 120,
     "isForked": true
   },
   "iphone": {
-    "font_size": 100,
+    "font_size": 64,
     "isForked": true
   },
   "isDefaultSkin": false,
@@ -159,7 +159,7 @@
     "top_right_border_width": 1
   },
   "tabrcandroid": {
-    "font_size": 100,
+    "font_size": 120,
     "isForked": true
   },
   "wType": "Label",
