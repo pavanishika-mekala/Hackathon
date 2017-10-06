@@ -39,17 +39,6 @@
       "y": 0
     }
   },
-  "iphone": {
-    "isForked": true,
-    "shadow": {
-      "br": 0,
-      "color": "000000",
-      "inner": false,
-      "nm": 0,
-      "x": 0,
-      "y": 0
-    }
-  },
   "isDefaultSkin": false,
   "kuid": "sec3f93916e8483794b2b479c87bb758",
   "wType": "FlexContainer"
