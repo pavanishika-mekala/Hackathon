@@ -1148,64 +1148,73 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
     data.employee_id = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveEntryData.employee_id;
     data.leave_id = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveEntryData.id;
     data.comments = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveEntryData.reason_desc;
-    var evtobj = {
-      type: "starting",
-      start: dataToForward.start_date.substring(6, 8) + "/" + dataToForward.start_date.substring(4, 6) + "/" + dataToForward.start_date.substring(0, 4) + " 00:00:00",
-      finish: dataToForward.end_date.substring(6, 8) + "/" + dataToForward.end_date.substring(4, 6) + "/" + dataToForward.end_date.substring(0, 4) + " 23:59:59"
-    };
-    var options = {};
-    var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
-    if(result.status == kony.application.PERMISSION_DENIED) {
-      if(result.canRequestPermission){
-        kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
-      }
-      else{
-        var basicConfig = {
-          alertType : constants.ALERT_TYPE_CONFIRMATION,
-          message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
-          alertHandler : alertCallback
-        }
-        var pspConfig={};
-        kony.ui.Alert(basicConfig,pspConfig);
-      }
+    dataToForward.comment = data.comments;
+    if (data.comments !== "" && data.comments !== undefined && data.comments !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.currentComment != data.comments) {
+      var date = new Date();
+      var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
+      data.createdts = timestamp;
+      kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateError);
+    } else {
+      kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess(dataToForward, dates, holidayResponse);
     }
-    else{
-      permissionStatusCallback(result);
-    }  
-    function alertCallback(resp){
-      if(resp == true){
-        kony.application.openApplicationSettings();
-      }
-      permissionStatusCallback(result);
-    } 
-    function permissionStatusCallback(response){
-      kony.print("permissionStatusCallback :: "+ JSON.stringify(response));
-      //50002 is permission granted and 500001 is permission denied.
-      if(response.status == true || response.status == 50002){
-        var events = kony.phone.findCalendarEvents(evtobj);
-        dataToForward.isPermissionStatus=true;
-        dataToForward.showPopup = true;
-        for (var eventNo = 0; eventNo < events.length; eventNo++) {
-          if (events[eventNo].summary.substring(0, 12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")) {
-            kony.phone.removeCalendarEvent(events[eventNo]);
-            dataToForward.showPopup = false;
-          }
-        }
-      }
-      else{
-        dataToForward.isPermissionStatus=false;
-      }
+//     var evtobj = {
+//       type: "starting",
+//       start: dataToForward.start_date.substring(6, 8) + "/" + dataToForward.start_date.substring(4, 6) + "/" + dataToForward.start_date.substring(0, 4) + " 00:00:00",
+//       finish: dataToForward.end_date.substring(6, 8) + "/" + dataToForward.end_date.substring(4, 6) + "/" + dataToForward.end_date.substring(0, 4) + " 23:59:59"
+//     };
+//     var options = {};
+//     var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
+//     if(result.status == kony.application.PERMISSION_DENIED) {
+//       if(result.canRequestPermission){
+//         kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
+//       }
+//       else{
+//         var basicConfig = {
+//           alertType : constants.ALERT_TYPE_CONFIRMATION,
+//           message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
+//           alertHandler : alertCallback
+//         }
+//         var pspConfig={};
+//         kony.ui.Alert(basicConfig,pspConfig);
+//       }
+//     }
+//     else{
+//       permissionStatusCallback(result);
+//     }  
+//     function alertCallback(resp){
+//       if(resp == true){
+//         kony.application.openApplicationSettings();
+//       }
+//       permissionStatusCallback(result);
+//     } 
+//     function permissionStatusCallback(response){
+//       kony.print("permissionStatusCallback :: "+ JSON.stringify(response));
+//       //50002 is permission granted and 500001 is permission denied.
+//       if(response.status == true || response.status == 50002){
+//         var events = kony.phone.findCalendarEvents(evtobj);
+//         dataToForward.isPermissionStatus=true;
+//         dataToForward.showPopup = true;
+//         for (var eventNo = 0; eventNo < events.length; eventNo++) {
+//           if (events[eventNo].summary.substring(0, 12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")) {
+//             kony.phone.removeCalendarEvent(events[eventNo]);
+//             dataToForward.showPopup = false;
+//           }
+//         }
+//       }
+//       else{
+//         dataToForward.isPermissionStatus=false;
+//       }
 
-      dataToForward.comment = data.comments;
-      if (data.comments !== "" && data.comments !== undefined && data.comments !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.currentComment != data.comments) {
-        var date = new Date();
-        var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
-        data.createdts = timestamp;
-        kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateError);
-      } else {
-        kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess(dataToForward, dates, holidayResponse);
-      }
-    }
+//       dataToForward.comment = data.comments;
+//       if (data.comments !== "" && data.comments !== undefined && data.comments !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.currentComment != data.comments) {
+//         var date = new Date();
+//         var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
+//         data.createdts = timestamp;
+//         kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateError);
+//       } else {
+//         kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess(dataToForward, dates, holidayResponse);
+//       }
+//     }
   },
   leaveCreateSuccess: function(dataToForward, dates, holidayResponse, response) {
     kony.print("success" + JSON.stringify(response));
@@ -1294,7 +1303,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
           var currentDate = new Date();
           var tempDate = new Date(dataToForward.start_date.substring(0, 4), (parseInt(dataToForward.start_date.substring(4, 6)) - 1) + "", dataToForward.start_date.substring(6, 8), dataToForward.start_time.substring(0, 2), dataToForward.start_time.substring(2, 4), dataToForward.start_time.substring(4, 6));
           if (tempDate >= currentDate) {
-            addLeaveToDevice(dataToForward);
+            //addLeaveToDevice(dataToForward);
           }
         }
       }

@@ -1406,74 +1406,91 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.deleteLeaveSuccess = function(leaveData,
   var data = {};
   data.employee_id = kony.apps.coe.ess.globalVariables.employeeId;
   data.leave_id = kony.apps.coe.ess.myLeave.MyLeaveHomeUI.selectedLeaveID;
-  var evtobj = {
-    type: "starting",
-    start: leaveData.data.CellData.StartDate.substring(6, 8) + "/" + leaveData.data.CellData.StartDate.substring(4, 6) + "/" + leaveData.data.CellData.StartDate.substring(0, 4) + " 00:00:00",
-    finish: leaveData.data.CellData.EndDate.substring(6, 8) + "/" + leaveData.data.CellData.EndDate.substring(4, 6) + "/" + leaveData.data.CellData.EndDate.substring(0, 4) + " 23:59:59"
-  };
-  var options = {};
-  var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
-  if(result.status == kony.application.PERMISSION_DENIED) {
-    if(result.canRequestPermission){
-      kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
-    }
-    else{
-      var basicConfig = {
-        alertType : constants.ALERT_TYPE_CONFIRMATION,
-        message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
-        alertHandler : alertCallback
-      }
-      var pspConfig={};
-      kony.ui.Alert(basicConfig,pspConfig);
-    }
+  if (typeof frmLeaveHome.TxtAreaComments.text !== "undefined" && frmLeaveHome.TxtAreaComments.text!== "" && frmLeaveHome.TxtAreaComments.text !== null) {
+    data.comments = frmLeaveHome.TxtAreaComments.text;
+    var date = new Date();
+    var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
+    data.createdts = timestamp;
+    kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function(res) {
+      kony.apps.coe.ess.Sync.syncAsynchronously();
+      kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
+      kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
+    }, function(err) {
+      handleError(err);
+    });
+  } else {
+    kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
+    kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
+    kony.apps.coe.ess.Sync.syncAsynchronously();
   }
-  else{
-    permissionStatusCallback(result);
-  }  
-  function alertCallback(resp){
-    if(resp == true){
-      kony.application.openApplicationSettings();
-  }
-}  
-  function permissionStatusCallback(response){
-    kony.print("permissionStatusCallback :: "+ JSON.stringify(response));
-    //50002 is permission granted and 500001 is permission denied.
-    if(response.status == true || response.status == 50002){
-      //permission granted
-      var events = kony.phone.findCalendarEvents(evtobj);
-      for (var eventNo = 0; eventNo < events.length; eventNo++) {
-        if (events[eventNo].summary.substring(0, 12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")) {
-          kony.phone.removeCalendarEvent(events[eventNo]);
-        }
-      }
-      if (typeof frmLeaveHome.TxtAreaComments.text !== "undefined" && frmLeaveHome.TxtAreaComments.text!== "" && frmLeaveHome.TxtAreaComments.text !== null) {
-        data.comments = frmLeaveHome.TxtAreaComments.text;
-        var date = new Date();
-        var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
-        data.createdts = timestamp;
-        kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function(res) {
-          kony.apps.coe.ess.Sync.syncAsynchronously();
-          kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
-          kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
-        }, function(err) {
-          handleError(err);
-        });
-      } else {
-        kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
-        kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
-        kony.apps.coe.ess.Sync.syncAsynchronously();
-      }
-    }
-    else{
-      var basicConfig = {
-        alertType : constants.ALERT_TYPE_CONFIRMATION,
-        message : kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
-        alertHandler : alertCallback
-      };
-      var pspConfig={};
-      kony.ui.Alert(basicConfig,pspConfig);
-    }    
-  }
+//   var evtobj = {
+//     type: "starting",
+//     start: leaveData.data.CellData.StartDate.substring(6, 8) + "/" + leaveData.data.CellData.StartDate.substring(4, 6) + "/" + leaveData.data.CellData.StartDate.substring(0, 4) + " 00:00:00",
+//     finish: leaveData.data.CellData.EndDate.substring(6, 8) + "/" + leaveData.data.CellData.EndDate.substring(4, 6) + "/" + leaveData.data.CellData.EndDate.substring(0, 4) + " 23:59:59"
+//   };
+//   var options = {};
+//   var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
+//   if(result.status == kony.application.PERMISSION_DENIED) {
+//     if(result.canRequestPermission){
+//       kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
+//     }
+//     else{
+//       var basicConfig = {
+//         alertType : constants.ALERT_TYPE_CONFIRMATION,
+//         message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
+//         alertHandler : alertCallback
+//       }
+//       var pspConfig={};
+//       kony.ui.Alert(basicConfig,pspConfig);
+//     }
+//   }
+//   else{
+//     permissionStatusCallback(result);
+//   }  
+//   function alertCallback(resp){
+//     if(resp == true){
+//       kony.application.openApplicationSettings();
+//   }
+// }  
+//   function permissionStatusCallback(response){
+//     kony.print("permissionStatusCallback :: "+ JSON.stringify(response));
+//     //50002 is permission granted and 500001 is permission denied.
+//     if(response.status == true || response.status == 50002){
+//       //permission granted
+//       var events = kony.phone.findCalendarEvents(evtobj);
+//       for (var eventNo = 0; eventNo < events.length; eventNo++) {
+//         if (events[eventNo].summary.substring(0, 12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")) {
+//           kony.phone.removeCalendarEvent(events[eventNo]);
+//         }
+//       }
+//       if (typeof frmLeaveHome.TxtAreaComments.text !== "undefined" && frmLeaveHome.TxtAreaComments.text!== "" && frmLeaveHome.TxtAreaComments.text !== null) {
+//         data.comments = frmLeaveHome.TxtAreaComments.text;
+//         var date = new Date();
+//         var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
+//         data.createdts = timestamp;
+//         kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function(res) {
+//           kony.apps.coe.ess.Sync.syncAsynchronously();
+//           kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
+//           kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
+//         }, function(err) {
+//           handleError(err);
+//         });
+//       } else {
+//         kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
+//         kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
+//         kony.apps.coe.ess.Sync.syncAsynchronously();
+//       }
+//     }
+//     else{
+//       var basicConfig = {
+//         alertType : constants.ALERT_TYPE_CONFIRMATION,
+//         message : kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
+//         alertHandler : alertCallback
+//       };
+//       var pspConfig={};
+//       kony.ui.Alert(basicConfig,pspConfig);
+//     }    
+//   }
 };
 
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCurrentDate = function(){
