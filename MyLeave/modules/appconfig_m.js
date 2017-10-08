@@ -17,6 +17,9 @@ kony.apps.coe.ess.appconfig = {
     appversion : "v3.1.1",
   	isDemo : false,
     isSingleQrCode: true,
+  	identityServicePreLogin:"DevNextTimesheetOktaLogin",
+    axwayAuthService:"DevNextTimesheetOktaUPAxway",
+    useOkta: true,
     workingHours:8,
   /* Steps to obtain the runtime url
 	1.Go to publish tab in the Mobile Fabric App.

@@ -1,5 +1,5 @@
-//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Wed Aug 16 06:50:31 UTC 2017ApprovalMedia*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
+// ****************Generated On Fri Oct 06 09:33:03 UTC 2017ApprovalMedia*******************
 // **********************************Start ApprovalMedia's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -884,9 +884,9 @@ com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath = function(colName, pks, co
 	function mySuccCallback(res){
 		sync.log.trace("Entering com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath success callback function"
 			+"for columns :"+colName+" of tablename :"+tbname+" with response"+ res);
-		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filepath)) {
-			sync.log.trace("Entering com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath user success callback function"+ res.filepath);
-			successcallback(res.filepath);
+		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filePath)) {
+			sync.log.trace("Entering com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath user success callback function"+ res.filePath);
+			successcallback(res.filePath);
 		}
 		else {
 			sync.log.error("Entering com.kony.MYAPPROVALS.ApprovalMedia.getBinaryFilePath error callback function"+ res);

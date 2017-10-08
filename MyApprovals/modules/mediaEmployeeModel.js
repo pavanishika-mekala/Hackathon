@@ -1,5 +1,5 @@
-//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Wed Aug 16 06:50:31 UTC 2017mediaEmployee*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
+// ****************Generated On Fri Oct 06 09:33:03 UTC 2017mediaEmployee*******************
 // **********************************Start mediaEmployee's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -924,9 +924,9 @@ com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath = function(colName, pks, config
 	function mySuccCallback(res){
 		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath success callback function"
 			+"for columns :"+colName+" of tablename :"+tbname+" with response"+ res);
-		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filepath)) {
-			sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath user success callback function"+ res.filepath);
-			successcallback(res.filepath);
+		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filePath)) {
+			sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath user success callback function"+ res.filePath);
+			successcallback(res.filePath);
 		}
 		else {
 			sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath error callback function"+ res);

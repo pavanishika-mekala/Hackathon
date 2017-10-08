@@ -79,7 +79,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
               "       LEFT JOIN employee" +
               "              ON ( approval_request.employee_id = employee.id )" +
               "       LEFT JOIN status" +
-              "              ON ( request_approver.status_id = status.id )" +
+              "              ON ( approval_request.status_id = status.id )" +
               "       LEFT JOIN request_approver" +
               "              ON ( approval_request.id = request_approver.approval_id )" +
               "       LEFT JOIN request_category" +
