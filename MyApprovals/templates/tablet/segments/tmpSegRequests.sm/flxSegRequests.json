@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "25%"
+        "value": "20%"
     },
     "_margin_": [
         0,
@@ -24,7 +24,9 @@
     "canUpdateUI": true,
     "children": [
         "flxForanimation",
-        "lblLine"
+        "lblLine",
+        "btnLaterReject",
+        "btnLaterApprove"
     ],
     "clipbounds": true,
     "containerId": true,

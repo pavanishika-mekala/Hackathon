@@ -1,0 +1,20 @@
+{
+    "AS_Button_ccbfeb03563c433aae1aff814345a340": {
+        "id": "AS_Button_ccbfeb03563c433aae1aff814345a340",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_eb154b50b1cc457996a9300d52ac1249",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.approveRequest(context);\n",
+            "callbackType": null
+        }]
+    }
+}

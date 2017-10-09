@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "17%"
+        "value": "22%"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "s237cfa2ed9743beb8d0847c7a050c13",
-    "_text_": "Alexander Jones",
+    "_text_": "Alexander Jonesg",
     "_top_": {
         "type": "string",
         "value": "9%"
@@ -42,7 +42,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 1,
     "id": "lblUserName",
     "info": null,
     "ipad": {

@@ -261,6 +261,8 @@
     "widgetdatamap": {
         "btnAdditionalInfo": "btnAdditionalInfo",
         "btnApprove": "btnApprove",
+        "btnLaterApprove": "btnLaterApprove",
+        "btnLaterReject": "btnLaterReject",
         "btnReject": "btnReject",
         "flxAllWidgets": "flxAllWidgets",
         "flxBottomLeft": "flxBottomLeft",

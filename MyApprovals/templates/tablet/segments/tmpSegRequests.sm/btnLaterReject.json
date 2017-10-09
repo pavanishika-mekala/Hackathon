@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "20%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "46%"
     },
     "_margin_": [
         6,
@@ -22,39 +22,32 @@
         0,
         0
     ],
-    "_skin_": "s83432a4c35648d1a87cb53fb4b8f6c1",
+    "_skin_": "sc54c861d07848deabee85174d15e5d2",
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "75%"
     },
     "_width_": {
         "type": "string",
-        "value": "44%"
+        "value": "22%"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "70%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {},
     "displaytext": true,
-    "focusskin": "sf497032b96b4886b27d7459e7f2c04f",
-    "id": "btnApprove",
-    "ide_onClick": "AS_Button_9fe04ac569c64955b70da8653aab96a4",
+    "focusskin": "s3c6051d01954ddcb5f09ac654fda881",
+    "id": "btnLaterReject",
+    "ide_onClick": "AS_Button_ea904c28fbe246a199323e0227702d61",
     "info": null,
     "isvisible": true,
-    "kuid": "5b1591e011af47ee96beec1ba600e5a0",
+    "kuid": "j6ce4d2d30904123b98c55b85763003f",
     "name": "kony.ui.Button",
-    "parent": "flxButtons",
+    "parent": "flxSegRequests",
     "pf": "tmpSegRequests",
-    "texti18n": "i18n.ess.MyApprovals.tempSegRequests.btnApprove",
+    "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.Reject",
     "wType": "Button",
     "zindex": 1
 }

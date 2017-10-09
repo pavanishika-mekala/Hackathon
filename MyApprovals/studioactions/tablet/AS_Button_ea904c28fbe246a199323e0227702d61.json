@@ -1,0 +1,20 @@
+{
+    "AS_Button_ea904c28fbe246a199323e0227702d61": {
+        "id": "AS_Button_ea904c28fbe246a199323e0227702d61",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ea79e4e384ad4a6293e0091d93570ca4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.application.getCurrentForm().id == \"frmRequestedList\"){\ntry{\n\tvar formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmApprovalRequestDetail\");\n\tvar selectedApprovalId=frmRequestedList.SegDetails.selectedRowItems[0].ID;  \n  \tformController.loadDataAndShowForm(selectedApprovalId)\n}catch(e){\n  \thandleError(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.unableToLoadForm\"));\n}\n}",
+            "callbackType": null
+        }]
+    }
+}

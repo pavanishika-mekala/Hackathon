@@ -1,0 +1,20 @@
+{
+    "AS_Button_h202eed7cae6437ba7de515f1a4feab8": {
+        "id": "AS_Button_h202eed7cae6437ba7de515f1a4feab8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_be16b51036b748fb84da34720ca667bb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.apps.coe.ess.Approvals.ApprovalsHome.rejectRequest(context);\ntry {\n    var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmApprovalRequestDetail\");\n    if (kony.apps.coe.ess.globalVariables.isSPA) {\n        var selectedApprovalId = frmApprovalHome.segApprovalsList.selecteditems[0].ID\n    } else {\n        var selectedApprovalId = frmApprovalHome.segApprovalsList.selectedRowItems[0].ID;\n    }\n    formController.loadDataAndShowForm(selectedApprovalId)\n} catch (e) {\n    handleError(kony.i18n.getLocalizedString(\"i18n.ess.myApprovals.unableToLoadForm\"));\n}",
+            "callbackType": null
+        }]
+    }
+}
