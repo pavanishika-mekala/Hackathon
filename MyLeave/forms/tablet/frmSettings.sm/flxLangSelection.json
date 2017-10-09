@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "26%"
+        "value": "30%"
     },
     "_left_": {
         "type": "string",
@@ -39,7 +39,7 @@
         "lblSelectLang",
         "flxEnglish",
         "flxFrench",
-        "flxNederlands"
+        "flxLanguageChange"
     ],
     "clipbounds": true,
     "containerweight": 100,

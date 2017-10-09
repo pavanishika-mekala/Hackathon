@@ -5,7 +5,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "7%"
+        "value": "100%"
     },
     "_margin_": [
         0,
@@ -19,34 +19,34 @@
         1,
         0
     ],
-    "_skin_": "s2522da6a8774b9db74d836a99accb2e",
-    "_text_": "Change Language",
-    "_top_": {
+    "_right_": {
         "type": "string",
         "value": "5%"
     },
+    "_skin_": "s4446737ad234368aae4f63e0fd102f3",
+    "_text_": "Change Language",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "30%"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "displaytext": true,
     "focusskin": "scd21bf64f594c61b85775ac1b5dd921",
     "id": "btnChangeLanguage",
-    "ide_onClick": "AS_Button_af32eec550994bf8a3fc7b50fb2a2cf9",
+    "ide_onClick": "AS_Button_fbe37682b595439bac065031c1b558cc",
     "info": null,
     "isvisible": true,
     "kuid": "ca2b5de655ea48e7967c02297d1d4375",
     "masterType": 1,
     "name": "kony.ui.Button",
     "paddinginpixel": false,
-    "parent": "flxSettingsOptions",
+    "parent": "flxLanguageChange",
     "pf": "frmSettings",
     "wType": "Button",
     "zindex": 2

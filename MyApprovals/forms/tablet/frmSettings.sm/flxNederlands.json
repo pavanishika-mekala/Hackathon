@@ -1,9 +1,10 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "28%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -43,13 +44,13 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxNederlands",
-    "ide_onClick": "AS_FlexContainer_f9aecd76cd914b4da8665897443c3e1c",
+    "ide_onClick": "AS_FlexContainer_c3cc284ba0cb4e03b56fc67465343ef6",
     "info": null,
     "isvisible": true,
-    "kuid": "i339884c86124aa68339509e3f479d5d",
+    "kuid": "i6458abd40de4858892bb4a75b9cafcf",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxLangSelection",
+    "parent": "flxLanguageChange",
     "pf": "frmSettings",
     "snapgridsize": 10,
     "snaptogrid": true,

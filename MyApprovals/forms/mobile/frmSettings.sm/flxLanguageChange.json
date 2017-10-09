@@ -1,13 +1,14 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "92%"
+        "value": "28%"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,10 +24,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s6b54cf4110545949d31f50f11e34f38",
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
@@ -36,22 +37,19 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxSeetingsCard",
-        "flxDynamicSegment",
-        "flxPushNotification",
-        "flxLocalDBReset",
-        "flxLangSelection"
+        "flxNederlands",
+        "btnChangeLanguage"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxSettingsOptions",
+    "id": "flxLanguageChange",
     "info": null,
     "isvisible": true,
-    "kuid": "d181cc27061647e090dfdcaf78f9a78c",
-    "layouttype": 4,
+    "kuid": "b90a6a9d566e477bbf888cb2633f6ba9",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxSettings",
+    "parent": "flxLangSelection",
     "pf": "frmSettings",
     "snapgridsize": 10,
     "snaptogrid": true,

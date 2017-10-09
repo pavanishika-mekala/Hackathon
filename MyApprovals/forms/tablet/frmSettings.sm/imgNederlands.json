@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
@@ -38,7 +39,6 @@
     "context": {
         "channel": "tablet",
         "formID": "frmSettings",
-        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -47,7 +47,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "e4b9a765b0fc4c58887534d7dadb3c9e",
+    "kuid": "id123d0745864ccb88fda33f2ccb7607",
     "name": "kony.ui.Image2",
     "parent": "flxNederlands",
     "pf": "frmSettings",

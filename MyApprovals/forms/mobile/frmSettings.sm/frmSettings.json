@@ -34,11 +34,11 @@
         "flxPopUp"
     ],
     "containerweight": 100,
-    "currentLocale": "en",
+    "currentLocale": "nl_BE",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone5",
+    "device": "iPhone6",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "footer": "frmSettings_footer",
@@ -85,10 +85,10 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "iPhone6PlusZoomed",
+    "prevDevice": "iPhone4",
     "prevPlatform": "android",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone5",
+    "shellCSS": "iOS_iPhone6",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

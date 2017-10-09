@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
@@ -50,7 +51,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "c9ea64d777cd48169e998b479c9d2b0a",
+    "kuid": "fa74cc1025e64fccacfbce0328931ec7",
     "name": "kony.ui.Label",
     "parent": "flxNederlands",
     "pf": "frmSettings",
