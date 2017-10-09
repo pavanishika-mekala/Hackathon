@@ -1,5 +1,5 @@
-//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Mon Jul 24 09:45:25 UTC 2017MyLeaveMedia*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
+// ****************Generated On Sat Oct 07 21:58:11 UTC 2017MyLeaveMedia*******************
 // **********************************Start MyLeaveMedia's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -449,7 +449,7 @@ com.kony.MYLEAVE.MyLeaveMedia.updateAll = function(inputArray, successcallback, 
 	if(!kony.sync.validateInput(arguments, "com.kony.MYLEAVE.MyLeaveMedia.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "100000002f852f9b9";
+	var dbname = "10000473715010d0b";
 	var tbname = "MyLeaveMedia";
 	var isError = false;
 	var errObject = null;
@@ -924,9 +924,9 @@ com.kony.MYLEAVE.MyLeaveMedia.getBinaryFilePath = function(colName, pks, config,
 	function mySuccCallback(res){
 		sync.log.trace("Entering com.kony.MYLEAVE.MyLeaveMedia.getBinaryFilePath success callback function"
 			+"for columns :"+colName+" of tablename :"+tbname+" with response"+ res);
-		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filepath)) {
-			sync.log.trace("Entering com.kony.MYLEAVE.MyLeaveMedia.getBinaryFilePath user success callback function"+ res.filepath);
-			successcallback(res.filepath);
+		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filePath)) {
+			sync.log.trace("Entering com.kony.MYLEAVE.MyLeaveMedia.getBinaryFilePath user success callback function"+ res.filePath);
+			successcallback(res.filePath);
 		}
 		else {
 			sync.log.error("Entering com.kony.MYLEAVE.MyLeaveMedia.getBinaryFilePath error callback function"+ res);

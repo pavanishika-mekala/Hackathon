@@ -105,14 +105,14 @@ kony.apps.coe.ess.QRCode.prototype.BarcodeIphone = function() {
         try {
             var response = JSON.parse(barcodeData.barcodestring);
             if (response.MyApprovals) {
-               if (!kony.apps.coe.ess.appconfig.isSingleQrCode) { 
+               if (!kony.apps.coe.ess.appconfig.isSingleQrCode) {
                   kony.apps.coe.ess.frmLogin.username = response.MyApprovals.Username;
                   kony.apps.coe.ess.frmLogin.password = response.MyApprovals.Password;
                   kony.apps.coe.ess.appconfig.appkey = response.MyApprovals.AppKey;
                   kony.apps.coe.ess.appconfig.appsecret = response.MyApprovals.AppSecret;
                   kony.apps.coe.ess.appconfig.serviceurl = response.MyApprovals.ServiceURL.replace(/\\/g, "");
                   konysyncClientSyncConfig.Version = response.MyApprovals.SyncVersion;
-                } else 
+                } else
                 {
                   kony.apps.coe.ess.appconfig.appkey = response.MyApprovals.Key;
                   kony.apps.coe.ess.frmLogin.username = response.Username;

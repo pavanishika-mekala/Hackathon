@@ -183,6 +183,8 @@ kony.sdk.mvvm.LoginAction = function(status) {
 };
 
 function applicationSuccessCallback() {
+    _removeTokenHeaders();
+
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
         kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceName).getProfile(true, userDetailsSucess, userDetailsSucess);
     }
@@ -282,7 +284,7 @@ function userDetailsSucess(response) {
                                     //#ifndef windows8
                                         frmHamburger.lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
                                         frmHamburger.lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
-                                   
+
                                     //#endif
 
                                 };
@@ -395,6 +397,8 @@ function userDetailsSucess(response) {
 }
 
 function applicationErrorCallback(error) {
+    _removeTokenHeaders();
+
     kony.sdk.mvvm.log.error("failed to load app");
     error = error.getRootErrorObj();
     if (kony.apps.coe.ess.globalVariables.isWebDesktop == true) {
@@ -404,7 +408,7 @@ function applicationErrorCallback(error) {
     frmLogin.lblLoginErrorMessage.isVisible = true;
     frmLogin.tbUsername.skin = "sknTbWrongCredentials";
     frmLogin.tbPassword.skin = "sknTbWrongCredentials";
-    if (error.mfcode == "Auth-4") {
+    if (error !== null && error !== undefined && error.mfcode !== null && error.mfcode !== undefined && error.mfcode == "Auth-4") {
         if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
             frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.wrongCredentials");
         }
@@ -435,6 +439,14 @@ function applicationErrorCallback(error) {
     //#endif
 }
 
+function _removeTokenHeaders(){
+  if(kony.sdk.getCurrentInstance() !== undefined && kony.sdk.getCurrentInstance() !== null ){
+    // Remove token headers, if present
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header1, "headers");
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header2, "headers");
+  }
+}
+
 
 kony.sdk.mvvm.LogoutAction = function() {
     sync.stopSession(function() {
@@ -442,17 +454,41 @@ kony.sdk.mvvm.LogoutAction = function() {
     });
     options = {};
     options.slo = true;
-    kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+
+    if (kony.apps.coe.ess.appconfig.useOkta) {
+      // Clear login variables
+      kony.store.removeItem("username");
+      kony.store.removeItem("password");
+      kony.store.removeItem("rememberme");
+      kony.sdk.util.deleteSSOToken();
+
+      kony.application.showLoadingScreen("", kony.i18n.getLocalizedString(""), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+      // Destroy Okta session
+      try {
+        var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServicePreLogin);
+        preLoginService.logout(function() {
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+        }, function() {
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+        }, {});
+      } catch (exception) {
+        kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+      }
+    } else {
+      kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+    }
 
     function sucCallback() {
-        frmLogin.show();
-        frmLeaveHome.destroy();
+      kony.application.dismissLoadingScreen();
+      frmLogin.show();
+      frmLeaveHome.destroy();
     }
 
     function errCallback(err) {
-        frmLogin.show();
-        frmLeaveHome.destroy();
-        kony.print(JSON.stringify(err));
+      kony.application.dismissLoadingScreen();
+      frmLogin.show();
+      frmLeaveHome.destroy();
+      kony.print(JSON.stringify(err));
     }
 };
 

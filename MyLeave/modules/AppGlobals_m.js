@@ -90,10 +90,10 @@ kony.apps.coe.ess.globalVariables.checkNetwork.config = {
         kony.apps.coe.ess.globalVariables.ForegroundCall();//to check if app is in foreground
       }
     }
-    else {      
+    else {
       kony.print("device was online,now is offline,so dont do anything");
     }
-  }  
+  }
 };
 kony.apps.coe.ess.globalVariables.Status = {
   idToStr: {},
@@ -125,3 +125,7 @@ kony.apps.coe.ess.globalVariables.leaveWalletcolors=[
 kony.apps.coe.ess.globalVariables.leaveWalletconsumedSkn="LBLBgD74B14";
 kony.apps.coe.ess.globalVariables.leaveWalletPlanedSkn="LBLFFC300";
 kony.apps.coe.ess.globalVariables.leaveWalletAvailableSkn="LBL69AF23";
+
+// Login configuration
+kony.apps.coe.ess.globalVariables.login_token_header1="KonySAP-Request-Spnego";
+kony.apps.coe.ess.globalVariables.login_token_header2="KonySAP-Request-Access-Token";
