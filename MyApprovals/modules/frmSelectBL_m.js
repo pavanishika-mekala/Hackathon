@@ -81,8 +81,8 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickRequestType =
   function onDoneRequest() {
     var selectedData = frmSelect.SegRequestsType.selectedRowItems;
     if (selectedData != null && selectedData != "" && selectedData.length > 0) {
-      if (selectedData[0].request_name == "All") {
-        frmSearch.lblRequests.text = "All";
+      if (selectedData[0].request_name ==  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
+        frmSearch.lblRequests.text =  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll");
       } else {
         var Datatoset = "";
         for (var i = 0; i < selectedData.length; i++) {
@@ -124,8 +124,8 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickStatusType = 
   function onDoneRequest() {
     var selectedData = frmSelect.SegStatusType.selectedRowItems;
     if (selectedData != null && selectedData != "" && selectedData.length > 0) {
-      if (selectedData[0].status_name == "All") {
-        frmSearch.lblLeaveStatus.text = "All";
+      if (selectedData[0].status_name ==  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
+        frmSearch.lblLeaveStatus.text =  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll");
       } else {
         var Datatoset = "";
         for (var i = 0; i < selectedData.length; i++) {
@@ -167,8 +167,8 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickPeople = func
   function onDoneRequest() {
     var selectedData = frmSelect.segSearchPeople.selectedRowItems;
     if (selectedData != null && selectedData != "" && selectedData.length > 0) {
-      if (selectedData[0].Name == "All") {
-        frmSearch.lblUsers.text = "All";
+      if (selectedData[0].Name ==  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
+        frmSearch.lblUsers.text =  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll");
       } else {
         var Datatoset = "";
         for (var i = 0; i < selectedData.length; i++) {
@@ -249,7 +249,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegRequestDat
     if (data != null && data != "" && data.length > 0) {
       var newData = [{
         id: "All",
-        request_name: "All",
+        request_name:  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll"),
         imgSelected: "close.png"
       }].concat(data[0]);//this [0] has to be removed for getting timesheet
       for (var i = 0; i < newData.length; i++) {
@@ -300,7 +300,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegStatusData
     if (data != null && data != "" && data.length > 0) {
       var newData = [{
         id: "All",
-        status_name: "All"
+        status_name:  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")
       }].concat(data);
       for (var i = 0; i < newData.length; i++) {
         newData[i].imgSelected = "close.png";
@@ -330,7 +330,9 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegStatusData
  * @desc	 :	search based on first name and last name
  */
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople = function(str) {
-  var masterData=frmSelect.segSearchPeople.data;
+  var tempMasterData=frmSelect.segSearchPeople.data;
+  tempMasterData.splice(0, 1);
+  var masterData=tempMasterData;
   var searchData=[];
   kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople--");
   try {
@@ -384,7 +386,9 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople =
  * @desc	 :	onrowclick of search segment
  */
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick = function() {
-  var masterData=frmSelect.segSearchPeople.data;
+  var tempMasterData=frmSelect.segSearchPeople.data;
+  tempMasterData.splice(0, 1);
+  var masterData=tempMasterData;
   var searchData=frmSelect.segSearch.data;
   var selectedSearchItems=frmSelect.segSearch.selectedRowItems;
   kony.print("--Start: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick--");
@@ -396,6 +400,17 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     };
     frmSelect.segSearchPeople.widgetDataMap = widgetDataMap;
     frmSelect.segSearch.widgetDataMap=widgetDataMap;
+    //For All functionality
+    var index = frmSelect.segSearch.selectedRowIndex[1];
+    var sData = frmSelect.segSearch.data[index];
+    if (sData.imgSelected === "close.png") {
+      var tempSearchData=frmSelect.segSearchPeople.selectedRowIndices[0][1];
+      var index = tempSearchData.indexOf(0);
+      if (index > -1) {
+        tempSearchData.splice(index, 1);
+        frmSelect.segSearchPeople.selectedRowIndices=[[0,tempSearchData]]
+      }
+    }
     //separating selected and unselected data in segSearch
     var unselectedItems=[];
     var count=0;
@@ -433,7 +448,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
         if(masterData != null){
           for(var k=0;k<masterData.length;k++){
             if(selectedSearchItems[i]["id"]== masterData[k]["id"]){
-              selectedPeopleArray.push(k);
+              selectedPeopleArray.push(k+1);
               break;
             }
           }
@@ -449,7 +464,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     for(var x=0;x<unselectedItems.length;x++){
       for(var y=0;y<masterData.length;y++){
         if(unselectedItems[x]["id"]== masterData[y]["id"]){
-          unselectedPeopleArray.push(y);
+          unselectedPeopleArray.push(y+1);
           break;
         }
       }
@@ -464,6 +479,154 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
     handleError(err);
   }
   kony.print("--End: kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataInPeople--");
+};
+
+
+/***
+ *@function
+ * @class	 :  frmSelectpeople RequestType logic
+ * @returns	 :	None
+ * @desc	 :	onrowclick of RequestType segment
+ */
+kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.requesttypeDataRowClick = function() {
+    kony.print("----------------------in kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.requesttypeDataRowClick");
+    try {
+        var segSelectedItems = [];
+        if (frmSelect.SegRequestsType.selectedItems !== null) {
+            var index = frmSelect.SegRequestsType.selectedRowIndex[1];
+            var sData = frmSelect.SegRequestsType.data[index];
+            var selData = frmSelect.SegRequestsType.data;
+            if (sData.request_name === kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
+                if (sData.imgSelected === "close.png") {
+                    for (var i in selData) {
+                        if (i === 0) {
+                            selData[i].imgSelected = "ok.png";
+                        } else {
+                            selData[i].imgSelected = "close.png";
+                        }
+                    }
+                    frmSelect.SegRequestsType.setData(selData);
+                    frmSelect.SegRequestsType.selectedRowIndices = [
+                        [0, [0]]
+                    ];
+                } else {
+                    selData[0].imgSelected = "close.png";
+                    frmSelect.SegRequestsType.setData(selData);
+                }
+            } else {
+                for (var i = 0; i < frmSelect.SegRequestsType.selectedItems.length; i++) {
+                    if (frmSelect.SegRequestsType.selectedRowIndices[0][1][i] !== 0)
+                        segSelectedItems.push(frmSelect.SegRequestsType.selectedRowIndices[0][1][i]);
+                }
+                selData[0].imgSelected = "close.png";
+                frmSelect.SegRequestsType.setData(selData);
+                frmSelect.SegRequestsType.selectedRowIndices = [
+                    [0, segSelectedItems]
+                ];
+            }
+        }
+    } catch (err) {
+        handleError(err);
+    }
+    kony.print("-----------------------out of kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.requesttypeDataRowClick");
+};
+
+/***
+ *@function
+ * @class	 :  frmSelect statusType logic
+ * @returns	 :	None
+ * @desc	 :	onrowclick of statusType segment
+ */
+kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.statusTypeDataRowClick = function() {
+    kony.print("----------------------in kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.statusTypeDataRowClick");
+    try {
+        var segSelectedItems = [];
+        if (frmSelect.SegStatusType.selectedItems !== null) {
+            var index = frmSelect.SegStatusType.selectedRowIndex[1];
+            var sData = frmSelect.SegStatusType.data[index];
+            var selData = frmSelect.SegStatusType.data;
+            if (sData.status_name === kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
+                if (sData.imgSelected === "close.png") {
+                    for (var i in selData) {
+                        if (i === 0) {
+                            selData[i].imgSelected = "ok.png";
+                        } else {
+                            selData[i].imgSelected = "close.png";
+                        }
+                    }
+                    frmSelect.SegStatusType.setData(selData);
+                    frmSelect.SegStatusType.selectedRowIndices = [
+                        [0, [0]]
+                    ];
+                } else {
+                    selData[0].imgSelected = "close.png";
+                    frmSelect.SegStatusType.setData(selData);
+                }
+            } else {
+                for (var i = 0; i < frmSelect.SegStatusType.selectedItems.length; i++) {
+                    if (frmSelect.SegStatusType.selectedRowIndices[0][1][i] !== 0)
+                        segSelectedItems.push(frmSelect.SegStatusType.selectedRowIndices[0][1][i]);
+                }
+                selData[0].imgSelected = "close.png";
+                frmSelect.SegStatusType.setData(selData);
+                frmSelect.SegStatusType.selectedRowIndices = [
+                    [0, segSelectedItems]
+                ];
+            }
+        }
+    } catch (err) {
+        handleError(err);
+    }
+    kony.print("-----------------------out of kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.statusTypeDataRowClick");
+};
+
+/***
+ *@function
+ * @class	 :  frmSelect people logic
+ * @returns	 :	None
+ * @desc	 :	onrowclick of people segment
+ */
+kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.peopleDataRowClick = function() {
+    kony.print("----------------------in kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.peopleDataRowClick");
+    try {
+        var segSelectedItems = [];
+        if (frmSelect.segSearchPeople.selectedItems !== null) {
+            var index = frmSelect.segSearchPeople.selectedRowIndex[1];
+            var sData = frmSelect.segSearchPeople.data[index];
+            var selData = frmSelect.segSearchPeople.data;
+            if (sData.Name === kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
+                if (sData.imgSelected === "close.png") {
+                    for (var i in selData) {
+                        if (i === 0) {
+                            selData[i].imgSelected = "ok.png";
+                        } else {
+                            selData[i].imgSelected = "close.png";
+                        }
+                    }
+                    frmSelect.segSearchPeople.setData(selData);
+                    frmSelect.segSearchPeople.selectedRowIndices = [
+                        [0, [0]]
+                    ];
+                } else {
+                    selData[0].imgSelected = "close.png";
+                    frmSelect.segSearchPeople.setData(selData);
+                }
+            } else {
+                for (var i = 0; i < frmSelect.segSearchPeople.selectedItems.length; i++) {
+                    if (frmSelect.segSearchPeople.selectedRowIndices[0][1][i] !== 0)
+                        segSelectedItems.push(frmSelect.segSearchPeople.selectedRowIndices[0][1][i]);
+                }
+                selData[0].imgSelected = "close.png";
+                frmSelect.segSearchPeople.setData(selData);
+                frmSelect.segSearchPeople.selectedRowIndices = [
+                    [0, segSelectedItems]
+                ];
+            }
+        }
+    } catch (err) {
+        handleError(err);
+    }
+    kony.print("-----------------------out of kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.peopleDataRowClick");
 };
 /***
  *@function
@@ -486,7 +649,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegPeopleData
     if (data != null && data != "" && data.length > 0) {
       var newData = [{
         id: "All",
-        Name: "All"
+        Name:  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")
       }].concat(data);
       for (var i = 0; i < newData.length; i++) {
         newData[i].imgSelected = "ok.png";
