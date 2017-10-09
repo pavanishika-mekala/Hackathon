@@ -10,7 +10,7 @@ kony.apps.coe = kony.apps.coe || {};
 kony.apps.coe.ess = kony.apps.coe.ess || {};
 kony.apps.coe.ess.frmAllPendingRequestsdata = kony.apps.coe.ess.frmAllPendingRequestsdata || {};
 kony.apps.coe.ess.frmAllPendingRequestsdata.requestsPending = kony.apps.coe.ess.frmAllPendingRequestsdata.requestsPending ||{};
-kony.apps.coe.ess.frmAllPendingRequestsdata.requestsPending = {  
+kony.apps.coe.ess.frmAllPendingRequestsdata.requestsPending = {
 	data:[]
 };
 
@@ -18,7 +18,9 @@ kony.apps.coe.ess.appconfig = {
     appkey: "9097ff6db84d7bb312bc78eebbcdf32c",
     appsecret: "e45f525b0662a32c9bc1ae7707a3c738",
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
-
+		identityServicePreLogin:"DevNextTimesheetOktaLogin",
+    axwayAuthService:"DevNextTimesheetOktaUPAxway",
+    useOkta: true,
     isDemo : false,
     isSingleQrCode: true,
   	/* Steps to obtain the runtime url
@@ -30,7 +32,7 @@ kony.apps.coe.ess.appconfig = {
    	*/
    	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",
 
-	ACFAppID :"MYAPPROVALS",   
+	ACFAppID :"MYAPPROVALS",
   	identityServiceName:"ESSIDENTITY",
     isShowDeepLinkingAppBeforeInstall:false,
     isShowDelegation:true,

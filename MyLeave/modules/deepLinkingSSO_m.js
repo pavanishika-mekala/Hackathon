@@ -25,7 +25,7 @@
   * @member of  frmDummy
   * @return {void} - frmtobeOpened
   * @Desc - check the Application Launch Mode.
-  * 
+  *
   */
  kony.apps.ess.deepLinkingSSO.appServiceCallback = function(params) {
      kony.print("---- appServiceCallback:Start---------");
@@ -89,7 +89,7 @@
   * @member of  frmDummy
   * @return {void} - void
   * @Desc - function to be executed on post show of the form
-  * 
+  *
   */
  kony.apps.ess.deepLinkingSSO.frmDummyPostShow =
      function() {
@@ -127,7 +127,7 @@
   * @member of  frmDummy
   * @return {void} - return boolean value.
   * @Desc - its check the user is newUser or Not.
-  * 
+  *
   */
  kony.apps.ess.deepLinkingSSO.checkNewUser = function() {
      kony.print("---- checkNewUser:Start------- ");
@@ -140,7 +140,7 @@
   * @member of  frmDummy
   * @return {void} - void
   * @Desc - open the corresponding App based on button click.
-  * 
+  *
   */
  kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick = function(status) {
      kony.print("---- btnOtherAppsOnClick:Start------- ");
@@ -219,7 +219,7 @@
   * @member of  frmDummy
   * @return {void} - void
   * @Desc -check the Required Apps installed or Not.
-  * 
+  *
   */
 
 

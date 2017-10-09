@@ -1,5 +1,5 @@
-//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Mon Jul 24 09:45:25 UTC 2017event*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
+// ****************Generated On Sat Oct 07 21:58:11 UTC 2017event*******************
 // **********************************Start event's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -498,7 +498,7 @@ com.kony.MYLEAVE.event.updateAll = function(inputArray, successcallback, errorca
 	if(!kony.sync.validateInput(arguments, "com.kony.MYLEAVE.event.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "100000002f852f9b9";
+	var dbname = "10000473715010d0b";
 	var tbname = "event";
 	var isError = false;
 	var errObject = null;

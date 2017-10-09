@@ -1,5 +1,5 @@
-//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Mon Jul 24 09:45:25 UTC 2017employee_leave_type*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
+// ****************Generated On Sat Oct 07 21:58:11 UTC 2017employee_leave_type*******************
 // **********************************Start employee_leave_type's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -501,7 +501,7 @@ com.kony.MYLEAVE.employee_leave_type.updateAll = function(inputArray, successcal
 	if(!kony.sync.validateInput(arguments, "com.kony.MYLEAVE.employee_leave_type.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "100000002f852f9b9";
+	var dbname = "10000473715010d0b";
 	var tbname = "employee_leave_type";
 	var isError = false;
 	var errObject = null;

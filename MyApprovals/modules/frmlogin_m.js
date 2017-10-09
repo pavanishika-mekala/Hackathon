@@ -44,55 +44,104 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
  * @return {void} - none.
  * @throws Exception if something goes wrong,
  */
+ kony.apps.coe.ess.frmLogin._errorCallback =
+   function(error) {
+     // Remove token headers, if present
+     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header1, "headers");
+     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header2, "headers");
 
-kony.apps.coe.ess.frmLogin.btnLoginOnclick =
-  function() {
-  try {
-    kony.print("-- start kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
-    //kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-    //If wrong credentials are given previously, reset skins
-    if (kony.apps.coe.ess.globalVariables.isSPA === true || kony.apps.coe.ess.globalVariables.isNative === true)  {
-      if(frmLogin.lblLoginErrorMessage.isVisible === true) {
-        //We are checking above condition to avoid setting skins everytime.
-        //Error message is visible only if wrong credentials entered previously
-        frmLogin.lblLoginErrorMessage.isVisible = false; //Hide wrong message lable
-        frmLogin.tbUsername.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
-        frmLogin.tbPassword.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
-      }
-      var username = frmLogin.tbUsername.text;
-      var password = frmLogin.tbPassword.text;
-      if (this.isValidInputs(username, password)) {
-        kony.apps.coe.ess.frmLogin.username = username.trim();
-        kony.apps.coe.ess.frmLogin.password = password;
-        //#ifdef windows8
-        frmLogin.flxLogin.onClick = function(){};
-        //#else
-        frmLogin.btnLogin.onClick = function(){};
-        //#endif
-        kony.sdk.mvvm.LoginAction();
-      } else {
-        frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.validateCredentials");
-        frmLogin.lblLoginErrorMessage.isVisible = true;
-        kony.application.dismissLoadingScreen();
-      }
-    }
-    else{
-      var username = frmLoginDesk.tbUsername.text;
-      var password = frmLoginDesk.tbPassword.text;
-      if (this.isValidInputs(username, password)) {
-        kony.apps.coe.ess.frmLoginDesk.username = username.trim();
-        kony.apps.coe.ess.frmLoginDesk.password = password;
-        frmLoginDesk.imgLogin.onTouchStart = function(){};
-        kony.sdk.mvvm.LoginAction();
-      } else {
-        kony.application.dismissLoadingScreen();
-      }
-    }
-    kony.print("-- End  kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
-  } catch (e) {
-    kony.application.dismissLoadingScreen();
-  }
-};
+     alert(error);
+     kony.application.dismissLoadingScreen();
+   };
+
+ /**
+  * Invokes the service in MF to get the Axway access token plus session user and
+  * security attributes
+  */
+ kony.apps.coe.ess.frmLogin._axwayAuth = function() {
+   try {
+     kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+
+     var params = {
+       "provider": kony.apps.coe.ess.appconfig.identityServicePreLogin
+     };
+     var axwayAuthService = kony.sdk.getCurrentInstance().getIntegrationService(kony.apps.coe.ess.appconfig.axwayAuthService);
+     axwayAuthService.invokeOperation("login", {}, params, function(response) {
+       // Use username obtained from pre login session details
+       frmLogin.tbUsername.text = response.preferred_username;
+       frmLogin.tbPassword.text = response.preferred_username;
+       // Add headers to be sent with next login request
+       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header1, response.security_attributes_api.access_token_api, "headers");
+       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header2, response.security_attributes_api.access_token_api, "headers");
+
+       kony.application.dismissLoadingScreen();
+
+       // Login on backend
+       kony.apps.coe.ess.frmLogin._backendLogin();
+     }, kony.apps.coe.ess.frmLogin._errorCallback);
+   } catch (exception) {
+     kony.apps.coe.ess.frmLogin._errorCallback(exception);
+   }
+ };
+
+ /**
+  * Performs the login on the SAP backend
+  *
+  * @param data JSON object with session attributes and axway token
+  */
+ kony.apps.coe.ess.frmLogin._backendLogin = function() {
+   try {
+     kony.print("-- start kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
+     //  kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+     //If wrong credentials are given previously, reset skins
+     if (frmLogin.lblLoginErrorMessage.isVisible === true) {
+       //We are checking above condition to avoid setting skins everytime.
+       //Error message is visible only if wrong credentials entered previously
+       frmLogin.lblLoginErrorMessage.isVisible = false; //Hide wrong message lable
+       frmLogin.tbUsername.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
+       frmLogin.tbPassword.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
+     }
+
+     var username = frmLogin.tbUsername.text;
+     var password = frmLogin.tbPassword.text;
+
+     if (kony.apps.coe.ess.frmLogin.isValidInputs(username, password)) {
+       kony.apps.coe.ess.frmLogin.username = username.trim();
+       kony.apps.coe.ess.frmLogin.password = password;
+       //#ifdef windows8
+       frmLogin.flxLogin.onClick = function() {};
+       //#else
+       frmLogin.btnLogin.onClick = function() {};
+       //#endif
+       kony.sdk.mvvm.LoginAction("");
+     } else {
+       frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.validateCredentials");
+       frmLogin.lblLoginErrorMessage.isVisible = true;
+       kony.application.dismissLoadingScreen();
+     }
+     kony.print("-- End  kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
+   } catch (e) {
+     alert(e);
+     kony.application.dismissLoadingScreen();
+   }
+ };
+
+ kony.apps.coe.ess.frmLogin.btnLoginOnclick = function() {
+   if (kony.apps.coe.ess.appconfig.useOkta) {
+     // Do pre-login
+     try {
+       new kony.sdk().init(kony.apps.coe.ess.appconfig.appkey,kony.apps.coe.ess.appconfig.appsecret,kony.apps.coe.ess.appconfig.serviceurl, function(){
+         var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServicePreLogin);
+         preLoginService.login({}, kony.apps.coe.ess.frmLogin._axwayAuth, kony.apps.coe.ess.frmLogin._errorCallback);
+       }, kony.apps.coe.ess.frmLogin._errorCallback);
+     } catch (exception) {
+       kony.apps.coe.ess.frmLogin._errorCallback(exception);
+     }
+   } else {
+     kony.apps.coe.ess.frmLogin._backendLogin();
+   }
+ };
+
 // %Region - Methods in frmLogin
 /**
  * @member of  frmLogin
@@ -124,7 +173,7 @@ kony.apps.coe.ess.frmLogin.afterloginSuccess =
         }];
         KNYMetricsService.sendCustomMetrics("currentUser", metricsData);
       } catch (m) {
-        // Ignore error of metrics, we don't want to show alert to user for this. 
+        // Ignore error of metrics, we don't want to show alert to user for this.
         kony.print("ERROR: Unable to send metrics :" + m.message);
       }
       kony.application.dismissLoadingScreen();
@@ -318,6 +367,12 @@ kony.apps.coe.ess.frmLogin.frmLoginPreshow =
     frmLogin.imgTouchId.isVisible = false;
   }
 
+  if (kony.apps.coe.ess.appconfig.useOkta) {
+    frmLogin.flxFields.isVisible = false;
+    frmLogin.flxRememberMe.isVisible = false;
+    frmLogin.flxSignIn.top = "20%";
+    frmLogin.flxBottom.top = "30%";
+  }
   //ToDo : FInd appropriate place to InitializeSync
 
   kony.print("-- End kony.apps.coe.ess.frmLogin.frmLoginPreshow -- ");

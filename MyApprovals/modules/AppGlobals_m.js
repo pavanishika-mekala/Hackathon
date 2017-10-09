@@ -137,10 +137,13 @@ kony.print("--Both Native-- ");
 kony.apps.coe.ess.globalVariables.isNative=true;
 //#endif
 
-//for Desktop 
+//for Desktop
 //#ifdef desktopweb
 //#define SPA_PLATFORMS
 kony.print("--Desktop web-- ");
 kony.apps.coe.ess.globalVariables.isWebDesktop=true;
 //#endif
 
+// Login configuration
+kony.apps.coe.ess.globalVariables.login_token_header1="KonySAP-Request-Spnego";
+kony.apps.coe.ess.globalVariables.login_token_header2="KonySAP-Request-Access-Token";

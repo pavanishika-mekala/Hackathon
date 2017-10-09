@@ -1,5 +1,5 @@
-//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Mon Jul 24 09:45:24 UTC 2017Status*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
+// ****************Generated On Sat Oct 07 21:58:11 UTC 2017Status*******************
 // **********************************Start Status's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -454,7 +454,7 @@ com.kony.Employee.Status.updateAll = function(inputArray, successcallback, error
 	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "100000002f852f9b9";
+	var dbname = "10000473715010d0b";
 	var tbname = "Status";
 	var isError = false;
 	var errObject = null;

@@ -61,7 +61,7 @@ kony.apps.coe.ess.frmLoginDesk.resetLoginScreen =
  * @description    Shows invalid Login on login form
  */
 kony.apps.coe.ess.frmLoginDesk.invalidLoginAction = function(error){
-    if (error.mfcode == "Auth-4") {
+    if (error !== null && error !== undefined && error.mfcode !== null && error.mfcode !== undefined && error.mfcode == "Auth-4") {
         if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
             frmLoginDeskDW.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.wrongCredentials");
         } else {
@@ -80,7 +80,7 @@ kony.apps.coe.ess.frmLoginDesk.invalidLoginAction = function(error){
     frmLoginDeskDW.flxLogin.onClick =  function() {
           kony.apps.coe.ess.frmLoginDesk.validateLoginDetails();
     };
-    frmLoginDeskDW.forceLayout(); 
+    frmLoginDeskDW.forceLayout();
 }
 
 /**
@@ -91,7 +91,7 @@ kony.apps.coe.ess.frmLoginDesk.invalidLoginAction = function(error){
 kony.apps.coe.ess.frmLoginDesk.closeInvalidLoginAction = function(){
     frmLoginDeskDW.flxLoginMain.height="500px";
     frmLoginDeskDW.flxErrorSpace.setVisibility(false);
-    frmLoginDeskDW.forceLayout(); 
+    frmLoginDeskDW.forceLayout();
 }
 
 /**
