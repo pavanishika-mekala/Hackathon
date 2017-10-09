@@ -32,7 +32,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 				}
 				if (this.getController().getContextData().message == "Async") {
 					//make no actions as of form is reloaded by the async operation
-					selectedApprovalID=kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID;                  	
+					selectedApprovalID=kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID;
                 }
 				//comemnts retrival query
 				var comments_qurey = "SELECT [request_note].[id] AS [ID], " +
@@ -94,7 +94,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					"       LEFT JOIN employee" +
 					"              ON ( approval_request.employee_id = employee.id )" +
 					"       LEFT JOIN status" +
-					"              ON ( request_approver.status_id = status.id )" +
+					"              ON ( approval_request.status_id = status.id )" +
 					"       LEFT JOIN request_approver" +
 					"              ON ( approval_request.id = request_approver.approval_id )" +
 					"       LEFT JOIN request_category" +
@@ -143,7 +143,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 						handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.errorMessages.Attachments")));
 					});
 				};
-				var commentsRetival = function (ApprovalRequestDetailData) {                  
+				var commentsRetival = function (ApprovalRequestDetailData) {
 					kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", comments_qurey, function (ApprovalRequestDetailData, Comemntsresponse) {
 						if (Comemntsresponse) {
 							ApprovalRequestDetailData.comments = Comemntsresponse;
@@ -152,19 +152,19 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 
 					}
 						.bind(this, ApprovalRequestDetailData),
-						function (err) {                   
+						function (err) {
 						handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.errorMessages.Comments") + JSON.stringify(err)));
 					});
 				};
 
-				kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", Approval_request_query, function (ApprovalRequestDetailData, RequestDetailsResponse) {				
+				kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", Approval_request_query, function (ApprovalRequestDetailData, RequestDetailsResponse) {
                   if (isEmpty(RequestDetailsResponse[0])) {
-							//return the control and throw exception                          
+							//return the control and throw exception
 						handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.errorMessages.Comments")));
-                       return;						
-					} else {                      
-                      var processedRequest = kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest(RequestDetailsResponse[0]);                     
-						ApprovalRequestDetailData.RequestDetials =processedRequest;									
+                       return;
+					} else {
+                      var processedRequest = kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest(RequestDetailsResponse[0]);
+						ApprovalRequestDetailData.RequestDetials =processedRequest;
 					}
 					commentsRetival(ApprovalRequestDetailData);
 
@@ -174,7 +174,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.errorMessages.Comments") + JSON.stringify(err)));
 				});
 
-			} catch (err) {				
+			} catch (err) {
 				kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
 				kony.sdk.mvvm.log.error("Error in fetchData of controllerExtension");
 				var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_FETCH_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_FETCH_IN_CONTROLLER_EXTENSION, err);
@@ -203,7 +203,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					kony.print("----invalid input in the process data of the approvalrequest detail page");
 				}
 
-			} catch (err) {				
+			} catch (err) {
 				kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
 				kony.sdk.mvvm.log.error("Error in processData of controllerExtension");
 				var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_PROCESSDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_PROCESSDATA_IN_CONTROLLER_EXTENSION, err);
@@ -218,7 +218,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 		 * @memberof frmApprovalRequestDetailControllerExtension#
 		 */
 		bindData: function (ApprovalRequestDetailData) {
-			try {             
+			try {
 				var formmodel = this.getController().getFormModel();
 				formmodel.clear();
 				if (ApprovalRequestDetailData && ApprovalRequestDetailData.RequestDetials && ApprovalRequestDetailData.RequestDetials.request_type && ApprovalRequestDetailData.userAttachments) {
@@ -241,9 +241,9 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
                           		"highlightedSkin" : "sknflxMob2ebaee" ,
                           		"highlightOnParentFocus" : true
                         };
-                  	}                  
+                  	}
 					frmApprovalRequestDetail.SegChat.widgetDataMap = SegChatDataMap;
-					frmApprovalRequestDetail.SegChat.setData(ApprovalRequestDetailData.comments);                  
+					frmApprovalRequestDetail.SegChat.setData(ApprovalRequestDetailData.comments);
                   	//start lazy loading for iamges in the comments
                   	kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.startLazyloadingComments();
 					//Making the visiblity to true or false based on the user Attachemnts
@@ -269,16 +269,16 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
                     frmApprovalRequestDetail.txtareaComments.setVisibility(false);
                  }
 
-				} else {					
+				} else {
 					kony.print("invalid input in the bind data of approval request detail");
 				}
 				this.getController().getFormModel().formatUI();
 				kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
 				this.getController().showForm();
               //lazy loading
-              var mediaId=kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.MediaID;      
-              kony.apps.coe.ess.MyApprovals.media.lazyLoading(kony.apps.coe.ess.MyApprovals.media.CONSTANTS_WIDGET_NORMAL, frmApprovalRequestDetail.imguser, "Employee", "mediaEmployee", mediaId, {});              
-			} catch (err) {   
+              var mediaId=kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.MediaID;
+              kony.apps.coe.ess.MyApprovals.media.lazyLoading(kony.apps.coe.ess.MyApprovals.media.CONSTANTS_WIDGET_NORMAL, frmApprovalRequestDetail.imguser, "Employee", "mediaEmployee", mediaId, {});
+			} catch (err) {
 				kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
 				kony.sdk.mvvm.log.error("Error in bindData of controllerExtension");
 				var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_BINDDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_BINDDATA_IN_CONTROLLER_EXTENSION, err);

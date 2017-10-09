@@ -159,6 +159,8 @@ kony.sdk.mvvm.LoginAction = function(status) {
 };
 
 function applicationSuccessCallback() {
+  _removeTokenHeaders();
+
   if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
     kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceName).getProfile(true, userDetailsSucess, userDetailsSucess);
   }
@@ -277,7 +279,7 @@ function userDetailsSucess(response) {
                         		            }
                                 		  	//If network is not available
                                     		else{
-                                      			var themeString = kony.store.getItem("dynamicSkinningTheme");      
+                                      			var themeString = kony.store.getItem("dynamicSkinningTheme");
 	  											var jsonObj1 = JSON.parse(themeString);
       											kony.theme.createThemeFromJSONString(JSON.stringify(jsonObj1), "MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
       											kony.theme.setCurrentTheme("MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
@@ -372,6 +374,8 @@ function userDetailsSucess(response) {
 }
 
 function applicationErrorCallback(error) {
+  _removeTokenHeaders();
+
 	kony.sdk.mvvm.log.error("failed to load app");
 	error = error.getRootErrorObj();
 	if(kony.apps.coe.ess.globalVariables.isWebDesktop){
@@ -399,11 +403,11 @@ function applicationErrorCallback(error) {
         kony.apps.coe.ess.frmLogin.btnLoginOnclick();
       };
 	}
-	else{    
+	else{
     frmLogin.lblLoginErrorMessage.isVisible = true;
     frmLogin.tbUsername.skin = "sknTbWrongCredentials";
     frmLogin.tbPassword.skin = "sknTbWrongCredentials";
-    if (error.mfcode == "Auth-4") {
+    if (error !== null && error !== undefined && error.mfcode !== null && error.mfcode !== undefined && error.mfcode == "Auth-4") {
         if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
             frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.wrongCredentials");
         } else {
@@ -433,19 +437,51 @@ function applicationErrorCallback(error) {
 }
 }
 
-
+function _removeTokenHeaders(){
+  if(kony.sdk.getCurrentInstance() !== undefined && kony.sdk.getCurrentInstance() !== null ){
+    // Remove token headers, if present
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header1, "headers");
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header2, "headers");
+  }
+}
 
 kony.sdk.mvvm.LogoutAction = function() {
     options = {};
     options.slo = true;
-    kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+
+    if (kony.apps.coe.ess.appconfig.useOkta) {
+      // Clear login variables
+      kony.store.removeItem("username");
+      kony.store.removeItem("password");
+      kony.store.removeItem("rememberme");
+      kony.sdk.util.deleteSSOToken();
+
+      kony.application.showLoadingScreen("", kony.i18n.getLocalizedString(""), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+      // Destroy Okta session
+      try {
+        var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServicePreLogin);
+        preLoginService.logout(function() {
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+        }, function() {
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+        }, {});
+      } catch (exception) {
+        kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+      }
+    } else {
+      kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+    }
 
     function sucCallback() {
-        frmLogin.show();
+      kony.application.dismissLoadingScreen();
+      frmApprovalHome.destroy();
+      frmLogin.show();
     }
 
     function errCallback(err) {
+        kony.application.dismissLoadingScreen();
         frmLogin.show();
+        frmApprovalHome.destroy();
         kony.print(JSON.stringify(err));
     }
 };
@@ -458,7 +494,7 @@ function onThemeSettingSuccessCallback(successresp){
   	var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmApprovalHome");
   	formController.loadDataAndShowForm();
   }
-  kony.apps.coe.ess.globalVariables.updateEmployeeID(navigateLandingPage);  
+  kony.apps.coe.ess.globalVariables.updateEmployeeID(navigateLandingPage);
 }
 
 function onThemeSettingErrorCallback(errorresp){
@@ -476,6 +512,5 @@ kony.sdk.mvvm.Logout_DW=function()
   frmHistory.destroy();
   frmPendingRequest.destroy();
   frmTeamCalendar.destroy();
-  
-};
 
+};

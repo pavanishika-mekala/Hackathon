@@ -1,5 +1,5 @@
-//****************Sync Version:MobileFabricInstaller-DEV-7.2.1_v201611220827_r47*******************
-// ****************Generated On Wed Aug 16 06:50:32 UTC 2017notification*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
+// ****************Generated On Fri Oct 06 09:33:03 UTC 2017notification*******************
 // **********************************Start notification's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -31,23 +31,23 @@ if(typeof(com.kony.MYAPPROVALS)=== "undefined"){ com.kony.MYAPPROVALS = {}; }
 * Creates new notification
 *************************************************************************************/
 com.kony.MYAPPROVALS.notification = function(){
-	this.createdts = null;
+	this.softdeleteflag = null;
 	this.description = null;
 	this.employee_id = null;
 	this.lastmodifiedts = null;
-	this.module = null;
 	this.notification_id = null;
-	this.softdeleteflag = null;
+	this.module = null;
+	this.createdts = null;
 	this.title = null;
 	this.markForUpload = true;
 };
 
 com.kony.MYAPPROVALS.notification.prototype = {
-	get createdts(){
-		return this._createdts;
+	get softdeleteflag(){
+		return this._softdeleteflag;
 	},
-	set createdts(val){
-		this._createdts = val;
+	set softdeleteflag(val){
+		this._softdeleteflag = val;
 	},
 	get description(){
 		return this._description;
@@ -67,23 +67,23 @@ com.kony.MYAPPROVALS.notification.prototype = {
 	set lastmodifiedts(val){
 		this._lastmodifiedts = val;
 	},
-	get module(){
-		return this._module;
-	},
-	set module(val){
-		this._module = val;
-	},
 	get notification_id(){
 		return this._notification_id;
 	},
 	set notification_id(val){
 		this._notification_id = val;
 	},
-	get softdeleteflag(){
-		return this._softdeleteflag;
+	get module(){
+		return this._module;
 	},
-	set softdeleteflag(val){
-		this._softdeleteflag = val;
+	set module(val){
+		this._module = val;
+	},
+	get createdts(){
+		return this._createdts;
+	},
+	set createdts(val){
+		this._createdts = val;
 	},
 	get title(){
 		return this._title;
@@ -99,7 +99,7 @@ com.kony.MYAPPROVALS.notification.prototype = {
 * and offset indicates number of rows to be ignored before returning the records.
 * e.g. var orderByMap = []
 * orderByMap[0] = {};
-* orderByMap[0].key = "createdts";
+* orderByMap[0].key = "softdeleteflag";
 * orderByMap[0].sortType ="desc";
 * orderByMap[1] = {};
 * orderByMap[1].key = "description";
@@ -231,25 +231,25 @@ com.kony.MYAPPROVALS.notification.create = function(valuestable, successcallback
 * kony.sync.enableORMValidations flag, validations will be enabled/disabled.
 * e.g.	var valuesArray = [];
 *		valuesArray[0] = {};
-*		valuesArray[0].createdts = "createdts_0";
 *		valuesArray[0].description = "description_0";
 *		valuesArray[0].employee_id = "employee_id_0";
-*		valuesArray[0].module = "module_0";
+*		valuesArray[0].lastmodifiedts = "lastmodifiedts_0";
 *		valuesArray[0].notification_id = "notification_id_0";
+*		valuesArray[0].module = "module_0";
 *		valuesArray[0].title = "title_0";
 *		valuesArray[1] = {};
-*		valuesArray[1].createdts = "createdts_1";
 *		valuesArray[1].description = "description_1";
 *		valuesArray[1].employee_id = "employee_id_1";
-*		valuesArray[1].module = "module_1";
+*		valuesArray[1].lastmodifiedts = "lastmodifiedts_1";
 *		valuesArray[1].notification_id = "notification_id_1";
+*		valuesArray[1].module = "module_1";
 *		valuesArray[1].title = "title_1";
 *		valuesArray[2] = {};
-*		valuesArray[2].createdts = "createdts_2";
 *		valuesArray[2].description = "description_2";
 *		valuesArray[2].employee_id = "employee_id_2";
-*		valuesArray[2].module = "module_2";
+*		valuesArray[2].lastmodifiedts = "lastmodifiedts_2";
 *		valuesArray[2].notification_id = "notification_id_2";
+*		valuesArray[2].module = "module_2";
 *		valuesArray[2].title = "title_2";
 *		com.kony.MYAPPROVALS.notification.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
@@ -462,23 +462,23 @@ com.kony.MYAPPROVALS.notification.update = function(wcs, valuestable, successcal
 * e.g.	var inputArray = [];
 *		inputArray[0] = {};
 *		inputArray[0].changeSet = {};
-*		inputArray[0].changeSet.createdts = "createdts_updated0";
 *		inputArray[0].changeSet.description = "description_updated0";
 *		inputArray[0].changeSet.employee_id = "employee_id_updated0";
+*		inputArray[0].changeSet.lastmodifiedts = "lastmodifiedts_updated0";
 *		inputArray[0].changeSet.module = "module_updated0";
 *		inputArray[0].whereClause = "where notification_id = '0'";
 *		inputArray[1] = {};
 *		inputArray[1].changeSet = {};
-*		inputArray[1].changeSet.createdts = "createdts_updated1";
 *		inputArray[1].changeSet.description = "description_updated1";
 *		inputArray[1].changeSet.employee_id = "employee_id_updated1";
+*		inputArray[1].changeSet.lastmodifiedts = "lastmodifiedts_updated1";
 *		inputArray[1].changeSet.module = "module_updated1";
 *		inputArray[1].whereClause = "where notification_id = '1'";
 *		inputArray[2] = {};
 *		inputArray[2].changeSet = {};
-*		inputArray[2].changeSet.createdts = "createdts_updated2";
 *		inputArray[2].changeSet.description = "description_updated2";
 *		inputArray[2].changeSet.employee_id = "employee_id_updated2";
+*		inputArray[2].changeSet.lastmodifiedts = "lastmodifiedts_updated2";
 *		inputArray[2].changeSet.module = "module_updated2";
 *		inputArray[2].whereClause = "where notification_id = '2'";
 *		com.kony.MYAPPROVALS.notification.updateAll(inputArray,successcallback,errorcallback);
@@ -681,7 +681,7 @@ com.kony.MYAPPROVALS.notification.deleteByPK = function(pks, successcallback,err
 /************************************************************************************
 * Deletes notification(s) using where clause from the local Database. The record(s)
 * will be deleted from the enterprise datasource in the next Sync.
-* e.g. com.kony.MYAPPROVALS.notification.remove("where createdts like 'A%'", successcallback,errorcallback, true);
+* e.g. com.kony.MYAPPROVALS.notification.remove("where description like 'A%'", successcallback,errorcallback, true);
 *************************************************************************************/
 com.kony.MYAPPROVALS.notification.remove = function(wcs, successcallback,errorcallback, markForUpload){
 	sync.log.trace("Entering com.kony.MYAPPROVALS.notification.remove->main function");
@@ -926,7 +926,7 @@ com.kony.MYAPPROVALS.notification.getAllDetailsByPK = function(pks, successcallb
 
 /************************************************************************************
 * Retrieves notification(s) using where clause from the local Database. 
-* e.g. com.kony.MYAPPROVALS.notification.find("where createdts like 'A%'", successcallback,errorcallback);
+* e.g. com.kony.MYAPPROVALS.notification.find("where description like 'A%'", successcallback,errorcallback);
 *************************************************************************************/
 com.kony.MYAPPROVALS.notification.find = function(wcs, successcallback,errorcallback){
 	sync.log.trace("Entering com.kony.MYAPPROVALS.notification.find function");
@@ -1504,13 +1504,13 @@ com.kony.MYAPPROVALS.notification.getnotification_dataWithnotification_id = func
 		if(res!==null){
 			for(var i in res){
 				var obj = new com.kony.MYAPPROVALS.notification_data();
-				obj.createdts = res[i].createdts;
 				obj.data_key = res[i].data_key;
 				obj.data_value = res[i].data_value;
-				obj.id = res[i].id;
-				obj.lastmodifiedts = res[i].lastmodifiedts;
-				obj.notification_id = res[i].notification_id;
 				obj.softdeleteflag = res[i].softdeleteflag;
+				obj.createdts = res[i].createdts;
+				obj.id = res[i].id;
+				obj.notification_id = res[i].notification_id;
+				obj.lastmodifiedts = res[i].lastmodifiedts;
 				objMap[i] = obj;
 			}
 		}
@@ -1620,13 +1620,13 @@ com.kony.MYAPPROVALS.notification.convertTableToObject = function(res){
 	if(res!==null){
 		for(var i in res){
 			var obj = new com.kony.MYAPPROVALS.notification();
-			obj.createdts = res[i].createdts;
+			obj.softdeleteflag = res[i].softdeleteflag;
 			obj.description = res[i].description;
 			obj.employee_id = res[i].employee_id;
 			obj.lastmodifiedts = res[i].lastmodifiedts;
-			obj.module = res[i].module;
 			obj.notification_id = res[i].notification_id;
-			obj.softdeleteflag = res[i].softdeleteflag;
+			obj.module = res[i].module;
+			obj.createdts = res[i].createdts;
 			obj.title = res[i].title;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
@@ -1638,11 +1638,11 @@ com.kony.MYAPPROVALS.notification.convertTableToObject = function(res){
 com.kony.MYAPPROVALS.notification.filterAttributes = function(valuestable, insert){
 	sync.log.trace("Entering com.kony.MYAPPROVALS.notification.filterAttributes function");
 	var attributeTable = {};
-	attributeTable.createdts = "createdts";
 	attributeTable.description = "description";
 	attributeTable.employee_id = "employee_id";
-	attributeTable.module = "module";
+	attributeTable.lastmodifiedts = "lastmodifiedts";
 	attributeTable.notification_id = "notification_id";
+	attributeTable.module = "module";
 	attributeTable.title = "title";
 
 	var PKTable = {};
@@ -1683,13 +1683,13 @@ com.kony.MYAPPROVALS.notification.formOrderByClause = function(orderByMap){
 com.kony.MYAPPROVALS.notification.prototype.getValuesTable = function(isInsert){
 	sync.log.trace("Entering com.kony.MYAPPROVALS.notification.prototype.getValuesTable function");
 	var valuesTable = {};
-	valuesTable.createdts = this.createdts;
 	valuesTable.description = this.description;
 	valuesTable.employee_id = this.employee_id;
-	valuesTable.module = this.module;
+	valuesTable.lastmodifiedts = this.lastmodifiedts;
 	if(isInsert===true){
 		valuesTable.notification_id = this.notification_id;
 	}
+	valuesTable.module = this.module;
 	valuesTable.title = this.title;
 	return valuesTable;
 };

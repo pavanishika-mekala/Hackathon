@@ -47,7 +47,7 @@
     "enablescrolling": true,
     "id": "flxRecurringLeave",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "7ffd9866ddc14a218f839748baf58971",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

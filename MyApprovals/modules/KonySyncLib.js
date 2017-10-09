@@ -1,5 +1,5 @@
 // -- SDK File : KonySyncLib.js 
-//  --Generated On Mon Jul 24 11:51:01 IST 2017******************* 
+//  --Generated On Thu Sep 21 22:02:20 IST 2017******************* 
 //  **************** Start jsonWriter.js*******************
 //#ifdef iphone
 	//#define KONYSYNC_IOS
@@ -6065,7 +6065,7 @@ if(typeof(sync)=== "undefined"){
 kony.sync.insert = function (tx, tablename, values, insert_callback, markForUpload, options) {
 	sync.log.trace("Entering kony.sync.insert ");
 	var scopename = kony.sync.scopes.syncTableScopeDic[tablename];
-	if (markForUpload === false){
+	if (markForUpload === false || markForUpload === "false"){
 		values[kony.sync.mainTableChangeTypeColumn] = kony.sync.insertColStatusDI;
 	} else {
 		values[kony.sync.mainTableChangeTypeColumn] = kony.sync.insertColStatus;
@@ -6078,7 +6078,7 @@ kony.sync.insert = function (tx, tablename, values, insert_callback, markForUplo
 	}
 
 	//Check if it is original or save the original state.
-	if (markForUpload === false) {
+	if (markForUpload === false || markForUpload === "false") {
 		if (kony.sync.addToRollBack(tx, tablename, values, kony.sync.insertColStatusDI, null, insert_callback) === false) {
 			return false;
 		}
@@ -6104,7 +6104,7 @@ kony.sync.insert = function (tx, tablename, values, insert_callback, markForUplo
 		values[kony.sync.mainTableChangeTypeColumn] = null;
 		values[kony.sync.mainTableSyncVersionColumn] = null;
 
-		if (markForUpload === false) {
+		if (markForUpload === false || markForUpload === "false") {
 			values[kony.sync.historyTableChangeTypeColumn] = kony.sync.insertColStatusDI;
 		} else {
 			values[kony.sync.historyTableChangeTypeColumn] = kony.sync.insertColStatus;
@@ -6172,11 +6172,11 @@ kony.sync.update = function (tx, tablename, values, wc, markForUpload, options) 
 			return false;
 		} 
 		var prevMarkForupload = recordres.konysyncchangetype;
-		if( prevMarkForupload == 90 && markForUpload == true ){
+		if( prevMarkForupload == 90 && (markForUpload === true || markForUpload === "true")){
 			return kony.sync.errorCodeInvalidMarkForUploadValue;
 		}
 	}
-	if (markForUpload === false) {
+	if (markForUpload === false || markForUpload === "false") {
 		if(kony.sync.addToRollBack(tx, tablename, values, kony.sync.updateColStatusDU, wc)===false){
 			return false;
 		}
@@ -6187,7 +6187,7 @@ kony.sync.update = function (tx, tablename, values, wc, markForUpload, options) 
 	}
 
 	var scopename = kony.sync.scopes.syncTableScopeDic[tablename];
-	if (markForUpload === false) {
+	if (markForUpload === false || markForUpload === "false") {
 		values[kony.sync.mainTableChangeTypeColumn] = kony.sync.updateColStatusDU;
 	} else {
 		values[kony.sync.mainTableChangeTypeColumn] = kony.sync.updateColStatus;
@@ -6240,7 +6240,7 @@ kony.sync.update = function (tx, tablename, values, wc, markForUpload, options) 
 	}
 	if (!kony.sync.isNullOrUndefined(syncorder)) {
 		record[kony.sync.historyTableReplaySequenceColumn] = syncorder + 1;
-		if (markForUpload === false) {
+		if (markForUpload === false || markForUpload === "false") {
 			record[kony.sync.historyTableChangeTypeColumn] = kony.sync.updateColStatusDU;
 		} else {
 			record[kony.sync.historyTableChangeTypeColumn] = kony.sync.updateColStatus;
@@ -6277,7 +6277,7 @@ kony.sync.updateBatch = function (tx, tablename, values, wc, markForUpload, prim
 	var num_records = resultSet.rows.length;
 	for (i = 0; i < num_records; i++) {
 		record = kony.db.sqlResultsetRowItem(tx, resultSet, i);
-		if (markForUpload === false) {
+		if (markForUpload === false || markForUpload === "false") {
 			record[kony.sync.originalTableChangeTypeColumn] = kony.sync.updateColStatusDU;
 		} else {
 			record[kony.sync.originalTableChangeTypeColumn] = kony.sync.updateColStatus;
@@ -6312,7 +6312,7 @@ kony.sync.updateBatch = function (tx, tablename, values, wc, markForUpload, prim
 	}	
 	//updating main tables
 	var scopename = kony.sync.scopes.syncTableScopeDic[tablename];
-	if (markForUpload === false) {
+	if (markForUpload === false || markForUpload === "false") {
 		values[kony.sync.mainTableChangeTypeColumn] = kony.sync.updateColStatusDU;
 	} else {
 		values[kony.sync.mainTableChangeTypeColumn] = kony.sync.updateColStatus;
@@ -6462,7 +6462,7 @@ kony.sync.remove = function (tx, tablename, wc, isLocal, markForUpload, errorCal
 
 	//Check if it is original or save the original state.
 	if (isLocal !== true) {
-		if (markForUpload === false) {
+		if (markForUpload === false || markForUpload === "false") {
 			if(kony.sync.addToRollBack(tx, tablename, null, kony.sync.deleteColStatusDD, wc, errorCallback) === false) {
 				return false;
 			}
@@ -6512,7 +6512,7 @@ kony.sync.remove = function (tx, tablename, wc, isLocal, markForUpload, errorCal
 				}
 				if (syncorder !== null) {
 					values[kony.sync.historyTableReplaySequenceColumn] = syncorder + 1;
-					if (markForUpload === false) {
+					if (markForUpload === false || markForUpload === "false") {
 						values[kony.sync.historyTableChangeTypeColumn] = kony.sync.deleteColStatusDD;
 					} else {
 						values[kony.sync.historyTableChangeTypeColumn] = kony.sync.deleteColStatus;
@@ -6624,7 +6624,7 @@ kony.sync.deleteBatch = function (tx, tablename, wc, isLocal, markForUpload, err
 				if(synctracking === true) {
 					syncorder = syncorder + 1;
 					record[kony.sync.historyTableReplaySequenceColumn] = syncorder;
-					if (markForUpload === false) {
+					if (markForUpload === false || markForUpload === "false") {
 						record[kony.sync.historyTableChangeTypeColumn] = kony.sync.deleteColStatusDD;
 					} else {
 						record[kony.sync.historyTableChangeTypeColumn] = kony.sync.deleteColStatus;
@@ -10174,7 +10174,7 @@ kony.sync.checkForFalseUpdate = function (dbname, tbname, twcs, markForUpload, e
 	sync.log.trace("Entering kony.sync.checkForFalseUpdate ");
 	var uploadstatus = true;
 	var isError = false;
-	if(markForUpload === false){
+	if(markForUpload === false || markForUpload === "false"){
 		return true;
 	} else {
 		kony.table.insert(twcs, {
@@ -10238,7 +10238,7 @@ kony.sync.checkForFalseUpdateWCS = function (dbname, tbname, twcs, markForUpload
 	sync.log.trace("Entering kony.sync.checkForFalseUpdateWCS ");
 	var uploadstatus = true;
 	var isError = false;
-	if (markForUpload === false) {
+	if (markForUpload === false || markForUpload === "false") {
 		return true;
 	}
 	if(twcs !== "" && !kony.sync.isNull(twcs)){
