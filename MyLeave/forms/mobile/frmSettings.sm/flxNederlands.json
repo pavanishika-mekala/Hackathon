@@ -31,7 +31,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -44,6 +44,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxNederlands",
+    "ide_onClick": "AS_FlexContainer_g46b94dbe1d943ca84904d805190380b",
     "info": null,
     "isvisible": true,
     "kuid": "j4f6955cce3e4c83817cccd92c699b62",
