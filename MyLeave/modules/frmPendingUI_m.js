@@ -393,45 +393,7 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.deleteLeaveSuccess = f
 	var curForm = kony.application.getCurrentForm();
 	if (curForm.id === "frmPendingLeaveRequest") {
       	var selectedLeaveData = frmPendingLeaveRequest.segPendingLeaveRequest.selectedItems[0];
-        var evtobj={
-          type:"starting",
-          start: selectedLeaveData.startDate.substring(6,8)+"/"+selectedLeaveData.startDate.substring(4,6) +"/" + selectedLeaveData.startDate.substring(0,4) + " 00:00:00",
-          finish:selectedLeaveData.endDate.substring(6,8)+"/"+selectedLeaveData.endDate.substring(4,6) +"/" + selectedLeaveData.endDate.substring(0,4) + " 23:59:59"
-        };
-      var options = {};
-      var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
-      if(result.status == kony.application.PERMISSION_DENIED) {
-        if(result.canRequestPermission){
-          kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
-        }
-        else{
-          var basicConfig = {
-            alertType : constants.ALERT_TYPE_CONFIRMATION,
-            message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
-            alertHandler : alertCallback
-          }
-          var pspConfig={};
-          kony.ui.Alert(basicConfig,pspConfig);
-        }
-      }
-      else{
-    permissionStatusCallback(result);
-  }  
-  function alertCallback(resp){
-    if(resp == true){
-      kony.application.openApplicationSettings();
-  }
-} 
-      function permissionStatusCallback(response){
-        kony.print("in permissionStatusCallback of all pending requests delete.");
-        if(response.status == true || response.status == 50002){
-        var events = kony.phone.findCalendarEvents(evtobj);
-        for (var eventNo = 0; eventNo < events.length; eventNo++){
-          if(events[eventNo].summary.substring(0,12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")){
-            kony.phone.removeCalendarEvent(events[eventNo]);
-          }
-        }
-        data.leave_id = frmPendingLeaveRequest.segPendingLeaveRequest.selectedItems[0].lblLeaveId.split("$")[0];
+      	 data.leave_id = frmPendingLeaveRequest.segPendingLeaveRequest.selectedItems[0].lblLeaveId.split("$")[0];
         data.comments = frmPendingLeaveRequest.TxtAreaComments.text;
         if (data.comments !== "") {
           kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function (res) {
@@ -446,58 +408,73 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.deleteLeaveSuccess = f
           frmPendingLeaveRequest.segPendingLeaveRequest.removeAt(parseInt(frmPendingLeaveRequest.segPendingLeaveRequest.selectedIndex[1]));
           frmPendingLeaveRequest.forceLayout();
         }
-      }
-        else{
-          var basicConfig = {
-            alertType : constants.ALERT_TYPE_CONFIRMATION,
-            message : kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
-            alertHandler : alertCallback
-          }
-          var pspConfig={};
-          kony.ui.Alert(basicConfig,pspConfig);
-        }          }
+//         var evtobj={
+//           type:"starting",
+//           start: selectedLeaveData.startDate.substring(6,8)+"/"+selectedLeaveData.startDate.substring(4,6) +"/" + selectedLeaveData.startDate.substring(0,4) + " 00:00:00",
+//           finish:selectedLeaveData.endDate.substring(6,8)+"/"+selectedLeaveData.endDate.substring(4,6) +"/" + selectedLeaveData.endDate.substring(0,4) + " 23:59:59"
+//         };
+//       var options = {};
+//       var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
+//       if(result.status == kony.application.PERMISSION_DENIED) {
+//         if(result.canRequestPermission){
+//           kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
+//         }
+//         else{
+//           var basicConfig = {
+//             alertType : constants.ALERT_TYPE_CONFIRMATION,
+//             message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
+//             alertHandler : alertCallback
+//           }
+//           var pspConfig={};
+//           kony.ui.Alert(basicConfig,pspConfig);
+//         }
+//       }
+//       else{
+//     permissionStatusCallback(result);
+//   }  
+//   function alertCallback(resp){
+//     if(resp == true){
+//       kony.application.openApplicationSettings();
+//   }
+// } 
+//       function permissionStatusCallback(response){
+//         kony.print("in permissionStatusCallback of all pending requests delete.");
+//         if(response.status == true || response.status == 50002){
+//         var events = kony.phone.findCalendarEvents(evtobj);
+//         for (var eventNo = 0; eventNo < events.length; eventNo++){
+//           if(events[eventNo].summary.substring(0,12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")){
+//             kony.phone.removeCalendarEvent(events[eventNo]);
+//           }
+//         }
+//         data.leave_id = frmPendingLeaveRequest.segPendingLeaveRequest.selectedItems[0].lblLeaveId.split("$")[0];
+//         data.comments = frmPendingLeaveRequest.TxtAreaComments.text;
+//         if (data.comments !== "") {
+//           kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function (res) {
+//             var ob = new kony.apps.coe.ess.myLeave.PendingLeaveRequestUI();
+//             ob.onClickOfCancel();
+//             frmPendingLeaveRequest.segPendingLeaveRequest.removeAt(parseInt(frmPendingLeaveRequest.segPendingLeaveRequest.selectedIndex[1]));
+//             frmPendingLeaveRequest.forceLayout();
+//           }, function (err) {});
+//         } else {
+//           var ob = new kony.apps.coe.ess.myLeave.PendingLeaveRequestUI();
+//           ob.onClickOfCancel();
+//           frmPendingLeaveRequest.segPendingLeaveRequest.removeAt(parseInt(frmPendingLeaveRequest.segPendingLeaveRequest.selectedIndex[1]));
+//           frmPendingLeaveRequest.forceLayout();
+//         }
+//       }
+//         else{
+//           var basicConfig = {
+//             alertType : constants.ALERT_TYPE_CONFIRMATION,
+//             message : kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
+//             alertHandler : alertCallback
+//           }
+//           var pspConfig={};
+//           kony.ui.Alert(basicConfig,pspConfig);
+//         }          }
 }
   else {
       	var selectedLeaveData = frmSearchLog.segList.selectedItems[0];
-        var evtobj={
-          type:"starting",
-          start: selectedLeaveData.startDate.substring(6,8)+"/"+selectedLeaveData.startDate.substring(4,6) +"/" + selectedLeaveData.startDate.substring(0,4) + " 00:00:00",
-          finish:selectedLeaveData.endDate.substring(6,8)+"/"+selectedLeaveData.endDate.substring(4,6) +"/" + selectedLeaveData.endDate.substring(0,4) + " 23:59:59"
-        };
-    var options = {};
-    var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
-    if(result.status == kony.application.PERMISSION_DENIED) {
-      if(result.canRequestPermission){
-        kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
-      }
-      else{
-        var basicConfig = {
-          alertType : constants.ALERT_TYPE_CONFIRMATION,
-          message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
-          alertHandler : alertCallback
-        };
-        var pspConfig={};
-        kony.ui.Alert(basicConfig,pspConfig);
-      }
-    }
-    else{
-      permissionStatusCallback(result);
-    }  
-    function alertCallback(resp){
-      if(resp == true){
-        kony.application.openApplicationSettings();
-      }
-    }
-     function permissionStatusCallback(response){
-       kony.print("in permission callback of searchlog delete");
-        if(response.status == true || response.status == 50002){
-        var events = kony.phone.findCalendarEvents(evtobj);
-        for (var eventNo = 0; eventNo < events.length; eventNo++){
-          if(events[eventNo].summary.substring(0,12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")){
-            kony.phone.removeCalendarEvent(events[eventNo]);
-          }
-        }
-		data.leave_id = frmSearchLog.segList.selectedItems[0].lblLeaveId.split("$")[0];
+    	data.leave_id = frmSearchLog.segList.selectedItems[0].lblLeaveId.split("$")[0];
 		data.comments = frmSearchLog.TxtAreaComments.text;
 		if (data.comments !== "") {
 			kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function (res) {
@@ -510,18 +487,70 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.deleteLeaveSuccess = f
 			var obj = new kony.apps.coe.myLeave.search();
 			obj.done();
 			new kony.apps.coe.ess.myLeave.PendingLeaveRequestUI().onClickOfCancel();
-		}
-     } 
-       else{
-         var basicConfig = {
-           alertType : constants.ALERT_TYPE_CONFIRMATION,
-           message : kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
-           alertHandler : alertCallback
-         };
-         var pspConfig={};
-         kony.ui.Alert(basicConfig,pspConfig);
-       }    
-	}
+        }
+//         var evtobj={
+//           type:"starting",
+//           start: selectedLeaveData.startDate.substring(6,8)+"/"+selectedLeaveData.startDate.substring(4,6) +"/" + selectedLeaveData.startDate.substring(0,4) + " 00:00:00",
+//           finish:selectedLeaveData.endDate.substring(6,8)+"/"+selectedLeaveData.endDate.substring(4,6) +"/" + selectedLeaveData.endDate.substring(0,4) + " 23:59:59"
+//         };
+//     var options = {};
+//     var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
+//     if(result.status == kony.application.PERMISSION_DENIED) {
+//       if(result.canRequestPermission){
+//         kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
+//       }
+//       else{
+//         var basicConfig = {
+//           alertType : constants.ALERT_TYPE_CONFIRMATION,
+//           message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
+//           alertHandler : alertCallback
+//         };
+//         var pspConfig={};
+//         kony.ui.Alert(basicConfig,pspConfig);
+//       }
+//     }
+//     else{
+//       permissionStatusCallback(result);
+//     }  
+//     function alertCallback(resp){
+//       if(resp == true){
+//         kony.application.openApplicationSettings();
+//       }
+//     }
+//      function permissionStatusCallback(response){
+//        kony.print("in permission callback of searchlog delete");
+//         if(response.status == true || response.status == 50002){
+//         var events = kony.phone.findCalendarEvents(evtobj);
+//         for (var eventNo = 0; eventNo < events.length; eventNo++){
+//           if(events[eventNo].summary.substring(0,12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")){
+//             kony.phone.removeCalendarEvent(events[eventNo]);
+//           }
+//         }
+// 		data.leave_id = frmSearchLog.segList.selectedItems[0].lblLeaveId.split("$")[0];
+// 		data.comments = frmSearchLog.TxtAreaComments.text;
+// 		if (data.comments !== "") {
+// 			kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function (res) {
+// 				var obj = new kony.apps.coe.myLeave.search();
+// 				obj.done();
+// 				var ob = new kony.apps.coe.ess.myLeave.PendingLeaveRequestUI();
+// 				ob.onClickOfCancel();
+// 			}, function (err) {});
+// 		} else {
+// 			var obj = new kony.apps.coe.myLeave.search();
+// 			obj.done();
+// 			new kony.apps.coe.ess.myLeave.PendingLeaveRequestUI().onClickOfCancel();
+// 		}
+//      } 
+//        else{
+//          var basicConfig = {
+//            alertType : constants.ALERT_TYPE_CONFIRMATION,
+//            message : kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
+//            alertHandler : alertCallback
+//          };
+//          var pspConfig={};
+//          kony.ui.Alert(basicConfig,pspConfig);
+//        }    
+// 	}
 }
 	kony.apps.coe.ess.Sync.syncAsynchronously();
 };
