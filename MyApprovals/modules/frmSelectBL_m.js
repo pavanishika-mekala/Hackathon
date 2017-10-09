@@ -248,7 +248,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegRequestDat
   function successCallback(data) {
     if (data != null && data != "" && data.length > 0) {
       var newData = [{
-        id: "All",,
+        id: "All",
         request_name:  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll"),
         imgSelected: "close.png"
       }].concat(data[0]);//this [0] has to be removed for getting timesheet
@@ -410,7 +410,6 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.searchDataRowClick =
         tempSearchData.splice(index, 1);
         frmSelect.segSearchPeople.selectedRowIndices=[[0,tempSearchData]]
       }
-    }else{
     }
     //separating selected and unselected data in segSearch
     var unselectedItems=[];
