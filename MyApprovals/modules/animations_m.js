@@ -36,10 +36,10 @@ kony.apps.coe.ess.loginAnimations.prototype.preAnimations = function() {
        "100":{"opacity":1, "stepConfig": {
                 "timingFunction": kony.anim.EASE
             }}
-	  
+
 	   }
 	   ),
-     {"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":3},    
+     {"delay":0,"iterationCount":1,"fillMode":kony.anim.FILL_MODE_FORWARDS,"duration":3},
      {"animationEnd":function(){}});
 }
 
@@ -51,8 +51,8 @@ kony.apps.coe.ess.loginAnimations.prototype.preAnimations = function() {
  * @description    Rotation Animation
  */
 kony.apps.coe.ess.loginAnimations.prototype.preAnimationsRotationOne = function() {
-   
-  
+
+
   //#ifdef winphone8
     //Rotate 3D not supported for windows devices
     //#else
@@ -115,10 +115,10 @@ kony.apps.coe.ess.loginAnimations.prototype.preAnimationsRotationOne = function(
         //#endif
         //#ifdef tabrcandroid
         new kony.apps.coe.ess.loginAnimations().animationsForAndroid();
-        //#endif 
+        //#endif
       }
     });
-        
+
       }
     });
     //#endif
@@ -131,11 +131,11 @@ kony.apps.coe.ess.loginAnimations.prototype.preAnimationsRotationOne = function(
  * @class          loginAnimations
  * @type           Prototype
  * @return         None.
- * @description    Animations for android 
+ * @description    Animations for android
  */
 kony.apps.coe.ess.loginAnimations.prototype.animationsForAndroid = function() {
 
- 
+
     frmLogin.flxSplash.animate(
     kony.ui.createAnimation({
         "100": {
@@ -203,7 +203,7 @@ kony.apps.coe.ess.loginAnimations.prototype.animationsForAndroid = function() {
         "delay": 1.8
     }, {
         "animationEnd": function(){
-        
+
 		 frmLogin.flxImgApllicationLogo.animate(
         kony.ui.createAnimation({
             "100": {
@@ -220,9 +220,25 @@ kony.apps.coe.ess.loginAnimations.prototype.animationsForAndroid = function() {
         }, {
             "animationEnd": function(){}
         });
-		} 
-    }  
+		}
+    }
     );
+    frmLogin.flxBrowserContainer.animate(
+    kony.ui.createAnimation({
+        "100": {
+            "top": "25%",
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            }
+        }
+    }), {
+        "delay": 3.95,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 1.23
+    }, {
+        "animationEnd": function(){}
+    });
     frmLogin.flxMain.animate(
     kony.ui.createAnimation({
         "100": {
@@ -246,11 +262,11 @@ kony.apps.coe.ess.loginAnimations.prototype.animationsForAndroid = function() {
  * @class          loginAnimations
  * @type           Prototype
  * @return         None.
- * @description    Animations for Iphone 
+ * @description    Animations for Iphone
  */
-kony.apps.coe.ess.loginAnimations.prototype.animationsForIphone = function() 
+kony.apps.coe.ess.loginAnimations.prototype.animationsForIphone = function()
 {
-     
+
     frmLogin.flxSplash.animate(
     kony.ui.createAnimation({
         "100": {
@@ -335,6 +351,22 @@ kony.apps.coe.ess.loginAnimations.prototype.animationsForIphone = function()
         });
 		}
     });
+    frmLogin.flxBrowserContainer.animate(
+    kony.ui.createAnimation({
+        "100": {
+            "top": "25%",
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            }
+        }
+    }), {
+        "delay": 4.13-0.4,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 1.722-0.4
+    }, {
+        "animationEnd":function(){}
+    });
     frmLogin.flxMain.animate(
     kony.ui.createAnimation({
         "100": {
@@ -408,7 +440,7 @@ kony.apps.coe.ess.loginAnimations.prototype.animationQrScreen = function() {
     }, {
         "animationEnd": function(){}
     });
-   
+
 }
 kony.apps.coe.ess.loginAnimations.prototype.animationLoginScreen = function() {
   frmStartUp.destroy();
@@ -441,10 +473,26 @@ frmLogin.flxSplash.animate(
         "iterationCount": 1,
         "fillMode": kony.anim.FILL_MODE_FORWARDS,
         "duration":1.2
-  
+
     }, {
         "animationEnd": function(){}
     });
+    frmLogin.flxBrowserContainer.animate(
+     kony.ui.createAnimation({
+         "100": {
+             "top": "25%",
+             "stepConfig": {
+                 "timingFunction": kony.anim.EASE
+             }
+         }
+     }), {
+         "delay": 1.3,
+         "iterationCount": 1,
+         "fillMode": kony.anim.FILL_MODE_FORWARDS,
+         "duration": 1
+     }, {
+         "animationEnd": function(){(new kony.apps.coe.ess.QRCode()).onPostShowOfLogin();}
+     });
    frmLogin.flxMain.animate(
     kony.ui.createAnimation({
         "100": {
@@ -461,5 +509,5 @@ frmLogin.flxSplash.animate(
     }, {
         "animationEnd": function(){(new kony.apps.coe.ess.QRCode()).onPostShowOfLogin();}
     });
-  
+
 }

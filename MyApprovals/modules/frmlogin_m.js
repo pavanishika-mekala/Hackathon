@@ -50,8 +50,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
      kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header1, "headers");
      kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header2, "headers");
 
-     alert(error);
-     kony.application.dismissLoadingScreen();
+     handleError(error);
    };
 
  /**
@@ -121,8 +120,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
      }
      kony.print("-- End  kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
    } catch (e) {
-     alert(e);
-     kony.application.dismissLoadingScreen();
+     kony.apps.coe.ess.frmLogin._errorCallback(e);
    }
  };
 
@@ -132,7 +130,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
      try {
        new kony.sdk().init(kony.apps.coe.ess.appconfig.appkey,kony.apps.coe.ess.appconfig.appsecret,kony.apps.coe.ess.appconfig.serviceurl, function(){
          var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServicePreLogin);
-         preLoginService.login({}, kony.apps.coe.ess.frmLogin._axwayAuth, kony.apps.coe.ess.frmLogin._errorCallback);
+         preLoginService.login({"browserWidget":frmLogin.browserOkta}, kony.apps.coe.ess.frmLogin._axwayAuth, kony.apps.coe.ess.frmLogin._errorCallback);
        }, kony.apps.coe.ess.frmLogin._errorCallback);
      } catch (exception) {
        kony.apps.coe.ess.frmLogin._errorCallback(exception);
@@ -370,8 +368,11 @@ kony.apps.coe.ess.frmLogin.frmLoginPreshow =
   if (kony.apps.coe.ess.appconfig.useOkta) {
     frmLogin.flxFields.isVisible = false;
     frmLogin.flxRememberMe.isVisible = false;
+    frmLogin.flxSignIn.isVisible = false;
     frmLogin.flxSignIn.top = "20%";
-    frmLogin.flxBottom.top = "30%";
+    frmLogin.flxBottom.top = "60%";
+  } else {
+    frmLogin.flxBrowserContainer.isVisible = false;
   }
   //ToDo : FInd appropriate place to InitializeSync
 
@@ -533,7 +534,7 @@ kony.apps.coe.ess.frmLogin.showTouchIdPopup = function(okButtonText) {
 kony.apps.coe.ess.frmLogin.manualSyncOnClick = function(successCall, errorCall) {
   kony.print("--Start manualSyncOnClick--");
   if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-    kony.application.showLoadingScreen("", "Syncing . . .", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
     var syncSuccess = function(successCallback, res) {
       //Generally, background sync will do nothing after successful sync. In any special cases, You can specify actions to be performed after sync success in background
       var updateSyncDate = function() {

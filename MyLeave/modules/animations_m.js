@@ -69,7 +69,7 @@ kony.apps.coe.ess.loginAnimations.prototype.animationQrScreen = function() {
     }, {
         "animationEnd": function(){}
     });
-   
+
 }
 kony.apps.coe.ess.loginAnimations.prototype.animationLoginScreen = function() {
   frmStartUp.destroy();
@@ -102,7 +102,23 @@ frmLogin.flxSplash.animate(
         "iterationCount": 1,
         "fillMode": kony.anim.FILL_MODE_FORWARDS,
         "duration":1.2
-  
+
+    }, {
+        "animationEnd": function(){}
+    });
+    frmLogin.flxBrowserContainer.animate(
+    kony.ui.createAnimation({
+        "100": {
+            "top": "25%",
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            }
+        }
+    }), {
+        "delay": 1.3,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 1
     }, {
         "animationEnd": function(){}
     });
@@ -122,5 +138,5 @@ frmLogin.flxSplash.animate(
     }, {
         "animationEnd": function(){(new kony.apps.coe.ess.QRCode()).onPostShowOfLogin();}
     });
-  
+
 }

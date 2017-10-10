@@ -437,6 +437,8 @@ function applicationErrorCallback(error) {
         kony.apps.coe.ess.frmLogin.btnLoginOnclick();
     };
     //#endif
+
+    handleError(error);
 }
 
 function _removeTokenHeaders(){
