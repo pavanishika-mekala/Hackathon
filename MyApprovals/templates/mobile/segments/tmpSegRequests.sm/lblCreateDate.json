@@ -15,7 +15,7 @@
     "_padding_": [
         0,
         0,
-        0,
+        1,
         0
     ],
     "_right_": {
@@ -58,6 +58,7 @@
     "isvisible": true,
     "kuid": "9a937faf29e4445f86b0747d02be1b69",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxAllWidgets",
     "pf": "tmpSegRequests",
     "tooltip": "",

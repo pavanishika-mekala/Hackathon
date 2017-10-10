@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "32dp"
+        "value": "28dp"
     },
     "_margin_": [
         6,
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "32dp"
+        "value": "28dp"
     },
     "canUpdateUI": true,
     "centery": {
