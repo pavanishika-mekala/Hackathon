@@ -1,0 +1,23 @@
+{
+    "AS_Form_b8e09de8146d4d8da093067007c13e2f": {
+        "id": "AS_Form_b8e09de8146d4d8da093067007c13e2f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "g7ee772e167d4dddb1ea5a035c62bdb5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__i1c1266516b44f0691eeb42995eb73d1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.loginAnimations()).animationLoginScreen();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.frmLogin.seti18nText();\nkony.apps.coe.ess.frmLogin.btnLoginOnclick();",
+            "parentId": null
+        }]
+    }
+}
