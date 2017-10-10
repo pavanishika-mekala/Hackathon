@@ -205,13 +205,13 @@ kony.apps.coe.ess.Approvals.frmSettings.resetLocalDB = function() {
   kony.apps.coe.ess.Sync.resetSyncDb(resetLocalDBSucess, resetLocalDBError);
 
   function resetLocalDBSucess() {
-    kony.application.showLoadingScreen("", "Syncing the Data", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
     kony.apps.coe.ess.Sync.doDownload = true;
     kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
 
     function syncSessionSuccess() {
-      kony.application.showLoadingScreen("", "syncing the Data", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-      var navigateLandingPage=function(){ 
+      kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+      var navigateLandingPage=function(){
         var formController;
         if(kony.apps.coe.ess.globalVariables.isNativeTablet == true) {
           formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmTabDashboard");
@@ -243,10 +243,10 @@ kony.apps.coe.ess = kony.apps.coe.ess || {};
 kony.apps.coe.ess.settings = {
   settingsInstanceObject : null,
   /**
-   * Returns Settings Object. 
+   * Returns Settings Object.
    */
   getSettingsObject : function() {
-    if(this.settingsInstanceObject === null) 
+    if(this.settingsInstanceObject === null)
       this.settingsInstanceObject = new Settings();
     return this.settingsInstanceObject;
   },
@@ -266,12 +266,12 @@ var Settings = function() {
 Settings.prototype.preShow = function() {
   kony.print("Start --Settings.prototype.preShow");
   try {
-    //Set Push Notifications Icon 
+    //Set Push Notifications Icon
     var isEnabled = kony.apps.coe.ess.KMS.isPushNotificationEnabled();
     var iconToSet = this.OFF_ICON
     if(isEnabled) {
       iconToSet = this.ON_ICON;
-    } 
+    }
     frmSettings.imgPushNotification.src = iconToSet;
 
   } catch (excp) {
@@ -369,7 +369,7 @@ Settings.prototype.languageSelection = function(src1,src2,src3,Sellocale){
   //set the selected language to all forms
   kony.i18n.setCurrentLocaleAsync(Sellocale,kony.apps.coe.ess.settings.getSettingsObject().destroyForms,kony.apps.coe.ess.settings.getSettingsObject().failureCallBack, null);
   //store the language selected in device storage
-  kony.store.setItem("localeToBeSet",Sellocale);  
+  kony.store.setItem("localeToBeSet",Sellocale);
   frmSettings.imgEnglish.src = src1;
   frmSettings.imgFrench.src = src2;
   frmSettings.imgNederlands.src = src3;

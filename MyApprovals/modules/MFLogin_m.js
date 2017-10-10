@@ -399,7 +399,7 @@ function applicationErrorCallback(error) {
     }
     kony.print("Error Occured on LoginAction : " + JSON.stringify(error));
     kony.application.dismissLoadingScreen();
-	frmLoginDesk.imgLogin.onClick = function() {
+	  frmLoginDesk.imgLogin.onClick = function() {
         kony.apps.coe.ess.frmLogin.btnLoginOnclick();
       };
 	}
@@ -434,6 +434,8 @@ function applicationErrorCallback(error) {
         kony.apps.coe.ess.frmLogin.btnLoginOnclick();
     };
     //#endif
+
+    handleError(error);
 }
 }
 

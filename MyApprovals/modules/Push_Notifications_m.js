@@ -26,12 +26,12 @@ kony.apps.coe.ess.KMS = {
     kony.print("End - kony.apps.coe.ess.KMS.setPushNotificationCallbacks");
   },
   /**
-   * Register Push Notifications with Google Cloud Messaging (GCM) or Apple Push Notification (APN) Providers. 
+   * Register Push Notifications with Google Cloud Messaging (GCM) or Apple Push Notification (APN) Providers.
    * This function should be called once when app is installed / settings of app
    */
-  registerPush : function() { 
+  registerPush : function() {
     kony.print("Start - kony.apps.coe.ess.KMS.registerPush");
-    try {     
+    try {
       var config;
       //#ifdef android
       config = {senderid : "881052403649"};
@@ -49,7 +49,7 @@ kony.apps.coe.ess.KMS = {
     kony.print("End - kony.apps.coe.ess.KMS.registerPush");
   },
   /**
-   * Sunscribe to Kony Messaging Services. 
+   * Sunscribe to Kony Messaging Services.
    * This function should be called after successful registration with GCM or APN
    * @param {fn} successCall  Called on successful subscription
    * @param {fn} failureCall  Called on error while subscription
@@ -107,7 +107,7 @@ kony.apps.coe.ess.KMS = {
     kony.print("End - kony.apps.coe.ess.KMS.subscribeKMS");
   },
   /**
-   * Unsubscribe to Kony Messaging Services. 
+   * Unsubscribe to Kony Messaging Services.
    * Once Unsubscribed, Device will no longer receive Notifications from Mobile Fabric KMS.
    * @param {fn} $successCall Called on successful unsubscription
    * @param {fn} $errorCall Called on error while unsubscribing
@@ -116,7 +116,7 @@ kony.apps.coe.ess.KMS = {
     kony.print("Start - kony.apps.coe.ess.KMS.unsubscribeKMS");
     kony.sdk.getCurrentInstance().getMessagingService().unregister(function(res){
       //unsubscribeKMS Success
-  
+
       if(successCall) {
           kony.print("Executiong successCall of unsubscribeKMS");
           successCall();
@@ -185,29 +185,29 @@ kony.apps.coe.ess.KMS = {
     };
 	kony.print("Notification Data Received for deepdroping : " + JSON.stringify(data));
     switch(data.module) {
-      case "undefined" : 
+      case "undefined" :
         kony.print("Module is not specified." + JSON.stringify(data));
         break;
       case "MYAPPROVAL" :
-        
+
         operations = function() {
            kony.application.dismissLoadingScreen();
           //Parse ContextData
           var cData = JSON.parse(data.contextData);
-          if(cData.id === "undefined") { 
+          if(cData.id === "undefined") {
           	kony.print("Context Data has no ID attribute to deepdrop");
             return;
           }
           //ToDo
         };
         break;
-      
+
       default :
         kony.print("Unknown Module Name." + JSON.stringify(data));
         break;
     }
     //Sync before performing operations
-    kony.application.showLoadingScreen("", "Syncing....!", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
     kony.apps.coe.ess.Sync.startSyncSession(operations,function(res){
       kony.print("Falied Sync while deepdrop : " + JSON.stringify(res));
       operations();
@@ -264,8 +264,8 @@ kony.apps.coe.ess.KMS = {
 
 kony.apps.coe.ess.KMS.callbacks = {
   /**
-   * Called on Successful Registration with GCM / APN. 
-   * @param {string} $tokenID 
+   * Called on Successful Registration with GCM / APN.
+   * @param {string} $tokenID
    *				UniqueID returned by GCM / APN on registration
    */
   registerSuccess : function(tokenID) {
@@ -276,23 +276,23 @@ kony.apps.coe.ess.KMS.callbacks = {
   },
   /**
    * Error callback of Registration with GCM / APN
-   * @param {Object} $err 
-   *				Cause of error 
+   * @param {Object} $err
+   *				Cause of error
    */
   registerFailure : function(err) {
     kony.print("Push Notifications registration is failed : " + JSON.stringify(err));
   },
   /**
    * Success callback of Deegistration with GCM / APN
-   * @param {Object} $res 
+   * @param {Object} $res
    */
   deregisterSuccess : function(res) {
     kony.print("Push Notifications Deregistrations is successful : " + JSON.stringify(res));
   },
   /**
    * Error callback of Deregistration with GCM / APN
-   * @param {Object} $err 
-   *				Cause of error 
+   * @param {Object} $err
+   *				Cause of error
    */
   deregisterFailure : function(err) {
     kony.print("Push Notifications Deregistrations is failed : " + JSON.stringify(err));
@@ -305,7 +305,7 @@ kony.apps.coe.ess.KMS.callbacks = {
   onlineNofication : function(res) {
      var data = kony.apps.coe.ess.KMS.getNotoficationData(res);
     var alertHandler = function(okClicked) {
-     
+
       if(okClicked) {
         kony.print("#### Show button is clicked on Notification Alert");
         kony.apps.coe.ess.KMS.deepDrop(data);
@@ -322,7 +322,7 @@ kony.apps.coe.ess.KMS.callbacks = {
       "alertIcon": "",
       "alertHandler": alertHandler
     },{});
-    
+
   },
   /**
    * When device is backgound / off & notification is recieved, This callback is triggered
@@ -337,6 +337,3 @@ kony.apps.coe.ess.KMS.callbacks = {
     //kony.apps.coe.ess.KMS.deepDrop(data);
   }
 };
-
-
-

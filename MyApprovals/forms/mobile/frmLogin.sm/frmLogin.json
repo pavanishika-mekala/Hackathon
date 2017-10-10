@@ -31,7 +31,8 @@
         "flxMain",
         "flxPopups",
         "flxSplash",
-        "flxAfterSplash"
+        "flxAfterSplash",
+        "flxBrowserContainer"
     ],
     "containerweight": 100,
     "currentLocale": "nl_BE",
