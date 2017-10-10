@@ -1,6 +1,6 @@
 {
 	"LSApplicationQueriesSchemes" : [
-		"myLeave","myTime","mypay","myProfile","myExpenses","myApprovals"
+		"eTimeSheetMyLeave","eTimeSheetMyTime","mypayengie","myProfileengie","myExpensesengie","eTimeSheetMyApprovals"
 	],
 	"NSCameraUsageDescription" : "",
 	"NSPhotoLibraryUsageDescription":""
