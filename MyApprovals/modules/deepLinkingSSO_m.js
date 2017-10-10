@@ -37,7 +37,16 @@ if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
     return;
   }
   if (kony.apps.coe.ess.globalVariables.isNative === true) {
+        if(kony.apps.ess.deepLinkingSSO.currentFormValue != null && params.launchparams.userName != kony.apps.coe.ess.frmLogin.username){
+            if(kony.apps.ess.deepLinkingSSO.currentFormValue != "frmLogin"){
+                kony.sdk.mvvm.LogoutAction();
+                return frmLogin;
+            }
+        }
         if (kony.apps.ess.deepLinkingSSO.currentFormValue == null) {
+            if (kony.os.deviceInfo().name === "android") {
+                return frmLogin;
+             }
             if (params.launchparams != "" && params.launchparams != null && params.launchparams.length > 0) {
                 if (params.launchparams.isTouchIdEnabled == "true") {
                     kony.apps.ess.deepLinkingSSO.isTouchIdEnabled = true;

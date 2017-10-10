@@ -7,7 +7,7 @@
  kony.apps = kony.apps || {};
  kony.apps.ess = kony.apps.ess || {};
  kony.apps.ess.deepLinkingSSO = kony.apps.ess.deepLinkingSSO || {};
- kony.apps.ess.deepLinkingSSO.staticUrl = "com.engie.";//com.engie.eTimeSheetMyLeave
+ kony.apps.ess.deepLinkingSSO.staticUrl = "com.engie.benelux.cofely.";//com.engie.eTimeSheetMyLeave
  var appserviceUsername;
  var appservicePassword;
  var applaunchMode;
@@ -30,7 +30,16 @@
  kony.apps.ess.deepLinkingSSO.appServiceCallback = function(params) {
      kony.print("---- appServiceCallback:Start---------");
      if (kony.apps.coe.ess.globalVariables.isNative === true) {
+         if(kony.apps.ess.deepLinkingSSO.currentFormValue != null && params.launchparams.userName != kony.apps.coe.ess.frmLogin.username){
+           if(kony.apps.ess.deepLinkingSSO.currentFormValue != "frmLogin"){
+              kony.sdk.mvvm.LogoutAction();
+              return frmLogin;
+            }
+          }
          if (kony.apps.ess.deepLinkingSSO.currentFormValue === null || kony.apps.ess.deepLinkingSSO.currentFormValue === undefined) {
+            if (kony.os.deviceInfo().name === "android") {
+                return frmLogin;
+             }
              if (params.launchparams !== "" && params.launchparams !== null && params.launchparams.length > 0) {
                  if (params.launchparams.isTouchIdEnabled == "true") {
                      kony.apps.ess.deepLinkingSSO.isTouchIdEnabled = true;
