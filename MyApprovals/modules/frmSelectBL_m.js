@@ -272,7 +272,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.RefreshSegRequestDat
   if (kony.apps.coe.ess.globalVariables.isSPA) {
     var requestTypes;
   } else {
-    var query = "select id , name as request_name from request_type ORDER BY name";
+    var query = "select id , name as request_name from request_type WHERE request_type.id NOT LIKE 'TIMESHEET' AND request_type.id NOT LIKE 'EXPENSES' AND request_type.id NOT LIKE 'PURCHORDER' AND request_type.id NOT LIKE 'PURCHREQTN' AND request_type.id NOT LIKE 'WORKORDER' ORDER BY name";// FIXME: Condition to be removed when the different types of filtered out approvals should be supported by the app
     kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallback, errorCallback);
   }
 
