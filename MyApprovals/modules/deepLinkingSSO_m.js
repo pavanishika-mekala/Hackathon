@@ -8,7 +8,7 @@ kony = kony || {};
 kony.apps = kony.apps || {};
 kony.apps.ess = kony.apps.ess || {};
 kony.apps.ess.deepLinkingSSO = kony.apps.ess.deepLinkingSSO || {};
-kony.apps.ess.deepLinkingSSO.staticUrl = "com.engie.";//com.engie.eTimeSheetMyApprovals
+kony.apps.ess.deepLinkingSSO.staticUrl = "com.engie.benelux.cofely.";//com.engie.eTimeSheetMyApprovals
 var appserviceUsername;
 var appservicePassword;
 var applaunchMode;
