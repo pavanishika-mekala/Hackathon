@@ -273,40 +273,41 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.deleteSuccess = functi
         start: leaveData.startDate.substring(6, 8) + "/" + leaveData.startDate.substring(4, 6) + "/" + leaveData.startDate.substring(0, 4) + " 00:00:00",
         finish: leaveData.endDate.substring(6, 8) + "/" + leaveData.endDate.substring(4, 6) + "/" + leaveData.endDate.substring(0, 4) + " 23:59:59"
     };
-  var options = {};
-  var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
-  if(result.status == kony.application.PERMISSION_DENIED) {
-    if(result.canRequestPermission){
-      kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
-    }
-    else{
-      var basicConfig = {
-        alertType : constants.ALERT_TYPE_CONFIRMATION,
-        message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
-        alertHandler : alertCallback
-      }
-      var pspConfig={};
-      kony.ui.Alert(basicConfig,pspConfig);
-    }
-  }
-  else{
-    permissionStatusCallback(result);
-  }  
-  function alertCallback(resp){
-    if(resp == true){
-      kony.application.openApplicationSettings();
-    }
-  }
-  function permissionStatusCallback(response){
-    kony.print("permissionStatusCallback :: "+ JSON.stringify(response));
-    //50002 is permission granted and 500001 is permission denied.
-    if(response.status == true || response.status == 50002){
-    var events = kony.phone.findCalendarEvents(evtobj);
-    for (var eventNo = 0; eventNo < events.length; eventNo++) {
-        if (events[eventNo].summary.substring(0, 12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")) {
-            kony.phone.removeCalendarEvent(events[eventNo]);
-        }
-    }
+//comenting Calendar Event Creation in Phone
+//   var options = {};
+//   var result = kony.application.checkPermission(kony.os.RESOURCE_CALENDAR,options);
+//   if(result.status == kony.application.PERMISSION_DENIED) {
+//     if(result.canRequestPermission){
+//       kony.application.requestPermission(kony.os.RESOURCE_CALENDAR, permissionStatusCallback);
+//     }
+//     else{
+//       var basicConfig = {
+//         alertType : constants.ALERT_TYPE_CONFIRMATION,
+//         message : kony.i18n.getLocalizedString("i18n.ess.common.enablePermissionSettings"),
+//         alertHandler : alertCallback
+//       }
+//       var pspConfig={};
+//       kony.ui.Alert(basicConfig,pspConfig);
+//     }
+//   }
+//   else{
+//     permissionStatusCallback(result);
+//   }  
+//   function alertCallback(resp){
+//     if(resp == true){
+//       kony.application.openApplicationSettings();
+//     }
+//   }
+//   function permissionStatusCallback(response){
+//     kony.print("permissionStatusCallback :: "+ JSON.stringify(response));
+//     //50002 is permission granted and 500001 is permission denied.
+//     if(response.status == true || response.status == 50002){
+//     var events = kony.phone.findCalendarEvents(evtobj);
+//     for (var eventNo = 0; eventNo < events.length; eventNo++) {
+//         if (events[eventNo].summary.substring(0, 12) == kony.i18n.getLocalizedString("i18n.ess.common.MyLeaveApp.valueKA")) {
+//             kony.phone.removeCalendarEvent(events[eventNo]);
+//         }
+//     }
     data.employee_id = kony.apps.coe.ess.globalVariables.employeeId;
     data.leave_id = kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id;
     if (frmLeaveRequestDetails.TxtAreaComments.text !== "" && typeof frmLeaveRequestDetails.TxtAreaComments.text !== "undefined" && frmLeaveRequestDetails.TxtAreaComments.text !== null) {
@@ -348,17 +349,17 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.deleteSuccess = functi
         }
         kony.apps.coe.ess.Sync.syncAsynchronously();
     }
-  }
-    else{
-      var basicConfig = {
-        alertType : constants.ALERT_TYPE_CONFIRMATION,
-        message :kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
-        alertHandler : alertCallback
-      }
-      var pspConfig={};
-      kony.ui.Alert(basicConfig,pspConfig);
-    }  
-  }
+//  }
+//     else{
+//       var basicConfig = {
+//         alertType : constants.ALERT_TYPE_CONFIRMATION,
+//         message :kony.i18n.getLocalizedString("i18n.ess.common.permissionDeniedPleaseEnablePermssions"),
+//         alertHandler : alertCallback
+//       }
+//       var pspConfig={};
+//       kony.ui.Alert(basicConfig,pspConfig);
+//     }  
+//   }
 };
 
 /**
