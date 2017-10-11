@@ -1148,15 +1148,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
     data.employee_id = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveEntryData.employee_id;
     data.leave_id = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveEntryData.id;
     data.comments = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveEntryData.reason_desc;
-    dataToForward.comment = data.comments;
-    if (data.comments !== "" && data.comments !== undefined && data.comments !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.currentComment != data.comments) {
-      var date = new Date();
-      var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
-      data.createdts = timestamp;
-      kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateError);
-    } else {
-      kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess(dataToForward, dates, holidayResponse);
-    }
+//comenting Calendar Event Creation in Phone
 //     var evtobj = {
 //       type: "starting",
 //       start: dataToForward.start_date.substring(6, 8) + "/" + dataToForward.start_date.substring(4, 6) + "/" + dataToForward.start_date.substring(0, 4) + " 00:00:00",
@@ -1205,15 +1197,15 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
 //         dataToForward.isPermissionStatus=false;
 //       }
 
-//       dataToForward.comment = data.comments;
-//       if (data.comments !== "" && data.comments !== undefined && data.comments !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.currentComment != data.comments) {
-//         var date = new Date();
-//         var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
-//         data.createdts = timestamp;
-//         kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateError);
-//       } else {
-//         kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess(dataToForward, dates, holidayResponse);
-//       }
+      dataToForward.comment = data.comments;
+      if (data.comments !== "" && data.comments !== undefined && data.comments !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.currentComment != data.comments) {
+        var date = new Date();
+        var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
+        data.createdts = timestamp;
+        kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateError);
+      } else {
+        kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveCreateSuccess(dataToForward, dates, holidayResponse);
+      }
 //     }
   },
   leaveCreateSuccess: function(dataToForward, dates, holidayResponse, response) {

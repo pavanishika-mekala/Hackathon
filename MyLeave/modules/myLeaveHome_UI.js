@@ -1406,23 +1406,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.deleteLeaveSuccess = function(leaveData,
   var data = {};
   data.employee_id = kony.apps.coe.ess.globalVariables.employeeId;
   data.leave_id = kony.apps.coe.ess.myLeave.MyLeaveHomeUI.selectedLeaveID;
-  if (typeof frmLeaveHome.TxtAreaComments.text !== "undefined" && frmLeaveHome.TxtAreaComments.text!== "" && frmLeaveHome.TxtAreaComments.text !== null) {
-    data.comments = frmLeaveHome.TxtAreaComments.text;
-    var date = new Date();
-    var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
-    data.createdts = timestamp;
-    kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function(res) {
-      kony.apps.coe.ess.Sync.syncAsynchronously();
-      kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
-      kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
-    }, function(err) {
-      handleError(err);
-    });
-  } else {
-    kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
-    kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
-    kony.apps.coe.ess.Sync.syncAsynchronously();
-  }
+//comenting Calendar Event Creation in Phone
 //   var evtobj = {
 //     type: "starting",
 //     start: leaveData.data.CellData.StartDate.substring(6, 8) + "/" + leaveData.data.CellData.StartDate.substring(4, 6) + "/" + leaveData.data.CellData.StartDate.substring(0, 4) + " 00:00:00",
@@ -1463,23 +1447,23 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.deleteLeaveSuccess = function(leaveData,
 //           kony.phone.removeCalendarEvent(events[eventNo]);
 //         }
 //       }
-//       if (typeof frmLeaveHome.TxtAreaComments.text !== "undefined" && frmLeaveHome.TxtAreaComments.text!== "" && frmLeaveHome.TxtAreaComments.text !== null) {
-//         data.comments = frmLeaveHome.TxtAreaComments.text;
-//         var date = new Date();
-//         var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
-//         data.createdts = timestamp;
-//         kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function(res) {
-//           kony.apps.coe.ess.Sync.syncAsynchronously();
-//           kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
-//           kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
-//         }, function(err) {
-//           handleError(err);
-//         });
-//       } else {
-//         kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
-//         kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
-//         kony.apps.coe.ess.Sync.syncAsynchronously();
-//       }
+      if (typeof frmLeaveHome.TxtAreaComments.text !== "undefined" && frmLeaveHome.TxtAreaComments.text!== "" && frmLeaveHome.TxtAreaComments.text !== null) {
+        data.comments = frmLeaveHome.TxtAreaComments.text;
+        var date = new Date();
+        var timestamp = date.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date.getMonth() + 1) + "" + getTimeHourswithZero(date.getDate()) + "" + getTimeHourswithZero(date.getHours()) + "" + getTimeHourswithZero(date.getMinutes()) + "" + getTimeHourswithZero(date.getSeconds());
+        data.createdts = timestamp;
+        kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave_note", data, function(res) {
+          kony.apps.coe.ess.Sync.syncAsynchronously();
+          kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
+          kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
+        }, function(err) {
+          handleError(err);
+        });
+      } else {
+        kony.apps.coe.ess.myLeave.MyLeaveHomeUI.getLeaveHomeData();
+        kony.apps.coe.ess.myLeave.MyLeaveHomeUI.hidePopup();
+        kony.apps.coe.ess.Sync.syncAsynchronously();
+      }
 //     }
 //     else{
 //       var basicConfig = {
