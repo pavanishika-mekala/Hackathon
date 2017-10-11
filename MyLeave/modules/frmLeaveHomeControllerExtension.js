@@ -77,8 +77,8 @@ kony.sdk.mvvm.frmLeaveHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormCont
      */
     bindData: function(data) {
         try {
-          	var formmodel = this.getController().getFormModel();
-            formmodel.clear();
+          	//var formmodel = this.getController().getFormModel();
+            //formmodel.clear();
             //this.$class.$superp.bindData.call(this, data);
             //this.getController().getFormModel().formatUI();
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();

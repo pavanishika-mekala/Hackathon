@@ -185,7 +185,7 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
 
                     if (!isNaN(data.data.CellData.CreateDate) && data.data.CellData.CreateDate !== null && data.data.CellData.CreateDate !== "") {
                         var appliedTime = "";
-                        if (data.data.CellData.CreateDate.substring(8, 10) >= "12") {
+                        if (data.data.CellData.CreateDate.substring(8, 10) > "12") {
                             appliedTime = (parseInt(data.data.CellData.CreateDate.substring(8, 10)) - 12) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " PM";
                         } else {
                             appliedTime = data.data.CellData.CreateDate.substring(8, 10) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " AM";
@@ -223,7 +223,7 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                         frmLeaveHome.lblSelectedLeaveStatusOther.skin = "sknLblMob00C6AE28Px";
                         if (!isNaN(data.data.CellData.LastModifiedDate) && data.data.CellData.LastModifiedDate !== null && data.data.CellData.LastModifiedDate !== "") {
                             var approvedTime = "";
-                            if (data.data.CellData.LastModifiedDate.substring(8, 10) >= "12") {
+                            if (data.data.CellData.LastModifiedDate.substring(8, 10) > "12") {
                                 approvedTime = (parseInt(data.data.CellData.LastModifiedDate.substring(8, 10)) - 12) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " PM";
                             } else {
                                 approvedTime = data.data.CellData.LastModifiedDate.substring(8, 10) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " AM";
@@ -245,7 +245,7 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                         frmLeaveHome.lblSelectedLeaveStatusOther.skin = "sknLblMobF74B4B28Px";
                         if (!isNaN(data.data.CellData.LastModifiedDate) && data.data.CellData.LastModifiedDate !== null && data.data.CellData.LastModifiedDate !== "") {
                             var rejectedTime = "";
-                            if (data.data.CellData.LastModifiedDate.substring(8, 10) >= "12") {
+                            if (data.data.CellData.LastModifiedDate.substring(8, 10) > "12") {
                                 rejectedTime = (parseInt(data.data.CellData.LastModifiedDate.substring(8, 10)) - 12) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " PM";
                             } else {
                                 rejectedTime = data.data.CellData.LastModifiedDate.substring(8, 10) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " AM";
@@ -378,7 +378,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
         var commentDate = "";
         if (!isNaN(data[i].createdts) && data[i].createdts !== null && data[i].createdts !== "") {
             var commentTime = "";
-            if (data[i].createdts.substring(8, 10) >= "12") {
+            if (data[i].createdts.substring(8, 10) > "12") {
                 commentTime = (parseInt(data[i].createdts.substring(8, 10)) - 12) + ":" + data[i].createdts.substring(10, 12) + " PM";
             } else {
                 commentTime = data[i].createdts.substring(8, 10) + ":" + data[i].createdts.substring(10, 12) + " AM";
@@ -1483,3 +1483,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCurrentDate = function(){
   currDate = currDate.toFixed();
   frmLeaveHome.lblToday.text = currDate;
 };
+
+kony.apps.coe.ess.myLeave.MyLeaveHomeUI.updateYear = function(year){
+	frmLeaveHome.lblLeaveHomeYear.text = String(year).toFixed();
+}
