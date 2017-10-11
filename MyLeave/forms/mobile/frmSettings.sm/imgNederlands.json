@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
@@ -23,7 +24,7 @@
         0,
         0
     ],
-    "_skin_": "s1aab495af8848e7b11c81a28675dc7f",
+    "_skin_": "s1e1e01268f04611991acee40906adab",
     "_src_": "unselectit.png",
     "_top_": {
         "type": "string",
@@ -47,7 +48,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "c26dbbbb28c44f7197ee74c56329face",
+    "kuid": "dd91f3e27c5e4aaa847fd37d2ecd9931",
     "name": "kony.ui.Image2",
     "parent": "flxNederlands",
     "pf": "frmSettings",

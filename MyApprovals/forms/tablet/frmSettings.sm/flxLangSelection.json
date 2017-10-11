@@ -39,7 +39,7 @@
         "lblSelectLang",
         "flxEnglish",
         "flxFrench",
-        "flxNederlands"
+        "flxLanguageChange"
     ],
     "clipbounds": true,
     "containerweight": 100,

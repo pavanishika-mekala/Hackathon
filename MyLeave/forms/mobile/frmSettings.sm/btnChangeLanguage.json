@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        1,
+        0,
+        1,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "s4a57dbe479d47b0959d54465cfb3406",
+    "_text_": "Change Language",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s4a57dbe479d47b0959d54465cfb3406",
+    "id": "btnChangeLanguage",
+    "ide_onClick": "AS_Button_i831c2c82ca54bdbaab42858543c4356",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ec9655abf38c4c859f29d43f0e44e669",
+    "masterType": 1,
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxLanguageChange",
+    "pf": "frmSettings",
+    "wType": "Button",
+    "zindex": 2
+}

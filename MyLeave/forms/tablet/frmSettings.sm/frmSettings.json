@@ -40,7 +40,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPad3",
+    "device": "iPadMini",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "footer": "frmSettings_footer",
@@ -84,10 +84,10 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "ipad",
-    "prevDevice": "iPad3",
+    "prevDevice": "iPadMini3",
     "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "iOS_iPadMini",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

@@ -43,7 +43,7 @@
     "enablescrolling": true,
     "id": "flxSeetingsCard",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "c56ff29009dd4c7f98405ec6f22129e0",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

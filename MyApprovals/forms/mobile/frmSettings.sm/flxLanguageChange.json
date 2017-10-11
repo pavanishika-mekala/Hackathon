@@ -1,13 +1,14 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "27%"
+        "value": "28%"
     },
     "_left_": {
         "type": "string",
-        "value": "4%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -23,32 +24,30 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s032795faa004663a8bc0f7bca3d3db7",
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "_top_": {
         "type": "string",
-        "value": "1%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "95%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "imgFrench",
-        "lblFrench"
+        "flxNederlands",
+        "btnChangeLanguage"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxFrench",
-    "ide_onClick": "AS_FlexContainer_i5c8a65dc2874e9a836d4284879ec3f0",
+    "id": "flxLanguageChange",
     "info": null,
     "isvisible": true,
-    "kuid": "a8b2193692db4d8f8eba193c289c0e94",
-    "layouttype": 3,
-    "masterType": 1,
+    "kuid": "b90a6a9d566e477bbf888cb2633f6ba9",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxLangSelection",
     "pf": "frmSettings",
