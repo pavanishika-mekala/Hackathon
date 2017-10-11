@@ -127,17 +127,17 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
             "skin": monthBTN_Skin_param,
             "focusSkin": monthBTN_FocusSkin_param,
             "text": "",
-            "onClick": function() {
-                var buttonIndexValue = arguments[0].id.replace("BTNMONTHHEADER", "");
-                for (var i = 0; i < this.MONTHHEADERCOUNT; i++) {
-                    if (buttonIndexValue == this.MonthData[i].BUTTONINDEX) {
-                        updateToMonth = this.MonthData[i].MONTH;
-                        updateToYear = this.MonthData[i].YEAR;
-                        break;
-                    }
-                }
-                this.setMonthandYear(updateToMonth, updateToYear);
-            }.bind(this)
+          	"onClick": function() {
+            var buttonIndexValue = arguments[0].id.replace("BTNMONTHHEADER", "");
+            for (var i = 0; i < this.MONTHHEADERCOUNT; i++) {
+              if (buttonIndexValue == this.MonthData[i].BUTTONINDEX) {
+                updateToMonth = this.MonthData[i].MONTH;
+                updateToYear = this.MonthData[i].YEAR;
+                break;
+              }
+            }
+            this.setMonthandYear(updateToMonth, updateToYear);
+          }.bind(this)
         };
         this[lblBasic.id] = new kony.ui.Button(lblBasic, {
             "widgetAlignment": constants.WIDGET_ALIGN_CENTER,
@@ -1006,6 +1006,9 @@ kony.apps.coe.Reusable.calendarWIDGET.prototype.setMonthandYear = function(month
             throw "some error occured in setting the month " + month_param + "year: " + year_param;
         }
     }
+  	if(kony.application.getCurrentForm().id === "frmLeaveHome"){
+    	kony.apps.coe.ess.myLeave.MyLeaveHomeUI.updateYear(updateToYear);
+  	}
     this.MonthDataConstructorIntializate();
 };
 
