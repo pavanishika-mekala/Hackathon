@@ -1273,7 +1273,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         //Show Add to device calender popup after creating leave successfully
         frmLeaveHome.lblFromAndToLeaveDate.text = dataToForward.start_date.substring(6, 8) + " " + (monthsJSON[dataToForward.start_date.substring(4, 6) + ""]).substring(0, 3) + " - " + dataToForward.end_date.substring(6, 8) + " " + (monthsJSON[dataToForward.end_date.substring(4, 6) + ""]).substring(0, 3);
         frmLeaveHome.flxLeaveHomeMain.setEnabled = false;
-        frmLeaveHome.flxAddToDeviceCalendarPopupMain.isVisible = true;
+        frmLeaveHome.flxAddToDeviceCalendarPopupMain.isVisible = false;
       }
     } else {
       kony.application.dismissLoadingScreen();
@@ -1289,7 +1289,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
             //Show Add to device calender popup after creating leave successfully
             frmLeaveHome.lblFromAndToLeaveDate.text = dataToForward.start_date.substring(6, 8) + " " + (monthsJSON[dataToForward.start_date.substring(4, 6) + ""]).substring(0, 3) + " - " + dataToForward.end_date.substring(6, 8) + " " + (monthsJSON[dataToForward.end_date.substring(4, 6) + ""]).substring(0, 3);
             frmLeaveHome.flxLeaveHomeMain.setEnabled = false;
-            frmLeaveHome.flxAddToDeviceCalendarPopupMain.isVisible = true;
+            frmLeaveHome.flxAddToDeviceCalendarPopupMain.isVisible = false;
           }
         } else {
           var currentDate = new Date();
