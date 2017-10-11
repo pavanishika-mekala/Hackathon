@@ -526,11 +526,11 @@ kony.apps.coe.ess.frmLogin.manualSyncOnClick = function(successCall, errorCall) 
                 }
                 if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
                     kony.application.getCurrentForm().lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
-                    kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
+                    kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5); //+ " " + suffix;
                 }
                 frmHamburger.lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
-                frmHamburger.lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
-            }
+                frmHamburger.lblSyncTime.text = currTime.substring(0, 5); //+ " " + suffix;
+            };
             updateSyncDate();
             successCallback();
             kony.application.dismissLoadingScreen();
