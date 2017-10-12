@@ -1007,7 +1007,7 @@ kony.apps.coe.Reusable.calendarWIDGET.prototype.setMonthandYear = function(month
         }
     }
   	if(kony.application.getCurrentForm().id === "frmLeaveHome"){
-    	kony.apps.coe.ess.myLeave.MyLeaveHomeUI.updateYear(updateToYear);
+    	kony.apps.coe.ess.myLeave.MyLeaveHomeUI.updateYear(year_param);
   	}
     this.MonthDataConstructorIntializate();
 };
