@@ -117,6 +117,7 @@ kony.apps.coe.ess.Approvals.RequestedList.prototype.ShowFormUsingMVVM = function
 kony.apps.coe.ess.Approvals.RequestedList.prototype.LoadRequestAndShowForm = function (RequestType) {
 	kony.print("--------------EXECUTING - kony.apps.coe.ess.Approvals.RequestedList.prototype.LoadRequestAndShowForm");
 	frmRequestedList.flxLaterFilter.isVisible = true;
+  	frmRequestedList.tbxLaterFilter.text="";
 	frmRequestedList.lblClear.isVisible = true;
 	frmRequestedList.flxFilterBar.isVisible = false;
 	frmRequestedList.forceLayout();
