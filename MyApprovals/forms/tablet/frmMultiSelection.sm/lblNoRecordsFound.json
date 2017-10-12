@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -20,10 +21,6 @@
     ],
     "_skin_": "sf778437578a4755a595b2ff9af5c7b0",
     "_text_": "",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -54,12 +51,12 @@
         }
     },
     "isvisible": true,
-    "kuid": "b4f3a456759f4f799cb0f3f58f577c75",
+    "kuid": "f94fbdf029f54591b5b2bd4fa406e2bc",
     "name": "kony.ui.Label",
     "parent": "flxSegment",
-    "pf": "frmIsLaterSearch",
+    "pf": "frmMultiSelection",
     "texti18n": "i18n.ess.MyApprovals.frmIsLaterSearch.lblNoRecordsFound",
     "tooltip": "",
     "wType": "Label",
-    "zindex": 2
+    "zindex": 3
 }

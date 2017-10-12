@@ -18,7 +18,7 @@
         0,
         0
     ],
-    "_skin_": "s8dd0f1c3fce463ca7365e619bd4cb23",
+    "_skin_": "sf778437578a4755a595b2ff9af5c7b0",
     "_text_": "",
     "_top_": {
         "type": "string",
@@ -48,18 +48,13 @@
     "contentalignment": 4,
     "id": "lblNoRecordsFound",
     "info": null,
-    "ipad": {
-        "psp": {
-            "wrapping": 2
-        }
-    },
     "iphone": {
         "psp": {
             "wrapping": 2
         }
     },
     "isvisible": true,
-    "kuid": "af90542ac2d74a1c934487597f95cec3",
+    "kuid": "d7e6951bed914e8bb2352e0a8f81133f",
     "name": "kony.ui.Label",
     "parent": "flxSegment",
     "pf": "frmIsLaterSearch",
