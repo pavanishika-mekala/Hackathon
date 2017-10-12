@@ -348,11 +348,6 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
             "labelnotes": "labelnotes",
             "lblapplier": "lblapplier",
             "txtApplierComments": "txtApplierComments",
-            //"imgapprover": "imgapprover",
-           // "labelapprovernotes": "labelapprovernotes",
-           // "lblapprovername": "lblapprovername",
-           // "txtComments": "txtComments",
-          //  "lblapproveddate": "lblapproveddate",
             "lblapplieddate": "lblapplieddate",
             "imgapplier": "imgapplier"
         };
@@ -443,6 +438,25 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
  */
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.prototype.insertFetchedUserImage = function(index, employeeId, response, callback) {
         try {
+			frmLeaveHome.segLeaveComments.widgetDataMap = {
+				"labelnotes": "labelnotes",
+				"lblapplier": "lblapplier",
+				"txtApplierComments": "txtApplierComments",
+				"lblapplieddate": "lblapplieddate",
+				"imgapplier": "imgapplier"
+			};
+			frmLeaveHome.segLeaveComments2.widgetDataMap = {
+				"labelnotes": "labelnotes",
+				"lblapplier": "lblapplier",
+				"txtApplierComments": "txtApplierComments",
+				"imgapprover": "imgapprover",
+				"labelapprovernotes": "labelapprovernotes",
+				"lblapprovername": "lblapprovername",
+				"txtComments": "txtComments",
+				"lblapproveddate": "lblapproveddate",
+				"lblapplieddate": "lblapplieddate",
+				"imgapplier": "imgapplier"
+			};
             if (employeeId === kony.apps.coe.ess.globalVariables.employeeId) {
                 var segData = frmLeaveHome.segLeaveComments.data;
                 segData[index].imgapplier = {
