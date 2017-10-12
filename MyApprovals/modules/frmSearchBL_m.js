@@ -94,11 +94,16 @@ kony.apps.coe.ess.Approvals.frmSearchBackendLogic.prototype.bindData = function(
       };  
       frmSearch.segList.widgetDataMap = widgetDataMap;
   if(data!=="" && data!==null) {
+      frmSearch.lblNorecords.setVisibility(false);
+      frmSearch.segList.setVisibility(true);
       frmSearch.segList.setData(data);
   }
   else
     {
        frmSearch.segList.removeAll();
+       frmSearch.segList.setVisibility(false);
+       frmSearch.lblNorecords.setVisibility(true);
+      
     }
      	var mediaobj = new kony.apps.coe.ess.MyApprovals.media();
         mediaobj.fetchImage2(frmSearch.segList,"imgUser");
