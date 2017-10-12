@@ -28,7 +28,10 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             var scopeObj = this;
             var requestId = kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID;
             kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
-            //quering audit data.
+            //BBE-126 History list completed with approved request by someone else
+//           	var query="select aa.*,emp1.First_Name as First_Name from approval_audit aa left outer join approval_request ar on aa.request_id=ar.id left outer join employee emp1 on aa.employee_id=emp1.id left outer join employee emp2 on ar.employee_id=emp2.id "+
+//             "left outer join employee emp3 on emp2.manager_id=emp3.id where aa.requestId='"+requestId + "';";
+          	//quering audit data.
             var query = "select aa.*, emp.First_Name as First_Name from approval_audit aa left join Employee emp on aa.employee_id = emp.Id where aa.request_id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForAuditRecords, error);
         } catch (err) {
@@ -52,6 +55,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                 res[i].templateType = 1;
                 data.push(res[i]);
             }
+          	//BBE-126 History list completed with approved request by someone else
+//           	var query = "select ar.createdts as createdts, ra.status_id as status_id, CASE WHEN emp1.First_Name IS NOT NULL THEN emp1.First_Name ELSE emp3.first_name END as First_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id"+
+//   			"left join Employee emp1 on ra.delegator_id = emp1.Id left join employee emp2 on ar.employee_id=emp2.id left join employee emp3 on emp2.manager_id=emp3.id where ar.id = '" + requestId + "';";
             //quering data if timesheet is pending. 
             var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name from approval_request ar left join Employee emp on ra.approver_id = emp.Id left join request_approver ra on ra.approval_id = ar.id where ar.id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForPendingTimesheet.bind(scopeObj, data), error);
