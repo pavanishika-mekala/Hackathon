@@ -301,8 +301,14 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.setDataToPendingForm =
   for(var i in data) {
     data[i].flxOuter.onClick = onRowClick;
   }
-    frmPendingLeaveRequest.segPendingLeaveRequest.setData(data);
-    kony.print("-- End setDataToPendingForm --");
+  if(data.length !=null && data.length >0){
+      frmPendingLeaveRequest.segPendingLeaveRequest.setData(data);
+      frmPendingLeaveRequest.lblNoRecords.setVisibility(false);
+  }else{
+      frmPendingLeaveRequest.segPendingLeaveRequest.removeAll();
+      frmPendingLeaveRequest.lblNoRecords.setVisibility(true);
+  }
+  kony.print("-- End setDataToPendingForm --");
 };
 
 /**

@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxHeader",
-        "segListOfHolidays"
+        "segListOfHolidays",
+        "lblNoRecords"
     ],
     "clipbounds": true,
     "containerweight": 100,
