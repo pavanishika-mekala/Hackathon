@@ -37,6 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "btnFullDay",
+        "btnHalfDay",
         "btnHours",
         "lblDuration",
         "lblDurationHours",

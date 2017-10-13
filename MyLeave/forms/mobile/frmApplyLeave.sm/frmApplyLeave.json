@@ -39,7 +39,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone5",
+    "device": "GalaxyS2",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmApplyLeave",
@@ -84,11 +84,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "iphone",
-    "prevDevice": "iPhone6",
-    "prevPlatform": "android",
+    "platform": "android",
+    "prevDevice": "GalaxyS3",
+    "prevPlatform": "iphone",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone5",
+    "shellCSS": "and_GalaxyS2",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {

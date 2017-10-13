@@ -6,6 +6,10 @@
         "type": "string",
         "value": "80%"
     },
+    "_left_": {
+        "type": "string",
+        "value": "63%"
+    },
     "_margin_": [
         1,
         1,
@@ -18,10 +22,6 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "string",
-        "value": "22%"
-    },
     "_skin_": "s29f01fd4054453f922d31766d403171",
     "_text_": "Duration :",
     "_top_": {
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "20%"
+        "value": "18%"
     },
     "_wrapping_": 2,
     "android": {
