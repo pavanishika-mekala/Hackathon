@@ -41,7 +41,7 @@
     "enablescrolling": true,
     "id": "flxTimeline",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "hd7e74ff823a40f59b0367953b07b1d1",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

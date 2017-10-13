@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "27%"
+        "value": "43%"
     },
     "_margin_": [
         6,
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "25%"
+        "value": "20%"
     },
     "canUpdateUI": true,
     "centery": {
@@ -43,10 +43,10 @@
     "displaytext": true,
     "focusskin": "s4337cb72ec44b21a73b8f00b880a32d",
     "id": "btnHours",
-    "ide_onClick": "AS_Button_ace8a5adb2aa4489bfac2481a9fe5361",
+    "ide_onClick": "AS_Button_b4bb6f9eb9e842bf967a0e3d671df3c6",
     "info": null,
     "isvisible": true,
-    "kuid": "fafa3d1008014f86a9dcb3a3b3aa744a",
+    "kuid": "ff8ba60ac2d145d3a8294dffbb036fec",
     "name": "kony.ui.Button",
     "paddinginpixel": false,
     "parent": "flxFullHalfDay",

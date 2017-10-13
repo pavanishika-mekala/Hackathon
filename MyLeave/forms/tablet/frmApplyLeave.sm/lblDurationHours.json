@@ -20,7 +20,7 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "2%"
+        "value": "0%"
     },
     "_skin_": "s29f01fd4054453f922d31766d403171",
     "_text_": "2 Hours",
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "20%"
+        "value": "19%"
     },
     "_wrapping_": 2,
     "android": {
@@ -54,7 +54,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "j14e3ed1341b4f7cbfd4982fe60df74d",
+    "kuid": "g967f67dc27842609db0b0efb8b540ba",
     "name": "kony.ui.Label",
     "parent": "flxFullHalfDay",
     "pf": "frmApplyLeave",

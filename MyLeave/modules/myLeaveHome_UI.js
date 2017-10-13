@@ -443,6 +443,30 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
  */
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.prototype.insertFetchedUserImage = function(index, employeeId, response, callback) {
         try {
+          frmLeaveHome.segLeaveComments.widgetDataMap = {
+            "labelnotes": "labelnotes",
+            "lblapplier": "lblapplier",
+            "txtApplierComments": "txtApplierComments",
+            //"imgapprover": "imgapprover",
+            // "labelapprovernotes": "labelapprovernotes",
+            // "lblapprovername": "lblapprovername",
+            // "txtComments": "txtComments",
+            //  "lblapproveddate": "lblapproveddate",
+            "lblapplieddate": "lblapplieddate",
+            "imgapplier": "imgapplier"
+          };
+          frmLeaveHome.segLeaveComments2.widgetDataMap = {
+            "labelnotes": "labelnotes",
+            "lblapplier": "lblapplier",
+            "txtApplierComments": "txtApplierComments",
+            "imgapprover": "imgapprover",
+            "labelapprovernotes": "labelapprovernotes",
+            "lblapprovername": "lblapprovername",
+            "txtComments": "txtComments",
+            "lblapproveddate": "lblapproveddate",
+            "lblapplieddate": "lblapplieddate",
+            "imgapplier": "imgapplier"
+          };
             if (employeeId === kony.apps.coe.ess.globalVariables.employeeId) {
                 var segData = frmLeaveHome.segLeaveComments.data;
                 segData[index].imgapplier = {
@@ -1485,5 +1509,5 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCurrentDate = function(){
 };
 
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.updateYear = function(year){
-	frmLeaveHome.lblLeaveHomeYear.text = String(year).toFixed();
-}
+	frmLeaveHome.lblLeaveHomeYear.text = Number(year).toFixed();
+};

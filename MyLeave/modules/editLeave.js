@@ -54,7 +54,7 @@ kony.apps.ess.myLeave.editLeave.updateUI = {
             }
            else
             {
-               kony.apps.ess.myLeave.tabApplyLeaveUI.fullDayHoursSelection.onClickOfHours();
+               kony.apps.ess.myLeave.tabApplyLeaveUI.fullDayHoursSelection.onClickofHoursSel();
                var start_time =kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].StartTime).substring(0,2)*1));
                var end_time = kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].EndTime).substring(0,2)*1));
                kony.apps.coe.Reusable.createTabTimeline.fillHours(start_time,end_time);            

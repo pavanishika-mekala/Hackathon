@@ -1,0 +1,17 @@
+{
+    "AS_Button_f60dbaafefa3430c85f2db25bd98cd17": {
+        "id": "AS_Button_f60dbaafefa3430c85f2db25bd98cd17",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b6377dec1a894186be41a3e3cc50c30e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker();",
+            "callbackType": null
+        }]
+    }
+}

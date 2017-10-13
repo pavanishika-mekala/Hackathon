@@ -4,7 +4,28 @@
     "__parentReadjusting__": false,
     "_bounces_": false,
     "_data_": [
-        {}
+        {
+            "imgapprover": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "imagedrag.png"
+            },
+            "labelapprovernotes": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblapproveddate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblapprovername": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "txtComments": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
     ],
     "_height_": {
         "type": "ref",
@@ -65,9 +86,11 @@
     "parent": "flxLeaveComments",
     "pf": "frmLeaveHome",
     "retainselection": false,
+    "rowTemplateId": "ab8fcf016ffc44e2b6267aa2cede308a",
     "rowcounter": 0,
     "rowfocusskin": "sb7ffe11a1764f7ab48e37cbf9b9796e",
     "rowskin": "s6b4ccfba4b74b92a47fb8ff20352168",
+    "rowtemplate": "flexapprovernote",
     "screenlevelwidget": false,
     "seccounter": 0,
     "sectionheaderskin": "sdbc0b13ffcf419d9faa75f92b8f832b",
@@ -76,13 +99,23 @@
     "selectedindex": null,
     "selectedindices": null,
     "selecteditems": null,
-    "selectedsectionindex": 0,
+    "selectedsectionindex": null,
     "selectionbehavior": "default",
     "separatorrequired": false,
     "showscrollbars": false,
     "viewtype": "tableview",
     "wType": "Segment",
     "widgetalignment": 5,
-    "widgetdatamap": {},
+    "widgetdatamap": {
+        "flexApprovedDateandName": "flexApprovedDateandName",
+        "flexapprovernote": "flexapprovernote",
+        "flexnotes": "flexnotes",
+        "flximg": "flximg",
+        "imgapprover": "imgapprover",
+        "labelapprovernotes": "labelapprovernotes",
+        "lblapproveddate": "lblapproveddate",
+        "lblapprovername": "lblapprovername",
+        "txtComments": "txtComments"
+    },
     "zindex": 1
 }

@@ -37,7 +37,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmApplyLeave",
-        "platform": "android",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },

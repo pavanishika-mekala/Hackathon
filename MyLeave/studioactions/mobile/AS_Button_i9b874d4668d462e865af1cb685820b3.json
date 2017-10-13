@@ -1,0 +1,24 @@
+{
+    "AS_Button_i9b874d4668d462e865af1cb685820b3": {
+        "id": "AS_Button_i9b874d4668d462e865af1cb685820b3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f5021e86ef384afca52c13c057b5f87e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d7dc3ea4775149ac9251402ab8636d8e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.showTimePicker(\"End\");\nfrmApplyLeave.btnTimeDone.left = \"70%\";",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

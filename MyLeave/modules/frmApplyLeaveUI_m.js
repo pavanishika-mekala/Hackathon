@@ -515,6 +515,9 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
   hours: "",
 
   onClickOfFullDay: function() {
+    frmApplyLeave.flxHalfDay.isVisible = false;
+    frmApplyLeave.flxTimeLayout.isVisible = false;
+    frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
     frmApplyLeave.btnHours.skin = "sknBtn777777S28pxRoman";
     frmApplyLeave.btnFullDay.skin = "sknBtnBg1C7393S28pxRoman";
     frmApplyLeave.flxTimeline.isVisible = false;
@@ -527,7 +530,9 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
 
     var start_date = kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate;
     var end_date = kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate;
-
+    frmApplyLeave.flxHalfDay.isVisible = false;
+    frmApplyLeave.flxTimeLayout.isVisible = false;
+    frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
     if (frmApplyLeave.flxRecurringLeave.imgRecurringOn.isVisible) {
       frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
       frmApplyLeave.btnHours.skin = "sknBtnBg1C7393S28pxRoman";
@@ -535,7 +540,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       frmApplyLeave.flxTimeline.removeAll();
       kony.apps.coe.Reusable.createTimeline.setStartandEndTime();
       kony.apps.coe.Reusable.createTimeline.TimelineUI(frmApplyLeave.flxTimeline);
-      frmApplyLeave.flxTimeline.isVisible = true;
+      //frmApplyLeave.flxTimeline.isVisible = true;
       frmApplyLeave.lblTopSep.isVisible = true;
       this.selectedItem = "hours";
       this.start_time = "8 AM";
@@ -551,7 +556,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       frmApplyLeave.flxTimeline.removeAll();
       kony.apps.coe.Reusable.createTimeline.setStartandEndTime();
       kony.apps.coe.Reusable.createTimeline.TimelineUI(frmApplyLeave.flxTimeline);
-      frmApplyLeave.flxTimeline.isVisible = true;
+     // frmApplyLeave.flxTimeline.isVisible = true;
       frmApplyLeave.lblTopSep.isVisible = true;
       this.selectedItem = "hours";
       this.start_time = "8 AM";
@@ -559,6 +564,54 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       this.hours = 2.0;
     }
   },
+  onClickofHoursSel : function(){
+    frmApplyLeave.btnTo.text = "12:00";
+    frmApplyLeave.btnFrom.text = "08:00";
+    frmApplyLeave.flxHalfDay.isVisible = true;
+    if(frmApplyLeave.btnHours.skin !== "sknBtnBg1C7393S28pxRoman"){
+      frmApplyLeave.flxHalfDay.isVisible = true;
+      frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHours.skin = "sknBtnBg1C7393S28pxRoman";
+      frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
+
+    }else{
+      frmApplyLeave.flxHalfDay.isVisible = false;
+      frmApplyLeave.flxTimeLayout.isVisible = false;
+      frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHours.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
+    }
+    frmApplyLeave.lblDurationHours.text = "2 hours";
+    frmApplyLeave.flxTimeline.isVisible = false;
+    this.selectedItem = "hours";
+    this.hours = 2.0;
+  },
+  
+  onClickofHalfDay : function(){
+
+    frmApplyLeave.flxHalfDay.isVisible = true;
+    if(frmApplyLeave.btnHalfDay.skin !== "sknBtnBg1C7393S28pxRoman"){
+      frmApplyLeave.flxHalfDay.isVisible = true;
+      frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHours.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHalfDay.skin = "sknBtnBg1C7393S28pxRoman";
+
+    }else{
+      frmApplyLeave.flxHalfDay.isVisible = false;
+      frmApplyLeave.flxTimeLayout.isVisible = false;
+      frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHours.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
+    }
+    frmApplyLeave.btnTo.text = "10:00";
+    frmApplyLeave.lblDurationHours.text = "2 hours";
+    frmApplyLeave.flxTimeline.isVisible = false;
+    this.selectedItem = "hours";
+    this.start_time = "8 AM";
+    this.end_time = "10 AM";
+    this.hours = 2.0;
+  },
+  
 
   updateDuration: function(hours, start_time, end_time) {
     this.start_time = start_time;
@@ -1948,3 +2001,125 @@ kony.apps.coe.ess.myLeave.applyLeave.onClickOfApplySubmit = function() {
   }
   return;
 };
+
+//Showing TimePicker form
+kony.apps.coe.ess.myLeave.applyLeave.showTimePicker = function(selectionEvent) {
+  	frmApplyLeave.flxTimeLayout.isVisible = true;
+    if(selectionEvent === "Start"){
+      frmApplyLeave.pickTime.isVisible = true;
+        frmApplyLeave.pickTime2.isVisible = false;
+    }else if(selectionEvent === "End"){
+        frmApplyLeave.pickTime.isVisible = false;
+      frmApplyLeave.pickTime2.isVisible = true;
+    }
+//   	  var x = frmApplyLeave.btnTo.text;
+//       var y = frmApplyLeave.btnFrom.text;
+//       var hrStart = y.slice(1,2);
+//       var hrEnd = x.slice(1,2);
+//     frmApplyLeave.pickTime.setSelectedKeyInComponent("h"+hrStart,1);
+//     frmApplyLeave.pickTime2.setSelectedKeyInComponent("h"+hrEnd,1);
+};
+
+//Dismissing TimePicker form
+kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
+    frmApplyLeave.flxTimeLayout.isVisible = false;
+      if(frmApplyLeave.pickTime.isVisible === true){
+      var selection = frmApplyLeave.pickTime.selectedKeyValues;
+      frmApplyLeave.btnFrom.text = selection[0][1]+":"+selection[1][1];
+    }else if(frmApplyLeave.pickTime2.isVisible === true){
+      var selection = frmApplyLeave.pickTime2.selectedKeyValues;
+      frmApplyLeave.btnTo.text = selection[0][1]+":"+selection[1][1];
+    }
+      var x = frmApplyLeave.btnTo.text;
+      var y = frmApplyLeave.btnFrom.text;
+      var hrStart = y.slice(0,2);
+      var minStart = y.slice(3,5);
+      var hrEnd = x.slice(0,2);
+      var minEnd = x.slice(3,5);
+      kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected(hrStart,minStart,hrEnd,minEnd);
+      kony.print("type of num"+hrEnd+minEnd+Number(hrEnd)+typeof(hrEnd));
+      if((Number(hrStart) >= 12 && Number(hrEnd) >= 12 ) || (Number(hrStart) < 12 && Number(hrEnd) < 12 )){
+        if(x !== "" && y!== ""){
+              if((Number(hrStart) > Number(hrEnd))){
+              	alert("Please enter a valid end time 1");
+              	//frmApplyLeave.btnTo.text = btnToText;
+        	}else{
+              if((Number(hrStart) == Number(hrEnd)) && (Number(minStart) >= Number(minEnd))){
+                alert("Please enter a valid end time 2");
+                //frmApplyLeave.btnTo.text = btnToText;
+              }
+            }
+      }
+      }else if(Number(hrStart) >= 12 && Number(hrEnd) < 12 ){
+          	alert("Please enter a valid end time 3");
+            //frmApplyLeave.btnTo.text = btnToText;
+      
+    }
+      
+
+};
+
+kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minStart,hrEnd,minEnd){
+  var btnAction = "";
+  if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
+  	btnAction = "HalfDay"
+  }
+  if(frmApplyLeave.btnHours.skin == "sknBtnBg1C7393S28pxRoman"){
+  	btnAction = "Hours"
+  }
+  var hr = hrStart+minStart;
+  var min = hrEnd+minEnd;
+  var currTime = new Date();
+  //currTime = Fri Oct 13 2017 13:11:00 GMT+0530 (IST)
+  var startTime = "Fri Oct 13 2017 "+hrStart+":"+minStart+":"+"00 GMT+0530 (IST)";
+  var endTime = "Fri Oct 13 2017 "+hrEnd+":"+minEnd+":"+"00 GMT+0530 (IST)";
+  var hours = (endTime-startTime)/(1000*60*60);
+  alert(hours);
+  var btnToText;
+  if(btnAction == "HalfDay"){
+    if(Number(hours) > 4){
+      alert("more than 4");
+    }
+  }else if(btnAction == "Hours"){
+    if(Number(hours) > 10){
+      alert("more than 4");
+    }
+  }
+  /*
+  alert("currTime" + currTime + "new Date() "+new Date());
+         // var previousTime = new Date(timeStamp).getTime(); 
+         // var hours = (currTime-previousTime)/(1000*60*60);
+  if(hrEnd > hrStart || hrEnd == hrStart || minEnd > minStart || minEnd == minStart){
+    var diff = Number(min)-Number(hr);
+    var divide100 = Number(diff)/100;
+    var strLength = String(divide100).length;
+    var duration = divide100;
+    var durinHours = duration;
+    var temp = 0;
+    var decofMins = "";
+    for(var v=0;v<String(divide100).length;v++){
+      if(String(divide100)[v] == "."){
+        temp++;
+      }
+    }
+    if(temp>0){
+      divide100 = String(divide100).split(".");
+      decofMins = Number(divide100[1])/60;
+      decofMins = "."+decofMins;
+      durinHours = Number(String(divide100)[0]).toFixed();
+      duration = durinHours+decofMins;
+    }
+    alert(duration+" "+durinHours+" -> "+decofMins);
+    if(Number(durinHours) > 4){
+      alert("Please select half day duration less than 4 hours");
+    }else{
+     frmApplyLeave.lblDurationHours.text = duration + " hours";
+    }
+  }else{
+    alert("NO");
+  }
+  */
+ };
+
+
+

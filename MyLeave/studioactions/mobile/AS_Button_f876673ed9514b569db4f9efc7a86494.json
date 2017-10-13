@@ -1,0 +1,24 @@
+{
+    "AS_Button_f876673ed9514b569db4f9efc7a86494": {
+        "id": "AS_Button_f876673ed9514b569db4f9efc7a86494",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f5021e86ef384afca52c13c057b5f87e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a7ef77a0fc13428794da8bed30e57bb4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
