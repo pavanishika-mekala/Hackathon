@@ -17,8 +17,10 @@ kony.apps.coe.ess.Approvals.frmSearch.preShow = function() {
     kony.print("-- Start preShow -- ");
     frmSearch.segList.rowTemplate.flxExpense.highlightedSkin = "sknFlxMob2ebaee100OBor1pxR100px";
     frmSearch.segList.rowTemplate.flxExpense.highlightOnParentFocus = true;
+    frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();};
+    frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();};
     kony.print("-- End preShow -- ");
-}
+};
 /*
  *@function
  *@class  : Search
@@ -192,7 +194,7 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
     } catch (e) {
         handleError(e);
     }
-}
+};
 
 /*
  *@function
@@ -200,13 +202,25 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
  *@desc   : modifies UI when filter is selected
  */
 kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable = function() {
-    kony.print("-- Start onClickFilterEnable -- ");
-    frmSearch.flxHide.setVisibility(false);
-    frmSearch.flxClear.setVisibility(true);
-    frmSearch.flxSearchContainer.setVisibility(true);
-    kony.print("-- End onClickFilterEnable -- ");
-}
+  kony.print("-- Start onClickFilterEnable -- ");
+  frmSearch.flxHide.setVisibility(false);
+  frmSearch.flxClear.setVisibility(true);
+  frmSearch.flxSearchContainer.setVisibility(true);
+  kony.print("-- End onClickFilterEnable -- ");
+};
 
+/*
+ *@function
+ *@class  : Search
+ *@desc   : clears the filter onClick of filetr icon
+ */
+kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable = function() {
+  kony.print("-- Start onClickFilterDisable -- ");
+  frmSearch.flxClear.setVisibility(false);
+  frmSearch.flxHide.setVisibility(true);
+  frmSearch.flxSearchContainer.setVisibility(false);
+  kony.print("-- End onClickFilterDisable -- ");
+};
 /*
  *@function
  *@class  : Search
@@ -240,8 +254,10 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
     kony.print("-- Start onClickFilterApplySearch -- ");
     try {
         frmSearch.flxSearchContainer.setVisibility(false);
-        frmSearch.flxClear.setVisibility(false);
-        frmSearch.flxHide.setVisibility(true);
+      //change
+        frmSearch.flxClear.setVisibility(true);
+        frmSearch.flxHide.setVisibility(false);
+      //end
         var query_data = {}
         query_data.fromDate = new Date(frmSearch.calFromDate.year, frmSearch.calFromDate.month - 1, frmSearch.calFromDate.day);
         query_data.fromDate = query_data.fromDate.getDateInFormat("yyyymmdd");
@@ -538,4 +554,16 @@ kony.apps.coe.ess.Approvals.frmSearch.lazyLoading = function() {
     };
     kony.apps.coe.ess.MyApprovals.media.lazyLoading(kony.apps.coe.ess.MyApprovals.media.CONSTANTS_WIDGET_SEGMENT, frmSearch.segList, "Employee", "mediaEmployee", "", segmentConfiguration);
     kony.print("-- END  kony.apps.coe.ess.Approvals.frmSearch.lazyLoading  --");
+};
+
+kony.apps.coe.ess.Approvals.frmSearch.showFilteredData = function(){
+  frmSearch.show();
+  if(frmSearch.flxClear.isVisible == true && frmSearch.flxHide.isVisible == false){
+    frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();}
+    frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();}
+    kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch();
+  }else{
+    var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmSearch");
+    frmController.loadDataAndShowForm();
+  }
 };
