@@ -43,7 +43,8 @@ kony.apps.coe.ess.Approvals.RequestedLists.MakeSegmentMultipleSelect=function(){
                 }else{
                     frmMultiSelection.SegDetails.setVisibility(false);
                     frmMultiSelection.lblNoRecordsFound.setVisibility(true);
-                }
+                }   		
+    			frmMultiSelection.SegDetails.setData(data);
   				frmMultiSelection.show();
   }catch(e){
     popupErrorAlert.lblMessage.text=e.message;
@@ -124,6 +125,7 @@ kony.apps.coe.ess.Approvals.RequestedList.prototype.ShowFormUsingMVVM = function
 kony.apps.coe.ess.Approvals.RequestedList.prototype.LoadRequestAndShowForm = function (RequestType) {
 	kony.print("--------------EXECUTING - kony.apps.coe.ess.Approvals.RequestedList.prototype.LoadRequestAndShowForm");
 	frmRequestedList.flxLaterFilter.isVisible = true;
+  frmRequestedList.tbxLaterFilter.text="";
 	frmRequestedList.lblClear.isVisible = true;
 	frmRequestedList.flxFilterBar.isVisible = false;
 	frmRequestedList.forceLayout();
@@ -551,7 +553,6 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
                 frmRequestedList.lblNoRecordsFound.setVisibility(true);
                 frmRequestedList.SegDetails.setVisibility(false);
             }
-            
         }, function(error) {
             kony.print("---Error in data retrieval" + error);
         });

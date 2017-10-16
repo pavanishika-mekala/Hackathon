@@ -180,6 +180,7 @@ kony.apps.coe.ess.MyApprovals.media.lazyLoading = function (widgetType, Widget, 
           return;
         } 
         var segmentdata = Widget.Data;
+        var MediaID = segmentdata[index][segmentConfiguration.MediaKeyAttribute];
         if(MediaID !== null && MediaID !== undefined && MediaID !== "")	{
           var MediaID = segmentdata[index][segmentConfiguration.MediaKeyAttribute];
           if (isEmpty(MediaID) || MediaID === undefined) {
