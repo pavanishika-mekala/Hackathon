@@ -13,6 +13,12 @@
             "KUID": "cae2e35ca5a84217ab07ff12e27fbc49"
         },
         "language": "js",
-        "actions": []
+        "actions": [{
+            "id": "ADD_SNIPPET__a110cabc398641338780c50975d17a14",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();\n// frmSearch.flxClear.setVisibility(false);\n// frmSearch.flxHide.setVisibility(true);\n// frmSearch.flxSearchContainer.setVisibility(false);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
     }
 }

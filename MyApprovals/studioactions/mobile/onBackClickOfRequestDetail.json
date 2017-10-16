@@ -11,7 +11,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_7385cbcca92041ce93bb167c07a02e41",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.getPreviousFormID());\nfrmController.loadDataAndShowForm();",
+            "codeSnippet": "var prevForm = kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.getPreviousFormID();\nvar frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(prevForm);\nif(prevForm == \"frmSearch\"){\n    kony.apps.coe.ess.Approvals.frmSearch.showFilteredData();\n}else{\n\tfrmController.loadDataAndShowForm();\n}  ",
             "callbackType": null
         }]
     }

@@ -3,6 +3,11 @@ function onBackClickOfRequestDetailTab(eventobject) {
 }
 
 function AS_FlexContainer_i8f0e3c748054f73b8151eaba4ebda4c(eventobject) {
-    var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.getPreviousFormID());
-    frmController.loadDataAndShowForm();
+    var prevForm = kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.getPreviousFormID();
+    var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(prevForm);
+    if (prevForm == "frmSearch") {
+        kony.apps.coe.ess.Approvals.frmSearch.showFilteredData();
+    } else {
+        frmController.loadDataAndShowForm();
+    }
 }

@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__c6e1a575af1549d2be766e9a4dcd63e1",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "frmSearch.flxClear.setVisibility(false);\nfrmSearch.flxHide.setVisibility(true);\nfrmSearch.flxSearchContainer.setVisibility(false);\n",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();\n// frmSearch.flxClear.setVisibility(false);\n// frmSearch.flxHide.setVisibility(true);\n// frmSearch.flxSearchContainer.setVisibility(false);\n",
             "parentId": null,
             "callbackType": null
         }]
