@@ -104,9 +104,9 @@
      function() {
          if (kony.apps.ess.deepLinkingSSO.ssotoken) {
              if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-                 //initMbaasApp(function() {
+                 initMbaasApp(function() {
                      kony.sdk.mvvm.LoginAction("ssoEnable");
-                 //});
+                  });
              }
              else {
                  frmLogin.show();
@@ -119,15 +119,15 @@
                      frmLogin.show();
                  }
                  else {
-                  //   initMbaasApp(function() {
+                     initMbaasApp(function() {
                          kony.sdk.mvvm.LoginAction("DeepLink");
-                   //  });
+                     });
                  }
              }
              else {
-                 //initMbaasApp(function() {
+                 initMbaasApp(function() {
                      kony.sdk.mvvm.LoginAction("DeepLink");
-                 //});
+                 });
              }
          }
          kony.print("---frmDummyPostShow:End--------");

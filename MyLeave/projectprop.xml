@@ -144,7 +144,7 @@
     <attributes name="wp81stoastcapablekey" value="Not set"/>
     <attributes name="windesktop_disableapplicationminimize" value="false"/>
     <attributes name="SEND_SMS" value="false"/>
-    <attributes name="iphonebundleidentifierkey" value="com.kony.myleave"/>
+    <attributes name="iphonebundleidentifierkey" value="com.engie.benelux.cofely.eTimeSheetMyLeave"/>
     <attributes name="SUBSCRIBED_FEEDS_READ" value="false"/>
     <attributes name="READ_HISTORY_BOOKMARKS" value="false"/>
     <attributes name="WP8_ID_CAP_SPEECH_RECOGNITION" value="true"/>

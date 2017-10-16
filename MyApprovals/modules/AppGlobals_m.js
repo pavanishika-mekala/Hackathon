@@ -145,5 +145,5 @@ kony.apps.coe.ess.globalVariables.isWebDesktop=true;
 //#endif
 
 // Login configuration
-kony.apps.coe.ess.globalVariables.login_token_header1="KonySAP-Request-Spnego";
-kony.apps.coe.ess.globalVariables.login_token_header2="KonySAP-Request-Access-Token";
+kony.apps.coe.ess.globalVariables.login_sap_spnego_token="KonySAP-Request-Spnego";
+kony.apps.coe.ess.globalVariables.login_sap_access_token="KonySAP-Request-Access-Token";

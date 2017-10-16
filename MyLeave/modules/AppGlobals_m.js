@@ -127,5 +127,6 @@ kony.apps.coe.ess.globalVariables.leaveWalletPlanedSkn="LBLFFC300";
 kony.apps.coe.ess.globalVariables.leaveWalletAvailableSkn="LBL69AF23";
 
 // Login configuration
-kony.apps.coe.ess.globalVariables.login_token_header1="KonySAP-Request-Spnego";
-kony.apps.coe.ess.globalVariables.login_token_header2="KonySAP-Request-Access-Token";
+kony.apps.coe.ess.globalVariables.login_sap_spnego_token="KonySAP-Request-Spnego";
+kony.apps.coe.ess.globalVariables.login_sap_access_token="KonySAP-Request-Access-Token";
+kony.apps.coe.ess.globalVariables.sap_awxay_api="konysap-api";

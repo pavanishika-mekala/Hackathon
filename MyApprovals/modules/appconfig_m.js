@@ -20,6 +20,7 @@ kony.apps.coe.ess.appconfig = {
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
 		identityServicePreLogin:"DevNextTimesheetOktaLogin",
     axwayAuthService:"DevNextTimesheetOktaUPAxway",
+		axwayEnvironment:"etimesheet",
     useOkta: true,
     isDemo : false,
     isSingleQrCode: true,
