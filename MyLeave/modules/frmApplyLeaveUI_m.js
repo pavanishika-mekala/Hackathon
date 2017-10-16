@@ -1151,11 +1151,16 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         time = "0" + time;
       }
       leaveEntryData.start_time = (time + "0000").replace(/\s/g, "");
+      
       leaveEntryData.end_time = (kony.apps.coe.ess.myLeave.applyLeave.convertTo24Hour(kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time) + "0000").replace(/\s/g, "");
       leaveEntryData.reason_desc = frmApplyLeave.txtComments.text;
       dataToForward.start_time = leaveEntryData.start_time;
       dataToForward.end_time = leaveEntryData.end_time;
       leaveEntryData.status_id = "7";
+      
+     // alert("start"+leaveEntryData.start_time+"end"+leaveEntryData.end_time+"desc"+leaveEntryData.reason_desc+
+            //"dataToForward start"+dataToForward.start_time+"end"+dataToForward.end_time);
+      
       var date1 = new Date();
       var timestamp = date1.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date1.getMonth() + 1) + "" + getTimeHourswithZero(date1.getDate()) + "" + getTimeHourswithZero(date1.getHours()) + "" + getTimeHourswithZero(date1.getMinutes()) + "" + getTimeHourswithZero(date1.getSeconds());
       leaveEntryData.createdts = timestamp;
@@ -1169,6 +1174,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         leaveEntryData.id = kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId;
         kony.apps.coe.ess.myLeave.applyLeave.leave_id = leaveEntryData.id;
         this.leaveEntryData = leaveEntryData;
+        alert("leaveEntryData"+leaveEntryData);
         dataToForward.isNewLeave = false;
         kony.application.showLoadingScreen("", "", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
         kony.apps.coe.ess.MVVM.update("MYLEAVE", "leave", leaveEntryData, (this.leaveNoteUpdate).bind(this, dataToForward, dates, holidayResponse), (this.leaveUpdateError).bind(this));
@@ -2041,17 +2047,17 @@ kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
       if((Number(hrStart) >= 12 && Number(hrEnd) >= 12 ) || (Number(hrStart) < 12 && Number(hrEnd) < 12 )){
         if(x !== "" && y!== ""){
               if((Number(hrStart) > Number(hrEnd))){
-              	alert("Please enter a valid end time 1");
+              	alert("Please enter a valid end time ");
               	//frmApplyLeave.btnTo.text = btnToText;
         	}else{
               if((Number(hrStart) == Number(hrEnd)) && (Number(minStart) >= Number(minEnd))){
-                alert("Please enter a valid end time 2");
+                alert("Please enter a valid end time ");
                 //frmApplyLeave.btnTo.text = btnToText;
               }
             }
       }
       }else if(Number(hrStart) >= 12 && Number(hrEnd) < 12 ){
-          	alert("Please enter a valid end time 3");
+          	alert("Please enter a valid end time ");
             //frmApplyLeave.btnTo.text = btnToText;
       
     }
@@ -2062,63 +2068,32 @@ kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
 kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minStart,hrEnd,minEnd){
   var btnAction = "";
   if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
-  	btnAction = "HalfDay"
+  	btnAction = "HalfDay";
   }
   if(frmApplyLeave.btnHours.skin == "sknBtnBg1C7393S28pxRoman"){
-  	btnAction = "Hours"
+  	btnAction = "Hours";
   }
   var hr = hrStart+minStart;
   var min = hrEnd+minEnd;
-  var currTime = new Date();
-  //currTime = Fri Oct 13 2017 13:11:00 GMT+0530 (IST)
-  var startTime = "Fri Oct 13 2017 "+hrStart+":"+minStart+":"+"00 GMT+0530 (IST)";
-  var endTime = "Fri Oct 13 2017 "+hrEnd+":"+minEnd+":"+"00 GMT+0530 (IST)";
-  var hours = (endTime-startTime)/(1000*60*60);
-  alert(hours);
+  var d = new Date();
+  var start = new Date(d.getYear(), d.getMonth(), d.getDate(), hrStart, minStart, 0).getTime();
+  var end = new Date(d.getYear(), d.getMonth(), d.getDate(), hrEnd, minEnd, 0).getTime();
+  var hours = (Number(end)-Number(start))/(1000*60*60);
+  //alert("hours" +hours);
   var btnToText;
   if(btnAction == "HalfDay"){
     if(Number(hours) > 4){
-      alert("more than 4");
+     // alert("more than 4");
+    }else{
+      frmApplyLeave.lblDurationHours.text = hours + " hours";
     }
   }else if(btnAction == "Hours"){
     if(Number(hours) > 10){
-      alert("more than 4");
-    }
-  }
-  /*
-  alert("currTime" + currTime + "new Date() "+new Date());
-         // var previousTime = new Date(timeStamp).getTime(); 
-         // var hours = (currTime-previousTime)/(1000*60*60);
-  if(hrEnd > hrStart || hrEnd == hrStart || minEnd > minStart || minEnd == minStart){
-    var diff = Number(min)-Number(hr);
-    var divide100 = Number(diff)/100;
-    var strLength = String(divide100).length;
-    var duration = divide100;
-    var durinHours = duration;
-    var temp = 0;
-    var decofMins = "";
-    for(var v=0;v<String(divide100).length;v++){
-      if(String(divide100)[v] == "."){
-        temp++;
-      }
-    }
-    if(temp>0){
-      divide100 = String(divide100).split(".");
-      decofMins = Number(divide100[1])/60;
-      decofMins = "."+decofMins;
-      durinHours = Number(String(divide100)[0]).toFixed();
-      duration = durinHours+decofMins;
-    }
-    alert(duration+" "+durinHours+" -> "+decofMins);
-    if(Number(durinHours) > 4){
-      alert("Please select half day duration less than 4 hours");
+     // alert("more than 10");
     }else{
-     frmApplyLeave.lblDurationHours.text = duration + " hours";
+      frmApplyLeave.lblDurationHours.text = hours + " hours";
     }
-  }else{
-    alert("NO");
   }
-  */
  };
 
 

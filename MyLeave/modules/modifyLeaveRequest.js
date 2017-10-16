@@ -57,17 +57,26 @@ kony.apps.coe.ess.myLeave.modifyLeave.updateUI = {
             kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickOfFullDay();
         }else
         {  
-           if(this.leaveData[0].Hours >= 7){
+           if(this.leaveData[0].Hours == 8){
               kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickOfFullDay();
             }else if(parseFloat(this.leaveData[0].StartTime) === "000000" && parseFloat(this.leaveData[0].EndTime) === "000000"){
               kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickOfFullDay();
             }
-           else
+           else if(this.leaveData[0].Hours > 4 && this.leaveData[0].Hours !== 8)
             {
-               kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickofHoursSel();
-               var start_time =kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].StartTime).substring(0,2)*1));
-               var end_time = kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].EndTime).substring(0,2)*1));
-               kony.apps.coe.Reusable.createTimeline.fillHours(start_time,end_time);            
+             // alert("else if");
+               kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickofHours();
+               var start_time = parseInt((this.leaveData[0].StartTime).substring(0,2)*1);//kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].StartTime).substring(0,2)*1));
+               var end_time = parseInt((this.leaveData[0].EndTime).substring(0,2)*1);//kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].EndTime).substring(0,2)*1));
+               kony.print("modify leave time - >"+start_time+end_time);
+               //kony.apps.coe.Reusable.createTimeline.fillHours(start_time,end_time);            
+            }else 
+              {
+               // alert("else");
+               kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickofHalfDay();
+               var start_time = parseInt((this.leaveData[0].StartTime).substring(0,2)*1);//kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].StartTime).substring(0,2)*1));
+               var end_time = parseInt((this.leaveData[0].EndTime).substring(0,2)*1);//kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].EndTime).substring(0,2)*1));
+               kony.print("modify leave time 2- >"+start_time+end_time); 
             }
         }
      },
