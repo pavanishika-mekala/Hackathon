@@ -482,11 +482,15 @@ kony.apps.coe.ess.Approvals.frmSearch.filterApplyQuerySuccess = function(respons
         frmSearch.segList.widgetDataMap = widgetDataMap;
 
        if (data != "" && data != null && data.length > 0) {
+            frmSearch.lblNorecords.setVisibility(false);
+            frmSearch.segList.setVisibility(true);
             frmSearch.segList.setData(data);
         }
       else{
         data=[];
         frmSearch.segList.setData(data);
+        frmSearch.lblNorecords.setVisibility(true);
+        frmSearch.segList.setVisibility(false);
       }
         //start lazy  loadign for images in the segemtn
         kony.apps.coe.ess.Approvals.frmSearch.lazyLoading();

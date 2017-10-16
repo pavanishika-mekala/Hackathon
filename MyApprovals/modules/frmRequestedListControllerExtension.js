@@ -215,7 +215,14 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
               	"imgUser":"imgUser"
             };
             frmRequestedList.SegDetails.widgetDataMap = WidgetDatamap;
-            frmRequestedList.SegDetails.setData(data);
+          	if(data.length != null && data.length >0){
+               frmRequestedList.lblNoRecordsFound.setVisibility(false);
+               frmRequestedList.SegDetails.setVisibility(true);
+               frmRequestedList.SegDetails.setData(data);
+            }else{
+               frmRequestedList.lblNoRecordsFound.setVisibility(true);
+               frmRequestedList.SegDetails.setVisibility(false);
+            }
 			//lazy loading 
           	var segmentConfiguration={
 						"MediaKeyAttribute":"MediaID",

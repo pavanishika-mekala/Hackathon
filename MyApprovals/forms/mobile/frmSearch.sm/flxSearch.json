@@ -38,7 +38,8 @@
     "children": [
         "flxHeader",
         "flxSearchContainer",
-        "segList"
+        "segList",
+        "lblNorecords"
     ],
     "clipbounds": true,
     "containerweight": 100,

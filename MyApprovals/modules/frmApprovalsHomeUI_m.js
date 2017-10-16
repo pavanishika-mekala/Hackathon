@@ -1075,7 +1075,13 @@ kony.apps.coe.ess.Approvals.DynamicSegmentSetDatabyEmployeeSearch = function(sea
           "text": Response[index].shortName
         }
       }
-      DynamicWidget.setData(Response);
+      if(Response.length != null && Response.length >0){
+          DynamicWidget.setData(Response);
+          frmApprovalHome.lblNoRecordsFound1.setVisibility(false);
+      }else{
+          DynamicWidget.setData(Response);
+          frmApprovalHome.lblNoRecordsFound1.setVisibility(true);
+      }
       //lazy loading
       var segmentConfiguration = {
         "MediaKeyAttribute": "Media_Id",

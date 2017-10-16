@@ -36,7 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "SegDetails"
+        "SegDetails",
+        "lblNoRecordsFound"
     ],
     "clipbounds": true,
     "containerweight": 100,

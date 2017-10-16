@@ -154,6 +154,8 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
       }
       frmSearch.segList.widgetDataMap = widgetDataMap;
       if(data!=="" && data!==null) {
+        frmSearch.lblNorecords.setVisibility(false);
+        frmSearch.segList.setVisibility(true);
         frmSearch.segList.setData(data);
         //start lazy  loadign for images in the segemtn
         kony.apps.coe.ess.Approvals.frmSearch.lazyLoading();
