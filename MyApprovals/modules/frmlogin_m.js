@@ -72,7 +72,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
        // Add headers to be sent with next login request
        kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, response.security_attributes_api.access_token_api, "headers");
        kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, response.security_attributes_api.access_token_api, "headers");
-       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.sap_awxay_api, kony.apps.coe.ess.appconfig.axwayEnvironment, "headers");
+       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.sap_axway_api, kony.apps.coe.ess.appconfig.axwayEnvironment, "headers");
 
        kony.application.dismissLoadingScreen();
 
