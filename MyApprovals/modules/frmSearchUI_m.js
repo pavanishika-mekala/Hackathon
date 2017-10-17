@@ -203,8 +203,8 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
  */
 kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable = function() {
   kony.print("-- Start onClickFilterEnable -- ");
-  frmSearch.flxHide.setVisibility(false);
   frmSearch.flxClear.setVisibility(true);
+  frmSearch.flxHide.setVisibility(false);
   frmSearch.flxSearchContainer.setVisibility(true);
   kony.print("-- End onClickFilterEnable -- ");
 };
@@ -254,10 +254,8 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
     kony.print("-- Start onClickFilterApplySearch -- ");
     try {
         frmSearch.flxSearchContainer.setVisibility(false);
-      //change
         frmSearch.flxClear.setVisibility(true);
         frmSearch.flxHide.setVisibility(false);
-      //end
         var query_data = {}
         query_data.fromDate = new Date(frmSearch.calFromDate.year, frmSearch.calFromDate.month - 1, frmSearch.calFromDate.day);
         query_data.fromDate = query_data.fromDate.getDateInFormat("yyyymmdd");
