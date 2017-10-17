@@ -2,7 +2,7 @@
   "android": {
     "background_color": "ffffff00",
     "bg_type": "one",
-    "font_color": "005faaff",
+    "font_color": "005a78ff",
     "font_name": "AvenirLTStd-Roman",
     "font_size": 110,
     "isForked": true,
@@ -75,6 +75,10 @@
       "x": 0,
       "y": 0
     }
+  },
+  "iphone": {
+    "font_size": 110,
+    "isForked": true
   },
   "isDefaultSkin": false,
   "kiosk": {

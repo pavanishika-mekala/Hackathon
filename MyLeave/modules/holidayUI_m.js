@@ -126,6 +126,12 @@ kony.apps.coe.ess.myLeave.nToStr = kony.apps.coe.ess.myLeave.nToStr || {
 kony.apps.coe.ess.myLeave.HolidayUI.setDataToHolidayForm = function (data) {
 	kony.print("-- Start setDataToHolidayForm --");
 	data = (new kony.apps.coe.ess.myLeave.PendingLeaveRequestUI()).addAlternateSkinToSegment(data, "flxMain", "sknSegRowFAFAFAop100", "sknSegAltRowF8F8F8op100");
-	frmHolidays.segListOfHolidays.setData(data);
+  	if(data.length !=null && data.length >0){
+      frmHolidays.segListOfHolidays.setData(data);
+      frmHolidays.lblNoRecords.setVisibility(false);
+    }else{
+      frmHolidays.segListOfHolidays.removeAll();
+      frmHolidays.lblNoRecords.setVisibility(true);
+    }
 	kony.print("-- End setDataToHolidayForm --");
 };

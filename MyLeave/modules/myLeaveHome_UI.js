@@ -37,7 +37,9 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.prototype.
 addCalendarOnLeaveHome = function() {
     try {
         kony.print("-- Start addCalendarOnLeaveHome --");
-        var currDate = new Date();
+		var currDate = new Date();
+		var currYear = currDate.getFullYear().toString().trim(0, 4);
+        frmLeaveHome.lblLeaveHomeYear.text = currYear;
         kony.apps.coe.ess.myLeave.MyLeaveHomeUI.calendarWidget = new kony.apps.coe.Reusable.calendarWIDGET(currDate.getMonth(), currDate.getFullYear().toString().trim(0, 4), "flxCalendarWidget", "sknFlxMobOp0", "sknFlxFocus", "sknFlxMobOp0", "sknFlxMobOp100BgColD8F4FF", "sknBtnMobBg0OpFC777777Op100S79", "sknBtnMobOp100Bg2EBAEFFcFFFFFF", "sknLblMobFC333333Op100FS90", "sknBtnMobBg0OpFC333333Op100S24px", "sknBtnMobBg0OpFCC3C4CCOp100S24px", this.isValidMonthandYearforCalender, this.errorIsValidMonthandYearforCalender, this.onSwipeCallback, this.onTouchEndCallback, this.monthRefresh, this.totalCalenderRefresh);
         frmLeaveHome.flxCalendar.removeAll();
         frmLeaveHome.flxCalendar.add(kony.apps.coe.ess.myLeave.MyLeaveHomeUI.calendarWidget.getcalendar());
@@ -348,11 +350,6 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
             "labelnotes": "labelnotes",
             "lblapplier": "lblapplier",
             "txtApplierComments": "txtApplierComments",
-            //"imgapprover": "imgapprover",
-           // "labelapprovernotes": "labelapprovernotes",
-           // "lblapprovername": "lblapprovername",
-           // "txtComments": "txtComments",
-          //  "lblapproveddate": "lblapproveddate",
             "lblapplieddate": "lblapplieddate",
             "imgapplier": "imgapplier"
         };
@@ -443,30 +440,25 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
  */
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.prototype.insertFetchedUserImage = function(index, employeeId, response, callback) {
         try {
-          frmLeaveHome.segLeaveComments.widgetDataMap = {
-            "labelnotes": "labelnotes",
-            "lblapplier": "lblapplier",
-            "txtApplierComments": "txtApplierComments",
-            //"imgapprover": "imgapprover",
-            // "labelapprovernotes": "labelapprovernotes",
-            // "lblapprovername": "lblapprovername",
-            // "txtComments": "txtComments",
-            //  "lblapproveddate": "lblapproveddate",
-            "lblapplieddate": "lblapplieddate",
-            "imgapplier": "imgapplier"
-          };
-          frmLeaveHome.segLeaveComments2.widgetDataMap = {
-            "labelnotes": "labelnotes",
-            "lblapplier": "lblapplier",
-            "txtApplierComments": "txtApplierComments",
-            "imgapprover": "imgapprover",
-            "labelapprovernotes": "labelapprovernotes",
-            "lblapprovername": "lblapprovername",
-            "txtComments": "txtComments",
-            "lblapproveddate": "lblapproveddate",
-            "lblapplieddate": "lblapplieddate",
-            "imgapplier": "imgapplier"
-          };
+			frmLeaveHome.segLeaveComments.widgetDataMap = {
+				"labelnotes": "labelnotes",
+				"lblapplier": "lblapplier",
+				"txtApplierComments": "txtApplierComments",
+				"lblapplieddate": "lblapplieddate",
+				"imgapplier": "imgapplier"
+			};
+			frmLeaveHome.segLeaveComments2.widgetDataMap = {
+				"labelnotes": "labelnotes",
+				"lblapplier": "lblapplier",
+				"txtApplierComments": "txtApplierComments",
+				"imgapprover": "imgapprover",
+				"labelapprovernotes": "labelapprovernotes",
+				"lblapprovername": "lblapprovername",
+				"txtComments": "txtComments",
+				"lblapproveddate": "lblapproveddate",
+				"lblapplieddate": "lblapplieddate",
+				"imgapplier": "imgapplier"
+			};
             if (employeeId === kony.apps.coe.ess.globalVariables.employeeId) {
                 var segData = frmLeaveHome.segLeaveComments.data;
                 segData[index].imgapplier = {
@@ -1189,9 +1181,10 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.mappingBackendDataToCalendar = function(
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.leaveHomeInit = function() {
     try {
         kony.print("-- Start leaveHomeInit --");
-        var currDate = new Date();
-        var currYear = currDate.getFullYear().toString().trim(0, 4);
-        frmLeaveHome.lblLeaveHomeYear.text = currYear;
+		//added the below commented code in addCalendarOnLeaveHome function
+        //var currDate = new Date();
+		//var currYear = currDate.getFullYear().toString().trim(0, 4);
+        //frmLeaveHome.lblLeaveHomeYear.text = currYear;
         var myLeaveHomeUIObj = new kony.apps.coe.ess.myLeave.MyLeaveHomeUI();
         myLeaveHomeUIObj.addCalendarOnLeaveHome();
         kony.print("-- End leaveHomeInit --");

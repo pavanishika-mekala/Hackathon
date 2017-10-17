@@ -10,7 +10,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_bbb313d2e3ec46f1a3eb3f0877bb3b62",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.sliderAnimationToLater();\nfrmApprovalHome.flxSPAFilter.isVisible = false;\nfrmApprovalHome.flxFooterOptions.isVisible = false;\n",
+            "codeSnippet": "frmApprovalHome.tbxLaterFilter.text=\"\";\nkony.apps.coe.ess.Approvals.ApprovalsHome.sliderAnimationToLater();\nfrmApprovalHome.flxSPAFilter.isVisible = false;\nfrmApprovalHome.flxFooterOptions.isVisible = false;\n",
             "callbackType": null
         }]
     }

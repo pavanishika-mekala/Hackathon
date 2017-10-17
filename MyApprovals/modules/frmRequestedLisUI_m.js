@@ -35,7 +35,15 @@ kony.apps.coe.ess.Approvals.RequestedLists.MakeSegmentMultipleSelect=function(){
     	
     			for(var index in data){
           			data [index] ["imgSelection"] ="select.png";
-		        }    		
+		        } 
+    			if(data.length != null && data.length >0){
+    			    frmMultiSelection.SegDetails.setData(data);
+                    frmMultiSelection.SegDetails.setVisibility(true);
+                    frmMultiSelection.lblNoRecordsFound.setVisibility(false);
+                }else{
+                    frmMultiSelection.SegDetails.setVisibility(false);
+                    frmMultiSelection.lblNoRecordsFound.setVisibility(true);
+                }   		
     			frmMultiSelection.SegDetails.setData(data);
   				frmMultiSelection.show();
   }catch(e){
@@ -117,6 +125,7 @@ kony.apps.coe.ess.Approvals.RequestedList.prototype.ShowFormUsingMVVM = function
 kony.apps.coe.ess.Approvals.RequestedList.prototype.LoadRequestAndShowForm = function (RequestType) {
 	kony.print("--------------EXECUTING - kony.apps.coe.ess.Approvals.RequestedList.prototype.LoadRequestAndShowForm");
 	frmRequestedList.flxLaterFilter.isVisible = true;
+  frmRequestedList.tbxLaterFilter.text="";
 	frmRequestedList.lblClear.isVisible = true;
 	frmRequestedList.flxFilterBar.isVisible = false;
 	frmRequestedList.forceLayout();
@@ -163,8 +172,15 @@ kony.apps.coe.ess.Approvals.RequestedList.prototype.applyDataToSegment = functio
           
 	}
 		frmRequestedList.SegDetails.widgetDataMap = widgetDataMap;
-		frmRequestedList.SegDetails.setData(Data);
-		frmRequestedList.SegDetails.onRowClick = this.onRowClickOfSegRequest.bind(this);
+        if(Data.length != null && Data.length >0){
+           frmRequestedList.lblNoRecordsFound.setVisibility(false);
+           frmRequestedList.SegDetails.setVisibility(true);
+		   frmRequestedList.SegDetails.setData(Data);
+		   frmRequestedList.SegDetails.onRowClick = this.onRowClickOfSegRequest.bind(this);
+        }else{
+           frmRequestedList.lblNoRecordsFound.setVisibility(true);
+           frmRequestedList.SegDetails.setVisibility(false);
+        }
 		kony.print("-------------------------Data set to frmRequestedList.segDetails" + JSON.stringify(Data));
 		kony.print("--------------EXITING - kony.apps.coe.ess.Approvals.RequestedList.prototype.applyDataToSegment");
 	} catch (e) {
@@ -529,7 +545,14 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
                 "imgSelection": "imgSelection"
             };
             frmRequestedList.SegDetails.widgetDataMap = WidgetDatamap;
-            frmRequestedList.SegDetails.setData(processedData);
+            if(processedData.length != null && processedData.length >0){
+                frmRequestedList.lblNoRecordsFound.setVisibility(false);
+                frmRequestedList.SegDetails.setVisibility(true);
+		        frmRequestedList.SegDetails.setData(processedData);
+            }else{
+                frmRequestedList.lblNoRecordsFound.setVisibility(true);
+                frmRequestedList.SegDetails.setVisibility(false);
+            }
         }, function(error) {
             kony.print("---Error in data retrieval" + error);
         });
@@ -596,7 +619,14 @@ kony.apps.coe.ess.Approvals.RequestedList.prototype.OnSearchClick = function () 
 };
 
 kony.apps.coe.ess.Approvals.RequestedList.prototype.onImgPeopleClick = function (imgname) {
-	frmRequestedList.SegDetails.setData(this.OnSearchClickData);
+	if(this.OnSearchClickData.length != null && this.OnSearchClickData.length >0){
+      frmRequestedList.lblNoRecordsFound.setVisibility(false);
+      frmRequestedList.SegDetails.setVisibility(true);
+      frmRequestedList.SegDetails.setData(this.OnSearchClickData);
+    }else{
+      frmRequestedList.lblNoRecordsFound.setVisibility(true);
+      frmRequestedList.SegDetails.setVisibility(false);
+    }
 	frmRequestedList.filterLaterImg.src = imgname;
 	frmRequestedList.tbxLaterFilter.text = "";
 	frmRequestedList.filterLaterImg.onTouchEnd = function () {};
@@ -612,7 +642,14 @@ kony.apps.coe.ess.Approvals.RequestedList.prototype.OnSearchtextChange = functio
     frmRequestedList.filterLaterImg.onTouchEnd = this.onImgPeopleClick.bind(this,frmRequestedList.filterLaterImg.src);
 	frmRequestedList.filterLaterImg.src = "close_grey.png";
 	if (isEmpty(frmRequestedList.tbxLaterFilter.text)) {
-		frmRequestedList.SegDetails.setData(this.OnSearchClickData);
+        if(this.OnSearchClickData.length != null && this.OnSearchClickData.length >0){
+          frmRequestedList.lblNoRecordsFound.setVisibility(false);
+          frmRequestedList.SegDetails.setVisibility(true);
+          frmRequestedList.SegDetails.setData(this.OnSearchClickData);
+        }else{
+          frmRequestedList.lblNoRecordsFound.setVisibility(true);
+          frmRequestedList.SegDetails.setVisibility(false);
+        }
 		return;
 	}
 	var Data = this.OnSearchClickData;
@@ -630,7 +667,14 @@ kony.apps.coe.ess.Approvals.RequestedList.prototype.OnSearchtextChange = functio
 		return results;
 	};
 	newData = find(frmRequestedList.tbxLaterFilter.text, Data);
-	frmRequestedList.SegDetails.setData(newData);
+    if(newData.length != null && newData.length >0){
+      frmRequestedList.lblNoRecordsFound.setVisibility(false);
+      frmRequestedList.SegDetails.setVisibility(true);
+      frmRequestedList.SegDetails.setData(newData);
+    }else{
+      frmRequestedList.lblNoRecordsFound.setVisibility(true);
+      frmRequestedList.SegDetails.setVisibility(false);
+    }
 };
 /*
  *@function

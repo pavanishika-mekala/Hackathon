@@ -42,7 +42,8 @@
         "flxStatus",
         "flxSearchLeaveType",
         "flxDoneButton",
-        "segList"
+        "segList",
+        "lblNoRecords"
     ],
     "clipbounds": true,
     "containerweight": 100,

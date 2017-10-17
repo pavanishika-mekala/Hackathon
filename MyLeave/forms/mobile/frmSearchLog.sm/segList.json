@@ -101,7 +101,7 @@
             "showProgressIndicator": false
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "14ff669d182c42519368db4235af05e0",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",

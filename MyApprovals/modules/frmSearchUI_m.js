@@ -43,7 +43,7 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
             //attribute values
             processedRequest.attributesNames = response_data[index].AttributeNAME;
             processedRequest.attributeValues = response_data[index].Attributevalue;
-          	//Request AttributeName 
+          	//Request AttributeName
           	if(processedRequest.attributesNames != undefined) {
             	processedRequest.attributejson = processedRequest.attributesNames.returnCombinationInJsonFormat(processedRequest.attributeValues, ",");
             } else {
@@ -283,7 +283,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
 /*
  *@function
  *@class  : Search
- *@desc   : Setting the limit and offset 
+ *@desc   : Setting the limit and offset
  */
 
 kony.apps.coe.ess.Approvals.frmSearch.onReachingEndOfSegment = function() {
@@ -376,7 +376,8 @@ kony.apps.coe.ess.Approvals.frmSearch.retrieveDataByFilter = function(data, succ
             "      attribute_def.attribute_section_id AS AttributeSection," +
             "	   request_approver.lastmodifiedts AS ApprovedDate," +
             "      Group_concat(attribute.value) AS Attributevalue," +
-            "	   Group_concat(attribute_def.label) AS AttributeNAME" +
+            "	   Group_concat(attribute_def.label) AS AttributeNAME," +
+            "	   startDate" +
             "      FROM approval_request" +
             "	   LEFT JOIN Employee ON (approval_request.employee_id = Employee.Id)" +
             "	   LEFT JOIN request_approver ON (approval_request.id = request_approver.approval_id)" +
@@ -385,10 +386,11 @@ kony.apps.coe.ess.Approvals.frmSearch.retrieveDataByFilter = function(data, succ
             "	   LEFT JOIN Status ON (request_approver.status_id = Status.Id)" +
             "	   LEFT JOIN request_category ON (approval_request.category_id = request_category.id)" +
             "	   LEFT JOIN request_type ON (approval_request.type_id = request_type.id) " +
+            "    LEFT JOIN (select approval_id as appr_id, value as startDate from attribute where attribute_def_id='StartDateAttributeDef') ON (approval_request.id = appr_id)" +// Join to get leave start date
             " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'";
         //-------------Query addition for fromDate and toDate
         if (data.fromDate != null && data.fromDate != "" && data.fromDate.length > 0 && data.toDate != null && data.toDate != "" && data.toDate.length > 0) {
-            query += " AND approval_request.request_date BETWEEN '" + data.fromDate + "' AND '" + data.toDate + "'";
+            query += " AND startDate BETWEEN '" + data.fromDate + "' AND '" + data.toDate + "'";
         }
 
         //-------------Query addition for Request_Type
@@ -478,13 +480,17 @@ kony.apps.coe.ess.Approvals.frmSearch.filterApplyQuerySuccess = function(respons
             "flxExpense":"requestVisible"
         };
         frmSearch.segList.widgetDataMap = widgetDataMap;
-        
+
        if (data != "" && data != null && data.length > 0) {
+            frmSearch.lblNorecords.setVisibility(false);
+            frmSearch.segList.setVisibility(true);
             frmSearch.segList.setData(data);
         }
       else{
         data=[];
         frmSearch.segList.setData(data);
+        frmSearch.lblNorecords.setVisibility(true);
+        frmSearch.segList.setVisibility(false);
       }
         //start lazy  loadign for images in the segemtn
         kony.apps.coe.ess.Approvals.frmSearch.lazyLoading();

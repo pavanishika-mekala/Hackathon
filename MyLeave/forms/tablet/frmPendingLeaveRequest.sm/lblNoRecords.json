@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -18,12 +19,8 @@
         0,
         0
     ],
-    "_skin_": "sf778437578a4755a595b2ff9af5c7b0",
-    "_text_": "",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
+    "_skin_": "s6f343675df1469b9bc2aee84676ee95",
+    "_text_": "No Records Found",
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -46,7 +43,7 @@
     },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblNoRecordsFound",
+    "id": "lblNoRecords",
     "info": null,
     "ipad": {
         "psp": {
@@ -54,11 +51,10 @@
         }
     },
     "isvisible": true,
-    "kuid": "b4f3a456759f4f799cb0f3f58f577c75",
+    "kuid": "a85813b5cc2d4def8e491d12792bcf5b",
     "name": "kony.ui.Label",
-    "parent": "flxSegment",
-    "pf": "frmIsLaterSearch",
-    "texti18n": "i18n.ess.MyApprovals.frmIsLaterSearch.lblNoRecordsFound",
+    "parent": "flxPendingLeaveRequest",
+    "pf": "frmPendingLeaveRequest",
     "tooltip": "",
     "wType": "Label",
     "zindex": 2
