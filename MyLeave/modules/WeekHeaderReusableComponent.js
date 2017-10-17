@@ -95,7 +95,7 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
     "id" : "Weeks_LABEL_container",
     "top" : "11.33%",
     "left" : "0%",// removed "-8.5%",
-    "width" : "123.9%",
+    "width" : "100%",
     "height" : DimensionInfo.weekLabelContainerHeight,
     "zIndex" : 1,
     "skin" : skinInfo.weeklabelContainerSkin,
@@ -124,7 +124,7 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
       "zIndex" : 1,
       "isVisible" : true,
       "height" : "76%",
-      "width" : "14%"
+      "width" : "19.5%"
     };
     //lblBasic.width=((100/this.noOfWeekstobedisplayed)-DimensionInfo.weekLabelPadding).toString()+"%";
     lblBasic.left = DimensionInfo.weekLabelPadding;
@@ -313,7 +313,7 @@ kony.apps.coe.Reusable.WeekHeader.prototype.leftshift = function (shiftIndex) {
   newendDate.setDate(newendDate.getDate() + 7);
   datajson.endDate = newendDate;
 
-  datajson.text = newStartDate.getDate() + "-" + newendDate.getDate();
+  datajson.text = newStartDate.getDate()+"/"+(newStartDate.getMonth()+1) + "-" + newendDate.getDate()+"/"+(newStartDate.getMonth()+1);
   this.data[this.noOfWeekstobedisplayed - 1] = datajson;
   //alert("the data json is" + JSON.stringify(this.data));
   frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
@@ -346,7 +346,7 @@ kony.apps.coe.Reusable.WeekHeader.prototype.rightshift = function (shiftIndex) {
   newendDate.setDate(newendDate.getDate() - 7);
   datajson.endDate = newendDate;
 
-  datajson.text = newStartDate.getDate() + "-" + newendDate.getDate();
+  datajson.text = newStartDate.getDate()+"/"+(newStartDate.getMonth()+1) + "-" + newendDate.getDate()+"/"+(newStartDate.getMonth()+1);
   
   this.data[0] = datajson;
   frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
@@ -377,7 +377,7 @@ kony.apps.coe.Reusable.WeekHeader.prototype.WeekDatesIntialize = function () {
   for (var i = 0; i < this.noOfWeekstobedisplayed; i++) {
     this.data[i].startDate = d.thisWeekInterval(this.WeekDayStart)[0];
     this.data[i].endDate = d.thisWeekInterval(this.WeekDayStart)[1];
-    this.data[i].text = d.thisWeekInterval(this.WeekDayStart)[0].getDate() + "-" + d.thisWeekInterval(this.WeekDayStart)[1].getDate();
+    this.data[i].text = d.thisWeekInterval(this.WeekDayStart)[0].getDate()+"/"+(d.thisWeekInterval(this.WeekDayStart)[0].getMonth()+1) + "-" + d.thisWeekInterval(this.WeekDayStart)[1].getDate()+"/"+(d.thisWeekInterval(this.WeekDayStart)[1].getMonth()+1);
     d.setDate(d.getDate() + 7);
     this.changeWeekLabelsUiatIndex(i);
   }

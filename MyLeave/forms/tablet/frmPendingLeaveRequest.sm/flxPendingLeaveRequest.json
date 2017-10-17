@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxHeader",
-        "segPendingLeaveRequest"
+        "segPendingLeaveRequest",
+        "lblNoRecords"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -45,7 +45,7 @@
     "enablescrolling": true,
     "id": "flxFiter",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "5eedb860228443b392b8daf61577e88f",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

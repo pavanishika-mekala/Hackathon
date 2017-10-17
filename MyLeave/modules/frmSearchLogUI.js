@@ -298,9 +298,15 @@ kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery,filterIcon
       myData.push(temp);
 
     }
-
-    frmSearchLog.segList.setData(myData);
-    frmSearchLog.segList.isVisible = true;
+	if(myData.length != null && myData.length >0){
+       frmSearchLog.segList.setData(myData);
+       frmSearchLog.segList.setVisibility(true);
+       frmSearchLog.lblNoRecords.setVisibility(false);
+    }else{
+       frmSearchLog.segList.setVisibility(false);
+       frmSearchLog.lblNoRecords.setVisibility(true);
+    }
+    //frmSearchLog.segList.isVisible = true;
     frmSearchLog.flxSelection.isVisible = false;
     frmSearchLog.flxReqType.isVisible = false;
     frmSearchLog.flxStatus.isVisible = false;
