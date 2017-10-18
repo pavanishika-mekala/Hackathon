@@ -185,7 +185,7 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
             "isVisible": true,
             "skin": weekLabel_skin,
             "focusSkin": "weekLabel_skin",
-            "text": kony.apps.coe.Reusable.calendar.HelperFunction.retriveDayName(day).substr(0, 3)
+            "text": kony.apps.coe.Reusable.calendar.HelperFunction.retriveDayName(day) //.substr(0, 3)
 
         };
         var lblLayout = {};
@@ -432,8 +432,8 @@ kony.apps.coe.Reusable.calendarWIDGET.prototype.updateMonthHeaders = function() 
 
         var BtnHeaderId = "BTNMONTHHEADER" + this.MonthData[i].BUTTONINDEX.toString();
 
-        this[BtnHeaderId].skin = this.monthBTN_Skin;
-        this[BtnHeaderId].text = kony.apps.coe.Reusable.calendar.HelperFunction.retriveMonthName(this.MonthData[i].MONTH).substr(0, 3) + " " + this.MonthData[i].YEAR.toString().substr(2, 2);
+        this[BtnHeaderId].skin = this.monthBTN_Skin; //.substr(0, 3)
+        this[BtnHeaderId].text = kony.apps.coe.Reusable.calendar.HelperFunction.retriveMonthName(this.MonthData[i].MONTH) + " " + this.MonthData[i].YEAR.toString().substr(2, 2);
 
         if (this.MonthData[i].MONTH == this.month && this.MonthData[i].YEAR == this.year) {
             this[BtnHeaderId].skin = this.monthBTN_FocusSkin;
@@ -1190,45 +1190,26 @@ kony.apps.coe.Reusable.calendarWIDGET.prototype.resetTotalcalendarUI = function(
     }
 };
 
-//helper method functions for the calendar Widget
-
-kony.apps.coe.Reusable.calendar.HelperFunction.retriveMonthDetails = function(month, year, diff) {
-
-    var d = new Date();
-
-    d.setDate(1);
-    d.setMonth(month);
-    d.setFullYear(year);
-
-    d.setMonth(d.getMonth() + diff);
-
-    return {
-        "MONTH": d.getMonth(),
-        "YEAR": d.getFullYear()
-    };
-
-    throw "something went wrong in the retriving month details";
-}
-
-// helper method to retrive the name of teh Day
+// helper method to retrive the name of the Day
 kony.apps.coe.Reusable.calendar.HelperFunction.retriveDayName = function(day_param) {
 
     if (day_param < 7) {
         switch (day_param) {
             case 0:
-                return "Sunday";
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Sun");//"Sunday";
             case 1:
-                return "Monday";
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Mon"); //"Monday"; 
             case 2:
-                return "Tuesday";
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Tue");//"Tuesday"; 
             case 3:
-                return "Wednesday";
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Wed");//"Wednesday";
             case 4:
-                return "Thursday";
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Thu"); //"Thursday";
             case 5:
-                return "Friday";
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Fri");//"Friday";
             case 6:
-                return "Saturday"
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Sat"); //"Saturday";
+			    		            
             default:
                 throw "some wrong input in the retrive Day Name function of calendar helper";
         }
@@ -1237,39 +1218,38 @@ kony.apps.coe.Reusable.calendar.HelperFunction.retriveDayName = function(day_par
         throw "something went wrong in the retriving Day Name";
     }
 
-}
+};
 
 kony.apps.coe.Reusable.calendar.HelperFunction.retriveMonthName = function(month_int) {
-
     switch (month_int) {
         case 0:
-            return "January";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jan");// "January";
         case 1:
-            return "February";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.feb");//"February";
         case 2:
-            return "March";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.mar");//"March";
         case 3:
-            return "April";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.apr");//"April";
         case 4:
-            return "May";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.may");//"May";
         case 5:
-            return "June";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jun");//"June";
         case 6:
-            return "July";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jul");//"July";
         case 7:
-            return "August";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.aug");//"August";
         case 8:
-            return "September";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.sep");//"September";
         case 9:
-            return "October";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.oct");//"October";
         case 10:
-            return "November";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.nov");//"November";
         case 11:
-            return "December";
+            return kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.dec");//"December";
 
         default:
-            throw "some thing wrogn paramete passing in the function retrive month Name"
+            throw "some thing wrogn paramete passing in the function retrive month Name";
 
     }
 
-}
+};

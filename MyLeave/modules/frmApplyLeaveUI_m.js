@@ -22,18 +22,18 @@ kony.apps.coe.ess.myLeave.applyLeave.Initialization = {
   calendarWidgetObj: null,
 
   monthArray: [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.january"),// "January",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.Febrauary"),//"February",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.March"),//"March",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.April"),//"April",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.May"),//"May",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.June"),//"Jun",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.July"),//"July",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.August"),//"August",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.September"),//"September",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.October"),//"October",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.November"),//"November",
+    kony.i18n.getLocalizedString("i18n.ess.Date.Month.December")//"December"
   ],
 
   frmApplyLeaveInit: function() {

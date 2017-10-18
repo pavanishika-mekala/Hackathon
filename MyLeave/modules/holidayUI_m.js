@@ -78,41 +78,41 @@ kony.apps.coe.ess.myLeave.HolidayUI.prototype.addAlternateSkinToSegment = functi
  */
 kony.apps.coe.ess.myLeave.nToStr = kony.apps.coe.ess.myLeave.nToStr || {
 	"week" : {
-		"0": "Mon",
-        "1": "Tue",
-        "2": "Wed",
-        "3": "Thu",
-        "4": "Fri",
-        "5": "Sat",
-        "6": "Sun"
+		"0": kony.i18n.getLocalizedString("i18n.ess.MyLeave.Mon"), //"Mon",
+        "1": kony.i18n.getLocalizedString("i18n.ess.MyLeave.Tue"), //"Tue",
+        "2": kony.i18n.getLocalizedString("i18n.ess.MyLeave.Wed"), //"Wed",
+        "3": kony.i18n.getLocalizedString("i18n.ess.MyLeave.Thu"), //"Thu",
+        "4": kony.i18n.getLocalizedString("i18n.ess.MyLeave.Fri"), //"Fri",
+        "5": kony.i18n.getLocalizedString("i18n.ess.MyLeave.Sat"), //"Sat",
+        "6": kony.i18n.getLocalizedString("i18n.ess.MyLeave.Sun"), //"Sun"
 	},
 	"month" : {
-		"0" : "Jan",
-		"1" : "Feb",
-		"2" : "Mar",
-		"3" : "Apr",
-		"4" : "May",
-		"5" : "Jun",
-		"6" : "Jul",
-		"7" : "Aug",
-		"8" : "Sep",
-		"9" : "Oct",
-		"10" : "Nov",
-		"11" : "Dec"
+		"0" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jan"), //"Jan",
+		"1" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.feb"), //"Feb",
+		"2" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.mar"),//"Mar",
+		"3" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.apr"),//"Apr",
+		"4" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.may"),//"May",
+		"5" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jun"),//"Jun",
+		"6" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jul"),//"Jul",
+		"7" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.aug"),//"Aug",
+		"8" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.sep"),//"Sep",
+		"9" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.oct"),//"Oct",
+		"10" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.nov"),//"Nov",
+		"11" : kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.dec")//"Dec"
 	},
 	"fullmonth" : {
-		"0" : "January",
-		"1" : "February",
-		"2" : "March",
-		"3" : "April",
-		"4" : "May",
-		"5" : "June",
-		"6" : "July",
-		"7" : "August",
-		"8" : "September",
-		"9" : "October",
-		"10" : "November",
-		"11" : "December"
+		"0": kony.i18n.getLocalizedString("i18n.ess.Date.Month.january"),// "January";
+        "1": kony.i18n.getLocalizedString("i18n.ess.Date.Month.Febrauary"),//"February";
+        "2": kony.i18n.getLocalizedString("i18n.ess.Date.Month.March"),//"March";
+        "3": kony.i18n.getLocalizedString("i18n.ess.Date.Month.April"),//"April";
+        "4": kony.i18n.getLocalizedString("i18n.ess.Date.Month.May"),//"May";
+        "5": kony.i18n.getLocalizedString("i18n.ess.Date.Month.June"),//"June";
+        "6": kony.i18n.getLocalizedString("i18n.ess.Date.Month.July"),//"July";
+        "7": kony.i18n.getLocalizedString("i18n.ess.Date.Month.August"),//"August";
+        "8": kony.i18n.getLocalizedString("i18n.ess.Date.Month.September"),//"September";
+        "9": kony.i18n.getLocalizedString("i18n.ess.Date.Month.October"),//"October";
+        "10": kony.i18n.getLocalizedString("i18n.ess.Date.Month.November"),//"November";
+        "11": kony.i18n.getLocalizedString("i18n.ess.Date.Month.December")//"December";
 	}
 };
 

@@ -385,7 +385,13 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.mapAndBindData = function(data) {
 kony.apps.coe.ess.myLeave.TeamView.prototype.changeMonthText = function(intervalStartDate, intervalEndDate) {
     try {
         kony.print("---- Inside changeMonthText ----");
-        var monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        //var monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+	      var monthName = [kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jan"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.feb"),
+	                      kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.mar"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.apr"),
+	                      kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.may"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jun"),
+	                      kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jul"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.aug"),
+	                      kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.sep"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.oct"),
+	                      kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.nov"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.dec")];
         if (intervalStartDate.getMonth() === intervalEndDate.getMonth()) {
             frmTeamView.lblMonth.text = monthName[intervalEndDate.getMonth()] + ", " + intervalEndDate.getFullYear();
         } else {
