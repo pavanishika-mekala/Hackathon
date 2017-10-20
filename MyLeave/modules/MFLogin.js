@@ -261,27 +261,34 @@ function userDetailsSucess(response) {
                                     kony.apps.coe.ess.globalVariables.employeeId = "";
                                     kony.apps.coe.ess.globalVariables.employeeName = "";
                                 }
-                                var updateSyncDate = function() {
-                                    var months = [
-                                        "Jan", "Feb", "Mar",
-                                        "Apr", "May", "Jun", "Jul",
-                                        "Aug", "Sep", "Oct",
-                                        "Nov", "Dec"
-                                    ];
+                              var updateSyncDate = function() {
+                                //commented as part of locale changes
+                                //                                     var months = [
+                                //                                         "Jan", "Feb", "Mar",
+                                //                                         "Apr", "May", "Jun", "Jul",
+                                //                                         "Aug", "Sep", "Oct",
+                                //                                         "Nov", "Dec"
+                                //                                     ];
+                                var months = [kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jan"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.feb"),
+                                              kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.mar"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.apr"),
+                                              kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.may"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jun"),
+                                              kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jul"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.aug"),
+                                              kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.sep"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.oct"),
+                                              kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.nov"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.dec")];
 
-                                    var currDate = new Date();
-                                    var currDay = currDate.getDate();
-                                    var currMonth = months[currDate.getMonth()];
-                                    var currYear = currDate.getFullYear();
-                                    var currTime = currDate.toHHMMSS(":");
-                                    var suffix;
-                                    if (parseInt(currDate.getHours(), 10) >= 12) {
-                                        suffix = kony.i18n.getLocalizedString("i18n.ess.myLeave.PM");
-                                    }
-                                    else {
-                                        suffix = kony.i18n.getLocalizedString("i18n.ess.myLeave.AM");
-                                    }
-                                    //#ifndef windows8
+                                var currDate = new Date();
+                                var currDay = currDate.getDate();
+                                var currMonth = months[currDate.getMonth()];
+                                var currYear = currDate.getFullYear();
+                                var currTime = currDate.toHHMMSS(":");
+                                var suffix;
+                                if (parseInt(currDate.getHours(), 10) >= 12) {
+                                  suffix = kony.i18n.getLocalizedString("i18n.ess.myLeave.PM");
+                                }
+                                else {
+                                  suffix = kony.i18n.getLocalizedString("i18n.ess.myLeave.AM");
+                                }
+                                //#ifndef windows8
                                         frmHamburger.lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
                                         frmHamburger.lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
 
@@ -495,18 +502,18 @@ kony.sdk.mvvm.LogoutAction = function() {
 };
 
 kony.sdk.mvvm.Logout_DW = function() {
-    frmAllHolidaysAndEventsDW.destroy()
-    frmApplyLeaveDW.destroy()
-    frmCalendarTeamViewDW.destroy()
-    frmHamburgerDW.destroy()
-    frmHistoryLeaveRequestDW.destroy()
-    frmLeaveDashboardDW.destroy()
-    frmLeaveWalletDW.destroy()
-    frmPendingLeaveRequestsDW.destroy()
-    frmLoginDeskDW.destroy()
+    frmAllHolidaysAndEventsDW.destroy();
+    frmApplyLeaveDW.destroy();
+    frmCalendarTeamViewDW.destroy();
+    frmHamburgerDW.destroy();
+    frmHistoryLeaveRequestDW.destroy();
+    frmLeaveDashboardDW.destroy();
+    frmLeaveWalletDW.destroy();
+    frmPendingLeaveRequestsDW.destroy();
+    frmLoginDeskDW.destroy();
     frmLoginDeskDW.show();
     kony.apps.coe.ess.myLeave.frmLeaveDashboardDW.calendarWidgetObj = null;
-}
+};
 
 //In case of offline it retains previous configurations and navigates to home screen
 function onThemeSettingSuccessCallback(successresp) {
