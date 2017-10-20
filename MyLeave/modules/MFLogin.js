@@ -347,8 +347,8 @@ function userDetailsSucess(response) {
                          kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);                       
                          };                     
                         var mfresetLocalDBError = function(error) {                 
-                         alert(JSON.stringify(error));
-                                                                                                };
+                         kony.print(JSON.stringify(error));
+                        };
                     
                         try {
                             //#ifdef windows8
