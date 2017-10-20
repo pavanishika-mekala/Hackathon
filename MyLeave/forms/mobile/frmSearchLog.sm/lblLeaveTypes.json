@@ -56,10 +56,12 @@
     },
     "isvisible": true,
     "kuid": "c2d1491d046e4e1ea4c622dcd95646dd",
+    "maxnumberoflines": 2,
     "name": "kony.ui.Label",
     "parent": "flxLeaveTypeSelection",
     "pf": "frmSearchLog",
     "texti18n": "i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA",
+    "texttruncateposition": 3,
     "tooltip": "",
     "wType": "Label"
 }
