@@ -337,9 +337,19 @@ function userDetailsSucess(response) {
                             else {
                                 // //After Successfull verification of New user, Start Sync Session
                                 kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-                                kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
+                              	kony.apps.coe.ess.Sync.resetSyncDb(mfresetLocalDBSucess, mfresetLocalDBError);  
+                              //kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
                             }
                         };
+                      	var mfresetLocalDBSucess = function() {                               
+                         kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});                                
+                         kony.apps.coe.ess.Sync.doDownload = true;                             
+                                                                                  kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);                       
+                                        };                     
+                        var mfresetLocalDBError = function(error) {                 
+                         alert(JSON.stringify(error));
+                                                                                                };
+                    
                         try {
                             //#ifdef windows8
                             syncAndShowLandingForm();
