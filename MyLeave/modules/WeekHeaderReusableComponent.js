@@ -313,7 +313,7 @@ kony.apps.coe.Reusable.WeekHeader.prototype.leftshift = function (shiftIndex) {
   newendDate.setDate(newendDate.getDate() + 7);
   datajson.endDate = newendDate;
 
-  datajson.text = newStartDate.getDate()+"/"+(newStartDate.getMonth()+1) + "-" + newendDate.getDate()+"/"+(newStartDate.getMonth()+1);
+  datajson.text = newStartDate.getDate()+"/"+(newStartDate.getMonth()+1) + "-" + newendDate.getDate()+"/"+(newendDate.getMonth()+1);
   this.data[this.noOfWeekstobedisplayed - 1] = datajson;
   //alert("the data json is" + JSON.stringify(this.data));
   frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
@@ -346,7 +346,7 @@ kony.apps.coe.Reusable.WeekHeader.prototype.rightshift = function (shiftIndex) {
   newendDate.setDate(newendDate.getDate() - 7);
   datajson.endDate = newendDate;
 
-  datajson.text = newStartDate.getDate()+"/"+(newStartDate.getMonth()+1) + "-" + newendDate.getDate()+"/"+(newStartDate.getMonth()+1);
+  datajson.text = newStartDate.getDate()+"/"+(newStartDate.getMonth()+1) + "-" + newendDate.getDate()+"/"+(newendDate.getMonth()+1);
   
   this.data[0] = datajson;
   frmTeamView["Weeks_LABEL_container"].contentOffset={x:0,y:0};
