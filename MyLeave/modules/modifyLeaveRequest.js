@@ -70,11 +70,11 @@ kony.apps.coe.ess.myLeave.modifyLeave.updateUI = {
             var end_time = parseInt((this.leaveData[0].EndTime).substring(0,4)*1);//kony.apps.coe.Reusable.createTimeline.getTimeFormatWithAMPM(parseInt((this.leaveData[0].EndTime).substring(0,2)*1));
             hours = kony.apps.coe.ess.myLeave.applyLeave.findHours(hrStart,minStart,hrEnd,minEnd);
             var startTimeLength = String(start_time).length;
-            if(Number(start_time) < 4){
+            if(Number(startTimeLength) < 4){
               start_time = "0"+start_time;
             }
              var endTimeLength = String(end_time).length;
-            if(Number(end_time) < 4){
+            if(Number(endTimeLength) < 4){
               end_time = "0"+end_time;
             }
             if(this.leaveData[0].Hours > 4 && this.leaveData[0].Hours !== 8)
