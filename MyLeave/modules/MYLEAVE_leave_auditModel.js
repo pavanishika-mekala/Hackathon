@@ -5,11 +5,8 @@
  */
 
 kony = kony || {};
-kony.sdk = kony.sdk || {};
-kony.sdk.mvvm = kony.sdk.mvvm || {};
-kony.sdk.mvvm.v2 = kony.sdk.mvvm.v2 || {};
-kony.sdk.mvvm.ObjectServices = kony.sdk.mvvm.ObjectServices || {};
-kony.sdk.mvvm.ObjectServices.MYLEAVE = kony.sdk.mvvm.ObjectServices.MYLEAVE || {};
+kony.model = kony.model || {};
+kony.model.MYLEAVE = kony.model.MYLEAVE || {};
 
 /**
  * Creates a new Model.
@@ -18,23 +15,26 @@ kony.sdk.mvvm.ObjectServices.MYLEAVE = kony.sdk.mvvm.ObjectServices.MYLEAVE || {
  * @param {Object} entityMetaData - Entity Metadata.
  * @param {Object} configOptions - Service Name and Service Options.
  */
-kony.sdk.mvvm.ObjectServices.MYLEAVE.leave_auditModel = Class(kony.sdk.mvvm.BaseModel, {
-
-    constructor: function(applicationContext, entityMetaData, configOptions) {
-        /**
-         *  @Fields in this object
-            createdts
-description
-employee_id
-error_message
-lastmodifiedts
-leave_id
-sofsdeleteflag
-status_id
-
-        */
-        this.$class.$super.call(this, applicationContext, entityMetaData, configOptions);
-    },
+kony.model.MYLEAVE.leave_auditModel = (function(){
+	
+    function leave_auditModel(applicationContext, entityMetaData, configOptions) {
+    	/**
+    	 * @Fields in this object
+		 *
+		 * createdts 
+		 * description 
+		 * employee_id 
+		 * error_message 
+		 * id 
+		 * lastmodifiedts 
+		 * leave_id 
+		 * sofsdeleteflag 
+		 * status_id 
+		 * TIMESTAMP 
+		 */
+        kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
+    }
+	inheritsFrom(leave_auditModel,kony.model.BaseModel);
     /**
      * This method returns requested property of column from metadata.
      * @memberof leave_auditModel#
@@ -42,44 +42,44 @@ status_id
      * @param {String} key - property of column.
      * @returns {Object} - Value for property 
      */
-    getValueForColumnProperty: function(columnName, key) {
-        return this.$class.$superp.getValueForColumnProperty.call(this, columnName, key);
-    },
+    leave_auditModel.prototype.getValueForColumnProperty = function(columnName, key) {
+        return kony.model.BaseModel.prototype.getValueForColumnProperty.call(this, columnName, key);
+    }
     /**
      * This method returns list of column names for this object from metadata.
      * @memberof leave_auditModel#
      * @returns {Array} - List of columns
      */
-    getColumnNames: function() {
-        return this.$class.$superp.getColumnNames.call(this);
-    },
+    leave_auditModel.prototype.getColumnNames = function() {
+        return kony.model.BaseModel.prototype.getColumnNames.call(this);
+    }
     /**
      * This method returns requested property of this object from metadata.
      * @memberof leave_auditModel#
      * @param {String} propertyName - property.
      * @returns {Object} - Value for property 
      */
-    getValueForProperty: function(propertyName) {
-        return this.$class.$superp.getValueForProperty.call(this, propertyName);
-    },
+    leave_auditModel.prototype.getValueForProperty = function(propertyName){
+        return kony.model.BaseModel.prototype.getValueForProperty.call(this, propertyName);
+    }
     /**
      * This method returns properties map of column from metadata.
      * @memberof leave_auditModel#
      * @param {String} columnName - Column Name.
      * @returns {Object} - Column information 
      */
-    getColumnInfo: function(columnName) {
-        return this.$class.$superp.getColumnInfo.call(this, columnName);
-    },
+    leave_auditModel.prototype.getColumnInfo = function(columnName) {
+        return kony.model.BaseModel.prototype.getColumnInfo.call(this, columnName);
+    }
     /**
      * This method returns picklist values if exists for column from metadata.
      * @memberof leave_auditModel#
      * @param {String} columnName - Column Name.
      * @returns {Array} - Pick list values for column
      */
-    getFieldPickListValues: function(columnName) {
-        return this.$class.$superp.getFieldPickListValues.call(this, columnName);
-    },
+    leave_auditModel.prototype.getFieldPickListValues = function(columnName){
+        return kony.model.BaseModel.prototype.getFieldPickListValues.call(this, columnName);
+    }
     /**
      * This method fetches the data for requested columns of this object.
      * @memberof leave_auditModel#
@@ -88,9 +88,9 @@ status_id
      * @param {SuccessCallback} onError - Error Callback.
      * @param {Object} [dataModel] - DataModel, (applies filter if contains primary key value map).
      */
-    fetchDataForColumns: function(columnNames, onSuccess, onError, contextData) {
-        this.$class.$superp.fetchDataForColumns.call(this, columnNames, onSuccess, onError, contextData);
-    },
+    leave_auditModel.prototype.fetchDataForColumns = function(columnNames, onSuccess, onError, dataModel) {
+        kony.model.BaseModel.prototype.fetchDataForColumns.call(this, columnNames, onSuccess, onError, dataModel);
+    }
     /**
      * This method fetches the data of this object as requested in dataObject
      * @memberof leave_auditModel#
@@ -98,9 +98,9 @@ status_id
      * @param {SuccessCallback} onSuccess - Success Callback.
      * @param {SuccessCallback} onError - Error Callback.
      */
-    fetch: function(options, onSuccess, onError) {
-        this.$class.$superp.fetch.call(this, options, onSuccess, onError);
-    },
+    leave_auditModel.prototype.fetch = function(options, onSuccess, onError) {
+        kony.model.BaseModel.prototype.fetch.call(this, options, onSuccess, onError);
+    }
     /**
      * This method saves the record provided in dataObject.
      * @memberof leave_auditModel#
@@ -108,9 +108,9 @@ status_id
      * @param {SuccessCallback} onSuccess - Success Callback.
      * @param {SuccessCallback} onError - Error Callback.
      */
-    create: function(options, onSuccess, onError) {
-        this.$class.$superp.create.call(this, options, onSuccess, onError);
-    },
+    leave_auditModel.prototype.create = function(options, onSuccess, onError) {
+        kony.model.BaseModel.prototype.create.call(this, options, onSuccess, onError);
+    }
     /**
      * This method updates the columns of record provided in dataObject.
      * @memberof leave_auditModel#
@@ -118,9 +118,9 @@ status_id
      * @param {SuccessCallback} onSuccess - Success Callback.
      * @param {SuccessCallback} onError - Error Callback.
      */
-    update: function(options, onSuccess, onError) {
-        this.$class.$superp.update.call(this, options, onSuccess, onError);
-    },
+    leave_auditModel.prototype.update = function(options, onSuccess, onError) {
+        kony.model.BaseModel.prototype.update.call(this, options, onSuccess, onError);
+    }
     /**
      * This method updates the columns of record provided in dataObject.
      * @memberof leave_auditModel#
@@ -128,9 +128,9 @@ status_id
      * @param {SuccessCallback} onSuccess - Success Callback.
      * @param {SuccessCallback} onError - Error Callback.
      */
-    partialUpdate: function(options, onSuccess, onError) {
-        this.$class.$superp.partialUpdate.call(this, options, onSuccess, onError);
-    },
+    leave_auditModel.prototype.partialUpdate = function(options, onSuccess, onError) {
+        kony.model.BaseModel.prototype.partialUpdate.call(this, options, onSuccess, onError);
+    }
     /**
      * This method updates(overrides) the record provided in dataObject.
      * @memberof leave_auditModel#
@@ -138,9 +138,9 @@ status_id
      * @param {SuccessCallback} onSuccess - Success Callback.
      * @param {SuccessCallback} onError - Error Callback.
      */
-    completeUpdate: function(options, onSuccess, onError) {
-        this.$class.$superp.completeUpdate.call(this, options, onSuccess, onError);
-    },
+    leave_auditModel.prototype.completeUpdate = function(options, onSuccess, onError) {
+        kony.model.BaseModel.prototype.completeUpdate.call(this, options, onSuccess, onError);
+    }
     /**
      * This method removes the record provided in dataObject.
      * @memberof leave_auditModel#
@@ -148,9 +148,9 @@ status_id
      * @param {SuccessCallback} onSuccess - Success Callback.
      * @param {SuccessCallback} onError - Error Callback.
      */
-    remove: function(options, onSuccess, onError) {
-        this.$class.$superp.remove.call(this, options, onSuccess, onError);
-    },
+    leave_auditModel.prototype.remove = function(options, onSuccess, onError) {
+        kony.model.BaseModel.prototype.remove.call(this, options, onSuccess, onError);
+    }
     /**
      * This method removes the record in this object with provided primary key values.
      * @memberof leave_auditModel#
@@ -158,18 +158,41 @@ status_id
      * @param {SuccessCallback} onSuccess - Success Callback.
      * @param {SuccessCallback} onError - Error Callback.
      */
-    removeByPrimaryKey: function(primaryKeyValueMap, onSuccess, onError) {
-        this.$class.$superp.removeByPrimaryKey.call(this, primaryKeyValueMap, onSuccess, onError);
-    },
+    leave_auditModel.prototype.removeByPrimaryKey = function(primaryKeyValueMap, onSuccess, onError){
+        kony.model.BaseModel.prototype.removeByPrimaryKey.call(this, primaryKeyValueMap, onSuccess, onError);
+    }
+    /**
+     * This method fetches the complete response of fetch operation as requested in dataObject
+     * @memberof leave_auditModel#
+     * @param {Object} options - includes {"dataObject": kony.sdk.dto.DataObject}
+     * @param {SuccessCallback} onSuccess - Success Callback.
+     * @param {SuccessCallback} onError - Error Callback.
+     */
+    leave_auditModel.prototype.fetchResponse = function(options, onSuccess, onError) {
+        kony.model.BaseModel.prototype.fetchResponse.call(this, options, onSuccess, onError);
+    }
+    /**
+     * This method invokes the customVerb operation as requested in dataObject
+     * @memberof leave_auditModel#
+     * @param {String} verbName - Name of the verb
+     * @param {Object} options - includes {"dataObject": kony.sdk.dto.DataObject}
+     * @param {SuccessCallback} onSuccess - Success Callback.
+     * @param {SuccessCallback} onError - Error Callback.
+     */
+    leave_auditModel.prototype.customVerb = function(verbName, options, success, error) {
+        kony.model.BaseModel.prototype.customVerb.call(this, verbName, options, success, error);
+    }
     /**
      * This invokes the validate method in model extension class.
      * This is called from create and update methods.
      * @memberof leave_auditModel#
      * @param {Object} dataObject - Data object.
-     * @param {kony.sdk.mvvm.v2.Model.ValidationType} validationType - Create/Update.
+     * @param {kony.model.ValidationType} validationType - Create/Update.
      * @returns {Boolean} - whether data is valid
      */
-    validate: function(dataObject, validationType) {
-        return this.$class.$superp.validate.call(this, dataObject, validationType);
+    leave_auditModel.prototype.validate = function(dataObject, validationType) {
+        return kony.model.BaseModel.prototype.validate.call(this, dataObject, validationType);
     }
-});
+	
+	return leave_auditModel;
+})();

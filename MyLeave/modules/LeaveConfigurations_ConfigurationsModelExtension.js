@@ -5,18 +5,15 @@
  */
 
 kony = kony || {};
-kony.sdk = kony.sdk || {};
-kony.sdk.mvvm = kony.sdk.mvvm || {};
-kony.sdk.mvvm.v2 = kony.sdk.mvvm.v2 || {};
-kony.sdk.mvvm.ObjectServices = kony.sdk.mvvm.ObjectServices || {};
-kony.sdk.mvvm.ObjectServices.LeaveConfigurations = kony.sdk.mvvm.ObjectServices.LeaveConfigurations || {};
+kony.model = kony.model || {};
+kony.model.LeaveConfigurations = kony.model.LeaveConfigurations || {};
 /**
  * Creates a new Model Extension.
  * @class ConfigurationsModelExtension
  * @param {Object} modelObj - Model.
  */
-kony.sdk.mvvm.ObjectServices.LeaveConfigurations.ConfigurationsModelExtension = Class({
-    constructor: function(modelObj) {
+kony.model.LeaveConfigurations.ConfigurationsModelExtension = (function(){
+    function ConfigurationsModelExtension(modelObj) {
         var model = modelObj;
 
         this.getModel = function() {
@@ -26,18 +23,20 @@ kony.sdk.mvvm.ObjectServices.LeaveConfigurations.ConfigurationsModelExtension = 
             model = modelObj;
         };
 
-    },
+    }
     
     /**
      * This is called from create and update methods of Model class.
      * This method is a handle to custom validation written by developer.
      * @memberof ConfigurationsModelExtension#
      * @param {Object} dataObject - Data object.
-     * @param {kony.sdk.mvvm.v2.Model.ValidationType} validationType - Create/Update.
+     * @param {kony.model.ValidationType} validationType - Create/Update.
      * @returns {Boolean} - whether data is valid
      */
-    validate: function(dataObject, validationType) {
+    ConfigurationsModelExtension.prototype.validate = function(dataObject, validationType) {
         //TO-DO add custom validation
         return true;
     }
-});
+	
+	return ConfigurationsModelExtension;
+})();

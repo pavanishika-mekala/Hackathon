@@ -754,7 +754,7 @@ kony.sdk.mvvm.AppFactory = Class(kony.sdk.mvvm.AppFactoryInterface, {
     createModelObject: function(context, entityName, serviceName, options) {
         if (entityName) {
             var modelObj;
-            var modelName = "kony.sdk.mvvm.ObjectServices." + serviceName + "." + entityName + "Model";
+            var modelName = "kony.model." + serviceName + "." + entityName + "Model";
             eval.call(null, "var modelHandler = " + modelName);
             eval.call(null, "var modelExtensionHandler = " + modelName + "Extension");
             var metadataStore = context.getMetadataStore();
@@ -763,7 +763,7 @@ kony.sdk.mvvm.AppFactory = Class(kony.sdk.mvvm.AppFactoryInterface, {
                 var configOptions = {};
                 configOptions["serviceName"] = serviceName;
                 configOptions["options"] = options;
-                modelObj = new modelHandler(context, entityMetadata, configOptions)
+                modelObj = new modelHandler(context, entityMetadata, configOptions);
             } else {
                 kony.sdk.mvvm.log.error("error in entity controller factory, entity meta data for " + entityName + " undefined")
             }

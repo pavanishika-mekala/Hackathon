@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sat Oct 07 21:58:11 UTC 2017leave*******************
+// ****************Generated On Tue Oct 24 13:09:25 UTC 2017leave*******************
 // **********************************Start leave's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -46,6 +46,7 @@ com.kony.MYLEAVE.leave = function(){
 	this.start_time = null;
 	this.status_id = null;
 	this.TIMESTAMP = null;
+	this.LEAVE_DAYS = null;
 	this.markForUpload = true;
 };
 
@@ -142,6 +143,12 @@ com.kony.MYLEAVE.leave.prototype = {
 	},
 	set TIMESTAMP(val){
 		this._TIMESTAMP = val;
+	},
+	get LEAVE_DAYS(){
+		return this._LEAVE_DAYS;
+	},
+	set LEAVE_DAYS(val){
+		this._LEAVE_DAYS = val;
 	},
 };
 
@@ -298,6 +305,7 @@ com.kony.MYLEAVE.leave.create = function(valuestable, successcallback,errorcallb
 *		valuesArray[0].start_date = "start_date_0";
 *		valuesArray[0].start_time = "start_time_0";
 *		valuesArray[0].status_id = "status_id_0";
+*		valuesArray[0].LEAVE_DAYS = "LEAVE_DAYS_0";
 *		valuesArray[1] = {};
 *		valuesArray[1].createdts = "createdts_1";
 *		valuesArray[1].employee_id = "employee_id_1";
@@ -312,6 +320,7 @@ com.kony.MYLEAVE.leave.create = function(valuestable, successcallback,errorcallb
 *		valuesArray[1].start_date = "start_date_1";
 *		valuesArray[1].start_time = "start_time_1";
 *		valuesArray[1].status_id = "status_id_1";
+*		valuesArray[1].LEAVE_DAYS = "LEAVE_DAYS_1";
 *		valuesArray[2] = {};
 *		valuesArray[2].createdts = "createdts_2";
 *		valuesArray[2].employee_id = "employee_id_2";
@@ -326,6 +335,7 @@ com.kony.MYLEAVE.leave.create = function(valuestable, successcallback,errorcallb
 *		valuesArray[2].start_date = "start_date_2";
 *		valuesArray[2].start_time = "start_time_2";
 *		valuesArray[2].status_id = "status_id_2";
+*		valuesArray[2].LEAVE_DAYS = "LEAVE_DAYS_2";
 *		com.kony.MYLEAVE.leave.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
 com.kony.MYLEAVE.leave.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
@@ -2055,6 +2065,7 @@ com.kony.MYLEAVE.leave.convertTableToObject = function(res){
 			obj.start_time = res[i].start_time;
 			obj.status_id = res[i].status_id;
 			obj.TIMESTAMP = res[i].TIMESTAMP;
+			obj.LEAVE_DAYS = res[i].LEAVE_DAYS;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
 		}
@@ -2078,6 +2089,7 @@ com.kony.MYLEAVE.leave.filterAttributes = function(valuestable, insert){
 	attributeTable.start_date = "start_date";
 	attributeTable.start_time = "start_time";
 	attributeTable.status_id = "status_id";
+	attributeTable.LEAVE_DAYS = "LEAVE_DAYS";
 
 	var PKTable = {};
 	PKTable.employee_id = {}
@@ -2137,6 +2149,7 @@ com.kony.MYLEAVE.leave.prototype.getValuesTable = function(isInsert){
 	valuesTable.start_date = this.start_date;
 	valuesTable.start_time = this.start_time;
 	valuesTable.status_id = this.status_id;
+	valuesTable.LEAVE_DAYS = this.LEAVE_DAYS;
 	return valuesTable;
 };
 

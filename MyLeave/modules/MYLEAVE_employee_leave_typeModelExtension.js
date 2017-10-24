@@ -5,18 +5,15 @@
  */
 
 kony = kony || {};
-kony.sdk = kony.sdk || {};
-kony.sdk.mvvm = kony.sdk.mvvm || {};
-kony.sdk.mvvm.v2 = kony.sdk.mvvm.v2 || {};
-kony.sdk.mvvm.ObjectServices = kony.sdk.mvvm.ObjectServices || {};
-kony.sdk.mvvm.ObjectServices.MYLEAVE = kony.sdk.mvvm.ObjectServices.MYLEAVE || {};
+kony.model = kony.model || {};
+kony.model.MYLEAVE = kony.model.MYLEAVE || {};
 /**
  * Creates a new Model Extension.
  * @class employee_leave_typeModelExtension
  * @param {Object} modelObj - Model.
  */
-kony.sdk.mvvm.ObjectServices.MYLEAVE.employee_leave_typeModelExtension = Class({
-    constructor: function(modelObj) {
+kony.model.MYLEAVE.employee_leave_typeModelExtension = (function(){
+    function employee_leave_typeModelExtension(modelObj) {
         var model = modelObj;
 
         this.getModel = function() {
@@ -26,18 +23,20 @@ kony.sdk.mvvm.ObjectServices.MYLEAVE.employee_leave_typeModelExtension = Class({
             model = modelObj;
         };
 
-    },
-
+    }
+    
     /**
      * This is called from create and update methods of Model class.
      * This method is a handle to custom validation written by developer.
      * @memberof employee_leave_typeModelExtension#
      * @param {Object} dataObject - Data object.
-     * @param {kony.sdk.mvvm.v2.Model.ValidationType} validationType - Create/Update.
+     * @param {kony.model.ValidationType} validationType - Create/Update.
      * @returns {Boolean} - whether data is valid
      */
-    validate: function(dataObject, validationType) {
+    employee_leave_typeModelExtension.prototype.validate = function(dataObject, validationType) {
         //TO-DO add custom validation
         return true;
     }
-});
+	
+	return employee_leave_typeModelExtension;
+})();
