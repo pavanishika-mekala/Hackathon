@@ -255,8 +255,8 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
             this.MonthDataConstructorIntializate();
             onswipeCallBackFunction.call(this, myWidget, gestureInfo, context);
         }.bind(this));
-      
-      
+
+
         var basicconfig_cell = {
             "id": "",
             "top": "-16.01%",
@@ -1190,6 +1190,25 @@ kony.apps.coe.Reusable.calendarWIDGET.prototype.resetTotalcalendarUI = function(
     }
 };
 
+kony.apps.coe.Reusable.calendar.HelperFunction.retriveMonthDetails = function (month, year, diff) {
+
+	var d = new Date();
+
+	d.setDate(1);
+	d.setMonth(month);
+	d.setFullYear(year);
+
+	d.setMonth(d.getMonth() + diff);
+
+	return {
+		"MONTH" : d.getMonth(),
+		"YEAR" : d.getFullYear()
+	};
+
+	throw "something went wrong in the retriving month details";
+}
+
+
 // helper method to retrive the name of the Day
 kony.apps.coe.Reusable.calendar.HelperFunction.retriveDayName = function(day_param) {
 
@@ -1198,9 +1217,9 @@ kony.apps.coe.Reusable.calendar.HelperFunction.retriveDayName = function(day_par
             case 0:
                 return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Sun");//"Sunday";
             case 1:
-                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Mon"); //"Monday"; 
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Mon"); //"Monday";
             case 2:
-                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Tue");//"Tuesday"; 
+                return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Tue");//"Tuesday";
             case 3:
                 return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Wed");//"Wednesday";
             case 4:
@@ -1209,7 +1228,7 @@ kony.apps.coe.Reusable.calendar.HelperFunction.retriveDayName = function(day_par
                 return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Fri");//"Friday";
             case 6:
                 return kony.i18n.getLocalizedString("i18n.ess.MyLeave.Sat"); //"Saturday";
-			    		            
+
             default:
                 throw "some wrong input in the retrive Day Name function of calendar helper";
         }

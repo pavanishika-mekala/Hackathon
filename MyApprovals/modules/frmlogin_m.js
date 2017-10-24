@@ -47,8 +47,8 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
  kony.apps.coe.ess.frmLogin._errorCallback =
    function(error) {
      // Remove token headers, if present
-     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header1, "headers");
-     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header2, "headers");
+     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, "headers");
+     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, "headers");
 
      handleError(error);
    };
@@ -70,8 +70,9 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
        frmLogin.tbUsername.text = response.preferred_username;
        frmLogin.tbPassword.text = response.preferred_username;
        // Add headers to be sent with next login request
-       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header1, response.security_attributes_api.access_token_api, "headers");
-       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header2, response.security_attributes_api.access_token_api, "headers");
+       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, response.security_attributes_api.access_token_api, "headers");
+       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, response.security_attributes_api.access_token_api, "headers");
+       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.sap_axway_token, kony.apps.coe.ess.appconfig.axwayEnvironment, "headers");
 
        kony.application.dismissLoadingScreen();
 
@@ -124,17 +125,20 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
    }
  };
 
+ kony.apps.coe.ess.frmLogin.oktaLogin = function() {
+  try {
+    new kony.sdk().init(kony.apps.coe.ess.appconfig.appkey,kony.apps.coe.ess.appconfig.appsecret,kony.apps.coe.ess.appconfig.serviceurl, function(){
+      var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServicePreLogin);
+      preLoginService.login({"browserWidget":frmLogin.browserOkta}, kony.apps.coe.ess.frmLogin._axwayAuth, kony.apps.coe.ess.frmLogin._errorCallback);
+    }, kony.apps.coe.ess.frmLogin._errorCallback);
+  } catch (exception) {
+    kony.apps.coe.ess.frmLogin._errorCallback(exception);
+  }
+}
+
  kony.apps.coe.ess.frmLogin.btnLoginOnclick = function() {
-   if (kony.apps.coe.ess.appconfig.useOkta) {
-     // Do pre-login
-     try {
-       new kony.sdk().init(kony.apps.coe.ess.appconfig.appkey,kony.apps.coe.ess.appconfig.appsecret,kony.apps.coe.ess.appconfig.serviceurl, function(){
-         var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServicePreLogin);
-         preLoginService.login({"browserWidget":frmLogin.browserOkta}, kony.apps.coe.ess.frmLogin._axwayAuth, kony.apps.coe.ess.frmLogin._errorCallback);
-       }, kony.apps.coe.ess.frmLogin._errorCallback);
-     } catch (exception) {
-       kony.apps.coe.ess.frmLogin._errorCallback(exception);
-     }
+   if (kony.apps.coe.ess.appconfig.useOkta === true) {
+     kony.apps.coe.ess.frmLogin.oktaLogin();
    } else {
      kony.apps.coe.ess.frmLogin._backendLogin();
    }
@@ -365,7 +369,7 @@ kony.apps.coe.ess.frmLogin.frmLoginPreshow =
     frmLogin.imgTouchId.isVisible = false;
   }
 
-  if (kony.apps.coe.ess.appconfig.useOkta) {
+  if (kony.apps.coe.ess.appconfig.useOkta === true) {
     frmLogin.flxFields.isVisible = false;
     frmLogin.flxRememberMe.isVisible = false;
     frmLogin.flxSignIn.isVisible = false;

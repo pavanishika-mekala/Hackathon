@@ -19,6 +19,7 @@ kony.apps.coe.ess.appconfig = {
     isSingleQrCode: true,
   	identityServicePreLogin:"DevNextTimesheetOktaLogin",
     axwayAuthService:"DevNextTimesheetOktaUPAxway",
+    axwayEnvironment:"etimesheet",
     useOkta: true,
     workingHours:8,
   /* Steps to obtain the runtime url
@@ -30,7 +31,7 @@ kony.apps.coe.ess.appconfig = {
    	*/
     isRecurringSupported:true,
    	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",
-	ACFAppID :"MYLEAVE",   
+	ACFAppID :"MYLEAVE",
     isShowDeepLinkingAppBeforeInstall:false,
     /* variable is used to enable or disable the Team Leave.Currently frmLeaveHome using this Variable.
     If we assign the variable value to false then Team Leave Feature is not Available.

@@ -337,19 +337,19 @@ function userDetailsSucess(response) {
                             else {
                                 // //After Successfull verification of New user, Start Sync Session
                                 kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-                              	kony.apps.coe.ess.Sync.resetSyncDb(mfresetLocalDBSucess, mfresetLocalDBError);  
+                              	kony.apps.coe.ess.Sync.resetSyncDb(mfresetLocalDBSucess, mfresetLocalDBError);
                               //kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
                             }
                         };
-                      	var mfresetLocalDBSucess = function() {                               
-                         kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});                                
-                         kony.apps.coe.ess.Sync.doDownload = true;                             
-                         kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);                       
-                         };                     
-                        var mfresetLocalDBError = function(error) {                 
+                      	var mfresetLocalDBSucess = function() {
+                         kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+                         kony.apps.coe.ess.Sync.doDownload = true;
+                         kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
+                         };
+                        var mfresetLocalDBError = function(error) {
                          kony.print(JSON.stringify(error));
                         };
-                    
+
                         try {
                             //#ifdef windows8
                             syncAndShowLandingForm();
@@ -461,8 +461,8 @@ function applicationErrorCallback(error) {
 function _removeTokenHeaders(){
   if(kony.sdk.getCurrentInstance() !== undefined && kony.sdk.getCurrentInstance() !== null ){
     // Remove token headers, if present
-    kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header1, "headers");
-    kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_token_header2, "headers");
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, "headers");
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, "headers");
   }
 }
 
@@ -474,7 +474,7 @@ kony.sdk.mvvm.LogoutAction = function() {
     options = {};
     options.slo = true;
 
-    if (kony.apps.coe.ess.appconfig.useOkta) {
+    if (kony.apps.coe.ess.appconfig.useOkta === true) {
       // Clear login variables
       kony.store.removeItem("username");
       kony.store.removeItem("password");
@@ -534,4 +534,211 @@ function onThemeSettingSuccessCallback(successresp) {
 
 function onThemeSettingErrorCallback(errorresp) {
     kony.print(errorresp);
+}
+
+// Override of the OAuth handler
+function OAuthHandler(serviceUrl, providerName, appkey, callback, type, options) {
+    var logger = new konyLogger();
+	var urlType = "/" + type + "/";
+    var isSuccess = true;
+    var isLogout = false;
+    var slo;
+    if(options  && typeof (options["logout"]) == "boolean" && options["logout"]) {
+        isLogout = true;
+    }
+
+    if(!kony.sdk.isNullOrUndefined(options) && (options["slo"] === true || options["slo"] === false)) {
+        slo = options["slo"];
+    }
+
+	if (typeof(XMLHttpRequest) !== 'undefined') {
+		var _window = window;
+		var _popup = null;
+		var _listener = function (event) {
+			var _contents = event.data;
+			_popup.close();
+			_detachEvent();
+			try {
+				var headers = {};
+				if (type == "oauth2" || type == "saml") {
+					headers["Content-Type"] = "application/x-www-form-urlencoded"
+				}
+				callback(urlType + "token", {
+					code: _contents
+				}, headers);
+			} catch (err) {
+				logger.log("exception ::" + err);
+				failureCallback();
+			}
+		};
+		var _attachEvent = function () {
+			if (_window.addEventListener) {
+				_window.addEventListener('message', _listener, false);
+			} else if (_window.attachEvent) {
+				_window.attachEvent('message', _listener);
+			} else {
+				throw new Exception(Errors.INIT_FAILURE, "environment doesn't support event attaching");
+			}
+		};
+
+		var _detachEvent = function () {
+			if (_window.detachEvent) {
+				_window.detachEvent('message', _listener);
+			} else if (_window.removeEventListener) {
+				_window.removeEventListener('message', _listener);
+			} else {
+				throw new Exception(Errors.INIT_FAILURE, "environment doesn't support detaching an event");
+			}
+		};
+		_attachEvent();
+        if(isLogout){
+            _popup = _window.open(serviceUrl + urlType + "logout?provider=" + providerName + "&appkey=" + appkey + "&slo=" + slo);
+        }else{
+            _popup = _window.open(serviceUrl + urlType + "login?provider=" + providerName + "&appkey=" + appkey);
+        }
+	}
+	else {
+		var browserSF;
+		var userDefined = false;
+		if(options && options["browserWidget"] && kony.type(options["browserWidget"]) === "kony.ui.Browser"){
+			browserSF = options["browserWidget"];
+			userDefined = true;
+		}else {
+			var formBasic = {
+				id: "popUp",
+				skin: null,
+				isModal: false,
+				transparencyBehindThePopup: 80,
+				"needAppMenu": false
+			};
+			var formLayout = {
+				containerWeight: 100,
+				padding: [5, 5, 5, 5],
+				"paddingInPixel": true
+			};
+			var formPSP = {
+				"titleBar": true,
+				"titleBarConfig": {
+					"renderTitleText": true,
+					"prevFormTitle": false,
+					"titleBarLeftSideView": "button",
+					"labelLeftSideView": "Back",
+					"titleBarRightSideView": "none"
+				},
+				"titleBarSkin": "slTitleBar"
+			};
+			//to do.. this is a workaround for android browser issue.. need to refactor this code
+			browserSF = new kony.ui.Browser({
+				"id": "browserSF",
+				"text": "Browser",
+				"isVisible": true,
+				"detectTelNumber": true,
+				"screenLevelWidget": true,
+				"enableZoom": false
+			}, {
+				"margin": [0, 0, 0, 0],
+				"marginInPixel": true,
+				"paddingInPixel": true,
+				"containerWeight": 100
+			}, {});
+
+			var prevForm = kony.application.getCurrentForm();
+			var oauthForm = new kony.ui.Form2(formBasic, formLayout, formPSP);
+			oauthForm.add(browserSF);
+			oauthForm.show();
+		}
+		var urlConf;
+		var headersConf = {};
+        if(!kony.sdk.isNullOrUndefined(konyRef.currentClaimToken)){
+            headersConf[Constants.APP_AUTHORIZATION_HEADER] = konyRef.currentClaimToken;
+        }
+        konyRef.appendGlobalHeaders(headersConf);
+		if (isLogout) {
+			browserSF.onSuccess = handleOAuthLogoutSuccessCallback;
+			browserSF.onFailure = handleOAuthLogoutFailureCallback;
+			urlConf = {
+				URL: serviceUrl + urlType + "logout?provider=" + providerName + "&appkey=" + appkey + "&slo=" + slo,
+				requestMethod: constants.BROWSER_REQUEST_METHOD_GET
+			};
+			if(Object.keys(headersConf).length > 0){
+			    urlConf["headers"] = headersConf;
+            }
+			browserSF.requestURLConfig = urlConf;
+        } else {
+            //#ifdef android
+            browserSF.onPageStarted = handleRequestCallback;
+            //#else
+            browserSF.handleRequest = handleRequestCallback;
+            //#endif
+			urlConf = {
+				URL: serviceUrl + urlType + "login?provider=" + providerName + "&appkey=" + appkey,
+				requestMethod: constants.BROWSER_REQUEST_METHOD_GET
+			};
+            if(Object.keys(headersConf).length > 0){
+                urlConf["headers"] = headersConf;
+            }
+			browserSF.requestURLConfig = urlConf;
+		}
+
+		function handleOAuthLogoutSuccessCallback(){
+			if(!userDefined) {
+				var prevFormPostShow = prevForm.postShow;
+				function postShowOverride() {
+					oauthForm.destroy();
+					if (prevFormPostShow) {
+						prevFormPostShow();
+					}
+					prevForm.postShow = prevFormPostShow;
+				}
+
+				prevForm.postShow = postShowOverride;
+				prevForm.show();
+			}
+			callback(isSuccess);
+		}
+
+		function handleOAuthLogoutFailureCallback(){
+			isSuccess = false;
+		}
+
+		function displayPrevForm(){
+			var prevFormPostShow = prevForm.postShow;
+			function postShowOverride() {
+				oauthForm.destroy();
+				if (prevFormPostShow) {
+					prevFormPostShow();
+				}
+				prevForm.postShow = prevFormPostShow;
+			}
+			prevForm.postShow = postShowOverride;
+			prevForm.show();
+		}
+
+		function handleRequestCallback(browserWidget, params) {
+
+			var originalUrl = params["originalURL"];
+			if (typeof(params.queryParams) !== "undefined" && typeof(params.queryParams.code) !== "undefined") {
+				if(!userDefined) {
+					displayPrevForm();
+				}
+				var headers = {};
+				if (type == "oauth2" || type == "saml") {
+					headers["Content-Type"] = "application/x-www-form-urlencoded"
+				}
+				// make request for tokens
+				kony.timer.schedule("oauth2callbacktimer", function (url, callback, code, headers) {
+					return function () {
+						callback(url, {code: code}, headers);
+					}
+				}(urlType + "token", callback, decodeURIComponent(params.queryParams.code), headers), 1, false);
+			} else if(typeof(params.queryParams) !== "undefined" && typeof(params.queryParams.error) !== "undefined"){
+				if(!userDefined) {
+					displayPrevForm();
+				}
+				callback(urlType + "token", {"error": params.queryParams.error}, headers, true);
+			}
+			return false;
+		}
+	}
+
 }

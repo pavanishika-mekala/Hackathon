@@ -1,7 +1,7 @@
 /*** @Author Navya.Inampudi
  * @category Business Logic / Action
- * @desc  Login class. 
- * In this class we handle deeplinking and sso (Single Sign On) related functionalities. 
+ * @desc  Login class.
+ * In this class we handle deeplinking and sso (Single Sign On) related functionalities.
  * @  2016 Kony Inc.
  **/
 kony = kony || {};
@@ -19,7 +19,7 @@ var listOfAvailableApps = [];
  * @member of  deepLinkingSSO
  * @return {void} - frmtobeOpened
  * @Desc - check the Application Launch Mode.
- * 
+ *
  */
 kony.apps.ess.deepLinkingSSO.appServicesAction = function(eventobject) {
     var callback = kony.apps.ess.deepLinkingSSO.appServiceCallback(eventobject);
@@ -90,7 +90,7 @@ if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
         } else {
             return kony.apps.ess.deepLinkingSSO.currentFormValue;
         }
-   
+
     kony.print("---- appServiceCallback:End-------");
 	}
 };
@@ -98,39 +98,40 @@ if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
  * @member of  deepLinkingSSO
  * @return {void} - void
  * @Desc - function to be executed on post show of the form
- * 
+ *
  */
 kony.apps.ess.deepLinkingSSO.frmDummyPostShow =
     function() {
 
 
-        if (kony.apps.coe.ess.globalVariables.isSPA) //added for spa 
+        if (kony.apps.coe.ess.globalVariables.isSPA) //added for spa
         {
             frmLogin.show();
             return;
         }
+    // FIXME: Okta is currently not allowing SSO - in the future the SSO must be managed differently, without requiring the login
     if (kony.apps.ess.deepLinkingSSO.ssotoken) {
-    if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-     // initMbaasApp(function() {
+    if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY) && kony.apps.coe.ess.appconfig.useOkta === false) {
+      initMbaasApp(function() {
         kony.sdk.mvvm.LoginAction("ssoEnable");
-     // });
+      });
     } else {
       frmLogin.show();
     }
   } else if (applaunchMode == 3) {
     var result = this.checkNewUser();
-    if ((!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))) {
-      if (result === true) {
+    if ((!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) || kony.apps.coe.ess.appconfig.useOkta === true) {
+      if (result === true || kony.apps.coe.ess.appconfig.useOkta === true) {
         frmLogin.show();
       } else {
-       // initMbaasApp(function() {
+        initMbaasApp(function() {
           kony.sdk.mvvm.LoginAction("DeepLink");
-       // });
+        });
       }
     } else {
-     // initMbaasApp(function() {
+      initMbaasApp(function() {
         kony.sdk.mvvm.LoginAction("DeepLink");
-      //});
+      });
     }
   }
   kony.print("---frmDummyPostShow:End--------");
@@ -141,7 +142,7 @@ kony.apps.ess.deepLinkingSSO.frmDummyPostShow =
  * @member of  deepLinkingSSO
  * @return {void} - return boolean value.
  * @Desc - its check the user is newUser or Not.
- * 
+ *
  */
 kony.apps.ess.deepLinkingSSO.checkNewUser = function() {
     kony.print("---- checkNewUser:Start-------");
@@ -154,7 +155,7 @@ kony.apps.ess.deepLinkingSSO.checkNewUser = function() {
  * @member of  deepLinkingSSO
  * @return {void} - void
  * @Desc - open the corresponding App based on button click.
- * 
+ *
  */
 kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick = function(status) {
     kony.print("---- btnOtherAppsOnClick:Start-------");
@@ -219,7 +220,7 @@ kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick = function(status) {
  * @member of  deepLinkingSSO
  * @return {void} - void
  * @Desc -check the Required Apps installed or Not.
- * 
+ *
  */
 kony.apps.ess.deepLinkingSSO.appExistedOrNot = function() {
     var noOfESSAppsPresentinDevice = 0;

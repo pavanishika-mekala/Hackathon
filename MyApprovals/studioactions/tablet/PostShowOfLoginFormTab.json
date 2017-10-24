@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__h8d9c8edb053469a822ae019e004d6ec",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "new kony.apps.coe.ess.loginAnimations().animationLoginScreen();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.Approvals.ApprovalsHome.DelegationShow();\nkony.apps.coe.ess.frmLogin.seti18nText();\nkony.apps.coe.ess.frmLogin.btnLoginOnclick();",
+            "codeSnippet": "new kony.apps.coe.ess.loginAnimations().animationLoginScreen();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.Approvals.ApprovalsHome.DelegationShow();\nkony.apps.coe.ess.frmLogin.seti18nText();\nif (kony.application.getCurrentForm().id === \"frmLogin\" && kony.apps.coe.ess.appconfig.useOkta===true) {\n kony.apps.coe.ess.frmLogin.oktaLogin();\n }",
             "parentId": null
         }]
     }

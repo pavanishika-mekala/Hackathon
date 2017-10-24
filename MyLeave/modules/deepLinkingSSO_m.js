@@ -102,11 +102,12 @@
   */
  kony.apps.ess.deepLinkingSSO.frmDummyPostShow =
      function() {
+        // FIXME: Okta is currently not allowing SSO - in the future the SSO must be managed differently, without requiring the login 
          if (kony.apps.ess.deepLinkingSSO.ssotoken) {
-             if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-                 //initMbaasApp(function() {
+             if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY) && kony.apps.coe.ess.appconfig.useOkta === false) {
+                 initMbaasApp(function() {
                      kony.sdk.mvvm.LoginAction("ssoEnable");
-                 //});
+                  });
              }
              else {
                  frmLogin.show();
@@ -114,20 +115,20 @@
          }
          else if (applaunchMode == 3) {
              var result = this.checkNewUser();
-             if ((!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY))) {
-                 if (result === true) {
+             if ((!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) || kony.apps.coe.ess.appconfig.useOkta === true) {
+                 if (result === true || kony.apps.coe.ess.appconfig.useOkta === true ) {
                      frmLogin.show();
                  }
                  else {
-                  //   initMbaasApp(function() {
+                     initMbaasApp(function() {
                          kony.sdk.mvvm.LoginAction("DeepLink");
-                   //  });
+                     });
                  }
              }
              else {
-                 //initMbaasApp(function() {
+                 initMbaasApp(function() {
                      kony.sdk.mvvm.LoginAction("DeepLink");
-                 //});
+                 });
              }
          }
          kony.print("---frmDummyPostShow:End--------");
