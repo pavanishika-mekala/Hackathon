@@ -14,11 +14,12 @@ kony.apps.coe.ess.TouchID = {
    * @return boolean
    */
   isTouchAuthenticationSupported : function() {
-    var status = kony.localAuthentication.getStatusForAuthenticationMode(constants.LOCAL_AUTHENTICATION_MODE_TOUCH_ID);   
-    if(status == 5000) {
-      //Whihc means, Touch Authentication is supported
-      return true;
-    } 
+    var status = kony.localAuthentication.getStatusForAuthenticationMode(constants.LOCAL_AUTHENTICATION_MODE_TOUCH_ID); 
+    //commented as Touch id i snot need for eTimeshet
+//     if(status == 5000) {
+//       //Whihc means, Touch Authentication is supported
+//       return true;
+//     } 
     //Status other than 5000 means, There's no touch authentication supported/enabled
     return false;
   },
