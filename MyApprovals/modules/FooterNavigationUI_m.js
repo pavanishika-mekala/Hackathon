@@ -18,6 +18,7 @@ kony.apps.coe.ess.Approvals.Footer.SetFocus = function (FooterIndex) {
 			handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.Application.errorMessage.InputValidation")));
 			return;
 		}
+      	flxNavigateFooter.isVisible=true;
 		//Reseting to non-focus skins to all the widgets in the foooter
 		//active indicator Reset
 		flxNavigateFooter.flxactivehome.isVisible = false;
