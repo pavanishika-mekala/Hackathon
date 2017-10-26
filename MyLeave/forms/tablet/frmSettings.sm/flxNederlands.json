@@ -44,6 +44,7 @@
     "containerweight": 100,
     "enablescrolling": true,
     "id": "flxNederlands",
+    "ide_onClick": "AS_FlexContainer_a62cf772f2e54929acf0151ff8bb7b4b",
     "info": null,
     "isvisible": true,
     "kuid": "d8ec320dac694e4a829bd8c15269df2d",

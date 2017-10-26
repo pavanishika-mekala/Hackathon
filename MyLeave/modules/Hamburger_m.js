@@ -32,7 +32,7 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     kony.application.getCurrentForm().flxHamburger.setEnabled(false);
     if (hamburgerButton !== undefined) {
         hamburgerButton.onClick = function() {
-          kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmHamburger.lblWelcome")+" "+kony.apps.coe.ess.frmLogin.username;
+          kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.lblWelcome")+" "+kony.apps.coe.ess.frmLogin.username;
             kony.print("-- Start hamburgerButton.onClick --");
 			this.hamburgerMenuItemsShow();
             // Disable clicking on Hamburger.

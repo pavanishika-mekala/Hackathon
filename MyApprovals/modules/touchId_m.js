@@ -15,10 +15,10 @@ kony.apps.coe.ess.TouchID = {
    */
   isTouchAuthenticationSupported : function() {
     var status = kony.localAuthentication.getStatusForAuthenticationMode(constants.LOCAL_AUTHENTICATION_MODE_TOUCH_ID);   
-    if(status == 5000) {
-      //Whihc means, Touch Authentication is supported
-      return true;
-    } 
+//     if(status == 5000) {
+//       //Whihc means, Touch Authentication is supported
+//       return true;
+//     } 
     //Status other than 5000 means, There's no touch authentication supported/enabled
     return false;
   },

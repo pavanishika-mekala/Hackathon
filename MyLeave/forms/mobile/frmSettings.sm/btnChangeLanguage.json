@@ -48,6 +48,7 @@
     "paddinginpixel": false,
     "parent": "flxLanguageChange",
     "pf": "frmSettings",
+    "texti18n": "i18n.ess.myLeave.frmLeaveHome.ChangeLang",
     "wType": "Button",
     "zindex": 2
 }
