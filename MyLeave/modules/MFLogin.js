@@ -468,12 +468,19 @@ function _removeTokenHeaders(){
 
 
 kony.sdk.mvvm.LogoutAction = function() {
+  //commenting auto sync timer
+  	try{
+    kony.timer.cancel("serviceDeltaSyncTimer");
+    }
+    catch(e){
+    kony.print(e);
+    }
     sync.stopSession(function() {
         kony.apps.coe.ess.Sync.UI.stopSyncProgressBar();
     });
     options = {};
     options.slo = true;
-
+	
     if (kony.apps.coe.ess.appconfig.useOkta === true) {
       // Clear login variables
       kony.store.removeItem("username");

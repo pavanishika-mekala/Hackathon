@@ -208,3 +208,36 @@ kony.apps.coe.ess.Sync.syncAsynchronously = function() {
   } 
   kony.print("--End syncAsynchronously--");
 };
+
+kony.apps.coe.ess.Sync.deltaSyncConfig = function() {
+  try{
+    kony.timer.cancel("serviceDeltaSyncTimer");
+  }
+  catch(e){
+    kony.print(e);
+  }
+  try{
+    kony.timer.schedule("serviceDeltaSyncTimer", kony.apps.coe.ess.Sync.deltaSync, kony.apps.coe.ess.globalVariables.timeforAutoSync, true);
+  }
+  catch(e){
+    kony.print(e);
+  }
+};
+kony.apps.coe.ess.Sync.deltaSync=function(){
+  kony.print("-- Start deltaSync.function --");
+  kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+  kony.apps.coe.ess.Sync.doDownload = true;
+  if (!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+    kony.apps.coe.ess.globalVariables.isSyncInProgress = true;
+  }
+  var successCallback = function() {
+    var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.application.getCurrentForm().id);
+    kony.application.showLoadingScreen("", "Refreshing..", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    formController.loadDataAndShowForm();
+    kony.print("-- Completed manual sync from deltaSync --");
+  };//.bind(this);
+  if (kony.application.getCurrentForm().id != "frmLogin") {
+  kony.apps.coe.ess.frmLogin.manualSyncOnClick(successCallback);
+  }
+  kony.print("-- End deltaSync.function --");
+};

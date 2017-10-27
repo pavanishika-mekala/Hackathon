@@ -130,3 +130,5 @@ kony.apps.coe.ess.globalVariables.leaveWalletAvailableSkn="LBL69AF23";
 kony.apps.coe.ess.globalVariables.login_sap_spnego_token="KonySAP-Request-Spnego";
 kony.apps.coe.ess.globalVariables.login_sap_access_token="KonySAP-Request-Access-Token";
 kony.apps.coe.ess.globalVariables.sap_axway_token="konysap-api";
+kony.apps.coe.ess.globalVariables.timeforAutoSync=600;
+

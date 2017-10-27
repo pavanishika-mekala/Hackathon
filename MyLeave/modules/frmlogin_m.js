@@ -152,6 +152,7 @@ kony.apps.coe.ess.frmLogin.afterloginSuccess =
     function() {
         kony.print("-- start kony.apps.coe.ess.frmLogin.afterloginSuccess -- ");
         try {
+            kony.apps.coe.ess.Sync.deltaSyncConfig();
             try {
                 var metricsData = [{
                     "UserName": kony.apps.coe.ess.frmLogin.username
