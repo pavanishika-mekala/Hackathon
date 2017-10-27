@@ -457,6 +457,12 @@ function _removeTokenHeaders(){
 }
 
 kony.sdk.mvvm.LogoutAction = function() {
+  	try{
+    kony.timer.cancel("serviceDeltaSyncTimer");
+    }
+    catch(e){
+    kony.print(e);
+    }
     options = {};
     options.slo = true;
 
