@@ -88,11 +88,11 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
             } else {
                 var approvedDate = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].ApprovedDate).toDDmmmYY();
                 if(response_data[index].StatusName == "Approved"){
-                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" on "+approvedDate;
+                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
                 }else if(response_data[index].StatusName == "Rejected"){
-                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" on "+approvedDate;
+                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
                 }else
-                processedRequest.status_value = response_data[index].StatusName + " on " + approvedDate;
+                processedRequest.status_value = response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate;
             }
             switch (response_data[index].Type) {
                 case "LEAVE":
