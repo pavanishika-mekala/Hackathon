@@ -46,7 +46,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                 res[i].templateType = 0;
             }
             //quering comments data.
-            var query = "select rn.comment as comments, rn.createdts as createdts, emp.First_Name as First_Name from request_note rn left join Employee emp on rn.employee_id = emp.Id where rn.approval_id = '" + requestId + "';";
+             var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id where ar.id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForComments.bind(scopeObj, res), error);
         }
       

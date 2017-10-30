@@ -80,7 +80,9 @@ kony.apps.coe.ess.globalVariables.updateTabEmployeeID = function()
   var successcallback = function(res)
   { 
     kony.apps.coe.ess.globalVariables.Status.updateStatus();
-    kony.apps.coe.ess.globalVariables.EmployeeID = res[0].Id;
+     if(res !== undefined && res !== null && res.length > 0) {
+        kony.apps.coe.ess.globalVariables.EmployeeID = res[0].Id;        
+    }
     //kony.apps.coe.ess.globalVariables.EmployeeID = "910067";
     if( kony.apps.coe.ess.globalVariables.isNativeTablet === true ){ 
         kony.application.dismissLoadingScreen();

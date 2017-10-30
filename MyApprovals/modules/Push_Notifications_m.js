@@ -21,20 +21,29 @@ kony.apps.coe.ess.KMS = {
 
     //Register device for first time
     if(kony.store.getItem(kony.apps.coe.ess.KMS.storeUidString) === null) {
+      kony.print("No UID found. Registering for first time");
       kony.apps.coe.ess.KMS.registerPush();
     }
     kony.print("End - kony.apps.coe.ess.KMS.setPushNotificationCallbacks");
   },
   /**
-   * Register Push Notifications with Google Cloud Messaging (GCM) or Apple Push Notification (APN) Providers.
+   * Register Push Notifications with Google Cloud Messaging (GCM) or Apple Push Notification (APN) Providers. 
    * This function should be called once when app is installed / settings of app
    */
-  registerPush : function() {
+  registerPush : function() { 
     kony.print("Start - kony.apps.coe.ess.KMS.registerPush");
-    try {
+    try {     
       var config;
       //#ifdef android
       config = {senderid : "881052403649"};
+      //#endif
+      
+      //#ifdef tabrcandroid
+      config = {senderid : "881052403649"};
+      //#endif
+      
+      //#ifdef ipad
+      config = [0,1,2];
       //#endif
 
       //#ifdef iphone
@@ -49,7 +58,7 @@ kony.apps.coe.ess.KMS = {
     kony.print("End - kony.apps.coe.ess.KMS.registerPush");
   },
   /**
-   * Sunscribe to Kony Messaging Services.
+   * Sunscribe to Kony Messaging Services. 
    * This function should be called after successful registration with GCM or APN
    * @param {fn} successCall  Called on successful subscription
    * @param {fn} failureCall  Called on error while subscription
@@ -60,8 +69,16 @@ kony.apps.coe.ess.KMS = {
     //#ifdef android
     deviceType = "androidgcm";
     //#endif
+    
+    //#ifdef tabrcandroid
+    deviceType = "androidgcm";
+    //#endif
 
     //#ifdef iphone
+    deviceType = "iphone";
+    //#endif
+    
+    //#ifdef ipad
     deviceType = "iphone";
     //#endif
     var pnsId = kony.store.getItem(kony.apps.coe.ess.KMS.storeUidString);
@@ -107,7 +124,7 @@ kony.apps.coe.ess.KMS = {
     kony.print("End - kony.apps.coe.ess.KMS.subscribeKMS");
   },
   /**
-   * Unsubscribe to Kony Messaging Services.
+   * Unsubscribe to Kony Messaging Services. 
    * Once Unsubscribed, Device will no longer receive Notifications from Mobile Fabric KMS.
    * @param {fn} $successCall Called on successful unsubscription
    * @param {fn} $errorCall Called on error while unsubscribing
@@ -116,7 +133,7 @@ kony.apps.coe.ess.KMS = {
     kony.print("Start - kony.apps.coe.ess.KMS.unsubscribeKMS");
     kony.sdk.getCurrentInstance().getMessagingService().unregister(function(res){
       //unsubscribeKMS Success
-
+  
       if(successCall) {
           kony.print("Executiong successCall of unsubscribeKMS");
           successCall();
@@ -142,27 +159,66 @@ kony.apps.coe.ess.KMS = {
  	*/
   getNotoficationData : function(res) {
     kony.print("Start - kony.apps.coe.ess.KMS.getNotoficationData");
-    var notificationData = {};
-    //#ifdef android
-    //Android Code
-//     notificationData.title = res["gcm.notification.title"];
-//     notificationData.description = res["gcm.notification.body"];
-//     notificationData.module = res.module;
-//     notificationData.contextData = res.contextData;
-    notificationData.title = res["title"];
-    notificationData.description = res["content"];
-    notificationData.module = res.module;
-    notificationData.contextData = res.contextData;
-    //#endif
-    //#ifdef iphone
-    //iPhone Code
-    notificationData.title = res.alert.title;
-    notificationData.description = res.alert.body;
-    notificationData.module = res.module;
-    notificationData.contextData = res.contextData;
-    //#endif
-    kony.print("End - kony.apps.coe.ess.KMS.getNotoficationData");
-    return notificationData;
+    try{
+      var notificationData = {};
+      //#ifdef android
+      //Android Code
+      if(res["gcm.notification.title"] !== null && res["gcm.notification.title"] !== undefined){
+        notificationData.title = res["gcm.notification.title"];
+        notificationData.description = res["gcm.notification.body"];
+        notificationData.module = res.module;
+        notificationData.contextData = res.contextData;
+        notificationData.msgCode = res.msgCode;
+      }else if(res["title"] !== null && res["title"] !== undefined){
+        notificationData.title = res["title"];
+        notificationData.description = res["content"];
+        notificationData.module = res.module;
+        notificationData.contextData = res.contextData;
+        notificationData.msgCode = res.msgCode;
+      }
+      //#endif
+      //#ifdef tabrcandroid
+      //Android Tablet Code
+      if(res["gcm.notification.title"] !== null && res["gcm.notification.title"] !== undefined){
+        notificationData.title = res["gcm.notification.title"];
+        notificationData.description = res["gcm.notification.body"];
+        notificationData.module = res.module;
+        notificationData.contextData = res.contextData;
+        notificationData.msgCode = res.msgCode;
+      }else if(res["title"] !== null && res["title"] !== undefined){
+        notificationData.title = res["title"];
+        notificationData.description = res["content"];
+        notificationData.module = res.module;
+        notificationData.contextData = res.contextData;
+        notificationData.msgCode = res.msgCode;
+      }
+      //#endif
+      //#ifdef iphone
+      //iPhone Code
+      if(res["alert"]["title"] !== null && res["alert"]["title"] !== undefined){
+        notificationData.title = res.alert.title;
+        notificationData.description = res.alert.body;
+        notificationData.module = res.module;
+        notificationData.contextData = res.contextData;
+        notificationData.msgCode = res.msgCode;
+      }
+      //#endif
+      //#ifdef ipad
+      //iPad Code
+      if(res["alert"]["title"] !== null && res["alert"]["title"] !== undefined){
+        notificationData.title = res.alert.title;
+        notificationData.description = res.alert.body;
+        notificationData.module = res.module;
+        notificationData.contextData = res.contextData;
+        notificationData.msgCode = res.msgCode;
+      }
+      //#endif
+      kony.print("End - kony.apps.coe.ess.KMS.getNotoficationData");
+      return notificationData;
+    }catch(e){
+      handleError(e);
+    }
+    
 
   },
   /**
@@ -178,41 +234,119 @@ kony.apps.coe.ess.KMS = {
    *			Filtered notification Data object
    */
   deepDrop : function(data) {
-    kony.print("Start - kony.apps.coe.ess.KMS.deepDrop");
-    var operations = function() {
-      //What are operations to be done after syncing
-      kony.application.dismissLoadingScreen();
-    };
-	kony.print("Notification Data Received for deepdroping : " + JSON.stringify(data));
-    switch(data.module) {
-      case "undefined" :
-        kony.print("Module is not specified." + JSON.stringify(data));
-        break;
-      case "MYAPPROVAL" :
+    try{
+        kony.print("Start - kony.apps.coe.ess.KMS.deepDrop");
+        kony.print("Notification Data Received for deepdroping : " + JSON.stringify(data));
+        var operations = function(data) {
+            //What are operations to be done after syncing
+            //#ifdef ipad
+            var contextData = data.contextData;
+            //#endif
+            //#ifdef iphone
+            var contextData = data.contextData;
+            //#endif
+            //#ifdef android
+            var contextData = JSON.parse(data.contextData);
+            //#endif
+            //#ifdef tabrcandroid
+            var contextData = JSON.parse(data.contextData);
+            //#endif
+            if(data.module === "MYAPPROVAL"){
+              if(contextData === undefined || contextData.id === undefined){
+                  kony.print("Context Data is undefined. Cannot Deep-drop");
+                  kony.application.dismissLoadingScreen();
+                  return;
+              }else{
+                      //#ifdef android
+                      kony.apps.coe.ess.KMS.deepDropForMobile(contextData.id)
+                      //#endif
+                      
+                      //#ifdef tabrcandroid
+                      kony.apps.coe.ess.KMS.deepDropForTablet(contextData.id)
+                      //#endif
 
-        operations = function() {
-           kony.application.dismissLoadingScreen();
-          //Parse ContextData
-          var cData = JSON.parse(data.contextData);
-          if(cData.id === "undefined") {
-          	kony.print("Context Data has no ID attribute to deepdrop");
-            return;
-          }
-          //ToDo
+                      //#ifdef iphone
+                      kony.apps.coe.ess.KMS.deepDropForMobile(contextData.id)
+                      //#endif
+                      
+                      //#ifdef ipad
+                      kony.apps.coe.ess.KMS.deepDropForTablet(contextData.id)
+                      //#endif
+              }
+            }else{
+              kony.print("Unknown module name:"+ + JSON.stringify(data));
+              kony.application.dismissLoadingScreen();
+            }
+            kony.application.dismissLoadingScreen();
         };
-        break;
-
-      default :
-        kony.print("Unknown Module Name." + JSON.stringify(data));
-        break;
+        kony.application.showLoadingScreen("", "Syncing....!", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+        if(kony.sync.isSessionInProgress === false){
+            kony.apps.coe.ess.Sync.doDownload = true;
+            kony.apps.coe.ess.frmLogin.manualSyncOnClick(operations.bind(this,data), function(err) {
+                kony.print("Falied Sync while deepdrop : " + JSON.stringify(err));
+                kony.application.dismissLoadingScreen();
+                handleError(err);
+            });
+        }else{
+            kony.print("Sync already in progress");
+            operations(data);
+        }
+        kony.print("End - kony.apps.coe.ess.KMS.deepDrop");
+    }catch(e){
+        handleError(e);
     }
-    //Sync before performing operations
-    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-    kony.apps.coe.ess.Sync.startSyncSession(operations,function(res){
-      kony.print("Falied Sync while deepdrop : " + JSON.stringify(res));
-      operations();
-    });
-    kony.print("End - kony.apps.coe.ess.KMS.deepDrop");
+    
+  },
+  /**
+   * Deep drop logic for mobile channels
+   */
+  deepDropForMobile: function(requestId){
+    try{
+        kony.print("Dropping" + JSON.stringify(requestId));
+        var idQuery = "SELECT id from approval_request WHERE request_id = '" + requestId + "';"
+        kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", idQuery, function(res){
+          var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmApprovalRequestDetail");
+          formController.loadDataAndShowForm(res[0].id);
+          kony.application.dismissLoadingScreen();
+        }, function(err){
+          kony.print("Error fetching id"+ JSON.stringify(err));
+          handleError(err);
+        });
+      }catch(e){
+        handleError(e);
+    }
+  },
+  /**
+   * Deep drop logic for Tablet channels
+   */
+  deepDropForTablet: function(requestId){
+    try{
+        kony.print("Dropping" + JSON.stringify(requestId));
+      	var idQuery = "SELECT id from approval_request WHERE request_id = '" + requestId + "';"
+        kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", idQuery, function(res){
+          kony.apps.coe.ess.myApprovals.IdFromGoToDetailFlex = res[0].id
+          var query_data = {};
+          query_data.requestType = [];
+          query_data.statusType = [];
+          query_data.totalPeoples = [];
+          frmViewFilterHistory.flexCriterisData.dateval.txt = "-";
+          frmViewFilterHistory.flexCriterisData.reqval.txt = "-";
+          frmViewFilterHistory.flexCriterisData.statusval.txt = "-";
+          frmViewFilterHistory.segMentListView.height = "100%";
+          var historyTabObject = new kony.apps.coe.ess.ApprovalHistoryTab();
+          historyTabObject.filterData(query_data, historyTabObject.filterApplyQuerySuccess.bind(this, "apply"));
+          kony.application.dismissLoadingScreen();
+        }, function(err){
+          kony.print("Error fetching id"+ JSON.stringify(err));
+          handleError(err);
+        });
+        
+        // kony.apps.coe.ess.myApprovals.IdFromGoToDetailFlex = requestId;
+        
+    }catch(e){
+        handleError(e);
+    }
+    
   },
   /**
    * Returns true if device is subscribed for Push Notifications
@@ -264,8 +398,8 @@ kony.apps.coe.ess.KMS = {
 
 kony.apps.coe.ess.KMS.callbacks = {
   /**
-   * Called on Successful Registration with GCM / APN.
-   * @param {string} $tokenID
+   * Called on Successful Registration with GCM / APN. 
+   * @param {string} $tokenID 
    *				UniqueID returned by GCM / APN on registration
    */
   registerSuccess : function(tokenID) {
@@ -276,23 +410,23 @@ kony.apps.coe.ess.KMS.callbacks = {
   },
   /**
    * Error callback of Registration with GCM / APN
-   * @param {Object} $err
-   *				Cause of error
+   * @param {Object} $err 
+   *				Cause of error 
    */
   registerFailure : function(err) {
     kony.print("Push Notifications registration is failed : " + JSON.stringify(err));
   },
   /**
    * Success callback of Deegistration with GCM / APN
-   * @param {Object} $res
+   * @param {Object} $res 
    */
   deregisterSuccess : function(res) {
     kony.print("Push Notifications Deregistrations is successful : " + JSON.stringify(res));
   },
   /**
    * Error callback of Deregistration with GCM / APN
-   * @param {Object} $err
-   *				Cause of error
+   * @param {Object} $err 
+   *				Cause of error 
    */
   deregisterFailure : function(err) {
     kony.print("Push Notifications Deregistrations is failed : " + JSON.stringify(err));
@@ -303,9 +437,15 @@ kony.apps.coe.ess.KMS.callbacks = {
    *				Notification data/payload sent by KMS
    */
   onlineNofication : function(res) {
-     var data = kony.apps.coe.ess.KMS.getNotoficationData(res);
+      var data = kony.apps.coe.ess.KMS.getNotoficationData(res);
+      var translatedText = kony.i18n.getLocalizedString(data.msgCode.toString());
+      if(translatedText !== null && translatedText !== undefined){
+        var descrToSet = translatedText;
+      }else{
+        var descrToSet = data.description;
+      }
     var alertHandler = function(okClicked) {
-
+     
       if(okClicked) {
         kony.print("#### Show button is clicked on Notification Alert");
         kony.apps.coe.ess.KMS.deepDrop(data);
@@ -314,7 +454,7 @@ kony.apps.coe.ess.KMS.callbacks = {
       }
     };
     var alertUI = kony.ui.Alert({
-      "message": data.description,
+      "message": descrToSet,
       "alertType": constants.ALERT_TYPE_CONFIRMATION,
       "alertTitle": data.title,
       "yesLabel": "Show",
@@ -322,7 +462,7 @@ kony.apps.coe.ess.KMS.callbacks = {
       "alertIcon": "",
       "alertHandler": alertHandler
     },{});
-
+    
   },
   /**
    * When device is backgound / off & notification is recieved, This callback is triggered
@@ -335,5 +475,22 @@ kony.apps.coe.ess.KMS.callbacks = {
 
     //var data = kony.apps.coe.ess.KMS.getNotoficationData(res);
     //kony.apps.coe.ess.KMS.deepDrop(data);
+    kony.store.setItem("kony.MYAPPROVALS.latestNotificationData", res);
+  },
+  /**
+   * shows notification data stored in storage
+   */
+  fetchAndShowOfflineNotificationData: function(){
+    var notificationData = kony.store.getItem("kony.MYAPPROVALS.latestNotificationData");
+    if(notificationData !== null && notificationData !== undefined &&  notificationData !== "" ){
+      this.onlineNofication(notificationData);
+      kony.store.removeItem("kony.MYAPPROVALS.latestNotificationData");
+    }else{
+      return;
+    }
+    
   }
 };
+
+
+

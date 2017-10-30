@@ -94,8 +94,60 @@ kony.sdk.mvvm.frmViewFilterHistoryControllerExtension = Class(kony.sdk.mvvm.Base
             frmViewFilterHistory.segMentListView.widgetDataMap = widgetDataMap;
             frmViewFilterHistory.segMentListView.setData(data);
            //SetDataToUIDefault(frmViewFilterHistory);
-            kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
-             this.getController().showForm();
+          frmViewFilterHistory.reqval.text = "";
+          frmViewFilterHistory.statusval.text = "";
+            var areFiltersPresent = {"type": false, "status": false, "date": false};
+        var selectedType = kony.apps.coe.ess.globalVariables.requestTypeSegements.SelectedItems;
+          var selectedStatus = kony.apps.coe.ess.globalVariables.statusTypeSegments.SelectedItems;
+        if (selectedType !== null && selectedType.length > 0) {
+            if (selectedType[0].TYPE.text.toUpperCase() != 'ALL') {
+                for (var i = 0; i < selectedType.length; i++) {
+       				if(i == selectedType.length - 1){
+       					frmViewFilterHistory.reqval.text += selectedType[i].TYPE.text.toUpperCase();
+                        areFiltersPresent.type = true;
+       				}
+       				else{
+                    	frmViewFilterHistory.reqval.text += selectedType[i].TYPE.text.toUpperCase() + ",";
+                        areFiltersPresent.type = true;	
+       				}
+                }
+            }
+            else{
+            	frmViewFilterHistory.reqval.text = kony.i18n.getLocalizedString("18n.ess.MyApprovals.frmRequestList.lblAll.text");
+                areFiltersPresent.type = true;
+            }
+        }
+          if (selectedStatus !== null && selectedStatus.length > 0) {
+            if (selectedStatus[0].TYPE != 'All') {
+                for (var i = 0; i < selectedStatus.length; i++) {
+       				if(i == selectedStatus.length - 1){
+       					frmViewFilterHistory.statusval.text += selectedStatus[i].Status_Name.text;
+                        areFiltersPresent.status = true;
+       				}
+       				else{
+                    	frmViewFilterHistory.statusval.text += selectedStatus[i].Status_Name.text + ",";
+                        areFiltersPresent.status = true;	
+       				}
+                }
+            }
+        }
+        if(frmViewFilterHistory.fromdate !== null && frmViewFilterHistory.fromdate !== undefined && frmViewFilterHistory.fromdate.day !== null && frmViewFilterHistory.fromdate.day !== undefined){
+            frmViewFilterHistory.dateval.text = frmTabApprovalHistory.fromdate.day + "/" + frmTabApprovalHistory.fromdate.month + "/" + frmTabApprovalHistory.fromdate.year;
+            areFiltersPresent.date = true;
+        }
+        if(frmViewFilterHistory.todate !== null && frmViewFilterHistory.todate !== undefined && frmViewFilterHistory.todate.day !== null && frmViewFilterHistory.todate.day !== undefined){
+            frmViewFilterHistory.dateval.text += " - " + frmTabApprovalHistory.todate.day + "/" + frmTabApprovalHistory.todate.month + "/" + frmTabApprovalHistory.todate.year;
+            areFiltersPresent.date = true;
+        }
+        if(areFiltersPresent.date === false && areFiltersPresent.status === false && areFiltersPresent.type === false){
+            frmViewFilterHistory.flexCriterisData.setVisibility(false);
+            frmViewFilterHistory.segMentListView.height = "100%";    
+        }else{
+            frmViewFilterHistory.flexCriterisData.setVisibility(true);
+            frmViewFilterHistory.segMentListView.height = "80%";
+        }
+        kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
+         this.getController().showForm();
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             kony.sdk.mvvm.log.error("Error in bindData of controllerExtension");

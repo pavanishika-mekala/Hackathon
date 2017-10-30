@@ -263,6 +263,9 @@ function userDetailsSucess(response) {
                             updateSyncDate();
                             if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
                                 kony.apps.coe.ess.globalVariables.updateTabEmployeeID(); // open approvals dashboard form
+                              if (isNewUser) {
+                                    kony.apps.coe.ess.KMS.enablePushNotifications();
+                                }
                             } else {
                                 kony.apps.coe.ess.Approvals.Footer.SetFocus(1);
                                 var sqlquery = "select Id,Designation_Id from Employee where IsEmployee = 1";

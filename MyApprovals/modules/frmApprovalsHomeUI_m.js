@@ -635,10 +635,10 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.refreshNowCount = function() {
       "              ON ( approval_request.type_id = request_type.id )" +
       "       LEFT JOIN employee" +
       "              ON ( approval_request.employee_id = employee.id )" +
-      "       LEFT JOIN status" +
-      "              ON ( request_approver.status_id = status.id )" +
       "       LEFT JOIN request_approver" +
       "              ON ( approval_request.id = request_approver.approval_id )" +
+      "       LEFT JOIN status" +
+      "              ON ( request_approver.status_id = status.id )" +
       "       LEFT JOIN request_category" +
       "              ON ( approval_request.category_id = request_category.id )" +
       "       LEFT JOIN attribute" +
