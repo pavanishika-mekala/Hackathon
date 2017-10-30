@@ -1503,4 +1503,4 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCurrentDate = function(){
 
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.updateYear = function(year){
 	frmLeaveHome.lblLeaveHomeYear.text = Number(year).toFixed();
-}
+};

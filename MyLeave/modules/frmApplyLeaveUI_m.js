@@ -516,6 +516,9 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
   hours: "",
 
   onClickOfFullDay: function() {
+    frmApplyLeave.flxHalfDay.isVisible = false;
+    frmApplyLeave.flxTimeLayout.isVisible = false;
+    frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
     frmApplyLeave.btnHours.skin = "sknBtn777777S28pxRoman";
     frmApplyLeave.btnFullDay.skin = "sknBtnBg1C7393S28pxRoman";
     frmApplyLeave.flxTimeline.isVisible = false;
@@ -528,7 +531,9 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
 
     var start_date = kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate;
     var end_date = kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate;
-
+    frmApplyLeave.flxHalfDay.isVisible = false;
+    frmApplyLeave.flxTimeLayout.isVisible = false;
+    frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
     if (frmApplyLeave.flxRecurringLeave.imgRecurringOn.isVisible) {
       frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
       frmApplyLeave.btnHours.skin = "sknBtnBg1C7393S28pxRoman";
@@ -536,7 +541,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       frmApplyLeave.flxTimeline.removeAll();
       kony.apps.coe.Reusable.createTimeline.setStartandEndTime();
       kony.apps.coe.Reusable.createTimeline.TimelineUI(frmApplyLeave.flxTimeline);
-      frmApplyLeave.flxTimeline.isVisible = true;
+      //frmApplyLeave.flxTimeline.isVisible = true;
       frmApplyLeave.lblTopSep.isVisible = true;
       this.selectedItem = "hours";
       this.start_time = "8 AM";
@@ -552,7 +557,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       frmApplyLeave.flxTimeline.removeAll();
       kony.apps.coe.Reusable.createTimeline.setStartandEndTime();
       kony.apps.coe.Reusable.createTimeline.TimelineUI(frmApplyLeave.flxTimeline);
-      frmApplyLeave.flxTimeline.isVisible = true;
+     // frmApplyLeave.flxTimeline.isVisible = true;
       frmApplyLeave.lblTopSep.isVisible = true;
       this.selectedItem = "hours";
       this.start_time = "8 AM";
@@ -560,6 +565,77 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       this.hours = 2.0;
     }
   },
+  onClickofHoursSel : function(startTime,endTime,hour){
+    if(hour === undefined){
+      frmApplyLeave.btnFrom.text = "08:00";
+      frmApplyLeave.btnTo.text = "10:00";
+      frmApplyLeave.lblDurationHours.text  = "2 hours";
+      this.start_time = "080000";
+      this.end_time = "100000";
+      this.hours = 2.0;
+    }else{
+      frmApplyLeave.btnFrom.text = String(startTime).substring(0,2)+":"+String(startTime).substring(2,4);
+      frmApplyLeave.btnTo.text = String(endTime).substring(0,2)+":"+String(endTime).substring(2,4); //10:00";
+      frmApplyLeave.lblDurationHours.text =  hour+" hours";
+      this.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(startTime);
+      this.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(endTime);
+      this.hours = hour;
+    }
+    frmApplyLeave.flxHalfDay.isVisible = true;
+    if(frmApplyLeave.btnHours.skin !== "sknBtnBg1C7393S28pxRoman"){
+      frmApplyLeave.flxHalfDay.isVisible = true;
+      frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHours.skin = "sknBtnBg1C7393S28pxRoman";
+      frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
+
+    }else{
+      frmApplyLeave.flxHalfDay.isVisible = false;
+      frmApplyLeave.flxTimeLayout.isVisible = false;
+      frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHours.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
+    }
+
+    this.selectedItem = "hours";
+
+  },
+
+  onClickofHalfDay : function(startTime,endTime,hour){
+    if(hour === undefined){
+      frmApplyLeave.btnFrom.text = "08:00";
+      frmApplyLeave.btnTo.text = "12:00";
+      frmApplyLeave.lblDurationHours.text  = "4 hours";
+      this.start_time = "080000";
+      this.end_time = "120000";
+      this.hours = 4.0;
+    }else{
+      frmApplyLeave.btnFrom.text = String(startTime).substring(0,2)+":"+String(startTime).substring(2,4);
+      frmApplyLeave.btnTo.text = String(endTime).substring(0,2)+":"+String(endTime).substring(2,4); //10:00";
+      frmApplyLeave.lblDurationHours.text =  hour+" hours";
+      this.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(startTime);
+      this.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(endTime);
+      this.hours = hour;
+    }
+    frmApplyLeave.flxHalfDay.isVisible = true;
+    if(frmApplyLeave.btnHalfDay.skin !== "sknBtnBg1C7393S28pxRoman"){
+      frmApplyLeave.flxHalfDay.isVisible = true;
+      frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHours.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHalfDay.skin = "sknBtnBg1C7393S28pxRoman";
+
+    }else{
+      frmApplyLeave.flxHalfDay.isVisible = false;
+      frmApplyLeave.flxTimeLayout.isVisible = false;
+      frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHours.skin = "sknBtn777777S28pxRoman";
+      frmApplyLeave.btnHalfDay.skin = "sknBtn777777S28pxRoman";
+    }
+
+    frmApplyLeave.flxTimeline.isVisible = false;
+    this.selectedItem = "hours";
+
+  },
+
 
   updateDuration: function(hours, start_time, end_time) {
     this.start_time = start_time;
@@ -1057,6 +1133,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
   },
 
   onClickOfSubmit: function(IntervalStart_date, IntervalEnd_date, recurring_id, leave_id_recurrence, dates, holidayResponse) {
+    
     kony.apps.coe.ess.myLeave.applyLeave.submitLeave.imgIndex = 0;
     var dataToForward = {};
     if (kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate !== undefined) {
@@ -1089,42 +1166,47 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         var dateTemp = new Date();
         lid = "MYLEAVE_V2_" + leaveEntryData.start_date + "_T_" + dateTemp.getMilliseconds();
       }
-      dataToForward.start_date = leaveEntryData.start_date;
-      dataToForward.end_date = leaveEntryData.end_date;
-      //dataToForward.leave_type = (frmApplyLeave[kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType].text).trim();
-      dataToForward.leave_type = (kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType).trim();
-      leaveEntryData.leave_type_id = (kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType);//.split("btnLeaveType")[1];
-      var time = kony.apps.coe.ess.myLeave.applyLeave.convertTo24Hour(kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.start_time);
-      if (parseInt(time) < 10) {
-        time = "0" + time;
-      }
-      leaveEntryData.start_time = (time + "0000").replace(/\s/g, "");
-      leaveEntryData.end_time = (kony.apps.coe.ess.myLeave.applyLeave.convertTo24Hour(kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time) + "0000").replace(/\s/g, "");
-      leaveEntryData.reason_desc = frmApplyLeave.txtComments.text;
-      dataToForward.start_time = leaveEntryData.start_time;
-      dataToForward.end_time = leaveEntryData.end_time;
-      leaveEntryData.status_id = "7";
-      var date1 = new Date();
-      var timestamp = date1.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date1.getMonth() + 1) + "" + getTimeHourswithZero(date1.getDate()) + "" + getTimeHourswithZero(date1.getHours()) + "" + getTimeHourswithZero(date1.getMinutes()) + "" + getTimeHourswithZero(date1.getSeconds());
-      leaveEntryData.createdts = timestamp;
-      leaveEntryData.lastmodifiedts = timestamp;
-      date = new Date();
-      var len = lid.length;
-      leaveEntryData.id = lid;
-      kony.apps.coe.ess.myLeave.applyLeave.leave_id = leaveEntryData.id;
-      leaveEntryData.employee_id = kony.apps.coe.ess.globalVariables.employeeId;
-      if (kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId !== undefined) {
-        leaveEntryData.id = kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId;
+      if(Number(leaveEntryData.no_of_hours) < 0){
+        alert("Please select a valid time duration");
+      }else{
+        dataToForward.start_date = leaveEntryData.start_date;
+        dataToForward.end_date = leaveEntryData.end_date;
+        //dataToForward.leave_type = (frmApplyLeave[kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType].text).trim();
+        dataToForward.leave_type = (kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType).trim();
+        leaveEntryData.leave_type_id = (kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType);//.split("btnLeaveType")[1];
+        // var time = kony.apps.coe.ess.myLeave.applyLeave.convertTo24Hour(kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.start_time);
+        var startTime = kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.start_time;
+        var endTime = kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time;
+        leaveEntryData.start_time = (startTime + "0000").replace(/\s/g, "");
+        leaveEntryData.end_time = (endTime + "0000").replace(/\s/g, "");
+        //leaveEntryData.end_time = (kony.apps.coe.ess.myLeave.applyLeave.convertTo24Hour(kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time) + "0000").replace(/\s/g, "");
+        leaveEntryData.reason_desc = frmApplyLeave.txtComments.text;
+        dataToForward.start_time = leaveEntryData.start_time;
+        dataToForward.end_time = leaveEntryData.end_time;
+        leaveEntryData.status_id = "7";
+
+        var date1 = new Date();
+        var timestamp = date1.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date1.getMonth() + 1) + "" + getTimeHourswithZero(date1.getDate()) + "" + getTimeHourswithZero(date1.getHours()) + "" + getTimeHourswithZero(date1.getMinutes()) + "" + getTimeHourswithZero(date1.getSeconds());
+        leaveEntryData.createdts = timestamp;
+        leaveEntryData.lastmodifiedts = timestamp;
+        date = new Date();
+        var len = lid.length;
+        leaveEntryData.id = lid;
         kony.apps.coe.ess.myLeave.applyLeave.leave_id = leaveEntryData.id;
-        this.leaveEntryData = leaveEntryData;
-        dataToForward.isNewLeave = false;
-        kony.application.showLoadingScreen("", "", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-        kony.apps.coe.ess.MVVM.update("MYLEAVE", "leave", leaveEntryData, (this.leaveNoteUpdate).bind(this, dataToForward, dates, holidayResponse), (this.leaveUpdateError).bind(this));
-      } else {
-        this.leaveEntryData = leaveEntryData;
-        dataToForward.isNewLeave = true;
-        kony.application.showLoadingScreen("", "", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-        kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave", leaveEntryData, (this.leaveNoteCreate).bind(this, dataToForward, dates, holidayResponse), (this.leaveCreateError).bind(this));
+        leaveEntryData.employee_id = kony.apps.coe.ess.globalVariables.employeeId;
+        if (kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId !== undefined) {
+          leaveEntryData.id = kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId;
+          kony.apps.coe.ess.myLeave.applyLeave.leave_id = leaveEntryData.id;
+          this.leaveEntryData = leaveEntryData;
+          dataToForward.isNewLeave = false;
+          kony.application.showLoadingScreen("", "", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+          kony.apps.coe.ess.MVVM.update("MYLEAVE", "leave", leaveEntryData, (this.leaveNoteUpdate).bind(this, dataToForward, dates, holidayResponse), (this.leaveUpdateError).bind(this));
+        } else {
+          this.leaveEntryData = leaveEntryData;
+          dataToForward.isNewLeave = true;
+          kony.application.showLoadingScreen("", "", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+          kony.apps.coe.ess.MVVM.createRecord("MYLEAVE", "leave", leaveEntryData, (this.leaveNoteCreate).bind(this, dataToForward, dates, holidayResponse), (this.leaveCreateError).bind(this));
+        }
       }
     }
   },
@@ -1948,4 +2030,94 @@ kony.apps.coe.ess.myLeave.applyLeave.onClickOfApplySubmit = function() {
     kony.apps.coe.ess.myLeave.applyLeave.submitLeave.onClickOfSubmit();
   }
   return;
+};
+
+//Showing TimePicker form
+kony.apps.coe.ess.myLeave.applyLeave.showTimePicker = function(selectionEvent) {
+  frmApplyLeave.flxTimeLayout.isVisible = true;
+  var x = frmApplyLeave.btnTo.text;
+  var y = frmApplyLeave.btnFrom.text;
+  var hrStart = y.slice(0,2);
+  var minStart = y.slice(3,5);
+  var hrEnd = x.slice(0,2);
+  var minEnd = x.slice(3,5);
+  if(selectionEvent === "Start"){
+    frmApplyLeave.pickTime.isVisible = true;
+    frmApplyLeave.pickTime2.isVisible = false;
+  }else if(selectionEvent === "End"){
+    frmApplyLeave.pickTime.isVisible = false;
+    frmApplyLeave.pickTime2.isVisible = true;
+  }
+};
+
+//Dismissing TimePicker form
+kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
+  frmApplyLeave.flxTimeLayout.isVisible = false;
+      if(frmApplyLeave.pickTime.isVisible === true){
+      var selection = frmApplyLeave.pickTime.selectedKeyValues;
+      frmApplyLeave.btnFrom.text = selection[0][1]+":"+selection[1][1];
+    }else if(frmApplyLeave.pickTime2.isVisible === true){
+      var selection = frmApplyLeave.pickTime2.selectedKeyValues;
+      frmApplyLeave.btnTo.text = selection[0][1]+":"+selection[1][1];
+    }
+      var x = frmApplyLeave.btnTo.text;
+      var y = frmApplyLeave.btnFrom.text;
+      var hrStart = y.slice(0,2);
+      var minStart = y.slice(3,5);
+      var hrEnd = x.slice(0,2);
+      var minEnd = x.slice(3,5);
+      kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected(hrStart,minStart,hrEnd,minEnd);
+};
+
+kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minStart,hrEnd,minEnd){
+  var btnAction = "";
+  if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
+    btnAction = "HalfDay";
+  }
+  if(frmApplyLeave.btnHours.skin == "sknBtnBg1C7393S28pxRoman"){
+    btnAction = "Hours";
+  }
+  var hr = hrStart+minStart;
+  var min = hrEnd+minEnd;
+  var d = new Date();
+  var start = new Date(d.getYear(), d.getMonth(), d.getDate(), hrStart, minStart, 0).getTime();
+  var end = new Date(d.getYear(), d.getMonth(), d.getDate(), hrEnd, minEnd, 0).getTime();
+  var hours = (Number(end)-Number(start))/(1000*60*60);
+  var btnToText;
+  kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(hr);
+  kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(min);
+  kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.hours = hours;
+  frmApplyLeave.lblDurationHours.text = hours + " hours";
+  //   if((Number(hrStart) > Number(hrEnd)) || (Number(hrStart) == Number(hrEnd)) && (Number(minStart) >= Number(minEnd))){
+  //      alert("Please select valid time"); //when start time is less than end time
+  //     if(btnAction == "HalfDay"){
+  //       frmApplyLeave.btnFrom.text = "08:00";
+  //       frmApplyLeave.btnTo.text = "12:00";
+  //       frmApplyLeave.lblDurationHours.text = "4 hours";
+  //     }else if(btnAction == "Hours"){
+  //       frmApplyLeave.btnFrom.text = "08:00";
+  //       frmApplyLeave.btnTo.text = "10:00";
+  //       frmApplyLeave.lblDurationHours.text = "2 hours";
+  //     }
+  //   }
+  if((Number(hours) > 4 && btnAction == "HalfDay") ||( Number(hours) > 10 && btnAction == "Hours")){
+    if(btnAction == "HalfDay"){
+      alert("Please select duration hours less than or equal to 4");
+    }else if(btnAction == "Hours"){
+      alert("Please select duration hours less than or equal to 10");
+    }
+    }
+};
+
+kony.apps.coe.ess.myLeave.applyLeave.findHours = function(hrStart,minStart,hrEnd,minEnd){
+  var d = new Date();
+  var start = new Date(d.getYear(), d.getMonth(), d.getDate(), hrStart, minStart, 0).getTime();
+  var end = new Date(d.getYear(), d.getMonth(), d.getDate(), hrEnd, minEnd, 0).getTime();
+  var hours = (Number(end)-Number(start))/(1000*60*60);
+  return hours;
+};
+
+kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins = function(time){
+  var hrMins = (time + "00").replace(/\s/g, "");
+  return hrMins;
 };

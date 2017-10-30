@@ -53,8 +53,8 @@
             "wrapping": 2
         }
     },
-    "isvisible": false,
-    "kuid": "b4cb9c313db147469e310398c746f648",
+    "isvisible": true,
+    "kuid": "aadb85bb27e34caf8c88c89f10ae87ed",
     "name": "kony.ui.Label",
     "parent": "flxFullHalfDay",
     "pf": "frmApplyLeave",

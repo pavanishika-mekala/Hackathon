@@ -1,0 +1,17 @@
+{
+    "AS_Button_ge19a19ec9e34ee3ab0b54bc304a592c": {
+        "id": "AS_Button_ge19a19ec9e34ee3ab0b54bc304a592c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_g0a69b3c8d9b443c9b851e90f9a3e3fb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.showTimePicker(\"Start\");\nfrmApplyLeave.btnTimeDone.left = \"40%\";",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_Button_ie06ec94f31347349868f46226bced36": {
+        "id": "AS_Button_ie06ec94f31347349868f46226bced36",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_acb4e798f0b34e5d99456b0e13f43880",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickofHalfDay();",
+            "callbackType": null
+        }]
+    }
+}

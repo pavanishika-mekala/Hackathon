@@ -1,0 +1,24 @@
+{
+    "AS_PickerView_f3628c3444604918908858c087418050": {
+        "id": "AS_PickerView_f3628c3444604918908858c087418050",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "component"
+        }, {
+            "datatype": "string",
+            "name": "keyselected"
+        }],
+        "contextObj": {
+            "name": "frmApplyLeave",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f5021e86ef384afca52c13c057b5f87e"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

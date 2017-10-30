@@ -1,5 +1,5 @@
 /*
-  * kony-sdk-ide Version SDK-GA-7.3.0.10
+  * kony-sdk-ide Version SDK-GA-7.3.0.15
   */
         
 /**
@@ -30,6 +30,15 @@ kony.sdk = function() {
 	};
 	var userId = "";
 	var sessionId = "";
+
+    if(kony.sdk.getSdkType() === "js" && typeof(kony.setUserID) === 'function') {
+        var userIDflagGet = kony.ds.read("userIDFromLicenseFlag");
+        if(kony.sdk.isNullOrUndefined(userIDflagGet)) {
+            var userIDflagSet = new Array;
+            userIDflagSet.push("false");
+            kony.ds.save(userIDflagSet, "userIDFromLicenseFlag");
+        }
+    }
 
 	if (kony.internal && kony.internal.sdk && kony.internal.sdk.Services) {
 		this.internalSdkObject = new kony.internal.sdk.Services();
@@ -166,7 +175,7 @@ kony.sdk.isInitialized = false;
 kony.sdk.currentInstance = null;
 kony.sdk.isLicenseUrlAvailable = true;
 kony.sdk.constants = kony.sdk.constants || {};
-kony.sdk.version = "SDK-GA-7.3.0.10";
+kony.sdk.version = "SDK-GA-7.3.0.15";
 kony.sdk.logger = new konyLogger();
 kony.sdk.syncService = null;
 kony.sdk.nativestore = kony.sdk.nativestore || new konyDataStore();
@@ -438,13 +447,6 @@ kony.sdk.prototype.init = function(appKey, appSecret, serviceUrl, successCallbac
 			konyRef.mainRef.config = data;
 			konyRef.servicedoc = data;
 			konyRef.mainRef.appId = data.appId;
-
-            if(!kony.sdk.isNullOrUndefined(data.reportingsvc)) {
-
-                kony.sdk.setLicenseCall(appKey,appSecret,data);
-            }
-
-
 			var processServiceDocResult = konyRef.initWithServiceDoc(appKey, appSecret, data);
 			if (processServiceDocResult === true) {
 				logger.log("### init::_doInit processing service document successful");
@@ -565,13 +567,17 @@ kony.sdk.prototype.initWithServiceDoc = function(appKey, appSecret, serviceDoc) 
 			if (konyRef.internalSdkObject) {
 				konyRef.internalSdkObject.initWithServiceDoc(appKey, appSecret, servConfig);
 				if (konyRef.internalSdkObject.setClientParams) {
-					konyRef.internalSdkObject.setClientParams(konyRef.getClientParams());
+					if(appConfig){
+						konyRef.internalSdkObject.setClientParams({"aid":appConfig.appId, "aname":appConfig.appName});
+					} else {
+						konyRef.internalSdkObject.setClientParams(konyRef.getClientParams());
+					}
+					
 				}
 				logger.log("### init::internal sdk object initialized");
 			}
 			logger.log("### init::_doInit::_processServiceDoc parsing service document done");
 			kony.sdk.isInitialized = true;
-			kony.sdk.overrideUserId("");
 			if (kony.sdk.metric && kony.os.deviceInfo().name == "thinclient") {
 					kony.sdk.metric.flushEvents();
 		    }
@@ -579,6 +585,7 @@ kony.sdk.prototype.initWithServiceDoc = function(appKey, appSecret, serviceDoc) 
 			if(!kony.sdk.isNullOrUndefined(servConfig.reportingsvc) )
 			{
 			    kony.sdk.saveMetadatainDs(appKey,appSecret,servConfig);
+				kony.sdk.setLicenseCall(appKey,appSecret,servConfig);
 			}
 
 			if(kony.sdk.getSdkType() == "js"){
@@ -607,7 +614,7 @@ kony.sdk.prototype.sessionChangeHandler = function(changes) {
 		}
 	}
 	if (changes["userId"] != undefined) {
-		konyRef.overrideUserIdFlag = false;
+		konyRef.overrideUserIdFlag = true;
 		userId = changes["userId"];
 		konyRef.setCurrentUserId(userId);
 		if (konyRef.metricsServiceObject && konyRef.metricsServiceObject.setUserId) {
@@ -1187,7 +1194,7 @@ function IdentityService(konyRef, rec) {
 	var processMultipleProvidersResponse = function(data, providerName){
 
         if (data && data.profiles) {
-        	//konyRef.isAnonymousProvider = false;
+        	konyRef.isAnonymousProvider = false;
             for (var provider in data.profiles) {
                 if (!konyRef.tokens[provider]) {
                     konyRef.tokens[provider] = {};
@@ -1195,7 +1202,7 @@ function IdentityService(konyRef, rec) {
                 konyRef.tokens[provider].profile = data.profiles[provider];
             }
         } else if (data && providerName && data.profile) {
-            //konyRef.isAnonymousProvider = false;
+            konyRef.isAnonymousProvider = false;
             konyRef.tokens[providerName].profile = data.profile;
         }
 
@@ -1378,11 +1385,11 @@ function IdentityService(konyRef, rec) {
             if(_type == "oauth2" && kony.sdk.getSdkType() == "js"){
                 url = _serviceUrl + "/oauth2/logout?provider=" + _providerName;
             }else{
-                url = _serviceUrl + "/logout?provider=" + _providerName
+                url = _serviceUrl + "/logout?provider=" + _providerName;
             }
 
             networkProvider.post(url, formdata, {
-                "Authorization": claimsTokenValue,
+                "X-Kony-Authorization": claimsTokenValue,
                 "Accept": "*/*"
             },
             function(data) {
@@ -6727,7 +6734,7 @@ kony.sdk.verifyAndCallClosure = function(closure, params) {
 kony.sdk.overrideUserId = function(userId){
 	if(konyRef.overrideUserIdFlag) {
 		if(kony.sdk.getSdkType() === "js" && typeof(kony.setUserID) === 'function') {
-			kony.setUserID(userId);
+			kony.setUserID(userId,true);
 			konyRef.overrideUserIdFlag = true;
 		}else{
 			konyRef.setCurrentUserId(userId);
@@ -7923,9 +7930,15 @@ kony.sdk.getPayload = function(konyRef) {
     payload.dm = kony.os.deviceInfo().model;
     payload.did = kony.sdk.getDeviceId(kony.os.deviceInfo().name);
     payload.ua = kony.os.userAgent();
-	var clientParams = konyRef.getClientParams();
-	payload.aid =  clientParams.aid ? clientParams.aid : konyRef.mainRef.baseId;
-	payload.aname = clientParams.aname ? clientParams.aname : konyRef.mainRef.name;
+	if(appConfig){
+		payload.aid =  appConfig.appId;
+		payload.aname = appConfig.appName;
+	} else {
+		var clientParams = konyRef.getClientParams();
+		payload.aid =  clientParams.aid ? clientParams.aid : konyRef.mainRef.baseId;
+		payload.aname = clientParams.aname ? clientParams.aname : konyRef.mainRef.name;
+	}
+	
 	payload.chnl = kony.sdk.getChannelType();
 	payload.plat = kony.sdk.getPlatformName();
 	if(payload.plat === "ios"  && kony.os.deviceInfo().name !== "thinclient") {
@@ -8008,9 +8021,19 @@ kony.mbaas.invokeMbaasServiceFromKonyStudio = function(url, inputParam, serviceI
 	}
 	var integrationService = currentInstance.getIntegrationService(serviceID);
 	var options = {};
+	if (inputParam && inputParam["httpconfig"]) {
+		options["httpconfig_old"] = inputParam["httpconfig"];
+		delete inputParam["httpconfig"];
+	}
 	if (inputParam && inputParam["httpRequestOptions"] && inputParam["httpRequestOptions"] instanceof Object) {
 		options["httpRequestOptions"] = inputParam["httpRequestOptions"];
 		delete inputParam["httpRequestOptions"];
+	}
+	if (inputParam && inputParam["xmlHttpRequestOptions"] && inputParam["xmlHttpRequestOptions"] instanceof Object) {
+		options["xmlHttpRequestOptions"] = inputParam["xmlHttpRequestOptions"];
+		delete inputParam["xmlHttpRequestOptions"];
+	} else { // Added code for backward compat for invokeService in DW and SPA
+		options["xmlHttpRequestOptions"] = {"enableWithCredentials": true};
 	}
 	var headers = null;
 	if (inputParam && inputParam["httpheaders"]) {
@@ -8174,7 +8197,7 @@ kony.sdk.cloneObject = function(obj){
 kony.sdk.setLicenseCall = function(appKey,appSecret,data){
 		//Changing isturlbase for new server.
 		var reportingServiceUrl = data.reportingsvc.session;
-		if(typeof(appConfig) != "undefined") {
+		if(typeof(appConfig) != "undefined" && appConfig.isturlbase != reportingServiceUrl.replace("/IST", "")) {
 			appConfig.isturlbase = reportingServiceUrl.replace("/IST", "");
 
 			if ((appKey != appConfig.appKey) && (appSecret != appConfig.appSecret)) {
@@ -8541,7 +8564,6 @@ function IntegrationService(konyRef, serviceName) {
 	function _invokeOperation(operationName, headers, data, isRetryNeeded, successCallback, failureCallback, options) {
 
 		var requestData = {};
-		var konyRef = kony.sdk.getCurrentInstance();
 		var logger = new konyLogger();
 		logger.log("Entered into _invokeOperation operationName: " + operationName + ", isRetryNeeded: " + isRetryNeeded);
 		var reportingData = kony.sdk.getPayload(konyRef);
@@ -8560,27 +8582,19 @@ function IntegrationService(konyRef, serviceName) {
 			kony.sdk.metric.pushEventsToBufferArray();
 			requestData.events = kony.sdk.metric.reportEventBufferBackupArray;
 		}
-		var httpConfig = null;
-		if (data && data["httpconfig"]) {
-			options["httpconfig_old"] = data["httpconfig"];
-			delete data["httpconfig"];
-		}
 		for (var key in data) {
 			requestData[key] = data[key];
 		}
 		reportingData.svcid = operationName;
-		var token;
-		for (var i in konyRef.tokens) {
-			if (konyRef.tokens.hasOwnProperty(i) && typeof(i) !== 'function') {
-				token = konyRef.tokens[i];
-				break;
-			}
+		var token = konyRef.currentClaimToken;
+		if(!token){
+			token = kony.sdk.getCurrentInstance().currentClaimToken;
 		}
 
 		requestData["konyreportingparams"] = JSON.stringify(reportingData);
 		var defaultHeaders = {
 			"Content-Type": "application/x-www-form-urlencoded",
-			"X-Kony-Authorization": konyRef.currentClaimToken
+			"X-Kony-Authorization": token
 		};
 		if(typeof(svcObj) === 'object' &&  svcObj.version){
 			defaultHeaders["X-Kony-API-Version"] = svcObj.version;
@@ -9210,7 +9224,7 @@ function MessagingService(konyRef) {
                             dateString = new Date(date).toString().slice(4,24);
                             format = "MMM dd yyyy HH:mm:ss";
                         }else{
-                            dateString = new Date(date).toString().slice(4,24) + " +0530";
+                            dateString = new Date(date).toString().slice(4,24) + " " + new Date().toString().match(/([-\+][0-9]+)\s/)[1];
                             format = "MMM dd yyyy HH:mm:ss Z";
                         }
                         logger.log("### MessagingService::manageGeoBoundariesCallback invoking local notification");
@@ -9448,7 +9462,13 @@ kony.sdk.prototype.getMetricsService = function() {
 
 	if (this.internalSdkObject) {
 		//framework implementation
+		//Changes done for workaround build for android target 6.0 and 7.0 (Ticket #86123 and #87155)
+		//TODO: need to remove this commit once Network changes are completed.
+		//#ifdef KONYSYNC_ANDROID
+		this.metricsServiceObject = new MetricsService(this);
+		//#else 
 		this.metricsServiceObject = this.internalSdkObject.getMetricsService();
+		//#endif
 	} else {
 		//sdk local implementation
 		this.metricsServiceObject = new MetricsService(this);
