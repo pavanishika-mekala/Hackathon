@@ -453,6 +453,7 @@ function _removeTokenHeaders(){
     // Remove token headers, if present
     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, "headers");
     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, "headers");
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(Constants.AUTHORIZATION_HEADER, "headers");
   }
 }
 

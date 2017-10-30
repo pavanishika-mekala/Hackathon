@@ -46,6 +46,7 @@ kony.apps.coe.ess.frmLogin._errorCallback =
     // Remove token headers, if present
     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, "headers");
     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, "headers");
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(Constants.AUTHORIZATION_HEADER, "headers");
 
     handleError(error);
   };
@@ -70,6 +71,7 @@ kony.apps.coe.ess.frmLogin._axwayAuth = function() {
       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, response.security_attributes_api.access_token_api, "headers");
       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, response.security_attributes_api.access_token_api, "headers");
       kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.sap_axway_token, kony.apps.coe.ess.appconfig.axwayEnvironment, "headers");
+      kony.sdk.getCurrentInstance().setGlobalRequestParam(Constants.AUTHORIZATION_HEADER, "Bearer "+response.security_attributes_api.access_token_api, "headers");
 
       kony.application.dismissLoadingScreen();
 
