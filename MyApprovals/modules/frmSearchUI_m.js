@@ -87,7 +87,12 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                 processedRequest.status_value = response_data[index].StatusName;
             } else {
                 var approvedDate = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].ApprovedDate).toDDmmmYY();
-                processedRequest.status_value = response_data[index].StatusName + " on " + approvedDate;
+                if(response_data[index].StatusName == "Approved"){
+                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                }else if(response_data[index].StatusName == "Rejected"){
+                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                }else
+                processedRequest.status_value = response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate;
             }
             switch (response_data[index].Type) {
                 case "LEAVE":
@@ -268,9 +273,9 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
         query_data.statusType = [];
         query_data.totalPeoples = [];
         if (query_data.selectedRequestType != null) {
-            if (query_data.selectedRequestType[0].request_name != 'All') {
+            if (query_data.selectedRequestType[0].id != 'All') {
                 for (var i = 0; i < query_data.selectedRequestType.length; i++) {
-                    query_data.requestType.push(query_data.selectedRequestType[i].request_name);
+                    query_data.requestType.push(query_data.selectedRequestType[i].id);
                 }
             }
         }
@@ -317,9 +322,9 @@ kony.apps.coe.ess.Approvals.frmSearch.onReachingEndOfSegment = function() {
         query_data.statusType = [];
         query_data.totalPeoples = [];
         if (query_data.selectedRequestType != null) {
-            if (query_data.selectedRequestType[0].request_name != 'All') {
+            if (query_data.selectedRequestType[0].id != 'All') {
                 for (var i = 0; i < query_data.selectedRequestType.length; i++) {
-                    query_data.requestType.push(query_data.selectedRequestType[i].request_name);
+                    query_data.requestType.push(query_data.selectedRequestType[i].id);
                 }
             }
         }
