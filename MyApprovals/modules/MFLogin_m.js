@@ -52,7 +52,7 @@ kony.sdk.mvvm.LoginAction = function(status) {
                     "callerId": appserviceUsername + kony.sdk.mvvm.Utils.getDeviceID(),
                     "loginOptions": {
                         "isOfflineEnabled": true,
-                        "isSSOEnabled": true,
+                        "isSSOEnabled": false,
                         "include_profile": true,
                     }
                 },
@@ -76,7 +76,7 @@ kony.sdk.mvvm.LoginAction = function(status) {
                         "callerId": unique_id + kony.sdk.mvvm.Utils.getDeviceID(),
                         "loginOptions": {
                             "isOfflineEnabled": false,
-                            "isSSOEnabled": true,
+                            "isSSOEnabled": false,
                             "include_profile": true,
                         }
                     },
@@ -96,7 +96,7 @@ kony.sdk.mvvm.LoginAction = function(status) {
                         "callerId": username + kony.sdk.mvvm.Utils.getDeviceID(),
                         "loginOptions": {
                             "isOfflineEnabled": true,
-                            "isSSOEnabled": true,
+                            "isSSOEnabled": false,
                             "include_profile": true,
                         }
                     },
@@ -127,7 +127,7 @@ kony.sdk.mvvm.LoginAction = function(status) {
                         "isSSOEnabled": false,
                         //#else
                         "isOfflineEnabled": true,
-                        "isSSOEnabled": true,
+                        "isSSOEnabled": false,
                         //#endif
                         "include_profile": true,
                     }
