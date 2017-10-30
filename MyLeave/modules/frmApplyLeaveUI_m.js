@@ -423,7 +423,8 @@ kony.apps.coe.ess.myLeave.applyLeave.preShow = {
   },
 
   getManagerName: function() {
-    var sqlQuery = "select e.First_Name,e.Last_Name ,c.Value ,c.Communication_Type_Id from Employee e join Communication_Channel c on c.Employee_Id = e.Id  where e.Id =(select emp.Manager_Id from Employee emp where emp.Id = '" + kony.apps.coe.ess.globalVariables.employeeId + "')";
+    // Remove var sqlQuery = "select e.First_Name,e.Last_Name ,c.Value ,c.Communication_Type_Id from Employee e join Communication_Channel c on c.Employee_Id = e.Id  where e.Id =(select emp.Manager_Id from Employee emp where emp.Id = '" + kony.apps.coe.ess.globalVariables.employeeId + "')";
+    var sqlQuery ="select e1.First_Name,e1.Last_Name from  Employee e join Employee e1 on e1.Id = e.Id  where e.Id =(select emp.Manager_Id from Employee emp where emp.Id = '" + kony.apps.coe.ess.globalVariables.employeeId + "')";
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, function(data) {
       if (data.length > 0 && data !== undefined && data[0].First_Name !== undefined && data[0].Last_Name !== undefined) {
         for (var i = 0; i < data.length; i++) {
