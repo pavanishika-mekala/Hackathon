@@ -132,16 +132,13 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
       isVisible: false
     };
     var btnNoticedvis = false,visibility= true;
-    if (approvalRequest.Category) {
-      processedRequest.category = approvalRequest.Category;
-      if(processedRequest.category == "Sick Leave"){
-        visibility = false;
-        btnNoticedvis = true;
-      }
+    processedRequest.category = approvalRequest.Category ? approvalRequest.Category : "";
+    if(processedRequest.TypeID == "LEAVEINFO"){
+      processedRequest.request_type = "LEAVE";
+      visibility = false;
+      btnNoticedvis = true;
     }
-    else {
-      processedRequest.category = "";
-    }
+
     processedRequest.btnLaterSegment = {"isVisible": visibility,"skin" : "sknBtnMob0OBor1DB6C928px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};
     processedRequest.btnReject = {"isVisible": visibility,"skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject")};
     processedRequest.btnApprove = {"isVisible": visibility,"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")};
@@ -647,7 +644,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.refreshNowCount = function() {
       "              ON ( attribute.attribute_def_id = attribute_def.id )" +
       " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'" +
       "and attribute_def.attribute_section_id='1'" +
-      "and request_approver.status_id = '2'" +
+      " and (request_approver.status_id = '2' OR (request_approver.status_id = '0' AND approval_request.isRead = '0' AND approval_request.type_id='LEAVEINFO' and approval_request.category_id != 'NULL'))" +
       " and approval_request.islater='0'" +
       " GROUP  BY approval_request.id  ";
 
@@ -885,6 +882,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.filterApprovalDetails = function(butto
     request_query.totalPeoples = [];
     request_query.attribute_section_id = "1";
     request_query.status_id = "2";
+    request_query.show_auto_approved = "1";
     request_query.isLater = "0";
     if (kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch.SelectedItems !== null) {
       var selectedPeople = kony.apps.coe.ess.globalVariables.FrmApprovalsPeopleSearch.SelectedItems;
@@ -1143,7 +1141,7 @@ kony.apps.coe.ess.Approvals.DynamicSegmentSetDatabyEmployeeHasApprovalRequests =
         "MediaKeyAttribute": "Media_Id",
         "ImageWidgetName": "imgEmployee",
         "hideWidgetNames": []
-      };            
+      };
       kony.apps.coe.ess.MyApprovals.media.lazyLoadingImages(kony.apps.coe.ess.MyApprovals.media.CONSTANTS_WIDGET_DYNAMICSEGMENT, DynamicWidget, "Employee", "mediaEmployee", "", segmentConfiguration);
 
     }
@@ -1330,7 +1328,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.MarkAsLater = function(context) {
     if (isEmpty(context)) {
       handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.myApprovals.DataOperations.ErrorMessage.MarkAsLater")));
     }
-    kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.markAsLater(context.widgetInfo.selectedRowItems[0].ID);  
+    kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.markAsLater(context.widgetInfo.selectedRowItems[0].ID);
     kony.print("-- End kony.apps.coe.ess.Approvals.ApprovalsHome.MarkAsLater --");
   } catch (e) {
     handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.myApprovals.DataOperations.ErrorMessage.MarkAsLater") + JSON.stringify(e)));
@@ -1352,6 +1350,27 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.approveRequest = function(context) {
       handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.myApprovals.DataOperations.ErrorMessage.ApproveRequest")));
     }
     kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.approveRequest(frmApprovalHome.segApprovalsList.selectedRowItems[0].ID);
+    kony.print("-- End kony.apps.coe.ess.Approvals.ApprovalsHome.approveRequest --");
+  } catch (e) {
+    handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.myApprovals.DataOperations.ErrorMessage.ApproveRequest") + JSON.stringify(e)));
+  }
+};
+
+/*
+ *@function
+ *@member  : ApprovalsHome
+ *@params : None
+ *@returns: None
+ *@desc   : This to perform the Mark as Read operation when the user clicks on the notice button the segment
+ */
+kony.apps.coe.ess.Approvals.ApprovalsHome.noticeRequest = function(context) {
+  try {
+    kony.print("-- Start kony.apps.coe.ess.Approvals.ApprovalsHome.noticeRequest --");
+    //input validation
+    if (isEmpty(context)) {
+      handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.myApprovals.DataOperations.ErrorMessage.ApproveRequest")));
+    }
+    kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.noticeRequest(frmApprovalHome.segApprovalsList.selectedRowItems[0].ID);
     kony.print("-- End kony.apps.coe.ess.Approvals.ApprovalsHome.approveRequest --");
   } catch (e) {
     handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.myApprovals.DataOperations.ErrorMessage.ApproveRequest") + JSON.stringify(e)));
@@ -1404,4 +1423,3 @@ DelegationShow = function() {
     flxNavigateFooter.flxDelegation.width = "33.3%";
   }
 };
-

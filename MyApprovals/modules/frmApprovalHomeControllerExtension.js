@@ -90,7 +90,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
               "              ON ( attribute.attribute_def_id = attribute_def.id )" +
               " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'" +
               "and attribute_def.attribute_section_id='1'" +
-              "and request_approver.status_id = '2'" +
+              "and (request_approver.status_id = '2' OR (request_approver.status_id = '0' AND approval_request.isRead = '0' AND approval_request.type_id='LEAVEINFO' and approval_request.category_id != 'NULL'))" +
               " and approval_request.islater='0'" +
               " GROUP  BY approval_request.id  ";
 

@@ -20,7 +20,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_a2e0d241ab2543f3b13f0af4679b7f10",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.approveRequest(context);\n",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.ApprovalsHome.noticeRequest(context);\n",
             "callbackType": null
         }]
     }

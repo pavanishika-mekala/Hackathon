@@ -260,13 +260,25 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					}
                   //making the footer and the comments visiblity on or off based on the status of the request
                  if(ApprovalRequestDetailData.RequestDetials.StatusId==2){
-                   //status of  the request is pending
+									 //status of  the request is pending
                   	frmApprovalRequestDetail.flxBottomButtons.setVisibility(true);
-                    frmApprovalRequestDetail.txtareaComments.setVisibility(true);
+										frmApprovalRequestDetail.lblApprove.isVisible = true;
+										frmApprovalRequestDetail.btnReject.isVisible = true;
+										frmApprovalRequestDetail.btnNotice.isVisible = false;
+										frmApprovalRequestDetail.txtareaComments.setVisibility(true);
                  }else{
-                   //status of the request is not pending
-                   	frmApprovalRequestDetail.flxBottomButtons.setVisibility(false);
-                    frmApprovalRequestDetail.txtareaComments.setVisibility(false);
+									 // If it is a leave information not yet read show the button to mark it as read
+									 if(ApprovalRequestDetailData.RequestDetials.StatusId == 0 && ApprovalRequestDetailData.RequestDetials.ISRead != "1" && ApprovalRequestDetailData.RequestDetials.TypeID == "LEAVEINFO") {
+										 frmApprovalRequestDetail.flxBottomButtons.setVisibility(true);
+										 frmApprovalRequestDetail.lblApprove.isVisible = false;
+										 frmApprovalRequestDetail.btnReject.isVisible = false;
+										 frmApprovalRequestDetail.btnNotice.isVisible = true;
+                     frmApprovalRequestDetail.txtareaComments.setVisibility(true);
+									 } else {
+										 //status of the request is not pending
+                     	frmApprovalRequestDetail.flxBottomButtons.setVisibility(false);
+                      frmApprovalRequestDetail.txtareaComments.setVisibility(false);
+									 }
                  }
 
 				} else {
