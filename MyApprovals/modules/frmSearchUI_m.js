@@ -89,6 +89,12 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                 var approvedDate = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].ApprovedDate).toDDmmmYY();
                 processedRequest.status_value = response_data[index].StatusName + " on " + approvedDate;
             }
+
+            // For informational leave types make sure there is a type defined
+            if (response_data[index].Type == null && response_data[index].TypeID == "LEAVEINFO") {
+                response_data[index].Type="LEAVE";
+            }
+
             switch (response_data[index].Type) {
                 case "LEAVE":
                     kony.print("---The request is of type LEAVE----");
