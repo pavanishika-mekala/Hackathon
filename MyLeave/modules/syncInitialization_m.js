@@ -232,9 +232,9 @@ kony.apps.coe.ess.Sync.deltaSync=function(){
   }
   var successCallback = function() {
     var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.application.getCurrentForm().id);
-    kony.application.showLoadingScreen("", "Refreshing..", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.myLeave.sync.Refreshing"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
     formController.loadDataAndShowForm();
-    kony.print("-- Completed manual sync from deltaSync --");
+    kony.print("-- Completed auto sync from deltaSync --");
   };//.bind(this);
   if (kony.application.getCurrentForm().id != "frmLogin") {
   kony.apps.coe.ess.frmLogin.manualSyncOnClick(successCallback);
