@@ -30,7 +30,8 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     this.generateHamburger(callBackForHamburger);
     var scopeObj = this;
     kony.application.getCurrentForm().flxHamburger.setEnabled(false);
-    if (hamburgerButton !== undefined) {
+    this.hamburgerMenuItemsShow();
+    if (hamburgerButton != undefined) {
         hamburgerButton.onClick = function() {
           kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.lblWelcome")+" "+kony.apps.coe.ess.frmLogin.username;
             kony.print("-- Start hamburgerButton.onClick --");
@@ -203,6 +204,12 @@ kony.apps.coe.ess.Hamburger.prototype.applyActions = function() {
         kony.print("-- actions applied --");
     }
     kony.print("-- End applyActions --");
+    if (kony.application.getCurrentForm().flxMyNotifications !== null || kony.application.getCurrentForm().flxMyNotifications !== undefined) {
+        kony.application.getCurrentForm().flxMyNotifications.onClick = function() {
+            this.hideHamburger();
+            showNotificationsListForm();
+        }.bind(this)
+    }
 };
 kony.apps.coe.ess.Hamburger.prototype.makeFooterDisapperWhenHamburgerisCalled = function(){
   //Also hides footer in Approvals App
