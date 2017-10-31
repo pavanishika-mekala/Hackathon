@@ -495,11 +495,11 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
     var sqlquery = "select * from employee_leave_type where leave_type_id = '" + leave_type_id + "'";
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
       if (data.length > 0 && data !== undefined && data[0].balance !== undefined) {
-        frmApplyLeave.lblLeaveBalanceCount.text = data[0].balance - data[0].availed;
+        frmApplyLeave.lblLeaveBalanceCount.text = (data[0].balance - data[0].availed).toFixed(0);
         //remove frmApplyLeave.lblLeaveTypeBalance.text = data[0].balance - data[0].availed;
         //frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave[eventobject.id].text + " leave";
         //remove frmApplyLeave.lblLeaveTypeBalance.text = "Available " + id+ " leave";
-        frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave.lstLeaveType.selectedKeys[1]+ " leave";
+        frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave.lstLeaveType.selectedKeyValue[1]+ " leave";
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
       } else {
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
