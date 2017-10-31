@@ -191,7 +191,12 @@ kony.apps.coe.ess.Sync.syncAsynchronously = function() {
       var currentForm = kony.application.getCurrentForm();
 
       //Update
-      
+      if(kony.store.getItem("kony.MYLEAVE.loggedInUser") !== kony.apps.coe.ess.globalVariables.EmployeeID){
+          kony.apps.coe.ess.KMS.callbacks.fetchAndShowOfflineNotificationData();
+      }else{
+        kony.store.setItem("kony.MYLEAVE.loggedInUser",kony.apps.coe.ess.globalVariables.EmployeeID); 
+        kony.store.removeItem("kony.MYLEAVE.latestNotificationData");
+      }
       //To-DO
       //If any other updations are done while sync session, Start session again
       if(kony.apps.coe.ess.Sync.updatedWhileSyncing) {
