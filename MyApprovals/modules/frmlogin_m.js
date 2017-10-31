@@ -155,6 +155,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
  */
 kony.apps.coe.ess.frmLogin.afterloginSuccess =
   function() {
+  kony.apps.coe.ess.Sync.deltaSyncConfig();
   if (kony.apps.coe.ess.globalVariables.isWebDesktop === true) {
     var isRememberMeChecked = (frmLoginDesk.imgRememberMe.src === 'checkactive_dw.png') ? (true) : (false);
     if (isRememberMeChecked) {
