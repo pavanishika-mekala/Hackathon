@@ -664,11 +664,11 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
         if((frmApplyLeave.lblFromDate.text !== frmApplyLeave.lblToDate.text) && end_date !== null){
           var sqlQuery = "select Holiday_Date as holiday_date from Holiday where Holiday_Date between '" + startDateStringFormat +
               "' AND '" + endDateStringFormat + "'";
-          kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, (this.onSuccessOfHoliday).bind(this), function(err) {
+          kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, (this.onSuccessOfHolidaySrv).bind(this), function(err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             handleError(err);
           }, false);
-        }else if(frmApplyLeave.lblFromDate.text === frmApplyLeave.lblToDate.text){
+        }else if((frmApplyLeave.lblFromDate.text === frmApplyLeave.lblToDate.text) || end_date === null){
            hours = "1 day";
            frmApplyLeave.lblDurationHours.text = hours;
       	}
@@ -681,9 +681,9 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
 
     this.start_time = "8 AM";
     this.end_time = "5 PM";
-    //frmApplyLeave.lblDurationHours.text = hours;
+    //frmApplyLeave.lblDurationHours.text = hours; code added in conditional loops
   },
-  onSuccessOfHoliday : function(response) {
+  onSuccessOfHolidaySrv : function(response) {
     kony.print("holidays response"+JSON.stringify(response));
     holidays = response;
     var day = 1000 * 60 * 60 * 24;
