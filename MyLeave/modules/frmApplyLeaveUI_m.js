@@ -658,17 +658,47 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       var start_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate);
       var end_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate);
       var diff = end_date.getTime() - start_date.getTime();
+      var startDateStringFormat = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.convertdateObjToDbString(start_date);
+      var endDateStringFormat = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.convertdateObjToDbString(end_date);
+        
+        if(frmApplyLeave.lblFromDate.text !== frmApplyLeave.lblSelect.text){
+          var sqlQuery = "select Holiday_Date as holiday_date from Holiday where Holiday_Date between '" + startDateStringFormat +
+              "' AND '" + endDateStringFormat + "'";
+          kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, (this.onSuccessOfHoliday).bind(this), function(err) {
+            kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
+            handleError(err);
+          }, false);
+        }else if(frmApplyLeave.lblFromDate.text === frmApplyLeave.lblSelect.text){
+          hours = "1 day";
+        }
+      
       //hours = ((diff/day)+1)*8 + " hours";
       if ((diff / day) <= 0) {
         this.hours = ((diff / day) + 1) * kony.apps.coe.ess.appconfig.workingHours;
         hours = ((diff / day) + 1) + " day";
-      } else {
-        this.hours = ((diff / day) + 1) * kony.apps.coe.ess.appconfig.workingHours;
-        hours = ((diff / day) + 1) + " days";
-      }
+        frmApplyLeave.lblDurationHours.text = hours;
+      } 
     }
     this.start_time = "8 AM";
     this.end_time = "5 PM";
+    frmApplyLeave.lblDurationHours.text = hours;
+  },
+  onSuccessOfHoliday : function(response) {
+    kony.print("response"+JSON.stringify(response));
+    holidays = response;
+    var day = 1000 * 60 * 60 * 24;
+    var start_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate);
+    var end_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate);
+    var diff = end_date.getTime() - start_date.getTime();
+    if(Number(holidays.length) > 0){
+      hours = ((diff / day)+1) - Number(holidays.length);
+    }
+    this.hours = ((diff / day)+1) * kony.apps.coe.ess.appconfig.workingHours;
+    if(hours == 1){
+    	hours = hours+"day";
+    }else{
+      	hours = hours+"days";
+    }
     frmApplyLeave.lblDurationHours.text = hours;
   }
 };
@@ -1168,7 +1198,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         var dateTemp = new Date();
         lid = "MYLEAVE_V2_" + leaveEntryData.start_date + "_T_" + dateTemp.getMilliseconds();
       }
-      if(Number(leaveEntryData.no_of_hours) < 0){
+      if(Number(leaveEntryData.no_of_hours) <= 0){
         alert("Please select a valid time duration");
       }else{
         dataToForward.start_date = leaveEntryData.start_date;
@@ -1211,6 +1241,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         }
       }
     }
+    
   },
   leaveNoteCreate: function(dataToForward, dates, holidayResponse, response) {
     var data = {};
