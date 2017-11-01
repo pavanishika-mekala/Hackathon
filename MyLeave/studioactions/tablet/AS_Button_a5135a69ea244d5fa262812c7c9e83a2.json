@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_b800405aec0a42c2b4d84d9f20a5f82d",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.onClickOfApplySubmit();",
+            "codeSnippet": "if(frmApplyLeave.flxLeaveBalanceDetails.isVisible){\nkony.apps.coe.ess.myLeave.applyLeave.onClickOfApplySubmit();\n}else{\ntoastMsg.showToastMsg(\"Requested leaves are insufficient\", 2000);\n}\n//kony.apps.coe.ess.myLeave.applyLeave.onClickOfApplySubmit();",
             "callbackType": null
         }]
     }
