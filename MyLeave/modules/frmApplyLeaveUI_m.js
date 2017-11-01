@@ -380,9 +380,9 @@ kony.apps.coe.ess.myLeave.applyLeave.preShow = {
     this.endDate = this.startDate;
     kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveEntryData = {};
     kony.apps.coe.ess.myLeave.applyLeave.Initialization.mappingDataToCalendar();
-    kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.updateDurationFullDay();
     frmApplyLeave.lblFromDate.text = currDate.getDate() + " " + kony.apps.coe.ess.myLeave.applyLeave.Initialization.monthArray[currDate.getMonth()].slice(0, 3) + " " + currDate.getFullYear().toFixed();
     frmApplyLeave.lblToDate.text = currDate.getDate() + " " + kony.apps.coe.ess.myLeave.applyLeave.Initialization.monthArray[currDate.getMonth()].slice(0, 3) + " " + currDate.getFullYear().toFixed();
+    kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.updateDurationFullDay();
     //to disable the recurring option if it is not supported
     if(kony.apps.coe.ess.appconfig.isRecurringSupported===false) {
       frmApplyLeave.flxRecurringLeave.setVisibility(false);
@@ -660,44 +660,45 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       var diff = end_date.getTime() - start_date.getTime();
       var startDateStringFormat = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.convertdateObjToDbString(start_date);
       var endDateStringFormat = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.convertdateObjToDbString(end_date);
-        
-        if(frmApplyLeave.lblFromDate.text !== frmApplyLeave.lblSelect.text){
+      //hours = ((diff/day)+1)*8 + " hours";
+        if((frmApplyLeave.lblFromDate.text !== frmApplyLeave.lblToDate.text) && end_date !== null){
           var sqlQuery = "select Holiday_Date as holiday_date from Holiday where Holiday_Date between '" + startDateStringFormat +
               "' AND '" + endDateStringFormat + "'";
           kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, (this.onSuccessOfHoliday).bind(this), function(err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             handleError(err);
           }, false);
-        }else if(frmApplyLeave.lblFromDate.text === frmApplyLeave.lblSelect.text){
-          hours = "1 day";
-        }
-      
-      //hours = ((diff/day)+1)*8 + " hours";
-      if ((diff / day) <= 0) {
+        }else if(frmApplyLeave.lblFromDate.text === frmApplyLeave.lblToDate.text){
+           hours = "1 day";
+           frmApplyLeave.lblDurationHours.text = hours;
+      	}
+       if ((diff / day) <= 0) {
         this.hours = ((diff / day) + 1) * kony.apps.coe.ess.appconfig.workingHours;
         hours = ((diff / day) + 1) + " day";
         frmApplyLeave.lblDurationHours.text = hours;
-      } 
+      }
     }
+
     this.start_time = "8 AM";
     this.end_time = "5 PM";
-    frmApplyLeave.lblDurationHours.text = hours;
+    //frmApplyLeave.lblDurationHours.text = hours;
   },
   onSuccessOfHoliday : function(response) {
-    kony.print("response"+JSON.stringify(response));
+    kony.print("holidays response"+JSON.stringify(response));
     holidays = response;
     var day = 1000 * 60 * 60 * 24;
     var start_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate);
     var end_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate);
+    
     var diff = end_date.getTime() - start_date.getTime();
     if(Number(holidays.length) > 0){
       hours = ((diff / day)+1) - Number(holidays.length);
     }
     this.hours = ((diff / day)+1) * kony.apps.coe.ess.appconfig.workingHours;
     if(hours == 1){
-    	hours = hours+"day";
+      hours = "1 day";
     }else{
-      	hours = hours+"days";
+      hours = hours+" days";
     }
     frmApplyLeave.lblDurationHours.text = hours;
   }
