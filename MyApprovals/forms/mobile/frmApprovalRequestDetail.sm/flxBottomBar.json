@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "btnReject",
-        "lblApprove"
+        "lblApprove",
+        "btnNotice"
     ],
     "clipbounds": true,
     "containerweight": 100,

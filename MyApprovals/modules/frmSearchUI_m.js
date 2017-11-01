@@ -94,6 +94,12 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                 }else
                 processedRequest.status_value = response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate;
             }
+
+            // For informational leave types make sure there is a type defined
+            if (response_data[index].Type == null && response_data[index].TypeID == "LEAVEINFO") {
+                response_data[index].Type="LEAVE";
+            }
+
             switch (response_data[index].Type) {
                 case "LEAVE":
                     kony.print("---The request is of type LEAVE----");
@@ -458,7 +464,11 @@ kony.apps.coe.ess.Approvals.frmSearch.retrieveDataByFilter = function(data, succ
         }
         //-------------Query addition for status_id
         if (data.status_id != null && data.status_id != "" && data.status_id.length > 0) {
+          if (data.show_auto_approved != null && data.show_auto_approved != "" && data.show_auto_approved.length > 0 && data.show_auto_approved == "1") {
+            query += " AND (request_approver.status_id = '" + data.status_id + "'  OR (request_approver.status_id = '0' AND approval_request.isRead = '0' AND approval_request.type_id='LEAVEINFO' and approval_request.category_id != 'NULL'))";
+          } else {
             query += " AND request_approver.status_id = '" + data.status_id + "'";
+          }
         }
         query += " GROUP BY approval_request.id";
         if (data.count != null && data.count != "") {

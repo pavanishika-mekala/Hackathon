@@ -10,9 +10,9 @@ kony.apps.coe.ess.Approvals = kony.apps.coe.ess.Approvals || {};
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail = kony.apps.coe.ess.Approvals.frmApprovalRequestDetail || {};
 
 
-kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.preShow = function(){      
+kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.preShow = function(){
 	frmApprovalRequestDetail.SegChat.rowTemplate.flxcomment.highlightedSkin = "sknflxMob2ebaee";
-  	frmApprovalRequestDetail.SegChat.rowTemplate.flxcomment.highlightOnParentFocus = true;	
+  	frmApprovalRequestDetail.SegChat.rowTemplate.flxcomment.highlightOnParentFocus = true;
 };
 
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requestType, ContextData) {
@@ -124,13 +124,13 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
                 ApprovalrequestDetail.Title = {
                     "text": ContextData.attributejson.RequestID
                 };
-              
+
                 ApprovalrequestDetail.RequesedInfoDetail = {
                      "text": ""
-                };               
+                };
 				if (ContextData.attributejson && ContextData.attributejson.RequestID) {
              	   ApprovalrequestDetail.TitleDetail = {
-                	    "text": ContextData.category.text 
+                	    "text": ContextData.category.text
               	  };
 				}
 
@@ -173,7 +173,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
              		 ApprovalrequestDetail.Title = {
                 	    "text": ContextData.attributejson.RequestID
                		 };
-            	}                
+            	}
                 ApprovalrequestDetail.RequesedInfoDetail = {
                     "text": ""
                 };
@@ -410,6 +410,19 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickReject=function() {
   	frmController.loadDataAndShowForm();
   	kony.print("--End kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickReject--");
 };
+/**@function
+ * @member	 :  frmApprovalRequestDetail
+ * @returns	 :	null
+ * @desc	 :	Mark as read the approval request and create comment if the user has given any comments
+ */
+kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickNotice=function() {
+  	kony.print("--Start kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickNotice--");
+	kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.createComment(kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID,frmApprovalRequestDetail.txtareaComments.text);
+  	kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.noticeRequest(kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID);
+  	var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.getPreviousFormID());
+  	frmController.loadDataAndShowForm();
+  	kony.print("--End kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickNotice--");
+};
 
 /**@function
  * @member	 :  frmApprovalRequestDetail
@@ -459,7 +472,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.PdfFetchingSucessCallback =
           kony.apps.ess.myApprovals.pdfOperation.type = "application/pdf";
         }
       	else {
-          //#ifdef iphone 
+          //#ifdef iphone
           kony.apps.ess.myApprovals.pdfOperation.type = "image/png";
           //kony.apps.ess.myApprovals.pdfOperation.prototype.postShowFrmPdfReader("image/png");
           //#else

@@ -64,14 +64,14 @@ kony.apps.coe.ess.Approvals.spa = {
         if (processedRequest.isLater == 1 && processedRequest.StatusId == 2) {
           processedRequest = kony.apps.coe.ess.Approvals.spa.beautifyEachRequest1(processedRequest);
           kony.apps.coe.ess.Approvals.spa.totalLaterRequests.push(processedRequest);
-          kony.apps.coe.ess.Approvals.spa.laterRequestsCount[processedRequest.request_type]++; //Calculating number of later requests for each request type                     
+          kony.apps.coe.ess.Approvals.spa.laterRequestsCount[processedRequest.request_type]++; //Calculating number of later requests for each request type
         }   else {
           //  processedRequest = kony.apps.coe.ess.Approvals.spa.beautifyEachRequest(processedRequest);
           processedRequest = kony.apps.coe.ess.Approvals.spa.beautifyEachRequest1(processedRequest);
           kony.print("---- processed request after beautify: " + JSON.stringify(processedRequest));
           kony.apps.coe.ess.Approvals.spa.totalRequests.push(processedRequest);
           kony.print("---- totalRequests: " + JSON.stringify(kony.apps.coe.ess.Approvals.spa.totalRequests));
-        } 
+        }
         kony.apps.coe.ess.Approvals.spa.counter++;
         kony.print("---- counter: " + kony.apps.coe.ess.Approvals.spa.counter);
         kony.print("---- counter: " + kony.apps.coe.ess.Approvals.spa.totalNumberOfRequests);
@@ -109,7 +109,7 @@ kony.apps.coe.ess.Approvals.spa = {
     } catch (error) {
       kony.print("---- error: " + error);
     }
-  }, 
+  },
   getEmployeeId : function() {
 
     var EmployeeData;
@@ -264,28 +264,29 @@ kony.apps.coe.ess.Approvals.spa.beautifyEachRequest = function(processedRequest)
   try {
     kony.print("---- beautifyEachRequest start ----");
     var btnNoticedvis = false,visibility= true;
-      if(processedRequest.category == "Sick Leave"){
-        visibility = false;
-        btnNoticedvis = true;
+    if(processedRequest.TypeID == "LEAVEINFO"){
+      processedRequest.request_type = "LEAVE";
+      visibility = false;
+      btnNoticedvis = true;
     }
-    processedRequest.btnLaterSegment = 
+    processedRequest.btnLaterSegment =
       {"isVisible": visibility,
-       "skin" : "sknBtnMob0OBor1DB6C928px", 
+       "skin" : "sknBtnMob0OBor1DB6C928px",
        "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")
       };
-    processedRequest.btnReject = 
+    processedRequest.btnReject =
       {"isVisible": visibility,
-       "skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", 
+       "skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8",
        "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject"
                                            )};
-    processedRequest.btnApprove = 
+    processedRequest.btnApprove =
       {"isVisible": visibility,
        "skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px",
        "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")
       };
-    processedRequest.btnNoticed = 
+    processedRequest.btnNoticed =
       {"isVisible": btnNoticedvis,
-       "skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", 
+       "skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px",
        "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Noticed")
       };
 

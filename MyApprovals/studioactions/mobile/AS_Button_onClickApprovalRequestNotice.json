@@ -1,0 +1,25 @@
+{
+    "AS_Button_e70d359976034ebd84f9dc737914b2cd": {
+        "id": "AS_Button_e70d359976034ebd84f9dc737914b2cd",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Button_onClickApprovalRequestNotice",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApprovalRequestDetail",
+            "type": "forms",
+            "platform": "",
+            "KUID": "95bd849701724d1abee374f8d1932154"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ed30344f5507460e8246d49d9ac80621",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.onClickNotice();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

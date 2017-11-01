@@ -43,6 +43,7 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
             "	   request_category.name AS Category," +
             "	   approval_request.category_id AS CategoryID," +
             " 	   approval_request.id  AS ID," +
+            " 	 approval_request.type_id  AS TypeID," +
             "	   request_type.name AS Type," +
             "      employee.Media_Id              	   AS MediaID," +
             "	   request_approver.lastmodifiedts AS ApprovedDate," +

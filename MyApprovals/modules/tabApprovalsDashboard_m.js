@@ -4,7 +4,7 @@ kony.apps.coe = kony.apps.coe || {};
 kony.apps.coe.ess = kony.apps.coe.ess || {};
 kony.apps.coe.ess.Approvals = kony.apps.coe.ess.Approvals || {};
 
-// Region - Class / object constructor. 
+// Region - Class / object constructor.
 /**
  * @class tabApprovalsDashboard
  * this class for frmTabDashboard
@@ -87,7 +87,7 @@ kony.apps.coe.ess.Approvals.tabApprovalsDashboard.prototype.process_data_ForSege
           //skip the request not to show in approval request queue
         }
         else {
-          //Alternate Skins for the Row 					
+          //Alternate Skins for the Row
           if (index % 2 === 0) {
             processedRequest.flxCard = {
               "skin": "sknFlxFAFAFA20pxBlur"
@@ -177,16 +177,13 @@ kony.apps.coe.ess.Approvals.tabApprovalsDashboard.prototype.process_ApprovalRequ
       isVisible: false
     };
     var btnNoticedvis = false,visibility= true;
-    if (approvalRequest.Category) {
-      processedRequest.category = approvalRequest.Category;
-      if(processedRequest.category == "Sick Leave"){
-        visibility = false;
-        btnNoticedvis = true;
-      }
+    processedRequest.category = approvalRequest.Category ? approvalRequest.Category : "";
+    if(processedRequest.TypeID == "LEAVEINFO"){
+      processedRequest.request_type = "LEAVE";
+      visibility = false;
+      btnNoticedvis = true;
     }
-    else {
-      processedRequest.category = "";
-    }
+
     processedRequest.btnLaterSegment = {"isVisible": visibility,"skin" : "sknBtnMob0OBor1DB6C928px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.later")};
     processedRequest.btnReject = {"isVisible": visibility,"skin" : "sknBtnMob0OBorFEADA81pxFSFEADA8", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Reject")};
     processedRequest.btnApprove = {"isVisible": visibility,"skin" : "sknBtnMob3EBEA3100OFSFFFFFF100O28px", "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.Approve")};
@@ -1705,7 +1702,7 @@ kony.apps.coe.ess.Approvals.tabApprovalsDashboard.prototype.getCommentsDataPresh
 
       kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", Approval_request_query, function(ApprovalRequestDetailData, RequestDetailsResponse) {
         if (isEmpty(RequestDetailsResponse[0])) {
-          //return the control and throw exception                          
+          //return the control and throw exception
           handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.errorMessages.Comments")));
           return;
         }
