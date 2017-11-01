@@ -51,11 +51,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
       //query for the retrival of the Approval Requests
       else if (kony.apps.coe.ess.globalVariables.isNative == true) {
         if (kony.apps.coe.ess.globalVariables.EmployeeID) {
-          var Approval_request_query = "select req_data.ID, req_data.Due_Date, req_data.CreatedByEmployeeid , req_data.CategoryID, req_data.TypeID,"+
-			"req_data.ISLater, req_data.ISRead, req_data.RequestDate, IFNULL(req_data.FirstName,att1.value) AS FirstName, IFNULL(req_data.LastName,att2.value) AS LastName,"+
-			"req_data.MediaID, req_data.Delegated, req_data.Type, req_data.StatusId, req_data.StatusName, req_data.Employee_id, req_data.Category, req_data.attributeID,"+
-			"req_data.Attribute_DEF, req_data.AttributeSection, req_data.Attributevalue, req_data.AttributeNAME from"+
-              "(SELECT approval_request.id  AS ID," +
+          var Approval_request_query = "SELECT approval_request.id  AS ID," +
               "	   approval_request.due_date 		  AS Due_Date ," +
               " 	   approval_request.employee_id 	  AS CreatedByEmployeeid ," +
               "       approval_request.category_id       AS CategoryID," +
@@ -96,11 +92,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
               "and attribute_def.attribute_section_id='1'" +
               "and request_approver.status_id = '2'" +
               " and approval_request.islater='0'" +
-              " GROUP  BY approval_request.id ) req_data "+
-			  " LEFT JOIN attribute att1 ON (att1.approval_id=req_data.id)"+
-			  " LEFT JOIN attribute att2 ON (att2.approval_id=req_data.id)"+
-			  "where att1.attribute_def_id='FirstNameAttributeDef'"+
-			  "and att2.attribute_def_id='LastNameAttributeDef'";
+              " GROUP  BY approval_request.id  ";
 
           var userPriority = kony.store.getItem(kony.apps.coe.ess.globalVariables.UserSortingKey);
           if (isEmpty(userPriority)) {
