@@ -2,7 +2,7 @@
 "i18n.ess.Login.wrongCredentials"="Login Error! Wrong username or password";
 "i18n.ess.Login.TouchIdError5001"="Authentication is not successful because a user fails to provide valid credentials";
 "i18n.ess.Login.TouchIdError5002"="Authentication is canceled by a user";
-"i18n.ess.Login.TouchIdError5003"="Authentication is canceled because a user taps the fallback button (Enter Password)";
+"i18n.ess.Login.TouchIdError5003"="Authentication is canceled because a user taps the fallback (backspace) button (Enter Password)";
 "i18n.ess.Login.TouchIdError5004"="Authentication is canceled by system";
 "i18n.ess.Login.TouchIdError5005"="Authentication does not start because the passcode is not set on the device";
 "i18n.ess.Login.TouchIdError5006"="Authentication does not start because Touch ID is not available on the device";
@@ -53,7 +53,7 @@
 "18n.ess.MyApprovals.frmRequestList.lblPO.text"="Purchase Order";
 "18n.ess.MyApprovals.frmRequestList.lblWO.text"="Work Order";
 "i18n.ess.MyApprovals.common.ToastMessage.Approved_Succesfully"="Approved Successfully.";
-"i18n.ess.MyApprovals.common.ToastMessage.Rejected_Succesfully"="Rejected Successfully.";
+"i18n.ess.MyApprovals.common.ToastMessage.Rejected_Succesfully"="To be discussed Successfully.";
 "i18n.ess.myApprovals.frmTabListview.ListView"="List View";
 "i18n.ess.myApprovals.frmTabListview.Overview"="Overview";
 "i18n.ess.myApprovals.frmTabListview.Attachments"="Attachments";
@@ -61,7 +61,7 @@
 "i18n.ess.myApprovals.frmTabListview.AuditTrial"="Audit Trail";
 "i18n.ess.myApprovals.frmTabListview.Pending"="Pending";
 "i18n.ess.myApprovals.frmTabListview.TypeYourCommentsHere"="Type your comments here";
-"i18n.ess.myApprovals.frmTabListview.Reject"="Reject";
+"i18n.ess.myApprovals.frmTabListview.Reject"="To be discussed";
 "i18n.ess.myApprovals.frmTabListview.Approve"="Approve";
 "i18n.ess.myApprovals.frmTabListview.SearchByName"="Search by Name";
 "i18n.ess.myApprovals.frmTabListview.RequestedOn"="Requested On";
@@ -97,8 +97,8 @@
 "i18n.ess.frmApprovalRequestDetail.lblHeader.PurchaseOrderHeader"="Purchase Order Details";
 "i18n.ess.frmApprovalRequestDetail.lblHeader.WorkOrderHeader"="Work Order  Details";
 "i18n.ess.frmApprovalRequestDetail.errorMessages.ApprovalRequest"="unable to retrieve the Approval Request detail";
-"i18n.ess.frmApprovalRequestDetail.errorMessages.Comments"="unable to retrive the comments for the approval request";
-"i18n.ess.frmApprovalRequestDetail.errorMessages.Attachments"="unable to retrive the Attachemtns for the approval request";
+"i18n.ess.frmApprovalRequestDetail.errorMessages.Comments"="unable to retrieve the comments for the approval request";
+"i18n.ess.frmApprovalRequestDetail.errorMessages.Attachments"="unable to retrieve the Attachemtns for the approval request";
 "i18n.ess.frmApprovalHome.errorMessages.fetchApprovalRequest"="Error in fetching the approval requests";
 "i18n.ess.frmApprovalHome.errorMessages.fetchIslaterApprovalRequest"="Error in fetching the ISlater requests";
 "i18n.ess.frmApprovalHome.errorMessages.BindingData"="Error in binding  the approval requests";
@@ -118,7 +118,7 @@
 "i18n.ess.frmApprovalHome.errorMessages.FilterSearch"="Error in loading the filters";
 "i18n.ess.frmApprovalRequestDetail.Title.Leave"="Leave";
 "i18n.ess.frmApprovalRequestDetail.Title.Timesheet"="Timesheet";
-"i18n.ess.frmApprovalRequestDetail.errorMessage.ApprovalRequestDetail"="unable to retrive the details of the approval Request";
+"i18n.ess.frmApprovalRequestDetail.errorMessage.ApprovalRequestDetail"="unable to retrieve the details of the approval Request";
 "i18n.ess.frmApprovalRequestDetail.AppliedOn.text"="Applied on";
 "i18n.ess.myApprovals.pdfErrorMsg"="Unable to open PDF";
 "i18n.ess.myApprovals.loadingPdfMsg"="Loading PDF..";
@@ -165,7 +165,7 @@
 "i18n.ess.MyApprovals.frmApprovalRequestDetail.lblRequestedOn"="Requested On";
 "i18n.ess.MyApprovals.frmApprovalRequestDetail.lblDueOn"="Due On";
 "i18n.ess.MyApprovals.frmApprovalRequestDetail.lblYou"="You";
-"i18n.ess.MyApprovals.frmApprovalRequestDetail.btnReject"="Reject";
+"i18n.ess.MyApprovals.frmApprovalRequestDetail.btnReject"="To be discussed";
 "i18n.ess.MyApprovals.frmApprovalRequestDetail.btnApprove"="Approve";
 "i18n.ess.MyApprovals.frmAudit.lblNotifications"="Notifications";
 "i18n.ess.MyApprovals.frmAudit.lblSysMsg"="System message";
@@ -185,7 +185,7 @@
 "i18n.ess.MyApprovals.frmIsLaterSearch.lblReconfigure"="Reconfigure";
 "i18n.ess.MyApprovals.frmMultiSelection.title"="Filter Request";
 "i18n.ess.MyApprovals.frmMultiSelection.lblClear"="Cancel";
-"i18n.ess.MyApprovals.frmMultiSelection.btnReject"="Reject";
+"i18n.ess.MyApprovals.frmMultiSelection.btnReject"="To be discussed";
 "i18n.ess.MyAppaorvals.frmMultiSelection.btnApprove"="Approve";
 "i18n.ess.MyApprovals.frmNotificationList.title"="Notifications";
 "i18n.ess.MyApprovals.frmPdfReader.title"="Pdf Reader";
@@ -217,7 +217,7 @@
 "i18n.ess.syncProgressBar.syncCompleted"="Sync Completed !";
 "i18n.ess.syncProgressBar.syncError"="Sync Error Occured";
 "i18n.ess.MyApprovals.tempSegApprovalRequest.later"="Later";
-"i18n.ess.MyApprovals.tempSegApprovalRequest.Reject"="Reject";
+"i18n.ess.MyApprovals.tempSegApprovalRequest.Reject"="To be discussed";
 "i18n.ess.MyApprovals.tempSegApprovalRequest.Approve"="Approve";
 "i18n.ess.MyApprovals.tempFullDetails.lblType"="Expense Type";
 "i18n.ess.MyApprovals.tempFullDetails.lblValue"="General";
@@ -225,7 +225,7 @@
 "i18n.ess.MyApprovals.tempSegApprovalRequest.lblExpiresHeader"="Expires in";
 "i18n.ess.MyApprovals.tempSegApprovalRequest.lblDeligated"="Deligated";
 "i18n.ess.MyApprovals.tempSegRequests.btnApprove"="Approve";
-"i18n.ess.MyApprovals.tempSegRequests.btnReject"="Reject";
+"i18n.ess.MyApprovals.tempSegRequests.btnReject"="To be discussed";
 "i18n.ess.MyApprovals.tempSegRequests.lblDueDate"="Due date";
 "i18n.ess.myapproval.delegationrequests"="Delegation Requests";
 "i18n.ess.myapproval.sentbyme"="Sent by me";
@@ -272,7 +272,7 @@
 "i18n.ess.Date.shortmonth.dec"="Dec";
 "i18n.ess.myApprovals.DataOperations.ErrorMessage.MarkAsLater"="Unable to mark it as later";
 "i18n.ess.myApprovals.DataOperations.ErrorMessage.ApproveRequest"="Unable to Approve the Approval request";
-"i18n.ess.myApprovals.DataOperations.ErrorMessage.RejectRequest"="unable to Reject the Approval Request";
+"i18n.ess.myApprovals.DataOperations.ErrorMessage.RejectRequest"="unable to Discuss the Approval Request";
 "i18n.ess.myApprovals.unableToLoadForm"="Unable to load form";
 "18n.ess.MyApprovals.frmSettings.lblPushNotification.text"="Push Notifications";
 "i18n.ess.myApprovals.FrmFullDetails.ErrorMessage.Formloading"="unable to retrieve the Full Details of the approval Request";
@@ -296,11 +296,11 @@
 "i18n.ess.frmApprovalsDashBoardDW.TimeRequests"="TIME REQUESTS";
 "i18n.ess.frmApprovalsDashBoardDW.PurchaseRequests"="PURCHASE REQUESTS";
 "i18n.ess.frmApprovalsDashBoardDw.WorkRequests"="WORK REQUESTS";
-"i18n.ess.frmApprovalsDashBoardDW.Reject"="REJECT";
+"i18n.ess.frmApprovalsDashBoardDW.Reject"="TO BE DISCUSSED";
 "i18n.ess.frmApprovalsDashBoardDW.Approve"="APPROVE";
 "i18n.ess.frmApprovalsDashBoardDW.Skip"="SKIP";
 "i18n.ess.frmPendingReqDW.SearchByName"="Search by Name";
-"i18n.ess.frmPendingReqDW.Reject"="Reject";
+"i18n.ess.frmPendingReqDW.Reject"="To be discussed";
 "i18n.ess.frmPendingReqDW.Approve"="Approve";
 "i18n.ess.frmPendingReqDW.Req"="Requests";
 "i18n.ess.frmPendingReqDW.Leave"="Leave";
@@ -339,7 +339,7 @@
 "i18n.ess.frmHistoryDW.SelectRequestStatus"="Select Request Status";
 "i18n.ess.frmHistoryDW.Approved"="Approved";
 "i18n.ess.frmHistoryDW.Pending"="Pending";
-"i18n.ess.frmHistoryDW.Rejected"="Rejected";
+"i18n.ess.frmHistoryDW.Rejected"="To be discussed";
 "i18n.ess.frmHistoryDW.Clear"="Clear";
 "i18n.ess.frmHistoryDW.ApplyFilters"="Apply Filters";
 "i18n.ess.frmTeamCalendarDW.TeamCalendar"="Team Calendar";
@@ -394,8 +394,8 @@
 "i18n.myPay.tab.hamburger.USD"="USD";
 "i18n.myPay.tab.hamburger.english"="English";
 "i18n.ess.myLeave.frmSettings.MinimumTaskDuration"="Minimum task duration on timeline";
-"i18n.ess.myLeave.frmSettings.MinimumTaskDurationOption1"="0,010416667";
-"i18n.ess.myLeave.frmSettings.MinimumTaskDurationOption2"="0,041666667";
+"i18n.ess.myLeave.frmSettings.MinimumTaskDurationOption1"="0.0104166666666667";
+"i18n.ess.myLeave.frmSettings.MinimumTaskDurationOption2"="0.0416666666666667";
 "i18n.ess.myLeave.frmSettings.DefaultHoursSelection"="Default task selection on timeline (hours)";
 "i18n.ess.myLeave.frmSettings.DefaultHourseSelectionOption1"="1";
 "i18n.ess.myLeave.frmSettings.DefaultHourseSelectionOption2"="2";
@@ -420,3 +420,9 @@
 "i18n.ess.MyApprovals.frmSettings.French"="Français";
 "i18n.ess.MyApprovals.frmSettings.Nederlands"="Nederlands";
 "i18n.ess.MyApprovals.frmSettings.SelectLang"="Select a language :";
+"i18n.ess.MyApprovals.tempSegApprovalRequest.Noticed"="OK";
+"i18n.ess.myApprovals.frmMyAopprovalsHome.isMandatoryComment"="Please add a comment to justify the rejection. Thank you.";
+"i18n.ess.myApprovals.frmHamburger.lblWelcome"="Welcome";
+"i18n.ess.myApprovals.frmSettings.ChangeLang"="Change Language";
+"i18n.ess.frmHistoryDW.On"="On";
+"i18n.ess.myApprovals.sync.Refreshing"="Refreshing..";

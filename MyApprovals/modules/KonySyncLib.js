@@ -1,5 +1,5 @@
 // -- SDK File : KonySyncLib.js 
-//  --Generated On Thu Sep 21 22:02:20 IST 2017******************* 
+//  --Generated On Fri Oct 27 09:57:35 IST 2017******************* 
 //  **************** Start jsonWriter.js*******************
 //#ifdef iphone
 	//#define KONYSYNC_IOS
@@ -17071,7 +17071,8 @@ kony.sync.invokeServiceAsync = function (url, params, callback, context) {
 kony.sync.commonServiceParams = function(params) {
     sync.log.trace("Entering kony.sync.commonServiceParams ");
     var httpheaders = {};
-    if( !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.userid)) && 
+    if( !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams)) && 
+        !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.userid)) && 
         !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.password)) ) {
         params.userid = kony.sync.currentSyncConfigParams.userid;
         params.password = kony.sync.genHash(kony.sync.currentSyncConfigParams[kony.sync.passwordHashingAlgo], kony.sync.currentSyncConfigParams.password);

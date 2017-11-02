@@ -37,7 +37,7 @@ kony.apps.coe.ess.appconfig = {
   	identityServiceName:"ESSIDENTITY",
     isShowDeepLinkingAppBeforeInstall:false,
     isShowDelegation:true,
- 	appversion : "v3.1.1",
+ 	appversion : "v0.0.5",
     listOfApps : ["eTimeSheetMyLeave", "eTimeSheetMyTime", "myPay", "myExpenses", "myProfile"],
     myPayUrl:"https://itunes.apple.com/in/app/kony-mypay/id1155632859?mt=8",//AppstoreURL for the My Pay.
     myTimeUrl:"https://itunes.apple.com/in/app/kony-mytime/id1157618072?mt=8",//AppstoreURL for the My Time.

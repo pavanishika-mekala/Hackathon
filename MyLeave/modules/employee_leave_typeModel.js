@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Tue Oct 24 13:09:25 UTC 2017employee_leave_type*******************
+// ****************Generated On Thu Nov 02 11:15:28 UTC 2017employee_leave_type*******************
 // **********************************Start employee_leave_type's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -40,6 +40,7 @@ com.kony.MYLEAVE.employee_leave_type = function(){
 	this.leave_type_id = null;
 	this.leave_type_name = null;
 	this.sofsdeleteflag = null;
+	this.planned = null;
 	this.markForUpload = true;
 };
 
@@ -97,6 +98,12 @@ com.kony.MYLEAVE.employee_leave_type.prototype = {
 	},
 	set sofsdeleteflag(val){
 		this._sofsdeleteflag = val;
+	},
+	get planned(){
+		return this._planned;
+	},
+	set planned(val){
+		this._planned = val;
 	},
 };
 
@@ -245,6 +252,7 @@ com.kony.MYLEAVE.employee_leave_type.create = function(valuestable, successcallb
 *		valuesArray[0].lastmodifiedts = "lastmodifiedts_0";
 *		valuesArray[0].leave_type_id = "leave_type_id_0";
 *		valuesArray[0].leave_type_name = "leave_type_name_0";
+*		valuesArray[0].planned = "planned_0";
 *		valuesArray[1] = {};
 *		valuesArray[1].availed = "availed_1";
 *		valuesArray[1].balance = "balance_1";
@@ -253,6 +261,7 @@ com.kony.MYLEAVE.employee_leave_type.create = function(valuestable, successcallb
 *		valuesArray[1].lastmodifiedts = "lastmodifiedts_1";
 *		valuesArray[1].leave_type_id = "leave_type_id_1";
 *		valuesArray[1].leave_type_name = "leave_type_name_1";
+*		valuesArray[1].planned = "planned_1";
 *		valuesArray[2] = {};
 *		valuesArray[2].availed = "availed_2";
 *		valuesArray[2].balance = "balance_2";
@@ -261,6 +270,7 @@ com.kony.MYLEAVE.employee_leave_type.create = function(valuestable, successcallb
 *		valuesArray[2].lastmodifiedts = "lastmodifiedts_2";
 *		valuesArray[2].leave_type_id = "leave_type_id_2";
 *		valuesArray[2].leave_type_name = "leave_type_name_2";
+*		valuesArray[2].planned = "planned_2";
 *		com.kony.MYLEAVE.employee_leave_type.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
 com.kony.MYLEAVE.employee_leave_type.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
@@ -1479,6 +1489,7 @@ com.kony.MYLEAVE.employee_leave_type.convertTableToObject = function(res){
 			obj.leave_type_id = res[i].leave_type_id;
 			obj.leave_type_name = res[i].leave_type_name;
 			obj.sofsdeleteflag = res[i].sofsdeleteflag;
+			obj.planned = res[i].planned;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
 		}
@@ -1496,6 +1507,7 @@ com.kony.MYLEAVE.employee_leave_type.filterAttributes = function(valuestable, in
 	attributeTable.lastmodifiedts = "lastmodifiedts";
 	attributeTable.leave_type_id = "leave_type_id";
 	attributeTable.leave_type_name = "leave_type_name";
+	attributeTable.planned = "planned";
 
 	var PKTable = {};
 	PKTable.leave_type_id = {}
@@ -1544,6 +1556,7 @@ com.kony.MYLEAVE.employee_leave_type.prototype.getValuesTable = function(isInser
 		valuesTable.leave_type_id = this.leave_type_id;
 	}
 	valuesTable.leave_type_name = this.leave_type_name;
+	valuesTable.planned = this.planned;
 	return valuesTable;
 };
 

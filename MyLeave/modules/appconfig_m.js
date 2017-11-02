@@ -14,7 +14,7 @@ kony.apps.coe.ess.appconfig = {
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
 	identityServiceName:"ESSIDENTITY",
     listOfApps:["myProfile", "eTimeSheetMyTime", "myPay", "myExpenses", "eTimeSheetMyApprovals"],
-    appversion : "v3.1.1",
+    appversion : "v0.0.5",
   	isDemo : false,
     isSingleQrCode: true,
   	identityServicePreLogin:"DevNextTimesheetOktaLogin",

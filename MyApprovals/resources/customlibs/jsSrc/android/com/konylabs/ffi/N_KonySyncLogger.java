@@ -67,7 +67,7 @@ public class N_KonySyncLogger extends JSLibrary {
 	public Object[] execute(int index, Object[] params) {
 		// TODO Auto-generated method stub
 		Object[] ret = null;
- try {
+ 
 		int paramLen = params.length;
  int inc = 1;
 		switch (index) {
@@ -173,9 +173,7 @@ public class N_KonySyncLogger extends JSLibrary {
  		default:
 			break;
 		}
- }catch (Exception e){
-			ret = new Object[]{e.getMessage(), new Double(101), e.getMessage()};
-		}
+ 
 		return ret;
 	}
 
