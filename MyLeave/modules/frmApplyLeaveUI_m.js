@@ -661,17 +661,19 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       var startDateStringFormat = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.convertdateObjToDbString(start_date);
       var endDateStringFormat = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.convertdateObjToDbString(end_date);
       //hours = ((diff/day)+1)*8 + " hours";
-        if((frmApplyLeave.lblFromDate.text !== frmApplyLeave.lblToDate.text) && end_date !== null){
+      kony.print(frmApplyLeave.lblFromDate.text +" "+ frmApplyLeave.lblToDate.text + ": "+end_date);
+      if((frmApplyLeave.lblFromDate.text === frmApplyLeave.lblToDate.text) || end_date === null){
+           hours = "1 day";
+           frmApplyLeave.lblDurationHours.text = hours;
+      	}else if((frmApplyLeave.lblFromDate.text !== frmApplyLeave.lblToDate.text) || end_date !== null){
           var sqlQuery = "select Holiday_Date as holiday_date from Holiday where Holiday_Date between '" + startDateStringFormat +
               "' AND '" + endDateStringFormat + "'";
           kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, (this.onSuccessOfHolidaySrv).bind(this), function(err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             handleError(err);
           }, false);
-        }else if((frmApplyLeave.lblFromDate.text === frmApplyLeave.lblToDate.text) || end_date === null){
-           hours = "1 day";
-           frmApplyLeave.lblDurationHours.text = hours;
-      	}
+        }
+      
        if ((diff / day) <= 0) {
         this.hours = ((diff / day) + 1) * kony.apps.coe.ess.appconfig.workingHours;
         hours = ((diff / day) + 1) + " day";
@@ -689,7 +691,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     var day = 1000 * 60 * 60 * 24;
     var start_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate);
     var end_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate);
-    
+    hours = ((diff / day)+1);
     var diff = end_date.getTime() - start_date.getTime();
     if(Number(holidays.length) > 0){
       hours = ((diff / day)+1) - Number(holidays.length);
@@ -1200,7 +1202,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         lid = "MYLEAVE_V2_" + leaveEntryData.start_date + "_T_" + dateTemp.getMilliseconds();
       }
       if(Number(leaveEntryData.no_of_hours) <= 0){
-        alert("Please select a valid time duration");
+        alert(kony.i18n.getLocalizedString("i18n.ess.myLeave.frmApplyLeave.warningOnSubmit")); //("Please select a valid time duration");
       }else{
         dataToForward.start_date = leaveEntryData.start_date;
         dataToForward.end_date = leaveEntryData.end_date;
