@@ -691,8 +691,8 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     var day = 1000 * 60 * 60 * 24;
     var start_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate);
     var end_date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate);
-    hours = ((diff / day)+1);
     var diff = end_date.getTime() - start_date.getTime();
+    hours = ((diff / day)+1);
     if(Number(holidays.length) > 0){
       hours = ((diff / day)+1) - Number(holidays.length);
     }
