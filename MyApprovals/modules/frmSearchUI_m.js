@@ -279,9 +279,9 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
         query_data.statusType = [];
         query_data.totalPeoples = [];
         if (query_data.selectedRequestType != null) {
-            if (query_data.selectedRequestType[0].id != 'All') {
+            if (query_data.selectedRequestType[0].request_name  != 'All') {
                 for (var i = 0; i < query_data.selectedRequestType.length; i++) {
-                    query_data.requestType.push(query_data.selectedRequestType[i].id);
+                    query_data.requestType.push(query_data.selectedRequestType[i].request_name);
                 }
             }
         }
@@ -328,9 +328,9 @@ kony.apps.coe.ess.Approvals.frmSearch.onReachingEndOfSegment = function() {
         query_data.statusType = [];
         query_data.totalPeoples = [];
         if (query_data.selectedRequestType != null) {
-            if (query_data.selectedRequestType[0].id != 'All') {
+            if (query_data.selectedRequestType[0].request_name != 'All') {
                 for (var i = 0; i < query_data.selectedRequestType.length; i++) {
-                    query_data.requestType.push(query_data.selectedRequestType[i].id);
+                    query_data.requestType.push(query_data.selectedRequestType[i].request_name);
                 }
             }
         }
