@@ -359,6 +359,7 @@ kony.apps.coe.myLeave.search.prototype.filter = function () {
     frmSearchLog.flxSearchLeaveType.isVisible = false;
     frmSearchLog.flxDoneButton.isVisible = false;
     frmSearchLog.imgFilter.src = "filter.png";
+    (new kony.apps.coe.myLeave.search()).clear();
   } else {
     frmSearchLog.flxSelection.isVisible = true;
     frmSearchLog.flxReqType.isVisible = true;

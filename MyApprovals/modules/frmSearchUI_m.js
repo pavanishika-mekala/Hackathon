@@ -230,6 +230,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable = function() {
   frmSearch.flxClear.setVisibility(false);
   frmSearch.flxHide.setVisibility(true);
   frmSearch.flxSearchContainer.setVisibility(false);
+  kony.apps.coe.ess.Approvals.frmSearch.refreshData();
   kony.print("-- End onClickFilterDisable -- ");
 };
 /*
@@ -267,7 +268,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
         frmSearch.flxSearchContainer.setVisibility(false);
         frmSearch.flxClear.setVisibility(true);
         frmSearch.flxHide.setVisibility(false);
-        var query_data = {}
+		var query_data = {}
         query_data.fromDate = new Date(frmSearch.calFromDate.year, frmSearch.calFromDate.month - 1, frmSearch.calFromDate.day);
         query_data.fromDate = query_data.fromDate.getDateInFormat("yyyymmdd");
         query_data.toDate = new Date(frmSearch.calToDate.year, frmSearch.calToDate.month - 1, frmSearch.calToDate.day);
@@ -578,8 +579,8 @@ kony.apps.coe.ess.Approvals.frmSearch.lazyLoading = function() {
 kony.apps.coe.ess.Approvals.frmSearch.showFilteredData = function(){
   frmSearch.show();
   if(frmSearch.flxClear.isVisible == true && frmSearch.flxHide.isVisible == false){
-    frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();}
-    frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();}
+   // frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();}
+    // frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();}
     kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch();
   }else{
     var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmSearch");
