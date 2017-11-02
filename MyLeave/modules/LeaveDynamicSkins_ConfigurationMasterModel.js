@@ -16,22 +16,22 @@ kony.model.LeaveDynamicSkins = kony.model.LeaveDynamicSkins || {};
  * @param {Object} configOptions - Service Name and Service Options.
  */
 kony.model.LeaveDynamicSkins.ConfigurationMasterModel = (function(){
-
+	
     function ConfigurationMasterModel(applicationContext, entityMetaData, configOptions) {
     	/**
     	 * @Fields in this object
 		 *
-		 * app_id
-		 * app_version
-		 * bundles
-		 * CreatedBy
-		 * CreatedDateTime
-		 * id
-		 * LastUpdatedBy
-		 * LastUpdatedDateTime
-		 * role_id
-		 * SoftDeleteFlag
-		 * user_id
+		 * app_id 
+		 * app_version 
+		 * bundles 
+		 * CreatedBy 
+		 * CreatedDateTime 
+		 * id 
+		 * LastUpdatedBy 
+		 * LastUpdatedDateTime 
+		 * role_id 
+		 * SoftDeleteFlag 
+		 * user_id 
 		 */
         kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
     }
@@ -41,7 +41,7 @@ kony.model.LeaveDynamicSkins.ConfigurationMasterModel = (function(){
      * @memberof ConfigurationMasterModel#
      * @param {String} columnName - Column Name.
      * @param {String} key - property of column.
-     * @returns {Object} - Value for property
+     * @returns {Object} - Value for property 
      */
     ConfigurationMasterModel.prototype.getValueForColumnProperty = function(columnName, key) {
         return kony.model.BaseModel.prototype.getValueForColumnProperty.call(this, columnName, key);
@@ -58,7 +58,7 @@ kony.model.LeaveDynamicSkins.ConfigurationMasterModel = (function(){
      * This method returns requested property of this object from metadata.
      * @memberof ConfigurationMasterModel#
      * @param {String} propertyName - property.
-     * @returns {Object} - Value for property
+     * @returns {Object} - Value for property 
      */
     ConfigurationMasterModel.prototype.getValueForProperty = function(propertyName){
         return kony.model.BaseModel.prototype.getValueForProperty.call(this, propertyName);
@@ -67,7 +67,7 @@ kony.model.LeaveDynamicSkins.ConfigurationMasterModel = (function(){
      * This method returns properties map of column from metadata.
      * @memberof ConfigurationMasterModel#
      * @param {String} columnName - Column Name.
-     * @returns {Object} - Column information
+     * @returns {Object} - Column information 
      */
     ConfigurationMasterModel.prototype.getColumnInfo = function(columnName) {
         return kony.model.BaseModel.prototype.getColumnInfo.call(this, columnName);
@@ -194,6 +194,6 @@ kony.model.LeaveDynamicSkins.ConfigurationMasterModel = (function(){
     ConfigurationMasterModel.prototype.validate = function(dataObject, validationType) {
         return kony.model.BaseModel.prototype.validate.call(this, dataObject, validationType);
     }
-
+	
 	return ConfigurationMasterModel;
 })();

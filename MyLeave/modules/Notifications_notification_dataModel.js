@@ -16,18 +16,18 @@ kony.model.Notifications = kony.model.Notifications || {};
  * @param {Object} configOptions - Service Name and Service Options.
  */
 kony.model.Notifications.notification_dataModel = (function(){
-
+	
     function notification_dataModel(applicationContext, entityMetaData, configOptions) {
     	/**
     	 * @Fields in this object
 		 *
-		 * createdts
-		 * data_key
-		 * data_value
-		 * id
-		 * lastmodifiedts
-		 * notification_id
-		 * softdeleteflag
+		 * createdts 
+		 * data_key 
+		 * data_value 
+		 * id 
+		 * lastmodifiedts 
+		 * notification_id 
+		 * softdeleteflag 
 		 */
         kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
     }
@@ -37,7 +37,7 @@ kony.model.Notifications.notification_dataModel = (function(){
      * @memberof notification_dataModel#
      * @param {String} columnName - Column Name.
      * @param {String} key - property of column.
-     * @returns {Object} - Value for property
+     * @returns {Object} - Value for property 
      */
     notification_dataModel.prototype.getValueForColumnProperty = function(columnName, key) {
         return kony.model.BaseModel.prototype.getValueForColumnProperty.call(this, columnName, key);
@@ -54,7 +54,7 @@ kony.model.Notifications.notification_dataModel = (function(){
      * This method returns requested property of this object from metadata.
      * @memberof notification_dataModel#
      * @param {String} propertyName - property.
-     * @returns {Object} - Value for property
+     * @returns {Object} - Value for property 
      */
     notification_dataModel.prototype.getValueForProperty = function(propertyName){
         return kony.model.BaseModel.prototype.getValueForProperty.call(this, propertyName);
@@ -63,7 +63,7 @@ kony.model.Notifications.notification_dataModel = (function(){
      * This method returns properties map of column from metadata.
      * @memberof notification_dataModel#
      * @param {String} columnName - Column Name.
-     * @returns {Object} - Column information
+     * @returns {Object} - Column information 
      */
     notification_dataModel.prototype.getColumnInfo = function(columnName) {
         return kony.model.BaseModel.prototype.getColumnInfo.call(this, columnName);
@@ -190,6 +190,6 @@ kony.model.Notifications.notification_dataModel = (function(){
     notification_dataModel.prototype.validate = function(dataObject, validationType) {
         return kony.model.BaseModel.prototype.validate.call(this, dataObject, validationType);
     }
-
+	
 	return notification_dataModel;
 })();

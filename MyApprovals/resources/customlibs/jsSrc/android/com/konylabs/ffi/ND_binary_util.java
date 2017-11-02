@@ -69,7 +69,7 @@ public class ND_binary_util extends JSLibrary {
 	public Object[] execute(int index, Object[] params) {
 		// TODO Auto-generated method stub
 		Object[] ret = null;
- try {
+ 
 		int paramLen = params.length;
  int inc = 1;
 		switch (index) {
@@ -179,9 +179,7 @@ public class ND_binary_util extends JSLibrary {
  		default:
 			break;
 		}
- }catch (Exception e){
-			ret = new Object[]{e.getMessage(), new Double(101), e.getMessage()};
-		}
+ 
 		return ret;
 	}
 
@@ -260,8 +258,9 @@ public class ND_binary_util extends JSLibrary {
  	public final Object[] getBase64FromFiles( com.konylabs.vm.LuaTable inputKey0 ){
  
 		Object[] ret = null;
- java.lang.Object val = com.kony.binary.utility.BlobStoreUtil.getBase64FromFiles( (java.util.Vector)TableLib.convertToList(inputKey0)
+ java.util.Vector retval = com.kony.binary.utility.BlobStoreUtil.getBase64FromFiles( (java.util.Vector)TableLib.convertToList(inputKey0)
  );
+ LuaTable val = TableLib.convertToLuaTable(retval);
  
  			ret = new Object[]{val, new Double(0)};
  		return ret;

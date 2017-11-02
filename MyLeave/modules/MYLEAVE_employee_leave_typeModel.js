@@ -30,6 +30,7 @@ kony.model.MYLEAVE.employee_leave_typeModel = (function(){
 		 * leave_type_id 
 		 * leave_type_name 
 		 * sofsdeleteflag 
+		 * planned 
 		 */
         kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
     }

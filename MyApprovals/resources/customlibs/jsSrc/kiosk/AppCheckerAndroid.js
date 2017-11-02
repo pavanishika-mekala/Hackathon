@@ -1,4 +1,4 @@
 var AppCheckerAndroid={};
-AppCheckerAndroid.checkifExist=function(){
-this.appInstalledOrNot= function(){};
-};
+AppCheckerAndroid.checkifExist=function(){}
+AppCheckerAndroid.checkifExist.prototype.appInstalledOrNot= function(){};
+

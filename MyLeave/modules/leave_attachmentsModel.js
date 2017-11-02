@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Tue Oct 24 13:09:25 UTC 2017leave_attachments*******************
+// ****************Generated On Thu Nov 02 11:15:28 UTC 2017leave_attachments*******************
 // **********************************Start leave_attachments's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
