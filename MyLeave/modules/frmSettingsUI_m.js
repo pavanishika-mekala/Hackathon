@@ -208,7 +208,13 @@ Settings.prototype.destroyForms = function(){
     frmApplyLeave.destroy();
     frmAuditTrail.destroy();
     frmDummy.destroy();
+    // storing last sync timestamp before hamburger is destroyed
+    var dateText = frmHamburger.lblSyncDate.text;
+    var timeText = frmHamburger.lblSyncTime.text;
     frmHamburger.destroy();
+    //setting the timestamp to the one set befre destroying hamburger
+    frmHamburger.lblSyncDate.text = dateText;
+    frmHamburger.lblSyncTime.text = timeText;
     frmHolidays.destroy();
     frmLeaveBalance.destroy();
     frmLeaveHome.destroy();
