@@ -59,7 +59,7 @@ kony.sdk.mvvm.frmTeamViewControllerExtension = Class(kony.sdk.mvvm.BaseFormContr
         try {
             var scopeObj = this;
             var todayDate = new Date();
-            var tempIntervalDate = todayDate.thisWeekInterval(0);
+            var tempIntervalDate = todayDate.thisWeekInterval(1);
             //tempIntervalDate[1] = new Date(Date.parse(tempIntervalDate[1]) - 172800000);
             if(typeof data.segTeamView != "undefined" && data.segTeamView !== null && data.segTeamView.length !== null && data.segTeamView.length > 0)
             {

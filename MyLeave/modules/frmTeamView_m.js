@@ -28,7 +28,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
         var resultData = [];
         var callback = function(tempData, intervalStartDate, intervalEndDate, nonWorkingDays, callbackres, res) {
             kony.print("Response recieved in callback :: " + JSON.stringify(res));
-          	kony.print("soumya tempData"+JSON.stringify(tempData)+" intervalStartDate "+JSON.stringify(intervalStartDate)+" intervalEndDate "+JSON.stringify(intervalEndDate)+" nonWorkingDays "+JSON.stringify(nonWorkingDays)+" callbackres "+JSON.stringify(callbackres)+ " res "+JSON.stringify(res));
+          	//kony.print(" tempData"+JSON.stringify(tempData)+" intervalStartDate "+JSON.stringify(intervalStartDate)+" intervalEndDate "+JSON.stringify(intervalEndDate)+" nonWorkingDays "+JSON.stringify(nonWorkingDays)+" callbackres "+JSON.stringify(callbackres)+ " res "+JSON.stringify(res));
             var data = JSON.parse(JSON.stringify(res));
             var resultArrayData = ["withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png"];
           	if (typeof data == "undefined" && data === null && data.length === null && data.length <= 0) {
@@ -75,7 +75,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
             if (callbackres !== null && callbackres !== undefined && typeof(callbackres) === "function") {
                 callbackres();
             }
-            kony.print("soumya ResultArray data :: " + JSON.stringify(resultArrayData));
+            kony.print("ResultArray data :: " + JSON.stringify(resultArrayData));
         };
         var tempData = {};
         if (typeof data != "undefined" && data !== null && data.length !== null && data.length > 0) {
@@ -195,31 +195,22 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.isDateFoundInBetween = function(dat
     kony.print("---- Inside isDateFoundInBetween ----");
     try {
         if (typeof dateArray != "undefined" && dateArray !== null && dateArray.length !== null && dateArray.length > 0) {
-          kony.print("soumya 11");  
           if (typeof date == "object") {
                 for (var i = 0; i < dateArray.length; i++) {
-                    kony.print("soumya 12");
                     dateArray[i].LEAVE_FROMDATE = this.convertStringDateDbToDateObject(dateArray[i].LEAVE_FROMDATE);
-                    kony.print("soumya 13");
                   	dateArray[i].LEAVE_ENDDATE = this.convertStringDateDbToDateObject(dateArray[i].LEAVE_ENDDATE);
-                    kony.print("soumya 13");
-                  	if (dateArray[i].LEAVE_FROMDATE.getTime() <= date.getTime() && dateArray[i].LEAVE_FROMDATE.getTime() >= date.getTime()) {
-                        kony.print("soumya 14");
+                  	if (dateArray[i].LEAVE_FROMDATE.getTime() <= date.getTime() && dateArray[i].LEAVE_ENDDATE.getTime() >= date.getTime()) {
                       	return true;
                     }
                 }
-            	kony.print("soumya 15");
                 return false;
             } else {
-              	kony.print("soumya 16");
                 return false;
             }
         } else {
-          	kony.print("soumya 17");
             return false;
         }
     } catch (exception) {
-      	kony.print("soumya 18");
         kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
         handleError(exception);
     }
