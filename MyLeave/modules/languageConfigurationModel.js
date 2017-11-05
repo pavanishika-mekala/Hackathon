@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Thu Nov 02 11:15:29 UTC 2017languageConfiguration*******************
+// ****************Generated On Sun Nov 05 01:01:22 UTC 2017languageConfiguration*******************
 // **********************************Start languageConfiguration's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -33,6 +33,8 @@ if(typeof(com.kony.NotificationsLanguageService)=== "undefined"){ com.kony.Notif
 com.kony.NotificationsLanguageService.languageConfiguration = function(){
 	this.okta_user_id = null;
 	this.language = null;
+	this.lastmodifiedts = null;
+	this.softdeleteflag = null;
 	this.markForUpload = true;
 };
 
@@ -48,6 +50,18 @@ com.kony.NotificationsLanguageService.languageConfiguration.prototype = {
 	},
 	set language(val){
 		this._language = val;
+	},
+	get lastmodifiedts(){
+		return this._lastmodifiedts;
+	},
+	set lastmodifiedts(val){
+		this._lastmodifiedts = val;
+	},
+	get softdeleteflag(){
+		return this._softdeleteflag;
+	},
+	set softdeleteflag(val){
+		this._softdeleteflag = val;
 	},
 };
 
@@ -191,12 +205,18 @@ com.kony.NotificationsLanguageService.languageConfiguration.create = function(va
 *		valuesArray[0] = {};
 *		valuesArray[0].okta_user_id = "okta_user_id_0";
 *		valuesArray[0].language = "language_0";
+*		valuesArray[0].lastmodifiedts = "lastmodifiedts_0";
+*		valuesArray[0].softdeleteflag = "softdeleteflag_0";
 *		valuesArray[1] = {};
 *		valuesArray[1].okta_user_id = "okta_user_id_1";
 *		valuesArray[1].language = "language_1";
+*		valuesArray[1].lastmodifiedts = "lastmodifiedts_1";
+*		valuesArray[1].softdeleteflag = "softdeleteflag_1";
 *		valuesArray[2] = {};
 *		valuesArray[2].okta_user_id = "okta_user_id_2";
 *		valuesArray[2].language = "language_2";
+*		valuesArray[2].lastmodifiedts = "lastmodifiedts_2";
+*		valuesArray[2].softdeleteflag = "softdeleteflag_2";
 *		com.kony.NotificationsLanguageService.languageConfiguration.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
 com.kony.NotificationsLanguageService.languageConfiguration.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
@@ -409,14 +429,20 @@ com.kony.NotificationsLanguageService.languageConfiguration.update = function(wc
 *		inputArray[0] = {};
 *		inputArray[0].changeSet = {};
 *		inputArray[0].changeSet.language = "language_updated0";
+*		inputArray[0].changeSet.lastmodifiedts = "lastmodifiedts_updated0";
+*		inputArray[0].changeSet.softdeleteflag = "softdeleteflag_updated0";
 *		inputArray[0].whereClause = "where okta_user_id = '0'";
 *		inputArray[1] = {};
 *		inputArray[1].changeSet = {};
 *		inputArray[1].changeSet.language = "language_updated1";
+*		inputArray[1].changeSet.lastmodifiedts = "lastmodifiedts_updated1";
+*		inputArray[1].changeSet.softdeleteflag = "softdeleteflag_updated1";
 *		inputArray[1].whereClause = "where okta_user_id = '1'";
 *		inputArray[2] = {};
 *		inputArray[2].changeSet = {};
 *		inputArray[2].changeSet.language = "language_updated2";
+*		inputArray[2].changeSet.lastmodifiedts = "lastmodifiedts_updated2";
+*		inputArray[2].changeSet.softdeleteflag = "softdeleteflag_updated2";
 *		inputArray[2].whereClause = "where okta_user_id = '2'";
 *		com.kony.NotificationsLanguageService.languageConfiguration.updateAll(inputArray,successcallback,errorcallback);
 *************************************************************************************/
@@ -1399,6 +1425,8 @@ com.kony.NotificationsLanguageService.languageConfiguration.convertTableToObject
 			var obj = new com.kony.NotificationsLanguageService.languageConfiguration();
 			obj.okta_user_id = res[i].okta_user_id;
 			obj.language = res[i].language;
+			obj.lastmodifiedts = res[i].lastmodifiedts;
+			obj.softdeleteflag = res[i].softdeleteflag;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
 		}
@@ -1411,6 +1439,8 @@ com.kony.NotificationsLanguageService.languageConfiguration.filterAttributes = f
 	var attributeTable = {};
 	attributeTable.okta_user_id = "okta_user_id";
 	attributeTable.language = "language";
+	attributeTable.lastmodifiedts = "lastmodifiedts";
+	attributeTable.softdeleteflag = "softdeleteflag";
 
 	var PKTable = {};
 	PKTable.okta_user_id = {}
@@ -1454,6 +1484,8 @@ com.kony.NotificationsLanguageService.languageConfiguration.prototype.getValuesT
 		valuesTable.okta_user_id = this.okta_user_id;
 	}
 	valuesTable.language = this.language;
+	valuesTable.lastmodifiedts = this.lastmodifiedts;
+	valuesTable.softdeleteflag = this.softdeleteflag;
 	return valuesTable;
 };
 
