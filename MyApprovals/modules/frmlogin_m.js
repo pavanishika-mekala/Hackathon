@@ -59,12 +59,12 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
   * Invokes the service in MF to get the Axway access token plus session user and
   * security attributes
   */
- kony.apps.coe.ess.frmLogin._axwayAuth = function() {
+  kony.apps.coe.ess.frmLogin._axwayAuth = function(data, action, successCallBack, errorCallback) {
    try {
      kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
 
      var params = {
-       "provider": kony.apps.coe.ess.appconfig.identityServicePreLogin
+       "provider": kony.apps.coe.ess.globalVariables.active_login_service
      };
      var axwayAuthService = kony.sdk.getCurrentInstance().getIntegrationService(kony.apps.coe.ess.appconfig.axwayAuthService);
      axwayAuthService.invokeOperation("login", {}, params, function(response) {
@@ -77,10 +77,18 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
        kony.sdk.getCurrentInstance().setGlobalRequestParam(kony.apps.coe.ess.globalVariables.sap_axway_token, kony.apps.coe.ess.appconfig.axwayEnvironment, "headers");
        kony.sdk.getCurrentInstance().setGlobalRequestParam(Constants.AUTHORIZATION_HEADER, "Bearer "+response.security_attributes_api.access_token_api, "headers");
 
+       var isRememberMeChecked = (frmLogin.imgRememberMe.src === 'on.png') ? (true) : (false);
+       if (isRememberMeChecked === true) {
+         // Store the okta token
+         var securityObj = new kony.apps.coe.ess.syncFunctions();
+         var token = response.refresh_token;//securityObj.encryptData(response.refresh_token);
+         kony.store.setItem("oktaToken", token);
+       }
+
        kony.application.dismissLoadingScreen();
 
        // Login on backend
-       kony.apps.coe.ess.frmLogin._backendLogin();
+       kony.apps.coe.ess.frmLogin._backendLogin(action, successCallBack, errorCallback);
      }, kony.apps.coe.ess.frmLogin._errorCallback);
    } catch (exception) {
      kony.apps.coe.ess.frmLogin._errorCallback(exception);
@@ -92,7 +100,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
   *
   * @param data JSON object with session attributes and axway token
   */
- kony.apps.coe.ess.frmLogin._backendLogin = function() {
+  kony.apps.coe.ess.frmLogin._backendLogin = function(action, successCallBack, errorCallback) {
    try {
      kony.print("-- start kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
      //  kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
@@ -116,7 +124,10 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
        //#else
        frmLogin.btnLogin.onClick = function() {};
        //#endif
-       kony.sdk.mvvm.LoginAction("");
+       if(action === undefined || action === null){
+         action = "";
+       }
+       kony.sdk.mvvm.LoginAction(action, successCallBack, errorCallback);
      } else {
        frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.validateCredentials");
        frmLogin.lblLoginErrorMessage.isVisible = true;
@@ -128,12 +139,64 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
    }
  };
 
- kony.apps.coe.ess.frmLogin.oktaLogin = function() {
+ kony.apps.coe.ess.frmLogin.oktaRefresh = function(refreshToken, action, successCallBack, errorCallback) {
   try {
-    new kony.sdk().init(kony.apps.coe.ess.appconfig.appkey,kony.apps.coe.ess.appconfig.appsecret,kony.apps.coe.ess.appconfig.serviceurl, function(){
-      var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServicePreLogin);
-      preLoginService.login({"browserWidget":frmLogin.browserOkta}, kony.apps.coe.ess.frmLogin._axwayAuth, kony.apps.coe.ess.frmLogin._errorCallback);
-    }, kony.apps.coe.ess.frmLogin._errorCallback);
+      kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+      var refreshLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceOktaRefresh);
+      refreshLoginService.login({"refresh_token":refreshToken}, function(data){
+        kony.apps.coe.ess.globalVariables.active_login_service = kony.apps.coe.ess.appconfig.identityServiceOktaRefresh;
+        kony.application.dismissLoadingScreen();
+        kony.apps.coe.ess.frmLogin._axwayAuth(data, action, successCallBack, errorCallback);
+      } , function(err){
+        // Check it the error occurred before any pre login
+        if(kony.apps.coe.ess.globalVariables.used_pre_login === undefined || kony.apps.coe.ess.globalVariables.used_pre_login === null || kony.apps.coe.ess.globalVariables.used_pre_login === false){
+          // Remove any saved token and send the user to the login screen
+          kony.store.removeItem("oktaToken");
+          frmLogin.show();
+        } else {
+          kony.apps.coe.ess.frmLogin._errorCallback(err);
+        }
+      });
+  } catch (exception) {
+    kony.apps.coe.ess.frmLogin._errorCallback(exception);
+  }
+}
+
+kony.apps.coe.ess.frmLogin.oktaLogin = function() {
+  try {
+    // If there is an active login, logout first
+    if (kony.apps.coe.ess.globalVariables.active_login_service !== "") {
+      kony.apps.coe.ess.globalVariables.active_login_service = "";
+      kony.sdk.mvvm.LogoutAction();
+    } else {
+      new kony.sdk().init(kony.apps.coe.ess.appconfig.appkey, kony.apps.coe.ess.appconfig.appsecret, kony.apps.coe.ess.appconfig.serviceurl, function() {
+        // If there is a stored token, try to use it, otherwise initiate normal Okta login
+        var isRememberMeChecked = (frmLogin.imgRememberMe.src === 'on.png') ? (true) : (false);
+        if (isRememberMeChecked && kony.store.getItem("oktaToken") !== null && kony.store.getItem("oktaToken") !== undefined) {
+          var securityObj = new kony.apps.coe.ess.syncFunctions();
+          var token = kony.store.getItem("oktaToken");//securityObj.decryptData(kony.store.getItem("oktaToken"));
+          // Remove previously stored token - if an error occurs it will avoid loops
+          kony.store.removeItem("oktaToken");
+          kony.apps.coe.ess.frmLogin.oktaRefresh(token, "");
+        } else {
+          kony.apps.coe.ess.globalVariables.active_login_service = kony.apps.coe.ess.appconfig.identityServiceOkta;
+          kony.apps.coe.ess.globalVariables.used_pre_login = true;
+          var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceOkta);
+          preLoginService.login({
+            "browserWidget": frmLogin.browserOkta
+          }, kony.apps.coe.ess.frmLogin._axwayAuth, kony.apps.coe.ess.frmLogin._errorCallback);
+        }
+      }, function(err) {
+        // Check it the error occurred before any pre login
+        if (kony.apps.coe.ess.globalVariables.used_pre_login === undefined || kony.apps.coe.ess.globalVariables.used_pre_login === null || kony.apps.coe.ess.globalVariables.used_pre_login === false) {
+          // Remove any saved token and send the user to the login screen
+          kony.store.removeItem("oktaToken");
+          frmLogin.show();
+        } else {
+          kony.apps.coe.ess.frmLogin._errorCallback(err);
+        }
+      });
+    }
   } catch (exception) {
     kony.apps.coe.ess.frmLogin._errorCallback(exception);
   }
@@ -162,9 +225,9 @@ kony.apps.coe.ess.frmLogin.afterloginSuccess =
     if (isRememberMeChecked) {
       kony.store.setItem("rememberme", true);
       var securityObj = new kony.apps.coe.ess.syncFunctions();
-      var username = securityObj.encryptDataDW(kony.apps.coe.ess.frmLoginDesk.username);
+      var username = kony.apps.coe.ess.frmLoginDesk.username;//securityObj.encryptDataD(kony.apps.coe.ess.frmLoginDesk.username);
       kony.store.setItem("username", username);
-      var password = securityObj.encryptDataDW(kony.apps.coe.ess.frmLoginDesk.password);
+      var password = kony.apps.coe.ess.frmLoginDesk.password;//securityObj.encryptDataD(kony.apps.coe.ess.frmLoginDesk.password);
       kony.store.setItem("password", password);
     } else {
       kony.store.setItem("rememberme", false);
@@ -186,12 +249,12 @@ kony.apps.coe.ess.frmLogin.afterloginSuccess =
       var securityObj = new kony.apps.coe.ess.syncFunctions();
       //securityObj.checkConnectivity();
       //kony.apps.coe.ess.frmLogin.setSyncState(false);
-      var username = securityObj.encryptData(kony.apps.coe.ess.frmLogin.username);
+      var username = kony.apps.coe.ess.frmLogin.username;//securityObj.encryptData(kony.apps.coe.ess.frmLogin.username);
       kony.store.setItem("username", username);
       var isRememberMeChecked = (frmLogin.imgRememberMe.src === 'on.png') ? (true) : (false);
       if (isRememberMeChecked || kony.apps.ess.deepLinkingSSO.isRememberMeEnabled) {
         kony.store.setItem("rememberme", true);
-        var password = securityObj.encryptData(kony.apps.coe.ess.frmLogin.password);
+        var password = kony.apps.coe.ess.frmLogin.password;//securityObj.encryptData(kony.apps.coe.ess.frmLogin.password);
         kony.store.setItem("password", password);
       } else {
         kony.store.setItem("rememberme", false);
@@ -269,30 +332,36 @@ kony.apps.coe.ess.frmLogin.frmLoginPreshow =
     frmLogin.tbPassword.text = kony.apps.coe.ess.frmLogin.password;
   } else {
     if (kony.store.getItem("rememberme") === true) {
-      var username = securityObj.decryptData(kony.store.getItem("username"));
-      var password = securityObj.decryptData(kony.store.getItem("password"));
+      var username = kony.store.getItem("username");//securityObj.decryptData(kony.store.getItem("username"));
+      var password = kony.store.getItem("password");//securityObj.decryptData(kony.store.getItem("password"));
       frmLogin.imgRememberMe.src = "on.png";
       frmLogin.tbUsername.text = username;
       frmLogin.tbPassword.text = password;
-    } else {
+    } else if (kony.store.getItem("rememberme") === false) {
       frmLogin.imgRememberMe.src = "off.png";
       frmLogin.tbUsername.text = "";
       frmLogin.tbPassword.text = "";
-      //     kony.store.setItem("rememberme", false);
+    } else {
+      frmLogin.tbUsername.text = "";
+      frmLogin.tbPassword.text = "";
+      kony.store.setItem("rememberme", (frmLogin.imgRememberMe.src === "on.png") );
     }
   }
   //#else
   if (kony.store.getItem("rememberme") === true) {
-    var username = securityObj.decryptData(kony.store.getItem("username"));
-    var password = securityObj.decryptData(kony.store.getItem("password"));
+    var username = kony.store.getItem("username");//securityObj.decryptData(kony.store.getItem("username"));
+    var password = kony.store.getItem("password");//securityObj.decryptData(kony.store.getItem("password"));
     frmLogin.imgRememberMe.src = "on.png";
     frmLogin.tbUsername.text = username;
     frmLogin.tbPassword.text = password;
-  } else {
+  } else if (kony.store.getItem("rememberme") === false) {
     frmLogin.imgRememberMe.src = "off.png";
     frmLogin.tbUsername.text = "";
     frmLogin.tbPassword.text = "";
-    kony.store.setItem("rememberme", false);
+  } else {
+    frmLogin.tbUsername.text = "";
+    frmLogin.tbPassword.text = "";
+    kony.store.setItem("rememberme", (frmLogin.imgRememberMe.src === "on.png") );
   }
   //#endif
   frmLogin.lblLoginErrorMessage.isVisible = false;
@@ -435,7 +504,7 @@ kony.apps.coe.ess.frmLogin.resetDbIncaseOfNewUser = function(callback) {
         callback(true);
         return;
       }
-      var previousUsername = securityObj.decryptData(storedUsername);
+      var previousUsername = storedUsername;//securityObj.decryptData(storedUsername);
       //Check if Currenlty Authenticated & Previously Logged In user are same
       if (previousUsername === kony.apps.coe.ess.frmLogin.username) {
         //If same, Reset is Not Needed. Send false in callback as user is not new
@@ -497,8 +566,10 @@ kony.apps.coe.ess.frmLogin.showEnableTouchIDPopup = function(callback) {
     frmLogin.imgRememberMe.src = "on.png";
     if (isValid) { //This will be the case when User Enables TouchID after successful authentication.
       var securityObj = new kony.apps.coe.ess.syncFunctions();
-      kony.store.setItem("username", securityObj.encryptData(username));
-      kony.store.setItem("password", securityObj.encryptData(password));
+      //kony.store.setItem("username", securityObj.encryptData(username));
+      //kony.store.setItem("password", securityObj.encryptData(password));
+      kony.store.setItem("username", username);
+      kony.store.setItem("password", password);
     } else { //This is the case when user try to enable TouchID before authenticating
       frmLogin.lblTouchIDPopupDescription.text = kony.i18n.getLocalizedString("i18n.ess.Login.registerUserForTouchId");
       kony.apps.coe.ess.frmLogin.showTouchIdPopup(kony.i18n.getLocalizedString("i18n.ess.Login.loginNow"));
@@ -542,53 +613,78 @@ kony.apps.coe.ess.frmLogin.showTouchIdPopup = function(okButtonText) {
 kony.apps.coe.ess.frmLogin.manualSyncOnClick = function(successCall, errorCall) {
   kony.print("--Start manualSyncOnClick--");
   if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-    var syncSuccess = function(successCallback, res) {
-      //Generally, background sync will do nothing after successful sync. In any special cases, You can specify actions to be performed after sync success in background
-      var updateSyncDate = function() {
-        kony.apps.coe.ess.globalVariables.lastSyncDate=new Date();
-//         var months = [
-//           "Jan", "Feb", "Mar",
-//           "Apr", "May", "Jun", "Jul",
-//           "Aug", "Sep", "Oct",
-//           "Nov", "Dec"
-//         ];
+    function startSync() {
+      kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+      var syncSuccess = function(successCallback, res) {
+        //Generally, background sync will do nothing after successful sync. In any special cases, You can specify actions to be performed after sync success in background
+        var updateSyncDate = function() {
+          var months = [
+            "Jan", "Feb", "Mar",
+            "Apr", "May", "Jun", "Jul",
+            "Aug", "Sep", "Oct",
+            "Nov", "Dec"
+          ];
 
-//         var currDate = new Date();
-//         var currDay = currDate.getDate();
-//         var currMonth =currDate.getMonthNameShort(kony.store.getItem("localeToBeSet"));// months[currDate.getMonth()];
-//         var currYear = currDate.getFullYear();
-//         var currTime = currDate.toHHMMSS(":");
-//         var suffix;
-//         if (parseInt(currDate.getHours()) >= 12) {
-//           suffix = "PM";
-//         } else {
-//           suffix = "AM";
-//         }
-//         //bbe-101 menu sync
-//         kony.apps.coe.ess.globalVariables.lastSyncDate=currDay + " " + currMonth + " " + currYear;
-// 		kony.apps.coe.ess.globalVariables.lastSyncTime= currTime.substring(0, 5) + " "; //+ suffix;
-        if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
-          kony.application.getCurrentForm().lblSyncDate.text =formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
-          kony.application.getCurrentForm().lblSyncTime.text = formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);
-        }
+          var currDate = new Date();
+          var currDay = currDate.getDate();
+          var currMonth = months[currDate.getMonth()];
+          var currYear = currDate.getFullYear();
+          var currTime = currDate.toHHMMSS(":");
+          var suffix;
+          if (parseInt(currDate.getHours()) >= 12) {
+            suffix = "PM";
+          } else {
+            suffix = "AM";
+          }
+          if (kony.application.getCurrentForm().lblSyncDate !== null || kony.application.getCurrentForm().lblSyncTime !== null) {
+            kony.application.getCurrentForm().lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
+            kony.application.getCurrentForm().lblSyncTime.text = currTime.substring(0, 5); //+ " " + suffix;
+          }
+          frmHamburger.lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
+          frmHamburger.lblSyncTime.text = currTime.substring(0, 5); //+ " " + suffix;
+        };
+        updateSyncDate();
+        successCallback();
+        kony.application.dismissLoadingScreen();
+      };
+      var successcallback = function() {};
+      if (successCall) { //If Successcall is provided, It will be executed immediately
+        successcallback = successCall;
       }
-      updateSyncDate();
-      successCallback();
-      kony.application.dismissLoadingScreen();
+      var errorcallback = function() {};
+      if (errorCall) {
+        errorcallback = errorCall;
+      }
+      kony.apps.coe.ess.Sync.startSyncSession(syncSuccess.bind(this, successcallback, errorcallback), function() {
+        //Sync Session Failed
+        kony.application.dismissLoadingScreen();
+      });
     };
-    var successcallback = function() {};
-    if (successCall) { //If Successcall is provided, It will be executed immediately
-      successcallback = successCall;
-    }
-    var errorcallback = function() {};
-    if (errorCall) {
-      errorcallback = errorCall;
-    }
-    kony.apps.coe.ess.Sync.startSyncSession(syncSuccess.bind(this, successcallback, errorcallback), function() {
-      //Sync Session Failed
+
+    var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.globalVariables.active_login_service);
+    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    loginService.getSecurityAttributes(function(res) {
       kony.application.dismissLoadingScreen();
+
+      function loginCallback() {
+        kony.application.dismissLoadingScreen();
+        var appInstance = kony.sdk.mvvm.KonyApplicationContext.getAppInstance();
+
+        // Remove token headers, if present
+        kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, "headers");
+        kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, "headers");
+        kony.sdk.getCurrentInstance().removeGlobalRequestParam(Constants.AUTHORIZATION_HEADER, "headers");
+        if (appInstance) {
+          kony.sdk.mvvm.initApplicationForms(appInstance);
+        }
+        startSync();
+      };
+      kony.apps.coe.ess.frmLogin.oktaRefresh(res.refresh_token, "", loginCallback, loginCallback);
+    }, function() {
+      kony.application.dismissLoadingScreen();
+      startSync();
     });
+
   } else {
     // If there is no internet connections, What are the actions to be done ?
     kony.apps.coe.ess.frmLogin.offlinePopup();
@@ -596,8 +692,6 @@ kony.apps.coe.ess.frmLogin.manualSyncOnClick = function(successCall, errorCall) 
   }
   kony.print("--End manualSyncOnClick--");
 };
-
-
 
 kony.apps.coe.ess.frmLogin.getSyncState = function() {
   return syncUse;
@@ -653,7 +747,7 @@ kony.apps.coe.ess.frmLogin.offlinePopup = function() {
  */
 kony.apps.coe.ess.frmLogin.getUserDetails = function() {
   kony.print("kony.apps.coe.ess.frmLogin.getUserDetails - Start");
-  kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceName).getProfile(true, this.userDetailsSucess, this.userDetailsError);
+  kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceSAP).getProfile(true, this.userDetailsSucess, this.userDetailsError);
   kony.print("kony.apps.coe.ess.frmLogin.getUserDetails - End");
 };
 /**
