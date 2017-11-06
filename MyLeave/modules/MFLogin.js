@@ -290,7 +290,7 @@ function userDetailsSucess(response) {
                                 }
                                 //#ifndef windows8
                                         frmHamburger.lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
-                                        frmHamburger.lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
+                                        frmHamburger.lblSyncTime.text = currTime.substring(0, 5);// + " " + suffix;
 
                                     //#endif
 
