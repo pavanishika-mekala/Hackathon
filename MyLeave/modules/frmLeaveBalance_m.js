@@ -70,8 +70,15 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
         }*/
         var chartData = {};
         chartData.LEAVETAKEN = data[0].availed;
-        chartData.TOTALLEAVE = data[0].balance;
-        chartData.LEAVEBALANCE = Number(parseInt(data[0].balance) - parseInt(data[0].availed)).toFixed();
+        chartData.LEAVEBALANCE = Number(parseInt(data[0].balance)).toFixed();//parseInt(data.leave_type[i].balance) - parseInt(data.leave_type[i].availed);
+        if( data[0].planned === ""){
+           data[0].planned = "0";
+        }
+        chartData.LEAVEPLANNED = data[0].planned;
+      //data[0].balance;
+        chartData.TOTALLEAVE =  parseInt(data.leave_type[0].availed) + parseInt(data.leave_type[0].balance) + parseInt(data.leave_type[0].planned);//data.leave_type[i].balance;
+        //chartData.LEAVETAKEN = data[0].availed;
+       // chartData.LEAVEBALANCE = Number(parseInt(data[0].balance) - parseInt(data[0].availed)).toFixed();
         chartData.LEAVETYPETITLE = data[0].leave_type_name;
         objectData[0] = chartData;
         var widgetObj = {
@@ -84,7 +91,7 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
         frmLeaveBalance.lblTitle.text = (object.widgets())[3].id + " Balance";
         //remove frmLeaveBalance.lblTotalLeave.text = Number(objectData[0].TOTALLEAVE).toFixed();
         //remove frmLeaveBalance.lblAvailedLeave.text = Number(objectData[0].LEAVETAKEN).toFixed();
-        frmLeaveBalance.lblTotalText.text=Number(objectData[0].TOTALLEAVE).toFixed();;
+        frmLeaveBalance.lblTotalText.text=Number(objectData[0].TOTALLEAVE).toFixed();
         frmLeaveBalance.lblCountConsumed.text=Number(objectData[0].LEAVETAKEN).toFixed();
         frmLeaveBalance.lblCountAvailable.text=Number(objectData[0].LEAVEBALANCE).toFixed();
         var totalColor=(colors[Number(objectId[1]) % 4][1][0]).substring(2,8);

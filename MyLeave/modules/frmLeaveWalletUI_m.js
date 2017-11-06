@@ -410,7 +410,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": "230",
+        "text": (Number(this.data[i].LEAVETAKEN)).toFixed(),//"230",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -431,7 +431,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": "360",
+        "text": (Number(this.data[i].LEAVEPLANNED)).toFixed(),//"360",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -452,7 +452,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "text": Number(this.data[i].LEAVEBALANCE).toFixed(),
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -507,7 +507,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "id": "lblCountTotal"+i,
         "isVisible": true,
         "skin": "LBLMOB555555PX24",
-        "text": "12",
+        "text": this.data[i].TOTALLEAVE,
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -531,7 +531,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "centerX": "50%",
         "width": "preffered",
         "height": "preffered",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "text": Number(this.data[i].LEAVEBALANCE).toFixed(),
         "zIndex": 3,
         isVisible: true,
       }, {
