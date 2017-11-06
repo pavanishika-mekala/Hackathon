@@ -1,0 +1,22 @@
+{
+  "background_color": "5fc3eb00",
+  "bg_type": "one",
+  "border_color": "ffffffff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "fontSizeInPx": false,
+  "font_color": "5c5c5cb2",
+  "font_name": "Helvetica",
+  "font_size": 86,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "s99a54711c954577b7997f27ea6891cb",
+  "tabrcandroid": {
+    "font_name": "Helvetica",
+    "font_size": 95,
+    "isForked": true
+  },
+  "wType": "Button"
+}

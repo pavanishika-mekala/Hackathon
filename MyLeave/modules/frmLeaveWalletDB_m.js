@@ -29,8 +29,12 @@ kony.apps.coe.ess.myLeave.leaveWallet.prototype.processData = function(data){
     for(var i=0; i < data.leave_type.length ; i++){
         var dataJson ={};
         dataJson.LEAVETAKEN = data.leave_type[i].availed;
-        dataJson.LEAVEBALANCE = parseInt(data.leave_type[i].balance) - parseInt(data.leave_type[i].availed);
-        dataJson.TOTALLEAVE = data.leave_type[i].balance;
+        dataJson.LEAVEBALANCE = data.leave_type[i].balance;//parseInt(data.leave_type[i].balance) - parseInt(data.leave_type[i].availed);
+      	if(data.leave_type[i].planned === ""){
+        	data.leave_type[i].planned = "0";
+      	}
+      	dataJson.LEAVEPLANNED = data.leave_type[i].planned;
+        dataJson.TOTALLEAVE =  parseInt(data.leave_type[i].availed) + parseInt(data.leave_type[i].balance) + parseInt(data.leave_type[i].planned);//data.leave_type[i].balance;
         dataJson.LEAVETYPETITLE = data.leave_type[i].leave_type_name;
         chartData.push(dataJson);
     }

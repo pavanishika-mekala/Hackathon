@@ -696,7 +696,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if(Number(holidays.length) > 0){
       hours = ((diff / day)+1) - Number(holidays.length);
     }
-    this.hours = ((diff / day)+1) * kony.apps.coe.ess.appconfig.workingHours;
+    this.hours = hours * kony.apps.coe.ess.appconfig.workingHours;
     if(hours == 1){
       hours = "1 day";
     }else{
