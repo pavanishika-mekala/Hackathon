@@ -920,7 +920,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.mappingBackendDataToCalendar = function(
                             "src": ""
                         },
                         "LABEL": {
-                            "skin": "sknBtnMobBg0OpFC333333Op100S24px"
+                            "skin": "sknBtnMobBg0Font5c5c5c"
                         }
                     };
                     kony.apps.coe.ess.myLeave.MyLeaveHomeUI.calendarWidget.setDataAtIndex(1, i, cellData);
