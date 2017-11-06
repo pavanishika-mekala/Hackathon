@@ -224,7 +224,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
           if(hoursData == "1"){
             duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
           }
-
+		  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
           if(hoursData>7){
             if(hoursData == "8"){
               duration = "1 " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ";  
@@ -234,7 +234,9 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
                 days = days[0];
               }
               duration = days+" "+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day(s).text");
+			  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3) + " - " + endDate.getDate() + " " + endDate.retriveMonthName().substring(0, 3);
             }
+			
           }
 
             //commented as duration was calculted on start date and end date
@@ -253,7 +255,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
 //               "text": "1" + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ",
 //               "isVisible": true                        };
 //           }
-          	processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
+          	         	
             processedRequest.AdditionalData = {
               "text": duration,
               "isVisible": true                        
