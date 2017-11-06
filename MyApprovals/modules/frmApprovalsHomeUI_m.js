@@ -220,25 +220,24 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
           var startdate = new Date().modifyByYYYYMMDDHHMMSS(processedRequest.attributejson.StartDate);
           var endDate = new Date().modifyByYYYYMMDDHHMMSS(processedRequest.attributejson.EndDate);
           var hoursData = Number(processedRequest.Leave_hours).toFixed();
-          var duration = hoursData + " hours";
+          var duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hours"); // hours";
           if(hoursData == "1"){
-            duration = hoursData + " hour";
+            duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
           }
-          var days = String(processedRequest.Leave_days).split(".");
-          var diff;
-          if(days[1] == "00"){
-            days = days[0];
-          }
-          duration = days+" Day(s)";
+
           if(hoursData>7){
             if(hoursData == "8"){
-              duration = "1" + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ";  
+              duration = "1 " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ";  
             }else{
-              duration = days+" Day(s)";
+              var days = String(processedRequest.Leave_days).split(".");
+              if(days[1] == "00"){
+                days = days[0];
+              }
+              duration = days+" "+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day(s).text");
             }
           }
-          
-          //commented as duration was calculted on start date and end date
+
+            //commented as duration was calculted on start date and end date
           //var diff = (endDate - startdate) / (1000 * 3600 * 24); 
 //           if (processedRequest.Leave_hours >= 1) {
 //             //multiple days leave
