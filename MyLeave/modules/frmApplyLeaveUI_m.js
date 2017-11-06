@@ -445,9 +445,11 @@ kony.apps.coe.ess.myLeave.applyLeave.preShow = {
 kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
 
   selectedLeaveType: "",
-  mappingLeaveTypeData: function(data) {
-    kony.print("mappingLeaveTypeData Data"+JSON.stringify(data));
+  mappingLeaveTypeData: function(dataResponse) {
+    kony.print("mappingLeaveTypeData Data"+JSON.stringify(dataResponse));
     var lstMasterData=[];
+    var data={};
+    data.selectleavetype=dataResponse;
     for (var i = 0; i < data.selectleavetype.length; i++) {
       var btnLeaveTypeObj = new kony.ui.Button({
         id: "btnLeaveType" + data.selectleavetype[i].id,

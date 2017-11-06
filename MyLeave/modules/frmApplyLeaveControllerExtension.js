@@ -27,7 +27,11 @@ kony.sdk.mvvm.frmApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         try {
             var scopeObj = this;
             kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
-            this.$class.$superp.fetchData.call(this, success, error);
+            var languageCode = kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase();
+            var query = "select  lt.id as id, lt.name as name1 ,tr.TEXT_DISPLAY as name from leave_type lt LEFT JOIN translation tr "+
+                "ON ( lt.id = tr.TEXT_CODE) and tr.SPRAS like '"+languageCode+"'";
+            kony.sync.single_select_execute(kony.sync.getDBName(), query, null, success,error); 
+            //this.$class.$superp.fetchData.call(this, success, error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             kony.sdk.mvvm.log.error("Error in fetchData of controllerExtension");

@@ -7,14 +7,14 @@ var frmApplyLeaveConfig= {
             "access": "offline",
             "mock": false
         }
-    },
-	"selectleavetype": {
-		"fieldprops": {
-          "entity": "leave_type",
-          "widgettype": "FlexContainer",
-          "query": "select  id, name from leave_type",
-          "querytype": "sql"
-        }
-	}
+    }
+// 	"selectleavetype": {
+// 		"fieldprops": {
+//           "entity": "leave_type",
+//           "widgettype": "FlexContainer",
+//           "query": "select  id, name from leave_type",
+//           "querytype": "sql"
+//         }
+// 	}
 	}; 
 
