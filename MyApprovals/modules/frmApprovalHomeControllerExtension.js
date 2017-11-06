@@ -59,6 +59,8 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
               "       approval_request.islater           AS ISLater," +
               "       approval_request.isread            AS ISRead," +
               "       approval_request.request_date      AS RequestDate," +
+              "       approval_request.leave_hours       AS Leave_hours," +
+              "       approval_request.leave_days        AS Leave_days," +
               "       employee.first_name                AS FirstName," +
               "       employee.last_name                 AS LastName," +
               "       employee.Media_Id              	   AS MediaID," +

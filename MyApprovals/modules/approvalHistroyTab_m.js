@@ -211,6 +211,8 @@ kony.apps.coe.ess.ApprovalHistoryTab.prototype.filterData = function(data, succe
             "	   Employee.Last_Name AS LastName," +
             "	   approval_request.employee_id AS CreatedByEmployeeid," +
             "	   approval_request.request_date AS RequestDate," +
+            "       approval_request.leave_hours       AS Leave_hours," +
+            "       approval_request.leave_days        AS Leave_days," +
             "	   Status.Status_Name AS StatusName," +
             "	   request_category.name AS Category," +
             "	   approval_request.category_id AS CategoryID," +
