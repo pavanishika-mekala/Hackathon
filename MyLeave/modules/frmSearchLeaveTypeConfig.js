@@ -6,13 +6,13 @@ var frmSearchLeaveTypeConfig = {
         "objectServiceOptions": {
             "access": "offline"
         }
-    },
-	"segLeaveType": {
-        "fieldprops": {
-            "widgettype": "Segment",
-            "entity": "leave_type",
-          	"query":"select name from leave_type",
-			"querytype": "sql"
-        }
     }
+// 	"segLeaveType": {
+//         "fieldprops": {
+//             "widgettype": "Segment",
+//             "entity": "leave_type",
+//           	"query":"select name from leave_type",
+// 			"querytype": "sql"
+//         }
+//     }
 };
