@@ -388,7 +388,7 @@ function userDetailsSucess(response) {
                 }, function(err) {
                     //Sync InitFailed
                     kony.sdk.mvvm.log.error("Sync is not initialized");
-                    applicationErrorCallback("Application is not initialized");
+                    applicationErrorCallback(err);//"Application is not initialized");
                 });
             }
             else if (kony.apps.coe.ess.globalVariables.isSPA == true) {
@@ -404,7 +404,7 @@ function userDetailsSucess(response) {
         else {
             //If appInstance is null/undefined, It means app is not initialized properly
             kony.sdk.mvvm.log.error("Application is not initialized");
-            applicationErrorCallback("Application is not initialized");
+            applicationErrorCallback(null);
         }
     }
     catch (excp) {
@@ -415,9 +415,7 @@ function userDetailsSucess(response) {
 
 function applicationErrorCallback(error) {
     _removeTokenHeaders();
-
     kony.sdk.mvvm.log.error("failed to load app");
-    error = error.getRootErrorObj();
     if (kony.apps.coe.ess.globalVariables.isWebDesktop == true) {
         kony.apps.coe.ess.frmLoginDesk.invalidLoginAction(error);
         return;
@@ -426,6 +424,7 @@ function applicationErrorCallback(error) {
     frmLogin.tbUsername.skin = "sknTbWrongCredentials";
     frmLogin.tbPassword.skin = "sknTbWrongCredentials";
     if (error !== null && error !== undefined && error.mfcode !== null && error.mfcode !== undefined && error.mfcode == "Auth-4") {
+        error = error.getRootErrorObj();
         if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
             frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.wrongCredentials");
         }
