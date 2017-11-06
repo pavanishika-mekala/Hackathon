@@ -75,6 +75,8 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					"       approval_request.islater           AS ISLater," +
 					"       approval_request.isread            AS ISRead," +
 					"       approval_request.request_date      AS RequestDate," +
+                    "       approval_request.leave_hours       AS Leave_hours," +
+                    "       approval_request.leave_days        AS Leave_days," +
 					"       employee.first_name                AS FirstName," +
                     "		employee.Media_Id				   AS MediaID,	"+
 					"       employee.last_name                 AS LastName," +
@@ -224,7 +226,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 				if (ApprovalRequestDetailData && ApprovalRequestDetailData.RequestDetials && ApprovalRequestDetailData.RequestDetials.request_type && ApprovalRequestDetailData.userAttachments) {
 					//chainging the ui based on the request Type
 					kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.changeSkins(ApprovalRequestDetailData.RequestDetials.request_type);
-					//binding the approavl request fields
+					//binding the approval request fields
 					kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.bindApprovalRequestDetails(ApprovalRequestDetailData.processedRequestDetail);
 					//Binding the comments to the segments
 					var SegChatDataMap = {
