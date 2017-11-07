@@ -219,14 +219,16 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
         if (processedRequest.attributejson.StartDate && processedRequest.attributejson.EndDate) {
           var startdate = new Date().modifyByYYYYMMDDHHMMSS(processedRequest.attributejson.StartDate);
           var endDate = new Date().modifyByYYYYMMDDHHMMSS(processedRequest.attributejson.EndDate);
-          var hoursData = Number(processedRequest.Leave_hours).toFixed();
+          var hoursData = processedRequest.Leave_hours;
+		  var hours = Number(hoursData).toFixed();
           var duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hours"); // hours";
-          if(hoursData == "1"){
+          if(hours == 1){
             duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
           }
 		  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
-          if(hoursData>7){
-            if(hoursData == "8"){
+		  
+          if(hours > 7){
+            if(hours == 8){
               duration = "1 " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ";  
             }else{
               var days = String(processedRequest.Leave_days).split(".");
