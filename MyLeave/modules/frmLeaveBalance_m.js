@@ -26,7 +26,7 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
     JSON.stringify("chartObj" + chartObj);
     JSON.stringify("chartObj" + objectId);
     JSON.stringify("chartObj" + rowIndex);
-    var sqlquery = "select *  from employee_leave_type limit " + rowIndex + ", 1";
+    var sqlquery = "select  * from employee_leave_type  l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE) and tr.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' limit " + rowIndex + ", 1";
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
         var objectData = new Array(1);
         var skn = "";
@@ -79,7 +79,7 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
         chartData.TOTALLEAVE =  parseInt(data[0].availed) + parseInt(data[0].balance) + parseInt(data[0].planned);//data.leave_type[i].balance;
         //chartData.LEAVETAKEN = data[0].availed;
        // chartData.LEAVEBALANCE = Number(parseInt(data[0].balance) - parseInt(data[0].availed)).toFixed();
-        chartData.LEAVETYPETITLE = data[0].leave_type_name;
+        chartData.LEAVETYPETITLE = data[0].TEXT_DISPLAY;//data[0].leave_type_name;
         objectData[0] = chartData;
         var widgetObj = {
             "lblTop": "lblTop",

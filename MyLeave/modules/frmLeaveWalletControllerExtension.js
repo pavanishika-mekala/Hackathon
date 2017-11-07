@@ -27,7 +27,9 @@ kony.sdk.mvvm.frmLeaveWalletControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
         try {
             var scopeObj = this;
             kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
-            this.$class.$superp.fetchData.call(this, success, error);
+            var languageCode = kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase();
+			var query = "select  * from employee_leave_type  l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE) and tr.SPRAS like '"+languageCode+"'";
+           kony.sync.single_select_execute(kony.sync.getDBName(), query, null, success,error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             kony.sdk.mvvm.log.error("Error in fetchData of controllerExtension");
