@@ -238,6 +238,7 @@ Settings.prototype.destroyForms = function(){
     frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.resetDBText");
     frmSettings.btnReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.reset");
     frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSettings.SelectLang");
+	frmSettings.btnChangeLanguage.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.ChangeLang");
   }catch(e){
     kony.print("Error : "+e);
   }

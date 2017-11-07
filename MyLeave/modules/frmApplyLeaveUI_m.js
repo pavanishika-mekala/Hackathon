@@ -2140,9 +2140,9 @@ kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minSt
   //   }
   if((Number(hours) > 4 && btnAction == "HalfDay") ||( Number(hours) > 10 && btnAction == "Hours")){
     if(btnAction == "HalfDay"){
-      alert("Please select duration hours less than or equal to 4");
+      alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" 4"  );//"Please select duration hours less than or equal to 4");
     }else if(btnAction == "Hours"){
-      alert("Please select duration hours less than or equal to 10");
+      alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" 10");    //"Please select duration hours less than or equal to 10");
     }
     }
 };
