@@ -94,6 +94,7 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
         frmLeaveBalance.lblTotalText.text=objectData[0].TOTALLEAVE;
         frmLeaveBalance.lblCountConsumed.text=objectData[0].LEAVETAKEN;
         frmLeaveBalance.lblCountAvailable.text=objectData[0].LEAVEBALANCE;
+      	frmLeaveBalance.lblCountPlanned.text=objectData[0].LEAVEPLANNED;
         var totalColor=(colors[Number(objectId[1]) % 4][1][0]).substring(2,8);
         var availedColor=(colors[Number(objectId[1]) % 4][0][1]).substring(2,8);
         kony.print("-----" +availedColor+"-----"+totalColor);
