@@ -27,7 +27,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         try {
             var scopeObj = this;
             kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
-            var query ="select la.id as id, la.leave_id as leave_id, la.status_id as status_id, la.employee_id as employee_id, la.description as description, la.createdts as createdts, la.employee_id as First_Name from leave_audit la where la.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
+            var query ="select la.id as id, la.leave_id as leave_id, la.status_id as status_id,la.description as description, la.createdts as createdts, la.employee_id as First_Name from leave_audit la where la.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
             var data = [];
             kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function(res_leave_audit) {
                 data = res_leave_audit;
