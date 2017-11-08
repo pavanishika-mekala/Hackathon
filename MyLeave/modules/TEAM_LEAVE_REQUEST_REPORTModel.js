@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Thu Nov 02 11:15:29 UTC 2017TEAM_LEAVE_REQUEST_REPORT*******************
+// ****************Generated On Sun Nov 05 01:01:22 UTC 2017TEAM_LEAVE_REQUEST_REPORT*******************
 // **********************************Start TEAM_LEAVE_REQUEST_REPORT's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};

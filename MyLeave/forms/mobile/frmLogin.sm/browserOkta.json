@@ -34,7 +34,7 @@
     "canUpdateUI": true,
     "containerweight": 69,
     "detecttelnumber": true,
-    "htmlstring": "",
+    "htmlstring": ".",
     "id": "browserOkta",
     "info": null,
     "isvisible": true,

@@ -36,6 +36,8 @@ kony.model.MYAPPROVALS.approval_requestModel = (function(){
 		 * softdeletedflag 
 		 * status_id 
 		 * type_id 
+		 * leave_hours 
+		 * leave_days 
 		 */
         kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
     }

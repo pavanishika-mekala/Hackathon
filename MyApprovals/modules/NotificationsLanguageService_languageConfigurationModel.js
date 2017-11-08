@@ -23,6 +23,8 @@ kony.model.NotificationsLanguageService.languageConfigurationModel = (function()
 		 *
 		 * okta_user_id 
 		 * language 
+		 * lastmodifiedts 
+		 * softdeleteflag 
 		 */
         kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
     }

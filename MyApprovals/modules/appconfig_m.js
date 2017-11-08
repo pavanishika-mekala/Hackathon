@@ -18,7 +18,8 @@ kony.apps.coe.ess.appconfig = {
     appkey: "9097ff6db84d7bb312bc78eebbcdf32c",
     appsecret: "e45f525b0662a32c9bc1ae7707a3c738",
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
-		identityServicePreLogin:"DevNextTimesheetOktaLogin",
+		identityServiceOkta:"DevNextTimesheetOktaLogin",
+		identityServiceOktaRefresh:"DevNextTimesheetOktaRfrsh",
     axwayAuthService:"DevNextTimesheetOktaUPAxway",
 		axwayEnvironment:"etimesheet",
     useOkta: true,
@@ -34,10 +35,10 @@ kony.apps.coe.ess.appconfig = {
    	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",
 
 	ACFAppID :"MYAPPROVALS",
-  	identityServiceName:"ESSIDENTITY",
+		identityServiceSAP:"ESSIDENTITY",
     isShowDeepLinkingAppBeforeInstall:false,
     isShowDelegation:true,
- 	appversion : "v0.0.5",
+ 	appversion : "v0.0.7",
     listOfApps : ["eTimeSheetMyLeave", "eTimeSheetMyTime", "myPay", "myExpenses", "myProfile"],
     myPayUrl:"https://itunes.apple.com/in/app/kony-mypay/id1155632859?mt=8",//AppstoreURL for the My Pay.
     myTimeUrl:"https://itunes.apple.com/in/app/kony-mytime/id1157618072?mt=8",//AppstoreURL for the My Time.
