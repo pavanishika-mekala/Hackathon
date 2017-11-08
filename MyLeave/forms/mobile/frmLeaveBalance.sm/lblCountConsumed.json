@@ -24,14 +24,14 @@
         0
     ],
     "_skin_": "s42c653cffd64002a401b23787265c31",
-    "_text_": "40",
+    "_text_": "40.00",
     "_top_": {
         "type": "string",
         "value": "0%"
     },
     "_width_": {
         "type": "string",
-        "value": "15%"
+        "value": "25%"
     },
     "_wrapping_": 2,
     "android": {

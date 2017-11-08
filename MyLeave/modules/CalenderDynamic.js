@@ -262,7 +262,7 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
             "top": "-16.01%",
             "left": "0%",
             "width": "14.28%",
-            "height": "16%",
+            "height": "17%",
             "zIndex": 1,
             "isVisible": true,
             "skin": this.cellSkin,

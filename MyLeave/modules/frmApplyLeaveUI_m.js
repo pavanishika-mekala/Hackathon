@@ -445,9 +445,11 @@ kony.apps.coe.ess.myLeave.applyLeave.preShow = {
 kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
 
   selectedLeaveType: "",
-  mappingLeaveTypeData: function(data) {
-    kony.print("mappingLeaveTypeData Data"+JSON.stringify(data));
+  mappingLeaveTypeData: function(dataResponse) {
+    kony.print("mappingLeaveTypeData Data"+JSON.stringify(dataResponse));
     var lstMasterData=[];
+    var data={};
+    data.selectleavetype=dataResponse;
     for (var i = 0; i < data.selectleavetype.length; i++) {
       var btnLeaveTypeObj = new kony.ui.Button({
         id: "btnLeaveType" + data.selectleavetype[i].id,
@@ -696,7 +698,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if(Number(holidays.length) > 0){
       hours = ((diff / day)+1) - Number(holidays.length);
     }
-    this.hours = ((diff / day)+1) * kony.apps.coe.ess.appconfig.workingHours;
+    this.hours = hours * kony.apps.coe.ess.appconfig.workingHours;
     if(hours == 1){
       hours = "1 day";
     }else{
@@ -2138,9 +2140,9 @@ kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minSt
   //   }
   if((Number(hours) > 4 && btnAction == "HalfDay") ||( Number(hours) > 10 && btnAction == "Hours")){
     if(btnAction == "HalfDay"){
-      alert("Please select duration hours less than or equal to 4");
+      alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" 4"  );//"Please select duration hours less than or equal to 4");
     }else if(btnAction == "Hours"){
-      alert("Please select duration hours less than or equal to 10");
+      alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" 10");    //"Please select duration hours less than or equal to 10");
     }
     }
 };

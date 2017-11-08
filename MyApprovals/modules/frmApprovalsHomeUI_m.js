@@ -108,6 +108,8 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
     processedRequest.StatusName = approvalRequest.StatusName;
     processedRequest.request_type = approvalRequest.Type;
     processedRequest.ID = approvalRequest.ID;
+    processedRequest.Leave_hours = approvalRequest.Leave_hours;
+    processedRequest.Leave_days = approvalRequest.Leave_days;
     processedRequest.remaingHours = 0;
     processedRequest.RequestDateObject = new Date().modifyByYYYYMMDDHHMMSS(approvalRequest.RequestDate);
     processedRequest.RequestDateString = processedRequest.RequestDateObject.toDateString();
@@ -217,21 +219,50 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
         if (processedRequest.attributejson.StartDate && processedRequest.attributejson.EndDate) {
           var startdate = new Date().modifyByYYYYMMDDHHMMSS(processedRequest.attributejson.StartDate);
           var endDate = new Date().modifyByYYYYMMDDHHMMSS(processedRequest.attributejson.EndDate);
-          var diff = (endDate - startdate) / (1000 * 3600 * 24);
-          if (diff >= 1) {
-            //multiple days leave
-            processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3) + " - " + endDate.getDate() + " " + endDate.retriveMonthName().substring(0, 3);
-            processedRequest.AdditionalData = {
-              "text": " " + Math.round(Number(diff) + 1).toString() + " Day(s) ",
-              "isVisible": true
-            };
-          } else {
-            //single Day leave
-            processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
-            processedRequest.AdditionalData = {
-              "text": "1" + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ",
-              "isVisible": true                        };
+          var hoursData = processedRequest.Leave_hours;
+		  var hours = Number(hoursData).toFixed();
+          var duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hours"); // hours";
+          if(hours == 1){
+            duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
           }
+		  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
+		  
+          if(hours > 7){
+            if(hours == 8){
+              duration = "1 " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ";  
+            }else{
+              var days = String(processedRequest.Leave_days).split(".");
+              if(days[1] == "00"){
+                days = days[0];
+              }
+              duration = days+" "+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day(s).text");
+			  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3) + " - " + endDate.getDate() + " " + endDate.retriveMonthName().substring(0, 3);
+            }
+			
+          }
+
+            //commented as duration was calculted on start date and end date
+          //var diff = (endDate - startdate) / (1000 * 3600 * 24); 
+//           if (processedRequest.Leave_hours >= 1) {
+//             //multiple days leave
+//             processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3) + " - " + endDate.getDate() + " " + endDate.retriveMonthName().substring(0, 3);
+//             processedRequest.AdditionalData = {
+//               "text": " " + Math.round(Number(diff) + 1).toString() + " Day(s) ",
+//               "isVisible": true
+//             };
+//           } else {
+//             //single Day leave
+//             processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
+//             processedRequest.AdditionalData = {
+//               "text": "1" + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ",
+//               "isVisible": true                        };
+//           }
+          	         	
+            processedRequest.AdditionalData = {
+              "text": duration,
+              "isVisible": true                        
+            };
+          
 
         }
         // request type specific skin and images and info images and border color changes
@@ -547,7 +578,9 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.refreshISlaterSegment = function() {
   kony.print("-- Start kony.apps.coe.ess.Approvals.ApprovalsHome.refreshISlaterSegmen --");
   try {
     //query for the retrival of the Islater requests count
-    var IsLaterRequests_query = "SELECT request_type.NAME AS TYPE, " +
+    var IsLaterRequests_query = "SELECT approval_request.leave_hours AS Leave_hours," +
+          "       approval_request.leave_days AS Leave_days," +
+        "request_type.NAME AS TYPE, " +
         "        Count (IsLaterRequests.type_id) AS COUNT ," +
         "			request_type.id AS id " +
         " FROM   request_type " +
@@ -613,6 +646,8 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.refreshNowCount = function() {
       "       approval_request.islater           AS ISLater," +
       "       approval_request.isread            AS ISRead," +
       "       approval_request.request_date      AS RequestDate," +
+      "       approval_request.leave_hours       AS Leave_hours," +
+      "       approval_request.leave_days        AS Leave_days," +
       "       employee.first_name                AS FirstName," +
       "       employee.last_name                 AS LastName," +
       "       employee.Media_Id              	   AS MediaID," +

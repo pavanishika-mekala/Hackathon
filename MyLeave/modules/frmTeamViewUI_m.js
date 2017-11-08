@@ -58,7 +58,7 @@ kony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar = function
     "weekNamePadding": "0%",
     "weekNameContainerWidth": "73.9%",
     "weekNameleft": "26.1%",
-    "weekNameTop": "51%",
+    "weekNameTop": "45%",
     "weekDayContainerheight": "40dp",
     "weekDayContainerWidth": "73.9%",
     "weekDayPadding": "0%",

@@ -410,7 +410,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": "230",
+        "text": this.data[i].LEAVETAKEN,//"230",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -431,7 +431,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": "360",
+        "text": this.data[i].LEAVEPLANNED,//"360",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -452,7 +452,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "text": this.data[i].LEAVEBALANCE,
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -507,7 +507,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "id": "lblCountTotal"+i,
         "isVisible": true,
         "skin": "LBLMOB555555PX24",
-        "text": "12",
+        "text": this.data[i].TOTALLEAVE,
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -531,7 +531,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "centerX": "50%",
         "width": "preffered",
         "height": "preffered",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "text": this.data[i].LEAVEBALANCE,
         "zIndex": 3,
         isVisible: true,
       }, {
@@ -660,7 +660,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
       "centerX": "50%",
       "width": "preffered",
       "height": "preffered",
-      "text": (Number(data.LEAVEBALANCE)).toFixed(),
+      "text": data.LEAVEBALANCE,
       "zIndex": 3,
       isVisible: true,
     }, {

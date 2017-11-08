@@ -28,7 +28,9 @@ kony.sdk.mvvm.frmSearchLeaveTypeControllerExtension = Class(kony.sdk.mvvm.BaseFo
        
             var scopeObj = this;
             kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
-            this.$class.$superp.fetchData.call(this, success, error);
+            var languageCode = kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase();
+			var query = "select  TEXT_DISPLAY as name from leave_type  l LEFT JOIN translation tr ON ( l.id = tr.TEXT_CODE) and tr.SPRAS like '"+languageCode+"'";
+            kony.sync.single_select_execute(kony.sync.getDBName(), query, null, success,error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             kony.sdk.mvvm.log.error("Error in fetchData of controllerExtension");
@@ -61,7 +63,7 @@ kony.sdk.mvvm.frmSearchLeaveTypeControllerExtension = Class(kony.sdk.mvvm.BaseFo
        
             var scopeObj = this;
           var obj = new kony.apps.coe.ess.myLeave.searchLeaveType();
-            var processedData = obj.dataProcess(data.segLeaveType);
+            var processedData = obj.dataProcess(data);
             this.getController().bindData(processedData);
             return processedData;
         } catch (err) {

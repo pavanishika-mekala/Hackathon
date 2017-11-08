@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Fri Nov 03 18:11:56 UTC 2017approval_request*******************
+// ****************Generated On Fri Nov 03 06:32:23 UTC 2017approval_request*******************
 // **********************************Start approval_request's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};

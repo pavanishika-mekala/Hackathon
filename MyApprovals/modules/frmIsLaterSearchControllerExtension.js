@@ -60,7 +60,9 @@ kony.sdk.mvvm.frmIsLaterSearchControllerExtension = Class(kony.sdk.mvvm.BaseForm
         });
       };
 
-      var IsLaterRequests_query = "SELECT request_type.NAME AS TYPE, " +
+      var IsLaterRequests_query = "SELECT leave_hours AS Leave_hours ," +
+      "leave_days AS Leave_days,"	+
+        "request_type.NAME AS TYPE, " +
           "        Count (IsLaterRequests.type_id) AS COUNT ," +
           "			request_type.id AS id " +
           " FROM   request_type " +
@@ -114,7 +116,7 @@ kony.sdk.mvvm.frmIsLaterSearchControllerExtension = Class(kony.sdk.mvvm.BaseForm
       handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.peopleSearch.ErrorMessage.processData")));
       var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_PROCESSDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_PROCESSDATA_IN_CONTROLLER_EXTENSION, err);
       kony.sdk.mvvm.log.error(exception.toString());
-    };
+    }
   },
   /**
 		 * This method binds the processed data to the form. Developer can edit.

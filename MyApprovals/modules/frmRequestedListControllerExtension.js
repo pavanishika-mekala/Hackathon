@@ -48,6 +48,8 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                     "       approval_request.islater           AS ISLater," +
                     "       approval_request.isread            AS ISRead," +
                     "       approval_request.request_date      AS RequestDate," +
+                    "       approval_request.leave_hours       AS Leave_hours," +
+              		"       approval_request.leave_days        AS Leave_days," +
                     "       employee.first_name                AS FirstName," +
                     "       employee.last_name                 AS LastName," +
                     "       employee.Media_Id              	   AS MediaID," +
@@ -55,7 +57,8 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                     "       request_approver.status_id         AS StatusId," +
                     "       status.status_name                 AS StatusName," +
                     "       request_approver.approver_id       AS Employee_id," +
-                    "       request_category.NAME              AS Category," +
+                    "       t2.TEXT_DISPLAY	As	Category,"+
+                    "       request_category.NAME              AS Category1," +
                     "       attribute.id                       AS attributeID," +
                     "       attribute.attribute_def_id         AS Attribute_DEF," +
                     "       attribute_def.attribute_section_id AS AttributeSection," +
@@ -72,17 +75,20 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                     "              ON ( approval_request.id = request_approver.approval_id )" +
                     "       LEFT JOIN request_category" +
                     "              ON ( approval_request.category_id = request_category.id )" +
+                    " LEFT JOIN translation t1 "+
+            		" ON (request_category.name=t1.TEXT_DISPLAY)"+
+					" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
                     "       LEFT JOIN attribute" +
                     "              ON ( approval_request.id = attribute.approval_id )" +
                     "       LEFT JOIN attribute_def" +
                     "              ON ( attribute.attribute_def_id = attribute_def.id )" +
                     " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'" +
+                    " and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' "+
                     " and request_approver.status_id = '2'" +
                     "and attribute_def.attribute_section_id='1'" +
                     " and approval_request.islater='1'" +
                     " and approval_request.type_id='" + ContextData.selectedItem.ID + "'" +
                     " GROUP  BY approval_request.id  ";
-
                 kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", Approval_request_ISlater_Type, success, error);
 
             } else {

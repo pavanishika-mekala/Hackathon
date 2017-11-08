@@ -280,7 +280,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
         query_data.statusType = [];
         query_data.totalPeoples = [];
         if (query_data.selectedRequestType != null) {
-            if (query_data.selectedRequestType[0].request_name  != 'All') {
+         if (query_data.selectedRequestType[0].request_name  != kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
                 for (var i = 0; i < query_data.selectedRequestType.length; i++) {
                     query_data.requestType.push(query_data.selectedRequestType[i].request_name);
                 }
@@ -385,8 +385,11 @@ kony.apps.coe.ess.Approvals.frmSearch.retrieveDataByFilter = function(data, succ
             "	   Employee.Last_Name AS LastName," +
             "	   approval_request.employee_id AS CreatedByEmployeeid," +
             "	   approval_request.request_date AS RequestDate," +
+            "      approval_request.leave_hours       AS Leave_hours," +
+            "      approval_request.leave_days        AS Leave_days," +
             "	   Status.Status_Name AS StatusName," +
-            "	   request_category.name AS Category," +
+            "       t2.TEXT_DISPLAY	As	Category,"+
+            "	   request_category.name AS Category1," +
             "	   approval_request.category_id AS CategoryID," +
             " 	   approval_request.id  AS ID," +
             "	   request_type.name AS Type," +
@@ -411,10 +414,14 @@ kony.apps.coe.ess.Approvals.frmSearch.retrieveDataByFilter = function(data, succ
             "	   LEFT JOIN attribute_def ON (attribute.attribute_def_id = attribute_def.id) " +
             "	   LEFT JOIN Status ON (request_approver.status_id = Status.Id)" +
             "	   LEFT JOIN request_category ON (approval_request.category_id = request_category.id)" +
+            " LEFT JOIN translation t1 "+
+            " ON (request_category.name=t1.TEXT_DISPLAY)"+
+			" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
             "	   LEFT JOIN request_type ON (approval_request.type_id = request_type.id) " +
             "    LEFT JOIN (select approval_id as appr_id, value as startDate from attribute where attribute_def_id='StartDateAttributeDef') ON (approval_request.id = appr_id)" +// Join to get leave start date
-            " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'";
-        //-------------Query addition for fromDate and toDate
+            " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'"+
+        	" and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' ";
+      //-------------Query addition for fromDate and toDate
         if (data.fromDate != null && data.fromDate != "" && data.fromDate.length > 0 && data.toDate != null && data.toDate != "" && data.toDate.length > 0) {
             query += " AND startDate BETWEEN '" + data.fromDate + "' AND '" + data.toDate + "'";
         }
