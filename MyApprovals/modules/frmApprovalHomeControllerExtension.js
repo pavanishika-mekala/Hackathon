@@ -69,7 +69,8 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
               "       request_approver.status_id         AS StatusId," +
               "       status.status_name                 AS StatusName," +
               "       request_approver.approver_id       AS Employee_id," +
-              "       request_category.NAME              AS Category," +
+              "       t2.TEXT_DISPLAY                    As	Category,"+
+              "       request_category.NAME              AS Category1," +
               "       attribute.id                       AS attributeID," +
               "       attribute.attribute_def_id         AS Attribute_DEF," +
               "       attribute_def.attribute_section_id AS AttributeSection," +
@@ -86,16 +87,19 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
               "              ON ( approval_request.id = request_approver.approval_id )" +
               "       LEFT JOIN request_category" +
               "              ON ( approval_request.category_id = request_category.id )" +
+              " LEFT JOIN translation t1 "+
+              " ON (request_category.name=t1.TEXT_DISPLAY) "+
+			  " LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE) "+
               "       LEFT JOIN attribute" +
               "              ON ( approval_request.id = attribute.approval_id )" +
               "       LEFT JOIN attribute_def" +
               "              ON ( attribute.attribute_def_id = attribute_def.id )" +
-              " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'" +
-              "and attribute_def.attribute_section_id='1'" +
-              "and (request_approver.status_id = '2' OR (request_approver.status_id = '0' AND approval_request.isRead = '0' AND approval_request.type_id='LEAVEINFO' and approval_request.category_id != 'NULL'))" +
+              " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID+"'" +
+              " and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'"+
+              " and attribute_def.attribute_section_id='1'" +
+              " and (request_approver.status_id = '2' OR (request_approver.status_id = '0' AND approval_request.isRead = '0' AND approval_request.type_id='LEAVEINFO' and approval_request.category_id != 'NULL'))" +
               " and approval_request.islater='0'" +
               " GROUP  BY approval_request.id  ";
-
           var userPriority = kony.store.getItem(kony.apps.coe.ess.globalVariables.UserSortingKey);
           if (isEmpty(userPriority)) {
             //Not selected the option to show first

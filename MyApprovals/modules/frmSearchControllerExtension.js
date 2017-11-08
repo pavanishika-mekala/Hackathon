@@ -42,7 +42,8 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
             "      approval_request.leave_hours       AS Leave_hours," +
             "      approval_request.leave_days        AS Leave_days," +
             "	   Status.Status_Name AS StatusName," +
-            "	   request_category.name AS Category," +
+            "      t2.TEXT_DISPLAY	As	Category,"+
+            "	   request_category.name AS Category1," +
             "	   approval_request.category_id AS CategoryID," +
             " 	   approval_request.id  AS ID," +
             " 	 approval_request.type_id  AS TypeID," +
@@ -58,8 +59,12 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
             "	   LEFT JOIN attribute_def ON (attribute.attribute_def_id = attribute_def.id) " +
             "	   LEFT JOIN Status ON (request_approver.status_id = Status.Id)" +
             "	   LEFT JOIN request_category ON (approval_request.category_id = request_category.id)" +
+            " LEFT JOIN translation t1 "+
+            " ON (request_category.name=t1.TEXT_DISPLAY)"+
+			" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
             "	   LEFT JOIN request_type ON (approval_request.type_id = request_type.id) " +
             " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'" +
+            " and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'"+
             " GROUP BY approval_request.id LIMIT " + count + "";
         kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", search_query, success, error);
       }
