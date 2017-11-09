@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "17%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +23,7 @@
         0
     ],
     "_skin_": "s6320e8d591243b2bcd45fea7597907f",
-    "_text_": "Category Value ",
+    "_text_": "Vacances annuelles (J)",
     "_top_": {
         "type": "string",
         "value": "28%"
