@@ -96,7 +96,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickRequestType =
       }
       frmSearch.lblRequests.skin = "sknLblMobFC333333Op100FS100";
     } else {
-      frmSearch.lblRequests.text = "select request";
+      frmSearch.lblRequests.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectRequestText");//"select request";
       frmSearch.lblRequests.skin = "sknLblMobCCCCCC100OFS36px";
     }
     frmSearch.show();
@@ -139,7 +139,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickStatusType = 
       }
       frmSearch.lblLeaveStatus.skin = "sknLblMobFC333333Op100FS100";
     } else {
-      frmSearch.lblLeaveStatus.text = "select status";
+      frmSearch.lblLeaveStatus.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectStatusText");//"select status";
       frmSearch.lblLeaveStatus.skin = "sknLblMobCCCCCC100OFS36px";
     }
     frmSearch.show();
@@ -166,7 +166,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickStatusType = 
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickPeople = function() {
   function onDoneRequest() {
     var selectedData = frmSelect.segSearchPeople.selectedRowItems;
-    if (selectedData != null && selectedData != "" && selectedData.length > 0) {
+    if (selectedData !== null && selectedData !== "" && selectedData.length > 0) {
       if (selectedData[0].Name ==  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
         frmSearch.lblUsers.text =  kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll");
       } else {
@@ -182,7 +182,7 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickPeople = func
       }
       frmSearch.lblUsers.skin = "sknLblMobFC333333Op100FS100";
     } else {
-      frmSearch.lblUsers.text = "select people";
+      frmSearch.lblUsers.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectPeopleText");//"select people";
       frmSearch.lblUsers.skin = "sknLblMobCCCCCC100OFS36px";
     }
     frmSearch.show();
@@ -209,15 +209,15 @@ kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.onClickPeople = func
  */
 kony.apps.coe.ess.Approvals.frmSelectBackendLogic.prototype.ClearAll = function() {
   this.RefreshSegRequestData();
-  frmSearch.lblRequests.text = "select request";
-  frmSearch.lblLeaveStatus.text = "select status";
+  frmSearch.lblRequests.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectRequestText"); //select request
+  frmSearch.lblLeaveStatus.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectStatusText"); // select status
   var today = new Date();
   var startDate = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000);
   var todayday = today.getDate();
   var todayyear = today.getFullYear();
   frmSearch.calToDate.dateComponents = [31, 12, todayyear];
   frmSearch.calFromDate.dateComponents = [01, 01, todayyear];
-  frmSearch.lblUsers.text = "select people";
+  frmSearch.lblUsers.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectPeopleText"); //"select people";
   frmSearch.lblUsers.skin = "sknLblMobCCCCCC100OFS36px";
   frmSearch.lblRequests.skin = "sknLblMobCCCCCC100OFS36px";
   frmSearch.lblLeaveStatus.skin = "sknLblMobCCCCCC100OFS36px";

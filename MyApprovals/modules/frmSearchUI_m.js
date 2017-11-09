@@ -232,8 +232,8 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable = function() {
   kony.print("-- Start onClickFilterDisable -- ");
   frmSearch.flxClear.setVisibility(false);
   frmSearch.flxHide.setVisibility(true);
-  frmSearch.flxSearchContainer.setVisibility(false);
-  kony.apps.coe.ess.Approvals.frmSearch.refreshData();
+  frmSearch.flxSearchContainer.setVisibility(false); 
+  //kony.apps.coe.ess.Approvals.frmSearch.refreshData(); to clear all data
   kony.print("-- End onClickFilterDisable -- ");
 };
 /*
@@ -268,10 +268,16 @@ kony.apps.coe.ess.Approvals.frmSearch.refreshData = function() {
 kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
     kony.print("-- Start onClickFilterApplySearch -- ");
     try {
-        frmSearch.flxSearchContainer.setVisibility(false);
-        frmSearch.flxClear.setVisibility(true);
-        frmSearch.flxHide.setVisibility(false);
-		var query_data = {}
+      frmSearch.flxSearchContainer.setVisibility(false);
+      frmSearch.flxClear.setVisibility(true);
+      frmSearch.flxHide.setVisibility(false);
+      frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();};
+      frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();};
+      if(frmSearch.flxSearchContainer.isVisible === false){
+        frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();};
+        frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();};
+      }
+		var query_data = {};
         query_data.fromDate = new Date(frmSearch.calFromDate.year, frmSearch.calFromDate.month - 1, frmSearch.calFromDate.day);
         query_data.fromDate = query_data.fromDate.getDateInFormat("yyyymmdd");
         query_data.toDate = new Date(frmSearch.calToDate.year, frmSearch.calToDate.month - 1, frmSearch.calToDate.day);
@@ -282,7 +288,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
         query_data.requestType = [];
         query_data.statusType = [];
         query_data.totalPeoples = [];
-        if (query_data.selectedRequestType != null) {
+        if (query_data.selectedRequestType !== null) {
          if (query_data.selectedRequestType[0].request_name  != kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
                 for (var i = 0; i < query_data.selectedRequestType.length; i++) {
                     query_data.requestType.push(query_data.selectedRequestType[i].request_name);
@@ -556,7 +562,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterClearSearch = function() {
 
     frmSearch.lblRequests.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectRequestText");
     frmSearch.lblLeaveStatus.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectStatusText");
-    frmSearch.lblUsers.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectPeopleText");;
+    frmSearch.lblUsers.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectPeopleText");
     frmSearch.calFromDate.dateComponents = [01, 01, new Date().getFullYear()];
     frmSearch.calToDate.dateComponents = [31, 12, new Date().getFullYear()];
     frmSelect.segSearchPeople.selectedRowIndices = [[0,[0]]];
@@ -589,8 +595,8 @@ kony.apps.coe.ess.Approvals.frmSearch.lazyLoading = function() {
 kony.apps.coe.ess.Approvals.frmSearch.showFilteredData = function(){
   frmSearch.show();
   if(frmSearch.flxClear.isVisible == true && frmSearch.flxHide.isVisible == false){
-   // frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();}
-    // frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();}
+   	frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();}
+   	frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();}
     kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch();
   }else{
     var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmSearch");
