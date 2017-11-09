@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "17%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "25%"
+        "value": "22%"
     },
     "_margin_": [
         1,
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "s6320e8d591243b2bcd45fea7597907f",
-    "_text_": "Category Value ",
+    "_text_": "Category Value",
     "_top_": {
         "type": "string",
         "value": "28%"
     },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "40%"
     },
     "_wrapping_": 2,
     "android": {
