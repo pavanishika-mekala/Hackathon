@@ -91,9 +91,8 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                    processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
                 }else if(response_data[index].StatusName == "Rejected"){
                    processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
-                }
-               else if(response_data[index].StatusName == "Cancelled"){
-                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                } else if(response_data[index].StatusName == "Cancelled"){
+                  processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
                 }
               else
                 processedRequest.status_value = response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate;
