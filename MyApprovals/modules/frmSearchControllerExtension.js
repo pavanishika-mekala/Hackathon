@@ -158,6 +158,9 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
           }else if(firstPart == "Rejected"){
             data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+secondPart;
           }
+          else if(firstPart=="Cancelled"){
+             data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+secondPart;
+          }
         }
       }
       frmSearch.segList.widgetDataMap = widgetDataMap;
