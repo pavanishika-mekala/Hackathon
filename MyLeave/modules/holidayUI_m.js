@@ -24,7 +24,9 @@ kony.apps.coe.ess.myLeave.HolidayUI = function () {
  */
 kony.apps.coe.ess.myLeave.HolidayUI.prototype.getData = function () {
     var currYear = (kony.apps.coe.ess.myLeave.MyLeaveHomeUI.calendarWidget.year).toString().trim(0,4);
-	var query = "select Holiday_Date,Name from Holiday where Name not like 'Non Working Day' and (Holiday_Date between '" + currYear + "0101' AND '" + currYear + "1231')";
+	var query = "select h.Holiday_Date,h.Name, CASE WHEN (tr_fr.TEXT_CODE = '' OR  tr_fr.TEXT_CODE ISNULL) THEN tr_en.TEXT_DISPLAY ELSE tr_fr.TEXT_DISPLAY END AS TEXT_DISPLAY,tr_en.TEXT_CODE, tr_fr.TEXT_CODE from Holiday h LEFT JOIN translation tr_en ON ( h.Name = tr_en.TEXT_CODE AND tr_en.SPRAS like 'EN') LEFT JOIN translation tr_fr ON "+
+        "( h.Name = tr_fr.TEXT_CODE AND tr_fr.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"')"+
+ 		" where h.Name not like 'Non Working Day'  and (Holiday_Date between '" + currYear + "0101' AND '" + currYear + "1231')";
 	kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function (data) {
 		var processedData = [];
 		for (var i = 0; i < data.length; i++) {
