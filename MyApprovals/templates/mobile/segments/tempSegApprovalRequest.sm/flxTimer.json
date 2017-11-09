@@ -46,7 +46,7 @@
     "enablescrolling": true,
     "id": "flxTimer",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "a4206b4cb26949858105819165d3a29a",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
