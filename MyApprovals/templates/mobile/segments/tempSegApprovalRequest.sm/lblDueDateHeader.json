@@ -29,8 +29,8 @@
         "value": "28%"
     },
     "_width_": {
-        "type": "string",
-        "value": "35%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
