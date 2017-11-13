@@ -220,6 +220,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable = function() {
   frmSearch.flxClear.setVisibility(true);
   frmSearch.flxHide.setVisibility(false);
   frmSearch.flxSearchContainer.setVisibility(true);
+  frmSearch.flxClear.onClick = kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable;
   kony.print("-- End onClickFilterEnable -- ");
 };
 
@@ -232,8 +233,9 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable = function() {
   kony.print("-- Start onClickFilterDisable -- ");
   frmSearch.flxClear.setVisibility(false);
   frmSearch.flxHide.setVisibility(true);
-  frmSearch.flxSearchContainer.setVisibility(false); 
-  //kony.apps.coe.ess.Approvals.frmSearch.refreshData(); to clear all data
+  frmSearch.flxSearchContainer.setVisibility(false);
+  frmSearch.flxHide.onClick = kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable;
+  kony.apps.coe.ess.Approvals.frmSearch.refreshData(); //to clear all data
   kony.print("-- End onClickFilterDisable -- ");
 };
 /*
@@ -271,12 +273,8 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
       frmSearch.flxSearchContainer.setVisibility(false);
       frmSearch.flxClear.setVisibility(true);
       frmSearch.flxHide.setVisibility(false);
-      frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();};
-      frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();};
-      if(frmSearch.flxSearchContainer.isVisible === false){
         frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();};
         frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();};
-      }
 		var query_data = {};
         query_data.fromDate = new Date(frmSearch.calFromDate.year, frmSearch.calFromDate.month - 1, frmSearch.calFromDate.day);
         query_data.fromDate = query_data.fromDate.getDateInFormat("yyyymmdd");
