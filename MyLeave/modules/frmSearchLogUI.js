@@ -373,15 +373,16 @@ kony.apps.coe.myLeave.search.prototype.rowClick = function () {
  */
 
 kony.apps.coe.myLeave.search.prototype.filter = function () {
-  if (frmSearchLog.imgFilter.src === "filter_selected.png") {
+  if(frmSearchLog.imgFilter.src === "filter_selected.png" && frmSearchLog.flxSelection.isVisible){
     frmSearchLog.flxSelection.isVisible = false;
     frmSearchLog.flxReqType.isVisible = false;
     frmSearchLog.flxStatus.isVisible = false;
     frmSearchLog.flxSearchLeaveType.isVisible = false;
     frmSearchLog.flxDoneButton.isVisible = false;
     frmSearchLog.imgFilter.src = "filter.png";
-    (new kony.apps.coe.myLeave.search()).clear();
-  } else {
+    (new kony.apps.coe.myLeave.search()).clear(); //clears all selection
+  } else if((!frmSearchLog.flxSelection.isVisible && frmSearchLog.imgFilter.src === "filter_selected.png") ||
+            frmSearchLog.imgFilter.src === "filter.png"){
     frmSearchLog.flxSelection.isVisible = true;
     frmSearchLog.flxReqType.isVisible = true;
     frmSearchLog.flxStatus.isVisible = true;
@@ -390,7 +391,6 @@ kony.apps.coe.myLeave.search.prototype.filter = function () {
     frmSearchLog.imgFilter.src = "filter_selected.png";
   }
 };
-
 
 /**
  * @class       search
