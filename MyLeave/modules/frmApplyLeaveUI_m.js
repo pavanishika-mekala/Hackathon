@@ -2091,23 +2091,29 @@ kony.apps.coe.ess.myLeave.applyLeave.showTimePicker = function(selectionEvent) {
 //Dismissing TimePicker form
 kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
   frmApplyLeave.flxTimeLayout.isVisible = false;
-      if(frmApplyLeave.pickTime.isVisible === true){
-      var selection = frmApplyLeave.pickTime.selectedKeyValues;
-      frmApplyLeave.btnFrom.text = selection[0][1]+":"+selection[1][1];
-    }else if(frmApplyLeave.pickTime2.isVisible === true){
-      var selection = frmApplyLeave.pickTime2.selectedKeyValues;
-      frmApplyLeave.btnTo.text = selection[0][1]+":"+selection[1][1];
-    }
-      var x = frmApplyLeave.btnTo.text;
-      var y = frmApplyLeave.btnFrom.text;
-      var hrStart = y.slice(0,2);
-      var minStart = y.slice(3,5);
-      var hrEnd = x.slice(0,2);
-      var minEnd = x.slice(3,5);
-      kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected(hrStart,minStart,hrEnd,minEnd);
+  if(frmApplyLeave.pickTime.isVisible === true){
+    var selection = frmApplyLeave.pickTime.selectedKeyValues;
+    frmApplyLeave.btnFrom.text = selection[0][1]+":"+selection[1][1];
+  }else if(frmApplyLeave.pickTime2.isVisible === true){
+    var selection = frmApplyLeave.pickTime2.selectedKeyValues;
+    frmApplyLeave.btnTo.text = selection[0][1]+":"+selection[1][1];
+  }
+  var x = frmApplyLeave.btnTo.text;
+  var y = frmApplyLeave.btnFrom.text;
+  var hrStart = y.slice(0,2);
+  var minStart = y.slice(3,5);
+  var hrEnd = x.slice(0,2);
+  var minEnd = x.slice(3,5);
+  var fromDate = String(frmApplyLeave.lblFromDate.text).split(" ");
+  var toDate = String(frmApplyLeave.lblToDate.text).split(" ");
+  var fromMonth = Number(new Date(fromDate[1]+"-1-01").getMonth())+1;
+  var toMonth = Number(new Date(toDate[1]+"-1-01").getMonth())+1;
+  kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected(hrStart,minStart,hrEnd,minEnd,fromDate[2],fromMonth,fromDate[0],
+                                                          toDate[2],toMonth,toDate[0]);
 };
 
-kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minStart,hrEnd,minEnd){
+kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minStart,hrEnd,minEnd,fromYear,fromMonth,fromDate,
+                                                             toYear,toMonth,toDate){
   var btnAction = "";
   if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
     btnAction = "HalfDay";
@@ -2118,27 +2124,15 @@ kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minSt
   var hr = hrStart+minStart;
   var min = hrEnd+minEnd;
   var d = new Date();
-  var start = new Date(d.getYear(), d.getMonth(), d.getDate(), hrStart, minStart, 0).getTime();
-  var end = new Date(d.getYear(), d.getMonth(), d.getDate(), hrEnd, minEnd, 0).getTime();
+  var start = new Date(fromYear,fromMonth,fromDate, hrStart, minStart, 0).getTime();
+  var end = new Date(toYear,toMonth,toDate, hrEnd, minEnd, 0).getTime();
   var hours = (Number(end)-Number(start))/(1000*60*60);
   var btnToText;
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(hr);
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(min);
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.hours = hours;
   frmApplyLeave.lblDurationHours.text = hours + " hours";
-  //   if((Number(hrStart) > Number(hrEnd)) || (Number(hrStart) == Number(hrEnd)) && (Number(minStart) >= Number(minEnd))){
-  //      alert("Please select valid time"); //when start time is less than end time
-  //     if(btnAction == "HalfDay"){
-  //       frmApplyLeave.btnFrom.text = "08:00";
-  //       frmApplyLeave.btnTo.text = "12:00";
-  //       frmApplyLeave.lblDurationHours.text = "4 hours";
-  //     }else if(btnAction == "Hours"){
-  //       frmApplyLeave.btnFrom.text = "08:00";
-  //       frmApplyLeave.btnTo.text = "10:00";
-  //       frmApplyLeave.lblDurationHours.text = "2 hours";
-  //     }
-  //   }
-  if((Number(hours) > 4 && btnAction == "HalfDay") ||( Number(hours) > 10 && btnAction == "Hours")){
+   if((Number(hours) > 4 && btnAction == "HalfDay") ||( Number(hours) > 10 && btnAction == "Hours")){
     if(btnAction == "HalfDay"){
       alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" 4"  );//"Please select duration hours less than or equal to 4");
     }else if(btnAction == "Hours"){
