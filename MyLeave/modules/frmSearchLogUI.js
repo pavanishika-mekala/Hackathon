@@ -281,12 +281,12 @@ kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery,filterIcon
           " " + parseInt(mdate.substring(0, 4) * 1) + " " + hrs + ":" + sec + " " + AP;
       }
       if (res[k].hrs < 7)
-        temp.lblDays = res[k].hrs+" HOURS";
+        temp.lblDays = res[k].hrs+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       else if(parseFloat(res[k].hrs)===7.5){
-        temp.lblDays = "1 DAY";
+        temp.lblDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
       }
       else
-        temp.lblDays = ((parseInt(res[k].hrs) * 1) / 7.5).toFixed() + " DAYS";
+        temp.lblDays = ((parseInt(res[k].hrs) * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
       temp.imgCal = "cal.png";
       temp.lblLine1 = " ";
       temp.lblLeaveId = res[k].id + "$" + sdate;

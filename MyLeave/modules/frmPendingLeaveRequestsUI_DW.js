@@ -152,11 +152,11 @@ kony.apps.coe.ess.myLeave.frmPendingLeaveRequests.populate = function(empLeaveDa
   if (empLeaveData[i].no_of_hours <
    8) {
    if (empLeaveData[i].no_of_hours == 7.5) {
-    hoursTime = "1 DAY";
+    hoursTime = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
    } else
-    hoursTime = empLeaveData[i].no_of_hours + " " + "HOURS";
+    hoursTime = empLeaveData[i].no_of_hours + " " + kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
   } else
-   hoursTime = ((parseInt(empLeaveData[i].no_of_hours) * 1) / 7.5).toFixed() + " DAYS";
+   hoursTime = ((parseInt(empLeaveData[i].no_of_hours) * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
   sampleJson.lblLeaveType = leaveTypes;
   sampleJson.lblLeaveDuration = hoursTime;
   sampleJson.lblDummyDivider = " ";
