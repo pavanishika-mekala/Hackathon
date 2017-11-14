@@ -269,19 +269,20 @@ kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery,filterIcon
         if (sec < 10)
           sec = "0" + parseInt(mdate.substring(10, 12) * 1);
         var hrs = parseInt(mdate.substring(8, 10) * 1);
-        var AP = "AM";
-        if (hrs >= 12)
-          AP = "PM";
-        if (hrs > 12) {
-          hrs = hrs - 12;
-        }
+        var AP ="";
+//         var AP = "AM";
+//         if (hrs >= 12)
+//           AP = "PM";
+//         if (hrs > 12) {
+//           hrs = hrs - 12;
+//         }
 
 
         temp.lblAppliedDate = parseInt(mdate.substring(6, 8) * 1) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(mdate.substring(4, 6) * 1) - 1).toString()] +
           " " + parseInt(mdate.substring(0, 4) * 1) + " " + hrs + ":" + sec + " " + AP;
       }
       if (res[k].hrs < 7)
-        temp.lblDays = res[k].hrs+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
+        temp.lblDays = (res[k].hrs+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
       else if(parseFloat(res[k].hrs)===7.5){
         temp.lblDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
       }

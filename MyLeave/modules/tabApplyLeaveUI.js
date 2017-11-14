@@ -491,7 +491,7 @@ kony.apps.ess.myLeave.tabApplyLeaveUI.fullDayHoursSelection = {
 		}
 		frmTabApplyLeave.btnFullDay.skin = "sknbtntabF4F4F4";
 		frmTabApplyLeave.btnHours.skin = "sknbtntab2ebaeeround";
-		frmTabApplyLeave.lblDurationHours.text = "2 hours";
+		frmTabApplyLeave.lblDurationHours.text = "2 "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
 		frmTabApplyLeave.flxTimeline.removeAll();
         frmTabApplyLeave.lblDurationHours.setVisibility(true);
 		kony.apps.coe.Reusable.createTabTimeline.setStartandEndTime();

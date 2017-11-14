@@ -141,11 +141,12 @@ kony.apps.coe.ess.myLeave.frmPendingLeaveRequests.populate = function(empLeaveDa
     10)
     mins = "0" + parseInt(adate.substring(10, 12) * 1);
    var hrs = parseInt(adate.substring(8, 10) * 1);
-   var AP = "AM";
-   if (hrs >= 12) {
-    hrs = hrs - 12;
-    AP = "PM";
-   }
+   var AP = "";
+//    var AP = "AM";
+//    if (hrs >= 12) {
+//     hrs = hrs - 12;
+//     AP = "PM";
+//    }
    timeStamp = parseInt(adate.substring(6, 8) * 1) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(adate.substring(4, 6) * 1) - 1).toString()] +
     " " + parseInt(adate.substring(0, 4) * 1) + ", " + hrs + ":" + mins + " " + AP;
   }
@@ -154,7 +155,7 @@ kony.apps.coe.ess.myLeave.frmPendingLeaveRequests.populate = function(empLeaveDa
    if (empLeaveData[i].no_of_hours == 7.5) {
     hoursTime = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
    } else
-    hoursTime = empLeaveData[i].no_of_hours + " " + kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
+    hoursTime = (empLeaveData[i].no_of_hours + " " + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
   } else
    hoursTime = ((parseInt(empLeaveData[i].no_of_hours) * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
   sampleJson.lblLeaveType = leaveTypes;

@@ -83,7 +83,7 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.setLeaveDetails = func
             frmLeaveRequestDetails.lblLeaveTime.text = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.fullDay.valueKA");
         } else {
-            frmLeaveRequestDetails.lblLeaveTime.text = parseFloat((data[0].no_of_hours),10).toFixed(2) + kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
+            frmLeaveRequestDetails.lblLeaveTime.text = (parseFloat((data[0].no_of_hours),10).toFixed(2) + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.partial.valueKA");
         }
     } else {
@@ -150,15 +150,17 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.setTime = function(src
     if (parseInt(srcDateTime.substring(8, 10) * 1) > "12") {
 
         if ((parseInt(srcDateTime.substring(8, 10) * 1) % 12) === 0) {
-            time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) % 12)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " AM";
+            //time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) % 12)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " AM";
+          time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) )) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1));
         } else {
-            time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) % 12)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " PM";
+          	//time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) % 12)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " PM";
+            time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) )) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1));
         }
     } else {
         if (parseInt(srcDateTime.substring(8, 10) * 1) == 12) {
-            time = (getTimeHourswithZero(parseInt(srcDateTime.substring(8, 10) * 1))) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " PM";
+            time = (getTimeHourswithZero(parseInt(srcDateTime.substring(8, 10) * 1))) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1));
         } else {
-            time = getTimeHourswithZero(parseInt(srcDateTime.substring(8, 10) * 1)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " AM";
+            time = getTimeHourswithZero(parseInt(srcDateTime.substring(8, 10) * 1)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1));
         }
     }
     return time;

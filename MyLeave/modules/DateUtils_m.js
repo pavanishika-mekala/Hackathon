@@ -538,11 +538,12 @@ Date.prototype.toHHMMMHHmm = function () {
 	}
 	var dd = this.getDate();
 	var mm = months[this.getMonth()];
-    var formatedHH = formatTo12HH(this.getHours());
-	var hh = makeTwoDigits(formatedHH.hh);
-	var min = makeTwoDigits(this.getMinutes());
-	var ampm = formatedHH.isAM === true ? "AM" : "PM";
-	return dd + " " + mm + " " + hh + ":" + min + " " + ampm;
+//     var formatedHH = formatTo12HH(this.getHours());
+// 	var hh = makeTwoDigits(formatedHH.hh);
+// 	var min = makeTwoDigits(this.getMinutes());
+// 	var ampm = formatedHH.isAM === true ? "AM" : "PM";
+// 	return dd + " " + mm + " " + hh + ":" + min + " " + ampm;
+  return dd + " " + mm + " " + this.getHours() + ":" + this.getMinutes();
 };
 
 Date.getMonthMapNumberToMonth = {

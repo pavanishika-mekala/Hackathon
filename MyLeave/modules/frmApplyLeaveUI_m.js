@@ -497,7 +497,7 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
     var sqlquery = "select * from employee_leave_type where leave_type_id = '" + leave_type_id + "'";
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
       if (data.length > 0 && data !== undefined && data[0].balance !== undefined) {
-        frmApplyLeave.lblLeaveBalanceCount.text = (data[0].balance - data[0].availed).toFixed(0);
+        frmApplyLeave.lblLeaveBalanceCount.text = data[0].balance;
         //remove frmApplyLeave.lblLeaveTypeBalance.text = data[0].balance - data[0].availed;
         //frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave[eventobject.id].text + " leave";
         //remove frmApplyLeave.lblLeaveTypeBalance.text = "Available " + id+ " leave";
@@ -541,7 +541,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if (frmApplyLeave.flxRecurringLeave.imgRecurringOn.isVisible) {
       frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
       frmApplyLeave.btnHours.skin = "sknBtnBg1C7393S28pxRoman";
-      frmApplyLeave.lblDurationHours.text = "2 hours";
+      frmApplyLeave.lblDurationHours.text = "2 "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       frmApplyLeave.flxTimeline.removeAll();
       kony.apps.coe.Reusable.createTimeline.setStartandEndTime();
       kony.apps.coe.Reusable.createTimeline.TimelineUI(frmApplyLeave.flxTimeline);
@@ -557,7 +557,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       }
       frmApplyLeave.btnFullDay.skin = "sknBtn777777S28pxRoman";
       frmApplyLeave.btnHours.skin = "sknBtnBg1C7393S28pxRoman";
-      frmApplyLeave.lblDurationHours.text = "2 hours";
+      frmApplyLeave.lblDurationHours.text = "2 "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       frmApplyLeave.flxTimeline.removeAll();
       kony.apps.coe.Reusable.createTimeline.setStartandEndTime();
       kony.apps.coe.Reusable.createTimeline.TimelineUI(frmApplyLeave.flxTimeline);
@@ -573,14 +573,14 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if(hour === undefined){
       frmApplyLeave.btnFrom.text = "08:00";
       frmApplyLeave.btnTo.text = "10:00";
-      frmApplyLeave.lblDurationHours.text  = "2 hours";
+      frmApplyLeave.lblDurationHours.text  = "2 "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       this.start_time = "080000";
       this.end_time = "100000";
       this.hours = 2.0;
     }else{
       frmApplyLeave.btnFrom.text = String(startTime).substring(0,2)+":"+String(startTime).substring(2,4);
       frmApplyLeave.btnTo.text = String(endTime).substring(0,2)+":"+String(endTime).substring(2,4); //10:00";
-      frmApplyLeave.lblDurationHours.text =  hour+" hours";
+      frmApplyLeave.lblDurationHours.text =  hour+" "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       this.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(startTime);
       this.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(endTime);
       this.hours = hour;
@@ -608,14 +608,14 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if(hour === undefined){
       frmApplyLeave.btnFrom.text = "08:00";
       frmApplyLeave.btnTo.text = "12:00";
-      frmApplyLeave.lblDurationHours.text  = "4 hours";
+      frmApplyLeave.lblDurationHours.text  = "4 "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       this.start_time = "080000";
       this.end_time = "120000";
       this.hours = 4.0;
     }else{
       frmApplyLeave.btnFrom.text = String(startTime).substring(0,2)+":"+String(startTime).substring(2,4);
       frmApplyLeave.btnTo.text = String(endTime).substring(0,2)+":"+String(endTime).substring(2,4); //10:00";
-      frmApplyLeave.lblDurationHours.text =  hour+" hours";
+      frmApplyLeave.lblDurationHours.text =  hour+" "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       this.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(startTime);
       this.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(endTime);
       this.hours = hour;
@@ -645,7 +645,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     this.start_time = start_time;
     this.end_time = end_time;
     this.hours = hours;
-    frmApplyLeave.lblDurationHours.text = hours + " hours";
+    frmApplyLeave.lblDurationHours.text = hours + " "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
     // 1 is added as break hour
     if (hours >= kony.apps.coe.ess.appconfig.workingHours + 1) {
       this.onClickOfFullDay();
@@ -665,7 +665,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       //hours = ((diff/day)+1)*8 + " hours";
       kony.print(frmApplyLeave.lblFromDate.text +" "+ frmApplyLeave.lblToDate.text + ": "+end_date);
       if((frmApplyLeave.lblFromDate.text === frmApplyLeave.lblToDate.text) || end_date === null){
-           hours = "1 day";
+           hours = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
            frmApplyLeave.lblDurationHours.text = hours;
       	}else if((frmApplyLeave.lblFromDate.text !== frmApplyLeave.lblToDate.text) || end_date !== null){
           var sqlQuery = "select Holiday_Date as holiday_date from Holiday where Holiday_Date between '" + startDateStringFormat +
@@ -678,7 +678,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       
        if ((diff / day) <= 0) {
         this.hours = ((diff / day) + 1) * kony.apps.coe.ess.appconfig.workingHours;
-        hours = ((diff / day) + 1) + " day";
+        hours = ((diff / day) + 1) + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
         frmApplyLeave.lblDurationHours.text = hours;
       }
     }
@@ -700,9 +700,9 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     }
     this.hours = hours * kony.apps.coe.ess.appconfig.workingHours;
     if(hours == 1){
-      hours = "1 day";
+      hours = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
     }else{
-      hours = hours+" days";
+      hours = hours+" "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
     }
     frmApplyLeave.lblDurationHours.text = hours;
   }
@@ -1186,7 +1186,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         var start_date = new Date(IntervalStart_date.substring(0, 4), IntervalStart_date.substring(4, 6) - 1, IntervalStart_date.substring(6, 8));
         var end_date = new Date(IntervalEnd_date.substring(0, 4), IntervalEnd_date.substring(4, 6) - 1, IntervalEnd_date.substring(6, 8));
         var duration = frmApplyLeave.lblDurationHours.text.split(" ")[1];
-        if (duration == "day" || duration == "days") {
+        if (duration == kony.i18n.getLocalizedString("i18.ess.frmTeamView.days") || duration == kony.i18n.getLocalizedString("i18.ess.frmTeamView.day")) {
           var diff = end_date.getTime() - start_date.getTime();
           leaveEntryData.no_of_hours = ((diff / day) + 1) * kony.apps.coe.ess.appconfig.workingHours;
         } else {
@@ -2125,7 +2125,7 @@ kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minSt
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(hr);
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(min);
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.hours = hours;
-  frmApplyLeave.lblDurationHours.text = hours + " hours";
+  frmApplyLeave.lblDurationHours.text = hours + " "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
   //   if((Number(hrStart) > Number(hrEnd)) || (Number(hrStart) == Number(hrEnd)) && (Number(minStart) >= Number(minEnd))){
   //      alert("Please select valid time"); //when start time is less than end time
   //     if(btnAction == "HalfDay"){
