@@ -54,7 +54,7 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
     this.calendarROWS = 5;
     this.WeekStartDay = 1;
     this.MonthData = [];
-    this.MONTHHEADERCOUNT = 5;
+    this.MONTHHEADERCOUNT = 12;
     this.monthBTN_FocusSkin = monthBTN_FocusSkin_param;
     this.monthBTN_Skin = monthBTN_Skin_param;
     this.callbackMonthChangeFunction = callbackMonthChangeFunction_param;
@@ -105,9 +105,17 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
         "skin": monthFlex_skin,
         "isVisible": true,
         "clipBounds": true,
-        "layoutType": kony.flex.FLOW_HORIZONTAL
+        "layoutType": kony.flex.FLOW_HORIZONTAL,
+        "allowHorizontalBounce": false,
+        "allowVerticalBounce": false,
+        "bounces": false,
+        "enableScrolling": true,
+        "horizontalScrollIndicator": true,
+        "pagingEnabled": false,
+        "scrollDirection": kony.flex.SCROLL_HORIZONTAL,
+        "verticalScrollIndicator": false,
     };
-    this.MONTHFLEX = new kony.ui.FlexContainer(basicconfig, {}, {});
+    this.MONTHFLEX = new kony.ui.FlexScrollContainer(basicconfig, {}, {});
     this.calendarWidget.add(this.MONTHFLEX);
     //Monthflex created with UI for desktopWeb
     //#ifdef desktopweb
@@ -118,10 +126,10 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
         var lblBasic = {
             "id": "BTNMONTHHEADER" + i,
             "top": "0%",
-            "left": "3%",
+            "left": "2%",
             "centerY": "50%",
             "zIndex": 1,
-            "width": monthcalendarHeaderWidth + "%",
+            "width": "18%",//monthcalendarHeaderWidth + "%",
             "height": "80%",
             "isVisible": true,
             "skin": monthBTN_Skin_param,
@@ -137,6 +145,7 @@ kony.apps.coe.Reusable.calendarWIDGET = function(month_param, year_param, Flex_n
               }
             }
             this.setMonthandYear(updateToMonth, updateToYear);
+            frmLeaveHome.MONTHFLEXCONTAINER.contentOffset={x:0,y:0};  
           }.bind(this)
         };
         this[lblBasic.id] = new kony.ui.Button(lblBasic, {
@@ -952,7 +961,6 @@ kony.apps.coe.Reusable.calendarWIDGET.prototype.setMonthandYear = function(month
 
     var diff = (year_param * 12 + month_param) - (currentyear * 12 + currentMonth);
     kony.print(diff);
-
     if ((diff >= -1) && (diff <= 1)) {
         if (diff == -1) {
             if (this.isValidMonthandYearforCalendarCallBackFunction(month_param, year_param)) {

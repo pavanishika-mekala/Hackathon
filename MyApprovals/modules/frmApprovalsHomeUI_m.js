@@ -712,7 +712,7 @@ sliderAnimationToLater = function() {
     frmApprovalHome.flxSlider.animate(
       kony.ui.createAnimation({
         100: {
-          left: "57%",
+          left: "58%",
           widht: "13%"
         }
       }), {
@@ -748,7 +748,7 @@ sliderAnimationToNow = function() {
     frmApprovalHome.flxSlider.animate(
       kony.ui.createAnimation({
         100: {
-          left: "27%",
+          left: "25%",
           widht: "12.5%"
         }
       }), {
