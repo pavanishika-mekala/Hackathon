@@ -573,7 +573,13 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if(hour === undefined){
       frmApplyLeave.btnFrom.text = "08:00";
       frmApplyLeave.btnTo.text = "10:00";
-      frmApplyLeave.lblDurationHours.text  = "2 hours";
+	  var fromDate = String(frmApplyLeave.lblFromDate.text).split(" ");
+	  var toDate = String(frmApplyLeave.lblToDate.text).split(" ");
+	  var fromMonth = Number(new Date(fromDate[1]+"-1-01").getMonth())+1;
+	  var toMonth = Number(new Date(toDate[1]+"-1-01").getMonth())+1;
+	  kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected("08","00","10","00",fromDate[2],fromMonth,fromDate[0],
+                                                          toDate[2],toMonth,toDate[0]);
+      //frmApplyLeave.lblDurationHours.text  = "2 hours";
       this.start_time = "080000";
       this.end_time = "100000";
       this.hours = 2.0;
@@ -608,7 +614,13 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if(hour === undefined){
       frmApplyLeave.btnFrom.text = "08:00";
       frmApplyLeave.btnTo.text = "12:00";
-      frmApplyLeave.lblDurationHours.text  = "4 hours";
+	  var fromDate = String(frmApplyLeave.lblFromDate.text).split(" ");
+	  var toDate = String(frmApplyLeave.lblToDate.text).split(" ");
+	  var fromMonth = Number(new Date(fromDate[1]+"-1-01").getMonth())+1;
+	  var toMonth = Number(new Date(toDate[1]+"-1-01").getMonth())+1;
+	  kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected("08","00","12","00",fromDate[2],fromMonth,fromDate[0],
+                                                          toDate[2],toMonth,toDate[0]);
+      //frmApplyLeave.lblDurationHours.text  = "4 hours";
       this.start_time = "080000";
       this.end_time = "120000";
       this.hours = 4.0;
