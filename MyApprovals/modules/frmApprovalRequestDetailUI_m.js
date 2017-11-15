@@ -215,6 +215,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.bindApprovalRequestDetails = function(ProcessedRequestDetail) {
   	kony.print("ProcessedRequestDetail"+JSON.stringify(ProcessedRequestDetail)+JSON.stringify(ProcessedRequestDetail.statusText));
   	var statusText = ProcessedRequestDetail.statusText["text"];
+  	ProcessedRequestDetail.AdditonalInfo.text=(ProcessedRequestDetail.AdditonalInfo.text+"").replace(".", ",");
   	if(statusText == "Pending"){
       ProcessedRequestDetail.statusText = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")};
     }else if(statusText == "Approved"){
