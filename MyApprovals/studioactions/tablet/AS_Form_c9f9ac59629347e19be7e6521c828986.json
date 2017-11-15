@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__b52f3a1e520242c3a48759c684504fc0",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "codeSnippet": "kony.apps.coe.ess.globalVariables.prevFormFlow = \"\";\nkony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
             "parentId": null
         }]
     }
