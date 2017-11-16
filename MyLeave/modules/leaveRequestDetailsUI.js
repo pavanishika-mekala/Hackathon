@@ -430,6 +430,7 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.onClickEdit = function
 kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.commentQuery = function() {
     var leaveNoteQuery = "select ln.comments, ln.employee_id, ln.createdts, e.First_Name, e.Last_Name, e.Media_Id " +
         "from leave_note ln join Employee e on ln.employee_id=e.Id where ln.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "' order by ln.createdts ASC";
+    
     kony.sync.single_select_execute(kony.sync.getDBName(), leaveNoteQuery, null, function(res) {
         if (res === undefined || res === null || res.length <= 0) {
             frmLeaveRequestDetails.segComments.isVisible = false;
@@ -517,11 +518,12 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.generateCommentRows = 
     var monthsJSON = Date.getMonthMapNumberToMonth;
     var obj = new kony.apps.coe.ess.myLeave.leaveRequestDetailsUI();
     var commentData = [];
+  	var resLength = res.length;
     try {
         for (var i = 0; i < res.length; i++) {
             kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.employeeImg = null;
             var commentDate = "";
-            if (!isNaN(res[i].createdts) && res[i].createdts !== null && res[i].createdts !== " ") {
+            if (!isNaN(res[i].createdts) && res[i].createdts !== null && res[i].createdts !== " " ) {
                 var commentTime = "";
                 commentTime = obj.setTime(res[i].createdts);
                 commentDate = res[i].createdts.substring(6, 8) + " " + (monthsJSON[res[i].createdts.substring(4, 6) + ""]).substring(0, 3) + ", " + commentTime;
@@ -542,17 +544,25 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.generateCommentRows = 
                 kony.print("------image data--" + JSON.stringify(kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.ImgData[i]));
                 tempCommentData.imgapplier = "adduserpic.png";
                 commentData.push(tempCommentData);
-            } else {
+            } else{
+              var mock = 0;
+              if(i>0){
+              	if(res[i].createdts === res[i-1].createdts){
+              		mock = 1;    
+                }
+              }
+              	if(mock === 0){
                 var empCommentData = {};
-                empCommentData.template = flexapprovernote;
-                empCommentData.imgapprover = "adduserpic.png";
-                empCommentData.labelapprovernotes = " ";
-                empCommentData.lblapprovername = res[i].First_Name;
-                empCommentData.txtComments = {
-                    "text": res[i].comments,
-                };
-                empCommentData.lblapproveddate = "Submitted on " + commentDate;
-                commentData.push(empCommentData);
+                  empCommentData.template = flexapprovernote;
+                  empCommentData.imgapprover = "adduserpic.png";
+                  empCommentData.labelapprovernotes = " ";
+                  empCommentData.lblapprovername = res[i].First_Name;
+                  empCommentData.txtComments = {
+                      "text": res[i].comments,
+                  };
+                  empCommentData.lblapproveddate = "Submitted on " + commentDate;
+                  commentData.push(empCommentData);
+                }
             }
         }
         frmLeaveRequestDetails.segComments.widgetDataMap = {
