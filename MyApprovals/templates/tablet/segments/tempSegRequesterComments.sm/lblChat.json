@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5.17%"
+        "value": "4%"
     },
     "_margin_": [
         1,
@@ -20,13 +20,17 @@
         1,
         2,
         1,
-        2
+        1
     ],
     "_skin_": "s329cad2d61549e8aee7aaf85bccc5a7",
     "_text_": "I am Attendig the Meeting freiend wedding Need a leave on 16th April ",
+    "_top_": {
+        "type": "number",
+        "value": "0"
+    },
     "_width_": {
         "type": "string",
-        "value": "94%"
+        "value": "93%"
     },
     "_wrapping_": 2,
     "android": {
