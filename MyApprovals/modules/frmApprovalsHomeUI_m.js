@@ -221,9 +221,10 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
           var endDate = new Date().modifyByYYYYMMDDHHMMSS(processedRequest.attributejson.EndDate);
           var hoursData = processedRequest.Leave_hours;
 		  var hours = Number(hoursData).toFixed();
-          var duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hours"); // hours";
+          var hourDataText=(hoursData+"").replace(".", ",");
+          var duration = hourDataText + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hours"); // hours";
           if(hours == 1){
-            duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
+            duration = hourDataText + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
           }
 		  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
 		  
