@@ -9,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "4%"
+        "value": "3%"
     },
     "_margin_": [
         0,
@@ -38,7 +38,7 @@
     "containerweight": 100,
     "context": {
         "channel": "mobile",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "segments",
         "topLevelBox": null
     },

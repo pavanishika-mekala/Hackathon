@@ -20,13 +20,13 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "4%"
+        "value": "3%"
     },
     "_skin_": "sf8893e4de794914908fb1977d11026a",
     "_text_": "16 Jan 2016, 6:30 PM",
     "_top_": {
         "type": "string",
-        "value": "16.20%"
+        "value": "15%"
     },
     "_width_": {
         "type": "ref",
