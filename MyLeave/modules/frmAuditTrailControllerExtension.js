@@ -34,10 +34,11 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                 for(var i in data) {
                     data[i].template_type = 0;
                 }
-                var query = "select ln.*, emp.First_Name as First_Name from leave_note ln left join Employee emp on ln.employee_id = emp.Id where ln.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
+                var query = "select ln.*, emp.First_Name as First_Name, emp.Last_Name as Last_Name from leave_note ln left join Employee emp on ln.employee_id = emp.Id where ln.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
                 kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function(res_comments) {
                     for(var i in res_comments) {
                         res_comments[i].template_type = 1;
+                        res_comments[i].First_Name = res_comments[i].First_Name+" "+res_comments[i].Last_Name;
                         data.push(res_comments[i]);
                     }
                     var query = "select l.lastmodifiedts as createdts, l.status_id as status_id, emp.First_Name as First_Name from leave l left join Employee emp on l.employee_id = emp.Id where l.id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
@@ -58,7 +59,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     }, function(err) {
                         handleError(err);
                     }, false);
-                }, function() {
+                }, function(err) {
                     handleError(err);
                 }, false);
             }, function (err) {

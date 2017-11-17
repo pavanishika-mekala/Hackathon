@@ -46,8 +46,8 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                 res[i].templateType = 0;
             }
             //quering comments data.
-            var query = "select rn.comment as comments, rn.createdts as createdts, emp.First_Name as First_Name,Group_concat(attribute.value)      AS Attributevalue, Group_concat(attribute.attribute_def_id)  AS AttributeNAME"+
-  						" from request_note rn left join Employee emp on rn.employee_id = emp.Id left join attribute  on rn.approval_id=attribute.approval_id  where rn.approval_id = '" + requestId + "';";
+            var query = "select rn.comment as comments, rn.createdts as createdts, emp.First_Name as First_Name,emp.Last_Name as Last_Name,Group_concat(attribute.value)      AS Attributevalue, Group_concat(attribute.attribute_def_id)  AS AttributeNAME"+
+  						" from request_note rn left join Employee emp on rn.employee_id = emp.Id left join attribute  on rn.approval_id=attribute.approval_id  where rn.approval_id = '" + requestId + "'";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForComments.bind(scopeObj, res), error);
         }
       
@@ -61,8 +61,10 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                 tempJSON = {};
               }
               if (res[i].First_Name === null || res[i].First_Name== "null"|| res[i].First_Name === "" || res[i].First_Name === undefined) {
-              	res[i].First_Name=tempJSON.FirstNameAttributeDef;
-              } 
+              	res[i].First_Name=tempJSON.FirstNameAttributeDef+tempJSON.LastNameAttributeDef;
+              }else{
+                res[i].First_Name = res[i].First_Name+ " " +res[i].Last_Name;
+              }
                 data.push(res[i]);
             }
           	//BBE-126 History list completed with approved request by someone else

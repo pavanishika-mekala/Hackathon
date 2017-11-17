@@ -405,8 +405,8 @@ Settings.prototype.destroyForms = function(){
     frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.resetDBText");
     frmSettings.btnReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.reset");
     frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.SelectLang");
+	frmSettings.btnChangeLanguage.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmSettings.ChangeLang");
   	frmSettings.lblSyncDate.text =formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
-   	frmSettings.btnChangeLanguage.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmSettings.ChangeLang");
   }catch(e){
     kony.print("error"+e);
   }
