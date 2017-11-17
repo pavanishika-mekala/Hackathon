@@ -59,7 +59,7 @@ setDataInList = function() {
     kony.print("--Start: kony.apps.coe.ess.Approvals.EmployeeLookUp.prototype.setDataInList--");
     try {
       	frmEmployeeLookUp.segEmployeeList.widgetDataMap = this.widgetDataMap;
-		var query = "SELECT (First_Name || ' ' || Middle_Name || ' ' ||Last_Name ) as empName , Id as empId from employee where IsEmployee = '0'"; 		
+		var query = "SELECT (First_Name || ' ' || Middle_Name || ' ' ||Last_Name ) as empName , Id as empId from employee where IsEmployee = '2'"; 		
       	kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, function(res) {
           	scopeObj.employeeList = res;
           	scopeObj.totalEmployesList=res;

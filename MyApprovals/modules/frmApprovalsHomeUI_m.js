@@ -160,7 +160,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
     processedRequest.UserName = "";
     processedRequest.CreatedUserShortName = "";
 
-    if (approvalRequest.CreatedByEmployeeid && approvalRequest.CreatedByEmployeeid != "" && approvalRequest.CreatedByEmployeeid.toLowerCase() != null) {
+    if (approvalRequest.CreatedByEmployeeid && approvalRequest.CreatedByEmployeeid != "" && approvalRequest.CreatedByEmployeeid.toLowerCase() != null&&   approvalRequest.FirstName && approvalRequest.FirstName != null && approvalRequest.FirstName != "") {
       //employee id exsists
 
       if (approvalRequest.FirstName && approvalRequest.FirstName.toLowerCase() != null) {

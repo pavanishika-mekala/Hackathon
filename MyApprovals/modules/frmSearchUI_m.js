@@ -38,6 +38,7 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
             return [];
         }
         for (var index in response_data) {
+          	
             var processedRequest = response_data[index];
             //date format
             processedRequest.request_date = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].RequestDate).toDDmmmHHMMtt();
@@ -52,8 +53,8 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
               processedRequest.attributejson = {};
             }
             processedRequest.separator = "Label";
-            if (response_data[index].CreatedByEmployeeid && response_data[index].CreatedByEmployeeid != "" && response_data[index].CreatedByEmployeeid.toLowerCase() != null) {
-                //employee id exsists
+            if (response_data[index].CreatedByEmployeeid && response_data[index].CreatedByEmployeeid != "" && response_data[index].CreatedByEmployeeid.toLowerCase() != null &&  response_data[index].FirstName && response_data[index].FirstName != null && response_data[index].FirstName != "") {
+              //employee id exsists
                 if (response_data[index].FirstName && response_data[index].FirstName.toLowerCase() != null) {
                     processedRequest.UserName = response_data[index].FirstName;
                     processedRequest.CreatedUserShortName = response_data[index].FirstName.charAt(0);
@@ -75,7 +76,6 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                     if (processedRequest.attributejson.LastName.charAt(0))
                         processedRequest.CreatedUserShortName = processedRequest.CreatedUserShortName + processedRequest.attributejson.LastName.charAt(0);
                 }
-
             }
             // convert the CreatedUserShortName to ALL CAPS. It looks good.
             if (processedRequest.CreatedUserShortName != undefined) {
