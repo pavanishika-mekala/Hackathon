@@ -131,9 +131,10 @@ kony.sdk.mvvm.frmFullDetailsControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
               	//change status name 
               	kony.apps.coe.ess.WidgetPropertyBinding(frmFullDetails.lblStatus, data.statusText);
                 kony.apps.coe.ess.WidgetPropertyBinding(frmFullDetails.imgLogo, data.Titleicon);
-              	frmFullDetails.lblTitle.text=frmApprovalRequestDetail.lblTitle.text;    			
+              	frmFullDetails.lblTitle.text=frmApprovalRequestDetail.lblTitle.text; 
+                frmFullDetails.btnAdditionalInfo.text=frmApprovalRequestDetail.lblAdditonalInfo.text;
               	kony.apps.coe.ess.WidgetPropertyBinding(frmFullDetails.lblCategory, data.TitleDetail);
-              	frmFullDetails.lblRequestedDate.text=data.RequestDate;
+              	frmFullDetails.lblRequestedDate.text=data.RequestDate;                
              	var fullDetailsWidgetDataMap = {
 					"lblType" : "key",
                   	"lblValue" : "value",
