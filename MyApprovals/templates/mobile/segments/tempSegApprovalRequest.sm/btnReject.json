@@ -42,11 +42,17 @@
     "id": "btnReject",
     "ide_onClick": "AS_Button_f2323d07756c49a5a4daad7e146b14cf",
     "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": true,
     "kuid": "1e7e30ada8d646f2a5bb64beac1d492f",
     "name": "kony.ui.Button",
     "parent": "flxApprovalRequest",
     "pf": "tempSegApprovalRequest",
+    "showprogressindicator": false,
     "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.Reject",
     "wType": "Button",
     "zindex": 1
