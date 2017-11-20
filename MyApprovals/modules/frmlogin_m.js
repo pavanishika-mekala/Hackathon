@@ -730,7 +730,7 @@ kony.apps.coe.ess.frmLogin.offlinePopup = function() {
   kony.print("-- value " + kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress + " --");
   if (kony.apps.coe.ess.Approvals.FullDetailsRequestedListBackendlogic.isSyncInProgress == true) {
     // Disable clicking on Hamburger menu items.
-    kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(false);
+    //kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(false);
     // Show offline alert
     popupOfflineAlert.show();
     kony.apps.coe.ess.globalVariables.ifOfflinePopUpVisible = true;

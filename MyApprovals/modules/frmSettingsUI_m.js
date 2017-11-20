@@ -389,7 +389,13 @@ Settings.prototype.destroyForms = function(){
     frmDelegationRequestList.destroy();
     frmEmployeeLookUp.destroy();
     frmFullDetails.destroy();
+    // storing last sync timestamp before hamburger is destroyed
+    var dateText = frmHamburger.lblSyncDate.text;
+    var timeText = frmHamburger.lblSyncTime.text;
     frmHamburger.destroy();
+    //setting the timestamp to the one set befre destroying hamburger
+    frmHamburger.lblSyncDate.text = dateText;
+    frmHamburger.lblSyncTime.text = timeText;
     frmIsLaterSearch.destroy();
     frmLogin.destroy();
     frmMultiSelection.destroy();

@@ -817,7 +817,7 @@ kony.apps.coe.ess.Approvals.spa.ProcessEachSPARequest = function(request) {
       if(request.request_approver[0].delegator_id === "" || request.request_approver[0].delegator_id === null || request.request_approver[0].delegator_id === undefined){
         processedRequest.DelegateText = "";
       }else{
-        processedRequest.DelegateText = "DELEGATED";
+        processedRequest.DelegateText = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.lblDeligated");
       }
 
     } else {
