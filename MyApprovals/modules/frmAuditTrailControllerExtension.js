@@ -55,13 +55,14 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             for(var i in res) {
                 res[i].templateType = 1;
               var tempJSON;
-              if(res[i].AttributeNAME != undefined) {
+              if(res[i].AttributeNAME != undefined && res[i].AttributeNAME !== null && res[i].AttributeNAME != "null") {
                   tempJSON = res[i].AttributeNAME.returnCombinationInJsonFormat(res[i].Attributevalue, ",");
               } else {
                 tempJSON = {};
               }
               if (res[i].First_Name === null || res[i].First_Name== "null"|| res[i].First_Name === "" || res[i].First_Name === undefined) {
-              	res[i].First_Name=tempJSON.FirstNameAttributeDef+tempJSON.LastNameAttributeDef;
+                if(res[i].hasOwnProperty('FirstNameAttributeDef') && res[i].hasOwnProperty('LastNameAttributeDef'))
+                 res[i].First_Name=tempJSON.FirstNameAttributeDef+tempJSON.LastNameAttributeDef;
               }else{
                 res[i].First_Name = res[i].First_Name+ " " +res[i].Last_Name;
               }
