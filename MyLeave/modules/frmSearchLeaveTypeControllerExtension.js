@@ -27,7 +27,7 @@ kony.sdk.mvvm.frmSearchLeaveTypeControllerExtension = Class(kony.sdk.mvvm.BaseFo
         try {
        
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var languageCode = kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase();
 			var query = "select  TEXT_DISPLAY as name from leave_type  l LEFT JOIN translation tr ON ( l.id = tr.TEXT_CODE) and tr.SPRAS like '"+languageCode+"'";
             kony.sync.single_select_execute(kony.sync.getDBName(), query, null, success,error);

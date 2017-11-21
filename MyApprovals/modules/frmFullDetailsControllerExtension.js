@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmFullDetailsControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
 		fetchData: function () {
 			try {
 				var scopeObj = this;
-				kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+				kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
 				//input validation
 				if(isEmpty(kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID)||isEmpty(kony.apps.coe.ess.globalVariables.EmployeeID )){
 					//input validation failed

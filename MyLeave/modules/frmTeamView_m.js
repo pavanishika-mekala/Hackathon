@@ -22,13 +22,13 @@ kony.apps.coe.ess.myLeave.TeamView = function() {
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(data, intervalStartDate, intervalEndDate, isFirstTimeDataFormatting, callbackres) {
     try {
-        kony.print("---- generateFormattedData starts ----");
-        kony.print("---- Data received :: " + JSON.stringify(data));
-        kony.print("isFirstTimeDataFormatting" + JSON.stringify(isFirstTimeDataFormatting));
+        alert("---- generateFormattedData starts ----");
+        alert("---- Data received :: " + JSON.stringify(data));
+        alert("isFirstTimeDataFormatting" + JSON.stringify(isFirstTimeDataFormatting));
         var resultData = [];
         var callback = function(tempData, intervalStartDate, intervalEndDate, nonWorkingDays, callbackres, res) {
-            kony.print("Response recieved in callback :: " + JSON.stringify(res));
-          	//kony.print(" tempData"+JSON.stringify(tempData)+" intervalStartDate "+JSON.stringify(intervalStartDate)+" intervalEndDate "+JSON.stringify(intervalEndDate)+" nonWorkingDays "+JSON.stringify(nonWorkingDays)+" callbackres "+JSON.stringify(callbackres)+ " res "+JSON.stringify(res));
+            alert("Response recieved in callback :: " + JSON.stringify(res));
+          	//alert(" tempData"+JSON.stringify(tempData)+" intervalStartDate "+JSON.stringify(intervalStartDate)+" intervalEndDate "+JSON.stringify(intervalEndDate)+" nonWorkingDays "+JSON.stringify(nonWorkingDays)+" callbackres "+JSON.stringify(callbackres)+ " res "+JSON.stringify(res));
             var data = JSON.parse(JSON.stringify(res));
             var resultArrayData = ["withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png"];
           	if (typeof data == "undefined" && data === null && data.length === null && data.length <= 0) {
@@ -75,12 +75,12 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
             if (callbackres !== null && callbackres !== undefined && typeof(callbackres) === "function") {
                 callbackres();
             }
-            kony.print("ResultArray data :: " + JSON.stringify(resultArrayData));
+            alert("ResultArray data :: " + JSON.stringify(resultArrayData));
         };
         var tempData = {};
         if (typeof data != "undefined" && data !== null && data.length !== null && data.length > 0) {
             if (isFirstTimeDataFormatting === true) {
-                kony.print("---- Inside If of generateFormattedData ----");
+                alert("---- Inside If of generateFormattedData ----");
                 for (var index = 0; index < data.length; index++) {
                     tempData = {};
                     tempData.first_name = data[index].First_Name + "";
@@ -127,7 +127,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                 }
                 return resultData;
             } else {
-                kony.print("----Inside else of generateFormattedData ----");
+                alert("----Inside else of generateFormattedData ----");
                 for (var index1 = 0; index1 < data.length; index1++) {
                     this.generateNonWorkingDays(intervalStartDate, intervalEndDate, function(res) {
                         var nonWorkingDays = res;
@@ -163,7 +163,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
  * @returns Boolean
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.isDateFoundinArray = function(date, dateArray) {
-    kony.print("---- Inside isDateFoundinArray ----");
+    alert("---- Inside isDateFoundinArray ----");
     try {
         if (typeof dateArray != "undefined" && dateArray !== null && dateArray.length !== null && dateArray.length > 0) {
             if (typeof date == "object") {
@@ -192,7 +192,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.isDateFoundinArray = function(date,
  * @returns Boolean
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.isDateFoundInBetween = function(date, dateArray) {
-    kony.print("---- Inside isDateFoundInBetween ----");
+    alert("---- Inside isDateFoundInBetween ----");
     try {
         if (typeof dateArray != "undefined" && dateArray !== null && dateArray.length !== null && dateArray.length > 0) {
           if (typeof date == "object") {
@@ -225,7 +225,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.isDateFoundInBetween = function(dat
 * @returns 
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateImageValue = function(intervalStartDate, intervalEndDate, user_id, callback) {
-    kony.print("---- Inside generateImageValue ----");
+    alert("---- Inside generateImageValue ----");
     try {
         var dayIntervalStartDate = intervalStartDate.getDate();
         if (dayIntervalStartDate < 10) {
@@ -287,7 +287,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateImageValue = function(inter
 * @returns 
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(intervalStartDate, intervalEndDate, callback) {
-    kony.print("---- Inside generateNonWorkingDays ----");
+    alert("---- Inside generateNonWorkingDays ----");
     try {
         var dayIntervalStartDate = intervalStartDate.getDate();
         if (dayIntervalStartDate < 10) {
@@ -324,8 +324,8 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(i
             "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate + "'";
         kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, function(response) {
             if (typeof response != "undefined" && response !== null && response.length !== null && response.length > 0) {
-                kony.print("---- Inside success Callback of single execute query of generateNonWorkingDays");
-                kony.print("Response of generateNonWorkingDays" + JSON.stringify(response));
+                alert("---- Inside success Callback of single execute query of generateNonWorkingDays");
+                alert("Response of generateNonWorkingDays" + JSON.stringify(response));
                 var nonWorkingDays = [];
                 for (var i = 0; i < response.length; i++) {
                     var date = this.convertStringDateDbToDateObject(response[i].holiday_date);
@@ -355,8 +355,8 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(i
  * @returns null
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.mapAndBindData = function(data) {
-    kony.print("---- Inside mapAndBindData ----");
-    kony.print("Data value received ::" + JSON.stringify(data));
+    alert("---- Inside mapAndBindData ----");
+    alert("Data value received ::" + JSON.stringify(data));
     try {
         data = (new kony.apps.coe.ess.myLeave.TeamViewUI()).addAlternateSkinToSegment(data, "sknFlxFFFFFF100", "sknFlxFAFAFA100");
         frmTeamView.segTeamView.widgetDataMap = {
@@ -375,6 +375,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.mapAndBindData = function(data) {
             "flxInitials": "flxInitials",
             "media_id": "media_id"
         };
+      	alert("soumya 1   "+JSON.stringify(data));
         frmTeamView.segTeamView.setData(data);
         frmTeamView.forceLayout();
     } catch (e) {
@@ -392,7 +393,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.mapAndBindData = function(data) {
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.changeMonthText = function(intervalStartDate, intervalEndDate) {
     try {
-        kony.print("---- Inside changeMonthText ----");
+        alert("---- Inside changeMonthText ----");
         //var monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 	      var monthName = [kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.jan"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.feb"),
 	                      kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.mar"),kony.i18n.getLocalizedString("i18n.ess.Date.shortmonth.apr"),
@@ -450,7 +451,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.calculateDateDifferenceinDays = fun
  * @returns null
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.onClickIndividualView = function() {
-    kony.print("---- Inside onClickIndividualView ----");
+    alert("---- Inside onClickIndividualView ----");
     frmLeaveHome.show();
     return;
 };
@@ -463,7 +464,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.onClickIndividualView = function() 
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaId = function() {
     try {
-        kony.print("---- Inside fetchImageValueByMediaId ----");
+        alert("---- Inside fetchImageValueByMediaId ----");
         var data = frmTeamView.segTeamView.data;
         if (typeof data != "undefined" && data !== null && data.length !== null && data.length > 0) {
             for (var i = 0; i < data.length; i++) {
@@ -488,7 +489,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaId = function
 kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaIdSuccessCallback = function(media_id, response) {
     try {
 
-        kony.print("---- Inside fetchImageValueByMediaIdSuccessCallback ----");
+        alert("---- Inside fetchImageValueByMediaIdSuccessCallback ----");
         if (response !== null && response !== "") {
             if (response.length > 0 && response.length <= kony.apps.coe.ess.appconfig.maxImageSizeLimit) {
                 var data = frmTeamView.segTeamView.data;
@@ -518,6 +519,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaIdSuccessCall
                             break;
                         }
                     }
+                  	alert("soumya 2   "+JSON.stringify(data));
                     frmTeamView.segTeamView.setData(data);
                     frmTeamView.forceLayout();
                 }
@@ -538,9 +540,9 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaIdSuccessCall
 kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaIdErrorCallBack = function(error) {
     if (error.opstatus !== null && error.opstatus !== undefined) {
         if (error.opstatus == 20005) {
-            kony.print("---------Media File not found " + JSON.stringify(error));
+            alert("---------Media File not found " + JSON.stringify(error));
         } else {
-            kony.print("---------Error in Json File " + JSON.stringify(error));
+            alert("---------Error in Json File " + JSON.stringify(error));
         }
     }
 };
@@ -553,7 +555,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaIdErrorCallBa
  * @returns {Object} - processed data
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.convertStringDateDbToDateObject = function(date) {
-    kony.print("---- Inside convertStringDateDbToDateObject ----");
+    alert("---- Inside convertStringDateDbToDateObject ----");
     try {
         var monthsJSON = Date.getMonthMapNumberToMonth;
         var resultDate = (new Date(date.substring(0, 4), date.substring(4, 6) - 1, date.substring(6, 8)));
@@ -571,7 +573,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.convertStringDateDbToDateObject = f
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.formatEmployeeName = function(firstName, middleName, lastName) {
     try {
-        kony.print("---- Inside formatEmployeeName ----");
+        alert("---- Inside formatEmployeeName ----");
         var tempChar = "";
         if (firstName !== null && typeof firstName == "string" && firstName.length > 0) {
             tempChar = firstName.slice(0, 1).toUpperCase();

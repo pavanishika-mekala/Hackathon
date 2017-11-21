@@ -25,7 +25,7 @@ kony.sdk.mvvm.frmDelegationTabControllerExtension = Class(kony.sdk.mvvm.BaseForm
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
             kony.apps.coe.ess.Approvals.DelegationTab.UI.getInstance().setDataInList();
             var query = "select dl.delegation_group_id as groupId, dl.status_id as statusId, dl.employee_id as empId, emp.First_Name as firstName, emp.Last_Name as lastName, rt.name as requestTypeName, dl.start_date as startDate, dl.end_date as endDate, dl.createdts as createdDate from delegate dl " +
                 " left join Employee emp on emp.Id = dl.employee_id " +

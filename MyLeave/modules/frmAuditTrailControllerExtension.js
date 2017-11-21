@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var query ="select la.id as id, la.leave_id as leave_id, la.status_id as status_id,la.description as description, la.createdts as createdts, la.employee_id as First_Name from leave_audit la where la.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
             var data = [];
             kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function(res_leave_audit) {
@@ -103,6 +103,16 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
 			"6": "system_error.png",
 			"7": "submitted.png"
         };
+        var status_keys = {
+          "0": kony.i18n.getLocalizedString("i18n.ess.common.approved.valueKA"),
+          "1": kony.i18n.getLocalizedString("i18n.ess.common.rejected.valueKA"),
+          "2": kony.i18n.getLocalizedString("i18n.ess.common.pending.valueKA"),
+          "3": kony.i18n.getLocalizedString("i18n.ess.common.cancelled.valueKA"),
+          "4": "",
+          "5": kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.Saved"),
+          "6": kony.i18n.getLocalizedString("i18n.ess.common.error.valueKA"),
+          "7": kony.i18n.getLocalizedString("i18n.ess.common.submitted.valueKA")
+        };
         try {
             var scopeObj = this;
             var processedData = [];
@@ -136,6 +146,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         // getting status value from status id
                         status = kony.apps.coe.ess.globalVariables.Status.idToStr[data[i].status_id];
                         status = status.charAt(0).toUpperCase() + status.substring(1, status.length).toLowerCase();
+                    	status=status_keys[data[i].status_id];
                     }
                     processedData.push({
                         lblEventName : status,
@@ -149,7 +160,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     });
                 } else if(parseInt(data[i].template_type) === 1) {
                     processedData.push({
-                        lblEventName : "User Comment",
+                        lblEventName : kony.i18n.getLocalizedString("i18n.ess.common.usercomment"),
                         lblEventDesc : data[i].comments,
                         lblPersonName : data[i].First_Name,
                         lblDate : date,
