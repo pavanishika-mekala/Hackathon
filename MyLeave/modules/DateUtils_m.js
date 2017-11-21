@@ -538,11 +538,12 @@ Date.prototype.toHHMMMHHmm = function () {
 	}
 	var dd = this.getDate();
 	var mm = months[this.getMonth()];
-    var formatedHH = formatTo12HH(this.getHours());
-	var hh = makeTwoDigits(formatedHH.hh);
-	var min = makeTwoDigits(this.getMinutes());
-	var ampm = formatedHH.isAM === true ? "AM" : "PM";
-	return dd + " " + mm + " " + hh + ":" + min + " " + ampm;
+//     var formatedHH = formatTo12HH(this.getHours());
+// 	var hh = makeTwoDigits(formatedHH.hh);
+// 	var min = makeTwoDigits(this.getMinutes());
+// 	var ampm = formatedHH.isAM === true ? "AM" : "PM";
+// 	return dd + " " + mm + " " + hh + ":" + min + " " + ampm;
+  return dd + " " + mm + " " + this.getHours() + ":" + this.getMinutes();
 };
 
 Date.getMonthMapNumberToMonth = {
@@ -594,7 +595,7 @@ Date.getDateObject = function(dateString){
 
 	var date        = new Date(year, month-1, day);
 	return date;
-}
+};
 
 /**
 @Class Date
@@ -602,12 +603,9 @@ Date.getDateObject = function(dateString){
 @Param Lang
 @Desc returns monthname
  */
-Date.getMonthName = function(lang,month,flag) {
+Date.getMonthName = function(lang,month) {
     lang = lang && (lang in Date.locale) ? lang : 'en';
-  if(flag){
-    return Date.locale[lang].indexOf(month_names[month]);
-  }
-    return Date.locale[lang].month_names[month];
+      return Date.locale[lang].month_names[month];
 };
 /**
 @Class Date
@@ -615,12 +613,19 @@ Date.getMonthName = function(lang,month,flag) {
 @Param Lang
 @Desc returns month shortname
  */
-Date.getMonthNameShort = function(lang,month,flag) {
+Date.getMonthNameShort = function(lang,month) {
     lang = lang && (lang in Date.locale) ? lang : 'en';
-  if(flag){
-    return Date.locale[lang].indexOf(month_names_short[month]);
-  }
-    return Date.locale[lang].month_names_short[month];
+      return Date.locale[lang].month_names_short[month];
+};
+
+Date.getMonthNumber = function(lang,month){
+  lang = lang && (lang in Date.locale) ? lang : 'en';
+  return Date.localeMonthNo[lang][month];
+};
+
+Date.getshortMonthNumber = function(lang,month){
+  lang = lang && (lang in Date.locale) ? lang : 'en';
+  return Date.localeshortMonthNo[lang][month];
 };
 
 Date.locale = {
@@ -636,5 +641,28 @@ Date.locale = {
     month_names: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'],
     month_names_short: ['Jan', 'Feb', 'Maart', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec']
   }
+};
 
+Date.localeshortMonthNo = {
+  en: {
+    "Jan" : "0","Feb" : "1","Mar" : "2","Apr" : "3","May":"4","Jun":"5","Jul":"6","Aug":"7","Sep":"8","Oct":"9","Nov":"10","Dec":"11"
+  },
+  fr_BE: {
+    "Jan" : "0","Fév" : "1","Mar" : "2","Avr" : "3","Mai":"4","Juin":"5","Juil":"6","Août":"7","Sep":"8","Oct":"9","Nov":"10","Déc":"11"
+  },
+  nl_BE: {
+    "Jan" : "0","Feb" : "1","Maart" : "2","Apr" : "3","Mei":"4","Jun":"5","Jul":"6","Aug":"7","Sep":"8","Okt":"9","Nov":"10","Dec":"11"
+  },
+};
+
+Date.localeMonthNo = {
+  en: {
+    "January" : "0","February" : "1","March" : "2","April" : "3","May":"4","June":"5","July":"6","August":"7","September":"8","October":"9","November":"10","December":"11"
+  },
+  fr_BE: {
+    "Janvier" : "0","Février" : "1","Mars" : "2","Avril" : "3","Mai":"5","Juin":"5","Juillet":"6","Août":"7","Septembre":"8","Octobre":"9","Novembre":"10","Décembre":"11"
+  },
+  nl_BE: {
+    "Januari" : "0","Februari" : "1","Maart" : "2","April" : "3","Mei":"4","Juni":"5","Juli":"6","Augustus":"7","September":"8","Oktober":"9","November":"10","December":"11"
+  },
 };
