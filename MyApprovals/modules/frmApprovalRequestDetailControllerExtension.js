@@ -279,7 +279,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 										 frmApprovalRequestDetail.lblApprove.isVisible = false;
 										 frmApprovalRequestDetail.btnReject.isVisible = false;
 										 frmApprovalRequestDetail.btnNotice.isVisible = true;
-                     frmApprovalRequestDetail.txtareaComments.setVisibility(true);
+										 frmApprovalRequestDetail.txtareaComments.setVisibility(false); //true  to false as other absence leaves will be auto approved
 									 } else {
 										 //status of the request is not pending
                      	frmApprovalRequestDetail.flxBottomButtons.setVisibility(false);

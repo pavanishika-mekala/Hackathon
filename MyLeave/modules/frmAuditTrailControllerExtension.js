@@ -120,7 +120,15 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     // converting date in required format i.e. DD MMM HH mm am/pm
                     date = date.toHHMMMHHmm();
                 }
+				//to avoid same comments in audit trail screen
+              var mock = 0;
+              if(i > 0){
+              	if(data[i].createdts === data[i-1].createdts){
+                	mock = 1;
+                }
+              }
                 // assigning different templates for comments and audit record.
+				if(mock === 0){
                 if(parseInt(data[i].template_type) === 0) {
                     data[i].status_id = String(data[i].status_id);
                     var status = "";
@@ -151,6 +159,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         lblVerticalLineBottom : {text : "", isVisible : (i >= data.length - 1 ? false : true)}
                     });
                 }
+				}
                 
             }
             this.getController().bindData(processedData);

@@ -49,7 +49,7 @@ kony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar = function
     "YEAR": currentYear,
     "noOfWeekstobedisplayed": 12,
     "previous": 1,
-    "weekNamelength": 1
+    "weekNamelength": 2
   };
   var DimensionInfo = {
     "weekLabelContainerHeight": "32%",

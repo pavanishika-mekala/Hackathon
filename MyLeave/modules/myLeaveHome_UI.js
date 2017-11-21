@@ -175,13 +175,13 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                         }
 
                         if (data.data.CellData.StartDate == data.data.CellData.EndDate) {
-                            var totalTime = parseFloat(data.data.CellData.Hours).toString()+" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")+" ";
-                            frmLeaveHome.lblLeaveTime.text = totalTime;
+                            var totalTime = (parseFloat(data.data.CellData.Hours).toString()+" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+                          	frmLeaveHome.lblLeaveTime.text = totalTime;
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3);
                             frmLeaveHome.lblLeaveTime.isVisible = true;
                         } else {
                             var totalDays = ((parseInt(data.data.CellData.Hours) * 1) / kony.apps.coe.ess.appconfig.workingHours).toFixed() + " "+ kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
-                            frmLeaveHome.lblLeaveTime.text = totalDays;
+                          	frmLeaveHome.lblLeaveTime.text = totalDays;
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3) + " - " + data.data.CellData.EndDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.EndDate.substring(4, 6) + ""]).substring(0, 3);
                             frmLeaveHome.lblLeaveTime.isVisible = true;
                         }
@@ -199,11 +199,12 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
 
                     if (!isNaN(data.data.CellData.CreateDate) && data.data.CellData.CreateDate !== null && data.data.CellData.CreateDate !== "") {
                         var appliedTime = "";
-                        if (data.data.CellData.CreateDate.substring(8, 10) > "12") {
-                            appliedTime = (parseInt(data.data.CellData.CreateDate.substring(8, 10)) - 12) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " PM";
-                        } else {
-                            appliedTime = data.data.CellData.CreateDate.substring(8, 10) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " AM";
-                        }
+//                         if (data.data.CellData.CreateDate.substring(8, 10) > "12") {
+//                             appliedTime = (parseInt(data.data.CellData.CreateDate.substring(8, 10)) - 12) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " PM";
+//                         } else {
+//                             appliedTime = data.data.CellData.CreateDate.substring(8, 10) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " AM";
+//                         }
+                      appliedTime = (parseInt(data.data.CellData.CreateDate.substring(8, 10))) + ":" + data.data.CellData.CreateDate.substring(10, 12) ;
                         var appliedDate = data.data.CellData.CreateDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.CreateDate.substring(4, 6) + ""]).substring(0, 3) + " " + data.data.CellData.CreateDate.substring(0, 4) + ", " + appliedTime;
                         frmLeaveHome.lblAppliedDate.text = appliedDate;
                     } else {
@@ -237,11 +238,12 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                         frmLeaveHome.lblSelectedLeaveStatusOther.skin = "sknLblMob00C6AE28Px";
                         if (!isNaN(data.data.CellData.LastModifiedDate) && data.data.CellData.LastModifiedDate !== null && data.data.CellData.LastModifiedDate !== "") {
                             var approvedTime = "";
-                            if (data.data.CellData.LastModifiedDate.substring(8, 10) > "12") {
-                                approvedTime = (parseInt(data.data.CellData.LastModifiedDate.substring(8, 10)) - 12) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " PM";
-                            } else {
-                                approvedTime = data.data.CellData.LastModifiedDate.substring(8, 10) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " AM";
-                            }
+                          	approvedTime = (parseInt(data.data.CellData.LastModifiedDate.substring(8, 10))) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12);
+//                             if (data.data.CellData.LastModifiedDate.substring(8, 10) > "12") {
+//                                 approvedTime = (parseInt(data.data.CellData.LastModifiedDate.substring(8, 10)) - 12) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " PM";
+//                             } else {
+//                                 approvedTime = data.data.CellData.LastModifiedDate.substring(8, 10) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " AM";
+//                             }
                             var approvedDate = data.data.CellData.LastModifiedDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.LastModifiedDate.substring(4, 6) + ""]).substring(0, 3) + " " + data.data.CellData.LastModifiedDate.substring(0, 4) + ", " + approvedTime;
                             frmLeaveHome.lblSelectedLeaveStatusOtherDate.text = approvedDate;
                         } else {
@@ -387,11 +389,12 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
         var commentDate = "";
         if (!isNaN(data[i].createdts) && data[i].createdts !== null && data[i].createdts !== "") {
             var commentTime = "";
-            if (data[i].createdts.substring(8, 10) > "12") {
-                commentTime = (parseInt(data[i].createdts.substring(8, 10)) - 12) + ":" + data[i].createdts.substring(10, 12) + " PM";
-            } else {
-                commentTime = data[i].createdts.substring(8, 10) + ":" + data[i].createdts.substring(10, 12) + " AM";
-            }
+          	commentTime = (parseInt(data[i].createdts.substring(8, 10))) + ":" + data[i].createdts.substring(10, 12);
+//             if (data[i].createdts.substring(8, 10) > "12") {
+//                 commentTime = (parseInt(data[i].createdts.substring(8, 10)) - 12) + ":" + data[i].createdts.substring(10, 12) + " PM";
+//             } else {
+//                 commentTime = data[i].createdts.substring(8, 10) + ":" + data[i].createdts.substring(10, 12) + " AM";
+//             }
             commentDate = data[i].createdts.substring(6, 8) + " " + (monthsJSON[data[i].createdts.substring(4, 6) + ""]).substring(0, 3) + " , " + commentTime;
         } else {
             commentDate = " ";

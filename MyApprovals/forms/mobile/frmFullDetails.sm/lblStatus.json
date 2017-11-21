@@ -6,10 +6,6 @@
         "type": "string",
         "value": "60%"
     },
-    "_left_": {
-        "type": "string",
-        "value": "4%"
-    },
     "_margin_": [
         1,
         1,
@@ -24,7 +20,7 @@
     ],
     "_right_": {
         "type": "string",
-        "value": "0%"
+        "value": "5%"
     },
     "_skin_": "s01657e350a94d8f8a24155a349849f2",
     "_text_": "",

@@ -164,7 +164,7 @@ kony.apps.ess.myLeaveTabUI.Reusable.calendarWIDGET = function (month_param, year
            "marginInPixel":false,
            "displayText":true, 
            "contentAlignment":constants.CONTENT_ALIGN_CENTER
-         }, {});
+         }, {showProgressIndicator:false});
 
 		this.MONTHFLEX.add(this[lblBasic.id]);
 

@@ -1140,7 +1140,7 @@ kony.apps.coe.ess.Approvals.tabApprovalsDashboard.prototype.addingFlxWithData = 
     "isVisible": true,
     "left": "0dp",
     "skin": "sknLblFFFFFF100O24px",
-    "text": "DELEGATED",
+    "text": kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.lblDeligated"),
     "textStyle": {
       "letterSpacing": 0,
       "strikeThrough": false

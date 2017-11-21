@@ -23,7 +23,7 @@ var frmTeamViewConfig = {
 				 	",GROUP_CONCAT(LEAVE_TYPE) AS LEAVE_TYPE"+
 				 	",GROUP_CONCAT(LV_STATUS) AS LV_STATUS"+
 				 	",GROUP_CONCAT(STATUS) AS STATUS"+
-              		" FROM TEAM_LEAVE_REQUEST_ENTRY where LV_STATUS NOT LIKE 'C' group by EMPNUMBER) TLR  ON  TPD.EMPNUMBER = TLR.EMPNUMBER",
+              		" FROM TEAM_LEAVE_REQUEST_ENTRY where LV_STATUS NOT LIKE 'C' group by EMPNUMBER) TLR  ON  TPD.EMPNUMBER = TLR.EMPNUMBER order by  TPD.FIRSTNAME",
           	"querytype": "sql"
         }
     }

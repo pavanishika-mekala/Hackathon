@@ -13,6 +13,11 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail = kony.apps.coe.ess.Approva
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.preShow = function(){
 	frmApprovalRequestDetail.SegChat.rowTemplate.flxcomment.highlightedSkin = "sknflxMob2ebaee";
   	frmApprovalRequestDetail.SegChat.rowTemplate.flxcomment.highlightOnParentFocus = true;
+ 	if(kony.application.getCurrentForm().id === "frmSearch"){
+		kony.apps.coe.ess.globalVariables.prevFormFlow = "Search";
+	}else if(kony.application.getCurrentForm().id === "frmRequestedList"){
+      	kony.apps.coe.ess.globalVariables.prevFormFlow = "RequestedList";
+    }
 };
 
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requestType, ContextData) {
@@ -215,6 +220,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.bindApprovalRequestDetails = function(ProcessedRequestDetail) {
   	kony.print("ProcessedRequestDetail"+JSON.stringify(ProcessedRequestDetail)+JSON.stringify(ProcessedRequestDetail.statusText));
   	var statusText = ProcessedRequestDetail.statusText["text"];
+  	ProcessedRequestDetail.AdditonalInfo.text=(ProcessedRequestDetail.AdditonalInfo.text+"").replace(".", ",");
   	if(statusText == "Pending"){
       ProcessedRequestDetail.statusText = {"text":kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")};
     }else if(statusText == "Approved"){
@@ -379,10 +385,16 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.startLazyloadingComments=fu
  */
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.getPreviousFormID=function() {
 	if(kony.application.getPreviousForm().id == 'frmPdfReader' || kony.application.getPreviousForm().id == 'frmFullDetails' || kony.application.getPreviousForm().id == 'frmAuditTrail') {
+      if(kony.apps.coe.ess.globalVariables.prevFormFlow === "Search"){
+        return frmSearch.id;
+      }else if(kony.apps.coe.ess.globalVariables.prevFormFlow === "RequestedList"){
+       	return frmRequestedList.id; 
+      }else{
 		return frmApprovalHome.id;
+      }
 	}
 	return kony.application.getPreviousForm().id;
-}
+};
 
 /**@function
  * @member	 :  frmApprovalRequestDetail

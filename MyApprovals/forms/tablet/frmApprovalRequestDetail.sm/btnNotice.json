@@ -41,11 +41,17 @@
     "id": "btnNotice",
     "ide_onClick": "AS_Button_f19e062c3315413fabab74763f75f97c",
     "info": null,
+    "ipad": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": false,
     "kuid": "d92ade26261940bf9f5c6197c7942b0b",
     "name": "kony.ui.Button",
     "parent": "flxBottomBar",
     "pf": "frmApprovalRequestDetail",
+    "showprogressindicator": false,
     "texti18n": "i18n.ess.myApproval.Ok.text",
     "wType": "Button"
 }

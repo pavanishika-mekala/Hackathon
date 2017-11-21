@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "14%"
+        "value": "50%"
     },
     "_left_": {
         "type": "string",
-        "value": "10.00%"
+        "value": "2%"
     },
     "_margin_": [
         0,
@@ -30,28 +30,29 @@
     },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblTitle",
-        "FlexContainer0b81acca0a0ff48"
+        "lblCategory",
+        "btnAdditionalInfo"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxBusinessDetails",
+    "id": "FlexContainer0b81acca0a0ff48",
     "info": null,
     "isvisible": true,
-    "kuid": "f3c006d781f54d36a5422b6a4b0d71c7",
-    "layouttype": 4,
+    "kuid": "ie8a925e0716400a80f81ab240338c3a",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxContainerSection",
+    "parent": "flxBusinessDetails",
     "pf": "frmFullDetails",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 1
 }

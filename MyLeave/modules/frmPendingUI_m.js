@@ -243,11 +243,12 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
                 if (mins < 10)
                     mins = "0" + parseInt(adate.substring(10, 12) * 1);
                 var hrs = parseInt(adate.substring(8, 10) * 1);
-                var AP = "AM";
-                if (hrs >= 12) {
-                    hrs = hrs - 12;
-                    AP = "PM";
-                }
+              	var AP = "";
+//                 var AP = "AM";
+//                 if (hrs >= 12) {
+//                     hrs = hrs - 12;
+//                     AP = "PM";
+//                 }
                 pendingData.lblAppliedDate = parseInt(adate.substring(6, 8) * 1) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(adate.substring(4, 6) * 1) - 1).toString()] +
                     " " + parseInt(adate.substring(0, 4) * 1) + " " + hrs + ":" + mins + " " + AP;
             }

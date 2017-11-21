@@ -49,6 +49,7 @@
     "name": "kony.ui.Button",
     "parent": "flxouter",
     "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.MyLeave.Camera.Select_from_Gallery",
     "wType": "Button",
     "zindex": 1
 }

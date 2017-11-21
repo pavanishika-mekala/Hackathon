@@ -160,7 +160,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
     processedRequest.UserName = "";
     processedRequest.CreatedUserShortName = "";
 
-    if (approvalRequest.CreatedByEmployeeid && approvalRequest.CreatedByEmployeeid != "" && approvalRequest.CreatedByEmployeeid.toLowerCase() != null) {
+    if (approvalRequest.CreatedByEmployeeid && approvalRequest.CreatedByEmployeeid != "" && approvalRequest.CreatedByEmployeeid.toLowerCase() != null&&   approvalRequest.FirstName && approvalRequest.FirstName != null && approvalRequest.FirstName != "") {
       //employee id exsists
 
       if (approvalRequest.FirstName && approvalRequest.FirstName.toLowerCase() != null) {
@@ -221,9 +221,10 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
           var endDate = new Date().modifyByYYYYMMDDHHMMSS(processedRequest.attributejson.EndDate);
           var hoursData = processedRequest.Leave_hours;
 		  var hours = Number(hoursData).toFixed();
-          var duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hours"); // hours";
+          var hourDataText=(hoursData+"").replace(".", ",");
+          var duration = hourDataText + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hours"); // hours";
           if(hours == 1){
-            duration = hoursData + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
+            duration = hourDataText + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
           }
 		  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
 		  
@@ -235,7 +236,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
               if(days[1] == "00"){
                 days = days[0];
               }
-              duration = days+" "+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day(s).text");
+              duration = days+" "+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Days.text");
 			  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3) + " - " + endDate.getDate() + " " + endDate.retriveMonthName().substring(0, 3);
             }
 			

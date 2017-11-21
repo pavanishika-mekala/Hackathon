@@ -2,13 +2,17 @@
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_height_": {
+    "_bottom_": {
         "type": "string",
-        "value": "50%"
+        "value": "2%"
+    },
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "10%"
+        "value": "11%"
     },
     "_margin_": [
         1,
@@ -24,13 +28,9 @@
     ],
     "_skin_": "s1a7fd53830e488bba392b88fe184459",
     "_text_": "20 May - 22 May",
-    "_top_": {
-        "type": "string",
-        "value": "50%"
-    },
     "_width_": {
-        "type": "string",
-        "value": "44%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {

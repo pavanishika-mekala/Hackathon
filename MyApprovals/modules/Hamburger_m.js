@@ -36,8 +36,8 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
           	this.hamburgerMenuItemsShow();
             kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmHamburger.lblWelcome")+" "+kony.apps.coe.ess.frmLogin.username;
           	//bbe-101 menu sync
-          	kony.application.getCurrentForm().flxHamburger.lblSyncDate.text=formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
-		   	kony.application.getCurrentForm().flxHamburger.lblSyncTime.text=formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);
+//           	kony.application.getCurrentForm().flxHamburger.lblSyncDate.text=formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
+// 		   	kony.application.getCurrentForm().flxHamburger.lblSyncTime.text=formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);
             // Disable clicking on Hamburger.
               if (kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.isVisible) {
                 kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(true); // Enable clicking on Hamburger menu items.
