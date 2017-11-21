@@ -42,7 +42,8 @@ kony.apps.coe.ess.myLeave.applyLeave.Initialization = {
       var currDate = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate);
       this.calendarWidgetObj = new kony.apps.coe.Reusable.calendarWIDGET(currDate.getMonth(), currDate.getFullYear(), "flxCalendarApplyLeave", "sknFlxMobOp0", "sknFlxFocus", "sknFlxMobOp0", "sknFlxMobOp100BgColD8F4FF", "sknBtnMobBg0OpFC777777Op100S79", "sknBtnMobOp100Bg2EBAEFFcFFFFFF", "sknLblMobFC333333Op100FS100", "sknBtnMobBg0OpFC333333Op100S24px", "sknBtnMobBg0OpFCC3C4CCOp100S24px", this.isValidMonthandYearforCalenderApplyLeave.bind(this), this.errorIsValidMonthandYearforCalenderApplyLeave.bind(this), this.onSwipeCallbackApplyLeave.bind(this), this.onTouchEndCallbackApplyLeave.bind(this), this.monthRefreshApplyLeave.bind(this), this.totalCalenderRefreshApplyLeave.bind(this));
       frmApplyLeave.flxCalendar.flxMonthData.add(this.calendarWidgetObj.getcalendar());
-      frmApplyLeave.flxCalendar.flxCalendarHeader.lblMonthName.text = this.monthArray[currDate.getMonth()] + " " + currDate.getFullYear().toFixed();
+      frmApplyLeave.flxCalendar.flxCalendarHeader.lblMonthName.text = Date.getMonthName(kony.store.getItem("localeToBeSetLeave"),currDate.getMonth())+ " " + currDate.getFullYear().toFixed();
+      //  this.monthArray[currDate.getMonth()] + " " + currDate.getFullYear().toFixed();
       //           this.changeCalendarHeight();
       this.changeCurrentDateSkin();
     }
@@ -69,7 +70,8 @@ kony.apps.coe.ess.myLeave.applyLeave.Initialization = {
   },
 
   onSwipeCallbackApplyLeave: function(myWidget, gestureInfo, context) {
-    frmApplyLeave.lblMonthName.text = this.monthArray[this.calendarWidgetObj.month] + " " + this.calendarWidgetObj.year;
+    frmApplyLeave.lblMonthName.text = Date.getMonthName(kony.store.getItem("localeToBeSetLeave"),this.calendarWidgetObj.month)+ " " + this.calendarWidgetObj.year;
+      //this.monthArray[this.calendarWidgetObj.month] + " " + this.calendarWidgetObj.year;
   },
 
   onTouchEndCallbackApplyLeave: function(data) {
@@ -113,7 +115,8 @@ kony.apps.coe.ess.myLeave.applyLeave.Initialization = {
     }
   },
   monthRefreshApplyLeave: function(month, year, index) {
-    frmApplyLeave.lblMonthName.text = this.monthArray[this.calendarWidgetObj.month] + " " + this.calendarWidgetObj.year;
+    frmApplyLeave.lblMonthName.text = Date.getMonthName(kony.store.getItem("localeToBeSetLeave"),this.calendarWidgetObj.month) + " " + this.calendarWidgetObj.year;
+    //this.monthArray[this.calendarWidgetObj.month] + " " + this.calendarWidgetObj.year;
     this.changeCurrentDateSkin();
     this.mappingDataToCalendar();
     // 		this.changeCalendarHeight();
@@ -124,7 +127,7 @@ kony.apps.coe.ess.myLeave.applyLeave.Initialization = {
   onRightSwipe: function() {
 
     var month_name = frmApplyLeave.lblMonthName.text.split(" ")[0];
-    var month_param = (this.monthArray.indexOf(month_name)) + 1;
+    var month_param = Date.getMonthName(kony.store.getItem("localeToBeSetLeave"),month_name,true);//(this.monthArray.indexOf(month_name)) + 1;
     var currDate = new Date();
     var year_param = parseInt(frmApplyLeave.lblMonthName.text.split(" ")[1]);
     if (month_param < 12) {
@@ -144,7 +147,7 @@ kony.apps.coe.ess.myLeave.applyLeave.Initialization = {
   onLeftSwipe: function() {
 
     var month_name = frmApplyLeave.lblMonthName.text.split(" ")[0];
-    var month_param = this.monthArray.indexOf(month_name) - 1;
+    var month_param = Date.getMonthName(kony.store.getItem("localeToBeSetLeave"),month_name,true);// this.monthArray.indexOf(month_name) - 1;
     var currDate = new Date();
     var year_param = parseInt(frmApplyLeave.lblMonthName.text.split(" ")[1]);
     if (month_param >= 0) {
@@ -380,8 +383,8 @@ kony.apps.coe.ess.myLeave.applyLeave.preShow = {
     this.endDate = this.startDate;
     kony.apps.coe.ess.myLeave.applyLeave.submitLeave.leaveEntryData = {};
     kony.apps.coe.ess.myLeave.applyLeave.Initialization.mappingDataToCalendar();
-    frmApplyLeave.lblFromDate.text = currDate.getDate() + " " + kony.apps.coe.ess.myLeave.applyLeave.Initialization.monthArray[currDate.getMonth()].slice(0, 3) + " " + currDate.getFullYear().toFixed();
-    frmApplyLeave.lblToDate.text = currDate.getDate() + " " + kony.apps.coe.ess.myLeave.applyLeave.Initialization.monthArray[currDate.getMonth()].slice(0, 3) + " " + currDate.getFullYear().toFixed();
+    frmApplyLeave.lblFromDate.text = currDate.getDate() + " " + Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),currDate.getMonth()) + " " + currDate.getFullYear().toFixed();
+    frmApplyLeave.lblToDate.text = currDate.getDate() + " " + Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),currDate.getMonth()) + " " + currDate.getFullYear().toFixed();
     kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.updateDurationFullDay();
     //to disable the recurring option if it is not supported
     if(kony.apps.coe.ess.appconfig.isRecurringSupported===false) {
@@ -574,9 +577,11 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       frmApplyLeave.btnFrom.text = "08:00";
       frmApplyLeave.btnTo.text = "10:00";
 	  var fromDate = String(frmApplyLeave.lblFromDate.text).split(" ");
+      var convert_fromDate = Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),fromDate[1],true);
 	  var toDate = String(frmApplyLeave.lblToDate.text).split(" ");
-	  var fromMonth = Number(new Date(fromDate[1]+"-1-01").getMonth())+1;
-	  var toMonth = Number(new Date(toDate[1]+"-1-01").getMonth())+1;
+      var convert_toDate = String(Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),toDate[1],true));
+	  var fromMonth = Number(new Date(convert_fromDate+"-1-01").getMonth())+1;
+	  var toMonth = Number(new Date(toconvert_toDate+"-1-01").getMonth())+1;
 	  kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected("08","00","10","00",fromDate[2],fromMonth,fromDate[0],
                                                           toDate[2],toMonth,toDate[0]);
       //frmApplyLeave.lblDurationHours.text  = "2 hours";
@@ -615,9 +620,11 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       frmApplyLeave.btnFrom.text = "08:00";
       frmApplyLeave.btnTo.text = "12:00";
 	  var fromDate = String(frmApplyLeave.lblFromDate.text).split(" ");
+      var convert_fromDate = Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),fromDate[1],true);
 	  var toDate = String(frmApplyLeave.lblToDate.text).split(" ");
-	  var fromMonth = Number(new Date(fromDate[1]+"-1-01").getMonth())+1;
-	  var toMonth = Number(new Date(toDate[1]+"-1-01").getMonth())+1;
+      var convert_toDate = String(Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),toDate[1],true));
+	  var fromMonth = Number(new Date(convert_fromDate+"-1-01").getMonth())+1;
+	  var toMonth = Number(new Date(convert_toDate+"-1-01").getMonth())+1;
 	  kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected("08","00","12","00",fromDate[2],fromMonth,fromDate[0],
                                                           toDate[2],toMonth,toDate[0]);
       //frmApplyLeave.lblDurationHours.text  = "4 hours";
@@ -2119,9 +2126,11 @@ kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
   var hrEnd = x.slice(0,2);
   var minEnd = x.slice(3,5);
   var fromDate = String(frmApplyLeave.lblFromDate.text).split(" ");
+  var convert_fromDate = Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),fromDate[1],true);
   var toDate = String(frmApplyLeave.lblToDate.text).split(" ");
-  var fromMonth = Number(new Date(fromDate[1]+"-1-01").getMonth())+1;
-  var toMonth = Number(new Date(toDate[1]+"-1-01").getMonth())+1;
+  var convert_toDate = String(Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),toDate[1],true));
+  var fromMonth = Number(new Date(convert_fromDate+"-1-01").getMonth())+1;
+  var toMonth = Number(new Date(convert_toDate+"-1-01").getMonth())+1;
   kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected(hrStart,minStart,hrEnd,minEnd,fromDate[2],fromMonth,fromDate[0],
                                                           toDate[2],toMonth,toDate[0]);
 };
@@ -2167,4 +2176,7 @@ kony.apps.coe.ess.myLeave.applyLeave.findHours = function(hrStart,minStart,hrEnd
 kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins = function(time){
   var hrMins = (time + "00").replace(/\s/g, "");
   return hrMins;
+};
+
+kony.apps.coe.ess.myLeave.getMonthNumber = function(locale,month_name){
 };
