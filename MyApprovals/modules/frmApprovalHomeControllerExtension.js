@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
     try {
       var scopeObj = this;
       kony.apps.coe.ess.Approvals.spa.formController = this;
-      kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+      kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
       kony.print("---------Started execution of fetch data in the frmapproval Home controller extension----------");
       if (kony.apps.coe.ess.globalVariables.isSPA == true) { //Incase of SPA
         var approvalsData = {};
