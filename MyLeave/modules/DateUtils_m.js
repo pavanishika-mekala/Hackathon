@@ -596,3 +596,45 @@ Date.getDateObject = function(dateString){
 	return date;
 }
 
+/**
+@Class Date
+@Function GetMonthName
+@Param Lang
+@Desc returns monthname
+ */
+Date.getMonthName = function(lang,month,flag) {
+    lang = lang && (lang in Date.locale) ? lang : 'en';
+  if(flag){
+    return Date.locale[lang].indexOf(month_names[month]);
+  }
+    return Date.locale[lang].month_names[month];
+};
+/**
+@Class Date
+@Function getMonthNameShort
+@Param Lang
+@Desc returns month shortname
+ */
+Date.getMonthNameShort = function(lang,month,flag) {
+    lang = lang && (lang in Date.locale) ? lang : 'en';
+  if(flag){
+    return Date.locale[lang].indexOf(month_names_short[month]);
+  }
+    return Date.locale[lang].month_names_short[month];
+};
+
+Date.locale = {
+  en: {
+    month_names: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+    month_names_short: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  },
+  fr_BE: {
+    month_names: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+    month_names_short: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc']
+  },
+  nl_BE: {
+    month_names: ['Januari', 'Februari', 'Maart', 'April', 'Mei', 'Juni', 'Juli', 'Augustus', 'September', 'Oktober', 'November', 'December'],
+    month_names_short: ['Jan', 'Feb', 'Maart', 'Apr', 'Mei', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dec']
+  }
+
+};
