@@ -480,9 +480,9 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
     //this.onClickOfLeaveType(frmApplyLeave["btnLeaveType" + data.selectleavetype[0].id]);
     frmApplyLeave.lstLeaveType.selectedKey=	data.selectleavetype[0].id;
     //frmApplyLeave.lstLeaveType.onSelection=this.onClickOfLeaveType(frmApplyLeave.lstLeaveType.selectedKey)
-    //this.onClickOfLeaveType(data.selectleavetype[0].id); 
     //this.selectedLeaveType = "btnLeaveType" + data.selectleavetype[0].id;
     this.selectedLeaveType =  data.selectleavetype[0].id;
+    this.onClickOfLeaveType(data.selectleavetype[0].id); 
   },
 
   onClickOfLeaveType: function(id) {
@@ -501,10 +501,16 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
         //remove frmApplyLeave.lblLeaveTypeBalance.text = data[0].balance - data[0].availed;
         //frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave[eventobject.id].text + " leave";
         //remove frmApplyLeave.lblLeaveTypeBalance.text = "Available " + id+ " leave";
-        frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave.lstLeaveType.selectedKeyValue[1]+ " leave";
+        frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1]+ " leave";
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
-      } else {
-        frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
+      } else if(kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType == "XABS"){
+      		frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
+        	frmApplyLeave.lblLeaveBalanceCount.text = "0.0";
+      }else {
+        //frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
+        frmApplyLeave.lblLeaveBalanceCount.text = "0.0";
+        frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1]+ " leave";
+        frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
       }
     }, function(err) {
       handleError(err);
