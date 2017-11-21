@@ -31,7 +31,7 @@ kony.sdk.mvvm.frmTabHolidayListControllerExtension = Class(kony.sdk.mvvm.BaseFor
               "holidaysResponse":[],
               "eventsResponse":[]
             };
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var query = "select Holiday_Date,Name from Holiday where Name not like 'Non Working Day' and (Holiday_Date between '" + currYear + "0101' AND '" + currYear + "1231')";
 	        kony.sync.single_select_execute(kony.sync.getDBName(), query, null, holidaySucess,error); 
         } catch (err) {

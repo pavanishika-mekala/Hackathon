@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmHistoryControllerExtension = Class(kony.sdk.mvvm.BaseFormContro
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var yyyy = parseInt(new Date().getFullYear(),10);
 	        var query = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + yyyy + "0101 and " + yyyy + "1231 and l.employee_id = " + gblempId + " order by l.start_date desc";
             kony.sync.single_select_execute(kony.sync.getDBName(), query, null, success,error);

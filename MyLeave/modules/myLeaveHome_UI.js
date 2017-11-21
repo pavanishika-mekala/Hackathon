@@ -406,7 +406,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
             tempCommentData.txtApplierComments = {
                 "text": data[i].comments,
             };
-            tempCommentData.lblapplieddate = "Submitted on " + commentDate;
+            tempCommentData.lblapplieddate = kony.i18n.getLocalizedString("i18n.ess.common.submittedon")+" " + commentDate;
             tempCommentData.imgapplier = "adduserpic.png";
             commentData1.push(tempCommentData);
         } else {
@@ -417,7 +417,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
             tempCommentData2.txtComments = {
                 "text": data[i].comments,
             };
-            tempCommentData2.lblapproveddate = "Submitted on " + commentDate;
+            tempCommentData2.lblapproveddate = kony.i18n.getLocalizedString("i18n.ess.common.submittedon")+" " + commentDate;
             commentData2.push(tempCommentData2);
         }
     }

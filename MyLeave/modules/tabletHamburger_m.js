@@ -345,7 +345,7 @@ kony.apps.ess.Hamburger.prototype.hideHamburger = function(){
 
 kony.apps.ess.Hamburger.prototype.loadingNotificationData = function() {
     try {
-        kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+        kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
         var sqlQuery = "SELECT n.title, n.description, n.notification_id, " +
             "GROUP_CONCAT(data_key) as dataKeys, GROUP_CONCAT(data_value) as dataValues, " +
             "n.createdts as notificationTime " +

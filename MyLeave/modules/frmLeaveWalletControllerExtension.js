@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmLeaveWalletControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var languageCode = kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase();
 			var query = "select  * from employee_leave_type  l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE) and tr.SPRAS like '"+languageCode+"'";
            kony.sync.single_select_execute(kony.sync.getDBName(), query, null, success,error);

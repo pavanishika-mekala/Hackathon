@@ -82,7 +82,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.swipeMonths = function(co
 ///with Conditions for more than one day leave
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 = function(members,leaveData){
   try{
-    kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+    kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
     for(k=0; k<20; k++){
       dataLength++;
     var flxEmpRec = new kony.ui.FlexContainer({
