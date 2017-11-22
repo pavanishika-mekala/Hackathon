@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "20px"
+        "value": "30px"
     },
     "_left_": {
         "type": "string",
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "20px"
+        "value": "30px"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -46,7 +46,7 @@
     "id": "flxStatusType",
     "info": null,
     "isvisible": true,
-    "kuid": "5b2e91c810a04a68bb5054c02971a241",
+    "kuid": "d2a94d44d09f4b2499bf483e56abc1af",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxType",

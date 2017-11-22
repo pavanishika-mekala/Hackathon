@@ -6,11 +6,13 @@
         {
             "lblType": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Expense Type"
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblType",
+                "text": ""
             },
             "lblValue": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "General"
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblValue",
+                "text": ""
             },
             "lblVerSep1": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -20,11 +22,13 @@
         {
             "lblType": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Total Amount"
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblType",
+                "text": ""
             },
             "lblValue": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "USD 1500.00"
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblValue",
+                "text": ""
             },
             "lblVerSep1": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -34,11 +38,13 @@
         {
             "lblType": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Reimbursable Amount"
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblType",
+                "text": ""
             },
             "lblValue": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "USD 1200.00"
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblValue",
+                "text": ""
             },
             "lblVerSep1": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -48,11 +54,13 @@
         {
             "lblType": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Approved Amount"
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblType",
+                "text": ""
             },
             "lblValue": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "USD 1000.00"
+                "i18nkey": "i18n.ess.MyApprovals.tempFullDetails.lblValue",
+                "text": ""
             },
             "lblVerSep1": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -102,16 +110,11 @@
     "info": null,
     "ipad": {
         "psp": {
-            "indicator": "rowselect"
-        }
-    },
-    "iphone": {
-        "psp": {
             "indicator": "none"
         }
     },
     "isvisible": true,
-    "kuid": "81b961b1c1ef46fda3e6216ffc0b385a",
+    "kuid": "f80d5cfb4ea54eb1aedda1ef6c629c62",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -123,7 +126,7 @@
     "parent": "flxContainerSection",
     "pf": "frmFullDetails",
     "retainselection": false,
-    "rowTemplateId": "8d19cecc91a24c9b85354a437bc8fcbe",
+    "rowTemplateId": "f44e3db01449450f843f252986a08ba7",
     "rowcounter": 3,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "s0490e93cc2c41ddb12821848e64ca7f",

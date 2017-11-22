@@ -47,7 +47,7 @@
     "id": "flxTotalAmnt",
     "info": null,
     "isvisible": true,
-    "kuid": "3dc970e6799541f1ba80d7cddab3998b",
+    "kuid": "c4ecdd3fcde44b4787e136db8ab4322e",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxViewDetails",

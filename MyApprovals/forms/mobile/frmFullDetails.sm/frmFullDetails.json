@@ -32,25 +32,25 @@
         "flxContainerSection"
     ],
     "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "tablet"
+        }
+    },
     "currentLocale": "en",
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone4",
+    "device": "iPad3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
     "id": "frmFullDetails",
-    "ide_postShow": "AS_Form_b190a87eb66c452e8c5676b72f5e1664",
+    "ide_postShow": "AS_Form_ee3e328ab00e460eb0ead5d44b02026c",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,
     "ipad": {
-        "psp": {
-            "inputAccessoryViewType": 4
-        }
-    },
-    "iphone": {
         "needAppMenu": false,
         "psp": {
             "configureStatusBarStyle": true,
@@ -75,28 +75,25 @@
         "titleBar": false
     },
     "isvisible": true,
-    "kuid": "df462a64fd7e4df6973ea92db5da2ff0",
+    "kuid": "d886b87566cf45309a3c0de43f68f561",
     "layouttype": 2,
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "iphone",
-    "prevDevice": "iPhone6",
-    "prevPlatform": "android",
+    "platform": "ipad",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone4",
+    "shellCSS": "iOS_iPad3",
     "snapgridsize": 10,
     "snaptogrid": true,
-    "spaan": {
+    "spaandroidtablet": {
         "needAppMenu": false
     },
-    "spabb": {
+    "spaipad": {
         "needAppMenu": false
     },
-    "spaip": {
-        "needAppMenu": false
-    },
-    "spawinphone8": {
+    "spawindowstablet": {
         "needAppMenu": false
     },
     "statusbarstyle": "STATUS_BAR_STYLE_LIGHT_CONTENT",
@@ -104,7 +101,7 @@
     "titlebar": true,
     "type": 3,
     "wType": "Form",
-    "winphone8": {
+    "windows8": {
         "needAppMenu": false
     }
 }

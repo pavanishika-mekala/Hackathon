@@ -36,9 +36,9 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
-        "channel": "mobile",
+        "channel": "tablet",
         "formID": "frmFullDetails",
-        "platform": "iphone",
+        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -46,7 +46,7 @@
     "imagescalemode": 1,
     "info": null,
     "isvisible": true,
-    "kuid": "5d73381ef8694e6499fa1f25affce690",
+    "kuid": "e0c626dedaba4c12b0605393b1b463e5",
     "name": "kony.ui.Image2",
     "parent": "flxBackArrow",
     "pf": "frmFullDetails",
