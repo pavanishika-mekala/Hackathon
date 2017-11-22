@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmTeamViewControllerExtension = Class(kony.sdk.mvvm.BaseFormContr
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
             this.$class.$superp.fetchData.call(this, success, error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
@@ -89,7 +89,6 @@ kony.sdk.mvvm.frmTeamViewControllerExtension = Class(kony.sdk.mvvm.BaseFormContr
      */
     bindData: function(data) {
         try {
-          	alert("soumya 3 "+JSON.stringify(data));
             //for bbe-118 MyLeave_App crashes on click of 'Team view' after changing the locale.
             if (kony.os.deviceInfo().name === "iPad" || kony.os.deviceInfo().name === "iPhone") {
               var formmodel = this.getController().getFormModel();
