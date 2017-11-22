@@ -10,11 +10,11 @@
             },
             "lblPendingAmnt": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "7646999"
             },
             "lblPendingNames": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Julia H"
             },
             "lblVerSep7": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -28,11 +28,11 @@
             },
             "lblPendingAmnt": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "7646999"
             },
             "lblPendingNames": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Karen B"
             },
             "lblVerSep7": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -46,11 +46,11 @@
             },
             "lblPendingAmnt": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "7646999"
             },
             "lblPendingNames": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                "text": "Label"
+                "text": "Mark L"
             },
             "lblVerSep7": {
                 "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
@@ -100,11 +100,16 @@
     "info": null,
     "ipad": {
         "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
             "indicator": "none"
         }
     },
     "isvisible": true,
-    "kuid": "cf608352811d432e90918e2ab3c8d1c6",
+    "kuid": "493066e2984e4a5d833a998430f346d9",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
     "needpageindicator": true,
@@ -116,7 +121,7 @@
     "parent": "flxViewDetails",
     "pf": "frmFullDetails",
     "retainselection": false,
-    "rowTemplateId": "a2ac899cdd7f4f97a079687f5859b7df",
+    "rowTemplateId": "460372961bca4e299fce163ef63e1a16",
     "rowcounter": 2,
     "rowfocusskin": "sa61dac0d68d41b0b59c914f51762fa3",
     "rowskin": "s0490e93cc2c41ddb12821848e64ca7f",

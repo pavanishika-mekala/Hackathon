@@ -5,7 +5,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
@@ -24,14 +24,14 @@
         0
     ],
     "_skin_": "s2cb1b8c70ca4103b2494a4d772e1441",
-    "_text_": "BUSINESS TRAVEL BUSINESS",
+    "_text_": "Vacances annuelles (J)",
     "_top_": {
         "type": "string",
         "value": "0%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "78%"
     },
     "_wrapping_": 2,
     "android": {
@@ -54,10 +54,15 @@
             "wrapping": 2
         }
     },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
     "isvisible": true,
-    "kuid": "c4ddd0e21df9494698dbba53f127c21e",
+    "kuid": "81325705df364b29a0cdd67f9dec3d8f",
     "name": "kony.ui.Label",
-    "parent": "FlexContainer0icf159a160b84f",
+    "parent": "FlexContainer0b81acca0a0ff48",
     "pf": "frmFullDetails",
     "tooltip": "",
     "wType": "Label",

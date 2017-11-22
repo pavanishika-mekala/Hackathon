@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "20dp"
     },
     "_left_": {
         "type": "string",
@@ -31,14 +31,14 @@
     },
     "_width_": {
         "type": "string",
-        "value": "40dp"
+        "value": "20dp"
     },
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
-        "channel": "tablet",
+        "channel": "mobile",
         "formID": "frmFullDetails",
-        "platform": "ipad",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },
@@ -47,7 +47,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "f63f31d9390f41d78de50302129d9fc5",
+    "kuid": "5107085216c94c85b452d2a855bdf24e",
     "name": "kony.ui.Image2",
     "parent": "flxContainerSection",
     "pf": "frmFullDetails",

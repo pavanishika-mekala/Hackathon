@@ -30,14 +30,14 @@
     },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "60%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "lblTitle",
-        "FlexContainer0icf159a160b84f"
+        "FlexContainer0b81acca0a0ff48"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -45,7 +45,7 @@
     "id": "flxBusinessDetails",
     "info": null,
     "isvisible": true,
-    "kuid": "b5d0befb639f4acb8ba97e8aa2a16737",
+    "kuid": "f3c006d781f54d36a5422b6a4b0d71c7",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",
     "parent": "flxContainerSection",

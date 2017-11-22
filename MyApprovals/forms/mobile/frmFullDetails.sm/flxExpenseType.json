@@ -46,7 +46,7 @@
     "id": "flxExpenseType",
     "info": null,
     "isvisible": true,
-    "kuid": "a14efff591be45fda4c6456c88201fca",
+    "kuid": "fd4b167391074623bc498578e597a228",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxViewDetails",

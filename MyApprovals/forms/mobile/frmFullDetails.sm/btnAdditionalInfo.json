@@ -43,10 +43,10 @@
     "id": "btnAdditionalInfo",
     "info": null,
     "isvisible": true,
-    "kuid": "gdc3d7ce89d1414c8526c872de95b589",
+    "kuid": "a80e054c37dd4d42bc37fefd43f5a1b4",
     "name": "kony.ui.Button",
     "paddinginpixel": false,
-    "parent": "FlexContainer0icf159a160b84f",
+    "parent": "FlexContainer0b81acca0a0ff48",
     "pf": "frmFullDetails",
     "wType": "Button",
     "zindex": 1
