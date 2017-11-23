@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "18%"
+        "value": "20%"
     },
     "_margin_": [
         1,
@@ -30,7 +30,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "82%"
+        "value": "79%"
     },
     "_wrapping_": 2,
     "android": {
