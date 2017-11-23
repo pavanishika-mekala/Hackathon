@@ -23,7 +23,7 @@
         "value": "5%"
     },
     "_skin_": "s01657e350a94d8f8a24155a349849f2",
-    "_text_": "",
+    "_text_": "Cancelled",
     "_top_": {
         "type": "string",
         "value": "5%"
@@ -63,7 +63,6 @@
     "name": "kony.ui.Label",
     "parent": "flxType",
     "pf": "frmFullDetails",
-    "texti18n": "i18n.ess.MyApprovals.frmFullDetails.lblType",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
