@@ -29,8 +29,8 @@
         "value": "0dp"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "allboxes": [],
     "autogrowmode": 0,
