@@ -542,7 +542,7 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.generateCommentRows = 
                     "text": res[i].comments,
                 };
 
-                tempCommentData.lblapplieddate = "Submitted on " + commentDate;
+                tempCommentData.lblapplieddate = kony.i18n.getLocalizedString("i18n.ess.common.submittedon")+" " + commentDate;
                 kony.print("------image data--" + JSON.stringify(kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.ImgData[i]));
                 tempCommentData.imgapplier = "adduserpic.png";
                 commentData.push(tempCommentData);
@@ -562,7 +562,7 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.generateCommentRows = 
                   empCommentData.txtComments = {
                       "text": res[i].comments,
                   };
-                  empCommentData.lblapproveddate = "Submitted on " + commentDate;
+                  empCommentData.lblapproveddate = kony.i18n.getLocalizedString("i18n.ess.common.submittedon")+" " + commentDate;
                   commentData.push(empCommentData);
                 }
             }

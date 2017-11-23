@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
           	var finalResponse = {
               managerData : [],
               leaveType : []

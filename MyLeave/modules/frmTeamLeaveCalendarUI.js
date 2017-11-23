@@ -82,7 +82,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.swipeMonths = function(co
 ///with Conditions for more than one day leave
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 = function(members,leaveData){
   try{
-    kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+    kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
     for(k=0; k<20; k++){
       dataLength++;
     var flxEmpRec = new kony.ui.FlexContainer({
@@ -421,10 +421,10 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.getTeamDataSuccesscallbac
       }
       
     }else{
-      alert("getTeamDataSuccesscallback data  length is not > 0");
+      kony.print("getTeamDataSuccesscallback data  length is not > 0");
     }
   }else{
-     alert("getTeamDataSuccesscallback data is null or undefined");
+     kony.print("getTeamDataSuccesscallback data is null or undefined");
   }
 };
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.getTeamLeavesSuccesscallback = function(data){
@@ -438,21 +438,21 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.getTeamLeavesSuccesscallb
       }
     }
   }else{
-     alert("getTeamLeavesSuccesscallback data is null or undefined");
+     kony.print("getTeamLeavesSuccesscallback data is null or undefined");
   }
 };
 
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaId = function(data) {
   try
   {
-    alert("entered fetchImageValueByMediaId");
+    kony.print("entered fetchImageValueByMediaId");
     kony.print("---- Inside fetchImageValueByMediaId ----");
     if(typeof data != "undefined" && data !== null && data.length !== null && data.length > 0)
     {
-      alert("if fetchImageValueByMediaId");
+      kony.print("if fetchImageValueByMediaId");
       kony.apps.ess.myLeave.tempData = data;
-      alert("data fetchImageValueByMediaId="+data);
-      alert("kony.apps.ess.myLeave.tempData:::::::::"+kony.apps.ess.myLeave.tempData);
+      kony.print("data fetchImageValueByMediaId="+data);
+      kony.print("kony.apps.ess.myLeave.tempData:::::::::"+kony.apps.ess.myLeave.tempData);
       for(var i=0;i<data.length;i++)
       {
         if(data[i].Media_id!=="")
@@ -460,9 +460,9 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaId 
           (new kony.apps.ess.myLeave.tabmedia()).fetchEmployeeImage({"mediaName":data[i].Media_id},this.fetchImageValueByMediaIdSuccessCallback.bind(this,data[i].Media_id),this.fetchImageValueByMediaIdErrorCallBack);  
         }
       } 
-      alert("FINAL AFTER ADDING IMAGES:::"+kony.apps.ess.myLeave.tempData);
+      kony.print("FINAL AFTER ADDING IMAGES:::"+kony.apps.ess.myLeave.tempData);
     }else{
-      alert("No data in fetchImageValueByMediaId");
+      kony.print("No data in fetchImageValueByMediaId");
     }
   }
   catch(e)
@@ -480,7 +480,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaId 
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaIdSuccessCallback = function(media_id, response) {
   try
   {
-    alert("inside fetchImageValueByMediaIdSuccessCallback");
+    kony.print("inside fetchImageValueByMediaIdSuccessCallback");
     kony.print("---- Inside fetchImageValueByMediaIdSuccessCallback ----");
     if(response!==null && response!=="")
     {
@@ -504,7 +504,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaIdS
         }
       }
     }else{
-      alert("else  of fetchImageValueByMediaIdSuccessCallback");
+      kony.print("else  of fetchImageValueByMediaIdSuccessCallback");
     }
   }
   catch(e)

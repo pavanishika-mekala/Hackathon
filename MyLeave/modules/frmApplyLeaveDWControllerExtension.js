@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmApplyLeaveDWControllerExtension = Class(kony.sdk.mvvm.BaseFormC
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var callObj = [
                 {
                     "model": "MYLEAVE",

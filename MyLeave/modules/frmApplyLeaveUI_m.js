@@ -510,7 +510,7 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
         //remove frmApplyLeave.lblLeaveTypeBalance.text = data[0].balance - data[0].availed;
         //frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave[eventobject.id].text + " leave";
         //remove frmApplyLeave.lblLeaveTypeBalance.text = "Available " + id+ " leave";
-        frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1]+ " leave";
+        frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1];
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
       } else if(kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType == "XABS"){
       		frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
@@ -518,7 +518,7 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
       }else {
         //frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
         frmApplyLeave.lblLeaveBalanceCount.text = "0.0";
-        frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1]+ " leave";
+        frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1];
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
       }
     }, function(err) {
@@ -2192,4 +2192,3 @@ kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins = function(time){
   var hrMins = (time + "00").replace(/\s/g, "");
   return hrMins;
 };
-

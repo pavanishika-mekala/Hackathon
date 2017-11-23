@@ -18,6 +18,14 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.preShow = function(){
 	}else if(kony.application.getCurrentForm().id === "frmRequestedList"){
       	kony.apps.coe.ess.globalVariables.prevFormFlow = "RequestedList";
     }
+	//#ifdef iphone
+	if(kony.application.getPreviousForm().id === "frmSearch"){
+		kony.apps.coe.ess.globalVariables.prevFormFlow = "Search";
+	}else if(kony.application.getPreviousForm().id === "frmRequestedList"){
+      	kony.apps.coe.ess.globalVariables.prevFormFlow = "RequestedList";
+    }
+	//#endif
+	
 };
 
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requestType, ContextData) {

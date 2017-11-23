@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmLeaveWalletTabControllerExtension = Class(kony.sdk.mvvm.BaseFor
     fetchData: function() {
                 try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var query = "select * from employee_leave_type";
             kony.sync.single_select_execute(kony.sync.getDBName(), query, null, success, error);
         } catch (err) {

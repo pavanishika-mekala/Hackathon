@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmDelegationRequestsControllerExtension = Class(kony.sdk.mvvm.Bas
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
           //  this.$class.$superp.fetchData.call(this, success, error);
          var responsedelegate;
 		 var responseemployee;

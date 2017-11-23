@@ -90,7 +90,7 @@ setDataToDynamicFilters = function() {
 kony.apps.coe.ess.ApprovalHistoryTab.prototype.DynamicSegmentSetDatabyEmployeeSearch = function(searchString, DynamicWidget) {
     try {
           kony.print("----------- Start DynamicSegmentSetDatabyEmployeeSearch---");
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
 
         //input validations
         var EmployeeSearchQuery = "";
