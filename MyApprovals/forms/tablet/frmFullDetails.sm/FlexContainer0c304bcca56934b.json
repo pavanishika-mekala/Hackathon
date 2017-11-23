@@ -1,17 +1,13 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "50%"
     },
     "_left_": {
         "type": "string",
-        "value": "20%"
+        "value": "20dp"
     },
     "_margin_": [
         0,
@@ -27,40 +23,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sd7d16664bfb4d3e93007ec49ca8e147",
+    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
     "_top_": {
         "type": "string",
-        "value": "36dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "71.60%"
+        "value": "100%"
     },
     "allboxes": [],
-    "autogrowmode": 1,
+    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblChat"
+        "lblCategory",
+        "btnAdditionalInfo"
     ],
     "clipbounds": true,
-    "containerId": true,
     "containerweight": 100,
-    "defaultunit": 2,
-    "disabledSkins": {
-        "focusSkin": "sd7d16664bfb4d3e93007ec49ca8e147"
-    },
     "enablescrolling": true,
-    "id": "flxcomment",
+    "id": "FlexContainer0c304bcca56934b",
     "info": null,
     "isvisible": true,
-    "kuid": "72a2f0ece44249249d95a1d2ab1f6f73",
-    "layouttype": 4,
+    "kuid": "cb34c71ee70e4f80b1dcd189a9c98a6f",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxRequesterComments",
-    "pf": "tempSegRequesterComments",
+    "parent": "flxBusinessDetails",
+    "pf": "frmFullDetails",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 2
+    "zindex": 1
 }
