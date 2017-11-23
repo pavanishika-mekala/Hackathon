@@ -107,7 +107,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                     tempData.flxInitials = {
                         "isVisible": true
                     };
-
+					resultData.push(tempData);
                     this.generateNonWorkingDays(intervalStartDate, intervalEndDate, function(res) {
                         var nonWorkingDays = res;
                         var tempBindingFunc;
@@ -123,8 +123,9 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                         "tempData": tempData
                     }));
 
-                    resultData.push(tempData);
+                    //resultData.push(tempData);
                 }
+              	kony.print("result Data"+JSON.stringify(resultData));
                 return resultData;
             } else {
                 kony.print("----Inside else of generateFormattedData ----");
@@ -145,7 +146,6 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                     }));
 
                 }
-
                 return data;
             }
         }
