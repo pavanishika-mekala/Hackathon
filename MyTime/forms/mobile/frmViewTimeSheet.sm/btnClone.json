@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6f3426cf05849a2ba8f7e289a2a71c8",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s8daf6697f1d4f3cbefc29b0281bdcfa",
+    "id": "btnClone",
+    "ide_onClick": "AS_Button_778bcacc83df4bdfb6121a5d94da3e9e",
+    "info": null,
+    "isvisible": true,
+    "kuid": "cf0cfdb2c0b2469c99cd2a36cc25248f",
+    "name": "kony.ui.Button",
+    "parent": "flxCloneButtons",
+    "pf": "frmViewTimeSheet",
+    "texti18n": "i18n.ess.common.clone.valueKA",
+    "wType": "Button",
+    "zindex": 5
+}

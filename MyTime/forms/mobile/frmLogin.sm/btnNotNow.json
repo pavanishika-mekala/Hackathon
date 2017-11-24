@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s454b6d0bc7a42128f3268d64af46d84",
+    "_text_": "Not Now",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sa54c4b9eba545c39811ffe30d04f102",
+    "id": "btnNotNow",
+    "info": null,
+    "isvisible": true,
+    "kuid": "93271d620c5e42ddaf8f3586e45e01ff",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "frmLogin",
+    "texti18n": "i18n.ess.Login.notnow",
+    "wType": "Button",
+    "zindex": 1
+}

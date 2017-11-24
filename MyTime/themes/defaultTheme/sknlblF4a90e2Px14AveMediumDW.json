@@ -1,0 +1,22 @@
+{
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "desktopweb": {
+    "font_name": "AvenirLTStd-Medium",
+    "font_size": 117,
+    "isForked": true
+  },
+  "fontSizeInPx": true,
+  "font_color": "4a90e2ff",
+  "font_name": "Helvetica",
+  "font_size": 117,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "sb89280f6f324969a2e87b71cda93588",
+  "wType": "Label"
+}

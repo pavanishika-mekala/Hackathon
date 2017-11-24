@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_e94479055acb42308b44ee34579b63b7": {
+        "id": "AS_FlexContainer_e94479055acb42308b44ee34579b63b7",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnDropDownClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b5003a6f39524495b1e892f6c9824874",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

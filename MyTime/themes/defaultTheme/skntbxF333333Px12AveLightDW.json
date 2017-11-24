@@ -1,0 +1,128 @@
+{
+  "android": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "font_size": 29,
+    "isForked": true
+  },
+  "background_color": "ffffff00",
+  "bg_type": "one",
+  "border_color": "282828ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "desktopweb": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "customCSS": "input[kwidgettype=\"TextField\"]:focus\n{\n\t outline:none;\n} ",
+    "font_name": "AvenirLTStd-Light",
+    "font_size": 100,
+    "isCustomCSSEnabled": false,
+    "isForked": true
+  },
+  "fontSizeInPx": true,
+  "font_color": "333333ff",
+  "font_name": "Helvetica",
+  "font_size": 100,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "ipad": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "font_size": 43,
+    "isForked": true
+  },
+  "iphone": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "font_size": 43,
+    "isForked": true
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "font_size": 75,
+    "isForked": true
+  },
+  "kuid": "s0b463051ae844df9dac08de97cd7bb2",
+  "spaan": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "customCSS": "input[kwidgettype=\"TextField\"]:focus\n{\n\t outline:none;\n} ",
+    "font_size": 100,
+    "isCustomCSSEnabled": false,
+    "isForked": true
+  },
+  "spaandroidtablet": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "customCSS": "input[kwidgettype=\"TextField\"]:focus\n{\n\t outline:none;\n} ",
+    "font_size": 100,
+    "isCustomCSSEnabled": false,
+    "isForked": true
+  },
+  "spabb": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "customCSS": "input[kwidgettype=\"TextField\"]:focus\n{\n\t outline:none;\n} ",
+    "font_size": 100,
+    "isCustomCSSEnabled": false,
+    "isForked": true
+  },
+  "spaip": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "customCSS": "input[kwidgettype=\"TextField\"]:focus\n{\n\t outline:none;\n} ",
+    "font_size": 100,
+    "isCustomCSSEnabled": false,
+    "isForked": true
+  },
+  "spaipad": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "customCSS": "input[kwidgettype=\"TextField\"]:focus\n{\n\t outline:none;\n} ",
+    "font_size": 100,
+    "isCustomCSSEnabled": false,
+    "isForked": true
+  },
+  "spawindowstablet": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "customCSS": "input[kwidgettype=\"TextField\"]:focus\n{\n\t outline:none;\n} ",
+    "font_size": 100,
+    "isCustomCSSEnabled": false,
+    "isForked": true
+  },
+  "spawinphone8": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "customCSS": "input[kwidgettype=\"TextField\"]:focus\n{\n\t outline:none;\n} ",
+    "font_size": 100,
+    "isCustomCSSEnabled": false,
+    "isForked": true
+  },
+  "tabrcandroid": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "font_size": 71,
+    "isForked": true
+  },
+  "wType": "TextField",
+  "watchos": {
+    "font_size": 43,
+    "isForked": false
+  },
+  "windows8": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "font_size": 29,
+    "isForked": true
+  },
+  "winphone8": {
+    "background_color": "ffffff00",
+    "bg_type": "one",
+    "font_size": 40,
+    "isForked": true
+  }
+}

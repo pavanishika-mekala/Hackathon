@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_6f47392a6e7648d89cb53dd7fab73d98": {
+        "id": "AS_FlexContainer_6f47392a6e7648d89cb53dd7fab73d98",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_onClickOfHelpIcon",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c69dce89016f49ebaaeee7c07e74625f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1d1c6fa7e5d04d67a087f82495c79828",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "((new kony.apps.coe.ess.Hamburger).hideHamburger());\nfrmTimesheetHelp.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

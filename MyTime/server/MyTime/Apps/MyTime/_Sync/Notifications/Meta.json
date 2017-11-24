@@ -1,0 +1,16 @@
+{
+  "strategy" : "OTASync",
+  "nameSpace" : "com.kony.MYTIME",
+  "dataSource" : "Notifications",
+  "changeTrackingPolicyType" : "datasource",
+  "softDeleteFlag" : true,
+  "lastUpdateTimeStamp" : true,
+  "conflictPolicyType" : "clientwins",
+  "syncJar" : null,
+  "className" : null,
+  "operations" : {
+    "Operation" : [ ]
+  },
+  "identityProviders" : [ ],
+  "dataSourceType" : "objectSvc"
+}

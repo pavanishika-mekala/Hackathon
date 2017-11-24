@@ -1,0 +1,31 @@
+{
+    "AS_Segment_dd36afee49744df08d32a88a2dbdfdbb": {
+        "id": "AS_Segment_dd36afee49744df08d32a88a2dbdfdbb",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSavedRowClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0f5e33818d684759be1fd823cedecd04",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//(new kony.apps.coe.ess.myTime.ListViewUIDW()).viewSavedDetails();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

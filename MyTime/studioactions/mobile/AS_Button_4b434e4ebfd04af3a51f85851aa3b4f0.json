@@ -1,0 +1,24 @@
+{
+    "AS_Button_4b434e4ebfd04af3a51f85851aa3b4f0": {
+        "id": "AS_Button_4b434e4ebfd04af3a51f85851aa3b4f0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fadf9d9be3ed4e9196a3caea7edb178b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d42522fb9d0f456fafbd5ed39e7118f1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

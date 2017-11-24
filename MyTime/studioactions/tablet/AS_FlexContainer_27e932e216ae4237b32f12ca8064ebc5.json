@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_27e932e216ae4237b32f12ca8064ebc5": {
+        "id": "AS_FlexContainer_27e932e216ae4237b32f12ca8064ebc5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_6c6a471d5ed44056b846de9728c911ad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.OnClickFlxScrollDown();",
+            "callbackType": null
+        }]
+    }
+}

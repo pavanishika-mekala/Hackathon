@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "125px"
+    },
+    "_skin_": "scd20bf1017a4f5298db1fcef270a2a3",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "205px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblCancel",
+    "ide_onTouchEnd": "AS_Label_59b50080a1d940a7a005aeddabb1ab32",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "01cb1632fa3a46488f8697e9f790947f",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxAddTask",
+    "pf": "frmCreateViewDW",
+    "texti18n": "i18n.ess.common.cancel.valueKA",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

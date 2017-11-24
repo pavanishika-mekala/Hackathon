@@ -1,0 +1,25 @@
+{
+    "AS_Button_4142cd0485ca43d08ea658c8b72262d0": {
+        "id": "AS_Button_4142cd0485ca43d08ea658c8b72262d0",
+        "type": "ACTION_SEQUENCE",
+        "name": "wcloneTsheetCview",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7ac8b34802d54f0e814d28ab54534c53"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__82aa38a77d3843f3bde157921eec860b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarView.flxCopyWeek.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

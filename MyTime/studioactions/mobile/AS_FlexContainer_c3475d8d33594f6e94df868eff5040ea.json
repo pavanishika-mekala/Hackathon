@@ -1,0 +1,30 @@
+{
+    "AS_FlexContainer_c3475d8d33594f6e94df868eff5040ea": {
+        "id": "AS_FlexContainer_c3475d8d33594f6e94df868eff5040ea",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1ccaa1b971249278725afe57fc10477"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cd0c38a83a01407099f836fa6001c00d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSearchMyTime.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

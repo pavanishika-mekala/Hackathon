@@ -1,0 +1,31 @@
+{
+    "AS_Label_fdc6c36ab69447f2bf2f17cd9f04e443": {
+        "id": "AS_Label_fdc6c36ab69447f2bf2f17cd9f04e443",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSavePopupCancel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c0094f3602d147d18b64f9eb0c2eeb49",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxBlank.setVisibility(false);\nfrmCreateViewDW.flxSavePopup.setVisibility(false);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

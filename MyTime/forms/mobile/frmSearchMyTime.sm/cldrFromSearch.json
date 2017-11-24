@@ -1,0 +1,119 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizDateField",
+    "DNDConfig": null,
+    "Image": "calbtn.png",
+    "__id": "frmSearch_Calendar017723f155da249",
+    "__input": "Calendar017723f155da249",
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_data_": null,
+    "_date_": [
+        "5",
+        "7",
+        "2016"
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        5,
+        8,
+        0,
+        0
+    ],
+    "_skin_": "se5337ca64f24be99ec81aba9a9e0736",
+    "_startG": [
+        0,
+        "7",
+        "2016"
+    ],
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "advview": "default",
+    "calendaricon": "calbtn.png",
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "datecomponents": [
+        "5",
+        "7",
+        "2016"
+    ],
+    "dateeditable": true,
+    "dateformat": "dd/MMM/yyyy",
+    "datesGroup": [],
+    "datesState": 0,
+    "day": "5",
+    "daytextalignmentincell": 5,
+    "displayedMonths": [
+        7,
+        2016
+    ],
+    "entereddate": [
+        "5",
+        "7",
+        "2016",
+        0,
+        0,
+        0
+    ],
+    "format": "dd/MMM/yyyy",
+    "formatteddate": "05/Jul/2016",
+    "hidedaysheader": false,
+    "hidemonthsheader": false,
+    "hour": 18,
+    "id": "cldrFromSearch",
+    "ide_onSelection": "AS_Calendar_66e85fc10c054a4ca46e5c36265de863",
+    "info": null,
+    "isvisible": true,
+    "kuid": "31adfa1e2d2f4538b5d5e07b204e449d",
+    "minutes": 20,
+    "month": "7",
+    "monthsinrow": 3,
+    "name": "kony.ui.Calendar",
+    "navigatorAlert": "Invalid Selection",
+    "noofmonths": 1,
+    "paddinginpixel": false,
+    "pagedate": "/2016",
+    "parent": "flxFromInputDate",
+    "pf": "frmSearchMyTime",
+    "popupHeight": "auto",
+    "popupWidth": "auto",
+    "seconds": 15,
+    "selectdate": "//2016",
+    "startDay": 0,
+    "viewconfig": {
+        "gridConfig": {},
+        "gridconfig": ""
+    },
+    "viewtype": "default",
+    "wType": "Calendar",
+    "widgetalignment": 5,
+    "widths": [
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;",
+        "14.2857%;"
+    ],
+    "year": "2016",
+    "zindex": 1
+}

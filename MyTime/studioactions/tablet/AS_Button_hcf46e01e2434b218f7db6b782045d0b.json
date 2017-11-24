@@ -1,0 +1,17 @@
+{
+    "AS_Button_hcf46e01e2434b218f7db6b782045d0b": {
+        "id": "AS_Button_hcf46e01e2434b218f7db6b782045d0b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a865168214274505b73dfbec0d5194eb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var currForm = kony.application.getCurrentForm();\ncurrForm.flxPopUp.isVisible=false;;",
+            "callbackType": null
+        }]
+    }
+}

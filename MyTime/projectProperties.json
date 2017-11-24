@@ -1,0 +1,252 @@
+{
+    "APPLICATION_THEME": "default",
+    "accountCloudGuid": "5d005816-04e8-44ce-8f0b-15bfdecddcd2",
+    "appaddrkey": "",
+    "appidkey": "MyTime",
+    "appmenu": {
+        "desktop": {
+            "data": [
+                {
+                    "icon": {
+                        "default": "option1.png"
+                    },
+                    "id": "appmenuitemid1",
+                    "kuid": "3bbd5e6219fb4789b7c4045414bbc28a",
+                    "title": "Item 1"
+                },
+                {
+                    "icon": {
+                        "default": "option2.png"
+                    },
+                    "id": "appmenuitemid2",
+                    "kuid": "33600cd3710c435591754e6ccb0fb1ed",
+                    "title": "Item 2"
+                },
+                {
+                    "icon": {
+                        "default": "option3.png"
+                    },
+                    "id": "appmenuitemid3",
+                    "kuid": "1ede3b2671f747a6bffe998a6c147533",
+                    "title": "Item 3"
+                },
+                {
+                    "icon": {
+                        "default": "option4.png"
+                    },
+                    "id": "appmenuitemid4",
+                    "kuid": "3ae28501207e425090902dfe9f3f9e73",
+                    "title": "Item 4"
+                }
+            ]
+        },
+        "focusSkin": null,
+        "focusskin": null,
+        "mobile": {
+            "data": [
+                {
+                    "android": {
+                        "showAsFlag": 0
+                    },
+                    "icon": {
+                        "default": "option1.png"
+                    },
+                    "id": "appmenuitemid1",
+                    "kuid": "6fb5f31fb0d2438ea1e42fe1b79dabd1",
+                    "title": "Item 1"
+                },
+                {
+                    "android": {
+                        "showAsFlag": 0
+                    },
+                    "icon": {
+                        "default": "option2.png"
+                    },
+                    "id": "appmenuitemid2",
+                    "kuid": "5db8c6bf834b431c9a29a0d536115105",
+                    "title": "Item 2"
+                },
+                {
+                    "android": {
+                        "showAsFlag": 0
+                    },
+                    "icon": {
+                        "default": "option3.png"
+                    },
+                    "id": "appmenuitemid3",
+                    "kuid": "942e384b7c4d4544b6de7bf6ea76fce3",
+                    "title": "Item 3"
+                },
+                {
+                    "android": {
+                        "showAsFlag": 0
+                    },
+                    "icon": {
+                        "default": "option4.png"
+                    },
+                    "id": "appmenuitemid4",
+                    "kuid": "6f2c8c8a18254866a1980f2aa72b9798",
+                    "title": "Item 4"
+                }
+            ]
+        },
+        "osPlatform": "",
+        "osVersion": "iOS7",
+        "skin": null,
+        "tablet": {
+            "data": [
+                {
+                    "android": {
+                        "showAsFlag": 0
+                    },
+                    "icon": {
+                        "default": "option1.png"
+                    },
+                    "id": "appmenuitemid1",
+                    "kuid": "b43afcca1a814098baa6769c4ec64fc2",
+                    "title": "Item 1",
+                    "windows8": {
+                        "appBarButtonStyle": "No Style",
+                        "position": "BOTTOM_LEFT"
+                    }
+                },
+                {
+                    "android": {
+                        "showAsFlag": 0
+                    },
+                    "icon": {
+                        "default": "option2.png"
+                    },
+                    "id": "appmenuitemid2",
+                    "kuid": "149d5698a4d14c7b815477d860609264",
+                    "title": "Item 2",
+                    "windows8": {
+                        "appBarButtonStyle": "No Style",
+                        "position": "BOTTOM_LEFT"
+                    }
+                },
+                {
+                    "android": {
+                        "showAsFlag": 0
+                    },
+                    "icon": {
+                        "default": "option3.png"
+                    },
+                    "id": "appmenuitemid3",
+                    "kuid": "946d876f38da4a339e24c80f6dec150c",
+                    "title": "Item 3",
+                    "windows8": {
+                        "appBarButtonStyle": "No Style",
+                        "position": "BOTTOM_LEFT"
+                    }
+                },
+                {
+                    "android": {
+                        "showAsFlag": 0
+                    },
+                    "icon": {
+                        "default": "option4.png"
+                    },
+                    "id": "appmenuitemid4",
+                    "kuid": "5b85d1b69e074bc28d7c8195317beca1",
+                    "title": "Item 4",
+                    "windows8": {
+                        "appBarButtonStyle": "No Style",
+                        "position": "BOTTOM_LEFT"
+                    }
+                }
+            ]
+        },
+        "wType": "Appmenu"
+    },
+    "appnamekey": "MyTime",
+    "apppackagekey": "",
+    "appversionkey": "1.0.0",
+    "build": "debug",
+    "category": "app",
+    "cordovaVersionInfo": {
+        "useGlobalCordova": false
+    },
+    "createdVizVersion": "7.0.0",
+    "createdgaversion": "7.0.0",
+    "currentgaversion": "7.3.0.7",
+    "defaultlocalekey": "en_US",
+    "defaulttheme": "defaultTheme",
+    "desktopstartupformkey": "frmLoginDesk",
+    "desktopwebbasefontsize": "12",
+    "enableCordova": false,
+    "enableIdForAutomation": true,
+    "enableactionbar": false,
+    "ide_appEvents": {
+        "mobile": {
+            "appservice": "AS_AppEvents_e939647136f0499cbf6451cdd0fce4d5"
+        },
+        "tablet": {
+            "postappinit": "AS_AppEvents_b9cf5b8dfde641d0afd16763ef3fc284"
+        }
+    },
+    "isA11yConfigEnabled": false,
+    "isDpScaleFactor": true,
+    "isNewAppWithRespectToAndroidPackageName": "",
+    "konyVizVersion": "7.3.0.7",
+    "mfappguid": {
+        "147abad9-e5d0-4108-ab0b-70743455dc49": "09f20ae7-1f81-4b34-ba97-ac70dba06232",
+        "5d005816-04e8-44ce-8f0b-15bfdecddcd2": "c8408d49-43a5-40e3-a981-64a8cbede05e",
+        "68dce0d6-ca64-4db3-a594-a8d2745feb91": "0ac26b7c-6053-4ca6-811f-e323224d6a7d",
+        "90e318ca-286d-4176-ac06-2d3a54712733": "91c0826f-8a1d-452a-8919-ce0b572e01f6",
+        "d88520ac-a1e2-4f8e-8d3b-d8d384db0ee0": "58cf8b21-10eb-4a75-9735-813841dfa511"
+    },
+    "mwaddrkey": "",
+    "mwhttpsportkey": "",
+    "mwportkey": "",
+    "nativeContainerProperties": {
+        "isModified": false,
+        "isEnableJSContainer": false,
+        "isEnableJSContainerAndroid": false,
+        "isEnableJSContaineriOS": false
+    },
+    "project.type": "js",
+    "projectCloudGuid": "372953d5-4750-4e64-b8b9-0135005191d8",
+    "project_version": "sprint27",
+    "prototype": {
+        "createdBy": "Parveen Chahal",
+        "createdById": "89d10ec0-5d4b-412f-8067-1b42a3936065",
+        "createdOn": "2016-07-13T15:17:57.017Z",
+        "resourceId": "cb2fe7bc-b9a7-4ff1-97d3-e3e703792841",
+        "shareGuid": "SYSA6"
+    },
+    "referenceWidth": "375",
+    "startupformkey": "frmDummy",
+    "statusBarHidden": "false",
+    "tabletstartupformkey": "frmLogin",
+    "vendornamekey": "KonyLabs",
+    "wap_android240_fontsize": "12",
+    "wap_android320_fontsize": "12",
+    "wap_android360_fontsize": "12",
+    "wap_android400_fontsize": "12",
+    "wap_android440_fontsize": "12",
+    "wap_android480_fontsize": "12",
+    "wap_android640_fontsize": "12",
+    "wap_bb240_fontsize": "12",
+    "wap_bb320_fontsize": "12",
+    "wap_bb360_fontsize": "12",
+    "wap_bb400_fontsize": "12",
+    "wap_bb440_fontsize": "12",
+    "wap_bb480_fontsize": "12",
+    "wap_ip_fontsize": "12",
+    "wap_spaandroidtab_fontsize": "12",
+    "wap_spaandroidtabhdpi_fontsize": "12",
+    "wap_spaandroidtabldpi_fontsize": "12",
+    "wap_spaandroidtabmdpi_fontsize": "12",
+    "wap_spaipad_fontsize": "12",
+    "wap_spawindowstab_fontsize": "12",
+    "wap_winphone320_fontsize": "12",
+    "wap_winphone480_fontsize": "12",
+    "watchos_longlooknotificationicon_38": "",
+    "watchos_longlooknotificationicon_42": "",
+    "watchos_notificationcentericon_38": "",
+    "watchos_notificationcentericon_42": "",
+    "watchos_shortlooknotificationicon_38": "",
+    "watchos_shortlooknotificationicon_42": "",
+    "winmobileguidkey": ""
+}

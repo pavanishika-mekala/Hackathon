@@ -1,0 +1,25 @@
+{
+    "AS_Form_50c8a695dc0640ca941d24dbd00862e1": {
+        "id": "AS_Form_50c8a695dc0640ca941d24dbd00862e1",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Form_frmSearchMyTimePreShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchMyTime",
+            "type": "forms",
+            "platform": "",
+            "KUID": "79673f1514a448a28c0e764e1f9c19e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b7383aea07be41548a61f8ac5be1d6b2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Search.preShow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

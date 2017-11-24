@@ -1,0 +1,25 @@
+{
+    "AS_Button_15488296022c4f4d98cd380149f0867f": {
+        "id": "AS_Button_15488296022c4f4d98cd380149f0867f",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_onClick_TimpickerApply",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9d6ca72b6dd04674a80660ab1dbead3c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.pickerViewOnClickApply();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

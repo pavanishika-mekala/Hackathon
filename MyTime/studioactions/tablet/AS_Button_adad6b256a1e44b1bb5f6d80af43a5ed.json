@@ -1,0 +1,29 @@
+{
+    "AS_Button_adad6b256a1e44b1bb5f6d80af43a5ed": {
+        "id": "AS_Button_adad6b256a1e44b1bb5f6d80af43a5ed",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i003e89e65a84f6cb230d3b582b9b624"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchEnd_adc31ca8e59540e5b07fa87b03de0d6a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarView.flxCopyWeek.setVisibility(false);\nfrmCalendarView.flxCopyIcon.skin = \"sknFlxB1PxBGffffffOP100\";\nfrmCalendarView.imgCopy.src = \"copyblue.png\";\n(new kony.apps.coe.ess.myTime.CalendarViewUI()).CopyWeekTimesheetConfirm();",
+            "callbackType": null
+        }]
+    }
+}

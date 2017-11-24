@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_hce4661d614c47beb3773e31bb51e581": {
+        "id": "AS_FlexContainer_hce4661d614c47beb3773e31bb51e581",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ab9acb41ac044a4597647ead0033a85a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myProfile\");",
+            "callbackType": null
+        }]
+    }
+}

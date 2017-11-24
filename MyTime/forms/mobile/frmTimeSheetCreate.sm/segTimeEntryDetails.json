@@ -1,0 +1,275 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgDeleteTimeEntry": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "delete_time_entry.png"
+            },
+            "imgEditTimeEntry": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "edit.png"
+            },
+            "imgTaskSelected": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick_oval.png"
+            },
+            "lblAO": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "A.O - 0011"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Researching the Employee Self Service for Sap deployment inside Apple Mobile unit. "
+            },
+            "lblNO": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "N.O - 000300769374"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Employee Self Service"
+            },
+            "lblSpace": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design User Interface"
+            },
+            "lblTimeSlot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7:00 am to 10:00 am"
+            },
+            "lblTimeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblTotalHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "h"
+            }
+        },
+        {
+            "imgDeleteTimeEntry": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "delete_time_entry.png"
+            },
+            "imgEditTimeEntry": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "edit.png"
+            },
+            "imgTaskSelected": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick_oval.png"
+            },
+            "lblAO": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "A.O - 0011"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Researching the Employee Self Service for Sap deployment inside Apple Mobile unit. "
+            },
+            "lblNO": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "N.O - 000300769374"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Employee Self Service"
+            },
+            "lblSpace": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design User Interface"
+            },
+            "lblTimeSlot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7:00 am to 10:00 am"
+            },
+            "lblTimeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblTotalHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "h"
+            }
+        },
+        {
+            "imgDeleteTimeEntry": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "delete_time_entry.png"
+            },
+            "imgEditTimeEntry": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "edit.png"
+            },
+            "imgTaskSelected": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "tick_oval.png"
+            },
+            "lblAO": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "A.O - 0011"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Researching the Employee Self Service for Sap deployment inside Apple Mobile unit. "
+            },
+            "lblNO": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "N.O - 000300769374"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Employee Self Service"
+            },
+            "lblSpace": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design User Interface"
+            },
+            "lblTimeSlot": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7:00 am to 10:00 am"
+            },
+            "lblTimeType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblTotalHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "h"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "95.40%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "02",
+    "disabledSkins": {},
+    "enablereordering": false,
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segTimeEntryDetails",
+    "info": null,
+    "invokedProperty": "unselectedStateImage",
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none",
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "750fa31d6b404dc38d4775c4b8ae2af1",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxScrTimeEntrySummary",
+    "pf": "frmTimeSheetCreate",
+    "retainselection": false,
+    "rowTemplateId": "c5fa3aea71994f4b98a8620143645e6e",
+    "rowcounter": 2,
+    "rowfocusskin": "s720317a253447758c66824a5d12d0e0",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxTimeEntryDetails",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "multiselect",
+    "selectionbehaviorconfig": null,
+    "separatorrequired": false,
+    "showprogressindicator": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxComplete": "flxComplete",
+        "flxDeleteTimeEntry": "flxDeleteTimeEntry",
+        "flxDetails": "flxDetails",
+        "flxEditTimeEntry": "flxEditTimeEntry",
+        "flxMenu": "flxMenu",
+        "flxProject": "flxProject",
+        "flxProjectdetails": "flxProjectdetails",
+        "flxTaskSelection": "flxTaskSelection",
+        "flxTimeEntryDetails": "flxTimeEntryDetails",
+        "flxTimeSlot": "flxTimeSlot",
+        "flxTypeInfo": "flxTypeInfo",
+        "imgDeleteTimeEntry": "imgDeleteTimeEntry",
+        "imgEditTimeEntry": "imgEditTimeEntry",
+        "imgTaskSelected": "imgTaskSelected",
+        "lblAO": "lblAO",
+        "lblDescription": "lblDescription",
+        "lblNO": "lblNO",
+        "lblProjectName": "lblProjectName",
+        "lblSpace": "lblSpace",
+        "lblTaskName": "lblTaskName",
+        "lblTimeSlot": "lblTimeSlot",
+        "lblTimeType": "lblTimeType",
+        "lblTotalHours": "lblTotalHours"
+    },
+    "zindex": 1
+}

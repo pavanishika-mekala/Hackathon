@@ -1,0 +1,17 @@
+{
+    "AS_Button_a3bfa1c3b4404a9c99ef0dac4b4494d8": {
+        "id": "AS_Button_a3bfa1c3b4404a9c99ef0dac4b4494d8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_553a25358b11485284b6fec6cb1ec248",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetHomeClone.hideAllPopups();",
+            "callbackType": null
+        }]
+    }
+}

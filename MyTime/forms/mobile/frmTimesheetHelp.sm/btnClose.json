@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s7c63c4133ae4f0c978aa26b775f71fd",
+    "_text_": "Close",
+    "_top_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s7c63c4133ae4f0c978aa26b775f71fd",
+    "id": "btnClose",
+    "ide_onClick": "AS_Button_a7e065bd236f461e90045b422970e3d2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "8b38db92905f4b4f836b81903ed10caa",
+    "name": "kony.ui.Button",
+    "parent": "flxHelperImages",
+    "pf": "frmTimesheetHelp",
+    "wType": "Button",
+    "zindex": 1
+}

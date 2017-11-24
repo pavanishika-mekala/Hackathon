@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "23%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "61.12%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s613cb1ec001461cb1a76b6d4b46ca8f",
+    "_top_": {
+        "type": "string",
+        "value": "59%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "16.52%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblDay4"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxDay4",
+    "ide_onClick": "AS_FlexContainer_b1a5b530c5c24ba890d612cabb5a5488",
+    "info": null,
+    "isvisible": true,
+    "kuid": "6ea1b64a9c9c40ed96eeec6459e3482a",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTimesheet",
+    "pf": "frmCalendarView",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

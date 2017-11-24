@@ -1,0 +1,31 @@
+{
+    "AS_Image_672c121bf2544810a44f512b191a25bf": {
+        "id": "AS_Image_672c121bf2544810a44f512b191a25bf",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnAddTaskImgClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fc6e1a296f2847d69f29c61e78cf07ea",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxBlank.setVisibility(true);\nfrmCreateViewDW.flxSelectBreak.setVisibility(true);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

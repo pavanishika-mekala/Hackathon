@@ -1,0 +1,111 @@
+{
+  "operationConfig" : {
+    "name" : "partialupdateHCMTIMESHEETNOTE5656",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ADDED_ON",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "HCM_TIMESHEET_NOTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "applyCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIMESHEET_NOTE\",\"fMap\":{\"TIMESHEETID\":\"HCM_TIME_ENTRY.TIMESHEETID\"},\"sQuery\":\"HCM_DISTRIBUTION.DIST_KEY,HCM_TIME_ENTRY.EMPNUMBER\",\"config\":{}}}",
+    "opcode" : "partialupdate",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIMESHEET_NOTE"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Timesheet_Note",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "AS_FlexContainer_2598eaa5a8764e1d840974544256ad06": {
+        "id": "AS_FlexContainer_2598eaa5a8764e1d840974544256ad06",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateToCreateView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__01d5856517f44c3b812dc3a67867075e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxEachTaskDetailsLeft.setVisibility(false);\nfrmCreateViewDW.flxEachTaskDetailsRight.setVisibility(false);\nfrmCreateViewDW.flxAddBreakLeft.setVisibility(false);\nfrmCreateViewDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

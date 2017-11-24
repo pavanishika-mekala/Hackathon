@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_8c119ef8a9bd4188b84a0c4c5b7113fd": {
+        "id": "AS_FlexContainer_8c119ef8a9bd4188b84a0c4c5b7113fd",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnAdvSearchIconClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b1d5489246894360a436cc788f47b7bf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxAdvSeg.setVisibility(true);\nfrmCreateViewDW.lblAdd.setVisibility(true);\nfrmCreateViewDW.flxAdvSearchSegDropdown.setVisibility(false);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

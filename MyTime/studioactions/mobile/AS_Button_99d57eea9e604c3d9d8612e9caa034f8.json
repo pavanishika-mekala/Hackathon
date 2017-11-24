@@ -1,0 +1,17 @@
+{
+    "AS_Button_99d57eea9e604c3d9d8612e9caa034f8": {
+        "id": "AS_Button_99d57eea9e604c3d9d8612e9caa034f8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_6ede22dc163847dead66d0d9a0470148",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.popups.btnPopupDeleteTaskCancleOnClick();\n",
+            "callbackType": null
+        }]
+    }
+}

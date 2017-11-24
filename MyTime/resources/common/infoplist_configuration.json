@@ -1,0 +1,5 @@
+{
+	"LSApplicationQueriesSchemes" : [
+		"myLeave","myTime","myPay","myProfile","myExpenses","myApprovals"
+	]
+}

@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1796b0cf3164d9487e124d7a01f4e70",
+    "_text_": "Label",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "78%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblSummary",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": false,
+    "kuid": "9d9abf49af3e45cd8178e9eb52df4174",
+    "name": "kony.ui.Label",
+    "parent": "flxHeader",
+    "pf": "frmTimeSheetCreate",
+    "texti18n": "i18n.ess.TimeSheetCreate.Summary",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

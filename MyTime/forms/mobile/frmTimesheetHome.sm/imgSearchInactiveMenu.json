@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "44.40%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa6af93debb14a45930bcf1aff922b12",
+    "_src_": "search.png",
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "frmTimesheetHome",
+        "platform": "spaan",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgSearchInactiveMenu",
+    "imagescalemode": 1,
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": true,
+    "kuid": "1b6d2bef0a9b4a0e80ec443e88dad402",
+    "name": "kony.ui.Image2",
+    "parent": "flxSearchMenu",
+    "pf": "frmTimesheetHome",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5
+}

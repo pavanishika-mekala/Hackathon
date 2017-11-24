@@ -1,0 +1,31 @@
+{
+    "AS_Segment_a1a48041537a452dbbcb6b62fb41ccc0": {
+        "id": "AS_Segment_a1a48041537a452dbbcb6b62fb41ccc0",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionAdvSearchDropdownSegClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e6dd2430bef74a45bbce432f66530b95",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

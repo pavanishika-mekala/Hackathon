@@ -1,0 +1,25 @@
+{
+    "AS_Button_c10cd6cce5cf493dbfc036aef4416a49": {
+        "id": "AS_Button_c10cd6cce5cf493dbfc036aef4416a49",
+        "type": "ACTION_SEQUENCE",
+        "name": "onclickofsubmitfrmListview",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d134b38bc4964963a1dfab4e59623feb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.ListViewTabDetails.checkForSubmit=true;\nkony.apps.coe.ess.myTime.ListViewTabDetails.dayCounter = 0;\n(new kony.apps.coe.ess.myTime.ListViewTabDetails()).checkForSubmitStatus();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

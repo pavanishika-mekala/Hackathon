@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_02f2894437254af7b4aef398602b6279": {
+        "id": "AS_FlexContainer_02f2894437254af7b4aef398602b6279",
+        "type": "ACTION_SEQUENCE",
+        "name": "wontouchselList",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7cb5de1b4aa848299c327d1e79079e44",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxsrchCriteria.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

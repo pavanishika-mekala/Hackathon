@@ -1,0 +1,57 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "49%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4.19%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_top_": {
+        "type": "string",
+        "value": "0.13%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "93.81%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblCloneLastEntry"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCloneLastEntery",
+    "ide_onClick": "AS_FlexContainer_42a621e5f4114fe5bad7f33ab6cbea71",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ee516b3a80ca443891d38df0820fad91",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxClonePopup",
+    "pf": "frmTimesheetHome",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Label_673d07e8f9834cddacaf9fbfa1978343": {
+        "id": "AS_Label_673d07e8f9834cddacaf9fbfa1978343",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCalendarEditConfirm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ead9d755e3174c36918f3db3878d3776",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarViewDW.flxBlank.setVisibility(false);\nfrmCalendarViewDW.flxDeleteTimesheetPopup.setVisibility(false);\nfrmCalendarViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

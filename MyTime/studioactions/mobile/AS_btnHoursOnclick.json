@@ -1,0 +1,18 @@
+{
+    "AS_Button_ecc47f12bf814efc9e91381c299a546e": {
+        "id": "AS_Button_ecc47f12bf814efc9e91381c299a546e",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_btnHoursOnclick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_26904e5a60ba4e259441d27e2df51fb7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelection.onClickOfHours(kony.apps.coe.Reusable.TimelineCreation.onClickOfHours);\nkony.apps.coe.ess.globalVariables.fullDayButtonisSelected=false;\n//kony.apps.coe.ess.myTime.TimesheetCreate.revertSlider();",
+            "callbackType": null
+        }]
+    }
+}

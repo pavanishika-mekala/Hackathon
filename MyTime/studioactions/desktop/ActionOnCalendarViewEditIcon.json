@@ -1,0 +1,31 @@
+{
+    "AS_Image_270cfd33a2f9463e95c64f0ec2056180": {
+        "id": "AS_Image_270cfd33a2f9463e95c64f0ec2056180",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCalendarViewEditIcon",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b6c4b105b2404028ab95f349c6be47e3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxEachTaskDetailsLeft.setVisibility(true);\nfrmCreateViewDW.flxEachTaskDetailsRight.setVisibility(true);\nfrmCreateViewDW.flxAddBreakLeft.setVisibility(true);\nfrmCreateViewDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

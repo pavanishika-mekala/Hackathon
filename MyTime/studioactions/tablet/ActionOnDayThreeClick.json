@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_47a5fbb55a61461fa2ebe70122f96ed5": {
+        "id": "AS_FlexContainer_47a5fbb55a61461fa2ebe70122f96ed5",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnDayThreeClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7a81e2ef4dbe46fb95e1babcac4a7272",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var date_object = frmCalendarView.flxDay3.dateobject;\n(new kony.apps.coe.ess.myTime.time_entry_retrieval_common()).showTimeSheetDetailsDaybyDay(date_object);\n(new kony.apps.coe.ess.myTime.time_entry_retrieval_common()).setSkins(\"Day3\");\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

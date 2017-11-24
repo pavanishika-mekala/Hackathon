@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sebdeb4644d147b5b563c9777d551ab0",
+    "_text_": "Submit",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sebdeb4644d147b5b563c9777d551ab0",
+    "id": "btnSubmit",
+    "ide_onTouchEnd": "AS_Button_gae8868c3c944861ba8091890f3f328f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "a246ef5f9ac845e7a1a1843c38005b19",
+    "name": "kony.ui.Button",
+    "parent": "flxSubmit",
+    "pf": "frmCalendarView",
+    "wType": "Button",
+    "zindex": 1
+}

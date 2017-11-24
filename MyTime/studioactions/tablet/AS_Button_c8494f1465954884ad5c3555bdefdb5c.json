@@ -1,0 +1,17 @@
+{
+    "AS_Button_c8494f1465954884ad5c3555bdefdb5c": {
+        "id": "AS_Button_c8494f1465954884ad5c3555bdefdb5c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c2b95ce122794398900580a49b1e4639",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.settings.getSettingsObject().resetData();",
+            "callbackType": null
+        }]
+    }
+}

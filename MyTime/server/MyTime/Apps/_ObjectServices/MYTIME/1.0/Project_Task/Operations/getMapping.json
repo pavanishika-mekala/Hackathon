@@ -1,0 +1,393 @@
+{
+  "operationConfig" : {
+    "name" : "queryHCMSEARCHMASTER1048",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "HCM_SEARCH_MASTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "USER_ID_SRCH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "LANGUAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "BILLABLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                                                    <map inputpath=\"request_in\" outputpath=\"request_out\">                                                                                                        <exec-function name=\"kony.gen.obj.HCM_SEARCH_MASTER__hierarchy.toLOBFields\"/>                                                    </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">          <map inputpath=\"response_in\" outputpath=\"response_out\">                    <map inputpath=\"HCM_SEARCH_MASTER\" outputpath=\"Project_Task\">                              <exec-function name=\"kony.string:substringBefore\" outputpath=\"projectValueSplitBeforeExpr\" output=\"$vars\">                                        <set-arg name=\"ProjectValue\" inputpath=\"VALUE\" />                                        <set-arg name=\"Separator1\" input=\"|\" />                              </exec-function>                              <exec-function name=\"kony.string:substringBefore\" outputpath=\"projectNameSplitBeforeExpr\" output=\"$vars\">                                        <set-arg name=\"ProjectValue\" inputpath=\"NAME\" />                                        <set-arg name=\"Separator1\" input=\"|\" />                              </exec-function>                              <exec-function name=\"kony.string:substringAfter\" outputpath=\"taskValueSplitAfterExpr\" output=\"$vars\">                                        <set-arg name=\"TaskValue\" inputpath=\"VALUE\" />                                        <set-arg name=\"Separator2\" input=\"|\" />                              </exec-function>                              <exec-function name=\"kony.string:substringAfter\" outputpath=\"taskNAMESplitAfterExpr\" output=\"$vars\">                                        <set-arg name=\"TaskValue\" inputpath=\"NAME\" />                                        <set-arg name=\"Separator2\" input=\"|\" />                              </exec-function>                              <exec-function name=\"kony.string:concat\" outputpath=\"projectId\" output=\"$vars\">                                        <set-arg name=\"taskname\" inputpath=\"$vars/projectNameSplitBeforeExpr\" />                                        <set-arg name=\"taskvalue\" inputpath=\"$vars/projectValueSplitBeforeExpr\" />                              </exec-function>                              <exec-function name=\"kony.string:concat\" outputpath=\"taskId\" output=\"$vars\">                                        <set-arg name=\"taskname\" inputpath=\"$vars/taskNAMESplitAfterExpr\" />                                        <set-arg name=\"taskvalue\" inputpath=\"$vars/taskValueSplitAfterExpr\" />                              </exec-function>                              <set-param inputpath=\"VALUE\" outputpath=\"id\" />                              <set-param inputpath=\"NAME\" outputpath=\"Type\" />                              <set-param input=\"\" outputpath=\"End_Date\" />                              <set-param input=\"\" outputpath=\"Planned_Hours\" />                              <set-param input=\"\" outputpath=\"Start_Date\" />                              <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                              <set-param inputpath=\"$vars/projectId\" outputpath=\"Project_Id\" />                              <set-param inputpath=\"USER_ID_SRCH\" outputpath=\"User_Id\" />                              <exec-function name=\"kony.logical:notEqual\" outputpath=\"validTaskCOndition\" output=\"$vars\">                                        <set-arg name=\"proejectaftersplit\" inputpath=\"$vars/projectValueSplitBeforeExpr\" />                                        <set-arg name=\"projectoriginalvalue\" inputpath=\"VALUE\" />                              </exec-function>                              <choose>                                        <when test=\"$vars/validTaskCOndition\">                                                  <set-param inputpath=\"$vars/taskId\" outputpath=\"Task_Id\" />                                        </when>                                        <otherwise>                                                  <set-param input=\"\" outputpath=\"Task_Id\" />                                        </otherwise>                              </choose>                              <map inputpath=\"\" outputpath=\"Project\">                                        <exec-function name=\"kony.string:substringBefore\" outputpath=\"ProjectDESCSplitBeforeExpr\" output=\"$vars\">                                                  <set-arg name=\"description\" inputpath=\"DESCRIPTION\" />                                                  <set-arg name=\"Separator\" input=\"|\" />                                        </exec-function>                                        <exec-function name=\"kony.string:substringBefore\" outputpath=\"ProjectValueSplitBeforeExpr\" output=\"$vars\">                                                  <set-arg name=\"value\" inputpath=\"VALUE\" />                                                  <set-arg name=\"Separator\" input=\"|\" />                                        </exec-function>                                        <exec-function name=\"kony.string:substringBefore\" outputpath=\"ProjectNameSplitBeforeExpr\" output=\"$vars\">                                                  <set-arg name=\"Name\" inputpath=\"NAME\" />                                                  <set-arg name=\"Separator\" input=\"|\" />                                        </exec-function>                                        <exec-function name=\"kony.string:concat\" outputpath=\"ProjectId\" output=\"$vars\">                                                  <set-arg name=\"name\" inputpath=\"$vars/ProjectNameSplitBeforeExpr\" />                                                  <set-arg name=\"value\" inputpath=\"$vars/ProjectValueSplitBeforeExpr\" />                                        </exec-function>                                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"BillabelCondition\" output=\"$vars\">                                                  <set-arg name=\"filedName\" inputpath=\"BILLABLE\" />                                                  <set-arg name=\"fieldValue\" input=\"\" />                                        </exec-function>                                        <set-param outputpath=\"Id\" inputpath=\"$vars/ProjectId\" />                                        <set-param outputpath=\"Project_Description\" inputpath=\"$vars/ProjectDESCSplitBeforeExpr\" />                                        <set-param outputpath=\"Project_Name\" inputpath=\"$vars/ProjectDESCSplitBeforeExpr\" />                                        <set-param outputpath=\"Project_Type\" inputpath=\"$vars/ProjectNameSplitBeforeExpr\" />    \t\t                <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" /> \t\t                        <choose>                                                  <when test=\"$vars/BillabelCondition\">                                                            <set-param input=\"1\" outputpath=\"isBillable\" />                                                  </when>                                                  <otherwise>                                                            <set-param input=\"0\" outputpath=\"isBillable\" />                                                  </otherwise>                                        </choose>                              </map>                              <map inputpath=\"\" outputpath=\"\">                                        <exec-function name=\"kony.string:substringAfter\" outputpath=\"TaskDESCSplitBeforeExpr\" output=\"$vars\">                                                  <set-arg name=\"description\" inputpath=\"DESCRIPTION\" />                                                  <set-arg name=\"Separator\" input=\"|\" />                                        </exec-function>                                        <exec-function name=\"kony.string:substringAfter\" outputpath=\"TaskValueSplitAfterExpr\" output=\"$vars\">                                                  <set-arg name=\"value\" inputpath=\"VALUE\" />                                                  <set-arg name=\"Separator1\" input=\"|\" />                                        </exec-function>                                        <exec-function name=\"kony.string:substringAfter\" outputpath=\"TaskNameSplitAfterExpr\" output=\"$vars\">                                                  <set-arg name=\"Name\" inputpath=\"NAME\" />                                                  <set-arg name=\"Separator\" input=\"|\" />                                        </exec-function>                                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"TaskNameNotEqual\" output=\"$vars\">                                                  <set-arg name=\"HOLIDAY\" inputpath=\"$vars/TaskNameSplitAfterExpr\" />                                                  <set-arg name=\"HOLIDAY\" inputpath=\"NAME\" />                                        </exec-function>                                        <exec-function name=\"kony.string:concat\" outputpath=\"TaskId\" output=\"$vars\">                                                  <set-arg name=\"P1\" inputpath=\"$vars/TaskNameSplitAfterExpr\" />                                                  <set-arg name=\"P2\" inputpath=\"$vars/TaskValueSplitAfterExpr\" />                                        </exec-function>                                        <choose>                                                  <when test=\"$vars/TaskNameNotEqual\">                                                            <map inputpath=\"\" outputpath=\"Task\">                                                                      <set-param inputpath=\"$vars/TaskId\" outputpath=\"Id\" />                                                                      <set-param inputpath=\"$vars/TaskDESCSplitBeforeExpr\" outputpath=\"Task_Name\" />                                                                      <set-param inputpath=\"$vars/TaskNameSplitAfterExpr\" outputpath=\"Type\" />                                                            </map>                                                  </when>                                        </choose>                              </map>                    </map>          </map></mapper>",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_SEARCH_MASTER\",\"entityName\":\"HCM_SEARCH_MASTER\",\"fMap\":{},\"sQuery\":\"\",\"config\":{}}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_SEARCH_MASTER",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_SEARCH_MASTER"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Project",
+        "selected" : true
+      }, {
+        "children" : [ ],
+        "name" : "Task",
+        "selected" : true
+      } ],
+      "name" : "Project_Task",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

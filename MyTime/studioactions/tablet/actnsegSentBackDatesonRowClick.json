@@ -1,0 +1,31 @@
+{
+    "AS_Segment_ef242e98661d419b951295481a9ce9f3": {
+        "id": "AS_Segment_ef242e98661d419b951295481a9ce9f3",
+        "type": "ACTION_SEQUENCE",
+        "name": "actnsegSentBackDatesonRowClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__j0e36c5689844f6ab2ff2ec86df676b1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewTabUI()).onRowClickOfSentBackSegment();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

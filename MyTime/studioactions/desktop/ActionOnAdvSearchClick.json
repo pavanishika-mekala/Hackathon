@@ -1,0 +1,31 @@
+{
+    "AS_Image_d5eb8bfefce9401d917c1d706b2e05e4": {
+        "id": "AS_Image_d5eb8bfefce9401d917c1d706b2e05e4",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnAdvSearchClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1720d9cf6a534ec6905c680b52d50a40",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmCreateViewDW.imgActiveInactive.src==\"checkboxinactive.png\")\n  {\n    frmCreateViewDW.imgActiveInactive.src==\"checkboxactive.png\";\n    \n     frmCreateViewDW.flxSegSearch.setVisibility(false);\n    frmCreateViewDW.flxSelectId.setVisibility(true);\n    frmCreateViewDW.flxAdvSeg.setVisibility(true);\n\n  }\nelse{\n      frmCreateViewDW.imgActiveInactive.src==\"checkboxinactive.png\";\n frmCreateViewDW.flxSegSearch.setVisibility(true);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

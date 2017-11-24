@@ -1,0 +1,17 @@
+{
+    "AS_Button_b39b5e659bc142a48bb45fad27b33acf": {
+        "id": "AS_Button_b39b5e659bc142a48bb45fad27b33acf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8d66b5fad1314cd1a74287686bcc76fa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.popups.onClickOfCloneTaskTo();\n",
+            "callbackType": null
+        }]
+    }
+}

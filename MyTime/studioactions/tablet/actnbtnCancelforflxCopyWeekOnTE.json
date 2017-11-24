@@ -1,0 +1,31 @@
+{
+    "AS_Button_i6ea44bafdde48e288a8381bfda006d3": {
+        "id": "AS_Button_i6ea44bafdde48e288a8381bfda006d3",
+        "type": "ACTION_SEQUENCE",
+        "name": "actnbtnCancelforflxCopyWeekOnTE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bd1ea0e4ac374617ac43e76840a954b0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmListView.flxCopyWeek.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

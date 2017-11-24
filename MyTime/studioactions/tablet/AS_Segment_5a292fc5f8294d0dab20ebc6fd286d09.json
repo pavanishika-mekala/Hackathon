@@ -1,0 +1,29 @@
+{
+    "AS_Segment_5a292fc5f8294d0dab20ebc6fd286d09": {
+        "id": "AS_Segment_5a292fc5f8294d0dab20ebc6fd286d09",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_645a72ab69f5405cac8cac499c0e20d5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfTaskTimeTypeTab(frmTimeSheetCreateTab.segTimeType.selectedRowItems[0]);",
+            "callbackType": null
+        }]
+    }
+}

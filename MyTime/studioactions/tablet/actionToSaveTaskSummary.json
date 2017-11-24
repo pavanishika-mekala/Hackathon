@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_efe13f08aae54d679fee4050bfff56f4": {
+        "id": "AS_FlexContainer_efe13f08aae54d679fee4050bfff56f4",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionToSaveTaskSummary",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__g239978db1564ee8a7be2baaa64db89e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.CurrentTaskTimelineData.data.Desc = frmTimeSheetCreateTab.txtAreaDesc.text;\nfrmTimeSheetCreateTab.flxDescOptions.setVisibility(false);\nfrmTimeSheetCreateTab.flxEditSummary.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

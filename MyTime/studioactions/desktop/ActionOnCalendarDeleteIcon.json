@@ -1,0 +1,31 @@
+{
+    "AS_Image_9866c59c4d414899b6565e2683029f85": {
+        "id": "AS_Image_9866c59c4d414899b6565e2683029f85",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCalendarDeleteIcon",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__de26ab81184e4db3920d62cdbf2b49e4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarViewDW.flxBlank.setVisibility(true);\nfrmCalendarViewDW.flxDeleteTimesheetPopup.setVisibility(true);\nfrmCalendarViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

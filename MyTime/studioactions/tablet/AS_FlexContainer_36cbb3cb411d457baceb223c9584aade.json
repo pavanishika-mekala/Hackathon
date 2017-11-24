@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_36cbb3cb411d457baceb223c9584aade": {
+        "id": "AS_FlexContainer_36cbb3cb411d457baceb223c9584aade",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_21364a77e53549cc85c0162c3d90d856",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.Search.searchOnline();",
+            "callbackType": null
+        }]
+    }
+}

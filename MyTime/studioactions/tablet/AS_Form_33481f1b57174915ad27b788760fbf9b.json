@@ -1,0 +1,23 @@
+{
+    "AS_Form_33481f1b57174915ad27b788760fbf9b": {
+        "id": "AS_Form_33481f1b57174915ad27b788760fbf9b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7ac8b34802d54f0e814d28ab54534c53"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_a013070104334984b753906c910d7b68",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "onFrmCalendarViewPreshowObj = new kony.apps.coe.ess.myTime.CalendarViewUI();\nonFrmCalendarViewPreshowObj.getCalendarViewData();\n//(new kony.apps.coe.ess.myTime.CalendarViewUI()).populateInitialData(new Date());",
+            "callbackType": null
+        }]
+    }
+}

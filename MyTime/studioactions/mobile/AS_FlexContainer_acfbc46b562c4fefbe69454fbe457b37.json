@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_acfbc46b562c4fefbe69454fbe457b37": {
+        "id": "AS_FlexContainer_acfbc46b562c4fefbe69454fbe457b37",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dc22add6e6ef466cb71c40d89fc57201",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showTasks();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

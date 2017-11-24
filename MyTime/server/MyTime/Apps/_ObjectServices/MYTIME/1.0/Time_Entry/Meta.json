@@ -1,0 +1,82 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIME_ENTRY"
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodified"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[{\"children\":[],\"name\":\"HCM_TIMESHEET\",\"selected\":true}]",
+      "businessObjectName" : "HCM_TIME_ENTRY"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeletedflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "Activity_Description",
+    "targetField" : "COMMENTS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Actual_Hours",
+    "targetField" : "WORKHOURS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Created_On",
+    "targetField" : "CREATED_TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Date",
+    "targetField" : "WORKDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Employee_Id",
+    "targetField" : "EMPNUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "End_Time",
+    "targetField" : "ENDTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Id",
+    "targetField" : "TIME_ENTRY_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Project_Task_id",
+    "targetField" : "VALUE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Start_Time",
+    "targetField" : "REC_CCTR",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Time_Type_Id",
+    "targetField" : "SUBTY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodified",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

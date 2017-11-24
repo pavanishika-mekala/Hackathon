@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_a12b267a38af43868092ff56846f9818": {
+        "id": "AS_FlexContainer_a12b267a38af43868092ff56846f9818",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b3da5b5918964b59b1846dd272ee9c4d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b70f0aeffc94470bb400155bd9db4b39",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var navigateToViewTimesheetFormObj = new kony.apps.coe.ess.myTime.TimesheetHistoryUI();\nnavigateToViewTimesheetFormObj.navigateToViewTimesheetForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

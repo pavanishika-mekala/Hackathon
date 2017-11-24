@@ -1,0 +1,31 @@
+{
+    "AS_Label_2bd5793dc60c416a8b2ae5fb2ae11524": {
+        "id": "AS_Label_2bd5793dc60c416a8b2ae5fb2ae11524",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnClearDiscard",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__92cb3c7c33174a1f8cae17df4b44fab4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxBlank.setVisibility(false);\nfrmCreateViewDW.flxDiscardTimesheetPopup.setVisibility(false);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

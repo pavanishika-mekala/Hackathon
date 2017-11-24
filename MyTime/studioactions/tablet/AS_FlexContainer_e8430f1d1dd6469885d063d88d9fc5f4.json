@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_e8430f1d1dd6469885d063d88d9fc5f4": {
+        "id": "AS_FlexContainer_e8430f1d1dd6469885d063d88d9fc5f4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "39e9518d0bb440508156aa2713364333"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c1a0cc129a4e4b15a23b5432626c3b3d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetCreateTab();",
+            "callbackType": null
+        }]
+    }
+}

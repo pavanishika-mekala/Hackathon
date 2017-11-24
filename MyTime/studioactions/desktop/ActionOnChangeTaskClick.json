@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f36f0429c08f449d8d9364636d715ea2": {
+        "id": "AS_FlexContainer_f36f0429c08f449d8d9364636d715ea2",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnChangeTaskClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4af4bef9cff64887995636727f3b0458",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxBlank.setVisibility(true);\nfrmCreateViewDW.flxSelectTask.setVisibility(true);\nfrmCreateViewDW.flxAdvSeg.setVisibility(false);\nfrmCreateViewDW.flxSegSearch.setVisibility(true);\nfrmCreateViewDW.flxSelectId.setVisibility(false);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

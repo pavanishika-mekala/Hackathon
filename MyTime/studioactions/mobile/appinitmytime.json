@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_27c0dd02e9cc450ba97e35972ab34da3": {
+        "id": "AS_AppEvents_27c0dd02e9cc450ba97e35972ab34da3",
+        "type": "ACTION_SEQUENCE",
+        "name": "appinitmytime",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3df590e3aac64ec4a700faff974743c9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "initMbaasApp();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

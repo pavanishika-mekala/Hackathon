@@ -1,0 +1,24 @@
+{
+    "AS_Segment_bb2d253a885f45cdbbd4b4f5cf76553a": {
+        "id": "AS_Segment_bb2d253a885f45cdbbd4b4f5cf76553a",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnDropDownsegmentClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_5b80ac505a6f48fd92a0247b6cc1bbf2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewUIDW()).OnDropDownSegClick();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f40e34b938544d6b86f578e10a70a4a3": {
+        "id": "AS_FlexContainer_f40e34b938544d6b86f578e10a70a4a3",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickofHamburger",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__jaf5b97b73714af7b6bbe61cdb4bc98c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.ess.Hamburger(frmCalendarView.flxHamburgerButton);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,166 @@
+{
+  "operationConfig" : {
+    "name" : "createTimesheet4407",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "END_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "START_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBMITTED_ON",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "HCM_TIMESHEET",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "START_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                      <map inputpath=\"request_in\" outputpath=\"request_out\">                                              <set-param inputpath=\"End_Date\" outputpath=\"END_DATE\" />                                                          <set-param inputpath=\"Id\" outputpath=\"TIMESHEETID\" />        \t\t\t                                              <set-param inputpath=\"Start_Date\" outputpath=\"START_DATE\" />    <set-param inputpath=\"latitude\" outputpath=\"GPS_LATITUDE\" />    <set-param inputpath=\"longitude\" outputpath=\"GPS_LONGITUDE\" />    <exec-function name=\"kony.logical:equal\" outputpath=\"SubmitCOND\" output=\"$vars\">                                                                                    <set-arg name=\"NotStarted\" inputpath=\"Status_Id\" />                                                                                    <set-arg name=\"X\" input=\"7\" />                                                          </exec-function>                                                          <choose>                                                                                    <when test=\"$vars/SubmitCOND\">                                                                                                              <set-param input=\"X\" outputpath=\"SUBMITTED\" />                                                                 <set-param input=\" \" outputpath=\"APPROVAL_STATUS\"/>                                                  <set-param inputpath=\"SubmittedOn\" outputpath=\"SUBMITTED_ON\" />                                                             </when>                                                       <otherwise>                                                                         <set-param input=\"\" outputpath=\"SUBMITTED\" />                                                                                 <set-param inputpath=\"SubmittedOn\" outputpath=\"SUBMITTED_ON\" />                                                             </otherwise>                                    </choose>                          </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">      <map inputpath=\"response_in\" outputpath=\"response_out\">            <map inputpath=\"HCM_TIMESHEET\" outputpath=\"Timesheet\">                  <exec-function name=\"kony.gen.obj.Timesheet__hierarchy.fromLOBFields\"/>            </map>      </map></mapper>",
+    "iVisualMappingData" : "{\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:HCM_DISTRIBUTION\",\"fromPort\":\"target\",\"toPort\":\"target:HCM_DISTRIBUTION\",\"visible\":true,\"common\":false,\"__gohashid\":6385},{\"from\":\"source\",\"to\":\"source:Timesheet\",\"fromPort\":\"source\",\"toPort\":\"source:Timesheet\",\"visible\":true,\"common\":false,\"__gohashid\":6920}],\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Timesheet\",\"xy\":\"150 100\",\"__gohashid\":5754},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"HCM_DISTRIBUTION\",\"xy\":\"770 100\",\"__gohashid\":5755}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIMESHEET\",\"fMap\":{\"TIMESHEETID\":\"HCM_TIME_ENTRY.TIMESHEETID\"},\"sQuery\":\"HCM_DISTRIBUTION.DIST_KEY,HCM_TIME_ENTRY.EMPNUMBER\",\"config\":{}}}",
+    "opcode" : "create",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIMESHEET"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Timesheet_Note",
+        "selected" : false
+      }, {
+        "children" : [ {
+          "children" : [ {
+            "children" : [ ],
+            "name" : "Project",
+            "selected" : false
+          }, {
+            "children" : [ ],
+            "name" : "Task",
+            "selected" : false
+          } ],
+          "name" : "Project_Task",
+          "selected" : false
+        }, {
+          "children" : [ ],
+          "name" : "Time_Type",
+          "selected" : false
+        } ],
+        "name" : "Time_Entry",
+        "selected" : false
+      }, {
+        "children" : [ ],
+        "name" : "Timesheet_Audit",
+        "selected" : false
+      } ],
+      "name" : "Timesheet",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : true,
+    "responseXmlMappingOverride" : true
+  }
+}

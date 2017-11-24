@@ -1,0 +1,24 @@
+{
+    "AS_Button_f8f880cd5e3e42e898d9a8e928532abe": {
+        "id": "AS_Button_f8f880cd5e3e42e898d9a8e928532abe",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__230e260442144eab91857bd54438d033",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.popups.btnPopupSubmissionOkOnClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

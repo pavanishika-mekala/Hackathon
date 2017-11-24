@@ -1,0 +1,18 @@
+{
+    "AS_Button_g51c9a331d2b4ceeb9091533f5beb902": {
+        "id": "AS_Button_g51c9a331d2b4ceeb9091533f5beb902",
+        "type": "ACTION_SEQUENCE",
+        "name": "btnConfirmOperationInflxPopUpInfrmListView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f12e18a1035d4130bfee3200c676a9ec",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.ListViewTabUI.getInstance().performOperation();",
+            "callbackType": null
+        }]
+    }
+}

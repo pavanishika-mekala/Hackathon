@@ -1,0 +1,31 @@
+{
+    "AS_Label_8ae9fecbe3d2435c900d3bd4e2289c42": {
+        "id": "AS_Label_8ae9fecbe3d2435c900d3bd4e2289c42",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnListCopyClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9bee2b07877241a692b686192b77d116",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmListViewDW.flxSegCopy.setVisibility(false);\nfrmListViewDW.imgCpy.src = \"clone.png\";\nfrmListViewDW.imgCpy.width = \"25dp\";\nfrmListViewDW.imgCpy.height = \"25dp\";\nfrmListViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

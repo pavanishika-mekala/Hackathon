@@ -1,0 +1,7 @@
+{
+	"LSApplicationQueriesSchemes" : [
+		"myLeave","myTime","myPay","myProfile","myExpenses","myApprovals"
+	],
+	"NSCameraUsageDescription" : "",
+	"NSPhotoLibraryUsageDescription":""
+}

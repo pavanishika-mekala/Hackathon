@@ -1,0 +1,57 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIMESHEET_NOTE"
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodified"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[]",
+      "businessObjectName" : "HCM_TIMESHEET_NOTE"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeletedflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "Added_On",
+    "targetField" : "ADDED_ON",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Comments",
+    "targetField" : "COMMENTS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Employee_Id",
+    "targetField" : "EMPNUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Timesheet_Id",
+    "targetField" : "TIMESHEETID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodified",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

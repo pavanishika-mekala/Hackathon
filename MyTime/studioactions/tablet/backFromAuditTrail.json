@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_a3d0a71ac939476e838c43b7c695e229": {
+        "id": "AS_FlexContainer_a3d0a71ac939476e838c43b7c695e229",
+        "type": "ACTION_SEQUENCE",
+        "name": "backFromAuditTrail",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d0320b0b34a541e897d21225a9b00859",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "callbackType": null
+        }]
+    }
+}

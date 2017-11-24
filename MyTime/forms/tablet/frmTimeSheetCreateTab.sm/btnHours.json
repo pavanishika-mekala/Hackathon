@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "16%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s60a8b382de44c75b556bf77cbdc1055",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "12%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sf244ec49bd240c7a623f8fd32eb8126",
+    "id": "btnHours",
+    "ide_onClick": "AS_Button_dfaae0e98cb74a3dbecb47b349cff20f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "40af09fe9e154f5298d363b50fac696e",
+    "name": "kony.ui.Button",
+    "parent": "flxDayData",
+    "pf": "frmTimeSheetCreateTab",
+    "texti18n": "i18n.ess.common.hours.valueKA",
+    "wType": "Button",
+    "zindex": 1
+}

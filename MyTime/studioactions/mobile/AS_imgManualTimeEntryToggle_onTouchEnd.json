@@ -1,0 +1,31 @@
+{
+    "AS_Image_4d7eeca9d50b4fa4a1ca61e3b86b8452": {
+        "id": "AS_Image_4d7eeca9d50b4fa4a1ca61e3b86b8452",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_imgManualTimeEntryToggle_onTouchEnd",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1ccaa1b971249278725afe57fc10477"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0f9305dc30b947bda54f2199271ba0e3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.TimesheetSettingsUI()).toggleManualTimeEntry();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

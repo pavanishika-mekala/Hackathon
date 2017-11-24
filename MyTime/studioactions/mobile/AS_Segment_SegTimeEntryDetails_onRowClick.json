@@ -1,0 +1,31 @@
+{
+    "AS_Segment_8878e8734b554402ad6361ba7c862a26": {
+        "id": "AS_Segment_8878e8734b554402ad6361ba7c862a26",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Segment_SegTimeEntryDetails_onRowClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a68196eb38b84310aee142d1b29f450c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//For now it is not required\n//kony.apps.coe.ess.myTime.TimesheetCreate.onRowClickofSummarySegment(this);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

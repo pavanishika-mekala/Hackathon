@@ -1,0 +1,68 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "se485d652d1a45e4820548f584d106dc",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxClear",
+        "flxScrlDatesSection",
+        "flxTop",
+        "flxOuterTask",
+        "flxTimesheetDetails",
+        "flxTimeLine",
+        "flxDayData",
+        "flxVertcalLine1",
+        "flxHorizontalLine1",
+        "flxHorizontalLine2",
+        "flxDetailsOfSelectedTask",
+        "flxTaskSummary"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxTimesheetCreateTab",
+    "info": null,
+    "isvisible": true,
+    "kuid": "6a1e1bb62c95457c82306d52187d2a96",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmTimeSheetCreateTab",
+    "pf": "frmTimeSheetCreateTab",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

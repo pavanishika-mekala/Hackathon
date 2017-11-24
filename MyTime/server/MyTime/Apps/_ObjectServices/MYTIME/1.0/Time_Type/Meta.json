@@ -1,0 +1,48 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_REFERENCE_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIME_TYPE"
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodified"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_REFERENCE_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[]",
+      "businessObjectName" : "HCM_TIME_TYPE"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeletedflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "Name",
+    "targetField" : "SUBTYTEXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Time_Type_Category_Id",
+    "targetField" : "CATEGORY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodified",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

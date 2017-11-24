@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_a5ad4a2356dc499c81a33083d3859e1b": {
+        "id": "AS_FlexContainer_a5ad4a2356dc499c81a33083d3859e1b",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnClickflxWeek",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempListTimesheet",
+            "type": "templates",
+            "platform": "",
+            "KUID": "dab73f0a76634ae8af91f720d89df28e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__057bc8e82f544dcba10e10b4988b12f8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewTabUI()).loadDataView();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

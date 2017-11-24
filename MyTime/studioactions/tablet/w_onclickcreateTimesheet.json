@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c4011b9bb6244069adff631e7890255a": {
+        "id": "AS_FlexContainer_c4011b9bb6244069adff631e7890255a",
+        "type": "ACTION_SEQUENCE",
+        "name": "w_onclickcreateTimesheet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7ac8b34802d54f0e814d28ab54534c53"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c7e61d1ceea344da88aa5c20c6cc0583",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetCreateTab();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

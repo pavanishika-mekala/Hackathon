@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_cd86675878f34c169577976ab29504ec": {
+        "id": "AS_FlexContainer_cd86675878f34c169577976ab29504ec",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_onClick_doNothing",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3dafd621c5b24e2b8322ee75b222aba0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"---- clicked on manual time entry\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

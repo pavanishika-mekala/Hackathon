@@ -1,0 +1,23 @@
+{
+    "AS_Button_80f9d10998444cd7af3ff7af130bd230": {
+        "id": "AS_Button_80f9d10998444cd7af3ff7af130bd230",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "39e9518d0bb440508156aa2713364333"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_57a1ed12dba84cdcb001333fe258f9c5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewTabUI()).onClickOfSaved();",
+            "callbackType": null
+        }]
+    }
+}

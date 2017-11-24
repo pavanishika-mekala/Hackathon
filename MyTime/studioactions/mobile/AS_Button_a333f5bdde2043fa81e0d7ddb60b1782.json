@@ -1,0 +1,24 @@
+{
+    "AS_Button_a333f5bdde2043fa81e0d7ddb60b1782": {
+        "id": "AS_Button_a333f5bdde2043fa81e0d7ddb60b1782",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewTimeSheet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2a604777c24243f08d43a941ea6646bd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d9ddbd669ede45ab9e9a8429f1ae407b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

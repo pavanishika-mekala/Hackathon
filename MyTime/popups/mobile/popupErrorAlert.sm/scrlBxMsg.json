@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizScrollBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        1,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        5,
+        0,
+        5,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "s74fefa1890c4f65aacd3d25f3fbd525",
+    "allboxes": [],
+    "bounces": false,
+    "canUpdateUI": true,
+    "children": [
+        "lblMessage"
+    ],
+    "containerheight": 15,
+    "containerheightreference": 1,
+    "containerweight": 100,
+    "contextmenu": null,
+    "enablescrollbypage": false,
+    "id": "scrlBxMsg",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "bounces": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "b9665c5e65c84ae8952e62e07f0b97c3",
+    "margininpixel": false,
+    "name": "kony.ui.ScrollBox",
+    "paddinginpixel": false,
+    "parent": "popupErrorAlert",
+    "pf": "popupErrorAlert",
+    "scrollbar": "scrollbar",
+    "scrolldirection": 2,
+    "scrollingevents": null,
+    "showscrollbars": false,
+    "totalWt": 90,
+    "wType": "ScrollBox",
+    "widgetalignment": 5
+}

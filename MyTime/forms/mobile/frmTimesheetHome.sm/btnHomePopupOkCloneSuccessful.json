@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "22.50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3603c4d0db24843858b8aae7e195a28",
+    "_text_": "OK",
+    "_top_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sc1969575c494ae4a8c0851df2388e28",
+    "id": "btnHomePopupOkCloneSuccessful",
+    "ide_onClick": "AS_Button_3ec27424850146e6afc1f3013171e092",
+    "info": null,
+    "isvisible": true,
+    "kuid": "1b03ddaa8ebd43e3be5692d12155e8a2",
+    "name": "kony.ui.Button",
+    "parent": "flxHomePopupCloneSuccessful",
+    "pf": "frmTimesheetHome",
+    "wType": "Button",
+    "zindex": 1
+}

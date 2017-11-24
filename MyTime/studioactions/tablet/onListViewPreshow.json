@@ -1,0 +1,25 @@
+{
+    "AS_Form_28c80ab1ca2d424e8431d3bca5ff5581": {
+        "id": "AS_Form_28c80ab1ca2d424e8431d3bca5ff5581",
+        "type": "ACTION_SEQUENCE",
+        "name": "onListViewPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__56e923938c06460f9da91321ab7d62ff",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var onFrmCalendarViewInitObj = new kony.apps.coe.ess.myTime.ListViewTabUI();\nonFrmCalendarViewInitObj.getCurrentTimesheetDataTab();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

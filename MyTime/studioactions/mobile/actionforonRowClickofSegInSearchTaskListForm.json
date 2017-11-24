@@ -1,0 +1,31 @@
+{
+    "AS_Segment_d3b302dd467f4ac7a90a9c99fd3beed4": {
+        "id": "AS_Segment_d3b302dd467f4ac7a90a9c99fd3beed4",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionforonRowClickofSegInSearchTaskListForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmRecentTasks",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27f51ce923c14663b84d11c4ec853676"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bae0b7db1c2f423caf2455bea37ebf0e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.apps.coe.Reusable.TimelineCreation.editingFixedTaskModeOn == true) {\n    kony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfTaskEditing(frmRecentTasks.segTasks.selectedRowItems[0]);\n}\nelse{\nkony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfTask(frmRecentTasks.segTasks.selectedRowItems[0]);\nkony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showTimeType();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

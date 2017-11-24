@@ -1,0 +1,43 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "partialupdate" : "partialupdateMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_DISTRIBUTION"
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[{\"children\":[{\"children\":[{\"children\":[],\"name\":\"HCM_TIME_AUDIT_TS\",\"selected\":true}],\"name\":\"HCM_TIMESHEET\",\"selected\":true},{\"children\":[],\"name\":\"HCM_TIMESHEET_NOTE\",\"selected\":true}],\"name\":\"HCM_TIME_ENTRY\",\"selected\":true}]",
+      "businessObjectName" : "HCM_DISTRIBUTION"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeletedflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "lastmodified",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  } ]
+}

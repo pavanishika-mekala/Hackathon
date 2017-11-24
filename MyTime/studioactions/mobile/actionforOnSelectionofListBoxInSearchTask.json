@@ -1,0 +1,25 @@
+{
+    "AS_ListBox_93ad05697da74e1f9601cc63b75c77ac": {
+        "id": "AS_ListBox_93ad05697da74e1f9601cc63b75c77ac",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionforOnSelectionofListBoxInSearchTask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRecentTasks",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27f51ce923c14663b84d11c4ec853676"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7be40023ff6d4cebab899ba1e6497bad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.SearchTask.listBoxSelection(frmRecentTasks.listBoxCriteria.selectedKeyValue[1]);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Button_e434c252f63d4f9cb6408b46d480507b": {
+        "id": "AS_Button_e434c252f63d4f9cb6408b46d480507b",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_onClick_btnTimeSheetAdd",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8fcacbad0b5d4a57b37ba7bc5695e0b4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.apps.coe.ess.myTime.TimesheetCreate.popluateTimePickerData();\n//frmTimeSheetCreate.flxTimePicker.setVisibility(true);\nkony.apps.coe.Reusable.TimelineCreation.onAddingNewTimeEntry();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

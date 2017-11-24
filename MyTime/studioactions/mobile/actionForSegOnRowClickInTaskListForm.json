@@ -1,0 +1,31 @@
+{
+    "AS_Segment_74616ca41adf40eaa586e4200f5e87ef": {
+        "id": "AS_Segment_74616ca41adf40eaa586e4200f5e87ef",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForSegOnRowClickInTaskListForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTaskList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "345a995187304d4fa63038d77673b09d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3073943b098c406b91e58eb02d1da42b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfTask(frmTaskList.segTasks.selectedRowItems[0]);\nkony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showTimeType();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_Button_bf0d1845d25d480bba14650bde4dc607": {
+        "id": "AS_Button_bf0d1845d25d480bba14650bde4dc607",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_df750aea997b4cf490aa8704dabd377d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {\n  kony.apps.coe.ess.frmLogin.manualSyncOnClick();\n};",
+            "callbackType": null
+        }]
+    }
+}

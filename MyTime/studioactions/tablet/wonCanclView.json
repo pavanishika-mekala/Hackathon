@@ -1,0 +1,31 @@
+{
+    "AS_Button_57b4e1bae57f4ed5b8e70e562faa6462": {
+        "id": "AS_Button_57b4e1bae57f4ed5b8e70e562faa6462",
+        "type": "ACTION_SEQUENCE",
+        "name": "wonCanclView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7ac8b34802d54f0e814d28ab54534c53"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5a5e13d3bdf147898d0703708f9d71d6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarView.flxCopyWeek.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

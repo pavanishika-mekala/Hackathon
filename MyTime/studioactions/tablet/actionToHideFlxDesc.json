@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f56cce7d3d8d4704a16a832a1fc46990": {
+        "id": "AS_FlexContainer_f56cce7d3d8d4704a16a832a1fc46990",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionToHideFlxDesc",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d6f61d8f5fe64b0dabbfbcb986bcd7a5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.txtAreaDesc.text = \"\";\nkony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.CurrentTaskTimelineData.data.Desc = \"\";\nfrmTimeSheetCreateTab.flxAddDesc.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

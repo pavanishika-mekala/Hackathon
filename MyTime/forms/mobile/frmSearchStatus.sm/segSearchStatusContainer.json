@@ -1,0 +1,166 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgStatusSelection": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "checkboxinactive.png"
+            },
+            "lblSearchTxt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Approved"
+            },
+            "statusId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStatusSelection": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "checkboxinactive.png"
+            },
+            "lblSearchTxt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Pending"
+            },
+            "statusId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStatusSelection": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "checkboxinactive.png"
+            },
+            "lblSearchTxt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Rejected"
+            },
+            "statusId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgStatusSelection": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "checkboxinactive.png"
+            },
+            "lblSearchTxt": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Sent Back"
+            },
+            "statusId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0.00%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "03",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segSearchStatusContainer",
+    "info": null,
+    "invokedProperty": "unselectedStateImage",
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "c3fa929cfdc9450593c221c0f4503642",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxScrollSearchStatusContainer",
+    "pf": "frmSearchStatus",
+    "retainselection": false,
+    "rowTemplateId": "249737b443b84a3382911a47ee036c9a",
+    "rowcounter": 3,
+    "rowfocusskin": "s3fe7255b9da4bc08fb8ad82e9f1c719",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxSearchStatusRow",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectimage": "check.png",
+    "selectionbehavior": "multiselect",
+    "selectionbehaviorconfig": {
+        "imageIdentifier": "imgStatusSelection",
+        "selectedStateImage": "check.png",
+        "unselectedStateImage": "blankimage.png"
+    },
+    "selectionindicator": "imgStatusSelection",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "unselectimage": "blankimage.png",
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxSearchStatusRow": "flxSearchStatusRow",
+        "flxSeparator": "flxSeparator",
+        "imgStatusSelection": "imgStatusSelection",
+        "lblSearchTxt": "lblSearchTxt",
+        "statusId": "statusId"
+    },
+    "zindex": 1
+}

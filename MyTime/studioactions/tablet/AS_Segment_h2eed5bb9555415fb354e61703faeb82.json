@@ -1,0 +1,29 @@
+{
+    "AS_Segment_h2eed5bb9555415fb354e61703faeb82": {
+        "id": "AS_Segment_h2eed5bb9555415fb354e61703faeb82",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i003e89e65a84f6cb230d3b582b9b624"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_ef66e49e07ec4c99a3b9a9fd2efc7d1a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).CopyWeekTimesheet();",
+            "callbackType": null
+        }]
+    }
+}

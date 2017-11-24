@@ -1,0 +1,25 @@
+{
+    "AS_Button_d2dae817e7e846e88e608048267cbf25": {
+        "id": "AS_Button_d2dae817e7e846e88e608048267cbf25",
+        "type": "ACTION_SEQUENCE",
+        "name": "confirmDeleteTimeEntries",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a8f273ae64994f0cacfd73a68874ffaa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).deleteAllTimeEntries();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

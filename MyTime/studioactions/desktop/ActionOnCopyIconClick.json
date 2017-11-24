@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_ef3c56ff5a14449fb31d3f7a79833a6a": {
+        "id": "AS_FlexContainer_ef3c56ff5a14449fb31d3f7a79833a6a",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCopyIconClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_2f099ac81e6b40b9bce923cf548bbb7d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.\nCalendarViewUIDW()).onCloneTimesheet();",
+            "callbackType": null
+        }]
+    }
+}

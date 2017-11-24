@@ -1,0 +1,11 @@
+{
+  "background_image": "saved_left_withcorner.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sc827156c64649fbb91b51ecafc070f2",
+  "wType": "FlexContainer"
+}

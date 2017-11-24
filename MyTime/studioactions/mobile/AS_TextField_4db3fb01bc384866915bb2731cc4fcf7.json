@@ -1,0 +1,27 @@
+{
+    "AS_TextField_4db3fb01bc384866915bb2731cc4fcf7": {
+        "id": "AS_TextField_4db3fb01bc384866915bb2731cc4fcf7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__545302a148b946f497b2436b7d6fc3cd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onDoneInActivityDesc();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

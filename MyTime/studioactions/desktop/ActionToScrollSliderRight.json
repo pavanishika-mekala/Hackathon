@@ -1,0 +1,31 @@
+{
+    "AS_Image_e20c2f77ad784edcb48a447abca6822d": {
+        "id": "AS_Image_e20c2f77ad784edcb48a447abca6822d",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionToScrollSliderRight",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9ae516c67a244f37a1eb513a927c9d06",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var contentOffset = {\n\t\t\t\t\tx : \"100\",\n\t\t\t\t\ty : \"0\"\n\t\t\t\t};\nfrmCreateViewDW.flxTimeLine.timeLineScrollFlex.setContentOffset(contentOffset, true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

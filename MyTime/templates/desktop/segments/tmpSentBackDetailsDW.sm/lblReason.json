@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3.80%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "sb99da1bb59a467099d8c691bdb7ec18",
+    "_text_": "Billable hours entered n timesheet exceeds approved limit Please revise and resubmit.",
+    "_top_": {
+        "type": "string",
+        "value": "79px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "94%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblReason",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "e73af5d7107a46e0943746bb125101f1",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxSentBackMain",
+    "pf": "tmpSentBackDetailsDW",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

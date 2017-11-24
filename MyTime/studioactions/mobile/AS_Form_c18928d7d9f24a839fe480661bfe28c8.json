@@ -1,0 +1,24 @@
+{
+    "AS_Form_c18928d7d9f24a839fe480661bfe28c8": {
+        "id": "AS_Form_c18928d7d9f24a839fe480661bfe28c8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b3da5b5918964b59b1846dd272ee9c4d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__01cc7e48b13f4fd4a757f78d22f26739",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "getTimesheetHistoryDataObj = new kony.apps.coe.ess.myTime.TimesheetHistoryUI();\ngetTimesheetHistoryDataObj.getTimesheetHistoryData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

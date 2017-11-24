@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "22.50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saacf12cfa564f4995479e4c6505107d",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "-22.5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sb8c4b04e47a4165a829e434d37246e6",
+    "id": "btnPopupCancleClone",
+    "ide_onClick": "AS_Button_99d57eea9e604c3d9d8612e9caa034f8",
+    "info": null,
+    "isvisible": true,
+    "kuid": "34394a55f2cd46568db8eda87b8b5975",
+    "name": "kony.ui.Button",
+    "parent": "flxPopupClone",
+    "pf": "frmTimeSheetCreate",
+    "texti18n": "i18n.ess.common.cancel.valueKA",
+    "wType": "Button",
+    "zindex": 1
+}

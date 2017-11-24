@@ -1,0 +1,25 @@
+{
+    "AS_Button_d49818ee9b704f2b8ceac3c991a26d8f": {
+        "id": "AS_Button_d49818ee9b704f2b8ceac3c991a26d8f",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionFullDaysOnCLick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c5b1fdca52e64487b6e1a37572e1f4dd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.Reusable.TimelineCreationTab.storeSlider();\nvar sliderObj=(new kony.apps.coe.Reusable.TimelineCreationTab());\nkony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelectionTab.onClickOfFullDayTab(sliderObj.fillFullDayTab);\nkony.apps.coe.ess.globalVariables.fullDayButtonisSelected=true;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

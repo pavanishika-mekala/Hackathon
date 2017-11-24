@@ -1,0 +1,24 @@
+{
+    "AS_Button_cb6989e8c5f245dfaf9d3f965b535154": {
+        "id": "AS_Button_cb6989e8c5f245dfaf9d3f965b535154",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

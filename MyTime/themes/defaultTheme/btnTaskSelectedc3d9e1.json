@@ -1,0 +1,66 @@
+{
+  "android": {
+    "font_name": "AvenirLTStd-Roman"
+  },
+  "background_color": "c3d9e1ff",
+  "bg_type": "one",
+  "border_color": "c3d9e1ff",
+  "border_radius": 100,
+  "border_style": "custom",
+  "border_type": 0,
+  "border_width": 1,
+  "desktopweb": {
+    "font_name": "Helvetica"
+  },
+  "fontSizeInPx": false,
+  "font_color": "1c7393ff",
+  "font_name": "Helvetica",
+  "font_size": 129,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "ipad": {
+    "font_name": "Helvetica"
+  },
+  "iphone": {
+    "font_name": "AvenirLTStd-Roman"
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "font_name": "GenericMonospace"
+  },
+  "kuid": "sdb4afb253194f468cc193928ae43b97",
+  "spaan": {
+    "font_name": "Helvetica"
+  },
+  "spaandroidtablet": {
+    "font_name": "Helvetica"
+  },
+  "spabb": {
+    "font_name": "Helvetica"
+  },
+  "spaip": {
+    "font_name": "Helvetica"
+  },
+  "spaipad": {
+    "font_name": "Helvetica"
+  },
+  "spawindowstablet": {
+    "font_name": "Helvetica"
+  },
+  "spawinphone8": {
+    "font_name": "Helvetica"
+  },
+  "tabrcandroid": {
+    "font_name": "Helvetica"
+  },
+  "wType": "Button",
+  "watchos": {
+    "font_name": "Helvetica"
+  },
+  "windows8": {
+    "font_name": "AvenirLTStd-Book"
+  },
+  "winphone8": {
+    "font_name": "GenericMonospace"
+  }
+}

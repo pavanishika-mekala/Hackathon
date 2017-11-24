@@ -1,0 +1,31 @@
+{
+    "AS_Segment_f2726b5700294ae9b8581c1443d823de": {
+        "id": "AS_Segment_f2726b5700294ae9b8581c1443d823de",
+        "type": "ACTION_SEQUENCE",
+        "name": "wonRClickseltask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d4018e380fd64717b8372fd3040c4b4e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var si=frmTimeSheetCreateTab.segTaskCatg.selectedIndex[1]; \nfrmTimeSheetCreateTab.flxsrchCriteria.setVisibility(false);\nfrmTimeSheetCreateTab.flxsrchmain.setVisibility(false);\nfrmTimeSheetCreateTab.addtasklbl.setVisibility(true);\nfrmTimeSheetCreateTab.fxsrch.setVisibility(true);\nfrmTimeSheetCreateTab.flxoperations.setVisibility(true);\nfrmTimeSheetCreateTab.flxop3.setVisibility(false);frmTimeSheetCreateTab.flxop1.setVisibility(false);frmTimeSheetCreateTab.flxop2.setVisibility(false);\n switch(si)\n {\n case 0:frmTimeSheetCreateTab.flxop3.setVisibility(true);break;\n case 1:frmTimeSheetCreateTab.flxop1.setVisibility(true);break;\n case 2:frmTimeSheetCreateTab.flxop2.setVisibility(true);break;\n case 3:frmTimeSheetCreateTab.flxop3.setVisibility(true);frmTimeSheetCreateTab.flxop2.setVisibility(true);break;\n case 4:frmTimeSheetCreateTab.flxop1.setVisibility(true);frmTimeSheetCreateTab.flxop2.setVisibility(true);break;\n case 5:frmTimeSheetCreateTab.flxop3.setVisibility(true);frmTimeSheetCreateTab.flxop2.setVisibility(true);frmTimeSheetCreateTab.flxop1.setVisibility(true);break;\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

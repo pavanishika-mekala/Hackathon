@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0461d4d4862b40f0ad46c55ba756b4d6": {
+        "id": "AS_FlexContainer_0461d4d4862b40f0ad46c55ba756b4d6",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCopyListIconClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__aa2d3727c8b84aefa5c26d2cf6f993f0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewUIDW()).onCloneTimesheet();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1812a298637459d929c14522fccace0",
+    "_text_": "Login Error ! Wrong username or password",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "66.60%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblLoginErrorMessage",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": false,
+    "kuid": "e32b77732520484bb0ba556030f29cdb",
+    "name": "kony.ui.Label",
+    "parent": "flxErrorSpace",
+    "pf": "frmLogin",
+    "texti18n": "i18n.ess.Login.validateCredentials",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

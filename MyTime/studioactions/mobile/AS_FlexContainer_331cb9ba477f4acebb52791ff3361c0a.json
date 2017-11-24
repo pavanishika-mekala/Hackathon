@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_331cb9ba477f4acebb52791ff3361c0a": {
+        "id": "AS_FlexContainer_331cb9ba477f4acebb52791ff3361c0a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a8d201f5698942d69cfe84ed0905b222",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showTasks();\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a0453bc493b441bcb7b1aa20382a6f4d": {
+        "id": "AS_FlexContainer_a0453bc493b441bcb7b1aa20382a6f4d",
+        "type": "ACTION_SEQUENCE",
+        "name": "deleteTimeEntriesforEntireWeek",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c4057ad1c43849bcaa6569e5489b0e09",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).showPopup(\"Delete\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

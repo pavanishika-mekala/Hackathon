@@ -1,0 +1,63 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "57%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s08602092d314d09890b9fdd86999e56",
+    "_top_": {
+        "type": "string",
+        "value": "13%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "33%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "FlexContainer074a253b62d704c",
+        "CopyFlexContainer0099fba25cf5d49",
+        "CopyFlexContainer07890de64b10841",
+        "CopyFlexContainer07feb42e1b9344c",
+        "CopyFlexContainer065bb037c8c854a",
+        "CopyFlexContainer013476862dfa04f",
+        "CopyFlexContainer0a911d744957142"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxExistData",
+    "info": null,
+    "isvisible": true,
+    "kuid": "305de85a04464749ab28024c9591bc46",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxWorkvacationblck",
+    "pf": "frmTimeSheetCreateTab",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

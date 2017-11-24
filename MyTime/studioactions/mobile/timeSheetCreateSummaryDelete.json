@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_83c268734ed44a29b80195bffb1a4989": {
+        "id": "AS_FlexContainer_83c268734ed44a29b80195bffb1a4989",
+        "type": "ACTION_SEQUENCE",
+        "name": "timeSheetCreateSummaryDelete",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegTimeEntryDetails",
+            "type": "templates",
+            "platform": "",
+            "KUID": "c5fa3aea71994f4b98a8620143645e6e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__692f8ac97af44a8dad97355182b97ea5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.timeSheetSummaryDelete();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

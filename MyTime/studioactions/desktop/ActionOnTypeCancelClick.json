@@ -1,0 +1,31 @@
+{
+    "AS_Image_8eb9560dd00847d98e4749e7a7e06e34": {
+        "id": "AS_Image_8eb9560dd00847d98e4749e7a7e06e34",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnTypeCancelClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1d9f451b6b0c442d85cb6c1d8ea14446",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxBlank.setVisibility(false);\nfrmCreateViewDW.flxSelectType.setVisibility(false);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

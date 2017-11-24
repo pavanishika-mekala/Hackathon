@@ -1,0 +1,11 @@
+{
+  "background_image": "sentbackrightbar.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sde357ab96a046a19e7eec3a3fd17169",
+  "wType": "FlexContainer"
+}

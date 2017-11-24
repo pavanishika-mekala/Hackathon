@@ -1,0 +1,25 @@
+{
+    "AS_Button_6eb0d8a678b14b5cade5ed3ecdfb9e63": {
+        "id": "AS_Button_6eb0d8a678b14b5cade5ed3ecdfb9e63",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForbtnBackOfSearchTaskForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRecentTasks",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27f51ce923c14663b84d11c4ec853676"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__47f8195741d84cd2be47952b86fc7d67",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreate.show();\nkony.apps.coe.ess.myTime.TimesheetCreate.retainSliderPosition();\nkony.apps.coe.Reusable.TimelineCreation.scrollTimelineFrameSearch();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c90a3cf06d4d419890094671c7f6ec7a": {
+        "id": "AS_FlexContainer_c90a3cf06d4d419890094671c7f6ec7a",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnRecentCancel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9f974690ff9148b2b398ce473be80c56",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.tbxSearch.width=\"230px\";\nfrmCreateViewDW.tbxSearch.skin=\"skntbxFb8b8b8R40Bd8d8d8DW\";\nfrmCreateViewDW.tbxSearch.text=\"\";\nfrmCreateViewDW.flxCancel.setVisibility(false);\nfrmCreateViewDW.flxTask.setVisibility(false);\nfrmCreateViewDW.imgSearch.setVisibility(true);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

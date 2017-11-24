@@ -1,0 +1,23 @@
+{
+    "AS_Form_a539f0c4ed4b4e178bfc269902c3655e": {
+        "id": "AS_Form_a539f0c4ed4b4e178bfc269902c3655e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmTimesheetSettings0dcfcbe67db1a49",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ac55764b86c74db0b062d6f54d56f9b9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_c2bb90884ab44a2aa94d8c0095f21a5b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var onFrmTimesheetSettingsUIPreShowObj = new kony.apps.coe.ess.myTime.TimesheetSettingsUI();\nonFrmTimesheetSettingsUIPreShowObj.onFrmTimesheetSettingsUIPreShow();\nkony.apps.coe.ess.settings.getSettingsObject().preShow();",
+            "callbackType": null
+        }]
+    }
+}

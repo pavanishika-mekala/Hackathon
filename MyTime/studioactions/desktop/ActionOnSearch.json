@@ -1,0 +1,28 @@
+{
+    "AS_TextField_05dce0c7aa5c4c26a3c6102d97046a90": {
+        "id": "AS_TextField_05dce0c7aa5c4c26a3c6102d97046a90",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSearch",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0325c2ce5d794a62a323d41c8a0d9673",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

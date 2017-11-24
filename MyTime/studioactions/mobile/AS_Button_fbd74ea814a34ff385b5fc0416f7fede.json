@@ -1,0 +1,24 @@
+{
+    "AS_Button_fbd74ea814a34ff385b5fc0416f7fede": {
+        "id": "AS_Button_fbd74ea814a34ff385b5fc0416f7fede",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewTimeSheet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2a604777c24243f08d43a941ea6646bd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6cf9ef9cde8a477e9b3b32965c60e84f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ViewTimeSheetUI()).onClickBtnCancelClonePopUp();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Button_424daffad4c041beadc211783b3e95bc": {
+        "id": "AS_Button_424daffad4c041beadc211783b3e95bc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f6c7f3d55e484685b82ca8ef7edc2656",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelection.onClickOfHoursTab(kony.apps.coe.Reusable.TimelineCreation.onClickOfHoursTab);",
+            "callbackType": null
+        }]
+    }
+}

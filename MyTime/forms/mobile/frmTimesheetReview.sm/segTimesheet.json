@@ -1,0 +1,208 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblActivityId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Activity ID - 7645"
+            },
+            "lblCostCenter": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Cost Center - 98746"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Researching the Employee Self Service for Sap deployment inside Apple Mobile Unit"
+            },
+            "lblLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblProductiveHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblProductiveHoursValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 h"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Apple"
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Research"
+            }
+        },
+        {
+            "lblActivityId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Activity ID - 7645"
+            },
+            "lblCostCenter": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Cost Center - 98746"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Researching the Employee Self Service for Sap deployment inside Apple Mobile Unit"
+            },
+            "lblLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblProductiveHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblProductiveHoursValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 h"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Apple"
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Research"
+            }
+        },
+        {
+            "lblActivityId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Activity ID - 7645"
+            },
+            "lblCostCenter": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Cost Center - 98746"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Researching the Employee Self Service for Sap deployment inside Apple Mobile Unit"
+            },
+            "lblLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblProductiveHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblProductiveHoursValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 h"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Apple"
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Research"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "disabledSkins": {},
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segTimesheet",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "03798cbc6da340b0ad67d24de2ef9d48",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxTimeSheet",
+    "pf": "frmTimesheetReview",
+    "retainselection": false,
+    "rowTemplateId": "f4a18b1f1ea44e4a8c67e72769413075",
+    "rowcounter": 2,
+    "rowfocusskin": "s720317a253447758c66824a5d12d0e0",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxOuterOne",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxLeft": "flxLeft",
+        "flxOuterOne": "flxOuterOne",
+        "flxRight": "flxRight",
+        "flxTaskData": "flxTaskData",
+        "lblActivityId": "lblActivityId",
+        "lblCostCenter": "lblCostCenter",
+        "lblDescription": "lblDescription",
+        "lblLine": "lblLine",
+        "lblProductiveHours": "lblProductiveHours",
+        "lblProductiveHoursValue": "lblProductiveHoursValue",
+        "lblProjectName": "lblProjectName",
+        "lblTaskName": "lblTaskName"
+    }
+}

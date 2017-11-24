@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_190d7bc7e5b04b11b9055b608e10489a": {
+        "id": "AS_FlexContainer_190d7bc7e5b04b11b9055b608e10489a",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_HamburgerOnClick_frmTimeSheetSettings",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1ccaa1b971249278725afe57fc10477"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9a9f13b7f2bd4614924dc6b39593d9f8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.application.getPreviousForm().id == \"frmTimesheetHome\"){\n  refreshAndShowTimesheetHomeForm();\n} else{\nkony.application.getPreviousForm().show();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_4f414ec354d24bd1ad4a5dc7b6d9261f": {
+        "id": "AS_FlexContainer_4f414ec354d24bd1ad4a5dc7b6d9261f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchEnd_32638889b77e48f4bdf4c04ee8bdff3c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmSearchMyTime.show();",
+            "callbackType": null
+        }]
+    }
+}

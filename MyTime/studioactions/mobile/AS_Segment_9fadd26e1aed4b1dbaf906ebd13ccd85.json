@@ -1,0 +1,30 @@
+{
+    "AS_Segment_9fadd26e1aed4b1dbaf906ebd13ccd85": {
+        "id": "AS_Segment_9fadd26e1aed4b1dbaf906ebd13ccd85",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d482d121043949f29aa64743aab4527e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreate.segCloneTaskToPopup.selectedRowItems[0].onClick.call(this);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

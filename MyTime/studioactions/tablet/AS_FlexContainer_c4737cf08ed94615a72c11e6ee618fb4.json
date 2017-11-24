@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_c4737cf08ed94615a72c11e6ee618fb4": {
+        "id": "AS_FlexContainer_c4737cf08ed94615a72c11e6ee618fb4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d38541d1a2314316836651a8aae4c88b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Hamburger.prototype.hideHamburger();\nfrmTimesheetSettings.show();",
+            "callbackType": null
+        }]
+    }
+}

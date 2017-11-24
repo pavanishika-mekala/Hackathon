@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_02a50bd86d0b47bc8ed64ef5182318d3": {
+        "id": "AS_FlexContainer_02a50bd86d0b47bc8ed64ef5182318d3",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateToCalendarView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5a55a9303d98430986b562f500b743f4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showCalendarFormInTab();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_8decd9f558b643a8b1752790a0e17690": {
+        "id": "AS_FlexContainer_8decd9f558b643a8b1752790a0e17690",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fadf9d9be3ed4e9196a3caea7edb178b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__37533055bb52401f8249805fcf643b2a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimesheetHome.flxBlock.isVisible = false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

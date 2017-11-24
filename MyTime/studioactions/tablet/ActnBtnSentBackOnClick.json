@@ -1,0 +1,25 @@
+{
+    "AS_Button_0138fe1815b748db9f610503836e31fa": {
+        "id": "AS_Button_0138fe1815b748db9f610503836e31fa",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnBtnSentBackOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__19b62ed6641f41f2a09b229f071eeaf6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewTabUI()).onClickOfSentBack();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

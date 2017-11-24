@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_3dfa5efb45db4e70bdefab53d0b808f8": {
+        "id": "AS_FlexContainer_3dfa5efb45db4e70bdefab53d0b808f8",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_flxOnClick_selectTimeType",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ca1b169b5a02485da5883b06c29116be",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (frmTimeSheetCreate.imgArrowDown.src == \"arow_down.png\") {\nkony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showTimeType();\n}else if (frmTimeSheetCreate.imgArrowDown.src == \"arow_up.png\") {\n  frmTimeSheetCreate.segTimeType.setVisibility(false);\n  frmTimeSheetCreate.imgArrowDown.src = \"arow_down.png\"\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

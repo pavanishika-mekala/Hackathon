@@ -1,0 +1,24 @@
+{
+    "AS_Button_b566cdba2e614fe4b0d32fb7bc26cd87": {
+        "id": "AS_Button_b566cdba2e614fe4b0d32fb7bc26cd87",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickSyncNow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterOffline",
+            "type": "templates",
+            "KUID": "27d440d00bac4a24ba89db82e5ce4e8d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7aa3958560a74c75ad5e01f5a520fc3e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//(new kony.apps.coe.ess.Hamburger).btnSyncOnClick();\npopupOfflineAlert.dismiss();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

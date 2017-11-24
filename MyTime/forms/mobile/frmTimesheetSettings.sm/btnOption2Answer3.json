@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd423760dc1c4281819ac893bf58dca8",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "10.50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s6fa4611e54e4bbd94440581625da0de",
+    "id": "btnOption2Answer3",
+    "ide_onClick": "AS_Button_99843be1b84f4c4f928a248e9b30398f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e0c108184cca49de8e9b31fd0a848341",
+    "name": "kony.ui.Button",
+    "parent": "flxAnswers2",
+    "pf": "frmTimesheetSettings",
+    "texti18n": "i18n.ess.myTime.frmSettings.btnOption2Answer3.valueKA",
+    "wType": "Button"
+}

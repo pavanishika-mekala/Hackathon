@@ -1,0 +1,31 @@
+{
+    "AS_Image_dff70bc36a2e4fe59553125f867b18c0": {
+        "id": "AS_Image_dff70bc36a2e4fe59553125f867b18c0",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnListViewEditClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5c8f548831b2490cb75f6db494aadf9e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxEachTaskDetailsLeft.setVisibility(true);\nfrmCreateViewDW.flxEachTaskDetailsRight.setVisibility(true);\nfrmCreateViewDW.flxAddBreakLeft.setVisibility(true);\nfrmCreateViewDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c22fb5ce5aa749338beaeeb1b8c76adc": {
+        "id": "AS_FlexContainer_c22fb5ce5aa749338beaeeb1b8c76adc",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnPastDuesClicked",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a88a38911355491191189846df757cde",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " if (frmListViewDW.lblPastDues.skin == \"sknlblF555555Px14AveRomanDW\"){\n        frmListViewDW.lblPastDues.skin = \"sknlblF2ebaeePx14AveRomanDW\";\n        frmListViewDW.lblSaved.skin = \"sknlblF555555Px14AveRomanDW\";\n        frmListViewDW.lblSentBack.skin = \"sknlblF555555Px14AveRomanDW\";\n        frmListViewDW.flxHighlight.setVisibility(false);\n        frmListViewDW.flxPD.setVisibility(true);\n        frmListViewDW.imgPDArrow.setVisibility(true);\n\t\tfrmListViewDW.flxImgNo.setVisibility(false);\n    }\n        frmListViewDW.forceLayout();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

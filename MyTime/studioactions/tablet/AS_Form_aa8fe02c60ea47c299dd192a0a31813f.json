@@ -1,0 +1,23 @@
+{
+    "AS_Form_aa8fe02c60ea47c299dd192a0a31813f": {
+        "id": "AS_Form_aa8fe02c60ea47c299dd192a0a31813f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "c6e181e535624573b9c0c69846292442"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_d30a6ed4f78a414b8c43ca6e77f7a156",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).shiftingFlex();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "AS_TextField_d257a68ccd2f4c3298a2c00624e079ad": {
+        "id": "AS_TextField_d257a68ccd2f4c3298a2c00624e079ad",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__37c7d12329d444dc950b8589930023fe",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.Search.expandAnimation();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "AS_Segment_0547e192aa5c45e7b911b8ebb172efdb": {
+        "id": "AS_Segment_0547e192aa5c45e7b911b8ebb172efdb",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForOnROwClickOfSehTimeType",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_058c1c34f7aa4cb794bf2b7bbb01e7d3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfTaskTimeType(frmTimeSheetCreate.segTimeType.selectedRowItems[0]);",
+            "callbackType": null
+        }]
+    }
+}

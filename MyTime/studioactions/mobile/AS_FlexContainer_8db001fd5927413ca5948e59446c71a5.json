@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_8db001fd5927413ca5948e59446c71a5": {
+        "id": "AS_FlexContainer_8db001fd5927413ca5948e59446c71a5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchMyTime",
+            "type": "forms",
+            "platform": "",
+            "KUID": "79673f1514a448a28c0e764e1f9c19e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b693962eb86140578bba445e24f10ab2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetHomeForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

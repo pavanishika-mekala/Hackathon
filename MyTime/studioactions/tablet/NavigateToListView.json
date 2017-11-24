@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_cd5502a3fcaf456f9af2818ca7b1a7ad": {
+        "id": "AS_FlexContainer_cd5502a3fcaf456f9af2818ca7b1a7ad",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateToListView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__aae3aea92803431eb0f9ce224ddaebe1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showListViewForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

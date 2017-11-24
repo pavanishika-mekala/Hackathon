@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_394db241cd934f888ff9a5991bd6b292": {
+        "id": "AS_FlexContainer_394db241cd934f888ff9a5991bd6b292",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b1dac68fde8048bdbcbce18c3057f788",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

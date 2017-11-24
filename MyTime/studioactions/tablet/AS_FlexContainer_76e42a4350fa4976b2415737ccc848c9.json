@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_76e42a4350fa4976b2415737ccc848c9": {
+        "id": "AS_FlexContainer_76e42a4350fa4976b2415737ccc848c9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d24ac838d53f4bf6a74bfcc43b954321",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggleTab.onClickOfLeave();",
+            "callbackType": null
+        }]
+    }
+}

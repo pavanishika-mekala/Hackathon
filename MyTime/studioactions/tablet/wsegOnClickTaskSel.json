@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_0c21d84c284a4552be73193baff89219": {
+        "id": "AS_FlexContainer_0c21d84c284a4552be73193baff89219",
+        "type": "ACTION_SEQUENCE",
+        "name": "wsegOnClickTaskSel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__90bd5db9ed314b389bd1fc05915dfab5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxsrchCriteria.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "AS_Button_804caae652894053ab25babb5d13b1ae": {
+        "id": "AS_Button_804caae652894053ab25babb5d13b1ae",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_70558b72a7594788b50239c0177507e1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimesheetSettings.flxPopUp.isVisible=true;",
+            "callbackType": null
+        }]
+    }
+}

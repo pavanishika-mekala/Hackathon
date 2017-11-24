@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_5333ecfa3c87460db9c359cc0da1f826": {
+        "id": "AS_FlexContainer_5333ecfa3c87460db9c359cc0da1f826",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7ab4b2bd70e24dfb9965a2d097a024df",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggleTab.onClickOfLeave();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

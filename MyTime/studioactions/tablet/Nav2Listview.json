@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_765f433185b1499a96ce41a2ee15f513": {
+        "id": "AS_FlexContainer_765f433185b1499a96ce41a2ee15f513",
+        "type": "ACTION_SEQUENCE",
+        "name": "Nav2Listview",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___0fa1559a52344442a87d879d4819ab43",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmListView",
+            "formKUID": "8b137a56eace4e328db5abc7878fd69a",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}
