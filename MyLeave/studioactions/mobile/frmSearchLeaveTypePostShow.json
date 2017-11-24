@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__c1c58c9a3ec24dfdbbfe280b46a52921",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nfrmSearchLeaveType.lblCancel.text=kony.i18n.getLocalizedString(\"i18n.ess.common.cancel.valueKA\");\nfrmSearchLeaveType.lblDone.text=kony.i18n.getLocalizedString(\"i18n.ess.common.done.valueKA\");\nfrmSearchLeaveType.lblTitle.text=kony.i18n.getLocalizedString(\"i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA\");",
             "parentId": null,
             "callbackType": null
         }]
