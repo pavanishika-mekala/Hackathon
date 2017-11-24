@@ -33,7 +33,14 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     this.hamburgerMenuItemsShow();
     if (hamburgerButton != undefined) {
         hamburgerButton.onClick = function() {
-          kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.lblWelcome")+" "+kony.apps.coe.ess.frmLogin.username;
+		var query = "select emp.First_Name as First_Name,emp.Last_Name as Last_Name from employee emp where emp.IsEmployee = 1";
+		kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, function(res) {
+		var empname = res.First_Name+" "+res.Last_Name;
+        kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmHamburger.lblWelcome")+" "+empname;  
+		}, function(err) {
+            handleError(err);
+        }, false);
+		//kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.lblWelcome")+" "+kony.apps.coe.ess.frmLogin.username;
             kony.print("-- Start hamburgerButton.onClick --");
 			this.hamburgerMenuItemsShow();
             // Disable clicking on Hamburger.
