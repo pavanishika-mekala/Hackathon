@@ -25,7 +25,7 @@ kony.sdk.mvvm.frmPendingRequestControllerExtension = Class(kony.sdk.mvvm.BaseFor
     fetchData: function() {
         try {
             var scopeObj = this;
-           kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
+           kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
               var responseRecords;
 		        var responseemployee;
                 kony.apps.coe.ess.Approvals.spa.formController = this;

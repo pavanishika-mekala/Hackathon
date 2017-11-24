@@ -27,7 +27,7 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
   fetchData: function() {
     try {
       var scopeObj = this;
-      kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+      kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));//"Loading Form");
       var count = kony.apps.coe.ess.globalVariables.PaginationRecordLength;
       var offset = 0;
       if (kony.apps.coe.ess.globalVariables.isSPA) {

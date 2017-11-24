@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmViewFilterHistoryControllerExtension = Class(kony.sdk.mvvm.Base
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));//"Loading Form");
             this.$class.$superp.fetchData.call(this, success, error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
