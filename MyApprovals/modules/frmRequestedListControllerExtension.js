@@ -18,16 +18,16 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
 
         this.$class.$super.call(this, controllerObj);
     },
-    /** 
+    /**
      * This method is an entry point for all fetch related flows. Developer can edit.
-     * Default implementation fetches data for the form based on form config 
+     * Default implementation fetches data for the form based on form config
      * @memberof frmRequestedListControllerExtension#
      */
     fetchData: function() {
         try {
             var scopeObj = this;
             kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
-            
+
 
             var ContextData = this.getController().getContextData();
             if (isEmpty(ContextData)||ContextData.message == "Async") {
@@ -70,7 +70,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                     "       LEFT JOIN employee" +
                     "              ON ( approval_request.employee_id = employee.id )" +
                     "       LEFT JOIN status" +
-                    "              ON ( request_approver.status_id = status.id )" +
+                    "              ON ( approval_request.status_id = status.id )" +
                     "       LEFT JOIN request_approver" +
                     "              ON ( approval_request.id = request_approver.approval_id )" +
                     "       LEFT JOIN request_category" +
@@ -118,7 +118,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method processes fetched data. Developer can edit.
      * Default implementation processes the provided data to required format for bind.
      * @param {Object} data - fetched data. (Default : data map, group id as key and records array as value)
@@ -140,7 +140,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method binds the processed data to the form. Developer can edit.
      * Default implementation binds the data to widgets in the form.
      * @param {Object} data - processed data.(Default : data map for each group, widget id as key and widget data as value)
@@ -217,7 +217,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                 //"flxBorder2": "requestTypeBorderSkin2",
                 //"imgLeaveInfo": "requestTypeInfoImage",
                 "lblRemainingHours": "remaingHours",
-                "imgSelection": "imgSelection",              
+                "imgSelection": "imgSelection",
               	"imgUser":"imgUser",
               	"btnLaterApprove":"btnLaterApprove",
               	"btnLaterReject":"btnLaterReject"
@@ -235,14 +235,14 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                frmRequestedList.lblNoRecordsFound.setVisibility(true);
                frmRequestedList.SegDetails.setVisibility(false);
             }
-			//lazy loading 
+			//lazy loading
           	var segmentConfiguration={
 						"MediaKeyAttribute":"MediaID",
 						"ImageWidgetName":"imgUser",
 						"hideWidgetNames":[]
-					};   
+					};
 			kony.apps.coe.ess.MyApprovals.media.lazyLoading(kony.apps.coe.ess.MyApprovals.media.CONSTANTS_WIDGET_SEGMENT,  frmRequestedList.SegDetails, "Employee","mediaEmployee", "", segmentConfiguration);
-				
+
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             this.getController().showForm();
         } catch (err) {
@@ -254,9 +254,9 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
         }
 
     },
-    /** 
+    /**
      * This method is entry point for save flow. Developer can edit.
-     * Default implementation saves the entity record from the data of widgets defined in form config 
+     * Default implementation saves the entity record from the data of widgets defined in form config
      * @memberof frmRequestedListControllerExtension#
      */
     saveData: function() {
@@ -281,7 +281,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
         }
 
     },
-    /** 
+    /**
      * This method is entry point for delete/remove flow. Developer can edit.
      * Default implementation deletes the entity record displayed in form (primary keys are needed)
      * @memberof frmRequestedListControllerExtension#
@@ -307,7 +307,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method shows form.
      * @memberof frmRequestedListControllerExtension#
      */
