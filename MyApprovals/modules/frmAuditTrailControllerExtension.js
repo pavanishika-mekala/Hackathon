@@ -18,9 +18,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
     constructor: function(controllerObj) {
         this.$class.$super.call(this, controllerObj);
     },
-    /** 
+    /**
      * This method is an entry point for all fetch related flows. Developer can edit.
-     * Default implementation fetches data for the form based on form config 
+     * Default implementation fetches data for the form based on form config
      * @memberof frmAuditTrailControllerExtension#
      */
     fetchData: function() {
@@ -40,7 +40,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_FETCH_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_FETCH_IN_CONTROLLER_EXTENSION, err);
             kony.sdk.mvvm.log.error(exception.toString());
         }
-      
+
 		function successCallbackForAuditRecords(res) {
             for(var i in res) {
                 res[i].templateType = 0;
@@ -50,7 +50,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
   						" from request_note rn left join Employee emp on rn.employee_id = emp.Id left join attribute  on rn.approval_id=attribute.approval_id  where rn.approval_id = '" + requestId + "'";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForComments.bind(scopeObj, res), error);
         }
-      
+
         function successCallbackForComments(data, res) {
             for(var i in res) {
                 res[i].templateType = 1;
@@ -71,11 +71,12 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
           	//BBE-126 History list completed with approved request by someone else
 //           	var query = "select ar.createdts as createdts, ra.status_id as status_id, CASE WHEN emp1.First_Name IS NOT NULL THEN emp1.First_Name ELSE emp3.first_name END as First_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id"+
 //   			"left join Employee emp1 on ra.delegator_id = emp1.Id left join employee emp2 on ar.employee_id=emp2.id left join employee emp3 on emp2.manager_id=emp3.id where ar.id = '" + requestId + "';";
-            //quering data if timesheet is pending. 
-            var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from approval_request ar left join Employee emp on ra.approver_id = emp.Id left join request_approver ra on ra.approval_id = ar.id where ar.id = '" + requestId + "';";
+
+            //quering data if timesheet is pending.
+            var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id where ar.id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForPendingTimesheet.bind(scopeObj, data), error);
         }
-      
+
         function successCallbackForPendingTimesheet(data, res) {
             for(var i in res) {
                 if(res[i].status_id === "2") {
@@ -88,9 +89,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     });
                 }
             }
-            success(data); 
+            success(data);
         }
-      
+
         function success(response) {
             kony.sdk.mvvm.log.info("success fetching data ", response);
             scopeObj.getController().processData(response);
@@ -104,7 +105,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method processes fetched data. Developer can edit.
      * Default implementation processes the provided data to required format for bind.
      * @param {Object} data - fetched data. (Default : data map, group id as key and records array as value)
@@ -171,7 +172,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         lblVerticalLineBottom : {text : "", isVisible : (i >= data.length - 1 ? false : true)}
                     });
                 }
-                
+
             }
             this.getController().bindData(processedData);
             return processedData;
@@ -182,7 +183,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method binds the processed data to the form. Developer can edit.
      * Default implementation binds the data to widgets in the form.
      * @param {Object} data - processed data.(Default : data map for each group, widget id as key and widget data as value)
@@ -205,9 +206,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         }
 
     },
-    /** 
+    /**
      * This method is entry point for save flow. Developer can edit.
-     * Default implementation saves the entity record from the data of widgets defined in form config 
+     * Default implementation saves the entity record from the data of widgets defined in form config
      * @memberof frmAuditTrailControllerExtension#
      */
     saveData: function() {
@@ -232,7 +233,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         }
 
     },
-    /** 
+    /**
      * This method is entry point for delete/remove flow. Developer can edit.
      * Default implementation deletes the entity record displayed in form (primary keys are needed)
      * @memberof frmAuditTrailControllerExtension#
@@ -258,7 +259,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method shows form.
      * @memberof frmAuditTrailControllerExtension#
      */
