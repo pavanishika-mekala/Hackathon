@@ -257,7 +257,8 @@ kony.sdk.mvvm.frmDelegationTabControllerExtension = Class(kony.sdk.mvvm.BaseForm
                 "lblSumittedDate": "createdDate",
                 "lblRequestTypes": "requestTypeName",
                 "lblStatus": "lblStatus",
-                "flxStatusIcon": "flxStatusIcon"
+                "flxStatusIcon": "flxStatusIcon",
+              	"lblTypeOfRequestHeader" : "lblTypeOfRequestHeader"
             };
             frmDelegationTab.segRequestsListSentByMe.setData(data.dataSentByMe);
             frmDelegationTab.segRequestsListReceived.setData(data.dataReceived);
