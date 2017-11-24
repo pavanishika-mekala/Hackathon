@@ -218,9 +218,15 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                 //"imgLeaveInfo": "requestTypeInfoImage",
                 "lblRemainingHours": "remaingHours",
                 "imgSelection": "imgSelection",              
-              	"imgUser":"imgUser"
+              	"imgUser":"imgUser",
+              	"btnLaterApprove":"btnLaterApprove",
+              	"btnLaterReject":"btnLaterReject"
             };
             frmRequestedList.SegDetails.widgetDataMap = WidgetDatamap;
+          	for (var index in data) {
+              data[index].btnLaterReject=kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Reject");
+        	  data[index].btnLaterApprove=kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Approve");
+            }
           	if(data.length != null && data.length >0){
                frmRequestedList.lblNoRecordsFound.setVisibility(false);
                frmRequestedList.SegDetails.setVisibility(true);
