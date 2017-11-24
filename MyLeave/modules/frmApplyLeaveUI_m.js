@@ -497,7 +497,7 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
     var sqlquery = "select * from employee_leave_type where leave_type_id = '" + leave_type_id + "'";
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
       if (data.length > 0 && data !== undefined && data[0].balance !== undefined) {
-        frmApplyLeave.lblLeaveBalanceCount.text = Number(data[0].balance).toFixed(1); // - data[0].availed
+        frmApplyLeave.lblLeaveBalanceCount.text = ((Number(data[0].balance).toFixed(1))+"").replace(".",","); // - data[0].availed
         //remove frmApplyLeave.lblLeaveTypeBalance.text = data[0].balance - data[0].availed;
         //frmApplyLeave.lblLeaveTypeBalance.text = "Available " + frmApplyLeave[eventobject.id].text + " leave";
         //remove frmApplyLeave.lblLeaveTypeBalance.text = "Available " + id+ " leave";
@@ -505,10 +505,10 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
       } else if(kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType == "XABS"){
       		frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
-        	frmApplyLeave.lblLeaveBalanceCount.text = "0.0";
+        	frmApplyLeave.lblLeaveBalanceCount.text = ("0.0").replace(".",",");
       }else {
         //frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
-        frmApplyLeave.lblLeaveBalanceCount.text = "0.0";
+        frmApplyLeave.lblLeaveBalanceCount.text = ("0.0").replace(".",",");
         frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1];
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
       }
