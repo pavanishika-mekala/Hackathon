@@ -227,10 +227,10 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
             duration = hourDataText + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
           }
 		  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
-		  
+
           if(hours > 7){
             if(hours == 8){
-              duration = "1 " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ";  
+              duration = "1 " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ";
             }else{
               var days = String(processedRequest.Leave_days).split(".");
               if(days[1] == "00"){
@@ -239,11 +239,11 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
               duration = days+" "+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Days.text");
 			  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3) + " - " + endDate.getDate() + " " + endDate.retriveMonthName().substring(0, 3);
             }
-			
+
           }
 
             //commented as duration was calculted on start date and end date
-          //var diff = (endDate - startdate) / (1000 * 3600 * 24); 
+          //var diff = (endDate - startdate) / (1000 * 3600 * 24);
 //           if (processedRequest.Leave_hours >= 1) {
 //             //multiple days leave
 //             processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3) + " - " + endDate.getDate() + " " + endDate.retriveMonthName().substring(0, 3);
@@ -258,12 +258,12 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
 //               "text": "1" + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text")+" ",
 //               "isVisible": true                        };
 //           }
-          	         	
+
             processedRequest.AdditionalData = {
               "text": duration,
-              "isVisible": true                        
+              "isVisible": true
             };
-          
+
 
         }
         // request type specific skin and images and info images and border color changes
@@ -1156,7 +1156,7 @@ kony.apps.coe.ess.Approvals.DynamicSegmentSetDatabyEmployeeHasApprovalRequests =
         "FROM   [approval_request] " +
         "       LEFT JOIN [request_type] ON ([approval_request].[type_id] = [request_type].[id]) " +
         "       LEFT JOIN [employee] ON ([approval_request].[employee_id] = [employee].[id]) " +
-        "       LEFT JOIN [status] ON ([request_approver].[status_id] = [status].[id]) " +
+        "       LEFT JOIN [status] ON ([approval_request].[status_id] = [status].[id]) " +
         "       LEFT JOIN [request_approver] ON ([approval_request].[id] = [request_approver].[approval_id]) " +
         "WHERE  [request_approver].[status_id] = 2 AND [employee].[Id] NOT NULL " +
         "GROUP  BY [username] " +
