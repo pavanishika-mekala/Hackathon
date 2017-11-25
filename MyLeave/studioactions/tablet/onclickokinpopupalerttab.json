@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_209523ca3c8b462895a17a240ae14660",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "popupErrorAlert.dismiss();\n if (kony.application.getCurrentForm().id === \"frmLogin\" && kony.apps.coe.ess.appconfig.useOkta === true) {\n kony.sdk.mvvm.LogoutAction();\nkony.apps.coe.ess.frmLogin.oktaLogin();\n }",
+            "codeSnippet": "popupErrorAlert.dismiss();\n if (kony.application.getCurrentForm().id === \"frmLogin\" && kony.apps.coe.ess.appconfig.useOkta === true) {\n kony.sdk.mvvm.LogoutAction();\n }",
             "callbackType": null
         }]
     }
