@@ -71,8 +71,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
           	//BBE-126 History list completed with approved request by someone else
 //           	var query = "select ar.createdts as createdts, ra.status_id as status_id, CASE WHEN emp1.First_Name IS NOT NULL THEN emp1.First_Name ELSE emp3.first_name END as First_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id"+
 //   			"left join Employee emp1 on ra.delegator_id = emp1.Id left join employee emp2 on ar.employee_id=emp2.id left join employee emp3 on emp2.manager_id=emp3.id where ar.id = '" + requestId + "';";
+
             //quering data if timesheet is pending.
-            var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id where ar.id = '" + requestId + "';";
+            var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id where ar.id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForPendingTimesheet.bind(scopeObj, data), error);
         }
 
@@ -82,7 +83,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     data.push({
                         createdts : res[i].createdts,
                         status_id : res[i].status_id,
-                        First_Name : res[i].First_Name,
+                        First_Name : res[i].First_Name+" "+res[i].Last_Name,
                         description : "",
                         templateType : 0
                     });

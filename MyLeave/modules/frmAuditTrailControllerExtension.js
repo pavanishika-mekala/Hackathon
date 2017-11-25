@@ -41,14 +41,14 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         res_comments[i].First_Name = res_comments[i].First_Name+" "+res_comments[i].Last_Name;
                         data.push(res_comments[i]);
                     }
-                    var query = "select l.lastmodifiedts as createdts, l.status_id as status_id, emp.First_Name as First_Name from leave l left join Employee emp on l.employee_id = emp.Id where l.id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
+                    var query = "select l.lastmodifiedts as createdts, l.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from leave l left join Employee emp on l.employee_id = emp.Id where l.id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
                     kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function(res_leaverecord) {
                         for(var i in res_leaverecord) {
                             if(res_leaverecord[i].status_id === "2") {
                                 data.push({
                                     createdts : res_leaverecord[i].createdts,
                                     status_id : res_leaverecord[i].status_id,
-                                    First_Name : res_leaverecord[i].First_Name,
+                                    First_Name : res_leaverecord[i].First_Name+" "+res_leaverecord[i].Last_Name,
                                     description : "",
                                     template_type : 0
                                 });
