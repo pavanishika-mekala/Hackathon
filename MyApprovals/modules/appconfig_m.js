@@ -15,8 +15,8 @@ kony.apps.coe.ess.frmAllPendingRequestsdata.requestsPending = {
 };
 
 kony.apps.coe.ess.appconfig = {
-    appkey: "9097ff6db84d7bb312bc78eebbcdf32c",
-    appsecret: "e45f525b0662a32c9bc1ae7707a3c738",
+    appkey: "9097ff6db84d7bb312bc78eebbcdf32c",//"1317e29751d45254c0b8e3e2a61ece51",
+    appsecret: "e45f525b0662a32c9bc1ae7707a3c738",//"26e92e18e5528cad08dd6a65b197df2d",
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
 		identityServiceOkta:"DevNextTimesheetOktaLogin",
 		identityServiceOktaRefresh:"DevNextTimesheetOktaRfrsh",
@@ -38,7 +38,7 @@ kony.apps.coe.ess.appconfig = {
 		identityServiceSAP:"ESSIDENTITY",
     isShowDeepLinkingAppBeforeInstall:false,
     isShowDelegation:true,
- 	appversion : "v0.0.7",
+ 	appversion : "v0.0.13",
     listOfApps : ["eTimeSheetMyLeave", "eTimeSheetMyTime", "myPay", "myExpenses", "myProfile"],
     myPayUrl:"https://itunes.apple.com/in/app/kony-mypay/id1155632859?mt=8",//AppstoreURL for the My Pay.
     myTimeUrl:"https://itunes.apple.com/in/app/kony-mytime/id1157618072?mt=8",//AppstoreURL for the My Time.

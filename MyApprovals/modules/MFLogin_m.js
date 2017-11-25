@@ -393,7 +393,7 @@ function applicationErrorCallback(error) {
   _removeTokenHeaders();
 
 	kony.sdk.mvvm.log.error("failed to load app");
-	error = error.getRootErrorObj !== undefined && error.getRootErrorObj !== null ? error.getRootErrorObj() : error;
+	error = error!==null && error.getRootErrorObj !== undefined && error.getRootErrorObj !== null ? error.getRootErrorObj() : error;
 	if(kony.apps.coe.ess.globalVariables.isWebDesktop){
     frmLoginDesk.flxLoginMain.flxErrorSpace.setVisibility(true);
     frmLoginDesk.forceLayout();
@@ -505,7 +505,7 @@ kony.sdk.mvvm.LogoutAction = function() {
         }, function(err) {
           kony.print("Error on logout of okta login service: " + JSON.stringify(err));
           kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
-        }, {});
+        }, {"browserWidget": frmLogin.browserOkta});
       } else {
         kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
       }
@@ -695,6 +695,12 @@ function OAuthHandler(serviceUrl, providerName, appkey, callback, type, options)
 			    urlConf["headers"] = headersConf;
             }
 			browserSF.requestURLConfig = urlConf;
+
+      kony.timer.schedule("oauth2callbacklogouttimer", function () {
+        return function () {
+          callback(true);
+        }
+      }(), 2, false);
         } else {
             //#ifdef android
             browserSF.onPageStarted = handleRequestCallback;

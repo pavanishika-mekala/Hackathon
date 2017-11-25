@@ -148,6 +148,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
         kony.application.dismissLoadingScreen();
         kony.apps.coe.ess.frmLogin._axwayAuth(data, action, successCallBack, errorCallback);
       } , function(err){
+        kony.application.dismissLoadingScreen();
         // Check it the error occurred before any pre login
         if(kony.apps.coe.ess.globalVariables.used_pre_login === undefined || kony.apps.coe.ess.globalVariables.used_pre_login === null || kony.apps.coe.ess.globalVariables.used_pre_login === false){
           // Remove any saved token and send the user to the login screen
