@@ -127,11 +127,11 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             var processedData = [];
             //sorting increasing order of created timestamp
             data.sort(function(a, b) {
-                return a.createdts.localeCompare(b.createdts);
+                return a.createdts !== null ? a.createdts.localeCompare(b.createdts) : false;
             });
             for(var i in data) {
                 //parsing to string
-                var dateStr = String(data[i].createdts);
+                var dateStr = data[i].createdts !== null ? String(data[i].createdts) : "";
                 var date = "";
                 //checking condition for invalid date
                 if(dateStr !== null && dateStr !== undefined && dateStr !== "" && dateStr.toLowerCase() !== "null") {
