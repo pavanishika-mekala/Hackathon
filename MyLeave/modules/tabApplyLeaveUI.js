@@ -1,11 +1,11 @@
 /**
- * @module CalendarUI 
+ * @module CalendarUI
  * @Author   Shweta.Dasari
- * @category UI/actions 
- * @description 
- * © 2016 Kony Inc. 
+ * @category UI/actions
+ * @description
+ * © 2016 Kony Inc.
  */
-// Region - namespaces. 
+// Region - namespaces.
 kony = kony || {};
 kony.apps = kony.apps || {};
 kony.apps.ess = kony.apps.ess || {};
@@ -97,7 +97,7 @@ kony.apps.ess.myLeave.tabApplyLeaveUI.MailandPhone = {
             if (kony.apps.ess.myLeave.tabApplyLeaveUI.mailId !== "" && kony.apps.ess.myLeave.tabApplyLeaveUI.mailId !== undefined && kony.apps.ess.myLeave.tabApplyLeaveUI.mailId !== null) {
                 var toRecepient = [kony.apps.ess.myLeave.tabApplyLeaveUI.mailId];
                 var ccRecepient = [];
-                var bccRecepient = []; 
+                var bccRecepient = [];
                 var subject = kony.i18n.getLocalizedString("i18n.ess.myLeave.LeaveRequest") + kony.apps.coe.ess.globalVariables.employeeName;
                 var messageBody = [];
                 var isMessageBodyHTML = false;
@@ -162,7 +162,7 @@ kony.apps.ess.myLeave.tabApplyLeaveUI.LeaveType = {
 
         //#ifndef
 
-        frmTabApplyLeave.lblLeavesLeft.text = "Available " + frmTabApplyLeave["btnLeaveType" + data[0].id].text;
+        frmTabApplyLeave.lblLeavesLeft.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+ " " + frmTabApplyLeave["btnLeaveType" + data[0].id].text;
         //#endif
 
         //       if (data.length > 0 && data !== undefined && data[0].balance !== undefined) {
@@ -520,14 +520,14 @@ kony.apps.ess.myLeave.tabApplyLeaveUI.fullDayHoursSelection = {
     var startd=[];
     startd = frmTabApplyLeave.lblFrmCal.text.split(" ");
     var frm =startd[0] ;
-    
+
     var endd=[];
     endd = frmTabApplyLeave.lblToCal.text.split(" ");
     var to =endd[0] ;
     var diff = to-frm;
-    
+
     frmTabApplyLeave.lblDaySelected.text = diff+1;
-    
+
     if(diff>=1){
       frmTabApplyLeave.lblDaySelected.text=frmTabApplyLeave.lblDaySelected.text+" Days Selected";
       frmTabApplyLeave.lblDurationHours.text = diff+1+" "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
@@ -552,7 +552,7 @@ kony.apps.ess.myLeave.tabApplyLeaveUI.fullDayHoursSelection = {
 }
 };
 
-//APPLY LEAVE SUBMIT 
+//APPLY LEAVE SUBMIT
 kony.apps.ess.myLeave.tabApplyLeaveUI.submitLeave = {
 
     month_number: {
