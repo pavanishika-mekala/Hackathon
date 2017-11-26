@@ -19,7 +19,7 @@
         0
     ],
     "_skin_": "s3d3e736fa694aafb2ecbe28914a1d11",
-    "_text_": "Alex Ray",
+    "_text_": "Alexander Raymond",
     "_top_": {
         "type": "string",
         "value": "3dp"
@@ -40,6 +40,10 @@
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
@@ -52,10 +56,12 @@
     },
     "isvisible": true,
     "kuid": "c0118bc5ceb84d5f9e062fd7b5c307ac",
+    "maxnumberoflines": 2,
     "name": "kony.ui.Label",
     "paddinginpixel": false,
     "parent": "flxImage",
     "pf": "TmpTeamView2",
+    "texttruncateposition": 3,
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

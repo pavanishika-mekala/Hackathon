@@ -63,7 +63,7 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ffa529fe14a24ccba1f5780c6742dd72",
     "name": "kony.ui.Label",
     "parent": "flxInitials",

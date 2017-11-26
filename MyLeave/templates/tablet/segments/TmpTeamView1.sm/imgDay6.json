@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "96dp"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -38,7 +38,6 @@
     "containerweight": 100,
     "context": {
         "channel": "tablet",
-        "formID": "TmpTeamView1",
         "platform": "ipad",
         "templateType": "segments",
         "topLevelBox": null
