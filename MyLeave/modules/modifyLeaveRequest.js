@@ -26,7 +26,8 @@ kony.apps.coe.ess.myLeave.modifyLeave.updateUI = {
        var date = (new Date(data[0].StartDate.substring(0, 4), data[0].StartDate.substring(4, 6) - 1, data[0].StartDate.substring(6, 8)).toString()).substring(0,15);
        kony.apps.coe.ess.myLeave.applyLeave.preShow.startDate = date;
        date = new Date(kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate);
-       frmApplyLeave.lblToDate.text = date.getDate() + " " + kony.apps.coe.ess.myLeave.applyLeave.Initialization.monthArray[date.getMonth()].slice(0, 3) + " " + date.getFullYear().toFixed();
+       frmApplyLeave.lblToDate.text = date.getDate() + " " + Date.getMonthNameShort(kony.store.getItem("localeToBeSetLeave"),date.getMonth())+ " " + date.getFullYear().toFixed();
+         //kony.apps.coe.ess.myLeave.applyLeave.Initialization.monthArray[date.getMonth()].slice(0, 3) + " " + date.getFullYear().toFixed();
        frmApplyLeave.lblSelect.isVisible = false;
        frmApplyLeave.lblToDate.isVisible = true;
        this.setLeaveType();

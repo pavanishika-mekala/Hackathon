@@ -238,9 +238,11 @@ kony.apps.coe.ess.Sync.deltaSync=function(){
   var successCallback = function() {
     var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.application.getCurrentForm().id);
     kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.myLeave.sync.Refreshing"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-    if(kony.application.getCurrentForm().id !== "frmApplyLeave"){
+	if (kony.application.getCurrentForm().id != "frmApplyLeave") {
 		formController.loadDataAndShowForm();
-	}
+	}else{
+		kony.application.dismissLoadingScreen();
+  }
     kony.print("-- Completed auto sync from deltaSync --");
   };//.bind(this);
   if (kony.application.getCurrentForm().id != "frmLogin") {
