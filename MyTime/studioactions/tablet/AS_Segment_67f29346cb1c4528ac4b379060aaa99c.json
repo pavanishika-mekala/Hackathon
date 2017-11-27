@@ -1,0 +1,23 @@
+{
+    "AS_Segment_67f29346cb1c4528ac4b379060aaa99c": {
+        "id": "AS_Segment_67f29346cb1c4528ac4b379060aaa99c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onReachingBeginning_d3f290a287904d24a41e6a887973354d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfigTab.onSegmentBeginnning();\n",
+            "callbackType": null
+        }]
+    }
+}

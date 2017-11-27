@@ -1,0 +1,25 @@
+{
+    "AS_Button_1296e8b3df3e48ff9aff0f074bb9af60": {
+        "id": "AS_Button_1296e8b3df3e48ff9aff0f074bb9af60",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_onClick_TimePickerCancelButton",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4ae24c5d6bb54a3789ecbee3342a02cb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreate.flxTimePicker.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

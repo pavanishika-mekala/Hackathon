@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_4501d11ab71146e293e15d3b8db7c87e": {
+        "id": "AS_FlexContainer_4501d11ab71146e293e15d3b8db7c87e",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateToStartUp",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDesk",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___c2e9bf5a03bb4739bbbc7493ffa89657",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmListViewDW",
+            "formKUID": "9e83bab6e30748858c344ccf4100d22b",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

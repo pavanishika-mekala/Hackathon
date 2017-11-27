@@ -1,0 +1,23 @@
+{
+    "AS_Form_c183ea39ee9c4c87becb397ff5eb37bd": {
+        "id": "AS_Form_c183ea39ee9c4c87becb397ff5eb37bd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a3c92dcee9bb43b28da884c6ea8b9f92"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onDeviceBack_h81720a294ae456bb2edc9b3c45ae349",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button--\");",
+            "callbackType": null
+        }]
+    }
+}

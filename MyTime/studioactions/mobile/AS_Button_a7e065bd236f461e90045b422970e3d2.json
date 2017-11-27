@@ -1,0 +1,17 @@
+{
+    "AS_Button_a7e065bd236f461e90045b422970e3d2": {
+        "id": "AS_Button_a7e065bd236f461e90045b422970e3d2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_e989bdbb2d8247e2833fdf00bd2c9b97",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.frmTimesheetHelp.helpLayerObj.hideHelpLayer();",
+            "callbackType": null
+        }]
+    }
+}

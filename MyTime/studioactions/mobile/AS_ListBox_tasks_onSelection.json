@@ -1,0 +1,18 @@
+{
+    "AS_ListBox_acdf851b07794eebbea223ea9c0a556d": {
+        "id": "AS_ListBox_acdf851b07794eebbea223ea9c0a556d",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_ListBox_tasks_onSelection",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onSelection_c0128ec73a16486183091c19e1b56cbe",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.SearchTask.onSelectionOfListBox(this);",
+            "callbackType": null
+        }]
+    }
+}

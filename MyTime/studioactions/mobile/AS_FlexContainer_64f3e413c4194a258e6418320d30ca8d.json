@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_64f3e413c4194a258e6418320d30ca8d": {
+        "id": "AS_FlexContainer_64f3e413c4194a258e6418320d30ca8d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_df5c5cccb9d24460b54d9ead39f41b15",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Search.selectStatus();",
+            "callbackType": null
+        }]
+    }
+}

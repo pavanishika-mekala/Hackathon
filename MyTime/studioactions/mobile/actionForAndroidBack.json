@@ -1,0 +1,25 @@
+{
+    "AS_Form_95cea79cc32f441f8cecd20f6468c0b4": {
+        "id": "AS_Form_95cea79cc32f441f8cecd20f6468c0b4",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForAndroidBack",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "db3f4d071c3541989dd5a510eda8b57e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a3b035412d8045cab32b77d51e710237",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button--\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

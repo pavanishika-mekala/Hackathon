@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_f3228e72391840d4830b415f96e50bac": {
+        "id": "AS_FlexContainer_f3228e72391840d4830b415f96e50bac",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnClickOfflxSegCopy",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegCopy",
+            "type": "templates",
+            "platform": "",
+            "KUID": "9421f0a542304e2ba16b0a9a87736355"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__41e99b3fb18c4ee29aa871e02f753333",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).CopyWeekTimesheet();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

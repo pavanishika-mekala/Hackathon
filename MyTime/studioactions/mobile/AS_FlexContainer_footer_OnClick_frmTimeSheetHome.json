@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_006f297eca454c8bb5f432052cb7fa7d": {
+        "id": "AS_FlexContainer_006f297eca454c8bb5f432052cb7fa7d",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_footer_OnClick_frmTimeSheetHome",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterNavigation",
+            "type": "templates",
+            "KUID": "efc263fdc30b42488c6d2706fdef9ae9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dc4c4e9e425440619280186f80751f70",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.MyTime.Footer.SetFooterNavigation(1);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

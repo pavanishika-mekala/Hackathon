@@ -1,0 +1,23 @@
+{
+    "AS_Form_b822cc7ead5d42c18c1571e12d13783c": {
+        "id": "AS_Form_b822cc7ead5d42c18c1571e12d13783c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "c6e181e535624573b9c0c69846292442"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_b076b76790ab44ce8a99dd1ed7e127e6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var onFrmCalendarViewInitObj = new kony.apps.coe.ess.myTime.CalendarViewUI();\nonFrmCalendarViewInitObj.onfrmCalendarViewInit();",
+            "callbackType": null
+        }]
+    }
+}

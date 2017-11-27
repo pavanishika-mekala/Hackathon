@@ -18,7 +18,7 @@
         0,
         0
     ],
-    "_placeholder_": "Search by name",
+    "_placeholder_": "",
     "_skin_": "sf0ca675ae094defa063a7f47accf8e8",
     "_text_": "",
     "_width_": {
@@ -63,6 +63,7 @@
     "name": "kony.ui.TextBox2",
     "parent": "flxLaterFilter",
     "pf": "frmRequestedList",
+    "placeholderi18n": "i18n.ess.myApprovals.frmTabListview.SearchByName",
     "placeholderskin": "s98cc94689fa46219a4fcd233eb1ebd6",
     "securetextentry": false,
     "textinputmode": "A",

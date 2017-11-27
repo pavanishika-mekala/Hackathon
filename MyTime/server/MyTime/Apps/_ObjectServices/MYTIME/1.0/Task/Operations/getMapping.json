@@ -1,0 +1,385 @@
+{
+  "operationConfig" : {
+    "name" : "queryHCMSEARCHMASTER4989",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "HCM_SEARCH_MASTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "USER_ID_SRCH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "LANGUAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "BILLABLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">        <map inputpath=\"request_in\" outputpath=\"request_out\">                <exec-function name=\"kony.gen.obj.HCM_SEARCH_MASTER__hierarchy.toLOBFields\"/>        </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"HCM_SEARCH_MASTER\" outputpath=\"\">            <exec-function name=\"kony.string:substringAfter\" outputpath=\"TaskValueSplitAfterExpr\" output=\"$vars\">                <set-arg name=\"value\" inputpath=\"VALUE\" />                <set-arg name=\"Separator1\" input=\"|\" />            </exec-function>            <exec-function name=\"kony.string:substringAfter\" outputpath=\"TaskNameSplitAfterExpr\" output=\"$vars\">                <set-arg name=\"Name\" inputpath=\"NAME\" />                <set-arg name=\"Separator\" input=\"|\" />            </exec-function>            <exec-function name=\"kony.logical:notEqual\" outputpath=\"TaskNameNotEqual\" output=\"$vars\">                <set-arg name=\"HOLIDAY\" inputpath=\"$vars/TaskNameSplitAfterExpr\" />                <set-arg name=\"HOLIDAY\" inputpath=\"NAME\" />            </exec-function>\t\t\t<exec-function name=\"kony.string:concat\" outputpath=\"TaskId\" output=\"$vars\">\t\t\t<set-arg name=\"P1\" inputpath=\"$vars/TaskNameSplitAfterExpr\"/>\t\t\t\t\t\t<set-arg name=\"P2\" inputpath=\"$vars/TaskValueSplitAfterExpr\"/>\t\t</exec-function>            <choose>                <when test=\"$vars/TaskNameNotEqual\">                    <map inputpath=\"\" outputpath=\"Task\">                        <set-param inputpath=\"$vars/TaskId\" outputpath=\"Id\" />                        <set-param inputpath=\"$vars/TaskNameSplitAfterExpr\" outputpath=\"Task_Name\" />                    </map>                </when>            </choose>        </map>    </map></mapper>",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_SEARCH_MASTER\",\"entityName\":\"HCM_SEARCH_MASTER\",\"fMap\":{},\"sQuery\":\"\",\"config\":{}}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_SEARCH_MASTER",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_SEARCH_MASTER"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Task",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

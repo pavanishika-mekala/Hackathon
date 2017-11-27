@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_5079386058bc4574b85df9873c4edda2": {
+        "id": "AS_FlexContainer_5079386058bc4574b85df9873c4edda2",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForOnlineSearch",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRecentTasks",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27f51ce923c14663b84d11c4ec853676"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4a7f069e0917404bbac22dc8a5b0324e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.SearchTask.onlineSearch(frmRecentTasks.listBoxCriteria.selectedKeyValue[1]);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

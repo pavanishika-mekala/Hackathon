@@ -1,0 +1,11 @@
+{
+  "background_image": "approve_right_corner.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "s3d6a430f2d54043b249f54a1d4c2674",
+  "wType": "FlexContainer"
+}

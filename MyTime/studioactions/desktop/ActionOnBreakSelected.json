@@ -1,0 +1,31 @@
+{
+    "AS_Segment_752b12ee68e14f2aaf8892c2cbea38cc": {
+        "id": "AS_Segment_752b12ee68e14f2aaf8892c2cbea38cc",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnBreakSelected",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9d02ae9c49e14c7bb9f431bd5fd439b2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewUIDW()).addBreak();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

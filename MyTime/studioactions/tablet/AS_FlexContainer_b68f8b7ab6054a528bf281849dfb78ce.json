@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_b68f8b7ab6054a528bf281849dfb78ce": {
+        "id": "AS_FlexContainer_b68f8b7ab6054a528bf281849dfb78ce",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": null,
+            "KUID": "g48b506de04b4b3fb886b59fd9075087"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ab2fb29ae2f24959985992827b414497",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "callbackType": null
+        }]
+    }
+}

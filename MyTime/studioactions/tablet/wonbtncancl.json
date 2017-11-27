@@ -1,0 +1,31 @@
+{
+    "AS_Button_ee8bf49fb9194a1b922bb0faccac854f": {
+        "id": "AS_Button_ee8bf49fb9194a1b922bb0faccac854f",
+        "type": "ACTION_SEQUENCE",
+        "name": "wonbtncancl",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0f53436b4901480ba3106fdc2dffe716",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxCopyWeek.setVisibility(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

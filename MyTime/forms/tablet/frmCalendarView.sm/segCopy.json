@@ -1,0 +1,117 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": true,
+    "_data_": [
+        {
+            "btnSegCopy": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "imgSegCopy": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "63%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "21%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "editstyle": "none",
+    "enablereordering": false,
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "83b8e200b6e245f29bfc05621941bef1",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCopy",
+    "ide_onRowClick": "AS_Segment_cd9730aded9d448aa3987b193326ff38",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "bounces": true,
+            "editStyle": "none",
+            "indicator": "none",
+            "progressIndicatorColor": "white",
+            "showProgressIndicator": true
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "2a195045fe9a4a3db3e6e7a5e9ab0244",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxCopyWeek",
+    "pf": "frmCalendarView",
+    "progressindicatorcolor": "white",
+    "retainselection": false,
+    "rowTemplateId": "9421f0a542304e2ba16b0a9a87736355",
+    "rowcounter": 0,
+    "rowfocusskin": "s3fe7255b9da4bc08fb8ad82e9f1c719",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxSegCopy",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showprogressindicator": true,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnSegCopy": "btnSegCopy",
+        "flxSegCopy": "flxSegCopy",
+        "imgSegCopy": "imgSegCopy"
+    },
+    "zindex": 1
+}

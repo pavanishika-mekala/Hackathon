@@ -1,0 +1,11 @@
+{
+  "background_image": "submittedmiddlebar.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sa116419bd3647f0a84bd5b3a29e2f20",
+  "wType": "FlexContainer"
+}

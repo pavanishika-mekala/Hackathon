@@ -1,0 +1,173 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblHead": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Network order - 707098"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lbldata1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Beta"
+            },
+            "lbldata2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design"
+            }
+        },
+        {
+            "lblHead": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Work Centre - 707098"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lbldata1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Beta"
+            },
+            "lbldata2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design"
+            }
+        },
+        {
+            "lblHead": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Work Centre - 707088"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lbldata1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Beta"
+            },
+            "lbldata2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design"
+            }
+        },
+        {
+            "lblHead": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Work Centre - 576788"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lbldata1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Beta"
+            },
+            "lbldata2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "03",
+    "disabledSkins": {
+        "rowFocusSkin": "s3fe7255b9da4bc08fb8ad82e9f1c719"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segSearch",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "dda8a89b4cf9405bbd9a2a02f1466e2f",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegSearch",
+    "pf": "frmCreateViewDW",
+    "retainselection": false,
+    "rowTemplateId": "147fb7ee788149f5a0be54ec04f90840",
+    "rowcounter": 3,
+    "rowskin": "s16806abad534c48a97f387ccf2d1416",
+    "rowtemplate": "flxData",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxData": "flxData",
+        "lblHead": "lblHead",
+        "lblSeperator": "lblSeperator",
+        "lbldata1": "lbldata1",
+        "lbldata2": "lbldata2"
+    },
+    "zindex": 1
+}

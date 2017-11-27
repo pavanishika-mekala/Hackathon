@@ -1,0 +1,293 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizPickerView",
+    "DNDConfig": null,
+    "__inst": {
+        "_selectedValues": {},
+        "settings": {
+            "ariaDesc": "Select a value",
+            "cancelText": "Cancel",
+            "delay": 300,
+            "disabled": false,
+            "display": "inline",
+            "fixedWidth": [
+                50,
+                50
+            ],
+            "headerText": "{value}",
+            "height": 40,
+            "id": "frmTimeSheetCreate_timePicker",
+            "lang": "en-US",
+            "layout": "fixed",
+            "minWidth": 0,
+            "mode": "scroller",
+            "preset": "",
+            "readonly": false,
+            "rows": 3,
+            "scrollLock": true,
+            "setText": "Set",
+            "showLabel": false,
+            "showOnFocus": true,
+            "showOnTap": true,
+            "speedUnit": 0.0012,
+            "tap": true,
+            "theme": "ios",
+            "timeUnit": 0.1,
+            "wheels": [
+                [
+                    {
+                        "keys": [
+                            "m1",
+                            "m2",
+                            "m3",
+                            "m4",
+                            "m5",
+                            "m6",
+                            "m7"
+                        ],
+                        "values": [
+                            "Jan",
+                            "Feb",
+                            "Mar",
+                            "Apr",
+                            "May",
+                            "Jun",
+                            "Jul"
+                        ],
+                        "width": 50
+                    },
+                    {
+                        "keys": [
+                            "k1",
+                            "k2",
+                            "k3",
+                            "k4",
+                            "k5",
+                            "k6"
+                        ],
+                        "values": [
+                            "val1",
+                            "val2",
+                            "val3",
+                            "val4",
+                            "val5",
+                            "val6"
+                        ],
+                        "width": 50
+                    }
+                ]
+            ],
+            "width": 70
+        },
+        "temp": [
+            "m1",
+            "k1"
+        ],
+        "val": "m1 k1",
+        "values": [
+            "m1",
+            "k1"
+        ]
+    },
+    "__parentReadjusting__": false,
+    "__wheels": [
+        [
+            {
+                "keys": [
+                    "m1",
+                    "m2",
+                    "m3",
+                    "m4",
+                    "m5",
+                    "m6",
+                    "m7"
+                ],
+                "values": [
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May",
+                    "Jun",
+                    "Jul"
+                ],
+                "width": 50
+            },
+            {
+                "keys": [
+                    "k1",
+                    "k2",
+                    "k3",
+                    "k4",
+                    "k5",
+                    "k6"
+                ],
+                "values": [
+                    "val1",
+                    "val2",
+                    "val3",
+                    "val4",
+                    "val5",
+                    "val6"
+                ],
+                "width": 50
+            }
+        ]
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s541065a12134f7181dc2893395a97da",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.04%"
+    },
+    "containerweight": 100,
+    "desktopweb": {
+        "render": false
+    },
+    "disabledSkins": {},
+    "focusskin": "s6a2163d475045dca8c4b8bfd4878585",
+    "id": "timePicker",
+    "info": null,
+    "isvisible": true,
+    "itemorientation": "vertical",
+    "kiosk": {
+        "render": false
+    },
+    "kuid": "faa245cba0cf459080ef6a34898fafe6",
+    "masterdata": [
+        [
+            [
+                "m1",
+                "Jan"
+            ],
+            [
+                "m2",
+                "Feb"
+            ],
+            [
+                "m3",
+                "Mar"
+            ],
+            [
+                "m4",
+                "Apr"
+            ],
+            [
+                "m5",
+                "May"
+            ],
+            [
+                "m6",
+                "Jun"
+            ],
+            [
+                "m7",
+                "Jul"
+            ],
+            50,
+            "startTime"
+        ],
+        [
+            [
+                "k1",
+                "val1"
+            ],
+            [
+                "k2",
+                "val2"
+            ],
+            [
+                "k3",
+                "val3"
+            ],
+            [
+                "k4",
+                "val4"
+            ],
+            [
+                "k5",
+                "val5"
+            ],
+            [
+                "k6",
+                "val6"
+            ],
+            50,
+            "EndTime"
+        ]
+    ],
+    "masterdatamap": null,
+    "name": "kony.ui.PickerView",
+    "parent": "flxTimePicker",
+    "pf": "frmTimeSheetCreate",
+    "selectedkey": null,
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": [
+        "Jan",
+        "val1"
+    ],
+    "size": 18,
+    "spaan": {
+        "render": false
+    },
+    "spaandroidtablet": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spaipad": {
+        "render": false
+    },
+    "spawindowstablet": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "viewtype": 0,
+    "wType": "PickerView",
+    "watchos": {
+        "render": false
+    },
+    "windows8": {
+        "render": false
+    },
+    "zindex": 11
+}

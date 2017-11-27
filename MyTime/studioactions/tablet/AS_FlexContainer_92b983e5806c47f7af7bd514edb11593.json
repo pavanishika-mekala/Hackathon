@@ -1,0 +1,20 @@
+{
+    "AS_FlexContainer_92b983e5806c47f7af7bd514edb11593": {
+        "id": "AS_FlexContainer_92b983e5806c47f7af7bd514edb11593",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_0d644ef5138b44f89cd3d36b210d10ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewTabUI()).onImgTempClick(context,eventobject);",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s6a2f0cec05a418ebb5da8b2c0210cb5",
+    "_top_": {
+        "type": "string",
+        "value": "23.50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblCostCenterId1",
+        "lblActivityId1",
+        "flxSelectedProjectName1",
+        "flxSelectedTaskName1",
+        "lblSelectedTaskTimeType1",
+        "lblTime1",
+        "lblTotalHour1"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSelectedTaskDeatilsType1",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "2ce7cd29ea5f4c56b84fd39491830606",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "tmpSelectedDayTaskDetails",
+    "pf": "tmpSelectedDayTaskDetails",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

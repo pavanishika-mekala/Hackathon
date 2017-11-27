@@ -1,0 +1,18 @@
+{
+    "AS_Button_dad8263e43ce4e97bd04e86b934d2ac3": {
+        "id": "AS_Button_dad8263e43ce4e97bd04e86b934d2ac3",
+        "type": "ACTION_SEQUENCE",
+        "name": "btnCancelOperationInflxPopUpInfrmListView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_dc828ee684454dbdaca74baf387d1fc8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var currForm = kony.application.getCurrentForm();\ncurrForm.flxPopUp.isVisible=false;;",
+            "callbackType": null
+        }]
+    }
+}

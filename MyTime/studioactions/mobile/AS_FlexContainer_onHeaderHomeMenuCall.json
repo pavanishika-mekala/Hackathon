@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_6dc4568e04ea4612bad87961a09741a5": {
+        "id": "AS_FlexContainer_6dc4568e04ea4612bad87961a09741a5",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_onHeaderHomeMenuCall",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempHeaderHomeAndView",
+            "type": "templates",
+            "platform": "",
+            "KUID": "42c649aaa1ab43e88066a0a9d8227ee8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2979146df8464a94837a09b5b451a8cc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.SPAHeaders.getInstance().onClickOfSPAHeaderMenu(1);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

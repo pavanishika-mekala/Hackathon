@@ -1,0 +1,31 @@
+{
+    "AS_Label_791d6e7398ba425ab69f390fde768b2b": {
+        "id": "AS_Label_791d6e7398ba425ab69f390fde768b2b",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnAddTaskConfirmClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__80e2ad4a159b45dc9afc1ecf033440a6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewUIDW()).onAddTaskConfirm();\nfrmCreateViewDW.flxTaskSelected.setVisibility(true);\nfrmCreateViewDW.flxBlank.setVisibility(false);\nfrmCreateViewDW.flxAddTask.setVisibility(false);\nfrmCreateViewDW.flxTaskTypeData.setVisibility(true);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

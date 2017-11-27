@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "se1f13b5bc474279a1838ed2e9d2fc24",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "62px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblUnsaved",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "9f24e994257d4e7bb0fbb9acdb55346a",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxDeleteTimesheetPopup",
+    "pf": "frmListViewDW",
+    "texti18n": "i18n.ess.mytime.youhavemadeunsavedchanges",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

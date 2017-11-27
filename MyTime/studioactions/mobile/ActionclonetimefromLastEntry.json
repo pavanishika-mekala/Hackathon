@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_42a621e5f4114fe5bad7f33ab6cbea71": {
+        "id": "AS_FlexContainer_42a621e5f4114fe5bad7f33ab6cbea71",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionclonetimefromLastEntry",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fadf9d9be3ed4e9196a3caea7edb178b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__662c1d86087e4306b7bc3b075223b25c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nkony.apps.coe.ess.myTime.TimesheetHomeClone.onPopupClickRowOne(); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

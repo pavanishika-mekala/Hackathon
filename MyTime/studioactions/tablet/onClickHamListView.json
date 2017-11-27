@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_c20e0348f6ca4ef0a8490dc56a490b54": {
+        "id": "AS_FlexContainer_c20e0348f6ca4ef0a8490dc56a490b54",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickHamListView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_je30d259183c46cc9a3568754e492b37",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.ess.Hamburger(frmListView.flxHamburgerButton);\n",
+            "callbackType": null
+        }]
+    }
+}

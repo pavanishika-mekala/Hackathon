@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "14px"
+    },
+    "_skin_": "sd9c9814dc74479192c5f138180b8758",
+    "_text_": "Label",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblConfirmCopy",
+    "ide_onTouchEnd": "AS_Label_6f2efd669e5c45e8b05bfe8fd505dd70",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "0c816dfbe5234451987cb804ebfaf9a6",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxCopyButtons",
+    "pf": "frmListViewDW",
+    "texti18n": "i18n.ess.common.confirm",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

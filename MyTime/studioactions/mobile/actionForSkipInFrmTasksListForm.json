@@ -1,0 +1,31 @@
+{
+    "AS_Label_24df79635dbe41cca08dc718c909fcff": {
+        "id": "AS_Label_24df79635dbe41cca08dc718c909fcff",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForSkipInFrmTasksListForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTaskList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "345a995187304d4fa63038d77673b09d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2ee1184dee1c41bab0f3ae5b092989ca",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetCreateForm(kony.apps.coe.ess.myTime.timesheetHome.TimesheetRowObj.getSelectedItemData());\nkony.apps.coe.ess.myTime.TimesheetCreate.resetUI();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

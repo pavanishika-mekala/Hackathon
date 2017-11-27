@@ -1,0 +1,31 @@
+{
+    "AS_Image_4dc2e73e1d3a4a299969ebbd215e7e08": {
+        "id": "AS_Image_4dc2e73e1d3a4a299969ebbd215e7e08",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSelectTaskCancelClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__011a315de17949b99bb50b5e6d5753f0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxBlank.setVisibility(false);\nfrmCreateViewDW.flxSelectId.setVisibility(false);\nfrmCreateViewDW.lblAdd.setVisibility(false);\nfrmCreateViewDW.flxSearchIconinAdvSearch.setVisibility(false);\nfrmCreateViewDW.flxtbxSearch.setVisibility(true);\nfrmCreateViewDW.flxSearchTypeId.setVisibility(false);\nfrmCreateViewDW.flxSelectTask.setVisibility(false);\nfrmCreateViewDW.flxAdvSearchSegDropdown.setVisibility(false);\nfrmCreateViewDW.imgDropDown.src=\"dropbox.png\";\nfrmCreateViewDW.flxSelectId.skin=\"sknflxBGf2f2f2B1PxdfdfdfDW\";\nfrmCreateViewDW.imgActiveInactive.src=\"checkboxinactive.png\";\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

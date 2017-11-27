@@ -1,0 +1,30 @@
+{
+    "AS_Image_89436f90115a4406835bebc93afabc22": {
+        "id": "AS_Image_89436f90115a4406835bebc93afabc22",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ef1e93f67cd34960b0debd3aef20bfc5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab.contractAnimation();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

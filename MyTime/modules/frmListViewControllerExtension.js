@@ -1,0 +1,179 @@
+/*
+ * Controller Extension class for frmListView
+ * Developer can edit the existing methods or can add new methods if required
+ *
+ */
+
+kony = kony || {};
+kony.sdk = kony.sdk || {};
+kony.sdk.mvvm = kony.sdk.mvvm || {};
+kony.sdk.mvvm.v2 = kony.sdk.mvvm.v2 || {};
+
+/**
+ * Creates a new Form Controller Extension.
+ * @class frmListViewControllerExtension
+ * @param {Object} controllerObj - Form Controller.
+ */
+kony.sdk.mvvm.frmListViewControllerExtension = Class(kony.sdk.mvvm.BaseFormControllerExtension, {
+  constructor: function(controllerObj) {
+    this.$class.$super.call(this, controllerObj);
+  },
+  /** 
+     * This method is an entry point for all fetch related flows. Developer can edit.
+     * Default implementation fetches data for the form based on form config 
+     * @memberof frmListViewControllerExtension#
+     */
+  fetchData: function() {
+    try {
+      var scopeObj = this;
+      kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+      //Fetch Timesheet Definition
+      var extremeDates = kony.apps.coe.ess.myTime.ListViewTabUI.getInstance().getCurrentTimesheetDataTab(this.getController().getContextData());
+      for (var i = 0; i < extremeDates.length; i++) {
+        extremeDates[i].timesheetId = null;
+        extremeDates[i].status = null;
+        extremeDates[i].totalDuration = "";
+      }
+      success(extremeDates);
+
+    } catch (err) {
+      kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
+      kony.sdk.mvvm.log.error("Error in fetchData of controllerExtension");
+      var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_FETCH_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_FETCH_IN_CONTROLLER_EXTENSION, err);
+      kony.sdk.mvvm.log.error(exception.toString());
+    }
+
+    function success(response) {
+      kony.sdk.mvvm.log.info("success fetching data ", response);
+      scopeObj.getController().processData(response);
+    }
+
+    function error(err) {
+      //Error fetching data
+      kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
+      kony.sdk.mvvm.log.error("In fetchData errorcallback in controller extension ", err);
+      var exception = scopeObj.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_FETCH_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_FETCH_IN_CONTROLLER_EXTENSION, err);
+      kony.sdk.mvvm.log.error(exception.toString());
+    }
+  },
+  /** 
+     * This method processes fetched data. Developer can edit.
+     * Default implementation processes the provided data to required format for bind.
+     * @param {Object} data - fetched data. (Default : data map, group id as key and records array as value)
+     * @memberof frmListViewControllerExtension#
+     * @returns {Object} - processed data
+     */
+  processData: function(data) {
+    try {
+      var scopeObj = this;
+      this.getController().bindData(data);
+
+    } catch (err) {
+      kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
+      kony.sdk.mvvm.log.error("Error in processData of controllerExtension");
+      var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_PROCESSDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_PROCESSDATA_IN_CONTROLLER_EXTENSION, err);
+      //kony.sdk.mvvm.log.error(exception.toString());
+
+    }
+  },
+
+  /** 
+     * This method binds the processed data to the form. Developer can edit.
+     * Default implementation binds the data to widgets in the form.
+     * @param {Object} data - processed data.(Default : data map for each group, widget id as key and widget data as value)
+     * @memberof frmListViewControllerExtension#
+     */
+  bindData: function(data) {
+    try {
+      var formmodel = this.getController().getFormModel();
+      formmodel.clear();
+      //Bind data to UI here
+      frmListView.segViewDates.widgetDataMap={
+        "lblWeek":"displayValue",
+        "lblHours":"totalDuration",
+        "lblDates":"dayWiseDuration"
+      };
+      frmListView.segViewDates.setData(data); 
+      frmListView.segViewDates.selectedRowIndex = [0, 0];
+      kony.apps.coe.ess.myTime.ListViewTabUI.getInstance().updateTimeSheetWithDuration(frmListView.segViewDates);
+      kony.apps.coe.ess.myTime.ListViewTabUI.getInstance().onClickPastDues();
+      kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
+      this.getController().showForm();
+      if (kony.apps.coe.ess.Sync.syncOnLandingForm) {
+        kony.apps.coe.ess.Sync.syncOnLandingForm = false;
+        kony.apps.coe.ess.Sync.syncAsynchronously();
+      }
+      kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();
+    } catch (err) {
+      kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
+      kony.sdk.mvvm.log.error("Error in bindData of controllerExtension");
+      var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_BINDDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_BINDDATA_IN_CONTROLLER_EXTENSION, err);
+      kony.sdk.mvvm.log.error(exception.toString());
+    }
+  },
+  /** 
+     * This method is entry point for save flow. Developer can edit.
+     * Default implementation saves the entity record from the data of widgets defined in form config 
+     * @memberof frmListViewControllerExtension#
+     */
+  saveData: function() {
+    try {
+      var scopeObj = this;
+      this.$class.$superp.saveData.call(this, success, error);
+    } catch (err) {
+      var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_SAVEDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_SAVEDATA_IN_CONTROLLER_EXTENSION, err);
+      kony.sdk.mvvm.log.error(exception.toString());
+    }
+
+    function success(res) {
+      //Successfully created record
+      kony.sdk.mvvm.log.info("success saving record ", res);
+    }
+
+    function error(err) {
+      //Handle error case
+      kony.sdk.mvvm.log.error("In saveData errorcallback in controller extension ", err);
+      var exception = scopeObj.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_SAVEDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_SAVEDATA_IN_CONTROLLER_EXTENSION, err);
+      kony.sdk.mvvm.log.error(exception.toString());
+    }
+  },
+  /** 
+     * This method is entry point for delete/remove flow. Developer can edit.
+     * Default implementation deletes the entity record displayed in form (primary keys are needed)
+     * @memberof frmListViewControllerExtension#
+     */
+  deleteData: function() {
+    try {
+      var scopeObj = this;
+      this.$class.$superp.deleteData.call(this, success, error);
+    } catch (err) {
+      var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_DELETEDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_DELETEDATA_IN_CONTROLLER_EXTENSION, err);
+      kony.sdk.mvvm.log.error(exception.toString());
+    }
+
+    function success(res) {
+      //Successfully deleting record
+      kony.sdk.mvvm.log.info("success deleting record " + JSON.stringify(res));
+    }
+
+    function error(err) {
+      //Handle error case
+      kony.sdk.mvvm.log.error("In deleteData errorcallback in controller extension ", err);
+      var exception = scopeObj.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_DELETEDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_DELETEDATA_IN_CONTROLLER_EXTENSION, err);
+      kony.sdk.mvvm.log.error(exception.toString());
+    }
+  },
+  /** 
+     * This method shows form.
+     * @memberof frmListViewControllerExtension#
+     */
+  showForm: function() {
+    try {
+      var formmodel = this.getController().getFormModel();
+      formmodel.showView();
+    } catch (e) {
+      var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_SHOWFORM_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_SHOWFORM_IN_CONTROLLER_EXTENSION, err);
+      kony.sdk.mvvm.log.error(exception.toString());
+    }
+  }
+});

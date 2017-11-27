@@ -1,0 +1,25 @@
+{
+    "AS_Button_15750e8c69b84e83ab4f8b61c5194853": {
+        "id": "AS_Button_15750e8c69b84e83ab4f8b61c5194853",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_btnManualTimeEntryHours_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1894daba1c0c439c8222442bf7bd8b75",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelection.onClickOfHours(kony.apps.coe.Reusable.TimelineCreation.onClickOfHours);\nkony.apps.coe.ess.globalVariables.fullDayButtonisSelected=false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Segment_6425c23ee284458aa0e75a643d25ca30": {
+        "id": "AS_Segment_6425c23ee284458aa0e75a643d25ca30",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCalendarCopyClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__926bd88a429044e3a132433a8193cd3f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUIDW()).CopyWeekTimesheet();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

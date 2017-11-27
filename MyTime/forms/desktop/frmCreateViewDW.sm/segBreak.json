@@ -1,0 +1,187 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgBreak": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "lunchbreak.png"
+            },
+            "lblBreakType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Lunch Break"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgBreak": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "teabreaktwo.png"
+            },
+            "lblBreakType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Tea Break"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgBreak": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "smokingbreak.png"
+            },
+            "lblBreakType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Smoking Break"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgBreak": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "snacksbreak.png"
+            },
+            "lblBreakType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Snacks Break"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgBreak": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "debvider.png"
+            },
+            "lblBreakType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Other 1"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgBreak": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "debvider.png"
+            },
+            "lblBreakType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Other 2"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "125dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "05",
+    "disabledSkins": {
+        "rowFocusSkin": "s3fe7255b9da4bc08fb8ad82e9f1c719"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segBreak",
+    "ide_onRowClick": "AS_Segment_6f12c75552d9448cac8b1fac96d0edf1",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "95d46aa987374951ae0fb5a4cb55493c",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSelectBreak",
+    "pf": "frmCreateViewDW",
+    "retainselection": false,
+    "rowTemplateId": "172e3e6196c34f699d0a367f5d76bacf",
+    "rowcounter": 5,
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxBreak",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "ffffff00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxBreak": "flxBreak",
+        "imgBreak": "imgBreak",
+        "lblBreakType": "lblBreakType",
+        "lblSeperator": "lblSeperator"
+    },
+    "zindex": 1
+}

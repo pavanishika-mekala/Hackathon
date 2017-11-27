@@ -1,0 +1,31 @@
+{
+    "AS_Label_d6f92e714a5243718bbcb3ad0a5c4085": {
+        "id": "AS_Label_d6f92e714a5243718bbcb3ad0a5c4085",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnListViewDeleteConfirm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5f797d1f4ba0446ab732b593909cebe8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmListViewDW.flxBlank.setVisibility(false);\nfrmListViewDW.flxDeleteTimesheetPopup.setVisibility(false);\nfrmListViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

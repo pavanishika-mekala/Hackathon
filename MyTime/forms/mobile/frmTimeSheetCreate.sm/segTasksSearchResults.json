@@ -1,0 +1,137 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        [
+            {
+                "flxSegHeaderProjectSelection": {},
+                "flxSeparator": {},
+                "lblProjectNameHeader": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                }
+            },
+            [
+                {
+                    "lblActivityId": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblProjectName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTaskName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "78.10%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "disabledSkins": {
+        "rowSkin": "sbf33e776bf049d1944a800b8d836199"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segTasksSearchResults",
+    "ide_onRowClick": "AS_Segment_94dd7331d09b4864b8b12b721c2a6475",
+    "info": null,
+    "invokedProperty": "unselectedStateImage",
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        }
+    },
+    "isvisible": false,
+    "kuid": "61644af1050a4c1ab92352850d4efdd1",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxProjectTaskSelection",
+    "pf": "frmTimeSheetCreate",
+    "retainselection": false,
+    "rowTemplateId": "1ca9594d70f74c688cb31afb6d561283",
+    "rowcounter": 0,
+    "rowfocusskin": "s3fe7255b9da4bc08fb8ad82e9f1c719",
+    "rowskin": "sbf33e776bf049d1944a800b8d836199",
+    "rowtemplate": "flxSegProjectTaskActivityIdSelection",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": "36fba3f998f64802b765e8a8076be2bd",
+    "sectionheaderskin": "sbf33e776bf049d1944a800b8d836199",
+    "sectionheadertemplate": "flxSegHeaderProjectSelection",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "singleselect",
+    "selectionbehaviorconfig": null,
+    "separatorrequired": false,
+    "showscrollbars": true,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxSegHeaderProjectSelection": "flxSegHeaderProjectSelection",
+        "flxSegProjectTaskActivityIdSelection": "flxSegProjectTaskActivityIdSelection",
+        "flxSeparator": "flxSeparator",
+        "lblActivityId": "lblActivityId",
+        "lblProjectName": "lblProjectName",
+        "lblProjectNameHeader": "lblProjectNameHeader",
+        "lblTaskName": "lblTaskName"
+    },
+    "widgetskin": "sbf33e776bf049d1944a800b8d836199",
+    "zindex": 3
+}

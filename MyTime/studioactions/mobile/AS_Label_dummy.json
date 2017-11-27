@@ -1,0 +1,31 @@
+{
+    "AS_Label_949a5547bff64ab3a60d74212a5ef078": {
+        "id": "AS_Label_949a5547bff64ab3a60d74212a5ef078",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Label_dummy",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__18eb03126e5a45e9a5dee71af9e0a311",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.apps.coe.ess.myTime.TimesheetCreate.popluateTimePickerData();\n//frmTimeSheetCreate.flxTimePicker.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

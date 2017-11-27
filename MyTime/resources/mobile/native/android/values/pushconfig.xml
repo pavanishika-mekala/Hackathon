@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Boolean flag to enable/disable new registration id notifications. 
+	If disabled, new reg id's are not informed to app during offline  -->
+    <string name="notify_new_regid">true</string>
+    
+    <!-- specify icon resource without extension. Ex, logo for logo.png -->
+    <string name="notify_new_regid_icon">icon</string>
+    
+    <!-- Text to show for new registration id in notification title -->
+    <string name="notify_new_regid_title">New Registration ID</string>
+    
+    <!-- Text to show for new registration id in notification description -->
+    <string name="notify_new_regid_desc"></string>
+    
+    <!-- Boolean flag to enable/disable sound for new regid notification -->
+    <string name="notify_new_regid_sound">false</string>
+    
+    <!-- Boolean flag to enable/disable vibrate for new regid notification -->
+    <string name="notify_new_regid_vibrate">false</string>
+    
+    <!-- Boolean flag to enable/disable lights for new regid notification -->
+    <string name="notify_new_regid_lights">false</string>
+    
+    <!-- Boolean flag to indicate weather unread new regid notification can be cleared or not -->
+    <string name="notify_new_regid_clear">false</string>
+    
+	<!-- Boolean flag to enable/disable new push message notifications. 
+	If disabled, new push messages are not informed to app during offline -->
+    <string name="notify_push_msg">true</string>
+    
+    <!-- By Default, only latest push message notification is shown.
+    'notify_push_msg_notifications_count' can be used to display different 
+     notification for each push message. The maxmum limit allowed in Android is 50.
+     After exceeding the below specified number of statusbar notifications,
+     older notifications are replaced with newer push notifications but sometimes older 
+     notifications are replaced with new messages even before it reaches specified 
+     count(this happens for new message arrival when app is not running) -->
+    <string name="notify_push_msg_notifications_count">1</string>
+	
+	<!-- specify icon resource without extension. Ex, logo for logo.png -->
+    <string name="notify_push_msg_icon">icon</string>
+    
+    <!-- Title to be used for new push message notifications if "title_from_payload" disabled -->
+    <string name="notify_push_msg_default_title">New Push Message</string>
+    
+    <!-- Indicates whether to pick notification title from push message. 
+    	 If true, 'notify_push_msg_title_keys' is used to pick the notification title value -->
+    <string name="notify_push_msg_title_from_payload">true</string>
+    
+    <!-- Key to be used to pick the notification title. comma(,) separated keys can be provided & first available key is used -->
+    <string name="notify_push_msg_title_keys">title</string>
+    
+    <!-- Description to be used for new push message notifications if "desc_from_payload" disabled -->
+    <string name="notify_push_msg_default_desc"></string>
+    
+    <!-- Indicates whether to pick notification description from push message. 
+    	 if true, 'notify_push_msg_desc_keys' is used to pick the notification description value -->
+    <string name="notify_push_msg_desc_from_payload">true</string>
+    
+    <!-- Key to be used to pick the notification description. comma(,) separated keys can be provided & first available key is used -->
+    <string name="notify_push_msg_desc_keys">content</string>
+    
+    <!-- Boolean flag to enable/disable sound for push message notification -->
+    <string name="notify_push_msg_sound">true</string>
+    
+    <!-- Boolean flag to enable/disable vibrate for push message notification -->
+    <string name="notify_push_msg_vibrate">true</string>
+    
+    <!-- Boolean flag to enable/disable lights for push message notification -->
+    <string name="notify_push_msg_lights">true</string>
+    
+    <!-- Boolean flag to indicate weather unread push message notification can be cleared or not -->
+    <string name="notify_push_msg_clear">true</string>
+</resources>

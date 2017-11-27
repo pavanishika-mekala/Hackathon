@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_563894877c8241a1a24c9445b1e27c98": {
+        "id": "AS_FlexContainer_563894877c8241a1a24c9445b1e27c98",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickCopyFlex",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__9f7fa596c9d944c8ad7b6628b1637580",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onClickCopyButton();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

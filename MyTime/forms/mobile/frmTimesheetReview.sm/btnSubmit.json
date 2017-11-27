@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "7.90%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6f3426cf05849a2ba8f7e289a2a71c8",
+    "_text_": "Submit",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s8daf6697f1d4f3cbefc29b0281bdcfa",
+    "id": "btnSubmit",
+    "ide_onClick": "AS_Button_8315e6ed29274bb2a879aff864dad05b",
+    "info": null,
+    "isvisible": true,
+    "kuid": "dc033b755f024238b71ff34c6b3d82fd",
+    "name": "kony.ui.Button",
+    "parent": "flxReviewSubmit",
+    "pf": "frmTimesheetReview",
+    "wType": "Button",
+    "zindex": 1
+}

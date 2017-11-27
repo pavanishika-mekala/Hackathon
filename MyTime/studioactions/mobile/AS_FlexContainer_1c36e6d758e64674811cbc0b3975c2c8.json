@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_1c36e6d758e64674811cbc0b3975c2c8": {
+        "id": "AS_FlexContainer_1c36e6d758e64674811cbc0b3975c2c8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c69dce89016f49ebaaeee7c07e74625f"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

@@ -1,0 +1,23 @@
+[ {
+  "sourceObject" : "Project_Task",
+  "targetObject" : "Project",
+  "relationshipKeys" : [ {
+    "sourceField" : "Project_Id",
+    "targetField" : "Id"
+  } ],
+  "name" : "Project_Task_Project",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "Project_Task",
+  "targetObject" : "Task",
+  "relationshipKeys" : [ {
+    "sourceField" : "Task_Id",
+    "targetField" : "Id"
+  } ],
+  "name" : "Project_Task_Task",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

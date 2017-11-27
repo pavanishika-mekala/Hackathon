@@ -1,0 +1,19 @@
+{
+    "AS_AppEvents_c9d80a502b124d18a333757cf2894c59": {
+        "id": "AS_AppEvents_c9d80a502b124d18a333757cf2894c59",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnAppPreInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cb6f6c01ef1a4608b1af566f487b06a5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

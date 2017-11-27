@@ -60,7 +60,7 @@ kony.apps.coe.ess.FilterHistory.employeeData=[];
 kony.apps.coe.ess.FilterHistory.employeeDataPopup1=[];
 kony.apps.coe.ess.FilterHistory.prototype.loadEmployees=function()
 {
- kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
+ kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
   function successCallback(response)
   {
     kony.apps.coe.ess.FilterHistory.employeeData=response;

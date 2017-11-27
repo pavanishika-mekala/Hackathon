@@ -1,0 +1,23 @@
+{
+    "AS_Form_7121bda5fb0d45cbbd65505aa1410aca": {
+        "id": "AS_Form_7121bda5fb0d45cbbd65505aa1410aca",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7ac8b34802d54f0e814d28ab54534c53"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_b52d2a88491c4533b7e3f3f5d66a8535",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).shiftingFlex();",
+            "callbackType": null
+        }]
+    }
+}

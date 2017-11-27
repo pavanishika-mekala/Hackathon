@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "4.69%"
+    },
+    "_skin_": "s377b785effa4f88b7fe3c5c20963631",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sa6bc50dba3747d89069f51e7fd8c7dc",
+    "id": "btnSubmit",
+    "ide_onClick": "AS_Button_4b434e4ebfd04af3a51f85851aa3b4f0",
+    "info": null,
+    "isvisible": true,
+    "kuid": "93d64ea69fe64dd8ae7994b67f5185f5",
+    "name": "kony.ui.Button",
+    "parent": "frmTimesheetHome",
+    "pf": "frmTimesheetHome",
+    "wType": "Button",
+    "zindex": 2
+}

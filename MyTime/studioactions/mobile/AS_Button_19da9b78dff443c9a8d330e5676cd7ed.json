@@ -1,0 +1,17 @@
+{
+    "AS_Button_19da9b78dff443c9a8d330e5676cd7ed": {
+        "id": "AS_Button_19da9b78dff443c9a8d330e5676cd7ed",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ea5f71a03a4d42779a8a46b8e67fe870",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetHomeClone.CloneLastTimeEntry();\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,2977 @@
+{
+  "operationConfig" : {
+    "name" : "queryHCMEMPASSIGNMENT9585",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "HCM_EMP_ASSIGNMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "USER_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGIN_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMP_POSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "POS_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "COMPANY_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "COST_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFTVAL_STDT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFTVAL_ENDDT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFT_STTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFT_ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_PRIMARY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_BANK_DETAILS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ACCOUNTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ACCOUNTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ACCOUNTNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BANKKEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BANKNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "CITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_PRIMARY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "PAYEE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "PAYMENTMETHOD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "POSTALCODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SEQNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "STDPERCENTAGE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "STDVALUE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_CAT_TEMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ANWENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "PERNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "RAUFNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "RKOSTL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "RPROJ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "TEMPLATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "VARIANTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "ZEILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMUNICATIONID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDRESS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDRESS_2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDRESS_3",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "CITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONTACT_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "HSNMR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "SECONDADDRESSLINE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "STATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "TELEPHONE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "VALID_FROM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "VAL_AS_OF_TDY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "ZIPCODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_ADDL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_IDENTITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "DATE_OF_EXPIRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "DATE_OF_ISSUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "IDENTITY_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_AS_ON_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "PLACE_OF_ISSUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BLOOD_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DISABILITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "RH_FACTOR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTION_REASON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTION_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ANNUAL_SAL",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EFFECT_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMP_GRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMP_SUBGRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOB_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOB_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NXT_INC_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ORG_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ORG_UNIT_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERS_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERS_SUBAREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "POS_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "POS_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PS_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PS_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PS_LEVEL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUPERVISOR_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_SHIFT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPLOYEE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "END_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_PRIMARY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "START_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "START_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_FAMILY_DETAILS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ACADEMICTITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ARISTOCRATICTITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DATEOFBIRTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "FULLNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "LANDOFBIRTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "MAIDENNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY3",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_CHILD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "PLACEOFBIRTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SECONDNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SECONDSURNAMEPREFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "STATEOFBIRTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SURNAMEPREFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TELNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_CHILD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PERSONAL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_MGR_COMMUNICATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMUNICATIONID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PROFILE_TEAM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_TEAM_PERS_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_SUB_PERS_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                                      <map inputpath=\"request_in\" outputpath=\"request_out\">                                                                            <exec-function name=\"kony.gen.obj.HCM_EMP_ASSIGNMENT__hierarchy.toLOBFields\"/>                                      </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <!-- Employee Profile Details-->        <map inputpath=\"HCM_EMP_ASSIGNMENT\" outputpath=\"Employee\">            <set-param inputpath=\"COST_CENTER\" outputpath=\"Department_Id\" />            <set-param inputpath=\"USER_ID\" outputpath=\"User_Id\" />            <set-param inputpath=\"EMPNUMBER\" outputpath=\"Id\" />            <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />            <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />            <set-param input=\"1\" outputpath=\"IsEmployee\" />            <map inputpath=\"HCM_PERSONAL_DATA\" outputpath=\"\">                <set-param inputpath=\"FIRSTNAME\" outputpath=\"First_Name\" />                <set-param inputpath=\"LASTNAME\" outputpath=\"Last_Name\" />                <set-param inputpath=\"DOB\" outputpath=\"Date_of_birth\" />                <set-param inputpath=\"BIRTHPLACE\" outputpath=\"Place_of_birth\" />                <set-param inputpath=\"MARITAL_STATUS\" outputpath=\"Marital_Status_Id\" />                <set-param inputpath=\"TITLE\" outputpath=\"Title\" />                <set-param inputpath=\"JOINING_DT\" outputpath=\"JoiningDate\" />                <set-param inputpath=\"MIDDLENAME\" outputpath=\"Middle_Name\" />                <set-param inputpath=\"GENDER\" outputpath=\"Gender\" />                <set-param inputpath=\"SINCE\" outputpath=\"Marriage_date\" />                <set-param inputpath=\"KNOWNAS\" outputpath=\"Preffered_name\" />                <set-param inputpath=\"NATIONALITY\" outputpath=\"Nationality\" />                <set-param inputpath=\"SUFFIX\" outputpath=\"Suffix\" />                <set-param inputpath=\"MEDICAL_NEEDS\" outputpath=\"Medical_needs\" />                <set-param inputpath=\"INTERESTS\" outputpath=\"Interests\" />                <set-param inputpath=\"HCM_PERSDATA_ATTACHMENTS/BINARY_NAME\" outputpath=\"Media_Id\" />                <map inputpath=\"HCM_PERSDATA_ATTACHMENTS/media\" outputpath=\"mediaEmployee\">                    <exec-function name=\"kony.gen.obj.mediaEmployee.fromLOBFields\" />                    <set-param input=\"true\" outputpath=\"ondemand\" />                </map>            </map>            <map inputpath=\"HCM_PROFILE_MGR_SUBORD\" outputpath=\"\">                <set-param inputpath=\"MGR_EMPNUMBER\" outputpath=\"Manager_Id\" />                <set-param inputpath=\"MGR_EMPNUMBER\" outputpath=\"group_id\" />            </map>            <map inputpath=\"HCM_EMP_MOREORG_DATA\" outputpath=\"\">                <set-param inputpath=\"PERS_SUBAREA\" outputpath=\"Job_Location\" />                <set-param inputpath=\"PERS_SUBAREA\" outputpath=\"Office_Id\" />                <set-param inputpath=\"EMP_GRP\" outputpath=\"Employment_Type\" />                <set-param inputpath=\"POS_NO\" outputpath=\"Designation_Id\" />            </map>            <map inputpath=\"HCM_EMP_MEDICAL_DATA\" outputpath=\"\">                <set-param inputpath=\"BLOOD_GROUP\" outputpath=\"Blood_group\" />                <set-param inputpath=\"RH_FACTOR\" outputpath=\"RH_factor\" />                <set-param inputpath=\"DISABILITY\" outputpath=\"Physical_disability\" />            </map>            <map inputpath=\"HCM_COMMUNICATION_DETAILS\" outputpath=\"Communication_Channel\">                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK1\" output=\"$vars\">                    <set-arg name=\"filedname1\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue1\" input=\"0010\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK2\" output=\"$vars\">                    <set-arg name=\"filedname2\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue2\" input=\"CELL\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK3\" output=\"$vars\">                    <set-arg name=\"filedname3\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue3\" input=\"MPHN\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK4\" output=\"$vars\">                    <set-arg name=\"filedname4\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue4\" input=\"0020\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK5\" output=\"$vars\">                    <set-arg name=\"filedname5\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue5\" input=\"Sky1\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK6\" output=\"$vars\">                    <set-arg name=\"filedname6\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue6\" input=\"SKY2\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK7\" output=\"$vars\">                    <set-arg name=\"filedname7\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue7\" input=\"SKY3\" />                </exec-function>                <choose>                    <when test=\"$vars/IDCHECK1\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK2\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK3\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK4\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK5\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK6\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK7\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>            </map>        </map>        <!-- manger Profile Details-->        <map inputpath=\"HCM_EMP_ASSIGNMENT/HCM_PROFILE_MGR_SUBORD/HCM_MGR_PERSONAL_DATA\" outputpath=\"Employee\">            <set-param inputpath=\"FIRSTNAME\" outputpath=\"First_Name\" />            <set-param inputpath=\"LASTNAME\" outputpath=\"Last_Name\" />            <set-param inputpath=\"DOB\" outputpath=\"Date_of_birth\" />            <set-param inputpath=\"BIRTHPLACE\" outputpath=\"Place_of_birth\" />            <set-param inputpath=\"MARITAL_STATUS\" outputpath=\"Marital_Status_Id\" />            <set-param inputpath=\"TITLE\" outputpath=\"Title\" />            <set-param inputpath=\"MIDDLENAME\" outputpath=\"Middle_Name\" />            <set-param inputpath=\"GENDER\" outputpath=\"Gender\" />            <set-param inputpath=\"SINCE\" outputpath=\"Marriage_date\" />            <set-param inputpath=\"KNOWNAS\" outputpath=\"Preffered_name\" />            <set-param inputpath=\"NATIONALITY\" outputpath=\"Nationality\" />            <set-param inputpath=\"SUFFIX\" outputpath=\"Suffix\" />            <set-param inputpath=\"MEDICAL_NEEDS\" outputpath=\"Medical_needs\" />            <set-param inputpath=\"INTERESTS\" outputpath=\"Interests\" />            <set-param inputpath=\"EMPNUMBER\" outputpath=\"Id\" />            <set-param input=\"0\" outputpath=\"IsEmployee\" />            <set-param input=\"\" outputpath=\"Department_Id\" />            <set-param input=\"\" outputpath=\"User_Id\" />            <set-param input=\"\" outputpath=\"Job_Location\" />            <set-param input=\"\" outputpath=\"Office_Id\" />            <set-param input=\"\" outputpath=\"Employment_Type\" />            <set-param input=\"\" outputpath=\"Designation_Id\" />            <set-param input=\"\" outputpath=\"JoiningDate\" />            <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />            <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />            <set-param input=\"\" outputpath=\"Manager_Id\" />            <set-param inputpath=\"HCM_MGRDATA_ATTACHMENTS/BINARY_NAME\" outputpath=\"Media_Id\" />            <map inputpath=\"HCM_MGRDATA_ATTACHMENTS/media\" outputpath=\"mediaEmployee\">                <exec-function name=\"kony.gen.obj.mediaEmployee.fromLOBFields\" />            </map>            <map inputpath=\"HCM_MGR_COMMUNICATION\" outputpath=\"Communication_Channel\">                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK11\" output=\"$vars\">                    <set-arg name=\"filedname11\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue11\" input=\"0010\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK22\" output=\"$vars\">                    <set-arg name=\"filedname22\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue22\" input=\"CELL\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK33\" output=\"$vars\">                    <set-arg name=\"filedname33\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue33\" input=\"MPHN\" />                </exec-function>                <exec-function name=\"kony.logical:equal\" outputpath=\"IDCHECK44\" output=\"$vars\">                    <set-arg name=\"filedname44\" inputpath=\"SUBTYPE\" />                    <set-arg name=\"fieldValue44\" input=\"0020\" />                </exec-function>                <choose>                    <when test=\"$vars/IDCHECK11\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK22\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK33\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>                <choose>                    <when test=\"$vars/IDCHECK44\">                        <set-param inputpath=\"BEGDA\" outputpath=\"START_DATE\" />                        <set-param inputpath=\"SUBTYPE\" outputpath=\"Communication_Type_Id\" />                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"Employee_Id\" />                        <set-param inputpath=\"ENDDA\" outputpath=\"END_DATE\" />                        <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                        <set-param inputpath=\"COMMUNICATIONID\" outputpath=\"Value\" />                    </when>                </choose>            </map>        </map>        <!--Team Members Details-->        <map inputpath=\"HCM_EMP_ASSIGNMENT/HCM_PROFILE_MGR_SUBORD\" outputpath=\"\">            <map inputpath=\"HCM_MGR_PERSONAL_DATA\" outputpath=\"\">                <map inputpath=\"HCM_PROFILE_TEAM\" outputpath=\"\">                    <exec-function name=\"kony.logical:equal\" outputpath=\"SelfDetailsDuplicate\" output=\"$vars\">                        <set-arg name=\"NotStarted\" inputpath=\"SUB_EMPNUMBER\" />                        <set-arg name=\"X\" inputpath=\"../../../EMPNUMBER\" />                    </exec-function>                    <choose>                        <when test=\"$vars/SelfDetailsDuplicate\">                            <!--condition for which we are getting the self employee record-->                        </when>                        <otherwise>                            <map inputpath=\"\" outputpath=\"Employee\">                                <set-param inputpath=\"COST_CENTER\" outputpath=\"Department_Id\" />                                <set-param inputpath=\"SUB_EMPNAME\" outputpath=\"User_Id\" />                                <set-param inputpath=\"SUB_EMPNUMBER\" outputpath=\"Id\" />                                <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                                <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                                <set-param inputpath=\"../EMPNUMBER\" outputpath=\"group_id\" />                                <set-param input=\"0\" outputpath=\"IsEmployee\" />                                <map inputpath=\"HCM_TEAM_PERS_DATA\" outputpath=\"\">                                    <set-param inputpath=\"FIRSTNAME\" outputpath=\"First_Name\" />                                    <set-param inputpath=\"LASTNAME\" outputpath=\"Last_Name\" />                                    <set-param inputpath=\"DOB\" outputpath=\"Date_of_birth\" />                                    <set-param inputpath=\"BIRTHPLACE\" outputpath=\"Place_of_birth\" />                                    <set-param inputpath=\"MARITAL_STATUS\" outputpath=\"Marital_Status_Id\" />                                    <set-param inputpath=\"TITLE\" outputpath=\"Title\" />                                    <set-param inputpath=\"JOINING_DT\" outputpath=\"JoiningDate\" />                                    <set-param inputpath=\"MIDDLENAME\" outputpath=\"Middle_Name\" />                                    <set-param inputpath=\"GENDER\" outputpath=\"Gender\" />                                    <set-param inputpath=\"SINCE\" outputpath=\"Marriage_date\" />                                    <set-param inputpath=\"KNOWNAS\" outputpath=\"Preffered_name\" />                                    <set-param inputpath=\"NATIONALITY\" outputpath=\"Nationality\" />                                    <set-param inputpath=\"SUFFIX\" outputpath=\"Suffix\" />                                    <set-param inputpath=\"MEDICAL_NEEDS\" outputpath=\"Medical_needs\" />                                    <set-param inputpath=\"INTERESTS\" outputpath=\"Interests\" />                                    <set-param inputpath=\"HCM_TEAM_ATTACHMENTS/BINARY_NAME\" outputpath=\"Media_Id\" />                                    <map inputpath=\"HCM_TEAM_ATTACHMENTS/media\" outputpath=\"mediaEmployee\">                                        <exec-function name=\"kony.gen.obj.mediaEmployee.fromLOBFields\" />                                        <set-param input=\"true\" outputpath=\"ondemand\" />                                    </map>                                </map>                            </map>                        </otherwise>                    </choose>                </map>            </map>        </map>        <!-- reportees member details-->        <map inputpath=\"HCM_EMP_ASSIGNMENT\" outputpath=\"\">            <map inputpath=\"HCM_PROFILE_PERS_SUB\" outputpath=\"Employee\">                <set-param inputpath=\"COST_CENTER\" outputpath=\"Department_Id\" />                <set-param inputpath=\"SUB_EMPNAME\" outputpath=\"User_Id\" />                <set-param inputpath=\"SUB_EMPNUMBER\" outputpath=\"Id\" />                <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\" />                <set-param inputpath=\"../EMPNUMBER\" outputpath=\"group_id\" />                <set-param input=\"0\" outputpath=\"IsEmployee\" />                <map inputpath=\"HCM_SUB_PERS_DATA\" outputpath=\"\">                    <set-param inputpath=\"FIRSTNAME\" outputpath=\"First_Name\" />                    <set-param inputpath=\"LASTNAME\" outputpath=\"Last_Name\" />                    <set-param inputpath=\"DOB\" outputpath=\"Date_of_birth\" />                    <set-param inputpath=\"BIRTHPLACE\" outputpath=\"Place_of_birth\" />                    <set-param inputpath=\"MARITAL_STATUS\" outputpath=\"Marital_Status_Id\" />                    <set-param inputpath=\"TITLE\" outputpath=\"Title\" />                    <set-param inputpath=\"JOINING_DT\" outputpath=\"JoiningDate\" />                    <set-param inputpath=\"MIDDLENAME\" outputpath=\"Middle_Name\" />                    <set-param inputpath=\"GENDER\" outputpath=\"Gender\" />                    <set-param inputpath=\"SINCE\" outputpath=\"Marriage_date\" />                    <set-param inputpath=\"KNOWNAS\" outputpath=\"Preffered_name\" />                    <set-param inputpath=\"NATIONALITY\" outputpath=\"Nationality\" />                    <set-param inputpath=\"SUFFIX\" outputpath=\"Suffix\" />                    <set-param inputpath=\"MEDICAL_NEEDS\" outputpath=\"Medical_needs\" />                    <set-param inputpath=\"INTERESTS\" outputpath=\"Interests\" />                    <set-param inputpath=\"HCM_SUB_ATTACHMENTS/BINARY_NAME\" outputpath=\"Media_Id\" />                    <map inputpath=\"HCM_SUB_ATTACHMENTS/media\" outputpath=\"mediaEmployee\">                        <exec-function name=\"kony.gen.obj.mediaEmployee.fromLOBFields\" />                        <set-param input=\"true\" outputpath=\"ondemand\" />                    </map>                </map>            </map>        </map>    </map></mapper>",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_ASSIGNMENT\",\"fMap\":{\"USER_ID\":\"HCM_DISTRIBUTION_MASTER.USER_ID\",\"EMPNUMBER\":\"HCM_DISTRIBUTION_MASTER.EMPNUMBER\"},\"sQuery\":\"HCM_DISTRIBUTION_MASTER.DIST_KEY\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_BANK_DETAILS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_CAT_TEMP\",\"relationshipKeys\":[{\"parentKey\":\"USER_ID\",\"childKey\":\"ANWENDER\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"PERNR\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_COMMUNICATION_DETAILS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMPLOYEE_ADDRESS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_ADDL_DATA\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_IDENTITY\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_MEDICAL_DATA\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_MOREORG_DATA\",\"relationshipKeys\":[{\"parentKey\":\"EMP_POSITION\",\"childKey\":\"POS_NO\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_SHIFT\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPLOYEE\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_FAMILY_DETAILS\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_FAMILY_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"BEGDA\",\"childKey\":\"BEGDA\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"},{\"parentKey\":\"SUBTYPE\",\"childKey\":\"SUBTYPE\"},{\"parentKey\":\"NO_CHILD\",\"childKey\":\"NO_CHILD\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PERSONAL_DATA\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PERSDATA_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PROFILE_MGR_SUBORD\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_MGR_PERSONAL_DATA\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_MGRDATA_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_MGR_COMMUNICATION\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PROFILE_TEAM\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_TEAM_PERS_DATA\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_TEAM_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"SUB_EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"MGR_EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"MGR_EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"SUB_EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PROFILE_PERS_SUB\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_SUB_PERS_DATA\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_SUB_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"SUB_EMPNAME\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"MGR_EMPNUMBER\"}]}],\"config\":{}}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMP_PERSONAL_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_EMP_ASSIGNMENT"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Communication_Channel",
+        "selected" : true
+      }, {
+        "children" : [ ],
+        "name" : "mediaEmployee",
+        "selected" : true
+      } ],
+      "name" : "Employee",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

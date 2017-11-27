@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_a6ab839318044218954aeb7c176e57c7": {
+        "id": "AS_FlexContainer_a6ab839318044218954aeb7c176e57c7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ea29124e469f4a4cbaac1930f1355c0d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showNotificationsListForm();",
+            "callbackType": null
+        }]
+    }
+}

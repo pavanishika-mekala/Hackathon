@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_d7d81c2947b34c3b9285c46ae131d549": {
+        "id": "AS_FlexContainer_d7d81c2947b34c3b9285c46ae131d549",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d227e012de4040139e8e3394b51db7ed",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onClickCopyButton();",
+            "callbackType": null
+        }]
+    }
+}

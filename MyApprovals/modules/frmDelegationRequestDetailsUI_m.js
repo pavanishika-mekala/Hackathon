@@ -20,13 +20,13 @@ kony.apps.coe.ess.Approvals.frmDelegationRequestDetails = kony.apps.coe.ess.Appr
  */
 kony.apps.coe.ess.Approvals.frmDelegationRequestDetails.UI = function() {
     kony.print("--Start constructor: kony.apps.coe.ess.Approvals.frmDelegationRequestDetails.UI--");
-    this.stausLabelConfig = {
+  	this.stausLabelConfig = {
         "2" : {
-            text : kony.i18n.getLocalizedString("i18n.ess.myApprovals.active"),
+            text : "i18n.ess.myApprovals.active",
             skin : "sknLblFC3fbd00FS28px"
         },
         "3" : {
-            text : kony.i18n.getLocalizedString("i18n.ess.myApprovals.stopped"),
+            text : "i18n.ess.myApprovals.stopped",
             skin : "sknLblFCf51d00FS28px"
         },
     };
@@ -137,8 +137,8 @@ setStatus = function(status) {
     try {
         status = String(status);
         frmDelegationRequestDetails.flxStatusIcon.skin = this.skinForStatusIcon[status];
-        frmDelegationRequestDetails.lblStatus.skin = this.stausLabelConfig[status].skin;
-        frmDelegationRequestDetails.lblStatus.text = this.stausLabelConfig[status].text;
+        frmDelegationRequestDetails.lblStatus.skin = kony.i18n.getLocalizedString(this.stausLabelConfig[status].skin);
+        frmDelegationRequestDetails.lblStatus.text = kony.i18n.getLocalizedString(this.stausLabelConfig[status].text);
     } catch(err) {
         handleError(err);
     }

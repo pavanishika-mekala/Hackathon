@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_fbdce5e920e244a9828a816740e5eda8": {
+        "id": "AS_FlexContainer_fbdce5e920e244a9828a816740e5eda8",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionTOEditTaskSummary",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_aa206fc7daa84d30be657fbe0c370b8b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxDescOptions.setVisibility(true);\nfrmTimeSheetCreateTab.flxEditSummary.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

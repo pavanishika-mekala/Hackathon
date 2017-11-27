@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "5.50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "82%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc396f6d43ac427b83b46c24dc7a0c60",
+    "_text_": "Submit",
+    "_top_": {
+        "type": "string",
+        "value": "-7.20%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s2ee629bb38b43f0a69dbea901632f67",
+    "id": "btnsubmit",
+    "info": null,
+    "isvisible": true,
+    "kuid": "059a6aa788fc4c88acd3853e8049f6cb",
+    "name": "kony.ui.Button",
+    "parent": "flxTimesheetCreateTab",
+    "pf": "frmTimeSheetCreateTab",
+    "wType": "Button",
+    "zindex": 1
+}

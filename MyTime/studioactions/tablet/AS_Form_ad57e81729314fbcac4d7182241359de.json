@@ -1,0 +1,23 @@
+{
+    "AS_Form_ad57e81729314fbcac4d7182241359de": {
+        "id": "AS_Form_ad57e81729314fbcac4d7182241359de",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i003e89e65a84f6cb230d3b582b9b624"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_d9d244b7a0fd4c0fb89168eaaca90bfa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).shiftingFlex();",
+            "callbackType": null
+        }]
+    }
+}

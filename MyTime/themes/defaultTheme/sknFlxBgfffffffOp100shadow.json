@@ -1,0 +1,11 @@
+{
+  "background_image": "menushadow.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "s6b734115f104ba0b9a4d41969b7c5ae",
+  "wType": "FlexContainer"
+}

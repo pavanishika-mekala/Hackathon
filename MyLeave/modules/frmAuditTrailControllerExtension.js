@@ -18,9 +18,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
     constructor: function(controllerObj) {
         this.$class.$super.call(this, controllerObj);
     },
-    /** 
+    /**
      * This method is an entry point for all fetch related flows. Developer can edit.
-     * Default implementation fetches data for the form based on form config 
+     * Default implementation fetches data for the form based on form config
      * @memberof frmAuditTrailControllerExtension#
      */
     fetchData: function() {
@@ -41,14 +41,14 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         res_comments[i].First_Name = res_comments[i].First_Name+" "+res_comments[i].Last_Name;
                         data.push(res_comments[i]);
                     }
-                    var query = "select l.lastmodifiedts as createdts, l.status_id as status_id, emp.First_Name as First_Name from leave l left join Employee emp on l.employee_id = emp.Id where l.id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
+                    var query = "select l.lastmodifiedts as createdts, l.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from leave l left join Employee emp on l.employee_id = emp.Id where l.id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
                     kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function(res_leaverecord) {
                         for(var i in res_leaverecord) {
                             if(res_leaverecord[i].status_id === "2") {
                                 data.push({
                                     createdts : res_leaverecord[i].createdts,
                                     status_id : res_leaverecord[i].status_id,
-                                    First_Name : res_leaverecord[i].First_Name,
+                                    First_Name : res_leaverecord[i].First_Name+" "+res_leaverecord[i].Last_Name,
                                     description : "",
                                     template_type : 0
                                 });
@@ -85,7 +85,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method processes fetched data. Developer can edit.
      * Default implementation processes the provided data to required format for bind.
      * @param {Object} data - fetched data. (Default : data map, group id as key and records array as value)
@@ -117,11 +117,11 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             var scopeObj = this;
             var processedData = [];
             data.sort(function(a, b) {
-                return a.createdts.localeCompare(b.createdts);
+                return a.createdts !== null ? a.createdts.localeCompare(b.createdts) : false;
             });
             for(var i in data) {
                 //parsing to string
-                var dateStr = String(data[i].createdts);
+                var dateStr = data[i].createdts !== null ? String(data[i].createdts) : "";
                 var date = "";
                 //checking condition for invalid date string.
                 if(dateStr !== null && dateStr !== undefined && dateStr !== "" && dateStr.toLowerCase() !== "null") {
@@ -171,7 +171,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     });
                 }
 				}
-                
+
             }
             this.getController().bindData(processedData);
             return processedData;
@@ -182,7 +182,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method binds the processed data to the form. Developer can edit.
      * Default implementation binds the data to widgets in the form.
      * @param {Object} data - processed data.(Default : data map for each group, widget id as key and widget data as value)
@@ -205,9 +205,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         }
 
     },
-    /** 
+    /**
      * This method is entry point for save flow. Developer can edit.
-     * Default implementation saves the entity record from the data of widgets defined in form config 
+     * Default implementation saves the entity record from the data of widgets defined in form config
      * @memberof frmAuditTrailControllerExtension#
      */
     saveData: function() {
@@ -232,7 +232,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         }
 
     },
-    /** 
+    /**
      * This method is entry point for delete/remove flow. Developer can edit.
      * Default implementation deletes the entity record displayed in form (primary keys are needed)
      * @memberof frmAuditTrailControllerExtension#
@@ -258,7 +258,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method shows form.
      * @memberof frmAuditTrailControllerExtension#
      */

@@ -1,0 +1,42 @@
+{
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "fontSizeInPx": false,
+  "font_color": "ffffffff",
+  "font_name": "Helvetica",
+  "font_size": 90,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "ipad": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 90,
+    "isForked": true
+  },
+  "isDefaultSkin": false,
+  "kuid": "s0bd59f2f58c4f1c8fbef2a1e1e2dd8f",
+  "spaandroidtablet": {
+    "font_size": 90,
+    "isForked": true
+  },
+  "spaipad": {
+    "font_size": 90,
+    "isForked": true
+  },
+  "spawindowstablet": {
+    "font_size": 90,
+    "isForked": true
+  },
+  "tabrcandroid": {
+    "font_size": 90,
+    "isForked": true
+  },
+  "wType": "Label",
+  "windows8": {
+    "font_size": 90,
+    "isForked": true
+  }
+}

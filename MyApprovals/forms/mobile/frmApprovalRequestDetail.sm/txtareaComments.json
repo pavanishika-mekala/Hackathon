@@ -22,7 +22,7 @@
         2,
         2
     ],
-    "_placeholder_": "Type Comments here ",
+    "_placeholder_": "",
     "_skin_": "s3297c9c210a48bfa4da6d936f332189",
     "_text_": "",
     "_top_": {
@@ -67,6 +67,7 @@
     "numberofvisiblelines": 3,
     "parent": "AddComment",
     "pf": "frmApprovalRequestDetail",
+    "placeholderi18n": "i18n.ess.myApprovals.frmTabListview.TypeYourCommentsHere",
     "securetextentry": false,
     "showoprogressindicator": false,
     "showprogressindicator": false,

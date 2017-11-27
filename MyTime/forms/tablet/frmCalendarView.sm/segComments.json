@@ -1,0 +1,194 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        [
+            {
+                "imgUser": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "profile1.png"
+                },
+                "lblApplier": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Me"
+                },
+                "lblApprovedDate": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                },
+                "lblCommentInitials": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "S"
+                },
+                "rtxApplier": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Comment Here"
+                }
+            },
+            [
+                {
+                    "imgUser": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": ""
+                    },
+                    "lblAppliedDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblApplier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "rtxApplier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    }
+                }
+            ]
+        ],
+        [
+            {
+                "imgUser": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "profile1.png"
+                },
+                "lblApplier": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Me"
+                },
+                "lblApprovedDate": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                },
+                "lblCommentInitials": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "S"
+                },
+                "rtxApplier": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Comment Here"
+                }
+            },
+            [
+                {
+                    "imgUser": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": ""
+                    },
+                    "lblAppliedDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblApplier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "rtxApplier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "10",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segComments",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "g013a6cd29bc4ca49560d7cc1c547243",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxCalendarRight",
+    "pf": "frmCalendarView",
+    "retainselection": false,
+    "rowTemplateId": "ff03cc19a3634b618c734bc2048a9559",
+    "rowcounter": 0,
+    "rowfocusskin": "s3fe7255b9da4bc08fb8ad82e9f1c719",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxApproverComment",
+    "screenlevelwidget": false,
+    "seccounter": 1,
+    "sectionHeaderTemplateId": "ad5cd07cf49546f0aa8ed47cf240e2ff",
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "sectionheadertemplate": "flxUserComment",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": true,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxAppliedDate": "flxAppliedDate",
+        "flxApproverComment": "flxApproverComment",
+        "flxImage": "flxImage",
+        "flxNotes": "flxNotes",
+        "flxUserComment": "flxUserComment",
+        "imgUser": "imgUser",
+        "lblAppliedDate": "lblAppliedDate",
+        "lblApplier": "lblApplier",
+        "lblApprovedDate": "lblApprovedDate",
+        "lblCommentInitials": "lblCommentInitials",
+        "rtxApplier": "rtxApplier"
+    },
+    "zindex": 1
+}

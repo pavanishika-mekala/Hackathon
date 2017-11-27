@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_3d39e16b4fd54faa84c58b0c0cd3b4cf": {
+        "id": "AS_FlexContainer_3d39e16b4fd54faa84c58b0c0cd3b4cf",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnflxDay2Click",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fc100d9d395740ba9c42fcef7f7b9977",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUIDW()).onSelectDate(eventobject); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

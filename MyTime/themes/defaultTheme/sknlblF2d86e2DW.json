@@ -1,0 +1,21 @@
+{
+  "background_color": "2d86e2ff",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "desktopweb": {
+    "font_size": 100,
+    "isForked": true
+  },
+  "fontSizeInPx": true,
+  "font_color": "ffffffff",
+  "font_name": "Helvetica",
+  "font_size": 43,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "sf983159e08a4bb3b9c6d38e265efedc",
+  "wType": "Label"
+}

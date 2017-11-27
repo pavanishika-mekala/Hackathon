@@ -1,0 +1,137 @@
+{
+  "operationConfig" : {
+    "name" : "createCommunicationChannel17526",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMUNICATIONID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMUNICATIONID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"request_in\" outputpath=\"request_out\">        <set-param inputpath=\"START_DATE\" outputpath=\"BEGDA\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param inputpath=\"Communication_Type_Id\" outputpath=\"SUBTYPE\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <set-param inputpath=\"Employee_Id\" outputpath=\"EMPNUMBER\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <set-param inputpath=\"END_DATE\" outputpath=\"ENDDA\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param inputpath=\"softdeleteflag\" outputpath=\"DELETE_IND\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 <set-param inputpath=\"Value\" outputpath=\"COMMUNICATIONID\"/>    </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"response_in\" outputpath=\"response_out\">        <map inputpath=\"HCM_COMMUNICATION_DETAILS\" outputpath=\"Communication_Channel1\">            <exec-function name=\"kony.gen.obj.Communication_Channel1__hierarchy.fromLOBFields\"/>        </map>    </map></mapper>",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_COMMUNICATION_DETAILS\",\"fMap\":{\"EMPNUMBER\":\"HCM_DISTRIBUTION_MASTER.EMPNUMBER\"},\"sQuery\":\"HCM_DISTRIBUTION_MASTER.DIST_KEY,HCM_EMP_ASSIGNMENT.USER_ID\",\"config\":{}}}",
+    "opcode" : "create",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMP_PERSONAL_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_COMMUNICATION_DETAILS"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Communication_Channel",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

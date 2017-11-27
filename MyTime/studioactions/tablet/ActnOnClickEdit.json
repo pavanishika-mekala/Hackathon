@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_41d4a6c941e540f4935c3169c42a486e": {
+        "id": "AS_FlexContainer_41d4a6c941e540f4935c3169c42a486e",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActnOnClickEdit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___3f1c236d40b0484896d562ed1790d3b9",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmTimeSheetCreateTab",
+            "formKUID": "0af6fa7c9343419ea7d88cdf8876fd02",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

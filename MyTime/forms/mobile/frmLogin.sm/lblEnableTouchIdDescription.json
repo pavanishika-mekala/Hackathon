@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sbe1a763e7ee4c3692fcb914b9b327d3",
+    "_text_": "You can use your iPhone's  Touch ID every time you login to Employee Self Service - There will be some more text",
+    "_width_": {
+        "type": "string",
+        "value": "96%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "60%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblEnableTouchIdDescription",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "920123e1a27b400a8641c8bc80e13c8c",
+    "name": "kony.ui.Label",
+    "parent": "flxEnableTouchIDPopup",
+    "pf": "frmLogin",
+    "texti18n": "i18n.ess.Login.enableTouchIDDescription",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

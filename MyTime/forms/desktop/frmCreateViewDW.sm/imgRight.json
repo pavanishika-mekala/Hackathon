@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "triangleright.png",
+    "_top_": {
+        "type": "string",
+        "value": "145dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "desktop",
+        "formID": "frmCreateViewDW",
+        "platform": "desktopweb",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgRight",
+    "ide_onTouchEnd": "AS_Image_e20c2f77ad784edcb48a447abca6822d",
+    "imagescalemode": 1,
+    "info": null,
+    "isvisible": true,
+    "kuid": "506fc28a8861424492b4863f7d4d4778",
+    "name": "kony.ui.Image2",
+    "parent": "flxMain",
+    "pf": "frmCreateViewDW",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

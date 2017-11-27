@@ -1,0 +1,23 @@
+[ {
+  "sourceObject" : "Time_Entry",
+  "targetObject" : "Project_Task",
+  "relationshipKeys" : [ {
+    "sourceField" : "Project_Task_id",
+    "targetField" : "id"
+  } ],
+  "name" : "Time_Entry_Project_Task",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "Time_Entry",
+  "targetObject" : "Time_Type",
+  "relationshipKeys" : [ {
+    "sourceField" : "Time_Type_Id",
+    "targetField" : "Id"
+  } ],
+  "name" : "Time_Entry_Time_Type",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

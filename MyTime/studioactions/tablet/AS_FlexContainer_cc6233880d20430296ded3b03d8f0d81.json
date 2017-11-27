@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_cc6233880d20430296ded3b03d8f0d81": {
+        "id": "AS_FlexContainer_cc6233880d20430296ded3b03d8f0d81",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d5ca1770531045ab848ba275380aba34",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myLeave\");",
+            "callbackType": null
+        }]
+    }
+}

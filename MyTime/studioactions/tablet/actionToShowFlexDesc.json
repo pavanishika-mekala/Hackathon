@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_h47233d49fd1436b92feafece1966a00": {
+        "id": "AS_FlexContainer_h47233d49fd1436b92feafece1966a00",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionToShowFlexDesc",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f1c8451e94654dccb3cf785a24a79181",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxAddDesc.setVisibility(true);\nfrmTimeSheetCreateTab.flxDescOptions.setVisibility(true);\nfrmTimeSheetCreateTab.flxEditSummary.setVisibility(false);\nfrmTimeSheetCreateTab.txtAreaDesc.text = \"\";",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

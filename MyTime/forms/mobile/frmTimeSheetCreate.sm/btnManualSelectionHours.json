@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "36%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5.15%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "seba06f3a67e4fe698304a8fd14e38b6",
+    "_text_": "Button",
+    "_width_": {
+        "type": "string",
+        "value": "17.96%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "seba06f3a67e4fe698304a8fd14e38b6",
+    "id": "btnManualSelectionHours",
+    "ide_onClick": "AS_Button_15750e8c69b84e83ab4f8b61c5194853",
+    "info": null,
+    "isvisible": true,
+    "kuid": "eb8deb8b9aad490f9ca3645c691c8eac",
+    "name": "kony.ui.Button",
+    "parent": "flxManualTimeSelection",
+    "pf": "frmTimeSheetCreate",
+    "texti18n": "i18n.ess.common.hours.valueKA",
+    "wType": "Button",
+    "zindex": 1
+}

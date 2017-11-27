@@ -1,0 +1,31 @@
+{
+    "AS_Label_7d6196718dc5459c8396fa3d90477710": {
+        "id": "AS_Label_7d6196718dc5459c8396fa3d90477710",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnListConfirmCopy",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__498c0cb4f1774f0daee03d8d40d521bf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

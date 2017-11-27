@@ -1,0 +1,200 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgDelete1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "deleteblue.png"
+            },
+            "imgDelete2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "deleteblue.png"
+            },
+            "lblData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Project Alpha"
+            },
+            "lblData2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblData3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Research"
+            },
+            "lblData4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Project Alpha"
+            },
+            "lblData6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Overtime Hours"
+            },
+            "lblSep1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblSep2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Cost Centre - 2525"
+            },
+            "lbldata5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design"
+            }
+        },
+        {
+            "imgDelete1": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "deleteblue.png"
+            },
+            "imgDelete2": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "deleteblue.png"
+            },
+            "lblData1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Project Alpha"
+            },
+            "lblData2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblData3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Research"
+            },
+            "lblData4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Project Alpha"
+            },
+            "lblData6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Overtime Hours"
+            },
+            "lblSep1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblSep2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Cost Centre - 2525"
+            },
+            "lbldata5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Design"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": "0px",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        20
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "44px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "01",
+    "disabledSkins": {
+        "rowFocusSkin": "sb43725fe72644e3a55d1c8f7e3657c8"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segRecentTask",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "b5a83e9564c24fd0b3a229339bc641d4",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "paddinginpixel": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxTask",
+    "pf": "frmCreateViewDW",
+    "retainselection": false,
+    "rowTemplateId": "c0aee6da625f45d5bf2d2970aa1e96ca",
+    "rowcounter": 1,
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxRecentTask",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "ffffff00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxRecentTask": "flxRecentTask",
+        "imgDelete1": "imgDelete1",
+        "imgDelete2": "imgDelete2",
+        "lblData1": "lblData1",
+        "lblData2": "lblData2",
+        "lblData3": "lblData3",
+        "lblData4": "lblData4",
+        "lblData6": "lblData6",
+        "lblSep1": "lblSep1",
+        "lblSep2": "lblSep2",
+        "lblTitle": "lblTitle",
+        "lbldata5": "lbldata5"
+    },
+    "zindex": 1
+}

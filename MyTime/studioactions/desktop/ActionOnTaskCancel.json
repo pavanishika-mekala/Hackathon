@@ -1,0 +1,31 @@
+{
+    "AS_Label_59b50080a1d940a7a005aeddabb1ab32": {
+        "id": "AS_Label_59b50080a1d940a7a005aeddabb1ab32",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnTaskCancel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__fc174fdd07c042c3b8628ea97550621d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxAddTask.setVisibility(false);\nfrmCreateViewDW.flxSelectTask.setVisibility(true);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

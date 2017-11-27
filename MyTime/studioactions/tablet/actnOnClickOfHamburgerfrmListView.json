@@ -1,0 +1,31 @@
+{
+    "AS_Image_f53441bae87146bfa9a39f518cc6bfa5": {
+        "id": "AS_Image_f53441bae87146bfa9a39f518cc6bfa5",
+        "type": "ACTION_SEQUENCE",
+        "name": "actnOnClickOfHamburgerfrmListView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__h05e25a1b0394037bc5c8a1193e08968",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//new kony.apps.ess.Hamburger(frmListView.imgHamberger);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

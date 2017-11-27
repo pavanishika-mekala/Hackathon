@@ -177,6 +177,7 @@ kony.apps.coe.ess.frmLogin.oktaLogin = function() {
           }, kony.apps.coe.ess.frmLogin._axwayAuth, kony.apps.coe.ess.frmLogin._errorCallback);
         }
       }, function(err) {
+        kony.application.dismissLoadingScreen();
         // Check it the error occurred before any pre login
         if (kony.apps.coe.ess.globalVariables.used_pre_login === undefined || kony.apps.coe.ess.globalVariables.used_pre_login === null || kony.apps.coe.ess.globalVariables.used_pre_login === false) {
           // Remove any saved token and send the user to the login screen

@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "closered.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "tablet",
+        "formID": "frmTimeSheetCreateTab",
+        "platform": "windows8",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "Copycnclimg01f7d245d971e43",
+    "imagescalemode": 1,
+    "info": null,
+    "isvisible": true,
+    "kuid": "b1a5cf67a98a4708a028783029cf2ea2",
+    "name": "kony.ui.Image2",
+    "parent": "Copyflxcancelbtn0053ef901de554a",
+    "pf": "frmTimeSheetCreateTab",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -13,18 +13,20 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail = kony.apps.coe.ess.Approva
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.preShow = function(){
 	frmApprovalRequestDetail.SegChat.rowTemplate.flxcomment.highlightedSkin = "sknflxMob2ebaee";
   	frmApprovalRequestDetail.SegChat.rowTemplate.flxcomment.highlightOnParentFocus = true;
- 	if(kony.application.getCurrentForm().id === "frmSearch"){
-		kony.apps.coe.ess.globalVariables.prevFormFlow = "Search";
-	}else if(kony.application.getCurrentForm().id === "frmRequestedList"){
-      	kony.apps.coe.ess.globalVariables.prevFormFlow = "RequestedList";
-    }
-	//#ifdef iphone
-	if(kony.application.getPreviousForm().id === "frmSearch"){
-		kony.apps.coe.ess.globalVariables.prevFormFlow = "Search";
-	}else if(kony.application.getPreviousForm().id === "frmRequestedList"){
-      	kony.apps.coe.ess.globalVariables.prevFormFlow = "RequestedList";
-    }
-	//#endif
+	var device = kony.apps.coe.ess.locale.checkDevice();
+	if(device === "Android"){
+		if(kony.application.getCurrentForm().id === "frmSearch"){
+			kony.apps.coe.ess.globalVariables.prevFormFlow = "Search";
+		}else if(kony.application.getCurrentForm().id === "frmRequestedList"){
+			kony.apps.coe.ess.globalVariables.prevFormFlow = "RequestedList";
+		}
+	}else if(device == "iOS"){
+		if(kony.application.getPreviousForm().id === "frmSearch"){
+			kony.apps.coe.ess.globalVariables.prevFormFlow = "Search";
+		}else if(kony.application.getPreviousForm().id === "frmRequestedList"){
+			kony.apps.coe.ess.globalVariables.prevFormFlow = "RequestedList";
+		}
+	}
 	
 };
 

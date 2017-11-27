@@ -1,0 +1,24 @@
+{
+    "AS_Form_848d4b9cf26840279bd1948d368b7208": {
+        "id": "AS_Form_848d4b9cf26840279bd1948d368b7208",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHistory",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b3da5b5918964b59b1846dd272ee9c4d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__26731f3bf63e418a8f1f42a9062e89ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetHistoryUI.shiftingFlex();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var query = "select dl.delegation_group_id as groupId, dl.status_id as statusId, dl.employee_id as empId, emp.First_Name as firstName, emp.Last_Name as lastName, rt.name as requestTypeName, dl.start_date as startDate, dl.end_date as endDate, dl.createdts as createdDate from delegate dl " + 
                 " left join Employee emp on emp.Id = dl.employee_id " +
                 " left join request_type rt on rt.id = dl.request_type_id " + 
@@ -249,7 +249,8 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
                 "lblCreatedDate" : "createdDate",
                 "lblRequestTypes" : "requestTypeName",
                 "lblStatus" : "lblStatus",
-                "flxStatusIcon" : "flxStatusIcon"
+                "flxStatusIcon" : "flxStatusIcon",
+                "lblTypeOfRequestHeader" : "lblTypeOfRequestHeader"
             };
             frmDelegationRequestList.segRequestsListSentByMe.setData(data.dataSentByMe);
             frmDelegationRequestList.segRequestsListReceived.setData(data.dataReceived);

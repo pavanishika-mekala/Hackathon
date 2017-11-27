@@ -1,0 +1,31 @@
+{
+    "AS_Label_6f44f92ad1544e99b5aa96d585ab174f": {
+        "id": "AS_Label_6f44f92ad1544e99b5aa96d585ab174f",
+        "type": "ACTION_SEQUENCE",
+        "name": "wonSelTask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3fa73fcadc884664b652e580424cacef",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flexTaskDetail.setVisibility(true);\nfrmTimeSheetCreateTab.flexTaskDetail.setVisibility(true);\n frmTimeSheetCreateTab.flxsrchmain.setVisibility(true);\n frmTimeSheetCreateTab.flxAddvsrch.setVisibility(true);\n frmTimeSheetCreateTab.flxrecenttasks.setVisibility(false);\n frmTimeSheetCreateTab.addtasklbl.setVisibility(false);\n frmTimeSheetCreateTab.fxsrch.setVisibility(false);\n frmTimeSheetCreateTab.flxsrchCriteria.setVisibility(false);\n frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(false);\n frmTimeSheetCreateTab.flxTimetypesel.setVisibility(false);\n frmTimeSheetCreateTab.flxBreaksel.setVisibility(false);\nfrmTimeSheetCreateTab.flxskinTrans.setVisiblity(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

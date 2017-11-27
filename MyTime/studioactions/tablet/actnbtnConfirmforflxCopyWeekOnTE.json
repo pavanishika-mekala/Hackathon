@@ -1,0 +1,31 @@
+{
+    "AS_Button_a3af6ebacfee43c584125b543d98ae9b": {
+        "id": "AS_Button_a3af6ebacfee43c584125b543d98ae9b",
+        "type": "ACTION_SEQUENCE",
+        "name": "actnbtnConfirmforflxCopyWeekOnTE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f1da6d2599bf4b29808fb95df4dccedf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.ListViewTabUI.getInstance().showPopup(\"Clone\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

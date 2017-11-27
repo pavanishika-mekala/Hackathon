@@ -1,0 +1,31 @@
+{
+    "AS_Button_b4009120accf438da47f8fc8ec5d7278": {
+        "id": "AS_Button_b4009120accf438da47f8fc8ec5d7278",
+        "type": "ACTION_SEQUENCE",
+        "name": "onSubmitOneDayTimesheetClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7e278d76f3b946be8b531399936066dc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.submitOneDayTimeSheet();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

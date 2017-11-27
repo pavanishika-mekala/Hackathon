@@ -1,0 +1,17 @@
+{
+    "AS_Segment_913068824fef4370969848b2294c8347": {
+        "id": "AS_Segment_913068824fef4370969848b2294c8347",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onReachingBeginning_8c5d642f4f8442eb993254bcee8af0ba",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.onSegmentBeginnning();\n",
+            "callbackType": null
+        }]
+    }
+}

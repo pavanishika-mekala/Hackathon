@@ -1,0 +1,17 @@
+{
+    "AS_Button_a89377ae68e24da0a26ebef93c03caeb": {
+        "id": "AS_Button_a89377ae68e24da0a26ebef93c03caeb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_aa7f3b04040349a78653620264b98ded",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).performOperation();",
+            "callbackType": null
+        }]
+    }
+}

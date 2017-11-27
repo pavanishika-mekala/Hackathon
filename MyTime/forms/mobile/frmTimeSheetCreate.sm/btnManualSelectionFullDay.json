@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "36%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "23.39%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "scb347c86fea44938f7ca9cbc42473d7",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "17dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "17.90%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "seba06f3a67e4fe698304a8fd14e38b6",
+    "id": "btnManualSelectionFullDay",
+    "ide_onClick": "AS_Button_b8372992a7e94c8ab5f42e720d7c927d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "6352dfdd0f0f45aca1093d856b22031a",
+    "name": "kony.ui.Button",
+    "parent": "flxManualTimeSelection",
+    "pf": "frmTimeSheetCreate",
+    "texti18n": "i18n.ess.common.fullday.valueKA",
+    "wType": "Button",
+    "zindex": 1
+}

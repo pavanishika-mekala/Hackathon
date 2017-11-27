@@ -1,0 +1,11 @@
+{
+  "background_image": "rejectedleftbar.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sfd4600bd6354def9150d12b05b948f3",
+  "wType": "FlexContainer"
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_1b41cc1574034059a41847f96e6cd18c": {
+        "id": "AS_FlexContainer_1b41cc1574034059a41847f96e6cd18c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_HamburgerClick_frmTimesheetSettings",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1ccaa1b971249278725afe57fc10477"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6be36d5810794dd78c06932640ef347d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmTimesheetSettings.flxHamburgerButton);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

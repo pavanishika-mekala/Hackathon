@@ -1,0 +1,31 @@
+{
+    "AS_Segment_5f87f1ddc3eb4488bb0b159feee86423": {
+        "id": "AS_Segment_5f87f1ddc3eb4488bb0b159feee86423",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnTaskTypeRowSelected",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__78b5a1ccd1744adab51035b863d3e00c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxTaskTypeSelected.setVisibility(true);\nfrmCreateViewDW.tbxDescription.setVisibility(true);\nfrmCreateViewDW.flxBlank.setVisibility(false);\nfrmCreateViewDW.flxSelectType.setVisibility(false);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

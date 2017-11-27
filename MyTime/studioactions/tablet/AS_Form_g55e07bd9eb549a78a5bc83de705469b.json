@@ -1,0 +1,23 @@
+{
+    "AS_Form_g55e07bd9eb549a78a5bc83de705469b": {
+        "id": "AS_Form_g55e07bd9eb549a78a5bc83de705469b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmTimesheetSettings0dcfcbe67db1a49",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ac55764b86c74db0b062d6f54d56f9b9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onDeviceBack_g822934f20b1498c9b577029388b42a1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"--Clicked on android back button--\");",
+            "callbackType": null
+        }]
+    }
+}

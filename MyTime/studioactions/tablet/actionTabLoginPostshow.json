@@ -1,0 +1,24 @@
+{
+    "AS_Form_3e05e0cd4f784daf892b4df69ad9f720": {
+        "id": "AS_Form_3e05e0cd4f784daf892b4df69ad9f720",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionTabLoginPostshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "3ebc9c095c904e74b868f83592a41d44"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_af5f97795ca74d02aef96e5c00269b8e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//new kony.apps.coe.ess.loginAnimations().animationLoginScreen();\n//(new kony.apps.coe.ess.QRCode()).onPostShowOfLogin();\n",
+            "callbackType": null
+        }]
+    }
+}

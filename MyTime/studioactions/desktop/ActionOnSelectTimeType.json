@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f8da002e09fe4544a69a22af952d85ad": {
+        "id": "AS_FlexContainer_f8da002e09fe4544a69a22af952d85ad",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSelectTimeType",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ec779af2f11b4a83abca61a4b20994c4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

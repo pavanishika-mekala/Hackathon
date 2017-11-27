@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_8a552b6d289a4b91b927e4e51701a58b": {
+        "id": "AS_FlexContainer_8a552b6d289a4b91b927e4e51701a58b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchMyTime",
+            "type": "forms",
+            "platform": "",
+            "KUID": "79673f1514a448a28c0e764e1f9c19e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__820e89fdc0c649ff8b75640599039f8a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Search.onClickShowFilters();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

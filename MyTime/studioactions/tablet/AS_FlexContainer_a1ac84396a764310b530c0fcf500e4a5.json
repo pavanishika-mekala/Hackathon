@@ -1,0 +1,26 @@
+{
+    "AS_FlexContainer_a1ac84396a764310b530c0fcf500e4a5": {
+        "id": "AS_FlexContainer_a1ac84396a764310b530c0fcf500e4a5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempListTimesheetW",
+            "type": "templates",
+            "platform": null,
+            "KUID": "4fdbec0415bb4884a9aea2cf02eb4db4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b0c706c0b6f446679199f14424bed2ee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewTabUI()).onImgTempClick(context,eventobject);",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,182 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        [
+            {
+                "Label09ce9a158d8e149": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Cost Centre"
+                }
+            },
+            [
+                {
+                    "Label04360685151bc47": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Research"
+                    },
+                    "Label0c6e5ff96a70c4b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Beta"
+                    }
+                },
+                {
+                    "Label04360685151bc47": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Design"
+                    },
+                    "Label0c6e5ff96a70c4b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Beta"
+                    }
+                },
+                {
+                    "Label04360685151bc47": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Implementation"
+                    },
+                    "Label0c6e5ff96a70c4b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Beta"
+                    }
+                }
+            ]
+        ],
+        [
+            {
+                "Label09ce9a158d8e149": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Network Order"
+                }
+            },
+            [
+                {
+                    "Label04360685151bc47": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Research"
+                    },
+                    "Label0c6e5ff96a70c4b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Beta"
+                    }
+                },
+                {
+                    "Label04360685151bc47": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Design"
+                    },
+                    "Label0c6e5ff96a70c4b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Beta"
+                    }
+                },
+                {
+                    "Label04360685151bc47": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Done"
+                    },
+                    "Label0c6e5ff96a70c4b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Beta"
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "-80%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "95%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "12",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segProjectTaskSelection",
+    "ide_onRowClick": "AS_Segment_10adf5dc2b6a4a9aad6f557a66a5f718",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": false,
+    "kuid": "6969f76bfd7c45b899bbfcb792c2f4d1",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flexTaskDetail",
+    "pf": "frmTimeSheetCreateTab",
+    "retainselection": false,
+    "rowTemplateId": "6603d1a3102d4db1becc81d68f676258",
+    "rowcounter": 2,
+    "rowfocusskin": "s3fe7255b9da4bc08fb8ad82e9f1c719",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "segflxtask",
+    "screenlevelwidget": false,
+    "seccounter": 1,
+    "sectionHeaderTemplateId": "7f38fa7336f14925b1c8a1866ae25f77",
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "sectionheadertemplate": "flxseghadtask",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": true,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "FlexContainer030984a80bd2147": "FlexContainer030984a80bd2147",
+        "Label04360685151bc47": "Label04360685151bc47",
+        "Label09ce9a158d8e149": "Label09ce9a158d8e149",
+        "Label0c6e5ff96a70c4b": "Label0c6e5ff96a70c4b",
+        "flxsegwtasks": "flxsegwtasks",
+        "flxsegwtaskshead": "flxsegwtaskshead"
+    },
+    "zindex": 1
+}

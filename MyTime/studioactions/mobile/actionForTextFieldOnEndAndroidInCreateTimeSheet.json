@@ -1,0 +1,21 @@
+{
+    "AS_TextField_39395944ce37495db0178d4212f40f16": {
+        "id": "AS_TextField_39395944ce37495db0178d4212f40f16",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForTextFieldOnEndAndroidInCreateTimeSheet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onEndEditing_a38f7b23d84347439c611de95638ad9f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onDoneInActivityDesc();",
+            "callbackType": null
+        }]
+    }
+}

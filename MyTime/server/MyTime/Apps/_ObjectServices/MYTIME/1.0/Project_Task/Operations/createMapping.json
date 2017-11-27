@@ -1,0 +1,157 @@
+{
+  "operationConfig" : {
+    "name" : "createProjectTask7177",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "BILLABLE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LANGUAGE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NAME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "USER_ID_SRCH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "VALUE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "HCM_SEARCH_MASTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "BILLABLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "LANGUAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "USER_ID_SRCH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    }, {
+      "id" : "VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SEARCH_MASTER",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                              <map inputpath=\"request_in\" outputpath=\"request_out\">                                                                   <set-param inputpath=\"Employee_Id\" outputpath=\"EMPNUMBER\" />                                                            <set-param inputpath=\"id\" outputpath=\"VALUE\" />                                                            <set-param inputpath=\"Type\" outputpath=\"NAME\" />                                                <set-param inputpath=\"User_Id\" outputpath=\"USER_ID_SRCH\" />           <map inputpath=\"Project\" outputpath=\"\">                                                                               <exec-function name=\"kony.logical:equal\" outputpath=\"BiallableCOND\" output=\"$vars\">                                                                                                                <set-arg name=\"isbillableKey\" inputpath=\"isBillable\" />                                                                                                                <set-arg name=\"isbillableValue\" input=\"1\" />                                                                                  </exec-function>                                                                               <choose>                                                                                                                        <when test=\"$vars/BiallableCOND\">                                                                                                                                                      <set-param input=\"X\" outputpath=\"BILLABLE\" />                                                                                                                        </when>                                                                                                                        <otherwise>                                                                                                                                                      <set-param input=\"\" outputpath=\"BILLABLE\" />                                                                                                                        </otherwise>                                                                                          </choose>                                                                                          <set-param inputpath=\"Project_Name\" outputpath=\"DESCRIPTION\" />                                                            </map>                              </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                <map inputpath=\"response_in\" outputpath=\"response_out\">                                <map inputpath=\"HCM_SEARCH_MASTER\" outputpath=\"Project_Task\">                                                <exec-function name=\"kony.gen.obj.Project_Task__hierarchy.fromLOBFields\"/>                                </map>                </map></mapper>",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_SEARCH_MASTER\",\"entityName\":\"HCM_SEARCH_MASTER\",\"fMap\":{},\"sQuery\":\"\",\"config\":{}}}",
+    "opcode" : "create",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_SEARCH_MASTER",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_SEARCH_MASTER"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Project",
+        "selected" : true
+      }, {
+        "children" : [ ],
+        "name" : "Task",
+        "selected" : false
+      } ],
+      "name" : "Project_Task",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

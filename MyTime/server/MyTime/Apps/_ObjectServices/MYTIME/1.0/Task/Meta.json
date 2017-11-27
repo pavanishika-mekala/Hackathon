@@ -1,0 +1,45 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping"
+  },
+  "entityProperties" : {
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_SEARCH_MASTER",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_SEARCH_MASTER"
+    },
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodified"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_SEARCH_MASTER",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[]",
+      "businessObjectName" : "HCM_SEARCH_MASTER"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeletedflag"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodified",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Type",
+    "targetField" : "NAME",
+    "type" : "request_response"
+  } ]
+}

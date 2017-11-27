@@ -38,7 +38,7 @@ if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
     return;
   }
   if (kony.apps.coe.ess.globalVariables.isNative === true) {
-        if(kony.apps.ess.deepLinkingSSO.currentFormValue != null && params.launchparams.userName != kony.apps.coe.ess.frmLogin.username){
+        if(kony.apps.ess.deepLinkingSSO.currentFormValue != null && params!==undefined && params!==null && params.launchparams!==undefined && params.launchparams!==null && params.launchparams.userName!==undefined & params.launchparams.userName!==null && kony.apps.coe.ess.frmLogin.username !==undefined && params.launchparams.userName != kony.apps.coe.ess.frmLogin.username){
             kony.store.removeItem("oktaToken");
             return frmLogin;
         }

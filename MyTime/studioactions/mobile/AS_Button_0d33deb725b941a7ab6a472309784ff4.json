@@ -1,0 +1,24 @@
+{
+    "AS_Button_0d33deb725b941a7ab6a472309784ff4": {
+        "id": "AS_Button_0d33deb725b941a7ab6a472309784ff4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a1ccaa1b971249278725afe57fc10477"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4a063da9e3ed465ba76922e4fa27ec91",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var onClickOfAnswerButtonObj = new kony.apps.coe.ess.myTime.TimesheetSettingsUI();\nonClickOfAnswerButtonObj.onClickOfAnswerButton(\"btnOption2\", \"Answer5\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

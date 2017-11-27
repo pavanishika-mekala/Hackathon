@@ -1,0 +1,20 @@
+{
+    "AS_Button_f0d5587a87014d8f9bf38a4e717de969": {
+        "id": "AS_Button_f0d5587a87014d8f9bf38a4e717de969",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c62360862b5340a0a185aa7a37a26c89",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewTabUI()).onEachDaySelection(context,eventobject,2);",
+            "callbackType": null
+        }]
+    }
+}

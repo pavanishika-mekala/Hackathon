@@ -1,0 +1,24 @@
+{
+    "AS_Form_1167d30d50174d9f92fa9fc12cc62c91": {
+        "id": "AS_Form_1167d30d50174d9f92fa9fc12cc62c91",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSqlBrowser",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7a397f87b75d47beb747ecc9ffb66d78"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__49df3978aeaa4da0b248a1c457243fdf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.tools.sql.preShow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

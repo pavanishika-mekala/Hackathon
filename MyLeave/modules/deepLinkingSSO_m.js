@@ -31,7 +31,7 @@
  kony.apps.ess.deepLinkingSSO.appServiceCallback = function(params) {
      kony.print("---- appServiceCallback:Start---------");
      if (kony.apps.coe.ess.globalVariables.isNative === true) {
-         if(kony.apps.ess.deepLinkingSSO.currentFormValue != null && params.launchparams.userName != kony.apps.coe.ess.frmLogin.username){
+         if(kony.apps.ess.deepLinkingSSO.currentFormValue != null && params!==undefined && params!==null && params.launchparams!==undefined && params.launchparams!==null && params.launchparams.userName!==undefined & params.launchparams.userName!==null && kony.apps.coe.ess.frmLogin.username !==undefined && params.launchparams.userName != kony.apps.coe.ess.frmLogin.username){
             kony.store.removeItem("oktaToken");
             return frmLogin;
           }
@@ -148,8 +148,10 @@
   */
  kony.apps.ess.deepLinkingSSO.checkNewUser = function() {
      kony.print("---- checkNewUser:Start------- ");
-     if (appserviceUsername == kony.apps.coe.ess.frmLogin.username) {
-         return true;
+     if (appserviceUsername !== kony.apps.coe.ess.frmLogin.username && kony.apps.coe.ess.frmLogin.username != "" && kony.apps.coe.ess.frmLogin.username !== null && kony.apps.coe.ess.frmLogin.username !== undefined) {
+       return true;
+     } else {
+       return false;
      }
      kony.print("---- checkNewUser:End------- ");
  };

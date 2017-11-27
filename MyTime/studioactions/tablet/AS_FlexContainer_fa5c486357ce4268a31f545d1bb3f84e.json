@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_fa5c486357ce4268a31f545d1bb3f84e": {
+        "id": "AS_FlexContainer_fa5c486357ce4268a31f545d1bb3f84e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_g3088a6d79184cf683df81307877b275",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetHomeForm();",
+            "callbackType": null
+        }]
+    }
+}

@@ -242,7 +242,7 @@ kony.apps.coe.ess.Sync.deltaSync=function(){
 		formController.loadDataAndShowForm();
 	}else{
 		kony.application.dismissLoadingScreen();
-	}
+  }
     kony.print("-- Completed auto sync from deltaSync --");
   };//.bind(this);
   if (kony.application.getCurrentForm().id != "frmLogin") {

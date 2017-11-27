@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Type task description here(max 200 words)",
+    "_skin_": "s0b463051ae844df9dac08de97cd7bb2",
+    "_text_": "Loren lpsum is simply dummy text of the printing and typesetting industry",
+    "_top_": {
+        "type": "string",
+        "value": "195dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 2,
+    "focusskin": "s638e0ac0c7c49f0ab67a19dd40658a9",
+    "id": "tbxDescriptionLeft",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "ccc5931117f7407e9bf0251b66da795f",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxEachTaskDetailsLeft",
+    "pf": "frmCreateViewDW",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 3
+}

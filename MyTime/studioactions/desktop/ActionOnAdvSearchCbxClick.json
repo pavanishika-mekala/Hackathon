@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_11d1d4dc65f24703aa1bf4111db6869e": {
+        "id": "AS_FlexContainer_11d1d4dc65f24703aa1bf4111db6869e",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnAdvSearchCbxClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b53a7419d5bb4b6b8a2b1bcba72ea9fb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmCreateViewDW.imgActiveInactive.src==\"checkboxinactive.png\")\n  {\n    frmCreateViewDW.imgActiveInactive.src=\"checkboxactive.png\";\n    frmCreateViewDW.flxSegSearch.setVisibility(false);\n    frmCreateViewDW.flxSelectId.setVisibility(true);\n    frmCreateViewDW.flxAdvSeg.setVisibility(true);\n    frmCreateViewDW.flxSearchTypeId.setVisibility(false);\n    frmCreateViewDW.lblAdd.setVisibility(false);\n\n  }\nelse{\n      frmCreateViewDW.flxAdvSearchSegDropdown.setVisibility(false);\n    frmCreateViewDW.imgActiveInactive.src=\"checkboxinactive.png\";\n\tfrmCreateViewDW.flxSegSearch.setVisibility(true);\n    frmCreateViewDW.flxSelectId.setVisibility(false);\n    frmCreateViewDW.flxAdvSeg.setVisibility(false);\n    frmCreateViewDW.flxSearchTypeId.setVisibility(false);\n    frmCreateViewDW.lblAdd.setVisibility(false);\n  frmCreateViewDW.flxtbxSearch.setVisibility(true);\n  frmCreateViewDW.flxSearchIconinAdvSearch.setVisibility(false);\n}\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

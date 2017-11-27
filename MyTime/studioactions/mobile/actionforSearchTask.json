@@ -1,0 +1,28 @@
+{
+    "AS_TextField_9d69692b1270402eb89483220fbce70c": {
+        "id": "AS_TextField_9d69692b1270402eb89483220fbce70c",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionforSearchTask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmRecentTasks",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27f51ce923c14663b84d11c4ec853676"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__abef7ab952814ae7b5b24c6417351299",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n\tkony.apps.coe.ess.myTime.SearchTask.searchProjectTask(frmRecentTasks.listBoxCriteria.selectedKeyValue[1]);\n}\ncatch(e){\n  handleError(\"Error: \"+e);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

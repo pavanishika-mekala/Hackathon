@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_i6c027d7911b4fd08676561e0ada27f5": {
+        "id": "AS_FlexContainer_i6c027d7911b4fd08676561e0ada27f5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": null,
+            "KUID": "if11cd8b59f647728437156c71cfe167"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_e2fadf213ca741e28f922e62c2b035e6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.getPreviousForm().show();",
+            "callbackType": null
+        }]
+    }
+}

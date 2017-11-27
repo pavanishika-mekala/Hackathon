@@ -1,0 +1,11 @@
+{
+  "background_image": "dueleft.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sdab23a2e920454084d643b1312378c8",
+  "wType": "FlexContainer"
+}

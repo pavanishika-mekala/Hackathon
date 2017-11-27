@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_47539ec45d2a4aec90fe08c91d7c3223": {
+        "id": "AS_FlexContainer_47539ec45d2a4aec90fe08c91d7c3223",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionToAddAsNewTask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRecentTasks",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27f51ce923c14663b84d11c4ec853676"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f6ea9c2440bb4d6c90dbf20102ac2ff4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.SearchTask.addAsNewTask(frmRecentTasks.listBoxCriteria.selectedKeyValue[1]);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

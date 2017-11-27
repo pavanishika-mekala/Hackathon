@@ -1,0 +1,31 @@
+{
+    "AS_Image_6000d56a134d43fe8db3b8b9529e392c": {
+        "id": "AS_Image_6000d56a134d43fe8db3b8b9529e392c",
+        "type": "ACTION_SEQUENCE",
+        "name": "wimgtstart",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__2b5c48d62a084bdca5b03eb2ff976e2f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmTimeSheetCreateTab.advsrchsel.src==\"uncheck2x.png\")\n  {\nfrmTimeSheetCreateTab.advsrchsel.src=\"checkblue2x.png\";\nfrmTimeSheetCreateTab.flsrchcriteria.setVisibility(true);\n  }\nelse\n   {\nfrmTimeSheetCreateTab.advsrchsel.src=\"uncheck2x.png\";\nfrmTimeSheetCreateTab.flsrchcriteria.setVisibility(false);\n  }",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

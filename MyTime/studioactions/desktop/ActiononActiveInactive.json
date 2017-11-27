@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_d4b158b69b2e4bae89e9ccd46e4b954f": {
+        "id": "AS_FlexContainer_d4b158b69b2e4bae89e9ccd46e4b954f",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActiononActiveInactive",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_1957156eee6f482f8eec55c14fde81c5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewUIDW()).onActiveInactiveChange();",
+            "callbackType": null
+        }]
+    }
+}

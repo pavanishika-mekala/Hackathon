@@ -1,0 +1,25 @@
+{
+    "AS_Form_15fc33cc288e432690c92e3f9639f82c": {
+        "id": "AS_Form_15fc33cc288e432690c92e3f9639f82c",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_timeSheetForm_init",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fadf9d9be3ed4e9196a3caea7edb178b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__38821c35c1b045f8833df3f2205bc3df",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.globalVariables.currentTaskStartIndex = kony.apps.coe.ess.globalVariables.getTimeIndex(kony.apps.coe.ess.appconfig.defaultSliderStartTime);\nkony.apps.coe.ess.globalVariables.currentTaskEndIndex = kony.apps.coe.ess.globalVariables.getTimeIndex(kony.apps.coe.ess.appconfig.defaultSliderEndTime);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

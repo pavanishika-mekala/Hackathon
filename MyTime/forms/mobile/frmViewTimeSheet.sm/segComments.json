@@ -1,0 +1,208 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        [
+            {
+                "flxAppliedDate": {},
+                "flxImage": {},
+                "flxNotes": {},
+                "flxUserComment": {},
+                "imgUser": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "profile1.png"
+                },
+                "lblApplier": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Me"
+                },
+                "lblApprovedDate": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                },
+                "lblCommentInitials": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                },
+                "rtxApplier": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Comment Here"
+                }
+            },
+            [
+                {
+                    "imgUser": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "profile1.png"
+                    },
+                    "lblAppliedDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblApplier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Johnson"
+                    },
+                    "rtxApplier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Comment Here"
+                    }
+                }
+            ]
+        ],
+        [
+            {
+                "flxAppliedDate": {},
+                "flxImage": {},
+                "flxNotes": {},
+                "flxUserComment": {},
+                "imgUser": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "profile1.png"
+                },
+                "lblApplier": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Me"
+                },
+                "lblApprovedDate": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                },
+                "lblCommentInitials": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label"
+                },
+                "rtxApplier": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Comment Here"
+                }
+            },
+            [
+                {
+                    "imgUser": {
+                        "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                        "src": "profile1.png"
+                    },
+                    "lblAppliedDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblApplier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Johnson"
+                    },
+                    "rtxApplier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Comment Here"
+                    }
+                }
+            ]
+        ]
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "10",
+    "disabledSkins": {
+        "rowSkin": "s720317a253447758c66824a5d12d0e0"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segComments",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        }
+    },
+    "isvisible": true,
+    "kuid": "f8abdf96add44be58e5191bfa0ee3a88",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxComments",
+    "pf": "frmViewTimeSheet",
+    "retainselection": false,
+    "rowTemplateId": "b701ab9d906242e6bef7cc278133755d",
+    "rowcounter": 0,
+    "rowfocusskin": "s720317a253447758c66824a5d12d0e0",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxApproverComment",
+    "screenlevelwidget": false,
+    "seccounter": 1,
+    "sectionHeaderTemplateId": "c88c298fd8d74031a2bf927a1979829a",
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "sectionheadertemplate": "flxUserComment",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxAppliedDate": "flxAppliedDate",
+        "flxApproverComment": "flxApproverComment",
+        "flxImage": "flxImage",
+        "flxNotes": "flxNotes",
+        "flxUserComment": "flxUserComment",
+        "imgUser": "imgUser",
+        "lblAppliedDate": "lblAppliedDate",
+        "lblApplier": "lblApplier",
+        "lblApprovedDate": "lblApprovedDate",
+        "lblCommentInitials": "lblCommentInitials",
+        "rtxApplier": "rtxApplier"
+    }
+}

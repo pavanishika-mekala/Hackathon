@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "13.55%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s5ec0db9c28c458ba8e87ed9093817d3",
+    "_text_": "Copy",
+    "_top_": {
+        "type": "string",
+        "value": "84%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd174bc5390a40d3aa8e88e4b54303be",
+    "id": "btnCopyTimeEntry",
+    "ide_onClick": "AS_Button_9236582f5ac4490a99dccb9ebb5df99b",
+    "info": null,
+    "isvisible": true,
+    "kuid": "be360bde8a3b43d6b24fecd34d00837f",
+    "name": "kony.ui.Button",
+    "parent": "flxCopyTimeEntry",
+    "pf": "frmTimeSheetCreate",
+    "texti18n": "i18n.ess.TimeSheetCreate.copy",
+    "wType": "Button",
+    "zindex": 1
+}

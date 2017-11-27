@@ -1,0 +1,31 @@
+{
+    "AS_Image_2b2241669925409d803ccafd7357b78d": {
+        "id": "AS_Image_2b2241669925409d803ccafd7357b78d",
+        "type": "ACTION_SEQUENCE",
+        "name": "wact1",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e598a6da41374b658d55ab4843eb0c6b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flexTaskDetail.setVisibility(false);\nfrmTimeSheetCreateTab.flxskinTrans.setVisiblity(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

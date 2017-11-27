@@ -1,0 +1,194 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizPickerView",
+    "DNDConfig": null,
+    "__inst": {
+        "_selectedValues": {},
+        "settings": {
+            "ariaDesc": "Select a value",
+            "cancelText": "Cancel",
+            "delay": 300,
+            "disabled": false,
+            "display": "inline",
+            "fixedWidth": [
+                100
+            ],
+            "headerText": "{value}",
+            "height": 40,
+            "id": "frmViewTimeSheet_pickerViewDates",
+            "lang": "en-US",
+            "layout": "fixed",
+            "minWidth": 0,
+            "mode": "scroller",
+            "preset": "",
+            "readonly": false,
+            "rows": 3,
+            "scrollLock": true,
+            "setText": "Set",
+            "showLabel": false,
+            "showOnFocus": true,
+            "showOnTap": true,
+            "speedUnit": 0.0012,
+            "tap": true,
+            "theme": "ios",
+            "timeUnit": 0.1,
+            "wheels": [
+                [
+                    {
+                        "keys": [
+                            "y1",
+                            "y2",
+                            "y3"
+                        ],
+                        "values": [
+                            "15 Apr - 30 Apr",
+                            "1 May - 15 May",
+                            "16 May - 30 May"
+                        ],
+                        "width": 100
+                    }
+                ]
+            ],
+            "width": 70
+        },
+        "temp": [
+            "y1"
+        ],
+        "val": "y1",
+        "values": [
+            "y1"
+        ]
+    },
+    "__parentReadjusting__": false,
+    "__wheels": [
+        [
+            {
+                "keys": [
+                    "y1",
+                    "y2",
+                    "y3"
+                ],
+                "values": [
+                    "15 Apr - 30 Apr",
+                    "1 May - 15 May",
+                    "16 May - 30 May"
+                ],
+                "width": 100
+            }
+        ]
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sfd4453735904e449c585d8147776e76",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "android": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "desktopweb": {
+        "render": false
+    },
+    "focusskin": "sd1178acb6434b6382677355e8d219e5",
+    "id": "pickerViewDates",
+    "info": null,
+    "isvisible": true,
+    "itemorientation": "vertical",
+    "kiosk": {
+        "render": false
+    },
+    "kuid": "76bbccb870e44284b47a3d1306a98c07",
+    "masterdata": [
+        [
+            [
+                "y1",
+                "15 Apr - 30 Apr"
+            ],
+            [
+                "y2",
+                "1 May - 15 May"
+            ],
+            [
+                "y3",
+                "16 May - 30 May"
+            ],
+            100,
+            "yearcomp"
+        ]
+    ],
+    "masterdatamap": null,
+    "name": "kony.ui.PickerView",
+    "parent": "flxPopUP",
+    "pf": "frmViewTimeSheet",
+    "selectedkey": null,
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": [
+        "15 Apr - 30 Apr"
+    ],
+    "size": 18,
+    "spaan": {
+        "render": false
+    },
+    "spaandroidtablet": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spaipad": {
+        "render": false
+    },
+    "spawindowstablet": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "viewtype": 0,
+    "wType": "PickerView",
+    "watchos": {
+        "render": false
+    },
+    "windows8": {
+        "render": false
+    },
+    "zindex": 1
+}

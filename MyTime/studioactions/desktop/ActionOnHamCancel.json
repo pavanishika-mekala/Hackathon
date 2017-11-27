@@ -1,0 +1,35 @@
+{
+    "AS_Image_8090cb1a68f34ec484246fb92f7ed828": {
+        "id": "AS_Image_8090cb1a68f34ec484246fb92f7ed828",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnHamCancel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b59dc1b56858469682043a21820906fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___4fbc895c13444de4a939a8c8fd422472",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmListViewDW",
+            "formKUID": "9e83bab6e30748858c344ccf4100d22b",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

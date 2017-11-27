@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "2.30%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6ec79741ef0417d9c45773d094d15e6",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s6ec79741ef0417d9c45773d094d15e6",
+    "id": "btnSubmitTimeSheet",
+    "ide_onClick": "AS_Button_c10cd6cce5cf493dbfc036aef4416a49",
+    "info": null,
+    "isvisible": true,
+    "kuid": "2534158ad2f54de7884e0111069d74dc",
+    "name": "kony.ui.Button",
+    "parent": "flxTimeSheetInfo",
+    "pf": "frmListView",
+    "texti18n": "i18n.ess.frmListView.submitTimeSheet",
+    "wType": "Button",
+    "zindex": 3
+}

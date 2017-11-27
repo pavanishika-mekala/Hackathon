@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_04a9b026fd334435b33e1e9e3b6319c7": {
+        "id": "AS_FlexContainer_04a9b026fd334435b33e1e9e3b6319c7",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnDatesImgClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpListDetailsDatesDW",
+            "type": "templates",
+            "platform": "",
+            "KUID": "c96322c09da94f888f522f2119255d87"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__73cf0c2372cf4b88963b57e838043fd5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

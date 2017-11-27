@@ -1,0 +1,23 @@
+{
+    "AS_AppEvents_d4533f68af4d46b4a765b304f267b99f": {
+        "id": "AS_AppEvents_d4533f68af4d46b4a765b304f267b99f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION___e301f9c8952043a5985414ffa2af4042",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "initMbaasApp",
+            "display": "initMbaasApp",
+            "inputparams": [{
+                "name": "successCallback"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "source": "module"
+        }]
+    }
+}

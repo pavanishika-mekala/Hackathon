@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "82.50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb668092ba2546da8d783e388a8c2a21",
+    "_text_": ">>",
+    "_top_": {
+        "type": "string",
+        "value": "22%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s7bef9bb85fe4f4093d0a5312e99907e",
+    "id": "btnGo",
+    "info": null,
+    "isvisible": true,
+    "kuid": "779b97432e804c88b968a85d0d70ffac",
+    "name": "kony.ui.Button",
+    "parent": "frmSqlBrowser",
+    "pf": "frmSqlBrowser",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,806 @@
+{
+  "operationConfig" : {
+    "name" : "queryTimesheet6316",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "HCM_TIME_ENTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTIVITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVED_TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCELLED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATED_TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "INT_ORDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ISERROR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MODIFIED_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "NETWORK",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "REC_CCTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "STARTTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIME_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WBS_ELEMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WORKDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WORKHOURS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE_CNTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "TIME_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_TIMESHEET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "START_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_TIMESHEET_NOTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIMESHEET_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_TIME_AUDIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVER_EMPNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVER_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "SEQ_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_WF_DIST",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTION_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "DEADLINE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "DELEG_FRDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "DELEG_TODATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_READ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "PRIORITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "REF_WFLOW_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_USER_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_WF_OBJECT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_DIST",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_WF_OBJECT",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                            <map inputpath=\"request_in\" outputpath=\"request_out\">                                                        <exec-function name=\"kony.gen.obj.Timesheet__hierarchy.toLOBFields\"/>                            </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                <map inputpath=\"response_in\" outputpath=\"response_out\">                                <map inputpath=\"HCM_TIME_ENTRY\" outputpath=\"\">                                                <!--Timesheet-->                                                <map inputpath=\"HCM_TIMESHEET\" outputpath=\"Timesheet\">                                                                <!--map inputpath=\"../HCM_WF_DIST\" outputpath=\"\">                        <set-param inputpath=\"CREATED_TIMESTAMP\" outputpath=\"SubmittedOn\"/>                      </map-->                                                                <set-param inputpath=\"SUBMITTED_ON\" outputpath=\"SubmittedOn\" />                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"lastmodified\" />                <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\" />                <set-param inputpath=\"TIMESHEETID\" outputpath=\"Id\" />                                                                <set-param inputpath=\"START_DATE\" outputpath=\"Start_Date\" />        <set-param inputpath=\"END_DATE\" outputpath=\"End_Date\" />                                                        \t\t<set-param inputpath=\"GPS_LATITUDE\" outputpath=\"latitude\" />        <set-param inputpath=\"GPS_LONGITUDE\" outputpath=\"longitude\" />        <set-param inputpath=\"../EMPNUMBER\" outputpath=\"Employee_Id\" />                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"noApprovalStatus\" output=\"$vars\">                                                                                <set-arg name=\"noApprovalStatusKey\" inputpath=\"APPROVAL_STATUS\" />                                                                                <set-arg name=\"noApprovalStatusvalue\" input=\"\" />                                                                </exec-function>                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"submittedCOND\" output=\"$vars\">                                                                                <set-arg name=\"submittedKey\" inputpath=\"SUBMITTED\" />                                                                                <set-arg name=\"submittedValue\" input=\"X\" />                                                                </exec-function>                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"ErrorCOND\" output=\"$vars\">                                                                                <set-arg name=\"submittedKey\" inputpath=\"ISERROR\" />                                                                                <set-arg name=\"submittedValue\" input=\"X\" />                                                                </exec-function>                                                                <choose>                                                                                <when test=\"$vars/ErrorCOND\">                                                                                                <set-param input=\"6\" outputpath=\"Status_Id\" />                                                                                </when>                                                                                <otherwise>                                                                                                <choose>                                                                                                                <when test=\"$vars/noApprovalStatus\">                                                                                                                                <choose>                                                                                                                                                <when test=\"$vars/submittedCOND\">                                                                                                                                                                <set-param input=\"2\" outputpath=\"Status_Id\" />                                                                                                                                                </when>                                                                                                                                                <otherwise>                                                                                                                                                                <set-param input=\"5\" outputpath=\"Status_Id\" />                                                                                                                                                </otherwise>                                                                                                                                </choose>                                                                                                                </when>                                                                                                                <otherwise>                                                                                                                                <set-param inputpath=\"APPROVAL_STATUS\" outputpath=\"Status_Id\" />                                                                                                                </otherwise>                                                                                                </choose>                                                                                </otherwise>                                                                </choose>                                                                <!--Time_Entry-->                                                                <map inputpath=\"..\" outputpath=\"Time_Entry\">                                                                                <set-param outputpath=\"Activity_Description\" inputpath=\"COMMENTS\" />                                                                                <set-param outputpath=\"Actual_Hours\" inputpath=\"WORKHOURS\" />                                                                                <set-param outputpath=\"Created_On\" inputpath=\"20160719172028\" />                                                                                <set-param outputpath=\"Date\" inputpath=\"WORKDATE\" />                                                                                <set-param outputpath=\"Employee_Id\" inputpath=\"EMPNUMBER\" />                                                                                <set-param outputpath=\"End_Time\" inputpath=\"ENDTIME\" />                                                                                <set-param outputpath=\"Id\" inputpath=\"TIME_ENTRY_ID\" />                                                                                <set-param outputpath=\"Start_Time\" inputpath=\"STARTTIME\" />                                                                                <set-param outputpath=\"Timesheet_Id\" inputpath=\"TIMESHEETID\" />                                                                                <set-param outputpath=\"Time_Type_Id\" inputpath=\"SUBTY\" />                                                                                <set-param inputpath=\"VALUE\" outputpath=\"Project_Task_id\" />                                                                                <set-param inputpath=\"NAME\" outputpath=\"Project_Task_Type\" />                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"CanceledCond\" output=\"$vars\">                                                                                                <set-arg name=\"canceledKey\" inputpath=\"CANCELLED\" />                                                                                                <set-arg name=\"canceledValue\" input=\"X\" />                                                                                </exec-function>                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"notSubmittedCond\" output=\"$vars\">                                                                                                <set-arg name=\"SubmittedKey\" inputpath=\"SUBMITTED\" />                                                                                                <set-arg name=\"SubmittedValue\" input=\"\" />                                                                                </exec-function>                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"pendingCond\" output=\"$vars\">                                                                                                <set-arg name=\"approvalStatusKey\" inputpath=\"APPROVAL_STATUS\" />                                                                                                <set-arg name=\"approvalStatusValue\" input=\"\" />                                                                                </exec-function>                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"ErrorCONDTimeEntry\" output=\"$vars\">                                                                                                <set-arg name=\"submittedKey\" inputpath=\"ISERROR\" />                                                                                                <set-arg name=\"submittedValue\" input=\"X\" />                                                                                </exec-function>                                                                                <choose>                                                                                                <when test=\"$vars/CanceledCond\">                                                                                                                <set-param input=\"3\" outputpath=\"StatusId\" />                                                                                                </when>                                                                                                <otherwise>                                                                                                                <choose>                                                                                                                                <when test=\"$vars/ErrorCONDTimeEntry\">                                                                                                                                                <set-param outputpath=\"StatusId\" input=\"6\" />                                                                                                                                </when>                                                                                                                                <otherwise>                                                                                                                                                <choose>                                                                                                                                                                <when test=\"$vars/notSubmittedCond\">                                                                                                                                                                                <set-param outputpath=\"StatusId\" input=\"5\" />                                                                                                                                                                </when>                                                                                                                                                                <otherwise>                                                                                                                                                                                <choose>                                                                                                                                                                                                <when test=\"$vars/pendingCond\">                                                                                                                                                                                                                <set-param outputpath=\"StatusId\" input=\"2\" />                                                                                                                                                                                                </when>                                                                                                                                                                                                <otherwise>                                                                                                                                                                                                                <set-param outputpath=\"StatusId\" inputpath=\"APPROVAL_STATUS\" />                                                                                                                                                                                                </otherwise>                                                                                                                                                                                </choose>                                                                                                                                                                </otherwise>                                                                                                                                                </choose>                                                                                                                                </otherwise>                                                                                                                </choose>                                                                                                </otherwise>                                                                                </choose>                                                                </map>                                                                <exec-function name=\"kony.string:concat\" outputpath=\"TimesheetNoteEmployee\" output=\"$vars\">                                                                                <set-arg name=\"P1\" inputpath=\"TIMESHEETID\" />                                                                                <set-arg name=\"Separator\" input=\"-\" />                                                                                <set-arg name=\"P2\" input=\"Employee\" />                                                                </exec-function>                                                                <!--Timesheet_Notes-->                                                                <map inputpath=\"../HCM_TIMESHEET_NOTE\" outputpath=\"Timesheet_Note\">                                                                                <exec-function name=\"kony.string:concat\" outputpath=\"TimesheetNoteID\" output=\"$vars\">                                                                                                <set-arg name=\"P1\" inputpath=\"TIMESHEETID\" />                                                                                                <set-arg name=\"P2\" inputpath=\"ADDED_ON\" />                                                                                </exec-function>                                                                                <set-param outputpath=\"Added_On\" inputpath=\"ADDED_ON\" />                                                                                <set-param outputpath=\"Comments\" inputpath=\"COMMENTS\" />                                                                                <set-param outputpath=\"Employee_Id\" inputpath=\"EMPNUMBER\" />                                                                                <set-param outputpath=\"Id\" inputpath=\"$vars/TimesheetNoteID\" />                                                                                <set-param outputpath=\"Timesheet_Id\" inputpath=\"TIMESHEETID\" />                                                                </map>                                                                <!--Time_Audit-->                                                                <map inputpath=\"HCM_TIME_AUDIT_TS\" outputpath=\"Timesheet_Audit\">                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"pendingCond\" output=\"$vars\">                                                                                                <set-arg name=\"approvalStatusKey\" inputpath=\"APPROVAL_STATUS\" />                                                                                                <set-arg name=\"approvalStatusValue\" input=\"\" />                                                                                </exec-function>                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"SavedCond\" output=\"$vars\">                                                                                                <set-arg name=\"SavedCondKey\" inputpath=\"STATUS\" />                                                                                                <set-arg name=\"SavedCondValue\" input=\"SAVED\" />                                                                                </exec-function>                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"PendingCond\" output=\"$vars\">                                                                                                <set-arg name=\"PendingCondKey\" inputpath=\"STATUS\" />                                                                                                <set-arg name=\"PendingCondValue\" input=\"PENDING\" />                                                                                </exec-function>                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"ApprovedCond\" output=\"$vars\">                                                                                                <set-arg name=\"ApprovedCondKey\" inputpath=\"STATUS\" />                                                                                                <set-arg name=\"ApprovedCondValue\" input=\"APPROVED\" />                                                                                </exec-function>                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"RejectedCond\" output=\"$vars\">                                                                                                <set-arg name=\"RejectedCondKey\" inputpath=\"STATUS\" />                                                                                                <set-arg name=\"RejectedCondValue\" input=\"REJECTED\" />                                                                                </exec-function>                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"errorCond\" output=\"$vars\">                                                                                                <set-arg name=\"errorCondKey\" inputpath=\"STATUS\" />                                                                                                <set-arg name=\"errorCondValue\" input=\"ERROR\" />                                                                                </exec-function>                                                            <exec-function name=\"kony.logical:equal\" outputpath=\"SubmittedCond\" output=\"$vars\">                                                                                                <set-arg name=\"SubmittedCondKey\" inputpath=\"STATUS\" />                                                                                                <set-arg name=\"SubmittedCondValue\" input=\"SUBMITTED\" />                                                                                </exec-function>                                                            <choose>                                                                                                <when test=\"$vars/SubmittedCond\">                                                                                                                <set-param input=\"7\" outputpath=\"Status_Id\" />                                                                                                </when>                                                                                </choose>                                                            <choose>                                                                                                <when test=\"$vars/SavedCond\">                                                                                                                <set-param input=\"5\" outputpath=\"Status_Id\" />                                                                                                </when>                                                                                </choose>                                                                                <choose>                                                                                                <when test=\"$vars/PendingCond\">                                                                                                                <set-param input=\"2\" outputpath=\"Status_Id\" />                                                                                                </when>                                                                                </choose>                                                                                <choose>                                                                                                <when test=\"$vars/ApprovedCond\">                                                                                                                <set-param input=\"0\" outputpath=\"Status_Id\" />                                                                                                </when>                                                                                </choose>                                                                                <choose>                                                                                                <when test=\"$vars/RejectedCond\">                                                                                                                <set-param input=\"1\" outputpath=\"Status_Id\" />                                                                                                </when>                                                                                </choose>                                                                                <choose>                                                                                                <when test=\"$vars/errorCond\">                                                                                                                <set-param input=\"6\" outputpath=\"Status_Id\" />                                                                                                </when>                                                                                </choose>                                                                                <set-param inputpath=\"SEQ_NO\" outputpath=\"Id\" />                                        <set-param inputpath=\"EMPNUMBER\" outputpath=\"employee_id\" />                                        <set-param inputpath=\"TIMESTAMP\" outputpath=\"Created_On\" />                                                                                <set-param inputpath=\"COMMENTS\" outputpath=\"Description\" />                                                                                <set-param input=\"\" outputpath=\"Error_Msg\" />                                                                                <set-param inputpath=\"../TIME_ENTRY_ID\" outputpath=\"Time_entry_id\" />                                                                                <map inputpath=\"../HCM_TIMESHEET\" outputpath=\"\">                                                                                                <set-param inputpath=\"TIMESHEETID\" outputpath=\"Timesheet_Id\" />                                                                                </map>                                                                </map>                                                </map>                                </map>                </map></mapper>",
+    "oVisualMappingData" : "{\"linkDataArray\":[{\"from\":\"source\",\"to\":\"source:HCM_DISTRIBUTION\",\"fromPort\":\"source\",\"toPort\":\"source:HCM_DISTRIBUTION\",\"visible\":true,\"common\":false,\"__gohashid\":12777},{\"from\":\"target\",\"to\":\"target:Timesheet\",\"fromPort\":\"target\",\"toPort\":\"target:Timesheet\",\"visible\":true,\"common\":false,\"__gohashid\":13312}],\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Timesheet\",\"xy\":\"780 100\",\"__gohashid\":12146},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"HCM_DISTRIBUTION\",\"xy\":\"150 100\",\"__gohashid\":12147}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIME_ENTRY\",\"fMap\":{\"EMPNUMBER\":\"HCM_DISTRIBUTION.EMPNUMBER\",\"TYPE\":\"HCM_DISTRIBUTION.TYPE\"},\"sQuery\":\"HCM_DISTRIBUTION.DIST_KEY\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_PS_TIME_MESSAGES\",\"relationshipKeys\":[{\"parentKey\":\"TIME_ENTRY_ID\",\"childKey\":\"TIME_ENTRY_ID\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIMESHEET\",\"relationshipKeys\":[{\"parentKey\":\"TIMESHEETID\",\"childKey\":\"TIMESHEETID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIMESHEET_NOTE\",\"relationshipKeys\":[{\"parentKey\":\"TIMESHEETID\",\"childKey\":\"TIMESHEETID\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIME_AUDIT\",\"relationshipKeys\":[{\"parentKey\":\"TIME_ENTRY_ID\",\"childKey\":\"ENTRY_ID\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_WF_DIST\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_WF_OBJECT\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOCID\"}]}],\"relationshipKeys\":[{\"parentKey\":\"COUNTER\",\"childKey\":\"DOCID\"}]}],\"config\":{}}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIME_ENTRY"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Timesheet_Note",
+        "selected" : true
+      }, {
+        "children" : [ {
+          "children" : [ {
+            "children" : [ ],
+            "name" : "Project",
+            "selected" : false
+          }, {
+            "children" : [ ],
+            "name" : "Task",
+            "selected" : false
+          } ],
+          "name" : "Project_Task",
+          "selected" : false
+        }, {
+          "children" : [ ],
+          "name" : "Time_Type",
+          "selected" : false
+        } ],
+        "name" : "Time_Entry",
+        "selected" : true
+      }, {
+        "children" : [ ],
+        "name" : "Timesheet_Audit",
+        "selected" : true
+      } ],
+      "name" : "Timesheet",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : true,
+    "responseXmlMappingOverride" : true
+  }
+}

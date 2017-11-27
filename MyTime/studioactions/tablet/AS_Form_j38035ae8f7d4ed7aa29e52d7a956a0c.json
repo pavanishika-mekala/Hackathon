@@ -1,0 +1,23 @@
+{
+    "AS_Form_j38035ae8f7d4ed7aa29e52d7a956a0c": {
+        "id": "AS_Form_j38035ae8f7d4ed7aa29e52d7a956a0c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a3c92dcee9bb43b28da884c6ea8b9f92"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_g189e964826f42f39a3aae9c19faba9b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();\nkony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\n(new kony.apps.coe.ess.myTime.TimesheetSettingsUI()).showManualTimeEntry();",
+            "callbackType": null
+        }]
+    }
+}

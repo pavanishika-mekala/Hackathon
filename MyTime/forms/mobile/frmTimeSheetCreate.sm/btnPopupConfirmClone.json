@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "22.50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2ac38876f3e49228ba1661d74ac3c27",
+    "_text_": "Confirm",
+    "_top_": {
+        "type": "string",
+        "value": "7.50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sc1969575c494ae4a8c0851df2388e28",
+    "id": "btnPopupConfirmClone",
+    "ide_onClick": "AS_Button_b39b5e659bc142a48bb45fad27b33acf",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ad880cf59b834df5945d7d027e4614e3",
+    "name": "kony.ui.Button",
+    "parent": "flxPopupClone",
+    "pf": "frmTimeSheetCreate",
+    "texti18n": "i18n.ess.common.confirm",
+    "wType": "Button",
+    "zindex": 1
+}

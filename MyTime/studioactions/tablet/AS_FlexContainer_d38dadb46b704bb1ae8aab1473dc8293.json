@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_d38dadb46b704bb1ae8aab1473dc8293": {
+        "id": "AS_FlexContainer_d38dadb46b704bb1ae8aab1473dc8293",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b0dd7ade2f81459091417bd2877aeb7e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.frmTimesheetHelp.helpLayerObj = new kony.apps.coe.ess.myTime.frmTimesheetHelp.HelpLayer(kony.application.getCurrentForm());\nkony.apps.coe.ess.myTime.frmTimesheetHelp.helpLayerObj.showHelpLayer();",
+            "callbackType": null
+        }]
+    }
+}

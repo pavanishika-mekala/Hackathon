@@ -1,0 +1,23 @@
+{
+    "AS_Segment_50c4265e648643a19240c87bed01c3dc": {
+        "id": "AS_Segment_50c4265e648643a19240c87bed01c3dc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_55e436edc6274d2ca70ca64665fa04a5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.popups.popupCloneRowOnClick();",
+            "callbackType": null
+        }]
+    }
+}

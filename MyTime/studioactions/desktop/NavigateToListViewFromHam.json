@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_156252012207478895892fe79b349d61": {
+        "id": "AS_FlexContainer_156252012207478895892fe79b349d61",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateToListViewFromHam",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b59dc1b56858469682043a21820906fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___59bea9c81ba24b16a40f718d130a6c7d",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmListViewDW",
+            "formKUID": "9e83bab6e30748858c344ccf4100d22b",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

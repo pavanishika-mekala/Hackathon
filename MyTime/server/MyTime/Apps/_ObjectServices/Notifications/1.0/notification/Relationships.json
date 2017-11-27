@@ -1,0 +1,12 @@
+[ {
+  "sourceObject" : "notification",
+  "targetObject" : "notification_data",
+  "relationshipKeys" : [ {
+    "sourceField" : "notification_id",
+    "targetField" : "notification_id"
+  } ],
+  "name" : "notification_notification_data",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

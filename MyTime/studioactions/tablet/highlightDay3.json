@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_eaf10995f54f49cda2af25ad75bf5ec7": {
+        "id": "AS_FlexContainer_eaf10995f54f49cda2af25ad75bf5ec7",
+        "type": "ACTION_SEQUENCE",
+        "name": "highlightDay3",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i003e89e65a84f6cb230d3b582b9b624"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_a888839fdfa54d2db0a0765c9cfb0579",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var day = frmCalendarView.lblDay3.text;\n(new kony.apps.coe.ess.myTime.time_entry_retrieval_common()).showTimeSheetDetailsDaybyDay(day);\n(new kony.apps.coe.ess.myTime.time_entry_retrieval_common()).setSkins(day ,\"Day3\");\n",
+            "callbackType": null
+        }]
+    }
+}

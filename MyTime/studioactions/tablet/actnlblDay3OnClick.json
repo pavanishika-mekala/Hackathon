@@ -1,0 +1,28 @@
+{
+    "AS_Button_b024977ae7854e4598b9d816e0a26be7": {
+        "id": "AS_Button_b024977ae7854e4598b9d816e0a26be7",
+        "type": "ACTION_SEQUENCE",
+        "name": "actnlblDay3OnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempListTimesheetW",
+            "type": "templates",
+            "platform": "",
+            "KUID": "4fdbec0415bb4884a9aea2cf02eb4db4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f0544f5136fa40d698e3710e114a4ccd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewTabUI()).onEachDaySelection(context,eventobject,2);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

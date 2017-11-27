@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "scd53f5134dd41118c71e33c3abf6a72",
+    "_text_": "Button",
+    "_width_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s7bef9bb85fe4f4093d0a5312e99907e"
+    },
+    "displaytext": true,
+    "id": "btnTimeSheetAdd",
+    "ide_onClick": "AS_Button_e434c252f63d4f9cb6408b46d480507b",
+    "info": null,
+    "isvisible": false,
+    "kuid": "d0dc00b0927c470c83f4c54490573bba",
+    "name": "kony.ui.Button",
+    "parent": "flxHeader",
+    "pf": "frmTimeSheetCreate",
+    "wType": "Button",
+    "zindex": 1
+}

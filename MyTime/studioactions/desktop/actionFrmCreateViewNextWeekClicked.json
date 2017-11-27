@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_299928246dc34e81a25b24f5ed5d68c8": {
+        "id": "AS_FlexContainer_299928246dc34e81a25b24f5ed5d68c8",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionFrmCreateViewNextWeekClicked",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b3636683c516476c82102a69c6f10451",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewUIDW()).addTimeLineDates(14);\nfrmCreateViewDW.flxNextWeek.skin=\"sknflxB2ebaeeR40DW\";\nfrmCreateViewDW.flxDateInDateSection.skin=\"slFbox\";\nfrmCreateViewDW.lblSectionDate.skin=\"sknlblF526270Px14AveMediumDW\";\nfrmCreateViewDW.lblWeek.skin=\"sknlblF2ebaeePx14AveRomanDW\";\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

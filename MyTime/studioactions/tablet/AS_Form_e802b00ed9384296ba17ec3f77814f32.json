@@ -1,0 +1,23 @@
+{
+    "AS_Form_e802b00ed9384296ba17ec3f77814f32": {
+        "id": "AS_Form_e802b00ed9384296ba17ec3f77814f32",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i003e89e65a84f6cb230d3b582b9b624"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_c9fd0f80a67f48e0adfcec9218dd9f24",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var onFrmCalendarViewInitObj = new kony.apps.coe.ess.myTime.CalendarViewUI();\nonFrmCalendarViewInitObj.onfrmCalendarViewInit();",
+            "callbackType": null
+        }]
+    }
+}

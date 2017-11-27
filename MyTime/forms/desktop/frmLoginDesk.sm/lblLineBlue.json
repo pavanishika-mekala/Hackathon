@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "4px"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "13%"
+    },
+    "_skin_": "s1c1836bfff44e4195e905d6e7ee12b6",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "23.30%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "15.50%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblLineBlue",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "dd3eec5b15cb4848a6eb68bf4baef6a5",
+    "name": "kony.ui.Label",
+    "parent": "flxReconfigure",
+    "pf": "frmLoginDesk",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 2
+}

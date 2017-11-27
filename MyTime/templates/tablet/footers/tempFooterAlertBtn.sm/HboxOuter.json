@@ -1,0 +1,38 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizHBox",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_position_": 3,
+    "_skin_": "s13058a34a7243339cd71973775cda97",
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "btnOk"
+    ],
+    "containerId": true,
+    "containerweight": 100,
+    "contextmenu": null,
+    "id": "HboxOuter",
+    "info": null,
+    "isvisible": true,
+    "kuid": "16730928aa82455dbc6f323420ea52b7",
+    "layouttype": 0,
+    "name": "kony.ui.Box",
+    "parent": "tempFooterAlertBtn",
+    "pf": "tempFooterAlertBtn",
+    "wType": "HBox",
+    "widgetalignment": 1
+}

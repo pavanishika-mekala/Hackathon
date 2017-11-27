@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_10b7126f6a564d598cd79f75b5c556f5": {
+        "id": "AS_FlexContainer_10b7126f6a564d598cd79f75b5c556f5",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionflxMyApprovalsOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c69dce89016f49ebaaeee7c07e74625f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3f78ace0f73345f5b8e210b3494b2e5c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myApprovals\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

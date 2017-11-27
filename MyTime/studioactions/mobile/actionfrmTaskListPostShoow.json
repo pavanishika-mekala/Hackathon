@@ -1,0 +1,25 @@
+{
+    "AS_Form_7aa5164c584749ed96c1994f54cf5414": {
+        "id": "AS_Form_7aa5164c584749ed96c1994f54cf5414",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionfrmTaskListPostShoow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTaskList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "345a995187304d4fa63038d77673b09d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0f78c161837846dfae20023669ddea55",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nvar prevForm = kony.application.getPreviousForm();\nif(prevForm === frmTimeSheetCreate){\n\tfrmTaskList.lblSkip.setVisibility(false);\n}else{\n  \tfrmTaskList.lblSkip.setVisibility(true);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

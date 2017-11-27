@@ -1,0 +1,31 @@
+{
+    "AS_Image_bcd75a69c64646da93b921bf0e250b0a": {
+        "id": "AS_Image_bcd75a69c64646da93b921bf0e250b0a",
+        "type": "ACTION_SEQUENCE",
+        "name": "wonclcktch",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d517adc563c2457ab749f83da2e6b326",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " frmTimeSheetCreateTab.flxrecenttasks.setVisibility(false);\n frmTimeSheetCreateTab.flxsrchmain.setVisibility(true);\n frmTimeSheetCreateTab.flxsrchmain0.setVisibility(false);\n frmTimeSheetCreateTab.flxAddvsrch.setVisibility(false);\n frmTimeSheetCreateTab.flsrchcriteria.setVisibility(false);\n frmTimeSheetCreateTab.segListrec.setVisibility(false);\n frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

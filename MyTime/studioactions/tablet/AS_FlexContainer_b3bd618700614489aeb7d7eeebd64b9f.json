@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_b3bd618700614489aeb7d7eeebd64b9f": {
+        "id": "AS_FlexContainer_b3bd618700614489aeb7d7eeebd64b9f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7ac8b34802d54f0e814d28ab54534c53"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_ddf8167e00754d24922ac31cdbbf3133",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmTimeSheetCreateTab",
+            "formKUID": "0af6fa7c9343419ea7d88cdf8876fd02",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

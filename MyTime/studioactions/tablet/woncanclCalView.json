@@ -1,0 +1,25 @@
+{
+    "AS_Button_de4712c85ed64ef2b525aae9cb200774": {
+        "id": "AS_Button_de4712c85ed64ef2b525aae9cb200774",
+        "type": "ACTION_SEQUENCE",
+        "name": "woncanclCalView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7ac8b34802d54f0e814d28ab54534c53"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

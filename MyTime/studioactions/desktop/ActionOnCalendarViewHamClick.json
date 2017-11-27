@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_3369caf534444f848dc44cd824a0ab16": {
+        "id": "AS_FlexContainer_3369caf534444f848dc44cd824a0ab16",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCalendarViewHamClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___df872337ef744fc59961c6c6a1829711",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmHamburgerDW",
+            "formKUID": "b59dc1b56858469682043a21820906fe",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

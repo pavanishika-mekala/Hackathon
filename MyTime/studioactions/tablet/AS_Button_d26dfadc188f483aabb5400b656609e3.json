@@ -1,0 +1,17 @@
+{
+    "AS_Button_d26dfadc188f483aabb5400b656609e3": {
+        "id": "AS_Button_d26dfadc188f483aabb5400b656609e3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d6f8eac924aa4ce78d4da075b60039ad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var onClickOfAnswerButtonObj = new kony.apps.coe.ess.myTime.TimesheetSettingsUI();\nonClickOfAnswerButtonObj.onClickOfAnswerButton(\"btnOption2\", \"Answer2\");",
+            "callbackType": null
+        }]
+    }
+}

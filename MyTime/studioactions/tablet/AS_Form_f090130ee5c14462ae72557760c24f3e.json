@@ -1,0 +1,24 @@
+{
+    "AS_Form_f090130ee5c14462ae72557760c24f3e": {
+        "id": "AS_Form_f090130ee5c14462ae72557760c24f3e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__adbece783f5f45b786102c047b304556",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewTabUI()).createViewPreshow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

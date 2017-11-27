@@ -1,0 +1,259 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "btnDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "btnDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "btnDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "btnDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "btnDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "imgSegDay": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "14 Jan 2016 3:00 PM"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Dates"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "btnDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "btnDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "btnDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "btnDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "btnDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "imgSegDay": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "21 Jan 2016 2:00 PM"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "8 Nov (3H),9 Nov (4H),10 Nov (4H),11 Nov (4H),12 Nov (5H)"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Dates"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "8 Nov - 14 Nov"
+            }
+        },
+        {
+            "btnDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "btnDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "btnDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "btnDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "btnDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "imgSegDay": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "28 Jan 2016 4:00 PM"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "15 Nov (3H),16 Nov (4H),17 Nov (4H),18 Nov (4H),19 Nov (5H)"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "View Dates"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "15 Nov - 21 Nov"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": "0px",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": "0px",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "disabledSkins": {
+        "alternateRowSkin": "s45b2c8de6c44a498bf6c33634323f74",
+        "rowFocusSkin": "sb43725fe72644e3a55d1c8f7e3657c8"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segSavedData",
+    "ide_onRowClick": "AS_Segment_dd36afee49744df08d32a88a2dbdfdbb",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "d6029b0a45e14a0996438d4a639ca3a3",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSavedDetails",
+    "pf": "frmListViewDW",
+    "retainselection": true,
+    "rowTemplateId": "1011751a6c1940e1846c4be4b8fbb6fe",
+    "rowcounter": 2,
+    "rowskin": "s16806abad534c48a97f387ccf2d1416",
+    "rowtemplate": "flxSegDetails",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnDay1": "btnDay1",
+        "btnDay2": "btnDay2",
+        "btnDay3": "btnDay3",
+        "btnDay4": "btnDay4",
+        "btnDay5": "btnDay5",
+        "flxDates": "flxDates",
+        "flxSegDetails": "flxSegDetails",
+        "flxViewDates": "flxViewDates",
+        "flxWeek": "flxWeek",
+        "flximg": "flximg",
+        "imgSegDay": "imgSegDay",
+        "lblDate": "lblDate",
+        "lblDates": "lblDates",
+        "lblHours": "lblHours",
+        "lblSeperator": "lblSeperator",
+        "lblViewdates": "lblViewdates",
+        "lblWeek": "lblWeek"
+    },
+    "zindex": 1
+}

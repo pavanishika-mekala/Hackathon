@@ -61,6 +61,7 @@
     "placeholderi18n": "i18n.ess.myApprovals.frmTabListview.SearchByName",
     "placeholderskin": "sd80b0ef6a174f33bf33f5ea667f229d",
     "securetextentry": false,
+    "texti18n": "i18n.ess.myApprovals.frmTabListview.SearchByName",
     "textinputmode": "A",
     "viewtype": "default",
     "wType": "TextField"

@@ -1,0 +1,31 @@
+{
+    "AS_Label_48e56ad7288a4d42ba26d54f91d41cae": {
+        "id": "AS_Label_48e56ad7288a4d42ba26d54f91d41cae",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnConfirmSubmit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6995670f78be4b4495f380337ea6feed",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarViewDW.flxBlank.setVisibility(false);\nfrmCalendarViewDW.flxSubmitPopup.setVisibility(false);\nfrmCalendarViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Image_6a28b2d455a749ae825661403a0a3e07": {
+        "id": "AS_Image_6a28b2d455a749ae825661403a0a3e07",
+        "type": "ACTION_SEQUENCE",
+        "name": "settingsPushNotifImageOnTouchEnd",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7ef1d2900d394618b20a4df9a4ce534f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f201fd8866224001a7587794ae3cf61d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.settings.getSettingsObject().togglePushNotificationsStatus();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Button_i698bc5b44164c11bd9369319f6c4f3a": {
+        "id": "AS_Button_i698bc5b44164c11bd9369319f6c4f3a",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionDismissPopup",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempFooterAlertBtn",
+            "type": "templates",
+            "platform": "",
+            "KUID": "5044513930224864b5b952afcd0ff276"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e8fa9ffbb5d845679cfbf305a7a0ae1a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "popupErrorAlert.dismiss();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

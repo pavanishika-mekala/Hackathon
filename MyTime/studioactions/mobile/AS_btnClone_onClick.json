@@ -1,0 +1,25 @@
+{
+    "AS_Button_f9533865cb55463b8000ca6b56c15732": {
+        "id": "AS_Button_f9533865cb55463b8000ca6b56c15732",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_btnClone_onClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4f7bf1c44dda43e09089cf520aa847a8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.settingDataToCopySegment();\nkony.apps.coe.ess.myTime.TimesheetCreate.onClickCloneButton();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

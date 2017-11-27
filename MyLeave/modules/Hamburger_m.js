@@ -8,6 +8,9 @@ kony = kony || {};
 kony.apps = kony.apps || {};
 kony.apps.coe = kony.apps.coe || {};
 kony.apps.coe.ess = kony.apps.coe.ess || {};
+
+kony.apps.coe.ess.isLogoutOptionSelected = false;
+
 /**
  * @class          Hamburger
  * @type           Constructor
@@ -17,7 +20,7 @@ kony.apps.coe.ess = kony.apps.coe.ess || {};
  */
 kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     kony.print("-- Start Hamburger constructor --");
-    // Input validations. 
+    // Input validations.
     if (hamburgerButton == undefined) {
         kony.print("Ignoring Error: input hamburgerButton is undefined.");
     }
@@ -33,8 +36,8 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     this.hamburgerMenuItemsShow();
     if (hamburgerButton != undefined) {
         hamburgerButton.onClick = function() {
-          kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.lblWelcome")+" "+kony.apps.coe.ess.frmLogin.username;
-            kony.print("-- Start hamburgerButton.onClick --");
+          kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.lblWelcome")+" "+kony.apps.coe.ess.globalVariables.employeeName;//kony.apps.coe.ess.frmLogin.username;
+        kony.print("-- Start hamburgerButton.onClick --");
 			this.hamburgerMenuItemsShow();
             // Disable clicking on Hamburger.
               if (kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.isVisible) {
@@ -52,7 +55,7 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
                 var showBrgr = scopeObj.showHamburger.bind(scopeObj);
                 showBrgr();
                 var settingButton = kony.application.getCurrentForm().flxSettings;
-                settingButton.onClick = settingButton.onClick.bind(scopeObj); 
+                settingButton.onClick = settingButton.onClick.bind(scopeObj);
             } else {
                 kony.application.getCurrentForm().flxHamburger.setEnabled(false);
                 scopeObj.isHamburgerVisible = false;
@@ -198,8 +201,7 @@ kony.apps.coe.ess.Hamburger.prototype.applyActions = function() {
             this.hideHamburger();
             this.isHamburgerVisible = false;
             kony.print("-- Main flex closed --");
-            kony.sdk.mvvm.LogoutAction();
-            kony.print("-- Completed logout from Hamburger --");
+            kony.apps.coe.ess.isLogoutOptionSelected = true;
         }.bind(this);
         kony.print("-- actions applied --");
     }
@@ -344,6 +346,11 @@ kony.apps.coe.ess.Hamburger.prototype.hideHamburger = function() {
                 //Making foooter visiblity to true
                 if (kony.application.getCurrentForm().footers && kony.application.getCurrentForm().footers[0]) {
                     kony.application.getCurrentForm().footers[0].setVisibility(true);
+                }
+                if(kony.apps.coe.ess.isLogoutOptionSelected === true){
+                  kony.apps.coe.ess.isLogoutOptionSelected = false;
+                  kony.sdk.mvvm.LogoutAction();
+                  kony.print("-- Completed logout from Hamburger --");
                 }
             }
         });

@@ -28,7 +28,7 @@ kony.sdk.mvvm.frmDelegationRequestCreateControllerExtension = Class(kony.sdk.mvv
             var scopeObj = this;
             var contextData = this.getController().getContextData();
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.Backend.getInstance().contextData = contextData;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var query = "select rt.id as id, rt.name as name from request_type rt " +
                 " where id NOT IN ('TIMEENTRY')";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, success, error);

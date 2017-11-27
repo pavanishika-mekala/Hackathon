@@ -1,0 +1,25 @@
+{
+    "AS_Button_15f05e6d57a44c38808c2f46d49d8048": {
+        "id": "AS_Button_15f05e6d57a44c38808c2f46d49d8048",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_onClick_timePickerApplyButton",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d22af903fad14966b2438b990470fb54",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.pickerViewOnClickApply();\nkony.apps.coe.ess.myTime.TimesheetCreate.popluateTimePickerData();\nfrmTimeSheetCreate.timePicker.height = \"100%\";\nfrmTimeSheetCreate.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
