@@ -41,7 +41,7 @@ kony.sdk.mvvm.frmDelegationRequestDetailsControllerExtension = Class(kony.sdk.mv
             var query = "select dl.delegation_group_id as groupId, dl.status_id as statusId, dl.employee_id as empId, emp.First_Name as firstName, emp.Last_Name as lastName, rt.name as requestTypeName, dl.start_date as startDate, dl.end_date as endDate, dl.createdts as createdDate, dl.comments as comments from delegate dl " + 
                 " left join Employee emp on emp.Id = dl.employee_id " +
                 " left join request_type rt on rt.id = dl.request_type_id " + 
-                " where dl.delegation_group_id = '" + contextData.groupId + "';";
+                " where dl.delegation_group_id = '" + contextData.groupId + "' group by rt.name";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, success, error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();

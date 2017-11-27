@@ -272,7 +272,7 @@ function userDetailsSucess(response) {
                                 kony.apps.coe.ess.globalVariables.updateTabEmployeeID(); // open approvals dashboard form
                             } else {
                                 kony.apps.coe.ess.Approvals.Footer.SetFocus(1);
-                                var sqlquery = "select Id,Designation_Id from Employee where IsEmployee = 1";
+                                var sqlquery = "select Id,Designation_Id ,First_Name , Last_Name from Employee where IsEmployee = 1";
                                 kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
                                         kony.print("---Employee data: " + JSON.stringify(data));
                                         if (data.length > 0) {
@@ -291,6 +291,7 @@ function userDetailsSucess(response) {
       											kony.theme.createThemeFromJSONString(JSON.stringify(jsonObj1), "MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
       											kony.theme.setCurrentTheme("MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
       										}
+                                          kony.apps.coe.ess.globalVariables.employeeName =data[0].First_Name + data[0].Last_Name;
                                   		}
                                     },
                                     function(err) {

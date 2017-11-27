@@ -153,3 +153,4 @@ kony.apps.coe.ess.globalVariables.sap_axway_token="konysap-api";
 
 //App navigation 
 kony.apps.coe.ess.globalVariables.prevFormFlow = "";
+kony.apps.coe.ess.globalVariables.employeeName="";
