@@ -2169,7 +2169,7 @@ kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minSt
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(min);
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.hours = hours;
 
-  frmApplyLeave.lblDurationHours.text = hours + " hours";
+  frmApplyLeave.lblDurationHours.text = hours + " "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
   //commented as warning is not needed , if half day is > 4 show alert on submit
    // if((Number(hours) > 4 && btnAction == "HalfDay") ||( Number(hours) > 10 && btnAction == "Hours")){
     // if(btnAction == "HalfDay"){
