@@ -44,7 +44,7 @@
     "enablescrolling": true,
     "id": "flxProfileImage",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "d3fc51848a874085a7104a3852ceb8d6",
     "layouttype": 4,
     "name": "kony.ui.FlexContainer",

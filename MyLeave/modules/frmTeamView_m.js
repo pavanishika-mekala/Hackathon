@@ -1,8 +1,8 @@
-/** 
+/**
  *  @author     Abhishek Singh
- *  @category   Business Logic.	
+ *  @category   Business Logic.
  *  @desc       Contains the functions which are related to form frmTeamView.
- *  @ © 2016    Kony Inc. 
+ *  @ © 2016    Kony Inc.
  */
 kony = kony || {};
 kony.apps = kony.apps || {};
@@ -17,7 +17,7 @@ kony.apps.coe.ess.myLeave.TeamView = function() {
 /**
  * This method modifies the segment data depending on isFirstTimeDataFormatting.
  * @memberof TeamView
- * @param {JSON Array} data 
+ * @param {JSON Array} data
  * @returns {JSON Array} formatted Data
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(data, intervalStartDate, intervalEndDate, isFirstTimeDataFormatting, callbackres) {
@@ -61,7 +61,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                           resultArrayData[i] = "withoutbar.png";
                         }
                       //}
-                    
+
                     i++;
                 }
                 this.tempData.imgDay1 = resultArrayData[0];
@@ -97,7 +97,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                     }
 
                     //tempData.group_id = data[index].group_id;
-                    //@TODO fetch profile pic dynamically     
+                    //@TODO fetch profile pic dynamically
                     tempData.emp_profile_pic = "adduserpic.png";
                     tempData.lblInitials = tempData.first_name.charAt(0).toUpperCase() + tempData.last_name.charAt(0).toUpperCase();
                     tempData.full_name = this.formatEmployeeName(tempData.first_name, tempData.middle_name, tempData.last_name);
@@ -105,7 +105,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                         "isVisible": false
                     };
                     tempData.flxInitials = {
-                        "isVisible": true
+                        "isVisible": false
                     };
 					resultData.push(tempData);
                     this.generateNonWorkingDays(intervalStartDate, intervalEndDate, function(res) {
@@ -222,7 +222,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.isDateFoundInBetween = function(dat
 * @param {Date Object} intervalStartDate - First Date
 		 {Date Object} intervalEndDate - Second Date
          {String}user_id
-* @returns 
+* @returns
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateImageValue = function(intervalStartDate, intervalEndDate, user_id, callback) {
     kony.print("---- Inside generateImageValue ----");
@@ -267,7 +267,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateImageValue = function(inter
                "and ((LEAVE_FROMDATE between'" +yearIntervalStartDate + monthIntervalStartDate + dayIntervalStartDate +
                "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate +
                "') OR (LEAVE_ENDDATE between '" + yearIntervalStartDate + monthIntervalStartDate + dayIntervalStartDate +
-               "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate + "'))"; 
+               "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate + "'))";
       kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, callback, function(err) {
             handleError(err);
         }, false);
@@ -284,7 +284,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateImageValue = function(inter
 * @param {Date Object} intervalStartDate - First Date
 		 {Date Object} intervalEndDate - Second Date
          {String}user_id
-* @returns 
+* @returns
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(intervalStartDate, intervalEndDate, callback) {
     kony.print("---- Inside generateNonWorkingDays ----");
@@ -351,7 +351,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(i
 /**
  * This method binds the data to segment
  * @memberof TeamView
- * @param {JSON Array} data 
+ * @param {JSON Array} data
  * @returns null
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.mapAndBindData = function(data) {
@@ -388,7 +388,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.mapAndBindData = function(data) {
 * @memberof TeamView
 * @param {Date Object} intervalStartDate - First Date
 		 {Date Object} intervalEndDate - Second Date
-* @returns 
+* @returns
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.changeMonthText = function(intervalStartDate, intervalEndDate) {
     try {
@@ -509,7 +509,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaIdSuccessCall
                             }
 
                             data[i].flxProfileImage = {
-                                "isVisible": true
+                                "isVisible": false
                             };
                             data[i].flxInitials = {
                                 "isVisible": false

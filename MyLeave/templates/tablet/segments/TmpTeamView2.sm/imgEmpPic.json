@@ -45,7 +45,7 @@
     "id": "imgEmpPic",
     "imagescalemode": 0,
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "cd3ab3c881d04ba1badd6d575f9a9478",
     "name": "kony.ui.Image2",
     "parent": "flxProfileImage",

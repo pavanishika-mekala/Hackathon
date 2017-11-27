@@ -1,8 +1,8 @@
 {
     "DNDConfig": null,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "7%"
     },
     "_margin_": [
         0,
@@ -20,7 +20,7 @@
     "_percent_": true,
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "allboxes": [],
-    "autogrowmode": 1,
+    "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
         "flxImage",
