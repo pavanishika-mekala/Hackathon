@@ -45,7 +45,7 @@
     "enablescrolling": true,
     "id": "flxLocalDBReset",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ifd61733320a45b094403492301676e4",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
