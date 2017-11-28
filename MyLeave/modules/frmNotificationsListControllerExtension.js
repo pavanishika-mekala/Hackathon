@@ -34,7 +34,7 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
         "FROM notification n " +
         "LEFT JOIN notification_data nd on n.notification_id = nd.notification_id " +
         "WHERE n.module = 'LEAVE' " +
-        "GROUP BY nd.notification_id LIMIT 20;";
+        "GROUP BY nd.notification_id order by notificationTime desc LIMIT 20;";
       kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, success, error);
     } catch (err) {
       kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();

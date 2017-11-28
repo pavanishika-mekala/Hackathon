@@ -67,8 +67,8 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
               
               var startDate = new Date(startDateString.substring(0, 4), parseInt(startDateString.substring(4, 6)) - 1, startDateString.substring(6, 8));
               var endDate = new Date(endDateString.substring(0, 4), parseInt(endDateString.substring(4, 6)) - 1, endDateString.substring(6, 8));
-              var convertedStartDate = startDate.getDate() + " " + monthMap[(startDate.getMonth())];
-              var convertedEndDate = endDate.getDate() + " " + monthMap[(endDate.getMonth())];
+              var convertedStartDate = startDate.getDate() + " " + Date.getMonthNameShort(kony.i18n.getCurrentLocale(),startDate.getMonth());
+              var convertedEndDate = endDate.getDate() + " " + Date.getMonthNameShort(kony.i18n.getCurrentLocale(),endDate.getMonth());
               //Check if it's one day leave
               if (convertedStartDate === convertedEndDate) {
                 dataItem.timePeriod = convertedStartDate + "," + startDate.getFullYear();
