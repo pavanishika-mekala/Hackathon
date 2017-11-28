@@ -180,14 +180,14 @@ kony.sdk.mvvm.frmDelegationTabControllerExtension = Class(kony.sdk.mvvm.BaseForm
             for (i in dataSentByMeGrouped) {
                 tempData = dataSentByMeGrouped[i][0];
                 if (dataSentByMeGrouped[i].length > 1) {
-                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataSentByMeGrouped[i].length - 1) + " more";
+                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataSentByMeGrouped[i].length - 1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");
                 }
                 data.dataSentByMe.push(tempData);
             }
             for (i in dataReceivedGrouped) {
                 tempData = dataReceivedGrouped[i][0];
                 if (dataReceivedGrouped[i].length > 1) {
-                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataReceivedGrouped[i].length - 1) + " more";
+                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataReceivedGrouped[i].length - 1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");
                 }
                 data.dataReceived.push(tempData);
             }

@@ -60,10 +60,10 @@ kony.sdk.mvvm.frmFullDetailsControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
 						"FROM   [approval_request]" +
 						"       LEFT JOIN [request_type] ON ([approval_request].[type_id] = [request_type].[id])" +
 						"       LEFT JOIN [employee] ON ([approval_request].[employee_id] = [employee].[id])" +
-						"       LEFT JOIN [status] ON ([approval_request].[status_id] = [status].[id])" +
 						"       LEFT JOIN [request_approver] ON ([approval_request].[id] = [request_approver].[approval_id])" +
 						"       LEFT JOIN [request_category] ON ([approval_request].[category_id] = [request_category].[id])" +
-						" LEFT JOIN translation t1 "+
+						"       LEFT JOIN [status] ON ([request_approver].[status_id] = [status].[id])" +
+                    	" LEFT JOIN translation t1 "+
             			" ON (request_category.name=t1.TEXT_DISPLAY)"+
 						" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
                     	"       LEFT JOIN [attribute] ON ([approval_request].[id] = [attribute].[approval_id])" +

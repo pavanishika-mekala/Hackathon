@@ -172,14 +172,14 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
             for(i in dataSentByMeGrouped) {
                 tempData = dataSentByMeGrouped[i][0];
                 if(dataSentByMeGrouped[i].length > 1) {
-                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataSentByMeGrouped[i].length - 1) + " more";
+                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataSentByMeGrouped[i].length - 1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");
                 }
                 data.dataSentByMe.push(tempData);
             }
             for(i in dataReceivedGrouped) {
                 tempData = dataReceivedGrouped[i][0];
                 if(dataReceivedGrouped[i].length > 1) {
-                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataReceivedGrouped[i].length - 1) + " more";
+                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataReceivedGrouped[i].length - 1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");
                 }
                 data.dataReceived.push(tempData);
             }
@@ -192,7 +192,8 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
                 data.dataSentByMe[i].lblStatus = getStatusTextWithSkin(data.dataSentByMe[i].statusId);
                 data.dataSentByMe[i].flxStatusIcon = getStatusIconSkin(data.dataSentByMe[i].statusId);
                 data.dataSentByMe[i].createdDate = String(data.dataSentByMe[i].createdDate);
-                if(data.dataSentByMe[i].createdDate !== null && data.dataSentByMe[i].createdDate !== undefined && data.dataSentByMe[i].createdDate !== "") {
+                data.dataSentByMe[i].lblTypeOfRequestHeader=kony.i18n.getLocalizedString("i18n.ess.myapproval.typeOfRequest");
+              	if(data.dataSentByMe[i].createdDate !== null && data.dataSentByMe[i].createdDate !== undefined && data.dataSentByMe[i].createdDate !== "") {
                     data.dataSentByMe[i].createdDate = (new Date().modifyByYYYYMMDDHHMMSS(data.dataSentByMe[i].createdDate)).toDDMMMYYHHmm();
                 } else {
                     data.dataSentByMe[i].createdDate = "";
@@ -210,7 +211,8 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
                 data.dataReceived[i].lblStatus = getStatusTextWithSkin(data.dataReceived[i].statusId);
                 data.dataReceived[i].flxStatusIcon = getStatusIconSkin(data.dataReceived[i].statusId);
                 data.dataReceived[i].createdDate = String(data.dataReceived[i].createdDate);
-                if(data.dataReceived[i].createdDate !== null && data.dataReceived[i].createdDate !== undefined && data.dataReceived[i].createdDate !== "") {
+                data.dataReceived[i].lblTypeOfRequestHeader=kony.i18n.getLocalizedString("i18n.ess.myapproval.typeOfRequest");
+              	if(data.dataReceived[i].createdDate !== null && data.dataReceived[i].createdDate !== undefined && data.dataReceived[i].createdDate !== "") {
                     data.dataReceived[i].createdDate = (new Date().modifyByYYYYMMDDHHMMSS(data.dataReceived[i].createdDate)).toDDMMMYYHHmm();
                 } else {
                     data.dataReceived[i].createdDate = "";

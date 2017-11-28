@@ -32,6 +32,16 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.preShow = function(){
 
 kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requestType, ContextData) {
     try {
+      	var status_keys = {
+            "0": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved"),
+			"1": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected"),
+			"2": kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Pending"),
+			"3": kony.i18n.getLocalizedString("i18n.ess.Login.Cancel"),
+			"4": "",
+			"5": "Saved",
+			"6": "Error",
+			"7": "Submitted"
+        };
         var ApprovalrequestDetail = {
                 "UserName": "",
                 "Titleicon": "",
@@ -48,7 +58,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
         ApprovalrequestDetail=ContextData;
             //status Ui changes
         ApprovalrequestDetail.statusText = {
-            "text": ContextData.StatusName
+            "text": status_keys[ContextData.StatusId]
         };
         if (ContextData.StatusId == 0) {
             //approved approavl request

@@ -123,6 +123,16 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
 			"6": "system_error_audit.png",
 			"7": "submitted_audit.png"
         };
+      	var status_keys = {
+            "0": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved"),
+			"1": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected"),
+			"2": kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Pending"),
+			"3": kony.i18n.getLocalizedString("i18n.ess.Login.Cancel"),
+			"4": "",
+			"5": "Saved",
+			"6": "Error",
+			"7": "Submitted"
+        };
         try {
             var scopeObj = this;
             var processedData = [];
@@ -149,6 +159,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         // getting status value using status id
                         status = kony.apps.coe.ess.globalVariables.Status.idToStr[data[i].status_id];
                         status = status.charAt(0).toUpperCase() + status.substring(1, status.length).toLowerCase();
+                        status=status_keys[data[i].status_id];
                     }
                     processedData.push({
                         lblEventName : status,

@@ -131,7 +131,7 @@ kony.sdk.mvvm.frmIsLaterSearchControllerExtension = Class(kony.sdk.mvvm.BaseForm
       frmIsLaterSearch.lblPeopleSelectedCount.text = (parseInt(selectedPeople.length,10)).toFixed();
       var PeopleSearch_text="";
       if(selectedPeople.length>1){
-        PeopleSearch_text = selectedPeople[0].username.text + "&" + (selectedPeople.length-1) + " more";                  
+        PeopleSearch_text = selectedPeople[0].username.text + "&" + (selectedPeople.length-1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");                  
       }else{
         PeopleSearch_text = selectedPeople[0].username.text;
       }
