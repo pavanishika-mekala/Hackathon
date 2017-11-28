@@ -28,12 +28,12 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
       var scopeObj = this;
       kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
       var sqlQuery = "SELECT n.title, n.description, n.notification_id, " +
-        "GROUP_CONCAT(data_key) as dataKeys, GROUP_CONCAT(data_value) as dataValues, " +
-        "n.createdts as notificationTime " +
+      "GROUP_CONCAT(nd.data_key) as dataKeys, GROUP_CONCAT(nd.data_value) as dataValues, " +
+      "n.lastmodifiedts as notificationTime " +
         "FROM notification n " +
         "LEFT JOIN notification_data nd on n.notification_id = nd.notification_id " +
-        "WHERE n.module='APPROVALS' " +
-        "GROUP BY nd.notification_id order by notificationTime LIMIT 20;";
+        "WHERE n.module='APPROVAL' " +
+        "GROUP BY nd.notification_id ORDER BY notificationTime DESC LIMIT 20;";
       kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, success, error);
     } catch (err) {
       kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
@@ -80,10 +80,15 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
         } else {
           notificationTime = "";
         }
-
+        var translatedText = kony.i18n.getLocalizedString(item.description.toString());
+        if(translatedText !== null && translatedText !== undefined){
+          var descrToSet = translatedText;
+        }else{
+          var descrToSet = item.description;
+        }
         var preparedData = {
           "title": item.title,
-          "description": item.description,
+          "description": descrToSet,
           "notificationTime": notificationTime,
           "timePeriod": "",
           "timeDuration": "",
@@ -115,8 +120,22 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
         } else {
           contextData = null;
         }
+        //translating msgcode
+        var codeIndex = dataKeys.indexOf("msgCode");
+        if (codeIndex !== -1) {
+            var msgCode = dataValues[codeIndex];
+            var translatedText = kony.i18n.getLocalizedString(item.description.toString());
+            if(translatedText !== null && translatedText !== undefined){
+              var descrToSet = translatedText;
+            }else{
+              var descrToSet = item.description;
+            }
+        } else {
+            var descrToSet = item.description;
+        }
+        preparedData.description = descrToSet;
+        preparedData.moduleType = moduleType;
         preparedData.contextData = contextData;
-
         processedData.push(preparedData);
       });
       this.getController().bindData(processedData);
@@ -146,12 +165,13 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
       };
       frmNotificationsList.segNotificationList.widgetDataMap = widgetDataMap;
       frmNotificationsList.segNotificationList.setData(data);
+      var notificationHistoryObject = kony.apps.coe.ess.notifications.getNotificationHistoryInstance();
       for (var i in data) {
         var eachData = data[i];
         switch(eachData.moduleType) {
-          case "APPROVALS" :
+          case "MYAPPROVAL" :
             if(eachData.contextData) {
-              kony.apps.coe.ess.notifications.getNotificationHistoryInstance().fetchDetails(i, eachData.contextData.id);
+              notificationHistoryObject.storeRequestDetails(i, eachData.contextData.id);
             }
             break;
           default :
