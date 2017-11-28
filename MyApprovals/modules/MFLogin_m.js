@@ -291,7 +291,7 @@ function userDetailsSucess(response) {
       											kony.theme.createThemeFromJSONString(JSON.stringify(jsonObj1), "MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
       											kony.theme.setCurrentTheme("MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
       										}
-                                          kony.apps.coe.ess.globalVariables.employeeName =data[0].First_Name + data[0].Last_Name;
+                                          kony.apps.coe.ess.globalVariables.employeeName =data[0].First_Name+" "+ data[0].Last_Name;
                                   		}
                                     },
                                     function(err) {

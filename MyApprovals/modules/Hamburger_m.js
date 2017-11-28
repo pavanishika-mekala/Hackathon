@@ -37,7 +37,7 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
         hamburgerButton.onClick = function() {
             kony.print("-- Start hamburgerButton.onClick --");
           	this.hamburgerMenuItemsShow();
-            kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmHamburger.lblWelcome")+" "+kony.apps.coe.ess.globalVariables.employeeName;//kony.apps.coe.ess.frmLogin.username;
+            kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmHamburger.lblWelcome")+" \n"+kony.apps.coe.ess.globalVariables.employeeName;//kony.apps.coe.ess.frmLogin.username;
           	//bbe-101 menu sync
 //           	kony.application.getCurrentForm().flxHamburger.lblSyncDate.text=formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
 // 		   	kony.application.getCurrentForm().flxHamburger.lblSyncTime.text=formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);

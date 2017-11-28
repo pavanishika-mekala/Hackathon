@@ -250,7 +250,8 @@ kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery,filterIcon
       } else if (res[k].status.toLowerCase() === "submitted") {
         temp.lblStatus = {
           "skin" : "sknlbl2EBAEFop100s28pxHeavy",
-          "text" : res[k].status.slice(0, 1).toUpperCase() + "" + res[k].status.slice(1, statusLength).toLowerCase()
+          //"text" : res[k].status.slice(0, 1).toUpperCase() + "" + res[k].status.slice(1, statusLength).toLowerCase()
+          "text" : kony.i18n.getLocalizedString("i18n.ess.common.submitted.valueKA")
         };
       } else
         temp.lblStatus = kony.i18n.getLocalizedString("i18n.ess.common.pending.valueKA");

@@ -26,7 +26,7 @@ kony.sdk.mvvm.frmTeamViewControllerExtension = Class(kony.sdk.mvvm.BaseFormContr
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             this.$class.$superp.fetchData.call(this, success, error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();

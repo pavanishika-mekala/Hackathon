@@ -23,14 +23,14 @@
         "value": "4.69%"
     },
     "_skin_": "sd9db33bd9ec4c5d9fad53864cefc5f4",
-    "_text_": "Label",
+    "_text_": "Danny Z1S2P2TBBC2",
     "_top_": {
         "type": "string",
         "value": "20%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "49%"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,7 +42,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 6,
     "id": "lblPersonName",
     "info": null,
     "ipad": {
