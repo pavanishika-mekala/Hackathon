@@ -1,0 +1,31 @@
+{
+    "AS_Label_11f4de3a63d44a458ea0c816b367617e": {
+        "id": "AS_Label_11f4de3a63d44a458ea0c816b367617e",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCancelSubmit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f7bf290eff164099af1b57af70ff64f5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarViewDW.flxBlank.setVisibility(false);\nfrmCalendarViewDW.flxSubmitPopup.setVisibility(false);\nfrmCalendarViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

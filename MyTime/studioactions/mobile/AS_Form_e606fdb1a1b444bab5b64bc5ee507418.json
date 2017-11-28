@@ -1,0 +1,24 @@
+{
+    "AS_Form_e606fdb1a1b444bab5b64bc5ee507418": {
+        "id": "AS_Form_e606fdb1a1b444bab5b64bc5ee507418",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchStatus",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ab18cd118f7d4e46b8bc35f583ca0b1c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__93fb386cb2c64690a54745e5af6cd7b6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Search.searchStatusPreshow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

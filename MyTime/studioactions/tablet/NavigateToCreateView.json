@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_c2b95ce910d14beb971d2e34d324f9ec": {
+        "id": "AS_FlexContainer_c2b95ce910d14beb971d2e34d324f9ec",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateToCreateView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__28ad8d5c419a4e9cbfc347d76963f767",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetCreateTab();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

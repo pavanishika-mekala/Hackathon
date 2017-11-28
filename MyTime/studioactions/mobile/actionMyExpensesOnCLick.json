@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_a18e078c77d84689bf8cbc468a65893b": {
+        "id": "AS_FlexContainer_a18e078c77d84689bf8cbc468a65893b",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionMyExpensesOnCLick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburger",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c69dce89016f49ebaaeee7c07e74625f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1c18ee30d69141d3a45cf449fa83e25b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick(\"myExpenses\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

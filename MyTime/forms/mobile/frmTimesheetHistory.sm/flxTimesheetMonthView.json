@@ -1,0 +1,63 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sef360e6468f42d3b6b23ecd7e75f4dd",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxShadow3",
+        "flxTimesheetMonthlyViewStatus",
+        "flxSegments",
+        "flxHorizontalLine4",
+        "flxTimesheetMonthlyViewDetails1",
+        "flxTimesheetMonthlyViewDetails2",
+        "flxTimesheetMonthlyViewDetails3"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxTimesheetMonthView",
+    "info": null,
+    "isvisible": false,
+    "kuid": "106e81c513254351a291aed23eb9f6e2",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxtimesheetMain",
+    "pf": "frmTimesheetHistory",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

@@ -26,11 +26,11 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             var query = "select dl.delegation_group_id as groupId, dl.status_id as statusId, dl.employee_id as empId, emp.First_Name as firstName, emp.Last_Name as lastName, rt.name as requestTypeName, dl.start_date as startDate, dl.end_date as endDate, dl.createdts as createdDate from delegate dl " + 
                 " left join Employee emp on emp.Id = dl.employee_id " +
                 " left join request_type rt on rt.id = dl.request_type_id " + 
-                " where dl.delegator_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "' and status_id = '2';";
+                " where dl.delegator_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "' and status_id = '2' group by dl.delegation_group_id";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackSentByMe.bind(this), error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
@@ -43,7 +43,7 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
             var query = "select dl.delegation_group_id as groupId, dl.status_id as statusId, dl.delegator_id as empId, emp.First_Name as firstName, emp.Last_Name as lastName, rt.name as requestTypeName, dl.start_date as startDate, dl.end_date as endDate, dl.createdts as createdDate from delegate dl " + 
                 " left join Employee emp on emp.Id = dl.delegator_id " +
                 " left join request_type rt on rt.id = dl.request_type_id " + 
-                " where dl.employee_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "';";
+                " where dl.employee_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "' group by dl.delegation_group_id;";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, success.bind(this, res), error);
         }
 		
@@ -172,14 +172,14 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
             for(i in dataSentByMeGrouped) {
                 tempData = dataSentByMeGrouped[i][0];
                 if(dataSentByMeGrouped[i].length > 1) {
-                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataSentByMeGrouped[i].length - 1) + " more";
+                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataSentByMeGrouped[i].length - 1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");
                 }
                 data.dataSentByMe.push(tempData);
             }
             for(i in dataReceivedGrouped) {
                 tempData = dataReceivedGrouped[i][0];
                 if(dataReceivedGrouped[i].length > 1) {
-                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataReceivedGrouped[i].length - 1) + " more";
+                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataReceivedGrouped[i].length - 1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");
                 }
                 data.dataReceived.push(tempData);
             }
@@ -192,7 +192,8 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
                 data.dataSentByMe[i].lblStatus = getStatusTextWithSkin(data.dataSentByMe[i].statusId);
                 data.dataSentByMe[i].flxStatusIcon = getStatusIconSkin(data.dataSentByMe[i].statusId);
                 data.dataSentByMe[i].createdDate = String(data.dataSentByMe[i].createdDate);
-                if(data.dataSentByMe[i].createdDate !== null && data.dataSentByMe[i].createdDate !== undefined && data.dataSentByMe[i].createdDate !== "") {
+                data.dataSentByMe[i].lblTypeOfRequestHeader=kony.i18n.getLocalizedString("i18n.ess.myapproval.typeOfRequest");
+              	if(data.dataSentByMe[i].createdDate !== null && data.dataSentByMe[i].createdDate !== undefined && data.dataSentByMe[i].createdDate !== "") {
                     data.dataSentByMe[i].createdDate = (new Date().modifyByYYYYMMDDHHMMSS(data.dataSentByMe[i].createdDate)).toDDMMMYYHHmm();
                 } else {
                     data.dataSentByMe[i].createdDate = "";
@@ -210,7 +211,8 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
                 data.dataReceived[i].lblStatus = getStatusTextWithSkin(data.dataReceived[i].statusId);
                 data.dataReceived[i].flxStatusIcon = getStatusIconSkin(data.dataReceived[i].statusId);
                 data.dataReceived[i].createdDate = String(data.dataReceived[i].createdDate);
-                if(data.dataReceived[i].createdDate !== null && data.dataReceived[i].createdDate !== undefined && data.dataReceived[i].createdDate !== "") {
+                data.dataReceived[i].lblTypeOfRequestHeader=kony.i18n.getLocalizedString("i18n.ess.myapproval.typeOfRequest");
+              	if(data.dataReceived[i].createdDate !== null && data.dataReceived[i].createdDate !== undefined && data.dataReceived[i].createdDate !== "") {
                     data.dataReceived[i].createdDate = (new Date().modifyByYYYYMMDDHHMMSS(data.dataReceived[i].createdDate)).toDDMMMYYHHmm();
                 } else {
                     data.dataReceived[i].createdDate = "";
@@ -249,7 +251,8 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
                 "lblCreatedDate" : "createdDate",
                 "lblRequestTypes" : "requestTypeName",
                 "lblStatus" : "lblStatus",
-                "flxStatusIcon" : "flxStatusIcon"
+                "flxStatusIcon" : "flxStatusIcon",
+                "lblTypeOfRequestHeader" : "lblTypeOfRequestHeader"
             };
             frmDelegationRequestList.segRequestsListSentByMe.setData(data.dataSentByMe);
             frmDelegationRequestList.segRequestsListReceived.setData(data.dataReceived);

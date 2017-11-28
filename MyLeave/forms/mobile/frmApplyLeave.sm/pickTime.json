@@ -1,0 +1,221 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizPickerView",
+    "DNDConfig": null,
+    "__inst": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "__wheels": null,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s9cb975acbbd4e6d89df011bfb3b8fc1",
+    "_top_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "android": {
+        "psp": {
+            "viewType": 0
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "desktopweb": {
+        "render": false
+    },
+    "focusskin": "s9cb975acbbd4e6d89df011bfb3b8fc1",
+    "id": "pickTime",
+    "info": null,
+    "isvisible": false,
+    "itemorientation": "vertical",
+    "kiosk": {
+        "render": false
+    },
+    "kuid": "ccc3d63d21e44d3cafcdd3dc6060e1fe",
+    "masterType": 1,
+    "masterdata": [
+        [
+            [
+                "h0",
+                "00"
+            ],
+            [
+                "h1",
+                "01"
+            ],
+            [
+                "h2",
+                "02"
+            ],
+            [
+                "h3",
+                "03"
+            ],
+            [
+                "h4",
+                "04"
+            ],
+            [
+                "h5",
+                "05"
+            ],
+            [
+                "h6",
+                "06"
+            ],
+            [
+                "h7",
+                "07"
+            ],
+            [
+                "h8",
+                "08"
+            ],
+            [
+                "h9",
+                "09"
+            ],
+            [
+                "h10",
+                "10"
+            ],
+            [
+                "h11",
+                "11"
+            ],
+            [
+                "h12",
+                "12"
+            ],
+            [
+                "h13",
+                "13"
+            ],
+            [
+                "h14",
+                "14"
+            ],
+            [
+                "h15",
+                "15"
+            ],
+            [
+                "h16",
+                "16"
+            ],
+            [
+                "h17",
+                "17"
+            ],
+            [
+                "h18",
+                "18"
+            ],
+            [
+                "h19",
+                "19"
+            ],
+            [
+                "h20",
+                "20"
+            ],
+            [
+                "h21",
+                "21"
+            ],
+            [
+                "h22",
+                "22"
+            ],
+            [
+                "h23",
+                "23"
+            ],
+            50,
+            "hour"
+        ],
+        [
+            [
+                "m0",
+                "00"
+            ],
+            [
+                "m1",
+                "15"
+            ],
+            [
+                "m2",
+                "30"
+            ],
+            [
+                "m3",
+                "45"
+            ],
+            50,
+            "min"
+        ]
+    ],
+    "masterdatamap": null,
+    "name": "kony.ui.PickerView",
+    "parent": "flxTimeLayout",
+    "pf": "frmApplyLeave",
+    "selectedkey": null,
+    "selectedkeys": null,
+    "selectedkeyvalue": null,
+    "selectedkeyvalues": [
+        "00",
+        "00"
+    ],
+    "size": 18,
+    "spaan": {
+        "render": false
+    },
+    "spaandroidtablet": {
+        "render": false
+    },
+    "spabb": {
+        "render": false
+    },
+    "spaip": {
+        "render": false
+    },
+    "spaipad": {
+        "render": false
+    },
+    "spawindowstablet": {
+        "render": false
+    },
+    "spawinphone8": {
+        "render": false
+    },
+    "viewtype": 0,
+    "wType": "PickerView",
+    "watchos": {
+        "render": false
+    },
+    "windows8": {
+        "render": false
+    },
+    "zindex": 1
+}

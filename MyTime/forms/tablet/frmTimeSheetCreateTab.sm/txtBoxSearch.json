@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_right_": {
+        "type": "string",
+        "value": "3.40%"
+    },
+    "_skin_": "s9e5f48c35174d2c824313502612d3ca",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {},
+    "focusskin": "s9e5f48c35174d2c824313502612d3ca",
+    "id": "txtBoxSearch",
+    "ide_onDone": "AS_TextField_d59e279185924895a91eac058e715143",
+    "ide_onTouchStart": "AS_TextField_74c915ff511347a297f2652bd30d25d4",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "f344d6135b2e4bd7a9ba4ec2dc447cba",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxDetails",
+    "pf": "frmTimeSheetCreateTab",
+    "placeholderi18n": "i18n.ess.frmTimeSheetCreate.Search",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_4bbcf887fe8a45918f24c87e944aa17c": {
+        "id": "AS_FlexContainer_4bbcf887fe8a45918f24c87e944aa17c",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSavedClicked",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__0cbbce9d44ff4f2795a87556492db66c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewUIDW()).showSavedList();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

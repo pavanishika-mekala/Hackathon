@@ -1,0 +1,24 @@
+{
+    "AS_Form_5edeadb597a848bf85155fb780c6358e": {
+        "id": "AS_Form_5edeadb597a848bf85155fb780c6358e",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionTabLoginPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLogin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "3ebc9c095c904e74b868f83592a41d44"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_dfda22673ceb4017ba37e346bfc51a3f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.modules.loadFunctionalModule(\"librarymodules\");\nkony.modules.loadFunctionalModule(\"appjsmodules\");\nkony.apps.coe.ess.frmLogin.frmLoginPreshow();",
+            "callbackType": null
+        }]
+    }
+}

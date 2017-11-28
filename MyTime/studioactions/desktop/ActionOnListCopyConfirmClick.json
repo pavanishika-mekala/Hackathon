@@ -1,0 +1,31 @@
+{
+    "AS_Label_6f2efd669e5c45e8b05bfe8fd505dd70": {
+        "id": "AS_Label_6f2efd669e5c45e8b05bfe8fd505dd70",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnListCopyConfirmClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a1383a763c9e43998f3b216d6ffa6ab9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmListViewDW.flxSegCopy.setVisibility(false);\nfrmListViewDW.imgCpy.src = \"clone.png\";\nfrmListViewDW.imgCpy.width = \"25dp\";\nfrmListViewDW.imgCpy.height = \"25dp\";\nfrmListViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Label_141838d191344488aa1c5bf2974c4f2d": {
+        "id": "AS_Label_141838d191344488aa1c5bf2974c4f2d",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSubmitPopupCancleClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ad8fa3bcce7d4975988e9cfd091b26fb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmListViewDW.flxBlank.setVisibility(false);\nfrmListViewDW.flxSubmitPopup.setVisibility(false);\nfrmListViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

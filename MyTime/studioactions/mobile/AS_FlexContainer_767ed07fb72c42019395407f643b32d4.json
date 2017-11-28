@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_767ed07fb72c42019395407f643b32d4": {
+        "id": "AS_FlexContainer_767ed07fb72c42019395407f643b32d4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegReview",
+            "type": "templates",
+            "platform": "",
+            "KUID": "7121c48d3ef3458eaec254f51b612570"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e1c316eeca324f16a34c23ef41331b3c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetReview.setData(this);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

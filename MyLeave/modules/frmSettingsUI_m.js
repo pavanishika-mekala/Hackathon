@@ -208,7 +208,13 @@ Settings.prototype.destroyForms = function(){
     frmApplyLeave.destroy();
     frmAuditTrail.destroy();
     frmDummy.destroy();
+    // storing last sync timestamp before hamburger is destroyed
+    var dateText = frmHamburger.lblSyncDate.text;
+    var timeText = frmHamburger.lblSyncTime.text;
     frmHamburger.destroy();
+    //setting the timestamp to the one set befre destroying hamburger
+    frmHamburger.lblSyncDate.text = dateText;
+    frmHamburger.lblSyncTime.text = timeText;
     frmHolidays.destroy();
     frmLeaveBalance.destroy();
     frmLeaveHome.destroy();
@@ -232,6 +238,7 @@ Settings.prototype.destroyForms = function(){
     frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.resetDBText");
     frmSettings.btnReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.reset");
     frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSettings.SelectLang");
+	frmSettings.btnChangeLanguage.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.ChangeLang");
   }catch(e){
     kony.print("Error : "+e);
   }

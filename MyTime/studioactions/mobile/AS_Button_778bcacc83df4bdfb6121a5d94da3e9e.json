@@ -1,0 +1,24 @@
+{
+    "AS_Button_778bcacc83df4bdfb6121a5d94da3e9e": {
+        "id": "AS_Button_778bcacc83df4bdfb6121a5d94da3e9e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewTimeSheet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2a604777c24243f08d43a941ea6646bd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7648527b3e4f4baf953ff10b131786b2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ViewTimeSheetUI()).onClickBtnClone();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

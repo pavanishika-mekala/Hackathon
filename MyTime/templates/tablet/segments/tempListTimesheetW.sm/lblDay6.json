@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1.50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s382c3c24f3e487186810d5454335027",
+    "_text_": "6 Nov",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "12%"
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s78ac49be78f4c58b19edc477b4202d5"
+    },
+    "displaytext": true,
+    "id": "lblDay6",
+    "ide_onClick": "AS_Button_afb7fe5aec894c229586789201887c15",
+    "info": null,
+    "isvisible": true,
+    "kuid": "bdcf7c55a76a4dec9d0a2f16d223ae77",
+    "name": "kony.ui.Button",
+    "parent": "flxEachDate",
+    "pf": "tempListTimesheetW",
+    "wType": "Button",
+    "zindex": 1
+}

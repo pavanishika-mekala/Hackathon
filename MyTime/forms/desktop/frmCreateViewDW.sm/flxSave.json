@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "140px"
+    },
+    "_skin_": "s20ac9abc48a47d0b8c23e464d4deefc",
+    "_width_": {
+        "type": "string",
+        "value": "90px"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "lblSave"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "focusskin": "s679102eb7d04adb821960fbfb721d7d",
+    "id": "flxSave",
+    "info": null,
+    "isvisible": true,
+    "kuid": "5b5bc7a4e78047dc9b74fbcfb9aa7443",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxDates",
+    "pf": "frmCreateViewDW",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

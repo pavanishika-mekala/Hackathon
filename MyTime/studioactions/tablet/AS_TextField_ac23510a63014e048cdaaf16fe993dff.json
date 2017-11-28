@@ -1,0 +1,26 @@
+{
+    "AS_TextField_ac23510a63014e048cdaaf16fe993dff": {
+        "id": "AS_TextField_ac23510a63014e048cdaaf16fe993dff",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onDone_9763aab41f1e45a2be5f2a26ff9b77ac",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab.searchFor(this.text);",
+            "callbackType": null
+        }]
+    }
+}

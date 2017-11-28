@@ -14,8 +14,13 @@ kony.apps.coe.ess.notifications = {
 
 //Constructor
 var NotificationHistory = function() {
-
+    //contains leaveId of every row according to its rowindex
+    this.contextDataIndices = [];
+    //storing current form as constructor is executed in bind data
+    //which is technically still executed in prev form
+    this.previousForm = kony.application.getCurrentForm();
 };
+
 /**
  * Fetches Leave details of specified leave-id and populates/updates segment data at specified index.
  * @param index 
@@ -33,7 +38,12 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
       var successCall = function(res) {
 
         if (res && res.length !== 0) {
-          var segData = frmNotificationsList.segNotificationList.data;
+          if(kony.apps.coe.ess.globalVariables.isNativeTablet === true){
+              var segData = kony.application.getCurrentForm().segNotifications.data;
+          }else{
+              var segData = frmNotificationsList.segNotificationList.data;
+          }
+          
           if (segData && segData.length > index) {
             var dataItem = segData[index];
             var monthMap = {
@@ -95,8 +105,12 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
                 dataItem.notificationIcon = "notifications.png";
                 break;
             }
-
-            frmNotificationsList.segNotificationList.setDataAt(dataItem, parseInt(index), 0);
+            if(kony.apps.coe.ess.globalVariables.isNativeTablet === true){
+              kony.application.getCurrentForm().segNotifications.setDataAt(dataItem, parseInt(index), 0);
+            }else{
+              frmNotificationsList.segNotificationList.setDataAt(dataItem, parseInt(index), 0);
+            }
+            this.contextDataIndices.push(leaveId);
 
           } else {
             //Shouldn't happen
@@ -104,7 +118,7 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
         } else {
           //  Nothing to do if response is null or empty
         }
-      };
+      }.bind(this);
       var failureCall = function(err) {
         kony.print("Error in fetching leave details : " + JSON.stringify(err));
       };
@@ -126,10 +140,16 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
  */
 NotificationHistory.prototype.exitNotificationsScreen = function() {
   kony.print("-- Start NotificationHistory.prototype.exitNotificationsScreen");
-  var previousForm = kony.application.getPreviousForm();
-  if(previousForm) {
+  
+  if(this.previousForm) {
     //Just show previous form with pre-loaded data
-    previousForm.show();
+    var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(this.previousForm.id);
+    if(formController !== null && formController !== undefined){
+      formController.loadDataAndShowForm();  
+    }
+    else{
+      this.previousForm.show();  
+    }
   } else {
     //Generally, It shouldn't happen.
     kony.apps.coe.ess.myLeave.MyLeaveHomeUI.showLeaveHome();
@@ -137,4 +157,22 @@ NotificationHistory.prototype.exitNotificationsScreen = function() {
   //Destroy Notification History Singleton Instance
   kony.apps.coe.ess.notifications.notificationHistoryObject = null;
   kony.print("-- End NotificationHistory.prototype.exitNotificationsScreen");
+};
+
+/**
+ * Action for onclick of a row in notif segment
+ */
+NotificationHistory.prototype.showDetailsOfRequest = function(){
+  kony.print("----- Viewing details of request");
+  if(kony.apps.coe.ess.globalVariables.isNativeTablet === true){
+    var selectedIndex = kony.application.getCurrentForm().segNotifications.selectedRowIndex[1];
+    var leaveId = this.contextDataIndices[selectedIndex];
+    kony.apps.coe.ess.KMS.deepDropForTablet(leaveId);
+  }else{
+    var selectedIndex = frmNotificationsList.segNotificationList.selectedRowIndex[1];
+    var leaveId = this.contextDataIndices[selectedIndex];
+    kony.apps.coe.ess.KMS.deepDropForMobile(leaveId);
+  }
+  kony.print("----- End viewing details of request");
+
 };

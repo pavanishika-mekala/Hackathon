@@ -41,11 +41,17 @@
     "id": "lblApprove",
     "ide_onClick": "AS_Button_f9fbf52ef24d49c983848812646bbbef",
     "info": null,
+    "ipad": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": true,
     "kuid": "f3585e228d8b480483d60182bb756786",
     "name": "kony.ui.Button",
     "parent": "flxBottomBar",
     "pf": "frmApprovalRequestDetail",
+    "showprogressindicator": false,
     "texti18n": "i18n.ess.MyApprovals.frmApprovalRequestDetail.btnApprove",
     "wType": "Button"
 }

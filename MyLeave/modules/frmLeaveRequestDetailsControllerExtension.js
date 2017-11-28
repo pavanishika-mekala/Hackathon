@@ -26,8 +26,8 @@ kony.sdk.mvvm.frmLeaveRequestDetailsControllerExtension = Class(kony.sdk.mvvm.Ba
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
-            var sqlquery =  "select l.createdts,l.lastmodifiedts,l.end_date,l.end_time,l.start_time,l.start_date ,l.no_of_hours,l.id,l.leave_type_id,l.status_id,lt.name ,lt.id,s.Id from leave l,status s,leave_type lt where l.id = '"+kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id+"' and lt.id=l.leave_type_id and s.Id=l.status_id";
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
+            var sqlquery =  "select l.createdts,l.lastmodifiedts,l.end_date,l.end_time,l.start_time,l.start_date ,l.no_of_hours,l.id,l.leave_type_id,l.status_id,tr.TEXT_DISPLAY as name ,lt.id,s.Id,lt.name as name1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),status s,leave_type lt where l.id = '"+kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id+"' and lt.id=l.leave_type_id and s.Id=l.status_id AND tr.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'";
              kony.sync.single_select_execute(kony.sync.getDBName() , sqlquery , null , success , error , false); 
 //             this.$class.$superp.fetchData.call(this, success, error);
         } catch (err) {

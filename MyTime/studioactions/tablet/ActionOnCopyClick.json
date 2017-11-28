@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_2ae5b92f835943a0a45bc191bd369bcd": {
+        "id": "AS_FlexContainer_2ae5b92f835943a0a45bc191bd369bcd",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCopyClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__87d00e95e71b45e0949f3848978f73e2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarView.flxCopyWeek.setVisibility(true);\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

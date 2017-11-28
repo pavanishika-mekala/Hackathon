@@ -1,0 +1,244 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "imgNotificationIcon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "rejected.png"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your Shift Change Request has been rejected as primary resource is not available"
+            },
+            "lblNotificationDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 days"
+            },
+            "lblNotificationHLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationPeriod": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Aethelred Ray"
+            },
+            "lblNotificationVLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgNotificationIcon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "submitted.png"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your Leave Request has been submitted to the approver successfully"
+            },
+            "lblNotificationDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 days"
+            },
+            "lblNotificationHLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationPeriod": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "System"
+            },
+            "lblNotificationVLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgNotificationIcon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "systemerror.png"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Your leave Request not submitted due to system error"
+            },
+            "lblNotificationDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "30 days"
+            },
+            "lblNotificationHLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNotificationPeriod": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "System"
+            },
+            "lblNotificationVLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            }
+        },
+        {
+            "imgNotificationIcon": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "syncerror.png"
+            },
+            "lblNotificationDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Applied for Shift Change Request"
+            },
+            "lblNotificationDuration": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 days"
+            },
+            "lblNotificationHLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Lable"
+            },
+            "lblNotificationPeriod": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 Dec - 22 Dec"
+            },
+            "lblNotificationTime": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "16 Jan 6:30 PM"
+            },
+            "lblNotificationTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Jonathan Martin"
+            },
+            "lblNotificationVLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Lable"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "03",
+    "focusedindex": null,
+    "focuseditem": null,
+    "generatedtemplate": "78fc068dc46046e78efec780019130ce",
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segNotificationList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none",
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "8b1aa6ebf49840b196dc0842e2fd2de4",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxBody",
+    "pf": "frmNotificationsList",
+    "retainselection": false,
+    "rowTemplateId": "5c273869043345d98897c91d9b8dc074",
+    "rowcounter": 3,
+    "rowfocusskin": "s495435157924cc0ad66ef812070782c",
+    "rowskin": "s22af95a6cfb46f88f040573a06a2fd2",
+    "rowtemplate": "flxNotificationListTemplate",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s41940ba756546a7a2cbde31274b3bde",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showprogressindicator": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxNotificationIconMack": "flxNotificationIconMack",
+        "flxNotificationListTemplate": "flxNotificationListTemplate",
+        "imgNotificationIcon": "imgNotificationIcon",
+        "lblNotificationDescription": "lblNotificationDescription",
+        "lblNotificationDuration": "lblNotificationDuration",
+        "lblNotificationHLine": "lblNotificationHLine",
+        "lblNotificationPeriod": "lblNotificationPeriod",
+        "lblNotificationTime": "lblNotificationTime",
+        "lblNotificationTitle": "lblNotificationTitle",
+        "lblNotificationVLine": "lblNotificationVLine"
+    },
+    "zindex": 1
+}

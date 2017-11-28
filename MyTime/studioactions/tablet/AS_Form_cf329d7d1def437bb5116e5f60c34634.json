@@ -1,0 +1,23 @@
+{
+    "AS_Form_cf329d7d1def437bb5116e5f60c34634": {
+        "id": "AS_Form_cf329d7d1def437bb5116e5f60c34634",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "c6e181e535624573b9c0c69846292442"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_ee932d4731714430b86599d553aa69f2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var onFrmCalendarViewPreshowObj = new kony.apps.coe.ess.myTime.CalendarViewUI();\nonFrmCalendarViewPreshowObj.getCalendarViewData();\n//#ifdef windows8\nonFrmCalendarViewPreshowObj.addCalendarOnHome();\nonFrmCalendarViewPreshowObj.isValidMonthandYearforCalender();\n//#endif\n\n//(new kony.apps.coe.ess.myTime.CalendarViewUI()).populateInitialData(new Date());",
+            "callbackType": null
+        }]
+    }
+}

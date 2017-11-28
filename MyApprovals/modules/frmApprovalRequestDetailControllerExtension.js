@@ -75,6 +75,8 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					"       approval_request.islater           AS ISLater," +
 					"       approval_request.isread            AS ISRead," +
 					"       approval_request.request_date      AS RequestDate," +
+                    "       approval_request.leave_hours       AS Leave_hours," +
+                    "       approval_request.leave_days        AS Leave_days," +
 					"       employee.first_name                AS FirstName," +
                     "		employee.Media_Id				   AS MediaID,	"+
 					"       employee.last_name                 AS LastName," +
@@ -82,7 +84,8 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					"       request_approver.status_id         AS StatusId," +
 					"       status.status_name                 AS StatusName," +
 					"       request_approver.approver_id       AS Employee_id," +
-					"       request_category.NAME              AS Category," +
+                    "       t2.TEXT_DISPLAY	As	Category,"+
+					"       request_category.NAME              AS Category1," +
 					"       attribute.id                       AS attributeID," +
 					"       attribute.attribute_def_id         AS Attribute_DEF," +
 					"       attribute_def.attribute_section_id AS AttributeSection," +
@@ -93,20 +96,23 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					"              ON ( approval_request.type_id = request_type.id )" +
 					"       LEFT JOIN employee" +
 					"              ON ( approval_request.employee_id = employee.id )" +
-                    "       LEFT JOIN request_approver" +
-					"              ON ( approval_request.id = request_approver.approval_id )" + 
 					"       LEFT JOIN status" +
 					"              ON ( approval_request.status_id = status.id )" +
+					"       LEFT JOIN request_approver" +
+					"              ON ( approval_request.id = request_approver.approval_id )" +
 					"       LEFT JOIN request_category" +
 					"              ON ( approval_request.category_id = request_category.id )" +
-					"       LEFT JOIN attribute" +
+					" LEFT JOIN translation t1 "+
+            		" ON (request_category.name=t1.TEXT_DISPLAY)"+
+					" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
+                    "       LEFT JOIN attribute" +
 					"              ON ( approval_request.id = attribute.approval_id )" +
 					"       LEFT JOIN attribute_def" +
 					"              ON ( attribute.attribute_def_id = attribute_def.id )" +
 					" WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'" +
-					" and  approval_request.id ='" + selectedApprovalID + "'" +
+					" and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'"+
+                    " and  approval_request.id ='" + selectedApprovalID + "'" +
 					" GROUP  BY approval_request.id  ";
-
 				var ApprovalRequestDetailData = {
 					"comments": [],
 					"userAttachments": [],
@@ -224,7 +230,7 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 				if (ApprovalRequestDetailData && ApprovalRequestDetailData.RequestDetials && ApprovalRequestDetailData.RequestDetials.request_type && ApprovalRequestDetailData.userAttachments) {
 					//chainging the ui based on the request Type
 					kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.changeSkins(ApprovalRequestDetailData.RequestDetials.request_type);
-					//binding the approavl request fields
+					//binding the approval request fields
 					kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.bindApprovalRequestDetails(ApprovalRequestDetailData.processedRequestDetail);
 					//Binding the comments to the segments
 					var SegChatDataMap = {
@@ -260,13 +266,25 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					}
                   //making the footer and the comments visiblity on or off based on the status of the request
                  if(ApprovalRequestDetailData.RequestDetials.StatusId==2){
-                   //status of  the request is pending
+									 //status of  the request is pending
                   	frmApprovalRequestDetail.flxBottomButtons.setVisibility(true);
-                    frmApprovalRequestDetail.txtareaComments.setVisibility(true);
+										frmApprovalRequestDetail.lblApprove.isVisible = true;
+										frmApprovalRequestDetail.btnReject.isVisible = true;
+										frmApprovalRequestDetail.btnNotice.isVisible = false;
+										frmApprovalRequestDetail.txtareaComments.setVisibility(true);
                  }else{
-                   //status of the request is not pending
-                   	frmApprovalRequestDetail.flxBottomButtons.setVisibility(false);
-                    frmApprovalRequestDetail.txtareaComments.setVisibility(false);
+									 // If it is a leave information not yet read show the button to mark it as read
+									 if(ApprovalRequestDetailData.RequestDetials.StatusId == 0 && ApprovalRequestDetailData.RequestDetials.ISRead != "1" && ApprovalRequestDetailData.RequestDetials.TypeID == "LEAVEINFO") {
+										 frmApprovalRequestDetail.flxBottomButtons.setVisibility(true);
+										 frmApprovalRequestDetail.lblApprove.isVisible = false;
+										 frmApprovalRequestDetail.btnReject.isVisible = false;
+										 frmApprovalRequestDetail.btnNotice.isVisible = true;
+										 frmApprovalRequestDetail.txtareaComments.setVisibility(false); //true  to false as other absence leaves will be auto approved
+									 } else {
+										 //status of the request is not pending
+                     	frmApprovalRequestDetail.flxBottomButtons.setVisibility(false);
+                      frmApprovalRequestDetail.txtareaComments.setVisibility(false);
+									 }
                  }
 
 				} else {

@@ -42,11 +42,17 @@
     "id": "btnLaterApprove",
     "ide_onClick": "AS_Button_df8754f8cc0445b58e15f4c3b65ff4f0",
     "info": null,
+    "ipad": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": true,
     "kuid": "f52c2bb1bea34965af245351cba81ab7",
     "name": "kony.ui.Button",
     "parent": "flxSegRequests",
     "pf": "tmpSegRequests",
+    "showprogressindicator": false,
     "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.Approve",
     "wType": "Button",
     "zindex": 1

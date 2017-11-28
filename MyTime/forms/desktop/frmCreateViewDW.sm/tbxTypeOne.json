@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "32dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        2,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "se66ace31a094c8abc0d501c2f206d66",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "47dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "tbxTypeOne",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "ed8efb209466497290373eafcc6897ce",
+    "maxtextlength": "",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "flxSearchTypeId",
+    "pf": "frmCreateViewDW",
+    "placeholderi18n": "i18n.ess.mytime.typeid",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "27%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "22%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        3,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "se5541d1313a422ba0680d1292d0abaf",
+    "_text_": "789708",
+    "_top_": {
+        "type": "string",
+        "value": "53%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "focusskin": "se5541d1313a422ba0680d1292d0abaf",
+    "id": "tfop1",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "34cb5d41ad6d4010bed59fc510aa5920",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "flxop1",
+    "pf": "frmTimeSheetCreateTab",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

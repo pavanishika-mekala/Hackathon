@@ -1,0 +1,27 @@
+{
+    "AS_Calendar_66e85fc10c054a4ca46e5c36265de863": {
+        "id": "AS_Calendar_66e85fc10c054a4ca46e5c36265de863",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "boolean",
+            "name": "isValidDateSelected"
+        }],
+        "contextObj": {
+            "name": "frmSearchMyTime",
+            "type": "forms",
+            "platform": "",
+            "KUID": "79673f1514a448a28c0e764e1f9c19e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5e999cc09daa4dacb56b8eedd2bbb9ad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Search.handleStartDateEvent();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

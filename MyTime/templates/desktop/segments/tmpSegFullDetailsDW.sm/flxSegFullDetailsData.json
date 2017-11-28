@@ -1,0 +1,52 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "140px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblProjectName",
+        "lblTaskName",
+        "lblCostCenter",
+        "lblActivityId",
+        "lblDescription",
+        "lblProductiveHours",
+        "lblProductiveHoursValue",
+        "lblSeperator"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSegFullDetailsData",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "6b3e0d93eccf421dbc48e688c073cb37",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "tmpSegFullDetailsDW",
+    "pf": "tmpSegFullDetailsDW",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

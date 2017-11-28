@@ -1,0 +1,52 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s454b6d0bc7a42128f3268d64af46d84",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sb8c4b04e47a4165a829e434d37246e6",
+    "id": "btnTimePickerCancel",
+    "ide_onClick": "AS_Button_1296e8b3df3e48ff9aff0f074bb9af60",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e9eada0d91c04cb19b9cd6af279df04d",
+    "name": "kony.ui.Button",
+    "parent": "flxTimePicker",
+    "pf": "frmTimeSheetCreate",
+    "texti18n": "i18n.ess.common.cancel.valueKA",
+    "wType": "Button",
+    "zindex": 11
+}

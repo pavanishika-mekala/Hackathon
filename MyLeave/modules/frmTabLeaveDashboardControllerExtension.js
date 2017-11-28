@@ -31,7 +31,7 @@ kony.sdk.mvvm.frmTabLeaveDashboardControllerExtension = Class(kony.sdk.mvvm.Base
               eventsResponse:[],
               leavesResponse: []
             };
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             //this.$class.$superp.fetchData.call(this, success, error);
           	var currDate = new Date();
       		var actualCurrYear = currDate.getFullYear().toString().trim(0, 4);
@@ -92,7 +92,7 @@ kony.sdk.mvvm.frmTabLeaveDashboardControllerExtension = Class(kony.sdk.mvvm.Base
     processData: function(res) {
         try {
             var scopeObj = this;
-          	kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+          	kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             //var processedData = this.$class.$superp.processData.call(this, data);
           	kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard.data = [];
     		var monthsJSON = {"01":"January", "02":"February", "03":"March", "04":"April", "05":"May", "06":"June", "07":"July", "08":"August", "09":"September", "10":"October", "11":"November", "12":"December"};

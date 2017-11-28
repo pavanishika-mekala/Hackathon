@@ -1,0 +1,28 @@
+{
+    "AS_TextField_add53fbf3be1476f9161e95b5aa1ac69": {
+        "id": "AS_TextField_add53fbf3be1476f9161e95b5aa1ac69",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionFortxtFieldNetwork",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmRecentTasks",
+            "type": "forms",
+            "platform": "",
+            "KUID": "27f51ce923c14663b84d11c4ec853676"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4f803b5e4c894df583d3adf3c181f297",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmRecentTasks.txtFieldActivity.setFocus(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "40%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "86%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s82580abaae041919a6f0dcd806a8358",
+    "_src_": "down.png",
+    "_top_": {
+        "type": "string",
+        "value": "33%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "context": {
+        "channel": "tablet",
+        "formID": "frmTimeSheetCreateTab",
+        "platform": "windows8",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "id": "imgsrchseg",
+    "imagescalemode": 1,
+    "info": null,
+    "isvisible": true,
+    "kuid": "18cbe53f4d2d4641b6f216740fd2ba0a",
+    "name": "kony.ui.Image2",
+    "parent": "FlexContainer0922e01851d3d42",
+    "pf": "frmTimeSheetCreateTab",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 3
+}

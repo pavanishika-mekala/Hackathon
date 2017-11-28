@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_18518890860c4d4bb66b4e7d79bd0bcb": {
+        "id": "AS_FlexContainer_18518890860c4d4bb66b4e7d79bd0bcb",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_onClickOfSPAMenuOptions",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "tempHeaderHomeAndView",
+            "type": "templates",
+            "platform": "",
+            "KUID": "42c649aaa1ab43e88066a0a9d8227ee8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__076ff3c06dfe465ba4a26cd4c8de9c76",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.frmTimesheetHomeActions.SPA.getInstance().onClickOfMenuButton();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

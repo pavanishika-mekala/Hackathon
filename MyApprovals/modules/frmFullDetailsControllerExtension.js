@@ -26,47 +26,52 @@ kony.sdk.mvvm.frmFullDetailsControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
 		fetchData: function () {
 			try {
 				var scopeObj = this;
-				kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+				kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
 				//input validation
 				if(isEmpty(kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID)||isEmpty(kony.apps.coe.ess.globalVariables.EmployeeID )){
 					//input validation failed
 					handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.myApprovals.FrmFullDetails.ErrorMessage.Formloading")));
 					return;
 				}
-				var selectedApprovalID = kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID;				
+				var selectedApprovalID = kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID;
 				//query for the approval request full details
-				var ApprovalRequestFullDetailsQuery = "SELECT [approval_request].[id] AS [ID], " + 
-						"       [approval_request].[due_date] AS [Due_Date], " + 
-						"       [approval_request].[employee_id] AS [CreatedByEmployeeid], " + 
-						"       [approval_request].[category_id] AS [CategoryID], " + 
-						"       [approval_request].[type_id] AS [TypeID], " + 
-						"       [approval_request].[islater] AS [ISLater], " + 
-						"       [approval_request].[isread] AS [ISRead], " + 
-						"       [approval_request].[request_date] AS [RequestDate], " + 
-						"       [employee].[first_name] AS [FirstName], " + 
-						"       [employee].[Media_Id] AS [MediaID], " + 
-						"       [employee].[last_name] AS [LastName], " + 
-						"       [request_type].[NAME] AS [Type], " + 
-						"       [request_approver].[status_id] AS [StatusId], " + 
-						"       [status].[status_name] AS [StatusName], " + 
-						"       [request_approver].[approver_id] AS [Employee_id], " + 
-						"       [request_category].[NAME] AS [Category], " + 
-						"       [attribute].[id] AS [attributeID], " + 
-						"       [attribute].[attribute_def_id] AS [Attribute_DEF], " + 
-						"       [attribute_def].[attribute_section_id] AS [AttributeSection], " + 
-						"       GROUP_CONCAT (CASE WHEN [attribute_def].[attribute_section_id] = '2' THEN ([attribute].[value]) ELSE NULL END) AS [Attributevalue], " + 
+				var ApprovalRequestFullDetailsQuery = "SELECT [approval_request].[id] AS [ID], " +
+						"       [approval_request].[due_date] AS [Due_Date], " +
+						"       [approval_request].[employee_id] AS [CreatedByEmployeeid], " +
+						"       [approval_request].[category_id] AS [CategoryID], " +
+						"       [approval_request].[type_id] AS [TypeID], " +
+						"       [approval_request].[islater] AS [ISLater], " +
+						"       [approval_request].[isread] AS [ISRead], " +
+						"       [approval_request].[request_date] AS [RequestDate], " +
+						"       [employee].[first_name] AS [FirstName], " +
+						"       [employee].[Media_Id] AS [MediaID], " +
+						"       [employee].[last_name] AS [LastName], " +
+						"       [request_type].[NAME] AS [Type], " +
+						"       [request_approver].[status_id] AS [StatusId], " +
+						"       [status].[status_name] AS [StatusName], " +
+						"       [request_approver].[approver_id] AS [Employee_id], " +
+                    	"       t2.TEXT_DISPLAY	As	Category,"+
+						"       [request_category].[NAME] AS [Category1], " +
+						"       [attribute].[id] AS [attributeID], " +
+						"       [attribute].[attribute_def_id] AS [Attribute_DEF], " +
+						"       [attribute_def].[attribute_section_id] AS [AttributeSection], " +
+						"       GROUP_CONCAT (CASE WHEN [attribute_def].[attribute_section_id] = '2' THEN ([attribute].[value]) ELSE NULL END) AS [Attributevalue], " +
 						"       GROUP_CONCAT (CASE WHEN [attribute_def].[attribute_section_id] = '2' THEN ([attribute_def].[label]) ELSE NULL END) AS [AttributeNAME]" + 
-						"FROM   [approval_request]" + 
-						"       LEFT JOIN [request_type] ON ([approval_request].[type_id] = [request_type].[id])" + 
-						"       LEFT JOIN [employee] ON ([approval_request].[employee_id] = [employee].[id])" + 
-						"       LEFT JOIN [status] ON ([request_approver].[status_id] = [status].[id])" + 
-						"       LEFT JOIN [request_approver] ON ([approval_request].[id] = [request_approver].[approval_id])" + 
-						"       LEFT JOIN [request_category] ON ([approval_request].[category_id] = [request_category].[id])" + 
-						"       LEFT JOIN [attribute] ON ([approval_request].[id] = [attribute].[approval_id])" + 
-						"       LEFT JOIN [attribute_def] ON ([attribute].[attribute_def_id] = [attribute_def].[id])" + 
-						"WHERE  [request_approver].[approver_id] = '"+kony.apps.coe.ess.globalVariables.EmployeeID+"'" + 
-						"       AND [approval_request].[id] = '"+selectedApprovalID+"'" + 
-						"GROUP  BY [approval_request].[id];" ;
+						"FROM   [approval_request]" +
+						"       LEFT JOIN [request_type] ON ([approval_request].[type_id] = [request_type].[id])" +
+						"       LEFT JOIN [employee] ON ([approval_request].[employee_id] = [employee].[id])" +
+						"       LEFT JOIN [request_approver] ON ([approval_request].[id] = [request_approver].[approval_id])" +
+						"       LEFT JOIN [request_category] ON ([approval_request].[category_id] = [request_category].[id])" +
+						"       LEFT JOIN [status] ON ([request_approver].[status_id] = [status].[id])" +
+                    	" LEFT JOIN translation t1 "+
+            			" ON (request_category.name=t1.TEXT_DISPLAY)"+
+						" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
+                    	"       LEFT JOIN [attribute] ON ([approval_request].[id] = [attribute].[approval_id])" +
+						"       LEFT JOIN [attribute_def] ON ([attribute].[attribute_def_id] = [attribute_def].[id])" +
+						"WHERE  [request_approver].[approver_id] = '"+kony.apps.coe.ess.globalVariables.EmployeeID+"'" +
+						"       AND [approval_request].[id] = '"+selectedApprovalID+"'" +
+						 " and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' "+
+                    	"GROUP  BY [approval_request].[id];" ;
 					kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", ApprovalRequestFullDetailsQuery,success,error);
 			} catch (err) {
 				kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
@@ -76,7 +81,7 @@ kony.sdk.mvvm.frmFullDetailsControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
 			}
 
 			function success(response) {
-				    
+
 				scopeObj.getController().processData(response[0]);
 			}
 			function error(err) {
@@ -97,9 +102,9 @@ kony.sdk.mvvm.frmFullDetailsControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
 		 */
 		processData: function (data) {
 			try {
-              	var scopeObj = this;				
+              	var scopeObj = this;
               	var processedRequestDetail = kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest(data);
-              	processedRequestDetail = kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData(processedRequestDetail.request_type, processedRequestDetail);				              	
+              	processedRequestDetail = kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData(processedRequestDetail.request_type, processedRequestDetail);
               	kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
               	this.getController().bindData(processedRequestDetail);
 				return processedRequestDetail;
@@ -120,13 +125,14 @@ kony.sdk.mvvm.frmFullDetailsControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
 		bindData: function (data) {
 			try {
 				this.getController().getFormModel().formatUI();
-              
-              	//chnage status flex color 
+
+              	//chnage status flex color
               	kony.apps.coe.ess.WidgetPropertyBinding(frmFullDetails.flxStatusType,data.statusFlx);
-              	//change status name 
+              	//change status name
               	kony.apps.coe.ess.WidgetPropertyBinding(frmFullDetails.lblStatus, data.statusText);
                 kony.apps.coe.ess.WidgetPropertyBinding(frmFullDetails.imgLogo, data.Titleicon);
-              	frmFullDetails.lblTitle.text=frmApprovalRequestDetail.lblTitle.text;    			
+              	frmFullDetails.lblTitle.text=frmApprovalRequestDetail.lblTitle.text;
+                frmFullDetails.btnAdditionalInfo.text=frmApprovalRequestDetail.lblAdditonalInfo.text;
               	kony.apps.coe.ess.WidgetPropertyBinding(frmFullDetails.lblCategory, data.TitleDetail);
               	frmFullDetails.lblRequestedDate.text=data.RequestDate;
              	var fullDetailsWidgetDataMap = {
@@ -134,9 +140,9 @@ kony.sdk.mvvm.frmFullDetailsControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
                   	"lblValue" : "value",
 				};
               	frmFullDetails.segFullDetails.widgetDataMap = fullDetailsWidgetDataMap;
-              	var segData=jsonAttribtuesTOArray(data.attributejson);   
+              	var segData=jsonAttribtuesTOArray(data.attributejson);
               	frmFullDetails.segFullDetails.setData(segData);
-             	kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();              
+             	kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
               	this.getController().showForm();
 			} catch (err) {
 				kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();

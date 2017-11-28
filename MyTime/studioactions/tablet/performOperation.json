@@ -1,0 +1,25 @@
+{
+    "AS_Button_be6257fc7bb64037940a6be968f38a74": {
+        "id": "AS_Button_be6257fc7bb64037940a6be968f38a74",
+        "type": "ACTION_SEQUENCE",
+        "name": "performOperation",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c9a3379e9c2940f48ad77c02c7b38537",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).performOperation();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

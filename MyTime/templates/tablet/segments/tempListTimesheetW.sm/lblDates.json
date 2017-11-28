@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2ec170e9f574d01966ba9a5bf9f8bee",
+    "_text_": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)",
+    "_top_": {
+        "type": "number",
+        "value": "6"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblDates",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "10f977f5a1ad4a90afb4d31cd50a07a8",
+    "name": "kony.ui.Label",
+    "parent": "flxDates",
+    "pf": "tempListTimesheetW",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

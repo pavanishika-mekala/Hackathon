@@ -1,0 +1,28 @@
+{
+    "AS_Button_83c7c7b8da1a4193b7a913344771dafd": {
+        "id": "AS_Button_83c7c7b8da1a4193b7a913344771dafd",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionTmpListDetailsDWBtnDay3Click",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpListDetailsDW",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1011751a6c1940e1846c4be4b8fbb6fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__910e5a811bc44075aaf93c398d1ff2b8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewUIDW()).viewSavedDetailsBtn(3);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

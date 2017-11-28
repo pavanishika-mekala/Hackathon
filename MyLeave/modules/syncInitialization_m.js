@@ -191,7 +191,12 @@ kony.apps.coe.ess.Sync.syncAsynchronously = function() {
       var currentForm = kony.application.getCurrentForm();
 
       //Update
-      
+      if(kony.store.getItem("kony.MYLEAVE.loggedInUser") !== kony.apps.coe.ess.globalVariables.EmployeeID){
+          kony.apps.coe.ess.KMS.callbacks.fetchAndShowOfflineNotificationData();
+      }else{
+        kony.store.setItem("kony.MYLEAVE.loggedInUser",kony.apps.coe.ess.globalVariables.EmployeeID); 
+        kony.store.removeItem("kony.MYLEAVE.latestNotificationData");
+      }
       //To-DO
       //If any other updations are done while sync session, Start session again
       if(kony.apps.coe.ess.Sync.updatedWhileSyncing) {
@@ -207,4 +212,41 @@ kony.apps.coe.ess.Sync.syncAsynchronously = function() {
     kony.apps.coe.ess.Sync.startSyncSession(success,failure);
   } 
   kony.print("--End syncAsynchronously--");
+};
+
+kony.apps.coe.ess.Sync.deltaSyncConfig = function() {
+  try{
+    kony.timer.cancel("serviceDeltaSyncTimer");
+  }
+  catch(e){
+    kony.print(e);
+  }
+  try{
+    kony.timer.schedule("serviceDeltaSyncTimer", kony.apps.coe.ess.Sync.deltaSync, kony.apps.coe.ess.globalVariables.timeforAutoSync, true);
+  }
+  catch(e){
+    kony.print(e);
+  }
+};
+kony.apps.coe.ess.Sync.deltaSync=function(){
+  kony.print("-- Start deltaSync.function --");
+  kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+  kony.apps.coe.ess.Sync.doDownload = true;
+  if (!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+    kony.apps.coe.ess.globalVariables.isSyncInProgress = true;
+  }
+  var successCallback = function() {
+    var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.application.getCurrentForm().id);
+    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.myLeave.sync.Refreshing"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+	if (kony.application.getCurrentForm().id != "frmApplyLeave") {
+		formController.loadDataAndShowForm();
+	}else{
+		kony.application.dismissLoadingScreen();
+  }
+    kony.print("-- Completed auto sync from deltaSync --");
+  };//.bind(this);
+  if (kony.application.getCurrentForm().id != "frmLogin") {
+  kony.apps.coe.ess.frmLogin.manualSyncOnClick(successCallback);
+  }
+  kony.print("-- End deltaSync.function --");
 };

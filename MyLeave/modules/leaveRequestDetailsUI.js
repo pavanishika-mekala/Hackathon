@@ -80,15 +80,15 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.setLeaveDetails = func
     //check for full day or partial day
     if (data[0].no_of_hours < kony.apps.coe.ess.appconfig.workingHours && data[0].no_of_hours !== "") {
         if (data[0].no_of_hours === kony.apps.coe.ess.appconfig.workingHours) {
-            frmLeaveRequestDetails.lblLeaveTime.text = "1 DAY";
+            frmLeaveRequestDetails.lblLeaveTime.text = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.fullDay.valueKA");
         } else {
-            frmLeaveRequestDetails.lblLeaveTime.text = parseFloat((data[0].no_of_hours),10).toFixed(2) + kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
+            frmLeaveRequestDetails.lblLeaveTime.text = (parseFloat((data[0].no_of_hours),10).toFixed(2) + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.partial.valueKA");
         }
     } else {
         if (data[0].no_of_hours !== undefined && data[0].no_of_hours !== "") {
-            frmLeaveRequestDetails.lblLeaveTime.text = ((parseInt(data[0].no_of_hours) * 1) / kony.apps.coe.ess.appconfig.workingHours).toFixed() + " DAYS";
+            frmLeaveRequestDetails.lblLeaveTime.text = ((parseInt(data[0].no_of_hours) * 1) / kony.apps.coe.ess.appconfig.workingHours).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.fullDay.valueKA");
         } else {
             frmLeaveRequestDetails.lblLeaveTime.isVisible = false;
@@ -150,15 +150,17 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.setTime = function(src
     if (parseInt(srcDateTime.substring(8, 10) * 1) > "12") {
 
         if ((parseInt(srcDateTime.substring(8, 10) * 1) % 12) === 0) {
-            time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) % 12)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " AM";
+            //time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) % 12)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " AM";
+          time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) )) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1));
         } else {
-            time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) % 12)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " PM";
+          	//time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) % 12)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " PM";
+            time = (getTimeHourswithZero((parseInt(srcDateTime.substring(8, 10)) * 1) )) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1));
         }
     } else {
         if (parseInt(srcDateTime.substring(8, 10) * 1) == 12) {
-            time = (getTimeHourswithZero(parseInt(srcDateTime.substring(8, 10) * 1))) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " PM";
+            time = (getTimeHourswithZero(parseInt(srcDateTime.substring(8, 10) * 1))) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1));
         } else {
-            time = getTimeHourswithZero(parseInt(srcDateTime.substring(8, 10) * 1)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1)) + " AM";
+            time = getTimeHourswithZero(parseInt(srcDateTime.substring(8, 10) * 1)) + ":" + getTimeHourswithZero(parseInt(srcDateTime.substring(10, 12) * 1));
         }
     }
     return time;
@@ -430,6 +432,7 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.onClickEdit = function
 kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.commentQuery = function() {
     var leaveNoteQuery = "select ln.comments, ln.employee_id, ln.createdts, e.First_Name, e.Last_Name, e.Media_Id " +
         "from leave_note ln join Employee e on ln.employee_id=e.Id where ln.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "' order by ln.createdts ASC";
+    
     kony.sync.single_select_execute(kony.sync.getDBName(), leaveNoteQuery, null, function(res) {
         if (res === undefined || res === null || res.length <= 0) {
             frmLeaveRequestDetails.segComments.isVisible = false;
@@ -517,11 +520,12 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.generateCommentRows = 
     var monthsJSON = Date.getMonthMapNumberToMonth;
     var obj = new kony.apps.coe.ess.myLeave.leaveRequestDetailsUI();
     var commentData = [];
+  	var resLength = res.length;
     try {
         for (var i = 0; i < res.length; i++) {
             kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.employeeImg = null;
             var commentDate = "";
-            if (!isNaN(res[i].createdts) && res[i].createdts !== null && res[i].createdts !== " ") {
+            if (!isNaN(res[i].createdts) && res[i].createdts !== null && res[i].createdts !== " " ) {
                 var commentTime = "";
                 commentTime = obj.setTime(res[i].createdts);
                 commentDate = res[i].createdts.substring(6, 8) + " " + (monthsJSON[res[i].createdts.substring(4, 6) + ""]).substring(0, 3) + ", " + commentTime;
@@ -538,21 +542,29 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.generateCommentRows = 
                     "text": res[i].comments,
                 };
 
-                tempCommentData.lblapplieddate = "Submitted on " + commentDate;
+                tempCommentData.lblapplieddate = kony.i18n.getLocalizedString("i18n.ess.common.submittedon")+" " + commentDate;
                 kony.print("------image data--" + JSON.stringify(kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.ImgData[i]));
                 tempCommentData.imgapplier = "adduserpic.png";
                 commentData.push(tempCommentData);
-            } else {
+            } else{
+              var mock = 0;
+              if(i>0){
+              	if(res[i].createdts === res[i-1].createdts){
+              		mock = 1;    
+                }
+              }
+              	if(mock === 0){
                 var empCommentData = {};
-                empCommentData.template = flexapprovernote;
-                empCommentData.imgapprover = "adduserpic.png";
-                empCommentData.labelapprovernotes = " ";
-                empCommentData.lblapprovername = res[i].First_Name;
-                empCommentData.txtComments = {
-                    "text": res[i].comments,
-                };
-                empCommentData.lblapproveddate = "Submitted on " + commentDate;
-                commentData.push(empCommentData);
+                  empCommentData.template = flexapprovernote;
+                  empCommentData.imgapprover = "adduserpic.png";
+                  empCommentData.labelapprovernotes = " ";
+                  empCommentData.lblapprovername = res[i].First_Name;
+                  empCommentData.txtComments = {
+                      "text": res[i].comments,
+                  };
+                  empCommentData.lblapproveddate = kony.i18n.getLocalizedString("i18n.ess.common.submittedon")+" " + commentDate;
+                  commentData.push(empCommentData);
+                }
             }
         }
         frmLeaveRequestDetails.segComments.widgetDataMap = {

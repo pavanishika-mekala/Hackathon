@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_621bc0bd13224d3c872d22b2dd192707": {
+        "id": "AS_FlexContainer_621bc0bd13224d3c872d22b2dd192707",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_FlexContainer_HamburgerOnClick_frmSearchMyTime",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchMyTime",
+            "type": "forms",
+            "platform": "",
+            "KUID": "79673f1514a448a28c0e764e1f9c19e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__31856a9571034c22a847c8889ba1cc23",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.coe.ess.Hamburger(frmSearchMyTime.flxHamburgerButton);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

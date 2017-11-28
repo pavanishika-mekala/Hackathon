@@ -1,0 +1,1145 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        },
+        {
+            "imgViewDate": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "openarrow.png"
+            },
+            "lblDates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov (3H),2 Nov (4H),3 Nov (4H),4 Nov (4H),5 Nov (5H)"
+            },
+            "lblDay1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov"
+            },
+            "lblDay2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2 Nov"
+            },
+            "lblDay3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3 Nov"
+            },
+            "lblDay4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 Nov"
+            },
+            "lblDay5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5 Nov"
+            },
+            "lblHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "20 H"
+            },
+            "lblViewdates": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.ess.frmTimeSheetList.viewDates",
+                "text": "Label"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Nov - 7 Nov"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "023",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segViewDates",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "b1b19c71c1204cd19e5d4a36b88f12e6",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxViewDates",
+    "pf": "frmListView",
+    "retainselection": false,
+    "rowTemplateId": "4fdbec0415bb4884a9aea2cf02eb4db4",
+    "rowcounter": 23,
+    "rowfocusskin": "s3fe7255b9da4bc08fb8ad82e9f1c719",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxListTimesheetW",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "FlxDetails": "FlxDetails",
+        "flxDates": "flxDates",
+        "flxEachDate": "flxEachDate",
+        "flxListTimesheetW": "flxListTimesheetW",
+        "flxViewDates": "flxViewDates",
+        "flxWeek": "flxWeek",
+        "flximgViewDate": "flximgViewDate",
+        "imgViewDate": "imgViewDate",
+        "lblDates": "lblDates",
+        "lblDay1": "lblDay1",
+        "lblDay2": "lblDay2",
+        "lblDay3": "lblDay3",
+        "lblDay4": "lblDay4",
+        "lblDay5": "lblDay5",
+        "lblHours": "lblHours",
+        "lblViewdates": "lblViewdates",
+        "lblWeek": "lblWeek"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_f54c661e12ad42a09aa860eca76940f9": {
+        "id": "AS_FlexContainer_f54c661e12ad42a09aa860eca76940f9",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionToAddBreak",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__3b299ed828b14225b0b4f7d700fb5587",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmCreateViewDW.imgAddBreak.src==\"addbreak.png\"){\n  frmCreateViewDW.imgAddBreak.src=\"close_edit.png\";\n  frmCreateViewDW.imgDeleteBreak.setVisibility(true);\n  frmCreateViewDW.imgEditBreak.setVisibility(true); \n}\nelse\n  {\n frmCreateViewDW.imgAddBreak.src=\"addbreak.png\";\n frmCreateViewDW.imgDeleteBreak.setVisibility(false);\n frmCreateViewDW.imgEditBreak.setVisibility(false);\n  }\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

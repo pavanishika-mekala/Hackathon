@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_b118c833066944448b48eaeba8854e03": {
+        "id": "AS_FlexContainer_b118c833066944448b48eaeba8854e03",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b1bdd713dd6d42eba17c2fe831e3ea0d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarView.flxCopyWeek.setVisibility(true);\nfrmCalendarView.flxCopyIcon.skin = \"sknFlxBG087da8OP100R100\";\nfrmCalendarView.imgCopy.src = \"copywhite.png\";",
+            "callbackType": null
+        }]
+    }
+}

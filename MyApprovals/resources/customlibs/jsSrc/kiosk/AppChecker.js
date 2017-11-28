@@ -1,4 +1,4 @@
 var AppChecker={};
-AppChecker.AppChecker=function(){
-this.isAppExist= function(param){};
-};
+AppChecker.AppChecker=function(){}
+AppChecker.AppChecker.prototype.isAppExist= function(param){};
+

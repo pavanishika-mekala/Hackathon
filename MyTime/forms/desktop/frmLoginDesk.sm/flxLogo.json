@@ -1,0 +1,65 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "22%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "17%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "2%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "11.80%"
+    },
+    "children": [
+        "imgmyPay"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxLogo",
+    "info": null,
+    "isvisible": false,
+    "kuid": "8482f9e693fe43e49d51fdb9fc6287a7",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxReconfigure",
+    "pf": "frmLoginDesk",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 2
+}

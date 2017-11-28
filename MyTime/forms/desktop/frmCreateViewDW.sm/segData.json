@@ -1,0 +1,182 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Overtime Hours - Paid"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Overtime Hours - Paid+Comp"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Billable Hours"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Billable Hours - Comp"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Unpaid Hours"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours - Comp"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "lblData": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours - Paid+Comp"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "07",
+    "disabledSkins": {
+        "rowFocusSkin": "s3fe7255b9da4bc08fb8ad82e9f1c719"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segData",
+    "ide_onRowClick": "AS_Segment_3be24b4666714eea9f0593887a7b1858",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "1063479e62744a25a83cddf652de5ec2",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSelectType",
+    "pf": "frmCreateViewDW",
+    "retainselection": false,
+    "rowTemplateId": "4c4ede32276f4068aadfc0b6f4fe930f",
+    "rowcounter": 7,
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxTop",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "ffffff00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxTop": "flxTop",
+        "lblData": "lblData",
+        "lblSeperator": "lblSeperator"
+    },
+    "zindex": 1
+}

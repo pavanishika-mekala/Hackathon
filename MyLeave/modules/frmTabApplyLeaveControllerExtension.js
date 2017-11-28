@@ -18,15 +18,15 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
     constructor: function(controllerObj) {
         this.$class.$super.call(this, controllerObj);
     },
-    /** 
+    /**
      * This method is an entry point for all fetch related flows. Developer can edit.
-     * Default implementation fetches data for the form based on form config 
+     * Default implementation fetches data for the form based on form config
      * @memberof frmTabApplyLeaveControllerExtension#
      */
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
           	var finalResponse = {
               managerData : [],
               leaveType : []
@@ -61,7 +61,7 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method processes fetched data. Developer can edit.
      * Default implementation processes the provided data to required format for bind.
      * @param {Object} data - fetched data. (Default : data map, group id as key and records array as value)
@@ -81,7 +81,7 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         };
     },
-    /** 
+    /**
      * This method binds the processed data to the form. Developer can edit.
      * Default implementation binds the data to widgets in the form.
      * @param {Object} data - processed data.(Default : data map for each group, widget id as key and widget data as value)
@@ -101,7 +101,7 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
 					}
 				}
 				kony.apps.ess.myLeave.tabApplyLeaveUI.ManagerName = data.managerData[0][0].First_Name + " " + data.managerData[0][0].Last_Name;
-			} 
+			}
           	frmTabApplyLeave.lblApproverName.text = kony.apps.ess.myLeave.tabApplyLeaveUI.ManagerName;
      		var currYear = (kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard.calendarWidget.year).toString().trim(0,4);
      		frmTabApplyLeave.lblYear.text=currYear;
@@ -124,7 +124,7 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
               			//#else
               			height : "45%",
               			//#endif
-					
+
 						skin : "sknbtntabF4F4F4",
 						focusSkin : "sknbtntab4A90E2",
 						text : "  "+ data.leaveType[0][i].name + "   ",
@@ -143,8 +143,8 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
 			}
 			frmTabApplyLeave.flxLeaveType["btnLeaveType" + data.leaveType[0][0].id].skin = "sknbtntab4A90E2";
       		//#ifndef
-				frmTabApplyLeave.lblLeavesLeft.text = "Available " + frmTabApplyLeave["btnLeaveType" + data.leaveType[0][0].id].text ;
-      		//#endif      	
+				frmTabApplyLeave.lblLeavesLeft.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+ " " + frmTabApplyLeave["btnLeaveType" + data.leaveType[0][0].id].text ;
+      		//#endif
 			kony.apps.ess.myLeave.tabApplyLeaveUI.LeaveType.onClickOfLeaveType(frmTabApplyLeave["btnLeaveType" + data.leaveType[0][0].id]);
 			kony.apps.ess.myLeave.tabApplyLeaveUI.LeaveType.selectedLeaveType = "btnLeaveType" + data.leaveType[0][0].id;
             if(kony.apps.ess.myLeave.tabApplyLeaveUI.checkIfEditLeaveMode.editMode === true){
@@ -154,7 +154,7 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
               kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
               }
             else
-            { 
+            {
               this.getController().showForm();
               kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             }
@@ -167,9 +167,9 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
         }
 
     },
-    /** 
+    /**
      * This method is entry point for save flow. Developer can edit.
-     * Default implementation saves the entity record from the data of widgets defined in form config 
+     * Default implementation saves the entity record from the data of widgets defined in form config
      * @memberof frmTabApplyLeaveControllerExtension#
      */
     saveData: function() {
@@ -194,7 +194,7 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
         }
 
     },
-    /** 
+    /**
      * This method is entry point for delete/remove flow. Developer can edit.
      * Default implementation deletes the entity record displayed in form (primary keys are needed)
      * @memberof frmTabApplyLeaveControllerExtension#
@@ -220,7 +220,7 @@ kony.sdk.mvvm.frmTabApplyLeaveControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method shows form.
      * @memberof frmTabApplyLeaveControllerExtension#
      */

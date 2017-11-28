@@ -1,0 +1,31 @@
+{
+    "AS_Label_0260683dc90c4db191cd8a70b30d1624": {
+        "id": "AS_Label_0260683dc90c4db191cd8a70b30d1624",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCalendarCopyCancelClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ad2c18c6d0494c8cb8399386ec25e242",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarViewDW.flxSegCopy.setVisibility(false);\nfrmCalendarViewDW.flxCopy.skin = \"slFbox\";\nfrmCalendarViewDW.imgCopy.src = \"clone.png\";\nfrmCalendarViewDW.imgCopy.width = \"25dp\";\nfrmCalendarViewDW.imgCopy.height = \"25dp\";\nfrmCalendarViewDW.forceLayout();\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

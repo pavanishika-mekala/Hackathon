@@ -23,7 +23,7 @@ kony.sdk.mvvm.frmTabListViewControllerExtension = Class(kony.sdk.mvvm.BaseFormCo
      * @memberof frmTabListViewControllerExtension#
      */
     fetchData: function() {
-        kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+        kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.loadingForm"));
         var scopeObj = this; 
         kony.apps.coe.ess.globalVariables.UserSortingKey = "ESS_MYAPPROVALS_USERSETTING_SORTKEY";
         try {

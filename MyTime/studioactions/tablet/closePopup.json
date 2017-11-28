@@ -1,0 +1,25 @@
+{
+    "AS_Button_cc7e4fd8b510499a9beb9bf7a64ecfbe": {
+        "id": "AS_Button_cc7e4fd8b510499a9beb9bf7a64ecfbe",
+        "type": "ACTION_SEQUENCE",
+        "name": "closePopup",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dff08b9a2ae94185a63709726c13b029",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var currForm = kony.application.getCurrentForm();\ncurrForm.flxPopUp.isVisible=false;;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -87,7 +87,7 @@ kony.apps.coe.myLeave.search.prototype.clear = function () {
   kony.print("---------- in clear");
 
   var yyyy = parseInt(new Date().getFullYear() * 1);
-  var sql = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + yyyy + "0101 and " + yyyy + "1231 and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
+  var sql = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,tr.TEXT_DISPLAY as leaveType,lt.name as leaveType1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + yyyy + "0101 and " + yyyy + "1231 and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " and tr.SPRAS like '"+ kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' order by l.start_date "; //desc;
   new kony.apps.coe.myLeave.search().execQuery(sql);
   frmSearchLog.calFromDate.dateComponents = [01, 01, new Date().getFullYear()];
   frmSearchLog.calFromDate.validStartDate = [01, 01, (new Date().getFullYear() - 1)];
@@ -130,6 +130,7 @@ kony.apps.coe.myLeave.search.prototype.done = function (filterIcon) {
       else
         sCondition = sCondition + " , " + statusArray[status[i].toUpperCase()];
     }
+    kony.print("soumya s condition val : "+sCondition);
     var leaveTypes = frmSearchLog.lblLeaveTypes.text;
     var types = leaveTypes.split(",");
     var lCondition = "";
@@ -139,36 +140,56 @@ kony.apps.coe.myLeave.search.prototype.done = function (filterIcon) {
       else
         lCondition = lCondition + " , " + "\"" + types[j] + "\" ";
     }
-    var fromYear = frmSearchLog.calFromDate.year;
-    var fromMonth = frmSearchLog.calFromDate.month;
-    var fromDate = frmSearchLog.calFromDate.day;
-    var from = "";
-    if (fromMonth < 10) {
-      fromMonth = "0" + fromMonth;
-    }
-    if (fromDate < 10)
-      fromDate = "0" + fromDate;
-    from = "" + fromYear + fromMonth + fromDate;
-    var toYear = frmSearchLog.calToDate.year;
-    var toMonth = frmSearchLog.calToDate.month;
-    if (toMonth < 10)
-      toMonth = "0" + toMonth;
-    var toDate = frmSearchLog.calToDate.day;
-    if (toDate < 10)
-      toDate = "0" + toDate;
-    var to = "" + toYear + toMonth + toDate;
-    var sqlquery = "";
-    if (statuses === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || statuses === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmStatusSearch.lblTitle.valueKA")) {
-      if (leaveTypes === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || leaveTypes === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA"))
-        sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
+    var sqlquery = "select Group_Concat(t1.TEXT_DISPLAY) as leavesTypseVal from translation t1  left join translation  t2 on(t1.TEXT_CODE =t2.TEXT_CODE) where   t2.TEXT_DISPLAY in ( " +lCondition +" ) and t1.SPRAS like 'NL'";
+    kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null,function(response){
+      kony.print("response success "+JSON.stringify(response)+" sCondition: "+sCondition);
+      var res="";
+      if(response[0].leavesTypseVal != null){
+      res=response[0].leavesTypseVal;
+      }
+      var types1 = res.split(",");
+      var lCondition1 = "";
+      for (var z in types1) {
+        if (lCondition1 === "")
+          lCondition1 = "\"" + types1[z] + "\" ";
+        else
+          lCondition1 = lCondition1 + " , " + "\"" + types1[z] + "\" ";
+      }
+      var fromYear = frmSearchLog.calFromDate.year;
+      var fromMonth = frmSearchLog.calFromDate.month;
+      var fromDate = frmSearchLog.calFromDate.day;
+      var from = "";
+      if (fromMonth < 10) {
+        fromMonth = "0" + fromMonth;
+      }
+      if (fromDate < 10)
+        fromDate = "0" + fromDate;
+      from = "" + fromYear + fromMonth + fromDate;
+      var toYear = frmSearchLog.calToDate.year;
+      var toMonth = frmSearchLog.calToDate.month;
+      if (toMonth < 10)
+        toMonth = "0" + toMonth;
+      var toDate = frmSearchLog.calToDate.day;
+      if (toDate < 10)
+        toDate = "0" + toDate;
+      var to = "" + toYear + toMonth + toDate;
+      var sqlquery = "";
+      if (statuses === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || statuses === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmStatusSearch.lblTitle.valueKA")) {
+        if (leaveTypes === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || leaveTypes === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA"))
+          sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,tr.TEXT_DISPLAY as leaveType,lt.name as leaveType1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " and tr.SPRAS like '"+ kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' order by l.start_date "; //desc
+        else
+          sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,tr.TEXT_DISPLAY as leaveType,lt.name as leaveType1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and lt.name in (" + lCondition1 + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " and tr.SPRAS like '"+ kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' order by l.start_date "; //desc
+      } else if (leaveTypes === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || leaveTypes === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA"))
+        sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,tr.TEXT_DISPLAY as leaveType,lt.name as leaveType1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and s.Id in (" + sCondition + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " and tr.SPRAS like '"+ kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' order by l.start_date "; //desc
       else
-        sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and lt.name in (" + lCondition + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
-    } else if (leaveTypes === kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.All") || leaveTypes === kony.i18n.getLocalizedString("i18n.ess.myLeave.frmSSearchLeaveType.lblTitle.valueKA"))
-      sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and s.Id in (" + sCondition + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
-    else
-      sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,lt.name as leaveType from leave l,Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and s.Id in (" + sCondition + ") and lt.name in (" + lCondition + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " order by l.start_date desc";
-    if (parseInt(from) <= parseInt(to))
-      new kony.apps.coe.myLeave.search().execQuery(sqlquery,filterIcon);
+        sqlquery = "select l.id, l.no_of_hours as hrs, l.start_date as startDate,l.end_date as endDate,l.lastmodifiedts as modified,s.Status_Name as status,s.Id as sid,tr.TEXT_DISPLAY as leaveType,lt.name as leaveType1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),Status s,leave_type lt where l.leave_type_id = lt.id and l.status_id = s.Id and l.start_date between " + from + " and " + to + " and s.Id in (" + sCondition + ") and lt.name in (" + lCondition1 + ") and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " and tr.SPRAS like '"+ kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' order by l.start_date "; //desc
+      kony.print("soumya abcd"+sqlquery);
+      if (parseInt(from) <= parseInt(to))
+        new kony.apps.coe.myLeave.search().execQuery(sqlquery,filterIcon);
+      
+    }, function(err) {
+      handleError(err);
+    }, false);
   } catch (err) {
     kony.print("-----------error: " + err);
     handleError(err);
@@ -248,24 +269,25 @@ kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery,filterIcon
         if (sec < 10)
           sec = "0" + parseInt(mdate.substring(10, 12) * 1);
         var hrs = parseInt(mdate.substring(8, 10) * 1);
-        var AP = "AM";
-        if (hrs >= 12)
-          AP = "PM";
-        if (hrs > 12) {
-          hrs = hrs - 12;
-        }
+        var AP ="";
+//         var AP = "AM";
+//         if (hrs >= 12)
+//           AP = "PM";
+//         if (hrs > 12) {
+//           hrs = hrs - 12;
+//         }
 
 
         temp.lblAppliedDate = parseInt(mdate.substring(6, 8) * 1) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(mdate.substring(4, 6) * 1) - 1).toString()] +
           " " + parseInt(mdate.substring(0, 4) * 1) + " " + hrs + ":" + sec + " " + AP;
       }
       if (res[k].hrs < 7)
-        temp.lblDays = res[k].hrs+" HOURS";
+        temp.lblDays = (res[k].hrs+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
       else if(parseFloat(res[k].hrs)===7.5){
-        temp.lblDays = "1 DAY";
+        temp.lblDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
       }
       else
-        temp.lblDays = ((parseInt(res[k].hrs) * 1) / 7.5).toFixed() + " DAYS";
+        temp.lblDays = ((parseInt(res[k].hrs) * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
       temp.imgCal = "cal.png";
       temp.lblLine1 = " ";
       temp.lblLeaveId = res[k].id + "$" + sdate;
@@ -352,14 +374,16 @@ kony.apps.coe.myLeave.search.prototype.rowClick = function () {
  */
 
 kony.apps.coe.myLeave.search.prototype.filter = function () {
-  if (frmSearchLog.imgFilter.src === "filter_selected.png") {
+  if(frmSearchLog.imgFilter.src === "filter_selected.png" && frmSearchLog.flxSelection.isVisible){
     frmSearchLog.flxSelection.isVisible = false;
     frmSearchLog.flxReqType.isVisible = false;
     frmSearchLog.flxStatus.isVisible = false;
     frmSearchLog.flxSearchLeaveType.isVisible = false;
     frmSearchLog.flxDoneButton.isVisible = false;
     frmSearchLog.imgFilter.src = "filter.png";
-  } else {
+    (new kony.apps.coe.myLeave.search()).clear(); //clears all selection
+  } else if((!frmSearchLog.flxSelection.isVisible && frmSearchLog.imgFilter.src === "filter_selected.png") ||
+            frmSearchLog.imgFilter.src === "filter.png"){
     frmSearchLog.flxSelection.isVisible = true;
     frmSearchLog.flxReqType.isVisible = true;
     frmSearchLog.flxStatus.isVisible = true;
@@ -368,7 +392,6 @@ kony.apps.coe.myLeave.search.prototype.filter = function () {
     frmSearchLog.imgFilter.src = "filter_selected.png";
   }
 };
-
 
 /**
  * @class       search

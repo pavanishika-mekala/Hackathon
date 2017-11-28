@@ -18,16 +18,16 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
 
         this.$class.$super.call(this, controllerObj);
     },
-    /** 
+    /**
      * This method is an entry point for all fetch related flows. Developer can edit.
-     * Default implementation fetches data for the form based on form config 
+     * Default implementation fetches data for the form based on form config
      * @memberof frmRequestedListControllerExtension#
      */
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
-            
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
+
 
             var ContextData = this.getController().getContextData();
             if (isEmpty(ContextData)||ContextData.message == "Async") {
@@ -48,6 +48,8 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                     "       approval_request.islater           AS ISLater," +
                     "       approval_request.isread            AS ISRead," +
                     "       approval_request.request_date      AS RequestDate," +
+                    "       approval_request.leave_hours       AS Leave_hours," +
+              		"       approval_request.leave_days        AS Leave_days," +
                     "       employee.first_name                AS FirstName," +
                     "       employee.last_name                 AS LastName," +
                     "       employee.Media_Id              	   AS MediaID," +
@@ -55,7 +57,8 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                     "       request_approver.status_id         AS StatusId," +
                     "       status.status_name                 AS StatusName," +
                     "       request_approver.approver_id       AS Employee_id," +
-                    "       request_category.NAME              AS Category," +
+                    "       t2.TEXT_DISPLAY	As	Category,"+
+                    "       request_category.NAME              AS Category1," +
                     "       attribute.id                       AS attributeID," +
                     "       attribute.attribute_def_id         AS Attribute_DEF," +
                     "       attribute_def.attribute_section_id AS AttributeSection," +
@@ -66,23 +69,26 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                     "              ON ( approval_request.type_id = request_type.id )" +
                     "       LEFT JOIN employee" +
                     "              ON ( approval_request.employee_id = employee.id )" +
+                    "       LEFT JOIN status" +
+                    "              ON ( approval_request.status_id = status.id )" +
                     "       LEFT JOIN request_approver" +
                     "              ON ( approval_request.id = request_approver.approval_id )" +
-                    "       LEFT JOIN status" +
-                    "              ON ( request_approver.status_id = status.id )" +
                     "       LEFT JOIN request_category" +
                     "              ON ( approval_request.category_id = request_category.id )" +
+                    " LEFT JOIN translation t1 "+
+            		" ON (request_category.name=t1.TEXT_DISPLAY)"+
+					" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
                     "       LEFT JOIN attribute" +
                     "              ON ( approval_request.id = attribute.approval_id )" +
                     "       LEFT JOIN attribute_def" +
                     "              ON ( attribute.attribute_def_id = attribute_def.id )" +
                     " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'" +
+                    " and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' "+
                     " and request_approver.status_id = '2'" +
                     "and attribute_def.attribute_section_id='1'" +
                     " and approval_request.islater='1'" +
                     " and approval_request.type_id='" + ContextData.selectedItem.ID + "'" +
                     " GROUP  BY approval_request.id  ";
-
                 kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", Approval_request_ISlater_Type, success, error);
 
             } else {
@@ -112,7 +118,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method processes fetched data. Developer can edit.
      * Default implementation processes the provided data to required format for bind.
      * @param {Object} data - fetched data. (Default : data map, group id as key and records array as value)
@@ -134,7 +140,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method binds the processed data to the form. Developer can edit.
      * Default implementation binds the data to widgets in the form.
      * @param {Object} data - processed data.(Default : data map for each group, widget id as key and widget data as value)
@@ -211,10 +217,16 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                 //"flxBorder2": "requestTypeBorderSkin2",
                 //"imgLeaveInfo": "requestTypeInfoImage",
                 "lblRemainingHours": "remaingHours",
-                "imgSelection": "imgSelection",              
-              	"imgUser":"imgUser"
+                "imgSelection": "imgSelection",
+              	"imgUser":"imgUser",
+              	"btnLaterApprove":"btnLaterApprove",
+              	"btnLaterReject":"btnLaterReject"
             };
             frmRequestedList.SegDetails.widgetDataMap = WidgetDatamap;
+          	for (var index in data) {
+              data[index].btnLaterReject=kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Reject");
+        	  data[index].btnLaterApprove=kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Approve");
+            }
           	if(data.length != null && data.length >0){
                frmRequestedList.lblNoRecordsFound.setVisibility(false);
                frmRequestedList.SegDetails.setVisibility(true);
@@ -223,14 +235,14 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
                frmRequestedList.lblNoRecordsFound.setVisibility(true);
                frmRequestedList.SegDetails.setVisibility(false);
             }
-			//lazy loading 
+			//lazy loading
           	var segmentConfiguration={
 						"MediaKeyAttribute":"MediaID",
 						"ImageWidgetName":"imgUser",
 						"hideWidgetNames":[]
-					};   
+					};
 			kony.apps.coe.ess.MyApprovals.media.lazyLoading(kony.apps.coe.ess.MyApprovals.media.CONSTANTS_WIDGET_SEGMENT,  frmRequestedList.SegDetails, "Employee","mediaEmployee", "", segmentConfiguration);
-				
+
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
             this.getController().showForm();
         } catch (err) {
@@ -242,9 +254,9 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
         }
 
     },
-    /** 
+    /**
      * This method is entry point for save flow. Developer can edit.
-     * Default implementation saves the entity record from the data of widgets defined in form config 
+     * Default implementation saves the entity record from the data of widgets defined in form config
      * @memberof frmRequestedListControllerExtension#
      */
     saveData: function() {
@@ -269,7 +281,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
         }
 
     },
-    /** 
+    /**
      * This method is entry point for delete/remove flow. Developer can edit.
      * Default implementation deletes the entity record displayed in form (primary keys are needed)
      * @memberof frmRequestedListControllerExtension#
@@ -295,7 +307,7 @@ kony.sdk.mvvm.frmRequestedListControllerExtension = Class(kony.sdk.mvvm.BaseForm
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method shows form.
      * @memberof frmRequestedListControllerExtension#
      */

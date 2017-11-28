@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_afa4a4872923425285919684ffddc633": {
+        "id": "AS_FlexContainer_afa4a4872923425285919684ffddc633",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnViewDatesDiownarrow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpListDetailsDW",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1011751a6c1940e1846c4be4b8fbb6fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6fbe93a182454bb593801e47a24a08ce",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewUIDW()).OnImgTempListClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

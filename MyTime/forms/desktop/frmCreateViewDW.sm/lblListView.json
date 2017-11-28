@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "s24e001f590a49e8851b1e1e8f5115b0",
+    "_text_": "",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblListView",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "12b0cd16049e44f38399f03c0d0b77b0",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxListView",
+    "pf": "frmCreateViewDW",
+    "texti18n": "i18n.ess.myTime.frmSearchMyTime.radTimesheetOptionKey.valueKA",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,31 @@
+{
+    "AS_Image_g1988c5addb240bea10d8dfae957d241": {
+        "id": "AS_Image_g1988c5addb240bea10d8dfae957d241",
+        "type": "ACTION_SEQUENCE",
+        "name": "showAuditTrail",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ia94448483bf4b95b3ab5a44b7656118",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(\"Loading Audit Trail\");\nshowAuditTrailForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

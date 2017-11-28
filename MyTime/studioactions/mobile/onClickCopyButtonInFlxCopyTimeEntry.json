@@ -1,0 +1,25 @@
+{
+    "AS_Button_9236582f5ac4490a99dccb9ebb5df99b": {
+        "id": "AS_Button_9236582f5ac4490a99dccb9ebb5df99b",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickCopyButtonInFlxCopyTimeEntry",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bde76968a6454cafa707bbfa856b209c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onClickCopyToButton();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

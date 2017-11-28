@@ -1,0 +1,31 @@
+{
+    "AS_Label_0dedc1458a024a0294c324dee95d90b4": {
+        "id": "AS_Label_0dedc1458a024a0294c324dee95d90b4",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForLabelTouchEndSelectTask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bf110af95c5142b99b98a5182c8ac2ce",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showSearchTaskListForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

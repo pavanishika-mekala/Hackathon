@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_389b1a2365a749f1a7d072977e874e69": {
+        "id": "AS_FlexContainer_389b1a2365a749f1a7d072977e874e69",
+        "type": "ACTION_SEQUENCE",
+        "name": "w_onclickcalender",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "7ac8b34802d54f0e814d28ab54534c53"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___d9d5b6dee65641b3bca14e341d197052",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmCalendarView",
+            "formKUID": "2286b3d7970046ad9daafc2ad899a0b5",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

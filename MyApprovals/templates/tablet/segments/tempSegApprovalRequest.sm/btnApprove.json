@@ -42,11 +42,17 @@
     "id": "btnApprove",
     "ide_onClick": "AS_Button_c501337aab184b828adb2e5f8f5b4f37",
     "info": null,
+    "ipad": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": true,
     "kuid": "a624bd4851f14d959343ca13a1a8918a",
     "name": "kony.ui.Button",
     "parent": "flxApprovalRequest",
     "pf": "tempSegApprovalRequest",
+    "showprogressindicator": false,
     "texti18n": "i18n.ess.MyApprovals.tempSegApprovalRequest.Approve",
     "wType": "Button",
     "zindex": 1

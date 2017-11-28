@@ -1,0 +1,24 @@
+{
+    "AS_Form_68c5a80e2ccf474b86e33ac397995c9e": {
+        "id": "AS_Form_68c5a80e2ccf474b86e33ac397995c9e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewTimeSheet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2a604777c24243f08d43a941ea6646bd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__01c279dbcc3647cd8c0b2e260020f1a1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;\nkony.apps.coe.ess.myTime.ViewTimeSheet.PreviousForm.set(kony.application.getPreviousForm());",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

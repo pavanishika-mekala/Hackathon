@@ -389,7 +389,13 @@ Settings.prototype.destroyForms = function(){
     frmDelegationRequestList.destroy();
     frmEmployeeLookUp.destroy();
     frmFullDetails.destroy();
+    // storing last sync timestamp before hamburger is destroyed
+    var dateText = frmHamburger.lblSyncDate.text;
+    var timeText = frmHamburger.lblSyncTime.text;
     frmHamburger.destroy();
+    //setting the timestamp to the one set befre destroying hamburger
+    frmHamburger.lblSyncDate.text = dateText;
+    frmHamburger.lblSyncTime.text = timeText;
     frmIsLaterSearch.destroy();
     frmLogin.destroy();
     frmMultiSelection.destroy();
@@ -405,6 +411,7 @@ Settings.prototype.destroyForms = function(){
     frmSettings.lblLocalDBReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.resetDBText");
     frmSettings.btnReset.text = kony.i18n.getLocalizedString("i18n.ess.common.settings.reset");
     frmSettings.lblSelectLang.text = kony.i18n.getLocalizedString("i18n.ess.MyApprovals.frmSettings.SelectLang");
+	frmSettings.btnChangeLanguage.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmSettings.ChangeLang");
   	frmSettings.lblSyncDate.text =formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
   }catch(e){
     kony.print("error"+e);

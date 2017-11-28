@@ -1,14 +1,15 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
-        "value": "4%"
+        "value": "0%"
     },
     "_margin_": [
         1,
@@ -23,14 +24,14 @@
         0
     ],
     "_skin_": "s2cb1b8c70ca4103b2494a4d772e1441",
-    "_text_": "BUSINESS TRAVEL",
+    "_text_": "Vacances annuelles (J)",
     "_top_": {
         "type": "string",
         "value": "0%"
     },
     "_width_": {
-        "type": "string",
-        "value": "100%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -40,6 +41,10 @@
         }
     },
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
     "id": "lblCategory",
@@ -57,7 +62,7 @@
     "isvisible": true,
     "kuid": "81325705df364b29a0cdd67f9dec3d8f",
     "name": "kony.ui.Label",
-    "parent": "flxBusinessDetails",
+    "parent": "FlexContainer0b81acca0a0ff48",
     "pf": "frmFullDetails",
     "tooltip": "",
     "wType": "Label",

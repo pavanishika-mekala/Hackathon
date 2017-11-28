@@ -1,8 +1,8 @@
-/** 
+/**
  *  @author     Abhishek Singh
- *  @category   Business Logic.	
+ *  @category   Business Logic.
  *  @desc       Contains the functions which are related to form frmTeamView.
- *  @ © 2016    Kony Inc. 
+ *  @ © 2016    Kony Inc.
  */
 kony = kony || {};
 kony.apps = kony.apps || {};
@@ -17,7 +17,7 @@ kony.apps.coe.ess.myLeave.TeamView = function() {
 /**
  * This method modifies the segment data depending on isFirstTimeDataFormatting.
  * @memberof TeamView
- * @param {JSON Array} data 
+ * @param {JSON Array} data
  * @returns {JSON Array} formatted Data
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(data, intervalStartDate, intervalEndDate, isFirstTimeDataFormatting, callbackres) {
@@ -28,6 +28,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
         var resultData = [];
         var callback = function(tempData, intervalStartDate, intervalEndDate, nonWorkingDays, callbackres, res) {
             kony.print("Response recieved in callback :: " + JSON.stringify(res));
+          	//kony.print(" tempData"+JSON.stringify(tempData)+" intervalStartDate "+JSON.stringify(intervalStartDate)+" intervalEndDate "+JSON.stringify(intervalEndDate)+" nonWorkingDays "+JSON.stringify(nonWorkingDays)+" callbackres "+JSON.stringify(callbackres)+ " res "+JSON.stringify(res));
             var data = JSON.parse(JSON.stringify(res));
             var resultArrayData = ["withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png", "withoutbar.png"];
           	if (typeof data == "undefined" && data === null && data.length === null && data.length <= 0) {
@@ -43,23 +44,24 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                 for (var date = intervalStartDate; date <= intervalEndDate; date = new Date(Date.parse(date) + 86400000)) {
                     data = JSON.parse(JSON.stringify(res));
                   	var currentDateString = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.convertdateObjToDbString(date);
-                    if(currentDateString.substring(4) == (tempData.date_of_birth.toString()).substring(4)){
-                      if (this.parent.isDateFoundInBetween(date, data)) {
-                        resultArrayData[i] = "cake_bar.png";
-                      }
-                      else {
-                        resultArrayData[i] = "birthday_cake3.png";
-                      }
-                    }
-                  	else{
-                      if (this.parent.isDateFoundinArray(date, nonWorkingDays)) {
+//                       if(currentDateString.substring(4) == (tempData.date_of_birth.toString()).substring(4)){
+//                         if (this.parent.isDateFoundInBetween(date, data)) {
+//                           resultArrayData[i] = "cake_bar.png";
+//                         }
+//                         else {
+//                           resultArrayData[i] = "birthday_cake3.png";
+//                         }
+//                       }
+//                       else{
+                        if (this.parent.isDateFoundinArray(date, nonWorkingDays)) {
+                          resultArrayData[i] = "withoutbar.png";//non working day
+                        } else if (this.parent.isDateFoundInBetween(date, data)) {
+                          resultArrayData[i] = "withbar.png";//leave applied
+                        } else {
                           resultArrayData[i] = "withoutbar.png";
-                      } else if (this.parent.isDateFoundInBetween(date, data)) {
-                          resultArrayData[i] = "withbar.png";
-                      } else {
-                          resultArrayData[i] = "withoutbar.png";
-                      }
-                    }
+                        }
+                      //}
+
                     i++;
                 }
                 this.tempData.imgDay1 = resultArrayData[0];
@@ -85,16 +87,17 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                     tempData.middle_name = data[index].Middle_Name + "";
                     tempData.last_name = data[index].Last_Name + "";
                     tempData.user_id = data[index].Id;
-                    tempData.manager_id = data[index].Manager_Id;
-                  	tempData.date_of_birth = data[index].Date_of_birth;
+                    //tempData.manager_id = data[index].Manager_Id;
+                  	//tempData.date_of_birth = data[index].Date_of_birth;
+                  	data[index].Media_Id = "";
                     if (data[index].Media_Id !== null && data[index].Media_Id !== "" && data[index].Media_Id !== undefined && data[index].Media_Id.toLowerCase() !== "null") {
                         tempData.media_id = data[index].Media_Id;
                     } else {
                         tempData.media_id = "";
                     }
 
-                    tempData.group_id = data[index].group_id;
-                    //@TODO fetch profile pic dynamically     
+                    //tempData.group_id = data[index].group_id;
+                    //@TODO fetch profile pic dynamically
                     tempData.emp_profile_pic = "adduserpic.png";
                     tempData.lblInitials = tempData.first_name.charAt(0).toUpperCase() + tempData.last_name.charAt(0).toUpperCase();
                     tempData.full_name = this.formatEmployeeName(tempData.first_name, tempData.middle_name, tempData.last_name);
@@ -102,9 +105,9 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                         "isVisible": false
                     };
                     tempData.flxInitials = {
-                        "isVisible": true
+                        "isVisible": false
                     };
-
+					resultData.push(tempData);
                     this.generateNonWorkingDays(intervalStartDate, intervalEndDate, function(res) {
                         var nonWorkingDays = res;
                         var tempBindingFunc;
@@ -120,8 +123,9 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                         "tempData": tempData
                     }));
 
-                    resultData.push(tempData);
+                    //resultData.push(tempData);
                 }
+              	kony.print("result Data"+JSON.stringify(resultData));
                 return resultData;
             } else {
                 kony.print("----Inside else of generateFormattedData ----");
@@ -142,7 +146,6 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateFormattedData = function(da
                     }));
 
                 }
-
                 return data;
             }
         }
@@ -192,12 +195,12 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.isDateFoundInBetween = function(dat
     kony.print("---- Inside isDateFoundInBetween ----");
     try {
         if (typeof dateArray != "undefined" && dateArray !== null && dateArray.length !== null && dateArray.length > 0) {
-            if (typeof date == "object") {
+          if (typeof date == "object") {
                 for (var i = 0; i < dateArray.length; i++) {
-                    dateArray[i].start_date = this.convertStringDateDbToDateObject(dateArray[i].start_date);
-                    dateArray[i].end_date = this.convertStringDateDbToDateObject(dateArray[i].end_date);
-                    if (dateArray[i].start_date.getTime() <= date.getTime() && dateArray[i].start_date.getTime() >= date.getTime()) {
-                        return true;
+                    dateArray[i].LEAVE_FROMDATE = this.convertStringDateDbToDateObject(dateArray[i].LEAVE_FROMDATE);
+                  	dateArray[i].LEAVE_ENDDATE = this.convertStringDateDbToDateObject(dateArray[i].LEAVE_ENDDATE);
+                  	if (dateArray[i].LEAVE_FROMDATE.getTime() <= date.getTime() && dateArray[i].LEAVE_ENDDATE.getTime() >= date.getTime()) {
+                      	return true;
                     }
                 }
                 return false;
@@ -219,7 +222,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.isDateFoundInBetween = function(dat
 * @param {Date Object} intervalStartDate - First Date
 		 {Date Object} intervalEndDate - Second Date
          {String}user_id
-* @returns 
+* @returns
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateImageValue = function(intervalStartDate, intervalEndDate, user_id, callback) {
     kony.print("---- Inside generateImageValue ----");
@@ -255,12 +258,17 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateImageValue = function(inter
         }
 
         var yearIntervalEndDate = intervalEndDate.getFullYear().toString().trim(0, 4);
-        var sqlQuery = "select start_date,end_date from leave where employee_id = '" + user_id + "' and status_id = 0" +
-            " and ((start_date between '" + yearIntervalStartDate + monthIntervalStartDate + dayIntervalStartDate +
-            "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate +
-            "') OR (end_date between '" + yearIntervalStartDate + monthIntervalStartDate + dayIntervalStartDate +
-            "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate + "'))";
-        kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, callback, function(err) {
+//         var sqlQuery = "select start_date,end_date from leave where employee_id = '" + user_id + "' and status_id = 0" +
+//             " and ((start_date between '" + yearIntervalStartDate + monthIntervalStartDate + dayIntervalStartDate +
+//             "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate +
+//             "') OR (end_date between '" + yearIntervalStartDate + monthIntervalStartDate + dayIntervalStartDate +
+//             "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate + "'))";
+           var sqlQuery ="select LEAVE_FROMDATE,LEAVE_ENDDATE from TEAM_LEAVE_REQUEST_ENTRY where EMPNUMBER = '" + user_id + "' and LV_STATUS NOT LIKE 'C' "+
+               "and ((LEAVE_FROMDATE between'" +yearIntervalStartDate + monthIntervalStartDate + dayIntervalStartDate +
+               "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate +
+               "') OR (LEAVE_ENDDATE between '" + yearIntervalStartDate + monthIntervalStartDate + dayIntervalStartDate +
+               "' AND '" + yearIntervalEndDate + monthIntervalEndDate + dayIntervalEndDate + "'))";
+      kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery, null, callback, function(err) {
             handleError(err);
         }, false);
 
@@ -276,7 +284,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateImageValue = function(inter
 * @param {Date Object} intervalStartDate - First Date
 		 {Date Object} intervalEndDate - Second Date
          {String}user_id
-* @returns 
+* @returns
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(intervalStartDate, intervalEndDate, callback) {
     kony.print("---- Inside generateNonWorkingDays ----");
@@ -343,7 +351,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.generateNonWorkingDays = function(i
 /**
  * This method binds the data to segment
  * @memberof TeamView
- * @param {JSON Array} data 
+ * @param {JSON Array} data
  * @returns null
  */
 kony.apps.coe.ess.myLeave.TeamView.prototype.mapAndBindData = function(data) {
@@ -380,7 +388,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.mapAndBindData = function(data) {
 * @memberof TeamView
 * @param {Date Object} intervalStartDate - First Date
 		 {Date Object} intervalEndDate - Second Date
-* @returns 
+* @returns
 */
 kony.apps.coe.ess.myLeave.TeamView.prototype.changeMonthText = function(intervalStartDate, intervalEndDate) {
     try {
@@ -501,7 +509,7 @@ kony.apps.coe.ess.myLeave.TeamView.prototype.fetchImageValueByMediaIdSuccessCall
                             }
 
                             data[i].flxProfileImage = {
-                                "isVisible": true
+                                "isVisible": false
                             };
                             data[i].flxInitials = {
                                 "isVisible": false

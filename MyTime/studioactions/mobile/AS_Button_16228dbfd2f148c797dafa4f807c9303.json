@@ -1,0 +1,24 @@
+{
+    "AS_Button_16228dbfd2f148c797dafa4f807c9303": {
+        "id": "AS_Button_16228dbfd2f148c797dafa4f807c9303",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewTimeSheet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2a604777c24243f08d43a941ea6646bd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__7ec5f59ce38f44c895891b80512a587b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.ViewTimeSheetUI.cloneAllSelectedWeeks();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -18,36 +18,37 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
     constructor: function(controllerObj) {
         this.$class.$super.call(this, controllerObj);
     },
-    /** 
+    /**
      * This method is an entry point for all fetch related flows. Developer can edit.
-     * Default implementation fetches data for the form based on form config 
+     * Default implementation fetches data for the form based on form config
      * @memberof frmAuditTrailControllerExtension#
      */
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
-            var query = "select la.id as id, la.leave_id as leave_id, la.status_id as status_id, la.employee_id as employee_id, la.description as description, la.createdts as createdts, emp.First_Name as First_Name from leave_audit la left join Employee emp on la.employee_id = emp.Id where la.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
+            var query ="select la.id as id, la.leave_id as leave_id, la.status_id as status_id,la.description as description, la.createdts as createdts, la.employee_id as First_Name from leave_audit la where la.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
             var data = [];
             kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function(res_leave_audit) {
                 data = res_leave_audit;
                 for(var i in data) {
                     data[i].template_type = 0;
                 }
-                var query = "select ln.*, emp.First_Name as First_Name from leave_note ln left join Employee emp on ln.employee_id = emp.Id where ln.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
+                var query = "select ln.*, emp.First_Name as First_Name, emp.Last_Name as Last_Name from leave_note ln left join Employee emp on ln.employee_id = emp.Id where ln.leave_id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
                 kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function(res_comments) {
                     for(var i in res_comments) {
                         res_comments[i].template_type = 1;
+                        res_comments[i].First_Name = res_comments[i].First_Name+" "+res_comments[i].Last_Name;
                         data.push(res_comments[i]);
                     }
-                    var query = "select l.lastmodifiedts as createdts, l.status_id as status_id, emp.First_Name as First_Name from leave l left join Employee emp on l.employee_id = emp.Id where l.id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
+                    var query = "select l.lastmodifiedts as createdts, l.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from leave l left join Employee emp on l.employee_id = emp.Id where l.id = '" + kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id + "';";
                     kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function(res_leaverecord) {
                         for(var i in res_leaverecord) {
                             if(res_leaverecord[i].status_id === "2") {
                                 data.push({
                                     createdts : res_leaverecord[i].createdts,
                                     status_id : res_leaverecord[i].status_id,
-                                    First_Name : res_leaverecord[i].First_Name,
+                                    First_Name : res_leaverecord[i].First_Name+" "+res_leaverecord[i].Last_Name,
                                     description : "",
                                     template_type : 0
                                 });
@@ -58,7 +59,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     }, function(err) {
                         handleError(err);
                     }, false);
-                }, function() {
+                }, function(err) {
                     handleError(err);
                 }, false);
             }, function (err) {
@@ -84,7 +85,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method processes fetched data. Developer can edit.
      * Default implementation processes the provided data to required format for bind.
      * @param {Object} data - fetched data. (Default : data map, group id as key and records array as value)
@@ -102,15 +103,25 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
 			"6": "system_error.png",
 			"7": "submitted.png"
         };
+        var status_keys = {
+          "0": kony.i18n.getLocalizedString("i18n.ess.common.approved.valueKA"),
+          "1": kony.i18n.getLocalizedString("i18n.ess.common.rejected.valueKA"),
+          "2": kony.i18n.getLocalizedString("i18n.ess.common.pending.valueKA"),
+          "3": kony.i18n.getLocalizedString("i18n.ess.common.cancelled.valueKA"),
+          "4": "",
+          "5": kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmSearchLeaveType.Saved"),
+          "6": kony.i18n.getLocalizedString("i18n.ess.common.error.valueKA"),
+          "7": kony.i18n.getLocalizedString("i18n.ess.common.submitted.valueKA")
+        };
         try {
             var scopeObj = this;
             var processedData = [];
             data.sort(function(a, b) {
-                return a.createdts.localeCompare(b.createdts);
+                return a.createdts !== null ? a.createdts.localeCompare(b.createdts) : false;
             });
             for(var i in data) {
                 //parsing to string
-                var dateStr = String(data[i].createdts);
+                var dateStr = data[i].createdts !== null ? String(data[i].createdts) : "";
                 var date = "";
                 //checking condition for invalid date string.
                 if(dateStr !== null && dateStr !== undefined && dateStr !== "" && dateStr.toLowerCase() !== "null") {
@@ -119,7 +130,15 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     // converting date in required format i.e. DD MMM HH mm am/pm
                     date = date.toHHMMMHHmm();
                 }
+				//to avoid same comments in audit trail screen
+              var mock = 0;
+              if(i > 0){
+              	if(data[i].createdts === data[i-1].createdts){
+                	mock = 1;
+                }
+              }
                 // assigning different templates for comments and audit record.
+				if(mock === 0){
                 if(parseInt(data[i].template_type) === 0) {
                     data[i].status_id = String(data[i].status_id);
                     var status = "";
@@ -127,6 +146,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         // getting status value from status id
                         status = kony.apps.coe.ess.globalVariables.Status.idToStr[data[i].status_id];
                         status = status.charAt(0).toUpperCase() + status.substring(1, status.length).toLowerCase();
+                    	status=status_keys[data[i].status_id];
                     }
                     processedData.push({
                         lblEventName : status,
@@ -140,7 +160,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                     });
                 } else if(parseInt(data[i].template_type) === 1) {
                     processedData.push({
-                        lblEventName : "User Comment",
+                        lblEventName : kony.i18n.getLocalizedString("i18n.ess.common.usercomment"),
                         lblEventDesc : data[i].comments,
                         lblPersonName : data[i].First_Name,
                         lblDate : date,
@@ -150,7 +170,8 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         lblVerticalLineBottom : {text : "", isVisible : (i >= data.length - 1 ? false : true)}
                     });
                 }
-                
+				}
+
             }
             this.getController().bindData(processedData);
             return processedData;
@@ -161,7 +182,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method binds the processed data to the form. Developer can edit.
      * Default implementation binds the data to widgets in the form.
      * @param {Object} data - processed data.(Default : data map for each group, widget id as key and widget data as value)
@@ -184,9 +205,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         }
 
     },
-    /** 
+    /**
      * This method is entry point for save flow. Developer can edit.
-     * Default implementation saves the entity record from the data of widgets defined in form config 
+     * Default implementation saves the entity record from the data of widgets defined in form config
      * @memberof frmAuditTrailControllerExtension#
      */
     saveData: function() {
@@ -211,7 +232,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         }
 
     },
-    /** 
+    /**
      * This method is entry point for delete/remove flow. Developer can edit.
      * Default implementation deletes the entity record displayed in form (primary keys are needed)
      * @memberof frmAuditTrailControllerExtension#
@@ -237,7 +258,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method shows form.
      * @memberof frmAuditTrailControllerExtension#
      */

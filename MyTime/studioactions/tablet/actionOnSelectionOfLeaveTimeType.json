@@ -1,0 +1,24 @@
+{
+    "AS_Segment_c1b480308311476eb469dd83275d1b5a": {
+        "id": "AS_Segment_c1b480308311476eb469dd83275d1b5a",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnSelectionOfLeaveTimeType",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_4e004e5d7b10448c88fa1997591a7ef0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfLeaveTimeTypeTab(frmTimeSheetCreateTab.segLeaveSelection.selectedRowItems[0]);",
+            "callbackType": null
+        }]
+    }
+}

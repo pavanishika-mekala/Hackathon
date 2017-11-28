@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_1fe276f3e731407f8cba1970de8a69aa": {
+        "id": "AS_FlexContainer_1fe276f3e731407f8cba1970de8a69aa",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fadf9d9be3ed4e9196a3caea7edb178b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__17a30f4b753f4a668e94cbf64626f9d6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetHistoryForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

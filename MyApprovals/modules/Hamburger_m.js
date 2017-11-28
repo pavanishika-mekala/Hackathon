@@ -8,6 +8,9 @@ kony = kony || {};
 kony.apps = kony.apps || {};
 kony.apps.coe = kony.apps.coe || {};
 kony.apps.coe.ess = kony.apps.coe.ess || {};
+
+kony.apps.coe.ess.isLogoutOptionSelected=false;
+
 /**
  * @class          Hamburger
  * @type           Constructor
@@ -17,7 +20,7 @@ kony.apps.coe.ess = kony.apps.coe.ess || {};
  */
 kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
     kony.print("-- Start Hamburger constructor --");
-    // Input validations. 
+    // Input validations.
     if (hamburgerButton == undefined) {
         kony.print("Ignoring Error: input hamburgerButton is undefined.");
     }
@@ -34,10 +37,10 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
         hamburgerButton.onClick = function() {
             kony.print("-- Start hamburgerButton.onClick --");
           	this.hamburgerMenuItemsShow();
-            kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmHamburger.lblWelcome")+" "+kony.apps.coe.ess.frmLogin.username;
+            kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmHamburger.lblWelcome")+" "+kony.apps.coe.ess.globalVariables.employeeName;//kony.apps.coe.ess.frmLogin.username;
           	//bbe-101 menu sync
-          	kony.application.getCurrentForm().flxHamburger.lblSyncDate.text=formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
-		   	kony.application.getCurrentForm().flxHamburger.lblSyncTime.text=formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);
+//           	kony.application.getCurrentForm().flxHamburger.lblSyncDate.text=formatDate(kony.apps.coe.ess.globalVariables.lastSyncDate);
+// 		   	kony.application.getCurrentForm().flxHamburger.lblSyncTime.text=formatTime(kony.apps.coe.ess.globalVariables.lastSyncDate);
             // Disable clicking on Hamburger.
               if (kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.isVisible) {
                 kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(true); // Enable clicking on Hamburger menu items.
@@ -199,8 +202,7 @@ kony.apps.coe.ess.Hamburger.prototype.applyActions = function() {
             this.hideHamburger();
             this.isHamburgerVisible = false;
             kony.print("-- Main flex closed --");
-            kony.sdk.mvvm.LogoutAction();
-            kony.print("-- Completed logout from Hamburger --");
+            kony.apps.coe.ess.isLogoutOptionSelected = true;
         }.bind(this);
         kony.print("-- actions applied --");
     }
@@ -340,6 +342,11 @@ kony.apps.coe.ess.Hamburger.prototype.hideHamburger = function() {
                 if (kony.application.getCurrentForm().footers && kony.application.getCurrentForm().footers[0]) {
                     kony.application.getCurrentForm().footers[0].setVisibility(true);
                 }
+                if(kony.apps.coe.ess.isLogoutOptionSelected === true){
+                  kony.apps.coe.ess.isLogoutOptionSelected = false;
+                  kony.sdk.mvvm.LogoutAction();
+                  kony.print("-- Completed logout from Hamburger --");
+                }
             }
         });
     kony.print("---------- Hamburger close complete");
@@ -411,7 +418,7 @@ hamburgerMenuItemsShow = function() {
         kony.apps.ess.deepLinkingSSO.appExistedOrNot();
         //#else
       	//#ifdef tabrcandroid
-        kony.apps.ess.deepLinkingSSO.appExistedOrNot();                               
+        kony.apps.ess.deepLinkingSSO.appExistedOrNot();
 		//#else
 		//#ifdef ipad
 		kony.apps.ess.deepLinkingSSO.appExistedOrNot();
@@ -458,7 +465,7 @@ setDataToDynamicSegment = function() {
   	var query = "SELECT request_type.id, request_type.name FROM request_type";
     kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, function(response) {
     var processedData = kony.apps.coe.ess.Approvals.frmSettings.ProcessData(response);
-    kony.apps.coe.ess.globalVariables.SettingsSegments.setData(processedData);      
+    kony.apps.coe.ess.globalVariables.SettingsSegments.setData(processedData);
     var processedAppData = new kony.apps.coe.ess.Approvals.ProcessData(listOfAvailableApps);
     kony.apps.coe.ess.globalVariables.DynamicAppsSegment.setData(processedAppData);
     }, function(err) {

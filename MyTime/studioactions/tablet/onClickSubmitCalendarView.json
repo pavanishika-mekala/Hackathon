@@ -1,0 +1,31 @@
+{
+    "AS_Button_gae8868c3c944861ba8091890f3f328f": {
+        "id": "AS_Button_gae8868c3c944861ba8091890f3f328f",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickSubmitCalendarView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ce741e41a15d4e62a2fcc6943e41d576",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.time_entry_retrieval_common.checkForSubmit=true;\nkony.apps.coe.ess.myTime.time_entry_retrieval_common.dayCounter = 0;\n(new kony.apps.coe.ess.myTime.time_entry_retrieval_common()).checkForSubmitStatus(); \n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

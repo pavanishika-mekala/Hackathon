@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_dd36c8c0825d4a9698a03e8a7824962b": {
+        "id": "AS_FlexContainer_dd36c8c0825d4a9698a03e8a7824962b",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCreateViewSave",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__6972cb83b40b4ebea7fa88707b0f8834",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxBlank.setVisibility(true);\nfrmCreateViewDW.flxSavePopup.setVisibility(true);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

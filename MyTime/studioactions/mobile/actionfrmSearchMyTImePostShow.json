@@ -1,0 +1,25 @@
+{
+    "AS_Form_bf9bb1155fcc401ab280cbd82ccb3dbb": {
+        "id": "AS_Form_bf9bb1155fcc401ab280cbd82ccb3dbb",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionfrmSearchMyTimePostShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchMyTime",
+            "type": "forms",
+            "platform": "",
+            "KUID": "79673f1514a448a28c0e764e1f9c19e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__db75f900909d4978b9de145c13756f0d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.Sync.UI.showSyncProgressBarIfSyncing();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

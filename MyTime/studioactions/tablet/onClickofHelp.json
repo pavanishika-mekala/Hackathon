@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_h39d18102afc47629f0c46dd593d9c8e": {
+        "id": "AS_FlexContainer_h39d18102afc47629f0c46dd593d9c8e",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickofHelp",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_je382bdcb1054c72a64883f2a7603382",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.ess.Hamburger(frmTimesheetHelp.flxHamburgerButton);\n",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_7f4939f0240f42ce89c0c8e8bfdd0646": {
+        "id": "AS_FlexContainer_7f4939f0240f42ce89c0c8e8bfdd0646",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionTmpListDetailsDWFlxWeekClicked",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tmpListDetailsDW",
+            "type": "templates",
+            "platform": "",
+            "KUID": "1011751a6c1940e1846c4be4b8fbb6fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__802fd843d5684a0fa34306cd0fa47d83",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.ListViewUIDW()).viewSavedDetails();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

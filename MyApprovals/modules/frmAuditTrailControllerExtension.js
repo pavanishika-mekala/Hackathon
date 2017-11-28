@@ -18,9 +18,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
     constructor: function(controllerObj) {
         this.$class.$super.call(this, controllerObj);
     },
-    /** 
+    /**
      * This method is an entry point for all fetch related flows. Developer can edit.
-     * Default implementation fetches data for the form based on form config 
+     * Default implementation fetches data for the form based on form config
      * @memberof frmAuditTrailControllerExtension#
      */
     fetchData: function() {
@@ -40,44 +40,57 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_FETCH_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_FETCH_IN_CONTROLLER_EXTENSION, err);
             kony.sdk.mvvm.log.error(exception.toString());
         }
-      
+
 		function successCallbackForAuditRecords(res) {
             for(var i in res) {
                 res[i].templateType = 0;
             }
             //quering comments data.
-             var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id where ar.id = '" + requestId + "';";
+            var query = "select rn.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name, emp.Last_Name as Last_Name,Group_concat(attribute.value)      AS Attributevalue, Group_concat(attribute.attribute_def_id)  AS AttributeNAME, rn.comment as comments from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id left join request_note rn on rn.approval_id = ar.id left join attribute on rn.approval_id=attribute.approval_id where ar.id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForComments.bind(scopeObj, res), error);
         }
-      
+
         function successCallbackForComments(data, res) {
             for(var i in res) {
                 res[i].templateType = 1;
+              var tempJSON;
+              if(res[i].AttributeNAME != undefined && res[i].AttributeNAME !== null && res[i].AttributeNAME != "null") {
+                  tempJSON = res[i].AttributeNAME.returnCombinationInJsonFormat(res[i].Attributevalue, ",");
+              } else {
+                tempJSON = {};
+              }
+              if (res[i].First_Name === null || res[i].First_Name== "null"|| res[i].First_Name === "" || res[i].First_Name === undefined) {
+                if(res[i].hasOwnProperty('FirstNameAttributeDef') && res[i].hasOwnProperty('LastNameAttributeDef'))
+                 res[i].First_Name=tempJSON.FirstNameAttributeDef+tempJSON.LastNameAttributeDef;
+              }else{
+                res[i].First_Name = res[i].First_Name+ " " +res[i].Last_Name;
+              }
                 data.push(res[i]);
             }
           	//BBE-126 History list completed with approved request by someone else
 //           	var query = "select ar.createdts as createdts, ra.status_id as status_id, CASE WHEN emp1.First_Name IS NOT NULL THEN emp1.First_Name ELSE emp3.first_name END as First_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id"+
 //   			"left join Employee emp1 on ra.delegator_id = emp1.Id left join employee emp2 on ar.employee_id=emp2.id left join employee emp3 on emp2.manager_id=emp3.id where ar.id = '" + requestId + "';";
-            //quering data if timesheet is pending. 
-            var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name from approval_request ar left join Employee emp on ra.approver_id = emp.Id left join request_approver ra on ra.approval_id = ar.id where ar.id = '" + requestId + "';";
+
+            //quering data if timesheet is pending.
+            var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id where ar.id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForPendingTimesheet.bind(scopeObj, data), error);
         }
-      
+
         function successCallbackForPendingTimesheet(data, res) {
             for(var i in res) {
                 if(res[i].status_id === "2") {
                     data.push({
                         createdts : res[i].createdts,
                         status_id : res[i].status_id,
-                        First_Name : res[i].First_Name,
+                        First_Name : res[i].First_Name+" "+res[i].Last_Name,
                         description : "",
                         templateType : 0
                     });
                 }
             }
-            success(data); 
+            success(data);
         }
-      
+
         function success(response) {
             kony.sdk.mvvm.log.info("success fetching data ", response);
             scopeObj.getController().processData(response);
@@ -91,7 +104,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method processes fetched data. Developer can edit.
      * Default implementation processes the provided data to required format for bind.
      * @param {Object} data - fetched data. (Default : data map, group id as key and records array as value)
@@ -109,16 +122,26 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
 			"6": "system_error_audit.png",
 			"7": "submitted_audit.png"
         };
+      	var status_keys = {
+            "0": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved"),
+			"1": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected"),
+			"2": kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Pending"),
+			"3": kony.i18n.getLocalizedString("i18n.ess.Login.Cancel"),
+			"4": "",
+			"5": "Saved",
+			"6": "Error",
+			"7": "Submitted"
+        };
         try {
             var scopeObj = this;
             var processedData = [];
             //sorting increasing order of created timestamp
             data.sort(function(a, b) {
-                return a.createdts.localeCompare(b.createdts);
+                return a.createdts !== null ? a.createdts.localeCompare(b.createdts) : false;
             });
             for(var i in data) {
                 //parsing to string
-                var dateStr = String(data[i].createdts);
+                var dateStr = data[i].createdts !== null ? String(data[i].createdts) : "";
                 var date = "";
                 //checking condition for invalid date
                 if(dateStr !== null && dateStr !== undefined && dateStr !== "" && dateStr.toLowerCase() !== "null") {
@@ -135,6 +158,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         // getting status value using status id
                         status = kony.apps.coe.ess.globalVariables.Status.idToStr[data[i].status_id];
                         status = status.charAt(0).toUpperCase() + status.substring(1, status.length).toLowerCase();
+                        status=status_keys[data[i].status_id];
                     }
                     processedData.push({
                         lblEventName : status,
@@ -158,7 +182,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         lblVerticalLineBottom : {text : "", isVisible : (i >= data.length - 1 ? false : true)}
                     });
                 }
-                
+
             }
             this.getController().bindData(processedData);
             return processedData;
@@ -169,7 +193,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method binds the processed data to the form. Developer can edit.
      * Default implementation binds the data to widgets in the form.
      * @param {Object} data - processed data.(Default : data map for each group, widget id as key and widget data as value)
@@ -192,9 +216,9 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         }
 
     },
-    /** 
+    /**
      * This method is entry point for save flow. Developer can edit.
-     * Default implementation saves the entity record from the data of widgets defined in form config 
+     * Default implementation saves the entity record from the data of widgets defined in form config
      * @memberof frmAuditTrailControllerExtension#
      */
     saveData: function() {
@@ -219,7 +243,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         }
 
     },
-    /** 
+    /**
      * This method is entry point for delete/remove flow. Developer can edit.
      * Default implementation deletes the entity record displayed in form (primary keys are needed)
      * @memberof frmAuditTrailControllerExtension#
@@ -245,7 +269,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             kony.sdk.mvvm.log.error(exception.toString());
         }
     },
-    /** 
+    /**
      * This method shows form.
      * @memberof frmAuditTrailControllerExtension#
      */

@@ -215,7 +215,7 @@ initdatefromto = function() {
 }
 
 kony.apps.coe.ess.myApprovals.frmDeligationDW.prototype.onclickEmployeeselect = function(){
-   kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+   kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
    var objSvc = kony.sdk.getCurrentInstance().getObjectService("Employee", {
                         "access": "online"
                     });
@@ -261,7 +261,7 @@ kony.apps.coe.ess.myApprovals.frmDeligationDW.prototype.onclickEmployeeselecttic
 }
 
 kony.apps.coe.ess.myApprovals.frmDeligationDW.prototype.createdelegation = function(){
-   kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+   kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
    var objSvc = kony.sdk.getCurrentInstance().getObjectService("MYAPPROVALS", {
                         "access": "online"
                     });
@@ -318,7 +318,7 @@ dateParsing = function(dateComponents) {
 };
 
 kony.apps.coe.ess.myApprovals.frmDeligationDW.prototype.stopdelegation = function(){
-   kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+   kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
    var objSvc = kony.sdk.getCurrentInstance().getObjectService("MYAPPROVALS", {"access":"online"});
    var dataObject = new kony.sdk.dto.DataObject("delegate");
    var data = frmDelegationRequests.segAllEmp.selectedItems[0];

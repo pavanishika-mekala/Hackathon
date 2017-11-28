@@ -1,0 +1,31 @@
+{
+    "AS_Label_9e7a53e7c72d4ccebb3b576dd50e17f5": {
+        "id": "AS_Label_9e7a53e7c72d4ccebb3b576dd50e17f5",
+        "type": "ACTION_SEQUENCE",
+        "name": "wonChangetimetype",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a5c4de36608648949636cde8fae1ee74",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxTimetypesel.setVisibility(true);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

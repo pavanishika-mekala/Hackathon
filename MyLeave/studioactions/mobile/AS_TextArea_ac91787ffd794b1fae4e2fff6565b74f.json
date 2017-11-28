@@ -22,7 +22,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__bcd053b74f22465b9dd340ff47a61f6c",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCommentInPopup();",
+            "codeSnippet": "//kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCommentInPopup();",
             "parentId": null,
             "callbackType": null
         }]

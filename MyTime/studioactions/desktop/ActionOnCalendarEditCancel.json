@@ -1,0 +1,31 @@
+{
+    "AS_Label_5e24a79243ef4b528e9f3750c3a91c11": {
+        "id": "AS_Label_5e24a79243ef4b528e9f3750c3a91c11",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCalendarEditCancel",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "51b15f8f75f0442ea9ac81082c3284d9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8d0ff7eb90b44deaa014a8b7e327767c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarViewDW.flxBlank.setVisibility(false);\nfrmCalendarViewDW.flxDeleteTimesheetPopup.setVisibility(false);\nfrmCalendarViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

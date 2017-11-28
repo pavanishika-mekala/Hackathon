@@ -26,10 +26,10 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
   fetchData: function() {
     try {
       var scopeObj = this;
-      kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+      kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
       var sqlQuery = "SELECT n.title, n.description, n.notification_id, " +
-        "GROUP_CONCAT(nd.data_key) as dataKeys, GROUP_CONCAT(nd.data_value) as dataValues, " +
-        "n.lastmodifiedts as notificationTime " +
+      "GROUP_CONCAT(nd.data_key) as dataKeys, GROUP_CONCAT(nd.data_value) as dataValues, " +
+      "n.lastmodifiedts as notificationTime " +
         "FROM notification n " +
         "LEFT JOIN notification_data nd on n.notification_id = nd.notification_id " +
         "WHERE n.module='APPROVAL' " +

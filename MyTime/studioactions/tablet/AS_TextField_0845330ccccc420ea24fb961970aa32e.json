@@ -1,0 +1,20 @@
+{
+    "AS_TextField_0845330ccccc420ea24fb961970aa32e": {
+        "id": "AS_TextField_0845330ccccc420ea24fb961970aa32e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onDone_6e2934b564b6413dba7d8f9f1366e9de",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab.searchFor(this.text);",
+            "callbackType": null
+        }]
+    }
+}

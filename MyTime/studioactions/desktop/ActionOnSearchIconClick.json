@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_d63ba8e20acd4ad283f8976fb7170ce2": {
+        "id": "AS_FlexContainer_d63ba8e20acd4ad283f8976fb7170ce2",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSearchIconClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_8ce535d6c7824e77b382cdd8b785ac18",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxAdvSeg.setVisibility(true);\nfrmCreateViewDW.lblAdd.setVisibility(true);\nfrmCreateViewDW.flxAdvSearchSegDropdown.setVisibility(false);\nfrmCreateViewDW.forceLayout();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "scd20bf1017a4f5298db1fcef270a2a3",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblDiscardTimesheet",
+    "ide_onTouchEnd": "AS_Label_2bd5793dc60c416a8b2ae5fb2ae11524",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "9930b521b73046778b51cd01cf2f0d57",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxButtins",
+    "pf": "frmCreateViewDW",
+    "texti18n": "i18n.ess.mytime.discard",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

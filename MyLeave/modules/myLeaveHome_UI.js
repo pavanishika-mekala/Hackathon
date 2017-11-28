@@ -135,7 +135,19 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                     kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId = data.data.CellData.LeaveID;
                     kony.apps.coe.ess.myLeave.MyLeaveHomeUI.selectedLeaveID = data.data.CellData.LeaveID;
                     kony.apps.coe.ess.myLeave.MyLeaveHomeUI.mappingBackendDataToCalendar();
-                    frmLeaveHome.lblLeaveType.text = data.data.CellData.LeaveType;
+                  	var sqlQuery1 = "select  t1.TEXT_DISPLAY from translation t1 where TEXT_CODE =(select t2.TEXT_CODE from translation t2 where t2.TEXT_DISPLAY like '"+data.data.CellData.LeaveType+"') and t1.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'";
+                  	kony.print("query for leave type"+sqlQuery1+" leave type :"+data.data.CellData.LeaveType); 
+                  	kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery1, null, function(response){
+                     if(response[0] != null&&response[0].TEXT_DISPLAY != null && response[0].TEXT_DISPLAY != undefined && response[0].TEXT_DISPLAY != ""){
+                    	frmLeaveHome.lblLeaveType.text=response[0].TEXT_DISPLAY;
+                     }else{
+                       frmLeaveHome.lblLeaveType.text=data.data.CellData.LeaveType;
+                       //handleError("error");
+                     }
+                    }, function(err) {
+                        handleError(err);
+                    }, false);
+                  	//frmLeaveHome.lblLeaveType.text = data.data.CellData.LeaveType;
                     var leaveNoteDataQuery = "select ln.comments, ln.employee_id, ln.createdts, e.First_Name, e.Last_Name, e.Media_Id " +
                         "from leave_note ln join Employee e on ln.employee_id=e.Id where ln.leave_id = '" + kony.apps.coe.ess.myLeave.MyLeaveHomeUI.selectedLeaveID + "' order by ln.createdts ASC";
                     kony.sync.single_select_execute(kony.sync.getDBName(), leaveNoteDataQuery, null, function(res) {
@@ -163,13 +175,13 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                         }
 
                         if (data.data.CellData.StartDate == data.data.CellData.EndDate) {
-                            var totalTime = parseFloat(data.data.CellData.Hours).toString()+" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")+" ";
-                            frmLeaveHome.lblLeaveTime.text = totalTime;
+                            var totalTime = (parseFloat(data.data.CellData.Hours).toString()+" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+                          	frmLeaveHome.lblLeaveTime.text = totalTime;
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3);
                             frmLeaveHome.lblLeaveTime.isVisible = true;
                         } else {
                             var totalDays = ((parseInt(data.data.CellData.Hours) * 1) / kony.apps.coe.ess.appconfig.workingHours).toFixed() + " "+ kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
-                            frmLeaveHome.lblLeaveTime.text = totalDays;
+                          	frmLeaveHome.lblLeaveTime.text = totalDays;
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3) + " - " + data.data.CellData.EndDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.EndDate.substring(4, 6) + ""]).substring(0, 3);
                             frmLeaveHome.lblLeaveTime.isVisible = true;
                         }
@@ -187,11 +199,12 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
 
                     if (!isNaN(data.data.CellData.CreateDate) && data.data.CellData.CreateDate !== null && data.data.CellData.CreateDate !== "") {
                         var appliedTime = "";
-                        if (data.data.CellData.CreateDate.substring(8, 10) > "12") {
-                            appliedTime = (parseInt(data.data.CellData.CreateDate.substring(8, 10)) - 12) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " PM";
-                        } else {
-                            appliedTime = data.data.CellData.CreateDate.substring(8, 10) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " AM";
-                        }
+//                         if (data.data.CellData.CreateDate.substring(8, 10) > "12") {
+//                             appliedTime = (parseInt(data.data.CellData.CreateDate.substring(8, 10)) - 12) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " PM";
+//                         } else {
+//                             appliedTime = data.data.CellData.CreateDate.substring(8, 10) + ":" + data.data.CellData.CreateDate.substring(10, 12) + " AM";
+//                         }
+                      appliedTime = (parseInt(data.data.CellData.CreateDate.substring(8, 10))) + ":" + data.data.CellData.CreateDate.substring(10, 12) ;
                         var appliedDate = data.data.CellData.CreateDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.CreateDate.substring(4, 6) + ""]).substring(0, 3) + " " + data.data.CellData.CreateDate.substring(0, 4) + ", " + appliedTime;
                         frmLeaveHome.lblAppliedDate.text = appliedDate;
                     } else {
@@ -225,11 +238,12 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                         frmLeaveHome.lblSelectedLeaveStatusOther.skin = "sknLblMob00C6AE28Px";
                         if (!isNaN(data.data.CellData.LastModifiedDate) && data.data.CellData.LastModifiedDate !== null && data.data.CellData.LastModifiedDate !== "") {
                             var approvedTime = "";
-                            if (data.data.CellData.LastModifiedDate.substring(8, 10) > "12") {
-                                approvedTime = (parseInt(data.data.CellData.LastModifiedDate.substring(8, 10)) - 12) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " PM";
-                            } else {
-                                approvedTime = data.data.CellData.LastModifiedDate.substring(8, 10) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " AM";
-                            }
+                          	approvedTime = (parseInt(data.data.CellData.LastModifiedDate.substring(8, 10))) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12);
+//                             if (data.data.CellData.LastModifiedDate.substring(8, 10) > "12") {
+//                                 approvedTime = (parseInt(data.data.CellData.LastModifiedDate.substring(8, 10)) - 12) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " PM";
+//                             } else {
+//                                 approvedTime = data.data.CellData.LastModifiedDate.substring(8, 10) + ":" + data.data.CellData.LastModifiedDate.substring(10, 12) + " AM";
+//                             }
                             var approvedDate = data.data.CellData.LastModifiedDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.LastModifiedDate.substring(4, 6) + ""]).substring(0, 3) + " " + data.data.CellData.LastModifiedDate.substring(0, 4) + ", " + approvedTime;
                             frmLeaveHome.lblSelectedLeaveStatusOtherDate.text = approvedDate;
                         } else {
@@ -375,11 +389,12 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
         var commentDate = "";
         if (!isNaN(data[i].createdts) && data[i].createdts !== null && data[i].createdts !== "") {
             var commentTime = "";
-            if (data[i].createdts.substring(8, 10) > "12") {
-                commentTime = (parseInt(data[i].createdts.substring(8, 10)) - 12) + ":" + data[i].createdts.substring(10, 12) + " PM";
-            } else {
-                commentTime = data[i].createdts.substring(8, 10) + ":" + data[i].createdts.substring(10, 12) + " AM";
-            }
+          	commentTime = (parseInt(data[i].createdts.substring(8, 10))) + ":" + data[i].createdts.substring(10, 12);
+//             if (data[i].createdts.substring(8, 10) > "12") {
+//                 commentTime = (parseInt(data[i].createdts.substring(8, 10)) - 12) + ":" + data[i].createdts.substring(10, 12) + " PM";
+//             } else {
+//                 commentTime = data[i].createdts.substring(8, 10) + ":" + data[i].createdts.substring(10, 12) + " AM";
+//             }
             commentDate = data[i].createdts.substring(6, 8) + " " + (monthsJSON[data[i].createdts.substring(4, 6) + ""]).substring(0, 3) + " , " + commentTime;
         } else {
             commentDate = " ";
@@ -391,7 +406,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
             tempCommentData.txtApplierComments = {
                 "text": data[i].comments,
             };
-            tempCommentData.lblapplieddate = "Submitted on " + commentDate;
+            tempCommentData.lblapplieddate = kony.i18n.getLocalizedString("i18n.ess.common.submittedon")+" " + commentDate;
             tempCommentData.imgapplier = "adduserpic.png";
             commentData1.push(tempCommentData);
         } else {
@@ -402,7 +417,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.generateCommentRows = function() {
             tempCommentData2.txtComments = {
                 "text": data[i].comments,
             };
-            tempCommentData2.lblapproveddate = "Submitted on " + commentDate;
+            tempCommentData2.lblapproveddate = kony.i18n.getLocalizedString("i18n.ess.common.submittedon")+" " + commentDate;
             commentData2.push(tempCommentData2);
         }
     }
@@ -920,7 +935,7 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.mappingBackendDataToCalendar = function(
                             "src": ""
                         },
                         "LABEL": {
-                            "skin": "sknBtnMobBg0OpFC333333Op100S24px"
+                            "skin": "sknBtnMobBg0Font5c5c5c"
                         }
                     };
                     kony.apps.coe.ess.myLeave.MyLeaveHomeUI.calendarWidget.setDataAtIndex(1, i, cellData);
@@ -1503,4 +1518,4 @@ kony.apps.coe.ess.myLeave.MyLeaveHomeUI.setCurrentDate = function(){
 
 kony.apps.coe.ess.myLeave.MyLeaveHomeUI.updateYear = function(year){
 	frmLeaveHome.lblLeaveHomeYear.text = Number(year).toFixed();
-}
+};

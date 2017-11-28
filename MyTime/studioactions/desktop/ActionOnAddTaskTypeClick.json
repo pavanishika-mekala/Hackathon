@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_79cf61275d914fe6ac26883658cfbb1d": {
+        "id": "AS_FlexContainer_79cf61275d914fe6ac26883658cfbb1d",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnAddTaskTypeClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c9cdbb07cea5409d98aded8c210e6435",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxBlank.setVisibility(true);\nfrmCreateViewDW.flxSelectType.setVisibility(true);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

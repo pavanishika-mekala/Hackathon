@@ -1,0 +1,21 @@
+{
+    "AS_TextField_28c6f711fa794d2680c51985e50d2f10": {
+        "id": "AS_TextField_28c6f711fa794d2680c51985e50d2f10",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForTextFieldOnTextChangeInCreateTimeSheet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTextChange_7535dac12db840d09cd7da57cd3044b0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.onDoneInActivityDesc();",
+            "callbackType": null
+        }]
+    }
+}

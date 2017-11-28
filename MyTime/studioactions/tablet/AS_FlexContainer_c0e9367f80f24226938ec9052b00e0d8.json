@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_c0e9367f80f24226938ec9052b00e0d8": {
+        "id": "AS_FlexContainer_c0e9367f80f24226938ec9052b00e0d8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ic441fc34c3d4c0ba4e95a493439ab81",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.frmTimesheetHelp.helpLayerObj.showPrevImage();",
+            "callbackType": null
+        }]
+    }
+}

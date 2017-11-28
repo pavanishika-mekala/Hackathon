@@ -1,0 +1,48 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "7%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "se4af45d905f45b2a062af82e4b06686",
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblSearchTxt",
+        "imgStatusSelection",
+        "flxSeparator",
+        "statusId"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSearchStatusRow",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "5a7e6467102745e793e590f4bddf53c5",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "searchStatusRowTemplate",
+    "pf": "searchStatusRowTemplate",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

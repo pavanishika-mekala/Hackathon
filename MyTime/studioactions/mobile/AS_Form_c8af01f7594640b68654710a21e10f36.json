@@ -1,0 +1,24 @@
+{
+    "AS_Form_c8af01f7594640b68654710a21e10f36": {
+        "id": "AS_Form_c8af01f7594640b68654710a21e10f36",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__8031b89a7b4b491ab00818d3717f5c6a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "preshowfrmhome();\nkony.apps.coe.ess.myTime.TimesheetCreate.ProjectTasks.mockData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

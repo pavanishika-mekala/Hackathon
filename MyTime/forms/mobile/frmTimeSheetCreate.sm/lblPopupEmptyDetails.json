@@ -1,0 +1,70 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "19%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "12.63%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8178854800a496eb0c80d358692bb20",
+    "_text_": "Tapping on done will cancel the task.",
+    "_top_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblPopupEmptyDetails",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "58e060ce68804b9e8c057439579fd456",
+    "name": "kony.ui.Label",
+    "parent": "flxPopupEmpty",
+    "pf": "frmTimeSheetCreate",
+    "texti18n": "i18n.ess.common.emptyDetails.valueKA",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

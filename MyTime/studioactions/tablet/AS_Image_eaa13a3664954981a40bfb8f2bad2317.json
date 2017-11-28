@@ -1,0 +1,24 @@
+{
+    "AS_Image_eaa13a3664954981a40bfb8f2bad2317": {
+        "id": "AS_Image_eaa13a3664954981a40bfb8f2bad2317",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetSettings",
+            "type": "forms",
+            "platform": null,
+            "KUID": "if11cd8b59f647728437156c71cfe167"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

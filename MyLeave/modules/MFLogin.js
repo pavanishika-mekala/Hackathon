@@ -7,11 +7,11 @@ kony.sdk.mvvm.constants["ENABLE_JSON_STRINGIFY_PRINTS"] = false;
 kony.sdk.mvvm.constants["ENABLE_LAZY_LOADING"] = true;
 kony.sdk.mvvm.constants["DYNAMIC_THEME_ENABLED"] = false;
 
-kony.sdk.mvvm.LoginAction = function(status) {
+kony.sdk.mvvm.LoginAction = function(status, successCallBack, errorCallback) {
     kony.print("---------------------In LoginAction MFLogin.js-------------");
     var options = {};
     var authConfig;
-    var identityServiceName = kony.apps.coe.ess.appconfig.identityServiceName;
+    var identityServiceName = kony.apps.coe.ess.appconfig.identityServiceSAP;
     if (kony.apps.coe.ess.globalVariables.isNative === true) {
         if (status == "DeepLink") {
             kony.apps.coe.ess.frmLogin.username = appserviceUsername;
@@ -26,7 +26,7 @@ kony.sdk.mvvm.LoginAction = function(status) {
                     "callerId": appserviceUsername + kony.sdk.mvvm.Utils.getDeviceID(),
                     "loginOptions": {
                         "isOfflineEnabled": true,
-                        "isSSOEnabled": true,
+                        "isSSOEnabled": false,
                         "include_profile": true,
                     }
                 },
@@ -52,7 +52,7 @@ kony.sdk.mvvm.LoginAction = function(status) {
                         "callerId": unique_id + kony.sdk.mvvm.Utils.getDeviceID(),
                         "loginOptions": {
                             "isOfflineEnabled": false,
-                            "isSSOEnabled": true,
+                            "isSSOEnabled": false,
                             "include_profile": true,
                         }
                     },
@@ -74,7 +74,7 @@ kony.sdk.mvvm.LoginAction = function(status) {
                         "callerId": username + kony.sdk.mvvm.Utils.getDeviceID(),
                         "loginOptions": {
                             "isOfflineEnabled": true,
-                            "isSSOEnabled": true,
+                            "isSSOEnabled": false,
                             "include_profile": true,
                         }
                     },
@@ -109,7 +109,7 @@ kony.sdk.mvvm.LoginAction = function(status) {
                         "isSSOEnabled": false,
                         //#else
                         "isOfflineEnabled": true,
-                        "isSSOEnabled": true,
+                        "isSSOEnabled": false,
                         //#endif
 
                         "include_profile": true,
@@ -177,7 +177,14 @@ kony.sdk.mvvm.LoginAction = function(status) {
             "options": options
         }
     });
-    initManager.executeRegistedServices(applicationSuccessCallback, applicationErrorCallback);
+    // Set callbacks if they were not passed as arguments of the function
+    if(successCallBack === undefined || successCallBack === null){
+      successCallBack = applicationSuccessCallback;
+    }
+    if(errorCallback === undefined || errorCallback === null){
+      errorCallback = applicationErrorCallback;
+    }
+    initManager.executeRegistedServices(successCallBack, errorCallback);
 
     kony.apps.coe.ess.Validation.setChannel();
 };
@@ -186,7 +193,7 @@ function applicationSuccessCallback() {
     _removeTokenHeaders();
 
     if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-        kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceName).getProfile(true, userDetailsSucess, userDetailsSucess);
+        kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceSAP).getProfile(true, userDetailsSucess, userDetailsSucess);
     }
     else {
         userDetailsSucess();
@@ -254,7 +261,9 @@ function userDetailsSucess(response) {
                                             " AND '" + (parseInt(currYear) + 1).toString() + "1231') OR (l.end_date between '" + (parseInt(currYear) - 1).toString() + "0101' AND '" + (parseInt(currYear) + 1).toString() + "1231'))";
                                         kony.sync.single_select_execute(kony.sync.getDBName(), getPendingRequestsQuery, null, function(res) {
                                             frmLeaveHome.lblAllPendingRequestsCount.text = res[0].allPending + "";
-                                        }, function(err) {}, false);
+                                        }, function(err) {
+                                          handleError(err);
+                                        }, false);
                                     }
                                 }
                                 else {
@@ -290,7 +299,7 @@ function userDetailsSucess(response) {
                                 }
                                 //#ifndef windows8
                                         frmHamburger.lblSyncDate.text = currDay + " " + currMonth + " " + currYear;
-                                        frmHamburger.lblSyncTime.text = currTime.substring(0, 5) + " " + suffix;
+                                        frmHamburger.lblSyncTime.text = currTime.substring(0, 5);// + " " + suffix;
 
                                     //#endif
 
@@ -388,7 +397,7 @@ function userDetailsSucess(response) {
                 }, function(err) {
                     //Sync InitFailed
                     kony.sdk.mvvm.log.error("Sync is not initialized");
-                    applicationErrorCallback("Application is not initialized");
+                    applicationErrorCallback(err);//"Application is not initialized");
                 });
             }
             else if (kony.apps.coe.ess.globalVariables.isSPA == true) {
@@ -404,20 +413,19 @@ function userDetailsSucess(response) {
         else {
             //If appInstance is null/undefined, It means app is not initialized properly
             kony.sdk.mvvm.log.error("Application is not initialized");
-            applicationErrorCallback("Application is not initialized");
+            applicationErrorCallback(null);
         }
     }
     catch (excp) {
         kony.sdk.mvvm.log.error("Exception Occured in applicationSuccessCallback of LoginAction " + JSON.stringify(excp));
-        kony.application.dismissLoadingScreen();
+        handleError(excp);
     }
 }
 
 function applicationErrorCallback(error) {
     _removeTokenHeaders();
-
     kony.sdk.mvvm.log.error("failed to load app");
-    error = error.getRootErrorObj();
+    error = error!==null && error.getRootErrorObj !== undefined && error.getRootErrorObj !== null ? error.getRootErrorObj() : error;
     if (kony.apps.coe.ess.globalVariables.isWebDesktop == true) {
         kony.apps.coe.ess.frmLoginDesk.invalidLoginAction(error);
         return;
@@ -426,6 +434,7 @@ function applicationErrorCallback(error) {
     frmLogin.tbUsername.skin = "sknTbWrongCredentials";
     frmLogin.tbPassword.skin = "sknTbWrongCredentials";
     if (error !== null && error !== undefined && error.mfcode !== null && error.mfcode !== undefined && error.mfcode == "Auth-4") {
+        error = error.getRootErrorObj();
         if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
             frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.wrongCredentials");
         }
@@ -463,52 +472,76 @@ function _removeTokenHeaders(){
     // Remove token headers, if present
     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, "headers");
     kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_access_token, "headers");
+    kony.sdk.getCurrentInstance().removeGlobalRequestParam(Constants.AUTHORIZATION_HEADER, "headers");
   }
 }
 
 
 kony.sdk.mvvm.LogoutAction = function() {
-    sync.stopSession(function() {
-        kony.apps.coe.ess.Sync.UI.stopSyncProgressBar();
-    });
-    options = {};
-    options.slo = true;
+  //commenting auto sync timer
+  try {
+    kony.timer.cancel("serviceDeltaSyncTimer");
+  } catch (e) {
+    kony.print(e);
+  }
+  sync.stopSession(function() {
+    kony.apps.coe.ess.Sync.UI.stopSyncProgressBar();
+  });
+  options = {};
+  options.slo = true;
 
-    if (kony.apps.coe.ess.appconfig.useOkta === true) {
-      // Clear login variables
-      kony.store.removeItem("username");
-      kony.store.removeItem("password");
-      kony.store.removeItem("rememberme");
-      kony.sdk.util.deleteSSOToken();
+  if (kony.apps.coe.ess.appconfig.useOkta === true) {
+    // Clear login variables
+    kony.store.removeItem("username");
+    kony.store.removeItem("password");
+    kony.store.removeItem("rememberme");
+    kony.store.removeItem("oktaToken");
+    kony.sdk.util.deleteSSOToken();
+    kony.apps.coe.ess.globalVariables.active_login_service = "";
 
-      kony.application.showLoadingScreen("", kony.i18n.getLocalizedString(""), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-      // Destroy Okta session
-      try {
-        var preLoginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServicePreLogin);
-        preLoginService.logout(function() {
-          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
-        }, function() {
-          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+    kony.application.showLoadingScreen("", kony.i18n.getLocalizedString(""), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+    // Destroy Okta session
+    try {
+      if (kony.apps.coe.ess.globalVariables.active_login_service == kony.apps.coe.ess.appconfig.identityServiceOktaRefresh) {
+        var loginRefreshService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceOktaRefresh);
+        loginRefreshService.logout(function() {
+          kony.print("Logout of okta refresh completed");
+        }, function(err) {
+          kony.print("Error on logout of okta refresh service: " + JSON.stringify(err));
         }, {});
-      } catch (exception) {
+      }
+      if (kony.apps.coe.ess.globalVariables.used_pre_login === true) {
+        var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceOkta);
+        loginService.logout(function() {
+          kony.print("Logout of okta login completed");
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+        }, function(err) {
+          kony.print("Error on logout of okta login service: " + JSON.stringify(err));
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+        }, {"browserWidget": frmLogin.browserOkta});
+
+      } else {
         kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
       }
-    } else {
+    } catch (exception) {
       kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
     }
+  } else {
+    kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+  }
 
-    function sucCallback() {
-      kony.application.dismissLoadingScreen();
-      frmLogin.show();
-      frmLeaveHome.destroy();
-    }
+  function sucCallback() {
+    kony.application.dismissLoadingScreen();
+    frmLogin.show();
+    frmLeaveHome.destroy();
+  }
 
-    function errCallback(err) {
-      kony.application.dismissLoadingScreen();
-      frmLogin.show();
-      frmLeaveHome.destroy();
-      kony.print(JSON.stringify(err));
-    }
+  function errCallback(err) {
+    kony.application.dismissLoadingScreen();
+    frmLogin.show();
+    frmLeaveHome.destroy();
+    kony.print(JSON.stringify(err));
+  }
 };
 
 kony.sdk.mvvm.Logout_DW = function() {
@@ -664,7 +697,14 @@ function OAuthHandler(serviceUrl, providerName, appkey, callback, type, options)
 			    urlConf["headers"] = headersConf;
             }
 			browserSF.requestURLConfig = urlConf;
-        } else {
+
+      kony.timer.schedule("oauth2callbacklogouttimer", function () {
+        return function () {
+          callback(true);
+        }
+      }(), 2, false);
+
+    } else {
             //#ifdef android
             browserSF.onPageStarted = handleRequestCallback;
             //#else

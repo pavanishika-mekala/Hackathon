@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_d8b50559953742c38755635244e325f8": {
+        "id": "AS_FlexContainer_d8b50559953742c38755635244e325f8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAuditTrail",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i003e89e65a84f6cb230d3b582b9b624"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_c4c8c9b86b1346a083d2c2d6a63bda8b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCalendarView.flxCopyWeek.setVisibility(true);\nfrmCalendarView.flxCopyIcon.skin = \"sknFlxBG087da8OP100R100\";\nfrmCalendarView.imgCopy.src = \"copywhite.png\";",
+            "callbackType": null
+        }]
+    }
+}

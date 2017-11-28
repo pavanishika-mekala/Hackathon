@@ -1,0 +1,70 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "s90fa8d05c38475d839407f4352c2817",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {
+        "psp": {
+            "keyboardActionLabel": 4
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s90fa8d05c38475d839407f4352c2817",
+    "id": "txtBoxNetworkOrder",
+    "ide_onDone": "AS_TextField_adbcbbce43dd48449f96040e05b0c6d9",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "closeButtonText": "Done",
+            "keyboardActionLabel": 1
+        }
+    },
+    "isvisible": true,
+    "keyboardactionlabel": 4,
+    "keyboardtype": "A",
+    "kuid": "8fdcbb0170f043bdb9f3d6d4e78021f1",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxMainTwoBox",
+    "pf": "frmRecentTasks",
+    "placeholderskin": "s82025910dee45089fc768dee13198ff",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

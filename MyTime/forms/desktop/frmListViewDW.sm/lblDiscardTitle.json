@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "s47bbed27e11401da4d89e47aa2fc2c6",
+    "_text_": "Discard Timesheet Changes?",
+    "_top_": {
+        "type": "string",
+        "value": "20px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblDiscardTitle",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "5d480e0a372e426c85500b6232af012d",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxDeleteTimesheetPopup",
+    "pf": "frmListViewDW",
+    "texti18n": "i8n.ess.mytime.discardtimesheetchanges",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

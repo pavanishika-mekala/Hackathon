@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_cb03da801efa4cce80d3190c85cac366": {
+        "id": "AS_FlexContainer_cb03da801efa4cce80d3190c85cac366",
+        "type": "ACTION_SEQUENCE",
+        "name": "flxLabelQrCodeOnClickAction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmStartUp",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8681ec0917414ba494646c6414cb9ce7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__61e4c6c13d894f17a2b46867b662d996",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.QRCode()).QrCodeOnClickAction();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

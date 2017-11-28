@@ -177,7 +177,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
           flag2 = 1;
         } else if (flag2 === 1) {
           skn = "LBLMOBF74A4A";
-          colors = kony.apps.coe.ess.globalVariables.leaveWallet.colors;
+          colors = kony.apps.coe.ess.globalVariables.leaveWalletcolors;
           flag2 = 0;
         }
       }
@@ -410,7 +410,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": "230",
+        "text": (this.data[i].LEAVETAKEN+"").replace(".", ","),//"230",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -431,7 +431,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": "360",
+        "text": (this.data[i].LEAVEPLANNED+"").replace(".", ","),//"360",
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -452,7 +452,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "isVisible": true,
         "left": "78%",
         "skin": "LblSkn555555Px57M",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "text": (this.data[i].LEAVEBALANCE+"").replace(".", ","),
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -507,7 +507,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "id": "lblCountTotal"+i,
         "isVisible": true,
         "skin": "LBLMOB555555PX24",
-        "text": "12",
+        "text": (this.data[i].TOTALLEAVE+"").replace(".", ","),
         "textStyle": {
             "letterSpacing": 0,
             "strikeThrough": false
@@ -531,7 +531,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.bindData = function() {
         "centerX": "50%",
         "width": "preffered",
         "height": "preffered",
-        "text": (Number(this.data[i].LEAVEBALANCE)).toFixed(),
+        "text": (this.data[i].LEAVEBALANCE+"").replace(".", ","),
         "zIndex": 3,
         isVisible: true,
       }, {
@@ -660,7 +660,7 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
       "centerX": "50%",
       "width": "preffered",
       "height": "preffered",
-      "text": (Number(data.LEAVEBALANCE)).toFixed(),
+      "text": (data.LEAVEBALANCE+"").replace(".", ","),
       "zIndex": 3,
       isVisible: true,
     }, {
@@ -705,7 +705,6 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createSingleChart = function(d
  * @Desc - function called after fetching the data to bind it to leavewallet Flex
  */
 kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createChartJSObjectAcc = function(data, colors) {
-
   var chartJSObj = {
     "chartProperties": {
       "enableScrolling": true,
@@ -812,11 +811,11 @@ kony.apps.coe.ess.myLeave.leaveWalletUI.prototype.createChartJSObjectAcc = funct
       },
 
       "data": {
-        "Accounts": [Number(data.LEAVETAKEN), Number(data.LEAVEBALANCE),5],//FIXME static variable 5
+        "Accounts": [parseFloat(data.LEAVETAKEN), parseFloat(data.LEAVEPLANNED),parseFloat(data.LEAVEBALANCE)],//FIXME static variable 5
       },
 
       "rowNames": {
-        "values": ["Total Leave", " Leave Taken","static data"]
+        "values": ["Consumed", "Planned","Available"]
       }
 
     }

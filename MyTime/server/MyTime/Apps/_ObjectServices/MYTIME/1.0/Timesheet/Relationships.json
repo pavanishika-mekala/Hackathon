@@ -1,0 +1,34 @@
+[ {
+  "sourceObject" : "Timesheet",
+  "targetObject" : "Time_Entry",
+  "relationshipKeys" : [ {
+    "sourceField" : "Id",
+    "targetField" : "Timesheet_Id"
+  } ],
+  "name" : "HCM_DISTRIBUTION_Time_Entry",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "Timesheet",
+  "targetObject" : "Timesheet_Note",
+  "relationshipKeys" : [ {
+    "sourceField" : "Id",
+    "targetField" : "Timesheet_Id"
+  } ],
+  "name" : "HCM_DISTRIBUTION_Timesheet_Note",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "Timesheet",
+  "targetObject" : "Timesheet_Audit",
+  "relationshipKeys" : [ {
+    "sourceField" : "Id",
+    "targetField" : "Timesheet_Id"
+  } ],
+  "name" : "Timesheet_Timesheet_Audit",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

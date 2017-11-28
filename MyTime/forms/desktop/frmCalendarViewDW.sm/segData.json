@@ -1,0 +1,172 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblActivityId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Activity ID - 7645"
+            },
+            "lblCostCenter": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Cost Center - 98746"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Researching the Employee Self Service for Sap deployment inside Apple Mobile Unit"
+            },
+            "lblProductiveHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblProductiveHoursValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 h"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Apple"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Research"
+            }
+        },
+        {
+            "lblActivityId": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Activity ID - 7645"
+            },
+            "lblCostCenter": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Cost Center - 98746"
+            },
+            "lblDescription": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Researching the Employee Self Service for Sap deployment inside Apple Mobile Unit"
+            },
+            "lblProductiveHours": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Productive Hours"
+            },
+            "lblProductiveHoursValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4 h"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Apple"
+            },
+            "lblSeperator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Research"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "01",
+    "disabledSkins": {
+        "rowFocusSkin": "s3fe7255b9da4bc08fb8ad82e9f1c719"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segData",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "bd891a93ecc4474ab28e1f366d695953",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSeg",
+    "pf": "frmCalendarViewDW",
+    "retainselection": false,
+    "rowTemplateId": "d125e9efd26949e0a011b949adb9185e",
+    "rowcounter": 1,
+    "rowskin": "s16806abad534c48a97f387ccf2d1416",
+    "rowtemplate": "flxSegFullDetailsData",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxSegFullDetailsData": "flxSegFullDetailsData",
+        "lblActivityId": "lblActivityId",
+        "lblCostCenter": "lblCostCenter",
+        "lblDescription": "lblDescription",
+        "lblProductiveHours": "lblProductiveHours",
+        "lblProductiveHoursValue": "lblProductiveHoursValue",
+        "lblProjectName": "lblProjectName",
+        "lblSeperator": "lblSeperator",
+        "lblTaskName": "lblTaskName"
+    },
+    "zindex": 1
+}

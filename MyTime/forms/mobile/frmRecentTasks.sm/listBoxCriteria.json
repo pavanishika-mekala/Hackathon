@@ -1,0 +1,116 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        8,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s54265216f85446bb59a79774e185735",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "android": {
+        "psp": {
+            "popupIcon": "approved.png"
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "context": {
+        "channel": "mobile",
+        "formID": "frmRecentTasks",
+        "platform": "iphone",
+        "templateType": "forms",
+        "topLevelBox": null
+    },
+    "dropdownimage": "debvider.png",
+    "focusskin": "s54265216f85446bb59a79774e185735",
+    "groupcells": false,
+    "id": "listBoxCriteria",
+    "ide_onSelection": "AS_ListBox_acdf851b07794eebbea223ea9c0a556d",
+    "info": null,
+    "iphone": {},
+    "isvisible": true,
+    "kuid": "43c2c3db800f42b59d839e8fc494cce3",
+    "masterdata": [
+        [
+            "lb1",
+            "Search using criteria"
+        ],
+        [
+            "lb2",
+            "Cost Center"
+        ],
+        [
+            "lb3",
+            "Network Order"
+        ],
+        [
+            "lb4",
+            "Activity Operation"
+        ],
+        [
+            "lb5",
+            "Cost Center, Activity"
+        ],
+        [
+            "lb6",
+            "Network Order, Activity Operation"
+        ],
+        [
+            "lb7",
+            "Network Order, Activity Operation, Work Center"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "paddinginpixel": false,
+    "parent": "Flexselection",
+    "pf": "frmRecentTasks",
+    "selectedkey": "lb1",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "lb1",
+        "Search using criteria"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

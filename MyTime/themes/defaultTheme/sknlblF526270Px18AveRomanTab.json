@@ -1,0 +1,97 @@
+{
+  "android": {
+    "font_name": "Helvetica",
+    "font_size": 48,
+    "isForked": false
+  },
+  "background_color": "00000000",
+  "bg_type": "one",
+  "border_color": "424242ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "desktopweb": {
+    "font_name": "Helvetica",
+    "font_size": 167,
+    "isForked": false
+  },
+  "fontSizeInPx": true,
+  "font_color": "526270ff",
+  "font_name": "Helvetica",
+  "font_size": 71,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "ipad": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 71,
+    "isForked": false
+  },
+  "iphone": {
+    "font_name": "Helvetica",
+    "font_size": 71,
+    "isForked": false
+  },
+  "isDefaultSkin": false,
+  "kiosk": {
+    "font_name": "GenericMonospace",
+    "font_size": 125,
+    "isForked": false
+  },
+  "kuid": "s47b88ff869e4694b2fb30e19198139a",
+  "spaan": {
+    "font_name": "Helvetica",
+    "font_size": 83,
+    "isForked": false
+  },
+  "spaandroidtablet": {
+    "font_name": "Helvetica",
+    "font_size": 83,
+    "isForked": false
+  },
+  "spabb": {
+    "font_name": "Helvetica",
+    "font_size": 83,
+    "isForked": false
+  },
+  "spaip": {
+    "font_name": "Helvetica",
+    "font_size": 83,
+    "isForked": false
+  },
+  "spaipad": {
+    "font_name": "Helvetica",
+    "font_size": 83,
+    "isForked": false
+  },
+  "spawindowstablet": {
+    "font_name": "Helvetica",
+    "font_size": 83,
+    "isForked": false
+  },
+  "spawinphone8": {
+    "font_name": "Helvetica",
+    "font_size": 83,
+    "isForked": false
+  },
+  "tabrcandroid": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 119,
+    "isForked": false
+  },
+  "wType": "Label",
+  "watchos": {
+    "font_name": "Helvetica",
+    "font_size": 71,
+    "isForked": false
+  },
+  "windows8": {
+    "font_name": "AvenirLTStd-Roman",
+    "font_size": 49,
+    "isForked": false
+  },
+  "winphone8": {
+    "font_name": "GenericMonospace",
+    "font_size": 67,
+    "isForked": false
+  }
+}

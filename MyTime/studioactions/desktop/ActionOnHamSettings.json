@@ -1,0 +1,25 @@
+{
+    "AS_Button_92e29f9c639a46188141aaf8956aadc9": {
+        "id": "AS_Button_92e29f9c639a46188141aaf8956aadc9",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnHamSettings",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHamburgerDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b59dc1b56858469682043a21820906fe"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dd258d3093794a579e5e41cf169ad003",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmHamburgerDW.flxHamAppPreferences.isVisible == true){\n  frmHamburgerDW.flxHamAppPreferences.isVisible = false;\n  frmHamburgerDW.flxMasthead.isVisible = true;\n  frmHamburgerDW.flxHamApps.isVisible = true;\n}else{\n  frmHamburgerDW.flxHamApps.isVisible = false;\n  frmHamburgerDW.flxHamAppPreferences.isVisible = true;\n  frmHamburgerDW.flxMasthead.isVisible = false;\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

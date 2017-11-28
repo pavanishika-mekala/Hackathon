@@ -1,0 +1,24 @@
+{
+    "AS_Segment_6f12c75552d9448cac8b1fac96d0edf1": {
+        "id": "AS_Segment_6f12c75552d9448cac8b1fac96d0edf1",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnBreakSegmentClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_c43012e97df1480281229308be3c5277",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewUIDW()).addBreak();",
+            "callbackType": null
+        }]
+    }
+}

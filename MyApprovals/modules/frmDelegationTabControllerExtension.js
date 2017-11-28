@@ -25,7 +25,7 @@ kony.sdk.mvvm.frmDelegationTabControllerExtension = Class(kony.sdk.mvvm.BaseForm
     fetchData: function() {
         try {
             var scopeObj = this;
-            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
             kony.apps.coe.ess.Approvals.DelegationTab.UI.getInstance().setDataInList();
             var query = "select dl.delegation_group_id as groupId, dl.status_id as statusId, dl.employee_id as empId, emp.First_Name as firstName, emp.Last_Name as lastName, rt.name as requestTypeName, dl.start_date as startDate, dl.end_date as endDate, dl.createdts as createdDate from delegate dl " +
                 " left join Employee emp on emp.Id = dl.employee_id " +
@@ -180,14 +180,14 @@ kony.sdk.mvvm.frmDelegationTabControllerExtension = Class(kony.sdk.mvvm.BaseForm
             for (i in dataSentByMeGrouped) {
                 tempData = dataSentByMeGrouped[i][0];
                 if (dataSentByMeGrouped[i].length > 1) {
-                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataSentByMeGrouped[i].length - 1) + " more";
+                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataSentByMeGrouped[i].length - 1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");
                 }
                 data.dataSentByMe.push(tempData);
             }
             for (i in dataReceivedGrouped) {
                 tempData = dataReceivedGrouped[i][0];
                 if (dataReceivedGrouped[i].length > 1) {
-                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataReceivedGrouped[i].length - 1) + " more";
+                    tempData.requestTypeName = tempData.requestTypeName + ", " + parseInt(dataReceivedGrouped[i].length - 1) + " "+kony.i18n.getLocalizedString("i18n.ess.common.more");
                 }
                 data.dataReceived.push(tempData);
             }
@@ -257,7 +257,8 @@ kony.sdk.mvvm.frmDelegationTabControllerExtension = Class(kony.sdk.mvvm.BaseForm
                 "lblSumittedDate": "createdDate",
                 "lblRequestTypes": "requestTypeName",
                 "lblStatus": "lblStatus",
-                "flxStatusIcon": "flxStatusIcon"
+                "flxStatusIcon": "flxStatusIcon",
+              	"lblTypeOfRequestHeader" : "lblTypeOfRequestHeader"
             };
             frmDelegationTab.segRequestsListSentByMe.setData(data.dataSentByMe);
             frmDelegationTab.segRequestsListReceived.setData(data.dataReceived);

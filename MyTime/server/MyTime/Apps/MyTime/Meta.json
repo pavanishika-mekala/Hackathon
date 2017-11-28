@@ -1,0 +1,25 @@
+{
+  "subType" : "customapp",
+  "description" : "MYTIME_V_3.1.1",
+  "orchSvcs" : [ {
+    "name" : "GetConfigurationsForMyTime",
+    "version" : "1.0"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "Notifications",
+    "version" : "1.0"
+  }, {
+    "name" : "Employee",
+    "version" : "1.0"
+  }, {
+    "name" : "TimeDynamicSkins",
+    "version" : "1.0"
+  }, {
+    "name" : "MYTIME",
+    "version" : "1.0"
+  }, {
+    "name" : "TimeConfigurations",
+    "version" : "1.0"
+  } ],
+  "identity" : [ "ESSIDENTITY" ]
+}

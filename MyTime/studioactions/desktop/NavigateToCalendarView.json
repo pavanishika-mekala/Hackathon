@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_44dfc0f2ef8b47ad9a13e004812acbc8": {
+        "id": "AS_FlexContainer_44dfc0f2ef8b47ad9a13e004812acbc8",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateToCalendarView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___422cde4ef9c84b90b976e9ff60b7df09",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmCalendarViewDW",
+            "formKUID": "51b15f8f75f0442ea9ac81082c3284d9",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

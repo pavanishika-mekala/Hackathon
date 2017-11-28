@@ -1,0 +1,23 @@
+{
+    "AS_Segment_b0b44bdffabb4c86ada1737ee5f77712": {
+        "id": "AS_Segment_b0b44bdffabb4c86ada1737ee5f77712",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_0e0f5ae2c21042da85d5b9671bfc74e0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmTimeSheetCreateTab.flexSlider){\nkony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfTaskTab(frmTimeSheetCreateTab.segProjectTaskSelection.selectedRowItems[0]);\nfrmTimeSheetCreateTab.btnStep1.skin=\"btnTaskSelectedc3d9e1\";\nfrmTimeSheetCreateTab.btnStep1.text=kony.i18n.getLocalizedString(\"i18n.ess.frmTimeSheetCreate.TaskSelected\");\nfrmTimeSheetCreateTab.lblSelectTask.text=kony.i18n.getLocalizedString(\"i18n.ess.mytime.createtimesheet.selecttimetype.valueKA\");\nfrmTimeSheetCreateTab.btnStep2.skin=\"sknBtn1c7393\";\nfrmTimeSheetCreateTab.flxSelectedTaskTimeTypeSelection.setVisibility(true);\nfrmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(false);\nfrmTimeSheetCreateTab.segLeaveSelection.setVisibility(false);\nfrmTimeSheetCreateTab.segTasksSearchResults.setVisibility(false);\nfrmTimeSheetCreateTab.txtBoxSearch.setVisibility(false);\nfrmTimeSheetCreateTab.imgCancel.setVisibility(false);\n}\nelse{\n  alert(\"Please Select any Day\");\n}\n",
+            "callbackType": null
+        }]
+    }
+}

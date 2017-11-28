@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s5d33cf34e8142b19f452e7a697ffd50",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "12%"
+    },
+    "android": {
+        "psp": {}
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "pressedSkin": "sa7b87dd10bb4b79893c6999f8c4df67"
+    },
+    "displaytext": true,
+    "focusskin": "sf244ec49bd240c7a623f8fd32eb8126",
+    "id": "btnFullDay",
+    "ide_onClick": "AS_Button_d49818ee9b704f2b8ceac3c991a26d8f",
+    "info": null,
+    "isvisible": true,
+    "kuid": "4b17d58e86184f70819b01a6d5f2918b",
+    "name": "kony.ui.Button",
+    "parent": "flxDayData",
+    "pf": "frmTimeSheetCreateTab",
+    "texti18n": "i18n.ess.common.fullday.valueKA",
+    "wType": "Button",
+    "zindex": 1
+}

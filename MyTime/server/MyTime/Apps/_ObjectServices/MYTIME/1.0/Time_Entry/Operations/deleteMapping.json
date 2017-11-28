@@ -1,0 +1,61 @@
+{
+  "operationConfig" : {
+    "name" : "deleteTimeEntry4135",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIME_ENTRY_ID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "applyCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIME_ENTRY\",\"fMap\":{\"EMPNUMBER\":\"HCM_DISTRIBUTION.EMPNUMBER\",\"TYPE\":\"HCM_DISTRIBUTION.TYPE\"},\"sQuery\":\"HCM_DISTRIBUTION.DIST_KEY\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_PS_TIME_MESSAGES\",\"relationshipKeys\":[{\"parentKey\":\"TIME_ENTRY_ID\",\"childKey\":\"TIME_ENTRY_ID\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIMESHEET\",\"relationshipKeys\":[{\"parentKey\":\"TIMESHEETID\",\"childKey\":\"TIMESHEETID\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_TIME_AUDIT\",\"relationshipKeys\":[{\"parentKey\":\"TIME_ENTRY_ID\",\"childKey\":\"ENTRY_ID\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_WF_DIST\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_WF_OBJECT\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOCID\"}]}],\"relationshipKeys\":[{\"parentKey\":\"COUNTER\",\"childKey\":\"DOCID\"}]}],\"config\":{}}}",
+    "opcode" : "delete",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIME_ENTRY"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ {
+          "children" : [ ],
+          "name" : "Project",
+          "selected" : false
+        }, {
+          "children" : [ ],
+          "name" : "Task",
+          "selected" : false
+        } ],
+        "name" : "Project_Task",
+        "selected" : false
+      }, {
+        "children" : [ ],
+        "name" : "Time_Type",
+        "selected" : false
+      } ],
+      "name" : "Time_Entry",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

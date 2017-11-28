@@ -1,0 +1,19 @@
+{
+  "android": {
+    "background_image": "logicon.png",
+    "bg_type": "image"
+  },
+  "background_image": "logicon.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "iphone": {
+    "background_image": "logicon.png",
+    "bg_type": "image"
+  },
+  "isDefaultSkin": false,
+  "kuid": "s407fa11ecb54f65af6e912833b48e5f",
+  "wType": "FlexContainer"
+}

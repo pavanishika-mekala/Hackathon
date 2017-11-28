@@ -489,6 +489,8 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
             "       approval_request.islater           AS ISLater," +
             "       approval_request.isread            AS ISRead," +
             "       approval_request.request_date      AS RequestDate," +
+            "       approval_request.leave_hours       AS Leave_hours," +
+            "       approval_request.leave_days        AS Leave_days," +
             "       employee.first_name                AS FirstName," +
             "       employee.last_name                 AS LastName," +
             "       request_type.NAME                  AS Type," +
@@ -527,7 +529,11 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
 
         kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, function(response) {
             var processedData = kony.apps.coe.ess.Approvals.ApprovalsHome.process_data_ForSegement(response);
-            //setting the data to the approval request Segement
+            for (var index in processedData) {
+              processedData[index].btnLaterReject=kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Reject");
+        	  processedData[index].btnLaterApprove=kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Approve");
+            }
+          	//setting the data to the approval request Segement
             var WidgetDatamap = {
                 "lblShortName": "CreatedUserShortName",
                 //"imgCategory": "requestTypeImage",
@@ -542,7 +548,9 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
                 //"flxBorder2": "requestTypeBorderSkin2",
                 //"imgLeaveInfo": "requestTypeInfoImage",
                 "lblRemainingHours": "remaingHours",
-                "imgSelection": "imgSelection"
+                "imgSelection": "imgSelection",
+              	"btnLaterReject":"btnLaterReject",
+              	"btnLaterApprove":"btnLaterApprove"
             };
             frmRequestedList.SegDetails.widgetDataMap = WidgetDatamap;
             if(processedData.length != null && processedData.length >0){

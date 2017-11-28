@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_9dd3fba64a384cbc8a3cdf962d553ab0": {
+        "id": "AS_FlexContainer_9dd3fba64a384cbc8a3cdf962d553ab0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewTimeSheet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2a604777c24243f08d43a941ea6646bd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__34fc4e8ccab3482eb25c10458ad2ad74",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showAuditTrailForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

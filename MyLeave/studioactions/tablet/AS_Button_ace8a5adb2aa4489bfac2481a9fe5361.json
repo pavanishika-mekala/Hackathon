@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onClick_d726b16f306a44c1bca91abeb2eedcc8",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickOfHours();",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.onClickofHoursSel();",
             "callbackType": null
         }]
     }

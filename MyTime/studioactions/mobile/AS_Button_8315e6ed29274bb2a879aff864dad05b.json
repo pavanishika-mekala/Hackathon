@@ -1,0 +1,24 @@
+{
+    "AS_Button_8315e6ed29274bb2a879aff864dad05b": {
+        "id": "AS_Button_8315e6ed29274bb2a879aff864dad05b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetReview",
+            "type": "forms",
+            "platform": "",
+            "KUID": "dfc7fd82861d4ed9b5e064ecb18ee2a1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c3e0730f4a164936b242606b5ee8d583",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetReview.onSubmitClick();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

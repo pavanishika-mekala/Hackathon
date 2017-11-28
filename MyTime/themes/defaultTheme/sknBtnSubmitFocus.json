@@ -1,0 +1,17 @@
+{
+  "background_image": "submit_focus.png",
+  "bg_type": "image",
+  "border_color": "ffffffff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "fontSizeInPx": false,
+  "font_color": "ffffff00",
+  "font_name": "Helvetica",
+  "font_size": 0,
+  "font_style": "normal",
+  "font_weight": "normal",
+  "isDefaultSkin": false,
+  "kuid": "sa6bc50dba3747d89069f51e7fd8c7dc",
+  "wType": "Button"
+}

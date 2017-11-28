@@ -1,0 +1,25 @@
+{
+    "AS_Button_j5eb2e2a6278486b9bd64bc9ec3033a7": {
+        "id": "AS_Button_j5eb2e2a6278486b9bd64bc9ec3033a7",
+        "type": "ACTION_SEQUENCE",
+        "name": "actnbtnPastDuesOnClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d95417dca7354ec9b72f664cf05e9ba6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if (frmListView.btnPastDues.skin == \"sknBtnBgf4f4f4Fc526270Fs32px\") {\n  frmListView.btnPastDues.skin = \"sknBtnBg4a90e2FcffffffFs32px\";\n  frmListView.btnSaved.skin = \"sknBtnBgf4f4f4Fc526270Fs32px\";\n  frmListView.btnRejected.skin = \"sknBtnBgf4f4f4Fc526270Fs32px\";\n}\nif(frmListView.flxPDues.isVisible){\n  frmListView.flxPDues.isVisible = false;\n}else{\n  frmListView.flxPDues.isVisible = true;\n}\nkony.apps.coe.ess.myTime.ListViewTabUI.getInstance().onClickPastDues();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

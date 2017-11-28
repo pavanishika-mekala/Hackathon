@@ -16,13 +16,15 @@ kony.model.NotificationsLanguageService = kony.model.NotificationsLanguageServic
  * @param {Object} configOptions - Service Name and Service Options.
  */
 kony.model.NotificationsLanguageService.languageConfigurationModel = (function(){
-
+	
     function languageConfigurationModel(applicationContext, entityMetaData, configOptions) {
     	/**
     	 * @Fields in this object
 		 *
-		 * okta_user_id
-		 * language
+		 * okta_user_id 
+		 * language 
+		 * lastmodifiedts 
+		 * softdeleteflag 
 		 */
         kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
     }
@@ -32,7 +34,7 @@ kony.model.NotificationsLanguageService.languageConfigurationModel = (function()
      * @memberof languageConfigurationModel#
      * @param {String} columnName - Column Name.
      * @param {String} key - property of column.
-     * @returns {Object} - Value for property
+     * @returns {Object} - Value for property 
      */
     languageConfigurationModel.prototype.getValueForColumnProperty = function(columnName, key) {
         return kony.model.BaseModel.prototype.getValueForColumnProperty.call(this, columnName, key);
@@ -49,7 +51,7 @@ kony.model.NotificationsLanguageService.languageConfigurationModel = (function()
      * This method returns requested property of this object from metadata.
      * @memberof languageConfigurationModel#
      * @param {String} propertyName - property.
-     * @returns {Object} - Value for property
+     * @returns {Object} - Value for property 
      */
     languageConfigurationModel.prototype.getValueForProperty = function(propertyName){
         return kony.model.BaseModel.prototype.getValueForProperty.call(this, propertyName);
@@ -58,7 +60,7 @@ kony.model.NotificationsLanguageService.languageConfigurationModel = (function()
      * This method returns properties map of column from metadata.
      * @memberof languageConfigurationModel#
      * @param {String} columnName - Column Name.
-     * @returns {Object} - Column information
+     * @returns {Object} - Column information 
      */
     languageConfigurationModel.prototype.getColumnInfo = function(columnName) {
         return kony.model.BaseModel.prototype.getColumnInfo.call(this, columnName);
@@ -185,6 +187,6 @@ kony.model.NotificationsLanguageService.languageConfigurationModel = (function()
     languageConfigurationModel.prototype.validate = function(dataObject, validationType) {
         return kony.model.BaseModel.prototype.validate.call(this, dataObject, validationType);
     }
-
+	
 	return languageConfigurationModel;
 })();

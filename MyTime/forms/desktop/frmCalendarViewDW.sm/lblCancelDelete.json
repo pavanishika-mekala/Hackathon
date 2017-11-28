@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "se1f13b5bc474279a1838ed2e9d2fc24",
+    "_text_": "Label",
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblCancelDelete",
+    "ide_onTouchEnd": "AS_Label_5e24a79243ef4b528e9f3750c3a91c11",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "12172f5f9eec42ff9534006e03c794bf",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxDelButtons",
+    "pf": "frmCalendarViewDW",
+    "texti18n": "i18n.ess.common.cancel.valueKA",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

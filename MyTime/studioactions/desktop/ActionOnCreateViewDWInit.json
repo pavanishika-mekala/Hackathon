@@ -1,0 +1,25 @@
+{
+    "AS_Form_33a6b896d5a7463c89dbd42899d0c014": {
+        "id": "AS_Form_33a6b896d5a7463c89dbd42899d0c014",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCreateViewDWInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreateViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f665bf06e2a44303ac769235e7dc01ea"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e2c2110b7c9e4b8cb50ce7fb98fdf402",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewUIDW()).addTimeLineDates(7);\nfrmCreateViewDW.flxTask.setVisibility(false);\nfrmCreateViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -37,7 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "lblTitle",
-        "lblCategory"
+        "FlexContainer0c304bcca56934b"
     ],
     "clipbounds": true,
     "containerweight": 100,

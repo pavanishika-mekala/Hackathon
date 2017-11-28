@@ -1,0 +1,31 @@
+{
+    "AS_Button_bb6d65afd387482a8a00546ba1098e9b": {
+        "id": "AS_Button_bb6d65afd387482a8a00546ba1098e9b",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionForBtnBackOfFrmTaskListForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTaskList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "345a995187304d4fa63038d77673b09d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4cc09062682f4672ada225db02e0f574",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(kony.application.getPreviousForm().id == \"frmTimeSheetCreate\"){\n  frmTimeSheetCreate.show();\n}\nelse{\n  refreshAndShowTimesheetHomeForm();\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

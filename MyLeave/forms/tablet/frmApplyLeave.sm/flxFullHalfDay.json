@@ -37,6 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "btnFullDay",
+        "btnHalfDay",
         "btnHours",
         "lblDuration",
         "lblDurationHours",
@@ -49,7 +50,7 @@
     "id": "flxFullHalfDay",
     "info": null,
     "isvisible": true,
-    "kuid": "jbd7b44688124f6cb9d3ca3b09c9ab30",
+    "kuid": "c286b99b63c0442c9a4992ffc06fba25",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flexMain",

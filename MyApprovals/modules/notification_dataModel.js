@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Tue Oct 24 14:11:07 UTC 2017notification_data*******************
+// ****************Generated On Fri Nov 03 18:11:57 UTC 2017notification_data*******************
 // **********************************Start notification_data's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};

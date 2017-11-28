@@ -221,8 +221,8 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
     kony.print("-- Start getPendingData --");
     var currDate = new Date();
     var actualCurrYear = currDate.getFullYear().toString().trim(0, 4);
-    var query = "select l.employee_id,l.id,l.no_of_hours,l.lastmodifiedts,l.start_date,l.end_date,l.createdts,lt.name,s.Status_Name from leave l,leave_type lt,Status s where l.leave_type_id = lt.id AND l.status_id = s.Id AND s.Status_Name like 'PENDING' and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " AND ((l.start_date between '" + (parseInt(actualCurrYear) - 1).toString() + "0101'" +
-        " AND '" + (parseInt(actualCurrYear) + 1).toString() + "1231')) order by l.start_date";
+    var query = "select l.employee_id,l.id,l.no_of_hours,l.lastmodifiedts,l.start_date,l.end_date,l.createdts,tr.TEXT_DISPLAY as name,s.Status_Name,lt.name as name1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),leave_type lt,Status s where l.leave_type_id = lt.id AND l.status_id = s.Id AND s.Status_Name like 'PENDING' and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " AND ((l.start_date between '" + (parseInt(actualCurrYear) - 1).toString() + "0101'" +
+        " AND '" + (parseInt(actualCurrYear) + 1).toString() + "1231')) AND tr.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' order by l.start_date";
     kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function (data) {
         var processedData = [];
         for (var i = 0; i < data.length; i++) {
@@ -243,11 +243,12 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
                 if (mins < 10)
                     mins = "0" + parseInt(adate.substring(10, 12) * 1);
                 var hrs = parseInt(adate.substring(8, 10) * 1);
-                var AP = "AM";
-                if (hrs >= 12) {
-                    hrs = hrs - 12;
-                    AP = "PM";
-                }
+              	var AP = "";
+//                 var AP = "AM";
+//                 if (hrs >= 12) {
+//                     hrs = hrs - 12;
+//                     AP = "PM";
+//                 }
                 pendingData.lblAppliedDate = parseInt(adate.substring(6, 8) * 1) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(adate.substring(4, 6) * 1) - 1).toString()] +
                     " " + parseInt(adate.substring(0, 4) * 1) + " " + hrs + ":" + mins + " " + AP;
             }

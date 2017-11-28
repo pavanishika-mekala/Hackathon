@@ -1,0 +1,63 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "35.21%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5.60%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "5.60%"
+    },
+    "_skin_": "s43c0cd0cc1d477aa26f1dbc77a23d90",
+    "_top_": {
+        "type": "string",
+        "value": "17.60%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "89.06%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxPopupHeaderCloneSuccessful",
+        "imgPopupCloneSuccessful",
+        "lblPopupDetailsCloneSuccessful",
+        "btnPopupOkCloneSuccessful"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxPopupCloneSuccessful",
+    "info": null,
+    "isvisible": false,
+    "kuid": "a1defee2d90140baba0c1a55d4ba7e17",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxBlank",
+    "pf": "frmTimeSheetCreate",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

@@ -1,0 +1,497 @@
+{
+  "operationConfig" : {
+    "name" : "partialupdateHCMTIMEENTRY2930",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIME_ENTRY_ID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "WORKDATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "WORKHOURS",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ACTTYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NETWORK",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ACTIVITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COUNTER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MGR_COMMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CREATED_TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "REC_CCTR",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "WBS_ELEMENT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INT_ORDER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "STARTTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NAME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "VALUE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MODIFIED_BY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMENTS_LENGTH",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MESSAGE",
+      "collectionId" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MESSAGE_CNTR",
+      "collectionId" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MESSAGE_TYPE",
+      "collectionId" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIME_ENTRY_ID",
+      "collectionId" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "HCM_TIME_ENTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIME_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WORKDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WORKHOURS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "NETWORK",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTIVITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATED_TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "REC_CCTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WBS_ELEMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "INT_ORDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "STARTTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MODIFIED_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PS_TIME_MESSAGES",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE_CNTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "TIME_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PS_TIME_MESSAGES",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"request_in\" outputpath=\"request_out\">        <exec-function name=\"kony.logical:equal\" outputpath=\"SubmitCond\" output=\"$vars\">            <set-arg name=\"StatusKey\" inputpath=\"StatusId\" />            <set-arg name=\"statusValue\" input=\"7\" />        </exec-function>        <exec-function name=\"kony.logical:equal\" outputpath=\"cancelCond\" output=\"$vars\">            <set-arg name=\"StatusKey\" inputpath=\"StatusId\" />            <set-arg name=\"statusValue\" input=\"3\" />        </exec-function>        <exec-function name=\"kony.logical:equal\" outputpath=\"savedcond\" output=\"$vars\">            <set-arg name=\"StatusKey\" inputpath=\"StatusId\" />            <set-arg name=\"statusValue\" input=\"5\" />        </exec-function>        <set-param inputpath=\"Employee_Id\" outputpath=\"EMPNUMBER\" />        <set-param inputpath=\"Id\" outputpath=\"TIME_ENTRY_ID\" />        <set-param inputpath=\"Activity_Description\" outputpath=\"COMMENTS\" />        <set-param inputpath=\"Date\" outputpath=\"WORKDATE\" />        <set-param inputpath=\"End_Time\" outputpath=\"ENDTIME\" />        <set-param inputpath=\"Start_Time\" outputpath=\"STARTTIME\" />        <set-param inputpath=\"Timesheet_Id\" outputpath=\"TIMESHEETID\" />        <set-param inputpath=\"Time_Type_Id\" outputpath=\"SUBTY\" />        <set-param inputpath=\"Project_Task_Type\" outputpath=\"NAME\" />        <set-param inputpath=\"Project_Task_id\" outputpath=\"VALUE\" />        <choose>            <when test=\"$vars/SubmitCond\">                <set-param input=\"X\" outputpath=\"SUBMITTED\" />                <set-param input=\" \" outputpath=\"ISERROR\" />            </when>            <when test=\"$vars/cancelCond\">                <set-param input=\"X\" outputpath=\"CANCELLED\" />            </when>            <when test=\"$vars/savedcond\">                <set-param input=\" \" outputpath=\"ISERROR\" />            </when>        </choose>    </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                <map inputpath=\"response_in\" outputpath=\"response_out\">                                <map inputpath=\"HCM_TIME_ENTRY\" outputpath=\"Time_Entry\">                                                <exec-function name=\"kony.gen.obj.Time_Entry__hierarchy.fromLOBFields\"/>                                </map>                </map></mapper>",
+    "applyCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"fMap\":{\"EMPNUMBER\":\"HCM_DISTRIBUTION.EMPNUMBER\",\"TYPE\":\"HCM_DISTRIBUTION.TYPE\"},\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"relationshipKeys\":[{\"parentKey\":\"TIME_ENTRY_ID\",\"childKey\":\"TIME_ENTRY_ID\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}],\"entityName\":\"HCM_PS_TIME_MESSAGES\"}],\"sQuery\":\"HCM_DISTRIBUTION.DIST_KEY\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"config\":{},\"entityName\":\"HCM_TIME_ENTRY\"}}",
+    "opcode" : "partialupdate",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIME_ENTRY"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ {
+          "children" : [ ],
+          "name" : "Project",
+          "selected" : false
+        }, {
+          "children" : [ ],
+          "name" : "Task",
+          "selected" : false
+        } ],
+        "name" : "Project_Task",
+        "selected" : false
+      }, {
+        "children" : [ ],
+        "name" : "Time_Type",
+        "selected" : false
+      } ],
+      "name" : "Time_Entry",
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

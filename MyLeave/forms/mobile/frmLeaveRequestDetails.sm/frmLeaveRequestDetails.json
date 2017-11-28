@@ -81,7 +81,7 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "iphone",
-    "prevDevice": "GalaxyS5",
+    "prevDevice": "iPhone4",
     "prevPlatform": "android",
     "retainscrollposition": false,
     "shellCSS": "iOS_iPhone6",

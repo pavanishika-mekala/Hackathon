@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_a0e152627b2f480faf64123d4a7c9333": {
+        "id": "AS_FlexContainer_a0e152627b2f480faf64123d4a7c9333",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_1142369a3e5f4c98897c671acdf8a87c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).updateSegment(4);\n",
+            "callbackType": null
+        }]
+    }
+}

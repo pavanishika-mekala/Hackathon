@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_76698f668cba4f1287c68d68529e4f41": {
+        "id": "AS_FlexContainer_76698f668cba4f1287c68d68529e4f41",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateOnFillTimesheetForm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoginDesk",
+            "type": "forms",
+            "platform": "",
+            "KUID": "aacbef6d018a4a86a55a5188d78727b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___31d99ea5b05f4711b6db60ce6abd240d",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmListViewDW",
+            "formKUID": "9e83bab6e30748858c344ccf4100d22b",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

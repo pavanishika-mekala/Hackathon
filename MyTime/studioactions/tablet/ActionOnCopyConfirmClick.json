@@ -1,0 +1,31 @@
+{
+    "AS_Button_975d4a70e71d47c0b750894ac21fdf2c": {
+        "id": "AS_Button_975d4a70e71d47c0b750894ac21fdf2c",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnCopyConfirmClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmCalendarView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2286b3d7970046ad9daafc2ad899a0b5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__5e338790c51f44229d043a7f54c2eb8a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CalendarViewUI()).showPopup(\"Clone\");\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

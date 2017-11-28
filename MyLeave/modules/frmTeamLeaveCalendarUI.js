@@ -15,7 +15,7 @@ var dataLength = 0;
 /*
 //#ifndef windows8
 frmTeamLeaveCalendar.lblHeaderYear.text = Math.floor(currentYear);
-//#endif 
+//#endif
 */
 kony.apps.ess.myLeave.teamLeaveData=[];
 var selectedMonth=currentDate.getMonth();
@@ -38,7 +38,7 @@ var teamMembers = [];
 var tempData = [];
 
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI = function(){
-  
+
 };
 
 /**
@@ -82,7 +82,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.swipeMonths = function(co
 ///with Conditions for more than one day leave
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 = function(members,leaveData){
   try{
-    kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Loading Form");
+    kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
     for(k=0; k<20; k++){
       dataLength++;
     var flxEmpRec = new kony.ui.FlexContainer({
@@ -132,8 +132,8 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 =
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    
-    var nameLabel = new kony.ui.Label({                             
+
+    var nameLabel = new kony.ui.Label({
         "centerX": "50%",
         "centerY": "80%",
         "height": "30%",
@@ -156,14 +156,14 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 =
     }, {
         "textCopyable": false
     });
-    
+
       var flxInitials = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
         "clipBounds": true,
         "height": "52%",
         "id": "flxInitials" + k,
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "40dp",
         "skin": "sknflxinitials",
@@ -177,7 +177,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 =
         "centerX": "50%",
         "centerY": "50%",
         "id": "lblinitials" +k,
-        "isVisible": true,
+        "isVisible": false,
         "left": "10dp",
         "skin": "sknlbltabinitails",
         "text": initialString,
@@ -197,7 +197,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 =
     });
     flxInitials.add(lblinitials);
       flxProfile.add(impEmpPic, nameLabel, flxInitials);
-    
+
     //var count = 31;
     var count = 15;
     //Default all No Leave Skin
@@ -219,11 +219,11 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 =
               "containerWeight": 100
           }, {});
           flxEmpRec.add(lblLeaveData);
-      
+
     }
-    
+
     frmTeamLeaveCalendar.flxScrollTeamLeave.add(flxEmpRec);
-    
+
     var leavedays = 0;
     var leaveDataLen=leaveData.length;
     if(leaveDataLen===1){
@@ -231,14 +231,14 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 =
         var start_date="",end_date="";
         start_date = leaveData[0][0].start_date;
         end_date = leaveData[0][0].end_date;
-        
+
         var start_day = start_date.substring(6, 8);
         var end_day = end_date.substring(6,8);
         var startdayInt = 1*start_day;
         var enddayInt = 1* end_day;
-        
+
         var leavedays = enddayInt - startdayInt;
-        
+
         if(leavedays===0){
           var labelObj = eval("frmTeamLeaveCalendar.lblLeaveDataEmp"+k+"Lbl"+startdayInt-1);
           labelObj.skin="sknLblLeave";
@@ -251,11 +251,11 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 =
           }
         }
       }
-        
+
     }else if(leaveDataLen>1){
-      
+
     }
-    
+
   }
   }catch(error){
     kony.application.dismissLoadingScreen();
@@ -263,7 +263,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar1 =
   kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
 };
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar2 = function(members,leaveData){
-   
+
   for(k=0; k<25 ; k++){
     var flxEmpRec = new kony.ui.FlexContainer({
         "id": "flxEmpRec" + k,
@@ -315,7 +315,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar2 =
               "containerWeight": 100
           }, {});
     flxEmpRec.add(nameLabel);
-    
+
     var count = 31;
     //Default all No Leave Skin
   	for( i = 15; i<count; i++){
@@ -336,11 +336,11 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar2 =
               "containerWeight": 100
           }, {});
           flxEmpRec.add(lblLeaveData);
-      
+
     }
-    
+
     frmTeamLeaveCalendar.flxScrollTeamLeave.add(flxEmpRec);
-    
+
     var leavedays = 0;
     var leaveDataLen=leaveData.length;
     if(leaveDataLen===1){
@@ -348,14 +348,14 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar2 =
         var start_date="",end_date="";
         start_date = leaveData[0][0].start_date;
         end_date = leaveData[0][0].end_date;
-        
+
         var start_day = start_date.substring(6, 8);
         var end_day = end_date.substring(6,8);
         var startdayInt = 1*start_day;
         var enddayInt = 1* end_day;
-        
+
         var leavedays = enddayInt - startdayInt;
-        
+
         if(leavedays===0){
           var labelObj = eval("frmTeamLeaveCalendar.lblLeaveDataEmp"+k+"Lbl"+startdayInt-1);
           labelObj.skin="sknLblLeave";
@@ -368,11 +368,11 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.createEmpLeaveCalendar2 =
           }
         }
       }
-        
+
     }else if(leaveDataLen>1){
-      
+
     }
-    
+
   }
 };
 
@@ -409,8 +409,8 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.getTeamDataSuccesscallbac
             {
                 handleError(err);
             }, false);
-        
-        
+
+
         //this.fetchImageValueByMediaId(data);
 //          var sqlQuery = "select start_date,end_date,employee_id from leave where employee_id = '" + data[i].Id+"' and status_id = 0"+
 //              " and ((start_date between '20010101' AND '20010131') OR (end_date between '20170101' AND '20170131'))";
@@ -419,16 +419,16 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.getTeamDataSuccesscallbac
 //               alert(err);
 //           }, false);
       }
-      
+
     }else{
-      alert("getTeamDataSuccesscallback data  length is not > 0");
+      kony.print("getTeamDataSuccesscallback data  length is not > 0");
     }
   }else{
-     alert("getTeamDataSuccesscallback data is null or undefined");
+     kony.print("getTeamDataSuccesscallback data is null or undefined");
   }
 };
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.getTeamLeavesSuccesscallback = function(data){
-  
+
   if(data!==null && data!==undefined){
     if(data.length>0){
       var empLeaveJson = data;
@@ -438,31 +438,31 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.getTeamLeavesSuccesscallb
       }
     }
   }else{
-     alert("getTeamLeavesSuccesscallback data is null or undefined");
+     kony.print("getTeamLeavesSuccesscallback data is null or undefined");
   }
 };
 
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaId = function(data) {
   try
   {
-    alert("entered fetchImageValueByMediaId");
+    kony.print("entered fetchImageValueByMediaId");
     kony.print("---- Inside fetchImageValueByMediaId ----");
     if(typeof data != "undefined" && data !== null && data.length !== null && data.length > 0)
     {
-      alert("if fetchImageValueByMediaId");
+      kony.print("if fetchImageValueByMediaId");
       kony.apps.ess.myLeave.tempData = data;
-      alert("data fetchImageValueByMediaId="+data);
-      alert("kony.apps.ess.myLeave.tempData:::::::::"+kony.apps.ess.myLeave.tempData);
+      kony.print("data fetchImageValueByMediaId="+data);
+      kony.print("kony.apps.ess.myLeave.tempData:::::::::"+kony.apps.ess.myLeave.tempData);
       for(var i=0;i<data.length;i++)
       {
         if(data[i].Media_id!=="")
         {
-          (new kony.apps.ess.myLeave.tabmedia()).fetchEmployeeImage({"mediaName":data[i].Media_id},this.fetchImageValueByMediaIdSuccessCallback.bind(this,data[i].Media_id),this.fetchImageValueByMediaIdErrorCallBack);  
+          (new kony.apps.ess.myLeave.tabmedia()).fetchEmployeeImage({"mediaName":data[i].Media_id},this.fetchImageValueByMediaIdSuccessCallback.bind(this,data[i].Media_id),this.fetchImageValueByMediaIdErrorCallBack);
         }
-      } 
-      alert("FINAL AFTER ADDING IMAGES:::"+kony.apps.ess.myLeave.tempData);
+      }
+      kony.print("FINAL AFTER ADDING IMAGES:::"+kony.apps.ess.myLeave.tempData);
     }else{
-      alert("No data in fetchImageValueByMediaId");
+      kony.print("No data in fetchImageValueByMediaId");
     }
   }
   catch(e)
@@ -480,7 +480,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaId 
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaIdSuccessCallback = function(media_id, response) {
   try
   {
-    alert("inside fetchImageValueByMediaIdSuccessCallback");
+    kony.print("inside fetchImageValueByMediaIdSuccessCallback");
     kony.print("---- Inside fetchImageValueByMediaIdSuccessCallback ----");
     if(response!==null && response!=="")
     {
@@ -504,13 +504,13 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fetchImageValueByMediaIdS
         }
       }
     }else{
-      alert("else  of fetchImageValueByMediaIdSuccessCallback");
+      kony.print("else  of fetchImageValueByMediaIdSuccessCallback");
     }
   }
   catch(e)
   {
 	handleError(e);
-  }  
+  }
 };
 
 /**
@@ -548,7 +548,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fillDays1 = function() {
   var between = [];
 
 for(j =startDay; j<= endDay;j++){
-      startDate = new Date(currentYear,(selectedMonth-1),j);  
+      startDate = new Date(currentYear,(selectedMonth-1),j);
   	  var startDateStr = startDate.toString();
   	  var arr = [];
   	  arr = startDateStr.split(" ");
@@ -575,7 +575,7 @@ frmTeamLeaveCalendar.flxDates.removeAll();
               "containerWeight": 100
           }, {});
           frmTeamLeaveCalendar.flxDates.add(lblDate);
-      
+
     }
 };
 kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fillDays2 = function() {
@@ -593,7 +593,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.fillDays2 = function() {
   var between = [];
 
 for(j =startDay; j<= endDay;j++){
-      startDate = new Date(currentYear,(selectedMonth - 1),j);  
+      startDate = new Date(currentYear,(selectedMonth - 1),j);
   	  var startDateStr = startDate.toString();
   	  var arr = [];
   	  arr = startDateStr.split(" ");
@@ -619,7 +619,7 @@ frmTeamLeaveCalendar.flxDates.removeAll();
               "containerWeight": 100
           }, {});
           frmTeamLeaveCalendar.flxDates.add(lblDate);
-      
+
     }
 };
 ///with Conditions for more than one day leave
@@ -676,8 +676,8 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onScrollEndOfFlex = funct
         "padding": [0, 0, 0, 0],
         "paddingInPixel": false
     }, {});
-    
-    var nameLabel = new kony.ui.Label({                             
+
+    var nameLabel = new kony.ui.Label({
         "centerX": "50%",
         "centerY": "80%",
         "height": "30%",
@@ -700,14 +700,14 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onScrollEndOfFlex = funct
     }, {
         "textCopyable": false
     });
-    
+
       var flxInitials = new kony.ui.FlexContainer({
         "autogrowMode": kony.flex.AUTOGROW_NONE,
         "centerX": "50%",
         "clipBounds": true,
         "height": "52%",
         "id": "flxInitials" + k,
-        "isVisible": true,
+        "isVisible": false,
         "layoutType": kony.flex.FREE_FORM,
         "left": "40dp",
         "skin": "sknflxinitials",
@@ -721,7 +721,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onScrollEndOfFlex = funct
         "centerX": "50%",
         "centerY": "50%",
         "id": "lblinitials" +k,
-        "isVisible": true,
+        "isVisible": false,
         "left": "10dp",
         "skin": "sknlbltabinitails",
         "text": initialString,
@@ -741,7 +741,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onScrollEndOfFlex = funct
     });
     flxInitials.add(lblinitials);
       flxProfile.add(impEmpPic, nameLabel, flxInitials);
-    
+
     //var count = 31;
     var count = 15;
     //Default all No Leave Skin
@@ -763,11 +763,11 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onScrollEndOfFlex = funct
               "containerWeight": 100
           }, {});
           flxEmpRec.add(lblLeaveData);
-      
+
     }
-    
+
     frmTeamLeaveCalendar.flxScrollTeamLeave.add(flxEmpRec);
-    
+
     var leavedays = 0;
     var leaveDataLen=leaveData.length;
     if(leaveDataLen===1){
@@ -775,14 +775,14 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onScrollEndOfFlex = funct
         var start_date="",end_date="";
         start_date = leaveData[0][0].start_date;
         end_date = leaveData[0][0].end_date;
-        
+
         var start_day = start_date.substring(6, 8);
         var end_day = end_date.substring(6,8);
         var startdayInt = 1*start_day;
         var enddayInt = 1* end_day;
-        
+
         var leavedays = enddayInt - startdayInt;
-        
+
         if(leavedays===0){
           var labelObj = eval("frmTeamLeaveCalendar.lblLeaveDataEmp"+k+"Lbl"+startdayInt-1);
           labelObj.skin="sknLblLeave";
@@ -795,11 +795,11 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onScrollEndOfFlex = funct
           }
         }
       }
-        
+
     }else if(leaveDataLen>1){
-      
+
     }
-    
+
   }
   }catch(error){
     kony.application.dismissLoadingScreen();
@@ -815,13 +815,13 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onClickOfMonth = function
   	selectedMonth = parseInt(months[month]);
   	frmTeamLeaveCalendar.flxCalMonthJan.skin = "sknFlexTabf8f7f6Bor979797Opac20";
 	frmTeamLeaveCalendar.lblCalMonthJan.skin = "sknLbl999999Ft36AvenirLTStdRoman";
-  
+
 	frmTeamLeaveCalendar.flxCalMonthFeb.skin = "sknFlexTabf8f7f6Bor979797Opac20";
 	frmTeamLeaveCalendar.lblCalMonthFeb.skin = "sknLbl999999Ft36AvenirLTStdRoman";
 
 	frmTeamLeaveCalendar.flxCalMonthMar.skin = "sknFlexTabf8f7f6Bor979797Opac20";
 	frmTeamLeaveCalendar.lblCalMonthMar.skin = "sknLbl999999Ft36AvenirLTStdRoman";
-	
+
 	frmTeamLeaveCalendar.flxCalMonthApr.skin = "sknFlexTabf8f7f6Bor979797Opac20";
 	frmTeamLeaveCalendar.lblCalMonthApr.skin = "sknLbl999999Ft36AvenirLTStdRoman";
 
@@ -851,7 +851,7 @@ kony.apps.ess.myLeave.frmTeamLeaveCalendarUI.prototype.onClickOfMonth = function
 
   	frmTeamLeaveCalendar["flxCalMonth" + month].skin = "sknFlexTab4990e2";
 	frmTeamLeaveCalendar["lblCalMonth" + month].skin = "sknLblTabffffff36AvenirLTStdRoman";
-  	
+
   	//#ifdef windows8
 		(new kony.apps.ess.myLeave.teamLeaveCalendarWin()).fillDays();
 		(new kony.apps.ess.myLeave.teamLeaveCalendarWin()).createEmpLeaveCalendar1(teamMembers,kony.apps.ess.myLeave.teamLeaveData);

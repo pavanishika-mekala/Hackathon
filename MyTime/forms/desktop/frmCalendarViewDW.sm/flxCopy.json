@@ -1,0 +1,58 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "30px"
+    },
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_width_": {
+        "type": "string",
+        "value": "50px"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "imgCopy"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCopy",
+    "ide_onClick": "AS_FlexContainer_ef3c56ff5a14449fb31d3f7a79833a6a",
+    "info": null,
+    "isvisible": true,
+    "kuid": "49f55d36602b4bd1ba73308cc5e61cae",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTop",
+    "pf": "frmCalendarViewDW",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

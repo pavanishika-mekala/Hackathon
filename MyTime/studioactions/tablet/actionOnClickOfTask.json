@@ -1,0 +1,31 @@
+{
+    "AS_Segment_bd222c980701453b8be558e85c5ab2aa": {
+        "id": "AS_Segment_bd222c980701453b8be558e85c5ab2aa",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionOnClickOfTask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__1f7e764bfc2142d7bfafe3734070f9f6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if(frmTimeSheetCreateTab.flexSlider){\nvar selectTask = kony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfTaskTab(frmTimeSheetCreateTab.segProjectTaskSelection.selectedRowItems[0]);\nif(!selectTask){\nfrmTimeSheetCreateTab.btnStep1.skin=\"btnTaskSelectedc3d9e1\";\nfrmTimeSheetCreateTab.btnStep1.text=kony.i18n.getLocalizedString(\"i18n.ess.frmTimeSheetCreate.TaskSelected\");\nfrmTimeSheetCreateTab.lblSelectTask.text=kony.i18n.getLocalizedString(\"i18n.ess.mytime.createtimesheet.selecttimetype.valueKA\");\nfrmTimeSheetCreateTab.btnStep2.skin=\"sknBtn1c7393\";\nfrmTimeSheetCreateTab.flxSelectedTaskTimeTypeSelection.setVisibility(true);\nfrmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(false);\nfrmTimeSheetCreateTab.segLeaveSelection.setVisibility(false);\nfrmTimeSheetCreateTab.segTasksSearchResults.setVisibility(false);\nfrmTimeSheetCreateTab.txtBoxSearch.setVisibility(false);\nfrmTimeSheetCreateTab.imgCancel.setVisibility(false);\n}\nelse{\n  handleCustomAlert(kony.i18n.getLocalizedString(\"i18n.ess.mytime.createtimesheet.selecttimeInterval\"));\n}\n}\nelse{\n  alert(\"Please Select any Day\");\n}\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

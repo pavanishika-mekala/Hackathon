@@ -1,0 +1,25 @@
+{
+    "AS_Form_bb1985b4b7ec4a2ba460ac65e5dc183c": {
+        "id": "AS_Form_bb1985b4b7ec4a2ba460ac65e5dc183c",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionfrmTimesheetReviewPostShow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetReview",
+            "type": "forms",
+            "platform": "",
+            "KUID": "dfc7fd82861d4ed9b5e064ecb18ee2a1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c72722f0295449d8b7584172f73791d4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

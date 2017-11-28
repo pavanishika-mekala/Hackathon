@@ -1,0 +1,31 @@
+{
+    "AS_Label_b05043a175b747c49ac10e020229708f": {
+        "id": "AS_Label_b05043a175b747c49ac10e020229708f",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSubmitPopupConfirmClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b9513a17faca446db724de7e62395460",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmListViewDW.flxBlank.setVisibility(false);\nfrmListViewDW.flxSubmitPopup.setVisibility(false);\nfrmListViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

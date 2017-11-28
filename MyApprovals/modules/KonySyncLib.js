@@ -1,5 +1,5 @@
 // -- SDK File : KonySyncLib.js 
-//  --Generated On Thu Sep 21 22:02:20 IST 2017******************* 
+//  --Generated On Wed Nov 01 17:30:39 IST 2017******************* 
 //  **************** Start jsonWriter.js*******************
 //#ifdef iphone
 	//#define KONYSYNC_IOS
@@ -6807,13 +6807,20 @@ kony.sync.addToRollBack = function (tx, tablename, values, changetype, wcs, erro
 
 kony.sync.getOriginalRow = function (tx, tablename, wcs, errorcallback) {
 	sync.log.trace("Entering kony.sync.getOriginalRow ");
-	var query = kony.sync.qb_createQuery();
-	kony.sync.qb_select(query, null);
-	kony.sync.qb_from(query, tablename);
-	kony.sync.qb_where(query, wcs);
-	var query_compile = kony.sync.qb_compile(query);
-	var sql = query_compile[0];
-	var params = query_compile[1];
+	var sql ="";
+	var params = "";
+	if(typeof(wcs) == "string" || typeof(wcs) == "String"){
+		sql = "select * from " + tablename + " " + wcs + " ;";
+		params = null;
+	} else {
+		var query = kony.sync.qb_createQuery();
+		kony.sync.qb_select(query, null);
+		kony.sync.qb_from(query, tablename);
+		kony.sync.qb_where(query, wcs);
+		var query_compile = kony.sync.qb_compile(query);
+		sql = query_compile[0];
+		params = query_compile[1];
+	}
 	var resultset = kony.sync.executeSql(tx, sql, params, errorcallback);
 	if (!resultset) {
 		return false;
@@ -17071,7 +17078,8 @@ kony.sync.invokeServiceAsync = function (url, params, callback, context) {
 kony.sync.commonServiceParams = function(params) {
     sync.log.trace("Entering kony.sync.commonServiceParams ");
     var httpheaders = {};
-    if( !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.userid)) && 
+    if( !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams)) && 
+        !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.userid)) && 
         !(kony.sync.isNullOrUndefined(kony.sync.currentSyncConfigParams.password)) ) {
         params.userid = kony.sync.currentSyncConfigParams.userid;
         params.password = kony.sync.genHash(kony.sync.currentSyncConfigParams[kony.sync.passwordHashingAlgo], kony.sync.currentSyncConfigParams.password);
@@ -18269,7 +18277,7 @@ kony.sync.getBatchChanges = function(tx, scope, offset, limit, changeset, lastSe
 					var childColumns = [];
 
 					sync.log.info("check in changeset for parent "+parentTableName + " with child "+childTableName);
-
+					childTable = kony.sync.currentScope.syncTableDic[childTableName];
 					parentRelationshipMap = kony.sync.currentScope.syncTableDic[childTableName+kony.sync.parentRelationshipMap];
 					if(parentRelationshipMap[parentTableName]) {//checking whether child is a part of any onetomany relationship of parent
 						var relationshipAttributes = parentRelationshipMap[parentTableName];
@@ -18337,6 +18345,9 @@ kony.sync.getBatchChanges = function(tx, scope, offset, limit, changeset, lastSe
 
 				function fetchAndAddParents(parentTableName,childRecord,childTableName){
 					sync.log.trace("entering into fetchAndAddParents");
+					// Check if the parent record exist in changeset
+					var doesParentExistsInChangeset = checkInChangeSet(parentTableName,childRecord,childTableName);
+					if(doesParentExistsInChangeset === false){
 					//checking whether this parentTable is a part of changesetdictionary
 					if(tableDictionary[parentTableName] === undefined){
 						tableDictionary[parentTableName] = tableDictionarySize;//for the changeset
@@ -18382,6 +18393,7 @@ kony.sync.getBatchChanges = function(tx, scope, offset, limit, changeset, lastSe
 						for(var i = 0;i < childTableNames.length ;i++){
 							markChildRecords(childRelationInfo[parentTableName],parentRecord,parentTableName,childTableNames[i]);
 						}
+					}
 					}
 
 				}

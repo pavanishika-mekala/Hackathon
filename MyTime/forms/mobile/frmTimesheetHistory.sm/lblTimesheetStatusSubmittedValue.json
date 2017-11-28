@@ -1,0 +1,64 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "53.22%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s606f744ed2e4b52b297be4dd5c37061",
+    "_text_": "0",
+    "_width_": {
+        "type": "string",
+        "value": "42.20%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "40%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblTimesheetStatusSubmittedValue",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "0a15b01bb5944e039f5917d41fc760bd",
+    "name": "kony.ui.Label",
+    "parent": "flxTimesheetStatusOption2",
+    "pf": "frmTimesheetHistory",
+    "tooltip": "",
+    "wType": "Label"
+}

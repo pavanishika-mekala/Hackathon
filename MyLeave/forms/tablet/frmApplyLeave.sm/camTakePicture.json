@@ -72,6 +72,7 @@
     "spawindowstablet": {
         "render": false
     },
+    "texti18n": "i18n.ess.MyLeave.Camera.TakePicture",
     "wType": "Camera",
     "watchos": {
         "render": false

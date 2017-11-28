@@ -42,7 +42,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmApplyForShiftChange",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },

@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "3.26%"
+    },
+    "_skin_": "sfba03b3973a49d584134f871862b456",
+    "_text_": "Productive Hours",
+    "_top_": {
+        "type": "string",
+        "value": "-6.25%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblTimeType",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "952dd73ef92741d9bff7d2d4ab857a06",
+    "name": "kony.ui.Label",
+    "parent": "flxDetails",
+    "pf": "tempSegTimeEntryDetails",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

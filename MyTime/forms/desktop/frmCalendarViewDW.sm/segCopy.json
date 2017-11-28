@@ -1,0 +1,132 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "imgActiveInactive": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "checkboxinactive.png"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "15 Jan - 19 Jan"
+            }
+        },
+        {
+            "imgActiveInactive": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "checkboxinactive.png"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22 Jan - 26 Jan"
+            }
+        },
+        {
+            "imgActiveInactive": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "checkboxinactive.png"
+            },
+            "lblWeek": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "29 Jan - 3 Feb"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "115px"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "33px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "disabledSkins": {
+        "rowFocusSkin": "s3fe7255b9da4bc08fb8ad82e9f1c719"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCopy",
+    "ide_onRowClick": "AS_Segment_6425c23ee284458aa0e75a643d25ca30",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "a7208bec49a14b5f8ccea5ef04092348",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegCopy",
+    "pf": "frmCalendarViewDW",
+    "retainselection": false,
+    "rowTemplateId": "8132d60fbe0d4aaeab213aee9ff88bca",
+    "rowcounter": 2,
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxSegCopyData",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "ffffff00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxCpy": "flxCpy",
+        "flxSegCopyData": "flxSegCopyData",
+        "imgActiveInactive": "imgActiveInactive",
+        "lblWeek": "lblWeek"
+    },
+    "zindex": 1
+}

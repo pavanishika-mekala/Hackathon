@@ -26,7 +26,7 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
     JSON.stringify("chartObj" + chartObj);
     JSON.stringify("chartObj" + objectId);
     JSON.stringify("chartObj" + rowIndex);
-    var sqlquery = "select *  from employee_leave_type limit " + rowIndex + ", 1";
+    var sqlquery = "select  * from employee_leave_type  l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE) and tr.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' limit " + rowIndex + ", 1";
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
         var objectData = new Array(1);
         var skn = "";
@@ -69,10 +69,17 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
 
         }*/
         var chartData = {};
-        chartData.LEAVETAKEN = data[0].availed;
-        chartData.TOTALLEAVE = data[0].balance;
-        chartData.LEAVEBALANCE = Number(parseInt(data[0].balance) - parseInt(data[0].availed)).toFixed();
-        chartData.LEAVETYPETITLE = data[0].leave_type_name;
+        chartData.LEAVETAKEN = parseFloat(data[0].availed).toFixed(1);
+        chartData.LEAVEBALANCE = parseFloat(data[0].balance).toFixed(1);//parseInt(data.leave_type[i].balance) - parseInt(data.leave_type[i].availed);
+        if( data[0].planned === ""){
+           data[0].planned = "0";
+        }
+        chartData.LEAVEPLANNED = parseFloat(data[0].planned).toFixed(1);
+      //data[0].balance;
+      chartData.TOTALLEAVE = parseFloat(chartData.LEAVEPLANNED +chartData.LEAVEBALANCE + chartData.LEAVETAKEN).toFixed(1);//data.leave_type[i].balance;
+        //chartData.LEAVETAKEN = data[0].availed;
+       // chartData.LEAVEBALANCE = Number(parseInt(data[0].balance) - parseInt(data[0].availed)).toFixed();
+        chartData.LEAVETYPETITLE = data[0].TEXT_DISPLAY;//data[0].leave_type_name;
         objectData[0] = chartData;
         var widgetObj = {
             "lblTop": "lblTop",
@@ -84,9 +91,10 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
         frmLeaveBalance.lblTitle.text = (object.widgets())[3].id + " Balance";
         //remove frmLeaveBalance.lblTotalLeave.text = Number(objectData[0].TOTALLEAVE).toFixed();
         //remove frmLeaveBalance.lblAvailedLeave.text = Number(objectData[0].LEAVETAKEN).toFixed();
-        frmLeaveBalance.lblTotalText.text=Number(objectData[0].TOTALLEAVE).toFixed();;
-        frmLeaveBalance.lblCountConsumed.text=Number(objectData[0].LEAVETAKEN).toFixed();
-        frmLeaveBalance.lblCountAvailable.text=Number(objectData[0].LEAVEBALANCE).toFixed();
+      	frmLeaveBalance.lblTotalText.text=((parseFloat(Number(chartData.LEAVEPLANNED) +Number(chartData.LEAVEBALANCE)+ Number(chartData.LEAVETAKEN)).toFixed(1))+"").replace(".", ",");
+        frmLeaveBalance.lblCountConsumed.text=(objectData[0].LEAVETAKEN+"").replace(".", ",");
+        frmLeaveBalance.lblCountAvailable.text=(objectData[0].LEAVEBALANCE+"").replace(".", ",");
+      	frmLeaveBalance.lblCountPlanned.text=(objectData[0].LEAVEPLANNED+"").replace(".", ",");
         var totalColor=(colors[Number(objectId[1]) % 4][1][0]).substring(2,8);
         var availedColor=(colors[Number(objectId[1]) % 4][0][1]).substring(2,8);
         kony.print("-----" +availedColor+"-----"+totalColor);

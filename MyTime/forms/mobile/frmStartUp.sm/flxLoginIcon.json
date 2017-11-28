@@ -1,0 +1,59 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_top_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "32.00%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblLogin",
+        "flxImgLoginIcon"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxLoginIcon",
+    "ide_onClick": "AS_FlexContainer_96f2cb9964e04c358ecb78790a9872a1",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e386929f680a42eaac96db322c1ed654",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmStartUp",
+    "pf": "frmStartUp",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 5
+}

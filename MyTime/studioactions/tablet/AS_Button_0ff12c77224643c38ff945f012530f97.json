@@ -1,0 +1,23 @@
+{
+    "AS_Button_0ff12c77224643c38ff945f012530f97": {
+        "id": "AS_Button_0ff12c77224643c38ff945f012530f97",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "windows8",
+            "KUID": "77a348abe8fb4ce88ed0c5d2843b76e1"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_2c6a3fb805e8453291ac52c7693a7723",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var sliderObj=(new kony.apps.coe.Reusable.TimelineCreation());\nkony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelection.onClickOfFullDayTab(sliderObj.fillFullDayTab);",
+            "callbackType": null
+        }]
+    }
+}

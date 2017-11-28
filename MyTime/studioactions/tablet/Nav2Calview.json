@@ -1,0 +1,29 @@
+{
+    "AS_FlexContainer_a1e7fc8158f74ea99b013ef558c7871c": {
+        "id": "AS_FlexContainer_a1e7fc8158f74ea99b013ef558c7871c",
+        "type": "ACTION_SEQUENCE",
+        "name": "Nav2Calview",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___b121a46083d84e82a70ed93cbd64a062",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmCalendarView",
+            "formKUID": "2286b3d7970046ad9daafc2ad899a0b5",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true
+        }]
+    }
+}

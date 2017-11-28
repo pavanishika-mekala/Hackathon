@@ -1,0 +1,12 @@
+var KonySyncLogger={};
+KonySyncLogger.setConfig= function(loggerConfig,errorCallback){};
+KonySyncLogger.setLogLevel= function(logLevel){};
+KonySyncLogger.addPersister= function(persisterConfig,errorCallback){};
+KonySyncLogger.getLogLevel= function(){};
+KonySyncLogger.logTrace= function(statement){};
+KonySyncLogger.logDebug= function(statement){};
+KonySyncLogger.logInfo= function(statement){};
+KonySyncLogger.logWarning= function(statement){};
+KonySyncLogger.logError= function(statement){};
+KonySyncLogger.logFatal= function(statement){};
+KonySyncLogger.flush= function(){};

@@ -38,6 +38,7 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
             return [];
         }
         for (var index in response_data) {
+          	
             var processedRequest = response_data[index];
             //date format
             processedRequest.request_date = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].RequestDate).toDDmmmHHMMtt();
@@ -52,8 +53,8 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
               processedRequest.attributejson = {};
             }
             processedRequest.separator = "Label";
-            if (response_data[index].CreatedByEmployeeid && response_data[index].CreatedByEmployeeid != "" && response_data[index].CreatedByEmployeeid.toLowerCase() != null) {
-                //employee id exsists
+            if (response_data[index].CreatedByEmployeeid && response_data[index].CreatedByEmployeeid != "" && response_data[index].CreatedByEmployeeid.toLowerCase() != null &&  response_data[index].FirstName && response_data[index].FirstName != null && response_data[index].FirstName != "") {
+              //employee id exsists
                 if (response_data[index].FirstName && response_data[index].FirstName.toLowerCase() != null) {
                     processedRequest.UserName = response_data[index].FirstName;
                     processedRequest.CreatedUserShortName = response_data[index].FirstName.charAt(0);
@@ -75,7 +76,6 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                     if (processedRequest.attributejson.LastName.charAt(0))
                         processedRequest.CreatedUserShortName = processedRequest.CreatedUserShortName + processedRequest.attributejson.LastName.charAt(0);
                 }
-
             }
             // convert the CreatedUserShortName to ALL CAPS. It looks good.
             if (processedRequest.CreatedUserShortName != undefined) {
@@ -87,8 +87,22 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                 processedRequest.status_value = response_data[index].StatusName;
             } else {
                 var approvedDate = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].ApprovedDate).toDDmmmYY();
-                processedRequest.status_value = response_data[index].StatusName + " on " + approvedDate;
+                if(response_data[index].StatusName == "Approved"){
+                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                }else if(response_data[index].StatusName == "Rejected"){
+                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                } else if(response_data[index].StatusName == "Cancelled"){
+                  processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                }
+              else
+                processedRequest.status_value = response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate;
             }
+
+            // For informational leave types make sure there is a type defined
+            if (response_data[index].Type == null && response_data[index].TypeID == "LEAVEINFO") {
+                response_data[index].Type="LEAVE";
+            }
+
             switch (response_data[index].Type) {
                 case "LEAVE":
                     kony.print("---The request is of type LEAVE----");
@@ -206,6 +220,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable = function() {
   frmSearch.flxClear.setVisibility(true);
   frmSearch.flxHide.setVisibility(false);
   frmSearch.flxSearchContainer.setVisibility(true);
+  frmSearch.flxClear.onClick = kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable;
   kony.print("-- End onClickFilterEnable -- ");
 };
 
@@ -219,6 +234,8 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable = function() {
   frmSearch.flxClear.setVisibility(false);
   frmSearch.flxHide.setVisibility(true);
   frmSearch.flxSearchContainer.setVisibility(false);
+  frmSearch.flxHide.onClick = kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable;
+  kony.apps.coe.ess.Approvals.frmSearch.refreshData(); //to clear all data
   kony.print("-- End onClickFilterDisable -- ");
 };
 /*
@@ -253,10 +270,12 @@ kony.apps.coe.ess.Approvals.frmSearch.refreshData = function() {
 kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
     kony.print("-- Start onClickFilterApplySearch -- ");
     try {
-        frmSearch.flxSearchContainer.setVisibility(false);
-        frmSearch.flxClear.setVisibility(true);
-        frmSearch.flxHide.setVisibility(false);
-        var query_data = {}
+      frmSearch.flxSearchContainer.setVisibility(false);
+      frmSearch.flxClear.setVisibility(true);
+      frmSearch.flxHide.setVisibility(false);
+        frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();};
+        frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();};
+		var query_data = {};
         query_data.fromDate = new Date(frmSearch.calFromDate.year, frmSearch.calFromDate.month - 1, frmSearch.calFromDate.day);
         query_data.fromDate = query_data.fromDate.getDateInFormat("yyyymmdd");
         query_data.toDate = new Date(frmSearch.calToDate.year, frmSearch.calToDate.month - 1, frmSearch.calToDate.day);
@@ -267,8 +286,8 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
         query_data.requestType = [];
         query_data.statusType = [];
         query_data.totalPeoples = [];
-        if (query_data.selectedRequestType != null) {
-            if (query_data.selectedRequestType[0].request_name != 'All') {
+        if (query_data.selectedRequestType !== null) {
+         if (query_data.selectedRequestType[0].request_name  != kony.i18n.getLocalizedString("i18n.ess.frmApprovalHome.btnFilterAll")) {
                 for (var i = 0; i < query_data.selectedRequestType.length; i++) {
                     query_data.requestType.push(query_data.selectedRequestType[i].request_name);
                 }
@@ -373,8 +392,11 @@ kony.apps.coe.ess.Approvals.frmSearch.retrieveDataByFilter = function(data, succ
             "	   Employee.Last_Name AS LastName," +
             "	   approval_request.employee_id AS CreatedByEmployeeid," +
             "	   approval_request.request_date AS RequestDate," +
+            "      approval_request.leave_hours       AS Leave_hours," +
+            "      approval_request.leave_days        AS Leave_days," +
             "	   Status.Status_Name AS StatusName," +
-            "	   request_category.name AS Category," +
+            "       t2.TEXT_DISPLAY	As	Category,"+
+            "	   request_category.name AS Category1," +
             "	   approval_request.category_id AS CategoryID," +
             " 	   approval_request.id  AS ID," +
             "	   request_type.name AS Type," +
@@ -399,10 +421,14 @@ kony.apps.coe.ess.Approvals.frmSearch.retrieveDataByFilter = function(data, succ
             "	   LEFT JOIN attribute_def ON (attribute.attribute_def_id = attribute_def.id) " +
             "	   LEFT JOIN Status ON (request_approver.status_id = Status.Id)" +
             "	   LEFT JOIN request_category ON (approval_request.category_id = request_category.id)" +
+            " LEFT JOIN translation t1 "+
+            " ON (request_category.name=t1.TEXT_DISPLAY)"+
+			" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
             "	   LEFT JOIN request_type ON (approval_request.type_id = request_type.id) " +
             "    LEFT JOIN (select approval_id as appr_id, value as startDate from attribute where attribute_def_id='StartDateAttributeDef') ON (approval_request.id = appr_id)" +// Join to get leave start date
-            " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'";
-        //-------------Query addition for fromDate and toDate
+            " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'"+
+        	" and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' ";
+      //-------------Query addition for fromDate and toDate
         if (data.fromDate != null && data.fromDate != "" && data.fromDate.length > 0 && data.toDate != null && data.toDate != "" && data.toDate.length > 0) {
             query += " AND startDate BETWEEN '" + data.fromDate + "' AND '" + data.toDate + "'";
         }
@@ -453,7 +479,11 @@ kony.apps.coe.ess.Approvals.frmSearch.retrieveDataByFilter = function(data, succ
         }
         //-------------Query addition for status_id
         if (data.status_id != null && data.status_id != "" && data.status_id.length > 0) {
+          if (data.show_auto_approved != null && data.show_auto_approved != "" && data.show_auto_approved.length > 0 && data.show_auto_approved == "1") {
+            query += " AND (request_approver.status_id = '" + data.status_id + "'  OR (request_approver.status_id = '0' AND approval_request.isRead = '0' AND approval_request.type_id='LEAVEINFO' and approval_request.category_id != 'NULL'))";
+          } else {
             query += " AND request_approver.status_id = '" + data.status_id + "'";
+          }
         }
         query += " GROUP BY approval_request.id";
         if (data.count != null && data.count != "") {
@@ -530,7 +560,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterClearSearch = function() {
 
     frmSearch.lblRequests.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectRequestText");
     frmSearch.lblLeaveStatus.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectStatusText");
-    frmSearch.lblUsers.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectPeopleText");;
+    frmSearch.lblUsers.text = kony.i18n.getLocalizedString("i18n.ess.frmSearch.text.SelectPeopleText");
     frmSearch.calFromDate.dateComponents = [01, 01, new Date().getFullYear()];
     frmSearch.calToDate.dateComponents = [31, 12, new Date().getFullYear()];
     frmSelect.segSearchPeople.selectedRowIndices = [[0,[0]]];
@@ -563,8 +593,8 @@ kony.apps.coe.ess.Approvals.frmSearch.lazyLoading = function() {
 kony.apps.coe.ess.Approvals.frmSearch.showFilteredData = function(){
   frmSearch.show();
   if(frmSearch.flxClear.isVisible == true && frmSearch.flxHide.isVisible == false){
-    frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();}
-    frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();}
+   	frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();}
+   	frmSearch.flxHide.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable();}
     kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch();
   }else{
     var frmController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmSearch");

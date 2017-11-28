@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Type Version Number",
+    "_skin_": "s10fea296a3748dd8e5d7f7b350ee5c5",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "28%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s10fea296a3748dd8e5d7f7b350ee5c5",
+    "id": "txtVersionNo",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "07687bf060f44b0ca5e14ed2bf83d643",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxVersion",
+    "pf": "frmLoginDesk",
+    "placeholderi18n": "i18.ess.mytime.typeversionnumber",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

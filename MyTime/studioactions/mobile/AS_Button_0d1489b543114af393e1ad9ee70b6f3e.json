@@ -1,0 +1,17 @@
+{
+    "AS_Button_0d1489b543114af393e1ad9ee70b6f3e": {
+        "id": "AS_Button_0d1489b543114af393e1ad9ee70b6f3e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_d5a5146244e3436a8b9430ff97a3568b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelection.onClickOfHours(kony.apps.coe.Reusable.TimelineCreation.onClickOfHours);",
+            "callbackType": null
+        }]
+    }
+}

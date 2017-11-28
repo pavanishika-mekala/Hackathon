@@ -1,0 +1,24 @@
+{
+    "AS_FlexContainer_76bc3f5bf98340ee949975210b45afbf": {
+        "id": "AS_FlexContainer_76bc3f5bf98340ee949975210b45afbf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7bf31bf04dac4ade95a87b9d2e8017d8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ecc3c4e165014ddb91b4996a77f1b9d0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.Search.searchOnline();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

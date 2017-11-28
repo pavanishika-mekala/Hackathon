@@ -1,0 +1,64 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40.53%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s05a1e849ad243fda6c9a38052d65b86",
+    "_top_": {
+        "type": "string",
+        "value": "20.53%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "btnOption2Answer1",
+        "btnOption2Answer2",
+        "btnOption2Answer3",
+        "btnOption2Answer4",
+        "btnOption2Answer5",
+        "btnOption2Answer6",
+        "btnOption2Answer7",
+        "btnOption2Answer8"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxAnswers2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "9b58213875d24c22b096672cf35da774",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxOption2",
+    "pf": "frmTimesheetSettings",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

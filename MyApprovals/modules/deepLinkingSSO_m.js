@@ -11,6 +11,7 @@ kony.apps.ess.deepLinkingSSO = kony.apps.ess.deepLinkingSSO || {};
 kony.apps.ess.deepLinkingSSO.staticUrl = "com.engie.benelux.cofely.";//com.engie.eTimeSheetMyApprovals
 var appserviceUsername;
 var appservicePassword;
+var appserviceRefreshToken;
 var applaunchMode;
 var appCheckerObject = null;
 var listOfAvailableApps = [];
@@ -37,16 +38,14 @@ if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
     return;
   }
   if (kony.apps.coe.ess.globalVariables.isNative === true) {
-        if(kony.apps.ess.deepLinkingSSO.currentFormValue != null && params.launchparams.userName != kony.apps.coe.ess.frmLogin.username){
-            if(kony.apps.ess.deepLinkingSSO.currentFormValue != "frmLogin"){
-                kony.sdk.mvvm.LogoutAction();
-                return frmLogin;
-            }
+        if(kony.apps.ess.deepLinkingSSO.currentFormValue != null && params!==undefined && params!==null && params.launchparams!==undefined && params.launchparams!==null && params.launchparams.userName!==undefined & params.launchparams.userName!==null && kony.apps.coe.ess.frmLogin.username !==undefined && params.launchparams.userName != kony.apps.coe.ess.frmLogin.username){
+            kony.store.removeItem("oktaToken");
+            return frmLogin;
         }
-        if (kony.apps.ess.deepLinkingSSO.currentFormValue == null) {
-            if (kony.os.deviceInfo().name === "android") {
-                return frmLogin;
-             }
+        if (kony.apps.ess.deepLinkingSSO.currentFormValue === null || kony.apps.ess.deepLinkingSSO.currentFormValue === undefined || kony.apps.coe.ess.frmLogin.username == "") {
+            //if (kony.os.deviceInfo().name === "android") {
+            //    return frmLogin;
+            //}
             if (params.launchparams != "" && params.launchparams != null && params.launchparams.length > 0) {
                 if (params.launchparams.isTouchIdEnabled == "true") {
                     kony.apps.ess.deepLinkingSSO.isTouchIdEnabled = true;
@@ -74,6 +73,7 @@ if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
                 if (params.launchparams.formToOpen == "frmDummy") {
                     appserviceUsername = params.launchparams.userName;
                     appservicePassword = params.launchparams.passWord;
+                    appserviceRefreshToken = params.launchparams.refreshToken;
                     applaunchMode = params.launchmode;
                     kony.store.setItem("isMyApprovalsFirstTimeLaunch", false);
                     if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
@@ -101,41 +101,44 @@ if (kony.apps.coe.ess.globalVariables.isSPA) //--added for spa--
  *
  */
 kony.apps.ess.deepLinkingSSO.frmDummyPostShow =
-    function() {
-
-
-        if (kony.apps.coe.ess.globalVariables.isSPA) //added for spa
-        {
-            frmLogin.show();
-            return;
-        }
-    // FIXME: Okta is currently not allowing SSO - in the future the SSO must be managed differently, without requiring the login
-    if (kony.apps.ess.deepLinkingSSO.ssotoken) {
-    if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY) && kony.apps.coe.ess.appconfig.useOkta === false) {
-      initMbaasApp(function() {
-        kony.sdk.mvvm.LoginAction("ssoEnable");
-      });
-    } else {
+  function() {
+    if (kony.apps.coe.ess.globalVariables.isSPA) //added for spa
+    {
       frmLogin.show();
+      return;
     }
-  } else if (applaunchMode == 3) {
-    var result = this.checkNewUser();
-    if ((!kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) || kony.apps.coe.ess.appconfig.useOkta === true) {
-      if (result === true || kony.apps.coe.ess.appconfig.useOkta === true) {
+    if (kony.apps.ess.deepLinkingSSO.ssotoken) {
+      if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+        initMbaasApp(function() {
+          if (kony.apps.coe.ess.appconfig.useOkta === true) {
+            kony.apps.coe.ess.frmLogin.oktaRefresh(appserviceRefreshToken, "ssoEnable");
+          } else {
+            kony.sdk.mvvm.LoginAction("ssoEnable");
+          }
+        });
+      } else {
+        frmLogin.show();
+      }
+    } else if (applaunchMode == 3) {
+      var result = this.checkNewUser();
+      if (result === true) {
         frmLogin.show();
       } else {
-        initMbaasApp(function() {
+        if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+          initMbaasApp(function() {
+            if (kony.apps.coe.ess.appconfig.useOkta === true) {
+              kony.apps.coe.ess.frmLogin.oktaRefresh(appserviceRefreshToken, "DeepLink");
+            } else {
+              kony.sdk.mvvm.LoginAction("DeepLink");
+            }
+          });
+        } else {
           kony.sdk.mvvm.LoginAction("DeepLink");
-        });
+        }
       }
-    } else {
-      initMbaasApp(function() {
-        kony.sdk.mvvm.LoginAction("DeepLink");
-      });
     }
-  }
-  kony.print("---frmDummyPostShow:End--------");
-};
+    kony.print("---frmDummyPostShow:End--------");
+  };
 
 
 /**
@@ -146,8 +149,10 @@ kony.apps.ess.deepLinkingSSO.frmDummyPostShow =
  */
 kony.apps.ess.deepLinkingSSO.checkNewUser = function() {
     kony.print("---- checkNewUser:Start-------");
-    if (appserviceUsername == kony.apps.coe.ess.frmLogin.username) {
-        return true;
+    if (appserviceUsername !== kony.apps.coe.ess.frmLogin.username && kony.apps.coe.ess.frmLogin.username != "" && kony.apps.coe.ess.frmLogin.username !== null && kony.apps.coe.ess.frmLogin.username !== undefined) {
+      return true;
+    } else {
+      return false;
     }
     kony.print("---- checkNewUser:End-------");
 };
@@ -179,7 +184,21 @@ kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick = function(status) {
             var returnedValue = false;
             returnedValue = appCheckerObject.isAppExist(status + "://");
             if (returnedValue === true) {
+              // Check if it is possible to pass the refresh token to the new app
+              if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+                var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.globalVariables.active_login_service);
+                kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+                loginService.getSecurityAttributes(function(res){
+                  kony.application.dismissLoadingScreen();
+                  // Pass the refresh token when opening new app
+                  kony.application.openURL(status + "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus + "&refreshToken=" + res.refresh_token);
+                }, function(){
+                  kony.application.dismissLoadingScreen();
+                  kony.application.openURL(status + "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus);
+                });
+              } else {
                 kony.application.openURL(status+ "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus);
+              }
             } else {
                 if (status == "myPay") {
                     url = kony.apps.coe.ess.appconfig.myPayUrl;
@@ -205,8 +224,24 @@ kony.apps.ess.deepLinkingSSO.btnOtherAppsOnClick = function(status) {
             var checkifExistObject1 = new AppCheckerAndroid.checkifExist(verticalappsUrl);
             var verticalAppsReturnedValue = checkifExistObject1.appInstalledOrNot();
             if (/*appstoreReturnedValue === true ||*/ verticalAppsReturnedValue === true) {
+               // Check if it is possible to pass the refresh token to the new app
+               if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+                 var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.globalVariables.active_login_service);
+                 kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+                 loginService.getSecurityAttributes(function(res){
+                   kony.application.dismissLoadingScreen();
+                   // Pass the refresh token when opening new app
+                   url = status + "://" + status + "." + "com";
+                   kony.application.openURL(url + "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus + "&refreshToken=" + res.refresh_token);
+                 }, function(){
+                   kony.application.dismissLoadingScreen();
+                   url = status + "://" + status + "." + "com";
+                   kony.application.openURL(url + "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus);
+                 });
+               } else {
                 url = status + "://" + status + "." + "com";
                 kony.application.openURL(url + "://?formToOpen=frmDummy&userName=" + kony.apps.coe.ess.frmLogin.username + "&passWord=" + kony.apps.coe.ess.frmLogin.password + "&isTouchIdEnabled=" + touchIdStatus + "&isRememberMeEnabled=" + remembermeStatus);
+              }
             } else {
                 //kony.application.openURL("https://play.google.com/store/apps/details?id=" + appstoreUrl);
             }

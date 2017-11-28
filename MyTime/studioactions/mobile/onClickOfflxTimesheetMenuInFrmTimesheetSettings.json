@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_7727191a902e4a63ad6c25a121ed71d5": {
+        "id": "AS_FlexContainer_7727191a902e4a63ad6c25a121ed71d5",
+        "type": "ACTION_SEQUENCE",
+        "name": "onClickOfflxTimesheetMenuInFrmTimesheetSettings",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_bfbf81ee3d0144eba4cc07a7547d288a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetHomeForm();",
+            "callbackType": null
+        }]
+    }
+}

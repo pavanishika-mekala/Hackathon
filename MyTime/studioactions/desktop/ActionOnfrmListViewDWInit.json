@@ -1,0 +1,25 @@
+{
+    "AS_Form_a7cf93f8456f408186c4242c27b1ce67": {
+        "id": "AS_Form_a7cf93f8456f408186c4242c27b1ce67",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnfrmListViewDWInit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bc1150766cf14059a71239253ca908e2",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

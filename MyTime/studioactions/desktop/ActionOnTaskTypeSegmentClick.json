@@ -1,0 +1,24 @@
+{
+    "AS_Segment_3be24b4666714eea9f0593887a7b1858": {
+        "id": "AS_Segment_3be24b4666714eea9f0593887a7b1858",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnTaskTypeSegmentClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onRowClick_93a5ec005a5d499b8012ea607b12211d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmCreateViewDW.flxTaskTypeSelected.setVisibility(true);\nfrmCreateViewDW.tbxDescription.setVisibility(true);\nfrmCreateViewDW.flxBlank.setVisibility(false);\nfrmCreateViewDW.flxSelectType.setVisibility(false);\nvar frmName=kony.apps.coe.Reusable.TimelineCreationDW.parentWidgetName;\nfrmCreateViewDW.flxTimeLine.timeLineScrollFlex.flexSlider.flexSliderTask.lblTaskName.text=\"Research\";\nfrmCreateViewDW.forceLayout();",
+            "callbackType": null
+        }]
+    }
+}

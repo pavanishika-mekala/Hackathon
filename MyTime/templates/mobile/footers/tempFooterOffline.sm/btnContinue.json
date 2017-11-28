@@ -1,0 +1,42 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        4,
+        4,
+        4,
+        4
+    ],
+    "_skin_": "sc17b9c6cb2348a6b8a306b0306fc7fa",
+    "_text_": "",
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 50,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s01a3de39ada45edbb7d4d4f3b474997",
+    "id": "btnContinue",
+    "ide_onClick": "AS_Button_9dee14ae99d94dfa925061908d0cb534",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d6f7d8daad4f49b5aee9feae39597002",
+    "margininpixel": false,
+    "name": "kony.ui.Button",
+    "paddInPixel": [
+        30,
+        30,
+        30,
+        30
+    ],
+    "paddinginpixel": false,
+    "parent": "HboxOfflineOuter",
+    "pf": "tempFooterOffline",
+    "texti18n": "i18n.ess.offline.continue.text",
+    "wType": "Button"
+}

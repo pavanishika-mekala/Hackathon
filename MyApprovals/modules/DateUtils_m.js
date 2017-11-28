@@ -122,18 +122,18 @@ Date.prototype.toDDmmmHHMMtt = function() {
     var month = this.retriveMonthName().substring(0, 3);
     var hours = this.getHours();
     var minutes = this.getMinutes();
-    var tt;
-    if (hours >= 12) {
-        hours = hours - 12;
-        tt = "PM";
-    } else {
-        tt = "AM";
-    }
+//     var tt;
+//     if (hours >= 12) {
+//         hours = hours - 12;
+//         tt = "PM";
+//     } else {
+//         tt = "AM";
+//     }
   	var formattedDate=day + " " + month + " " ;
   	if(hours==0&&minutes==0){
       
     }else{
-      formattedDate+=hours + ":" + minutes + " " + tt
+      formattedDate+=hours + ":" + minutes; //+ " " + tt
     }
 
     return formattedDate ;
@@ -253,10 +253,10 @@ Date.prototype.toHHMMMHHmm = function () {
 	var dd = this.getDate();
 	var mm = months[this.getMonth()];
 	var formatedHH = formatTo12HH(this.getHours());
-	var hh = makeTwoDigits(formatedHH.hh);
+	var hh = makeTwoDigits(this.getHours());
 	var min = makeTwoDigits(this.getMinutes());
 	var ampm = formatedHH.isAM === true ? "AM" : "PM";
-	return dd + " " + mm + " " + hh + ":" + min + " " + ampm;
+	return dd + " " + mm + " " + hh + ":" + min ;//+ " " + ampm;
 };
 
 Date.prototype.toDDMMMYYHHmm = function () {
@@ -302,8 +302,8 @@ Date.prototype.toDDMMMYYHHmm = function () {
 	var yy = String(this.getFullYear());
 	yy = yy.substring(yy.length - 2, yy.length);
 	var formatedHH = formatTo12HH(this.getHours());
-	var hh = makeTwoDigits(formatedHH.hh);
+	var hh = makeTwoDigits(this.getHours());
 	var min = makeTwoDigits(this.getMinutes());
 	var ampm = formatedHH.isAM === true ? "AM" : "PM";
-	return dd + " " + mm + "'" + yy + " " + hh + ":" + min + " " + ampm;
+	return dd + " " + mm + "'" + yy + " " + hh + ":" + min;// + " " + ampm;
 };

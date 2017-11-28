@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50.94%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "scfbd43bdd384e50b859927ad1b38347",
+    "_text_": "Button",
+    "_top_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s290c63793f1451e84190bfe7345fc79",
+    "id": "btnPastDues",
+    "ide_onClick": "AS_Button_j5eb2e2a6278486b9bd64bc9ec3033a7",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ddbb4a5a5b7549a3956b8d1d830771b9",
+    "name": "kony.ui.Button",
+    "parent": "flxStatus",
+    "pf": "frmListView",
+    "texti18n": "i18n.ess.frmListView.pastDues",
+    "wType": "Button",
+    "zindex": 1
+}

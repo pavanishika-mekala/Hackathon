@@ -222,4 +222,4 @@ kony.sdk.mvvm.frmViewFilterHistoryControllerExtension = Class(kony.sdk.mvvm.Base
             kony.sdk.mvvm.log.error(exception.toString());
         }
     }
-});
+    });

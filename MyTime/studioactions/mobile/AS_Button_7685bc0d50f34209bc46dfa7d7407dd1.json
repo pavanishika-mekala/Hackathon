@@ -1,0 +1,24 @@
+{
+    "AS_Button_7685bc0d50f34209bc46dfa7d7407dd1": {
+        "id": "AS_Button_7685bc0d50f34209bc46dfa7d7407dd1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSearchStatus",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ab18cd118f7d4e46b8bc35f583ca0b1c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__32f144ce58264d318bb6406f6b31847d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Search.onStatusSelectionCancel();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

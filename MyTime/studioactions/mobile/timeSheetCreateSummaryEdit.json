@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_04d3e240500e47818d6143f57cbf8b0e": {
+        "id": "AS_FlexContainer_04d3e240500e47818d6143f57cbf8b0e",
+        "type": "ACTION_SEQUENCE",
+        "name": "timeSheetCreateSummaryEdit",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegTimeEntryDetails",
+            "type": "templates",
+            "platform": "",
+            "KUID": "c5fa3aea71994f4b98a8620143645e6e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__29913f476f614628b08732b9b01fd85f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.timeSheetSummaryEdit();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

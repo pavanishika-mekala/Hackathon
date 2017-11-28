@@ -163,7 +163,7 @@ kony.apps.coe.Reusable.WeekHeader = function (widgetInfo, DimensionInfo, skinInf
       "marginInPixel":true,
       "displayText":true, 
       "contentAlignment":constants.CONTENT_ALIGN_CENTER
-    }, {});
+    }, {showProgressIndicator:false});
 
     this.weekLabelContainer.add(this[lblBasic.id]);
   }

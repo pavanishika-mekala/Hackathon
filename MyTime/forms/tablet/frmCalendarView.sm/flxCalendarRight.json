@@ -1,0 +1,73 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "86.50%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "58.30%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sd9a7a6ead5947a89e48ec99f3c98888",
+    "_top_": {
+        "type": "string",
+        "value": "13.50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "41.70%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxTimesheet",
+        "flxStatusTimesheet",
+        "flxHours",
+        "flxLineOuter1",
+        "flxLineOuter2",
+        "flxLineOuter3",
+        "flxLineOuter4",
+        "flxTimeEntryDetails",
+        "flxLineOuter5",
+        "flxLineOuter6",
+        "flxClone",
+        "flxDeleteTimeEntry",
+        "flxEditTimeEntry",
+        "flxAuditTrail",
+        "segComments",
+        "lblNocomments",
+        "flxSubmit"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCalendarRight",
+    "info": null,
+    "isvisible": true,
+    "kuid": "8512c96c84f64e3dbe2d9b0db2cf3d38",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTabCalendarView",
+    "pf": "frmCalendarView",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

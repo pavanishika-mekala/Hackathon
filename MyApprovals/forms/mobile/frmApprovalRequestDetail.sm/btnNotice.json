@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_skin_": "s3e75d4804f949b8953f069e0f2ee150",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s685c3e3d34e46c895289663ded0a831",
+    "id": "btnNotice",
+    "ide_onClick": "AS_Button_e70d359976034ebd84f9dc737914b2cd",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": false,
+    "kuid": "ed5db51dc77a4e0bb95fdeb9ba1ab477",
+    "name": "kony.ui.Button",
+    "parent": "flxBottomBar",
+    "pf": "frmApprovalRequestDetail",
+    "showprogressindicator": false,
+    "texti18n": "i18n.ess.myApproval.Ok.text",
+    "wType": "Button"
+}

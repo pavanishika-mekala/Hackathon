@@ -1,0 +1,31 @@
+{
+    "AS_Button_d069821c825e46c089cb38c0bef7d4a2": {
+        "id": "AS_Button_d069821c825e46c089cb38c0bef7d4a2",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnSubmitPopupConfirm",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmListViewDW",
+            "type": "forms",
+            "platform": "",
+            "KUID": "9e83bab6e30748858c344ccf4100d22b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c782e3bb849a4f4f9f79e98086f284f0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmListViewDW.flxBlank.setVisibility(true);\nfrmListViewDW.flxSubmitPopup.setVisibility(true);\nfrmListViewDW.forceLayout();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

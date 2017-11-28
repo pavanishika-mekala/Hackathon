@@ -1,0 +1,20 @@
+{
+    "AS_FlexContainer_fa60fba35579485d827e77a36a8d8382": {
+        "id": "AS_FlexContainer_fa60fba35579485d827e77a36a8d8382",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_15db7011b7e34755976260a7c7a1a1fd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.timeSheetSummaryDelete();",
+            "callbackType": null
+        }]
+    }
+}

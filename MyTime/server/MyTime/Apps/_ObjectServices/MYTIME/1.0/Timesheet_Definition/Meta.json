@@ -1,0 +1,56 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_REFERENCE_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_TIMESHEET_DEF"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_REFERENCE_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "children" : "[]",
+      "businessObjectName" : "HCM_TIMESHEET_DEF"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "Definition",
+    "targetField" : "DESCRIPTION",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Employee_Id",
+    "targetField" : "EMPNUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Future_Timesheets",
+    "targetField" : "FUT_TS_ALLWD",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "id",
+    "targetField" : "CODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Week_Start_Day",
+    "targetField" : "WEEK_START_DAY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "Year_Start_Date",
+    "targetField" : "YEAR_START_DATE",
+    "type" : "request_response"
+  } ]
+}

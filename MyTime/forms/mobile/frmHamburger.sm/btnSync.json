@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "23%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s0902974b93a464e9ab01e2cca719f8d",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s0902974b93a464e9ab01e2cca719f8d",
+    "id": "btnSync",
+    "ide_onClick": "AS_Button_170287317c3b45e4b40e10f859fb8444",
+    "info": null,
+    "isvisible": true,
+    "kuid": "436ec2ebe947402ea0d79fcabe5c4ce4",
+    "name": "kony.ui.Button",
+    "parent": "flxOuter",
+    "pf": "frmHamburger",
+    "texti18n": "i18n.ess.offline.sync.text",
+    "wType": "Button",
+    "zindex": 1
+}

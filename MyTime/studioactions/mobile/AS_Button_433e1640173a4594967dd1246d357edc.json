@@ -1,0 +1,24 @@
+{
+    "AS_Button_433e1640173a4594967dd1246d357edc": {
+        "id": "AS_Button_433e1640173a4594967dd1246d357edc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmViewTimeSheet",
+            "type": "forms",
+            "platform": "",
+            "KUID": "2a604777c24243f08d43a941ea6646bd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__4eb723b8f0234b15b0ab60a9ff360c08",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetHomeForm(kony.apps.coe.ess.myTime.ViewTimeSheet.date);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

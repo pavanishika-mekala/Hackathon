@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_b70cc864d0a74bfa8ee170e9d89fd58e": {
+        "id": "AS_FlexContainer_b70cc864d0a74bfa8ee170e9d89fd58e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_je81f10be8014261868ea09909ece980",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimesheetSettings.show();",
+            "callbackType": null
+        }]
+    }
+}

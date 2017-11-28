@@ -1,0 +1,11 @@
+{
+  "background_image": "pending_middle_bar_withborder.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "sd54bf1047f840d2b99c930e91acec43",
+  "wType": "FlexContainer"
+}

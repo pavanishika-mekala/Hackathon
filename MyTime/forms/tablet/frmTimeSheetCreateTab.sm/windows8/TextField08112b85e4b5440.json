@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "8%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "sf4fab8334804dfcb86a4bf62c5a56dc",
+    "_text_": "| Type task description max.200 char",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "focusskin": "sf4fab8334804dfcb86a4bf62c5a56dc",
+    "id": "TextField08112b85e4b5440",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "4e57cc599d794fbb929be0ec99f12237",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxSelectedData",
+    "pf": "frmTimeSheetCreateTab",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

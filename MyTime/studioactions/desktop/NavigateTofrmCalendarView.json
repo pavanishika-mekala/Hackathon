@@ -1,0 +1,19 @@
+{
+    "AS_FlexContainer_9a2e99f6232d48b886d51bb0f7b3e1e8": {
+        "id": "AS_FlexContainer_9a2e99f6232d48b886d51bb0f7b3e1e8",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigateTofrmCalendarView",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__aa75ff796c1a4002983cfab20088e433",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var frmName=kony.apps.coe.Reusable.TimelineCreationDW.parentWidgetName;\nfrmCreateViewDW.flxTimeLine.timeLineScrollFlex.flexSliderNew.isVisible=true;\nfrmCreateViewDW.flxTimeLine.timeLineScrollFlex.flexSlider.isVisible=false;\nfrmCalendarViewDW.show();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

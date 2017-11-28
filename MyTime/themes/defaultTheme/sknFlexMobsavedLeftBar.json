@@ -1,0 +1,11 @@
+{
+  "background_image": "savedleftbar.png",
+  "bg_type": "image",
+  "border_color": "000000ff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "isDefaultSkin": false,
+  "kuid": "s23fb1cd72c743d19af7416ad5754e77",
+  "wType": "FlexContainer"
+}

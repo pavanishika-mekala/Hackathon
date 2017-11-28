@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_j57c0c7632ab4642b37ef66a1a1a386c": {
+        "id": "AS_FlexContainer_j57c0c7632ab4642b37ef66a1a1a386c",
+        "type": "ACTION_SEQUENCE",
+        "name": "NavigatetoListViewTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmListView",
+            "type": "forms",
+            "platform": "",
+            "KUID": "8b137a56eace4e328db5abc7878fd69a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__abb45eee706f469aa46bf7d2fc51b048",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showListViewForm();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

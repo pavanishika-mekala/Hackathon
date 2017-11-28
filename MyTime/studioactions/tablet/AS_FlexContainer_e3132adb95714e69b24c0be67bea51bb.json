@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_e3132adb95714e69b24c0be67bea51bb": {
+        "id": "AS_FlexContainer_e3132adb95714e69b24c0be67bea51bb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_jdfc391bcc5d460f849065c016c43d8b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showTimesheetHistoryForm();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_93cae2c4811b4eed8c35ddc414e8856f": {
+        "id": "AS_FlexContainer_93cae2c4811b4eed8c35ddc414e8856f",
+        "type": "ACTION_SEQUENCE",
+        "name": "ActionOnDropDownIcon",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_495dae81225e4826a022cff029c8927d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.CreateViewUIDW()).OnDropDownIconClick();",
+            "callbackType": null
+        }]
+    }
+}

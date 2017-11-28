@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_89d5e162aa474541ae9f8950bc7de99d": {
+        "id": "AS_FlexContainer_89d5e162aa474541ae9f8950bc7de99d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_9a0b7a006ed841c9bec4adf8efb1d6d8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "showSearchTaskListForm();",
+            "callbackType": null
+        }]
+    }
+}

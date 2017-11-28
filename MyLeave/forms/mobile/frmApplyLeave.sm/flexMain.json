@@ -47,6 +47,8 @@
         "flxMonthlyCalendar",
         "flxFullHalfDay",
         "flxTimeline",
+        "flxHalfDay",
+        "flxTimeLayout",
         "lblTopSep",
         "flxLeaveBalanceDetails",
         "flxMembersOnLeave",

@@ -1,0 +1,25 @@
+{
+    "AS_Form_88ec0cb22da4484d99b0746175f770e9": {
+        "id": "AS_Form_88ec0cb22da4484d99b0746175f770e9",
+        "type": "ACTION_SEQUENCE",
+        "name": "actionfrmSettingsPostShiw",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSettings",
+            "type": "forms",
+            "platform": "",
+            "KUID": "7ef1d2900d394618b20a4df9a4ce534f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__df8cd80425084f88ac4429f39498e5c7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.ess.deepLinkingSSO.currentFormValue=kony.application.getCurrentForm().id;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

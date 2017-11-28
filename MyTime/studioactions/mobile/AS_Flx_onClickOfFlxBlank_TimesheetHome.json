@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_95252ea436ab400f9c1516640c33ff35": {
+        "id": "AS_FlexContainer_95252ea436ab400f9c1516640c33ff35",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Flx_onClickOfFlxBlank_TimesheetHome",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimesheetHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fadf9d9be3ed4e9196a3caea7edb178b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__694eedad68b24d668ba996cc15527b9f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetHomeClone.hideAllPopups();\nkony.apps.coe.ess.myTime.TimesheetHomeClone.hideSPAMenuOptions();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
