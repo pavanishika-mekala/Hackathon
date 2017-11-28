@@ -246,7 +246,7 @@ function userDetailsSucess(response) {
                                         kony.theme.setCurrentTheme("MyTheme1", onThemeSettingSuccessCallback, onThemeSettingErrorCallback);
                                     }
                                     }
-                                    kony.apps.coe.ess.globalVariables.employeeName = data[0].First_Name + data[0].Last_Name;
+                                    kony.apps.coe.ess.globalVariables.employeeName = data[0].First_Name +" "+ data[0].Last_Name;
                                     var currDate = new Date();
                                     var currYear = currDate.getFullYear().toString().trim(0, 4);
 

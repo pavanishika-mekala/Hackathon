@@ -45,6 +45,11 @@
     "id": "btnChangeLanguage",
     "ide_onClick": "AS_Button_je5d89ca941746668bb38ddddc48550e",
     "info": null,
+    "ipad": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": true,
     "kuid": "i6c3149b97424c85bd638281993ea97e",
     "masterType": 1,
@@ -52,6 +57,7 @@
     "paddinginpixel": false,
     "parent": "flxLanguageChange",
     "pf": "frmSettings",
+    "showprogressindicator": false,
     "wType": "Button",
     "zindex": 2
 }

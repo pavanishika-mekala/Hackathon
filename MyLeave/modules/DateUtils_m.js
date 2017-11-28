@@ -537,7 +537,8 @@ Date.prototype.toHHMMMHHmm = function () {
 		return String(x);
 	}
 	var dd = this.getDate();
-	var mm = months[this.getMonth()];
+	//var mm = months[this.getMonth()];
+  	var mm=Date.getMonthNameShort(kony.i18n.getCurrentLocale(),this.getMonth());
 //     var formatedHH = formatTo12HH(this.getHours());
 // 	var hh = makeTwoDigits(formatedHH.hh);
 // 	var min = makeTwoDigits(this.getMinutes());

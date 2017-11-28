@@ -41,6 +41,11 @@
     "id": "btnChangeLanguage",
     "ide_onClick": "AS_Button_he17ad55072044a8975e36cffaccb491",
     "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": true,
     "kuid": "ca2b5de655ea48e7967c02297d1d4375",
     "masterType": 1,
@@ -48,6 +53,7 @@
     "paddinginpixel": false,
     "parent": "flxLanguageChange",
     "pf": "frmSettings",
+    "showprogressindicator": false,
     "texti18n": "i18n.ess.myApprovals.frmSettings.ChangeLang",
     "wType": "Button",
     "zindex": 2

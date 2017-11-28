@@ -39,6 +39,7 @@
     "context": {
         "channel": "tablet",
         "formID": "frmSettings",
+        "platform": "ipad",
         "templateType": "forms",
         "topLevelBox": null
     },

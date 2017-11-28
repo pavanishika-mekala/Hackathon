@@ -33,8 +33,9 @@ kony.apps.coe.ess.myLeave.HolidayUI.prototype.getData = function () {
 			var holidayData = {};
 			holidayData.lblHoliday = data[i].Name;
 			var date = data[i].Holiday_Date;
-			var holidayDate = parseInt(date.substring(6, 8)) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(date.substring(4, 6) * 1) - 1).toString()];
-			holidayData.lblDate = holidayDate;
+			//var holidayDate = parseInt(date.substring(6, 8)) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(date.substring(4, 6) * 1) - 1).toString()];
+			var holidayDate = parseInt(date.substring(6, 8)) + " " +Date.getMonthNameShort(kony.i18n.getCurrentLocale(),(parseInt(date.substring(4, 6) * 1) - 1));
+            holidayData.lblDate = holidayDate;
 			holidayData.imgPic = "starblue.png";
 			holidayData.lblLine1 = " ";
 			processedData.push(holidayData);
