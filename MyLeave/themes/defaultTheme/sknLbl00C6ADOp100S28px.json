@@ -21,10 +21,6 @@
     "font_size": 125,
     "isForked": true
   },
-  "iphone": {
-    "font_size": 125,
-    "isForked": true
-  },
   "isDefaultSkin": false,
   "kiosk": {
     "font_name": "GenericMonospace",
