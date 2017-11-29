@@ -514,10 +514,10 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
       } else if(kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType == "XABS"){
       		frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
-        	frmApplyLeave.lblLeaveBalanceCount.text = ("0.0").replace(".",",");
+        	frmApplyLeave.lblLeaveBalanceCount.text = ("0").replace(".",",");
       }else {
         //frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
-        frmApplyLeave.lblLeaveBalanceCount.text = ("0.0").replace(".",",");
+        frmApplyLeave.lblLeaveBalanceCount.text = ("0").replace(".",",");
         frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1];
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
       }
