@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "s935061f72e242c086b42ed0f51919ae",
-    "_text_": "Done",
+    "_text_": "",
     "_top_": {
         "type": "string",
         "value": "3%"
@@ -47,6 +47,7 @@
     "name": "kony.ui.Button",
     "parent": "flxTimeLayout",
     "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.common.done.valueKA",
     "wType": "Button",
     "zindex": 1
 }

@@ -588,6 +588,8 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if(hour === undefined){
       frmApplyLeave.btnFrom.text = "08:00";
       frmApplyLeave.btnTo.text = "10:00";
+      frmApplyLeave.pickTime.selectedKeys=["h8","m0"];
+      frmApplyLeave.pickTime2.selectedKeys=["h10","m0"];
 	  var fromDate = String(frmApplyLeave.lblFromDate.text).split(" ");
     var getMonthFrom = Date.getshortMonthNumber(kony.store.getItem("localeToBeSetLeave"),fromDate[1]);
 	  var toDate = String(frmApplyLeave.lblToDate.text).split(" ");
@@ -603,6 +605,8 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     }else{
       frmApplyLeave.btnFrom.text = String(startTime).substring(0,2)+":"+String(startTime).substring(2,4);
       frmApplyLeave.btnTo.text = String(endTime).substring(0,2)+":"+String(endTime).substring(2,4); //10:00";
+      frmApplyLeave.pickTime.selectedKeys=["h"+parseInt(String(startTime).substring(0,2)),"m"+parseInt(String(startTime).substring(2,4))];
+      frmApplyLeave.pickTime2.selectedKeys=["h"+parseInt(String(endTime).substring(0,2)),"m"+parseInt(String(endTime).substring(2,4))];
       frmApplyLeave.lblDurationHours.text =  hour+" "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       this.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(startTime);
       this.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(endTime);
@@ -631,6 +635,8 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     if(hour === undefined){
       frmApplyLeave.btnFrom.text = "08:00";
       frmApplyLeave.btnTo.text = "12:00";
+      frmApplyLeave.pickTime.selectedKeys=["h8","m0"];
+      frmApplyLeave.pickTime2.selectedKeys=["h12","m0"];
 	  var fromDate = String(frmApplyLeave.lblFromDate.text).split(" ");
     var getMonthFrom = Date.getshortMonthNumber(kony.store.getItem("localeToBeSetLeave"),fromDate[1]);
 	  var toDate = String(frmApplyLeave.lblToDate.text).split(" ");
@@ -646,6 +652,8 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
     }else{
       frmApplyLeave.btnFrom.text = String(startTime).substring(0,2)+":"+String(startTime).substring(2,4);
       frmApplyLeave.btnTo.text = String(endTime).substring(0,2)+":"+String(endTime).substring(2,4); //10:00";
+      frmApplyLeave.pickTime.selectedKeys=["h"+parseInt(String(startTime).substring(0,2)),"m"+parseInt(String(startTime).substring(2,4))];
+      frmApplyLeave.pickTime2.selectedKeys=["h"+parseInt(String(endTime).substring(0,2)),"m"+parseInt(String(endTime).substring(2,4))];
       frmApplyLeave.lblDurationHours.text =  hour+" "+kony.i18n.getLocalizedString("i18n.ess.common.hours.valueKA");
       this.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(startTime);
       this.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(endTime);

@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "s8f955e74f004e8b94069b8c7c65775c",
-    "_text_": "Start",
+    "_text_": "",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -60,6 +60,7 @@
     "name": "kony.ui.Label",
     "parent": "flxStart",
     "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.MyLeave.frmApplyLeave.start",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
