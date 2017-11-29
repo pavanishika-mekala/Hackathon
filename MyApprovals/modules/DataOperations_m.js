@@ -32,16 +32,20 @@ kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.approveRequest = fun
                         kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.approveRequest(id);
                     } else {
                       	//refresh the current form if the app is offline
+                      	if(kony.application.getCurrentForm().id != "frmApprovalRequestDetail"){
                       	refreshCureentFormbypassingAsysncParams(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
-                        kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
+                        }
+                      	kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
                     }
                 };
             } else {
                 mID = id;
                 success = function(res) {
                   	//refresh the current form if the app is offline
+                  	if(kony.application.getCurrentForm().id != "frmApprovalRequestDetail"){
                    	refreshCureentFormbypassingAsysncParams(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
-                    kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
+                    }
+                  	kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
                 };
             }
 
@@ -83,16 +87,20 @@ kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.noticeRequest = func
                         kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.noticeRequest(id);
                     } else {
                       	//refresh the current form if the app is offline
-                      	refreshCureentFormbypassingAsysncParams(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
-                        kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
+                       if(kony.application.getCurrentForm().id != "frmApprovalRequestDetail"){
+                      		refreshCureentFormbypassingAsysncParams(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
+                       }
+                       kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
                     }
                 };
             } else {
                 mID = id;
                 success = function(res) {
                   	//refresh the current form if the app is offline
-                   	refreshCureentFormbypassingAsysncParams(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
-                    kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
+                  	if(kony.application.getCurrentForm().id != "frmApprovalRequestDetail"){
+                   		refreshCureentFormbypassingAsysncParams(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
+                    }
+                  	kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
                 };
             }
 
@@ -145,7 +153,9 @@ kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.rejectRequest = func
                         kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.rejectRequest(id);
                     } else {
                       	//refresh the current form if the app is offline
+                      	if(kony.application.getCurrentForm().id != "frmApprovalRequestDetail"){
                       	refreshCureentFormbypassingAsysncParams(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
+                        }
                         kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
                     }
                 };
@@ -153,7 +163,9 @@ kony.apps.coe.ess.Approvals.ApprovalRequests.Dataoperations.rejectRequest = func
                 mID = id;
                 success = function(res) {
                   	//refresh the current form if the app is offline
+                  	if(kony.application.getCurrentForm().id != "frmApprovalRequestDetail"){
                     refreshCureentFormbypassingAsysncParams(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
+                    }
                     kony.apps.coe.ess.Sync.syncAsynchronously(kony.apps.coe.ess.globalVariables.RefreshType.DataOperation);
                 };
             }
