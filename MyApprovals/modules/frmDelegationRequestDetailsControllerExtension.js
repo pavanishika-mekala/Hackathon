@@ -136,6 +136,7 @@ kony.sdk.mvvm.frmDelegationRequestDetailsControllerExtension = Class(kony.sdk.mv
                 processedData.commentsData = [{
                     "imgUserImage" : "people.png",
                     "lblName" : processedData.firstName,
+                  	"lblShortName" : processedData.firstName.substring(0,1) + processedData.lastName.substring(0,1),//RL-BBE-282
                     "lblChat" : processedData.comments,
                     "lblAppliedOn" : {isVisible : false},
                     "template" : contextData.isSentByMe === true ? flxSelfComments : flxRequesterComments

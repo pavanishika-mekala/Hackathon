@@ -188,6 +188,7 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
             for(i in data.dataSentByMe) {
                 data.dataSentByMe[i].requestInterval = formatRequestInterval(data.dataSentByMe[i]);
                 data.dataSentByMe[i].empName = String(data.dataSentByMe[i].firstName).trim() + " " + String(data.dataSentByMe[i].lastName).trim();
+              	data.dataSentByMe[i].shortName = String(data.dataSentByMe[i].firstName.substring(0,1)) + String(data.dataSentByMe[i].lastName.substring(0,1)); //RL-BBE-282
                 data.dataSentByMe[i].days = numberOfDays(data.dataSentByMe[i]);
                 data.dataSentByMe[i].lblStatus = getStatusTextWithSkin(data.dataSentByMe[i].statusId);
                 data.dataSentByMe[i].flxStatusIcon = getStatusIconSkin(data.dataSentByMe[i].statusId);
@@ -207,6 +208,7 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
             for(i in data.dataReceived) {
                 data.dataReceived[i].requestInterval = formatRequestInterval(data.dataReceived[i]);
                 data.dataReceived[i].empName = String(data.dataReceived[i].firstName).trim() + " " + String(data.dataReceived[i].lastName).trim();
+              	data.dataReceived[i].shortName = String(data.dataReceived[i].firstName.substring(0,1)) + String(data.dataReceived[i].lastName.substring(0,1)); //RL-BBE-282
                 data.dataReceived[i].days = numberOfDays(data.dataReceived[i]);
                 data.dataReceived[i].lblStatus = getStatusTextWithSkin(data.dataReceived[i].statusId);
                 data.dataReceived[i].flxStatusIcon = getStatusIconSkin(data.dataReceived[i].statusId);
@@ -245,6 +247,7 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
             frmDelegationRequestList.segRequestsListSentByMe.widgetDataMap = frmDelegationRequestList.segRequestsListReceived.widgetDataMap = {
                 "lblEmpName" : "empName",
                 "imgEmp" : "empImage",
+              	"lblShortName" : "shortName", //RL-BBE-282
                 "lblEmpId" : "empId",
                 "lblStartAndEndDate" : "requestInterval",
                 "lblDays" : "days",
