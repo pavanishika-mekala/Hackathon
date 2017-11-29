@@ -149,10 +149,12 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
     //delegation
     if (approvalRequest.Delegated) {
       processedRequest.Delegated = {
+        "text":kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.lblDeligated"),
         "isVisible": true
       };
     } else {
       processedRequest.Delegated = {
+        "text":"",
         "isVisible": false
       };
     }
