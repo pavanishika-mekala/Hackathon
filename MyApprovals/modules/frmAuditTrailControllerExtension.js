@@ -32,7 +32,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
 //           	var query="select aa.*,emp1.First_Name as First_Name from approval_audit aa left outer join approval_request ar on aa.request_id=ar.id left outer join employee emp1 on aa.employee_id=emp1.id left outer join employee emp2 on ar.employee_id=emp2.id "+
 //             "left outer join employee emp3 on emp2.manager_id=emp3.id where aa.requestId='"+requestId + "';";
           	//quering audit data.
-            var query = "select aa.*, emp.First_Name as First_Name from approval_audit aa left join Employee emp on aa.employee_id = emp.Id where aa.request_id = '" + requestId + "';";
+            var query = "select aa.*, emp.First_Name as First_Name,emp.Last_Name as Last_Name,Group_concat(attribute.value) AS Attributevalue, Group_concat(attribute.attribute_def_id)  AS AttributeNAME from approval_audit aa left join Employee emp on aa.employee_id = emp.Id left join attribute on aa.request_id=attribute.approval_id where aa.request_id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForAuditRecords, error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
@@ -44,7 +44,22 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
 		function successCallbackForAuditRecords(res) {
             for(var i in res) {
                 res[i].templateType = 0;
+                var tempJSON;
+                if(res[i].AttributeNAME != undefined && res[i].AttributeNAME !== null && res[i].AttributeNAME != "null") {
+                    tempJSON = res[i].AttributeNAME.returnCombinationInJsonFormat(res[i].Attributevalue, ",");
+                } else {
+                  tempJSON = {};
+                }
+				if (res[i].First_Name === null || res[i].First_Name== "null"|| res[i].First_Name === "" || res[i].First_Name === undefined) {
+                kony.print("soumya 3"+res[i].First_Name);
+                  if(tempJSON.hasOwnProperty('FirstNameAttributeDef') && tempJSON.hasOwnProperty('LastNameAttributeDef'))
+                   	res[i].First_Name=tempJSON.FirstNameAttributeDef+" "+tempJSON.LastNameAttributeDef;
+				}else{
+                kony.print("soumya 2"+res[i].First_Name);
+				res[i].First_Name = res[i].First_Name+ " " +res[i].Last_Name;
+				}
             }
+          	kony.print("soumya 1"+res[i].First_Name);
             //quering comments data.
             var query = "select rn.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name, emp.Last_Name as Last_Name,Group_concat(attribute.value)      AS Attributevalue, Group_concat(attribute.attribute_def_id)  AS AttributeNAME, rn.comment as comments from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id left join request_note rn on rn.approval_id = ar.id left join attribute on rn.approval_id=attribute.approval_id where ar.id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForComments.bind(scopeObj, res), error);
@@ -60,8 +75,8 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                 tempJSON = {};
               }
               if (res[i].First_Name === null || res[i].First_Name== "null"|| res[i].First_Name === "" || res[i].First_Name === undefined) {
-                if(res[i].hasOwnProperty('FirstNameAttributeDef') && res[i].hasOwnProperty('LastNameAttributeDef'))
-                 res[i].First_Name=tempJSON.FirstNameAttributeDef+tempJSON.LastNameAttributeDef;
+                if(tempJSON.hasOwnProperty('FirstNameAttributeDef') && tempJSON.hasOwnProperty('LastNameAttributeDef'))
+                 res[i].First_Name=tempJSON.FirstNameAttributeDef+" "+tempJSON.LastNameAttributeDef;
               }else{
                 res[i].First_Name = res[i].First_Name+ " " +res[i].Last_Name;
               }
