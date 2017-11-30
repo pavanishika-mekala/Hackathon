@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Fri Nov 03 06:32:23 UTC 2017approval_request*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Tue Nov 28 13:07:34 UTC 2017approval_request*******************
 // **********************************Start approval_request's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -833,63 +833,106 @@ com.kony.MYAPPROVALS.approval_request.remove = function(wcs, successcallback,err
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function approval_request_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("id") ;
 			targetAttributes.push("approval_id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.approval_attachment.removeCascade, "approval_attachment", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.approval_attachment.removeCascade, "approval_attachment", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("id") ;
 			targetAttributes.push("request_id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.approval_audit.removeCascade, "approval_audit", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.approval_audit.removeCascade, "approval_audit", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("request_id") ;
 			targetAttributes.push("id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.attribute.removeCascade, "attribute", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.attribute.removeCascade, "attribute", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("id") ;
 			targetAttributes.push("approval_id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.request_approver.removeCascade, "request_approver", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.request_approver.removeCascade, "request_approver", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("category_id") ;
 			targetAttributes.push("id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.request_category.removeCascade, "request_category", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.request_category.removeCascade, "request_category", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("id") ;
 			targetAttributes.push("approval_id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.request_note.removeCascade, "request_note", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.request_note.removeCascade, "request_note", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

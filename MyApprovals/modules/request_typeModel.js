@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Fri Nov 03 18:11:56 UTC 2017request_type*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Tue Nov 28 13:07:34 UTC 2017request_type*******************
 // **********************************Start request_type's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -653,9 +653,10 @@ com.kony.MYAPPROVALS.request_type.remove = function(wcs, successcallback,errorca
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function request_type_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

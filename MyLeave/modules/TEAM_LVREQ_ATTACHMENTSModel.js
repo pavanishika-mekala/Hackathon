@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:22 UTC 2017TEAM_LVREQ_ATTACHMENTS*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:54 UTC 2017TEAM_LVREQ_ATTACHMENTS*******************
 // **********************************Start TEAM_LVREQ_ATTACHMENTS's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -742,19 +742,27 @@ com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.remove = function(wcs, successca
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function TEAM_LVREQ_ATTACHMENTS_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 	var srcAttributes = [];
 	var targetAttributes = [];
 	 	srcAttributes.push("LEAVE_ENTRY_ID");
  		targetAttributes.push("LEAVE_ENTRY_ID");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeCascade,"TEAM_LEAVE_REQUEST_ENTRY",false, errorcallback, markForUpload, null, false)){
+			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+			if (record === false) {
+				isError = true;
+				return;
+			}
+	if(record !== null){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeCascade,"TEAM_LEAVE_REQUEST_ENTRY",false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
@@ -1499,125 +1507,6 @@ com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.isRecordPendingForUpload = funct
 
 
 
-/************************************************************************************
-* Retrieves instances of media related to TEAM_LVREQ_ATTACHMENTS
-* with given $relationship.getSourceObjectAttribute() from local database.
-*************************************************************************************/
-
-					
-com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.prototype.getmediaWithBINARY_NAME  = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.prototype.getmediaWithBINARY_NAME function");
-	var pks = this.getPKTable();
-	com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getmediaWithBINARY_NAME(pks,successcallback,errorcallback);
-};
-com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getmediaWithBINARY_NAME = function(pks,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getmediaWithBINARY_NAME function");
-	if(!kony.sync.isSyncInitialized(errorcallback)){
-		return;
-	}		
-	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getmediaWithBINARY_NAME",  "relationship", errorcallback)){
-		return;
-	}	
-	function TEAM_LVREQ_ATTACHMENTS_successcallback(res){
-		if(null!==res && res.length>0) {
-			var wcs = [];
-			var targetKey_0 = res[0].BINARY_NAME;				
-			wcs.push({key:"name", value:targetKey_0});		
-			
-			var tbname = "media"
-			var query = kony.sync.qb_createQuery();
-			kony.sync.qb_select(query, null);
-			kony.sync.qb_from(query, tbname);
-			kony.sync.qb_where(query,wcs);
-		
-			var query_compile = kony.sync.qb_compile(query);
-			var sql = query_compile[0];
-			var params = query_compile[1];
-			var dbname = kony.sync.getDBName();
-		
-			function mySuccCallback(res){
-									kony.sync.verifyAndCallClosure(mySuccesscallback, com.kony.TeamViewService.media.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
-							}
-		
-			kony.sync.single_select_execute(dbname, sql, params, mySuccCallback, errorcallback);
-		}else{
-			kony.sync.verifyAndCallClosure(successcallback);
-			return;
-		}	
-	}
-	
-	function mySuccesscallback(res){
-		var objMap = [];
-		if(res!==null){
-			for(var i in res){
-				var obj = new com.kony.TeamViewService.media();
-				obj.classField = res[i].classField;
-				obj.classValue = res[i].classValue;
-				obj.description = res[i].description;
-				obj.extension = res[i].extension;
-				obj.group = res[i].group;
-				obj.name = res[i].name;
-				obj.ondemand = res[i].ondemand;
-				obj.type = res[i].type;
-				obj.url = res[i].url;
-				objMap[i] = obj;
-			}
-		}
-		kony.sync.verifyAndCallClosure(successcallback, objMap);
-	}
-	
-	com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getAllDetailsByPK(pks, TEAM_LVREQ_ATTACHMENTS_successcallback, errorcallback);
-};
-
-/************************************************************************************
-* Retrieves number of instances of media related to TEAM_LVREQ_ATTACHMENTS
-* with given ${displayTargetAttribute} from local database.
-*************************************************************************************/
-com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.prototype.getCountOfmediaWithBINARY_NAME  = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.prototype.getCountOfmediaWithBINARY_NAME function");
-	var pks = this.getPKTable();
-	com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getCountOfmediaWithBINARY_NAME(pks,successcallback,errorcallback);
-};
-com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getCountOfmediaWithBINARY_NAME = function(pks,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getCountOfmediaWithBINARY_NAME function");
-	if(!kony.sync.isSyncInitialized(errorcallback)){
-		return;
-	}
-	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getCountOfmediaWithBINARY_NAME",  "relationship", errorcallback)){
-		return;
-	}
-	function TEAM_LVREQ_ATTACHMENTS_successcallback(res){
-		if(null!==res && res.length>0) {
-			var wcs = [];
-				var targetAttributes = [];
-													var targetKey_0 = res[0].BINARY_NAME;
-					targetAttributes.push("name");
-					if(kony.type(targetKey_0)==="string") {
-						wcs.push({"name":"'"+targetKey_0+"'"});
-					}else{
-						wcs.push({"name":targetKey_0});
-					} 
-														
-			var wClause = "where ";
-   			var i;
-        	var len = wcs.length;
-        	for (i = 0; i < len; i++) {
-        		wClauseMap = wcs[i];
-        		wClause += targetAttributes[i] + " = " + wClauseMap[targetAttributes[i]]
-        		if(i != len-1)
-        		{
-            		 wClause += " AND "
-        		}
-    		}
-		   com.kony.TeamViewService.media.getCount(wClause, successcallback,errorcallback);
-		}else{
-			kony.sync.verifyAndCallClosure(successcallback,{"count":0});
-			return;
-		}
-	}
-	
-	com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getAllDetailsByPK(pks, TEAM_LVREQ_ATTACHMENTS_successcallback, errorcallback);
-};
 
 /************************************************************************************
 * Start of helper functions used internally, not to be used as ORMs
@@ -1839,23 +1728,6 @@ com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getRelationshipMap = function(re
 	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LVREQ_ATTACHMENTS.getRelationshipMap function");
 	var r1 = {};
 
-	r1={}
-	r1.sourceAttribute = [];
-	r1.foreignKeyAttribute = [];	
-	r1.targetAttributeValue = [];
-	
-	if(!kony.sync.isNullOrUndefined(valuestable.BINARY_NAME)){
-		r1.sourceAttribute.push("name") ;
-		r1.foreignKeyAttribute.push("BINARY_NAME") ;
-		r1.targetAttributeValue.push("'" + valuestable.BINARY_NAME+ "'");
-	}
-	if(r1.targetAttributeValue.length > 0){
-		if(relationshipMap.media===undefined){
-			relationshipMap.media = [];
-		}
-		relationshipMap.media.push(r1);
-	}
-		
 	return relationshipMap;
 };
 

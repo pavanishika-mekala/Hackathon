@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:21 UTC 2017Holiday*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:53 UTC 2017Holiday*******************
 // **********************************Start Holiday's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -666,9 +666,10 @@ com.kony.Employee.Holiday.remove = function(wcs, successcallback,errorcallback, 
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function Holiday_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

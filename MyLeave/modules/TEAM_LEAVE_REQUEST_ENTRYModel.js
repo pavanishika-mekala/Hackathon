@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:22 UTC 2017TEAM_LEAVE_REQUEST_ENTRY*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:54 UTC 2017TEAM_LEAVE_REQUEST_ENTRY*******************
 // **********************************Start TEAM_LEAVE_REQUEST_ENTRY's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -828,17 +828,6 @@ com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.deleteByPK = function(pks, suc
 			return;
 		}
 		if (null !== record) {
-			var srcAttributes = [];
-			var targetAttributes = [];
-			srcAttributes.push("EMPNUMBER") ;
-			targetAttributes.push("EMPNUMBER") ;
-			srcAttributes.push("LEAVE_ENTRY_ID") ;
-			targetAttributes.push("ENTRY_ID") ;
-			if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, "", com.kony.TeamViewService.TEAM_LEAVE_AUDIT.removeCascade,"TEAM_LEAVE_AUDIT",false, errorcallback, markForUpload, record, false)){
-				isError = true;	
-				kony.sync.rollbackTransaction(tx);
-				return;
-			}
 		}else{
 			pkNotFound = true;
 		}
@@ -903,20 +892,10 @@ com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.remove = function(wcs, success
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function TEAM_LEAVE_REQUEST_ENTRY_removeTransactioncallback(tx){
-		wcs = " " + wcs;
-			var srcAttributes = [];
-			var targetAttributes = [];
-			srcAttributes.push("EMPNUMBER") ;
-			targetAttributes.push("EMPNUMBER") ;
-			srcAttributes.push("LEAVE_ENTRY_ID") ;
-			targetAttributes.push("ENTRY_ID") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_LEAVE_AUDIT.removeCascade, "TEAM_LEAVE_AUDIT", false, errorcallback, markForUpload, null, false)){
-			isError = true;	
-			kony.sync.rollbackTransaction(tx);
-			return;
-		}
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
@@ -984,17 +963,6 @@ com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeDeviceInstanceByPK = fun
 			if(deletedRows === false){
 				isError = true;
 			}
-			var srcAttributes = [];
-			var targetAttributes = [];
-			srcAttributes.push("EMPNUMBER") ;
-			targetAttributes.push("EMPNUMBER") ;
-			srcAttributes.push("LEAVE_ENTRY_ID") ;
-			targetAttributes.push("ENTRY_ID") ;
-			if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, "", com.kony.TeamViewService.TEAM_LEAVE_AUDIT.removeCascade,"TEAM_LEAVE_AUDIT",false, errorcallback, null, record, true)){
-				isError = true;	
-				kony.sync.rollbackTransaction(tx);
-				return;
-			}
 		}else{
 			pkNotFound = true;
 		}
@@ -1050,17 +1018,6 @@ com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeDeviceInstance = functio
 
 	function TEAM_LEAVE_REQUEST_ENTRY_removeTransactioncallback(tx){
 		wcs = " " + wcs;
-			var srcAttributes = [];
-			var targetAttributes = [];
-			srcAttributes.push("EMPNUMBER") ;
-			targetAttributes.push("EMPNUMBER") ;
-			srcAttributes.push("LEAVE_ENTRY_ID") ;
-			targetAttributes.push("ENTRY_ID") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_LEAVE_AUDIT.removeCascade, "TEAM_LEAVE_AUDIT", false, errorcallback, null, null, true)){
-			isError = true;	
-			kony.sync.rollbackTransaction(tx);
-			return;
-		}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, true, null, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
@@ -1665,30 +1622,28 @@ com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.isRecordPendingForUpload = fun
 
 /************************************************************************************
 * Retrieves instances of TEAM_LEAVE_AUDIT related to TEAM_LEAVE_REQUEST_ENTRY
-* with given $relationship.getTargetObjectAttribute() from local database.
+* with given $relationship.getSourceObjectAttribute() from local database.
 *************************************************************************************/
 
-										
-com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.prototype.getTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID  = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.prototype.getTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID function");
+					
+com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.prototype.getTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID  = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.prototype.getTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID function");
 	var pks = this.getPKTable();
-	com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID(pks,successcallback,errorcallback);
+	com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID(pks,successcallback,errorcallback);
 };
-com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID = function(pks,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID function");
+com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID = function(pks,successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}		
-	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID",  "relationship", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID",  "relationship", errorcallback)){
 		return;
 	}	
 	function TEAM_LEAVE_REQUEST_ENTRY_successcallback(res){
 		if(null!==res && res.length>0) {
 			var wcs = [];
-			var targetKey_0 = res[0].EMPNUMBER;				
-			wcs.push({key:"EMPNUMBER", value:targetKey_0});		
-						var targetKey_1 = res[0].LEAVE_ENTRY_ID;				
-			wcs.push({key:"ENTRY_ID", value:targetKey_1});		
+			var targetKey_0 = res[0].LEAVE_ENTRY_ID;				
+			wcs.push({key:"ENTRY_ID", value:targetKey_0});		
 			
 			var tbname = "TEAM_LEAVE_AUDIT"
 			var query = kony.sync.qb_createQuery();
@@ -1739,36 +1694,29 @@ com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTEAM_LEAVE_AUDITWithEMPNUMB
 * Retrieves number of instances of TEAM_LEAVE_AUDIT related to TEAM_LEAVE_REQUEST_ENTRY
 * with given ${displayTargetAttribute} from local database.
 *************************************************************************************/
-com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.prototype.getCountOfTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID  = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.prototype.getCountOfTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID function");
+com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.prototype.getCountOfTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID  = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.prototype.getCountOfTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID function");
 	var pks = this.getPKTable();
-	com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getCountOfTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID(pks,successcallback,errorcallback);
+	com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getCountOfTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID(pks,successcallback,errorcallback);
 };
-com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getCountOfTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID = function(pks,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getCountOfTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID function");
+com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getCountOfTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID = function(pks,successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getCountOfTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getCountOfTEAM_LEAVE_AUDITWithEMPNUMBERANDENTRY_ID",  "relationship", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getCountOfTEAM_LEAVE_AUDITWithLEAVE_ENTRY_ID",  "relationship", errorcallback)){
 		return;
 	}
 	function TEAM_LEAVE_REQUEST_ENTRY_successcallback(res){
 		if(null!==res && res.length>0) {
 			var wcs = [];
 				var targetAttributes = [];
-													var targetKey_0 = res[0].EMPNUMBER;
-					targetAttributes.push("EMPNUMBER");
-					if(kony.type(targetKey_0)==="string") {
-						wcs.push({"EMPNUMBER":"'"+targetKey_0+"'"});
-					}else{
-						wcs.push({"EMPNUMBER":targetKey_0});
-					} 
-														var targetKey_1 = res[0].LEAVE_ENTRY_ID;
+													var targetKey_0 = res[0].LEAVE_ENTRY_ID;
 					targetAttributes.push("ENTRY_ID");
-					if(kony.type(targetKey_1)==="string") {
-						wcs.push({"ENTRY_ID":"'"+targetKey_1+"'"});
+					if(kony.type(targetKey_0)==="string") {
+						wcs.push({"ENTRY_ID":"'"+targetKey_0+"'"});
 					}else{
-						wcs.push({"ENTRY_ID":targetKey_1});
+						wcs.push({"ENTRY_ID":targetKey_0});
 					} 
 														
 			var wClause = "where ";
@@ -2039,15 +1987,6 @@ com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeCascade = function(tx, w
 	var tbname = com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	function removeCascadeChildren(){
-			var srcAttributes = [];
-			var targetAttributes = [];
-			srcAttributes.push("EMPNUMBER") ;
-			targetAttributes.push("EMPNUMBER") ;
-			srcAttributes.push("LEAVE_ENTRY_ID") ;
-			targetAttributes.push("ENTRY_ID") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_LEAVE_AUDIT.removeCascade, "TEAM_LEAVE_AUDIT", false, errorcallback, markForUpload, null, isLocal)){
-			return false;
-		}
 	}
 	if(isCascade){
 		if(removeCascadeChildren()===false){
@@ -2316,6 +2255,23 @@ com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.getRelationshipMap = function(
 	}
 	
 
+	r1={}
+	r1.sourceAttribute = [];
+	r1.foreignKeyAttribute = [];	
+	r1.targetAttributeValue = [];
+	
+	if(!kony.sync.isNullOrUndefined(valuestable.LEAVE_ENTRY_ID)){
+		r1.sourceAttribute.push("ENTRY_ID") ;
+		r1.foreignKeyAttribute.push("LEAVE_ENTRY_ID") ;
+		r1.targetAttributeValue.push("'" + valuestable.LEAVE_ENTRY_ID+ "'");
+	}
+	if(r1.targetAttributeValue.length > 0){
+		if(relationshipMap.TEAM_LEAVE_AUDIT===undefined){
+			relationshipMap.TEAM_LEAVE_AUDIT = [];
+		}
+		relationshipMap.TEAM_LEAVE_AUDIT.push(r1);
+	}
+		
 	r1={}
 	r1.sourceAttribute = [];
 	r1.foreignKeyAttribute = [];	

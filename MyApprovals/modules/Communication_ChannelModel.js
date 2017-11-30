@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Fri Nov 03 18:11:56 UTC 2017Communication_Channel*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Tue Nov 28 13:07:34 UTC 2017Communication_Channel*******************
 // **********************************Start Communication_Channel's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -693,19 +693,27 @@ com.ess.EMPLOYEE.Communication_Channel.remove = function(wcs, successcallback,er
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function Communication_Channel_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 	var srcAttributes = [];
 	var targetAttributes = [];
 	 	srcAttributes.push("Id");
  		targetAttributes.push("Employee_Id");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, null, false)){
+			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+			if (record === false) {
+				isError = true;
+				return;
+			}
+	if(record !== null){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

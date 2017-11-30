@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Fri Nov 03 18:11:56 UTC 2017attachment_type*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Tue Nov 28 13:07:34 UTC 2017attachment_type*******************
 // **********************************Start attachment_type's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -663,19 +663,27 @@ com.kony.MYAPPROVALS.attachment_type.remove = function(wcs, successcallback,erro
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function attachment_type_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 	var srcAttributes = [];
 	var targetAttributes = [];
 	 	srcAttributes.push("type_id");
  		targetAttributes.push("id");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.MYAPPROVALS.approval_attachment.removeCascade,"approval_attachment",false, errorcallback, markForUpload, null, false)){
+			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+			if (record === false) {
+				isError = true;
+				return;
+			}
+	if(record !== null){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.MYAPPROVALS.approval_attachment.removeCascade,"approval_attachment",false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

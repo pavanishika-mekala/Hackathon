@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:21 UTC 2017leave_audit*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:53 UTC 2017leave_audit*******************
 // **********************************Start leave_audit's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -709,9 +709,10 @@ com.kony.MYLEAVE.leave_audit.remove = function(wcs, successcallback,errorcallbac
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function leave_audit_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

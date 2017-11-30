@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:22 UTC 2017languageConfiguration*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:54 UTC 2017languageConfiguration*******************
 // **********************************Start languageConfiguration's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -652,9 +652,10 @@ com.kony.NotificationsLanguageService.languageConfiguration.remove = function(wc
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function languageConfiguration_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

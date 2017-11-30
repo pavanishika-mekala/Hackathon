@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:21 UTC 2017MyLeaveMedia*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:53 UTC 2017MyLeaveMedia*******************
 // **********************************Start MyLeaveMedia's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -657,19 +657,27 @@ com.kony.MYLEAVE.MyLeaveMedia.remove = function(wcs, successcallback,errorcallba
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function MyLeaveMedia_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 	var srcAttributes = [];
 	var targetAttributes = [];
 	 	srcAttributes.push("media_id");
  		targetAttributes.push("name");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.MYLEAVE.leave_attachments.removeCascade,"leave_attachments",false, errorcallback, markForUpload, null, false)){
+			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+			if (record === false) {
+				isError = true;
+				return;
+			}
+	if(record !== null){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.MYLEAVE.leave_attachments.removeCascade,"leave_attachments",false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

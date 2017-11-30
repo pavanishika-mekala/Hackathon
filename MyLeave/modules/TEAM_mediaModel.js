@@ -1,6 +1,6 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Tue Nov 28 13:07:34 UTC 2017mediaEmployee*******************
-// **********************************Start mediaEmployee's helper methods************************
+// ****************Generated On Wed Nov 29 10:59:54 UTC 2017TEAM_media*******************
+// **********************************Start TEAM_media's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
 }
@@ -24,13 +24,13 @@ if (typeof(sync.log) === "undefined") {
 
 
 if(typeof(com)=== "undefined"){ com = {}; }
-if(typeof(com.ess)=== "undefined"){ com.ess = {}; }
-if(typeof(com.ess.EMPLOYEE)=== "undefined"){ com.ess.EMPLOYEE = {}; }
+if(typeof(com.kony)=== "undefined"){ com.kony = {}; }
+if(typeof(com.kony.TeamViewService)=== "undefined"){ com.kony.TeamViewService = {}; }
 
 /************************************************************************************
-* Creates new mediaEmployee
+* Creates new TEAM_media
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee = function(){
+com.kony.TeamViewService.TEAM_media = function(){
 	this.classField = null;
 	this.classValue = null;
 	this.description = null;
@@ -43,7 +43,7 @@ com.ess.EMPLOYEE.mediaEmployee = function(){
 	this.markForUpload = true;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.prototype = {
+com.kony.TeamViewService.TEAM_media.prototype = {
 	get classField(){
 		return this._classField;
 	},
@@ -101,7 +101,7 @@ com.ess.EMPLOYEE.mediaEmployee.prototype = {
 };
 
 /************************************************************************************
-* Retrieves all instances of mediaEmployee SyncObject present in local database with
+* Retrieves all instances of TEAM_media SyncObject present in local database with
 * given limit and offset where limit indicates the number of records to be retrieved
 * and offset indicates number of rows to be ignored before returning the records.
 * e.g. var orderByMap = []
@@ -113,16 +113,16 @@ com.ess.EMPLOYEE.mediaEmployee.prototype = {
 * orderByMap[1].sortType ="asc";
 * var limit = 20;
 * var offset = 5;
-* com.ess.EMPLOYEE.mediaEmployee.getAll(successcallback,errorcallback, orderByMap, limit, offset)
+* com.kony.TeamViewService.TEAM_media.getAll(successcallback,errorcallback, orderByMap, limit, offset)
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getAll->main function");
+com.kony.TeamViewService.TEAM_media.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getAll->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
-	orderByMap = kony.sync.formOrderByClause("mediaEmployee",orderByMap);
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
+	orderByMap = kony.sync.formOrderByClause("TEAM_media",orderByMap);
 	var query = kony.sync.qb_createQuery();
 				kony.sync.qb_select(query, null);	
 				kony.sync.qb_from(query, tbname);
@@ -133,38 +133,38 @@ com.ess.EMPLOYEE.mediaEmployee.getAll = function(successcallback, errorcallback,
 	var params = query_compile[1];
 
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getAll->successcallback");
-		successcallback(com.ess.EMPLOYEE.mediaEmployee.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getAll->successcallback");
+		successcallback(com.kony.TeamViewService.TEAM_media.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname,sql, params,mySuccCallback,errorcallback);
 };
 
 /************************************************************************************
-* Returns number of mediaEmployee present in local database.
+* Returns number of TEAM_media present in local database.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getAllCount = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getAllCount function");
-	com.ess.EMPLOYEE.mediaEmployee.getCount("",successcallback,errorcallback);
+com.kony.TeamViewService.TEAM_media.getAllCount = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getAllCount function");
+	com.kony.TeamViewService.TEAM_media.getCount("",successcallback,errorcallback);
 };
 
 /************************************************************************************
-* Returns number of mediaEmployee using where clause in the local Database
+* Returns number of TEAM_media using where clause in the local Database
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getCount = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getCount->main function");
+com.kony.TeamViewService.TEAM_media.getCount = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getCount->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.getCount" , "getCount", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.getCount" , "getCount", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select count(*) from \"" + tbname + "\" " + wcs;
 	kony.sync.single_execute_sql(dbname,sql, null, mySuccCallback, errorcallback);
 	function mySuccCallback(res) {
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getCount->successcallback");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getCount->successcallback");
 		if(null!==res){
 			var count = null;
 			count = res["count(*)"];
@@ -177,39 +177,39 @@ com.ess.EMPLOYEE.mediaEmployee.getCount = function(wcs,successcallback,errorcall
 };
 
 /************************************************************************************
-* Creates a new instance of mediaEmployee in the local Database. The new record will 
+* Creates a new instance of TEAM_media in the local Database. The new record will 
 * be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.create = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.prototype.create function");
+com.kony.TeamViewService.TEAM_media.prototype.create = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.prototype.create function");
 	var valuestable = this.getValuesTable(true);
-	com.ess.EMPLOYEE.mediaEmployee.create(valuestable, successcallback,errorcallback,this.markForUpload);
+	com.kony.TeamViewService.TEAM_media.create(valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.ess.EMPLOYEE.mediaEmployee.create = function(valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.create->main function");
+com.kony.TeamViewService.TEAM_media.create = function(valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.create->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.create" , "create", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.create" , "create", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 
-	if(kony.sync.attributeValidation(valuestable,"mediaEmployee",errorcallback,true)===false){
+	if(kony.sync.attributeValidation(valuestable,"TEAM_media",errorcallback,true)===false){
 		return;
 	}
 	
 	function executeSuccess(){
-		sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.create->success callback");
+		sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.create->success callback");
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
 	}
 
 	if(kony.sync.enableORMValidations){
 		var relationshipMap={};  
-		relationshipMap = com.ess.EMPLOYEE.mediaEmployee.getRelationshipMap(relationshipMap,valuestable);
+		relationshipMap = com.kony.TeamViewService.TEAM_media.getRelationshipMap(relationshipMap,valuestable);
 		kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 	}
 	else{
@@ -218,7 +218,7 @@ com.ess.EMPLOYEE.mediaEmployee.create = function(valuestable, successcallback,er
 };
 
 /************************************************************************************
-* Creates number of new instances of mediaEmployee in the local Database. These new 
+* Creates number of new instances of TEAM_media in the local Database. These new 
 * records will be merged with the enterprise datasource in the next Sync. Based upon 
 * kony.sync.enableORMValidations flag, validations will be enabled/disabled.
 * e.g.	var valuesArray = [];
@@ -249,18 +249,18 @@ com.ess.EMPLOYEE.mediaEmployee.create = function(valuestable, successcallback,er
 *		valuesArray[2].ondemand = "ondemand_2";
 *		valuesArray[2].type = "type_2";
 *		valuesArray[2].url = 2;
-*		com.ess.EMPLOYEE.mediaEmployee.createAll(valuesArray, successcallback, errorcallback, true);
+*		com.kony.TeamViewService.TEAM_media.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.createAll function");
+com.kony.TeamViewService.TEAM_media.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.createAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.createAll" , "createAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.createAll" , "createAll", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var isProperData = true;
 	var arrayLen = 0;
@@ -275,7 +275,7 @@ com.ess.EMPLOYEE.mediaEmployee.createAll = function(valuesArray, successcallback
 		//column level validations
 		for (var i=0; valuesArray != null && i < arrayLength; i++ ){
 			var valuestable = valuesArray[i];
-			if(kony.sync.attributeValidation(valuestable,"mediaEmployee",errorcallback,true)===false){
+			if(kony.sync.attributeValidation(valuestable,"TEAM_media",errorcallback,true)===false){
 				return;
 			}
 
@@ -309,7 +309,7 @@ com.ess.EMPLOYEE.mediaEmployee.createAll = function(valuesArray, successcallback
 	}
 
 	function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.createAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.createAll->transactionSuccessCallback");
 		if(!isError){
 			kony.sync.massInsert(dbname, tbname, valuesArray, successcallback, errorcallback, markForUpload);
 		}
@@ -322,11 +322,11 @@ com.ess.EMPLOYEE.mediaEmployee.createAll = function(valuesArray, successcallback
 	
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.createAll->checkIntegrity");
+		sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.createAll->checkIntegrity");
 		arrayLength = valuesArray.length;
 		for (var i=0; valuesArray != null && i < arrayLength; i++ ){
 			var relationshipMap={};  
-			relationshipMap = com.ess.EMPLOYEE.mediaEmployee.getRelationshipMap(relationshipMap,valuesArray[i]);
+			relationshipMap = com.kony.TeamViewService.TEAM_media.getRelationshipMap(relationshipMap,valuesArray[i]);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
 				isError = true;
@@ -341,80 +341,80 @@ com.ess.EMPLOYEE.mediaEmployee.createAll = function(valuesArray, successcallback
 	}
 };
 /************************************************************************************
-* Updates mediaEmployee using primary key in the local Database. The update will be
+* Updates TEAM_media using primary key in the local Database. The update will be
 * merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.updateByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.prototype.updateByPK function");
+com.kony.TeamViewService.TEAM_media.prototype.updateByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.prototype.updateByPK function");
 	var pks = this.getPKTable();
 	var valuestable = this.getValuesTable(false);
-	com.ess.EMPLOYEE.mediaEmployee.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
+	com.kony.TeamViewService.TEAM_media.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.ess.EMPLOYEE.mediaEmployee.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.updateByPK-> main function");
+com.kony.TeamViewService.TEAM_media.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.updateByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.updateByPK",  "updateByPk", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.updateByPK",  "updateByPk", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [ ];
 
-	if(com.ess.EMPLOYEE.mediaEmployee.pkCheck(pks,wcs,errorcallback,"updating")===false){
+	if(com.kony.TeamViewService.TEAM_media.pkCheck(pks,wcs,errorcallback,"updating")===false){
 		return;
 	}
 
-	if(kony.sync.attributeValidation(valuestable,"mediaEmployee",errorcallback,false)===false){
+	if(kony.sync.attributeValidation(valuestable,"TEAM_media",errorcallback,false)===false){
 		return;
 	}
 
 	var relationshipMap={};  
-	relationshipMap = com.ess.EMPLOYEE.mediaEmployee.getRelationshipMap(relationshipMap,valuestable);
+	relationshipMap = com.kony.TeamViewService.TEAM_media.getRelationshipMap(relationshipMap,valuestable);
 
 	kony.sync.updateByPK(tbname, dbname, relationshipMap, pks,valuestable, successcallback,errorcallback, markForUpload, wcs);
 };
 
 /************************************************************************************
-* Updates mediaEmployee(s) using where clause in the local Database. The update(s)
+* Updates TEAM_media(s) using where clause in the local Database. The update(s)
 * will be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.update function");
+com.kony.TeamViewService.TEAM_media.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.update function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.update",  "update", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.update",  "update", errorcallback)){
 		return;
 	}
 
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 
-	if(kony.sync.attributeValidation(valuestable,"mediaEmployee",errorcallback,false)===false){
+	if(kony.sync.attributeValidation(valuestable,"TEAM_media",errorcallback,false)===false){
 		return;
 	}
 	function executeSuccess(){
-		sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.update-> success callback of Integrity Check");
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.mediaEmployee.getPKTable());
+		sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.update-> success callback of Integrity Check");
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.TeamViewService.TEAM_media.getPKTable());
 	}
 
 	if(kony.sync.enableORMValidations){
 		var relationshipMap={};  
-		relationshipMap = com.ess.EMPLOYEE.mediaEmployee.getRelationshipMap(relationshipMap,valuestable);
+		relationshipMap = com.kony.TeamViewService.TEAM_media.getRelationshipMap(relationshipMap,valuestable);
 		kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 	}
 	else{
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.mediaEmployee.getPKTable());
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.TeamViewService.TEAM_media.getPKTable());
 	}
 };
 
 /************************************************************************************
-* Updates mediaEmployee(s) satisfying one or more where clauses in the local Database. 
+* Updates TEAM_media(s) satisfying one or more where clauses in the local Database. 
 * The update(s) will be merged with the enterprise datasource in the next Sync.
 * Based upon kony.sync.enableORMValidations flag, validations will be enabled/disabled.
 * e.g.	var inputArray = [];
@@ -439,18 +439,18 @@ com.ess.EMPLOYEE.mediaEmployee.update = function(wcs, valuestable, successcallba
 *		inputArray[2].changeSet.description = "description_updated2";
 *		inputArray[2].changeSet.extension = "extension_updated2";
 *		inputArray[2].whereClause = "where name = '2'";
-*		com.ess.EMPLOYEE.mediaEmployee.updateAll(inputArray,successcallback,errorcallback);
+*		com.kony.TeamViewService.TEAM_media.updateAll(inputArray,successcallback,errorcallback);
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.updateAll function");
+com.kony.TeamViewService.TEAM_media.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.updateAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.updateAll",  "updateAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "100004737b2bb0f56";
-	var tbname = "mediaEmployee";
+	var dbname = "10000473715010d0b";
+	var tbname = "TEAM_media";
 	var isError = false;
 	var errObject = null;
 	if(markForUpload == false || markForUpload == "false"){
@@ -476,7 +476,7 @@ com.ess.EMPLOYEE.mediaEmployee.updateAll = function(inputArray, successcallback,
 			}
 			var wcs = v.whereClause;
 			var twcs = wcs;
-			if(kony.sync.attributeValidation(valuestable,"mediaEmployee",errorcallback,false)===false){
+			if(kony.sync.attributeValidation(valuestable,"TEAM_media",errorcallback,false)===false){
 				return;
 			}
 
@@ -497,13 +497,13 @@ com.ess.EMPLOYEE.mediaEmployee.updateAll = function(inputArray, successcallback,
 		    newInputArray[i] = kony.sync.CreateCopy(v);
 		}
 		inputArray = newInputArray;
-		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.ess.EMPLOYEE.mediaEmployee.getPKTable());
+		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.kony.TeamViewService.TEAM_media.getPKTable());
 	}
 	
 		function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.updateAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.updateAll->transactionSuccessCallback");
 		if(!isError){
-			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.ess.EMPLOYEE.mediaEmployee.getPKTable());
+			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.kony.TeamViewService.TEAM_media.getPKTable());
 		}
 	}
 
@@ -525,10 +525,10 @@ com.ess.EMPLOYEE.mediaEmployee.updateAll = function(inputArray, successcallback,
 	}
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.updateAll->checkIntegrity");
+		sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.updateAll->checkIntegrity");
 		for (var i=0; ((inputArray) != null) && i < inputArray.length; i++ ){
 			var relationshipMap={}; 
-			relationshipMap = com.ess.EMPLOYEE.mediaEmployee.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
+			relationshipMap = com.kony.TeamViewService.TEAM_media.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
 			sync.log.debug("Relationship Map for Integrity check created:", relationshipMap);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
@@ -546,24 +546,24 @@ com.ess.EMPLOYEE.mediaEmployee.updateAll = function(inputArray, successcallback,
 
 }
 /************************************************************************************
-* Deletes mediaEmployee using primary key from the local Database. The record will be
+* Deletes TEAM_media using primary key from the local Database. The record will be
 * deleted from the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.deleteByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.prototype.deleteByPK function");
+com.kony.TeamViewService.TEAM_media.prototype.deleteByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.prototype.deleteByPK function");
 	var pks = this.getPKTable();
-	com.ess.EMPLOYEE.mediaEmployee.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
+	com.kony.TeamViewService.TEAM_media.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
 };
-com.ess.EMPLOYEE.mediaEmployee.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.deleteByPK-> main function");
+com.kony.TeamViewService.TEAM_media.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.deleteByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.deleteByPK",  "deleteByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.deleteByPK",  "deleteByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [];
 	var isError = false;
@@ -571,28 +571,18 @@ com.ess.EMPLOYEE.mediaEmployee.deleteByPK = function(pks, successcallback,errorc
 	var twcs = [];
 	var deletedRows;
 	var record = "";
-	if(com.ess.EMPLOYEE.mediaEmployee.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.kony.TeamViewService.TEAM_media.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}	
 	twcs = kony.sync.CreateCopy(wcs);
-	function mediaEmployeeTransactionCallback(tx){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.deleteByPK->mediaEmployee_PKPresent successcallback");
+	function TEAM_mediaTransactionCallback(tx){
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.deleteByPK->TEAM_media_PKPresent successcallback");
 		record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(record===false){
 			isError = true;
 			return;
 		}
 		if (null !== record) {
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("Media_Id");
- 		targetAttributes.push("name");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, record, false)){
-				isError = true;	
-				kony.sync.rollbackTransaction(tx);
-				return;
-			}
 		}else{
 			pkNotFound = true;
 		}
@@ -602,8 +592,8 @@ com.ess.EMPLOYEE.mediaEmployee.deleteByPK = function(pks, successcallback,errorc
 			}
 	}
 	
-	function mediaEmployeeErrorCallback(){
-		sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.deleteByPK->relationship failure callback");
+	function TEAM_mediaErrorCallback(){
+		sync.log.error("Entering com.kony.TeamViewService.TEAM_media.deleteByPK->relationship failure callback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -613,8 +603,8 @@ com.ess.EMPLOYEE.mediaEmployee.deleteByPK = function(pks, successcallback,errorc
 		}
 
 	}
-	function mediaEmployeeSuccessCallback(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.deleteByPK->relationship success callback");
+	function TEAM_mediaSuccessCallback(){
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.deleteByPK->relationship success callback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -626,32 +616,32 @@ com.ess.EMPLOYEE.mediaEmployee.deleteByPK = function(pks, successcallback,errorc
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.deleteByPK->PK not found callback");
+		sync.log.error("Entering com.kony.TeamViewService.TEAM_media.deleteByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 		
 		var dbconnection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(dbconnection != null){
-			kony.sync.startTransaction(dbconnection, mediaEmployeeTransactionCallback, mediaEmployeeSuccessCallback, mediaEmployeeErrorCallback, "Single Execute");
+			kony.sync.startTransaction(dbconnection, TEAM_mediaTransactionCallback, TEAM_mediaSuccessCallback, TEAM_mediaErrorCallback, "Single Execute");
 		}
 
 };
 
 /************************************************************************************
-* Deletes mediaEmployee(s) using where clause from the local Database. The record(s)
+* Deletes TEAM_media(s) using where clause from the local Database. The record(s)
 * will be deleted from the enterprise datasource in the next Sync.
-* e.g. com.ess.EMPLOYEE.mediaEmployee.remove("where classField like 'A%'", successcallback,errorcallback, true);
+* e.g. com.kony.TeamViewService.TEAM_media.remove("where classField like 'A%'", successcallback,errorcallback, true);
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.remove = function(wcs, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.remove->main function");
+com.kony.TeamViewService.TEAM_media.remove = function(wcs, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.remove->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.remove",  "remove", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.remove",  "remove", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
@@ -659,39 +649,22 @@ com.ess.EMPLOYEE.mediaEmployee.remove = function(wcs, successcallback,errorcallb
 	var rowsDeleted;
 	var record = "";
 
-	function mediaEmployee_removeTransactioncallback(tx){
+	function TEAM_media_removeTransactioncallback(tx){
 			wcs = " " + wcs;
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("Media_Id");
- 		targetAttributes.push("name");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
-			if (record === false) {
-				isError = true;
-				return;
-			}
-	if(record !== null){
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, record, false)){
-			isError = true;	
-			kony.sync.rollbackTransaction(tx);
-			return;
-		}
-	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
 		}
 	}
-	function mediaEmployee_removeSuccess(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.remove->mediaEmployee_removeSuccess function");
+	function TEAM_media_removeSuccess(){
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.remove->TEAM_media_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.remove->error callback function");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -701,67 +674,57 @@ com.ess.EMPLOYEE.mediaEmployee.remove = function(wcs, successcallback,errorcallb
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.remove->delete Entity function");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
-			kony.sync.startTransaction(connection, mediaEmployee_removeTransactioncallback, mediaEmployee_removeSuccess, errorcallbackWrapper);
+			kony.sync.startTransaction(connection, TEAM_media_removeTransactioncallback, TEAM_media_removeSuccess, errorcallbackWrapper);
 		}
 	}
 	deleteEntity();
 };
 
 /************************************************************************************
-* Deletes mediaEmployee using primary key from the local Database. This will
+* Deletes TEAM_media using primary key from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.prototype.removeDeviceInstanceByPK function");
+com.kony.TeamViewService.TEAM_media.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.prototype.removeDeviceInstanceByPK function");
 	var pks = this.getPKTable();
-	com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
+	com.kony.TeamViewService.TEAM_media.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
 };
-com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK function");
+com.kony.TeamViewService.TEAM_media.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.removeDeviceInstanceByPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var wcs = [];
 	var isError = false;
 	var pkNotFound = false;
 	var deletedRows;
-	if(com.ess.EMPLOYEE.mediaEmployee.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.kony.TeamViewService.TEAM_media.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}
 	
-	function mediaEmployeeTransactionCallback(tx){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK -> mediaEmployeeTransactionCallback");
+	function TEAM_mediaTransactionCallback(tx){
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.removeDeviceInstanceByPK -> TEAM_mediaTransactionCallback");
 		var record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(null !== record && false !=record) {
 			deletedRows = kony.sync.remove(tx, tbname, wcs, true, null, null);
 			if(deletedRows === false){
 				isError = true;
 			}
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("Media_Id");
- 		targetAttributes.push("name");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, null, record, true)){
-				isError = true;	
-				kony.sync.rollbackTransaction(tx);
-				return;
-			}
 		}else{
 			pkNotFound = true;
 		}
 	}
 	
-	function mediaEmployeeErrorCallback(){
-		sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK -> mediaEmployeeErrorCallback");
+	function TEAM_mediaErrorCallback(){
+		sync.log.error("Entering com.kony.TeamViewService.TEAM_media.removeDeviceInstanceByPK -> TEAM_mediaErrorCallback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -771,8 +734,8 @@ com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK = function(pks, successc
 		}
 	}
 	
-	function mediaEmployeeSuccessCallback(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK -> mediaEmployeeSuccessCallback");
+	function TEAM_mediaSuccessCallback(){
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.removeDeviceInstanceByPK -> TEAM_mediaSuccessCallback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -784,56 +747,46 @@ com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK = function(pks, successc
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstanceByPK -> PK not found callback");
+		sync.log.error("Entering com.kony.TeamViewService.TEAM_media.removeDeviceInstanceByPK -> PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 	
 	var dbconnection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 	if(dbconnection != null){
-		kony.sync.startTransaction(dbconnection, mediaEmployeeTransactionCallback, mediaEmployeeSuccessCallback, mediaEmployeeErrorCallback, "Single Execute");
+		kony.sync.startTransaction(dbconnection, TEAM_mediaTransactionCallback, TEAM_mediaSuccessCallback, TEAM_mediaErrorCallback, "Single Execute");
 	}
 
 };
 
 /************************************************************************************
-* Deletes mediaEmployee(s) using where clause from the local Database. This will
+* Deletes TEAM_media(s) using where clause from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstance = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstance->main function");
+com.kony.TeamViewService.TEAM_media.removeDeviceInstance = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.removeDeviceInstance->main function");
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
 
-	function mediaEmployee_removeTransactioncallback(tx){
+	function TEAM_media_removeTransactioncallback(tx){
 		wcs = " " + wcs;
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("Media_Id");
- 		targetAttributes.push("name");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, null, null, true)){
-			isError = true;	
-			kony.sync.rollbackTransaction(tx);
-			return;
-		}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, true, null, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
 		}
 	}
-	function mediaEmployee_removeSuccess(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.remove->mediaEmployee_removeSuccess function");
+	function TEAM_media_removeSuccess(){
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.remove->TEAM_media_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.remove->error callback function");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -843,35 +796,35 @@ com.ess.EMPLOYEE.mediaEmployee.removeDeviceInstance = function(wcs, successcallb
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.remove->delete Entity function");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
-			kony.sync.startTransaction(connection, mediaEmployee_removeTransactioncallback, mediaEmployee_removeSuccess, errorcallbackWrapper);
+			kony.sync.startTransaction(connection, TEAM_media_removeTransactioncallback, TEAM_media_removeSuccess, errorcallbackWrapper);
 		}
 	}
 	deleteEntity();
 };
 
 /************************************************************************************
-* Retrieves mediaEmployee using primary key from the local Database. 
+* Retrieves TEAM_media using primary key from the local Database. 
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.prototype.getAllDetailsByPK function");
+com.kony.TeamViewService.TEAM_media.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.prototype.getAllDetailsByPK function");
 	var pks = this.getPKTable();
-	com.ess.EMPLOYEE.mediaEmployee.getAllDetailsByPK(pks,successcallback,errorcallback);
+	com.kony.TeamViewService.TEAM_media.getAllDetailsByPK(pks,successcallback,errorcallback);
 };
-com.ess.EMPLOYEE.mediaEmployee.getAllDetailsByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getAllDetailsByPK-> main function");
+com.kony.TeamViewService.TEAM_media.getAllDetailsByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getAllDetailsByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var wcs = [];
-	if(com.ess.EMPLOYEE.mediaEmployee.pkCheck(pks,wcs,errorcallback,"searching")===false){
+	if(com.kony.TeamViewService.TEAM_media.pkCheck(pks,wcs,errorcallback,"searching")===false){
 		return;
 	}
 	twcs = kony.sync.CreateCopy(wcs);
@@ -883,8 +836,8 @@ com.ess.EMPLOYEE.mediaEmployee.getAllDetailsByPK = function(pks, successcallback
 	var sql = query_compile[0];
 	var params = query_compile[1];
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getAllDetailsByPK-> success callback function");
-		successcallback(com.ess.EMPLOYEE.mediaEmployee.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getAllDetailsByPK-> success callback function");
+		successcallback(com.kony.TeamViewService.TEAM_media.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname, sql, params, mySuccCallback, errorcallback);
 };
@@ -893,67 +846,67 @@ com.ess.EMPLOYEE.mediaEmployee.getAllDetailsByPK = function(pks, successcallback
 
 
 /************************************************************************************
-* Retrieves mediaEmployee.getBinary using pk values. 
+* Retrieves TEAM_media.getBinary using pk values. 
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getBinary = function(colName, pks, config, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinary");
+com.kony.TeamViewService.TEAM_media.getBinary = function(colName, pks, config, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getBinary");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	sync.log.trace("getting binary for column :"+colName+" of table:"+tbname);
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinary success callback function" 
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getBinary success callback function" 
 				+"for columns :"+colName+" of tablename :"+tbname+" with response"+ res);
 		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.base64)) {
-			sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinary user success callback function"+ res.base64);
+			sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getBinary user success callback function"+ res.base64);
 			successcallback(res.base64);
 		}
 		else {
-			sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.getBinary error callback function"+ res);
+			sync.log.error("Entering com.kony.TeamViewService.TEAM_media.getBinary error callback function"+ res);
 			errorcallback(res);
 		}
 	}	
 	kony.sync.single_binary_select_base64_execute(dbname, tbname, colName, pks, config, mySuccCallback, errorcallback);
 };
 /************************************************************************************
-* Retrieves mediaEmployee.FilePath using pk values. 
+* Retrieves TEAM_media.FilePath using pk values. 
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath = function(colName, pks, config, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath");
+com.kony.TeamViewService.TEAM_media.getBinaryFilePath = function(colName, pks, config, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getBinaryFilePath");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	sync.log.trace("getting filepath for column :"+colName+" of table:"+tbname);
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath success callback function"
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getBinaryFilePath success callback function"
 			+"for columns :"+colName+" of tablename :"+tbname+" with response"+ res);
 		if(!kony.sync.isNullOrUndefined(res) && !kony.sync.isNullOrUndefined(res.filePath)) {
-			sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath user success callback function"+ res.filePath);
+			sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getBinaryFilePath user success callback function"+ res.filePath);
 			successcallback(res.filePath);
 		}
 		else {
-			sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryFilePath error callback function"+ res);
+			sync.log.error("Entering com.kony.TeamViewService.TEAM_media.getBinaryFilePath error callback function"+ res);
 			errorcallback(res);
 		}
 	}	
 	kony.sync.single_binary_select_file_execute(dbname, tbname, colName, pks, config, mySuccCallback, errorcallback);
 };
 /************************************************************************************
-* Retrieves mediaEmployee status for binary using where clause. 
+* Retrieves TEAM_media status for binary using where clause. 
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getBinaryStatus = function(colName, pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryStatus");
+com.kony.TeamViewService.TEAM_media.getBinaryStatus = function(colName, pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getBinaryStatus");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getBinaryStatus success callback function"+ res);
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getBinaryStatus success callback function"+ res);
 		successcallback(res);
 	}
 	sync.getStatusForBinary(tbname, colName, pks, mySuccCallback, errorcallback);
@@ -961,52 +914,52 @@ com.ess.EMPLOYEE.mediaEmployee.getBinaryStatus = function(colName, pks, successc
 
 
 /************************************************************************************
-* Retrieves mediaEmployee(s) using where clause from the local Database. 
-* e.g. com.ess.EMPLOYEE.mediaEmployee.find("where classField like 'A%'", successcallback,errorcallback);
+* Retrieves TEAM_media(s) using where clause from the local Database. 
+* e.g. com.kony.TeamViewService.TEAM_media.find("where classField like 'A%'", successcallback,errorcallback);
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.find = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.find function");
+com.kony.TeamViewService.TEAM_media.find = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.find function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.find",  "find", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.find",  "find", errorcallback)){
 		return;
 	}
 	//wcs will be a string formed by the user.
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select * from \"" + tbname + "\" " + wcs;
 	function mySuccCallback(res){
-		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.mediaEmployee.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		kony.sync.verifyAndCallClosure(successcallback, com.kony.TeamViewService.TEAM_media.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccCallback, errorcallback);
 };
 
 /************************************************************************************
-* Marks instance of mediaEmployee with given primary key for upload. This will 
+* Marks instance of TEAM_media with given primary key for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.markForUploadbyPK = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.prototype.markForUploadbyPK function");
+com.kony.TeamViewService.TEAM_media.prototype.markForUploadbyPK = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.prototype.markForUploadbyPK function");
 	var pks = this.getPKTable();
-	com.ess.EMPLOYEE.mediaEmployee.markForUploadbyPK(pks, successcallback, errorcallback);
+	com.kony.TeamViewService.TEAM_media.markForUploadbyPK(pks, successcallback, errorcallback);
 };
-com.ess.EMPLOYEE.mediaEmployee.markForUploadbyPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.markForUploadbyPK function");
+com.kony.TeamViewService.TEAM_media.markForUploadbyPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.markForUploadbyPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var isError = false;
 	var recordsFound = false;
 	var recordsMarkedForUpload = 0;
 	var wcs = [];
-	if(com.ess.EMPLOYEE.mediaEmployee.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
+	if(com.kony.TeamViewService.TEAM_media.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
 		return;
 	}
 
@@ -1129,19 +1082,19 @@ com.ess.EMPLOYEE.mediaEmployee.markForUploadbyPK = function(pks, successcallback
 };
 
 /************************************************************************************
-* Marks instance(s) of mediaEmployee matching given where clause for upload. This will 
+* Marks instance(s) of TEAM_media matching given where clause for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.markForUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.markForUpload->main function");
+com.kony.TeamViewService.TEAM_media.markForUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.markForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.markForUpload",  "markForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.markForUpload",  "markForUpload", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var isError = false;
 	var num_records_main = 0;
 	wcs = kony.sync.validateWhereClause(wcs);
@@ -1196,7 +1149,7 @@ com.ess.EMPLOYEE.mediaEmployee.markForUpload = function(wcs, successcallback,err
 	}
 	
 	function single_transaction_callback (tx){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.markForUpload->single_transaction_callback");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.markForUpload->single_transaction_callback");
 		//updating main table
 		var sql = "select " + kony.sync.historyTableChangeTypeColumn + " from \"" + tbname + "\" " + wcs ;
 		var resultSet = kony.sync.executeSql (tx, sql, null);
@@ -1233,12 +1186,12 @@ com.ess.EMPLOYEE.mediaEmployee.markForUpload = function(wcs, successcallback,err
 	}
 	
 	function single_transaction_success_callback(){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.markForUpload->single_transaction_success_callback");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.markForUpload->single_transaction_success_callback");
 		kony.sync.verifyAndCallClosure(successcallback, {count:num_records_main});
 	}
 	
 	function single_transaction_error_callback(){
-		sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.markForUpload->single_transaction_error_callback");
+		sync.log.error("Entering com.kony.TeamViewService.TEAM_media.markForUpload->single_transaction_error_callback");
 		if(!isError) {
 			kony.sync.showTransactionError(errorcallback);
 		}else{
@@ -1254,17 +1207,17 @@ com.ess.EMPLOYEE.mediaEmployee.markForUpload = function(wcs, successcallback,err
 };
 
 /************************************************************************************
-* Retrieves instance(s) of mediaEmployee pending for upload. Records are marked for
+* Retrieves instance(s) of TEAM_media pending for upload. Records are marked for
 * pending upload if they have been updated or created locally and the changes have
 * not been merged with enterprise datasource.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getPendingUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getPendingUpload->main function");
+com.kony.TeamViewService.TEAM_media.getPendingUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getPendingUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null){
@@ -1277,43 +1230,43 @@ com.ess.EMPLOYEE.mediaEmployee.getPendingUpload = function(wcs, successcallback,
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getPendingUpload->successcallback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.mediaEmployee.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getPendingUpload->successcallback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.kony.TeamViewService.TEAM_media.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
 /************************************************************************************
-* Retrieves instance(s) of mediaEmployee pending for acknowledgement. This is relevant
+* Retrieves instance(s) of TEAM_media pending for acknowledgement. This is relevant
 * when the SyncObject is part of the SyncScope whose SyncStrategy is PersistentSync.
 * In persistent Sync the  records in the local database are put into a pending 
 * acknowledgement state after an upload.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getPendingAcknowledgement = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getPendingAcknowledgement->main function");
+com.kony.TeamViewService.TEAM_media.getPendingAcknowledgement = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getPendingAcknowledgement->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var mysql="select * from \""+tbname+"\" WHERE "+kony.sync.mainTableChangeTypeColumn+ " is not null AND "+kony.sync.mainTableChangeTypeColumn+" <> -1 AND "+kony.sync.mainTableSyncVersionColumn+" <> "+currentversion+" AND "+kony.sync.mainTableChangeTypeColumn+" NOT LIKE '9%'"; 
 	kony.sync.single_select_execute(dbname, mysql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getPendingAcknowledgement success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.mediaEmployee.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getPendingAcknowledgement success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.kony.TeamViewService.TEAM_media.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
 /************************************************************************************
-* Retrieves instance(s) of mediaEmployee deferred for upload.
+* Retrieves instance(s) of TEAM_media deferred for upload.
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.getDeferredUpload = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getDeferredUpload->main function");
+com.kony.TeamViewService.TEAM_media.getDeferredUpload = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getDeferredUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null ){
 		wcs = kony.sync.validateWhereClause(wcs);
@@ -1326,84 +1279,84 @@ com.ess.EMPLOYEE.mediaEmployee.getDeferredUpload = function(wcs,successcallback,
 	
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getDeferredUpload->success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.mediaEmployee.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getDeferredUpload->success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.kony.TeamViewService.TEAM_media.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 };
 
 /************************************************************************************
-* Rollbacks all changes to mediaEmployee in local database to last synced state
+* Rollbacks all changes to TEAM_media in local database to last synced state
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChanges = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChanges->main function");
+com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChanges = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChanges->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChanges->main function");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChanges->main function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}		
 };
 
 /************************************************************************************
-* Rollbacks changes to mediaEmployee's record with given primary key in local 
+* Rollbacks changes to TEAM_media's record with given primary key in local 
 * database to last synced state
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.prototype.rollbackPendingLocalChangesByPK function");
+com.kony.TeamViewService.TEAM_media.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.prototype.rollbackPendingLocalChangesByPK function");
 	var pks = this.getPKTable();
-	com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
+	com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
 };
-com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChangesByPK->main function");
+com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChangesByPK->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var wcs = [];
-	if(com.ess.EMPLOYEE.mediaEmployee.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
+	if(com.kony.TeamViewService.TEAM_media.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
 		return;
 	}	
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, wcs, mySuccesscallback, pkNotFoundErrCallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChangesByPK->success callback function");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChangesByPK->success callback function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.ess.EMPLOYEE.mediaEmployee.rollbackPendingLocalChangesByPK->PK not found callback");
+		sync.log.error("Entering com.kony.TeamViewService.TEAM_media.rollbackPendingLocalChangesByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 };
 
 /************************************************************************************
-* isRecordDeferredForUpload returns true or false depending on whether mediaEmployee's record  
+* isRecordDeferredForUpload returns true or false depending on whether TEAM_media's record  
 * with given primary key got deferred in last sync
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.prototype.isRecordDeferredForUpload function");
+com.kony.TeamViewService.TEAM_media.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.prototype.isRecordDeferredForUpload function");
 	var pks = this.getPKTable();
-	com.ess.EMPLOYEE.mediaEmployee.isRecordDeferredForUpload(pks,successcallback,errorcallback);
+	com.kony.TeamViewService.TEAM_media.isRecordDeferredForUpload(pks,successcallback,errorcallback);
 };
-com.ess.EMPLOYEE.mediaEmployee.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.isRecordDeferredForUpload->main function");
+com.kony.TeamViewService.TEAM_media.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.isRecordDeferredForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.ess.EMPLOYEE.mediaEmployee.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.kony.TeamViewService.TEAM_media.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1423,7 +1376,7 @@ com.ess.EMPLOYEE.mediaEmployee.isRecordDeferredForUpload = function(pks, success
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.isRecordDeferredForUpload->successcallback function");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.isRecordDeferredForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1435,27 +1388,27 @@ com.ess.EMPLOYEE.mediaEmployee.isRecordDeferredForUpload = function(pks, success
 };
 
 /************************************************************************************
-* isRecordPendingForUpload returns true or false depending on whether mediaEmployee's record  
+* isRecordPendingForUpload returns true or false depending on whether TEAM_media's record  
 * with given primary key is pending for upload
 *************************************************************************************/
-com.ess.EMPLOYEE.mediaEmployee.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.ess.EMPLOYEE.mediaEmployee.prototype.isRecordPendingForUpload function");
+com.kony.TeamViewService.TEAM_media.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.kony.TeamViewService.TEAM_media.prototype.isRecordPendingForUpload function");
 	var pks = this.getPKTable();
-	com.ess.EMPLOYEE.mediaEmployee.isRecordPendingForUpload(pks,successcallback,errorcallback);
+	com.kony.TeamViewService.TEAM_media.isRecordPendingForUpload(pks,successcallback,errorcallback);
 };
-com.ess.EMPLOYEE.mediaEmployee.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.isRecordPendingForUpload->main function");
+com.kony.TeamViewService.TEAM_media.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.isRecordPendingForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.mediaEmployee.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_media.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.ess.EMPLOYEE.mediaEmployee.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.kony.TeamViewService.TEAM_media.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1475,7 +1428,7 @@ com.ess.EMPLOYEE.mediaEmployee.isRecordPendingForUpload = function(pks, successc
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.isRecordPendingForUpload->successcallback function");
+		sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.isRecordPendingForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1494,19 +1447,11 @@ com.ess.EMPLOYEE.mediaEmployee.isRecordPendingForUpload = function(pks, successc
 *************************************************************************************/
 
 //Deletes all the dependant tables in the relationship tables.Need to pass transaction handler as input
-com.ess.EMPLOYEE.mediaEmployee.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.removeCascade function");
-	var tbname = com.ess.EMPLOYEE.mediaEmployee.getTableName();
+com.kony.TeamViewService.TEAM_media.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.removeCascade function");
+	var tbname = com.kony.TeamViewService.TEAM_media.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	function removeCascadeChildren(){
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("Media_Id");
- 		targetAttributes.push("name");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, null, isLocal)){
-			return false;
-		}
 	}
 	if(isCascade){
 		if(removeCascadeChildren()===false){
@@ -1534,12 +1479,12 @@ com.ess.EMPLOYEE.mediaEmployee.removeCascade = function(tx, wcs, errorcallback, 
 };
 
 
-com.ess.EMPLOYEE.mediaEmployee.convertTableToObject = function(res){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.convertTableToObject function");
+com.kony.TeamViewService.TEAM_media.convertTableToObject = function(res){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.convertTableToObject function");
 	objMap = [];
 	if(res!==null){
 		for(var i in res){
-			var obj = new com.ess.EMPLOYEE.mediaEmployee();
+			var obj = new com.kony.TeamViewService.TEAM_media();
 			obj.classField = res[i].classField;
 			obj.classValue = res[i].classValue;
 			obj.description = res[i].description;
@@ -1556,8 +1501,8 @@ com.ess.EMPLOYEE.mediaEmployee.convertTableToObject = function(res){
 	return objMap;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.filterAttributes = function(valuestable, insert){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.filterAttributes function");
+com.kony.TeamViewService.TEAM_media.filterAttributes = function(valuestable, insert){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.filterAttributes function");
 	var attributeTable = {};
 	attributeTable.classField = "classField";
 	attributeTable.classValue = "classValue";
@@ -1577,12 +1522,12 @@ com.ess.EMPLOYEE.mediaEmployee.filterAttributes = function(valuestable, insert){
 	for (var k in valuestable){
 		var v = valuestable[k];
 		if(kony.sync.isNull(attributeTable[k])) { 
-			sync.log.warn("Ignoring the attribute " + k + " for the SyncObject mediaEmployee. "  + k + " not defined as an attribute in SyncConfiguration.");
+			sync.log.warn("Ignoring the attribute " + k + " for the SyncObject TEAM_media. "  + k + " not defined as an attribute in SyncConfiguration.");
 		}else if(!kony.sync.isNull(PKTable[k])) {
 			if(insert===false){
-				sync.log.warn("Ignoring the primary key " + k + " for the SyncObject mediaEmployee. Primary Key should not be the part of the attributes to be updated in the local device database.");
+				sync.log.warn("Ignoring the primary key " + k + " for the SyncObject TEAM_media. Primary Key should not be the part of the attributes to be updated in the local device database.");
 			}else if(PKTable[k].isAutoGen){
-				sync.log.warn("Ignoring the auto-generated primary key " + k + " for the SyncObject mediaEmployee. Auto-generated Primary Key should not be the part of the attributes to be inserted in the local device database.");
+				sync.log.warn("Ignoring the auto-generated primary key " + k + " for the SyncObject TEAM_media. Auto-generated Primary Key should not be the part of the attributes to be inserted in the local device database.");
 			}else{
 				newvaluestable[k] = v;
 			}
@@ -1594,18 +1539,18 @@ com.ess.EMPLOYEE.mediaEmployee.filterAttributes = function(valuestable, insert){
 	return newvaluestable;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.formOrderByClause = function(orderByMap){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.formOrderByClause function");
+com.kony.TeamViewService.TEAM_media.formOrderByClause = function(orderByMap){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.formOrderByClause function");
 	if(!kony.sync.isNull(orderByMap)){
 		var valuestable = kony.sync.convertOrderByMapToValuesTable(orderByMap);
-		//var filteredValuestable = com.ess.EMPLOYEE.mediaEmployee.filterAttributes(valuestable, true);
+		//var filteredValuestable = com.kony.TeamViewService.TEAM_media.filterAttributes(valuestable, true);
 		return kony.sync.convertToValuesTableOrderByMap(orderByMap,valuestable);
 	}
 	return null;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.prototype.getValuesTable = function(isInsert){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.prototype.getValuesTable function");
+com.kony.TeamViewService.TEAM_media.prototype.getValuesTable = function(isInsert){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.prototype.getValuesTable function");
 	var valuesTable = {};
 	valuesTable.classField = this.classField;
 	valuesTable.classValue = this.classValue;
@@ -1621,26 +1566,26 @@ com.ess.EMPLOYEE.mediaEmployee.prototype.getValuesTable = function(isInsert){
 	return valuesTable;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.prototype.getPKTable = function(){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.prototype.getPKTable function");
+com.kony.TeamViewService.TEAM_media.prototype.getPKTable = function(){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.prototype.getPKTable function");
 	var pkTable = {};
 	pkTable.name = {key:"name",value:this.name};
 	return pkTable;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.getPKTable = function(){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getPKTable function");
+com.kony.TeamViewService.TEAM_media.getPKTable = function(){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getPKTable function");
 	var pkTable = [];
 	pkTable.push("name");
 	return pkTable;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.pkCheck = function(pks,wcs,errorcallback,opName){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.pkCheck function");
+com.kony.TeamViewService.TEAM_media.pkCheck = function(pks,wcs,errorcallback,opName){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.pkCheck function");
 	var wc = [];
 	if(kony.sync.isNull(pks)){
-		sync.log.error("Primary Key name not specified in  " + opName + "  an item in mediaEmployee");
-		kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("name",opName,"mediaEmployee")));
+		sync.log.error("Primary Key name not specified in  " + opName + "  an item in TEAM_media");
+		kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("name",opName,"TEAM_media")));
 		return false;	
 	}
 	else if(kony.sync.isValidJSTable(pks)){
@@ -1654,8 +1599,8 @@ com.ess.EMPLOYEE.mediaEmployee.pkCheck = function(pks,wcs,errorcallback,opName){
 				wc.value = pks.name;
 			}
 		}else{
-			sync.log.error("Primary Key name not specified in  " + opName + "  an item in mediaEmployee");
-			kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("name",opName,"mediaEmployee")));
+			sync.log.error("Primary Key name not specified in  " + opName + "  an item in TEAM_media");
+			kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("name",opName,"TEAM_media")));
 			return false;
 		}
 	}
@@ -1667,61 +1612,61 @@ com.ess.EMPLOYEE.mediaEmployee.pkCheck = function(pks,wcs,errorcallback,opName){
 	return true;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.validateNull = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.validateNull function");
+com.kony.TeamViewService.TEAM_media.validateNull = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.validateNull function");
 	if(valuestable.description!==undefined){
 		if(kony.sync.isNull(valuestable.description) || kony.sync.isEmptyString(valuestable.description)){
-			sync.log.error("Mandatory attribute description is missing for the SyncObject mediaEmployee.");
-			errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "mediaEmployee", "description")));
+			sync.log.error("Mandatory attribute description is missing for the SyncObject TEAM_media.");
+			errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "TEAM_media", "description")));
 			return false;
 		}
 	}
 	if(valuestable.extension!==undefined){
 		if(kony.sync.isNull(valuestable.extension) || kony.sync.isEmptyString(valuestable.extension)){
-			sync.log.error("Mandatory attribute extension is missing for the SyncObject mediaEmployee.");
-			errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "mediaEmployee", "extension")));
+			sync.log.error("Mandatory attribute extension is missing for the SyncObject TEAM_media.");
+			errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "TEAM_media", "extension")));
 			return false;
 		}
 	}
 	if(valuestable.type!==undefined){
 		if(kony.sync.isNull(valuestable.type) || kony.sync.isEmptyString(valuestable.type)){
-			sync.log.error("Mandatory attribute type is missing for the SyncObject mediaEmployee.");
-			errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "mediaEmployee", "type")));
+			sync.log.error("Mandatory attribute type is missing for the SyncObject TEAM_media.");
+			errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "TEAM_media", "type")));
 			return false;
 		}
 	}
 	return true;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.validateNullInsert = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.validateNullInsert function");
+com.kony.TeamViewService.TEAM_media.validateNullInsert = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.validateNullInsert function");
 	if(kony.sync.isNull(valuestable.description) || kony.sync.isEmptyString(valuestable.description)){
-		sync.log.error("Mandatory attribute description is missing for the SyncObject mediaEmployee.");
-		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "mediaEmployee", "description")));
+		sync.log.error("Mandatory attribute description is missing for the SyncObject TEAM_media.");
+		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "TEAM_media", "description")));
 		return false;
 	}
 	if(kony.sync.isNull(valuestable.extension) || kony.sync.isEmptyString(valuestable.extension)){
-		sync.log.error("Mandatory attribute extension is missing for the SyncObject mediaEmployee.");
-		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "mediaEmployee", "extension")));
+		sync.log.error("Mandatory attribute extension is missing for the SyncObject TEAM_media.");
+		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "TEAM_media", "extension")));
 		return false;
 	}
 	if(kony.sync.isNull(valuestable.type) || kony.sync.isEmptyString(valuestable.type)){
-		sync.log.error("Mandatory attribute type is missing for the SyncObject mediaEmployee.");
-		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "mediaEmployee", "type")));
+		sync.log.error("Mandatory attribute type is missing for the SyncObject TEAM_media.");
+		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "TEAM_media", "type")));
 		return false;
 	}
 	return true;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.getRelationshipMap = function(relationshipMap,valuestable){
-	sync.log.trace("Entering com.ess.EMPLOYEE.mediaEmployee.getRelationshipMap function");
+com.kony.TeamViewService.TEAM_media.getRelationshipMap = function(relationshipMap,valuestable){
+	sync.log.trace("Entering com.kony.TeamViewService.TEAM_media.getRelationshipMap function");
 	var r1 = {};
 
 	return relationshipMap;
 };
 
 
-com.ess.EMPLOYEE.mediaEmployee.checkPKValueTables = function (valuetables)	{
+com.kony.TeamViewService.TEAM_media.checkPKValueTables = function (valuetables)	{
 	var checkPksNotNullFlag = true;
 	for(var i = 0; i < valuetables.length; i++)	{
 		if(kony.sync.isNull(valuetables[i])){
@@ -1732,11 +1677,11 @@ com.ess.EMPLOYEE.mediaEmployee.checkPKValueTables = function (valuetables)	{
 	return checkPksNotNullFlag;
 };
 
-com.ess.EMPLOYEE.mediaEmployee.getTableName = function(){
-	return "mediaEmployee";
+com.kony.TeamViewService.TEAM_media.getTableName = function(){
+	return "TEAM_media";
 };
 
 
 
 
-// **********************************End mediaEmployee's helper methods************************
+// **********************************End TEAM_media's helper methods************************

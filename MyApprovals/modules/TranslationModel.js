@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Tue Nov 07 12:14:06 UTC 2017Translation*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Tue Nov 28 13:07:33 UTC 2017Translation*******************
 // **********************************Start Translation's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -667,9 +667,10 @@ com.kony.Translation.Translation.remove = function(wcs, successcallback,errorcal
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function Translation_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:22 UTC 2017TEAM_VIEW*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:54 UTC 2017TEAM_VIEW*******************
 // **********************************Start TEAM_VIEW's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -37,6 +37,7 @@ com.kony.TeamViewService.TEAM_VIEW = function(){
 	this.TEAM_EMPNUMBER = null;
 	this.TEAM_POSITION = null;
 	this.TIMESTAMP = null;
+	this.USER_ID = null;
 	this.markForUpload = true;
 };
 
@@ -76,6 +77,12 @@ com.kony.TeamViewService.TEAM_VIEW.prototype = {
 	},
 	set TIMESTAMP(val){
 		this._TIMESTAMP = val;
+	},
+	get USER_ID(){
+		return this._USER_ID;
+	},
+	set USER_ID(val){
+		this._USER_ID = val;
 	},
 };
 
@@ -223,16 +230,19 @@ com.kony.TeamViewService.TEAM_VIEW.create = function(valuestable, successcallbac
 *		valuesArray[0].EXTRACT_TSTAMP = "EXTRACT_TSTAMP_0";
 *		valuesArray[0].TEAM_EMPNUMBER = "TEAM_EMPNUMBER_0";
 *		valuesArray[0].TEAM_POSITION = "TEAM_POSITION_0";
+*		valuesArray[0].USER_ID = "USER_ID_0";
 *		valuesArray[1] = {};
 *		valuesArray[1].EMPNUMBER = "EMPNUMBER_1";
 *		valuesArray[1].EXTRACT_TSTAMP = "EXTRACT_TSTAMP_1";
 *		valuesArray[1].TEAM_EMPNUMBER = "TEAM_EMPNUMBER_1";
 *		valuesArray[1].TEAM_POSITION = "TEAM_POSITION_1";
+*		valuesArray[1].USER_ID = "USER_ID_1";
 *		valuesArray[2] = {};
 *		valuesArray[2].EMPNUMBER = "EMPNUMBER_2";
 *		valuesArray[2].EXTRACT_TSTAMP = "EXTRACT_TSTAMP_2";
 *		valuesArray[2].TEAM_EMPNUMBER = "TEAM_EMPNUMBER_2";
 *		valuesArray[2].TEAM_POSITION = "TEAM_POSITION_2";
+*		valuesArray[2].USER_ID = "USER_ID_2";
 *		com.kony.TeamViewService.TEAM_VIEW.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
 com.kony.TeamViewService.TEAM_VIEW.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
@@ -448,18 +458,21 @@ com.kony.TeamViewService.TEAM_VIEW.update = function(wcs, valuestable, successca
 *		inputArray[0].changeSet = {};
 *		inputArray[0].changeSet.EXTRACT_TSTAMP = "EXTRACT_TSTAMP_updated0";
 *		inputArray[0].changeSet.TEAM_POSITION = "TEAM_POSITION_updated0";
+*		inputArray[0].changeSet.USER_ID = "USER_ID_updated0";
 *		inputArray[0].whereClause = "where EMPNUMBER = '0'";
 *		inputArray[0].whereClause = "where TEAM_EMPNUMBER = '0'";
 *		inputArray[1] = {};
 *		inputArray[1].changeSet = {};
 *		inputArray[1].changeSet.EXTRACT_TSTAMP = "EXTRACT_TSTAMP_updated1";
 *		inputArray[1].changeSet.TEAM_POSITION = "TEAM_POSITION_updated1";
+*		inputArray[1].changeSet.USER_ID = "USER_ID_updated1";
 *		inputArray[1].whereClause = "where EMPNUMBER = '1'";
 *		inputArray[1].whereClause = "where TEAM_EMPNUMBER = '1'";
 *		inputArray[2] = {};
 *		inputArray[2].changeSet = {};
 *		inputArray[2].changeSet.EXTRACT_TSTAMP = "EXTRACT_TSTAMP_updated2";
 *		inputArray[2].changeSet.TEAM_POSITION = "TEAM_POSITION_updated2";
+*		inputArray[2].changeSet.USER_ID = "USER_ID_updated2";
 *		inputArray[2].whereClause = "where EMPNUMBER = '2'";
 *		inputArray[2].whereClause = "where TEAM_EMPNUMBER = '2'";
 *		com.kony.TeamViewService.TEAM_VIEW.updateAll(inputArray,successcallback,errorcallback);
@@ -606,16 +619,6 @@ com.kony.TeamViewService.TEAM_VIEW.deleteByPK = function(pks, successcallback,er
 			return;
 		}
 		if (null !== record) {
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("EMPNUMBER");
- 		targetAttributes.push("EMPNUMBER");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.kony.TeamViewService.TEAM_VIEW_DISTRIBUTION.removeCascade,"TEAM_VIEW_DISTRIBUTION",false, errorcallback, markForUpload, record, false)){
-				isError = true;	
-				kony.sync.rollbackTransaction(tx);
-				return;
-			}
 		}else{
 			pkNotFound = true;
 		}
@@ -680,19 +683,10 @@ com.kony.TeamViewService.TEAM_VIEW.remove = function(wcs, successcallback,errorc
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function TEAM_VIEW_removeTransactioncallback(tx){
-		wcs = " " + wcs;
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("EMPNUMBER");
- 		targetAttributes.push("EMPNUMBER");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_VIEW_DISTRIBUTION.removeCascade,"TEAM_VIEW_DISTRIBUTION",false, errorcallback, markForUpload, null, false)){
-			isError = true;	
-			kony.sync.rollbackTransaction(tx);
-			return;
-		}
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
@@ -760,16 +754,6 @@ com.kony.TeamViewService.TEAM_VIEW.removeDeviceInstanceByPK = function(pks, succ
 			if(deletedRows === false){
 				isError = true;
 			}
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("EMPNUMBER");
- 		targetAttributes.push("EMPNUMBER");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.kony.TeamViewService.TEAM_VIEW_DISTRIBUTION.removeCascade,"TEAM_VIEW_DISTRIBUTION",false, errorcallback, null, record, true)){
-				isError = true;	
-				kony.sync.rollbackTransaction(tx);
-				return;
-			}
 		}else{
 			pkNotFound = true;
 		}
@@ -825,16 +809,6 @@ com.kony.TeamViewService.TEAM_VIEW.removeDeviceInstance = function(wcs, successc
 
 	function TEAM_VIEW_removeTransactioncallback(tx){
 		wcs = " " + wcs;
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("EMPNUMBER");
- 		targetAttributes.push("EMPNUMBER");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_VIEW_DISTRIBUTION.removeCascade,"TEAM_VIEW_DISTRIBUTION",false, errorcallback, null, null, true)){
-			isError = true;	
-			kony.sync.rollbackTransaction(tx);
-			return;
-		}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, true, null, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
@@ -1571,126 +1545,6 @@ com.kony.TeamViewService.TEAM_VIEW.getCountOfTEAM_LEAVE_REQUEST_REPORTWithTEAM_E
 	com.kony.TeamViewService.TEAM_VIEW.getAllDetailsByPK(pks, TEAM_VIEW_successcallback, errorcallback);
 };
 /************************************************************************************
-* Retrieves instances of TEAM_MEMBER_ORG_DATA related to TEAM_VIEW
-* with given $relationship.getSourceObjectAttribute() from local database.
-*************************************************************************************/
-
-					
-com.kony.TeamViewService.TEAM_VIEW.prototype.getTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER  = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_VIEW.prototype.getTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER function");
-	var pks = this.getPKTable();
-	com.kony.TeamViewService.TEAM_VIEW.getTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER(pks,successcallback,errorcallback);
-};
-com.kony.TeamViewService.TEAM_VIEW.getTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER = function(pks,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_VIEW.getTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER function");
-	if(!kony.sync.isSyncInitialized(errorcallback)){
-		return;
-	}		
-	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_VIEW.getTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER",  "relationship", errorcallback)){
-		return;
-	}	
-	function TEAM_VIEW_successcallback(res){
-		if(null!==res && res.length>0) {
-			var wcs = [];
-			var targetKey_0 = res[0].TEAM_EMPNUMBER;				
-			wcs.push({key:"EMPNUMBER", value:targetKey_0});		
-			
-			var tbname = "TEAM_MEMBER_ORG_DATA"
-			var query = kony.sync.qb_createQuery();
-			kony.sync.qb_select(query, null);
-			kony.sync.qb_from(query, tbname);
-			kony.sync.qb_where(query,wcs);
-		
-			var query_compile = kony.sync.qb_compile(query);
-			var sql = query_compile[0];
-			var params = query_compile[1];
-			var dbname = kony.sync.getDBName();
-		
-			function mySuccCallback(res){
-									kony.sync.verifyAndCallClosure(mySuccesscallback, com.kony.TeamViewService.TEAM_MEMBER_ORG_DATA.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
-							}
-		
-			kony.sync.single_select_execute(dbname, sql, params, mySuccCallback, errorcallback);
-		}else{
-			kony.sync.verifyAndCallClosure(successcallback);
-			return;
-		}	
-	}
-	
-	function mySuccesscallback(res){
-		var objMap = [];
-		if(res!==null){
-			for(var i in res){
-				var obj = new com.kony.TeamViewService.TEAM_MEMBER_ORG_DATA();
-				obj.BEGDA = res[i].BEGDA;
-				obj.DELETE_IND = res[i].DELETE_IND;
-				obj.EMPNUMBER = res[i].EMPNUMBER;
-				obj.ENDDA = res[i].ENDDA;
-				obj.EXTRACT_TSTAMP = res[i].EXTRACT_TSTAMP;
-				obj.MOFID = res[i].MOFID;
-				obj.MOSID = res[i].MOSID;
-				obj.SCHKZ = res[i].SCHKZ;
-				obj.TIMESTAMP = res[i].TIMESTAMP;
-				obj.ZEITY = res[i].ZEITY;
-				objMap[i] = obj;
-			}
-		}
-		kony.sync.verifyAndCallClosure(successcallback, objMap);
-	}
-	
-	com.kony.TeamViewService.TEAM_VIEW.getAllDetailsByPK(pks, TEAM_VIEW_successcallback, errorcallback);
-};
-
-/************************************************************************************
-* Retrieves number of instances of TEAM_MEMBER_ORG_DATA related to TEAM_VIEW
-* with given ${displayTargetAttribute} from local database.
-*************************************************************************************/
-com.kony.TeamViewService.TEAM_VIEW.prototype.getCountOfTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER  = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_VIEW.prototype.getCountOfTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER function");
-	var pks = this.getPKTable();
-	com.kony.TeamViewService.TEAM_VIEW.getCountOfTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER(pks,successcallback,errorcallback);
-};
-com.kony.TeamViewService.TEAM_VIEW.getCountOfTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER = function(pks,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.TeamViewService.TEAM_VIEW.getCountOfTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER function");
-	if(!kony.sync.isSyncInitialized(errorcallback)){
-		return;
-	}
-	if(!kony.sync.validateInput(arguments, "com.kony.TeamViewService.TEAM_VIEW.getCountOfTEAM_MEMBER_ORG_DATAWithTEAM_EMPNUMBER",  "relationship", errorcallback)){
-		return;
-	}
-	function TEAM_VIEW_successcallback(res){
-		if(null!==res && res.length>0) {
-			var wcs = [];
-				var targetAttributes = [];
-													var targetKey_0 = res[0].TEAM_EMPNUMBER;
-					targetAttributes.push("EMPNUMBER");
-					if(kony.type(targetKey_0)==="string") {
-						wcs.push({"EMPNUMBER":"'"+targetKey_0+"'"});
-					}else{
-						wcs.push({"EMPNUMBER":targetKey_0});
-					} 
-														
-			var wClause = "where ";
-   			var i;
-        	var len = wcs.length;
-        	for (i = 0; i < len; i++) {
-        		wClauseMap = wcs[i];
-        		wClause += targetAttributes[i] + " = " + wClauseMap[targetAttributes[i]]
-        		if(i != len-1)
-        		{
-            		 wClause += " AND "
-        		}
-    		}
-		   com.kony.TeamViewService.TEAM_MEMBER_ORG_DATA.getCount(wClause, successcallback,errorcallback);
-		}else{
-			kony.sync.verifyAndCallClosure(successcallback,{"count":0});
-			return;
-		}
-	}
-	
-	com.kony.TeamViewService.TEAM_VIEW.getAllDetailsByPK(pks, TEAM_VIEW_successcallback, errorcallback);
-};
-/************************************************************************************
 * Retrieves instances of TEAM_PERSONAL_DATA related to TEAM_VIEW
 * with given $relationship.getSourceObjectAttribute() from local database.
 *************************************************************************************/
@@ -1838,14 +1692,6 @@ com.kony.TeamViewService.TEAM_VIEW.removeCascade = function(tx, wcs, errorcallba
 	var tbname = com.kony.TeamViewService.TEAM_VIEW.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	function removeCascadeChildren(){
-	var srcAttributes = [];
-	var targetAttributes = [];
-	 	srcAttributes.push("EMPNUMBER");
- 		targetAttributes.push("EMPNUMBER");
-		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_VIEW_DISTRIBUTION.removeCascade,"TEAM_VIEW_DISTRIBUTION",false, errorcallback, markForUpload, null, isLocal)){
-			return false;
-		}
 	}
 	if(isCascade){
 		if(removeCascadeChildren()===false){
@@ -1885,6 +1731,7 @@ com.kony.TeamViewService.TEAM_VIEW.convertTableToObject = function(res){
 			obj.TEAM_EMPNUMBER = res[i].TEAM_EMPNUMBER;
 			obj.TEAM_POSITION = res[i].TEAM_POSITION;
 			obj.TIMESTAMP = res[i].TIMESTAMP;
+			obj.USER_ID = res[i].USER_ID;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
 		}
@@ -1899,6 +1746,7 @@ com.kony.TeamViewService.TEAM_VIEW.filterAttributes = function(valuestable, inse
 	attributeTable.EXTRACT_TSTAMP = "EXTRACT_TSTAMP";
 	attributeTable.TEAM_EMPNUMBER = "TEAM_EMPNUMBER";
 	attributeTable.TEAM_POSITION = "TEAM_POSITION";
+	attributeTable.USER_ID = "USER_ID";
 
 	var PKTable = {};
 	PKTable.EMPNUMBER = {}
@@ -1949,6 +1797,7 @@ com.kony.TeamViewService.TEAM_VIEW.prototype.getValuesTable = function(isInsert)
 		valuesTable.TEAM_EMPNUMBER = this.TEAM_EMPNUMBER;
 	}
 	valuesTable.TEAM_POSITION = this.TEAM_POSITION;
+	valuesTable.USER_ID = this.USER_ID;
 	return valuesTable;
 };
 
@@ -2044,23 +1893,6 @@ com.kony.TeamViewService.TEAM_VIEW.getRelationshipMap = function(relationshipMap
 			relationshipMap.TEAM_LEAVE_REQUEST_REPORT = [];
 		}
 		relationshipMap.TEAM_LEAVE_REQUEST_REPORT.push(r1);
-	}
-		
-	r1={}
-	r1.sourceAttribute = [];
-	r1.foreignKeyAttribute = [];	
-	r1.targetAttributeValue = [];
-	
-	if(!kony.sync.isNullOrUndefined(valuestable.TEAM_EMPNUMBER)){
-		r1.sourceAttribute.push("EMPNUMBER") ;
-		r1.foreignKeyAttribute.push("TEAM_EMPNUMBER") ;
-		r1.targetAttributeValue.push("'" + valuestable.TEAM_EMPNUMBER+ "'");
-	}
-	if(r1.targetAttributeValue.length > 0){
-		if(relationshipMap.TEAM_MEMBER_ORG_DATA===undefined){
-			relationshipMap.TEAM_MEMBER_ORG_DATA = [];
-		}
-		relationshipMap.TEAM_MEMBER_ORG_DATA.push(r1);
 	}
 		
 	r1={}

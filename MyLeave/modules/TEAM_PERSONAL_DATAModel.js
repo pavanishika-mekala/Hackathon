@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:22 UTC 2017TEAM_PERSONAL_DATA*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:54 UTC 2017TEAM_PERSONAL_DATA*******************
 // **********************************Start TEAM_PERSONAL_DATA's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -892,19 +892,27 @@ com.kony.TeamViewService.TEAM_PERSONAL_DATA.remove = function(wcs, successcallba
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function TEAM_PERSONAL_DATA_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 	var srcAttributes = [];
 	var targetAttributes = [];
 	 	srcAttributes.push("TEAM_EMPNUMBER");
  		targetAttributes.push("EMPNUMBER");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_VIEW.removeCascade,"TEAM_VIEW",false, errorcallback, markForUpload, null, false)){
+			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+			if (record === false) {
+				isError = true;
+				return;
+			}
+	if(record !== null){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_VIEW.removeCascade,"TEAM_VIEW",false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

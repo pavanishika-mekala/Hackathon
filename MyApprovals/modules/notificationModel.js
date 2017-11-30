@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Fri Nov 03 18:11:57 UTC 2017notification*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Tue Nov 28 13:07:34 UTC 2017notification*******************
 // **********************************Start notification's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -698,18 +698,26 @@ com.kony.MYAPPROVALS.notification.remove = function(wcs, successcallback,errorca
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function notification_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("notification_id") ;
 			targetAttributes.push("notification_id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.notification_data.removeCascade, "notification_data", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.notification_data.removeCascade, "notification_data", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

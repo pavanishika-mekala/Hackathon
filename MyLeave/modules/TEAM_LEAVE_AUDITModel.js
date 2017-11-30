@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Sun Nov 05 01:01:22 UTC 2017TEAM_LEAVE_AUDIT*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Wed Nov 29 10:59:54 UTC 2017TEAM_LEAVE_AUDIT*******************
 // **********************************Start TEAM_LEAVE_AUDIT's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -649,6 +649,16 @@ com.kony.TeamViewService.TEAM_LEAVE_AUDIT.deleteByPK = function(pks, successcall
 			return;
 		}
 		if (null !== record) {
+	var srcAttributes = [];
+	var targetAttributes = [];
+	 	srcAttributes.push("LEAVE_ENTRY_ID");
+ 		targetAttributes.push("ENTRY_ID");
+		//srcAttributes and targetAttributes are interchanged while calling the removecascade
+			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeCascade,"TEAM_LEAVE_REQUEST_ENTRY",false, errorcallback, markForUpload, record, false)){
+				isError = true;	
+				kony.sync.rollbackTransaction(tx);
+				return;
+			}
 		}else{
 			pkNotFound = true;
 		}
@@ -713,9 +723,27 @@ com.kony.TeamViewService.TEAM_LEAVE_AUDIT.remove = function(wcs, successcallback
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function TEAM_LEAVE_AUDIT_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
+	var srcAttributes = [];
+	var targetAttributes = [];
+	 	srcAttributes.push("LEAVE_ENTRY_ID");
+ 		targetAttributes.push("ENTRY_ID");
+		//srcAttributes and targetAttributes are interchanged while calling the removecascade
+			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+			if (record === false) {
+				isError = true;
+				return;
+			}
+	if(record !== null){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeCascade,"TEAM_LEAVE_REQUEST_ENTRY",false, errorcallback, markForUpload, record, false)){
+			isError = true;	
+			kony.sync.rollbackTransaction(tx);
+			return;
+		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
@@ -783,6 +811,16 @@ com.kony.TeamViewService.TEAM_LEAVE_AUDIT.removeDeviceInstanceByPK = function(pk
 			if(deletedRows === false){
 				isError = true;
 			}
+	var srcAttributes = [];
+	var targetAttributes = [];
+	 	srcAttributes.push("LEAVE_ENTRY_ID");
+ 		targetAttributes.push("ENTRY_ID");
+		//srcAttributes and targetAttributes are interchanged while calling the removecascade
+			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeCascade,"TEAM_LEAVE_REQUEST_ENTRY",false, errorcallback, null, record, true)){
+				isError = true;	
+				kony.sync.rollbackTransaction(tx);
+				return;
+			}
 		}else{
 			pkNotFound = true;
 		}
@@ -838,6 +876,16 @@ com.kony.TeamViewService.TEAM_LEAVE_AUDIT.removeDeviceInstance = function(wcs, s
 
 	function TEAM_LEAVE_AUDIT_removeTransactioncallback(tx){
 		wcs = " " + wcs;
+	var srcAttributes = [];
+	var targetAttributes = [];
+	 	srcAttributes.push("LEAVE_ENTRY_ID");
+ 		targetAttributes.push("ENTRY_ID");
+		//srcAttributes and targetAttributes are interchanged while calling the removecascade
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeCascade,"TEAM_LEAVE_REQUEST_ENTRY",false, errorcallback, null, null, true)){
+			isError = true;	
+			kony.sync.rollbackTransaction(tx);
+			return;
+		}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, true, null, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
@@ -1451,6 +1499,14 @@ com.kony.TeamViewService.TEAM_LEAVE_AUDIT.removeCascade = function(tx, wcs, erro
 	var tbname = com.kony.TeamViewService.TEAM_LEAVE_AUDIT.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	function removeCascadeChildren(){
+	var srcAttributes = [];
+	var targetAttributes = [];
+	 	srcAttributes.push("LEAVE_ENTRY_ID");
+ 		targetAttributes.push("ENTRY_ID");
+		//srcAttributes and targetAttributes are interchanged while calling the removecascade
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.TeamViewService.TEAM_LEAVE_REQUEST_ENTRY.removeCascade,"TEAM_LEAVE_REQUEST_ENTRY",false, errorcallback, markForUpload, null, isLocal)){
+			return false;
+		}
 	}
 	if(isCascade){
 		if(removeCascadeChildren()===false){
@@ -1670,28 +1726,6 @@ com.kony.TeamViewService.TEAM_LEAVE_AUDIT.validateNullInsert = function (valuest
 com.kony.TeamViewService.TEAM_LEAVE_AUDIT.getRelationshipMap = function(relationshipMap,valuestable){
 	sync.log.trace("Entering com.kony.TeamViewService.TEAM_LEAVE_AUDIT.getRelationshipMap function");
 	var r1 = {};
-	r1 = {};
-	r1.sourceAttribute = [];
-	r1.foreignKeyAttribute = [];
-	r1.targetAttributeValue  = [];
-		
-	if (!kony.sync.isNullOrUndefined(valuestable.EMPNUMBER)){
-		r1.sourceAttribute.push("EMPNUMBER");
-		r1.foreignKeyAttribute.push("EMPNUMBER");
-		r1.targetAttributeValue.push("'" + valuestable.EMPNUMBER + "'");
-	}
-	if (!kony.sync.isNullOrUndefined(valuestable.ENTRY_ID)){
-		r1.sourceAttribute.push("LEAVE_ENTRY_ID");
-		r1.foreignKeyAttribute.push("ENTRY_ID");
-		r1.targetAttributeValue.push("'" + valuestable.ENTRY_ID + "'");
-	}
-	if(r1.targetAttributeValue.length > 0){
-		if(relationshipMap.TEAM_LEAVE_REQUEST_ENTRY===undefined){
-			relationshipMap.TEAM_LEAVE_REQUEST_ENTRY = [];
-		}
-		relationshipMap.TEAM_LEAVE_REQUEST_ENTRY.push(r1);
-	}
-	
 
 	return relationshipMap;
 };

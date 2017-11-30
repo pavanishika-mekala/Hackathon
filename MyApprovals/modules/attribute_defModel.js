@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Fri Nov 03 18:11:56 UTC 2017attribute_def*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Tue Nov 28 13:07:34 UTC 2017attribute_def*******************
 // **********************************Start attribute_def's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -708,28 +708,43 @@ com.kony.MYAPPROVALS.attribute_def.remove = function(wcs, successcallback,errorc
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function attribute_def_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("attribute_section_id") ;
 			targetAttributes.push("id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.attribute_section.removeCascade, "attribute_section", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.MYAPPROVALS.attribute_section.removeCascade, "attribute_section", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 	var srcAttributes = [];
 	var targetAttributes = [];
 	 	srcAttributes.push("attribute_def_id");
  		targetAttributes.push("id");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.MYAPPROVALS.attribute.removeCascade,"attribute",false, errorcallback, markForUpload, null, false)){
+			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+			if (record === false) {
+				isError = true;
+				return;
+			}
+	if(record !== null){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.MYAPPROVALS.attribute.removeCascade,"attribute",false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
