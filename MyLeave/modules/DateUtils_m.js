@@ -161,7 +161,7 @@ Date.prototype.differenceInDays = function(toDate) {
     }
   	var fromDate = this.roundOfLocaleDate();
   	var diff = (Date.parse(fromDate) - Date.parse(toDate)) / 86400000;
-  	diff = parseInt(diff);
+  	diff = Math.abs(parseInt(diff));
   	return diff === 1 ? diff + " Day" : diff + " Days";
 };
 

@@ -76,10 +76,16 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
               } else {
                 dataItem.timePeriod = convertedStartDate + " - " + convertedEndDate;
                 dataItem.timeDuration = startDate.differenceInDays(endDate);
-              }  
+              } 
+              dataItem["flxNotificationItem"] = {
+                        height: "20.5%"
+                    };
             } else {
               dataItem.timePeriod = "";
               dataItem.timeDuration = "";
+              dataItem["flxNotificationItem"] = {
+                        height: "12.5%"
+                    };
             }
             //Icon of Notification
             switch (res[0].leaveStatus) {
