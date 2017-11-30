@@ -98,7 +98,11 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
                 startDate = new Date(startDate.substring(0, 4), Number(startDate.substring(4, 6)) - 1, startDate.substring(6, 8));
                 endDate = new Date(endDate.substring(0, 4), Number(endDate.substring(4, 6)) - 1, endDate.substring(6, 8));
                 var days = String(((Date.parse(endDate) - Date.parse(startDate)) / 86400000) + 1).split(".")[0];
-                return days + " " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Days.text");
+              	if(days == 1 || days == "1"){
+                  return days + " " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text");
+                }
+                else
+                  return days + " " + kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Days.text");
             }
             return "";
         }
