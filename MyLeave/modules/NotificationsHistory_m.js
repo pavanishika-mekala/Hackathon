@@ -71,18 +71,18 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
               var convertedEndDate = endDate.getDate() + " " + Date.getMonthNameShort(kony.i18n.getCurrentLocale(),endDate.getMonth());
               //Check if it's one day leave
               if (convertedStartDate === convertedEndDate) {
-                dataItem.timePeriod = convertedStartDate + "," + startDate.getFullYear();
-                dataItem.timeDuration = "1 Day"
+                dataItem.timePeriod = {text:convertedStartDate + "," + startDate.getFullYear(),isVisible:true};
+                dataItem.timeDuration = {text:"1 Day",isVisible:true};
               } else {
-                dataItem.timePeriod = convertedStartDate + " - " + convertedEndDate;
-                dataItem.timeDuration = startDate.differenceInDays(endDate);
+                dataItem.timePeriod = {text:convertedStartDate + " - " + convertedEndDate,isVisible:true};
+                dataItem.timeDuration = {text:startDate.differenceInDays(endDate),isVisible:true};
               } 
               dataItem["flxNotificationItem"] = {
                         height: "20.5%"
                     };
             } else {
-              dataItem.timePeriod = "";
-              dataItem.timeDuration = "";
+              dataItem.timePeriod = {text:"",isVisible:false};
+              dataItem.timeDuration = {text:"",isVisible:false};
               dataItem["flxNotificationItem"] = {
                         height: "12.5%"
                     };
