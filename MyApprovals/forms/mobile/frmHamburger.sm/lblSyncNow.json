@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "30%"
+        "value": "31%"
     },
     "_margin_": [
         1,
@@ -54,7 +54,7 @@
             "wrapping": 2
         }
     },
-    "isvisible": false,
+    "isvisible": true,
     "kuid": "563d6f1d8d204872b0601c9cafe921f9",
     "name": "kony.ui.Label",
     "parent": "flxSyncNow",
