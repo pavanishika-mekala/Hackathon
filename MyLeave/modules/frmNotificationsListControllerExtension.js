@@ -87,8 +87,8 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
           "title": item.title,
           "description": item.description,
           "notificationTime": notificationTime,
-          "timePeriod": "",
-          "timeDuration": "",
+          "timePeriod": {text:"",isVisible:false},
+          "timeDuration": {text:"",isVisible:false},
           "notificationIcon": "mail.png",
           "flxNotificationItem":{
                         height: "12.5%"
