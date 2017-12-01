@@ -6,6 +6,10 @@
         "type": "string",
         "value": "60%"
     },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
     "_margin_": [
         1,
         1,
@@ -15,12 +19,12 @@
     "_padding_": [
         0,
         0,
-        0,
+        5,
         0
     ],
     "_right_": {
         "type": "string",
-        "value": "5%"
+        "value": "0%"
     },
     "_skin_": "s01657e350a94d8f8a24155a349849f2",
     "_text_": "Cancelled",
@@ -61,6 +65,7 @@
     "isvisible": true,
     "kuid": "cff27e3ce90c411e8577bfb9a1ea6e8d",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxType",
     "pf": "frmFullDetails",
     "tooltip": "",
