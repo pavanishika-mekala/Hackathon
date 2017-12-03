@@ -36,7 +36,8 @@
         "value": "50%"
     },
     "children": [
-        "imgEmp"
+        "imgEmp",
+        "lblShortName"
     ],
     "clipbounds": true,
     "containerId": true,
