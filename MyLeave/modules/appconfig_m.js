@@ -12,14 +12,14 @@ kony.apps.coe.ess.appconfig = {
     appkey: "94818e005bfcf11ea589d81f86d714fe",//"9adaf0ec6bcbbcf37cc5e72439392f44",
     appsecret: "e194b44975e97b29b220bbc4128acbb8",//"bcc067a1505938489f5d8f30250c2e63",
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
-	identityServiceSAP:"ESSIDENTITY",
+	identityServiceSAP:"DevNextTimesheetSAPIdentity",//"UatNextTimesheetSAPIdentity",
     listOfApps:["myProfile", "eTimeSheetMyTime", "myPay", "myExpenses", "eTimeSheetMyApprovals"],
     appversion : "v0.0.13",
   	isDemo : false,
     isSingleQrCode: true,
-  	identityServiceOkta:"DevNextTimesheetOktaLogin",
-    identityServiceOktaRefresh:"DevNextTimesheetOktaRfrsh",
-    axwayAuthService:"DevNextTimesheetOktaUPAxway",
+  	identityServiceOkta:"DevNextTimesheetOktaLogin",//"UatNextTimesheetOktaLogin",
+    identityServiceOktaRefresh:"DevNextTimesheetOktaRfrsh",//"UatNextTimesheetOktaRfrsh",
+    axwayAuthService:"DevNextTimesheetOktaUPAxway",//"UatNextTimesheetOktaUPAxway",
     axwayEnvironment:"etimesheet",
     useOkta: true,
     workingHours:8,
@@ -31,7 +31,7 @@ kony.apps.coe.ess.appconfig = {
 	5.Besides get there is a url and select upto v1 and copy it to runtimeurl.
    	*/
     isRecurringSupported:true,
-   	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",
+   	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",//"https://engie-uat-next.konycloud.com:443/services/data/v1",
 	ACFAppID :"MYLEAVE",
     isShowDeepLinkingAppBeforeInstall:false,
     /* variable is used to enable or disable the Team Leave.Currently frmLeaveHome using this Variable.

@@ -18,9 +18,9 @@ kony.apps.coe.ess.appconfig = {
     appkey: "9097ff6db84d7bb312bc78eebbcdf32c",//"1317e29751d45254c0b8e3e2a61ece51",
     appsecret: "e45f525b0662a32c9bc1ae7707a3c738",//"26e92e18e5528cad08dd6a65b197df2d",
     serviceurl: "https://100004737.auth.konycloud.com/appconfig",
-		identityServiceOkta:"DevNextTimesheetOktaLogin",
-		identityServiceOktaRefresh:"DevNextTimesheetOktaRfrsh",
-    axwayAuthService:"DevNextTimesheetOktaUPAxway",
+		identityServiceOkta:"DevNextTimesheetOktaLogin",//"UatNextTimesheetOktaLogin",
+		identityServiceOktaRefresh:"DevNextTimesheetOktaRfrsh",//"UatNextTimesheetOktaRfrsh",
+    axwayAuthService:"DevNextTimesheetOktaUPAxway",//"UatNextTimesheetOktaUPAxway",
 		axwayEnvironment:"etimesheet",
     useOkta: true,
     isDemo : false,
@@ -32,10 +32,10 @@ kony.apps.coe.ess.appconfig = {
 	4.It will navigate to request and response page.
 	5.Besides get there is a url and select upto v1 and copy it to runtimeurl.
    	*/
-   	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",
+   	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",//"https://engie-uat-next.konycloud.com:443/services/data/v1",
 
 	ACFAppID :"MYAPPROVALS",
-		identityServiceSAP:"ESSIDENTITY",
+		identityServiceSAP:"DevNextTimesheetSAPIdentity",//"UatNextTimesheetSAPIdentity",
     isShowDeepLinkingAppBeforeInstall:false,
     isShowDelegation:true,
  	appversion : "v0.0.13",
