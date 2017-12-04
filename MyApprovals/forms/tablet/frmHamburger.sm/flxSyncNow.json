@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "8%"
     },
     "_left_": {
         "type": "string",
@@ -26,11 +26,11 @@
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "1%"
     },
     "_width_": {
         "type": "string",
-        "value": "20%"
+        "value": "50%"
     },
     "allboxes": [],
     "autogrowmode": 0,
@@ -48,7 +48,7 @@
     "kuid": "g56a28bcc69942258f0f304532097187",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxOptions",
+    "parent": "flxMenuHamburger",
     "pf": "frmHamburger",
     "snapgridsize": 10,
     "snaptogrid": true,
