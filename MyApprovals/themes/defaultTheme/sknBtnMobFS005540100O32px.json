@@ -58,7 +58,7 @@
   "fontSizeInPx": false,
   "font_color": "005a78ff",
   "font_name": "Helvetica",
-  "font_size": 110,
+  "font_size": 105,
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
@@ -77,8 +77,8 @@
     }
   },
   "iphone": {
-    "font_size": 110,
-    "isForked": false
+    "font_size": 105,
+    "isForked": true
   },
   "isDefaultSkin": false,
   "kiosk": {
