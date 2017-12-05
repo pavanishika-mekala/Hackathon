@@ -2120,6 +2120,8 @@ kony.apps.coe.ess.myLeave.applyLeave.showTimePicker = function(selectionEvent) {
   var minStart = y.slice(3,5);
   var hrEnd = x.slice(0,2);
   var minEnd = x.slice(3,5);
+  frmApplyLeave.pickTime.selectedKeys=["h"+parseInt(String(y).substring(0,2)),"m"+parseInt(String(y).substring(3,5))];
+  frmApplyLeave.pickTime2.selectedKeys=["h"+parseInt(String(x).substring(0,2)),"m"+parseInt(String(x).substring(3,5))];
   if(selectionEvent === "Start"){
     frmApplyLeave.pickTime.isVisible = true;
     frmApplyLeave.pickTime2.isVisible = false;
@@ -2135,6 +2137,15 @@ kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
   if(frmApplyLeave.pickTime.isVisible === true){
     var selection = frmApplyLeave.pickTime.selectedKeyValues;
     frmApplyLeave.btnFrom.text = selection[0][1]+":"+selection[1][1];
+    if(frmApplyLeave.btnHours.skin === "sknBtnBg1C7393S28pxRoman"){
+      var temp=parseInt(selection[0][1])+2;
+    }else{
+    var temp=parseInt(selection[0][1])+4;
+    }
+    if(temp >23){
+      temp=temp-23;
+    }
+    frmApplyLeave.btnTo.text =("0"+temp).slice(-2)+":"+selection[1][1];
   }else if(frmApplyLeave.pickTime2.isVisible === true){
     var selection = frmApplyLeave.pickTime2.selectedKeyValues;
     frmApplyLeave.btnTo.text = selection[0][1]+":"+selection[1][1];
