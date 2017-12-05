@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "76%"
+        "value": "40%"
     },
     "_left_": {
         "type": "string",
-        "value": "51%"
+        "value": "63.72%"
     },
     "_margin_": [
         0,
@@ -17,25 +17,17 @@
         0
     ],
     "_padding_": [
-        5,
+        3,
         0,
         0,
         0
     ],
     "_placeholder_": "",
-    "_right_": {
-        "type": "string",
-        "value": "3.40%"
-    },
-    "_skin_": "s7fb653bdde240c7961e0052de6d8017",
+    "_skin_": "s1759f8fc1ee4ea6a339591271fd190f",
     "_text_": "",
-    "_top_": {
-        "type": "string",
-        "value": "12%"
-    },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "23.43%"
     },
     "autocapitalize": "none",
     "autocomplete": false,
@@ -44,24 +36,25 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "43%"
+        "value": "50%"
     },
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,
-    "contentalignment": 4,
-    "id": "tbxSearch",
-    "ide_onTextChange": "AS_TextField_idb5408135504cc9a3946faf2139acf7",
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "id": "tbxManualEntryhours",
+    "ide_onTextChange": "AS_TextField_h2f4ecededb0471f8499021733560804",
     "info": null,
     "isvisible": true,
     "keyboardtype": "A",
-    "kuid": "eba61e4f9b1f47afbd16353b9257ba35",
+    "kuid": "e68e9b9a2b994e99af773aebfb511889",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "paddinginpixel": false,
-    "parent": "flxDayData",
+    "parent": "flxManualTimeSelection",
     "pf": "frmTimeSheetCreateTab",
-    "placeholderi18n": "i18n.ess.frmTimeSheetCreate.favoriteTask",
+    "placeholderi18n": "18n.ess.enterHours",
+    "placeholderskin": "s1f9f0a58ad149bbaa7625e4757139ca",
     "securetextentry": false,
     "textinputmode": "A",
     "viewtype": "default",

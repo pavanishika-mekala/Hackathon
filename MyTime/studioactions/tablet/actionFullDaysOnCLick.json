@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__c5b1fdca52e64487b6e1a37572e1f4dd",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "kony.apps.coe.Reusable.TimelineCreationTab.storeSlider();\nvar sliderObj=(new kony.apps.coe.Reusable.TimelineCreationTab());\nkony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelectionTab.onClickOfFullDayTab(sliderObj.fillFullDayTab);\nkony.apps.coe.ess.globalVariables.fullDayButtonisSelected=true;",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.storeSliderTab();\nvar sliderObj=(new kony.apps.coe.Reusable.TimelineCreationTab());\nkony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelectionTab.onClickOfFullDayTab(sliderObj.fillFullDayTab);\nkony.apps.coe.ess.globalVariables.fullDayButtonisSelected=true;",
             "parentId": null,
             "callbackType": null
         }]

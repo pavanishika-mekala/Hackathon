@@ -2,6 +2,7 @@
     "AS_FlexContainer_d2fd4ed45b604c219409019195c57b7d": {
         "id": "AS_FlexContainer_d2fd4ed45b604c219409019195c57b7d",
         "type": "ACTION_SEQUENCE",
+        "name": "actn_OnClick_flxVacation_frmTimesheetcreateTab",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"

@@ -47,7 +47,7 @@ kony.sdk.mvvm.frmTimeSheetCreateTabControllerExtension = Class(kony.sdk.mvvm.Bas
             kony.sdk.mvvm.log.error("Error in fetchData of controllerExtension");
             var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_FETCH_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_FETCH_IN_CONTROLLER_EXTENSION, err);
             kony.sdk.mvvm.log.error(exception.toString());
-            alert(exception.toString());
+            //alert(exception.toString());
         }
 
         function success(response) {
@@ -77,6 +77,7 @@ kony.sdk.mvvm.frmTimeSheetCreateTabControllerExtension = Class(kony.sdk.mvvm.Bas
 				//             this.getController().bindData(processedData);
 				//             return processedData;
 				//We do not need to process data here.
+         // alert("processData:"+JSON.stringify(data));
           kony.print("processData:"+JSON.stringify(data));
 		
           this.getController().bindData(data);
@@ -86,7 +87,7 @@ kony.sdk.mvvm.frmTimeSheetCreateTabControllerExtension = Class(kony.sdk.mvvm.Bas
             kony.sdk.mvvm.log.error("Error in processData of controllerExtension");
             var exception = this.getController().getApplicationContext().getFactorySharedInstance().createExceptionObject(kony.sdk.mvvm.ExceptionCode.CD_ERROR_PROCESSDATA_IN_CONTROLLER_EXTENSION, kony.sdk.mvvm.ExceptionCode.MSG_ERROR_PROCESSDATA_IN_CONTROLLER_EXTENSION, err);
             kony.sdk.mvvm.log.error(exception.toString());
-            alert(exception.toString());
+           // alert(exception.toString());
         };
     },
     /** 

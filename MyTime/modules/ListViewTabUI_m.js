@@ -464,6 +464,7 @@ kony.apps.coe.ess.myTime.ListViewTabUI.prototype.mappingWeeklyData = function (d
 
 kony.apps.coe.ess.myTime.ListViewTabUI.prototype.getCurrentTimesheetDataTab = function(dateObj) {
   var startdate;
+  var dd;
   var sd;
   var ed;
   var data;

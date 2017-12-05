@@ -290,7 +290,7 @@ kony.apps.coe.ess.Hamburger.prototype.showHamburger = function() {
     kony.application.getCurrentForm().flxHamburger.setEnabled(true);
     kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(true);
     kony.print("-- Hamburger open complete");
-}
+};
 /**
  * @class          Hamburger
  * @type           Prototype

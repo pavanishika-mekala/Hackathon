@@ -1,0 +1,17 @@
+{
+    "AS_Button_jc5db70d7d06432895945a0ba3577f7f": {
+        "id": "AS_Button_jc5db70d7d06432895945a0ba3577f7f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_f679badf06f2475bb8e8c229cd224f54",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var sliderObj=(new kony.apps.coe.Reusable.TimelineCreation());\nkony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelection.onClickOfFullDay(sliderObj.fillFullDay);\nkony.apps.coe.ess.globalVariables.fullDayButtonisSelected=true;\nfrmTimeSheetCreate.tbxManualEntryhours.text = \"8\";",
+            "callbackType": null
+        }]
+    }
+}

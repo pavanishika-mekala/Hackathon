@@ -50,13 +50,9 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
         },
       
         reset : function() {
-            //frmTimeSheetCreate.segTimeType.selectedRowIndex = null;
             frmTimeSheetCreateTab.segProjectTaskSelection.selectedRowIndex = null;
             frmTimeSheetCreateTab.segTimeType.selectedRowIndex = null;
-          //#ifndef  windows8
            frmTimeSheetCreateTab.segLeaveSelection.selectedRowIndex = null;
-          //#endif
-            //frmTimeSheetCreate.segLeaveSelection.selectedRowIndex = null;
             kony.apps.coe.Reusable.TimelineCreationTab.updateTaskNameTab("");
             this.data = {
                 Project_Task_Id : null,

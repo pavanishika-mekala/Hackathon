@@ -804,7 +804,7 @@ kony.apps.coe.Reusable.TimelineCreationTab.prototype.fillFullDayTab = function (
 kony.apps.coe.Reusable.TimelineCreationTab.onClickOfHoursTab=function()
 {
     var frmName=kony.apps.coe.Reusable.TimelineCreationTab.parentWidgetName;
-    kony.apps.coe.Reusable.TimelineCreationTab.revertSlider();
+    kony.apps.coe.ess.myTime.TimesheetCreate.revertSliderTab();
 
 };
 kony.apps.coe.Reusable.TimelineCreationTab.updateTaskName=function(task_name)
@@ -819,7 +819,7 @@ kony.apps.coe.Reusable.TimelineCreationTab.updateTaskName=function(task_name)
   }
 };
 
-kony.apps.coe.Reusable.TimelineCreationTab.updateTaskNameTab=function(task_name)
+kony.apps.coe.Reusable.TimelineCreationTab.updateTaskNameTab = function(task_name)
 {
    // var frmName=kony.apps.coe.Reusable.TimelineCreationTab.parentWidgetName;
    // frmTimeSheetCreateTab.flexSlider.lblTaskName.text=task_name;

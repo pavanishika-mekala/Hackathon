@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "13.20%"
     },
     "_left_": {
         "type": "string",
@@ -23,10 +23,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
+    "_skin_": "scedc9703dee4a24bf4fa323d5bd1600",
     "_top_": {
         "type": "string",
-        "value": "2%"
+        "value": "50%"
     },
     "_width_": {
         "type": "string",
@@ -36,21 +36,24 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblLastSyncedOn",
-        "lblSyncDate",
-        "lblSyncTime"
+        "btnManualSelectionHours",
+        "btnManualSelectionFullDay",
+        "tbxManualEntryhours",
+        "lblManualHrs",
+        "lblExample"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxSyncDateandTime",
+    "id": "flxManualTimeSelection",
+    "ide_onClick": "AS_FlexContainer_ga001e159ec84efaa657838e7df12eee",
     "info": null,
-    "isvisible": true,
-    "kuid": "j17d5a6f4d9f486589d177b56658ff6e",
+    "isvisible": false,
+    "kuid": "i2829b9a29404d359cf023866f6e0f5f",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxMenuHamburger",
-    "pf": "frmHamburger",
+    "parent": "flxTimesheetCreateTab",
+    "pf": "frmTimeSheetCreateTab",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
