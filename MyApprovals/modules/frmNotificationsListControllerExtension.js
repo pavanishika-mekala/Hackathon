@@ -115,7 +115,7 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
         var contextData;
         if (contextIndex !== -1) {
           var cData = dataValues[contextIndex];
-          var cDataModified = cData.replaceAll("\\", "");
+          var cDataModified = kony.sdk.util.replaceAll(cData,"\\", "");
           contextData = JSON.parse(cDataModified);
         } else {
           contextData = null;
@@ -178,7 +178,7 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
             kony.print("Default case of bindData is executed : " + eachData.moduleType);
             break;
         }
-        
+
       }
       kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
       this.getController().showForm();
