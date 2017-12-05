@@ -36,7 +36,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
             "0": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved"),
 			"1": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected"),
 			"2": kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Pending"),
-			"3": kony.i18n.getLocalizedString("i18n.ess.Login.Cancel"),
+			"3": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled"),
 			"4": "",
 			"5": "Saved",
 			"6": "Error",

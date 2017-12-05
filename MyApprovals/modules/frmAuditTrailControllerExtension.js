@@ -51,15 +51,14 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                   tempJSON = {};
                 }
 				if (res[i].First_Name === null || res[i].First_Name== "null"|| res[i].First_Name === "" || res[i].First_Name === undefined) {
-                kony.print("soumya 3"+res[i].First_Name);
                   if(tempJSON.hasOwnProperty('FirstNameAttributeDef') && tempJSON.hasOwnProperty('LastNameAttributeDef'))
                    	res[i].First_Name=tempJSON.FirstNameAttributeDef+" "+tempJSON.LastNameAttributeDef;
+                  else
+                    res[i].First_Name=" ";
 				}else{
-                kony.print("soumya 2"+res[i].First_Name);
 				res[i].First_Name = res[i].First_Name+ " " +res[i].Last_Name;
 				}
             }
-          	kony.print("soumya 1"+res[i].First_Name);
             //quering comments data.
             var query = "select rn.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name, emp.Last_Name as Last_Name,Group_concat(attribute.value)      AS Attributevalue, Group_concat(attribute.attribute_def_id)  AS AttributeNAME, rn.comment as comments from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id left join request_note rn on rn.approval_id = ar.id left join attribute on rn.approval_id=attribute.approval_id where ar.id = '" + requestId + "';";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForComments.bind(scopeObj, res), error);
@@ -77,6 +76,8 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
               if (res[i].First_Name === null || res[i].First_Name== "null"|| res[i].First_Name === "" || res[i].First_Name === undefined) {
                 if(tempJSON.hasOwnProperty('FirstNameAttributeDef') && tempJSON.hasOwnProperty('LastNameAttributeDef'))
                  res[i].First_Name=tempJSON.FirstNameAttributeDef+" "+tempJSON.LastNameAttributeDef;
+                else
+                  res[i].First_Name="";
               }else{
                 res[i].First_Name = res[i].First_Name+ " " +res[i].Last_Name;
               }
@@ -94,6 +95,10 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
         function successCallbackForPendingTimesheet(data, res) {
             for(var i in res) {
                 if(res[i].status_id === "2") {
+                  	if(res[i].First_Name == null){
+                      res[i].First_Name="";
+                      res[i].Last_Name="";
+                    }
                     data.push({
                         createdts : res[i].createdts,
                         status_id : res[i].status_id,
@@ -141,7 +146,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             "0": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved"),
 			"1": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected"),
 			"2": kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Pending"),
-			"3": kony.i18n.getLocalizedString("i18n.ess.Login.Cancel"),
+			"3": kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled"),
 			"4": "",
 			"5": "Saved",
 			"6": "Error",

@@ -110,7 +110,7 @@
             "indicator": "none"
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "81b961b1c1ef46fda3e6216ffc0b385a",
     "masterdata": {},
     "name": "kony.ui.SegmentedUI2",
