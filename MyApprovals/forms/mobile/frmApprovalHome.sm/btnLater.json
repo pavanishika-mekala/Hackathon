@@ -42,11 +42,17 @@
     "id": "btnLater",
     "ide_onClick": "AS_Button_hf22e50ccb0e4666b93ce38a710bb40e",
     "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": true,
     "kuid": "13578c50d71e4893ba277c4fa57e628c",
     "name": "kony.ui.Button",
     "parent": "flxLaterTab",
     "pf": "frmApprovalHome",
+    "showprogressindicator": false,
     "texti18n": "i18n.ess.frmApprovalHome.btnLater",
     "wType": "Button",
     "zindex": 1
