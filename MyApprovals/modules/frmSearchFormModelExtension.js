@@ -32,5 +32,6 @@ kony.sdk.mvvm.frmSearchFormModelExtension = Class({
 			frmSearch.flxHide.setVisibility(true);
 			kony.apps.coe.ess.Approvals.frmSearch.onClickFilterClearSearch();
 			frmSearch.flxSearchContainer.setVisibility(false);
+          	frmSearch.segList.height="90%";
 		}
 	});
