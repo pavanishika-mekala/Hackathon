@@ -53,10 +53,15 @@ kony.apps.coe.ess.Approvals.DelegationRequestCreate.Actions.prototype.
 onClickOfIndefiniteBtn = function() {
     kony.print("--Start: kony.apps.coe.ess.Approvals.DelegationRequestCreate.Actions.prototype.onClickOfIndefiniteBtn--");
     function callback(isChecked) {
+        var fromDate = frmDelegationRequestCreate.clndFromDate;
         if(isChecked) {
+          	frmDelegationRequestCreate.clndToDate.date = [fromDate.day, fromDate.month - 1, fromDate.year+1];
+          	frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month - 1, fromDate.year+1];
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().disableToDate();
         } else {
+          	frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month - 1, fromDate.year+50];
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().enableToDate();
+          	frmDelegationRequestCreate.clndToDate.date = [fromDate.day+6, fromDate.month - 1, fromDate.year];
         }
     }
     try {
@@ -100,7 +105,13 @@ onSelectionOfDateInFromCalendar = function() {
         toDate = new Date(toDate.year, toDate.month - 1, toDate.day);
         if(toDate <= fromDate) {
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().setDateInToCalendar(fromDate);
-        }        
+        }
+      	if(kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().isIndefinteBtnChecked()){
+          var frmDate = frmDelegationRequestCreate.clndFromDate;
+          frmDelegationRequestCreate.flxToDate.setEnabled(true);
+          frmDelegationRequestCreate.clndToDate.date = [frmDate.day, frmDate.month - 1, frmDate.year+1];
+          frmDelegationRequestCreate.flxToDate.setEnabled(false);
+        }
         kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().setLowerLimitOnToCalendar(fromDate);
     } catch(err) {
         handleError(err);

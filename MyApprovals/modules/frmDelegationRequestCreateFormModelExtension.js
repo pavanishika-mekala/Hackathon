@@ -27,5 +27,6 @@ kony.sdk.mvvm.frmDelegationRequestCreateFormModelExtension = Class({
      */
     formatUI: function() {
         //TO-DO add custom formatting
+      kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().showIndefiniteBtn();
     }
 });
