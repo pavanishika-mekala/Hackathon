@@ -151,6 +151,10 @@ kony.apps.coe.ess.globalVariables.login_sap_spnego_token="KonySAP-Request-Spnego
 kony.apps.coe.ess.globalVariables.login_sap_access_token="KonySAP-Request-Access-Token";
 kony.apps.coe.ess.globalVariables.sap_axway_token="konysap-api";
 
-//App navigation 
+//App navigation
 kony.apps.coe.ess.globalVariables.prevFormFlow = "";
 kony.apps.coe.ess.globalVariables.employeeName="";
+
+// Login and logout timers configurations
+kony.apps.coe.ess.globalVariables.logoutDelay=2;
+kony.apps.coe.ess.globalVariables.loginAutoRefreshPeriod=2700; // 45 minutes
