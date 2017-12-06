@@ -220,6 +220,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable = function() {
   frmSearch.flxClear.setVisibility(true);
   frmSearch.flxHide.setVisibility(false);
   frmSearch.flxSearchContainer.setVisibility(true);
+  frmSearch.segList.height="46%";
   frmSearch.flxClear.onClick = kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable;
   kony.print("-- End onClickFilterEnable -- ");
 };
@@ -234,6 +235,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterDisable = function() {
   frmSearch.flxClear.setVisibility(false);
   frmSearch.flxHide.setVisibility(true);
   frmSearch.flxSearchContainer.setVisibility(false);
+  frmSearch.segList.height="90%";
   frmSearch.flxHide.onClick = kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable;
   kony.apps.coe.ess.Approvals.frmSearch.refreshData(); //to clear all data
   kony.print("-- End onClickFilterDisable -- ");
@@ -249,6 +251,7 @@ kony.apps.coe.ess.Approvals.frmSearch.refreshData = function() {
     frmSearch.flxHide.setVisibility(true);
     kony.apps.coe.ess.Approvals.frmSearch.onClickFilterClearSearch();
     frmSearch.flxSearchContainer.setVisibility(false);
+  	frmSearch.segList.height="90%";
     var query_data = {}
     query_data.fromDate = null;
     query_data.toDate = null;
@@ -271,6 +274,7 @@ kony.apps.coe.ess.Approvals.frmSearch.onClickFilterApplySearch = function() {
     kony.print("-- Start onClickFilterApplySearch -- ");
     try {
       frmSearch.flxSearchContainer.setVisibility(false);
+      frmSearch.segList.height="90%";
       frmSearch.flxClear.setVisibility(true);
       frmSearch.flxHide.setVisibility(false);
         frmSearch.flxClear.onClick = function(){kony.apps.coe.ess.Approvals.frmSearch.onClickFilterEnable();};

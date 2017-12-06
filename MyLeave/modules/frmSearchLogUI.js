@@ -335,6 +335,7 @@ kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery,filterIcon
     frmSearchLog.flxStatus.isVisible = false;
     frmSearchLog.flxSearchLeaveType.isVisible = false;
     frmSearchLog.flxDoneButton.isVisible = false;
+    frmSearchLog.segList.height="91%";
     if(filterIcon === "selectedFilterIcon"){
       frmSearchLog.imgFilter.src = "filter_selected.png";
     }else{
@@ -382,6 +383,7 @@ kony.apps.coe.myLeave.search.prototype.filter = function () {
     frmSearchLog.flxSearchLeaveType.isVisible = false;
     frmSearchLog.flxDoneButton.isVisible = false;
     frmSearchLog.imgFilter.src = "filter.png";
+    frmSearchLog.segList.height="91%";
     (new kony.apps.coe.myLeave.search()).clear(); //clears all selection
   } else if((!frmSearchLog.flxSelection.isVisible && frmSearchLog.imgFilter.src === "filter_selected.png") ||
             frmSearchLog.imgFilter.src === "filter.png"){
@@ -391,6 +393,7 @@ kony.apps.coe.myLeave.search.prototype.filter = function () {
     frmSearchLog.flxSearchLeaveType.isVisible = true;
     frmSearchLog.flxDoneButton.isVisible = true;
     frmSearchLog.imgFilter.src = "filter_selected.png";
+    frmSearchLog.segList.height="46%";
   }
 };
 
