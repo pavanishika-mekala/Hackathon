@@ -51,23 +51,24 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
 				}
             }
             //quering comments data.
-            var query = "select rn.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name, emp.Last_Name as Last_Name,Group_concat(attribute.value)      AS Attributevalue, Group_concat(attribute.attribute_def_id)  AS AttributeNAME, rn.comment as comments from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id left join request_note rn on rn.approval_id = ar.id left join attribute on rn.approval_id=attribute.approval_id where ar.id = '" + requestId + "';";
-            kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForComments.bind(scopeObj, res), error);
+            //var query = "select rn.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name, emp.Last_Name as Last_Name,Group_concat(attribute.value)      AS Attributevalue, Group_concat(attribute.attribute_def_id)  AS AttributeNAME, rn.comment as comments from approval_request ar left join request_approver ra on ra.approval_id = ar.id  left join request_note rn on rn.approval_id = ar.id left join Employee emp on rn.employee_id = emp.Id left join attribute on rn.approval_id=attribute.approval_id where ar.id = '" + requestId + "';";
+            var query = "select rn.createdts as createdts, ra.status_id as status_id, CASE WHEN (emp.First_Name = '' OR  emp.First_Name ISNULL) THEN (select value from attribute where approval_id='000001974456-000001974455-AE79E8B40AF11ED7B5CFAEEEFEC65004-TESTKONYTL4'and attribute_def_id like 'FirstNameAttributeDef') ELSE emp.First_Name END AS First_Name, CASE WHEN (emp.Last_Name = '' OR  emp.Last_Name ISNULL) THEN (select value from attribute where approval_id='000001974456-000001974455-AE79E8B40AF11ED7B5CFAEEEFEC65004-TESTKONYTL4'and attribute_def_id like 'LastNameAttributeDef') ELSE emp.Last_Name END AS Last_Name, rn.comment as comments from approval_request ar left join request_approver ra on ra.approval_id = ar.id  left join request_note rn on rn.approval_id = ar.id left join Employee emp on rn.employee_id = emp.Id where ar.id = '" + requestId + "' group by rn.createdts;";
+          	kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForComments.bind(scopeObj, res), error);
         }
 
         function successCallbackForComments(data, res) {
             for(var i in res) {
                 res[i].templateType = 1;
-              var tempJSON;
-              if(res[i].AttributeNAME != undefined && res[i].AttributeNAME !== null && res[i].AttributeNAME != "null") {
-                  tempJSON = res[i].AttributeNAME.returnCombinationInJsonFormat(res[i].Attributevalue, ",");
-              } else {
-                tempJSON = {};
-              }
+//               var tempJSON;
+//               if(res[i].AttributeNAME != undefined && res[i].AttributeNAME !== null && res[i].AttributeNAME != "null") {
+//                   tempJSON = res[i].AttributeNAME.returnCombinationInJsonFormat(res[i].Attributevalue, ",");
+//               } else {
+//                 tempJSON = {};
+//               }
               if (res[i].First_Name === null || res[i].First_Name== "null"|| res[i].First_Name === "" || res[i].First_Name === undefined) {
-                if(tempJSON.hasOwnProperty('FirstNameAttributeDef') && tempJSON.hasOwnProperty('LastNameAttributeDef'))
-                 res[i].First_Name=tempJSON.FirstNameAttributeDef+" "+tempJSON.LastNameAttributeDef;
-                else
+//                 if(tempJSON.hasOwnProperty('FirstNameAttributeDef') && tempJSON.hasOwnProperty('LastNameAttributeDef'))
+//                  res[i].First_Name=tempJSON.FirstNameAttributeDef+" "+tempJSON.LastNameAttributeDef;
+//                 else
                   res[i].First_Name="";
               }else{
                 res[i].First_Name = res[i].First_Name+ " " +res[i].Last_Name;
@@ -75,7 +76,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                 data.push(res[i]);
             }
             //quering data if timesheet is pending.
-            var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id where ar.id = '" + requestId + "';";
+            var query = "select ar.createdts as createdts, ra.status_id as status_id, emp.First_Name as First_Name,emp.Last_Name as Last_Name from approval_request ar left join request_approver ra on ra.approval_id = ar.id left join Employee emp on ra.approver_id = emp.Id where ar.id = '" + requestId + "' group by emp.Id;";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForPendingTimesheet.bind(scopeObj, data), error);
         }
 
