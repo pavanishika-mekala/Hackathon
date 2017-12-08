@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_ff32c63fac60486a9968ccf1066247b9": {
+        "id": "AS_FlexContainer_ff32c63fac60486a9968ccf1066247b9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_j82b557f2ab542f6a1c75c2dab50848f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmLeaveRequestDetails.flxBigImage.setVisibility(false);\nfrmLeaveRequestDetails.imgBigImage.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

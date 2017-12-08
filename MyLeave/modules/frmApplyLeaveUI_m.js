@@ -983,7 +983,14 @@ kony.apps.coe.ess.myLeave.applyLeave.AddAttachment = {
       }
       else{
         frmApplyLeave.flxAddAtachment.addAt(flxProof, i);
+        if (data[i].imgProof !== "undefined" && data[i].imgProof !== null && data[i].imgProof !== undefined) {
         frmApplyLeave["imgProof" + i].rawBytes = kony.convertToRawBytes(data[i].imgProof);
+         frmApplyLeave["imgProof" + i].onTouchEnd=function(event){
+                frmApplyLeave.flxBigImage.isVisible=true;
+          		frmApplyLeave.imgBigImage.isVisible=true;
+           		frmApplyLeave.imgBigImage.rawBytes=this.rawBytes;
+            };
+        }
       }
       data[i].id = "flxProof" + i;
       this.lastIndex++;
