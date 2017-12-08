@@ -92,8 +92,7 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
           "notificationTime": notificationTime,
           "timePeriod": "",
           "timeDuration": "",
-          "notificationIcon" : "reminder.png",
-          "flxNotificationListTemplate":{height:"15%"}
+          "notificationIcon" : "reminder.png"
         };
 
         //Find out which type of notification it is
@@ -116,7 +115,7 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
         var contextData;
         if (contextIndex !== -1) {
           var cData = dataValues[contextIndex];
-          var cDataModified = cData.replaceAll("\\", "");
+          var cDataModified = kony.sdk.util.replaceAll(cData,"\\", "");
           contextData = JSON.parse(cDataModified);
         } else {
           contextData = null;
