@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_eac98850126944ec829792d3cebf907b": {
+        "id": "AS_FlexContainer_eac98850126944ec829792d3cebf907b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_ef56c049691c4e1fa35eba0fa2a9a369",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmApplyLeave.flxBigImage.setVisibility(false);\nfrmApplyLeave.imgBigImage.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

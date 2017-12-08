@@ -375,7 +375,7 @@ kony.apps.coe.ess.myLeave.applyLeave.preShow = {
     frmApplyLeave.flexMain.enableScrolling = false;
     frmApplyLeave.lblPersonsOnLeave.text = "";
     frmApplyLeave.flxAddAtachment.removeAll();
-    kony.apps.coe.ess.myLeave.applyLeave.staticAttachmentImg.setImgPlus();       
+    kony.apps.coe.ess.myLeave.applyLeave.staticAttachmentImg.setImgPlus();
     kony.apps.coe.ess.myLeave.applyLeave.AddAttachment.lastIndex = 0;
     kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData = [];
     frmApplyLeave.lblToDate.isVisible = true;
@@ -491,7 +491,7 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
     //frmApplyLeave.lstLeaveType.onSelection=this.onClickOfLeaveType(frmApplyLeave.lstLeaveType.selectedKey)
     //this.selectedLeaveType = "btnLeaveType" + data.selectleavetype[0].id;
     this.selectedLeaveType =  data.selectleavetype[0].id;
-    this.onClickOfLeaveType(data.selectleavetype[0].id); 
+    this.onClickOfLeaveType(data.selectleavetype[0].id);
   },
 
   onClickOfLeaveType: function(id) {
@@ -714,7 +714,7 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
             handleError(err);
           }, false);
         }
-      
+
        if ((diff / day) <= 0) {
         this.hours = ((diff / day) + 1) * kony.apps.coe.ess.appconfig.workingHours;
         hours = ((diff / day) + 1) + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
@@ -983,7 +983,14 @@ kony.apps.coe.ess.myLeave.applyLeave.AddAttachment = {
       }
       else{
         frmApplyLeave.flxAddAtachment.addAt(flxProof, i);
-        frmApplyLeave["imgProof" + i].rawBytes = kony.convertToRawBytes(data[i].imgProof);
+        if (data[i].imgProof !== "undefined" && data[i].imgProof !== null && data[i].imgProof !== undefined) {
+          frmApplyLeave["imgProof" + i].rawBytes = kony.convertToRawBytes(data[i].imgProof);
+          frmApplyLeave["imgProof" + i].onTouchEnd=function(event){
+              frmApplyLeave.flxBigImage.isVisible=true;
+              frmApplyLeave.imgBigImage.isVisible=true;
+              frmApplyLeave.imgBigImage.rawBytes=this.rawBytes;
+          };
+        }
       }
       data[i].id = "flxProof" + i;
       this.lastIndex++;
@@ -1003,7 +1010,7 @@ kony.apps.coe.ess.myLeave.applyLeave.AddAttachment = {
         frmApplyLeave.flxAddAtachment.isVisible = true;
         frmApplyLeave.imgCamera.isVisible = false;
       }
-      frmApplyLeave.flxAddAtachment.height="18%";       
+      frmApplyLeave.flxAddAtachment.height="18%";
     }
   },
 
@@ -1209,7 +1216,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
   },
 
   onClickOfSubmit: function(IntervalStart_date, IntervalEnd_date, recurring_id, leave_id_recurrence, dates, holidayResponse) {
-    
+
     kony.apps.coe.ess.myLeave.applyLeave.submitLeave.imgIndex = 0;
     var dataToForward = {};
     if (kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate !== null && kony.apps.coe.ess.myLeave.applyLeave.preShow.endDate !== undefined) {
@@ -1287,7 +1294,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         }
       }
     }
-    
+
   },
   leaveNoteCreate: function(dataToForward, dates, holidayResponse, response) {
     var data = {};
@@ -1334,13 +1341,13 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
 //     }
 //     else{
 //       permissionStatusCallback(result);
-//     }  
+//     }
 //     function alertCallback(resp){
 //       if(resp == true){
 //         kony.application.openApplicationSettings();
 //       }
 //       permissionStatusCallback(result);
-//     } 
+//     }
 //     function permissionStatusCallback(response){
 //       kony.print("permissionStatusCallback :: "+ JSON.stringify(response));
 //       //50002 is permission granted and 500001 is permission denied.
