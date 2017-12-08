@@ -92,7 +92,8 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
           "notificationTime": notificationTime,
           "timePeriod": "",
           "timeDuration": "",
-          "notificationIcon" : "reminder.png"
+          "notificationIcon" : "reminder.png",
+          "flxNotificationListTemplate":{height:"15%"}
         };
 
         //Find out which type of notification it is
