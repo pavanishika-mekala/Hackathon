@@ -35,8 +35,8 @@ kony.apps.coe.ess.appconfig = {
    	runtimeurl : "https://engie-dev-next.konycloud.com:443/services/data/v1",//"https://engie-uat-next.konycloud.com:443/services/data/v1",
 
 	ACFAppID :"MYAPPROVALS",
-	identityServiceSAP:"DevNextTimesheetSAPIdentity",//"UatNextTimesheetSAPIdentity",
-	isShowDeepLinkingAppBeforeInstall:false,
+		identityServiceSAP:"DevNextTimesheetSAPIdentity",//"UatNextTimesheetSAPIdentity",
+    isShowDeepLinkingAppBeforeInstall:false,
     isShowDelegation:true,
  	appversion : "v0.0.13",
     listOfApps : ["eTimeSheetMyLeave", "eTimeSheetMyTime", "myPay", "myExpenses", "myProfile"],

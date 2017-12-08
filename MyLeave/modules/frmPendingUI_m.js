@@ -261,11 +261,15 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
             //      pendingData.lblDays = data[i].no_of_hours + " " + "HOURS";
             // } else
             //  pendingData.lblDays = ((parseInt(data[i].no_of_hours) * 1) / 7.5).toFixed() + " DAYS";
-            var diff = ((parseInt(data[i].no_of_hours) * 1) / kony.apps.coe.ess.appconfig.workingHours).toFixed();
-            if(parseInt(diff) === 1){
-                 pendingData.lblDays = diff.toString() + kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
-            } else{
-              pendingData.lblDays = diff.toString() + kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+          	var currHrs = data[i].no_of_hours;
+          	kony.print("currHrs is::"+currHrs);
+          	if (currHrs < 7)
+              pendingData.lblDays = (currHrs.toString() + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+            else if(parseFloat(currHrs)===7.5){
+              pendingData.lblDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
+            }
+            else{
+              pendingData.lblDays = ((currHrs * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
             }
             pendingData.imgCal = "cal.png";
             pendingData.lblLine1 = " ";

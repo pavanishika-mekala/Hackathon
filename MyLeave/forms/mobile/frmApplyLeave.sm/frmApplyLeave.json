@@ -32,9 +32,7 @@
         "flexMain",
         "flxAlertPopup",
         "flxOfflineAlert",
-        "btnSubmit",
-        "flxBigImage",
-        "imgBigImage"
+        "btnSubmit"
     ],
     "containerweight": 100,
     "currentLocale": "nl_BE",

@@ -49,6 +49,9 @@
         "flxMyExpenses",
         "flxMyApprovals",
         "flxMyNotifications",
+        "flxSettings",
+        "flxSyncNow",
+        "flxLogout",
         "flxSyncDateAndTime",
         "flxOptions"
     ],

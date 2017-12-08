@@ -38,8 +38,9 @@ kony.sdk.mvvm.frmDelegationRequestDetailsControllerExtension = Class(kony.sdk.mv
                 throw "Error: Invalid isSentByMe";
             }
             kony.apps.coe.ess.Approvals.frmDelegationRequestDetails.Backend.getInstance().contextData = contextData;
-            var query = "select dl.delegation_group_id as groupId, dl.status_id as statusId, dl.employee_id as empId, emp.First_Name as firstName, emp.Last_Name as lastName, rt.name as requestTypeName, dl.start_date as startDate, dl.end_date as endDate, dl.createdts as createdDate, dl.comments as comments from delegate dl " + 
+            var query = "select dl.delegation_group_id as groupId, dl.status_id as statusId, dl.employee_id as empId,dl.delegator_id as delegatorId, emp.First_Name as firstName, emp.Last_Name as lastName,dEmp.First_Name as dFirstName, dEmp.Last_Name as dLastName, rt.name as requestTypeName, dl.start_date as startDate, dl.end_date as endDate, dl.createdts as createdDate, dl.comments as comments from delegate dl " + 
                 " left join Employee emp on emp.Id = dl.employee_id " +
+                " left join Employee dEmp on dEmp.Id = dl.delegator_id " +
                 " left join request_type rt on rt.id = dl.request_type_id " + 
                 " where dl.delegation_group_id = '" + contextData.groupId + "' group by rt.name";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, success, error);
@@ -51,7 +52,7 @@ kony.sdk.mvvm.frmDelegationRequestDetailsControllerExtension = Class(kony.sdk.mv
         }
 
         function success(response) {
-            kony.sdk.mvvm.log.info("success fetching data ", response);
+            kony.sdk.mvvm.log.info("success fetching data ", JSON.stringify(response));
             scopeObj.getController().processData(response);
         }
 
@@ -125,7 +126,11 @@ kony.sdk.mvvm.frmDelegationRequestDetailsControllerExtension = Class(kony.sdk.mv
             }
             processedData.requestTypeName = processedData.requestTypeName.substring(0, processedData.requestTypeName.length - 2);
             processedData.requestInterval = formatRequestInterval(processedData);
-            processedData.empName = String(processedData.firstName).trim() + " " + String(processedData.lastName).trim();
+          	if(contextData.isSentByMe){
+              processedData.empName = String(processedData.firstName).trim() + " " + String(processedData.lastName).trim();
+            }else{
+              processedData.empName = String(processedData.dFirstName).trim() + " " + String(processedData.dLastName).trim();
+            }
             processedData.createdDate = String(processedData.createdDate);
             if(processedData.createdDate !== null && processedData.createdDate !== undefined && processedData.createdDate !== "") {
                 processedData.createdDate = (new Date().modifyByYYYYMMDDHHMMSS(processedData.createdDate)).toDDMMMYYHHmm();
@@ -133,10 +138,10 @@ kony.sdk.mvvm.frmDelegationRequestDetailsControllerExtension = Class(kony.sdk.mv
                 processedData.createdDate = "";
             }
             if(processedData.comments !== null && processedData.comments !== undefined && String(processedData.comments).trim() !== "") {
-                processedData.commentsData = [{
+              processedData.commentsData = [{
                     "imgUserImage" : "people.png",
-                    "lblName" : processedData.firstName,
-                  	"lblShortName" : processedData.firstName.substring(0,1) + processedData.lastName.substring(0,1),//RL-BBE-282
+                    "lblName" : processedData.dFirstName,
+                  	"lblShortName" : processedData.dFirstName.substring(0,1) + processedData.dLastName.substring(0,1),
                     "lblChat" : processedData.comments,
                     "lblAppliedOn" : {isVisible : false},
                     "template" : contextData.isSentByMe === true ? flxSelfComments : flxRequesterComments

@@ -17,18 +17,13 @@ var skinconfig = {
     "lbltaskedcreatedskin": "sknLblMobFCFFFFFFFS71",
 };
 
-/*function preshowfrmhome() {
-    apppreshow();
-    var tlobj = new kony.apps.mytime.timelineselectionTab(frmTimeSheetCreate, frmTimeSheetCreate.flxTimeLine, frmTimeSheetCreate.segDeleteMenuPopup, frmTimeSheetCreate.btnCloneTask, 8, 10, skinconfig);
-    tlobj.createtimeline(skinsforheader);
-    
-}*/
+
 function preshowfrmhomeTab() {
     apppreshowTab();
     var tlobj = new kony.apps.mytime.timelineselectionTab(frmTimeSheetCreateTab, frmTimeSheetCreateTab.flxTimeLine,8,10,skinconfig);
-    tlobj.createtimeline(skinsforheader);
-    
+    tlobj.createtimeline(skinsforheader);    
 }
+
 kony = kony || {};
 kony.apps = kony.apps || {};
 kony.apps.mytime = kony.apps.mytime || {};

@@ -163,8 +163,8 @@ disableToDate = function () {
     kony.print("--Start: kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.prototype.disableToDate--");
     try {
         frmDelegationRequestCreate.flxToDate.setEnabled(false);
-	    frmDelegationRequestCreate.clndToDate.isVisible = false;
-	    frmDelegationRequestCreate.lblToDateSelect.isVisible = true;
+	    //frmDelegationRequestCreate.clndToDate.isVisible = false;
+	    //frmDelegationRequestCreate.lblToDateSelect.isVisible = true;
 	    frmDelegationRequestCreate.flxToDateDisable.isVisible = true;
     } catch(err) {
         handleError(err);

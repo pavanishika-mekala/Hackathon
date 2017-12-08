@@ -30,11 +30,15 @@
     },
     "_width_": {
         "type": "string",
-        "value": "60%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "flxStatusType",
         "lblStatus"

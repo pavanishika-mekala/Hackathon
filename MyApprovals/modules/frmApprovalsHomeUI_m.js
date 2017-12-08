@@ -723,9 +723,11 @@ sliderAnimationToLater = function() {
         duration: 0.5
       });
     frmApprovalHome.btnNow.skin = "sknBtnMob0OFS313454100O32px";
+    frmApprovalHome.btnNow.focusSkin = "sknBtnMob0OFS313454100O32px";
     frmApprovalHome.flxNowCount.skin = "sknFlxMob313454100O32px";
     frmApprovalHome.lblNowCount.skin = "sknLblMob787A8F100O20px";
     frmApprovalHome.btnLater.skin = "sknBtn0OFFFFFFFs32px";
+    frmApprovalHome.btnLater.focusSkin = "sknBtn0OFFFFFFFs32px";
     frmApprovalHome.flxLaterCount.skin = "sknFlxMobFFFFFF100OR100px";
     frmApprovalHome.lblLaterCount.skin = "sknLblMob787A8F100OFS20px";
     //Updating the global variable for the content Type
@@ -759,9 +761,11 @@ sliderAnimationToNow = function() {
         duration: 0.5
       });
     frmApprovalHome.btnNow.skin = "sknBtn0OFFFFFFFs32px";
+    frmApprovalHome.btnNow.focusSkin = "sknBtn0OFFFFFFFs32px";
     frmApprovalHome.flxNowCount.skin = "sknFlxMobFFFFFF100OR100px";
     frmApprovalHome.lblNowCount.skin = "sknLblMob3EBEA3100OFS20px";
     frmApprovalHome.btnLater.skin = "sknBtnMob0OFS313454100O32px";
+    frmApprovalHome.btnLater.focusSkin = "sknBtnMob0OFS313454100O32px";
     frmApprovalHome.flxLaterCount.skin = "sknFlxMob313454100O32px";
     frmApprovalHome.lblLaterCount.skin = "sknLblMob787A8F100O20px";
     frmApprovalHome.imgFilter.src = "filter_unselected.png";

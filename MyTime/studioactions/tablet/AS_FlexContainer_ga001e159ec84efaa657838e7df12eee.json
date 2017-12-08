@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_ga001e159ec84efaa657838e7df12eee": {
+        "id": "AS_FlexContainer_ga001e159ec84efaa657838e7df12eee",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_b7cb873d877f4d2086dbdb097439f1c7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.print(\"---- clicked on manual time entry\");",
+            "callbackType": null
+        }]
+    }
+}

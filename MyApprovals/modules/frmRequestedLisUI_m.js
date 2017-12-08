@@ -497,7 +497,8 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
             "       request_approver.status_id         AS StatusId," +
             "       status.status_name                 AS StatusName," +
             "       request_approver.approver_id       AS Employee_id," +
-            "       request_category.NAME              AS Category," +
+            "       t2.TEXT_DISPLAY	As	Category,"+
+            "       request_category.NAME              AS Category1," +
             "       attribute.id                       AS attributeID," +
             "       attribute.attribute_def_id         AS Attribute_DEF," +
             "       attribute_def.attribute_section_id AS AttributeSection," +
@@ -514,11 +515,15 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
             "              ON ( request_approver.status_id = status.id )" +
             "       LEFT JOIN request_category" +
             "              ON ( approval_request.category_id = request_category.id )" +
+            " LEFT JOIN translation t1 "+
+            		" ON (request_category.name=t1.TEXT_DISPLAY)"+
+					" LEFT JOIN translation t2 ON(t2.TEXT_CODE=t1.TEXT_CODE)"+
             "       LEFT JOIN attribute" +
             "              ON ( approval_request.id = attribute.approval_id )" +
             "       LEFT JOIN attribute_def" +
             "              ON ( attribute.attribute_def_id = attribute_def.id )" +
             " WHERE  request_approver.approver_id = '" + kony.apps.coe.ess.globalVariables.EmployeeID + "'" +
+            " and  t2.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' "+
             " and request_approver.status_id = '2'" +
             "and attribute_def.attribute_section_id='1'" +
             " and approval_request.islater='1'" +
@@ -532,6 +537,7 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
             for (var index in processedData) {
               processedData[index].btnLaterReject=kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Reject");
         	  processedData[index].btnLaterApprove=kony.i18n.getLocalizedString("i18n.ess.myApprovals.frmTabListview.Approve");
+              processedData[index].lblMidRight=kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.lblDueDateHeader");
             }
           	//setting the data to the approval request Segement
             var WidgetDatamap = {
@@ -550,7 +556,8 @@ kony.apps.coe.ess.Approvals.RequestedList.searchEmployee = function(empNameSearc
                 "lblRemainingHours": "remaingHours",
                 "imgSelection": "imgSelection",
               	"btnLaterReject":"btnLaterReject",
-              	"btnLaterApprove":"btnLaterApprove"
+              	"btnLaterApprove":"btnLaterApprove",
+              	"lblMidRight":"lblMidRight"
             };
             frmRequestedList.SegDetails.widgetDataMap = WidgetDatamap;
             if(processedData.length != null && processedData.length >0){

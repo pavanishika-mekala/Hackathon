@@ -47,7 +47,8 @@
         "flxHorizontalLine1",
         "flxHorizontalLine2",
         "flxDetailsOfSelectedTask",
-        "flxTaskSummary"
+        "flxTaskSummary",
+        "flxManualTimeSelection"
     ],
     "clipbounds": true,
     "containerweight": 100,

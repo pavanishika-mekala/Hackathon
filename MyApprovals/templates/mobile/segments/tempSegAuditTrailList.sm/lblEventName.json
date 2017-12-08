@@ -29,8 +29,8 @@
         "value": "20%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "36%"
     },
     "_wrapping_": 2,
     "android": {
@@ -57,9 +57,16 @@
     },
     "isvisible": true,
     "kuid": "41d99330a3cb43aa9079c2ed3e7ba348",
+    "maxnumberoflines": 0,
     "name": "kony.ui.Label",
     "parent": "flxSegAuditTrailList",
     "pf": "tempSegAuditTrailList",
+    "textStyle": {
+        "letterSpacing": 0,
+        "strikeThrough": false
+    },
+    "textstyle": {},
+    "texttruncateposition": 3,
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

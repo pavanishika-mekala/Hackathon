@@ -44,13 +44,14 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "43%"
     },
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
     "id": "tbxSearch",
+    "ide_onTextChange": "AS_TextField_idb5408135504cc9a3946faf2139acf7",
     "info": null,
     "isvisible": true,
     "keyboardtype": "A",

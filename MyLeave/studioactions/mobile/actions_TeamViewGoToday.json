@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__fa9bf1932bf5499ab9c102783bd8b955",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "if(kony.os.deviceInfo().name === \"iPhone\"){\nfrmTeamView.flxDayBar.removeAll();\n}\nkony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar();",
+            "codeSnippet": "// if(kony.os.deviceInfo().name === \"iPhone\"){\n// frmTeamView.flxDayBar.removeAll();\n// }\n//kony.apps.coe.ess.myLeave.TeamViewUI.prototype.addDynamicHorzCalendar();\nvar FormLoadObj = new kony.sdk.mvvm.NavigationObject();\nvar qp = {\n  \"employeeId\": kony.apps.coe.ess.globalVariables.employeeId\n};\nFormLoadObj.setQueryParams(\"segTeamView\", qp);\nvar formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(\"frmTeamView\");\nformController.loadDataAndShowForm(FormLoadObj);\n",
             "parentId": null,
             "callbackType": null
         }]

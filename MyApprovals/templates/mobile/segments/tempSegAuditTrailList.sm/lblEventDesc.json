@@ -2,10 +2,6 @@
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "20%"
-    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
@@ -27,7 +23,11 @@
         0
     ],
     "_skin_": "s5e4f96afc8849c8bd7f358b8bd163a8",
-    "_text_": "Label",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "60%"
+    },
     "_width_": {
         "type": "ref",
         "value": "preferred"

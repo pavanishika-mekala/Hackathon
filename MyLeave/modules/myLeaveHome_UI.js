@@ -180,7 +180,16 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3);
                             frmLeaveHome.lblLeaveTime.isVisible = true;
                         } else {
-                            var totalDays = ((parseInt(data.data.CellData.Hours) * 1) / kony.apps.coe.ess.appconfig.workingHours).toFixed() + " "+ kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+                          	var currHrs = data.data.CellData.Hours;
+                          	var totalDays;
+                          	if (currHrs < 7)
+                              totalDays = (currHrs+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+                            else if(parseFloat(currHrs)===7.5){
+                              totalDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
+                            }
+                            else{
+                              totalDays = ((parseInt(currHrs) * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+                            }
                           	frmLeaveHome.lblLeaveTime.text = totalDays;
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3) + " - " + data.data.CellData.EndDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.EndDate.substring(4, 6) + ""]).substring(0, 3);
                             frmLeaveHome.lblLeaveTime.isVisible = true;

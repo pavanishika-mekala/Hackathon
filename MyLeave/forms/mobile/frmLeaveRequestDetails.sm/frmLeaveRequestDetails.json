@@ -28,9 +28,7 @@
     "canUpdateUI": true,
     "children": [
         "flxDetailsOuter",
-        "flxPopUp",
-        "flxBigImage",
-        "imgBigImage"
+        "flxPopUp"
     ],
     "containerweight": 100,
     "currentLocale": "fr_BE",

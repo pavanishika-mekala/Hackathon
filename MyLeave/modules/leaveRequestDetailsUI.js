@@ -802,11 +802,6 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.insertFetchedAttachmen
         kony.print("----img..." + JSON.stringify(response));
         if (typeof response !== "undefined") {
             frmLeaveRequestDetails["imgProof" + index].rawBytes = kony.convertToRawBytes(response);
-            frmLeaveRequestDetails["imgProof" + index].onTouchEnd=function(){
-                frmLeaveRequestDetails.imgBigImage.rawBytes=frmLeaveRequestDetails["imgProof" + index].rawBytes;
-                frmLeaveRequestDetails.flxBigImage.isVisible=true;
-              	frmLeaveRequestDetails.imgBigImage.isVisible=true;
-            };
         } else {
             frmLeaveRequestDetails["imgProof" + index].isVisible = false;
         }

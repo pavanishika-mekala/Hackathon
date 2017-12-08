@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_ecbed82a21ba40e4b12fecef477c8569": {
+        "id": "AS_FlexContainer_ecbed82a21ba40e4b12fecef477c8569",
+        "type": "ACTION_SEQUENCE",
+        "name": "OnClickHamCreateTimeSheet",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_beb0f794b5f049dc8819928140c97e80",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "new kony.apps.ess.Hamburger(frmTimeSheetCreateTab.flxHamburgerButton);",
+            "callbackType": null
+        }]
+    }
+}

@@ -46,12 +46,18 @@
     "id": "btnNow",
     "ide_onClick": "AS_Button_j938af8f7cdb4e4b881d436f1ba62305",
     "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
     "isvisible": true,
     "kuid": "de769fb58ce6477580334d18f5c5d615",
     "name": "kony.ui.Button",
     "paddinginpixel": false,
     "parent": "flxNowTxt",
     "pf": "frmApprovalHome",
+    "showprogressindicator": false,
     "texti18n": "i18n.ess.frmApprovalHome.btnNow",
     "wType": "Button"
 }

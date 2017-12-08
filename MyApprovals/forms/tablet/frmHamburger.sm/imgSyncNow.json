@@ -5,11 +5,11 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "35dp"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "5%"
     },
     "_margin_": [
         0,
@@ -31,13 +31,9 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "35dp"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
     "centery": {
         "type": "string",
         "value": "50%"
