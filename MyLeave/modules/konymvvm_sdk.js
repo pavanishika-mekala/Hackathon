@@ -4340,7 +4340,7 @@ kony.sdk.mvvm.AuthManagerImpl = Class(kony.sdk.mvvm.BaseAuthenticationServiceMan
         return this.authenticationManager.getSavedUserDetails()
     },
     execute: function(params, success, error) {
-        kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Authenticating");
+        //kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen("Authenticating");
         this.authenticationManager.execute(params, successCallback, errorCallback);
 
         function successCallback(res) {

@@ -103,42 +103,38 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
   */
   kony.apps.coe.ess.frmLogin._backendLogin = function(action, successCallBack, errorCallback, isRefresh) {
    try {
-     if(isRefresh === null || isRefresh === undefined || isRefresh ===false){
-        kony.print("-- start kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
-       //  kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-       //If wrong credentials are given previously, reset skins
-       if (frmLogin.lblLoginErrorMessage.isVisible === true) {
-         //We are checking above condition to avoid setting skins everytime.
-         //Error message is visible only if wrong credentials entered previously
-         frmLogin.lblLoginErrorMessage.isVisible = false; //Hide wrong message lable
-         frmLogin.tbUsername.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
-         frmLogin.tbPassword.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
-       }
-
-       var username = frmLogin.tbUsername.text;
-       var password = frmLogin.tbPassword.text;
-
-       if (kony.apps.coe.ess.frmLogin.isValidInputs(username, password)) {
-         kony.apps.coe.ess.frmLogin.username = username.trim();
-         kony.apps.coe.ess.frmLogin.password = password;
-         //#ifdef windows8
-         frmLogin.flxLogin.onClick = function() {};
-         //#else
-         frmLogin.btnLogin.onClick = function() {};
-         //#endif
-         if(action === undefined || action === null){
-           action = "";
-         }
-         kony.sdk.mvvm.LoginAction(action, successCallBack, errorCallback, isRefresh);
-       } else {
-         frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.validateCredentials");
-         frmLogin.lblLoginErrorMessage.isVisible = true;
-         kony.application.dismissLoadingScreen();
-       }
-       kony.print("-- End  kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
-     } else {
-       kony.sdk.mvvm.KonyApplicationContext.refreshApp();
+     kony.print("-- start kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
+     //  kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+     //If wrong credentials are given previously, reset skins
+     if (frmLogin.lblLoginErrorMessage.isVisible === true) {
+       //We are checking above condition to avoid setting skins everytime.
+       //Error message is visible only if wrong credentials entered previously
+       frmLogin.lblLoginErrorMessage.isVisible = false; //Hide wrong message lable
+       frmLogin.tbUsername.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
+       frmLogin.tbPassword.skin = "sknTbBgFFFBorE7EAECFc55555535Px"; //Change skin
      }
+
+     var username = frmLogin.tbUsername.text;
+     var password = frmLogin.tbPassword.text;
+
+     if (kony.apps.coe.ess.frmLogin.isValidInputs(username, password)) {
+       kony.apps.coe.ess.frmLogin.username = username.trim();
+       kony.apps.coe.ess.frmLogin.password = password;
+       //#ifdef windows8
+       frmLogin.flxLogin.onClick = function() {};
+       //#else
+       frmLogin.btnLogin.onClick = function() {};
+       //#endif
+       if (action === undefined || action === null) {
+         action = "";
+       }
+       kony.sdk.mvvm.LoginAction(action, successCallBack, errorCallback, isRefresh);
+     } else {
+       frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.validateCredentials");
+       frmLogin.lblLoginErrorMessage.isVisible = true;
+       kony.application.dismissLoadingScreen();
+     }
+     kony.print("-- End  kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
    } catch (e) {
      kony.apps.coe.ess.frmLogin._errorCallback(e, isRefresh);
    }
@@ -235,7 +231,7 @@ kony.apps.coe.ess.frmLogin.oktaLogin = function() {
      kony.print("Error when setting the login auto refresh timer: " + e);
    }
  };
- 
+
 // %Region - Methods in frmLogin
 /**
  * @member of  frmLogin
@@ -711,21 +707,25 @@ kony.apps.coe.ess.frmLogin.loginRefresh = function() {
     if (appInstance) {
       kony.sdk.mvvm.initApplicationForms(appInstance);
     }
+
+    kony.apps.coe.ess.frmLogin.afterloginSuccess();
   };
 
   function loginRefreshErrorCallback(error) {
     kony.print("Error when trying to refresh session:  " + error);
   }
 
-  var token = kony.store.getItem("oktaToken"); //securityObj.decryptData(kony.store.getItem("oktaToken"));
-  if(token !== null && token !== undefined) {
-    kony.apps.coe.ess.frmLogin.oktaRefresh(token, "", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
-  } else {
-    var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.globalVariables.active_login_service);
-    loginService.getSecurityAttributes(function(res) {
-      kony.apps.coe.ess.frmLogin.oktaRefresh(res.refresh_token, "", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
-    }, loginRefreshErrorCallback);
-  }
+  initMbaasApp(function() {
+    var token = kony.store.getItem("oktaToken"); //securityObj.decryptData(kony.store.getItem("oktaToken"));
+    if(token !== null && token !== undefined) {
+      kony.apps.coe.ess.frmLogin.oktaRefresh(token, "", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
+    } else {
+      var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.globalVariables.active_login_service);
+      loginService.getSecurityAttributes(function(res) {
+        kony.apps.coe.ess.frmLogin.oktaRefresh(res.refresh_token, "", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
+      }, loginRefreshErrorCallback);
+    }
+  });
 };
 
 /**
