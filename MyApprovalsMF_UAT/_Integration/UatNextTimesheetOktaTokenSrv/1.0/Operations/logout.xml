@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" endpoint="default" groupType="" id="logout" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://engie-pre.okta-emea.com/oauth2/v1/revoke"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false">
+            <param datatype="string" defaultvalue="application/x-www-form-urlencoded" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="application/x-www-form-urlencoded">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="access_token" description="" encode="true" format="None" formatvalue="" name="token_type_hint" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="access_token" value="access_token">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="token" order="" passnull="false" sms-name="" src="request" sourcevalue="access_token" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="oCLV5J5_WxUUgd21WuIcr2eRaIxbo39gTSZEojFPrRM" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="0oa17qfiacvy7dY5S0i7" description="" encode="true" format="None" formatvalue="" name="client_id" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="0oa17qfiacvy7dY5S0i7" value="0oa17qfiacvy7dY5S0i7">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="Sj3TlYyvDzLINXT-bcozJ04PKAyJNpUS7guiRzpp" description="" encode="true" format="None" formatvalue="" name="client_secret" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Sj3TlYyvDzLINXT-bcozJ04PKAyJNpUS7guiRzpp" value="Sj3TlYyvDzLINXT-bcozJ04PKAyJNpUS7guiRzpp">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="token=$token&amp;token_type_hint=$token_type_hint&amp;client_id=$client_id&amp;client_secret=$client_secret" description="" encode="false" format="" formatvalue="" name="message" order="" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="token=$token&amp;token_type_hint=$token_type_hint&amp;client_id=$client_id&amp;client_secret=$client_secret">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error" order="" passnull="false" sms-name="" src="error" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

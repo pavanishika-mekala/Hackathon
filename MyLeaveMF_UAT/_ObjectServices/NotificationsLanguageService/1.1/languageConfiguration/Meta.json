@@ -1,0 +1,37 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "update" : "updateMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "backendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_USER_LANG_DOB",
+      "children" : "[]",
+      "businessObjectName" : "ZKONY_USER_LANG"
+    },
+    "designTimeBackendMeta" : { }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "language",
+    "targetField" : "SPRAS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "okta_user_id",
+    "targetField" : "OKTA_USER_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  } ]
+}

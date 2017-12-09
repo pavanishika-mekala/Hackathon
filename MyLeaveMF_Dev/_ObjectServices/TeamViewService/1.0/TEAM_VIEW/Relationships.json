@@ -1,0 +1,23 @@
+[ {
+  "sourceObject" : "TEAM_VIEW",
+  "targetObject" : "TEAM_LEAVE_REQUEST_REPORT",
+  "relationshipKeys" : [ {
+    "sourceField" : "TEAM_EMPNUMBER",
+    "targetField" : "EMPNUMBER"
+  } ],
+  "name" : "TEAM_VIEW_TEAM_LEAVE_REQUEST_REPORT",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "TEAM_VIEW",
+  "targetObject" : "TEAM_PERSONAL_DATA",
+  "relationshipKeys" : [ {
+    "sourceField" : "TEAM_EMPNUMBER",
+    "targetField" : "EMPNUMBER"
+  } ],
+  "name" : "TEAM_VIEW_TEAM_PERSONAL_DATA",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

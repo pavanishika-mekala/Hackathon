@@ -1,0 +1,4 @@
+ALTER TABLE `ConfigurationMaster`
+	DROP INDEX `516587b623eed3a1ed5c3e96a2db84`,
+	MODIFY `role_id` VARCHAR(50),
+	ADD CONSTRAINT `516587b623eed3a1ed5c3e96a2db84` UNIQUE KEY(`role_id`);

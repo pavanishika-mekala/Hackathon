@@ -1,0 +1,39 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodifiedts"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeletedflag"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "WF_DISTRIBUTION"
+    },
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "WF_DISTRIBUTION"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

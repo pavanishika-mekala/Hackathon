@@ -1,0 +1,14 @@
+{
+  "name" : "UatNextTimesheetSAPIdentity",
+  "displayName" : "UatNextTimesheetSAPIdentity",
+  "type" : "sky",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"custom_request_headers\":{},\"custom_url_path\":\"/v1/logon\",\"scheme\":\"https\",\"port\":\"8065\",\"prefix\":\"KonySAP\",\"custom_response_session_header\":\"KonySAP-Session-Key\",\"custom_additional_request_headers\":{\"Authorization\":{\"in\":\"client_specified\",\"value\":\"Client Specified\"},\"KonySAP-Request-Access-Token\":{\"in\":\"client_specified\",\"value\":\"Client Specified\"},\"konysap-api\":{\"in\":\"client_specified\",\"value\":\"Client Specified\"},\"KonySAP-Request-Spnego\":{\"in\":\"client_specified\",\"value\":\"Client Specified\"}},\"is_custom\":true,\"gateway\":\"api-ppr.engie.com\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "ssoenabled" : false
+}

@@ -1,0 +1,7 @@
+{
+  "description" : "Notifications Obj",
+  "config" : {
+    "metadataSecurity" : "authorized_app_user",
+    "conflict_policy" : "none"
+  }
+}

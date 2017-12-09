@@ -1,0 +1,97 @@
+{
+  "operationConfig" : {
+    "name" : "updatelanguageConfiguration5982",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "OKTA_USER_ID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SPRAS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "ZKONY_USER_LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_USER_LANG",
+      "formatType" : "None"
+    }, {
+      "id" : "OKTA_USER_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_USER_LANG",
+      "formatType" : "None"
+    }, {
+      "id" : "SPRAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_USER_LANG",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_USER_LANG",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><exec-function name=\"kony.gen.obj.languageConfiguration.toLOBFields\"/><exec-function name=\"kony.gen.obj.languageConfiguration__metadata.toLOBFields\"/></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><map inputpath=\"ZKONY_USER_LANG\" outputpath=\"languageConfiguration\"><exec-function name=\"kony.gen.obj.languageConfiguration.fromLOBFields\"/></map></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"ZKONY_USER_LANG_DOB\",\"entityName\":\"ZKONY_USER_LANG\",\"fMap\":{},\"sQuery\":\"\",\"config\":{}}}",
+    "opcode" : "update",
+    "backendMeta" : {
+      "dataObjectName" : "ZKONY_USER_LANG_DOB",
+      "libraryName" : "ZKONY",
+      "businessObjectName" : "ZKONY_USER_LANG"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "languageConfiguration",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true,
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

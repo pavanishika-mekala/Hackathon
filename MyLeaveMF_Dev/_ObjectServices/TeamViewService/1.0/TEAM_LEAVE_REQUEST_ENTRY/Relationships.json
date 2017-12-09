@@ -1,0 +1,34 @@
+[ {
+  "sourceObject" : "TEAM_LEAVE_REQUEST_ENTRY",
+  "targetObject" : "TEAM_LEAVE_AUDIT",
+  "relationshipKeys" : [ {
+    "sourceField" : "LEAVE_ENTRY_ID",
+    "targetField" : "ENTRY_ID"
+  } ],
+  "name" : "TEAM_LEAVE_REQUEST_ENTRY_TEAM_LEAVE_AUDIT",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "TEAM_LEAVE_REQUEST_ENTRY",
+  "targetObject" : "TEAM_LEAVE_NOTE",
+  "relationshipKeys" : [ {
+    "sourceField" : "LEAVE_ENTRY_ID",
+    "targetField" : "LEAVEID"
+  } ],
+  "name" : "TEAM_LEAVE_REQUEST_ENTRY_TEAM_LEAVE_NOTE",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "TEAM_LEAVE_REQUEST_ENTRY",
+  "targetObject" : "TEAM_LVREQ_ATTACHMENTS",
+  "relationshipKeys" : [ {
+    "sourceField" : "LEAVE_ENTRY_ID",
+    "targetField" : "LEAVE_ENTRY_ID"
+  } ],
+  "name" : "TEAM_LEAVE_REQUEST_ENTRY_TEAM_LVREQ_ATTACHMENTS",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

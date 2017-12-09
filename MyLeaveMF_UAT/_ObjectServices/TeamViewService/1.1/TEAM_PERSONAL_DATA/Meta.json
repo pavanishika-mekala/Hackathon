@@ -1,0 +1,140 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "DELETE_IND"
+    },
+    "backendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_PERSONAL_DATA"
+    },
+    "designTimeBackendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_PERSONAL_DATA"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "INITIALS",
+    "targetField" : "INITIALS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NATIONALITY",
+    "targetField" : "NATIONALITY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MARITAL_STATUS",
+    "targetField" : "MARITAL_STATUS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ENDDA",
+    "targetField" : "ENDDA",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "FIRSTNAME",
+    "targetField" : "FIRSTNAME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NAME_DOB",
+    "targetField" : "NAME_DOB",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LANG",
+    "targetField" : "LANG",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "NO_OF_CHILD",
+    "targetField" : "NO_OF_CHILD",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MIDDLENAME",
+    "targetField" : "MIDDLENAME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LASTNAME",
+    "targetField" : "LASTNAME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DOB",
+    "targetField" : "DOB",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "GENDER",
+    "targetField" : "GENDER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "KNOWNAS",
+    "targetField" : "KNOWNAS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "MEDICAL_NEEDS",
+    "targetField" : "MEDICAL_NEEDS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PERID",
+    "targetField" : "PERID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SUBTYPE",
+    "targetField" : "SUBTYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SUFFIX",
+    "targetField" : "SUFFIX",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "BEGDA",
+    "targetField" : "BEGDA",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EXTRACT_TSTAMP",
+    "targetField" : "EXTRACT_TSTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "INTERESTS",
+    "targetField" : "INTERESTS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "JOINING_DT",
+    "targetField" : "JOINING_DT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SINCE",
+    "targetField" : "SINCE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "BIRTHPLACE",
+    "targetField" : "BIRTHPLACE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TITLE",
+    "targetField" : "TITLE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EMPNUMBER",
+    "targetField" : "EMPNUMBER",
+    "type" : "request_response"
+  } ]
+}

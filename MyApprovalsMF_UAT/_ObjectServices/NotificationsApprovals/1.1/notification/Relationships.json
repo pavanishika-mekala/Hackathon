@@ -1,0 +1,12 @@
+[ {
+  "sourceObject" : "notification",
+  "targetObject" : "notification_data",
+  "relationshipKeys" : [ {
+    "sourceField" : "notification_id",
+    "targetField" : "notification_id"
+  } ],
+  "name" : "WF_NOTIFICATIONS_WF_NOTIFDATA",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

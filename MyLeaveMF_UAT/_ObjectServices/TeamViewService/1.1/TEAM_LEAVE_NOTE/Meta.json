@@ -1,0 +1,56 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "DELETE_IND"
+    },
+    "backendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_LEAVE_NOTE"
+    },
+    "designTimeBackendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_LEAVE_NOTE"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ADDED_ON",
+    "targetField" : "ADDED_ON",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVEID",
+    "targetField" : "LEAVEID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "COMMENTS",
+    "targetField" : "COMMENTS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EMPNUMBER",
+    "targetField" : "EMPNUMBER",
+    "type" : "request_response"
+  } ]
+}

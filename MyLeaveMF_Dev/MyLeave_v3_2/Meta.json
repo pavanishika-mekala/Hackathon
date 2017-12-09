@@ -1,0 +1,54 @@
+{
+  "subType" : "customapp",
+  "description" : "MYLEAVE_V_3.1.1",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "DevNextTimesheetKonyMFSession",
+    "version" : "1.0"
+  }, {
+    "name" : "DevNextTimesheetOktaTokenSrv",
+    "version" : "1.0"
+  }, {
+    "name" : "DevNextTimesheetAxwayTokenSrv",
+    "version" : "1.0"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "getConfigurationsForMyLeave",
+    "version" : "1.0"
+  }, {
+    "name" : "DevNextTimesheetOktaRfrsh",
+    "version" : "1.0"
+  }, {
+    "name" : "DevNextTimesheetOktaUPAxway",
+    "version" : "1.0"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "LeaveDynamicSkins",
+    "version" : "1.0"
+  }, {
+    "name" : "Notifications",
+    "version" : "1.0"
+  }, {
+    "name" : "NotificationsLanguageService",
+    "version" : "1.0"
+  }, {
+    "name" : "Employee",
+    "version" : "1.0"
+  }, {
+    "name" : "TeamViewService",
+    "version" : "1.0"
+  }, {
+    "name" : "TranslationsService",
+    "version" : "1.0"
+  }, {
+    "name" : "MappingService",
+    "version" : "1.0"
+  }, {
+    "name" : "MYLEAVE",
+    "version" : "1.0"
+  }, {
+    "name" : "LeaveConfigurations",
+    "version" : "1.0"
+  } ],
+  "identity" : [ "DevNextTimesheetOktaRfrsh", "DevNextTimesheetSAPIdentity", "DevNextTimesheetOktaLogin" ]
+}

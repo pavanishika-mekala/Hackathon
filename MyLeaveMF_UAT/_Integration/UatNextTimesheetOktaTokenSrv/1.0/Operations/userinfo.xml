@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" endpoint="default" groupType="" id="userinfo" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value="function setToken(){&#xA;if (request!==undefined &amp;&amp; request!==null) {&#xA;&#x9;var accessToken = request.getParameter(&quot;access_token&quot;);&#xA;&#x9;if (accessToken!==undefined &amp;&amp; accessToken!==null) {&#xA;&#x9;&#x9;request.addRequestParam_(&quot;Authorization&quot;,&quot;Bearer &quot;+accessToken);&#xA;&#x9;}&#xA;}&#xA;}&#xA;setToken();"/>
+        <config-param api-version="" appid="" name="postprocessorJS" value="function addGroups(){&#xA;  var responseString = result.findParam('response').getValue();&#xA;  var responseObject = null;&#xA;  if (responseString !== undefined &amp;&amp; responseString !== null) {&#xA;    responseObject = JSON.parse(responseString);&#xA;  }&#xA;  if (responseObject !== undefined &amp;&amp; responseObject !== null) {&#xA;    var userAttributes = result.getRecordById('user_attributes');&#xA;    var groupsString = responseObject.groups? responseObject.groups : &quot;&quot;;&#xA;    var groups = new com.konylabs.middleware.dataobject.Param();&#xA;    groups.setName('groups');&#xA;    groups.setValue(groupsString);&#xA;    userAttributes.setParam(groups);&#xA;  }&#xA;}&#xA;addGroups();"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://engie-pre.okta-emea.com/oauth2/v1/userinfo"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" sms-name="" src="request" sourcevalue="Bearer $Request.access_token" srcformatvalue="" target="" targetdatatype="" testvalue="Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IlFfZEFaVEdvZFJPeXJLS3hIeVgyR0I4cWF2U2Y3V1NFNkQ0SWktTkljcnMifQ.eyJ2ZXIiOjEsImp0aSI6IkFULkZqZWFTYmtENE50eUdOcFNrLU5ZcXBKYjVnM2hiV1dSNVlycEdrV0YwMmsuU0w3ZWRzOFJDZzhMK25nS1Uzd1QvNitjMm1FaVJEMWNjTm1rdE5Yd3FwMD0iLCJpc3MiOiJodHRwczovL2VuZ2llLXByZS5va3RhLWVtZWEuY29tIiwiYXVkIjoiaHR0cHM6Ly9lbmdpZS1wcmUub2t0YS1lbWVhLmNvbSIsInN1YiI6ImtvbnkudGVzdEB0ZXN0LmNvbSIsImlhdCI6MTQ5NjIzODQxMCwiZXhwIjoxNDk2MjQyMDEwLCJjaWQiOiJ4SGY0S1JzRG0wbU9rbGwwUWpsdSIsInVpZCI6IjAwdTZ2NmUweUl3UW1HQ3c3MGk2Iiwic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsImdyb3VwcyIsIm9mZmxpbmVfYWNjZXNzIl19.ktONe0I9yrE5NNGjxhld1nTuU7ytypEFuT3myGLqKWREvdVH2Nk1WT4yGCYyRtA9RoK2rn34r_2axxhb7OLPpkFZk7Sm5L1uEpUhuFmHjEB1LKC8vXYprxEuZl_42X1XUVsCrWTkID8LRED72mSNQ_zzZ1QdOlQCQ35oAi4cybi6LKH62xBIwhsHeYPQs3xW4AXpvt-FeGaCZGz431oZNdTca7f0NEKf8N4MsbmHtKDgtCQ0AhRKxhBiVNk0HxW35L2R3_WFTMbFwfSQKEOWoBfhbaUWNeuQIh3q8CrSi0mfcT0O9PdGoRm8ZqXfoyauwD7A-RNxX_tkNESHZe7jCg" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="application/x-www-form-urlencoded" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="application/x-www-form-urlencoded" value="application/x-www-form-urlencoded">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="access_token" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="eyJhbGciOiJSUzI1NiIsImtpZCI6Im5zbGktOG9VWExsdHljaFJjcjMyNzFnTzh5Sk1DSGdtR1AzcFdEWVcyVE0ifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjVZLVowZTh6d01pMWI3ajRBdG4xLXJwZkp6RldtMTNzdFRPVWlpYWEzMnMiLCJpc3MiOiJodHRwczovL2VuZ2llLXByZS5va3RhLWVtZWEuY29tIiwiYXVkIjoiaHR0cHM6Ly9lbmdpZS1wcmUub2t0YS1lbWVhLmNvbSIsInN1YiI6ImtvbnkudGVzdEB0ZXN0LmNvbSIsImlhdCI6MTQ4OTUxMjg3MCwiZXhwIjoxNDg5NTE2NDcwLCJjaWQiOiJ0WlpvRFNtOHJ5cG8xUE1ROWlLZyIsInVpZCI6IjAwdTZ2NmUweUl3UW1HQ3c3MGk2Iiwic2NwIjpbIm9wZW5pZCIsInByb2ZpbGUiLCJlbWFpbCIsImdyb3VwcyIsIm9mZmxpbmVfYWNjZXNzIl19.byuO-JDNILY-tbURI5cHR7dbm_2PDIF4-lYlelBCdxGZlEeCNmau0lgs2oTmUTx61mU9201895-ORsAi_REOEmowwX5yE3aqsNCvZ3Rg5bd4Kr3wUllZoMNbw3pokAVslcVtkDc_LBZ-wYSNhsc4qatb5sY8XQTreedpkVwUP0bMBOxmCO8gZa7bomMzWCZDi7L8mdn7hlMMtLvvxfy7bRdgb_bHL6J8hb_TtRrtOgy6GFG23p_ERUIiKTfARPHVFoMQoBndbMbQJ14n5LxBvnOQWIe0adleVk7TRZXxLQyYU2yl2AOYfp1LCIaC9J_EcDbQtZlTr3561sqdKPfbIQ" value="">
+            <accessType></accessType>
+        </param>
+    </service-input>
+    <service-output passthrough="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="response" order="" passnull="false" sms-name="" src="." sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <record id="user_attributes" order="" src=".">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="sub" order="" passnull="false" sms-name="" src="/sub" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_id" order="" passnull="false" sms-name="" src="/sub" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="name" order="" passnull="false" sms-name="" src="/name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="preferred_username" order="" passnull="false" sms-name="" src="/preferred_username" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="given_name" order="" passnull="false" sms-name="" src="/given_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="family_name" order="" passnull="false" sms-name="" src="/family_name" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="email" order="" passnull="false" sms-name="" src="/email" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="division" order="" passnull="false" sms-name="" src="/division" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

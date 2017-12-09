@@ -1,0 +1,832 @@
+{
+  "operationConfig" : {
+    "name" : "queryTEAMVIEW9352",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "ZKONY_TEAM_VIEW",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "TEAM_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "USER_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "TEAM_POSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LEAVE_REQUEST_REPORT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_BALANCE_D",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_BALANCE_H",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENDDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_FROMDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_FROMTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_HRS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_TYPE_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "LV_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "PROCESS_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "PROCESS_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "REQUEST_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LEAVE_REQUEST_ENTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_REPORT",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ISERROR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_DAYS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENDDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_FROMDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_FROMTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_HRS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LV_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "PROCESS_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "PROCESS_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "REQUEST_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LEAVE_AUDIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVER_EMPNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVER_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "SEQ_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LEAVE_NOTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVEID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "LV_ATTCH_SEQNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PERSONAL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "ZKONY_TEAM_VIEW",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"ZKONY_TEAM_VIEW_DOB\",\"entityName\":\"ZKONY_TEAM_VIEW\",\"fMap\":{},\"sQuery\":\"\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"ZKONY_TEAM_VIEW_DOB\",\"entityName\":\"HCM_LEAVE_REQUEST_REPORT\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"ZKONY_TEAM_VIEW_DOB\",\"entityName\":\"HCM_LEAVE_REQUEST_ENTRY\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"ZKONY_TEAM_VIEW_DOB\",\"entityName\":\"HCM_LEAVE_AUDIT\",\"config\":{},\"relationshipKeys\":[{\"parentKey\":\"LEAVE_ENTRY_ID\",\"childKey\":\"ENTRY_ID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"ZKONY_TEAM_VIEW_DOB\",\"entityName\":\"HCM_LEAVE_NOTE\",\"config\":{},\"relationshipKeys\":[{\"parentKey\":\"LEAVE_ENTRY_ID\",\"childKey\":\"LEAVEID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"ZKONY_TEAM_VIEW_DOB\",\"entityName\":\"HCM_LVREQ_ATTACHMENTS\",\"config\":{\"OPMODE\":\"true\"},\"relationshipKeys\":[{\"parentKey\":\"LEAVE_ENTRY_ID\",\"childKey\":\"LEAVE_ENTRY_ID\"}]}],\"config\":{},\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"},{\"parentKey\":\"REQUEST_ID\",\"childKey\":\"REQUEST_ID\"}]}],\"config\":{},\"relationshipKeys\":[{\"parentKey\":\"TEAM_EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"ZKONY_TEAM_VIEW_DOB\",\"entityName\":\"HCM_PERSONAL_DATA\",\"config\":{},\"relationshipKeys\":[{\"parentKey\":\"TEAM_EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"config\":{}}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "libraryName" : "ZKONY",
+      "businessObjectName" : "ZKONY_TEAM_VIEW"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "TEAM_VIEW",
+      "children" : [ {
+        "children" : [ {
+          "children" : [ {
+            "children" : [ ],
+            "name" : "TEAM_LEAVE_AUDIT",
+            "actions" : {
+              "get" : true
+            },
+            "selected" : true
+          }, {
+            "children" : [ ],
+            "name" : "TEAM_LEAVE_NOTE",
+            "actions" : {
+              "get" : true
+            },
+            "selected" : true
+          }, {
+            "children" : [ ],
+            "name" : "TEAM_LVREQ_ATTACHMENTS",
+            "actions" : {
+              "get" : true
+            },
+            "selected" : true
+          } ],
+          "name" : "TEAM_LEAVE_REQUEST_ENTRY",
+          "actions" : {
+            "get" : true
+          },
+          "selected" : true
+        } ],
+        "name" : "TEAM_LEAVE_REQUEST_REPORT",
+        "actions" : {
+          "get" : true
+        },
+        "selected" : true
+      }, {
+        "children" : [ ],
+        "name" : "TEAM_PERSONAL_DATA",
+        "actions" : {
+          "get" : true
+        },
+        "selected" : true
+      } ],
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

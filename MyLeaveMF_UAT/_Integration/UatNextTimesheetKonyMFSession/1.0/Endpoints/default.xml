@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint encryptSecureInfo="false" name="default" type="JSON" url="https://100004737.auth.konycloud.com">
+    <apiThrottling/>
+    <config>
+        <entry>
+            <key>ignorehttpproxy</key>
+            <value>true</value>
+        </entry>
+    </config>
+</endpoint>

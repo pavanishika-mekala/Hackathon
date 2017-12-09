@@ -1,0 +1,7 @@
+{
+  "config" : {
+    "metadataSecurity" : "authorized_app_user",
+    "offline" : false,
+    "conflict_policy" : "none"
+  }
+}

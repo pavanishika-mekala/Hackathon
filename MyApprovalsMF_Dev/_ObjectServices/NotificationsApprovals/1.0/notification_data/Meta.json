@@ -1,0 +1,60 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodifiedts"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeleteflag"
+    },
+    "backendMeta" : {
+      "libraryName" : "_SKYTECH_WF",
+      "dataObjectName" : "WF_DO_NOTIFICATION",
+      "businessObjectName" : "WF_NOTIFDATA"
+    },
+    "designTimeBackendMeta" : {
+      "libraryName" : "_SKYTECH_WF",
+      "dataObjectName" : "WF_DO_NOTIFICATION",
+      "businessObjectName" : "WF_NOTIFDATA"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "softdeleteflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "createdts",
+    "targetField" : "EXTRACT_TSTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "notification_id",
+    "targetField" : "NOTIFICATION_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "data_key",
+    "targetField" : "DATA_KEY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "id",
+    "targetField" : "ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "data_value",
+    "targetField" : "DATA_VALUE",
+    "type" : "request_response"
+  } ]
+}

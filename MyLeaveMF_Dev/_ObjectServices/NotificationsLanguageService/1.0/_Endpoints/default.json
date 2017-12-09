@@ -1,0 +1,18 @@
+{
+  "name" : "default",
+  "type" : "sky",
+  "url" : "https://api-dev.engie.com:8065/v1/",
+  "encryptSecureInfo" : false,
+  "config" : {
+    "authservicetype" : "IdentityProvider",
+    "Scheme" : "https",
+    "HeaderPrefix" : "KonySAP",
+    "identityProvider" : "DevNextTimesheetSAPIdentity",
+    "Gatewayaddress" : "api-dev.engie.com",
+    "Port" : "8065",
+    "identityProviderType" : "sky",
+    "UserName" : "engiebc1",
+    "Password" : "engiebc1",
+    "CallerId" : "callId"
+  }
+}

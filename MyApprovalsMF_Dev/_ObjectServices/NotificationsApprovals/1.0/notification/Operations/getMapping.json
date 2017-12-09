@@ -1,0 +1,206 @@
+{
+  "operationConfig" : {
+    "name" : "queryWFNOTIFICATIONS2213",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "WF_NOTIFICATIONS",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIFICATION_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "USER_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIF_MODULE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_NOTIFDATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFICATIONS",
+      "formatType" : "None"
+    }, {
+      "id" : "DATA_KEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DATA_VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIFICATION_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_NOTIFDATA",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><exec-function name=\"kony.gen.obj.notification.toLOBFields\"/><exec-function name=\"kony.gen.obj.notification__metadata.toLOBFields\"/><map inputpath=\"notification_data\" outputpath=\"WF_NOTIFDATA\"><exec-function name=\"kony.gen.obj.notification_data.toLOBFields\"/><exec-function name=\"kony.gen.obj.notification_data__metadata.toLOBFields\"/></map></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">           <map inputpath=\"response_in\" outputpath=\"response_out\">                       <map inputpath=\"WF_NOTIFICATIONS\" outputpath=\"notification\">                                   <map inputpath=\"WF_NOTIFDATA\" outputpath=\"notification_data\">                           <exec-function name=\"kony.gen.obj.notification_data.fromLOBFields\"/>                           <set-param inputpath=\"TIMESTAMP\" outputpath=\"lastmodifiedts\"/>                                       <set-param inputpath=\"TIMESTAMP\" outputpath=\"createdts\"/>                 </map>                          <exec-function name=\"kony.gen.obj.notification.fromLOBFields\"/>                                       <set-param inputpath=\"TIMESTAMP\" outputpath=\"lastmodifiedts\"/>                                                   <set-param inputpath=\"TIMESTAMP\" outputpath=\"createdts\"/>                    </map>           </map></mapper>",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"notification\",\"xy\":\"770 100\",\"__gohashid\":12189},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"WF_NOTIFICATIONS\",\"xy\":\"150 100\",\"__gohashid\":12190}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:notification\",\"fromPort\":\"target\",\"toPort\":\"target:notification\",\"visible\":true,\"common\":false,\"__gohashid\":12233},{\"from\":\"target:notification\",\"to\":\"target:notification:fields\",\"fromPort\":\"target:notification\",\"toPort\":\"target:notification:fields\",\"visible\":true,\"common\":false,\"__gohashid\":12234},{\"from\":\"target:notification:fields\",\"to\":\"target:notification:softdeleteflag:\",\"fromPort\":\"target:notification:fields\",\"toPort\":\"target:notification:softdeleteflag:\",\"visible\":true,\"common\":false,\"__gohashid\":12235},{\"from\":\"target:notification:fields\",\"to\":\"target:notification:description:\",\"fromPort\":\"target:notification:fields\",\"toPort\":\"target:notification:description:\",\"visible\":true,\"common\":false,\"__gohashid\":12236},{\"from\":\"target:notification:fields\",\"to\":\"target:notification:employee_id:\",\"fromPort\":\"target:notification:fields\",\"toPort\":\"target:notification:employee_id:\",\"visible\":true,\"common\":false,\"__gohashid\":12237},{\"from\":\"target:notification:fields\",\"to\":\"target:notification:lastmodifiedts:\",\"fromPort\":\"target:notification:fields\",\"toPort\":\"target:notification:lastmodifiedts:\",\"visible\":true,\"common\":false,\"__gohashid\":12238},{\"from\":\"target:notification:fields\",\"to\":\"target:notification:notification_id:\",\"fromPort\":\"target:notification:fields\",\"toPort\":\"target:notification:notification_id:\",\"visible\":true,\"common\":false,\"__gohashid\":12239},{\"from\":\"target:notification:fields\",\"to\":\"target:notification:module:\",\"fromPort\":\"target:notification:fields\",\"toPort\":\"target:notification:module:\",\"visible\":true,\"common\":false,\"__gohashid\":12240},{\"from\":\"target:notification:fields\",\"to\":\"target:notification:createdts:\",\"fromPort\":\"target:notification:fields\",\"toPort\":\"target:notification:createdts:\",\"visible\":true,\"common\":false,\"__gohashid\":12241},{\"from\":\"target:notification:fields\",\"to\":\"target:notification:title:\",\"fromPort\":\"target:notification:fields\",\"toPort\":\"target:notification:title:\",\"visible\":true,\"common\":false,\"__gohashid\":12242},{\"from\":\"target:notification\",\"to\":\"target:notification:notification_data\",\"fromPort\":\"target:notification\",\"toPort\":\"target:notification:notification_data\",\"visible\":true,\"common\":false,\"__gohashid\":12243},{\"from\":\"target:notification:notification_data\",\"to\":\"target:notification:notification_data:fields\",\"fromPort\":\"target:notification:notification_data\",\"toPort\":\"target:notification:notification_data:fields\",\"visible\":true,\"common\":false,\"__gohashid\":12244},{\"from\":\"target:notification:notification_data:fields\",\"to\":\"target:notification:notification_data:data_key:\",\"fromPort\":\"target:notification:notification_data:fields\",\"toPort\":\"target:notification:notification_data:data_key:\",\"visible\":true,\"common\":false,\"__gohashid\":12245},{\"from\":\"target:notification:notification_data:fields\",\"to\":\"target:notification:notification_data:data_value:\",\"fromPort\":\"target:notification:notification_data:fields\",\"toPort\":\"target:notification:notification_data:data_value:\",\"visible\":true,\"common\":false,\"__gohashid\":12246},{\"from\":\"target:notification:notification_data:fields\",\"to\":\"target:notification:notification_data:softdeleteflag:\",\"fromPort\":\"target:notification:notification_data:fields\",\"toPort\":\"target:notification:notification_data:softdeleteflag:\",\"visible\":true,\"common\":false,\"__gohashid\":12247},{\"from\":\"target:notification:notification_data:fields\",\"to\":\"target:notification:notification_data:createdts:\",\"fromPort\":\"target:notification:notification_data:fields\",\"toPort\":\"target:notification:notification_data:createdts:\",\"visible\":true,\"common\":false,\"__gohashid\":12248},{\"from\":\"target:notification:notification_data:fields\",\"to\":\"target:notification:notification_data:id:\",\"fromPort\":\"target:notification:notification_data:fields\",\"toPort\":\"target:notification:notification_data:id:\",\"visible\":true,\"common\":false,\"__gohashid\":12249},{\"from\":\"target:notification:notification_data:fields\",\"to\":\"target:notification:notification_data:notification_id:\",\"fromPort\":\"target:notification:notification_data:fields\",\"toPort\":\"target:notification:notification_data:notification_id:\",\"visible\":true,\"common\":false,\"__gohashid\":12250},{\"from\":\"target:notification:notification_data:fields\",\"to\":\"target:notification:notification_data:lastmodifiedts:\",\"fromPort\":\"target:notification:notification_data:fields\",\"toPort\":\"target:notification:notification_data:lastmodifiedts:\",\"visible\":true,\"common\":false,\"__gohashid\":12251},{\"from\":\"source\",\"to\":\"source:WF_NOTIFICATIONS\",\"fromPort\":\"source\",\"toPort\":\"source:WF_NOTIFICATIONS\",\"visible\":true,\"common\":false,\"__gohashid\":12252},{\"from\":\"source:WF_NOTIFICATIONS\",\"to\":\"source:WF_NOTIFICATIONS:fields\",\"fromPort\":\"source:WF_NOTIFICATIONS\",\"toPort\":\"source:WF_NOTIFICATIONS:fields\",\"visible\":true,\"common\":false,\"__gohashid\":12253},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:DELETE_IND:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:DELETE_IND:\",\"visible\":true,\"common\":false,\"__gohashid\":12254},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:DESCRIPTION:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:DESCRIPTION:\",\"visible\":true,\"common\":false,\"__gohashid\":12255},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:EMPNUMBER:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:EMPNUMBER:\",\"visible\":true,\"common\":false,\"__gohashid\":12256},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:EXTRACT_TSTAMP:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:EXTRACT_TSTAMP:\",\"visible\":true,\"common\":false,\"__gohashid\":12257},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:NOTIF_MODULE:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:NOTIF_MODULE:\",\"visible\":true,\"common\":false,\"__gohashid\":12258},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:NOTIFICATION_ID:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:NOTIFICATION_ID:\",\"visible\":true,\"common\":false,\"__gohashid\":12259},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:TIMESTAMP:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:TIMESTAMP:\",\"visible\":true,\"common\":false,\"__gohashid\":12260},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:TITLE:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:TITLE:\",\"visible\":true,\"common\":false,\"__gohashid\":12261},{\"from\":\"source:WF_NOTIFICATIONS:fields\",\"to\":\"source:WF_NOTIFICATIONS:USER_ID:\",\"fromPort\":\"source:WF_NOTIFICATIONS:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:USER_ID:\",\"visible\":true,\"common\":false,\"__gohashid\":12262},{\"from\":\"source:WF_NOTIFICATIONS\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA\",\"fromPort\":\"source:WF_NOTIFICATIONS\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA\",\"visible\":true,\"common\":false,\"__gohashid\":12263},{\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"visible\":true,\"common\":false,\"__gohashid\":12264},{\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DATA_KEY:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DATA_KEY:\",\"visible\":true,\"common\":false,\"__gohashid\":12265},{\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DATA_VALUE:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DATA_VALUE:\",\"visible\":true,\"common\":false,\"__gohashid\":12266},{\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DELETE_IND:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DELETE_IND:\",\"visible\":true,\"common\":false,\"__gohashid\":12267},{\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:EXTRACT_TSTAMP:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:EXTRACT_TSTAMP:\",\"visible\":true,\"common\":false,\"__gohashid\":12268},{\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:ID:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:ID:\",\"visible\":true,\"common\":false,\"__gohashid\":12269},{\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:NOTIFICATION_ID:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:NOTIFICATION_ID:\",\"visible\":true,\"common\":false,\"__gohashid\":12270},{\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"to\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:TIMESTAMP:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:fields\",\"toPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:TIMESTAMP:\",\"visible\":true,\"common\":false,\"__gohashid\":12271},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:TIMESTAMP:\",\"to\":\"target:notification:createdts:\",\"fromPort\":\"source:WF_NOTIFICATIONS:TIMESTAMP:\",\"toPort\":\"target:notification:createdts:\",\"visible\":true,\"common\":true,\"__gohashid\":17002},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:DESCRIPTION:\",\"to\":\"target:notification:description:\",\"fromPort\":\"source:WF_NOTIFICATIONS:DESCRIPTION:\",\"toPort\":\"target:notification:description:\",\"visible\":true,\"common\":true,\"__gohashid\":17003},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:EMPNUMBER:\",\"to\":\"target:notification:employee_id:\",\"fromPort\":\"source:WF_NOTIFICATIONS:EMPNUMBER:\",\"toPort\":\"target:notification:employee_id:\",\"visible\":true,\"common\":true,\"__gohashid\":17004},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:EXTRACT_TSTAMP:\",\"to\":\"target:notification:lastmodifiedts:\",\"fromPort\":\"source:WF_NOTIFICATIONS:EXTRACT_TSTAMP:\",\"toPort\":\"target:notification:lastmodifiedts:\",\"visible\":true,\"common\":true,\"__gohashid\":17005},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:NOTIF_MODULE:\",\"to\":\"target:notification:module:\",\"fromPort\":\"source:WF_NOTIFICATIONS:NOTIF_MODULE:\",\"toPort\":\"target:notification:module:\",\"visible\":true,\"common\":true,\"__gohashid\":17006},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:NOTIFICATION_ID:\",\"to\":\"target:notification:notification_id:\",\"fromPort\":\"source:WF_NOTIFICATIONS:NOTIFICATION_ID:\",\"toPort\":\"target:notification:notification_id:\",\"visible\":true,\"common\":true,\"__gohashid\":17007},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:DELETE_IND:\",\"to\":\"target:notification:softdeleteflag:\",\"fromPort\":\"source:WF_NOTIFICATIONS:DELETE_IND:\",\"toPort\":\"target:notification:softdeleteflag:\",\"visible\":true,\"common\":true,\"__gohashid\":17008},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:TITLE:\",\"to\":\"target:notification:title:\",\"fromPort\":\"source:WF_NOTIFICATIONS:TITLE:\",\"toPort\":\"target:notification:title:\",\"visible\":true,\"common\":true,\"__gohashid\":17009},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:EXTRACT_TSTAMP:\",\"to\":\"target:notification:notification_data:createdts:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:EXTRACT_TSTAMP:\",\"toPort\":\"target:notification:notification_data:createdts:\",\"visible\":true,\"common\":true,\"__gohashid\":17010},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DATA_KEY:\",\"to\":\"target:notification:notification_data:data_key:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DATA_KEY:\",\"toPort\":\"target:notification:notification_data:data_key:\",\"visible\":true,\"common\":true,\"__gohashid\":17011},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DATA_VALUE:\",\"to\":\"target:notification:notification_data:data_value:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DATA_VALUE:\",\"toPort\":\"target:notification:notification_data:data_value:\",\"visible\":true,\"common\":true,\"__gohashid\":17012},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:ID:\",\"to\":\"target:notification:notification_data:id:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:ID:\",\"toPort\":\"target:notification:notification_data:id:\",\"visible\":true,\"common\":true,\"__gohashid\":17013},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:TIMESTAMP:\",\"to\":\"target:notification:notification_data:lastmodifiedts:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:TIMESTAMP:\",\"toPort\":\"target:notification:notification_data:lastmodifiedts:\",\"visible\":true,\"common\":true,\"__gohashid\":17014},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:NOTIFICATION_ID:\",\"to\":\"target:notification:notification_data:notification_id:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:NOTIFICATION_ID:\",\"toPort\":\"target:notification:notification_data:notification_id:\",\"visible\":true,\"common\":true,\"__gohashid\":17015},{\"category\":\"Mapping\",\"from\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DELETE_IND:\",\"to\":\"target:notification:notification_data:softdeleteflag:\",\"fromPort\":\"source:WF_NOTIFICATIONS:WF_NOTIFDATA:DELETE_IND:\",\"toPort\":\"target:notification:notification_data:softdeleteflag:\",\"visible\":true,\"common\":true,\"__gohashid\":17016}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"WF_DO_NOTIFICATION\",\"entityName\":\"WF_NOTIFICATIONS\",\"fMap\":{},\"sQuery\":\"\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"WF_DO_NOTIFICATION\",\"entityName\":\"WF_NOTIFDATA\",\"config\":{},\"relationshipKeys\":[{\"parentKey\":\"NOTIFICATION_ID\",\"childKey\":\"NOTIFICATION_ID\"}]}],\"config\":{}}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_NOTIFICATION",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "WF_NOTIFICATIONS"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "notification",
+      "children" : [ {
+        "children" : [ ],
+        "name" : "notification_data",
+        "actions" : {
+          "get" : true
+        },
+        "selected" : true
+      } ],
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true
+  }
+}

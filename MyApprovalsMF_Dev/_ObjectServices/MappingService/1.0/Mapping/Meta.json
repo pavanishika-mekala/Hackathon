@@ -1,0 +1,32 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "backendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_OKTA_USER_DOB",
+      "children" : "[]",
+      "businessObjectName" : "ZKONY_OKTA_USER"
+    },
+    "designTimeBackendMeta" : { }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "okta_user_id",
+    "targetField" : "OKTA_USER_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "sap_user_id",
+    "targetField" : "SAP_USER_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "timestamp",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

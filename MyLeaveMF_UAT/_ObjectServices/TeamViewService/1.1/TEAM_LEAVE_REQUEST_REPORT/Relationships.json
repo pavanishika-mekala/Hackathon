@@ -1,0 +1,15 @@
+[ {
+  "sourceObject" : "TEAM_LEAVE_REQUEST_REPORT",
+  "targetObject" : "TEAM_LEAVE_REQUEST_ENTRY",
+  "relationshipKeys" : [ {
+    "sourceField" : "EMPNUMBER",
+    "targetField" : "EMPNUMBER"
+  }, {
+    "sourceField" : "REQUEST_ID",
+    "targetField" : "REQUEST_ID"
+  } ],
+  "name" : "TEAM_LEAVE_REQUEST_REPORT_TEAM_LEAVE_REQUEST_ENTRY",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

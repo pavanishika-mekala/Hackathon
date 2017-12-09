@@ -1,0 +1,19 @@
+{
+  "name" : "default",
+  "type" : "sky",
+  "url" : "https://api-ppr.engie.com:8065/v1/",
+  "encryptSecureInfo" : false,
+  "config" : {
+    "authservicetype" : "IdentityProvider",
+    "Scheme" : "https",
+    "HeaderPrefix" : "KonySAP",
+    "identityProvider" : "UatNextTimesheetSAPIdentity",
+    "Gatewayaddress" : "api-ppr.engie.com",
+    "Port" : "8065",
+    "identityProviderType" : "sky",
+    "UserName" : "engiebc1",
+    "Password" : "engiebc1",
+    "CallerId" : "kony.test@test.com351819071456832",
+    "CallerGroup" : ""
+  }
+}

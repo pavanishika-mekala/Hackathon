@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" endpoint="default" groupType="" id="loginRefreshToken" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value="function addAPIAttributes(){&#xA;  var securityAttributesAPI = result.getRecordById('security_attributes_api');&#xA;  var accessTokenAPI = null;&#xA;  if (securityAttributesAPI !== undefined &amp;&amp; securityAttributesAPI !== null) {&#xA;      accessTokenAPI = securityAttributesAPI.getParam('access_token_api');&#xA;      if (accessTokenAPI !== undefined &amp;&amp; accessTokenAPI !== null) {&#xA;              accessTokenAPI = accessTokenAPI.getValue();&#xA;      }&#xA;  }&#xA;  if (accessTokenAPI !== undefined &amp;&amp; accessTokenAPI !== null) {&#xA;    var accessTokenString = accessTokenAPI + &quot;&quot;;&#xA;    var accessToken = new com.konylabs.middleware.dataobject.Param();&#xA;    accessToken.setName('access_token_api');&#xA;    accessToken.setValue(accessTokenString);&#xA; var reqSession= request.getSession();&#xA;  reqSession.setAttribute('access_token_api',accessTokenString);  &#xA;  }&#xA;}&#xA;addAPIAttributes();"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://engie-pre.okta-emea.com/oauth2/v1/token"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false">
+            <param datatype="string" defaultvalue="Basic MG9hMTdxZmlhY3Z5N2RZNVMwaTc6U2ozVGxZeXZEekxJTlhULWJjb3pKMDRQS0F5Sk5wVVM3Z3VpUnpwcA==" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="Basic MG9hMTdxZmlhY3Z5N2RZNVMwaTc6U2ozVGxZeXZEekxJTlhULWJjb3pKMDRQS0F5Sk5wVVM3Z3VpUnpwcA==">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="application/x-www-form-urlencoded" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="application/x-www-form-urlencoded">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="refresh_token" description="" encode="true" format="None" formatvalue="" name="grant_type" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="refresh_token" value="refresh_token">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="openid profile email groups offline_access" description="" encode="true" format="None" formatvalue="" name="scope" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="openid profile email groups offline_access" value="openid profile email groups offline_access">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="refresh_token" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="evk0rk6XNVko3K42pML9WS-aCKY08QnnBkA3JTkYWB8" value="">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="grant_type=$grant_type&amp;scope=$scope&amp;refresh_token=$refresh_token" description="" encode="false" format="" formatvalue="" name="message" order="" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="grant_type=$grant_type&amp;scope=$scope&amp;refresh_token=$refresh_token">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="access_token" order="" passnull="false" sms-name="" src="access_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <record id="security_attributes" order="" src=".">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="access_token" order="" passnull="false" sms-name="" src="access_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="refresh_token" order="" passnull="false" sms-name="" src="refresh_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="token_type" order="" passnull="false" sms-name="" src="token_type" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="expires_in" order="" passnull="false" sms-name="" src="expires_in" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="scope" order="" passnull="false" sms-name="" src="scope" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="session_token" order="" passnull="false" sms-name="" src="access_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="session_ttl" order="" passnull="false" sms-name="" src="expires_in" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id_token" order="" passnull="false" sms-name="" src="access_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

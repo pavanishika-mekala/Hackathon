@@ -1,0 +1,68 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "DELETE_IND"
+    },
+    "backendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_LEAVE_AUDIT"
+    },
+    "designTimeBackendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_LEAVE_AUDIT"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "APPROVER_NAME",
+    "targetField" : "APPROVER_NAME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STATUS",
+    "targetField" : "STATUS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "ENTRY_ID",
+    "targetField" : "ENTRY_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "APPROVER_EMPNO",
+    "targetField" : "APPROVER_EMPNO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SEQ_NO",
+    "targetField" : "SEQ_NO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "COMMENTS",
+    "targetField" : "COMMENTS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EMPNUMBER",
+    "targetField" : "EMPNUMBER",
+    "type" : "request_response"
+  } ]
+}

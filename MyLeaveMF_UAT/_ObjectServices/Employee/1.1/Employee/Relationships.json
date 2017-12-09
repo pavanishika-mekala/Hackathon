@@ -1,0 +1,23 @@
+[ {
+  "sourceObject" : "Employee",
+  "targetObject" : "Communication_Channel",
+  "relationshipKeys" : [ {
+    "sourceField" : "Id",
+    "targetField" : "Employee_Id"
+  } ],
+  "name" : "Employee_Communication_Channel1",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "Employee",
+  "targetObject" : "mediaEmployee",
+  "relationshipKeys" : [ {
+    "sourceField" : "Media_Id",
+    "targetField" : "name"
+  } ],
+  "name" : "Employee_mediaEmployee",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

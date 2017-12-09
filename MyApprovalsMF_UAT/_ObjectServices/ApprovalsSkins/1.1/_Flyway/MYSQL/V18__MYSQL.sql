@@ -1,0 +1,5 @@
+ALTER TABLE `ConfigurationMaster`
+	MODIFY `app_id` VARCHAR(50) NOT NULL,
+	ADD CONSTRAINT `3f62715edb1fe01974cb321c2c0b54` UNIQUE KEY(`app_id`),
+	DROP PRIMARY KEY,
+	ADD PRIMARY KEY(`app_id`);

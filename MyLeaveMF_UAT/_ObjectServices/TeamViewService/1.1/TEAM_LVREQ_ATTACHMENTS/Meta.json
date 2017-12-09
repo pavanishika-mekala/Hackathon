@@ -1,0 +1,67 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "backendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_LVREQ_ATTACHMENTS"
+    },
+    "designTimeBackendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_LVREQ_ATTACHMENTS"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "BINARY_NAME",
+    "targetField" : "BINARY_NAME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "INSTID",
+    "targetField" : "INSTID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_ENTRY_ID",
+    "targetField" : "LEAVE_ENTRY_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EXTRACT_TSTAMP",
+    "targetField" : "EXTRACT_TSTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LV_ATTCH_SEQNO",
+    "targetField" : "LV_ATTCH_SEQNO",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "FILE_DESC",
+    "targetField" : "FILE_DESC",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "FILE_EXT",
+    "targetField" : "FILE_EXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "FILE_NAME",
+    "targetField" : "FILE_NAME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "SOURCE_SYSTEM",
+    "targetField" : "SOURCE_SYSTEM",
+    "type" : "request_response"
+  } ]
+}

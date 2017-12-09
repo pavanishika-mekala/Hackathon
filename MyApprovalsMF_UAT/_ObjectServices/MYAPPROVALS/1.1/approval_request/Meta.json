@@ -1,0 +1,50 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "partialupdate" : "partialupdateMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "lastmodifiedts"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "softdeletedflag"
+    },
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "children" : "[{\"children\":[],\"name\":\"WF_WO_HDR\",\"selected\":true},{\"children\":[],\"name\":\"WF_AUDIT\",\"selected\":true},{\"children\":[],\"name\":\"WF_PR_HEADER\",\"selected\":true},{\"children\":[],\"name\":\"WF_AUDIT_TRIAL\",\"selected\":true},{\"children\":[{\"children\":[],\"name\":\"WF_EXPENSE_ENTRY_DETAIL\",\"selected\":true}],\"name\":\"WF_EXPENSE_ENTRY_HEADER\",\"selected\":true},{\"children\":[],\"name\":\"WF_APPROVAL_NOTE\",\"selected\":true},{\"children\":[],\"name\":\"WF_ATTRIBUTES\",\"selected\":true},{\"children\":[],\"name\":\"WF_OBJECT\",\"selected\":true},{\"children\":[],\"name\":\"WF_PO_HEADER\",\"selected\":true},{\"children\":[{\"children\":[],\"name\":\"media\",\"selected\":true}],\"name\":\"WF_ATTACHMENTS\",\"selected\":true},{\"children\":[{\"children\":[],\"name\":\"media\",\"selected\":true}],\"name\":\"WF_PDF_SUMMARY\",\"selected\":true},{\"children\":[],\"name\":\"WF_LEAVE_REQUEST_ENTRY\",\"selected\":true}]",
+      "businessObjectName" : "WF_DISTRIBUTION"
+    },
+    "designTimeBackendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "WF_DISTRIBUTION"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "lastmodifiedts",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "request_id",
+    "targetField" : "DOCID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "softdeletedflag",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "type_id",
+    "targetField" : "WFLOW_TYPE",
+    "type" : "request_response"
+  } ]
+}

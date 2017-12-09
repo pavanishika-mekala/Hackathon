@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" endpoint="default" groupType="" id="getSecurityAttributesFromSession" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://100004737.auth.konycloud.com/session/security_attributes?provider=$provider"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="X-Kony-Authorization" order="" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyAidHlwIjogImp3dCIsICJhbGciOiAiUlMyNTYiIH0.eyAiX2VtYWlsIjogImtvbnkudGVzdEB0ZXN0LmNvbSIsICJfdmVyIjogInYxLjEiLCAiaXNzIjogImh0dHBzOi8vMTAwMDA0NzM3LmF1dGgua29ueWNsb3VkLmNvbSIsICJfc2NvcGUiOiAiZyIsICJfaXNzbWV0YSI6ICIvbWV0YWRhdGEvMS1sTWVHMGl2eGRPTFR6T2dSbE5OZz09IiwgIl9hcHAiOiAiNzJhMWZlZDItNjUyZS00ZGQ3LWFiODItZDcxM2MyOTQwNTI0IiwgIl9zZXNzaW9uX2lkIjogImUzYjVmYWFkLTlhZjktNGQ4OC05ZDE0LTAwMTI3ZWI5ODNiNCIsICJfcHVpZCI6IDQsICJfcHJvdl9ndWlkIjogIjVlNWUxY2UzLWM3NTAtNGUwYi04MTUwLTg0YmYwY2NiNGI1OCIsICJfYXV0aHoiOiAiZXlKd1pYSnRhWE56YVc5dWN5STZlMzBzSW5KdmJHVnpJanBiWFgwIiwgIl9pZHAiOiAiRGV2TmV4dFRpbWVzaGVldE9rdGFMb2dpbiIsICJleHAiOiAxNTA3Mzg2MzM3LCAiaWF0IjogMTUwNzM4MjczNywgIl9zZXNzaW9uX3RpZCI6ICIxMDAwMDQ3MzciLCAiX3Byb3ZfdXNlcmlkIjogIjAwdTZ2NmUweUl3UW1HQ3c3MGk2IiwgImp0aSI6ICIwODk0MmVkMy01NDUzLTQ5MDMtYWVlYi0yYmM5ZjRiOTI0YTMiLCAiX2FjcyI6ICIxMDAwMDQ3MzciLCAiX3Byb3ZpZGVycyI6IFsgIkRldk5leHRUaW1lc2hlZXRPa3RhTG9naW4iIF0gfQ.rM-W-IFHL9bNM-F1s6G4bY6Nti-8MnCXVG0KAXrkX0Hx2QuK4mGV92Fi9rgAMHROXLXg5PPqyyI52Bs6XCJYVpEVGsHeMTFNTvJvSg8oS076D8Ce6KSlzgIHwSfD_6MP5qEQE2v-o00HhkvuY9Q_Ojxu6jaPrC3NsKtYJFptSDs4kT9IxRBsn-Lny8fy-zzQKGd9WHAQf_Z0owTjmlgRj6QfoZi1lnr--ZF0kl7tqrksbgWWzlimvjcO-WzzFHMKfH024bKq5rolzh2mbU4HpPUoqsGXhFp8WS3jqHDV9bkk-50wiadoztaHmY2Jl7TsOSByDM_hlVu-gWhZzut9bw" value="">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="DevNextTimesheetOktaLogin" description="" encode="true" format="None" formatvalue="" name="provider" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="DevNextTimesheetOktaLogin" value="DevNextTimesheetOktaLogin">
+            <accessType></accessType>
+        </param>
+    </service-input>
+    <service-output passthrough="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="access_token" order="" passnull="false" sms-name="" src="/access_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="refresh_token" order="" passnull="false" sms-name="" src="/refresh_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="token_type" order="" passnull="false" sms-name="" src="/token_type" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id_token" order="" passnull="false" sms-name="" src="/id_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

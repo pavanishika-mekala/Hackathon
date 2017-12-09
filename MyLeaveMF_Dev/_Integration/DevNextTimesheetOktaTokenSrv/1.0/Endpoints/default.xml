@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint encryptSecureInfo="false" name="default" type="JSON" url="https://engie-pre.okta-emea.com/oauth2/v1">
+    <apiThrottling/>
+    <config>
+        <entry>
+            <key>ignorehttpproxy</key>
+            <value>true</value>
+        </entry>
+    </config>
+</endpoint>

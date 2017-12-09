@@ -1,0 +1,51 @@
+{
+  "subType" : "customapp",
+  "description" : "MyApprovals_v3_2",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "DevNextTimesheetKonyMFSession",
+    "version" : "1.0"
+  }, {
+    "name" : "DevNextTimesheetOktaTokenSrv",
+    "version" : "1.0"
+  }, {
+    "name" : "DevNextTimesheetAxwayTokenSrv",
+    "version" : "1.0"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "GetCOnfigurations",
+    "version" : "1.0"
+  }, {
+    "name" : "DevNextTimesheetOktaRfrsh",
+    "version" : "1.0"
+  }, {
+    "name" : "DevNextTimesheetOktaUPAxway",
+    "version" : "1.0"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "NotificationsLanguageService",
+    "version" : "1.0"
+  }, {
+    "name" : "Employee",
+    "version" : "1.0"
+  }, {
+    "name" : "NotificationsApprovals",
+    "version" : "1.0"
+  }, {
+    "name" : "ConfigurationSDOApprovals",
+    "version" : "1.0"
+  }, {
+    "name" : "TranslationsService",
+    "version" : "1.0"
+  }, {
+    "name" : "MappingService",
+    "version" : "1.0"
+  }, {
+    "name" : "ApprovalsSkins",
+    "version" : "1.0"
+  }, {
+    "name" : "MYAPPROVALS",
+    "version" : "1.0"
+  } ],
+  "identity" : [ "DevNextTimesheetOktaRfrsh", "DevNextTimesheetSAPIdentity", "DevNextTimesheetOktaLogin" ]
+}

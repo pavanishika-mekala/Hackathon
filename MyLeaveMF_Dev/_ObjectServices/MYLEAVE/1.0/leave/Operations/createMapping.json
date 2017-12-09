@@ -1,0 +1,1107 @@
+{
+  "operationConfig" : {
+    "name" : "createHCMDISTRIBUTION2727",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "APPROVAL_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CANCEL_COMMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CANCEL_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CANCEL_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_ENDDATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_ENDTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_FROMDATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_FROMTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_HRS",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LV_STATUS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MGR_COMMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PROCESS_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PROCESS_TIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "REQUEST_ID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "STATUS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "APPROVER_EMPNO",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "APPROVER_NAME",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMENTS",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENTRY_ID",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SEQ_NO",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "STATUS",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_LEAVE_AUDIT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_LEAVE_NOTE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ADDED_ON",
+      "collectionId" : "HCM_LEAVE_NOTE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMENTS",
+      "collectionId" : "HCM_LEAVE_NOTE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_LEAVE_NOTE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_LEAVE_NOTE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVEID",
+      "collectionId" : "HCM_LEAVE_NOTE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_LEAVE_NOTE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "collectionId" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MESSAGE",
+      "collectionId" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MESSAGE_CNTR",
+      "collectionId" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MESSAGE_TYPE",
+      "collectionId" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "RECURRING",
+      "collectionId" : "HCM_LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTY",
+      "collectionId" : "HCM_LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYTEXT",
+      "collectionId" : "HCM_LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_LEAVE_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BINARY_NAME",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_DESC",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_EXT",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_NAME",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INSTID",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LV_ATTCH_SEQNO",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "media",
+      "collectionId" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "name",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "description",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classField",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classValue",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "group",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "type",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "extension",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "url",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "binary",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ondemand",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "HCM_LEAVE_REQUEST_ENTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENDDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_FROMDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_FROMTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_HRS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LV_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "PROCESS_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "PROCESS_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "REQUEST_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LEAVE_AUDIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVER_EMPNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVER_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "SEQ_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LEAVE_NOTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVEID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LEAVE_REPORT_MESSAGES",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REPORT_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REPORT_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REPORT_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REPORT_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REPORT_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE_CNTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REPORT_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "MESSAGE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REPORT_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REPORT_MESSAGES",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LEAVE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_TYPE",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_TYPE",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_TYPE",
+      "formatType" : "None"
+    }, {
+      "id" : "RECURRING",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_TYPE",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_TYPE",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYTEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_TYPE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_TYPE",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_LVREQ_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "LV_ATTCH_SEQNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_LVREQ_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                            <map inputpath=\"request_in\" outputpath=\"request_out\">                                                          <set-param outputpath=\"LV_STATUS\" input=\"S\"/>                                                                     <set-param inputpath=\"start_date\" outputpath=\"LEAVE_FROMDATE\"/>                                                                     <set-param inputpath=\"end_date\" outputpath=\"LEAVE_ENDDATE\"/>                                                                     <set-param inputpath=\"end_time\" outputpath=\"LEAVE_ENDTIME\"/>                                                                     <set-param inputpath=\"start_time\" outputpath=\"LEAVE_FROMTIME\"/>                                                                    <set-param inputpath=\"id\" outputpath=\"LEAVE_ENTRY_ID\"/>                                                                    <set-param inputpath=\"leave_type_id\" outputpath=\"LEAVE_TYPE\"/>                                                                    <set-param inputpath=\"employee_id\" outputpath=\"EMPNUMBER\"/>                                                                    <set-param inputpath=\"reason_desc\" outputpath=\"COMMENTS\"/>                               <set-param outputpath=\"CANCEL_DATE\" input=\"\"/>                                                                <set-param outputpath=\"CANCEL_TIME\" input=\"\"/>                                                                <set-param outputpath=\"DELETE_IND\" input=\"\"/>                                                                 <set-param outputpath=\"EXTRACT_TSTAMP\" input=\"\"/>                           <!-- no of hours no_of_hours inputh path this is populated  by the backend-->\t                            <set-param outputpath=\"LEAVE_HRS\" inputpath=\"no_of_hours\"/>                                                                 <set-param outputpath=\"MGR_COMMENTS\" input=\"\"/>                                                                 <set-param outputpath=\"PROCESS_DATE\" input=\"\"/>                                                                 <set-param outputpath=\"PROCESS_TIME\" input=\"\"/>                                                                 <set-param outputpath=\"REQUEST_ID\" input=\"\"/>                                                                 <set-param outputpath=\"STATUS\" input=\"\"/>                                                           <set-param outputpath=\"TIMESTAMP\" input=\"\"/>                            </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                                                                                                        <map inputpath=\"response_in\" outputpath=\"response_out\">                                                                                                                                                                              <map inputpath=\"HCM_DISTRIBUTION\" outputpath=\"\">                                                                                                                                                                                                                                                                <map inputpath=\"HCM_LEAVE_REQUEST_ENTRY\" outputpath=\"leave\">                                                                                                                                              <set-param inputpath=\"EMPNUMBER\" outputpath=\"employee_id\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param inputpath=\"EXTRACT_TSTAMP\" outputpath=\"createdts\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param inputpath=\"LEAVE_FROMDATE\" outputpath=\"start_date\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param inputpath=\"LEAVE_FROMTIME\" outputpath=\"start_time\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                 <set-param inputpath=\"LEAVE_TYPE\" outputpath=\"leave_type_id\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <set-param inputpath=\"LEAVE_HRS\" outputpath=\"no_of_hours\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <set-param inputpath=\"LEAVE_ENDDATE\" outputpath=\"end_date\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                           <set-param inputpath=\"LEAVE_ENDTIME\" outputpath=\"end_time\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                           <set-param inputpath=\"COMMENTS\" outputpath=\"reason_desc\"/>                                <set-param inputpath=\"TIMESTAMP\" outputpath=\"TIMESTAMP\"/>                                <set-param inputpath=\"TIMESTAMP\" outputpath=\"lastmodifiedts\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param inputpath=\"DELETE_IND\" outputpath=\"softdeleteflag\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                            <set-param input=\"\" outputpath=\"recurrence_id\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                             <set-param inputpath=\"LEAVE_ENTRY_ID\" outputpath=\"id\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <exec-function name=\"kony.logical:equal\" outputpath=\"ACCEPTEDCOND\" output=\"$vars\">\t\t\t\t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <set-arg name=\"ACCEPTED\" inputpath=\"STATUS\" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <set-arg name=\"ACCEPTED\" input=\"0\"  />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </exec-function>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <exec-function name=\"kony.logical:equal\" outputpath=\"PENDINGCOND\" output=\"$vars\">\t\t\t\t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <set-arg name=\"PENDING\" inputpath=\"STATUS\" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <set-arg name=\"PENDING\" input=\"\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </exec-function>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <exec-function name=\"kony.logical:equal\" outputpath=\"REJECTEDCOND\" output=\"$vars\">\t\t\t\t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <set-arg name=\"REJECTED\" inputpath=\"STATUS\" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <set-arg name=\"REJECTED\" input=\"1\"  />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </exec-function>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <exec-function name=\"kony.logical:equal\" outputpath=\"CANCELEDCOND\" output=\"$vars\">\t\t\t\t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <set-arg name=\"CANCELED\" inputpath=\"STATUS\" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <set-arg name=\"CANCELED\" input=\"C\"  />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </exec-function>                                                                                                                                                                                                                                <exec-function name=\"kony.logical:equal\" outputpath=\"SUBMITTEDCONDLV_STATUS\" output=\"$vars\">\t\t\t\t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <set-arg name=\"CANCELED2\" inputpath=\"LV_STATUS\" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <set-arg name=\"CANCELED2\" input=\"S\"  />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </exec-function>                                                                                                                                                                                                                                 <exec-function name=\"kony.logical:equal\" outputpath=\"CANCELEDCONDLV_STATUS\" output=\"$vars\">\t\t\t\t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <set-arg name=\"CANCELED3\" inputpath=\"LV_STATUS\" />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <set-arg name=\"CANCELED3\" input=\"C\"  />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </exec-function>                                                                                                                                                                                                                                <choose>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <when test=\"$vars/SUBMITTEDCONDLV_STATUS\">                                                                                                                                                                                                                                                                                                                                             <choose>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <when test=\"$vars/ACCEPTEDCOND\">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <set-param input=\"0\" outputpath=\"status_id\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                              </when>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </choose>                                                                                                                                                                                                                                                                                                                                                    <choose>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <when test=\"$vars/REJECTEDCOND\">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param input=\"1\" outputpath=\"status_id\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           </when>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </choose>                                                                                                                                                                                                                                                            </when>                                                                                                                                                                                                                                                                     <otherwise>                                                                                                                                                                                                                                                                                                                                                      <set-param input=\"2\" outputpath=\"status_id\"/>                                                                                                                                                                                                                                                                                                </otherwise>                                                                                                                                                                                                                </choose>                                                                                                                                                                                                                                <choose>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <when test=\"$vars/CANCELEDCONDLV_STATUS\">                                                                                                                                                                                                           <choose>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <when test=\"$vars/CANCELEDCOND\">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <set-param input=\"3\" outputpath=\"status_id\"/>                                                                                                                \t                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </when>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     </choose>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <choose>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <when test=\"$vars/PENDINGCOND\">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <set-param outputpath=\"status_id\" input=\"3\"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </when>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </choose>                                                                                                                                                                                                                                                                                           </when>                                                                                                                         <otherwise>                                                                                                                                                                                                                                                                                                                                                      <set-param input=\"2\" outputpath=\"status_id\"/>                                                                                                                                                                                                                                                                                                </otherwise>                                                                                                </choose>                                                                                                                                                                         </map>                                                                                                                                                                                                                                                                                                                                                                              </map>                                                                                        </map></mapper>",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_LEAVE_REQUEST_ENTRY\",\"fMap\":{\"EMPNUMBER\":\"HCM_DISTRIBUTION.EMPNUMBER\",\"TYPE\":\"HCM_DISTRIBUTION.TYPE\"},\"sQuery\":\"HCM_DISTRIBUTION.DIST_KEY\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_LEAVE_AUDIT\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"},{\"parentKey\":\"LEAVE_ENTRY_ID\",\"childKey\":\"ENTRY_ID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_LEAVE_NOTE\",\"relationshipKeys\":[{\"parentKey\":\"LEAVE_ENTRY_ID\",\"childKey\":\"LEAVEID\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_LEAVE_REPORT_MESSAGES\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"},{\"parentKey\":\"LEAVE_ENTRY_ID\",\"childKey\":\"LEAVE_ENTRY_ID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_LEAVE_TYPE\",\"relationshipKeys\":[{\"parentKey\":\"LEAVE_TYPE\",\"childKey\":\"SUBTY\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMPLOYEE_TRANSACTIONS\",\"entityName\":\"HCM_LVREQ_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"LEAVE_ENTRY_ID\",\"childKey\":\"LEAVE_ENTRY_ID\"}]}],\"config\":{}}}",
+    "opcode" : "create",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_TRANSACTIONS",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_LEAVE_REQUEST_ENTRY"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ {
+          "children" : [ ],
+          "name" : "MyLeaveMedia",
+          "actions" : {
+            "create" : true,
+            "update" : true,
+            "partialupdate" : true
+          },
+          "selected" : false
+        } ],
+        "name" : "leave_attachments",
+        "actions" : {
+          "create" : true,
+          "update" : true,
+          "partialupdate" : true
+        },
+        "selected" : false
+      }, {
+        "children" : [ ],
+        "name" : "leave_audit",
+        "actions" : {
+          "create" : true,
+          "update" : true,
+          "partialupdate" : true
+        },
+        "selected" : true
+      }, {
+        "children" : [ ],
+        "name" : "leave_note",
+        "actions" : {
+          "create" : true,
+          "update" : true,
+          "partialupdate" : true
+        },
+        "selected" : false
+      } ],
+      "name" : "leave",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

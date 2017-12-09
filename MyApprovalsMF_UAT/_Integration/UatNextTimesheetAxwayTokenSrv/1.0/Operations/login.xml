@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" endpoint="default" groupType="" id="login" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value="function addAPIAttributes(){&#xA;  var securityAttributesAPI = result.getRecordById('security_attributes_api');&#xA;  var accessTokenAPI = null;&#xA;  if (securityAttributesAPI !== undefined &amp;&amp; securityAttributesAPI !== null) {&#xA;      accessTokenAPI = securityAttributesAPI.getParam('access_token_api');&#xA;      if (accessTokenAPI !== undefined &amp;&amp; accessTokenAPI !== null) {&#xA;              accessTokenAPI = accessTokenAPI.getValue();&#xA;      }&#xA;  }&#xA;  if (accessTokenAPI !== undefined &amp;&amp; accessTokenAPI !== null) {&#xA;    var accessTokenString = accessTokenAPI + &quot;&quot;;&#xA;    var accessToken = new com.konylabs.middleware.dataobject.Param();&#xA;    accessToken.setName('access_token_api');&#xA;    accessToken.setValue(accessTokenString);&#xA; var reqSession= request.getSession();&#xA;  reqSession.setAttribute('access_token_api',accessTokenString);  &#xA;  }&#xA;}&#xA;addAPIAttributes();"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://api-ppr.engie.com:8065/engie/oauth/token/v2"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false">
+            <param datatype="string" defaultvalue="application/x-www-form-urlencoded" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="application/x-www-form-urlencoded">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="eyJhbGciOiJSUzI1NiIsImtpZCI6ImVGaXp6UUdUM20wVWJqdS10NnVPWURHQVNCckxncVAyMHBrSXAteGwtX2cifQ.eyJ2ZXIiOjEsImp0aSI6IkFULk5LSkJ4UFQxVFppRVBhYTUwRFBBQTdDa0NFVW0xcFZXQXBRNzBNdy1ESm8ueTdLTXNrelNGVEQ4MEliemlkeUdodFBuMWoyOHVTL3FiTGpRbnY3SVhGWT0iLCJpc3MiOiJodHRwczovL2VuZ2llLXByZS5va3RhLWVtZWEuY29tIiwiYXVkIjoiaHR0cHM6Ly9lbmdpZS1wcmUub2t0YS1lbWVhLmNvbSIsInN1YiI6ImtvbnkudGVzdEB0ZXN0LmNvbSIsImlhdCI6MTUwNjUyNTIxMCwiZXhwIjoxNTA2NTI4ODEwLCJjaWQiOiJ0WlpvRFNtOHJ5cG8xUE1ROWlLZyIsInVpZCI6IjAwdTZ2NmUweUl3UW1HQ3c3MGk2Iiwic2NwIjpbImdyb3VwcyIsImVtYWlsIiwib2ZmbGluZV9hY2Nlc3MiLCJvcGVuaWQiLCJwcm9maWxlIl19.Y7Pv8OVmGZC3Drx4VOL_VJZnCtqYRLBKxP-PvBrDg7Zq4don731dLpFV7RNVmIBXxNNY7JzT1mJz-5fQoFXjU4CKBlP2PhI-_1NA5Zuxr6jJEpk--eKeEANzlFv6tovJ9n5_XAWXz6TAzAoRF7FcG5QsAfnrK7pXpXvNrhNgbAbyYQvsYkDN7n8wujjzy-00R21qyEcwDwBiMAkFLZhqrrz-rHiTiJMF9Y7tb2pmCIxvfm0BPtrQayqdLyruuMvGUdDS-eyJhbGciOiJSUzI1NiIsImtpZCI6ImlRNTdmckN0NWVOb3VzLW02d3dDNmlYdmVXcXpYMXh0ZU1LT0NuOG5OOW8ifQ.eyJ2ZXIiOjEsImp0aSI6IkFULk9HQVpZclZ2V0pBNDRZWmJDWHR6ZGZTcUYtb1VNMkQ3RXF2amNXQlY5UmMuSm9RTHpncEVCS3IyU2RSOURoUjNiditabEhUZndpbEtoUUllTzJKOHBwTT0iLCJpc3MiOiJodHRwczovL2VuZ2llLXByZS5va3RhLWVtZWEuY29tIiwiYXVkIjoiaHR0cHM6Ly9lbmdpZS1wcmUub2t0YS1lbWVhLmNvbSIsInN1YiI6ImtvbnkudGVzdEB0ZXN0LmNvbSIsImlhdCI6MTUwNzI5MzU1MywiZXhwIjoxNTA3Mjk3MTUzLCJjaWQiOiIwb2ExN3FmaWFjdnk3ZFk1UzBpNyIsInVpZCI6IjAwdTZ2NmUweUl3UW1HQ3c3MGk2Iiwic2NwIjpbImdyb3VwcyIsIm9wZW5pZCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsInBob25lIiwiZW1haWwiXX0.cv6c8y7lbjhYSjJR51MNAIGvKqy6zaKfVM6tu5kotDKqqxwBtqzcsFTlzmLDJb3w13TwV7WtJ7omh0-6HCCC9umiFV8yYnI1yhMOzZoZtvatbeLq_QEuEwyy9eiHVSSeyAvspA75yDdbAhjmV7MyR82vsIy2_ZG31nLJF8xzDgw73trkhAw9OkIFO-aKijEuKExAp7QXtSe-wGhX4Tm5AjQi89CwlUEkkxfjKAUW6TfzGqPZH-KZ1XKdeM6hgi6sUZxwsXcNpwX6fmbU71ZfROzd2lJseBI2CRDgts6OHQQ_jZc9Hjd6pMnf8o4jltH56r7vM6kPQEdAbo6nhEgqFg" description="" encode="true" format="None" formatvalue="" name="access_token" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="eyJhbGciOiJSUzI1NiIsImtpZCI6ImlRNTdmckN0NWVOb3VzLW02d3dDNmlYdmVXcXpYMXh0ZU1LT0NuOG5OOW8ifQ.eyJ2ZXIiOjEsImp0aSI6IkFULk9HQVpZclZ2V0pBNDRZWmJDWHR6ZGZTcUYtb1VNMkQ3RXF2amNXQlY5UmMuSm9RTHpncEVCS3IyU2RSOURoUjNiditabEhUZndpbEtoUUllTzJKOHBwTT0iLCJpc3MiOiJodHRwczovL2VuZ2llLXByZS5va3RhLWVtZWEuY29tIiwiYXVkIjoiaHR0cHM6Ly9lbmdpZS1wcmUub2t0YS1lbWVhLmNvbSIsInN1YiI6ImtvbnkudGVzdEB0ZXN0LmNvbSIsImlhdCI6MTUwNzI5MzU1MywiZXhwIjoxNTA3Mjk3MTUzLCJjaWQiOiIwb2ExN3FmaWFjdnk3ZFk1UzBpNyIsInVpZCI6IjAwdTZ2NmUweUl3UW1HQ3c3MGk2Iiwic2NwIjpbImdyb3VwcyIsIm9wZW5pZCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsInBob25lIiwiZW1haWwiXX0.cv6c8y7lbjhYSjJR51MNAIGvKqy6zaKfVM6tu5kotDKqqxwBtqzcsFTlzmLDJb3w13TwV7WtJ7omh0-6HCCC9umiFV8yYnI1yhMOzZoZtvatbeLq_QEuEwyy9eiHVSSeyAvspA75yDdbAhjmV7MyR82vsIy2_ZG31nLJF8xzDgw73trkhAw9OkIFO-aKijEuKExAp7QXtSe-wGhX4Tm5AjQi89CwlUEkkxfjKAUW6TfzGqPZH-KZ1XKdeM6hgi6sUZxwsXcNpwX6fmbU71ZfROzd2lJseBI2CRDgts6OHQQ_jZc9Hjd6pMnf8o4jltH56r7vM6kPQEdAbo6nhEgqFg" value="eyJhbGciOiJSUzI1NiIsImtpZCI6ImVGaXp6UUdUM20wVWJqdS10NnVPWURHQVNCckxncVAyMHBrSXAteGwtX2cifQ.eyJ2ZXIiOjEsImp0aSI6IkFULk5LSkJ4UFQxVFppRVBhYTUwRFBBQTdDa0NFVW0xcFZXQXBRNzBNdy1ESm8ueTdLTXNrelNGVEQ4MEliemlkeUdodFBuMWoyOHVTL3FiTGpRbnY3SVhGWT0iLCJpc3MiOiJodHRwczovL2VuZ2llLXByZS5va3RhLWVtZWEuY29tIiwiYXVkIjoiaHR0cHM6Ly9lbmdpZS1wcmUub2t0YS1lbWVhLmNvbSIsInN1YiI6ImtvbnkudGVzdEB0ZXN0LmNvbSIsImlhdCI6MTUwNjUyNTIxMCwiZXhwIjoxNTA2NTI4ODEwLCJjaWQiOiJ0WlpvRFNtOHJ5cG8xUE1ROWlLZyIsInVpZCI6IjAwdTZ2NmUweUl3UW1HQ3c3MGk2Iiwic2NwIjpbImdyb3VwcyIsImVtYWlsIiwib2ZmbGluZV9hY2Nlc3MiLCJvcGVuaWQiLCJwcm9maWxlIl19.Y7Pv8OVmGZC3Drx4VOL_VJZnCtqYRLBKxP-PvBrDg7Zq4don731dLpFV7RNVmIBXxNNY7JzT1mJz-5fQoFXjU4CKBlP2PhI-_1NA5Zuxr6jJEpk--eKeEANzlFv6tovJ9n5_XAWXz6TAzAoRF7FcG5QsAfnrK7pXpXvNrhNgbAbyYQvsYkDN7n8wujjzy-00R21qyEcwDwBiMAkFLZhqrrz-rHiTiJMF9Y7tb2pmCIxvfm0BPtrQayqdLyruuMvGUdDS-eyJhbGciOiJSUzI1NiIsImtpZCI6ImlRNTdmckN0NWVOb3VzLW02d3dDNmlYdmVXcXpYMXh0ZU1LT0NuOG5OOW8ifQ.eyJ2ZXIiOjEsImp0aSI6IkFULk9HQVpZclZ2V0pBNDRZWmJDWHR6ZGZTcUYtb1VNMkQ3RXF2amNXQlY5UmMuSm9RTHpncEVCS3IyU2RSOURoUjNiditabEhUZndpbEtoUUllTzJKOHBwTT0iLCJpc3MiOiJodHRwczovL2VuZ2llLXByZS5va3RhLWVtZWEuY29tIiwiYXVkIjoiaHR0cHM6Ly9lbmdpZS1wcmUub2t0YS1lbWVhLmNvbSIsInN1YiI6ImtvbnkudGVzdEB0ZXN0LmNvbSIsImlhdCI6MTUwNzI5MzU1MywiZXhwIjoxNTA3Mjk3MTUzLCJjaWQiOiIwb2ExN3FmaWFjdnk3ZFk1UzBpNyIsInVpZCI6IjAwdTZ2NmUweUl3UW1HQ3c3MGk2Iiwic2NwIjpbImdyb3VwcyIsIm9wZW5pZCIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsInBob25lIiwiZW1haWwiXX0.cv6c8y7lbjhYSjJR51MNAIGvKqy6zaKfVM6tu5kotDKqqxwBtqzcsFTlzmLDJb3w13TwV7WtJ7omh0-6HCCC9umiFV8yYnI1yhMOzZoZtvatbeLq_QEuEwyy9eiHVSSeyAvspA75yDdbAhjmV7MyR82vsIy2_ZG31nLJF8xzDgw73trkhAw9OkIFO-aKijEuKExAp7QXtSe-wGhX4Tm5AjQi89CwlUEkkxfjKAUW6TfzGqPZH-KZ1XKdeM6hgi6sUZxwsXcNpwX6fmbU71ZfROzd2lJseBI2CRDgts6OHQQ_jZc9Hjd6pMnf8o4jltH56r7vM6kPQEdAbo6nhEgqFg">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="urn:ietf:params:oauth:grant-type:jwt-bearer" description="" encode="true" format="None" formatvalue="" name="grant_type" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="urn:ietf:params:oauth:grant-type:jwt-bearer" value="urn:ietf:params:oauth:grant-type:jwt-bearer">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="KONY-ETIMESHEET-DEV-CTRL" description="" encode="true" format="None" formatvalue="" name="scope" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="KONY-ETIMESHEET-DEV-CTRL" value="KONY-ETIMESHEET-DEV-CTRL">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="0oa17qfiacvy7dY5S0i7" description="" encode="true" format="None" formatvalue="" name="cid" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="0oa17qfiacvy7dY5S0i7" value="0oa17qfiacvy7dY5S0i7">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="grant_type=$grant_type&amp;assertion=$access_token&amp;scope=$scope&amp;cid=$cid" description="" encode="false" format="" formatvalue="" name="message" order="" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="grant_type=$grant_type&amp;assertion=$access_token&amp;scope=$scope&amp;cid=$cid">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false">
+        <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error_api" order="" passnull="false" sms-name="" src="reasons" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+        <record id="user_attributes_api" order="" src=".">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="user_id_api" order="" passnull="false" sms-name="" src="/user_id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </record>
+        <record id="security_attributes_api" order="" src=".">
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="access_token_api" order="" passnull="false" sms-name="" src="/access_token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

@@ -1,0 +1,4 @@
+{
+  "serviceType" : "integration",
+  "description" : "Description: Provides Axway with an Okta id_token and returns an Axway access_token."
+}

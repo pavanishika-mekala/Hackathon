@@ -1,0 +1,19 @@
+{
+  "name" : "DevNextTimesheetOktaLogin",
+  "displayName" : "DevNextTimesheetOktaLogin",
+  "type" : "oauth2",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"auth_type\":\"oauth2\",\"oktaDomainName\":\"https://engie-pre.okta-emea.com\",\"profile\":{\"profile_attribute_selectors\":{\"federation_id\":\"sub\",\"last_name\":\"family_name\",\"phone_number\":\"phone_number\",\"custom_profile_attribute_selectors\":{},\"display_name\":\"name\",\"first_name\":\"given_name\",\"email\":\"email\"},\"endpoint\":{\"location\":\"url\",\"type\":\"direct\",\"value\":\"https://engie-pre.okta-emea.com/oauth2/v1/userinfo\"},\"request_method\":\"GET\"},\"dependent_providers\":[],\"client_authentication\":{\"authentication_scheme\":\"header\",\"client_secret\":\"Sj3TlYyvDzLINXT-bcozJ04PKAyJNpUS7guiRzpp\",\"client_id\":\"0oa17qfiacvy7dY5S0i7\"},\"authorization_endpoint\":\"https://engie-pre.okta-emea.com/oauth2/v1/authorize\",\"logout_url\":\"https://engie-pre.okta-emea.com/login/signout\",\"additional_data\":{\"refresh_request\":[],\"token_request\":[],\"revoke_request\":[],\"profile_request\":[],\"authorize_request\":[]},\"grant_type\":\"authorization_code\",\"scope\":\"groups openid profile email phone offline_access\",\"authentication_scheme\":\"header\",\"oauthProviderType\":\"okta\",\"token_endpoint\":\"https://engie-pre.okta-emea.com/oauth2/v1/token\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false,
+    "oauth2_success_url_config" : {
+      "allow_any" : true,
+      "allowed_urls" : [ ],
+      "default" : -1
+    }
+  },
+  "ssoenabled" : false
+}

@@ -1,0 +1,23 @@
+[ {
+  "sourceObject" : "attribute_def",
+  "targetObject" : "attribute_section",
+  "relationshipKeys" : [ {
+    "sourceField" : "attribute_section_id",
+    "targetField" : "id"
+  } ],
+  "name" : "attribute_def_attribute_section",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : false
+}, {
+  "sourceObject" : "attribute_def",
+  "targetObject" : "data_type",
+  "relationshipKeys" : [ {
+    "sourceField" : "data_type_id",
+    "targetField" : "id"
+  } ],
+  "name" : "attribute_def_data_type",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

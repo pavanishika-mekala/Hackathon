@@ -1,0 +1,3864 @@
+{
+  "operationConfig" : {
+    "name" : "queryWFDISTRIBUTION5939",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "WF_DISTRIBUTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "REF_WFLOW_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTION_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_READ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_LATER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATED_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "DELEG_FRDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "DELEG_TODATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_USER_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "PRIORITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "DEADLINE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTENDED_ATTRIBUTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "ATTRIBUTE_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "BOOLEAN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DECIMALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "FIELD_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "LDB_LABEL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "LOWERCASE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "OBJECT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "PARENT_KEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "EXTENDED_ATTRIBUTE",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_APPROVAL_NOTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "SEQ_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_APPROVAL_NOTE",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "ATTCH_SEQNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_ATTRIBUTES",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "ATTRIBUTE_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "BOOLEAN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "DECIMALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "FIELD_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "LDB_LABEL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "LOWERCASE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "OBJECT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "PARENT_KEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_ATTRIBUTES",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_AUDIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_AUDIT",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_EXPENSE_ENTRY_HEADER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "BUSINESS_PURPOSE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "COST_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPENSE_FROMDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPENSE_FROMTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPENSE_TODATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPENSE_TOTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXP_EXPENSE_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "REPORT_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_EXPENSE_ENTRY_DETAIL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "BILLABLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "CLIENT_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPENSE_AMOUNT",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPENSE_CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPENSE_LOCATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPENSE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "EXP_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "EXP_EXPENSE_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "GPS_LATITUDE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "GPS_LONGITUDE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "RECEIPT_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "RECEIPT_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "VENDOR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_EXPENSE_ENTRY_DETAIL",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_LEAVE_REQUEST_ENTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCEL_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENDDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_FROMDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_FROMTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_HRS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LEAVE_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "LV_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "PROCESS_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "PROCESS_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "REQUEST_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_LEAVE_REQUEST_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_OBJECT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "WFLOW_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_OBJECT",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_PDF_SUMMARY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "DOCID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PDF_SUMMARY",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_PO_HEADER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "AGREEMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "APPLIC_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "BIDINV_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "BINDG_PER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CASH_DISC1",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CASH_DISC2",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CNTRL_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "COLL_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "COMPL_DLV",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CO_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATED_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CURRENCY_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CUSTOMER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_FLAG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DIFF_INV",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DOC_CAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DOC_COND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DOC_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DOC_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DSCNT1_TO",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DSCNT2_TO",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DSCNT3_TO",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXCH_RATE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXCH_RATE_CM",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EXPORT_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "EX_RATE_FX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "E_MAIL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "GROS_VALUE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "GR_MESSAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "HOLD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "INCOTERMS1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "INCOTERMS2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "INTEM_INTVL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "LANGUAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "LAST_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "LOGSYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "MAST_COND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "MOBILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "OUR_REF",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "PMNTTRMS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "PO_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "PO_PROCEDURE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "PURCH_ORG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "PUR_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "QUOTATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "QUOT_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "QUOT_DEAD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "RCVG_VEND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "REF_1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "REJ_REASON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "REL_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "REL_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "REL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "REL_STRAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "SALES_PERS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "SCHED_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBITEMINT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBJ_TO_R",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "SUPPL_PLNT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "SUPPL_VEND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TARGET_VAL",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TAXR_CNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TELEPHONE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TEL_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "UPDATE_GRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "VENDOR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "VENDOR_WEBSITE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "VEND_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "VPER_END",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "VPER_START",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "WARRANTY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_PO_ITEMS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "ACCTASSCAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ACKNOWL_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ACKN_REQD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDRESS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDRESS2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ADVANCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "AGMT_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "AGRCUMQTY",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "AGREEMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ALLOC_TBL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "AT_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "AT_RELEV",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "BASE_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "BASE_UOM_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "BA_PARTNER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "BOM_EXPL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "BUS_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CERT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGED_ON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CMMT_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CMMT_ITEM_LONG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMITMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "COND_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONFIG_ORG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONF_CTRL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONF_MATL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONF_MATL_EXTERN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONF_MATL_GUID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONF_MATL_VERSIO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONSUMPT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONV_DEN1",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONV_DEN2",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONV_NUM1",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONV_NUM2",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "COST_CTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CO_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CO_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CTR_KEY_QM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CUSTOMER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_FLAG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DEL_COMPL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DEL_TYP_RT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DISTRIB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DOC_CAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "EAN_UPC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "EFF_VALUE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ERS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "EST_PRICE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXCLUSION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "FINAL_INV",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRM_ZONE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "FUNC_AREA_LONG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "FUND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "FUNDS_CTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GRANT_NBR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GROSS_WGHT",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GROS_VALUE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GRSETTFROM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GR_BASEDIV",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GR_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GR_NON_VAL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GR_PR_TIME",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GR_TO_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "G_L_ACCT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "HL_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "INCOTERMS1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "INCOTERMS2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "INFO_REC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "INFO_UPD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "INT_OBJ_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "IR_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ITEM_CAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ITEM_CAT_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "KANBAN_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "LAST_TRANS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MANUF_PROF",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MANU_MAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MATERIAL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MATERIAL_EXTERNA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MATERIAL_GUID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MATERIAL_VERSION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MAT_CAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MAT_GRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MAT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MAX_CMG",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MAX_CPGO",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MFR_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MFR_NO_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ML_AKT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "NET_PRICE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "NET_VALUE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "NET_WEIGHT",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "NOND_ITAX",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "NOT_CHGBL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_C_DISC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "NUM_REMIND",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ORDERPR_UN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ORDERPR_UN_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ORDER_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ORD_REAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "OUTL_TARGV",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "OVERDELTOL",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PARTNER_PC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PART_INV",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PCKG_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PLAN_DEL",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "POINTS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "POINTS_UN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "POINTS_UN_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "POITEM_COMMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PO_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PO_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PO_UNIT_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PRDTE_CTRL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PREQ_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PREQ_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PRICE_CTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PRICE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PRICE_UNIT",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PRINT_REL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PRIOR_VEND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PRNT_PRICE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PROFIT_CTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PROMOTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PTR_ASS_BA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PUR_MAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PUR_MAT_EXTERNAL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PUR_MAT_GUID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "PUR_MAT_VERSION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "QUAL_INSP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "QUANTITY",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "QUOTAUSAGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "QUOT_DEAD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "RECON_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "REJ_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "RELORD_QTY",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "REMINDER1",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "REMINDER2",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "REMINDER3",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "REMSHLIFE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "RET_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "REV_LEV",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "RFQ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "RFQ_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SC_VENDOR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SEASON_TY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SEASON_YR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SER_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SETRESERNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SETTLITMNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SETT_GRP1",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SETT_GRP_2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SETT_GRP_3",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SETT_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIPPING",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SHORT_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SI_CAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SPEC_STOCK",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SPSTCK_PHY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "STATISTIC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "STORE_LOC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBITM_KEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTOTAL_1",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTOTAL_2",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTOTAL_3",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTOTAL_4",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTOTAL_5",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTOTAL_6",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_ITEMS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_RANGE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUPPL_VEND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TARGET_QTY",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TAX_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TAX_JUR_CD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TRACKINGNO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TRADE_OFF",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TRANS_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "UNDER_TOL",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "UNLIMITED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "UPDATE_GRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "VAL_CAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "VAL_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "VEND_MAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "VOLUME",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "VOLUMEUNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "VOLUMEUNIT_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "WEIGHTUNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "WEIGHTUNIT_ISO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_PO_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "PO_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "PO_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_LABEL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PO_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_PR_HEADER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CHANGE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_EMAIL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_MOBILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_PHONE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATE_USER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DOC_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "DOC_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "TOTAL_PRICE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_PR_ITEMS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_HEADER",
+      "formatType" : "None"
+    }, {
+      "id" : "COST_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DOC_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "GL_ACCOUNT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ITEM_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MATERIAL_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MATERIAL_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "MATERIAL_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "ORDER_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "QTY",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "TOTAL_PRICE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "UOM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_PR_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_ITEMS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "PR_ITEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "PR_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_LABEL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_PR_TEXT",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_TIME_ENTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTIVITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVED_TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CANCELLED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMENTS_LENGTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "CREATED_TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "INT_ORDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "MODIFIED_BY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "NETWORK",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "REC_CCTR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "STARTTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIME_ENTRY_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "VALUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WBS_ELEMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WORKDATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WORKHOURS",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_TIMESHEET",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIME_ENTRY",
+      "formatType" : "None"
+    }, {
+      "id" : "APPROVAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "START_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBMITTED",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESHEETID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "TS_COMMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_TIMESHEET",
+      "formatType" : "None"
+    }, {
+      "id" : "WF_WO_HDR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_DISTRIBUTION",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDR_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "BASIC_DATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "BASIC_FINISH_DAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "BASIC_FINISH_TIM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "BASIC_START_DAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "BASIC_START_TIM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "CUST_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "EQUIP_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "FINISH_DATE_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "FLOCN_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "FUNC_LOCATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERNAL_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIF_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIF_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "NOTIF_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "OBJ_ID_WORKCEN",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "ORDER_NUM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "ORDER_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "PARTNER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "PLANT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "PRIORITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "PRIORITY_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "SHORT_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "SHORT_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "SHORT_TEXT_CS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS_PROFILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "STATUS_TXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "TECH_OBJ_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "TECH_OBJ_DESC_CS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "TIME_ZONE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "USERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "USER_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    }, {
+      "id" : "WORK_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "WF_WO_HDR",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_DISTRIBUTION\",\"fMap\":{},\"sQuery\":\"\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"EXTENDED_ATTRIBUTE\",\"relationshipKeys\":[]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_APPROVAL_NOTE\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOCID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOCID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_ATTRIBUTES\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOCID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_AUDIT\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOCID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_EXPENSE_ENTRY_HEADER\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_EXPENSE_ENTRY_DETAIL\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"},{\"parentKey\":\"EXP_EXPENSE_ID\",\"childKey\":\"EXP_EXPENSE_ID\"}]}],\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"COUNTER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_LEAVE_REQUEST_ENTRY\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"REQUEST_ID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_OBJECT\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOCID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_PDF_SUMMARY\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOCID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_PO_HEADER\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_PO_ITEMS\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_PO_TEXT\",\"relationshipKeys\":[{\"parentKey\":\"PO_ITEM\",\"childKey\":\"PO_ITEM\"},{\"parentKey\":\"PO_NUMBER\",\"childKey\":\"PO_NUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"PO_NUMBER\",\"childKey\":\"PO_NUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"PO_NUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_PR_HEADER\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_PR_ITEMS\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_PR_TEXT\",\"relationshipKeys\":[{\"parentKey\":\"DOC_ID\",\"childKey\":\"PR_NUMBER\"},{\"parentKey\":\"ITEM_NUM\",\"childKey\":\"PR_ITEM\"}]}],\"relationshipKeys\":[{\"parentKey\":\"DOC_ID\",\"childKey\":\"DOC_ID\"}]}],\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"DOC_ID\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_TIME_ENTRY\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_TIMESHEET\",\"relationshipKeys\":[{\"parentKey\":\"TIMESHEETID\",\"childKey\":\"TIMESHEETID\"}]}],\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"COUNTER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"WF_DO_TRANSACTIONS_HR\",\"entityName\":\"WF_WO_HDR\",\"relationshipKeys\":[{\"parentKey\":\"DOCID\",\"childKey\":\"ORDER_NUM\"}]}],\"config\":{}}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "WF_DO_TRANSACTIONS_HR",
+      "libraryName" : "_SKYTECH_WF",
+      "businessObjectName" : "WF_DISTRIBUTION"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "attachment_type",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "backendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_INTERNAT_DOB",
+      "children" : "[]",
+      "businessObjectName" : "ZKONY_INTERNAT"
+    },
+    "designTimeBackendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_INTERNAT_DOB",
+      "businessObjectName" : "ZKONY_INTERNAT"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "SPRAS",
+    "targetField" : "SPRAS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TEXT_CODE",
+    "targetField" : "TEXT_CODE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TEXT_DISPLAY",
+    "targetField" : "TEXT_DISPLAY",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TEXT_TYPE",
+    "targetField" : "TEXT_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  } ]
+}

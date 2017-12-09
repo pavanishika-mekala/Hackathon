@@ -1,0 +1,5668 @@
+{
+  "operationConfig" : {
+    "name" : "partialupdateHCMEMPASSIGNMENT6286",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "inputs" : [ {
+      "id" : "USER_ID",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGIN_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "END_DATE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMP_POSITION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "POS_TEXT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMPANY_CODE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COST_CENTER",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SHIFTVAL_STDT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SHIFTVAL_ENDDT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SHIFT_STTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SHIFT_ENDTIME",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SHIFT_TYPE",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "IS_PRIMARY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ACCOUNTID",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ACCOUNTNAME",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ACCOUNTNUMBER",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BANKKEY",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BANKNAME",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CITY",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COUNTRY",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CURRENCY",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "IS_PRIMARY",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PAYEE",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PAYMENTMETHOD",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "POSTALCODE",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SEQNR",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "STDPERCENTAGE",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "STDVALUE",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_BANK_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ANWENDER",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PERNR",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "RAUFNR",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "RKOSTL",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "RPROJ",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TEMPLATE",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "VARIANTE",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ZEILE",
+      "collectionId" : "HCM_CAT_TEMP",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMUNICATIONID",
+      "collectionId" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ADDRESS",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ADDRESS_2",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ADDRESS_3",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CITY",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "CONTACT_NAME",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COUNTRY",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COUNTY",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HSNMR",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SECONDADDRESSLINE",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "STATE",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TELEPHONE",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "VALID_FROM",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "VAL_AS_OF_TDY",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ZIPCODE",
+      "collectionId" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_EMP_ADDL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_EMP_ADDL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_EMP_ADDL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_EMP_ADDL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INTERESTS",
+      "collectionId" : "HCM_EMP_ADDL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "collectionId" : "HCM_EMP_ADDL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_EMP_ADDL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COUNTRY",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DATE_OF_EXPIRY",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DATE_OF_ISSUE",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "IDENTITY_NUMBER",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NAME_AS_ON_ID",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PLACE_OF_ISSUE",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_EMP_IDENTITY",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BLOOD_GROUP",
+      "collectionId" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DISABILITY",
+      "collectionId" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "RH_FACTOR",
+      "collectionId" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ACTION_REASON",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ACTION_TYPE",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ANNUAL_SAL",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EFFECT_DATE",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMP_GRP",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMP_SUBGRP",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "END_DATE",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "JOB_NAME",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "JOB_NO",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "JOINING_DT",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NXT_INC_DT",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ORG_UNIT",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ORG_UNIT_NAME",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PERS_AREA",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PERS_SUBAREA",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "POS_NAME",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "POS_NO",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PS_AREA",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PS_GROUP",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PS_LEVEL",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUPERVISOR_NAME",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DESCRIPTION",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPLOYEE",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "END_DATE",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "END_TIME",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "IS_PRIMARY",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SHIFT_TYPE",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "START_DATE",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "START_TIME",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_EMP_SHIFT",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ACADEMICTITLE",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ARISTOCRATICTITLE",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DATEOFBIRTH",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FIRSTNAME",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FULLNAME",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "GENDER",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INITIALS",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LANDOFBIRTH",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LASTNAME",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MAIDENNAME",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NATIONALITY",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NATIONALITY2",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NATIONALITY3",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NO_CHILD",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PERID",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PLACEOFBIRTH",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SECONDNAME",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SECONDSURNAMEPREFIX",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "STATEOFBIRTH",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SURNAMEPREFIX",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TELNR",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_FAMILY_ATTACHMENTS",
+      "collectionId" : "HCM_FAMILY_DETAILS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BINARY_NAME",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_DESC",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_EXT",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_NAME",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INSTID",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NO_CHILD",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "media",
+      "collectionId" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "name",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "description",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classField",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classValue",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "group",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "type",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "extension",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "url",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "binary",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ondemand",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BIRTHPLACE",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DOB",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FIRSTNAME",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "GENDER",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INITIALS",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INTERESTS",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "JOINING_DT",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "KNOWNAS",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LANG",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LASTNAME",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MARITAL_STATUS",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MIDDLENAME",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NAME_DOB",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NATIONALITY",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NO_OF_CHILD",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PERID",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SINCE",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUFFIX",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TITLE",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_PERSDATA_ATTACHMENTS",
+      "collectionId" : "HCM_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BINARY_NAME",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_DESC",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_EXT",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_NAME",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INSTID",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "media",
+      "collectionId" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "name",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "description",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classField",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classValue",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "group",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "type",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "extension",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "url",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "binary",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ondemand",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPNAME",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TEXT",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_MGR_PERSONAL_DATA",
+      "collectionId" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BIRTHPLACE",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DOB",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FIRSTNAME",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "GENDER",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INITIALS",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INTERESTS",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "KNOWNAS",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LANG",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LASTNAME",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MARITAL_STATUS",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MIDDLENAME",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NAME_DOB",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NATIONALITY",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NO_OF_CHILD",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PERID",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SINCE",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUFFIX",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TITLE",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_MGRDATA_ATTACHMENTS",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BINARY_NAME",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_DESC",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_EXT",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_NAME",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INSTID",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "media",
+      "collectionId" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "name",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "description",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classField",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classValue",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "group",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "type",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "extension",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "url",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "binary",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ondemand",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_MGR_COMMUNICATION",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_MGR_COMMUNICATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "COMMUNICATIONID",
+      "collectionId" : "HCM_MGR_COMMUNICATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_MGR_COMMUNICATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_MGR_COMMUNICATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_MGR_COMMUNICATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_MGR_COMMUNICATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_MGR_COMMUNICATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_MGR_COMMUNICATION",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_PROFILE_TEAM",
+      "collectionId" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPNAME",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TEXT",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_TEAM_PERS_DATA",
+      "collectionId" : "HCM_PROFILE_TEAM",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BIRTHPLACE",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DOB",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FIRSTNAME",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "GENDER",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INITIALS",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INTERESTS",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "JOINING_DT",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "KNOWNAS",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LANG",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LASTNAME",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MARITAL_STATUS",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MIDDLENAME",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NAME_DOB",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NATIONALITY",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NO_OF_CHILD",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PERID",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SINCE",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUFFIX",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TITLE",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_TEAM_ATTACHMENTS",
+      "collectionId" : "HCM_TEAM_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BINARY_NAME",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_DESC",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_EXT",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_NAME",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INSTID",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "media",
+      "collectionId" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "name",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "description",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classField",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classValue",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "group",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "type",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "extension",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "url",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "binary",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ondemand",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPNAME",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TEXT",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_SUB_PERS_DATA",
+      "collectionId" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BEGDA",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BIRTHPLACE",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DOB",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ENDDA",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FIRSTNAME",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "GENDER",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INITIALS",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INTERESTS",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "JOINING_DT",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "KNOWNAS",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LANG",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "LASTNAME",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MARITAL_STATUS",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "MIDDLENAME",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NAME_DOB",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NATIONALITY",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "NO_OF_CHILD",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "number",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "PERID",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SINCE",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUBTYPE",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SUFFIX",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TITLE",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "HCM_SUB_ATTACHMENTS",
+      "collectionId" : "HCM_SUB_PERS_DATA",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "BINARY_NAME",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "DELETE_IND",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EMPNUMBER",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_DESC",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_EXT",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "FILE_NAME",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "INSTID",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "TIMESTAMP",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "media",
+      "collectionId" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "name",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "description",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classField",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "classValue",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "group",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "type",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "extension",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "url",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "binary",
+      "encode" : true,
+      "passNull" : false
+    }, {
+      "id" : "ondemand",
+      "collectionId" : "media",
+      "scope" : "request",
+      "dataType" : "string",
+      "encode" : true,
+      "passNull" : false
+    } ],
+    "outputs" : [ {
+      "id" : "HCM_EMP_ASSIGNMENT",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "USER_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGIN_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMP_POSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "POS_TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "COMPANY_CODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "COST_CENTER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFTVAL_STDT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFTVAL_ENDDT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFT_STTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFT_ENDTIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_PRIMARY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_BANK_DETAILS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ACCOUNTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ACCOUNTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ACCOUNTNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BANKKEY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BANKNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "CITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "CURRENCY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_PRIMARY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "PAYEE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "PAYMENTMETHOD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "POSTALCODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SEQNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "STDPERCENTAGE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "STDVALUE",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_BANK_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_CAT_TEMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ANWENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "PERNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "RAUFNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "RKOSTL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "RPROJ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "TEMPLATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "VARIANTE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "ZEILE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_CAT_TEMP",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_COMMUNICATION_DETAILS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMUNICATIONID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_COMMUNICATION_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMPLOYEE_ADDRESS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDRESS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDRESS_2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "ADDRESS_3",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "CITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "CONTACT_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "HSNMR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "SECONDADDRESSLINE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "STATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "TELEPHONE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "VALID_FROM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "VAL_AS_OF_TDY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "ZIPCODE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMPLOYEE_ADDRESS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_ADDL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ADDL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_IDENTITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "COUNTRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "DATE_OF_EXPIRY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "DATE_OF_ISSUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "IDENTITY_NUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_AS_ON_ID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "PLACE_OF_ISSUE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_IDENTITY",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_MEDICAL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BLOOD_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DISABILITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "RH_FACTOR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MEDICAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_MOREORG_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTION_REASON",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ACTION_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ANNUAL_SAL",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EFFECT_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMP_GRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMP_SUBGRP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOB_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOB_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NXT_INC_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ORG_UNIT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ORG_UNIT_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERS_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERS_SUBAREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "POS_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "POS_NO",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PS_AREA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PS_GROUP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PS_LEVEL",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUPERVISOR_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_MOREORG_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_EMP_SHIFT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "DESCRIPTION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPLOYEE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "END_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "END_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "IS_PRIMARY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "SHIFT_TYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "START_DATE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "START_TIME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_SHIFT",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_FAMILY_DETAILS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "ACADEMICTITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ARISTOCRATICTITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DATEOFBIRTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "FULLNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "LANDOFBIRTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "MAIDENNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY2",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY3",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_CHILD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "PLACEOFBIRTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SECONDNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SECONDSURNAMEPREFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "STATEOFBIRTH",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "SURNAMEPREFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TELNR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_FAMILY_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_DETAILS",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_CHILD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_FAMILY_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PERSONAL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PERSDATA_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PERSDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PROFILE_MGR_SUBORD",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_MGR_PERSONAL_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_MGR_SUBORD",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_MGRDATA_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGRDATA_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_MGR_COMMUNICATION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "COMMUNICATIONID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_COMMUNICATION",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PROFILE_TEAM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_MGR_PERSONAL_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_TEAM_PERS_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_TEAM",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_TEAM_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_TEAM_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_PROFILE_PERS_SUB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_EMP_ASSIGNMENT",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "MGR_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "SUB_EMPPOSITION",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "TEXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_SUB_PERS_DATA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_PROFILE_PERS_SUB",
+      "formatType" : "None"
+    }, {
+      "id" : "BEGDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BIRTHPLACE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "ENDDA",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "FIRSTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "GENDER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INITIALS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "INTERESTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "JOINING_DT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "KNOWNAS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LANG",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "LASTNAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MARITAL_STATUS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MEDICAL_NEEDS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "MIDDLENAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NAME_DOB",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NATIONALITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "NO_OF_CHILD",
+      "scope" : "response",
+      "dataType" : "number",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "PERID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SINCE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUBTYPE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "SUFFIX",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "TITLE",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "HCM_SUB_ATTACHMENTS",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_PERS_DATA",
+      "formatType" : "None"
+    }, {
+      "id" : "BINARY_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EMPNUMBER",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_EXT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "FILE_NAME",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "INSTID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "SOURCE_SYSTEM",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "media",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_SUB_ATTACHMENTS",
+      "formatType" : "None"
+    }, {
+      "id" : "name",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "description",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classField",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "classValue",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "group",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "type",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "extension",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "url",
+      "scope" : "response",
+      "dataType" : "binary",
+      "collectionID" : "media",
+      "formatType" : "None"
+    }, {
+      "id" : "ondemand",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "media",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                                        <map inputpath=\"request_in\" outputpath=\"request_out\">                                                                                <set-param inputpath=\"Id\" outputpath=\"EMPNUMBER\" />                                                                                <set-param inputpath=\"User_Id\" outputpath=\"USER_ID\" />                                                                                <map inputpath=\"\" outputpath=\"HCM_PERSONAL_DATA\">                                                                                                                        <set-param inputpath=\"Id\" outputpath=\"EMPNUMBER\" />                                                                                                                        <set-param inputpath=\"Date_of_birth\" outputpath=\"DOB\" />                                                                                                                        <set-param inputpath=\"Place_of_birth\" outputpath=\"BIRTHPLACE\" />                                                                                                                        <set-param inputpath=\"Marital_Status_Id\" outputpath=\"MARITAL_STATUS\" />                                                                                                                        <set-param inputpath=\"Title\" outputpath=\"TITLE\" />                                                                                                                        <set-param inputpath=\"Gender\" outputpath=\"GENDER\" />                                                                                                                        <set-param inputpath=\"Marriage_date\" outputpath=\"SINCE\" />                                                                                                                        <set-param inputpath=\"Preffered_name\" outputpath=\"KNOWNAS\" />                                                                                                                        <set-param inputpath=\"Nationality\" outputpath=\"NATIONALITY\" />                                                                                                                        <set-param inputpath=\"Suffix\" outputpath=\"SUFFIX\" />                                                                                                                        <set-param inputpath=\"Medical_needs\" outputpath=\"MEDICAL_NEEDS\" />                                                                                                                        <set-param inputpath=\"Interests\" outputpath=\"INTERESTS\" />                                   <map inputpath=\"\" outputpath=\"HCM_PERSDATA_ATTACHMENTS\">                                                                                                                                <set-param  inputpath=\"Media_Id\" outputpath=\"BINARY_NAME\"/>                                                                                        <set-param inputpath=\"Id\" outputpath=\"EMPNUMBER\" />                                                                  </map>                                                                </map>                                                           <map inputpath=\"\" outputpath=\"HCM_EMP_MEDICAL_DATA\">                                                <set-param inputpath=\"Id\" outputpath=\"EMPNUMBER\" />                                                <set-param inputpath=\"Blood_group\" outputpath=\"BLOOD_GROUP\"/>                                    <set-param inputpath=\"RH_factor\" outputpath=\"RH_FACTOR\" />                                              <set-param inputpath=\"Physical_disability\" outputpath=\"DISABILITY\" />                        </map>                          </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                            <map inputpath=\"response_in\" outputpath=\"response_out\">                                                        <map inputpath=\"HCM_EMP_ASSIGNMENT\" outputpath=\"HCM_EMP_ASSIGNMENT\">                                                                                    <exec-function name=\"kony.gen.obj.HCM_EMP_ASSIGNMENT.fromLOBFields\"/>                                                        </map>                            </map></mapper>",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_ASSIGNMENT\",\"fMap\":{\"USER_ID\":\"HCM_DISTRIBUTION_MASTER.USER_ID\",\"EMPNUMBER\":\"HCM_DISTRIBUTION_MASTER.EMPNUMBER\"},\"sQuery\":\"HCM_DISTRIBUTION_MASTER.DIST_KEY\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_BANK_DETAILS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_CAT_TEMP\",\"relationshipKeys\":[{\"parentKey\":\"USER_ID\",\"childKey\":\"ANWENDER\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"PERNR\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_COMMUNICATION_DETAILS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMPLOYEE_ADDRESS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_ADDL_DATA\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_IDENTITY\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_MEDICAL_DATA\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_MOREORG_DATA\",\"relationshipKeys\":[{\"parentKey\":\"EMP_POSITION\",\"childKey\":\"POS_NO\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_EMP_SHIFT\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPLOYEE\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_FAMILY_DETAILS\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_FAMILY_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"BEGDA\",\"childKey\":\"BEGDA\"},{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"},{\"parentKey\":\"SUBTYPE\",\"childKey\":\"SUBTYPE\"},{\"parentKey\":\"NO_CHILD\",\"childKey\":\"NO_CHILD\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PERSONAL_DATA\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PERSDATA_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PROFILE_MGR_SUBORD\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_MGR_PERSONAL_DATA\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_MGRDATA_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_MGR_COMMUNICATION\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]},{\"relationshipType\":\"ONE_TO_MANY\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PROFILE_TEAM\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_TEAM_PERS_DATA\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_TEAM_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"SUB_EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"MGR_EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"MGR_EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"SUB_EMPNUMBER\"}]},{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_PROFILE_PERS_SUB\",\"relatedEntities\":[{\"relationshipType\":\"MANY_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_SUB_PERS_DATA\",\"relatedEntities\":[{\"relationshipType\":\"ONE_TO_ONE\",\"service\":\"HCM_EMP_PERSONAL_DATA\",\"entityName\":\"HCM_SUB_ATTACHMENTS\",\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"SUB_EMPNAME\",\"childKey\":\"EMPNUMBER\"}]}],\"relationshipKeys\":[{\"parentKey\":\"EMPNUMBER\",\"childKey\":\"MGR_EMPNUMBER\"}]}],\"config\":{}}}",
+    "opcode" : "partialupdate",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMP_PERSONAL_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_EMP_ASSIGNMENT"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Communication_Channel",
+        "actions" : {
+          "create" : true,
+          "update" : true,
+          "partialupdate" : true,
+          "delete" : true
+        },
+        "selected" : false
+      }, {
+        "children" : [ ],
+        "name" : "mediaEmployee",
+        "actions" : {
+          "create" : true,
+          "update" : true,
+          "partialupdate" : true,
+          "delete" : true
+        },
+        "selected" : true
+      } ],
+      "name" : "Employee",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true,
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

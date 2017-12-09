@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" endpoint="default" groupType="" id="logout" passwordencrypted="false" security="public" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://engie-pre.okta-emea.com/oauth2/v1/revoke"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false">
+        <header datatype="" name="" passthrough="false">
+            <param datatype="string" defaultvalue="Basic dFpab0RTbThyeXBvMVBNUTlpS2c6WFhUczhpV1NweFAtc3I2ald5WGZHOGJUS2phYldVbTFuVnNI RDJtRQ==" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="Basic dFpab0RTbThyeXBvMVBNUTlpS2c6WFhUczhpV1NweFAtc3I2ald5WGZHOGJUS2phYldVbTFuVnNI RDJtRQ==">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="application/x-www-form-urlencoded" description="" encode="false" format="None" formatvalue="" name="Content-Type" order="" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="application/x-www-form-urlencoded">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="access_token" description="" encode="true" format="None" formatvalue="" name="token_type_hint" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="access_token" value="access_token">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="token" order="" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="eyJhbGciOiJSUzI1NiIsImtpZCI6Im5zbGktOG9VWExsdHljaFJjcjMyNzFnTzh5Sk1DSGdtR1AzcFdEWVcyVE0ifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnFQMjlyNnF0d0J3aVlpUFRTWi15ZWdLVVRFQ0pkQUxOT2Rub0ppZUVTUUUiLCJpc3MiOiJodHRwczovL2VuZ2llLXByZS5va3RhLWVtZWEuY29tIiwiYXVkIjoiaHR0cHM6Ly9lbmdpZS1wcmUub2t0YS1lbWVhLmNvbSIsInN1YiI6ImtvbnkudGVzdEB0ZXN0LmNvbSIsImlhdCI6MTQ4OTUwOTU5NSwiZXhwIjoxNDg5NTEzMTk1LCJjaWQiOiJ0WlpvRFNtOHJ5cG8xUE1ROWlLZyIsInVpZCI6IjAwdTZ2NmUweUl3UW1HQ3c3MGk2Iiwic2NwIjpbImdyb3VwcyIsInByb2ZpbGUiLCJvZmZsaW5lX2FjY2VzcyIsImVtYWlsIiwib3BlbmlkIl19.SpDzuTY6qnstb1nqN9bZUr-OfNII3gO0yA5mRXWgvqeMG5ZRBq2NulHreQHmksTrou_kcZPMhC366je0hkc9Nq_bzk9EbjjPdDG_b8OUBNeRNWT267jNDp5FKvhU1cwrNDYYueSHNB8saOg3uyILCeoEtm_RIiUeBB3T5-MYCtVsADsaqqCTdKt2ed9-oGDSJe2GJ7maFML50DUjRxcftyYilDlSAUm0VDOPHmGOY6AOqhxLOJzHbgM0hlUkP7mHxyWgdyc9oVBUK_wF-5zT9XERs40sie81nBlzRTSdqVcy5gt4_xVz_GT2vDTUO4FBmscn11BT8gAfU_knqQ2xRw" value="">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="token=$token&amp;token_type_hint=$token_type_hint" description="" encode="false" format="" formatvalue="" name="message" order="" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="token=$token&amp;token_type_hint=$token_type_hint">
+            <accessType></accessType>
+        </template-param>
+    </service-input>
+    <service-output passthrough="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="error" order="" passnull="false" sms-name="" src="error" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

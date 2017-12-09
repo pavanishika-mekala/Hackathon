@@ -1,0 +1,124 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "none",
+    "UpdateTimeStampField" : {
+      "DateFormat" : "yyyyMMddHHmmss",
+      "Name" : "TIMESTAMP"
+    },
+    "SoftDeleteFlagField" : {
+      "ActiveValue" : null,
+      "InactiveValue" : "X",
+      "Name" : "DELETE_IND"
+    },
+    "backendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_LEAVE_REQUEST_REPORT"
+    },
+    "designTimeBackendMeta" : {
+      "libraryName" : "ZKONY",
+      "dataObjectName" : "ZKONY_TEAM_VIEW_DOB",
+      "businessObjectName" : "HCM_LEAVE_REQUEST_REPORT"
+    }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "DELETE_IND",
+    "targetField" : "DELETE_IND",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LV_STATUS",
+    "targetField" : "LV_STATUS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EXTRACT_TSTAMP",
+    "targetField" : "EXTRACT_TSTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_FROMDATE",
+    "targetField" : "LEAVE_FROMDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_TYPE",
+    "targetField" : "LEAVE_TYPE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "COMMENTS",
+    "targetField" : "COMMENTS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "REQUEST_ID",
+    "targetField" : "REQUEST_ID",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_ENDDATE",
+    "targetField" : "LEAVE_ENDDATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PROCESS_TIME",
+    "targetField" : "PROCESS_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_HRS",
+    "targetField" : "LEAVE_HRS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CANCEL_DATE",
+    "targetField" : "CANCEL_DATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CREATE_DATE",
+    "targetField" : "CREATE_DATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "STATUS",
+    "targetField" : "STATUS",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_ENDTIME",
+    "targetField" : "LEAVE_ENDTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_FROMTIME",
+    "targetField" : "LEAVE_FROMTIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "PROCESS_DATE",
+    "targetField" : "PROCESS_DATE",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "TIMESTAMP",
+    "targetField" : "TIMESTAMP",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_TYPE_TEXT",
+    "targetField" : "LEAVE_TYPE_TEXT",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CANCEL_TIME",
+    "targetField" : "CANCEL_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "CREATE_TIME",
+    "targetField" : "CREATE_TIME",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "EMPNUMBER",
+    "targetField" : "EMPNUMBER",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_BALANCE_D",
+    "targetField" : "LEAVE_BALANCE_D",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "LEAVE_BALANCE_H",
+    "targetField" : "LEAVE_BALANCE_H",
+    "type" : "request_response"
+  } ]
+}

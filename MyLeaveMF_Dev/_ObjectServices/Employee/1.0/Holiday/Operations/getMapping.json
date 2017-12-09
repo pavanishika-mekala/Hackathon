@@ -1,0 +1,922 @@
+{
+  "operationConfig" : {
+    "name" : "queryEMPLOYEEHOLIDAYCALENDER3453",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "referencingEndpoint" : "default",
+    "outputs" : [ {
+      "id" : "HCM_HOL_CALENDAR",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "ZEITY",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "MOFID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "MOSID",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "SCHKZ",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "KJAHR",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "MONAT",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY01",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY01_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY02",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY02_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY03",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY03_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY04",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY04_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY05",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY05_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY06",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY06_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY07",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY07_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY08",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY08_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY09",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY09_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY10",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY10_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY11",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY11_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY12",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY12_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY13",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY13_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY14",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY14_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY15",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY15_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY16",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY16_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY17",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY17_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY18",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY18_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY19",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY19_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY20",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY20_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY21",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY21_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY22",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY22_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY23",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY23_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY24",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY24_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY25",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY25_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY26",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY26_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY27",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY27_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY28",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY28_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY29",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY29_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY30",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY30_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY31",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "NWDAY31_DESC",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "EXTRACT_TSTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "TIMESTAMP",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "DELETE_IND",
+      "scope" : "response",
+      "dataType" : "string",
+      "collectionID" : "HCM_HOL_CALENDAR",
+      "formatType" : "None"
+    }, {
+      "id" : "nextBatchId",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    }, {
+      "id" : "hasMoreRecords",
+      "scope" : "response",
+      "dataType" : "string",
+      "formatType" : "None"
+    } ],
+    "headers" : [ {
+      "id" : "KonySAP-Session-Key",
+      "scope" : "request"
+    } ],
+    "odata" : [ {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">                                                        <map inputpath=\"request_in\" outputpath=\"request_out\">                                                                                                                <exec-function name=\"kony.gen.obj.EMPLOYEEHOLIDAYCALENDER.toLOBFields\"/>                                                        </map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">        <map inputpath=\"response_in\" outputpath=\"response_out\">                <map inputpath=\"HCM_HOL_CALENDAR\" outputpath=\"\">                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY1COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY01\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND01COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY01_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY1COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY01CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY01\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY01Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY01CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY01Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY01_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND01COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY2COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY02\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND02COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY02_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY2COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY02CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY02\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY02Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY02CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY02Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY02_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND02COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY3COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY03\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND03COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY03_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY3COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY03CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY03\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY03Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY03CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY03Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY03_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND03COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY4COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY04\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND04COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY04_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY4COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY04CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY04\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY04Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY04CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY04Formatted\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND04COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY04_DESC\" />                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY5COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY05\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND05COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY05_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY5COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY05CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY05\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY05Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY05CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY05Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY05_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND05COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY6COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY06\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND06COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY06_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY6COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY06CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY06\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY06Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY06CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY06Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY06_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND06COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY7COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY07\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND07COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY07_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY7COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY07CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY07\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY07Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY07CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY07Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY07_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND07COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY8COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY08\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND08COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY08_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY8COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY08CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY08\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY08Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY08CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY08Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY08_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND08COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY9COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY09\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND09COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY09_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY9COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY09CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY09\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY09Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY09CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY09Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY09_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND09COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY10COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY10\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND10COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY10_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY10COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY10CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY10\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY10Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY10CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY10Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY10_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND10COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY11COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY11\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND11COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY11_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY11COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY11CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY11\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY11Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY11CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY11Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY11_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND11COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY12COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY12\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND12COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY12_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY12COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY12CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY12\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY12Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY12CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY12Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY12_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND12COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY13COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY13\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND13COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY13_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY13COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY13CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY13\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY13Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY13CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY13Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY13_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND13COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY14COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY14\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND14COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY14_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY14COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY14CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY14\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY14Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY14CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY14Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY14_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND14COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY15COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY15\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND15COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY15_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY15COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY15CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY15\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY15Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY15CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY15Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY15_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND15COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY16COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY16\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND16COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY16_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY16COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY16CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY16\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY16Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY16CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY16Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY16_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND16COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY17COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY17\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND17COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY17_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY17COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY17CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY17\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY17Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY17CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY17Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY17_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND17COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY18COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY18\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND18COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY18_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY18COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY18CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY18\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY18Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY18CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY18Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY18_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND18COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY19COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY19\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND19COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY19_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY19COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY19CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY19\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY19Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY19CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY19Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY19_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND19COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY20COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY20\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND20COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY20_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY20COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY20CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY20\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY20Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY20CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY20Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY20_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND20COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY21COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY21\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND21COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY21_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY21COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY21CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY21\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY21Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY21CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY21Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY21_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND21COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY22COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY22\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND22COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY22_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY22COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY22CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY22\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY22Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY22CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY22Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY22_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND22COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY23COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY23\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND23COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY23_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY23COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY23CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY23\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY23Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY23CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY23Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY23_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND23COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY24COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY24\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND24COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY24_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY24COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY24CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY24\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY24Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY24CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY24Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY24_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND24COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY25COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY25\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND25COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY25_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY25COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY25CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY25\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY25Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY25CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY25Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY25_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND25COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY26COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY26\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND26COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY26_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY26COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY26CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY26\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY26Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY26CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY26Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY26_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND26COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY27COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY27\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND27COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY27_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY27COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY27CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY27\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY27Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY27CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY27Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY27_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND27COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY28COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY28\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND28COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY28_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY28COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY28CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY28\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY28Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY28CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY28Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY28_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND28COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY29COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY29\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND29COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY29_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY29COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY29CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY29\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY29Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY29CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY29Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY29_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND29COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY30COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY30\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND30COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY30_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY30COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY30CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY30\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY30Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY30CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY30Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY30_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND30COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                        <exec-function name=\"kony.logical:notEqual\" outputpath=\"HOLIDAYDAY31COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY31\" />                                <set-arg name=\"HOLIDAY\" input=\"\" />                        </exec-function>                        <exec-function name=\"kony.logical:equal\" outputpath=\"WEEKEND31COND\" output=\"$vars\">                                <set-arg name=\"HOLIDAY\" inputpath=\"NWDAY31_DESC\" />                                <set-arg name=\"HOLIDAY\" input=\"Non Working Day\" />                        </exec-function>                        <choose>                                <when test=\"$vars/HOLIDAYDAY31COND\">                                        <map inputpath=\"\" outputpath=\"Holiday\">                                                <exec-function name=\"kony.string:concat\" outputpath=\"NWDAY31CONCAT\" output=\"$vars\">                                                        <set-arg inputpath=\"KJAHR\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"MONAT\" />                                                        <set-arg input=\"-\" />                                                        <set-arg inputpath=\"NWDAY31\" />                                                </exec-function>                                                <exec-function name=\"kony.parse:formatDate\" outputpath=\"NWDAY31Formatted\" output=\"$vars\">                                                        <set-arg name=\"inputDate\" inputpath=\"$vars/NWDAY31CONCAT\" />                                                        <set-arg name=\"sourceDateFormat\" input=\"yyyy-MM-dd\" />                                                        <set-arg name=\"destinationDateFormat\" input=\"YYYYMMdd\" />                                                </exec-function>                                                <set-param outputpath=\"Holiday_Date\" inputpath=\"$vars/NWDAY31Formatted\" />                                                <set-param outputpath=\"Name\" inputpath=\"NWDAY31_DESC\" />                                                <choose>                                                        <when test=\"$vars/WEEKEND31COND\">                                                                <set-param input=\"3\" outputpath=\"Type\" />                                                        </when>                                                        <otherwise>                                                                <set-param input=\"1\" outputpath=\"Type\" />                                                        </otherwise>                                                </choose>                                        </map>                                </when>                        </choose>                </map>        </map></mapper>",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "entityMetadata" : "{\"skyEntityMetadataRuntime\":{\"service\":\"HCM_EMPLOYEE_REFERENCE_DATA\",\"entityName\":\"HCM_HOL_CALENDAR\",\"fMap\":{\"SCHKZ\":\"HCM_EMP_ORG_DATA.SCHKZ\",\"ZEITY\":\"HCM_EMP_ORG_DATA.ZEITY\",\"MOFID\":\"HCM_EMP_ORG_DATA.MOFID\",\"MOSID\":\"HCM_EMP_ORG_DATA.MOSID\"},\"sQuery\":\"HCM_DISTRIBUTION_REF.DIST_KEY,HCM_EMP_ORG_DATA.EMPNUMBER\",\"config\":{}}}",
+    "opcode" : "query",
+    "backendMeta" : {
+      "dataObjectName" : "HCM_EMPLOYEE_REFERENCE_DATA",
+      "libraryName" : "_SKYTECH_HCM",
+      "businessObjectName" : "HCM_HOL_CALENDAR"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Holiday",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

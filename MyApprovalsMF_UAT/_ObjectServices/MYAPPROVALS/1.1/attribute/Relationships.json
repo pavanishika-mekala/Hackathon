@@ -1,0 +1,12 @@
+[ {
+  "sourceObject" : "attribute",
+  "targetObject" : "attribute_def",
+  "relationshipKeys" : [ {
+    "sourceField" : "attribute_def_id",
+    "targetField" : "id"
+  } ],
+  "name" : "attribute_attribute_def",
+  "type" : "ManyToOne",
+  "custom" : false,
+  "cascadeDelete" : false
+} ]

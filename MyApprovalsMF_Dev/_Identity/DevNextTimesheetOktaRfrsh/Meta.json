@@ -1,0 +1,14 @@
+{
+  "name" : "DevNextTimesheetOktaRfrsh",
+  "displayName" : "DevNextTimesheetOktaRfrsh",
+  "type" : "custom",
+  "version" : "1.0",
+  "metaPreference" : -1,
+  "config" : "{\"header_params\":[],\"provider_params\":{},\"body_params\":{},\"custom_idp_url\":\"https://engie-dev-next.konycloud.com/services/DevNextTimesheetOktaRfrsh\"}",
+  "policyConfig" : "{\"def_user_status\":\"pending\",\"max_login_fail\":5}",
+  "admissionPolicy" : "no_approval_needed",
+  "identityMeta" : {
+    "allow_sso" : false
+  },
+  "ssoenabled" : false
+}
