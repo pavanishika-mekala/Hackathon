@@ -724,14 +724,18 @@ kony.apps.coe.ess.frmLogin.loginRefresh = function() {
   }
 
   initMbaasApp(function() {
-    var token = kony.store.getItem("oktaToken"); //securityObj.decryptData(kony.store.getItem("oktaToken"));
-    if(token !== null && token !== undefined) {
-      kony.apps.coe.ess.frmLogin.oktaRefresh(token, "", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
+    if (kony.apps.coe.ess.appconfig.useOkta === true) {
+      var token = kony.store.getItem("oktaToken"); //securityObj.decryptData(kony.store.getItem("oktaToken"));
+      if(token !== null && token !== undefined) {
+        kony.apps.coe.ess.frmLogin.oktaRefresh(token, "", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
+      } else {
+        var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.globalVariables.active_login_service);
+        loginService.getSecurityAttributes(function(res) {
+          kony.apps.coe.ess.frmLogin.oktaRefresh(res.refresh_token, "", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
+        }, loginRefreshErrorCallback);
+      }
     } else {
-      var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.globalVariables.active_login_service);
-      loginService.getSecurityAttributes(function(res) {
-        kony.apps.coe.ess.frmLogin.oktaRefresh(res.refresh_token, "", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
-      }, loginRefreshErrorCallback);
+      kony.apps.coe.ess.frmLogin._backendLogin("", loginRefreshSuccessCallback, loginRefreshErrorCallback, true);
     }
   });
 };
