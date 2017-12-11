@@ -29,6 +29,8 @@ kony.sdk.mvvm.frmApprovalRequestDetailFormModelExtension = Class({
         //TO-DO add custom formatting
       //restting the text to null on loading form
       frmApprovalRequestDetail.txtareaComments.text="";
+      frmApprovalRequestDetail.btnAttachments.skin = "sknbtnDetails";
+  	  frmApprovalRequestDetail.btnDetails.skin = "sknbtn084A52ffpx32";
       frmApprovalRequestDetail.imguser.src="people_selected.png";
       frmApprovalRequestDetail.flxScrollBottom.setVisibility(true);
   	  frmApprovalRequestDetail.flxattachmentDetails.setVisibility(false);
