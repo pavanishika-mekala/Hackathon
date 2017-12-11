@@ -79,3 +79,39 @@ kony.apps.coe.ess.locale.getLocaleInformation = function(){
     return kony.apps.coe.ess.locale.setLocaleInformation(kony.i18n.getCurrentDeviceLocale());
   }
 };
+kony.apps.coe.ess.locale.setLanguageServiceLocale= function(){
+  var sqlquery = "select * from languageConfiguration where okta_user_id = '" + kony.apps.coe.ess.frmLogin.username.toUpperCase() + "'";
+  kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
+    var date1= new Date();
+    var timestamp = date1.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date1.getMonth() + 1) + "" + getTimeHourswithZero(date1.getDate()) + "" + getTimeHourswithZero(date1.getHours()) + "" + getTimeHourswithZero(date1.getMinutes()) + "" + getTimeHourswithZero(date1.getSeconds());
+    if (data.length > 0 && data !== undefined && data[0].language !== undefined) {
+      kony.print("update locale"+kony.i18n.getCurrentLocale().substring(0, 2));
+      com.kony.NotificationsLanguageService.languageConfiguration.update("WHERE okta_user_id = \'" + kony.apps.coe.ess.frmLogin.username.toUpperCase() + "\' ", {
+        "language": "" + kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase(),
+        "lastmodifiedts":timestamp
+      },
+                                                                         function(res) {
+        kony.print("------------  in update success response of notification language service :" + JSON.stringify(res));
+      },
+                                                                         function(err) {
+        kony.print("------------  in update failure response of notification language service :" + JSON.stringify(err));
+      },true);
+    }else{
+      var languageData={"okta_user_id":kony.apps.coe.ess.frmLogin.username.toUpperCase(),"language":kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase(),"lastmodifiedts":timestamp};
+      kony.apps.coe.ess.MVVM.createRecord("NotificationsLanguageService", "languageConfiguration", languageData, function(res) {
+        kony.print("------------ in create success response  of notification language service:" + JSON.stringify(res));
+      }, function(err) {
+        kony.print("------------  in create failure response  of notification language service:" + JSON.stringify(err));
+      },true);
+    }
+  }, function(err) {
+    handleError(err);
+  }, false);
+};
+function getTimeHourswithZero(data){
+  if(parseInt(data) < 10){
+    return "0"+data;
+  }else{
+    return data;
+  }
+} 

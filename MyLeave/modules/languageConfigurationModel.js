@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Wed Nov 29 10:59:54 UTC 2017languageConfiguration*******************
+// ****************Generated On Mon Dec 11 12:39:46 UTC 2017languageConfiguration*******************
 // **********************************Start languageConfiguration's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
