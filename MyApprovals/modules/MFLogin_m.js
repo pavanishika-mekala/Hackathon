@@ -784,13 +784,22 @@ function OAuthHandler(serviceUrl, providerName, appkey, callback, type, options)
           headers["Content-Type"] = "application/x-www-form-urlencoded"
         }
         // make request for tokens
-        kony.timer.schedule("oauth2callbacktimer", function(url, callback, code, headers) {
-          return function() {
-            callback(url, {
-              code: code
-            }, headers);
-          }
-        }(urlType + "token", callback, decodeURIComponent(params.queryParams.code), headers), 1, false);
+        try {
+          kony.timer.cancel("oauth2callbacktimer");
+        } catch (e) {
+          kony.print("Error canceling oautch2callbacktimer: " + e);
+        }
+        try {
+          kony.timer.schedule("oauth2callbacktimer", function(url, callback, code, headers) {
+            return function() {
+              callback(url, {
+                code: code
+              }, headers);
+            }
+          }(urlType + "token", callback, decodeURIComponent(params.queryParams.code), headers), 1, false);
+        } catch (e) {
+          kony.print("Error starting oauth2callbacktimer: " + e);
+        }
       } else if (typeof(params.queryParams) !== "undefined" && typeof(params.queryParams.error) !== "undefined") {
         if (!userDefined) {
           displayPrevForm();
