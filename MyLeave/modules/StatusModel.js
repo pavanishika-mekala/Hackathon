@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Wed Nov 29 10:59:53 UTC 2017Status*******************
+// ****************Generated On Mon Dec 11 21:45:47 UTC 2017Status*******************
 // **********************************Start Status's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -24,13 +24,13 @@ if (typeof(sync.log) === "undefined") {
 
 
 if(typeof(com)=== "undefined"){ com = {}; }
-if(typeof(com.kony)=== "undefined"){ com.kony = {}; }
-if(typeof(com.kony.Employee)=== "undefined"){ com.kony.Employee = {}; }
+if(typeof(com.ess)=== "undefined"){ com.ess = {}; }
+if(typeof(com.ess.EMPLOYEE)=== "undefined"){ com.ess.EMPLOYEE = {}; }
 
 /************************************************************************************
 * Creates new Status
 *************************************************************************************/
-com.kony.Employee.Status = function(){
+com.ess.EMPLOYEE.Status = function(){
 	this.Id = null;
 	this.lastmodifiedts = null;
 	this.softdeleteflag = null;
@@ -38,7 +38,7 @@ com.kony.Employee.Status = function(){
 	this.markForUpload = true;
 };
 
-com.kony.Employee.Status.prototype = {
+com.ess.EMPLOYEE.Status.prototype = {
 	get Id(){
 		return this._Id;
 	},
@@ -78,15 +78,15 @@ com.kony.Employee.Status.prototype = {
 * orderByMap[1].sortType ="asc";
 * var limit = 20;
 * var offset = 5;
-* com.kony.Employee.Status.getAll(successcallback,errorcallback, orderByMap, limit, offset)
+* com.ess.EMPLOYEE.Status.getAll(successcallback,errorcallback, orderByMap, limit, offset)
 *************************************************************************************/
-com.kony.Employee.Status.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
-	sync.log.trace("Entering com.kony.Employee.Status.getAll->main function");
+com.ess.EMPLOYEE.Status.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getAll->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	orderByMap = kony.sync.formOrderByClause("Status",orderByMap);
 	var query = kony.sync.qb_createQuery();
 				kony.sync.qb_select(query, null);	
@@ -98,8 +98,8 @@ com.kony.Employee.Status.getAll = function(successcallback, errorcallback, order
 	var params = query_compile[1];
 
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.getAll->successcallback");
-		successcallback(com.kony.Employee.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.getAll->successcallback");
+		successcallback(com.ess.EMPLOYEE.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname,sql, params,mySuccCallback,errorcallback);
 };
@@ -107,29 +107,29 @@ com.kony.Employee.Status.getAll = function(successcallback, errorcallback, order
 /************************************************************************************
 * Returns number of Status present in local database.
 *************************************************************************************/
-com.kony.Employee.Status.getAllCount = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.getAllCount function");
-	com.kony.Employee.Status.getCount("",successcallback,errorcallback);
+com.ess.EMPLOYEE.Status.getAllCount = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getAllCount function");
+	com.ess.EMPLOYEE.Status.getCount("",successcallback,errorcallback);
 };
 
 /************************************************************************************
 * Returns number of Status using where clause in the local Database
 *************************************************************************************/
-com.kony.Employee.Status.getCount = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.getCount->main function");
+com.ess.EMPLOYEE.Status.getCount = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getCount->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.getCount" , "getCount", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.getCount" , "getCount", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select count(*) from \"" + tbname + "\" " + wcs;
 	kony.sync.single_execute_sql(dbname,sql, null, mySuccCallback, errorcallback);
 	function mySuccCallback(res) {
-		sync.log.trace("Entering com.kony.Employee.Status.getCount->successcallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.getCount->successcallback");
 		if(null!==res){
 			var count = null;
 			count = res["count(*)"];
@@ -145,22 +145,22 @@ com.kony.Employee.Status.getCount = function(wcs,successcallback,errorcallback){
 * Creates a new instance of Status in the local Database. The new record will 
 * be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Status.prototype.create = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Status.prototype.create function");
+com.ess.EMPLOYEE.Status.prototype.create = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Status.prototype.create function");
 	var valuestable = this.getValuesTable(true);
-	com.kony.Employee.Status.create(valuestable, successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Status.create(valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Status.create = function(valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering  com.kony.Employee.Status.create->main function");
+com.ess.EMPLOYEE.Status.create = function(valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Status.create->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.create" , "create", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.create" , "create", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 
 	if(kony.sync.attributeValidation(valuestable,"Status",errorcallback,true)===false){
@@ -168,7 +168,7 @@ com.kony.Employee.Status.create = function(valuestable, successcallback,errorcal
 	}
 	
 	function executeSuccess(){
-		sync.log.trace("Entering  com.kony.Employee.Status.create->success callback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Status.create->success callback");
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
 	}
 
@@ -178,7 +178,7 @@ com.kony.Employee.Status.create = function(valuestable, successcallback,errorcal
 	function createSuccesscallback(res){
 		if(res==null || res.length==0){
 			var relationshipMap={};  
-			relationshipMap = com.kony.Employee.Status.getRelationshipMap(relationshipMap,valuestable);
+			relationshipMap = com.ess.EMPLOYEE.Status.getRelationshipMap(relationshipMap,valuestable);
 			kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 		}
 		else{
@@ -190,7 +190,7 @@ com.kony.Employee.Status.create = function(valuestable, successcallback,errorcal
 	if(kony.sync.enableORMValidations){
 		errMsg = "Id=" + valuestable.Id;
 		pks["Id"] = {key:"Id",value:valuestable.Id};
-		com.kony.Employee.Status.getAllDetailsByPK(pks,createSuccesscallback,errorcallback)
+		com.ess.EMPLOYEE.Status.getAllDetailsByPK(pks,createSuccesscallback,errorcallback)
 	}
 	else{
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
@@ -217,18 +217,18 @@ com.kony.Employee.Status.create = function(valuestable, successcallback,errorcal
 *		valuesArray[2].lastmodifiedts = "lastmodifiedts_2";
 *		valuesArray[2].softdeleteflag = "softdeleteflag_2";
 *		valuesArray[2].Status_Name = "Status_Name_2";
-*		com.kony.Employee.Status.createAll(valuesArray, successcallback, errorcallback, true);
+*		com.ess.EMPLOYEE.Status.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
-com.kony.Employee.Status.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Status.createAll function");
+com.ess.EMPLOYEE.Status.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.createAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.createAll" , "createAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.createAll" , "createAll", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var isProperData = true;
 	var arrayLen = 0;
@@ -263,7 +263,7 @@ com.kony.Employee.Status.createAll = function(valuesArray, successcallback, erro
 				errMsg = "Id=" + valuestable.Id;
 				pks["Id"] = {key:"Id",value:valuestable.Id};
 				var wcs = [];
-				if(com.kony.Employee.Status.pkCheck(pks,wcs,errorcallback,"searching")===false){
+				if(com.ess.EMPLOYEE.Status.pkCheck(pks,wcs,errorcallback,"searching")===false){
 					isError = true;
 					return;
 				}
@@ -314,7 +314,7 @@ com.kony.Employee.Status.createAll = function(valuesArray, successcallback, erro
 	}
 
 	function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.kony.Employee.Status.createAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Status.createAll->transactionSuccessCallback");
 		if(!isError){
 			kony.sync.massInsert(dbname, tbname, valuesArray, successcallback, errorcallback, markForUpload);
 		}
@@ -330,11 +330,11 @@ com.kony.Employee.Status.createAll = function(valuesArray, successcallback, erro
 	
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.kony.Employee.Status.createAll->checkIntegrity");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Status.createAll->checkIntegrity");
 		arrayLength = valuesArray.length;
 		for (var i=0; valuesArray != null && i < arrayLength; i++ ){
 			var relationshipMap={};  
-			relationshipMap = com.kony.Employee.Status.getRelationshipMap(relationshipMap,valuesArray[i]);
+			relationshipMap = com.ess.EMPLOYEE.Status.getRelationshipMap(relationshipMap,valuesArray[i]);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
 				isError = true;
@@ -352,26 +352,26 @@ com.kony.Employee.Status.createAll = function(valuesArray, successcallback, erro
 * Updates Status using primary key in the local Database. The update will be
 * merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Status.prototype.updateByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Status.prototype.updateByPK function");
+com.ess.EMPLOYEE.Status.prototype.updateByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Status.prototype.updateByPK function");
 	var pks = this.getPKTable();
 	var valuestable = this.getValuesTable(false);
-	com.kony.Employee.Status.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Status.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Status.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering  com.kony.Employee.Status.updateByPK-> main function");
+com.ess.EMPLOYEE.Status.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Status.updateByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.updateByPK",  "updateByPk", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.updateByPK",  "updateByPk", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [ ];
 
-	if(com.kony.Employee.Status.pkCheck(pks,wcs,errorcallback,"updating")===false){
+	if(com.ess.EMPLOYEE.Status.pkCheck(pks,wcs,errorcallback,"updating")===false){
 		return;
 	}
 
@@ -380,7 +380,7 @@ com.kony.Employee.Status.updateByPK = function(pks,valuestable, successcallback,
 	}
 
 	var relationshipMap={};  
-	relationshipMap = com.kony.Employee.Status.getRelationshipMap(relationshipMap,valuestable);
+	relationshipMap = com.ess.EMPLOYEE.Status.getRelationshipMap(relationshipMap,valuestable);
 
 	kony.sync.updateByPK(tbname, dbname, relationshipMap, pks,valuestable, successcallback,errorcallback, markForUpload, wcs);
 };
@@ -389,17 +389,17 @@ com.kony.Employee.Status.updateByPK = function(pks,valuestable, successcallback,
 * Updates Status(s) using where clause in the local Database. The update(s)
 * will be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Status.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Status.update function");
+com.ess.EMPLOYEE.Status.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.update function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.update",  "update", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.update",  "update", errorcallback)){
 		return;
 	}
 
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 
@@ -407,17 +407,17 @@ com.kony.Employee.Status.update = function(wcs, valuestable, successcallback,err
 		return;
 	}
 	function executeSuccess(){
-		sync.log.trace("Entering  com.kony.Employee.Status.update-> success callback of Integrity Check");
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.Employee.Status.getPKTable());
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Status.update-> success callback of Integrity Check");
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.Status.getPKTable());
 	}
 
 	if(kony.sync.enableORMValidations){
 		var relationshipMap={};  
-		relationshipMap = com.kony.Employee.Status.getRelationshipMap(relationshipMap,valuestable);
+		relationshipMap = com.ess.EMPLOYEE.Status.getRelationshipMap(relationshipMap,valuestable);
 		kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 	}
 	else{
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.Employee.Status.getPKTable());
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.Status.getPKTable());
 	}
 };
 
@@ -444,14 +444,14 @@ com.kony.Employee.Status.update = function(wcs, valuestable, successcallback,err
 *		inputArray[2].changeSet.softdeleteflag = "softdeleteflag_updated2";
 *		inputArray[2].changeSet.Status_Name = "Status_Name_updated2";
 *		inputArray[2].whereClause = "where Id = '2'";
-*		com.kony.Employee.Status.updateAll(inputArray,successcallback,errorcallback);
+*		com.ess.EMPLOYEE.Status.updateAll(inputArray,successcallback,errorcallback);
 *************************************************************************************/
-com.kony.Employee.Status.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
-	sync.log.trace("Entering com.kony.Employee.Status.updateAll function");
+com.ess.EMPLOYEE.Status.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.updateAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.updateAll",  "updateAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
 	var dbname = "10000473715010d0b";
@@ -502,13 +502,13 @@ com.kony.Employee.Status.updateAll = function(inputArray, successcallback, error
 		    newInputArray[i] = kony.sync.CreateCopy(v);
 		}
 		inputArray = newInputArray;
-		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.kony.Employee.Status.getPKTable());
+		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.ess.EMPLOYEE.Status.getPKTable());
 	}
 	
 		function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.kony.Employee.Status.updateAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Status.updateAll->transactionSuccessCallback");
 		if(!isError){
-			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.kony.Employee.Status.getPKTable());
+			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.ess.EMPLOYEE.Status.getPKTable());
 		}
 	}
 
@@ -530,10 +530,10 @@ com.kony.Employee.Status.updateAll = function(inputArray, successcallback, error
 	}
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.kony.Employee.Status.updateAll->checkIntegrity");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Status.updateAll->checkIntegrity");
 		for (var i=0; ((inputArray) != null) && i < inputArray.length; i++ ){
 			var relationshipMap={}; 
-			relationshipMap = com.kony.Employee.Status.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
+			relationshipMap = com.ess.EMPLOYEE.Status.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
 			sync.log.debug("Relationship Map for Integrity check created:", relationshipMap);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
@@ -554,21 +554,21 @@ com.kony.Employee.Status.updateAll = function(inputArray, successcallback, error
 * Deletes Status using primary key from the local Database. The record will be
 * deleted from the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Status.prototype.deleteByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.prototype.deleteByPK function");
+com.ess.EMPLOYEE.Status.prototype.deleteByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.prototype.deleteByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Status.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Status.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Status.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Status.deleteByPK-> main function");
+com.ess.EMPLOYEE.Status.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.deleteByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.deleteByPK",  "deleteByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.deleteByPK",  "deleteByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [];
 	var isError = false;
@@ -576,12 +576,12 @@ com.kony.Employee.Status.deleteByPK = function(pks, successcallback,errorcallbac
 	var twcs = [];
 	var deletedRows;
 	var record = "";
-	if(com.kony.Employee.Status.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.ess.EMPLOYEE.Status.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}	
 	twcs = kony.sync.CreateCopy(wcs);
 	function StatusTransactionCallback(tx){
-		sync.log.trace("Entering com.kony.Employee.Status.deleteByPK->Status_PKPresent successcallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.deleteByPK->Status_PKPresent successcallback");
 		record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(record===false){
 			isError = true;
@@ -598,7 +598,7 @@ com.kony.Employee.Status.deleteByPK = function(pks, successcallback,errorcallbac
 	}
 	
 	function StatusErrorCallback(){
-		sync.log.error("Entering com.kony.Employee.Status.deleteByPK->relationship failure callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Status.deleteByPK->relationship failure callback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -609,7 +609,7 @@ com.kony.Employee.Status.deleteByPK = function(pks, successcallback,errorcallbac
 
 	}
 	function StatusSuccessCallback(){
-		sync.log.trace("Entering com.kony.Employee.Status.deleteByPK->relationship success callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.deleteByPK->relationship success callback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -621,7 +621,7 @@ com.kony.Employee.Status.deleteByPK = function(pks, successcallback,errorcallbac
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Status.deleteByPK->PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Status.deleteByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 		
@@ -635,18 +635,18 @@ com.kony.Employee.Status.deleteByPK = function(pks, successcallback,errorcallbac
 /************************************************************************************
 * Deletes Status(s) using where clause from the local Database. The record(s)
 * will be deleted from the enterprise datasource in the next Sync.
-* e.g. com.kony.Employee.Status.remove("where Id like 'A%'", successcallback,errorcallback, true);
+* e.g. com.ess.EMPLOYEE.Status.remove("where Id like 'A%'", successcallback,errorcallback, true);
 *************************************************************************************/
-com.kony.Employee.Status.remove = function(wcs, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Status.remove->main function");
+com.ess.EMPLOYEE.Status.remove = function(wcs, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.remove->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.remove",  "remove", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.remove",  "remove", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
@@ -662,14 +662,14 @@ com.kony.Employee.Status.remove = function(wcs, successcallback,errorcallback, m
 		}
 	}
 	function Status_removeSuccess(){
-		sync.log.trace("Entering com.kony.Employee.Status.remove->Status_removeSuccess function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.remove->Status_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.kony.Employee.Status.remove->error callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -679,7 +679,7 @@ com.kony.Employee.Status.remove = function(wcs, successcallback,errorcallback, m
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.kony.Employee.Status.remove->delete Entity function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
 			kony.sync.startTransaction(connection, Status_removeTransactioncallback, Status_removeSuccess, errorcallbackWrapper);
@@ -692,31 +692,31 @@ com.kony.Employee.Status.remove = function(wcs, successcallback,errorcallback, m
 * Deletes Status using primary key from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.kony.Employee.Status.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.prototype.removeDeviceInstanceByPK function");
+com.ess.EMPLOYEE.Status.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.prototype.removeDeviceInstanceByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Status.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Status.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Status.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.removeDeviceInstanceByPK function");
+com.ess.EMPLOYEE.Status.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.removeDeviceInstanceByPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var wcs = [];
 	var isError = false;
 	var pkNotFound = false;
 	var deletedRows;
-	if(com.kony.Employee.Status.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.ess.EMPLOYEE.Status.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}
 	
 	function StatusTransactionCallback(tx){
-		sync.log.trace("Entering com.kony.Employee.Status.removeDeviceInstanceByPK -> StatusTransactionCallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.removeDeviceInstanceByPK -> StatusTransactionCallback");
 		var record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(null !== record && false !=record) {
 			deletedRows = kony.sync.remove(tx, tbname, wcs, true, null, null);
@@ -729,7 +729,7 @@ com.kony.Employee.Status.removeDeviceInstanceByPK = function(pks, successcallbac
 	}
 	
 	function StatusErrorCallback(){
-		sync.log.error("Entering com.kony.Employee.Status.removeDeviceInstanceByPK -> StatusErrorCallback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Status.removeDeviceInstanceByPK -> StatusErrorCallback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -740,7 +740,7 @@ com.kony.Employee.Status.removeDeviceInstanceByPK = function(pks, successcallbac
 	}
 	
 	function StatusSuccessCallback(){
-		sync.log.trace("Entering com.kony.Employee.Status.removeDeviceInstanceByPK -> StatusSuccessCallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.removeDeviceInstanceByPK -> StatusSuccessCallback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -752,7 +752,7 @@ com.kony.Employee.Status.removeDeviceInstanceByPK = function(pks, successcallbac
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Status.removeDeviceInstanceByPK -> PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Status.removeDeviceInstanceByPK -> PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 	
@@ -767,10 +767,10 @@ com.kony.Employee.Status.removeDeviceInstanceByPK = function(pks, successcallbac
 * Deletes Status(s) using where clause from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.kony.Employee.Status.removeDeviceInstance = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.removeDeviceInstance->main function");
+com.ess.EMPLOYEE.Status.removeDeviceInstance = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.removeDeviceInstance->main function");
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
 	var isError = false;
@@ -784,14 +784,14 @@ com.kony.Employee.Status.removeDeviceInstance = function(wcs, successcallback,er
 		}
 	}
 	function Status_removeSuccess(){
-		sync.log.trace("Entering com.kony.Employee.Status.remove->Status_removeSuccess function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.remove->Status_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.kony.Employee.Status.remove->error callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -801,7 +801,7 @@ com.kony.Employee.Status.removeDeviceInstance = function(wcs, successcallback,er
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.kony.Employee.Status.remove->delete Entity function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
 			kony.sync.startTransaction(connection, Status_removeTransactioncallback, Status_removeSuccess, errorcallbackWrapper);
@@ -813,23 +813,23 @@ com.kony.Employee.Status.removeDeviceInstance = function(wcs, successcallback,er
 /************************************************************************************
 * Retrieves Status using primary key from the local Database. 
 *************************************************************************************/
-com.kony.Employee.Status.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.prototype.getAllDetailsByPK function");
+com.ess.EMPLOYEE.Status.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.prototype.getAllDetailsByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Status.getAllDetailsByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Status.getAllDetailsByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Status.getAllDetailsByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.getAllDetailsByPK-> main function");
+com.ess.EMPLOYEE.Status.getAllDetailsByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getAllDetailsByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var wcs = [];
-	if(com.kony.Employee.Status.pkCheck(pks,wcs,errorcallback,"searching")===false){
+	if(com.ess.EMPLOYEE.Status.pkCheck(pks,wcs,errorcallback,"searching")===false){
 		return;
 	}
 	twcs = kony.sync.CreateCopy(wcs);
@@ -841,8 +841,8 @@ com.kony.Employee.Status.getAllDetailsByPK = function(pks, successcallback,error
 	var sql = query_compile[0];
 	var params = query_compile[1];
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.getAllDetailsByPK-> success callback function");
-		successcallback(com.kony.Employee.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.getAllDetailsByPK-> success callback function");
+		successcallback(com.ess.EMPLOYEE.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname, sql, params, mySuccCallback, errorcallback);
 };
@@ -854,23 +854,23 @@ com.kony.Employee.Status.getAllDetailsByPK = function(pks, successcallback,error
 
 /************************************************************************************
 * Retrieves Status(s) using where clause from the local Database. 
-* e.g. com.kony.Employee.Status.find("where Id like 'A%'", successcallback,errorcallback);
+* e.g. com.ess.EMPLOYEE.Status.find("where Id like 'A%'", successcallback,errorcallback);
 *************************************************************************************/
-com.kony.Employee.Status.find = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.find function");
+com.ess.EMPLOYEE.Status.find = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.find function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.find",  "find", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.find",  "find", errorcallback)){
 		return;
 	}
 	//wcs will be a string formed by the user.
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select * from \"" + tbname + "\" " + wcs;
 	function mySuccCallback(res){
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccCallback, errorcallback);
 };
@@ -879,26 +879,26 @@ com.kony.Employee.Status.find = function(wcs, successcallback,errorcallback){
 * Marks instance of Status with given primary key for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Status.prototype.markForUploadbyPK = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.prototype.markForUploadbyPK function");
+com.ess.EMPLOYEE.Status.prototype.markForUploadbyPK = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.prototype.markForUploadbyPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Status.markForUploadbyPK(pks, successcallback, errorcallback);
+	com.ess.EMPLOYEE.Status.markForUploadbyPK(pks, successcallback, errorcallback);
 };
-com.kony.Employee.Status.markForUploadbyPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.markForUploadbyPK function");
+com.ess.EMPLOYEE.Status.markForUploadbyPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.markForUploadbyPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var isError = false;
 	var recordsFound = false;
 	var recordsMarkedForUpload = 0;
 	var wcs = [];
-	if(com.kony.Employee.Status.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
+	if(com.ess.EMPLOYEE.Status.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
 		return;
 	}
 
@@ -1024,16 +1024,16 @@ com.kony.Employee.Status.markForUploadbyPK = function(pks, successcallback, erro
 * Marks instance(s) of Status matching given where clause for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Status.markForUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.markForUpload->main function");
+com.ess.EMPLOYEE.Status.markForUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.markForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.markForUpload",  "markForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.markForUpload",  "markForUpload", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var isError = false;
 	var num_records_main = 0;
 	wcs = kony.sync.validateWhereClause(wcs);
@@ -1088,7 +1088,7 @@ com.kony.Employee.Status.markForUpload = function(wcs, successcallback,errorcall
 	}
 	
 	function single_transaction_callback (tx){
-		sync.log.trace("Entering com.kony.Employee.Status.markForUpload->single_transaction_callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.markForUpload->single_transaction_callback");
 		//updating main table
 		var sql = "select " + kony.sync.historyTableChangeTypeColumn + " from \"" + tbname + "\" " + wcs ;
 		var resultSet = kony.sync.executeSql (tx, sql, null);
@@ -1125,12 +1125,12 @@ com.kony.Employee.Status.markForUpload = function(wcs, successcallback,errorcall
 	}
 	
 	function single_transaction_success_callback(){
-		sync.log.trace("Entering com.kony.Employee.Status.markForUpload->single_transaction_success_callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.markForUpload->single_transaction_success_callback");
 		kony.sync.verifyAndCallClosure(successcallback, {count:num_records_main});
 	}
 	
 	function single_transaction_error_callback(){
-		sync.log.error("Entering com.kony.Employee.Status.markForUpload->single_transaction_error_callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Status.markForUpload->single_transaction_error_callback");
 		if(!isError) {
 			kony.sync.showTransactionError(errorcallback);
 		}else{
@@ -1150,13 +1150,13 @@ com.kony.Employee.Status.markForUpload = function(wcs, successcallback,errorcall
 * pending upload if they have been updated or created locally and the changes have
 * not been merged with enterprise datasource.
 *************************************************************************************/
-com.kony.Employee.Status.getPendingUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.getPendingUpload->main function");
+com.ess.EMPLOYEE.Status.getPendingUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getPendingUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null){
@@ -1169,8 +1169,8 @@ com.kony.Employee.Status.getPendingUpload = function(wcs, successcallback,errorc
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.getPendingUpload->successcallback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.getPendingUpload->successcallback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
@@ -1180,32 +1180,32 @@ com.kony.Employee.Status.getPendingUpload = function(wcs, successcallback,errorc
 * In persistent Sync the  records in the local database are put into a pending 
 * acknowledgement state after an upload.
 *************************************************************************************/
-com.kony.Employee.Status.getPendingAcknowledgement = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.getPendingAcknowledgement->main function");
+com.ess.EMPLOYEE.Status.getPendingAcknowledgement = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getPendingAcknowledgement->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var mysql="select * from \""+tbname+"\" WHERE "+kony.sync.mainTableChangeTypeColumn+ " is not null AND "+kony.sync.mainTableChangeTypeColumn+" <> -1 AND "+kony.sync.mainTableSyncVersionColumn+" <> "+currentversion+" AND "+kony.sync.mainTableChangeTypeColumn+" NOT LIKE '9%'"; 
 	kony.sync.single_select_execute(dbname, mysql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.getPendingAcknowledgement success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.getPendingAcknowledgement success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
 /************************************************************************************
 * Retrieves instance(s) of Status deferred for upload.
 *************************************************************************************/
-com.kony.Employee.Status.getDeferredUpload = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.getDeferredUpload->main function");
+com.ess.EMPLOYEE.Status.getDeferredUpload = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getDeferredUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null ){
 		wcs = kony.sync.validateWhereClause(wcs);
@@ -1218,24 +1218,24 @@ com.kony.Employee.Status.getDeferredUpload = function(wcs,successcallback,errorc
 	
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.getDeferredUpload->success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.getDeferredUpload->success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Status.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 };
 
 /************************************************************************************
 * Rollbacks all changes to Status in local database to last synced state
 *************************************************************************************/
-com.kony.Employee.Status.rollbackPendingLocalChanges = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.rollbackPendingLocalChanges->main function");
+com.ess.EMPLOYEE.Status.rollbackPendingLocalChanges = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.rollbackPendingLocalChanges->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.rollbackPendingLocalChanges->main function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.rollbackPendingLocalChanges->main function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}		
 };
@@ -1244,32 +1244,32 @@ com.kony.Employee.Status.rollbackPendingLocalChanges = function(successcallback,
 * Rollbacks changes to Status's record with given primary key in local 
 * database to last synced state
 *************************************************************************************/
-com.kony.Employee.Status.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.prototype.rollbackPendingLocalChangesByPK function");
+com.ess.EMPLOYEE.Status.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.prototype.rollbackPendingLocalChangesByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Status.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Status.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Status.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.rollbackPendingLocalChangesByPK->main function");
+com.ess.EMPLOYEE.Status.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.rollbackPendingLocalChangesByPK->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var wcs = [];
-	if(com.kony.Employee.Status.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
+	if(com.ess.EMPLOYEE.Status.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
 		return;
 	}	
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, wcs, mySuccesscallback, pkNotFoundErrCallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.rollbackPendingLocalChangesByPK->success callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.rollbackPendingLocalChangesByPK->success callback function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Status.rollbackPendingLocalChangesByPK->PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Status.rollbackPendingLocalChangesByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 };
@@ -1278,24 +1278,24 @@ com.kony.Employee.Status.rollbackPendingLocalChangesByPK = function(pks, success
 * isRecordDeferredForUpload returns true or false depending on whether Status's record  
 * with given primary key got deferred in last sync
 *************************************************************************************/
-com.kony.Employee.Status.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Status.prototype.isRecordDeferredForUpload function");
+com.ess.EMPLOYEE.Status.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Status.prototype.isRecordDeferredForUpload function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Status.isRecordDeferredForUpload(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Status.isRecordDeferredForUpload(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Status.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.isRecordDeferredForUpload->main function");
+com.ess.EMPLOYEE.Status.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.isRecordDeferredForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.kony.Employee.Status.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.ess.EMPLOYEE.Status.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1315,7 +1315,7 @@ com.kony.Employee.Status.isRecordDeferredForUpload = function(pks, successcallba
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.isRecordDeferredForUpload->successcallback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.isRecordDeferredForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1330,24 +1330,24 @@ com.kony.Employee.Status.isRecordDeferredForUpload = function(pks, successcallba
 * isRecordPendingForUpload returns true or false depending on whether Status's record  
 * with given primary key is pending for upload
 *************************************************************************************/
-com.kony.Employee.Status.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Status.prototype.isRecordPendingForUpload function");
+com.ess.EMPLOYEE.Status.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Status.prototype.isRecordPendingForUpload function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Status.isRecordPendingForUpload(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Status.isRecordPendingForUpload(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Status.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.isRecordPendingForUpload->main function");
+com.ess.EMPLOYEE.Status.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.isRecordPendingForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Status.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Status.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Status.getTableName();
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.kony.Employee.Status.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.ess.EMPLOYEE.Status.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1367,7 +1367,7 @@ com.kony.Employee.Status.isRecordPendingForUpload = function(pks, successcallbac
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Status.isRecordPendingForUpload->successcallback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Status.isRecordPendingForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1386,9 +1386,9 @@ com.kony.Employee.Status.isRecordPendingForUpload = function(pks, successcallbac
 *************************************************************************************/
 
 //Deletes all the dependant tables in the relationship tables.Need to pass transaction handler as input
-com.kony.Employee.Status.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
-	sync.log.trace("Entering com.kony.Employee.Status.removeCascade function");
-	var tbname = com.kony.Employee.Status.getTableName();
+com.ess.EMPLOYEE.Status.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.removeCascade function");
+	var tbname = com.ess.EMPLOYEE.Status.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	function removeCascadeChildren(){
 	}
@@ -1418,12 +1418,12 @@ com.kony.Employee.Status.removeCascade = function(tx, wcs, errorcallback, markFo
 };
 
 
-com.kony.Employee.Status.convertTableToObject = function(res){
-	sync.log.trace("Entering com.kony.Employee.Status.convertTableToObject function");
+com.ess.EMPLOYEE.Status.convertTableToObject = function(res){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.convertTableToObject function");
 	objMap = [];
 	if(res!==null){
 		for(var i in res){
-			var obj = new com.kony.Employee.Status();
+			var obj = new com.ess.EMPLOYEE.Status();
 			obj.Id = res[i].Id;
 			obj.lastmodifiedts = res[i].lastmodifiedts;
 			obj.softdeleteflag = res[i].softdeleteflag;
@@ -1435,8 +1435,8 @@ com.kony.Employee.Status.convertTableToObject = function(res){
 	return objMap;
 };
 
-com.kony.Employee.Status.filterAttributes = function(valuestable, insert){
-	sync.log.trace("Entering com.kony.Employee.Status.filterAttributes function");
+com.ess.EMPLOYEE.Status.filterAttributes = function(valuestable, insert){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.filterAttributes function");
 	var attributeTable = {};
 	attributeTable.Id = "Id";
 	attributeTable.lastmodifiedts = "lastmodifiedts";
@@ -1468,18 +1468,18 @@ com.kony.Employee.Status.filterAttributes = function(valuestable, insert){
 	return newvaluestable;
 };
 
-com.kony.Employee.Status.formOrderByClause = function(orderByMap){
-	sync.log.trace("Entering com.kony.Employee.Status.formOrderByClause function");
+com.ess.EMPLOYEE.Status.formOrderByClause = function(orderByMap){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.formOrderByClause function");
 	if(!kony.sync.isNull(orderByMap)){
 		var valuestable = kony.sync.convertOrderByMapToValuesTable(orderByMap);
-		//var filteredValuestable = com.kony.Employee.Status.filterAttributes(valuestable, true);
+		//var filteredValuestable = com.ess.EMPLOYEE.Status.filterAttributes(valuestable, true);
 		return kony.sync.convertToValuesTableOrderByMap(orderByMap,valuestable);
 	}
 	return null;
 };
 
-com.kony.Employee.Status.prototype.getValuesTable = function(isInsert){
-	sync.log.trace("Entering com.kony.Employee.Status.prototype.getValuesTable function");
+com.ess.EMPLOYEE.Status.prototype.getValuesTable = function(isInsert){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.prototype.getValuesTable function");
 	var valuesTable = {};
 	if(isInsert===true){
 		valuesTable.Id = this.Id;
@@ -1490,22 +1490,22 @@ com.kony.Employee.Status.prototype.getValuesTable = function(isInsert){
 	return valuesTable;
 };
 
-com.kony.Employee.Status.prototype.getPKTable = function(){
-	sync.log.trace("Entering com.kony.Employee.Status.prototype.getPKTable function");
+com.ess.EMPLOYEE.Status.prototype.getPKTable = function(){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.prototype.getPKTable function");
 	var pkTable = {};
 	pkTable.Id = {key:"Id",value:this.Id};
 	return pkTable;
 };
 
-com.kony.Employee.Status.getPKTable = function(){
-	sync.log.trace("Entering com.kony.Employee.Status.getPKTable function");
+com.ess.EMPLOYEE.Status.getPKTable = function(){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getPKTable function");
 	var pkTable = [];
 	pkTable.push("Id");
 	return pkTable;
 };
 
-com.kony.Employee.Status.pkCheck = function(pks,wcs,errorcallback,opName){
-	sync.log.trace("Entering com.kony.Employee.Status.pkCheck function");
+com.ess.EMPLOYEE.Status.pkCheck = function(pks,wcs,errorcallback,opName){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.pkCheck function");
 	var wc = [];
 	if(kony.sync.isNull(pks)){
 		sync.log.error("Primary Key Id not specified in  " + opName + "  an item in Status");
@@ -1536,13 +1536,13 @@ com.kony.Employee.Status.pkCheck = function(pks,wcs,errorcallback,opName){
 	return true;
 };
 
-com.kony.Employee.Status.validateNull = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.validateNull function");
+com.ess.EMPLOYEE.Status.validateNull = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.validateNull function");
 	return true;
 };
 
-com.kony.Employee.Status.validateNullInsert = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Status.validateNullInsert function");
+com.ess.EMPLOYEE.Status.validateNullInsert = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.validateNullInsert function");
 	if(kony.sync.isNull(valuestable.Id) || kony.sync.isEmptyString(valuestable.Id)){
 		sync.log.error("Mandatory attribute Id is missing for the SyncObject Status.");
 		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "Status", "Id")));
@@ -1551,15 +1551,15 @@ com.kony.Employee.Status.validateNullInsert = function (valuestable,errorcallbac
 	return true;
 };
 
-com.kony.Employee.Status.getRelationshipMap = function(relationshipMap,valuestable){
-	sync.log.trace("Entering com.kony.Employee.Status.getRelationshipMap function");
+com.ess.EMPLOYEE.Status.getRelationshipMap = function(relationshipMap,valuestable){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Status.getRelationshipMap function");
 	var r1 = {};
 
 	return relationshipMap;
 };
 
 
-com.kony.Employee.Status.checkPKValueTables = function (valuetables)	{
+com.ess.EMPLOYEE.Status.checkPKValueTables = function (valuetables)	{
 	var checkPksNotNullFlag = true;
 	for(var i = 0; i < valuetables.length; i++)	{
 		if(kony.sync.isNull(valuetables[i])){
@@ -1570,7 +1570,7 @@ com.kony.Employee.Status.checkPKValueTables = function (valuetables)	{
 	return checkPksNotNullFlag;
 };
 
-com.kony.Employee.Status.getTableName = function(){
+com.ess.EMPLOYEE.Status.getTableName = function(){
 	return "Status";
 };
 

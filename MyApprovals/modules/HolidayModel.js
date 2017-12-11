@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Tue Nov 28 13:07:34 UTC 2017Holiday*******************
+// ****************Generated On Mon Dec 11 21:58:46 UTC 2017Holiday*******************
 // **********************************Start Holiday's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -37,6 +37,10 @@ com.ess.EMPLOYEE.Holiday = function(){
 	this.Name = null;
 	this.softdeleteflag = null;
 	this.Type = null;
+	this.MOSID = null;
+	this.MOFID = null;
+	this.SCHKZ = null;
+	this.ZEITY = null;
 	this.markForUpload = true;
 };
 
@@ -76,6 +80,30 @@ com.ess.EMPLOYEE.Holiday.prototype = {
 	},
 	set Type(val){
 		this._Type = val;
+	},
+	get MOSID(){
+		return this._MOSID;
+	},
+	set MOSID(val){
+		this._MOSID = val;
+	},
+	get MOFID(){
+		return this._MOFID;
+	},
+	set MOFID(val){
+		this._MOFID = val;
+	},
+	get SCHKZ(){
+		return this._SCHKZ;
+	},
+	set SCHKZ(val){
+		this._SCHKZ = val;
+	},
+	get ZEITY(){
+		return this._ZEITY;
+	},
+	set ZEITY(val){
+		this._ZEITY = val;
 	},
 };
 
@@ -221,16 +249,28 @@ com.ess.EMPLOYEE.Holiday.create = function(valuestable, successcallback,errorcal
 *		valuesArray[0].Id = "Id_0";
 *		valuesArray[0].Name = "Name_0";
 *		valuesArray[0].Type = "Type_0";
+*		valuesArray[0].MOSID = "MOSID_0";
+*		valuesArray[0].MOFID = "MOFID_0";
+*		valuesArray[0].SCHKZ = "SCHKZ_0";
+*		valuesArray[0].ZEITY = "ZEITY_0";
 *		valuesArray[1] = {};
 *		valuesArray[1].Holiday_Date = "Holiday_Date_1";
 *		valuesArray[1].Id = "Id_1";
 *		valuesArray[1].Name = "Name_1";
 *		valuesArray[1].Type = "Type_1";
+*		valuesArray[1].MOSID = "MOSID_1";
+*		valuesArray[1].MOFID = "MOFID_1";
+*		valuesArray[1].SCHKZ = "SCHKZ_1";
+*		valuesArray[1].ZEITY = "ZEITY_1";
 *		valuesArray[2] = {};
 *		valuesArray[2].Holiday_Date = "Holiday_Date_2";
 *		valuesArray[2].Id = "Id_2";
 *		valuesArray[2].Name = "Name_2";
 *		valuesArray[2].Type = "Type_2";
+*		valuesArray[2].MOSID = "MOSID_2";
+*		valuesArray[2].MOFID = "MOFID_2";
+*		valuesArray[2].SCHKZ = "SCHKZ_2";
+*		valuesArray[2].ZEITY = "ZEITY_2";
 *		com.ess.EMPLOYEE.Holiday.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
 com.ess.EMPLOYEE.Holiday.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
@@ -445,18 +485,21 @@ com.ess.EMPLOYEE.Holiday.update = function(wcs, valuestable, successcallback,err
 *		inputArray[0].changeSet.Id = "Id_updated0";
 *		inputArray[0].changeSet.Name = "Name_updated0";
 *		inputArray[0].changeSet.Type = "Type_updated0";
+*		inputArray[0].changeSet.MOSID = "MOSID_updated0";
 *		inputArray[0].whereClause = "where Holiday_Date = '0'";
 *		inputArray[1] = {};
 *		inputArray[1].changeSet = {};
 *		inputArray[1].changeSet.Id = "Id_updated1";
 *		inputArray[1].changeSet.Name = "Name_updated1";
 *		inputArray[1].changeSet.Type = "Type_updated1";
+*		inputArray[1].changeSet.MOSID = "MOSID_updated1";
 *		inputArray[1].whereClause = "where Holiday_Date = '1'";
 *		inputArray[2] = {};
 *		inputArray[2].changeSet = {};
 *		inputArray[2].changeSet.Id = "Id_updated2";
 *		inputArray[2].changeSet.Name = "Name_updated2";
 *		inputArray[2].changeSet.Type = "Type_updated2";
+*		inputArray[2].changeSet.MOSID = "MOSID_updated2";
 *		inputArray[2].whereClause = "where Holiday_Date = '2'";
 *		com.ess.EMPLOYEE.Holiday.updateAll(inputArray,successcallback,errorcallback);
 *************************************************************************************/
@@ -1444,6 +1487,10 @@ com.ess.EMPLOYEE.Holiday.convertTableToObject = function(res){
 			obj.Name = res[i].Name;
 			obj.softdeleteflag = res[i].softdeleteflag;
 			obj.Type = res[i].Type;
+			obj.MOSID = res[i].MOSID;
+			obj.MOFID = res[i].MOFID;
+			obj.SCHKZ = res[i].SCHKZ;
+			obj.ZEITY = res[i].ZEITY;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
 		}
@@ -1458,6 +1505,10 @@ com.ess.EMPLOYEE.Holiday.filterAttributes = function(valuestable, insert){
 	attributeTable.Id = "Id";
 	attributeTable.Name = "Name";
 	attributeTable.Type = "Type";
+	attributeTable.MOSID = "MOSID";
+	attributeTable.MOFID = "MOFID";
+	attributeTable.SCHKZ = "SCHKZ";
+	attributeTable.ZEITY = "ZEITY";
 
 	var PKTable = {};
 	PKTable.Holiday_Date = {}
@@ -1503,6 +1554,10 @@ com.ess.EMPLOYEE.Holiday.prototype.getValuesTable = function(isInsert){
 	valuesTable.Id = this.Id;
 	valuesTable.Name = this.Name;
 	valuesTable.Type = this.Type;
+	valuesTable.MOSID = this.MOSID;
+	valuesTable.MOFID = this.MOFID;
+	valuesTable.SCHKZ = this.SCHKZ;
+	valuesTable.ZEITY = this.ZEITY;
 	return valuesTable;
 };
 

@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Tue Nov 28 13:07:34 UTC 2017approval_request*******************
+// ****************Generated On Mon Dec 11 21:58:45 UTC 2017approval_request*******************
 // **********************************Start approval_request's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -48,6 +48,8 @@ com.kony.MYAPPROVALS.approval_request = function(){
 	this.type_id = null;
 	this.leave_hours = null;
 	this.leave_days = null;
+	this.from_time = null;
+	this.end_time = null;
 	this.markForUpload = true;
 };
 
@@ -153,6 +155,18 @@ com.kony.MYAPPROVALS.approval_request.prototype = {
 	},
 	set leave_days(val){
 		this._leave_days = val;
+	},
+	get from_time(){
+		return this._from_time;
+	},
+	set from_time(val){
+		this._from_time = val;
+	},
+	get end_time(){
+		return this._end_time;
+	},
+	set end_time(val){
+		this._end_time = val;
 	},
 };
 
@@ -309,6 +323,8 @@ com.kony.MYAPPROVALS.approval_request.create = function(valuestable, successcall
 *		valuesArray[0].type_id = "type_id_0";
 *		valuesArray[0].leave_hours = "leave_hours_0";
 *		valuesArray[0].leave_days = "leave_days_0";
+*		valuesArray[0].from_time = "from_time_0";
+*		valuesArray[0].end_time = "end_time_0";
 *		valuesArray[1] = {};
 *		valuesArray[1].category_id = "category_id_1";
 *		valuesArray[1].createdts = "createdts_1";
@@ -325,6 +341,8 @@ com.kony.MYAPPROVALS.approval_request.create = function(valuestable, successcall
 *		valuesArray[1].type_id = "type_id_1";
 *		valuesArray[1].leave_hours = "leave_hours_1";
 *		valuesArray[1].leave_days = "leave_days_1";
+*		valuesArray[1].from_time = "from_time_1";
+*		valuesArray[1].end_time = "end_time_1";
 *		valuesArray[2] = {};
 *		valuesArray[2].category_id = "category_id_2";
 *		valuesArray[2].createdts = "createdts_2";
@@ -341,6 +359,8 @@ com.kony.MYAPPROVALS.approval_request.create = function(valuestable, successcall
 *		valuesArray[2].type_id = "type_id_2";
 *		valuesArray[2].leave_hours = "leave_hours_2";
 *		valuesArray[2].leave_days = "leave_days_2";
+*		valuesArray[2].from_time = "from_time_2";
+*		valuesArray[2].end_time = "end_time_2";
 *		com.kony.MYAPPROVALS.approval_request.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
 com.kony.MYAPPROVALS.approval_request.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
@@ -2575,6 +2595,8 @@ com.kony.MYAPPROVALS.approval_request.convertTableToObject = function(res){
 			obj.type_id = res[i].type_id;
 			obj.leave_hours = res[i].leave_hours;
 			obj.leave_days = res[i].leave_days;
+			obj.from_time = res[i].from_time;
+			obj.end_time = res[i].end_time;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
 		}
@@ -2600,6 +2622,8 @@ com.kony.MYAPPROVALS.approval_request.filterAttributes = function(valuestable, i
 	attributeTable.type_id = "type_id";
 	attributeTable.leave_hours = "leave_hours";
 	attributeTable.leave_days = "leave_days";
+	attributeTable.from_time = "from_time";
+	attributeTable.end_time = "end_time";
 
 	var PKTable = {};
 	PKTable.id = {}
@@ -2656,6 +2680,8 @@ com.kony.MYAPPROVALS.approval_request.prototype.getValuesTable = function(isInse
 	valuesTable.type_id = this.type_id;
 	valuesTable.leave_hours = this.leave_hours;
 	valuesTable.leave_days = this.leave_days;
+	valuesTable.from_time = this.from_time;
+	valuesTable.end_time = this.end_time;
 	return valuesTable;
 };
 

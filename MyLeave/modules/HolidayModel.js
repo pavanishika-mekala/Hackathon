@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Wed Nov 29 10:59:53 UTC 2017Holiday*******************
+// ****************Generated On Mon Dec 11 21:45:47 UTC 2017Holiday*******************
 // **********************************Start Holiday's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -24,23 +24,27 @@ if (typeof(sync.log) === "undefined") {
 
 
 if(typeof(com)=== "undefined"){ com = {}; }
-if(typeof(com.kony)=== "undefined"){ com.kony = {}; }
-if(typeof(com.kony.Employee)=== "undefined"){ com.kony.Employee = {}; }
+if(typeof(com.ess)=== "undefined"){ com.ess = {}; }
+if(typeof(com.ess.EMPLOYEE)=== "undefined"){ com.ess.EMPLOYEE = {}; }
 
 /************************************************************************************
 * Creates new Holiday
 *************************************************************************************/
-com.kony.Employee.Holiday = function(){
+com.ess.EMPLOYEE.Holiday = function(){
 	this.Holiday_Date = null;
 	this.Id = null;
 	this.lastmodifiedts = null;
 	this.Name = null;
 	this.softdeleteflag = null;
 	this.Type = null;
+	this.MOSID = null;
+	this.MOFID = null;
+	this.SCHKZ = null;
+	this.ZEITY = null;
 	this.markForUpload = true;
 };
 
-com.kony.Employee.Holiday.prototype = {
+com.ess.EMPLOYEE.Holiday.prototype = {
 	get Holiday_Date(){
 		return this._Holiday_Date;
 	},
@@ -77,6 +81,30 @@ com.kony.Employee.Holiday.prototype = {
 	set Type(val){
 		this._Type = val;
 	},
+	get MOSID(){
+		return this._MOSID;
+	},
+	set MOSID(val){
+		this._MOSID = val;
+	},
+	get MOFID(){
+		return this._MOFID;
+	},
+	set MOFID(val){
+		this._MOFID = val;
+	},
+	get SCHKZ(){
+		return this._SCHKZ;
+	},
+	set SCHKZ(val){
+		this._SCHKZ = val;
+	},
+	get ZEITY(){
+		return this._ZEITY;
+	},
+	set ZEITY(val){
+		this._ZEITY = val;
+	},
 };
 
 /************************************************************************************
@@ -92,15 +120,15 @@ com.kony.Employee.Holiday.prototype = {
 * orderByMap[1].sortType ="asc";
 * var limit = 20;
 * var offset = 5;
-* com.kony.Employee.Holiday.getAll(successcallback,errorcallback, orderByMap, limit, offset)
+* com.ess.EMPLOYEE.Holiday.getAll(successcallback,errorcallback, orderByMap, limit, offset)
 *************************************************************************************/
-com.kony.Employee.Holiday.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getAll->main function");
+com.ess.EMPLOYEE.Holiday.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getAll->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	orderByMap = kony.sync.formOrderByClause("Holiday",orderByMap);
 	var query = kony.sync.qb_createQuery();
 				kony.sync.qb_select(query, null);	
@@ -112,8 +140,8 @@ com.kony.Employee.Holiday.getAll = function(successcallback, errorcallback, orde
 	var params = query_compile[1];
 
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.getAll->successcallback");
-		successcallback(com.kony.Employee.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getAll->successcallback");
+		successcallback(com.ess.EMPLOYEE.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname,sql, params,mySuccCallback,errorcallback);
 };
@@ -121,29 +149,29 @@ com.kony.Employee.Holiday.getAll = function(successcallback, errorcallback, orde
 /************************************************************************************
 * Returns number of Holiday present in local database.
 *************************************************************************************/
-com.kony.Employee.Holiday.getAllCount = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getAllCount function");
-	com.kony.Employee.Holiday.getCount("",successcallback,errorcallback);
+com.ess.EMPLOYEE.Holiday.getAllCount = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getAllCount function");
+	com.ess.EMPLOYEE.Holiday.getCount("",successcallback,errorcallback);
 };
 
 /************************************************************************************
 * Returns number of Holiday using where clause in the local Database
 *************************************************************************************/
-com.kony.Employee.Holiday.getCount = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getCount->main function");
+com.ess.EMPLOYEE.Holiday.getCount = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getCount->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.getCount" , "getCount", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.getCount" , "getCount", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select count(*) from \"" + tbname + "\" " + wcs;
 	kony.sync.single_execute_sql(dbname,sql, null, mySuccCallback, errorcallback);
 	function mySuccCallback(res) {
-		sync.log.trace("Entering com.kony.Employee.Holiday.getCount->successcallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getCount->successcallback");
 		if(null!==res){
 			var count = null;
 			count = res["count(*)"];
@@ -159,22 +187,22 @@ com.kony.Employee.Holiday.getCount = function(wcs,successcallback,errorcallback)
 * Creates a new instance of Holiday in the local Database. The new record will 
 * be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.create = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Holiday.prototype.create function");
+com.ess.EMPLOYEE.Holiday.prototype.create = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.prototype.create function");
 	var valuestable = this.getValuesTable(true);
-	com.kony.Employee.Holiday.create(valuestable, successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Holiday.create(valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Holiday.create = function(valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering  com.kony.Employee.Holiday.create->main function");
+com.ess.EMPLOYEE.Holiday.create = function(valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.create->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.create" , "create", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.create" , "create", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 
 	if(kony.sync.attributeValidation(valuestable,"Holiday",errorcallback,true)===false){
@@ -182,7 +210,7 @@ com.kony.Employee.Holiday.create = function(valuestable, successcallback,errorca
 	}
 	
 	function executeSuccess(){
-		sync.log.trace("Entering  com.kony.Employee.Holiday.create->success callback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.create->success callback");
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
 	}
 
@@ -192,7 +220,7 @@ com.kony.Employee.Holiday.create = function(valuestable, successcallback,errorca
 	function createSuccesscallback(res){
 		if(res==null || res.length==0){
 			var relationshipMap={};  
-			relationshipMap = com.kony.Employee.Holiday.getRelationshipMap(relationshipMap,valuestable);
+			relationshipMap = com.ess.EMPLOYEE.Holiday.getRelationshipMap(relationshipMap,valuestable);
 			kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 		}
 		else{
@@ -204,7 +232,7 @@ com.kony.Employee.Holiday.create = function(valuestable, successcallback,errorca
 	if(kony.sync.enableORMValidations){
 		errMsg = "Holiday_Date=" + valuestable.Holiday_Date;
 		pks["Holiday_Date"] = {key:"Holiday_Date",value:valuestable.Holiday_Date};
-		com.kony.Employee.Holiday.getAllDetailsByPK(pks,createSuccesscallback,errorcallback)
+		com.ess.EMPLOYEE.Holiday.getAllDetailsByPK(pks,createSuccesscallback,errorcallback)
 	}
 	else{
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
@@ -221,28 +249,40 @@ com.kony.Employee.Holiday.create = function(valuestable, successcallback,errorca
 *		valuesArray[0].Id = "Id_0";
 *		valuesArray[0].Name = "Name_0";
 *		valuesArray[0].Type = "Type_0";
+*		valuesArray[0].MOSID = "MOSID_0";
+*		valuesArray[0].MOFID = "MOFID_0";
+*		valuesArray[0].SCHKZ = "SCHKZ_0";
+*		valuesArray[0].ZEITY = "ZEITY_0";
 *		valuesArray[1] = {};
 *		valuesArray[1].Holiday_Date = "Holiday_Date_1";
 *		valuesArray[1].Id = "Id_1";
 *		valuesArray[1].Name = "Name_1";
 *		valuesArray[1].Type = "Type_1";
+*		valuesArray[1].MOSID = "MOSID_1";
+*		valuesArray[1].MOFID = "MOFID_1";
+*		valuesArray[1].SCHKZ = "SCHKZ_1";
+*		valuesArray[1].ZEITY = "ZEITY_1";
 *		valuesArray[2] = {};
 *		valuesArray[2].Holiday_Date = "Holiday_Date_2";
 *		valuesArray[2].Id = "Id_2";
 *		valuesArray[2].Name = "Name_2";
 *		valuesArray[2].Type = "Type_2";
-*		com.kony.Employee.Holiday.createAll(valuesArray, successcallback, errorcallback, true);
+*		valuesArray[2].MOSID = "MOSID_2";
+*		valuesArray[2].MOFID = "MOFID_2";
+*		valuesArray[2].SCHKZ = "SCHKZ_2";
+*		valuesArray[2].ZEITY = "ZEITY_2";
+*		com.ess.EMPLOYEE.Holiday.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
-com.kony.Employee.Holiday.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Holiday.createAll function");
+com.ess.EMPLOYEE.Holiday.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.createAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.createAll" , "createAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.createAll" , "createAll", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var isProperData = true;
 	var arrayLen = 0;
@@ -277,7 +317,7 @@ com.kony.Employee.Holiday.createAll = function(valuesArray, successcallback, err
 				errMsg = "Holiday_Date=" + valuestable.Holiday_Date;
 				pks["Holiday_Date"] = {key:"Holiday_Date",value:valuestable.Holiday_Date};
 				var wcs = [];
-				if(com.kony.Employee.Holiday.pkCheck(pks,wcs,errorcallback,"searching")===false){
+				if(com.ess.EMPLOYEE.Holiday.pkCheck(pks,wcs,errorcallback,"searching")===false){
 					isError = true;
 					return;
 				}
@@ -328,7 +368,7 @@ com.kony.Employee.Holiday.createAll = function(valuesArray, successcallback, err
 	}
 
 	function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.kony.Employee.Holiday.createAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.createAll->transactionSuccessCallback");
 		if(!isError){
 			kony.sync.massInsert(dbname, tbname, valuesArray, successcallback, errorcallback, markForUpload);
 		}
@@ -344,11 +384,11 @@ com.kony.Employee.Holiday.createAll = function(valuesArray, successcallback, err
 	
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.kony.Employee.Holiday.createAll->checkIntegrity");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.createAll->checkIntegrity");
 		arrayLength = valuesArray.length;
 		for (var i=0; valuesArray != null && i < arrayLength; i++ ){
 			var relationshipMap={};  
-			relationshipMap = com.kony.Employee.Holiday.getRelationshipMap(relationshipMap,valuesArray[i]);
+			relationshipMap = com.ess.EMPLOYEE.Holiday.getRelationshipMap(relationshipMap,valuesArray[i]);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
 				isError = true;
@@ -366,26 +406,26 @@ com.kony.Employee.Holiday.createAll = function(valuesArray, successcallback, err
 * Updates Holiday using primary key in the local Database. The update will be
 * merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.updateByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Holiday.prototype.updateByPK function");
+com.ess.EMPLOYEE.Holiday.prototype.updateByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.prototype.updateByPK function");
 	var pks = this.getPKTable();
 	var valuestable = this.getValuesTable(false);
-	com.kony.Employee.Holiday.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Holiday.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Holiday.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering  com.kony.Employee.Holiday.updateByPK-> main function");
+com.ess.EMPLOYEE.Holiday.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.updateByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.updateByPK",  "updateByPk", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.updateByPK",  "updateByPk", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [ ];
 
-	if(com.kony.Employee.Holiday.pkCheck(pks,wcs,errorcallback,"updating")===false){
+	if(com.ess.EMPLOYEE.Holiday.pkCheck(pks,wcs,errorcallback,"updating")===false){
 		return;
 	}
 
@@ -394,7 +434,7 @@ com.kony.Employee.Holiday.updateByPK = function(pks,valuestable, successcallback
 	}
 
 	var relationshipMap={};  
-	relationshipMap = com.kony.Employee.Holiday.getRelationshipMap(relationshipMap,valuestable);
+	relationshipMap = com.ess.EMPLOYEE.Holiday.getRelationshipMap(relationshipMap,valuestable);
 
 	kony.sync.updateByPK(tbname, dbname, relationshipMap, pks,valuestable, successcallback,errorcallback, markForUpload, wcs);
 };
@@ -403,17 +443,17 @@ com.kony.Employee.Holiday.updateByPK = function(pks,valuestable, successcallback
 * Updates Holiday(s) using where clause in the local Database. The update(s)
 * will be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Holiday.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Holiday.update function");
+com.ess.EMPLOYEE.Holiday.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.update function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.update",  "update", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.update",  "update", errorcallback)){
 		return;
 	}
 
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 
@@ -421,17 +461,17 @@ com.kony.Employee.Holiday.update = function(wcs, valuestable, successcallback,er
 		return;
 	}
 	function executeSuccess(){
-		sync.log.trace("Entering  com.kony.Employee.Holiday.update-> success callback of Integrity Check");
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.Employee.Holiday.getPKTable());
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.update-> success callback of Integrity Check");
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.Holiday.getPKTable());
 	}
 
 	if(kony.sync.enableORMValidations){
 		var relationshipMap={};  
-		relationshipMap = com.kony.Employee.Holiday.getRelationshipMap(relationshipMap,valuestable);
+		relationshipMap = com.ess.EMPLOYEE.Holiday.getRelationshipMap(relationshipMap,valuestable);
 		kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 	}
 	else{
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.Employee.Holiday.getPKTable());
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.Holiday.getPKTable());
 	}
 };
 
@@ -445,27 +485,30 @@ com.kony.Employee.Holiday.update = function(wcs, valuestable, successcallback,er
 *		inputArray[0].changeSet.Id = "Id_updated0";
 *		inputArray[0].changeSet.Name = "Name_updated0";
 *		inputArray[0].changeSet.Type = "Type_updated0";
+*		inputArray[0].changeSet.MOSID = "MOSID_updated0";
 *		inputArray[0].whereClause = "where Holiday_Date = '0'";
 *		inputArray[1] = {};
 *		inputArray[1].changeSet = {};
 *		inputArray[1].changeSet.Id = "Id_updated1";
 *		inputArray[1].changeSet.Name = "Name_updated1";
 *		inputArray[1].changeSet.Type = "Type_updated1";
+*		inputArray[1].changeSet.MOSID = "MOSID_updated1";
 *		inputArray[1].whereClause = "where Holiday_Date = '1'";
 *		inputArray[2] = {};
 *		inputArray[2].changeSet = {};
 *		inputArray[2].changeSet.Id = "Id_updated2";
 *		inputArray[2].changeSet.Name = "Name_updated2";
 *		inputArray[2].changeSet.Type = "Type_updated2";
+*		inputArray[2].changeSet.MOSID = "MOSID_updated2";
 *		inputArray[2].whereClause = "where Holiday_Date = '2'";
-*		com.kony.Employee.Holiday.updateAll(inputArray,successcallback,errorcallback);
+*		com.ess.EMPLOYEE.Holiday.updateAll(inputArray,successcallback,errorcallback);
 *************************************************************************************/
-com.kony.Employee.Holiday.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
-	sync.log.trace("Entering com.kony.Employee.Holiday.updateAll function");
+com.ess.EMPLOYEE.Holiday.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.updateAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.updateAll",  "updateAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
 	var dbname = "10000473715010d0b";
@@ -516,13 +559,13 @@ com.kony.Employee.Holiday.updateAll = function(inputArray, successcallback, erro
 		    newInputArray[i] = kony.sync.CreateCopy(v);
 		}
 		inputArray = newInputArray;
-		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.kony.Employee.Holiday.getPKTable());
+		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.ess.EMPLOYEE.Holiday.getPKTable());
 	}
 	
 		function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.kony.Employee.Holiday.updateAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.updateAll->transactionSuccessCallback");
 		if(!isError){
-			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.kony.Employee.Holiday.getPKTable());
+			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.ess.EMPLOYEE.Holiday.getPKTable());
 		}
 	}
 
@@ -544,10 +587,10 @@ com.kony.Employee.Holiday.updateAll = function(inputArray, successcallback, erro
 	}
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.kony.Employee.Holiday.updateAll->checkIntegrity");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.updateAll->checkIntegrity");
 		for (var i=0; ((inputArray) != null) && i < inputArray.length; i++ ){
 			var relationshipMap={}; 
-			relationshipMap = com.kony.Employee.Holiday.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
+			relationshipMap = com.ess.EMPLOYEE.Holiday.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
 			sync.log.debug("Relationship Map for Integrity check created:", relationshipMap);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
@@ -568,21 +611,21 @@ com.kony.Employee.Holiday.updateAll = function(inputArray, successcallback, erro
 * Deletes Holiday using primary key from the local Database. The record will be
 * deleted from the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.deleteByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.prototype.deleteByPK function");
+com.ess.EMPLOYEE.Holiday.prototype.deleteByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.prototype.deleteByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Holiday.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Holiday.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Holiday.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Holiday.deleteByPK-> main function");
+com.ess.EMPLOYEE.Holiday.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.deleteByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.deleteByPK",  "deleteByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.deleteByPK",  "deleteByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [];
 	var isError = false;
@@ -590,12 +633,12 @@ com.kony.Employee.Holiday.deleteByPK = function(pks, successcallback,errorcallba
 	var twcs = [];
 	var deletedRows;
 	var record = "";
-	if(com.kony.Employee.Holiday.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.ess.EMPLOYEE.Holiday.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}	
 	twcs = kony.sync.CreateCopy(wcs);
 	function HolidayTransactionCallback(tx){
-		sync.log.trace("Entering com.kony.Employee.Holiday.deleteByPK->Holiday_PKPresent successcallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.deleteByPK->Holiday_PKPresent successcallback");
 		record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(record===false){
 			isError = true;
@@ -612,7 +655,7 @@ com.kony.Employee.Holiday.deleteByPK = function(pks, successcallback,errorcallba
 	}
 	
 	function HolidayErrorCallback(){
-		sync.log.error("Entering com.kony.Employee.Holiday.deleteByPK->relationship failure callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Holiday.deleteByPK->relationship failure callback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -623,7 +666,7 @@ com.kony.Employee.Holiday.deleteByPK = function(pks, successcallback,errorcallba
 
 	}
 	function HolidaySuccessCallback(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.deleteByPK->relationship success callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.deleteByPK->relationship success callback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -635,7 +678,7 @@ com.kony.Employee.Holiday.deleteByPK = function(pks, successcallback,errorcallba
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Holiday.deleteByPK->PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Holiday.deleteByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 		
@@ -649,18 +692,18 @@ com.kony.Employee.Holiday.deleteByPK = function(pks, successcallback,errorcallba
 /************************************************************************************
 * Deletes Holiday(s) using where clause from the local Database. The record(s)
 * will be deleted from the enterprise datasource in the next Sync.
-* e.g. com.kony.Employee.Holiday.remove("where Holiday_Date like 'A%'", successcallback,errorcallback, true);
+* e.g. com.ess.EMPLOYEE.Holiday.remove("where Holiday_Date like 'A%'", successcallback,errorcallback, true);
 *************************************************************************************/
-com.kony.Employee.Holiday.remove = function(wcs, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Holiday.remove->main function");
+com.ess.EMPLOYEE.Holiday.remove = function(wcs, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.remove->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.remove",  "remove", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.remove",  "remove", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
@@ -676,14 +719,14 @@ com.kony.Employee.Holiday.remove = function(wcs, successcallback,errorcallback, 
 		}
 	}
 	function Holiday_removeSuccess(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.remove->Holiday_removeSuccess function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.remove->Holiday_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.remove->error callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -693,7 +736,7 @@ com.kony.Employee.Holiday.remove = function(wcs, successcallback,errorcallback, 
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.remove->delete Entity function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
 			kony.sync.startTransaction(connection, Holiday_removeTransactioncallback, Holiday_removeSuccess, errorcallbackWrapper);
@@ -706,31 +749,31 @@ com.kony.Employee.Holiday.remove = function(wcs, successcallback,errorcallback, 
 * Deletes Holiday using primary key from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.prototype.removeDeviceInstanceByPK function");
+com.ess.EMPLOYEE.Holiday.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.prototype.removeDeviceInstanceByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Holiday.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Holiday.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Holiday.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.removeDeviceInstanceByPK function");
+com.ess.EMPLOYEE.Holiday.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.removeDeviceInstanceByPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var wcs = [];
 	var isError = false;
 	var pkNotFound = false;
 	var deletedRows;
-	if(com.kony.Employee.Holiday.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.ess.EMPLOYEE.Holiday.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}
 	
 	function HolidayTransactionCallback(tx){
-		sync.log.trace("Entering com.kony.Employee.Holiday.removeDeviceInstanceByPK -> HolidayTransactionCallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.removeDeviceInstanceByPK -> HolidayTransactionCallback");
 		var record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(null !== record && false !=record) {
 			deletedRows = kony.sync.remove(tx, tbname, wcs, true, null, null);
@@ -743,7 +786,7 @@ com.kony.Employee.Holiday.removeDeviceInstanceByPK = function(pks, successcallba
 	}
 	
 	function HolidayErrorCallback(){
-		sync.log.error("Entering com.kony.Employee.Holiday.removeDeviceInstanceByPK -> HolidayErrorCallback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Holiday.removeDeviceInstanceByPK -> HolidayErrorCallback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -754,7 +797,7 @@ com.kony.Employee.Holiday.removeDeviceInstanceByPK = function(pks, successcallba
 	}
 	
 	function HolidaySuccessCallback(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.removeDeviceInstanceByPK -> HolidaySuccessCallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.removeDeviceInstanceByPK -> HolidaySuccessCallback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -766,7 +809,7 @@ com.kony.Employee.Holiday.removeDeviceInstanceByPK = function(pks, successcallba
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Holiday.removeDeviceInstanceByPK -> PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Holiday.removeDeviceInstanceByPK -> PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 	
@@ -781,10 +824,10 @@ com.kony.Employee.Holiday.removeDeviceInstanceByPK = function(pks, successcallba
 * Deletes Holiday(s) using where clause from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.kony.Employee.Holiday.removeDeviceInstance = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.removeDeviceInstance->main function");
+com.ess.EMPLOYEE.Holiday.removeDeviceInstance = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.removeDeviceInstance->main function");
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
 	var isError = false;
@@ -798,14 +841,14 @@ com.kony.Employee.Holiday.removeDeviceInstance = function(wcs, successcallback,e
 		}
 	}
 	function Holiday_removeSuccess(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.remove->Holiday_removeSuccess function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.remove->Holiday_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.remove->error callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -815,7 +858,7 @@ com.kony.Employee.Holiday.removeDeviceInstance = function(wcs, successcallback,e
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.remove->delete Entity function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
 			kony.sync.startTransaction(connection, Holiday_removeTransactioncallback, Holiday_removeSuccess, errorcallbackWrapper);
@@ -827,23 +870,23 @@ com.kony.Employee.Holiday.removeDeviceInstance = function(wcs, successcallback,e
 /************************************************************************************
 * Retrieves Holiday using primary key from the local Database. 
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.prototype.getAllDetailsByPK function");
+com.ess.EMPLOYEE.Holiday.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.prototype.getAllDetailsByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Holiday.getAllDetailsByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Holiday.getAllDetailsByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Holiday.getAllDetailsByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getAllDetailsByPK-> main function");
+com.ess.EMPLOYEE.Holiday.getAllDetailsByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getAllDetailsByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var wcs = [];
-	if(com.kony.Employee.Holiday.pkCheck(pks,wcs,errorcallback,"searching")===false){
+	if(com.ess.EMPLOYEE.Holiday.pkCheck(pks,wcs,errorcallback,"searching")===false){
 		return;
 	}
 	twcs = kony.sync.CreateCopy(wcs);
@@ -855,8 +898,8 @@ com.kony.Employee.Holiday.getAllDetailsByPK = function(pks, successcallback,erro
 	var sql = query_compile[0];
 	var params = query_compile[1];
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.getAllDetailsByPK-> success callback function");
-		successcallback(com.kony.Employee.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getAllDetailsByPK-> success callback function");
+		successcallback(com.ess.EMPLOYEE.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname, sql, params, mySuccCallback, errorcallback);
 };
@@ -868,23 +911,23 @@ com.kony.Employee.Holiday.getAllDetailsByPK = function(pks, successcallback,erro
 
 /************************************************************************************
 * Retrieves Holiday(s) using where clause from the local Database. 
-* e.g. com.kony.Employee.Holiday.find("where Holiday_Date like 'A%'", successcallback,errorcallback);
+* e.g. com.ess.EMPLOYEE.Holiday.find("where Holiday_Date like 'A%'", successcallback,errorcallback);
 *************************************************************************************/
-com.kony.Employee.Holiday.find = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.find function");
+com.ess.EMPLOYEE.Holiday.find = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.find function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.find",  "find", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.find",  "find", errorcallback)){
 		return;
 	}
 	//wcs will be a string formed by the user.
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select * from \"" + tbname + "\" " + wcs;
 	function mySuccCallback(res){
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccCallback, errorcallback);
 };
@@ -893,26 +936,26 @@ com.kony.Employee.Holiday.find = function(wcs, successcallback,errorcallback){
 * Marks instance of Holiday with given primary key for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.markForUploadbyPK = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.prototype.markForUploadbyPK function");
+com.ess.EMPLOYEE.Holiday.prototype.markForUploadbyPK = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.prototype.markForUploadbyPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Holiday.markForUploadbyPK(pks, successcallback, errorcallback);
+	com.ess.EMPLOYEE.Holiday.markForUploadbyPK(pks, successcallback, errorcallback);
 };
-com.kony.Employee.Holiday.markForUploadbyPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.markForUploadbyPK function");
+com.ess.EMPLOYEE.Holiday.markForUploadbyPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.markForUploadbyPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var isError = false;
 	var recordsFound = false;
 	var recordsMarkedForUpload = 0;
 	var wcs = [];
-	if(com.kony.Employee.Holiday.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
+	if(com.ess.EMPLOYEE.Holiday.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
 		return;
 	}
 
@@ -1038,16 +1081,16 @@ com.kony.Employee.Holiday.markForUploadbyPK = function(pks, successcallback, err
 * Marks instance(s) of Holiday matching given where clause for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Holiday.markForUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.markForUpload->main function");
+com.ess.EMPLOYEE.Holiday.markForUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.markForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.markForUpload",  "markForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.markForUpload",  "markForUpload", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var isError = false;
 	var num_records_main = 0;
 	wcs = kony.sync.validateWhereClause(wcs);
@@ -1102,7 +1145,7 @@ com.kony.Employee.Holiday.markForUpload = function(wcs, successcallback,errorcal
 	}
 	
 	function single_transaction_callback (tx){
-		sync.log.trace("Entering com.kony.Employee.Holiday.markForUpload->single_transaction_callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.markForUpload->single_transaction_callback");
 		//updating main table
 		var sql = "select " + kony.sync.historyTableChangeTypeColumn + " from \"" + tbname + "\" " + wcs ;
 		var resultSet = kony.sync.executeSql (tx, sql, null);
@@ -1139,12 +1182,12 @@ com.kony.Employee.Holiday.markForUpload = function(wcs, successcallback,errorcal
 	}
 	
 	function single_transaction_success_callback(){
-		sync.log.trace("Entering com.kony.Employee.Holiday.markForUpload->single_transaction_success_callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.markForUpload->single_transaction_success_callback");
 		kony.sync.verifyAndCallClosure(successcallback, {count:num_records_main});
 	}
 	
 	function single_transaction_error_callback(){
-		sync.log.error("Entering com.kony.Employee.Holiday.markForUpload->single_transaction_error_callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Holiday.markForUpload->single_transaction_error_callback");
 		if(!isError) {
 			kony.sync.showTransactionError(errorcallback);
 		}else{
@@ -1164,13 +1207,13 @@ com.kony.Employee.Holiday.markForUpload = function(wcs, successcallback,errorcal
 * pending upload if they have been updated or created locally and the changes have
 * not been merged with enterprise datasource.
 *************************************************************************************/
-com.kony.Employee.Holiday.getPendingUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getPendingUpload->main function");
+com.ess.EMPLOYEE.Holiday.getPendingUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getPendingUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null){
@@ -1183,8 +1226,8 @@ com.kony.Employee.Holiday.getPendingUpload = function(wcs, successcallback,error
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.getPendingUpload->successcallback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getPendingUpload->successcallback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
@@ -1194,32 +1237,32 @@ com.kony.Employee.Holiday.getPendingUpload = function(wcs, successcallback,error
 * In persistent Sync the  records in the local database are put into a pending 
 * acknowledgement state after an upload.
 *************************************************************************************/
-com.kony.Employee.Holiday.getPendingAcknowledgement = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getPendingAcknowledgement->main function");
+com.ess.EMPLOYEE.Holiday.getPendingAcknowledgement = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getPendingAcknowledgement->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var mysql="select * from \""+tbname+"\" WHERE "+kony.sync.mainTableChangeTypeColumn+ " is not null AND "+kony.sync.mainTableChangeTypeColumn+" <> -1 AND "+kony.sync.mainTableSyncVersionColumn+" <> "+currentversion+" AND "+kony.sync.mainTableChangeTypeColumn+" NOT LIKE '9%'"; 
 	kony.sync.single_select_execute(dbname, mysql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.getPendingAcknowledgement success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getPendingAcknowledgement success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
 /************************************************************************************
 * Retrieves instance(s) of Holiday deferred for upload.
 *************************************************************************************/
-com.kony.Employee.Holiday.getDeferredUpload = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getDeferredUpload->main function");
+com.ess.EMPLOYEE.Holiday.getDeferredUpload = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getDeferredUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null ){
 		wcs = kony.sync.validateWhereClause(wcs);
@@ -1232,24 +1275,24 @@ com.kony.Employee.Holiday.getDeferredUpload = function(wcs,successcallback,error
 	
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.getDeferredUpload->success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getDeferredUpload->success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Holiday.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 };
 
 /************************************************************************************
 * Rollbacks all changes to Holiday in local database to last synced state
 *************************************************************************************/
-com.kony.Employee.Holiday.rollbackPendingLocalChanges = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.rollbackPendingLocalChanges->main function");
+com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChanges = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChanges->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.rollbackPendingLocalChanges->main function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChanges->main function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}		
 };
@@ -1258,32 +1301,32 @@ com.kony.Employee.Holiday.rollbackPendingLocalChanges = function(successcallback
 * Rollbacks changes to Holiday's record with given primary key in local 
 * database to last synced state
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.prototype.rollbackPendingLocalChangesByPK function");
+com.ess.EMPLOYEE.Holiday.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.prototype.rollbackPendingLocalChangesByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Holiday.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Holiday.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.rollbackPendingLocalChangesByPK->main function");
+com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChangesByPK->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var wcs = [];
-	if(com.kony.Employee.Holiday.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
+	if(com.ess.EMPLOYEE.Holiday.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
 		return;
 	}	
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, wcs, mySuccesscallback, pkNotFoundErrCallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.rollbackPendingLocalChangesByPK->success callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChangesByPK->success callback function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Holiday.rollbackPendingLocalChangesByPK->PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Holiday.rollbackPendingLocalChangesByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 };
@@ -1292,24 +1335,24 @@ com.kony.Employee.Holiday.rollbackPendingLocalChangesByPK = function(pks, succes
 * isRecordDeferredForUpload returns true or false depending on whether Holiday's record  
 * with given primary key got deferred in last sync
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Holiday.prototype.isRecordDeferredForUpload function");
+com.ess.EMPLOYEE.Holiday.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.prototype.isRecordDeferredForUpload function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Holiday.isRecordDeferredForUpload(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Holiday.isRecordDeferredForUpload(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Holiday.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.isRecordDeferredForUpload->main function");
+com.ess.EMPLOYEE.Holiday.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.isRecordDeferredForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.kony.Employee.Holiday.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.ess.EMPLOYEE.Holiday.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1329,7 +1372,7 @@ com.kony.Employee.Holiday.isRecordDeferredForUpload = function(pks, successcallb
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.isRecordDeferredForUpload->successcallback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.isRecordDeferredForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1344,24 +1387,24 @@ com.kony.Employee.Holiday.isRecordDeferredForUpload = function(pks, successcallb
 * isRecordPendingForUpload returns true or false depending on whether Holiday's record  
 * with given primary key is pending for upload
 *************************************************************************************/
-com.kony.Employee.Holiday.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Holiday.prototype.isRecordPendingForUpload function");
+com.ess.EMPLOYEE.Holiday.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Holiday.prototype.isRecordPendingForUpload function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Holiday.isRecordPendingForUpload(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Holiday.isRecordPendingForUpload(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Holiday.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.isRecordPendingForUpload->main function");
+com.ess.EMPLOYEE.Holiday.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.isRecordPendingForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Holiday.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Holiday.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Holiday.getTableName();
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.kony.Employee.Holiday.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.ess.EMPLOYEE.Holiday.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1381,7 +1424,7 @@ com.kony.Employee.Holiday.isRecordPendingForUpload = function(pks, successcallba
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Holiday.isRecordPendingForUpload->successcallback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.isRecordPendingForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1400,9 +1443,9 @@ com.kony.Employee.Holiday.isRecordPendingForUpload = function(pks, successcallba
 *************************************************************************************/
 
 //Deletes all the dependant tables in the relationship tables.Need to pass transaction handler as input
-com.kony.Employee.Holiday.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
-	sync.log.trace("Entering com.kony.Employee.Holiday.removeCascade function");
-	var tbname = com.kony.Employee.Holiday.getTableName();
+com.ess.EMPLOYEE.Holiday.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.removeCascade function");
+	var tbname = com.ess.EMPLOYEE.Holiday.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	function removeCascadeChildren(){
 	}
@@ -1432,18 +1475,22 @@ com.kony.Employee.Holiday.removeCascade = function(tx, wcs, errorcallback, markF
 };
 
 
-com.kony.Employee.Holiday.convertTableToObject = function(res){
-	sync.log.trace("Entering com.kony.Employee.Holiday.convertTableToObject function");
+com.ess.EMPLOYEE.Holiday.convertTableToObject = function(res){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.convertTableToObject function");
 	objMap = [];
 	if(res!==null){
 		for(var i in res){
-			var obj = new com.kony.Employee.Holiday();
+			var obj = new com.ess.EMPLOYEE.Holiday();
 			obj.Holiday_Date = res[i].Holiday_Date;
 			obj.Id = res[i].Id;
 			obj.lastmodifiedts = res[i].lastmodifiedts;
 			obj.Name = res[i].Name;
 			obj.softdeleteflag = res[i].softdeleteflag;
 			obj.Type = res[i].Type;
+			obj.MOSID = res[i].MOSID;
+			obj.MOFID = res[i].MOFID;
+			obj.SCHKZ = res[i].SCHKZ;
+			obj.ZEITY = res[i].ZEITY;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
 		}
@@ -1451,13 +1498,17 @@ com.kony.Employee.Holiday.convertTableToObject = function(res){
 	return objMap;
 };
 
-com.kony.Employee.Holiday.filterAttributes = function(valuestable, insert){
-	sync.log.trace("Entering com.kony.Employee.Holiday.filterAttributes function");
+com.ess.EMPLOYEE.Holiday.filterAttributes = function(valuestable, insert){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.filterAttributes function");
 	var attributeTable = {};
 	attributeTable.Holiday_Date = "Holiday_Date";
 	attributeTable.Id = "Id";
 	attributeTable.Name = "Name";
 	attributeTable.Type = "Type";
+	attributeTable.MOSID = "MOSID";
+	attributeTable.MOFID = "MOFID";
+	attributeTable.SCHKZ = "SCHKZ";
+	attributeTable.ZEITY = "ZEITY";
 
 	var PKTable = {};
 	PKTable.Holiday_Date = {}
@@ -1484,18 +1535,18 @@ com.kony.Employee.Holiday.filterAttributes = function(valuestable, insert){
 	return newvaluestable;
 };
 
-com.kony.Employee.Holiday.formOrderByClause = function(orderByMap){
-	sync.log.trace("Entering com.kony.Employee.Holiday.formOrderByClause function");
+com.ess.EMPLOYEE.Holiday.formOrderByClause = function(orderByMap){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.formOrderByClause function");
 	if(!kony.sync.isNull(orderByMap)){
 		var valuestable = kony.sync.convertOrderByMapToValuesTable(orderByMap);
-		//var filteredValuestable = com.kony.Employee.Holiday.filterAttributes(valuestable, true);
+		//var filteredValuestable = com.ess.EMPLOYEE.Holiday.filterAttributes(valuestable, true);
 		return kony.sync.convertToValuesTableOrderByMap(orderByMap,valuestable);
 	}
 	return null;
 };
 
-com.kony.Employee.Holiday.prototype.getValuesTable = function(isInsert){
-	sync.log.trace("Entering com.kony.Employee.Holiday.prototype.getValuesTable function");
+com.ess.EMPLOYEE.Holiday.prototype.getValuesTable = function(isInsert){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.prototype.getValuesTable function");
 	var valuesTable = {};
 	if(isInsert===true){
 		valuesTable.Holiday_Date = this.Holiday_Date;
@@ -1503,25 +1554,29 @@ com.kony.Employee.Holiday.prototype.getValuesTable = function(isInsert){
 	valuesTable.Id = this.Id;
 	valuesTable.Name = this.Name;
 	valuesTable.Type = this.Type;
+	valuesTable.MOSID = this.MOSID;
+	valuesTable.MOFID = this.MOFID;
+	valuesTable.SCHKZ = this.SCHKZ;
+	valuesTable.ZEITY = this.ZEITY;
 	return valuesTable;
 };
 
-com.kony.Employee.Holiday.prototype.getPKTable = function(){
-	sync.log.trace("Entering com.kony.Employee.Holiday.prototype.getPKTable function");
+com.ess.EMPLOYEE.Holiday.prototype.getPKTable = function(){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.prototype.getPKTable function");
 	var pkTable = {};
 	pkTable.Holiday_Date = {key:"Holiday_Date",value:this.Holiday_Date};
 	return pkTable;
 };
 
-com.kony.Employee.Holiday.getPKTable = function(){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getPKTable function");
+com.ess.EMPLOYEE.Holiday.getPKTable = function(){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getPKTable function");
 	var pkTable = [];
 	pkTable.push("Holiday_Date");
 	return pkTable;
 };
 
-com.kony.Employee.Holiday.pkCheck = function(pks,wcs,errorcallback,opName){
-	sync.log.trace("Entering com.kony.Employee.Holiday.pkCheck function");
+com.ess.EMPLOYEE.Holiday.pkCheck = function(pks,wcs,errorcallback,opName){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.pkCheck function");
 	var wc = [];
 	if(kony.sync.isNull(pks)){
 		sync.log.error("Primary Key Holiday_Date not specified in  " + opName + "  an item in Holiday");
@@ -1552,8 +1607,8 @@ com.kony.Employee.Holiday.pkCheck = function(pks,wcs,errorcallback,opName){
 	return true;
 };
 
-com.kony.Employee.Holiday.validateNull = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.validateNull function");
+com.ess.EMPLOYEE.Holiday.validateNull = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.validateNull function");
 	if(valuestable.Id!==undefined){
 		if(kony.sync.isNull(valuestable.Id) || kony.sync.isEmptyString(valuestable.Id)){
 			sync.log.error("Mandatory attribute Id is missing for the SyncObject Holiday.");
@@ -1564,8 +1619,8 @@ com.kony.Employee.Holiday.validateNull = function (valuestable,errorcallback){
 	return true;
 };
 
-com.kony.Employee.Holiday.validateNullInsert = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Holiday.validateNullInsert function");
+com.ess.EMPLOYEE.Holiday.validateNullInsert = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.validateNullInsert function");
 	if(kony.sync.isNull(valuestable.Holiday_Date) || kony.sync.isEmptyString(valuestable.Holiday_Date)){
 		sync.log.error("Mandatory attribute Holiday_Date is missing for the SyncObject Holiday.");
 		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "Holiday", "Holiday_Date")));
@@ -1579,15 +1634,15 @@ com.kony.Employee.Holiday.validateNullInsert = function (valuestable,errorcallba
 	return true;
 };
 
-com.kony.Employee.Holiday.getRelationshipMap = function(relationshipMap,valuestable){
-	sync.log.trace("Entering com.kony.Employee.Holiday.getRelationshipMap function");
+com.ess.EMPLOYEE.Holiday.getRelationshipMap = function(relationshipMap,valuestable){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Holiday.getRelationshipMap function");
 	var r1 = {};
 
 	return relationshipMap;
 };
 
 
-com.kony.Employee.Holiday.checkPKValueTables = function (valuetables)	{
+com.ess.EMPLOYEE.Holiday.checkPKValueTables = function (valuetables)	{
 	var checkPksNotNullFlag = true;
 	for(var i = 0; i < valuetables.length; i++)	{
 		if(kony.sync.isNull(valuetables[i])){
@@ -1598,7 +1653,7 @@ com.kony.Employee.Holiday.checkPKValueTables = function (valuetables)	{
 	return checkPksNotNullFlag;
 };
 
-com.kony.Employee.Holiday.getTableName = function(){
+com.ess.EMPLOYEE.Holiday.getTableName = function(){
 	return "Holiday";
 };
 

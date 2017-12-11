@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Tue Nov 28 13:07:34 UTC 2017attribute_section*******************
+// ****************Generated On Mon Dec 11 21:58:45 UTC 2017attribute_section*******************
 // **********************************Start attribute_section's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};

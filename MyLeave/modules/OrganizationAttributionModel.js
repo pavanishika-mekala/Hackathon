@@ -1,6 +1,6 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Mon Dec 11 21:58:45 UTC 2017approval_audit*******************
-// **********************************Start approval_audit's helper methods************************
+// ****************Generated On Mon Dec 11 21:45:47 UTC 2017OrganizationAttribution*******************
+// **********************************Start OrganizationAttribution's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
 }
@@ -24,105 +24,112 @@ if (typeof(sync.log) === "undefined") {
 
 
 if(typeof(com)=== "undefined"){ com = {}; }
-if(typeof(com.kony)=== "undefined"){ com.kony = {}; }
-if(typeof(com.kony.MYAPPROVALS)=== "undefined"){ com.kony.MYAPPROVALS = {}; }
+if(typeof(com.ess)=== "undefined"){ com.ess = {}; }
+if(typeof(com.ess.EMPLOYEE)=== "undefined"){ com.ess.EMPLOYEE = {}; }
 
 /************************************************************************************
-* Creates new approval_audit
+* Creates new OrganizationAttribution
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit = function(){
-	this.createdts = null;
-	this.description = null;
-	this.employee_id = null;
-	this.error_msg = null;
-	this.id = null;
-	this.lastmodified = null;
-	this.request_id = null;
-	this.softdeletedflag = null;
-	this.status_id = null;
+com.ess.EMPLOYEE.OrganizationAttribution = function(){
+	this.BEGDA = null;
+	this.DELETE_IND = null;
+	this.EMPNUMBER = null;
+	this.ENDDA = null;
+	this.EXTRACT_TSTAMP = null;
+	this.MOFID = null;
+	this.MOSID = null;
+	this.SCHKZ = null;
+	this.TIMESTAMP = null;
+	this.ZEITY = null;
 	this.markForUpload = true;
 };
 
-com.kony.MYAPPROVALS.approval_audit.prototype = {
-	get createdts(){
-		return this._createdts;
+com.ess.EMPLOYEE.OrganizationAttribution.prototype = {
+	get BEGDA(){
+		return this._BEGDA;
 	},
-	set createdts(val){
-		this._createdts = val;
+	set BEGDA(val){
+		this._BEGDA = val;
 	},
-	get description(){
-		return this._description;
+	get DELETE_IND(){
+		return this._DELETE_IND;
 	},
-	set description(val){
-		this._description = val;
+	set DELETE_IND(val){
+		this._DELETE_IND = val;
 	},
-	get employee_id(){
-		return this._employee_id;
+	get EMPNUMBER(){
+		return this._EMPNUMBER;
 	},
-	set employee_id(val){
-		this._employee_id = val;
+	set EMPNUMBER(val){
+		this._EMPNUMBER = val;
 	},
-	get error_msg(){
-		return this._error_msg;
+	get ENDDA(){
+		return this._ENDDA;
 	},
-	set error_msg(val){
-		this._error_msg = val;
+	set ENDDA(val){
+		this._ENDDA = val;
 	},
-	get id(){
-		return this._id;
+	get EXTRACT_TSTAMP(){
+		return this._EXTRACT_TSTAMP;
 	},
-	set id(val){
-		this._id = val;
+	set EXTRACT_TSTAMP(val){
+		this._EXTRACT_TSTAMP = val;
 	},
-	get lastmodified(){
-		return this._lastmodified;
+	get MOFID(){
+		return this._MOFID;
 	},
-	set lastmodified(val){
-		this._lastmodified = val;
+	set MOFID(val){
+		this._MOFID = val;
 	},
-	get request_id(){
-		return this._request_id;
+	get MOSID(){
+		return this._MOSID;
 	},
-	set request_id(val){
-		this._request_id = val;
+	set MOSID(val){
+		this._MOSID = val;
 	},
-	get softdeletedflag(){
-		return this._softdeletedflag;
+	get SCHKZ(){
+		return this._SCHKZ;
 	},
-	set softdeletedflag(val){
-		this._softdeletedflag = val;
+	set SCHKZ(val){
+		this._SCHKZ = val;
 	},
-	get status_id(){
-		return this._status_id;
+	get TIMESTAMP(){
+		return this._TIMESTAMP;
 	},
-	set status_id(val){
-		this._status_id = val;
+	set TIMESTAMP(val){
+		this._TIMESTAMP = val;
+	},
+	get ZEITY(){
+		return this._ZEITY;
+	},
+	set ZEITY(val){
+		this._ZEITY = val;
 	},
 };
 
 /************************************************************************************
-* Retrieves all instances of approval_audit SyncObject present in local database with
+* Retrieves all instances of OrganizationAttribution SyncObject present in local database with
 * given limit and offset where limit indicates the number of records to be retrieved
 * and offset indicates number of rows to be ignored before returning the records.
 * e.g. var orderByMap = []
 * orderByMap[0] = {};
-* orderByMap[0].key = "createdts";
+* orderByMap[0].key = "BEGDA";
 * orderByMap[0].sortType ="desc";
 * orderByMap[1] = {};
-* orderByMap[1].key = "description";
+* orderByMap[1].key = "DELETE_IND";
 * orderByMap[1].sortType ="asc";
 * var limit = 20;
 * var offset = 5;
-* com.kony.MYAPPROVALS.approval_audit.getAll(successcallback,errorcallback, orderByMap, limit, offset)
+* com.ess.EMPLOYEE.OrganizationAttribution.getAll(successcallback,errorcallback, orderByMap, limit, offset)
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getAll->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getAll->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
-	orderByMap = kony.sync.formOrderByClause("approval_audit",orderByMap);
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
+	orderByMap = kony.sync.formOrderByClause("OrganizationAttribution",orderByMap);
 	var query = kony.sync.qb_createQuery();
 				kony.sync.qb_select(query, null);	
 				kony.sync.qb_from(query, tbname);
@@ -133,38 +140,38 @@ com.kony.MYAPPROVALS.approval_audit.getAll = function(successcallback, errorcall
 	var params = query_compile[1];
 
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getAll->successcallback");
-		successcallback(com.kony.MYAPPROVALS.approval_audit.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getAll->successcallback");
+		successcallback(com.ess.EMPLOYEE.OrganizationAttribution.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname,sql, params,mySuccCallback,errorcallback);
 };
 
 /************************************************************************************
-* Returns number of approval_audit present in local database.
+* Returns number of OrganizationAttribution present in local database.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.getAllCount = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getAllCount function");
-	com.kony.MYAPPROVALS.approval_audit.getCount("",successcallback,errorcallback);
+com.ess.EMPLOYEE.OrganizationAttribution.getAllCount = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getAllCount function");
+	com.ess.EMPLOYEE.OrganizationAttribution.getCount("",successcallback,errorcallback);
 };
 
 /************************************************************************************
-* Returns number of approval_audit using where clause in the local Database
+* Returns number of OrganizationAttribution using where clause in the local Database
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.getCount = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getCount->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.getCount = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getCount->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.getCount" , "getCount", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.getCount" , "getCount", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select count(*) from \"" + tbname + "\" " + wcs;
 	kony.sync.single_execute_sql(dbname,sql, null, mySuccCallback, errorcallback);
 	function mySuccCallback(res) {
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getCount->successcallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getCount->successcallback");
 		if(null!==res){
 			var count = null;
 			count = res["count(*)"];
@@ -177,33 +184,33 @@ com.kony.MYAPPROVALS.approval_audit.getCount = function(wcs,successcallback,erro
 };
 
 /************************************************************************************
-* Creates a new instance of approval_audit in the local Database. The new record will 
+* Creates a new instance of OrganizationAttribution in the local Database. The new record will 
 * be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.create = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.prototype.create function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.create = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.prototype.create function");
 	var valuestable = this.getValuesTable(true);
-	com.kony.MYAPPROVALS.approval_audit.create(valuestable, successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.OrganizationAttribution.create(valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.kony.MYAPPROVALS.approval_audit.create = function(valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.create->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.create = function(valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.create->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.create" , "create", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.create" , "create", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 
-	if(kony.sync.attributeValidation(valuestable,"approval_audit",errorcallback,true)===false){
+	if(kony.sync.attributeValidation(valuestable,"OrganizationAttribution",errorcallback,true)===false){
 		return;
 	}
 	
 	function executeSuccess(){
-		sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.create->success callback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.create->success callback");
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
 	}
 
@@ -213,7 +220,7 @@ com.kony.MYAPPROVALS.approval_audit.create = function(valuestable, successcallba
 	function createSuccesscallback(res){
 		if(res==null || res.length==0){
 			var relationshipMap={};  
-			relationshipMap = com.kony.MYAPPROVALS.approval_audit.getRelationshipMap(relationshipMap,valuestable);
+			relationshipMap = com.ess.EMPLOYEE.OrganizationAttribution.getRelationshipMap(relationshipMap,valuestable);
 			kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 		}
 		else{
@@ -223,9 +230,13 @@ com.kony.MYAPPROVALS.approval_audit.create = function(valuestable, successcallba
 	}
 	
 	if(kony.sync.enableORMValidations){
-		errMsg = "id=" + valuestable.id;
-		pks["id"] = {key:"id",value:valuestable.id};
-		com.kony.MYAPPROVALS.approval_audit.getAllDetailsByPK(pks,createSuccesscallback,errorcallback)
+		errMsg = "BEGDA=" + valuestable.BEGDA;
+		pks["BEGDA"] = {key:"BEGDA",value:valuestable.BEGDA};
+		errMsg = errMsg + ", EMPNUMBER=" + valuestable.EMPNUMBER;
+		pks["EMPNUMBER"] = {key:"EMPNUMBER",value:valuestable.EMPNUMBER};
+		errMsg = errMsg + ", ENDDA=" + valuestable.ENDDA;
+		pks["ENDDA"] = {key:"ENDDA",value:valuestable.ENDDA};
+		com.ess.EMPLOYEE.OrganizationAttribution.getAllDetailsByPK(pks,createSuccesscallback,errorcallback)
 	}
 	else{
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
@@ -233,46 +244,49 @@ com.kony.MYAPPROVALS.approval_audit.create = function(valuestable, successcallba
 };
 
 /************************************************************************************
-* Creates number of new instances of approval_audit in the local Database. These new 
+* Creates number of new instances of OrganizationAttribution in the local Database. These new 
 * records will be merged with the enterprise datasource in the next Sync. Based upon 
 * kony.sync.enableORMValidations flag, validations will be enabled/disabled.
 * e.g.	var valuesArray = [];
 *		valuesArray[0] = {};
-*		valuesArray[0].createdts = "createdts_0";
-*		valuesArray[0].description = "description_0";
-*		valuesArray[0].employee_id = "employee_id_0";
-*		valuesArray[0].error_msg = "error_msg_0";
-*		valuesArray[0].id = "id_0";
-*		valuesArray[0].request_id = "request_id_0";
-*		valuesArray[0].status_id = "status_id_0";
+*		valuesArray[0].BEGDA = "BEGDA_0";
+*		valuesArray[0].EMPNUMBER = "EMPNUMBER_0";
+*		valuesArray[0].ENDDA = "ENDDA_0";
+*		valuesArray[0].EXTRACT_TSTAMP = "EXTRACT_TSTAMP_0";
+*		valuesArray[0].MOFID = "MOFID_0";
+*		valuesArray[0].MOSID = "MOSID_0";
+*		valuesArray[0].SCHKZ = "SCHKZ_0";
+*		valuesArray[0].ZEITY = "ZEITY_0";
 *		valuesArray[1] = {};
-*		valuesArray[1].createdts = "createdts_1";
-*		valuesArray[1].description = "description_1";
-*		valuesArray[1].employee_id = "employee_id_1";
-*		valuesArray[1].error_msg = "error_msg_1";
-*		valuesArray[1].id = "id_1";
-*		valuesArray[1].request_id = "request_id_1";
-*		valuesArray[1].status_id = "status_id_1";
+*		valuesArray[1].BEGDA = "BEGDA_1";
+*		valuesArray[1].EMPNUMBER = "EMPNUMBER_1";
+*		valuesArray[1].ENDDA = "ENDDA_1";
+*		valuesArray[1].EXTRACT_TSTAMP = "EXTRACT_TSTAMP_1";
+*		valuesArray[1].MOFID = "MOFID_1";
+*		valuesArray[1].MOSID = "MOSID_1";
+*		valuesArray[1].SCHKZ = "SCHKZ_1";
+*		valuesArray[1].ZEITY = "ZEITY_1";
 *		valuesArray[2] = {};
-*		valuesArray[2].createdts = "createdts_2";
-*		valuesArray[2].description = "description_2";
-*		valuesArray[2].employee_id = "employee_id_2";
-*		valuesArray[2].error_msg = "error_msg_2";
-*		valuesArray[2].id = "id_2";
-*		valuesArray[2].request_id = "request_id_2";
-*		valuesArray[2].status_id = "status_id_2";
-*		com.kony.MYAPPROVALS.approval_audit.createAll(valuesArray, successcallback, errorcallback, true);
+*		valuesArray[2].BEGDA = "BEGDA_2";
+*		valuesArray[2].EMPNUMBER = "EMPNUMBER_2";
+*		valuesArray[2].ENDDA = "ENDDA_2";
+*		valuesArray[2].EXTRACT_TSTAMP = "EXTRACT_TSTAMP_2";
+*		valuesArray[2].MOFID = "MOFID_2";
+*		valuesArray[2].MOSID = "MOSID_2";
+*		valuesArray[2].SCHKZ = "SCHKZ_2";
+*		valuesArray[2].ZEITY = "ZEITY_2";
+*		com.ess.EMPLOYEE.OrganizationAttribution.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.createAll function");
+com.ess.EMPLOYEE.OrganizationAttribution.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.createAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.createAll" , "createAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.createAll" , "createAll", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var isProperData = true;
 	var arrayLen = 0;
@@ -287,7 +301,7 @@ com.kony.MYAPPROVALS.approval_audit.createAll = function(valuesArray, successcal
 		//column level validations
 		for (var i=0; valuesArray != null && i < arrayLength; i++ ){
 			var valuestable = valuesArray[i];
-			if(kony.sync.attributeValidation(valuestable,"approval_audit",errorcallback,true)===false){
+			if(kony.sync.attributeValidation(valuestable,"OrganizationAttribution",errorcallback,true)===false){
 				return;
 			}
 
@@ -304,10 +318,14 @@ com.kony.MYAPPROVALS.approval_audit.createAll = function(valuesArray, successcal
 			for (var i=0; valuesArray != null && i < arrayLength; i++ ){
 			var valuestable = valuesArray[i];
 				var pks = [];
-				errMsg = "id=" + valuestable.id;
-				pks["id"] = {key:"id",value:valuestable.id};
+				errMsg = "BEGDA=" + valuestable.BEGDA;
+				pks["BEGDA"] = {key:"BEGDA",value:valuestable.BEGDA};
+				errMsg = errMsg + ", EMPNUMBER=" + valuestable.EMPNUMBER;
+				pks["EMPNUMBER"] = {key:"EMPNUMBER",value:valuestable.EMPNUMBER};
+				errMsg = errMsg + ", ENDDA=" + valuestable.ENDDA;
+				pks["ENDDA"] = {key:"ENDDA",value:valuestable.ENDDA};
 				var wcs = [];
-				if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks,wcs,errorcallback,"searching")===false){
+				if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks,wcs,errorcallback,"searching")===false){
 					isError = true;
 					return;
 				}
@@ -358,7 +376,7 @@ com.kony.MYAPPROVALS.approval_audit.createAll = function(valuesArray, successcal
 	}
 
 	function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.createAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.createAll->transactionSuccessCallback");
 		if(!isError){
 			kony.sync.massInsert(dbname, tbname, valuesArray, successcallback, errorcallback, markForUpload);
 		}
@@ -374,11 +392,11 @@ com.kony.MYAPPROVALS.approval_audit.createAll = function(valuesArray, successcal
 	
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.createAll->checkIntegrity");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.createAll->checkIntegrity");
 		arrayLength = valuesArray.length;
 		for (var i=0; valuesArray != null && i < arrayLength; i++ ){
 			var relationshipMap={};  
-			relationshipMap = com.kony.MYAPPROVALS.approval_audit.getRelationshipMap(relationshipMap,valuesArray[i]);
+			relationshipMap = com.ess.EMPLOYEE.OrganizationAttribution.getRelationshipMap(relationshipMap,valuesArray[i]);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
 				isError = true;
@@ -393,116 +411,122 @@ com.kony.MYAPPROVALS.approval_audit.createAll = function(valuesArray, successcal
 	}
 };
 /************************************************************************************
-* Updates approval_audit using primary key in the local Database. The update will be
+* Updates OrganizationAttribution using primary key in the local Database. The update will be
 * merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.updateByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.prototype.updateByPK function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.updateByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.prototype.updateByPK function");
 	var pks = this.getPKTable();
 	var valuestable = this.getValuesTable(false);
-	com.kony.MYAPPROVALS.approval_audit.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.OrganizationAttribution.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.kony.MYAPPROVALS.approval_audit.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.updateByPK-> main function");
+com.ess.EMPLOYEE.OrganizationAttribution.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.updateByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.updateByPK",  "updateByPk", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.updateByPK",  "updateByPk", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [ ];
 
-	if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks,wcs,errorcallback,"updating")===false){
+	if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks,wcs,errorcallback,"updating")===false){
 		return;
 	}
 
-	if(kony.sync.attributeValidation(valuestable,"approval_audit",errorcallback,false)===false){
+	if(kony.sync.attributeValidation(valuestable,"OrganizationAttribution",errorcallback,false)===false){
 		return;
 	}
 
 	var relationshipMap={};  
-	relationshipMap = com.kony.MYAPPROVALS.approval_audit.getRelationshipMap(relationshipMap,valuestable);
+	relationshipMap = com.ess.EMPLOYEE.OrganizationAttribution.getRelationshipMap(relationshipMap,valuestable);
 
 	kony.sync.updateByPK(tbname, dbname, relationshipMap, pks,valuestable, successcallback,errorcallback, markForUpload, wcs);
 };
 
 /************************************************************************************
-* Updates approval_audit(s) using where clause in the local Database. The update(s)
+* Updates OrganizationAttribution(s) using where clause in the local Database. The update(s)
 * will be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.update function");
+com.ess.EMPLOYEE.OrganizationAttribution.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.update function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.update",  "update", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.update",  "update", errorcallback)){
 		return;
 	}
 
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 
-	if(kony.sync.attributeValidation(valuestable,"approval_audit",errorcallback,false)===false){
+	if(kony.sync.attributeValidation(valuestable,"OrganizationAttribution",errorcallback,false)===false){
 		return;
 	}
 	function executeSuccess(){
-		sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.update-> success callback of Integrity Check");
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.MYAPPROVALS.approval_audit.getPKTable());
+		sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.update-> success callback of Integrity Check");
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.OrganizationAttribution.getPKTable());
 	}
 
 	if(kony.sync.enableORMValidations){
 		var relationshipMap={};  
-		relationshipMap = com.kony.MYAPPROVALS.approval_audit.getRelationshipMap(relationshipMap,valuestable);
+		relationshipMap = com.ess.EMPLOYEE.OrganizationAttribution.getRelationshipMap(relationshipMap,valuestable);
 		kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 	}
 	else{
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.MYAPPROVALS.approval_audit.getPKTable());
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.OrganizationAttribution.getPKTable());
 	}
 };
 
 /************************************************************************************
-* Updates approval_audit(s) satisfying one or more where clauses in the local Database. 
+* Updates OrganizationAttribution(s) satisfying one or more where clauses in the local Database. 
 * The update(s) will be merged with the enterprise datasource in the next Sync.
 * Based upon kony.sync.enableORMValidations flag, validations will be enabled/disabled.
 * e.g.	var inputArray = [];
 *		inputArray[0] = {};
 *		inputArray[0].changeSet = {};
-*		inputArray[0].changeSet.createdts = "createdts_updated0";
-*		inputArray[0].changeSet.description = "description_updated0";
-*		inputArray[0].changeSet.employee_id = "employee_id_updated0";
-*		inputArray[0].changeSet.error_msg = "error_msg_updated0";
-*		inputArray[0].whereClause = "where id = '0'";
+*		inputArray[0].changeSet.EXTRACT_TSTAMP = "EXTRACT_TSTAMP_updated0";
+*		inputArray[0].changeSet.MOFID = "MOFID_updated0";
+*		inputArray[0].changeSet.MOSID = "MOSID_updated0";
+*		inputArray[0].changeSet.SCHKZ = "SCHKZ_updated0";
+*		inputArray[0].whereClause = "where BEGDA = '0'";
+*		inputArray[0].whereClause = "where EMPNUMBER = '0'";
+*		inputArray[0].whereClause = "where ENDDA = '0'";
 *		inputArray[1] = {};
 *		inputArray[1].changeSet = {};
-*		inputArray[1].changeSet.createdts = "createdts_updated1";
-*		inputArray[1].changeSet.description = "description_updated1";
-*		inputArray[1].changeSet.employee_id = "employee_id_updated1";
-*		inputArray[1].changeSet.error_msg = "error_msg_updated1";
-*		inputArray[1].whereClause = "where id = '1'";
+*		inputArray[1].changeSet.EXTRACT_TSTAMP = "EXTRACT_TSTAMP_updated1";
+*		inputArray[1].changeSet.MOFID = "MOFID_updated1";
+*		inputArray[1].changeSet.MOSID = "MOSID_updated1";
+*		inputArray[1].changeSet.SCHKZ = "SCHKZ_updated1";
+*		inputArray[1].whereClause = "where BEGDA = '1'";
+*		inputArray[1].whereClause = "where EMPNUMBER = '1'";
+*		inputArray[1].whereClause = "where ENDDA = '1'";
 *		inputArray[2] = {};
 *		inputArray[2].changeSet = {};
-*		inputArray[2].changeSet.createdts = "createdts_updated2";
-*		inputArray[2].changeSet.description = "description_updated2";
-*		inputArray[2].changeSet.employee_id = "employee_id_updated2";
-*		inputArray[2].changeSet.error_msg = "error_msg_updated2";
-*		inputArray[2].whereClause = "where id = '2'";
-*		com.kony.MYAPPROVALS.approval_audit.updateAll(inputArray,successcallback,errorcallback);
+*		inputArray[2].changeSet.EXTRACT_TSTAMP = "EXTRACT_TSTAMP_updated2";
+*		inputArray[2].changeSet.MOFID = "MOFID_updated2";
+*		inputArray[2].changeSet.MOSID = "MOSID_updated2";
+*		inputArray[2].changeSet.SCHKZ = "SCHKZ_updated2";
+*		inputArray[2].whereClause = "where BEGDA = '2'";
+*		inputArray[2].whereClause = "where EMPNUMBER = '2'";
+*		inputArray[2].whereClause = "where ENDDA = '2'";
+*		com.ess.EMPLOYEE.OrganizationAttribution.updateAll(inputArray,successcallback,errorcallback);
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.updateAll function");
+com.ess.EMPLOYEE.OrganizationAttribution.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.updateAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.updateAll",  "updateAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
-	var dbname = "100004737b2bb0f56";
-	var tbname = "approval_audit";
+	var dbname = "10000473715010d0b";
+	var tbname = "OrganizationAttribution";
 	var isError = false;
 	var errObject = null;
 	if(markForUpload == false || markForUpload == "false"){
@@ -528,7 +552,7 @@ com.kony.MYAPPROVALS.approval_audit.updateAll = function(inputArray, successcall
 			}
 			var wcs = v.whereClause;
 			var twcs = wcs;
-			if(kony.sync.attributeValidation(valuestable,"approval_audit",errorcallback,false)===false){
+			if(kony.sync.attributeValidation(valuestable,"OrganizationAttribution",errorcallback,false)===false){
 				return;
 			}
 
@@ -549,13 +573,13 @@ com.kony.MYAPPROVALS.approval_audit.updateAll = function(inputArray, successcall
 		    newInputArray[i] = kony.sync.CreateCopy(v);
 		}
 		inputArray = newInputArray;
-		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.kony.MYAPPROVALS.approval_audit.getPKTable());
+		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.ess.EMPLOYEE.OrganizationAttribution.getPKTable());
 	}
 	
 		function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.updateAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.updateAll->transactionSuccessCallback");
 		if(!isError){
-			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.kony.MYAPPROVALS.approval_audit.getPKTable());
+			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.ess.EMPLOYEE.OrganizationAttribution.getPKTable());
 		}
 	}
 
@@ -577,10 +601,10 @@ com.kony.MYAPPROVALS.approval_audit.updateAll = function(inputArray, successcall
 	}
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.updateAll->checkIntegrity");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.updateAll->checkIntegrity");
 		for (var i=0; ((inputArray) != null) && i < inputArray.length; i++ ){
 			var relationshipMap={}; 
-			relationshipMap = com.kony.MYAPPROVALS.approval_audit.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
+			relationshipMap = com.ess.EMPLOYEE.OrganizationAttribution.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
 			sync.log.debug("Relationship Map for Integrity check created:", relationshipMap);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
@@ -598,24 +622,24 @@ com.kony.MYAPPROVALS.approval_audit.updateAll = function(inputArray, successcall
 
 }
 /************************************************************************************
-* Deletes approval_audit using primary key from the local Database. The record will be
+* Deletes OrganizationAttribution using primary key from the local Database. The record will be
 * deleted from the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.deleteByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.prototype.deleteByPK function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.deleteByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.prototype.deleteByPK function");
 	var pks = this.getPKTable();
-	com.kony.MYAPPROVALS.approval_audit.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.OrganizationAttribution.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
 };
-com.kony.MYAPPROVALS.approval_audit.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.deleteByPK-> main function");
+com.ess.EMPLOYEE.OrganizationAttribution.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.deleteByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.deleteByPK",  "deleteByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.deleteByPK",  "deleteByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [];
 	var isError = false;
@@ -623,12 +647,12 @@ com.kony.MYAPPROVALS.approval_audit.deleteByPK = function(pks, successcallback,e
 	var twcs = [];
 	var deletedRows;
 	var record = "";
-	if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}	
 	twcs = kony.sync.CreateCopy(wcs);
-	function approval_auditTransactionCallback(tx){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.deleteByPK->approval_audit_PKPresent successcallback");
+	function OrganizationAttributionTransactionCallback(tx){
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.deleteByPK->OrganizationAttribution_PKPresent successcallback");
 		record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(record===false){
 			isError = true;
@@ -644,8 +668,8 @@ com.kony.MYAPPROVALS.approval_audit.deleteByPK = function(pks, successcallback,e
 			}
 	}
 	
-	function approval_auditErrorCallback(){
-		sync.log.error("Entering com.kony.MYAPPROVALS.approval_audit.deleteByPK->relationship failure callback");
+	function OrganizationAttributionErrorCallback(){
+		sync.log.error("Entering com.ess.EMPLOYEE.OrganizationAttribution.deleteByPK->relationship failure callback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -655,8 +679,8 @@ com.kony.MYAPPROVALS.approval_audit.deleteByPK = function(pks, successcallback,e
 		}
 
 	}
-	function approval_auditSuccessCallback(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.deleteByPK->relationship success callback");
+	function OrganizationAttributionSuccessCallback(){
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.deleteByPK->relationship success callback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -668,32 +692,32 @@ com.kony.MYAPPROVALS.approval_audit.deleteByPK = function(pks, successcallback,e
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.MYAPPROVALS.approval_audit.deleteByPK->PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.OrganizationAttribution.deleteByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 		
 		var dbconnection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(dbconnection != null){
-			kony.sync.startTransaction(dbconnection, approval_auditTransactionCallback, approval_auditSuccessCallback, approval_auditErrorCallback, "Single Execute");
+			kony.sync.startTransaction(dbconnection, OrganizationAttributionTransactionCallback, OrganizationAttributionSuccessCallback, OrganizationAttributionErrorCallback, "Single Execute");
 		}
 
 };
 
 /************************************************************************************
-* Deletes approval_audit(s) using where clause from the local Database. The record(s)
+* Deletes OrganizationAttribution(s) using where clause from the local Database. The record(s)
 * will be deleted from the enterprise datasource in the next Sync.
-* e.g. com.kony.MYAPPROVALS.approval_audit.remove("where createdts like 'A%'", successcallback,errorcallback, true);
+* e.g. com.ess.EMPLOYEE.OrganizationAttribution.remove("where BEGDA like 'A%'", successcallback,errorcallback, true);
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.remove = function(wcs, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.remove->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.remove = function(wcs, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.remove->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.remove",  "remove", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.remove",  "remove", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
@@ -701,22 +725,22 @@ com.kony.MYAPPROVALS.approval_audit.remove = function(wcs, successcallback,error
 	var rowsDeleted;
 	var record = "";
 
-	function approval_audit_removeTransactioncallback(tx){
+	function OrganizationAttribution_removeTransactioncallback(tx){
 			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
 		}
 	}
-	function approval_audit_removeSuccess(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.remove->approval_audit_removeSuccess function");
+	function OrganizationAttribution_removeSuccess(){
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.remove->OrganizationAttribution_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.remove->error callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -726,44 +750,44 @@ com.kony.MYAPPROVALS.approval_audit.remove = function(wcs, successcallback,error
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.remove->delete Entity function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
-			kony.sync.startTransaction(connection, approval_audit_removeTransactioncallback, approval_audit_removeSuccess, errorcallbackWrapper);
+			kony.sync.startTransaction(connection, OrganizationAttribution_removeTransactioncallback, OrganizationAttribution_removeSuccess, errorcallbackWrapper);
 		}
 	}
 	deleteEntity();
 };
 
 /************************************************************************************
-* Deletes approval_audit using primary key from the local Database. This will
+* Deletes OrganizationAttribution using primary key from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.prototype.removeDeviceInstanceByPK function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.prototype.removeDeviceInstanceByPK function");
 	var pks = this.getPKTable();
-	com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
 };
-com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK function");
+com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstanceByPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var wcs = [];
 	var isError = false;
 	var pkNotFound = false;
 	var deletedRows;
-	if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}
 	
-	function approval_auditTransactionCallback(tx){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK -> approval_auditTransactionCallback");
+	function OrganizationAttributionTransactionCallback(tx){
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstanceByPK -> OrganizationAttributionTransactionCallback");
 		var record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(null !== record && false !=record) {
 			deletedRows = kony.sync.remove(tx, tbname, wcs, true, null, null);
@@ -775,8 +799,8 @@ com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK = function(pks, suc
 		}
 	}
 	
-	function approval_auditErrorCallback(){
-		sync.log.error("Entering com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK -> approval_auditErrorCallback");
+	function OrganizationAttributionErrorCallback(){
+		sync.log.error("Entering com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstanceByPK -> OrganizationAttributionErrorCallback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -786,8 +810,8 @@ com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK = function(pks, suc
 		}
 	}
 	
-	function approval_auditSuccessCallback(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK -> approval_auditSuccessCallback");
+	function OrganizationAttributionSuccessCallback(){
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstanceByPK -> OrganizationAttributionSuccessCallback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -799,46 +823,46 @@ com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK = function(pks, suc
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.MYAPPROVALS.approval_audit.removeDeviceInstanceByPK -> PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstanceByPK -> PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 	
 	var dbconnection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 	if(dbconnection != null){
-		kony.sync.startTransaction(dbconnection, approval_auditTransactionCallback, approval_auditSuccessCallback, approval_auditErrorCallback, "Single Execute");
+		kony.sync.startTransaction(dbconnection, OrganizationAttributionTransactionCallback, OrganizationAttributionSuccessCallback, OrganizationAttributionErrorCallback, "Single Execute");
 	}
 
 };
 
 /************************************************************************************
-* Deletes approval_audit(s) using where clause from the local Database. This will
+* Deletes OrganizationAttribution(s) using where clause from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.removeDeviceInstance = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.removeDeviceInstance->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstance = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.removeDeviceInstance->main function");
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
 
-	function approval_audit_removeTransactioncallback(tx){
+	function OrganizationAttribution_removeTransactioncallback(tx){
 		wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, true, null, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;
 		}
 	}
-	function approval_audit_removeSuccess(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.remove->approval_audit_removeSuccess function");
+	function OrganizationAttribution_removeSuccess(){
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.remove->OrganizationAttribution_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.remove->error callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -848,35 +872,35 @@ com.kony.MYAPPROVALS.approval_audit.removeDeviceInstance = function(wcs, success
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.remove->delete Entity function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
-			kony.sync.startTransaction(connection, approval_audit_removeTransactioncallback, approval_audit_removeSuccess, errorcallbackWrapper);
+			kony.sync.startTransaction(connection, OrganizationAttribution_removeTransactioncallback, OrganizationAttribution_removeSuccess, errorcallbackWrapper);
 		}
 	}
 	deleteEntity();
 };
 
 /************************************************************************************
-* Retrieves approval_audit using primary key from the local Database. 
+* Retrieves OrganizationAttribution using primary key from the local Database. 
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.prototype.getAllDetailsByPK function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.prototype.getAllDetailsByPK function");
 	var pks = this.getPKTable();
-	com.kony.MYAPPROVALS.approval_audit.getAllDetailsByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.OrganizationAttribution.getAllDetailsByPK(pks,successcallback,errorcallback);
 };
-com.kony.MYAPPROVALS.approval_audit.getAllDetailsByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getAllDetailsByPK-> main function");
+com.ess.EMPLOYEE.OrganizationAttribution.getAllDetailsByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getAllDetailsByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var wcs = [];
-	if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks,wcs,errorcallback,"searching")===false){
+	if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks,wcs,errorcallback,"searching")===false){
 		return;
 	}
 	twcs = kony.sync.CreateCopy(wcs);
@@ -888,8 +912,8 @@ com.kony.MYAPPROVALS.approval_audit.getAllDetailsByPK = function(pks, successcal
 	var sql = query_compile[0];
 	var params = query_compile[1];
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getAllDetailsByPK-> success callback function");
-		successcallback(com.kony.MYAPPROVALS.approval_audit.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getAllDetailsByPK-> success callback function");
+		successcallback(com.ess.EMPLOYEE.OrganizationAttribution.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname, sql, params, mySuccCallback, errorcallback);
 };
@@ -900,52 +924,52 @@ com.kony.MYAPPROVALS.approval_audit.getAllDetailsByPK = function(pks, successcal
 
 
 /************************************************************************************
-* Retrieves approval_audit(s) using where clause from the local Database. 
-* e.g. com.kony.MYAPPROVALS.approval_audit.find("where createdts like 'A%'", successcallback,errorcallback);
+* Retrieves OrganizationAttribution(s) using where clause from the local Database. 
+* e.g. com.ess.EMPLOYEE.OrganizationAttribution.find("where BEGDA like 'A%'", successcallback,errorcallback);
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.find = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.find function");
+com.ess.EMPLOYEE.OrganizationAttribution.find = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.find function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.find",  "find", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.find",  "find", errorcallback)){
 		return;
 	}
 	//wcs will be a string formed by the user.
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select * from \"" + tbname + "\" " + wcs;
 	function mySuccCallback(res){
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.MYAPPROVALS.approval_audit.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.OrganizationAttribution.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccCallback, errorcallback);
 };
 
 /************************************************************************************
-* Marks instance of approval_audit with given primary key for upload. This will 
+* Marks instance of OrganizationAttribution with given primary key for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.markForUploadbyPK = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.prototype.markForUploadbyPK function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.markForUploadbyPK = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.prototype.markForUploadbyPK function");
 	var pks = this.getPKTable();
-	com.kony.MYAPPROVALS.approval_audit.markForUploadbyPK(pks, successcallback, errorcallback);
+	com.ess.EMPLOYEE.OrganizationAttribution.markForUploadbyPK(pks, successcallback, errorcallback);
 };
-com.kony.MYAPPROVALS.approval_audit.markForUploadbyPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.markForUploadbyPK function");
+com.ess.EMPLOYEE.OrganizationAttribution.markForUploadbyPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.markForUploadbyPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var isError = false;
 	var recordsFound = false;
 	var recordsMarkedForUpload = 0;
 	var wcs = [];
-	if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
+	if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
 		return;
 	}
 
@@ -1068,19 +1092,19 @@ com.kony.MYAPPROVALS.approval_audit.markForUploadbyPK = function(pks, successcal
 };
 
 /************************************************************************************
-* Marks instance(s) of approval_audit matching given where clause for upload. This will 
+* Marks instance(s) of OrganizationAttribution matching given where clause for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.markForUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.markForUpload->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.markForUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.markForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.markForUpload",  "markForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.markForUpload",  "markForUpload", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var isError = false;
 	var num_records_main = 0;
 	wcs = kony.sync.validateWhereClause(wcs);
@@ -1135,7 +1159,7 @@ com.kony.MYAPPROVALS.approval_audit.markForUpload = function(wcs, successcallbac
 	}
 	
 	function single_transaction_callback (tx){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.markForUpload->single_transaction_callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.markForUpload->single_transaction_callback");
 		//updating main table
 		var sql = "select " + kony.sync.historyTableChangeTypeColumn + " from \"" + tbname + "\" " + wcs ;
 		var resultSet = kony.sync.executeSql (tx, sql, null);
@@ -1172,12 +1196,12 @@ com.kony.MYAPPROVALS.approval_audit.markForUpload = function(wcs, successcallbac
 	}
 	
 	function single_transaction_success_callback(){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.markForUpload->single_transaction_success_callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.markForUpload->single_transaction_success_callback");
 		kony.sync.verifyAndCallClosure(successcallback, {count:num_records_main});
 	}
 	
 	function single_transaction_error_callback(){
-		sync.log.error("Entering com.kony.MYAPPROVALS.approval_audit.markForUpload->single_transaction_error_callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.OrganizationAttribution.markForUpload->single_transaction_error_callback");
 		if(!isError) {
 			kony.sync.showTransactionError(errorcallback);
 		}else{
@@ -1193,17 +1217,17 @@ com.kony.MYAPPROVALS.approval_audit.markForUpload = function(wcs, successcallbac
 };
 
 /************************************************************************************
-* Retrieves instance(s) of approval_audit pending for upload. Records are marked for
+* Retrieves instance(s) of OrganizationAttribution pending for upload. Records are marked for
 * pending upload if they have been updated or created locally and the changes have
 * not been merged with enterprise datasource.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.getPendingUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getPendingUpload->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.getPendingUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getPendingUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null){
@@ -1216,43 +1240,43 @@ com.kony.MYAPPROVALS.approval_audit.getPendingUpload = function(wcs, successcall
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getPendingUpload->successcallback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.MYAPPROVALS.approval_audit.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getPendingUpload->successcallback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.OrganizationAttribution.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
 /************************************************************************************
-* Retrieves instance(s) of approval_audit pending for acknowledgement. This is relevant
+* Retrieves instance(s) of OrganizationAttribution pending for acknowledgement. This is relevant
 * when the SyncObject is part of the SyncScope whose SyncStrategy is PersistentSync.
 * In persistent Sync the  records in the local database are put into a pending 
 * acknowledgement state after an upload.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.getPendingAcknowledgement = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getPendingAcknowledgement->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.getPendingAcknowledgement = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getPendingAcknowledgement->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var mysql="select * from \""+tbname+"\" WHERE "+kony.sync.mainTableChangeTypeColumn+ " is not null AND "+kony.sync.mainTableChangeTypeColumn+" <> -1 AND "+kony.sync.mainTableSyncVersionColumn+" <> "+currentversion+" AND "+kony.sync.mainTableChangeTypeColumn+" NOT LIKE '9%'"; 
 	kony.sync.single_select_execute(dbname, mysql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getPendingAcknowledgement success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.MYAPPROVALS.approval_audit.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getPendingAcknowledgement success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.OrganizationAttribution.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
 /************************************************************************************
-* Retrieves instance(s) of approval_audit deferred for upload.
+* Retrieves instance(s) of OrganizationAttribution deferred for upload.
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.getDeferredUpload = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getDeferredUpload->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.getDeferredUpload = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getDeferredUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null ){
 		wcs = kony.sync.validateWhereClause(wcs);
@@ -1265,84 +1289,84 @@ com.kony.MYAPPROVALS.approval_audit.getDeferredUpload = function(wcs,successcall
 	
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getDeferredUpload->success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.MYAPPROVALS.approval_audit.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getDeferredUpload->success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.OrganizationAttribution.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 };
 
 /************************************************************************************
-* Rollbacks all changes to approval_audit in local database to last synced state
+* Rollbacks all changes to OrganizationAttribution in local database to last synced state
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChanges = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChanges->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChanges = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChanges->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChanges->main function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChanges->main function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}		
 };
 
 /************************************************************************************
-* Rollbacks changes to approval_audit's record with given primary key in local 
+* Rollbacks changes to OrganizationAttribution's record with given primary key in local 
 * database to last synced state
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.prototype.rollbackPendingLocalChangesByPK function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.prototype.rollbackPendingLocalChangesByPK function");
 	var pks = this.getPKTable();
-	com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
 };
-com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChangesByPK->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChangesByPK->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var wcs = [];
-	if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
+	if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
 		return;
 	}	
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, wcs, mySuccesscallback, pkNotFoundErrCallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChangesByPK->success callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChangesByPK->success callback function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.MYAPPROVALS.approval_audit.rollbackPendingLocalChangesByPK->PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.OrganizationAttribution.rollbackPendingLocalChangesByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 };
 
 /************************************************************************************
-* isRecordDeferredForUpload returns true or false depending on whether approval_audit's record  
+* isRecordDeferredForUpload returns true or false depending on whether OrganizationAttribution's record  
 * with given primary key got deferred in last sync
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.prototype.isRecordDeferredForUpload function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.prototype.isRecordDeferredForUpload function");
 	var pks = this.getPKTable();
-	com.kony.MYAPPROVALS.approval_audit.isRecordDeferredForUpload(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.OrganizationAttribution.isRecordDeferredForUpload(pks,successcallback,errorcallback);
 };
-com.kony.MYAPPROVALS.approval_audit.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.isRecordDeferredForUpload->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.isRecordDeferredForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1362,7 +1386,7 @@ com.kony.MYAPPROVALS.approval_audit.isRecordDeferredForUpload = function(pks, su
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.isRecordDeferredForUpload->successcallback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.isRecordDeferredForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1374,27 +1398,27 @@ com.kony.MYAPPROVALS.approval_audit.isRecordDeferredForUpload = function(pks, su
 };
 
 /************************************************************************************
-* isRecordPendingForUpload returns true or false depending on whether approval_audit's record  
+* isRecordPendingForUpload returns true or false depending on whether OrganizationAttribution's record  
 * with given primary key is pending for upload
 *************************************************************************************/
-com.kony.MYAPPROVALS.approval_audit.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.MYAPPROVALS.approval_audit.prototype.isRecordPendingForUpload function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.OrganizationAttribution.prototype.isRecordPendingForUpload function");
 	var pks = this.getPKTable();
-	com.kony.MYAPPROVALS.approval_audit.isRecordPendingForUpload(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.OrganizationAttribution.isRecordPendingForUpload(pks,successcallback,errorcallback);
 };
-com.kony.MYAPPROVALS.approval_audit.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.isRecordPendingForUpload->main function");
+com.ess.EMPLOYEE.OrganizationAttribution.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.isRecordPendingForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.MYAPPROVALS.approval_audit.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.OrganizationAttribution.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.kony.MYAPPROVALS.approval_audit.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.ess.EMPLOYEE.OrganizationAttribution.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1414,7 +1438,7 @@ com.kony.MYAPPROVALS.approval_audit.isRecordPendingForUpload = function(pks, suc
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.isRecordPendingForUpload->successcallback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.isRecordPendingForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1433,9 +1457,9 @@ com.kony.MYAPPROVALS.approval_audit.isRecordPendingForUpload = function(pks, suc
 *************************************************************************************/
 
 //Deletes all the dependant tables in the relationship tables.Need to pass transaction handler as input
-com.kony.MYAPPROVALS.approval_audit.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.removeCascade function");
-	var tbname = com.kony.MYAPPROVALS.approval_audit.getTableName();
+com.ess.EMPLOYEE.OrganizationAttribution.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.removeCascade function");
+	var tbname = com.ess.EMPLOYEE.OrganizationAttribution.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	function removeCascadeChildren(){
 	}
@@ -1465,21 +1489,22 @@ com.kony.MYAPPROVALS.approval_audit.removeCascade = function(tx, wcs, errorcallb
 };
 
 
-com.kony.MYAPPROVALS.approval_audit.convertTableToObject = function(res){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.convertTableToObject function");
+com.ess.EMPLOYEE.OrganizationAttribution.convertTableToObject = function(res){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.convertTableToObject function");
 	objMap = [];
 	if(res!==null){
 		for(var i in res){
-			var obj = new com.kony.MYAPPROVALS.approval_audit();
-			obj.createdts = res[i].createdts;
-			obj.description = res[i].description;
-			obj.employee_id = res[i].employee_id;
-			obj.error_msg = res[i].error_msg;
-			obj.id = res[i].id;
-			obj.lastmodified = res[i].lastmodified;
-			obj.request_id = res[i].request_id;
-			obj.softdeletedflag = res[i].softdeletedflag;
-			obj.status_id = res[i].status_id;
+			var obj = new com.ess.EMPLOYEE.OrganizationAttribution();
+			obj.BEGDA = res[i].BEGDA;
+			obj.DELETE_IND = res[i].DELETE_IND;
+			obj.EMPNUMBER = res[i].EMPNUMBER;
+			obj.ENDDA = res[i].ENDDA;
+			obj.EXTRACT_TSTAMP = res[i].EXTRACT_TSTAMP;
+			obj.MOFID = res[i].MOFID;
+			obj.MOSID = res[i].MOSID;
+			obj.SCHKZ = res[i].SCHKZ;
+			obj.TIMESTAMP = res[i].TIMESTAMP;
+			obj.ZEITY = res[i].ZEITY;
 			obj.markForUpload = (Math.floor(res[i].konysyncchangetype/10)==9)? false:true;
 			objMap[i] = obj;
 		}
@@ -1487,31 +1512,38 @@ com.kony.MYAPPROVALS.approval_audit.convertTableToObject = function(res){
 	return objMap;
 };
 
-com.kony.MYAPPROVALS.approval_audit.filterAttributes = function(valuestable, insert){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.filterAttributes function");
+com.ess.EMPLOYEE.OrganizationAttribution.filterAttributes = function(valuestable, insert){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.filterAttributes function");
 	var attributeTable = {};
-	attributeTable.createdts = "createdts";
-	attributeTable.description = "description";
-	attributeTable.employee_id = "employee_id";
-	attributeTable.error_msg = "error_msg";
-	attributeTable.id = "id";
-	attributeTable.request_id = "request_id";
-	attributeTable.status_id = "status_id";
+	attributeTable.BEGDA = "BEGDA";
+	attributeTable.EMPNUMBER = "EMPNUMBER";
+	attributeTable.ENDDA = "ENDDA";
+	attributeTable.EXTRACT_TSTAMP = "EXTRACT_TSTAMP";
+	attributeTable.MOFID = "MOFID";
+	attributeTable.MOSID = "MOSID";
+	attributeTable.SCHKZ = "SCHKZ";
+	attributeTable.ZEITY = "ZEITY";
 
 	var PKTable = {};
-	PKTable.id = {}
-	PKTable.id.name = "id";
-	PKTable.id.isAutoGen = false;
+	PKTable.BEGDA = {}
+	PKTable.BEGDA.name = "BEGDA";
+	PKTable.BEGDA.isAutoGen = false;
+	PKTable.EMPNUMBER = {}
+	PKTable.EMPNUMBER.name = "EMPNUMBER";
+	PKTable.EMPNUMBER.isAutoGen = false;
+	PKTable.ENDDA = {}
+	PKTable.ENDDA.name = "ENDDA";
+	PKTable.ENDDA.isAutoGen = false;
 	var newvaluestable = {};
 	for (var k in valuestable){
 		var v = valuestable[k];
 		if(kony.sync.isNull(attributeTable[k])) { 
-			sync.log.warn("Ignoring the attribute " + k + " for the SyncObject approval_audit. "  + k + " not defined as an attribute in SyncConfiguration.");
+			sync.log.warn("Ignoring the attribute " + k + " for the SyncObject OrganizationAttribution. "  + k + " not defined as an attribute in SyncConfiguration.");
 		}else if(!kony.sync.isNull(PKTable[k])) {
 			if(insert===false){
-				sync.log.warn("Ignoring the primary key " + k + " for the SyncObject approval_audit. Primary Key should not be the part of the attributes to be updated in the local device database.");
+				sync.log.warn("Ignoring the primary key " + k + " for the SyncObject OrganizationAttribution. Primary Key should not be the part of the attributes to be updated in the local device database.");
 			}else if(PKTable[k].isAutoGen){
-				sync.log.warn("Ignoring the auto-generated primary key " + k + " for the SyncObject approval_audit. Auto-generated Primary Key should not be the part of the attributes to be inserted in the local device database.");
+				sync.log.warn("Ignoring the auto-generated primary key " + k + " for the SyncObject OrganizationAttribution. Auto-generated Primary Key should not be the part of the attributes to be inserted in the local device database.");
 			}else{
 				newvaluestable[k] = v;
 			}
@@ -1523,142 +1555,141 @@ com.kony.MYAPPROVALS.approval_audit.filterAttributes = function(valuestable, ins
 	return newvaluestable;
 };
 
-com.kony.MYAPPROVALS.approval_audit.formOrderByClause = function(orderByMap){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.formOrderByClause function");
+com.ess.EMPLOYEE.OrganizationAttribution.formOrderByClause = function(orderByMap){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.formOrderByClause function");
 	if(!kony.sync.isNull(orderByMap)){
 		var valuestable = kony.sync.convertOrderByMapToValuesTable(orderByMap);
-		//var filteredValuestable = com.kony.MYAPPROVALS.approval_audit.filterAttributes(valuestable, true);
+		//var filteredValuestable = com.ess.EMPLOYEE.OrganizationAttribution.filterAttributes(valuestable, true);
 		return kony.sync.convertToValuesTableOrderByMap(orderByMap,valuestable);
 	}
 	return null;
 };
 
-com.kony.MYAPPROVALS.approval_audit.prototype.getValuesTable = function(isInsert){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.prototype.getValuesTable function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.getValuesTable = function(isInsert){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.prototype.getValuesTable function");
 	var valuesTable = {};
-	valuesTable.createdts = this.createdts;
-	valuesTable.description = this.description;
-	valuesTable.employee_id = this.employee_id;
-	valuesTable.error_msg = this.error_msg;
 	if(isInsert===true){
-		valuesTable.id = this.id;
+		valuesTable.BEGDA = this.BEGDA;
 	}
-	valuesTable.request_id = this.request_id;
-	valuesTable.status_id = this.status_id;
+	if(isInsert===true){
+		valuesTable.EMPNUMBER = this.EMPNUMBER;
+	}
+	if(isInsert===true){
+		valuesTable.ENDDA = this.ENDDA;
+	}
+	valuesTable.EXTRACT_TSTAMP = this.EXTRACT_TSTAMP;
+	valuesTable.MOFID = this.MOFID;
+	valuesTable.MOSID = this.MOSID;
+	valuesTable.SCHKZ = this.SCHKZ;
+	valuesTable.ZEITY = this.ZEITY;
 	return valuesTable;
 };
 
-com.kony.MYAPPROVALS.approval_audit.prototype.getPKTable = function(){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.prototype.getPKTable function");
+com.ess.EMPLOYEE.OrganizationAttribution.prototype.getPKTable = function(){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.prototype.getPKTable function");
 	var pkTable = {};
-	pkTable.id = {key:"id",value:this.id};
+	pkTable.BEGDA = {key:"BEGDA",value:this.BEGDA};
+	pkTable.EMPNUMBER = {key:"EMPNUMBER",value:this.EMPNUMBER};
+	pkTable.ENDDA = {key:"ENDDA",value:this.ENDDA};
 	return pkTable;
 };
 
-com.kony.MYAPPROVALS.approval_audit.getPKTable = function(){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getPKTable function");
+com.ess.EMPLOYEE.OrganizationAttribution.getPKTable = function(){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getPKTable function");
 	var pkTable = [];
-	pkTable.push("id");
+	pkTable.push("BEGDA");
+	pkTable.push("EMPNUMBER");
+	pkTable.push("ENDDA");
 	return pkTable;
 };
 
-com.kony.MYAPPROVALS.approval_audit.pkCheck = function(pks,wcs,errorcallback,opName){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.pkCheck function");
+com.ess.EMPLOYEE.OrganizationAttribution.pkCheck = function(pks,wcs,errorcallback,opName){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.pkCheck function");
 	var wc = [];
-	if(kony.sync.isNull(pks)){
-		sync.log.error("Primary Key id not specified in  " + opName + "  an item in approval_audit");
-		kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("id",opName,"approval_audit")));
-		return false;	
-	}
-	else if(kony.sync.isValidJSTable(pks)){
-		if(!kony.sync.isNull(pks.id)){
-			if(!kony.sync.isNull(pks.id.value)){
-				wc.key = "id";
-				wc.value = pks.id.value;
-			}
-			else{
-				wc.key = "id";
-				wc.value = pks.id;
-			}
-		}else{
-			sync.log.error("Primary Key id not specified in  " + opName + "  an item in approval_audit");
-			kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("id",opName,"approval_audit")));
-			return false;
+	if(!kony.sync.isNull(pks.BEGDA)){
+		if(!kony.sync.isNull(pks.BEGDA.value)){
+			wc.key = "BEGDA";
+			wc.value = pks.BEGDA.value;
 		}
+		else{
+			wc.key = "BEGDA";
+			wc.value = pks.BEGDA;
+		}
+	}else{
+		sync.log.error("Primary Key BEGDA not specified in " + opName + " an item in OrganizationAttribution");
+		kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("BEGDA",opName,"OrganizationAttribution")));
+		return;
 	}
-	else{
-		wc.key = "id";
-		wc.value = pks;
-	}	
+	kony.table.insert(wcs,wc);
+	var wc = [];
+	if(!kony.sync.isNull(pks.EMPNUMBER)){
+		if(!kony.sync.isNull(pks.EMPNUMBER.value)){
+			wc.key = "EMPNUMBER";
+			wc.value = pks.EMPNUMBER.value;
+		}
+		else{
+			wc.key = "EMPNUMBER";
+			wc.value = pks.EMPNUMBER;
+		}
+	}else{
+		sync.log.error("Primary Key EMPNUMBER not specified in " + opName + " an item in OrganizationAttribution");
+		kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("EMPNUMBER",opName,"OrganizationAttribution")));
+		return;
+	}
+	kony.table.insert(wcs,wc);
+	var wc = [];
+	if(!kony.sync.isNull(pks.ENDDA)){
+		if(!kony.sync.isNull(pks.ENDDA.value)){
+			wc.key = "ENDDA";
+			wc.value = pks.ENDDA.value;
+		}
+		else{
+			wc.key = "ENDDA";
+			wc.value = pks.ENDDA;
+		}
+	}else{
+		sync.log.error("Primary Key ENDDA not specified in " + opName + " an item in OrganizationAttribution");
+		kony.sync.verifyAndCallClosure(errorcallback, kony.sync.getErrorTable(kony.sync.errorCodePrimaryKeyNotSpecified,kony.sync.getPrimaryKeyNotSpecifiedMsg("ENDDA",opName,"OrganizationAttribution")));
+		return;
+	}
 	kony.table.insert(wcs,wc);
 	return true;
 };
 
-com.kony.MYAPPROVALS.approval_audit.validateNull = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.validateNull function");
-	if(valuestable.employee_id!==undefined){
-		if(kony.sync.isNull(valuestable.employee_id) || kony.sync.isEmptyString(valuestable.employee_id)){
-			sync.log.error("Mandatory attribute employee_id is missing for the SyncObject approval_audit.");
-			errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "approval_audit", "employee_id")));
-			return false;
-		}
-	}
-	if(valuestable.request_id!==undefined){
-		if(kony.sync.isNull(valuestable.request_id) || kony.sync.isEmptyString(valuestable.request_id)){
-			sync.log.error("Mandatory attribute request_id is missing for the SyncObject approval_audit.");
-			errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "approval_audit", "request_id")));
-			return false;
-		}
-	}
+com.ess.EMPLOYEE.OrganizationAttribution.validateNull = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.validateNull function");
 	return true;
 };
 
-com.kony.MYAPPROVALS.approval_audit.validateNullInsert = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.validateNullInsert function");
-	if(kony.sync.isNull(valuestable.employee_id) || kony.sync.isEmptyString(valuestable.employee_id)){
-		sync.log.error("Mandatory attribute employee_id is missing for the SyncObject approval_audit.");
-		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "approval_audit", "employee_id")));
+com.ess.EMPLOYEE.OrganizationAttribution.validateNullInsert = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.validateNullInsert function");
+	if(kony.sync.isNull(valuestable.BEGDA) || kony.sync.isEmptyString(valuestable.BEGDA)){
+		sync.log.error("Mandatory attribute BEGDA is missing for the SyncObject OrganizationAttribution.");
+		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "OrganizationAttribution", "BEGDA")));
 		return false;
 	}
-	if(kony.sync.isNull(valuestable.id) || kony.sync.isEmptyString(valuestable.id)){
-		sync.log.error("Mandatory attribute id is missing for the SyncObject approval_audit.");
-		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "approval_audit", "id")));
+	if(kony.sync.isNull(valuestable.EMPNUMBER) || kony.sync.isEmptyString(valuestable.EMPNUMBER)){
+		sync.log.error("Mandatory attribute EMPNUMBER is missing for the SyncObject OrganizationAttribution.");
+		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "OrganizationAttribution", "EMPNUMBER")));
 		return false;
 	}
-	if(kony.sync.isNull(valuestable.request_id) || kony.sync.isEmptyString(valuestable.request_id)){
-		sync.log.error("Mandatory attribute request_id is missing for the SyncObject approval_audit.");
-		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "approval_audit", "request_id")));
+	if(kony.sync.isNull(valuestable.ENDDA) || kony.sync.isEmptyString(valuestable.ENDDA)){
+		sync.log.error("Mandatory attribute ENDDA is missing for the SyncObject OrganizationAttribution.");
+		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "OrganizationAttribution", "ENDDA")));
 		return false;
 	}
 	return true;
 };
 
-com.kony.MYAPPROVALS.approval_audit.getRelationshipMap = function(relationshipMap,valuestable){
-	sync.log.trace("Entering com.kony.MYAPPROVALS.approval_audit.getRelationshipMap function");
+com.ess.EMPLOYEE.OrganizationAttribution.getRelationshipMap = function(relationshipMap,valuestable){
+	sync.log.trace("Entering com.ess.EMPLOYEE.OrganizationAttribution.getRelationshipMap function");
 	var r1 = {};
-	r1 = {};
-	r1.sourceAttribute = [];
-	r1.foreignKeyAttribute = [];
-	r1.targetAttributeValue  = [];
-		
-	if (!kony.sync.isNullOrUndefined(valuestable.request_id)){
-		r1.sourceAttribute.push("id");
-		r1.foreignKeyAttribute.push("request_id");
-		r1.targetAttributeValue.push("'" + valuestable.request_id + "'");
-	}
-	if(r1.targetAttributeValue.length > 0){
-		if(relationshipMap.approval_request===undefined){
-			relationshipMap.approval_request = [];
-		}
-		relationshipMap.approval_request.push(r1);
-	}
-	
 
 	return relationshipMap;
 };
 
 
-com.kony.MYAPPROVALS.approval_audit.checkPKValueTables = function (valuetables)	{
+com.ess.EMPLOYEE.OrganizationAttribution.checkPKValueTables = function (valuetables)	{
 	var checkPksNotNullFlag = true;
 	for(var i = 0; i < valuetables.length; i++)	{
 		if(kony.sync.isNull(valuetables[i])){
@@ -1669,11 +1700,11 @@ com.kony.MYAPPROVALS.approval_audit.checkPKValueTables = function (valuetables)	
 	return checkPksNotNullFlag;
 };
 
-com.kony.MYAPPROVALS.approval_audit.getTableName = function(){
-	return "approval_audit";
+com.ess.EMPLOYEE.OrganizationAttribution.getTableName = function(){
+	return "OrganizationAttribution";
 };
 
 
 
 
-// **********************************End approval_audit's helper methods************************
+// **********************************End OrganizationAttribution's helper methods************************

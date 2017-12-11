@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Wed Nov 29 10:59:53 UTC 2017Communication_Channel*******************
+// ****************Generated On Mon Dec 11 21:45:47 UTC 2017Communication_Channel*******************
 // **********************************Start Communication_Channel's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -24,13 +24,13 @@ if (typeof(sync.log) === "undefined") {
 
 
 if(typeof(com)=== "undefined"){ com = {}; }
-if(typeof(com.kony)=== "undefined"){ com.kony = {}; }
-if(typeof(com.kony.Employee)=== "undefined"){ com.kony.Employee = {}; }
+if(typeof(com.ess)=== "undefined"){ com.ess = {}; }
+if(typeof(com.ess.EMPLOYEE)=== "undefined"){ com.ess.EMPLOYEE = {}; }
 
 /************************************************************************************
 * Creates new Communication_Channel
 *************************************************************************************/
-com.kony.Employee.Communication_Channel = function(){
+com.ess.EMPLOYEE.Communication_Channel = function(){
 	this.Communication_Type_Id = null;
 	this.Employee_Id = null;
 	this.END_DATE = null;
@@ -41,7 +41,7 @@ com.kony.Employee.Communication_Channel = function(){
 	this.markForUpload = true;
 };
 
-com.kony.Employee.Communication_Channel.prototype = {
+com.ess.EMPLOYEE.Communication_Channel.prototype = {
 	get Communication_Type_Id(){
 		return this._Communication_Type_Id;
 	},
@@ -99,15 +99,15 @@ com.kony.Employee.Communication_Channel.prototype = {
 * orderByMap[1].sortType ="asc";
 * var limit = 20;
 * var offset = 5;
-* com.kony.Employee.Communication_Channel.getAll(successcallback,errorcallback, orderByMap, limit, offset)
+* com.ess.EMPLOYEE.Communication_Channel.getAll(successcallback,errorcallback, orderByMap, limit, offset)
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getAll->main function");
+com.ess.EMPLOYEE.Communication_Channel.getAll = function(successcallback, errorcallback, orderByMap, limit, offset){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getAll->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	orderByMap = kony.sync.formOrderByClause("Communication_Channel",orderByMap);
 	var query = kony.sync.qb_createQuery();
 				kony.sync.qb_select(query, null);	
@@ -119,8 +119,8 @@ com.kony.Employee.Communication_Channel.getAll = function(successcallback, error
 	var params = query_compile[1];
 
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.getAll->successcallback");
-		successcallback(com.kony.Employee.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getAll->successcallback");
+		successcallback(com.ess.EMPLOYEE.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname,sql, params,mySuccCallback,errorcallback);
 };
@@ -128,29 +128,29 @@ com.kony.Employee.Communication_Channel.getAll = function(successcallback, error
 /************************************************************************************
 * Returns number of Communication_Channel present in local database.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.getAllCount = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getAllCount function");
-	com.kony.Employee.Communication_Channel.getCount("",successcallback,errorcallback);
+com.ess.EMPLOYEE.Communication_Channel.getAllCount = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getAllCount function");
+	com.ess.EMPLOYEE.Communication_Channel.getCount("",successcallback,errorcallback);
 };
 
 /************************************************************************************
 * Returns number of Communication_Channel using where clause in the local Database
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.getCount = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getCount->main function");
+com.ess.EMPLOYEE.Communication_Channel.getCount = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getCount->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.getCount" , "getCount", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.getCount" , "getCount", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select count(*) from \"" + tbname + "\" " + wcs;
 	kony.sync.single_execute_sql(dbname,sql, null, mySuccCallback, errorcallback);
 	function mySuccCallback(res) {
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.getCount->successcallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getCount->successcallback");
 		if(null!==res){
 			var count = null;
 			count = res["count(*)"];
@@ -166,22 +166,22 @@ com.kony.Employee.Communication_Channel.getCount = function(wcs,successcallback,
 * Creates a new instance of Communication_Channel in the local Database. The new record will 
 * be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.create = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Communication_Channel.prototype.create function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.create = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.prototype.create function");
 	var valuestable = this.getValuesTable(true);
-	com.kony.Employee.Communication_Channel.create(valuestable, successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Communication_Channel.create(valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Communication_Channel.create = function(valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering  com.kony.Employee.Communication_Channel.create->main function");
+com.ess.EMPLOYEE.Communication_Channel.create = function(valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.create->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.create" , "create", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.create" , "create", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 
 	if(kony.sync.attributeValidation(valuestable,"Communication_Channel",errorcallback,true)===false){
@@ -189,7 +189,7 @@ com.kony.Employee.Communication_Channel.create = function(valuestable, successca
 	}
 	
 	function executeSuccess(){
-		sync.log.trace("Entering  com.kony.Employee.Communication_Channel.create->success callback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.create->success callback");
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
 	}
 
@@ -199,7 +199,7 @@ com.kony.Employee.Communication_Channel.create = function(valuestable, successca
 	function createSuccesscallback(res){
 		if(res==null || res.length==0){
 			var relationshipMap={};  
-			relationshipMap = com.kony.Employee.Communication_Channel.getRelationshipMap(relationshipMap,valuestable);
+			relationshipMap = com.ess.EMPLOYEE.Communication_Channel.getRelationshipMap(relationshipMap,valuestable);
 			kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 		}
 		else{
@@ -213,7 +213,7 @@ com.kony.Employee.Communication_Channel.create = function(valuestable, successca
 		pks["Communication_Type_Id"] = {key:"Communication_Type_Id",value:valuestable.Communication_Type_Id};
 		errMsg = errMsg + ", Employee_Id=" + valuestable.Employee_Id;
 		pks["Employee_Id"] = {key:"Employee_Id",value:valuestable.Employee_Id};
-		com.kony.Employee.Communication_Channel.getAllDetailsByPK(pks,createSuccesscallback,errorcallback)
+		com.ess.EMPLOYEE.Communication_Channel.getAllDetailsByPK(pks,createSuccesscallback,errorcallback)
 	}
 	else{
 		kony.sync.single_insert_execute(dbname,tbname,valuestable,successcallback,errorcallback,markForUpload);
@@ -243,18 +243,18 @@ com.kony.Employee.Communication_Channel.create = function(valuestable, successca
 *		valuesArray[2].END_DATE = "END_DATE_2";
 *		valuesArray[2].START_DATE = "START_DATE_2";
 *		valuesArray[2].Value = "Value_2";
-*		com.kony.Employee.Communication_Channel.createAll(valuesArray, successcallback, errorcallback, true);
+*		com.ess.EMPLOYEE.Communication_Channel.createAll(valuesArray, successcallback, errorcallback, true);
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.createAll function");
+com.ess.EMPLOYEE.Communication_Channel.createAll = function(valuesArray, successcallback, errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.createAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.createAll" , "createAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.createAll" , "createAll", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var isProperData = true;
 	var arrayLen = 0;
@@ -291,7 +291,7 @@ com.kony.Employee.Communication_Channel.createAll = function(valuesArray, succes
 				errMsg = errMsg + ", Employee_Id=" + valuestable.Employee_Id;
 				pks["Employee_Id"] = {key:"Employee_Id",value:valuestable.Employee_Id};
 				var wcs = [];
-				if(com.kony.Employee.Communication_Channel.pkCheck(pks,wcs,errorcallback,"searching")===false){
+				if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks,wcs,errorcallback,"searching")===false){
 					isError = true;
 					return;
 				}
@@ -342,7 +342,7 @@ com.kony.Employee.Communication_Channel.createAll = function(valuesArray, succes
 	}
 
 	function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.kony.Employee.Communication_Channel.createAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.createAll->transactionSuccessCallback");
 		if(!isError){
 			kony.sync.massInsert(dbname, tbname, valuesArray, successcallback, errorcallback, markForUpload);
 		}
@@ -358,11 +358,11 @@ com.kony.Employee.Communication_Channel.createAll = function(valuesArray, succes
 	
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.kony.Employee.Communication_Channel.createAll->checkIntegrity");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.createAll->checkIntegrity");
 		arrayLength = valuesArray.length;
 		for (var i=0; valuesArray != null && i < arrayLength; i++ ){
 			var relationshipMap={};  
-			relationshipMap = com.kony.Employee.Communication_Channel.getRelationshipMap(relationshipMap,valuesArray[i]);
+			relationshipMap = com.ess.EMPLOYEE.Communication_Channel.getRelationshipMap(relationshipMap,valuesArray[i]);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
 				isError = true;
@@ -380,26 +380,26 @@ com.kony.Employee.Communication_Channel.createAll = function(valuesArray, succes
 * Updates Communication_Channel using primary key in the local Database. The update will be
 * merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.updateByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Communication_Channel.prototype.updateByPK function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.updateByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.prototype.updateByPK function");
 	var pks = this.getPKTable();
 	var valuestable = this.getValuesTable(false);
-	com.kony.Employee.Communication_Channel.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Communication_Channel.updateByPK(pks,valuestable, successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Communication_Channel.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering  com.kony.Employee.Communication_Channel.updateByPK-> main function");
+com.ess.EMPLOYEE.Communication_Channel.updateByPK = function(pks,valuestable, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.updateByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.updateByPK",  "updateByPk", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.updateByPK",  "updateByPk", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [ ];
 
-	if(com.kony.Employee.Communication_Channel.pkCheck(pks,wcs,errorcallback,"updating")===false){
+	if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks,wcs,errorcallback,"updating")===false){
 		return;
 	}
 
@@ -408,7 +408,7 @@ com.kony.Employee.Communication_Channel.updateByPK = function(pks,valuestable, s
 	}
 
 	var relationshipMap={};  
-	relationshipMap = com.kony.Employee.Communication_Channel.getRelationshipMap(relationshipMap,valuestable);
+	relationshipMap = com.ess.EMPLOYEE.Communication_Channel.getRelationshipMap(relationshipMap,valuestable);
 
 	kony.sync.updateByPK(tbname, dbname, relationshipMap, pks,valuestable, successcallback,errorcallback, markForUpload, wcs);
 };
@@ -417,17 +417,17 @@ com.kony.Employee.Communication_Channel.updateByPK = function(pks,valuestable, s
 * Updates Communication_Channel(s) using where clause in the local Database. The update(s)
 * will be merged with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.update function");
+com.ess.EMPLOYEE.Communication_Channel.update = function(wcs, valuestable, successcallback,errorcallback,markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.update function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.update",  "update", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.update",  "update", errorcallback)){
 		return;
 	}
 
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 
@@ -435,17 +435,17 @@ com.kony.Employee.Communication_Channel.update = function(wcs, valuestable, succ
 		return;
 	}
 	function executeSuccess(){
-		sync.log.trace("Entering  com.kony.Employee.Communication_Channel.update-> success callback of Integrity Check");
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.Employee.Communication_Channel.getPKTable());
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.update-> success callback of Integrity Check");
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.Communication_Channel.getPKTable());
 	}
 
 	if(kony.sync.enableORMValidations){
 		var relationshipMap={};  
-		relationshipMap = com.kony.Employee.Communication_Channel.getRelationshipMap(relationshipMap,valuestable);
+		relationshipMap = com.ess.EMPLOYEE.Communication_Channel.getRelationshipMap(relationshipMap,valuestable);
 		kony.sync.checkIntegrity(dbname,relationshipMap,executeSuccess,errorcallback);
 	}
 	else{
-		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.kony.Employee.Communication_Channel.getPKTable());
+		kony.sync.single_update_execute(dbname,tbname,valuestable,wcs,successcallback,errorcallback,true, markForUpload, com.ess.EMPLOYEE.Communication_Channel.getPKTable());
 	}
 };
 
@@ -475,14 +475,14 @@ com.kony.Employee.Communication_Channel.update = function(wcs, valuestable, succ
 *		inputArray[2].changeSet.Value = "Value_updated2";
 *		inputArray[2].whereClause = "where Communication_Type_Id = '2'";
 *		inputArray[2].whereClause = "where Employee_Id = '2'";
-*		com.kony.Employee.Communication_Channel.updateAll(inputArray,successcallback,errorcallback);
+*		com.ess.EMPLOYEE.Communication_Channel.updateAll(inputArray,successcallback,errorcallback);
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.updateAll function");
+com.ess.EMPLOYEE.Communication_Channel.updateAll = function(inputArray, successcallback, errorcallback, markForUpload) {
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.updateAll function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.updateAll",  "updateAll", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.updateAll",  "updateAll", errorcallback)){
 		return;
 	}
 	var dbname = "10000473715010d0b";
@@ -533,13 +533,13 @@ com.kony.Employee.Communication_Channel.updateAll = function(inputArray, success
 		    newInputArray[i] = kony.sync.CreateCopy(v);
 		}
 		inputArray = newInputArray;
-		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.kony.Employee.Communication_Channel.getPKTable());
+		kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,errorcallback,markForUpload, com.ess.EMPLOYEE.Communication_Channel.getPKTable());
 	}
 	
 		function transactionSuccessCallback(){
-		sync.log.trace("Entering  com.kony.Employee.Communication_Channel.updateAll->transactionSuccessCallback");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.updateAll->transactionSuccessCallback");
 		if(!isError){
-			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.kony.Employee.Communication_Channel.getPKTable());
+			kony.sync.massUpdate(dbname, tbname,inputArray,successcallback,transactionErrorCallback,markForUpload, com.ess.EMPLOYEE.Communication_Channel.getPKTable());
 		}
 	}
 
@@ -561,10 +561,10 @@ com.kony.Employee.Communication_Channel.updateAll = function(inputArray, success
 	}
 	//foreign key constraints validations
 	function checkIntegrity(tx){
-		sync.log.trace("Entering  com.kony.Employee.Communication_Channel.updateAll->checkIntegrity");
+		sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.updateAll->checkIntegrity");
 		for (var i=0; ((inputArray) != null) && i < inputArray.length; i++ ){
 			var relationshipMap={}; 
-			relationshipMap = com.kony.Employee.Communication_Channel.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
+			relationshipMap = com.ess.EMPLOYEE.Communication_Channel.getRelationshipMap(relationshipMap,inputArray[i].changeSet);
 			sync.log.debug("Relationship Map for Integrity check created:", relationshipMap);
 			errObject = kony.sync.checkIntegrityinTransaction(tx, relationshipMap, null);
 			if(errObject===false){
@@ -585,21 +585,21 @@ com.kony.Employee.Communication_Channel.updateAll = function(inputArray, success
 * Deletes Communication_Channel using primary key from the local Database. The record will be
 * deleted from the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.deleteByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.prototype.deleteByPK function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.deleteByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.prototype.deleteByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Communication_Channel.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
+	com.ess.EMPLOYEE.Communication_Channel.deleteByPK(pks,successcallback,errorcallback,this.markForUpload);
 };
-com.kony.Employee.Communication_Channel.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.deleteByPK-> main function");
+com.ess.EMPLOYEE.Communication_Channel.deleteByPK = function(pks, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.deleteByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.deleteByPK",  "deleteByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.deleteByPK",  "deleteByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	var wcs = [];
 	var isError = false;
@@ -607,12 +607,12 @@ com.kony.Employee.Communication_Channel.deleteByPK = function(pks, successcallba
 	var twcs = [];
 	var deletedRows;
 	var record = "";
-	if(com.kony.Employee.Communication_Channel.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}	
 	twcs = kony.sync.CreateCopy(wcs);
 	function Communication_ChannelTransactionCallback(tx){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.deleteByPK->Communication_Channel_PKPresent successcallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.deleteByPK->Communication_Channel_PKPresent successcallback");
 		record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(record===false){
 			isError = true;
@@ -624,7 +624,7 @@ com.kony.Employee.Communication_Channel.deleteByPK = function(pks, successcallba
 	 	srcAttributes.push("Id");
  		targetAttributes.push("Employee_Id");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.kony.Employee.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, record, false)){
+			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, record, false)){
 				isError = true;	
 				kony.sync.rollbackTransaction(tx);
 				return;
@@ -639,7 +639,7 @@ com.kony.Employee.Communication_Channel.deleteByPK = function(pks, successcallba
 	}
 	
 	function Communication_ChannelErrorCallback(){
-		sync.log.error("Entering com.kony.Employee.Communication_Channel.deleteByPK->relationship failure callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Communication_Channel.deleteByPK->relationship failure callback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -650,7 +650,7 @@ com.kony.Employee.Communication_Channel.deleteByPK = function(pks, successcallba
 
 	}
 	function Communication_ChannelSuccessCallback(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.deleteByPK->relationship success callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.deleteByPK->relationship success callback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -662,7 +662,7 @@ com.kony.Employee.Communication_Channel.deleteByPK = function(pks, successcallba
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Communication_Channel.deleteByPK->PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Communication_Channel.deleteByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 		
@@ -676,18 +676,18 @@ com.kony.Employee.Communication_Channel.deleteByPK = function(pks, successcallba
 /************************************************************************************
 * Deletes Communication_Channel(s) using where clause from the local Database. The record(s)
 * will be deleted from the enterprise datasource in the next Sync.
-* e.g. com.kony.Employee.Communication_Channel.remove("where Communication_Type_Id like 'A%'", successcallback,errorcallback, true);
+* e.g. com.ess.EMPLOYEE.Communication_Channel.remove("where Communication_Type_Id like 'A%'", successcallback,errorcallback, true);
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.remove = function(wcs, successcallback,errorcallback, markForUpload){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.remove->main function");
+com.ess.EMPLOYEE.Communication_Channel.remove = function(wcs, successcallback,errorcallback, markForUpload){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.remove->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.remove",  "remove", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.remove",  "remove", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
@@ -708,7 +708,7 @@ com.kony.Employee.Communication_Channel.remove = function(wcs, successcallback,e
 				return;
 			}
 	if(record !== null){
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.Employee.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, record, false)){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
@@ -720,14 +720,14 @@ com.kony.Employee.Communication_Channel.remove = function(wcs, successcallback,e
 		}
 	}
 	function Communication_Channel_removeSuccess(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.remove->Communication_Channel_removeSuccess function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.remove->Communication_Channel_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.remove->error callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -737,7 +737,7 @@ com.kony.Employee.Communication_Channel.remove = function(wcs, successcallback,e
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.remove->delete Entity function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
 			kony.sync.startTransaction(connection, Communication_Channel_removeTransactioncallback, Communication_Channel_removeSuccess, errorcallbackWrapper);
@@ -750,31 +750,31 @@ com.kony.Employee.Communication_Channel.remove = function(wcs, successcallback,e
 * Deletes Communication_Channel using primary key from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.prototype.removeDeviceInstanceByPK function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.removeDeviceInstanceByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.prototype.removeDeviceInstanceByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstanceByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK function");
+com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstanceByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstanceByPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstanceByPK",  "removeDeviceInstanceByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var wcs = [];
 	var isError = false;
 	var pkNotFound = false;
 	var deletedRows;
-	if(com.kony.Employee.Communication_Channel.pkCheck(pks,wcs,errorcallback,"deleting")===false){
+	if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks,wcs,errorcallback,"deleting")===false){
 		return;
 	}
 	
 	function Communication_ChannelTransactionCallback(tx){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK -> Communication_ChannelTransactionCallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstanceByPK -> Communication_ChannelTransactionCallback");
 		var record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
 		if(null !== record && false !=record) {
 			deletedRows = kony.sync.remove(tx, tbname, wcs, true, null, null);
@@ -786,7 +786,7 @@ com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK = function(pks,
 	 	srcAttributes.push("Id");
  		targetAttributes.push("Employee_Id");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.kony.Employee.Employee.removeCascade,"Employee",false, errorcallback, null, record, true)){
+			if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, "", com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, null, record, true)){
 				isError = true;	
 				kony.sync.rollbackTransaction(tx);
 				return;
@@ -797,7 +797,7 @@ com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK = function(pks,
 	}
 	
 	function Communication_ChannelErrorCallback(){
-		sync.log.error("Entering com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK -> Communication_ChannelErrorCallback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstanceByPK -> Communication_ChannelErrorCallback");
 		if(isError === false){
 			kony.sync.verifyAndCallClosure(errorcallback);
 		}
@@ -808,7 +808,7 @@ com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK = function(pks,
 	}
 	
 	function Communication_ChannelSuccessCallback(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK -> Communication_ChannelSuccessCallback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstanceByPK -> Communication_ChannelSuccessCallback");
 		if(pkNotFound === true){
 			kony.sync.verifyAndCallClosure(pkNotFoundErrCallback);
 			return;
@@ -820,7 +820,7 @@ com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK = function(pks,
 	}
 	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK -> PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstanceByPK -> PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 	
@@ -835,10 +835,10 @@ com.kony.Employee.Communication_Channel.removeDeviceInstanceByPK = function(pks,
 * Deletes Communication_Channel(s) using where clause from the local Database. This will
 * not have any effect in enterprise datasource in subsequent sync cycles
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.removeDeviceInstance = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.removeDeviceInstance->main function");
+com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstance = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.removeDeviceInstance->main function");
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var twcs = wcs;
 	var isError = false;
@@ -851,7 +851,7 @@ com.kony.Employee.Communication_Channel.removeDeviceInstance = function(wcs, suc
 	 	srcAttributes.push("Id");
  		targetAttributes.push("Employee_Id");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.Employee.Employee.removeCascade,"Employee",false, errorcallback, null, null, true)){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, null, null, true)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
@@ -862,14 +862,14 @@ com.kony.Employee.Communication_Channel.removeDeviceInstance = function(wcs, suc
 		}
 	}
 	function Communication_Channel_removeSuccess(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.remove->Communication_Channel_removeSuccess function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.remove->Communication_Channel_removeSuccess function");
 
 		if(!isError){
 			kony.sync.verifyAndCallClosure(successcallback, rowsDeleted);
 		}
 	}
 	function errorcallbackWrapper(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.remove->error callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.remove->error callback function");
 		if(!isError){
 			kony.sync.showTransactionError(errorcallback);
 		}
@@ -879,7 +879,7 @@ com.kony.Employee.Communication_Channel.removeDeviceInstance = function(wcs, suc
 		}
 	}
 	function deleteEntity(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.remove->delete Entity function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.remove->delete Entity function");
 		var connection = kony.sync.getConnectionOnly(dbname, dbname, errorcallback);
 		if(connection != null){
 			kony.sync.startTransaction(connection, Communication_Channel_removeTransactioncallback, Communication_Channel_removeSuccess, errorcallbackWrapper);
@@ -891,23 +891,23 @@ com.kony.Employee.Communication_Channel.removeDeviceInstance = function(wcs, suc
 /************************************************************************************
 * Retrieves Communication_Channel using primary key from the local Database. 
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.prototype.getAllDetailsByPK function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.getAllDetailsByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.prototype.getAllDetailsByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Communication_Channel.getAllDetailsByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Communication_Channel.getAllDetailsByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Communication_Channel.getAllDetailsByPK = function(pks, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getAllDetailsByPK-> main function");
+com.ess.EMPLOYEE.Communication_Channel.getAllDetailsByPK = function(pks, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getAllDetailsByPK-> main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.getAllDetailsByPK",  "getAllDetailsByPK", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var wcs = [];
-	if(com.kony.Employee.Communication_Channel.pkCheck(pks,wcs,errorcallback,"searching")===false){
+	if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks,wcs,errorcallback,"searching")===false){
 		return;
 	}
 	twcs = kony.sync.CreateCopy(wcs);
@@ -919,8 +919,8 @@ com.kony.Employee.Communication_Channel.getAllDetailsByPK = function(pks, succes
 	var sql = query_compile[0];
 	var params = query_compile[1];
 	function mySuccCallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.getAllDetailsByPK-> success callback function");
-		successcallback(com.kony.Employee.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getAllDetailsByPK-> success callback function");
+		successcallback(com.ess.EMPLOYEE.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 	kony.sync.single_select_execute(dbname, sql, params, mySuccCallback, errorcallback);
 };
@@ -932,23 +932,23 @@ com.kony.Employee.Communication_Channel.getAllDetailsByPK = function(pks, succes
 
 /************************************************************************************
 * Retrieves Communication_Channel(s) using where clause from the local Database. 
-* e.g. com.kony.Employee.Communication_Channel.find("where Communication_Type_Id like 'A%'", successcallback,errorcallback);
+* e.g. com.ess.EMPLOYEE.Communication_Channel.find("where Communication_Type_Id like 'A%'", successcallback,errorcallback);
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.find = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.find function");
+com.ess.EMPLOYEE.Communication_Channel.find = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.find function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.find",  "find", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.find",  "find", errorcallback)){
 		return;
 	}
 	//wcs will be a string formed by the user.
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	wcs = kony.sync.validateWhereClause(wcs);
 	var sql = "select * from \"" + tbname + "\" " + wcs;
 	function mySuccCallback(res){
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccCallback, errorcallback);
 };
@@ -957,26 +957,26 @@ com.kony.Employee.Communication_Channel.find = function(wcs, successcallback,err
 * Marks instance of Communication_Channel with given primary key for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.markForUploadbyPK = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.prototype.markForUploadbyPK function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.markForUploadbyPK = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.prototype.markForUploadbyPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Communication_Channel.markForUploadbyPK(pks, successcallback, errorcallback);
+	com.ess.EMPLOYEE.Communication_Channel.markForUploadbyPK(pks, successcallback, errorcallback);
 };
-com.kony.Employee.Communication_Channel.markForUploadbyPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.markForUploadbyPK function");
+com.ess.EMPLOYEE.Communication_Channel.markForUploadbyPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.markForUploadbyPK function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.markForUploadbyPK",  "markForUploadbyPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var isError = false;
 	var recordsFound = false;
 	var recordsMarkedForUpload = 0;
 	var wcs = [];
-	if(com.kony.Employee.Communication_Channel.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
+	if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks, wcs, errorcallback, "marking for upload by PK")===false){
 		return;
 	}
 
@@ -1102,16 +1102,16 @@ com.kony.Employee.Communication_Channel.markForUploadbyPK = function(pks, succes
 * Marks instance(s) of Communication_Channel matching given where clause for upload. This will 
 * enable deferred records to merge with the enterprise datasource in the next Sync.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.markForUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.markForUpload->main function");
+com.ess.EMPLOYEE.Communication_Channel.markForUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.markForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.markForUpload",  "markForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.markForUpload",  "markForUpload", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var isError = false;
 	var num_records_main = 0;
 	wcs = kony.sync.validateWhereClause(wcs);
@@ -1166,7 +1166,7 @@ com.kony.Employee.Communication_Channel.markForUpload = function(wcs, successcal
 	}
 	
 	function single_transaction_callback (tx){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.markForUpload->single_transaction_callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.markForUpload->single_transaction_callback");
 		//updating main table
 		var sql = "select " + kony.sync.historyTableChangeTypeColumn + " from \"" + tbname + "\" " + wcs ;
 		var resultSet = kony.sync.executeSql (tx, sql, null);
@@ -1203,12 +1203,12 @@ com.kony.Employee.Communication_Channel.markForUpload = function(wcs, successcal
 	}
 	
 	function single_transaction_success_callback(){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.markForUpload->single_transaction_success_callback");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.markForUpload->single_transaction_success_callback");
 		kony.sync.verifyAndCallClosure(successcallback, {count:num_records_main});
 	}
 	
 	function single_transaction_error_callback(){
-		sync.log.error("Entering com.kony.Employee.Communication_Channel.markForUpload->single_transaction_error_callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Communication_Channel.markForUpload->single_transaction_error_callback");
 		if(!isError) {
 			kony.sync.showTransactionError(errorcallback);
 		}else{
@@ -1228,13 +1228,13 @@ com.kony.Employee.Communication_Channel.markForUpload = function(wcs, successcal
 * pending upload if they have been updated or created locally and the changes have
 * not been merged with enterprise datasource.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.getPendingUpload = function(wcs, successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getPendingUpload->main function");
+com.ess.EMPLOYEE.Communication_Channel.getPendingUpload = function(wcs, successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getPendingUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null){
@@ -1247,8 +1247,8 @@ com.kony.Employee.Communication_Channel.getPendingUpload = function(wcs, success
 	}
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.getPendingUpload->successcallback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getPendingUpload->successcallback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
@@ -1258,32 +1258,32 @@ com.kony.Employee.Communication_Channel.getPendingUpload = function(wcs, success
 * In persistent Sync the  records in the local database are put into a pending 
 * acknowledgement state after an upload.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.getPendingAcknowledgement = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getPendingAcknowledgement->main function");
+com.ess.EMPLOYEE.Communication_Channel.getPendingAcknowledgement = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getPendingAcknowledgement->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var currentversion = kony.sync.getCurrentVersionNumber(tbname);
 	var mysql="select * from \""+tbname+"\" WHERE "+kony.sync.mainTableChangeTypeColumn+ " is not null AND "+kony.sync.mainTableChangeTypeColumn+" <> -1 AND "+kony.sync.mainTableSyncVersionColumn+" <> "+currentversion+" AND "+kony.sync.mainTableChangeTypeColumn+" NOT LIKE '9%'"; 
 	kony.sync.single_select_execute(dbname, mysql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.getPendingAcknowledgement success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getPendingAcknowledgement success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}
 };
 
 /************************************************************************************
 * Retrieves instance(s) of Communication_Channel deferred for upload.
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.getDeferredUpload = function(wcs,successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getDeferredUpload->main function");
+com.ess.EMPLOYEE.Communication_Channel.getDeferredUpload = function(wcs,successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getDeferredUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var sql;
 	if(typeof(wcs) === "string" && wcs != null ){
 		wcs = kony.sync.validateWhereClause(wcs);
@@ -1296,24 +1296,24 @@ com.kony.Employee.Communication_Channel.getDeferredUpload = function(wcs,success
 	
 	kony.sync.single_select_execute(dbname, sql, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.getDeferredUpload->success callback function");
-		kony.sync.verifyAndCallClosure(successcallback, com.kony.Employee.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getDeferredUpload->success callback function");
+		kony.sync.verifyAndCallClosure(successcallback, com.ess.EMPLOYEE.Communication_Channel.convertTableToObject(kony.sync.filterNullsFromSelectResult(res)));
 	}	
 };
 
 /************************************************************************************
 * Rollbacks all changes to Communication_Channel in local database to last synced state
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.rollbackPendingLocalChanges = function(successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.rollbackPendingLocalChanges->main function");
+com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChanges = function(successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChanges->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, null, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.rollbackPendingLocalChanges->main function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChanges->main function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}		
 };
@@ -1322,32 +1322,32 @@ com.kony.Employee.Communication_Channel.rollbackPendingLocalChanges = function(s
 * Rollbacks changes to Communication_Channel's record with given primary key in local 
 * database to last synced state
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.prototype.rollbackPendingLocalChangesByPK function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.rollbackPendingLocalChangesByPK = function(successcallback,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.prototype.rollbackPendingLocalChangesByPK function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Communication_Channel.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChangesByPK(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Communication_Channel.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.rollbackPendingLocalChangesByPK->main function");
+com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChangesByPK = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChangesByPK->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChangesByPK",  "rollbackPendingLocalChangesByPK", errorcallback)){
 		return;
 	}	
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var wcs = [];
-	if(com.kony.Employee.Communication_Channel.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
+	if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks,wcs,errorcallback,"rollbacking")===false){
 		return;
 	}	
 	kony.sync.konySyncRollBackPendingChanges(tbname, dbname, wcs, mySuccesscallback, pkNotFoundErrCallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.rollbackPendingLocalChangesByPK->success callback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChangesByPK->success callback function");
 		kony.sync.verifyAndCallClosure(successcallback, res);
 	}	
 	function pkNotFoundErrCallback(){
-		sync.log.error("Entering com.kony.Employee.Communication_Channel.rollbackPendingLocalChangesByPK->PK not found callback");
+		sync.log.error("Entering com.ess.EMPLOYEE.Communication_Channel.rollbackPendingLocalChangesByPK->PK not found callback");
 		kony.sync.pkNotFoundErrCallback(errorcallback,tbname);
 	}
 };
@@ -1356,24 +1356,24 @@ com.kony.Employee.Communication_Channel.rollbackPendingLocalChangesByPK = functi
 * isRecordDeferredForUpload returns true or false depending on whether Communication_Channel's record  
 * with given primary key got deferred in last sync
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Communication_Channel.prototype.isRecordDeferredForUpload function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.isRecordDeferredForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.prototype.isRecordDeferredForUpload function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Communication_Channel.isRecordDeferredForUpload(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Communication_Channel.isRecordDeferredForUpload(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Communication_Channel.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.isRecordDeferredForUpload->main function");
+com.ess.EMPLOYEE.Communication_Channel.isRecordDeferredForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.isRecordDeferredForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.isRecordDeferredForUpload",  "isRecordDeferredForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.kony.Employee.Communication_Channel.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1393,7 +1393,7 @@ com.kony.Employee.Communication_Channel.isRecordDeferredForUpload = function(pks
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.isRecordDeferredForUpload->successcallback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.isRecordDeferredForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1408,24 +1408,24 @@ com.kony.Employee.Communication_Channel.isRecordDeferredForUpload = function(pks
 * isRecordPendingForUpload returns true or false depending on whether Communication_Channel's record  
 * with given primary key is pending for upload
 *************************************************************************************/
-com.kony.Employee.Communication_Channel.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
-	sync.log.trace("Entering  com.kony.Employee.Communication_Channel.prototype.isRecordPendingForUpload function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.isRecordPendingForUpload = function(successcallback,errorcallback){
+	sync.log.trace("Entering  com.ess.EMPLOYEE.Communication_Channel.prototype.isRecordPendingForUpload function");
 	var pks = this.getPKTable();
-	com.kony.Employee.Communication_Channel.isRecordPendingForUpload(pks,successcallback,errorcallback);
+	com.ess.EMPLOYEE.Communication_Channel.isRecordPendingForUpload(pks,successcallback,errorcallback);
 };
-com.kony.Employee.Communication_Channel.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.isRecordPendingForUpload->main function");
+com.ess.EMPLOYEE.Communication_Channel.isRecordPendingForUpload = function(pks, successcallback, errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.isRecordPendingForUpload->main function");
 	if(!kony.sync.isSyncInitialized(errorcallback)){
 		return;
 	}
-	if(!kony.sync.validateInput(arguments, "com.kony.Employee.Communication_Channel.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
+	if(!kony.sync.validateInput(arguments, "com.ess.EMPLOYEE.Communication_Channel.isRecordPendingForUpload",  "isRecordPendingForUpload", errorcallback)){
 		return;
 	}
 	var dbname = kony.sync.getDBName();
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	var wcs = [] ;
 	var flag;
-	if(com.kony.Employee.Communication_Channel.pkCheck(pks,wcs,errorcallback,"selecting")===false){
+	if(com.ess.EMPLOYEE.Communication_Channel.pkCheck(pks,wcs,errorcallback,"selecting")===false){
 		return;
 	}
 	var twcs = [];
@@ -1445,7 +1445,7 @@ com.kony.Employee.Communication_Channel.isRecordPendingForUpload = function(pks,
 	var params = query_compile[1];
 	kony.sync.single_select_execute(dbname, sql, params, mySuccesscallback, errorcallback);
 	function mySuccesscallback(res){
-		sync.log.trace("Entering com.kony.Employee.Communication_Channel.isRecordPendingForUpload->successcallback function");
+		sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.isRecordPendingForUpload->successcallback function");
 		if(res.length === 1){
 			flag = true;
 		}
@@ -1464,9 +1464,9 @@ com.kony.Employee.Communication_Channel.isRecordPendingForUpload = function(pks,
 *************************************************************************************/
 
 //Deletes all the dependant tables in the relationship tables.Need to pass transaction handler as input
-com.kony.Employee.Communication_Channel.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.removeCascade function");
-	var tbname = com.kony.Employee.Communication_Channel.getTableName();
+com.ess.EMPLOYEE.Communication_Channel.removeCascade = function(tx, wcs, errorcallback, markForUpload, isCascade, parentTable, isLocal){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.removeCascade function");
+	var tbname = com.ess.EMPLOYEE.Communication_Channel.getTableName();
 	markForUpload = kony.sync.getUploadStatus(markForUpload);
 	function removeCascadeChildren(){
 	var srcAttributes = [];
@@ -1474,7 +1474,7 @@ com.kony.Employee.Communication_Channel.removeCascade = function(tx, wcs, errorc
 	 	srcAttributes.push("Id");
  		targetAttributes.push("Employee_Id");
 		//srcAttributes and targetAttributes are interchanged while calling the removecascade
-		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.kony.Employee.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, null, isLocal)){
+		if(!kony.sync.removeCascadeHelper(tx, targetAttributes, srcAttributes, tbname, wcs, com.ess.EMPLOYEE.Employee.removeCascade,"Employee",false, errorcallback, markForUpload, null, isLocal)){
 			return false;
 		}
 	}
@@ -1504,12 +1504,12 @@ com.kony.Employee.Communication_Channel.removeCascade = function(tx, wcs, errorc
 };
 
 
-com.kony.Employee.Communication_Channel.convertTableToObject = function(res){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.convertTableToObject function");
+com.ess.EMPLOYEE.Communication_Channel.convertTableToObject = function(res){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.convertTableToObject function");
 	objMap = [];
 	if(res!==null){
 		for(var i in res){
-			var obj = new com.kony.Employee.Communication_Channel();
+			var obj = new com.ess.EMPLOYEE.Communication_Channel();
 			obj.Communication_Type_Id = res[i].Communication_Type_Id;
 			obj.Employee_Id = res[i].Employee_Id;
 			obj.END_DATE = res[i].END_DATE;
@@ -1524,8 +1524,8 @@ com.kony.Employee.Communication_Channel.convertTableToObject = function(res){
 	return objMap;
 };
 
-com.kony.Employee.Communication_Channel.filterAttributes = function(valuestable, insert){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.filterAttributes function");
+com.ess.EMPLOYEE.Communication_Channel.filterAttributes = function(valuestable, insert){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.filterAttributes function");
 	var attributeTable = {};
 	attributeTable.Communication_Type_Id = "Communication_Type_Id";
 	attributeTable.Employee_Id = "Employee_Id";
@@ -1561,18 +1561,18 @@ com.kony.Employee.Communication_Channel.filterAttributes = function(valuestable,
 	return newvaluestable;
 };
 
-com.kony.Employee.Communication_Channel.formOrderByClause = function(orderByMap){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.formOrderByClause function");
+com.ess.EMPLOYEE.Communication_Channel.formOrderByClause = function(orderByMap){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.formOrderByClause function");
 	if(!kony.sync.isNull(orderByMap)){
 		var valuestable = kony.sync.convertOrderByMapToValuesTable(orderByMap);
-		//var filteredValuestable = com.kony.Employee.Communication_Channel.filterAttributes(valuestable, true);
+		//var filteredValuestable = com.ess.EMPLOYEE.Communication_Channel.filterAttributes(valuestable, true);
 		return kony.sync.convertToValuesTableOrderByMap(orderByMap,valuestable);
 	}
 	return null;
 };
 
-com.kony.Employee.Communication_Channel.prototype.getValuesTable = function(isInsert){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.prototype.getValuesTable function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.getValuesTable = function(isInsert){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.prototype.getValuesTable function");
 	var valuesTable = {};
 	if(isInsert===true){
 		valuesTable.Communication_Type_Id = this.Communication_Type_Id;
@@ -1586,24 +1586,24 @@ com.kony.Employee.Communication_Channel.prototype.getValuesTable = function(isIn
 	return valuesTable;
 };
 
-com.kony.Employee.Communication_Channel.prototype.getPKTable = function(){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.prototype.getPKTable function");
+com.ess.EMPLOYEE.Communication_Channel.prototype.getPKTable = function(){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.prototype.getPKTable function");
 	var pkTable = {};
 	pkTable.Communication_Type_Id = {key:"Communication_Type_Id",value:this.Communication_Type_Id};
 	pkTable.Employee_Id = {key:"Employee_Id",value:this.Employee_Id};
 	return pkTable;
 };
 
-com.kony.Employee.Communication_Channel.getPKTable = function(){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getPKTable function");
+com.ess.EMPLOYEE.Communication_Channel.getPKTable = function(){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getPKTable function");
 	var pkTable = [];
 	pkTable.push("Communication_Type_Id");
 	pkTable.push("Employee_Id");
 	return pkTable;
 };
 
-com.kony.Employee.Communication_Channel.pkCheck = function(pks,wcs,errorcallback,opName){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.pkCheck function");
+com.ess.EMPLOYEE.Communication_Channel.pkCheck = function(pks,wcs,errorcallback,opName){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.pkCheck function");
 	var wc = [];
 	if(!kony.sync.isNull(pks.Communication_Type_Id)){
 		if(!kony.sync.isNull(pks.Communication_Type_Id.value)){
@@ -1639,8 +1639,8 @@ com.kony.Employee.Communication_Channel.pkCheck = function(pks,wcs,errorcallback
 	return true;
 };
 
-com.kony.Employee.Communication_Channel.validateNull = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.validateNull function");
+com.ess.EMPLOYEE.Communication_Channel.validateNull = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.validateNull function");
 	if(valuestable.END_DATE!==undefined){
 		if(kony.sync.isNull(valuestable.END_DATE) || kony.sync.isEmptyString(valuestable.END_DATE)){
 			sync.log.error("Mandatory attribute END_DATE is missing for the SyncObject Communication_Channel.");
@@ -1658,8 +1658,8 @@ com.kony.Employee.Communication_Channel.validateNull = function (valuestable,err
 	return true;
 };
 
-com.kony.Employee.Communication_Channel.validateNullInsert = function (valuestable,errorcallback){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.validateNullInsert function");
+com.ess.EMPLOYEE.Communication_Channel.validateNullInsert = function (valuestable,errorcallback){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.validateNullInsert function");
 	if(kony.sync.isNull(valuestable.Communication_Type_Id) || kony.sync.isEmptyString(valuestable.Communication_Type_Id)){
 		sync.log.error("Mandatory attribute Communication_Type_Id is missing for the SyncObject Communication_Channel.");
 		errorcallback(kony.sync.getErrorTable(kony.sync.errorCodeMandatoryAttribute,kony.sync.getErrorMessage(kony.sync.errorCodeMandatoryAttribute, "Communication_Channel", "Communication_Type_Id")));
@@ -1683,15 +1683,15 @@ com.kony.Employee.Communication_Channel.validateNullInsert = function (valuestab
 	return true;
 };
 
-com.kony.Employee.Communication_Channel.getRelationshipMap = function(relationshipMap,valuestable){
-	sync.log.trace("Entering com.kony.Employee.Communication_Channel.getRelationshipMap function");
+com.ess.EMPLOYEE.Communication_Channel.getRelationshipMap = function(relationshipMap,valuestable){
+	sync.log.trace("Entering com.ess.EMPLOYEE.Communication_Channel.getRelationshipMap function");
 	var r1 = {};
 
 	return relationshipMap;
 };
 
 
-com.kony.Employee.Communication_Channel.checkPKValueTables = function (valuetables)	{
+com.ess.EMPLOYEE.Communication_Channel.checkPKValueTables = function (valuetables)	{
 	var checkPksNotNullFlag = true;
 	for(var i = 0; i < valuetables.length; i++)	{
 		if(kony.sync.isNull(valuetables[i])){
@@ -1702,7 +1702,7 @@ com.kony.Employee.Communication_Channel.checkPKValueTables = function (valuetabl
 	return checkPksNotNullFlag;
 };
 
-com.kony.Employee.Communication_Channel.getTableName = function(){
+com.ess.EMPLOYEE.Communication_Channel.getTableName = function(){
 	return "Communication_Channel";
 };
 

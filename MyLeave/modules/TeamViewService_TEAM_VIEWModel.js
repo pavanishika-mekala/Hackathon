@@ -27,6 +27,7 @@ kony.model.TeamViewService.TEAM_VIEWModel = (function(){
 		 * TEAM_EMPNUMBER 
 		 * TEAM_POSITION 
 		 * TIMESTAMP 
+		 * USER_ID 
 		 */
         kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
     }

@@ -1,5 +1,5 @@
 //****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
-// ****************Generated On Wed Nov 29 10:59:53 UTC 2017employee_leave_type*******************
+// ****************Generated On Mon Dec 11 21:45:46 UTC 2017employee_leave_type*******************
 // **********************************Start employee_leave_type's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};

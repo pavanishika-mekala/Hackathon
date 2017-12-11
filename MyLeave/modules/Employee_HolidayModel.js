@@ -27,6 +27,10 @@ kony.model.Employee.HolidayModel = (function(){
 		 * Name 
 		 * softdeleteflag 
 		 * Type 
+		 * MOSID 
+		 * MOFID 
+		 * SCHKZ 
+		 * ZEITY 
 		 */
         kony.model.BaseModel.call(this, applicationContext, entityMetaData, configOptions);
     }
