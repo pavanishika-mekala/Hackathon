@@ -306,6 +306,7 @@ function userDetailsSucess(response) {
                                 }
                                 kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
                             }
+                            kony.apps.coe.ess.locale.setLanguageServiceLocale();
                         };
                         var syncSessionFailure = function(err) {
                             //Incase of Any Sync Failure
