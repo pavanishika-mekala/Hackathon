@@ -135,7 +135,7 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                     kony.apps.coe.ess.myLeave.applyLeave.preShow.selectedLeaveId = data.data.CellData.LeaveID;
                     kony.apps.coe.ess.myLeave.MyLeaveHomeUI.selectedLeaveID = data.data.CellData.LeaveID;
                     kony.apps.coe.ess.myLeave.MyLeaveHomeUI.mappingBackendDataToCalendar();
-                  	var sqlQuery1 = "select  t1.TEXT_DISPLAY from translation t1 where TEXT_CODE =(select t2.TEXT_CODE from translation t2 where t2.TEXT_DISPLAY like '"+data.data.CellData.LeaveType+"') and t1.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'";
+                  	var sqlQuery1 = "select  t1.TEXT_DISPLAY from translation t1 where TEXT_CODE =(select id from leave_type where name = '"+data.data.CellData.LeaveType+"') and t1.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'";
                   	kony.print("query for leave type"+sqlQuery1+" leave type :"+data.data.CellData.LeaveType); 
                   	kony.sync.single_select_execute(kony.sync.getDBName(), sqlQuery1, null, function(response){
                      if(response[0] != null&&response[0].TEXT_DISPLAY != null && response[0].TEXT_DISPLAY != undefined && response[0].TEXT_DISPLAY != ""){
