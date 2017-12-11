@@ -144,10 +144,11 @@ onClickOfSubmit = function() {
         fromDate = fromDate.toYYYYMMDD("");
         if(!kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().isIndefinteBtnChecked()) {
             toDate = new Date(toDate.year, toDate.month - 1, toDate.day);
-            toDate = toDate.toYYYYMMDD("");
         } else {
-            toDate = "";
+          	var frmDateforTodate = frmDelegationRequestCreate.clndFromDate;
+          	toDate = new Date(frmDateforTodate.year+1, frmDateforTodate.month - 1, frmDateforTodate.day);
         }
+      	toDate = toDate.toYYYYMMDD("");
         var employeeId = String(kony.apps.coe.ess.Approvals.DelegationRequestCreate.Backend.getInstance().contextData.empId);
         for(var i in selectedItems) {
             if(!kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().isIndefinteBtnChecked()) {
@@ -167,6 +168,7 @@ onClickOfSubmit = function() {
                     "delegator_id" : kony.apps.coe.ess.globalVariables.EmployeeID,
                     "request_type_id" : selectedItems[i].id,
                     "start_date" : fromDate,
+                  	"end_date" : toDate,
                     "status_id" : "2",
                     "comments" : String(frmDelegationRequestCreate.txtareaComments.text).trim(),
                     "createdts" : timeStamp
