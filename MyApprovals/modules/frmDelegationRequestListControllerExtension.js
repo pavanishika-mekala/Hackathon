@@ -192,7 +192,7 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
             for(i in data.dataSentByMe) {
                 data.dataSentByMe[i].requestInterval = formatRequestInterval(data.dataSentByMe[i]);
                 data.dataSentByMe[i].empName = String(data.dataSentByMe[i].firstName).trim() + " " + String(data.dataSentByMe[i].lastName).trim();
-              	data.dataSentByMe[i].shortName = String(data.dataSentByMe[i].firstName.substring(0,1)) + String(data.dataSentByMe[i].lastName.substring(0,1)); //RL-BBE-282
+              	data.dataSentByMe[i].shortName = String(data.dataSentByMe[i].firstName).substring(0,1) + String(data.dataSentByMe[i].lastName).substring(0,1); //RL-BBE-282
                 data.dataSentByMe[i].days = numberOfDays(data.dataSentByMe[i]);
                 data.dataSentByMe[i].lblStatus = getStatusTextWithSkin(data.dataSentByMe[i].statusId);
                 data.dataSentByMe[i].flxStatusIcon = getStatusIconSkin(data.dataSentByMe[i].statusId);
