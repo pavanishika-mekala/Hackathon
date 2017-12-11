@@ -197,6 +197,19 @@ Settings.prototype.languageSelection = function(src1,src2,src3,Sellocale){
   frmSettings.imgEnglish.src = src1;
   frmSettings.imgFrench.src = src2;
   frmSettings.imgNederlands.src = src3;
+  kony.print("username   :   "+kony.apps.coe.ess.frmLogin.username.toUpperCase());
+  var date1= new Date();
+  var timestamp = date1.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date1.getMonth() + 1) + "" + getTimeHourswithZero(date1.getDate()) + "" + getTimeHourswithZero(date1.getHours()) + "" + getTimeHourswithZero(date1.getMinutes()) + "" + getTimeHourswithZero(date1.getSeconds());
+  com.kony.NotificationsLanguageService.languageConfiguration.update("WHERE okta_user_id = \'" + kony.apps.coe.ess.frmLogin.username.toUpperCase() + "\' ", {
+    "language": "" + kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase(),
+    "lastmodifiedts":timestamp
+  },
+                                                                     function(res) {
+    kony.print("------------ in update success response of notification language service:" + JSON.stringify(res));
+  },
+                                                                     function(err) {
+    kony.print("------------  in update failure response  notification language service::" + JSON.stringify(err));
+  },true);
 };
 
 /**
