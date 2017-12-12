@@ -7,8 +7,8 @@
         "value": "14%"
     },
     "_height_": {
-        "type": "string",
-        "value": "12%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -27,7 +27,7 @@
         0
     ],
     "_skin_": "s794af0eb06145b28b2f9dab15ea7e18",
-    "_text_": "20 Dec - 22 Dec",
+    "_text_": "",
     "_width_": {
         "type": "string",
         "value": "33%"
