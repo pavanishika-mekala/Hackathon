@@ -53,7 +53,7 @@
     <attributes name="win8bgagentnamespace" value=""/>
     <attributes name="apmgestureswipe" value="true"/>
     <attributes name="appnamekey" value="MyLeave"/>
-    <attributes name="currentgaversion" value="7.3.0.GA_v201704051416"/>
+    <attributes name="currentgaversion" value="7.3.0.GA_v201711211559_r16"/>
     <attributes name="wp10sharedUserCertificates" value="false"/>
     <attributes name="winphone_allowselfsignedcertificate" value="None"/>
     <attributes name="SET_TIME" value="false"/>
@@ -122,7 +122,7 @@
     <attributes name="wp10pfxkey" value=""/>
     <attributes name="ACCESS_CHECKIN_PROPERTIES" value="false"/>
     <attributes name="MOUNT_FORMAT_FILESYSTEMS" value="false"/>
-    <attributes name="lastmodifiedtime" value="1509620838488"/>
+    <attributes name="lastmodifiedtime" value="1513056665184"/>
     <attributes name="wp10microphone" value="false"/>
     <attributes name="ID_REQ_NFC" value="false"/>
     <attributes name="devicemsg" value="This device is currently not supported"/>
@@ -142,6 +142,7 @@
     <attributes name="FACTORY_TEST" value="false"/>
     <attributes name="splashlogokey" value=""/>
     <attributes name="wp81stoastcapablekey" value="Not set"/>
+    <attributes name="windesktop_disableapplicationminimize" value="false"/>
     <attributes name="SEND_SMS" value="false"/>
     <attributes name="iphonebundleidentifierkey" value="com.engie.benelux.cofely.eTimeSheetMyLeave"/>
     <attributes name="SUBSCRIBED_FEEDS_READ" value="false"/>
@@ -229,7 +230,7 @@
     <attributes name="wp10musicLibrary" value="false"/>
     <attributes name="WP8_ID_CAP_MAP" value="true"/>
     <attributes name="objects3D" value="false"/>
-    <attributes name="READ_PHONE_STATE" value="true"/>
+    <attributes name="READ_PHONE_STATE" value="false"/>
     <attributes name="SUBSCRIBED_FEEDS_WRITE" value="false"/>
     <attributes name="MANAGE_ACCOUNTS" value="false"/>
     <attributes name="wp10location" value="false"/>
@@ -445,6 +446,7 @@
     <attributes name="blockedChatMessages" value="false"/>
     <attributes name="win8packagelogokey" value=""/>
     <attributes name="WAKE_LOCK" value="false"/>
+    <attributes name="winDisableApplicationScreenshot" value="false"/>
     <attributes name="win8lockscreennotificationskey" value="Not set"/>
     <attributes name="WP8_ID_CAP_WALLET_PAYMENTINSTRUMENTS" value="false"/>
     <attributes name="ID_CAP_APPOINTMENTS" value="true"/>

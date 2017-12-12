@@ -51,7 +51,7 @@
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "20a573b7397d4f21a183e1ce1af5c15c",
     "name": "kony.ui.Image2",
     "parent": "flxContactApprover",
