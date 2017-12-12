@@ -28,13 +28,13 @@ kony.apps.coe.ess.myLeave.leaveWallet.prototype.processData = function(data){
    var chartData = [];
     for(var i=0; i < data.length ; i++){
         var dataJson ={};
-        dataJson.LEAVETAKEN = parseFloat(data[i].availed).toFixed(1);
-        dataJson.LEAVEBALANCE = parseFloat(data[i].balance).toFixed(1);//parseInt(data.leave_type[i].balance) - parseInt(data.leave_type[i].availed);
+        dataJson.LEAVETAKEN = parseFloat(data[i].availed).toFixed(2);
+        dataJson.LEAVEBALANCE = parseFloat(data[i].balance).toFixed(2);//parseInt(data.leave_type[i].balance) - parseInt(data.leave_type[i].availed);
       	if(data[i].planned === ""){
         	data[i].planned = "0";
       	}
-      	dataJson.LEAVEPLANNED = parseFloat(data[i].planned).toFixed(1);
-        dataJson.TOTALLEAVE =  (parseFloat(data[i].availed) + parseFloat(data[i].balance) + parseFloat(data[i].planned)).toFixed(1);//data.leave_type[i].balance;
+      	dataJson.LEAVEPLANNED = parseFloat(data[i].planned).toFixed(2);
+        dataJson.TOTALLEAVE =  (parseFloat(data[i].availed) + parseFloat(data[i].balance) + parseFloat(data[i].planned)).toFixed(2);//data.leave_type[i].balance;
         dataJson.LEAVETYPETITLE = data[i].TEXT_DISPLAY;//data.leave_type[i].leave_type_name;
         chartData.push(dataJson);
     }

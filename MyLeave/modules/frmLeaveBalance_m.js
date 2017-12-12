@@ -69,14 +69,14 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
 
         }*/
         var chartData = {};
-        chartData.LEAVETAKEN = parseFloat(data[0].availed).toFixed(1);
-        chartData.LEAVEBALANCE = parseFloat(data[0].balance).toFixed(1);//parseInt(data.leave_type[i].balance) - parseInt(data.leave_type[i].availed);
+        chartData.LEAVETAKEN = parseFloat(data[0].availed).toFixed(2);
+        chartData.LEAVEBALANCE = parseFloat(data[0].balance).toFixed(2);//parseInt(data.leave_type[i].balance) - parseInt(data.leave_type[i].availed);
         if( data[0].planned === ""){
            data[0].planned = "0";
         }
-        chartData.LEAVEPLANNED = parseFloat(data[0].planned).toFixed(1);
+        chartData.LEAVEPLANNED = parseFloat(data[0].planned).toFixed(2);
       //data[0].balance;
-      chartData.TOTALLEAVE = parseFloat(chartData.LEAVEPLANNED +chartData.LEAVEBALANCE + chartData.LEAVETAKEN).toFixed(1);//data.leave_type[i].balance;
+      chartData.TOTALLEAVE = parseFloat(chartData.LEAVEPLANNED +chartData.LEAVEBALANCE + chartData.LEAVETAKEN).toFixed(2);//data.leave_type[i].balance;
         //chartData.LEAVETAKEN = data[0].availed;
        // chartData.LEAVEBALANCE = Number(parseInt(data[0].balance) - parseInt(data[0].availed)).toFixed();
         chartData.LEAVETYPETITLE = data[0].TEXT_DISPLAY;//data[0].leave_type_name;
@@ -91,7 +91,7 @@ kony.apps.coe.ess.myLeave.leaveBalanceUI.prototype.bindDataToForm = function(obj
         frmLeaveBalance.lblTitle.text = (object.widgets())[3].id + " Balance";
         //remove frmLeaveBalance.lblTotalLeave.text = Number(objectData[0].TOTALLEAVE).toFixed();
         //remove frmLeaveBalance.lblAvailedLeave.text = Number(objectData[0].LEAVETAKEN).toFixed();
-      	frmLeaveBalance.lblTotalText.text=((parseFloat(Number(chartData.LEAVEPLANNED) +Number(chartData.LEAVEBALANCE)+ Number(chartData.LEAVETAKEN)).toFixed(1))+"").replace(".", ",");
+      	frmLeaveBalance.lblTotalText.text=((parseFloat(Number(chartData.LEAVEPLANNED) +Number(chartData.LEAVEBALANCE)+ Number(chartData.LEAVETAKEN)).toFixed(2))+"").replace(".", ",");
         frmLeaveBalance.lblCountConsumed.text=(objectData[0].LEAVETAKEN+"").replace(".", ",");
         frmLeaveBalance.lblCountAvailable.text=(objectData[0].LEAVEBALANCE+"").replace(".", ",");
       	frmLeaveBalance.lblCountPlanned.text=(objectData[0].LEAVEPLANNED+"").replace(".", ",");
