@@ -182,13 +182,13 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                         } else {
                           	var currHrs = data.data.CellData.Hours;
                           	var totalDays;
-                          	if (currHrs < 7)
+                          	if (currHrs < 8)
                               totalDays = (currHrs+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
-                            else if(parseFloat(currHrs)===7.5){
+                            else if(parseFloat(currHrs)===8){
                               totalDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
                             }
                             else{
-                              totalDays = ((parseInt(currHrs) * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+                              totalDays = ((parseInt(currHrs) * 1) / 8).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
                             }
                           	frmLeaveHome.lblLeaveTime.text = totalDays;
                             frmLeaveHome.lblFromTo.text = data.data.CellData.StartDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.StartDate.substring(4, 6) + ""]).substring(0, 3) + " - " + data.data.CellData.EndDate.substring(6, 8) + " " + (monthsJSON[data.data.CellData.EndDate.substring(4, 6) + ""]).substring(0, 3);
