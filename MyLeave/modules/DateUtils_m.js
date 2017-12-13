@@ -544,7 +544,8 @@ Date.prototype.toHHMMMHHmm = function () {
 // 	var min = makeTwoDigits(this.getMinutes());
 // 	var ampm = formatedHH.isAM === true ? "AM" : "PM";
 // 	return dd + " " + mm + " " + hh + ":" + min + " " + ampm;
-  return dd + " " + mm + " " + this.getHours() + ":" + this.getMinutes();
+  var mins = getTimeHourswithZero(this.getMinutes());
+  return dd + " " + mm + " " + this.getHours() + ":" + mins;
 };
 
 Date.getMonthMapNumberToMonth = {
