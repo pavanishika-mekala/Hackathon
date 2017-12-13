@@ -7,12 +7,8 @@
         "value": "14%"
     },
     "_height_": {
-        "type": "string",
-        "value": "12%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "48.50%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_margin_": [
         1,
@@ -22,9 +18,9 @@
     ],
     "_padding_": [
         0,
+        1,
         0,
-        0,
-        0
+        1
     ],
     "_skin_": "s51c4bfe34ab4d71a407bddd71e3cbbe",
     "_text_": "",
@@ -40,6 +36,10 @@
         }
     },
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 5,
@@ -58,6 +58,7 @@
     "isvisible": true,
     "kuid": "b2422e1493824d27a7890fde920b6e5c",
     "name": "kony.ui.Label",
+    "paddinginpixel": false,
     "parent": "flxNotificationListTemplate",
     "pf": "notificationListTemplate",
     "tooltip": "",
