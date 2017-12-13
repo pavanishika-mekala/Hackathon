@@ -263,13 +263,18 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
             //  pendingData.lblDays = ((parseInt(data[i].no_of_hours) * 1) / 7.5).toFixed() + " DAYS";
           	var currHrs = data[i].no_of_hours;
           	kony.print("currHrs is::"+currHrs);
-          	if (currHrs < 8)
+          	/*if (currHrs < 8)
               pendingData.lblDays = (currHrs.toString() + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
             else if(parseFloat(currHrs)===8){
               pendingData.lblDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
             }
             else{
               pendingData.lblDays = ((currHrs * 1) / 8).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+            }*/
+          	if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
+              pendingData.lblDays = (currHrs.toString() + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+            }else{
+              pendingData.lblDays = "";
             }
             pendingData.imgCal = "cal.png";
             pendingData.lblLine1 = " ";
