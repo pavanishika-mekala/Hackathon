@@ -803,7 +803,7 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.insertFetchedAttachmen
         if (typeof response !== "undefined") {
             frmLeaveRequestDetails["imgProof" + index].rawBytes = kony.convertToRawBytes(response);
             frmLeaveRequestDetails["imgProof" + index].onTouchEnd=function(){
-                frmLeaveRequestDetails.imgBigImage.rawBytes=frmLeaveRequestDetails["imgProof" + index].rawBytes;
+                frmLeaveRequestDetails.imgBigImage.rawBytes=kony.convertToRawBytes(response);
                 frmLeaveRequestDetails.flxBigImage.isVisible=true;
               	frmLeaveRequestDetails.imgBigImage.isVisible=true;
             };
