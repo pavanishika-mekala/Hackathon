@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "20%"
+        "value": "60dp"
     },
     "_margin_": [
         0,

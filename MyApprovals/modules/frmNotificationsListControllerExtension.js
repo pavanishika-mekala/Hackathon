@@ -88,11 +88,12 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
         }
         var preparedData = {
           "title": item.title,
-          "description": descrToSet,
+          "description": {text:descrToSet,top:"60%"},
           "notificationTime": notificationTime,
-          "timePeriod": "",
-          "timeDuration": "",
-          "notificationIcon" : "reminder.png"
+          "timePeriod": {text:"",isVisible:false},
+          "timeDuration": {text:"",isVisible:false,centerX:"50%"},
+          "notificationIcon" : {src:"reminder.png"},
+          "flxNotificationListTemplate":{height:"15.5%"}
         };
 
         //Find out which type of notification it is
@@ -155,13 +156,15 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
    */
   bindData: function(data) {
     try {
+      kony.print("data is::"+JSON.stringify(data));
       var widgetDataMap = {
         "lblNotificationTitle": "title",
         "lblNotificationDescription": "description",
         "lblNotificationTime": "notificationTime",
-        "imgNotificationImage": "notificationIcon",
-        "lblNotificationDates": "timePeriod",
-        "lblNotificationDays": "timeDuration"
+        "imgNotificationIcon": "notificationIcon",
+        "lblNotificationPeriod": "timePeriod",
+        "lblNotificationDuration": "timeDuration",
+        "flxNotificationListTemplate":"flxNotificationListTemplate"
       };
       frmNotificationsList.segNotificationList.widgetDataMap = widgetDataMap;
       frmNotificationsList.segNotificationList.setData(data);
@@ -171,7 +174,8 @@ kony.sdk.mvvm.frmNotificationsListControllerExtension = Class(kony.sdk.mvvm.Base
         switch(eachData.moduleType) {
           case "MYAPPROVAL" :
             if(eachData.contextData) {
-              notificationHistoryObject.storeRequestDetails(i, eachData.contextData.id);
+            	notificationHistoryObject.fetchLeaveDetails(i,eachData.contextData.id);
+                notificationHistoryObject.storeRequestDetails(i, eachData.contextData.id);
             }
             break;
           default :

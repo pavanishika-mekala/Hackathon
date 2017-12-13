@@ -1,7 +1,7 @@
 {
   "android": {
     "font_size": 0,
-    "isForked": false
+    "isForked": true
   },
   "background_color": "c1d7d7ff",
   "bg_type": "one",
@@ -25,7 +25,7 @@
   },
   "iphone": {
     "font_size": 0,
-    "isForked": false
+    "isForked": true
   },
   "isDefaultSkin": false,
   "kiosk": {
@@ -76,6 +76,6 @@
   },
   "winphone8": {
     "font_size": 0,
-    "isForked": false
+    "isForked": true
   }
 }

@@ -23,10 +23,10 @@
         0
     ],
     "_skin_": "s111f30d267a4db78d1b938f631eec47",
-    "_text_": "Your leave Request not submitted due to system error",
+    "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "36%"
+        "value": "40%"
     },
     "_width_": {
         "type": "string",
@@ -43,7 +43,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 1,
+    "contentalignment": 4,
     "id": "lblNotificationDescription",
     "info": null,
     "ipad": {

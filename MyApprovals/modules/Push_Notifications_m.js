@@ -305,9 +305,12 @@ kony.apps.coe.ess.KMS = {
         kony.print("Dropping" + JSON.stringify(requestId));
         var idQuery = "SELECT id from approval_request WHERE request_id = '" + requestId + "';"
         kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", idQuery, function(res){
-          var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmApprovalRequestDetail");
-          formController.loadDataAndShowForm(res[0].id);
+          kony.print("inside deepDropForMobile success::"+JSON.stringify(res));
           kony.application.dismissLoadingScreen();
+          if(res[0] !== undefined && res[0] !== null && res[0] !== ""){
+            var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmApprovalRequestDetail");
+          	formController.loadDataAndShowForm(res[0].id);
+          }
         }, function(err){
           kony.print("Error fetching id"+ JSON.stringify(err));
           handleError(err);
@@ -329,10 +332,10 @@ kony.apps.coe.ess.KMS = {
           query_data.requestType = [];
           query_data.statusType = [];
           query_data.totalPeoples = [];
-          frmViewFilterHistory.flexCriterisData.dateval.txt = "-";
-          frmViewFilterHistory.flexCriterisData.reqval.txt = "-";
-          frmViewFilterHistory.flexCriterisData.statusval.txt = "-";
-          frmViewFilterHistory.segMentListView.height = "100%";
+          //frmViewFilterHistory.flexCriterisData.dateval.txt = "-";
+          //frmViewFilterHistory.flexCriterisData.reqval.txt = "-";
+          //frmViewFilterHistory.flexCriterisData.statusval.txt = "-";
+          //frmViewFilterHistory.segMentListView.height = "100%";
           var historyTabObject = new kony.apps.coe.ess.ApprovalHistoryTab();
           historyTabObject.filterData(query_data, historyTabObject.filterApplyQuerySuccess.bind(this, "apply"));
           kony.application.dismissLoadingScreen();
@@ -344,6 +347,7 @@ kony.apps.coe.ess.KMS = {
         // kony.apps.coe.ess.myApprovals.IdFromGoToDetailFlex = requestId;
         
     }catch(e){
+      kony.print("Error inside deepDropForTablet::"+e);
         handleError(e);
     }
     

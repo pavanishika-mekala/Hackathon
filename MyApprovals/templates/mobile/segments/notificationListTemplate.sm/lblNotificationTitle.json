@@ -3,8 +3,8 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "35%"
     },
     "_left_": {
         "type": "string",
@@ -22,15 +22,19 @@
         0,
         0
     ],
+    "_right_": {
+        "type": "string",
+        "value": "34%"
+    },
     "_skin_": "s55c4473ba564896a98abbe48423ae4c",
-    "_text_": "System",
+    "_text_": "A leave request is due to be app ",
     "_top_": {
         "type": "string",
-        "value": "16%"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "55%"
     },
     "_wrapping_": 2,
     "android": {
@@ -42,7 +46,7 @@
     "canUpdateUI": true,
     "containerId": true,
     "containerweight": 100,
-    "contentalignment": 4,
+    "contentalignment": 1,
     "id": "lblNotificationTitle",
     "info": null,
     "ipad": {
