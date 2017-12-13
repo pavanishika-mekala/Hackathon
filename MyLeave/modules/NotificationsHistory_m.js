@@ -72,17 +72,17 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
               //Check if it's one day leave
               if (convertedStartDate === convertedEndDate) {
                 dataItem.timePeriod = {text:convertedStartDate + "," + startDate.getFullYear(),isVisible:true};
-                dataItem.timeDuration = {text:"1 Day",isVisible:true};
+                dataItem.timeDuration = {text:"1 Day",isVisible:true,centerX:"50%"};
               } else {
                 dataItem.timePeriod = {text:convertedStartDate + " - " + convertedEndDate,isVisible:true};
-                dataItem.timeDuration = {text:startDate.differenceInDays(endDate),isVisible:true};
+                dataItem.timeDuration = {text:startDate.differenceInDays(endDate),isVisible:true,centerX:"55%"};
               } 
               dataItem["flxNotificationItem"] = {
                         height: "20.5%"
                     };
             } else {
               dataItem.timePeriod = {text:"",isVisible:false};
-              dataItem.timeDuration = {text:"",isVisible:false};
+              dataItem.timeDuration = {text:"",isVisible:false,centerX:"50%"};
               dataItem["flxNotificationItem"] = {
                         height: "12.5%"
                     };
