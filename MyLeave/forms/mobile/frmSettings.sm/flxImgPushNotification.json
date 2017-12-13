@@ -21,12 +21,12 @@
     "_percent_": true,
     "_right_": {
         "type": "string",
-        "value": "5%"
+        "value": "0%"
     },
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_width_": {
         "type": "string",
-        "value": "30dp"
+        "value": "55dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
