@@ -110,16 +110,27 @@ kony.apps.coe.ess.myLeave.modifyLeave.updateUI = {
 		}, false);
      },
    
-     multipleAttachments : function(){
-        var data = kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_data;
-        if(data.length>0 && kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_id < data.length){
-                 var i = kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_id;
-			    (new kony.apps.coe.ess.myLeave.media()).fetchAttachment({"mediaName":data[i].media_id},kony.apps.coe.ess.myLeave.modifyLeave.updateUI.getAttachmentSuccess,kony.apps.coe.ess.myLeave.modifyLeave.updateUI.getAttachmentError);
-                 
-               }else{
-		          kony.application.dismissLoadingScreen();
-               }
-     },
+  multipleAttachments : function(){
+    var data = kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_data;
+    if(data.length>0 && kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_id < data.length){
+      var i = kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_id;
+      //(new kony.apps.coe.ess.myLeave.media()).fetchAttachment({"mediaName":data[i].media_id},kony.apps.coe.ess.myLeave.modifyLeave.updateUI.getAttachmentSuccess,kony.apps.coe.ess.myLeave.modifyLeave.updateUI.getAttachmentError);
+      //multiple attachment issue
+      (new kony.apps.coe.ess.myLeave.media()).fetchAttachment({"mediaName":data[i].media_id},
+                                                              function(response){
+        if(response !== null){
+          kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture(response,data[i].media_id);
+          kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_id = kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_id +1;
+          kony.apps.coe.ess.myLeave.modifyLeave.updateUI.multipleAttachments();
+        }else{
+          kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_id = kony.apps.coe.ess.myLeave.modifyLeave.updateUI.attachment_id +1;
+          kony.apps.coe.ess.myLeave.modifyLeave.updateUI.multipleAttachments();
+        }
+      },kony.apps.coe.ess.myLeave.modifyLeave.updateUI.getAttachmentError);
+    }else{
+      kony.application.dismissLoadingScreen();
+    }
+  },
      getAttachmentSuccess : function(response){
         if(response !== null){
            kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture(response);
