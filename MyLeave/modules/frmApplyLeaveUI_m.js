@@ -1249,22 +1249,21 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         var dateTemp = new Date();
         lid = "MYLEAVE_V2_" + leaveEntryData.start_date + "_T_" + dateTemp.getMilliseconds();
       }
-	  var halfDayHours = leaveEntryData.no_of_hours; 
-      if(frmApplyLeave.btnHours.skin !== "sknBtnBg1C7393S28pxRoman"){
+      var halfDayHours = leaveEntryData.no_of_hours; 
+      if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
         halfDayHours = Number(halfDayHours)/8;
       }
       var balance = frmApplyLeave.lblLeaveBalanceCount.text;
       balance = balance.replace(",",".");
-	  if(Number(leaveEntryData.no_of_hours) > 4 && frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
-       alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" 4"  );//"Please select duration hours less than or equal to 4");
-	  }else if(Number(leaveEntryData.no_of_hours) <= 0){
+      if(Number(leaveEntryData.no_of_hours) > 4 && frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
+        alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" 4"  );//"Please select duration hours less than or equal to 4");
+      }else if(Number(leaveEntryData.no_of_hours) <= 0){
         alert(kony.i18n.getLocalizedString("i18n.ess.myLeave.frmApplyLeave.warningOnSubmit")); //("Please select a valid time duration");
-      }else if(kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){
-        if(Number(leaveEntryData.no_of_hours) > Number(balance) && frmApplyLeave.btnHalfDay.skin === "sknBtnBg1C7393S28pxRoman"){        
-          toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.insufficientBalance") , 4000);
-        }else if(Number(halfDayHours) > Number(balance) && frmApplyLeave.btnHalfDay.skin !== "sknBtnBg1C7393S28pxRoman"){
-          toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.insufficientBalance") , 4000);
-        }
+      }
+      if(Number(leaveEntryData.no_of_hours) > Number(balance) && frmApplyLeave.btnHalfDay.skin !== "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){        
+        toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.insufficientBalance") , 4000);
+      }else if(Number(halfDayHours) > Number(balance) && frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){
+        toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.insufficientBalance") , 4000);
       }else{
         dataToForward.start_date = leaveEntryData.start_date;
         dataToForward.end_date = leaveEntryData.end_date;
