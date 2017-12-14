@@ -327,18 +327,24 @@ kony.apps.coe.ess.KMS = {
         kony.print("Dropping" + JSON.stringify(requestId));
       	var idQuery = "SELECT id from approval_request WHERE request_id = '" + requestId + "';"
         kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", idQuery, function(res){
-          kony.apps.coe.ess.myApprovals.IdFromGoToDetailFlex = res[0].id
+          kony.print("inside deepDropForMobile success::"+JSON.stringify(res));
+          kony.application.dismissLoadingScreen();
+          if(res[0] !== undefined && res[0] !== null && res[0] !== ""){
+            var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmApprovalRequestDetail");
+          	formController.loadDataAndShowForm(res[0].id);
+          }
+          /*kony.apps.coe.ess.myApprovals.IdFromGoToDetailFlex = res[0].id
           var query_data = {};
           query_data.requestType = [];
           query_data.statusType = [];
           query_data.totalPeoples = [];
-          //frmViewFilterHistory.flexCriterisData.dateval.txt = "-";
-          //frmViewFilterHistory.flexCriterisData.reqval.txt = "-";
-          //frmViewFilterHistory.flexCriterisData.statusval.txt = "-";
-          //frmViewFilterHistory.segMentListView.height = "100%";
+          frmViewFilterHistory.flexCriterisData.dateval.txt = "-";
+          frmViewFilterHistory.flexCriterisData.reqval.txt = "-";
+          frmViewFilterHistory.flexCriterisData.statusval.txt = "-";
+          frmViewFilterHistory.segMentListView.height = "100%";
           var historyTabObject = new kony.apps.coe.ess.ApprovalHistoryTab();
           historyTabObject.filterData(query_data, historyTabObject.filterApplyQuerySuccess.bind(this, "apply"));
-          kony.application.dismissLoadingScreen();
+          kony.application.dismissLoadingScreen();*/
         }, function(err){
           kony.print("Error fetching id"+ JSON.stringify(err));
           handleError(err);
@@ -442,8 +448,11 @@ kony.apps.coe.ess.KMS.callbacks = {
    */
   onlineNofication : function(res) {
       var data = kony.apps.coe.ess.KMS.getNotoficationData(res);
-      var translatedText = kony.i18n.getLocalizedString(data.msgCode.toString());
-      if(translatedText !== null && translatedText !== undefined){
+      var translatedText = "";
+      if(data.msgCode !== undefined && data.msgCode !== null && data.msgCode !== ""){
+        translatedText = kony.i18n.getLocalizedString(data.msgCode.toString());
+      }
+      if(translatedText !== null && translatedText !== undefined && translatedText !== ""){
         var descrToSet = translatedText;
       }else{
         var descrToSet = data.description;

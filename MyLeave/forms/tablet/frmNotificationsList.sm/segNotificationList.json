@@ -147,6 +147,7 @@
     "groupcells": false,
     "hasSections": false,
     "id": "segNotificationList",
+    "ide_onRowClick": "AS_Segment_dd29b133e6144830b4240042b5e2aa63",
     "info": null,
     "ipad": {
         "psp": {
