@@ -141,7 +141,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
 				//to avoid same comments in audit trail screen
               var mock = 0;
               if(i > 0){
-              	if(data[i].createdts === data[i-1].createdts){
+              	if(data[i].createdts === data[i-1].createdts && data[i].template_type === 1){
                 	mock = 1;
                 }
               }

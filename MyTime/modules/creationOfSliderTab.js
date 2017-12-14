@@ -48,8 +48,8 @@ kony.apps.coe.Reusable.TimelineCreationTab.selectTimelineTaskCallback = function
   //kony.apps.coe.ess.myTime.TimesheetCreate.popups.enableCloneTaskTo();
   function callback(isLeave, data) {
     if (isLeave) {
-      kony.apps.coe.ess.myTime.TimesheetCreate.updateReadOnlyForTimeEntry.updateLeaveName(data.TimeType_Id);
-      kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showSelectedLeave();
+      kony.apps.coe.ess.myTime.TimesheetCreate.updateReadOnlyForTimeEntryTab.updateLeaveName(data.TimeType_Id);
+      kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfigTab.showSelectedLeave();
     } else {
       if (this.flxScrTimeTypeGestureId !== null) {
         //frmTimeSheetCreate.flxScrTimeType.removeGestureRecognizer(kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.flxScrTimeTypeGestureId);

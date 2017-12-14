@@ -563,8 +563,8 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       //frmApplyLeave.flxTimeline.isVisible = true;
       frmApplyLeave.lblTopSep.isVisible = true;
       this.selectedItem = "hours";
-      this.start_time = "8 AM";
-      this.end_time = "10 AM";
+      this.start_time = "080000";
+      this.end_time = "100000";
       this.hours = 2.0;
     } else {
       if (new Date(start_date).compareOnlyDate(new Date(end_date)) !== 0) {
@@ -579,8 +579,8 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
      // frmApplyLeave.flxTimeline.isVisible = true;
       frmApplyLeave.lblTopSep.isVisible = true;
       this.selectedItem = "hours";
-      this.start_time = "8 AM";
-      this.end_time = "10 AM";
+      this.start_time = "080000";
+      this.end_time = "100000";
       this.hours = 2.0;
     }
   },
@@ -722,8 +722,8 @@ kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection = {
       }
     }
 
-    this.start_time = "8 AM";
-    this.end_time = "5 PM";
+    this.start_time = "080000";
+    this.end_time = "170000";
     //frmApplyLeave.lblDurationHours.text = hours; code added in conditional loops
   },
   onSuccessOfHolidaySrv : function(response) {

@@ -59,7 +59,7 @@
     "name": "kony.ui.Label",
     "parent": "flxHeader",
     "pf": "frmPdfReader",
-    "texti18n": "i18n.ess.MyApprovals.frmPdfReader.title",
+    "texti18n": "i18n.ess.myApprovals.PdfReader.Attachment",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

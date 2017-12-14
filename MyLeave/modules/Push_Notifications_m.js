@@ -8,7 +8,8 @@ kony.apps.coe.ess.KMS = {
    * Set Callbacks for Push Notification. This should be called in pre-app-init.
    */
   setPushNotificationCallbacks : function() {
-    kony.print("Start - kony.apps.coe.ess.KMS.setPushNotificationCallbacks");
+    kony.print("inside setPushNotificationCallbacks");
+    //kony.print("Start - kony.apps.coe.ess.KMS.setPushNotificationCallbacks");
     var callbacksMap =  {
       onsuccessfulregistration: kony.apps.coe.ess.KMS.callbacks.registerSuccess,
       onfailureregistration: kony.apps.coe.ess.KMS.callbacks.registerFailure,
@@ -20,6 +21,7 @@ kony.apps.coe.ess.KMS = {
     kony.push.setCallbacks(callbacksMap);
 
     //Register device for first time
+    kony.print("kony.store.getItem(kony.apps.coe.ess.KMS.storeUidString)::"+kony.store.getItem(kony.apps.coe.ess.KMS.storeUidString));
     if(kony.store.getItem(kony.apps.coe.ess.KMS.storeUidString) === null) {
       kony.apps.coe.ess.KMS.registerPush();
     }
@@ -63,7 +65,8 @@ kony.apps.coe.ess.KMS = {
    * @param {fn} failureCall  Called on error while subscription
    */
   subscribeKMS : function(successCall,errorCall) {
-    kony.print("Start - kony.apps.coe.ess.KMS.subscribeKMS");
+    kony.print("#####inside subscribeKMS");
+    //kony.print("Start - kony.apps.coe.ess.KMS.subscribeKMS");
     var deviceType;
     //#ifdef android
     deviceType = "androidgcm";
@@ -81,6 +84,7 @@ kony.apps.coe.ess.KMS = {
     deviceType = "iphone";
     //#endif
     var pnsId = kony.store.getItem(kony.apps.coe.ess.KMS.storeUidString);
+    kony.print("pnsId is::"+pnsId);
     if(!pnsId) {
       //Invalid PNS ID. It should be valid
       kony.print("Invalid pnsUid. Trying to register device to Push Notifications provider again. Try subscribing again");
@@ -447,8 +451,11 @@ kony.apps.coe.ess.KMS.callbacks = {
    */
   onlineNofication : function(res) {
     var data = kony.apps.coe.ess.KMS.getNotoficationData(res);
-    var translatedText = kony.i18n.getLocalizedString(data.msgCode.toString());
-    if(translatedText !== null && translatedText !== undefined){
+    var translatedText = "";
+    if(data.msgCode !== undefined && data.msgCode !== null && data.msgCode !== ""){
+      translatedText = kony.i18n.getLocalizedString(data.msgCode.toString())
+    }
+    if(translatedText !== null && translatedText !== undefined && translatedText !== ""){
       var descrToSet = translatedText;
     }else{
       var descrToSet = data.description;

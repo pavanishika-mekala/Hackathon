@@ -11,7 +11,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__58dae45975c24a31854458f87fce0d23",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "return kony.apps.ess.deepLinkingSSO.appServiceCallback(eventobject);",
+            "codeSnippet": "kony.apps.coe.ess.KMS.setPushNotificationCallbacks();\nreturn kony.apps.ess.deepLinkingSSO.appServiceCallback(eventobject);",
             "parentId": null,
             "callbackType": null
         }]
