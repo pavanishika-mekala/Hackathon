@@ -1251,7 +1251,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
       }
       var halfDayHours = leaveEntryData.no_of_hours; 
       if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
-        halfDayHours = Number(halfDayHours)/8;
+        halfDayHours = Number(halfDayHours)/Number(kony.apps.coe.ess.appconfig.workingHours);
       }
       var balance = frmApplyLeave.lblLeaveBalanceCount.text;
       balance = balance.replace(",",".");
