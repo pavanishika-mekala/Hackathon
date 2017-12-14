@@ -230,8 +230,8 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.process_ApprovalRequest = function(app
             duration = hourDataText + " " +kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour");
           }
 		  processedRequest.RequestInfo = startdate.getDate() + " " + startdate.retriveMonthName().substring(0, 3);
-		  if(approvalRequest.StartTime != null && approvalRequest.EndTime != null){
-            processedRequest.RequesedInfoDetail = approvalRequest.StartTime.substring(0,2)+":"+approvalRequest.StartTime.substring(2,4)+" - "+approvalRequest.EndTime.substring(0,2)+approvalRequest.EndTime.substring(2,4);
+		  if(approvalRequest.StartTime != null && !kony.string.equalsIgnoreCase(approvalRequest.StartTime,"NULL") && approvalRequest.EndTime != null && !kony.string.equalsIgnoreCase(approvalRequest.EndTime,"NULL")){
+            processedRequest.RequesedInfoDetail = approvalRequest.StartTime.substring(0,2)+":"+approvalRequest.StartTime.substring(2,4)+" - "+approvalRequest.EndTime.substring(0,2)+":"+approvalRequest.EndTime.substring(2,4);
           }
           if(hours > 7){
             processedRequest.RequesedInfoDetail="";

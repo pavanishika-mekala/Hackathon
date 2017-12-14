@@ -42,7 +42,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPadMini",
+    "device": "iPad3",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "footeroverlap": false,
@@ -83,10 +83,10 @@
     "needappmenu": true,
     "paddinginpixel": false,
     "platform": "ipad",
-    "prevDevice": "iPad3",
+    "prevDevice": "mssurf",
     "prevPlatform": "spawindowstablet",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPadMini",
+    "shellCSS": "iOS_iPad3",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

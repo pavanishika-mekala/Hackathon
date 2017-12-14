@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -8,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -17,13 +18,13 @@
         1
     ],
     "_padding_": [
-        1,
-        1,
-        1,
-        1
+        0,
+        0,
+        0,
+        0
     ],
-    "_skin_": "se53fb8e0bbb4368b1aa515ff2bd9839",
-    "_text_": "3 Days",
+    "_skin_": "sb21eb2c829b40c2aea2333bf2195f10",
+    "_text_": "20 May - 22 May",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -42,7 +43,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblLeaveTime",
+    "id": "lblFromToTime",
     "info": null,
     "ipad": {
         "psp": {
@@ -50,10 +51,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "jb6531aa30e34a7dbfe703b6c8b85252",
+    "kuid": "d52066e434d64feb9bf9b72e6ff92f96",
     "name": "kony.ui.Label",
-    "paddinginpixel": false,
-    "parent": "flxLeaveDateAndTime",
+    "parent": "flxStartDate",
     "pf": "frmLeaveRequestDetails",
     "tooltip": "",
     "wType": "Label",
