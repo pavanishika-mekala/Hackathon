@@ -26,11 +26,11 @@
     "_text_": "Vacances annuelles (J)",
     "_top_": {
         "type": "string",
-        "value": "28%"
+        "value": "55dp"
     },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "48%"
     },
     "_wrapping_": 2,
     "android": {
