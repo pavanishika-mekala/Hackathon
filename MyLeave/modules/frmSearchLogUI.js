@@ -140,8 +140,9 @@ kony.apps.coe.myLeave.search.prototype.done = function (filterIcon) {
       else
         lCondition = lCondition + " , " + "\"" + types[j] + "\" ";
     }
+    var sqlquery = "select Group_Concat(t1.TEXT_CODE) as leavesTypseVal from translation t1  left join translation t2 on(t1.TEXT_CODE =t2.TEXT_CODE) where t2.TEXT_DISPLAY in ( " +lCondition +" ) and t1.SPRAS like 'NL'";
     //var sqlquery = "select Group_Concat(t1.TEXT_DISPLAY) as leavesTypseVal from translation t1 left join translation t2 where TEXT_CODE =(select id from leave_type where name = '"+lCondition+"') and t1.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'";
-    var sqlquery = "select Group_Concat(t1.TEXT_CODE) as leavesTypseVal from translation t1 left join translation t2 on(t1.TEXT_CODE = t2.TEXT_CODE) where t2.TEXT_DISPLAY in ( " +lCondition +" ) and t1.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'; //'NL'";
+    //var sqlquery = "select Group_Concat(t1.TEXT_CODE) as leavesTypseVal from translation t1 left join translation t2 on (t1.TEXT_CODE = t2.TEXT_CODE) where t2.TEXT_DISPLAY in ( " +lCondition +" ) and t1.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"'; //'NL'";
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null,function(response){
       kony.print("response success "+JSON.stringify(response)+" sCondition: "+sCondition+ " lCondition: "+lCondition);
       var res="";
