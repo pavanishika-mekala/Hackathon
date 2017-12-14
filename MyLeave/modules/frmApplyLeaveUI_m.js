@@ -1260,8 +1260,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" "+ Number(workingHours/2)  );//"Please select duration hours less than or equal to 4");
       }else if(Number(leaveEntryData.no_of_hours) <= 0){
         alert(kony.i18n.getLocalizedString("i18n.ess.myLeave.frmApplyLeave.warningOnSubmit")); //("Please select a valid time duration");
-      }
-      if(Number(leaveEntryData.no_of_hours) > Number(balance) && frmApplyLeave.btnHalfDay.skin !== "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){        
+      }else if(Number(leaveEntryData.no_of_hours) > Number(balance) && frmApplyLeave.btnHalfDay.skin !== "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){        
         toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.insufficientBalance") , 4000);
       }else if(Number(halfDayHours) > Number(balance) && frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){
         toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.insufficientBalance") , 4000);
