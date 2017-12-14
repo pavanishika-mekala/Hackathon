@@ -5,11 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0%"
+        "value": "30dp"
     },
     "_margin_": [
         0,
@@ -23,6 +19,10 @@
         0,
         0
     ],
+    "_right_": {
+        "type": "string",
+        "value": "0px"
+    },
     "_skin_": "sda0c04ae5814098a8111842b264a413",
     "_src_": "on.png",
     "_top_": {
@@ -31,7 +31,7 @@
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "30dp"
     },
     "canUpdateUI": true,
     "containerweight": 100,
