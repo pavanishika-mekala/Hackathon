@@ -1249,14 +1249,15 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         var dateTemp = new Date();
         lid = "MYLEAVE_V2_" + leaveEntryData.start_date + "_T_" + dateTemp.getMilliseconds();
       }
+	  var workingHours = Number(kony.apps.coe.ess.appconfig.workingHours);
       var halfDayHours = leaveEntryData.no_of_hours; 
       if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
-        halfDayHours = Number(halfDayHours)/Number(kony.apps.coe.ess.appconfig.workingHours);
+        halfDayHours = Number(halfDayHours)/workingHours;
       }
       var balance = frmApplyLeave.lblLeaveBalanceCount.text;
       balance = balance.replace(",",".");
-      if(Number(leaveEntryData.no_of_hours) > 4 && frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
-        alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" 4"  );//"Please select duration hours less than or equal to 4");
+      if(Number(leaveEntryData.no_of_hours) > Number(workingHours/2) && frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
+        alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" "+ Number(workingHours/2)  );//"Please select duration hours less than or equal to 4");
       }else if(Number(leaveEntryData.no_of_hours) <= 0){
         alert(kony.i18n.getLocalizedString("i18n.ess.myLeave.frmApplyLeave.warningOnSubmit")); //("Please select a valid time duration");
       }
