@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "11.96%"
+        "value": "15%"
     },
     "_left_": {
         "type": "string",
@@ -37,9 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "flxLeaveStatus",
-        "lblLeaveType",
         "lblFullDay",
-        "flxLeaveDateAndTime"
+        "flxDetails"
     ],
     "clipbounds": true,
     "containerweight": 100,
