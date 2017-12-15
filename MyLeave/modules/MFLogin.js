@@ -521,20 +521,39 @@ kony.sdk.mvvm.LogoutAction = function() {
         var loginService = kony.sdk.getCurrentInstance().getIdentityService(kony.apps.coe.ess.appconfig.identityServiceOkta);
         loginService.logout(function() {
           kony.print("Logout of okta login completed");
+          if(kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== undefined &&
+             kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== null){
           kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+          }
         }, function(err) {
           kony.print("Error on logout of okta login service: " + JSON.stringify(err));
+          if(kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== undefined &&
+             kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== null){
           kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+          }
+          //kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
         }, {"browserWidget": frmLogin.browserOkta});
 
       } else {
-        kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+        if(kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== undefined &&
+             kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== null){
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+          }
+        //kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
       }
     } catch (exception) {
-      kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+      if(kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== undefined &&
+             kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== null){
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+          }
+     // kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
     }
   } else {
-    kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+    if(kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== undefined &&
+             kony.sdk.mvvm.KonyApplicationContext.getApplicationContextImpl() !== null){
+          kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
+          }
+    //kony.sdk.mvvm.KonyApplicationContext.logout(sucCallback, errCallback, options);
   }
 
   function sucCallback() {
