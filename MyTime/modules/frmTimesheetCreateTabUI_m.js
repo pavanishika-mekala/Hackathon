@@ -197,6 +197,7 @@ TimesheetDatesSectionTab.prototype.setOnSelectionCallback = function (callback) 
  * @return         None.
  * @description    This method set data in dates section.
  */
+
 kony.apps.coe.ess.myTime.
 TimesheetDatesSectionTab.prototype.setData = function (data) {
   var temp,left=18;
@@ -277,6 +278,8 @@ TimesheetDatesSectionTab.prototype.setData = function (data) {
 kony.apps.coe.ess.myTime.
 TimesheetDatesSectionTab.prototype.setSelectedItem = function (index) {
   index = parseInt(index);
+  kony.apps.coe.ess.myTime.TimesheetHome.flxTimesheetDetailsLeftSelectedIndex = "" ;
+  frmTimeSheetCreateTab.flxTimeLine.removeAll();
   if (isNaN(index) || (this._selectedItem !== null && index === parseInt(this._selectedItem))) {
     return;
   }
@@ -2448,8 +2451,11 @@ kony.apps.coe.ess.myTime.TimesheetCreate.updateSegmentTab = function (data){
       "lblTotalHours" : "actual_Hours",
       "lblTimeSlot" : "time_Slot"
     };
-    frmTimeSheetCreateTab.segDetailsSelectedTask.setData(data);
-    frmTimeSheetCreateTab.segDetailsSelectedTask.setVisibility(true);
+    if(kony.apps.coe.ess.myTime.TimesheetHome.flxTimesheetDetailsLeftSelectedIndex !== ""){
+      frmTimeSheetCreateTab.segDetailsSelectedTask.setData(data);
+      frmTimeSheetCreateTab.segDetailsSelectedTask.setVisibility(true);
+
+    }
     kony.print("--------------------end updateSegment--------------------");
   }
   else{

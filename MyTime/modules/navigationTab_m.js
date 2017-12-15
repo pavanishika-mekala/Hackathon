@@ -51,6 +51,7 @@ kony.apps.coe.ess.myTime.navigationTab.prototype.timesheetcreateactionTab = func
     };
     frmTimeSheetCreateTab.btnSave1.onClick = function () {
 	try{
+      kony.apps.coe.ess.myTime.TimesheetHome.flxTimesheetDetailsLeftSelectedIndex = "" ; 
       if(!kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggleTab.isWork && kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.CurrentTaskTimelineData.isLeaveSelected()){
         handleCustomAlert(kony.i18n.getLocalizedString("i18n.ess.common.selectLeaveType"));
 		return;

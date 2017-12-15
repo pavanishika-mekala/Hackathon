@@ -673,11 +673,13 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.fetchAllAttachments = 
     try{
         var data = kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.AttachData;
         var i = kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.AttachIndex;
-        if (data[i].media_id !== undefined && data[i].media_id !== null) {
-            (new kony.apps.coe.ess.myLeave.media()).fetchAttachment({
-                "mediaName": data[i].media_id
-            }, kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.getAttachSuccess.bind(this, kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.AttachIndex), function(err){kony.print(JSON.stringify(err))});
-        }
+		if(i<data.length){
+			if (data[i].media_id !== undefined && data[i].media_id !== null) {
+				(new kony.apps.coe.ess.myLeave.media()).fetchAttachment({
+					"mediaName": data[i].media_id
+				}, kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.getAttachSuccess.bind(this, kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.AttachIndex), function(err){kony.print(JSON.stringify(err))});
+			}
+		}
     }catch(err){
         handleError(err);
         kony.print("---- in fetchAllAttachments");
@@ -800,13 +802,14 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.leaveRequestDetailsPre
  */
 kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.insertFetchedAttachment = function(index, response, callback) {
         kony.print("----img..." + JSON.stringify(response));
-        if (typeof response !== "undefined") {
+        if (typeof response !== "undefined" && response !== null && response !== undefined) {
             frmLeaveRequestDetails["imgProof" + index].rawBytes = kony.convertToRawBytes(response);
             frmLeaveRequestDetails["imgProof" + index].onTouchEnd=function(){
                 frmLeaveRequestDetails.imgBigImage.rawBytes=kony.convertToRawBytes(response);
                 frmLeaveRequestDetails.flxBigImage.isVisible=true;
               	frmLeaveRequestDetails.imgBigImage.isVisible=true;
             };
+  			callback();
         } else {
             frmLeaveRequestDetails["imgProof" + index].isVisible = false;
         }
