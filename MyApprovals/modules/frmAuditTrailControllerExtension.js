@@ -175,7 +175,8 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         lblVerticalLineBottom : {text : "", isVisible : (i >= data.length - 1 ? false : true)}
                     });
                 } else if(parseInt(data[i].templateType) === 1) {
-                    processedData.push({
+                  	if(data[i].comments !== null && data[i].comments !== ""){
+                      processedData.push({
                         lblEventName : kony.i18n.getLocalizedString("i18n.ess.common.userComment"),
                         lblEventDesc : data[i].comments,
                         lblPersonName : data[i].First_Name,
@@ -184,7 +185,8 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
                         lblVerticalLineTop : {text : "", isVisible : true},
                         lblBottomLine : {text : "", isVisible : true},
                         lblVerticalLineBottom : {text : "", isVisible : (i >= data.length - 1 ? false : true)}
-                    });
+                      });
+                    }
                 }
 
             }
