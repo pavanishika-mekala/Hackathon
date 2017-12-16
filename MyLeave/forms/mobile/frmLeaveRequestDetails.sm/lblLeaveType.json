@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "19.50%"
+        "value": "1%"
     },
     "_margin_": [
         1,
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "sebb91a03e104f1aacde647f6e2fe79a",
-    "_text_": "Vacances annuelle (d)",
+    "_text_": "Vacances annuelle (d)   jhgxajgsx",
     "_top_": {
         "type": "string",
-        "value": "16.20%"
+        "value": "0.20%"
     },
     "_width_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "99%"
     },
     "_wrapping_": 2,
     "android": {
@@ -55,9 +55,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "02fd7f7adbdf41228019fd7e1dbd7662",
+    "kuid": "a9b5997b355c405babc04ed3d1ee2b91",
     "name": "kony.ui.Label",
-    "parent": "flxLeaveSelected",
+    "parent": "flxDetails",
     "pf": "frmLeaveRequestDetails",
     "tooltip": "",
     "wType": "Label",

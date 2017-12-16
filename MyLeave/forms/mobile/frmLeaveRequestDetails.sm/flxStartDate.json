@@ -1,10 +1,6 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
@@ -30,28 +26,28 @@
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
-        "value": "17%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
-        "imgStatus"
+        "lblFromToTime"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxLeaveStatus",
+    "id": "flxStartDate",
     "info": null,
     "isvisible": true,
-    "kuid": "b137d003a3004a35ac01ea22098a0d04",
-    "layouttype": 2,
+    "kuid": "f72d404a484a47428969f2a9909b5858",
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxLeaveSelected",
+    "parent": "flxLeaveInfo",
     "pf": "frmLeaveRequestDetails",
     "snapgridsize": 10,
     "snaptogrid": true,
