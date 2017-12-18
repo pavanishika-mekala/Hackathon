@@ -2165,7 +2165,7 @@ kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
     var temp=parseInt(selection[0][1])+4;
     }
     if(temp >23){
-      temp=temp-23;
+      temp=temp-24;
     }
     frmApplyLeave.btnTo.text =("0"+temp).slice(-2)+":"+selection[1][1];
   }else if(frmApplyLeave.pickTime2.isVisible === true){
