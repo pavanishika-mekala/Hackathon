@@ -1487,10 +1487,8 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
     if (kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData.length > 0 && kony.apps.coe.ess.myLeave.applyLeave.submitLeave.imgIndex < kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData.length) {
       var i = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.imgIndex;
       if (kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].leave_id === null && kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].media_id === null) {
-        alert("soumya "+kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].media_id);
         (new kony.apps.coe.ess.myLeave.media()).updateBinaryContent(kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].imgProof, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.multipleImageUploadSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.mediaError.bind(this, dataToForward, dates, holidayResponse));
       } else {
-        alert("soumya 3333 :"+kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].media_id);
         kony.apps.coe.ess.myLeave.applyLeave.submitLeave.multipleImageUploadSuccess(dataToForward, dates, holidayResponse);
       }
     }
