@@ -107,7 +107,7 @@ MyLeaveHomeUI.prototype.onSwipeCallback = function(myWidget, gestureInfo, contex
 kony.apps.coe.ess.myLeave.
 MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
     try {
-        kony.print("-- Start onTouchEndCallback --");
+        kony.print("-- Start onTouchEndCallback --::"+JSON.stringify(data.data.CellData));
         if (data.LABEL.isMothDay) {
             if (data.CELL.skin == "sknFlxMobOp0") {
                 if (JSON.stringify(data.data.CellData) !== "" && data.data.CellData.Name == "Non Working Day") {
@@ -181,11 +181,26 @@ MyLeaveHomeUI.prototype.onTouchEndCallback = function(data) {
                             frmLeaveHome.lblLeaveTime.isVisible = true;
                         } else {
                           	var currHrs = data.data.CellData.Hours;
+                          	var leaveDays = data.data.CellData.leaveDays;
                           	var totalDays;
-                          	if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
-                              totalDays = (currHrs+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+                          	if(leaveDays !== undefined && leaveDays !== null && leaveDays !== ""){
+                              if(leaveDays === 1){
+                                  totalDays =  "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
+                              }else if(leaveDays > 1){
+                                  totalDays =  leaveDays + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+                              }else{
+                                  if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
+                                    totalDays = (currHrs.toString() +" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+                                  }else{
+                                    totalDays =  "";
+                                  }
+                              }
                             }else{
-                              totalDays = "";
+                              if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
+                                totalDays = (currHrs+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+                              }else{
+                                totalDays = "";
+                              }
                             }
                           	/*if (currHrs < 8)
                               totalDays = (currHrs+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");

@@ -80,19 +80,25 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.setLeaveDetails = func
     //check for full day or partial day
     if (data[0].no_of_hours < kony.apps.coe.ess.appconfig.workingHours && data[0].no_of_hours !== "") {
         if (data[0].no_of_hours === kony.apps.coe.ess.appconfig.workingHours) {
+          	frmLeaveRequestDetails.flxStartDate.isVisible=false;
             frmLeaveRequestDetails.lblLeaveTime.text = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.fullDay.valueKA");
         } else {
+          	frmLeaveRequestDetails.flxStartDate.isVisible=true;
             frmLeaveRequestDetails.lblLeaveTime.text = (parseFloat((data[0].no_of_hours),10).toFixed(2) + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.partial.valueKA");
+          	frmLeaveRequestDetails.lblFromToTime.text=data[0].start_time.substring(0, 2)+":"+data[0].start_time.substring(2, 4)+" - "+data[0].end_time.substring(0, 2)+":"+data[0].end_time.substring(2, 4);
         }
     } else {
         if (data[0].no_of_hours !== undefined && data[0].no_of_hours !== "") {
+          	frmLeaveRequestDetails.flxStartDate.isVisible=false;
             frmLeaveRequestDetails.lblLeaveTime.text = ((parseInt(data[0].no_of_hours) * 1) / kony.apps.coe.ess.appconfig.workingHours).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.fullDay.valueKA");
         } else {
             frmLeaveRequestDetails.lblLeaveTime.isVisible = false;
+          	frmLeaveRequestDetails.flxStartDate.isVisible=true;
             frmLeaveRequestDetails.lblFullDay.text = kony.i18n.getLocalizedString("i18n.ess.common.partial.valueKA");
+          	frmLeaveRequestDetails.lblFromToTime.text=data[0].start_time.substring(0, 2)+":"+data[0].start_time.substring(2, 4)+" - "+data[0].end_time.substring(0, 2)+":"+data[0].end_time.substring(2, 4);
         }
     }
 
@@ -673,11 +679,13 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.fetchAllAttachments = 
     try{
         var data = kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.AttachData;
         var i = kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.AttachIndex;
-        if (data[i].media_id !== undefined && data[i].media_id !== null) {
-            (new kony.apps.coe.ess.myLeave.media()).fetchAttachment({
-                "mediaName": data[i].media_id
-            }, kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.getAttachSuccess.bind(this, kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.AttachIndex), function(err){kony.print(JSON.stringify(err))});
-        }
+		if(i<data.length){
+			if (data[i].media_id !== undefined && data[i].media_id !== null) {
+				(new kony.apps.coe.ess.myLeave.media()).fetchAttachment({
+					"mediaName": data[i].media_id
+				}, kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.getAttachSuccess.bind(this, kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.AttachIndex), function(err){kony.print(JSON.stringify(err))});
+			}
+		}
     }catch(err){
         handleError(err);
         kony.print("---- in fetchAllAttachments");
@@ -800,13 +808,14 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.leaveRequestDetailsPre
  */
 kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.insertFetchedAttachment = function(index, response, callback) {
         kony.print("----img..." + JSON.stringify(response));
-        if (typeof response !== "undefined") {
+        if (typeof response !== "undefined" && response !== null && response !== undefined) {
             frmLeaveRequestDetails["imgProof" + index].rawBytes = kony.convertToRawBytes(response);
             frmLeaveRequestDetails["imgProof" + index].onTouchEnd=function(){
                 frmLeaveRequestDetails.imgBigImage.rawBytes=kony.convertToRawBytes(response);
                 frmLeaveRequestDetails.flxBigImage.isVisible=true;
               	frmLeaveRequestDetails.imgBigImage.isVisible=true;
             };
+  			callback();
         } else {
             frmLeaveRequestDetails["imgProof" + index].isVisible = false;
         }

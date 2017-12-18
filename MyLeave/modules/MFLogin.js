@@ -320,7 +320,7 @@ function userDetailsSucess(response) {
                             }, function(err) {
                                 kony.print("-----Error in getting employee id----" + err);
                             }, false);
-							kony.apps.coe.ess.locale.setLanguageServiceLocale();
+							kony.apps.coe.ess.locale.notificationLanguageServiceLocale();
                         };
                         var syncSessionFailure = function(err) {
                             //Incase of Any Sync Failure

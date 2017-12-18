@@ -1,0 +1,31 @@
+{
+    "AS_Segment_bc344c3a622a4c53be99f431e604b820": {
+        "id": "AS_Segment_bc344c3a622a4c53be99f431e604b820",
+        "type": "ACTION_SEQUENCE",
+        "name": "MyApprovalNotifictionSegmenrRowClick",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmNotificationsList",
+            "type": "forms",
+            "platform": "",
+            "KUID": "jae51f063a6f496c8bfbd8497876ecd3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f038484b8baa454f975d7989bef61c60",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.notifications.getNotificationHistoryInstance().showDetailsOfRequest();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

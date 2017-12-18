@@ -108,6 +108,50 @@ kony.apps.coe.ess.locale.setLanguageServiceLocale= function(){
     handleError(err);
   }, false);
 };
+
+kony.apps.coe.ess.locale.notificationLanguageServiceLocale=function(){
+  var objSvc = kony.sdk.getCurrentInstance().getObjectService("NotificationsLanguageService", {"access":"online"});
+  var dataObject = new kony.sdk.dto.DataObject("languageConfiguration");
+  var odataUrl = "$filter=okta_user_id eq "+kony.apps.coe.ess.frmLogin.username.toUpperCase();
+  dataObject.odataUrl = odataUrl;
+  var options = {"dataObject":dataObject};
+
+  objSvc.fetch(options,
+               function(res){kony.print("record::" + JSON.stringify(res["records"]));
+                             var date1= new Date();
+                             var timestamp = date1.getFullYear().toString().trim(0, 4) + "" + getTimeHourswithZero(date1.getMonth() + 1) + "" + getTimeHourswithZero(date1.getDate()) + "" + getTimeHourswithZero(date1.getHours()) + "" + getTimeHourswithZero(date1.getMinutes()) + "" + getTimeHourswithZero(date1.getSeconds());
+                             if(res["records"].length > 0){
+                               var updateService = kony.sdk.getCurrentInstance().getObjectService("NotificationsLanguageService", {"access":"online"});
+                               var dataObjectUpdate = new kony.sdk.dto.DataObject("languageConfiguration");
+                               dataObjectUpdate.addField("language",kony.i18n.getCurrentLocale().substring(0, 2));
+                               dataObjectUpdate.addField("lastmodifiedts",timestamp);
+                               dataObjectUpdate.addField("okta_user_id",kony.apps.coe.ess.frmLogin.username.toUpperCase());
+                               var optionsUpdate = {"dataObject":dataObjectUpdate};
+
+                               updateService.update(optionsUpdate,
+                                                    function(res){kony.print("Record updated");},
+                                                    function(err){kony.print("Error in record update"+JSON.stringify(err));}
+                                                   );
+                             }else{
+                               var createService = kony.sdk.getCurrentInstance().getObjectService("NotificationsLanguageService", {"access":"online"});
+                               var dataObjectCreate = new kony.sdk.dto.DataObject("languageConfiguration");
+                               dataObjectCreate.addField("language",kony.i18n.getCurrentLocale().substring(0, 2));
+                               dataObjectCreate.addField("lastmodifiedts",timestamp);
+                               dataObjectCreate.addField("okta_user_id",kony.apps.coe.ess.frmLogin.username.toUpperCase());
+                               var optionsCreate = {"dataObject":dataObjectCreate};
+
+                               createService.create(optionsCreate,
+                                                    function(res){kony.print("Record created");},
+                                                    function(err){kony.print("Error in record creation"+JSON.stringify(err));}
+                                                   );
+                             }
+                            },
+               function(err){kony.print("Failed to fetch : " + JSON.stringify(err));}
+              );
+
+}
+
+
 function getTimeHourswithZero(data){
   if(parseInt(data) < 10){
     return "0"+data;

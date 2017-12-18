@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "22%"
+        "value": "41dp"
     },
     "_left_": {
         "type": "string",
@@ -23,14 +23,14 @@
         0
     ],
     "_skin_": "s237cfa2ed9743beb8d0847c7a050c13",
-    "_text_": "Alexander Jonesg",
+    "_text_": "Alexander Jones",
     "_top_": {
         "type": "string",
-        "value": "9%"
+        "value": "9dp"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "55%"
     },
     "_wrapping_": 2,
     "android": {

@@ -1,9 +1,13 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_height_": {
+    "_bottom_": {
         "type": "string",
-        "value": "100%"
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -23,17 +27,17 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s683ad042e5b46aeb24863978910d785",
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "17.30%"
+        "value": "17%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
+    "autogrowmode": 1,
     "canUpdateUI": true,
     "children": [
         "imgStatus"
@@ -44,7 +48,7 @@
     "id": "flxLeaveStatus",
     "info": null,
     "isvisible": true,
-    "kuid": "h5adf62ce8b74ac49b1641f5c7b6c6a7",
+    "kuid": "b137d003a3004a35ac01ea22098a0d04",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flxLeaveSelected",
@@ -52,5 +56,6 @@
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1
+    "widgetalignment": 1,
+    "zindex": 1
 }

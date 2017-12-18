@@ -221,7 +221,7 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
     kony.print("-- Start getPendingData --");
     var currDate = new Date();
     var actualCurrYear = currDate.getFullYear().toString().trim(0, 4);
-    var query = "select l.employee_id,l.id,l.no_of_hours,l.lastmodifiedts,l.start_date,l.end_date,l.createdts,tr.TEXT_DISPLAY as name,s.Status_Name,lt.name as name1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),leave_type lt,Status s where l.leave_type_id = lt.id AND l.status_id = s.Id AND s.Status_Name like 'PENDING' and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " AND ((l.start_date between '" + (parseInt(actualCurrYear) - 1).toString() + "0101'" +
+    var query = "select l.employee_id,l.id,l.no_of_hours,l.LEAVE_DAYS AS leaveDays,l.lastmodifiedts,l.start_date,l.end_date,l.createdts,tr.TEXT_DISPLAY as name,s.Status_Name,lt.name as name1 from leave l LEFT JOIN translation tr ON ( l.leave_type_id = tr.TEXT_CODE),leave_type lt,Status s where l.leave_type_id = lt.id AND l.status_id = s.Id AND s.Status_Name like 'PENDING' and l.employee_id = " + kony.apps.coe.ess.globalVariables.employeeId + " AND ((l.start_date between '" + (parseInt(actualCurrYear) - 1).toString() + "0101'" +
         " AND '" + (parseInt(actualCurrYear) + 1).toString() + "1231')) AND tr.SPRAS like '"+kony.i18n.getCurrentLocale().substring(0, 2).toUpperCase()+"' order by l.start_date";
     kony.sync.single_select_execute(kony.sync.getDBName(), query, null, function (data) {
         var processedData = [];
@@ -231,6 +231,7 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
             pendingData.lblLeaveType = data[i].name;
             var sdate = data[i].start_date;
             var ldate = data[i].end_date;
+			var leaveaDays = data[i].leaveDays;
             var pendingDate = parseInt(sdate.substring(6, 8) * 1) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(sdate.substring(4, 6) * 1) - 1).toString()] +
                 " - " + parseInt(ldate.substring(6, 8) * 1) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(ldate.substring(4, 6) * 1) - 1).toString()];
             pendingData.lblDates = pendingDate;
@@ -263,6 +264,26 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
             //  pendingData.lblDays = ((parseInt(data[i].no_of_hours) * 1) / 7.5).toFixed() + " DAYS";
           	var currHrs = data[i].no_of_hours;
           	kony.print("currHrs is::"+currHrs);
+			if(leaveaDays !== undefined && leaveaDays !== null && leaveaDays !== ""){
+				if(leaveaDays === 1){
+					pendingData.lblDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
+				}else if(leaveaDays > 1){
+					pendingData.lblDays = leaveaDays + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+				}else{
+					if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
+					  pendingData.lblDays = (currHrs.toString() +" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+					}else{
+					  pendingData.lblDays = "";
+					}
+				}
+				
+			}else{
+				if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
+				  pendingData.lblDays = (currHrs.toString() +" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+				}else{
+				  pendingData.lblDays = "";
+				}
+			}
           	/*if (currHrs < 8)
               pendingData.lblDays = (currHrs.toString() + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
             else if(parseFloat(currHrs)===8){
@@ -271,12 +292,7 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
             else{
               pendingData.lblDays = ((currHrs * 1) / 8).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
             }*/
-          	if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
-              pendingData.lblDays = (currHrs.toString() + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
-            }else{
-              pendingData.lblDays = "";
-            }
-            pendingData.imgCal = "cal.png";
+          	pendingData.imgCal = "cal.png";
             pendingData.lblLine1 = " ";
             pendingData.flxEdit = "sknflxbg1C7393op100";
             pendingData.flxDelete = "sknflxbgFF6E5Fop100";

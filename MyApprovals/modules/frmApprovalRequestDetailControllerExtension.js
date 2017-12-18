@@ -77,6 +77,8 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					"       approval_request.request_date      AS RequestDate," +
                     "       approval_request.leave_hours       AS Leave_hours," +
                     "       approval_request.leave_days        AS Leave_days," +
+                    "       approval_request.from_time         AS StartTime," +
+                    "       approval_request.end_time          AS EndTime," +
 					"       employee.first_name                AS FirstName," +
                     "		employee.Media_Id				   AS MediaID,	"+
 					"       employee.last_name                 AS LastName," +

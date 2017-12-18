@@ -56,6 +56,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
                 "statusFlx": ""
             };
         ApprovalrequestDetail=ContextData;
+      alert("soumya details"+JSON.stringify(ApprovalrequestDetail));
             //status Ui changes
         ApprovalrequestDetail.statusText = {
             "text": status_keys[ContextData.StatusId]
@@ -102,7 +103,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
                     "text": kony.i18n.getLocalizedString("i18n.ess.frmApprovalRequestDetail.Title.Leave")
                 };
                 ApprovalrequestDetail.RequesedInfoDetail = {
-                    "text": ""
+                    "text": ContextData.RequesedInfoDetail
                 };
                 break;
             case "TIMESHEET":
