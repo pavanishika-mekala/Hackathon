@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__5399d259cdab4547994ba515d526154a",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "frmApplyLeave.flxCameraOptions.isVisible = false;\nkony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture(frmApplyLeave.camTakePicture.base64);",
+            "codeSnippet": "frmApplyLeave.flxCameraOptions.isVisible = false;\nkony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture(frmApplyLeave.camTakePicture.base64,\"\");",
             "parentId": null,
             "callbackType": null
         }]

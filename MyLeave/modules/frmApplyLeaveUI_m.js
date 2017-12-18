@@ -828,20 +828,24 @@ kony.apps.coe.ess.myLeave.applyLeave.Attachment = {
       });
 
   },
-
-  onClickOfTakePicture: function(base64String) {
+	// media id attached for multiple attachment issue
+  onClickOfTakePicture: function(base64String,mediaid) {
 
     kony.application.showLoadingScreen(null, "Loading", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, false, true, {
       enableMenuKey: false,
       enableBackKey: false
     });
+    var mediaidval=null;
+    if(mediaid != ""){
+      mediaidval=mediaid;
+    }
     if (base64String !== null) {
       var proofImage = kony.convertToRawBytes(base64String);
       this.proofData.push({
         "imgProof": base64String,
         "id": "",
         "leave_id": null,
-        "media_id": null
+        "media_id": mediaidval
       });
       kony.apps.coe.ess.myLeave.applyLeave.AddAttachment.add(this.proofData);
       kony.application.dismissLoadingScreen();
@@ -852,7 +856,7 @@ kony.apps.coe.ess.myLeave.applyLeave.Attachment = {
     if (rawBytes !== null) {
       var base64 = kony.convertToBase64(rawBytes);
       if ((base64 !== null) && (base64 !== undefined) && (base64 !== "")) {
-        this.onClickOfTakePicture(base64);
+        this.onClickOfTakePicture(base64,"");
       } else if (permissionStatus == kony.application.PERMISSION_DENIED) {
         alert("Permission Denied to Access the Photo Gallery");
       } else {
@@ -1493,7 +1497,7 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
     }
     if (kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData.length > 0 && kony.apps.coe.ess.myLeave.applyLeave.submitLeave.imgIndex < kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData.length) {
       var i = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.imgIndex;
-      if (kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].leave_id === null) {
+      if (kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].leave_id === null && kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].media_id === null) {
         (new kony.apps.coe.ess.myLeave.media()).updateBinaryContent(kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].imgProof, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.multipleImageUploadSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.mediaError.bind(this, dataToForward, dates, holidayResponse));
       } else {
         kony.apps.coe.ess.myLeave.applyLeave.submitLeave.multipleImageUploadSuccess(dataToForward, dates, holidayResponse);
