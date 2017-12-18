@@ -3,17 +3,13 @@
     "DNDConfig": null,
     "__markedForDelete__": true,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_margin_": [
         1,
@@ -29,6 +25,10 @@
     ],
     "_skin_": "sb21eb2c829b40c2aea2333bf2195f10",
     "_text_": "20 May - 22 May",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -56,10 +56,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "d06b6863d0094fe79895d48590228851",
+    "kuid": "c5869c9016a74ef6b7dcb641294e70ee",
     "name": "kony.ui.Label",
     "parent": "flxLeaveDateAndTime",
     "pf": "frmLeaveRequestDetails",
     "tooltip": "",
-    "wType": "Label"
+    "wType": "Label",
+    "zindex": 1
 }

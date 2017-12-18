@@ -1,15 +1,16 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_base64_": null,
-    "_height_": {
+    "_bottom_": {
         "type": "string",
-        "value": "100%"
+        "value": "0dp"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -27,21 +28,13 @@
     "_src_": "cautionsymbolwithfill.png",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "context": {
         "channel": "mobile",
@@ -53,12 +46,14 @@
     "id": "imgStatus",
     "imagescalemode": 0,
     "info": null,
+    "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "48d03f58a03d49ad99321c5adc30d4be",
+    "kuid": "a3aa09a0f39c438888cd96d6bc03f634",
     "name": "kony.ui.Image2",
     "parent": "flxLeaveStatus",
     "pf": "frmLeaveRequestDetails",
     "srcType": 1,
     "wType": "Image",
-    "widgetalignment": 5
+    "widgetalignment": 5,
+    "zindex": 1
 }

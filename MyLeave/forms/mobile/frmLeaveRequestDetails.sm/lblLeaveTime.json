@@ -1,12 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
-    "_bottom_": {
-        "type": "string",
-        "value": "0px"
-    },
     "_height_": {
         "type": "ref",
         "value": "preferred"
@@ -29,6 +24,10 @@
     ],
     "_skin_": "se53fb8e0bbb4368b1aa515ff2bd9839",
     "_text_": "3 Days",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -56,7 +55,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "96a3d964570a4051bd1a5c029471e379",
+    "kuid": "b58b4ab6929547ae85d86bed5d7cb42f",
     "name": "kony.ui.Label",
     "paddinginpixel": false,
     "parent": "flxLeaveDateAndTime",

@@ -1,6 +1,5 @@
 {
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -8,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "1%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -27,11 +26,11 @@
     "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "1%"
+        "value": "10dp"
     },
     "_width_": {
         "type": "string",
-        "value": "99%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 1,
@@ -46,10 +45,10 @@
     "id": "flxLeaveDateAndTime",
     "info": null,
     "isvisible": true,
-    "kuid": "1f7a70db20234744a551f272863e957a",
+    "kuid": "gb228a67f456489e89093affe06c0f2c",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxDetails",
+    "parent": "flxLeaveInfo",
     "pf": "frmLeaveRequestDetails",
     "snapgridsize": 10,
     "snaptogrid": true,
