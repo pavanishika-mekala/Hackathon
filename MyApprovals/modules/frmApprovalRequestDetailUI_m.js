@@ -56,8 +56,7 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.ProcessData = function(requ
                 "statusFlx": ""
             };
         ApprovalrequestDetail=ContextData;
-      alert("soumya details"+JSON.stringify(ApprovalrequestDetail));
-            //status Ui changes
+        //status Ui changes
         ApprovalrequestDetail.statusText = {
             "text": status_keys[ContextData.StatusId]
         };
