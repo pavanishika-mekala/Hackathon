@@ -78,7 +78,7 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.prototype.setLeaveDetails = func
     frmLeaveRequestDetails.lblSelectedLeaveStatusOtherDate.text = lastlbl;
 
     //check for full day or partial day
-    if (data[0].no_of_hours < kony.apps.coe.ess.appconfig.workingHours && data[0].no_of_hours !== "") {
+    if (data[0].no_of_hours <= kony.apps.coe.ess.appconfig.workingHours && data[0].no_of_hours !== "") {
         if (data[0].no_of_hours === kony.apps.coe.ess.appconfig.workingHours) {
           	frmLeaveRequestDetails.flxStartDate.isVisible=false;
             frmLeaveRequestDetails.lblLeaveTime.text = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
