@@ -149,7 +149,7 @@ kony.apps.coe.ess.locale.notificationLanguageServiceLocale=function(){
                              }
                             },
                function(err){kony.print("Failed to fetch : " + JSON.stringify(err));
-                             alert("unable to set the language in notification service");
+                             //alert("unable to set the language in notification service");
                             }
               );
 
