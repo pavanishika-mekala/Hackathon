@@ -19,58 +19,62 @@ kony.apps.coe.ess.isLogoutOptionSelected = false;
  * @description    Create flexes and assign actions
  */
 kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
-    kony.print("-- Start Hamburger constructor --");
-    // Input validations.
-    if (hamburgerButton == undefined) {
-        kony.print("Ignoring Error: input hamburgerButton is undefined.");
+    try {
+        kony.print("-- Start Hamburger constructor --");
+        // Input validations.
+        if (hamburgerButton == undefined) {
+            kony.print("Ignoring Error: input hamburgerButton is undefined.");
+        }
+        this.isFirstClick = true;
+        this.isHamburgerVisible = false;
+        kony.application.getCurrentForm().enableScrolling = false;
+        var succCallback = this.generateShadow;
+        var callBackForHamburger = this.applyActions.bind(this);
+        this.generateContainer(succCallback);
+        this.generateHamburger(callBackForHamburger);
+        var scopeObj = this;
+        kony.application.getCurrentForm().flxHamburger.setEnabled(false);
+        this.hamburgerMenuItemsShow();
+        if (hamburgerButton != undefined) {
+            hamburgerButton.onClick = function() {
+                kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.lblWelcome") + " \n" + kony.apps.coe.ess.globalVariables.employeeName; //kony.apps.coe.ess.frmLogin.username;
+                kony.print("-- Start hamburgerButton.onClick --");
+                this.hamburgerMenuItemsShow();
+                // Disable clicking on Hamburger.
+                if (kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.isVisible) {
+                    kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(true); // Enable clicking on Hamburger menu items.
+                    kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.setVisibility(false);
+                }
+                if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
+                    kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = kony.i18n.getLocalizedString("i18n.ess.Login.appOnline"); //"APP ONLINE";
+                } else {
+                    kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = kony.i18n.getLocalizedString("i18n.ess.Login.appOffline"); //"APP OFFLINE";
+                }
+                if (scopeObj.isHamburgerVisible == false) {
+                    kony.application.getCurrentForm().flxHamburger.setEnabled(true);
+                    scopeObj.isHamburgerVisible = true;
+                    var showBrgr = scopeObj.showHamburger.bind(scopeObj);
+                    showBrgr();
+                    var settingButton = kony.application.getCurrentForm().flxSettings;
+                    settingButton.onClick = settingButton.onClick.bind(scopeObj);
+                } else {
+                    kony.application.getCurrentForm().flxHamburger.setEnabled(false);
+                    scopeObj.isHamburgerVisible = false;
+                    var hideBrgr = scopeObj.hideHamburger;
+                    hideBrgr();
+                }
+                kony.print("-- End hamburgerButton.onClick --");
+            }.bind(scopeObj);
+            if (this.isFirstClick == true) {
+                this.isFirstClick = false;
+                kony.print("-- Hamburger menu is called first time --");
+                hamburgerButton.onClick();
+            }
+        } // end of if hamburgerButton != undefined.
+        kony.print("-- End Hamburger constructor --");
+    } catch (err) {
+		kony.print("Error is:;"+err);
     }
-    this.isFirstClick = true;
-    this.isHamburgerVisible = false;
-    kony.application.getCurrentForm().enableScrolling = false;
-    var succCallback = this.generateShadow;
-    var callBackForHamburger = this.applyActions.bind(this);
-    this.generateContainer(succCallback);
-    this.generateHamburger(callBackForHamburger);
-    var scopeObj = this;
-    kony.application.getCurrentForm().flxHamburger.setEnabled(false);
-    this.hamburgerMenuItemsShow();
-    if (hamburgerButton != undefined) {
-        hamburgerButton.onClick = function() {
-          kony.application.getCurrentForm().flxHamburger.lblUsername.text = kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.lblWelcome")+" \n"+kony.apps.coe.ess.globalVariables.employeeName;//kony.apps.coe.ess.frmLogin.username;
-        kony.print("-- Start hamburgerButton.onClick --");
-			this.hamburgerMenuItemsShow();
-            // Disable clicking on Hamburger.
-              if (kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.isVisible) {
-                kony.application.getCurrentForm().flxHamburger.flxMenuHamburger.setEnabled(true); // Enable clicking on Hamburger menu items.
-                kony.application.getCurrentForm().flxHamburger.flxOfflineAlert.setVisibility(false);
-            }
-            if (kony.net.isNetworkAvailable(constants.NETWORK_TYPE_ANY)) {
-                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = kony.i18n.getLocalizedString("i18n.ess.Login.appOnline");//"APP ONLINE";
-            } else {
-                kony.application.getCurrentForm().flxHamburger.lblAppOnline.text = kony.i18n.getLocalizedString("i18n.ess.Login.appOffline");//"APP OFFLINE";
-            }
-            if (scopeObj.isHamburgerVisible == false) {
-                kony.application.getCurrentForm().flxHamburger.setEnabled(true);
-                scopeObj.isHamburgerVisible = true;
-                var showBrgr = scopeObj.showHamburger.bind(scopeObj);
-                showBrgr();
-                var settingButton = kony.application.getCurrentForm().flxSettings;
-                settingButton.onClick = settingButton.onClick.bind(scopeObj);
-            } else {
-                kony.application.getCurrentForm().flxHamburger.setEnabled(false);
-                scopeObj.isHamburgerVisible = false;
-                var hideBrgr = scopeObj.hideHamburger;
-                hideBrgr();
-            }
-            kony.print("-- End hamburgerButton.onClick --");
-        }.bind(scopeObj);
-         if (this.isFirstClick == true) {
-             this.isFirstClick = false;
-             kony.print("-- Hamburger menu is called first time --");
-             hamburgerButton.onClick();
-         }
-    } // end of if hamburgerButton != undefined.
-    kony.print("-- End Hamburger constructor --");
 }
 /**
  * @class          Hamburger
