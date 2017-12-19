@@ -54,14 +54,15 @@ onClickOfIndefiniteBtn = function() {
     kony.print("--Start: kony.apps.coe.ess.Approvals.DelegationRequestCreate.Actions.prototype.onClickOfIndefiniteBtn--");
     function callback(isChecked) {
         var fromDate = frmDelegationRequestCreate.clndFromDate;
+      	kony.print("fromDate is::"+fromDate);
         if(isChecked) {
-          	frmDelegationRequestCreate.clndToDate.date = [fromDate.day, fromDate.month - 1, fromDate.year+1];
-          	frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month - 1, fromDate.year+1];
+          	frmDelegationRequestCreate.clndToDate.date = [fromDate.day, fromDate.month, fromDate.year+1];
+          	frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month, fromDate.year+1];
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().disableToDate();
         } else {
-          	frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month - 1, fromDate.year+50];
+          	frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month, fromDate.year+50];
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().enableToDate();
-          	frmDelegationRequestCreate.clndToDate.date = [fromDate.day+6, fromDate.month - 1, fromDate.year];
+          	frmDelegationRequestCreate.clndToDate.date = [fromDate.day+6, fromDate.month, fromDate.year];
         }
     }
     try {
@@ -109,7 +110,7 @@ onSelectionOfDateInFromCalendar = function() {
       	if(kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().isIndefinteBtnChecked()){
           var frmDate = frmDelegationRequestCreate.clndFromDate;
           frmDelegationRequestCreate.flxToDate.setEnabled(true);
-          frmDelegationRequestCreate.clndToDate.date = [frmDate.day, frmDate.month - 1, frmDate.year+1];
+          frmDelegationRequestCreate.clndToDate.date = [frmDate.day, frmDate.month, frmDate.year+1];
           frmDelegationRequestCreate.flxToDate.setEnabled(false);
         }
         kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().setLowerLimitOnToCalendar(fromDate);
