@@ -1255,7 +1255,10 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
       }
 	  var workingHours = Number(kony.apps.coe.ess.appconfig.workingHours);
       var halfDayHours = leaveEntryData.no_of_hours; 
-      if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
+      // if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman"){
+        // halfDayHours = Number(halfDayHours)/workingHours;
+      // }
+	  if(frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman" ||  frmApplyLeave.btnFullDay.skin == "sknBtnBg1C7393S28pxRoman"){
         halfDayHours = Number(halfDayHours)/workingHours;
       }
       var balance = frmApplyLeave.lblLeaveBalanceCount.text;
@@ -1264,9 +1267,9 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
         alert(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.DurationExceedWarning")+" "+ Number(workingHours/2)  );//"Please select duration hours less than or equal to 4");
       }else if(Number(leaveEntryData.no_of_hours) <= 0){
         alert(kony.i18n.getLocalizedString("i18n.ess.myLeave.frmApplyLeave.warningOnSubmit")); //("Please select a valid time duration");
-      }else if(Number(leaveEntryData.no_of_hours) > Number(balance) && frmApplyLeave.btnHalfDay.skin !== "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){        
+      }else if(Number(leaveEntryData.no_of_hours) > Number(balance) && frmApplyLeave.btnHours.skin == "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){        
         toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.insufficientBalance") , 4000);
-      }else if(Number(halfDayHours) > Number(balance) && frmApplyLeave.btnHalfDay.skin == "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){
+      }else if(Number(halfDayHours) > Number(balance) && frmApplyLeave.btnHours.skin !== "sknBtnBg1C7393S28pxRoman" && kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType !== "XABS"){
         toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.MyLeave.frmApplyLeave.insufficientBalance") , 4000);
       }else{
         dataToForward.start_date = leaveEntryData.start_date;
