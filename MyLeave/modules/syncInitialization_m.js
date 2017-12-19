@@ -55,58 +55,61 @@ kony.apps.coe.ess.Sync.startSyncSession = function (successCallback, failureCall
 			successCallback(res);
 		}
 	};
-	config.onsyncerror = function (err) {
-      //To increment sync count to check whether it is failing more than 3 times
-		kony.apps.coe.ess.globalVariables.syncCount += 1;
-		//Sync Session Encountered an Error
-		kony.print("Sync Session encountered an error : " + JSON.stringify(err));
-		//Validate error object
-		if (err && err.errorCode + "" === "7022" && err.errorInfo) {
-			//We do not know whihc scope will throw error. So, Find scope name through Object.keys
-			var scopeName = Object.keys(err.errorInfo)[0];
-			//Validate scopeName & ErrorCode
-			if (scopeName && err.errorInfo[scopeName].errorCode === "SY0000E") {
-				//Validate errorMessage
-				if (err.errorInfo[scopeName].errorMessage && err.errorInfo[scopeName].errorMessage.toLowerCase().match(/session|token/)) {
-					//handle token expairy issue
-					kony.apps.coe.ess.frmLogin.handleSessionExpairyError();
-				}
-			}
-		}
-		//When sync fails continuously more than three times automatically it will reset and resync
-      if (kony.apps.coe.ess.globalVariables.syncCount && kony.apps.coe.ess.globalVariables.syncCount > 3) {
-        var successCall = function () {
-          var syncSuccess = function () {
-            kony.application.dismissLoadingScreen();
-            kony.apps.coe.ess.Sync.UI.stopSyncProgressBar();
-            var currentForm = kony.application.getCurrentForm();
-            if (currentForm == frmDummy || currentForm == frmLogin) {
-              frmlogin.show();
-            } else {
-                var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmLeaveHome");
-    			formController.loadDataAndShowForm();
+	config.onsyncerror = function(err) {
+    //To increment sync count to check whether it is failing more than 3 times
+    kony.apps.coe.ess.globalVariables.syncCount += 1;
+    //Sync Session Encountered an Error
+    kony.print("Sync Session encountered an error : " + JSON.stringify(err));
+    //Validate error object
+    if (err && err.errorCode + "" === "7022" && err.errorInfo) {
+        //We do not know whihc scope will throw error. So, Find scope name through Object.keys
+        var scopeName = Object.keys(err.errorInfo)[0];
+        //Validate scopeName & ErrorCode
+        if (scopeName && err.errorInfo[scopeName].errorCode === "SY0000E") {
+            //Validate errorMessage
+            if (err.errorInfo[scopeName].errorMessage && err.errorInfo[scopeName].errorMessage.toLowerCase().match(/session|token/)) {
+                //handle token expairy issue
+                kony.apps.coe.ess.frmLogin.handleSessionExpairyError();
             }
-          };
-          var syncFailed = function (err) {
-            kony.application.dismissLoadingScreen();
-            kony.apps.coe.ess.Sync.UI.stopSyncProgressBar();
-            handleError(err);
-          };
-          kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
-          kony.apps.coe.ess.Sync.UI.startSyncProgressBar();
-          kony.apps.coe.ess.Sync.doDownload = true;
-          kony.apps.coe.ess.Sync.startSyncSession(syncSuccess, syncFailed);
+        }
+    }else{
+      kony.application.dismissLoadingScreen();
+      handleError(kony.i18n.getLocalizedString("i18n.ess.common.genericErrorMsg.valueKA"));
+    }
+    //When sync fails continuously more than three times automatically it will reset and resync
+    /*if (kony.apps.coe.ess.globalVariables.syncCount && kony.apps.coe.ess.globalVariables.syncCount > 3) {
+        var successCall = function() {
+            var syncSuccess = function() {
+                kony.application.dismissLoadingScreen();
+                kony.apps.coe.ess.Sync.UI.stopSyncProgressBar();
+                var currentForm = kony.application.getCurrentForm();
+                if (currentForm == frmDummy || currentForm == frmLogin) {
+                    frmlogin.show();
+                } else {
+                    var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController("frmLeaveHome");
+                    formController.loadDataAndShowForm();
+                }
+            };
+            var syncFailed = function(err) {
+                kony.application.dismissLoadingScreen();
+                kony.apps.coe.ess.Sync.UI.stopSyncProgressBar();
+                handleError(err);
+            };
+            kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
+            kony.apps.coe.ess.Sync.UI.startSyncProgressBar();
+            kony.apps.coe.ess.Sync.doDownload = true;
+            kony.apps.coe.ess.Sync.startSyncSession(syncSuccess, syncFailed);
         };
-        var failureCall = function () {
-          handleError(kony.i18n.getLocalizedString("i18n.ess.common.handleError"));
+        var failureCall = function() {
+            handleError(kony.i18n.getLocalizedString("i18n.ess.common.handleError"));
         };
         kony.apps.coe.ess.Sync.resetSyncDb(successCall, failureCall);
-      }
+    }*/
 
-		if (failureCallback) {
-			kony.apps.coe.ess.Sync.doDownload = false;
-			failureCallback(err);
-		}
+    if (failureCallback) {
+        kony.apps.coe.ess.Sync.doDownload = false;
+        failureCallback(err);
+    }
 
 	};
 
@@ -245,8 +248,12 @@ kony.apps.coe.ess.Sync.deltaSync=function(){
   }
     kony.print("-- Completed auto sync from deltaSync --");
   };//.bind(this);
+  var errorCallback = function(res) {
+    kony.application.dismissLoadingScreen();
+    alert("inside autosync error::"+JSON.stringify(res));
+  };
   if (kony.application.getCurrentForm().id != "frmLogin") {
-  kony.apps.coe.ess.frmLogin.manualSyncOnClick(successCallback);
+  kony.apps.coe.ess.frmLogin.manualSyncOnClick(successCallback,errorCallback);
   }
   kony.print("-- End deltaSync.function --");
 };

@@ -73,12 +73,16 @@ kony.apps.coe.ess.Sync.startSyncSession = function (successCallback, failureCall
 						kony.apps.coe.ess.frmLogin.handleSessionExpairyError();
 					}
 				}
-			}
+			}else{
+              kony.application.dismissLoadingScreen();
+              handleError(kony.i18n.getLocalizedString("i18n.ess.myApproval.genericErrorMsg.text"));
+            }
 		} catch (e) {
           alert(e.message);
 			kony.print("--Exception occured while validating Error Object - kony.apps.coe.ess.Sync.startSyncSession : " + JSON.stringify(e));
 		}
       
+      /*
       //When sync fails continuously more than three times automatically it will reset and resync
       if (kony.apps.coe.ess.globalVariables.syncCount && kony.apps.coe.ess.globalVariables.syncCount > 3) {
         var successCall = function () {
@@ -107,7 +111,7 @@ kony.apps.coe.ess.Sync.startSyncSession = function (successCallback, failureCall
           handleError(kony.i18n.getLocalizedString("i18n.ess.common.handleError"));
         };
         kony.apps.coe.ess.Sync.resetSyncDb(successCall, failureCall);
-      }
+      }*/
 
 		if (failureCallback) {
 			kony.apps.coe.ess.Sync.doDownload = false;
