@@ -19,6 +19,7 @@ kony.apps.coe.ess.isLogoutOptionSelected=false;
  * @description    Create flexes and assign actions
  */
 kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
+  try{
     kony.print("-- Start Hamburger constructor --");
     // Input validations.
     if (hamburgerButton == undefined) {
@@ -72,6 +73,9 @@ kony.apps.coe.ess.Hamburger = function(hamburgerButton) {
          }
     } // end of if hamburgerButton != undefined.
     kony.print("-- End Hamburger constructor --");
+  }catch(err){
+    kony.print("Error inside hammenu click::"+JSON.stringify(err));
+  }
 }
 /**
  * @class          Hamburger
