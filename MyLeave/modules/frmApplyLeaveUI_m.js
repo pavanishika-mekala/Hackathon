@@ -2152,13 +2152,14 @@ kony.apps.coe.ess.myLeave.applyLeave.showTimePicker = function(selectionEvent) {
 //Dismissing TimePicker form
 kony.apps.coe.ess.myLeave.applyLeave.dismissTimePicker = function(event) {
   frmApplyLeave.flxTimeLayout.isVisible = false;
+  var temp;
   if(frmApplyLeave.pickTime.isVisible === true){
     var selection = frmApplyLeave.pickTime.selectedKeyValues;
     frmApplyLeave.btnFrom.text = selection[0][1]+":"+selection[1][1];
     if(frmApplyLeave.btnHours.skin === "sknBtnBg1C7393S28pxRoman"){
-      var temp=parseInt(selection[0][1])+2;
+      temp = parseInt(selection[0][1])+2;
     }else{
-    var temp=parseInt(selection[0][1])+4;
+    	temp = parseInt(selection[0][1])+4;
     }
     if(temp >23){
       temp=temp-23;
@@ -2201,7 +2202,7 @@ kony.apps.coe.ess.myLeave.applyLeave.diffinTimeSelected = function(hrStart,minSt
   var start = new Date(fromYear,fromMonth,fromDate, hrStart, minStart, 0).getTime();
   var end = new Date(toYear,toMonth,toDate, hrEnd, minEnd, 0).getTime();
   var hours = (Number(end)-Number(start))/(1000*60*60);
-  hours = Math.abs(hours);
+ // hours = Math.abs(hours);
   var btnToText;
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.start_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(hr);
   kony.apps.coe.ess.myLeave.applyLeave.fullDayHoursSelection.end_time = kony.apps.coe.ess.myLeave.applyLeave.updateTimeWithMins(min);
