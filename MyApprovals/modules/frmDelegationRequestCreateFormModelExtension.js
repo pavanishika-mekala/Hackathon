@@ -28,5 +28,11 @@ kony.sdk.mvvm.frmDelegationRequestCreateFormModelExtension = Class({
     formatUI: function() {
         //TO-DO add custom formatting
       kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().showIndefiniteBtn();
+      var toDaysDate = new Date();
+      var year = toDaysDate.getFullYear()
+      var date = toDaysDate.getDate();
+      var month = toDaysDate.getMonth();
+      frmDelegationRequestCreate.clndFromDate.validEndDate = [date, month+1, year+1];
+      kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().enableToDate();
     }
 });

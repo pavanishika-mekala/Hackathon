@@ -268,10 +268,19 @@ function userDetailsSucess(response) {
 //                                 //#endif
                             }
                             updateSyncDate();
+                          	var success = function () {
+                              frmSettings.imgPushNotification.src = "on.png";
+                              kony.application.dismissLoadingScreen();
+                            };
+                            var failure = function () {
+                              frmSettings.imgPushNotification.src = "off.png"
+                              toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.common.errorOnEnableNotifications"), 3000);
+                              kony.application.dismissLoadingScreen();
+                            };
                             if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
                                 kony.apps.coe.ess.globalVariables.updateTabEmployeeID(); // open approvals dashboard form
                               if (isNewUser) {
-                                    kony.apps.coe.ess.KMS.enablePushNotifications();
+                                    kony.apps.coe.ess.KMS.enablePushNotifications(success.bind(this), failure);
                                 }
                             } else {
                                 kony.apps.coe.ess.Approvals.Footer.SetFocus(1);
@@ -302,7 +311,7 @@ function userDetailsSucess(response) {
                                     });
                                 kony.apps.coe.ess.globalVariables.Status.updateStatus();
                                 if (isNewUser) {
-                                    kony.apps.coe.ess.KMS.enablePushNotifications();
+                                  	kony.apps.coe.ess.KMS.enablePushNotifications(success.bind(this), failure);
                                 }
                                 kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
                             }

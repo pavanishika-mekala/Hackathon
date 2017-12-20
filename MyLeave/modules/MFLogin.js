@@ -311,8 +311,17 @@ function userDetailsSucess(response) {
                                     (new kony.apps.coe.ess.myLeaveTab.MyLeaveDashboard()).isValidMonthandYearforCalender();
                                     showTabLeaveDashboardForm();
                                     }
+                              	var successEnablePush = function() {
+                                  frmSettings.imgPushNotification.src = "on.png";
+                                  kony.application.dismissLoadingScreen();
+                                };
+                                var failureEnablePush = function() {
+                                  frmSettings.imgPushNotification.src = "off.png";
+                                  toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.common.errorOnEnableNotifications"), 3000);
+                                  kony.application.dismissLoadingScreen();
+                                };
                                 if (isNewUser) {
-                                    kony.apps.coe.ess.KMS.enablePushNotifications();
+                                  	kony.apps.coe.ess.KMS.enablePushNotifications(successEnablePush.bind(this), failureEnablePush);
                                 }
                                 kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
 
