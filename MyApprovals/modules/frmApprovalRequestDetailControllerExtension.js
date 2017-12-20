@@ -46,7 +46,8 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					"       FROM   [request_note]" +
 					"       LEFT JOIN [Employee] ON ([Employee].[Id] = [request_note].[employee_id])" +
 					"       WHERE  [request_note].[approval_id] = '" + selectedApprovalID + "' " +
-                	"       order by  [request_note].[createdts]";
+                	" group by [Employee].[Id]"+
+                    "       order by  [request_note].[createdts]";
 
 				//user attachments retrival query
 				var UserAttachmentsQuery = "SELECT [approval_attachment].[id] AS [ID],  " +

@@ -28,7 +28,7 @@ kony.sdk.mvvm.frmAuditTrailControllerExtension = Class(kony.sdk.mvvm.BaseFormCon
             var scopeObj = this;
             var requestId = kony.apps.coe.ess.globalVariables.ApprovalRequestDetailData.RequestDetials.ID;
             kony.sdk.mvvm.KonyApplicationContext.showLoadingScreen(kony.i18n.getLocalizedString("i18n.ess.common.loadingForm"));
-            var query = "select aa.*, emp.First_Name as First_Name,emp.Last_Name as Last_Name from approval_audit aa left join Employee emp on aa.employee_id = emp.Id where aa.request_id = '" + requestId + "';";
+            var query = "select aa.*, emp.First_Name as First_Name,emp.Last_Name as Last_Name from approval_audit aa left join Employee emp on aa.employee_id = emp.Id where aa.request_id = '" + requestId + "' group by emp.Id;";
             kony.apps.coe.ess.MVVM.executeDBQuery("MYAPPROVALS", query, successCallbackForAuditRecords, error);
         } catch (err) {
             kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
