@@ -241,16 +241,19 @@ kony.apps.coe.ess.Sync.deltaSync=function(){
   var successCallback = function() {
     var formController = kony.sdk.mvvm.KonyApplicationContext.getAppInstance().getFormController(kony.application.getCurrentForm().id);
     kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.myLeave.sync.Refreshing"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
-	if (kony.application.getCurrentForm().id != "frmApplyLeave") {
+    if(kony.application.getCurrentForm().id == "frmLeaveRequestDetails"){
+      kony.apps.coe.ess.myLeave.leaveRequestDetails.showForm(kony.apps.coe.ess.myLeave.leaveRequestDetails.leave_id);
+    }else if (kony.application.getCurrentForm().id != "frmApplyLeave") {
 		formController.loadDataAndShowForm();
-	}else{
+	} 
+    else{
 		kony.application.dismissLoadingScreen();
   }
     kony.print("-- Completed auto sync from deltaSync --");
   };//.bind(this);
   var errorCallback = function(res) {
     kony.application.dismissLoadingScreen();
-    alert("inside autosync error::"+JSON.stringify(res));
+    kony.print("inside autosync error::"+JSON.stringify(res));
   };
   if (kony.application.getCurrentForm().id != "frmLogin") {
   kony.apps.coe.ess.frmLogin.manualSyncOnClick(successCallback,errorCallback);

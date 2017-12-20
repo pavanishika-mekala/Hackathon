@@ -704,8 +704,8 @@ kony.apps.coe.ess.myLeave.leaveRequestDetailsUI.getAttachSuccess = function(inde
         }
         obj.insertFetchedAttachment(index, response, successCallback);
     } else {
-        frmLeaveRequestDetails.flxAttachment.isVisible = "false";
-        frmLeaveRequestDetails.segComments.height = "77.82%";
+       // frmLeaveRequestDetails.flxAttachment.isVisible = "false";
+        //frmLeaveRequestDetails.segComments.height = "77.82%";
     }
 };
 
