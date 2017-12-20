@@ -1,0 +1,48 @@
+{
+    "classname": "ColorPalette",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i8e1a8c6c6054816972e640870ff4306",
+                    "paramList": [
+                        {
+                            "name": "entry"
+                        }
+                    ],
+                    "propertyKey": "add",
+                    "pw": {
+                        "displayName": "add",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ecd9360aed3e40a6943462556bbe39b0",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Hackathon",
+    "version": "1.0.0"
+}
