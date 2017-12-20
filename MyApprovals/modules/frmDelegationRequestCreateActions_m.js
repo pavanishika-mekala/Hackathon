@@ -55,12 +55,11 @@ onClickOfIndefiniteBtn = function() {
     function callback(isChecked) {
         var fromDate = frmDelegationRequestCreate.clndFromDate;
       	kony.print("fromDate is::"+fromDate);
+      	//frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month, fromDate.year+1];
         if(isChecked) {
-          	frmDelegationRequestCreate.clndToDate.date = [fromDate.day, fromDate.month, fromDate.year+1];
-          	frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month, fromDate.year+1];
+          	frmDelegationRequestCreate.clndToDate.date = [fromDate.day-1, fromDate.month, fromDate.year+1];
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().disableToDate();
         } else {
-          	frmDelegationRequestCreate.clndFromDate.validEndDate = [fromDate.day, fromDate.month, fromDate.year+50];
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().enableToDate();
           	frmDelegationRequestCreate.clndToDate.date = [fromDate.day+6, fromDate.month, fromDate.year];
         }
@@ -107,8 +106,10 @@ onSelectionOfDateInFromCalendar = function() {
         if(toDate <= fromDate) {
             kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().setDateInToCalendar(fromDate);
         }
+      	var frmDate = frmDelegationRequestCreate.clndFromDate;
+      	frmDelegationRequestCreate.clndToDate.validEndDate = [frmDate.day, frmDate.month, frmDate.year+1]
       	if(kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().isIndefinteBtnChecked()){
-          var frmDate = frmDelegationRequestCreate.clndFromDate;
+          //var frmDate = frmDelegationRequestCreate.clndFromDate;
           frmDelegationRequestCreate.flxToDate.setEnabled(true);
           frmDelegationRequestCreate.clndToDate.date = [frmDate.day, frmDate.month, frmDate.year+1];
           frmDelegationRequestCreate.flxToDate.setEnabled(false);
