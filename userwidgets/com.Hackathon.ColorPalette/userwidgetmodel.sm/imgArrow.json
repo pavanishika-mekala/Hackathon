@@ -45,7 +45,7 @@
     "id": "imgArrow",
     "imagescalemode": 1,
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "i97e15c02f994d89bac182bb20849328",
     "name": "kony.ui.Image2",
     "parent": "flxHomePalette",
