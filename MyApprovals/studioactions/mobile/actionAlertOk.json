@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__34555a606ac747078ff04d418051b7ba",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "popupErrorAlert.dismiss();\n if (kony.application.getCurrentForm().id === \"frmLogin\" && kony.apps.coe.ess.appconfig.useOkta === true) {\n kony.sdk.mvvm.LogoutAction();\n }",
+            "codeSnippet": "popupErrorAlert.dismiss();\n if (kony.application.getCurrentForm().id === \"frmLogin\" && kony.apps.coe.ess.appconfig.useOkta === true &&  kony.apps.coe.ess.globalVariables.loginFailedWithUnauthoraized == 0) {\n kony.sdk.mvvm.LogoutAction();\n }else if (kony.apps.coe.ess.globalVariables.loginFailedWithUnauthoraized == 1) {\n        kony.store.removeItem(\"username\");\n        kony.store.removeItem(\"password\");\n        kony.store.removeItem(\"rememberme\");\n        kony.store.removeItem(\"oktaToken\");\n        kony.sdk.util.deleteSSOToken();\n        kony.apps.coe.ess.globalVariables.active_login_service = \"\";\n        kony.application.exit();\n    } else {}",
             "parentId": null,
             "callbackType": null
         }]
