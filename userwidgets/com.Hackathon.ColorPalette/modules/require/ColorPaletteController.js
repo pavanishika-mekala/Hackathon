@@ -23,12 +23,9 @@ define(function() {
     //well due to UI thread problems
     //this callback will be executed onTouchEnd and will grow the selected bubble and shrink all others
     //the same is done in ios, but continously during onTouchMove
-    touchEndCallback : null,
 
     diskDown : true,
     dateflex1 : null,
-    textForIconVal :[],
-
 
 
     constructor: function(baseConfig, layoutConfig, pspConfig) {
@@ -124,8 +121,15 @@ define(function() {
       xfrm.rotate(deg);
       //Turning the main area
       this.view.flxPalette.transform=xfrm;
-      this.view.flxPaletteInner.transform=xfrm;
+      //this.view.flxPaletteInner.transform=xfrm;
       this.view.flxOuterCircle.transform=xfrm;
+      //this.view.flxPaletteOuter.transform=xfrm;
+      
+//       this.view.flxPalette.animate(stepAnimation, timingConfig, {});
+//       this.view.flxPaletteOuter.animate(stepAnimation, timingConfig, {});
+//       this.view.flxPaletteInner.animate(stepAnimation, timingConfig, {});
+//       this.view.flxOuterCircle.animate(stepAnimation, timingConfig, {});
+
       //     _imgDiskMenuFG.transform=xfrm;
       //     _imgDiskMenuBorder.transform=xfrm;
       //     _imgDiskMenuBG.transform=xfrm;
@@ -272,8 +276,8 @@ define(function() {
 
       this.view.flxPalette.animate(stepAnimation, timingConfig, {});
       this.view.flxPaletteOuter.animate(stepAnimation, timingConfig, {});
-      this.view.flxPaletteInner.animate(stepAnimation, timingConfig, {});
-      this.view.flxOuterCircle.animate(stepAnimation, timingConfig, {});
+      //this.view.flxPaletteInner.animate(stepAnimation, timingConfig, {});
+      //this.view.flxOuterCircle.animate(stepAnimation, timingConfig, {});
       //     _imgDiskMenuFG.animate(stepAnimation, timingConfig, {});
       //     _imgDiskMenuBorder.animate(stepAnimation, timingConfig, {});
       //     _imgDiskMenuBG.animate(stepAnimation, timingConfig, {});
