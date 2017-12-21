@@ -2,6 +2,9 @@ define(function() {
 
   return {
     _isLogin : true,
+    _loginAction : null,
+    _signUpAction : null,
+    _forgotPasswordAction : null,
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
     },
@@ -9,6 +12,37 @@ define(function() {
     initGettersSetters: function() {
       this.view.lblLogin.onTouchEnd = this._switchTab;
       this.view.lblSignUp.onTouchEnd = this._switchTab;
+      this.view.flxLogin.onClick = this._submit;
+      this.view.btnForgot.onClick = this._forgotPassword;
+    },
+    setLoginAction:function(action){
+      this._loginAction = action;
+    },
+    setSignUpAction : function(action){
+      this._signUpAction = action;
+    },
+    setForgotPasswordAction : function(action){
+      this._forgotPasswordAction = action;
+    },
+    _forgotPassword : function(){
+      if(this._forgotPasswordAction !== null)
+        this._forgotPasswordAction();
+    },
+    _submit : function(){
+      var loginDetails = {
+        userName : this.view.txtUserName.text,
+        password : this.view.txtPassword.text
+      };
+      if(this._isLogin){
+        if(this._loginAction !== null){
+          this._loginAction(loginDetails);
+        }
+      }
+      else{
+        if(this._signUpAction !== null){
+          this._signUpAction(loginDetails);
+        }
+      }
     },
     _switchTab : function(){
       if(this._isLogin){
@@ -44,7 +78,7 @@ define(function() {
         this._animateWidget(lblWidget, lblAnimationObject);
     },
     _animateDown: function(imgWidget,lblWidget){
-      
+      imgWidget.zIndex = "1";
         var animationObject = {
           100:{
             "zIndex":"1",
@@ -52,8 +86,8 @@ define(function() {
             "stepConfig": {"timingFunction": kony.anim.EASIN_IN_OUT}
           } 
         };
-        this._animateWidget(imgWidget, animationObject);
-      	imgWidget.isVisible = false;
+        this._animateWidget(imgWidget, animationObject,function(){imgWidget.isVisible = false;});
+      	
         lblWidget.skin = "lblFont424242Size";
         var lblAnimationObject = {
           100:{

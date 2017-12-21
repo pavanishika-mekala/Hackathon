@@ -33,6 +33,7 @@
         "type": "string",
         "value": "65%"
     },
+    "android": {},
     "autocapitalize": "none",
     "autocomplete": false,
     "autocorrect": false,
@@ -46,6 +47,7 @@
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
+    "focusskin": "s8a1bae5b9824c459fee9c07651802d4",
     "id": "txtUserName",
     "info": null,
     "isvisible": true,
@@ -55,6 +57,7 @@
     "name": "kony.ui.TextBox2",
     "parent": "flxUserName",
     "pf": "userwidgetmodel",
+    "placeholderskin": "s874c752970d4926847a35e13d2f036f",
     "securetextentry": false,
     "textinputmode": "A",
     "tooltip": "",

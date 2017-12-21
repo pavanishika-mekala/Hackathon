@@ -1,29 +1,217 @@
 {
-    "namespace": "com.Hackathon",
     "classname": "LoginUI",
-    "version": "1.0.0",
     "definitions": {
-        "properties": {
-            "passthrough": [],
-            "custom": []
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f0e875b4e2b34291aa251e201d411537",
+                    "paramList": [
+                        {
+                            "name": "action"
+                        }
+                    ],
+                    "propertyKey": "setLoginAction",
+                    "pw": {
+                        "displayName": "setLoginAction",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2c1afcfa5584bdc902eb79a839195e9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ce2c69424ed048f0a7a4553f99696429",
+                    "paramList": [
+                        {
+                            "name": "action"
+                        }
+                    ],
+                    "propertyKey": "setSignUpAction",
+                    "pw": {
+                        "displayName": "setSignUpAction",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2c1afcfa5584bdc902eb79a839195e9",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cdfe134d02f3486281226131187b2a42",
+                    "paramList": [
+                        {
+                            "name": "action"
+                        }
+                    ],
+                    "propertyKey": "setForgotPasswordAction",
+                    "pw": {
+                        "displayName": "setForgotPasswordAction",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d2c1afcfa5584bdc902eb79a839195e9",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
         },
         "events": {
-            "passthrough": [],
-            "custom": []
+            "custom": [],
+            "passthrough": []
         },
-        "apis": {
-            "passthrough": [],
-            "custom": []
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a0c0cde77ef94f7690e258095947264b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Header Text",
+                        "srcWidget": "lblLoginUIHeader",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "iabb3ba52797419b8bb54716e0d2b09c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bafac7d5f90341d3a485e53e5de88fd5",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "loginText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Login Text",
+                        "srcWidget": "lblLogin",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g368cfcac03449ebb7288c46d091695f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a7de3a224c8649f6bdbe40f1c9d2592f",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "signupText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Signup Text",
+                        "srcWidget": "lblSignUp",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "bc2b6aad857f4ba2b83b60f4182525f8"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bf593e8fe60b4270a5d90492894b7892",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 4,
+                    "propertyKey": "usernamePlaceholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "User Name Placeholder",
+                        "srcWidget": "txtUserName",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "c3c83d4f1c1641a687ef80d7e7d0cc8c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "abad057dc7c646b685821c7dd5b0be51",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 5,
+                    "propertyKey": "passwordPlaceholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Password Placeholder",
+                        "srcWidget": "txtPassword",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "e523a750c61e42d89ee1e1f82e082c71"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g302094776be43cb8e27511bdfd0208b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 6,
+                    "propertyKey": "forgotText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Forgot Text",
+                        "srcWidget": "btnForgot",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "f1dd141902084d2ab3460697d2c2ce87"
+                }
+            ]
         },
         "widgets": {
             "expose": [],
             "passthrough": []
-        },
-        "groups": {
-            "properties": [],
-            "events": [],
-            "apis": [],
-            "widgets": []
         }
-    }
+    },
+    "namespace": "com.Hackathon",
+    "version": "1.0.0"
 }
