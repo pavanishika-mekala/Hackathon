@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "40dp"
     },
     "_margin_": [
         0,
@@ -20,19 +20,19 @@
         0
     ],
     "_skin_": "s1f90d4c8b984a4dbcc005d9f529a53a",
-    "_src_": "boy.png",
-    "_top_": {
-        "type": "string",
-        "value": "25%"
-    },
+    "_src_": "rightarrow.png",
     "_width_": {
         "type": "string",
-        "value": "50dp"
+        "value": "40dp"
     },
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "30%"
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
     },
     "containerweight": 100,
     "context": {
@@ -42,13 +42,13 @@
         "templateType": "userwidgets",
         "topLevelBox": null
     },
-    "id": "imgIcon",
+    "id": "imgLogin",
     "imagescalemode": 1,
     "info": null,
     "isvisible": true,
-    "kuid": "j0e7a1d9ef0940ba8b3e7c3b868d7601",
+    "kuid": "g7bc5c28c9224ee18f7992d669c1fd6d",
     "name": "kony.ui.Image2",
-    "parent": "flxLoginUIMain",
+    "parent": "flxLogin",
     "pf": "userwidgetmodel",
     "srcType": 1,
     "wType": "Image",

@@ -39,8 +39,9 @@
         "flxLoginUIContainer",
         "lblLogin",
         "lblSignUp",
-        "imgIcon",
-        "flxLoginUIContainerShadow"
+        "imgLoginIcon",
+        "flxLoginUIContainerShadow",
+        "imgSignUpIcon"
     ],
     "clipbounds": true,
     "containerweight": 100,

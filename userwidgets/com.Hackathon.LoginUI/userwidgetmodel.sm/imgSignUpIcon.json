@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "40dp"
+        "value": "50dp"
     },
     "_margin_": [
         0,
@@ -19,35 +19,36 @@
         0,
         0
     ],
-    "_skin_": "s1f90d4c8b984a4dbcc005d9f529a53a",
-    "_src_": "rightarrow.png",
+    "_skin_": "sc404832e576479d81afb2a6a26c155b",
+    "_src_": "boy.png",
+    "_top_": {
+        "type": "string",
+        "value": "50%"
+    },
     "_width_": {
         "type": "string",
-        "value": "40dp"
+        "value": "50dp"
     },
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
-    },
-    "centery": {
-        "type": "string",
-        "value": "50%"
+        "value": "70%"
     },
     "containerweight": 100,
     "context": {
         "channel": "mobile",
         "formID": "uwu4d165bca5b6489b8c64e5407334dc2c",
+        "platform": "iphone",
         "templateType": "userwidgets",
         "topLevelBox": null
     },
-    "id": "imgLogin",
+    "id": "imgSignUpIcon",
     "imagescalemode": 1,
     "info": null,
-    "isvisible": true,
-    "kuid": "g7bc5c28c9224ee18f7992d669c1fd6d",
+    "isvisible": false,
+    "kuid": "dbddbc922dd949a2a7cba564fb8bc128",
     "name": "kony.ui.Image2",
-    "parent": "flxLogin",
+    "parent": "flxLoginUIMain",
     "pf": "userwidgetmodel",
     "srcType": 1,
     "wType": "Image",
