@@ -137,3 +137,4 @@ kony.apps.coe.ess.globalVariables.timeforAutoSync=600;
 // Login and logout timers configurations
 kony.apps.coe.ess.globalVariables.logoutDelay=2;
 kony.apps.coe.ess.globalVariables.loginAutoRefreshPeriod=2700; // 45 minutes
+kony.apps.coe.ess.globalVariables.loginFailedWithUnauthorized= 0;

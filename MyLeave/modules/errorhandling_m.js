@@ -49,6 +49,9 @@ function handleError(anException) {
         kony.print("handlingError: message::" + anException.message);
         messageToShow += ": " + anException.message;
     }
+  	if(kony.apps.coe.ess.globalVariables.loginFailedWithUnauthorized == 1){
+       messageToShow=kony.i18n.getLocalizedString("i18n.ess.myleave.unauthorizeduser.text");
+     }
     handleErrorViaAlert(messageToShow);
 }
 /**

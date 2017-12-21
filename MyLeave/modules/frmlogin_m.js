@@ -50,6 +50,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
        kony.sdk.getCurrentInstance().removeGlobalRequestParam(Constants.AUTHORIZATION_HEADER, "headers");
      }
      if(isRefresh === null || isRefresh === undefined || isRefresh ===false){
+       kony.apps.coe.ess.globalVariables.loginFailedWithUnauthorized=1;
        handleError(error);
      }
    };
@@ -243,6 +244,7 @@ kony.apps.coe.ess.frmLogin.afterloginSuccess =
     function() {
         kony.print("-- start kony.apps.coe.ess.frmLogin.afterloginSuccess -- ");
         try {
+          	kony.apps.coe.ess.globalVariables.loginFailedWithUnauthorized=0;
             kony.apps.coe.ess.Sync.deltaSyncConfig();
             kony.apps.coe.ess.frmLogin.loginAutoRefreshConfig();
             try {
