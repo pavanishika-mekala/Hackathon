@@ -12,7 +12,8 @@ function AS_Button_22e0015cd40240709d861f744485c16f(eventobject) {
         kony.store.removeItem("rememberme");
         kony.store.removeItem("oktaToken");
         kony.sdk.util.deleteSSOToken();
+        kony.net.clearCookies();
         kony.apps.coe.ess.globalVariables.active_login_service = "";
-        kony.application.exit();
+        kony.apps.coe.ess.frmLogin.oktaLogin();
     } else {}
 }

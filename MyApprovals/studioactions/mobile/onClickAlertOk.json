@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__7958407595fd4db6ad15edc2090f1c6f",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "popupErrorAlert.dismiss();\n if (kony.application.getCurrentForm().id === \"frmLogin\" && kony.apps.coe.ess.appconfig.useOkta === true &&  kony.apps.coe.ess.globalVariables.loginFailedWithUnauthoraized == 0) {\n kony.sdk.mvvm.LogoutAction();\n }else if (kony.apps.coe.ess.globalVariables.loginFailedWithUnauthoraized == 1) {\n        kony.store.removeItem(\"username\");\n        kony.store.removeItem(\"password\");\n        kony.store.removeItem(\"rememberme\");\n        kony.store.removeItem(\"oktaToken\");\n        kony.sdk.util.deleteSSOToken();\n        kony.apps.coe.ess.globalVariables.active_login_service = \"\";\n        kony.application.exit();\n    } else {}",
+            "codeSnippet": "popupErrorAlert.dismiss();\n if (kony.application.getCurrentForm().id === \"frmLogin\" && kony.apps.coe.ess.appconfig.useOkta === true &&  kony.apps.coe.ess.globalVariables.loginFailedWithUnauthoraized == 0) {\n kony.sdk.mvvm.LogoutAction();\n }else if (kony.apps.coe.ess.globalVariables.loginFailedWithUnauthoraized == 1) {\n        kony.store.removeItem(\"username\");\n        kony.store.removeItem(\"password\");\n        kony.store.removeItem(\"rememberme\");\n        kony.store.removeItem(\"oktaToken\");\n        kony.sdk.util.deleteSSOToken();\n        kony.net.clearCookies();\n        kony.apps.coe.ess.globalVariables.active_login_service = \"\";\n        kony.apps.coe.ess.frmLogin.oktaLogin();\n    } else {}",
             "parentId": null,
             "callbackType": null
         }]
