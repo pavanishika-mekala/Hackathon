@@ -51,6 +51,7 @@
     "paddinginpixel": false,
     "parent": "flxFullHalfDay",
     "pf": "frmApplyLeave",
+    "texti18n": "i18n.ess.myLeave.frmLeaveHome.lblHalfDay",
     "wType": "Button",
     "zindex": 1
 }
