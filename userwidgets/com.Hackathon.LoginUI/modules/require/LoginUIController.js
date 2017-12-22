@@ -107,7 +107,7 @@ define(function() {
           "fillMode": kony.anim.FILL_MODE_FORWARDS,
           "duration": 0.3
         }, {
-          //                         "animationEnd": this.swapImages()
+          // "animationEnd": this.swapImages()
         }
       );
     },

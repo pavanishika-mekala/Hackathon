@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "51%"
+        "value": "260dp"
     },
     "_margin_": [
         0,
@@ -26,12 +26,16 @@
     },
     "_width_": {
         "type": "string",
-        "value": "51%"
+        "value": "260dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
         "type": "string",
         "value": "50%"
     },

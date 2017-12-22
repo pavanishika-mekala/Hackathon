@@ -48,17 +48,27 @@ define(function() {
     },
 
     positionValues:{
+      palette0 :{X:"50%",Y:"7.5%"},//,top:"-1%",bottom:"Default"
+      palette1 :{X:"24%",Y:"16%"},//,top:"10%",bottom:"Default"
+      palette2 :{X:"10%",Y:"36%"},//,top:"31.5%",bottom:"Default"
+      palette3 :{X:"10%",Y:"64%"},//,top:"Default",bottom:"28.5%"
+      palette4 :{X:"24%",Y:"84%"},//,top:"Default",bottom:"8%"
+      palette5 :{X:"50%",Y:"92.5%"},//,top:"Default",bottom:"0.5%"
+      palette6 :{X:"76%",Y:"84%"},//,top:"Default",bottom:"7%"
+      palette7 :{X:"90%",Y:"64%"},//,top:"Default",bottom:"28%"
+      palette8 :{X:"90%",Y:"36%"},//,top:"Default",bottom:"28%"
+      palette9 :{X:"76%",Y:"16%"}//,top:"Default",bottom:"28%"
 
-      palette0 :{X:"50%",Y:"14%"},//,top:"-1%",bottom:"Default"
-      palette1 :{X:"29%",Y:"22%"},//,top:"10%",bottom:"Default"
-      palette2 :{X:"18%",Y:"39%"},//,top:"31.5%",bottom:"Default"
-      palette3 :{X:"20%",Y:"61%"},//,top:"Default",bottom:"28.5%"
-      palette4 :{X:"33%",Y:"77%"},//,top:"Default",bottom:"8%"
-      palette5 :{X:"51%",Y:"82%"},//,top:"Default",bottom:"0.5%"
-      palette6 :{X:"70%",Y:"75%"},//,top:"Default",bottom:"7%"
-      palette7 :{X:"80%",Y:"61%"},//,top:"Default",bottom:"28%"
-      palette8 :{X:"81%",Y:"39%"},//,top:"Default",bottom:"28%"
-      palette9 :{X:"70%",Y:"22%"}//,top:"Default",bottom:"28%"
+//       palette0 :{X:"50%",Y:"8%"},//,top:"-1%",bottom:"Default"
+//       palette1 :{X:"24%",Y:"22%"},//,top:"10%",bottom:"Default"
+//       palette2 :{X:"18%",Y:"39%"},//,top:"31.5%",bottom:"Default"
+//       palette3 :{X:"20%",Y:"61%"},//,top:"Default",bottom:"28.5%"
+//       palette4 :{X:"33%",Y:"77%"},//,top:"Default",bottom:"8%"
+//       palette5 :{X:"50%",Y:"92%"},//,top:"Default",bottom:"0.5%"
+//       palette6 :{X:"70%",Y:"75%"},//,top:"Default",bottom:"7%"
+//       palette7 :{X:"80%",Y:"61%"},//,top:"Default",bottom:"28%"
+//       palette8 :{X:"81%",Y:"39%"},//,top:"Default",bottom:"28%"
+//       palette9 :{X:"70%",Y:"22%"}//,top:"Default",bottom:"28%"
     },
 
     generatePalette : function(){
@@ -73,19 +83,20 @@ define(function() {
           "clipBounds": true,
           "centerX": centerXVal,
           "centerY": centerYVal,
-          "height": "50Dp",
+          "height": "40dp",
           "id": "flxList"+i,
           "isVisible": true,
           "layoutType": kony.flex.FREE_FORM,
           //"left": "100%",
           "skin": "flxBG00b898",
-          "width": "50Dp",
+          "width": "40dp",
           "zIndex": 2
         }, {}, {});
 
         flxList.onTouchEnd = palette.getAction();
         flxList.backgroundColor = palette.getColor();
-        this.view.flxPalette.add(flxList);
+        this.view.flxOuterCircle.add(flxList);
+//         this.view.flxPalette.add(flxList);
       }
       this.preShowDisplayDefaultDisk();
     },
@@ -134,16 +145,16 @@ define(function() {
       //     _imgDiskMenuBorder.transform=xfrm;
       //     _imgDiskMenuBG.transform=xfrm;
 
-      var lblXfrm = kony.ui.makeAffineTransform();
-      var lblDeg = deg;
-      lblDeg = lblDeg*-1;
-      lblXfrm.rotate(lblDeg);
+//       var lblXfrm = kony.ui.makeAffineTransform();
+//       var lblDeg = deg;
+//       lblDeg = lblDeg*-1;
+//       lblXfrm.rotate(lblDeg);
 
       //Turning labels (containing the icons) as well as BG, border and light effects
       //against the user-initiated rotation so that they appear as fixed
-      for(var i=0;i<this._numberOfpaletteEntries;i++){
-        this.view["flxList" + i].transform = lblXfrm;
-      }
+//       for(var i=0;i<this._numberOfpaletteEntries;i++){
+//         this.view["flxList" + i].transform = lblXfrm;
+//       }
       if (callback!==undefined && callback!==null) {
         callback();
       }
@@ -186,12 +197,14 @@ define(function() {
 
       this.touchMoveAngle = (this.touchStartAngle+deg)*multiplier;
       this.touchMoveAngle = Math.max(-360,Math.min(0,this.touchMoveAngle));
-      this._turnWorldToCircle(this.touchMoveAngle);
+      this._turnWorld(this.touchMoveAngle);
+//       this._turnWorldToCircle(this.touchMoveAngle);
       this._changeThePalette(this.touchMoveAngle);
 
     },
     
     _changeThePalette : function (deg){
+      kony.print(this._getTopCircleNumber(deg));
     this.topCircleNumber=this._getTopCircleNumber(deg);
     if (this.topCircleNumber!=this._currentTopCircle) {
       this._currentTopCircle=this.topCircleNumber;
