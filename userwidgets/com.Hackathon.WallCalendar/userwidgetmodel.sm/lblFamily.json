@@ -3,12 +3,12 @@
     "DNDConfig": null,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "80%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
-        "value": "1%"
+        "value": "5dp"
     },
     "_margin_": [
         1,
@@ -22,11 +22,15 @@
         0,
         0
     ],
-    "_skin_": "s9bf6fcd13ab4b3a889db94de94a1b0f",
-    "_text_": "35",
-    "_width_": {
+    "_skin_": "s09007ed586540a6a60724ad8f50935f",
+    "_text_": "Family",
+    "_top_": {
         "type": "string",
-        "value": "12%"
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
     },
     "_wrapping_": 2,
     "android": {
@@ -41,8 +45,8 @@
         "value": "50%"
     },
     "containerweight": 100,
-    "contentalignment": 5,
-    "id": "lbl35",
+    "contentalignment": 4,
+    "id": "lblFamily",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,9 +59,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "c890c1b270db4db0a0dc92ba0ef530aa",
+    "kuid": "ddd6f17a23db4aa2a94f6fe018d960ca",
     "name": "kony.ui.Label",
-    "parent": "flxWeek5",
+    "parent": "flxFamily",
     "pf": "userwidgetmodel",
     "tooltip": "",
     "wType": "Label",

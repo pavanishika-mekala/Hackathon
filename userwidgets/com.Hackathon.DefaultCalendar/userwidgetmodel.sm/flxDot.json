@@ -41,7 +41,7 @@
     "enablescrolling": true,
     "id": "flxDot",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "j2eae5a86b9e477ca1d6357f92d30c55",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

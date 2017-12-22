@@ -1,9 +1,13 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "5%"
+    },
     "_height_": {
         "type": "string",
-        "value": "16.66%"
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
@@ -23,11 +27,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s113a25f069f4c33b883a62d2c6e15b3",
-    "_top_": {
-        "type": "string",
-        "value": "83.30%"
-    },
+    "_skin_": "s22a1d7b54ed41afa9c9de2f4e45b142",
     "_width_": {
         "type": "string",
         "value": "100%"
@@ -36,21 +36,25 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lbl36",
-        "lbl37",
-        "flxDot"
+        "lblMonday",
+        "lblTuesday",
+        "lblWednesday",
+        "lblThursday",
+        "lblFriday",
+        "lblSaturday",
+        "lblSunday"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxWeek6",
+    "id": "flxWeekNames",
     "info": null,
     "isvisible": true,
-    "kuid": "fe253e3329654c6fbd04b5f04a80c8a4",
+    "kuid": "d8473a48453440c790a4588ded3fba91",
     "layouttype": 3,
     "masterType": 1,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCalendar",
+    "parent": "flxUpperBody",
     "pf": "userwidgetmodel",
     "snapgridsize": 10,
     "snaptogrid": true,

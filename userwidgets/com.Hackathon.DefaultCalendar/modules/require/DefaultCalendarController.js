@@ -5,12 +5,11 @@ define(function() {
     currentMonth : 0,
     currentYear : 0,
     _weekendColor : "",
-    _currentDayColor : "",
+    _currentDayColor : "FF5959",
 
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
       this.view.preShow = this._resetCalendar;
-
       this.view.flxCalendar.addGestureRecognizer(constants.GESTURE_TYPE_SWIPE, {fingers: 1},this._onGestureClosure);
 
     },
@@ -25,6 +24,7 @@ define(function() {
       this.currentYear = date.getFullYear();
       var d = new Date(this.currentYear,this.currentMonth,1,0,0,0,0);
       this._assignDates(d.getDay(),this.currentMonth,this.currentYear);
+      this.setCurrentDateColor(this._currentDayColor);
     },
 
     _assignDates : function (firstDay,currentMonth,currentYear){
@@ -32,6 +32,7 @@ define(function() {
       for(var j = 1; j < 38; j++){
         this.view["lbl"+j].text = "";
         this.view["lbl"+j].setVisibility(false);
+        this.view["lbl"+j].backgroundColor = "ffffff";
       }
       var day30Months = [3,5,8,10];
       var endDate = 0;
@@ -47,10 +48,15 @@ define(function() {
         endDate = 31;
       }
       for(var i = 1; i <= endDate; i++){
-        this.view["lbl"+(firstDay+i)].text = i.toFixed(0);
-        this.view["lbl"+(firstDay+i)].setVisibility(true);
+        
+        if(firstDay===0){
+          firstDay=1;
+        }
+        this.view["lbl"+(firstDay+(i-1))].text = i.toFixed(0);
+        
+        this.view["lbl"+(firstDay+(i-1))].setVisibility(true);
       }
-      //_formName.lblMonth.text = _getMonth(currentMonth)+" "+currentYear;
+      
     },
 
     isLeapYear : function(year)
@@ -67,6 +73,7 @@ define(function() {
       }
       var d = new Date(this.currentYear,this.currentMonth,1,0,0,0,0);
       this._assignDates(d.getDay(),this.currentMonth,this.currentYear);
+      this.swipeUp(this._getMonth(this.currentMonth),this.currentYear);
       this.setWeekendColor(this._weekendColor);
     },
 
@@ -79,6 +86,7 @@ define(function() {
       }
       var d = new Date(this.currentYear,this.currentMonth,1,0,0,0,0);
       this._assignDates(d.getDay(),this.currentMonth,this.currentYear);
+      this.swipeDown(this._getMonth(this.currentMonth),this.currentYear);
       this.setWeekendColor(this._weekendColor);
     },
 
@@ -112,8 +120,6 @@ define(function() {
 
     setCalendarColor : function (skinColor){
       this.view.flxCalendar.skin = skinColor;
-      //     _formName.flxBar1.skin = skinColor;
-      //     _formName.flxBar2.skin = skinColor;
     },
 
     setWeekendColor : function (skinColor){
@@ -132,23 +138,39 @@ define(function() {
     setCurrentDateColor : function (skinColor){
       this._currentDayColor = skinColor;
       var d = new Date();
-      if(this.currentYear == d.getFullYear() && this.currentMonth == d.getMonth()){
+      if((this.currentYear == d.getFullYear()) && (this.currentMonth == d.getMonth())){
         for(var j = 1; j < 38; j++){
           if(this.view["lbl"+j].text == d.getDate()){
-            this.view["lbl"+j].skin = skinColor;
+            this.view["lbl"+j].backgroundColor = skinColor;
           }
         }
       }
+//       else{
+//         for(var j = 1; j < 38; j++){
+//           if(this.view["lbl"+j].text == d.getDate()){
+//             this.view["lbl"+j].backgroundColor = "FFFFFF";
+//           }
+//         }
+//       }
     },
 
 
     _onGestureClosure:function (widgetRef, gestureInfo, context){
+      
+      
+      
       if(gestureInfo.swipeDirection == 3){
         this._nextMonth();
       }else if(gestureInfo.swipeDirection == 4){
         this._previousMonth();
+      }else if(gestureInfo.swipeDirection == 1){
+        this._nextMonth();
+      }else if(gestureInfo.swipeDirection == 2){
+        this._previousMonth();
       }
-    }
+    },
+    
+    
 
 
   };

@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "16.66%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
@@ -23,38 +23,39 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s113a25f069f4c33b883a62d2c6e15b3",
+    "_skin_": "s52785a2b9894e5aa408903deef47c32",
     "_top_": {
         "type": "string",
-        "value": "83.30%"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "25%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "lbl36",
-        "lbl37",
-        "flxDot"
+        "flxDotStudy",
+        "lblStudy"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxWeek6",
+    "id": "flxStudy",
     "info": null,
     "isvisible": true,
-    "kuid": "fe253e3329654c6fbd04b5f04a80c8a4",
+    "kuid": "c774a11b75ea4a1fbf2ba37325fdbbf7",
     "layouttype": 3,
-    "masterType": 1,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxCalendar",
+    "parent": "flxEventTitles",
     "pf": "userwidgetmodel",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }

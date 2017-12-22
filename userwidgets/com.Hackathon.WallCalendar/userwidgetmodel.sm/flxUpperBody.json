@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "35%"
+        "value": "40%"
     },
     "_left_": {
         "type": "string",
@@ -23,7 +23,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s52785a2b9894e5aa408903deef47c32",
+    "_skin_": "sf6bb0e399784a49a31dd42ed2922bfc",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -35,7 +35,11 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [],
+    "children": [
+        "lblYear",
+        "lblMonth",
+        "flxWeekNames"
+    ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,

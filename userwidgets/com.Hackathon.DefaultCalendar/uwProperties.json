@@ -1,29 +1,56 @@
 {
-    "namespace": "com.Hackathon",
     "classname": "DefaultCalendar",
-    "version": "1.0.0",
     "definitions": {
-        "properties": {
-            "passthrough": [],
-            "custom": []
+        "apis": {
+            "custom": [],
+            "passthrough": []
         },
         "events": {
-            "passthrough": [],
-            "custom": []
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e312a43bc2324cdeabc7700dfd83f87e",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "swipeUp",
+                    "pw": {
+                        "displayName": "swipeUp",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cb57a335a16447e5a55963f8d3cd43a3",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "swipeDown",
+                    "pw": {
+                        "displayName": "swipeDown",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
         },
-        "apis": {
-            "passthrough": [],
-            "custom": []
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
         },
         "widgets": {
             "expose": [],
             "passthrough": []
-        },
-        "groups": {
-            "properties": [],
-            "events": [],
-            "apis": [],
-            "widgets": []
         }
-    }
+    },
+    "namespace": "com.Hackathon",
+    "version": "1.0.0"
 }
