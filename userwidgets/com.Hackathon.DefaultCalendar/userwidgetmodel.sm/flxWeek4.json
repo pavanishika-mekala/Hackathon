@@ -1,0 +1,64 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "16.66%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s113a25f069f4c33b883a62d2c6e15b3",
+    "_top_": {
+        "type": "string",
+        "value": "49.98%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lbl22",
+        "lbl23",
+        "lbl24",
+        "lbl25",
+        "lbl26",
+        "lbl27",
+        "lbl28"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxWeek4",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b22926824593480086529107fe02976d",
+    "layouttype": 3,
+    "masterType": 1,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCalendar",
+    "pf": "userwidgetmodel",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}
