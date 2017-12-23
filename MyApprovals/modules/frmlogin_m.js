@@ -53,7 +53,7 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
        kony.sdk.getCurrentInstance().removeGlobalRequestParam(Constants.AUTHORIZATION_HEADER, "headers");
      }
      if(isRefresh === null || isRefresh === undefined || isRefresh ===false){
-       kony.apps.coe.ess.globalVariables.loginFailedWithUnauthoraized=1;
+       kony.apps.coe.ess.globalVariables.loginFailedWithUnauthorized=1;
        handleError(error);  
      }
    };
@@ -245,7 +245,7 @@ kony.apps.coe.ess.frmLogin.oktaLogin = function() {
  */
 kony.apps.coe.ess.frmLogin.afterloginSuccess =
   function() {
-  kony.apps.coe.ess.globalVariables.loginFailedWithUnauthoraized=0;
+  kony.apps.coe.ess.globalVariables.loginFailedWithUnauthorized=0;
   kony.apps.coe.ess.Sync.deltaSyncConfig();
   kony.apps.coe.ess.frmLogin.loginAutoRefreshConfig();
   if (kony.apps.coe.ess.globalVariables.isWebDesktop === true) {
