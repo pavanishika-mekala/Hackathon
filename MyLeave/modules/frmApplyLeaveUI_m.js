@@ -1500,9 +1500,12 @@ kony.apps.coe.ess.myLeave.applyLeave.submitLeave = {
     }
     if (kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData.length > 0 && kony.apps.coe.ess.myLeave.applyLeave.submitLeave.imgIndex < kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData.length) {
       var i = kony.apps.coe.ess.myLeave.applyLeave.submitLeave.imgIndex;
+      ////multiple attachment issue -media id check added
       if (kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].leave_id === null && kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].media_id === null) {
         (new kony.apps.coe.ess.myLeave.media()).updateBinaryContent(kony.apps.coe.ess.myLeave.applyLeave.Attachment.proofData[i].imgProof, kony.apps.coe.ess.myLeave.applyLeave.submitLeave.multipleImageUploadSuccess.bind(this, dataToForward, dates, holidayResponse), kony.apps.coe.ess.myLeave.applyLeave.submitLeave.mediaError.bind(this, dataToForward, dates, holidayResponse));
       } else {
+        //multiple attachment issue- attachment sequence number
+        kony.apps.coe.ess.myLeave.media.seq=kony.apps.coe.ess.myLeave.media.seq+1;
         kony.apps.coe.ess.myLeave.applyLeave.submitLeave.multipleImageUploadSuccess(dataToForward, dates, holidayResponse);
       }
     }
