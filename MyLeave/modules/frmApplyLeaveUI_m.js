@@ -856,7 +856,15 @@ kony.apps.coe.ess.myLeave.applyLeave.Attachment = {
     if (rawBytes !== null) {
       var base64 = kony.convertToBase64(rawBytes);
       if ((base64 !== null) && (base64 !== undefined) && (base64 !== "")) {
+        //image size calculation
+        var bytes = 2*Math.ceil((parseFloat(base64.length/3)));
+		var sizeinkb= bytes/1000;//1048576 -- 1 mb
+        if(sizeinkb >3072){
+          kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfCancel();
+          toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.myLeave.common.imagesize"), 3000);
+        }else{
         this.onClickOfTakePicture(base64,"");
+        }
       } else if (permissionStatus == kony.application.PERMISSION_DENIED) {
         alert("Permission Denied to Access the Photo Gallery");
       } else {
