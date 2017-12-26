@@ -47,7 +47,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "g192f705fe2b4a4eaa9919c08c3d6c6c",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flexMain",
     "pf": "frmApplyLeave",

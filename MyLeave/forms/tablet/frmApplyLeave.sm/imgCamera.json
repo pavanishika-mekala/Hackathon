@@ -7,6 +7,10 @@
         "type": "string",
         "value": "30dp"
     },
+    "_left_": {
+        "type": "string",
+        "value": "3%"
+    },
     "_margin_": [
         0,
         0,
