@@ -148,7 +148,7 @@ onClickOfSubmit = function() {
             toDate = new Date(toDate.year, toDate.month - 1, toDate.day);
         } else {
           	var frmDateforTodate = frmDelegationRequestCreate.clndFromDate;
-          	toDate = new Date(frmDateforTodate.year+1, frmDateforTodate.month - 1, frmDateforTodate.day);
+          	toDate = new Date(frmDateforTodate.year+1, frmDateforTodate.month - 1, frmDateforTodate.day - 1);
         }
       	toDate = toDate.toYYYYMMDD("");
         var employeeId = String(kony.apps.coe.ess.Approvals.DelegationRequestCreate.Backend.getInstance().contextData.empId);
