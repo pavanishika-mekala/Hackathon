@@ -8,6 +8,8 @@ define(function() {
     _currentDayColor : "sknCurrentDateBGFF5959",
     _selectedDateSkin : "sknSelectedDate",
     _normalDateSkin : "sknNormalDatesGrey",
+    isAnyDateSelected : false,
+    firstDayOfMonth : null,
 
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
@@ -29,6 +31,14 @@ define(function() {
       this.setCurrentDateColor(this._currentDayColor);
     },
 
+    setEventsAfterSwipe : function(eventsArray){
+      var eventDay = eventsArray.eventDay;
+      var eventSkin = eventsArray.eventSkin;
+      var eventDayNum = this.firstDayOfMonth + parseInt(eventDay) -1;
+      this.view["lblDot" + eventDayNum].skin = eventSkin;
+      this.view["lblDot" + eventDayNum].isVisible = true;
+    },
+
     assignDates : function (firstDay,currentMonth,currentYear){
 
       this.currentMonth  = parseInt(currentMonth);
@@ -38,7 +48,7 @@ define(function() {
       for(var j = 1; j < 38; j++){
         this.view["lbl"+j].text = "";
         this.view["lbl"+j].setVisibility(false);
-        //this.view["lbl"+j].backgroundColor = "ffffff";
+        this.view["lblDot"+j].setVisibility(false);
         this.view["lbl"+j].skin = this._normalDateSkin;
         this.view["lbl"+j].onTouchEnd = this.selectDate;
       }
@@ -60,6 +70,7 @@ define(function() {
         if(firstDay===0){
           firstDay=1;
         }
+        this.firstDayOfMonth = firstDay;
         this.view["lbl"+(firstDay+(i-1))].text = i.toFixed(0);
 
         this.view["lbl"+(firstDay+(i-1))].setVisibility(true);
@@ -173,20 +184,31 @@ define(function() {
 
     selectDate : function(j){
       if(j.skin!==this._currentDayColor){
-        if(j.skin===this._selectedDateSkin){
-          j.skin=this._normalDateSkin;
-        }else{
-          j.skin=this._selectedDateSkin;
+
+        for(var i = 1; i < 38; i++){
+          this.view["lbl"+i].skin=this._normalDateSkin;
         }
+        j.skin = this._selectedDateSkin;
       }
 
       if(this.onSelect){
         this.onSelect(j);
       }
+    },
+
+    getDotWidgetDetails : function(id){
+      return this.view["lblDot"+id];
+    },
+
+    hideAllDots : function(){
+      for(var j = 1; j < 38; j++){
+        this.view["lblDot"+j].setVisibility(false);
+      }
+    },
+
+    updateWidgetDetails : function(widgetInfo){
+      this.view["lbl"+widgetInfo.id]=widgetInfo;
     }
-
-
-
 
   };
 });

@@ -5,7 +5,7 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "c2985265189d4a7da9db5fa8c98932d6",
+                    "kuid": "aa93d257d0504f619b7e16312418c0fd",
                     "paramList": [
                         {
                             "name": "firstDay"
@@ -20,6 +20,50 @@
                     "propertyKey": "assignDates",
                     "pw": {
                         "displayName": "assignDates",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i2d61a0f0fbc479daf63bebc0fa6dbf1",
+                    "paramList": [
+                        {
+                            "name": "id"
+                        }
+                    ],
+                    "propertyKey": "getDotWidgetDetails",
+                    "pw": {
+                        "displayName": "getDotWidgetDetails",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "if0e10188db641d2b4a355e133b74fe0",
+                    "paramList": [],
+                    "propertyKey": "hideAllDots",
+                    "pw": {
+                        "displayName": "hideAllDots",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b0c8cee4598f4215ab86e39b232be54d",
+                    "paramList": [
+                        {
+                            "name": "eventDay"
+                        }
+                    ],
+                    "propertyKey": "setEventsAfterSwipe",
+                    "pw": {
+                        "displayName": "setEventsAfterSwipe",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",

@@ -20,11 +20,6 @@ define(function() {
       this.view.txtBoxYear.onDone = this.setYear;
 
       this.view.imgDone.onTouchEnd = this.hideEventFlex;
-      
-      this.view.flxFamily.onTouchEnd = this.showFamilyEvents;
-      this.view.flxLife.onTouchEnd = this.showLifeEvents;
-      this.view.flxWork.onTouchEnd = this.showWorkEvents;
-      this.view.flxStudy.onTouchEnd = this.showStudyEvents;
 
     },
     //Logic for getters/setters of custom properties
@@ -57,18 +52,19 @@ define(function() {
     },
 
     swipeUp : function(month,year){
-      this.view.txtBoxYear.text = year;
+      this.view.txtBoxYear.text = year.toFixed(0);
       this.view.txtBoxMonth.text = month;
+      this.assignEvents(year,month);
     },
 
     swipeDown : function(month,year){
       this.view.txtBoxMonth.text = month;
-      this.view.txtBoxYear.text = year;
+      this.view.txtBoxYear.text = year.toFixed(0);
+      this.assignEvents(year,month);
     },
 
     selectDate : function(j){
       this.selectedDateDetails = j;
-      //alert(j.id);
     },
 
     addEvent : function(){
@@ -83,27 +79,34 @@ define(function() {
         ];
       }
     },
-
+    assignEvents:function(year,month){
+      for(var i in this.availabeEventsArray){
+        if(this.availabeEventsArray[i].eventYear == year && this.availabeEventsArray[i].eventMonth == month){
+          this.view.DefaultCalendar.setEventsAfterSwipe(this.availabeEventsArray[i]);
+        }
+      }
+    },
     hideEventFlex : function(){
       this.view.flxEvent.setVisibility(false);
-      this.selectedDateDetails.info = {
-        "eventContent" : this.view.txtBoxEvent.text,
-        "eventTitle": this.view.lstBoxEvents.selectedKey
-      };
-      
-      this.availabeEventsArray.push(this.selectedDateDetails);
-      //alert(this.selectedDateDetails.info);
-    },
-    
-    showFamilyEvents : function(){
-    for(var i=0;i<this.availabeEventsArray.length;i++){
-      var info = this.availabeEventsArray[i].info;
-      if(info.eventTitle===this.lblFamilyText){
-        alert(info.eventContent);
-      }
-    }
-  }
+      if(this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin!==null){
+        var info = {
+          "eventContent" : this.view.txtBoxEvent.text,
+          "eventTitle": this.view.lstBoxEvents.selectedKey,
+          "eventSkin": this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin,
+          "eventYear": this.view.txtBoxYear.text,
+          "eventMonth": this.view.txtBoxMonth.text,
+          "eventDay": this.selectedDateDetails.text,
+        };
 
+
+        this.availabeEventsArray.push(info);
+        var id = parseInt((this.selectedDateDetails.id).replace("lbl",""));
+        var dotWidget=this.view.DefaultCalendar.getDotWidgetDetails(id);
+        dotWidget.skin = this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin;
+        dotWidget.isVisible = true;
+      }
+
+    },
 
   };
 });

@@ -38,8 +38,7 @@
     "children": [
         "flxUpperBody",
         "flxCalendar",
-        "flxEvents",
-        "FlexContainer0j598be2a7b4d45"
+        "flxEvents"
     ],
     "clipbounds": true,
     "containerweight": 100,
