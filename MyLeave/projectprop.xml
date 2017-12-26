@@ -230,7 +230,7 @@
     <attributes name="wp10musicLibrary" value="false"/>
     <attributes name="WP8_ID_CAP_MAP" value="true"/>
     <attributes name="objects3D" value="false"/>
-    <attributes name="READ_PHONE_STATE" value="false"/>
+    <attributes name="READ_PHONE_STATE" value="true"/>
     <attributes name="SUBSCRIBED_FEEDS_WRITE" value="false"/>
     <attributes name="MANAGE_ACCOUNTS" value="false"/>
     <attributes name="wp10location" value="false"/>
