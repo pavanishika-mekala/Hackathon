@@ -106,10 +106,10 @@ frmLogin.flxSplash.animate(
     }, {
         "animationEnd": function(){}
     });
-    frmLogin.flxBrowserContainer.animate(
+  	frmLogin.flxApploadTime.animate(
     kony.ui.createAnimation({
         "100": {
-            "top": "25%",
+            "top": "24%",
             "stepConfig": {
                 "timingFunction": kony.anim.EASE
             }
@@ -122,6 +122,23 @@ frmLogin.flxSplash.animate(
     }, {
         "animationEnd": function(){}
     });
+    frmLogin.flxBrowserContainer.animate(
+    kony.ui.createAnimation({
+        "100": {
+            "top": "29%",
+            "stepConfig": {
+                "timingFunction": kony.anim.EASE
+            }
+        }
+    }), {
+        "delay": 1.3,
+        "iterationCount": 1,
+        "fillMode": kony.anim.FILL_MODE_FORWARDS,
+        "duration": 1
+    }, {
+        "animationEnd": function(){}
+    });
+	
    frmLogin.flxMain.animate(
     kony.ui.createAnimation({
         "100": {
