@@ -2,14 +2,37 @@
     "classname": "DefaultCalendar",
     "definitions": {
         "apis": {
-            "custom": [],
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c2985265189d4a7da9db5fa8c98932d6",
+                    "paramList": [
+                        {
+                            "name": "firstDay"
+                        },
+                        {
+                            "name": "currentMonth"
+                        },
+                        {
+                            "name": "currentYear"
+                        }
+                    ],
+                    "propertyKey": "assignDates",
+                    "pw": {
+                        "displayName": "assignDates",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",
+                    "type": "event"
+                }
+            ],
             "passthrough": []
         },
         "events": {
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "e312a43bc2324cdeabc7700dfd83f87e",
+                    "kuid": "c7b00471096646c997b54555c765fb32",
                     "paramList": [],
                     "propertyIndex": 1,
                     "propertyKey": "swipeUp",
@@ -22,7 +45,7 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "cb57a335a16447e5a55963f8d3cd43a3",
+                    "kuid": "e822ab01060546389a9d67b539408d20",
                     "paramList": [],
                     "propertyIndex": 2,
                     "propertyKey": "swipeDown",
@@ -32,12 +55,27 @@
                     },
                     "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",
                     "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f44a701dbb4344d1a068f507ab80f611",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onSelect",
+                    "pw": {
+                        "displayName": "onSelect",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i5f11d67ef75483eb54cb67630071c2e",
+                    "type": "event"
                 }
             ],
             "passthrough": []
         },
         "groups": {
-            "apis": [],
+            "apis": [
+                "General"
+            ],
             "events": [],
             "properties": [],
             "widgets": []

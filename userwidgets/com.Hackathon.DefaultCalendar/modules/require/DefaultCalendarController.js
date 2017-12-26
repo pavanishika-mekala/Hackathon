@@ -5,7 +5,7 @@ define(function() {
     currentMonth : 0,
     currentYear : 0,
     _weekendColor : "",
-    _currentDayColor : "FF5959",
+    _currentDayColor : "sknCurrentDateBGFF5959",
 
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
@@ -23,16 +23,22 @@ define(function() {
       this.currentMonth = date.getMonth();
       this.currentYear = date.getFullYear();
       var d = new Date(this.currentYear,this.currentMonth,1,0,0,0,0);
-      this._assignDates(d.getDay(),this.currentMonth,this.currentYear);
+      this.assignDates(d.getDay(),this.currentMonth,this.currentYear);
       this.setCurrentDateColor(this._currentDayColor);
     },
 
-    _assignDates : function (firstDay,currentMonth,currentYear){
+    assignDates : function (firstDay,currentMonth,currentYear){
+      
+      this.currentMonth  = parseInt(currentMonth);
+      this.currentYear = parseInt(currentYear);
+      
       kony.print("#### assignDates #### currentMonth - "+currentMonth+" - currentYear - "+currentYear);
       for(var j = 1; j < 38; j++){
         this.view["lbl"+j].text = "";
         this.view["lbl"+j].setVisibility(false);
-        this.view["lbl"+j].backgroundColor = "ffffff";
+        //this.view["lbl"+j].backgroundColor = "ffffff";
+        this.view["lbl"+j].skin = "sknNormalDatesGrey";
+        this.view["lbl"+j].onTouchEnd = this.selectDate;
       }
       var day30Months = [3,5,8,10];
       var endDate = 0;
@@ -72,7 +78,7 @@ define(function() {
         this.currentMonth = this.currentMonth+1;
       }
       var d = new Date(this.currentYear,this.currentMonth,1,0,0,0,0);
-      this._assignDates(d.getDay(),this.currentMonth,this.currentYear);
+      this.assignDates(d.getDay(),this.currentMonth,this.currentYear);
       this.swipeUp(this._getMonth(this.currentMonth),this.currentYear);
       this.setWeekendColor(this._weekendColor);
     },
@@ -85,7 +91,7 @@ define(function() {
         this.currentMonth = this.currentMonth-1;
       }
       var d = new Date(this.currentYear,this.currentMonth,1,0,0,0,0);
-      this._assignDates(d.getDay(),this.currentMonth,this.currentYear);
+      this.assignDates(d.getDay(),this.currentMonth,this.currentYear);
       this.swipeDown(this._getMonth(this.currentMonth),this.currentYear);
       this.setWeekendColor(this._weekendColor);
     },
@@ -141,17 +147,10 @@ define(function() {
       if((this.currentYear == d.getFullYear()) && (this.currentMonth == d.getMonth())){
         for(var j = 1; j < 38; j++){
           if(this.view["lbl"+j].text == d.getDate()){
-            this.view["lbl"+j].backgroundColor = skinColor;
+            this.view["lbl"+j].skin = skinColor;
           }
         }
       }
-//       else{
-//         for(var j = 1; j < 38; j++){
-//           if(this.view["lbl"+j].text == d.getDate()){
-//             this.view["lbl"+j].backgroundColor = "FFFFFF";
-//           }
-//         }
-//       }
     },
 
 
@@ -169,6 +168,17 @@ define(function() {
         this._previousMonth();
       }
     },
+    
+    selectDate : function(j){
+      if(j.skin==="sknSelectedDate"){
+        j.skin="sknNormalDatesGrey";
+      }else{
+        j.skin="sknSelectedDate";
+      }
+      if(this.onSelect){
+        this.onSelect(j);
+      }
+    }
     
     
 

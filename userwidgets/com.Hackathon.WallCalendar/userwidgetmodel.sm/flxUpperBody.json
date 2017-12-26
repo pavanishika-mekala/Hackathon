@@ -38,7 +38,10 @@
     "children": [
         "lblYear",
         "lblMonth",
-        "flxWeekNames"
+        "flxWeekNames",
+        "imgPlus",
+        "txtBoxYear",
+        "txtBoxMonth"
     ],
     "clipbounds": true,
     "containerweight": 100,

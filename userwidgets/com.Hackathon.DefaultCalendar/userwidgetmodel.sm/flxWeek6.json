@@ -38,7 +38,9 @@
     "children": [
         "lbl36",
         "lbl37",
-        "flxDot"
+        "flxDot",
+        "lblInvisibleBorder",
+        "lblInvisibleBG"
     ],
     "clipbounds": true,
     "containerweight": 100,

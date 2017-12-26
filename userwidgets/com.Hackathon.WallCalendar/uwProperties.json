@@ -1,29 +1,29 @@
 {
-    "namespace": "com.Hackathon",
     "classname": "WallCalendar",
-    "version": "1.0.0",
     "definitions": {
-        "properties": {
-            "passthrough": [],
-            "custom": []
+        "apis": {
+            "custom": [],
+            "passthrough": []
         },
         "events": {
-            "passthrough": [],
-            "custom": []
+            "custom": [],
+            "passthrough": []
         },
-        "apis": {
-            "passthrough": [],
-            "custom": []
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
         },
         "widgets": {
             "expose": [],
             "passthrough": []
-        },
-        "groups": {
-            "properties": [],
-            "events": [],
-            "apis": [],
-            "widgets": []
         }
-    }
+    },
+    "namespace": "com.Hackathon",
+    "version": "1.0.0"
 }
