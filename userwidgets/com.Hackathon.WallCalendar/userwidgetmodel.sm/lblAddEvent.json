@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5dp"
+        "value": "134dp"
     },
     "_margin_": [
         1,
@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "s09007ed586540a6a60724ad8f50935f",
-    "_text_": "Work",
+    "_skin_": "s28d3a70cded4f7bb638b80cae5087e9",
+    "_text_": "Add Event",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10dp"
     },
     "_width_": {
         "type": "ref",
@@ -40,13 +40,17 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
+    "centerx": {
         "type": "string",
         "value": "50%"
     },
+    "centery": {
+        "type": "string",
+        "value": "4%"
+    },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblWork",
+    "id": "lblAddEvent",
     "info": null,
     "ipad": {
         "psp": {
@@ -59,9 +63,9 @@
         }
     },
     "isvisible": true,
-    "kuid": "c744f5321a6244f6ba0fc80a35c7c187",
+    "kuid": "b468a0cd13b140e58c64f2a6c4dc8713",
     "name": "kony.ui.Label",
-    "parent": "flxWork",
+    "parent": "flxEvent",
     "pf": "userwidgetmodel",
     "tooltip": "",
     "wType": "Label",

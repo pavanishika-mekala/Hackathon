@@ -4,8 +4,8 @@ define(function() {
 
     monthNames : ["January", "February", "March", "April", "May", "June",
                   "July", "August", "September", "October", "November", "December"],
-    months : ["0","1","2","3","4","5","6","7","8","9","10","11"],
     selectedDateDetails : null,
+    availabeEventsArray : [],
 
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
@@ -18,6 +18,13 @@ define(function() {
 
       this.view.txtBoxMonth.onDone = this.setMonth;
       this.view.txtBoxYear.onDone = this.setYear;
+
+      this.view.imgDone.onTouchEnd = this.hideEventFlex;
+      
+      this.view.flxFamily.onTouchEnd = this.showFamilyEvents;
+      this.view.flxLife.onTouchEnd = this.showLifeEvents;
+      this.view.flxWork.onTouchEnd = this.showWorkEvents;
+      this.view.flxStudy.onTouchEnd = this.showStudyEvents;
 
     },
     //Logic for getters/setters of custom properties
@@ -66,7 +73,36 @@ define(function() {
 
     addEvent : function(){
 
+      if(this.selectedDateDetails!==null){
+        this.view.flxEvent.setVisibility(true);
+        this.view.lstBoxEvents.masterData = [
+          [this.lblFamilyText,this.lblFamilyText],
+          [this.lblLifeText,this.lblLifeText],
+          [this.lblWorkText,this.lblWorkText],
+          [this.lblStudyText,this.lblStudyText]
+        ];
+      }
+    },
+
+    hideEventFlex : function(){
+      this.view.flxEvent.setVisibility(false);
+      this.selectedDateDetails.info = {
+        "eventContent" : this.view.txtBoxEvent.text,
+        "eventTitle": this.view.lstBoxEvents.selectedKey
+      };
+      
+      this.availabeEventsArray.push(this.selectedDateDetails);
+      //alert(this.selectedDateDetails.info);
+    },
+    
+    showFamilyEvents : function(){
+    for(var i=0;i<this.availabeEventsArray.length;i++){
+      var info = this.availabeEventsArray[i].info;
+      if(info.eventTitle===this.lblFamilyText){
+        alert(info.eventContent);
+      }
     }
+  }
 
 
   };

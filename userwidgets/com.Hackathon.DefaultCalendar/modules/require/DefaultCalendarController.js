@@ -6,6 +6,8 @@ define(function() {
     currentYear : 0,
     _weekendColor : "",
     _currentDayColor : "sknCurrentDateBGFF5959",
+    _selectedDateSkin : "sknSelectedDate",
+    _normalDateSkin : "sknNormalDatesGrey",
 
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
@@ -28,16 +30,16 @@ define(function() {
     },
 
     assignDates : function (firstDay,currentMonth,currentYear){
-      
+
       this.currentMonth  = parseInt(currentMonth);
       this.currentYear = parseInt(currentYear);
-      
+
       kony.print("#### assignDates #### currentMonth - "+currentMonth+" - currentYear - "+currentYear);
       for(var j = 1; j < 38; j++){
         this.view["lbl"+j].text = "";
         this.view["lbl"+j].setVisibility(false);
         //this.view["lbl"+j].backgroundColor = "ffffff";
-        this.view["lbl"+j].skin = "sknNormalDatesGrey";
+        this.view["lbl"+j].skin = this._normalDateSkin;
         this.view["lbl"+j].onTouchEnd = this.selectDate;
       }
       var day30Months = [3,5,8,10];
@@ -54,15 +56,15 @@ define(function() {
         endDate = 31;
       }
       for(var i = 1; i <= endDate; i++){
-        
+
         if(firstDay===0){
           firstDay=1;
         }
         this.view["lbl"+(firstDay+(i-1))].text = i.toFixed(0);
-        
+
         this.view["lbl"+(firstDay+(i-1))].setVisibility(true);
       }
-      
+
     },
 
     isLeapYear : function(year)
@@ -155,9 +157,9 @@ define(function() {
 
 
     _onGestureClosure:function (widgetRef, gestureInfo, context){
-      
-      
-      
+
+
+
       if(gestureInfo.swipeDirection == 3){
         this._nextMonth();
       }else if(gestureInfo.swipeDirection == 4){
@@ -168,19 +170,22 @@ define(function() {
         this._previousMonth();
       }
     },
-    
+
     selectDate : function(j){
-      if(j.skin==="sknSelectedDate"){
-        j.skin="sknNormalDatesGrey";
-      }else{
-        j.skin="sknSelectedDate";
+      if(j.skin!==this._currentDayColor){
+        if(j.skin===this._selectedDateSkin){
+          j.skin=this._normalDateSkin;
+        }else{
+          j.skin=this._selectedDateSkin;
+        }
       }
+
       if(this.onSelect){
         this.onSelect(j);
       }
     }
-    
-    
+
+
 
 
   };

@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "9%"
+        "value": "35%"
     },
     "_margin_": [
         0,
@@ -39,13 +39,13 @@
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxDot",
+    "id": "lblDot3",
     "info": null,
     "isvisible": true,
-    "kuid": "j2eae5a86b9e477ca1d6357f92d30c55",
+    "kuid": "iba40b1830ca4fe299bfabbae3b5b0e0",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxWeek6",
+    "parent": "flxWeek1",
     "pf": "userwidgetmodel",
     "snapgridsize": 10,
     "snaptogrid": true,

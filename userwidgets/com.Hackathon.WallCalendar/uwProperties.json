@@ -17,7 +17,80 @@
         },
         "properties": {
             "custom": [],
-            "passthrough": []
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "h79e32c43469466a9e31feed4bc85447",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblFamilyText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Event Family Text",
+                        "srcWidget": "lblFamily",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ddd6f17a23db4aa2a94f6fe018d960ca"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i3163d0d486047879e36c5c4a9e4be2b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "lblLifeText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Event Life Text",
+                        "srcWidget": "lblLife",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f1fac65fc771475898e6d0a6d21bb46a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d3dd9378f1d644d1b1e16cb392c5e577",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblWorkText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Event Work Text",
+                        "srcWidget": "lblWork",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "c744f5321a6244f6ba0fc80a35c7c187"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d771670ba1bd4315b1f876642bdce386",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "lblStudyText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Event Study Text",
+                        "srcWidget": "lblStudy",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "hf923221789f4ade8b8a60b01c0ed4b3"
+                }
+            ]
         },
         "widgets": {
             "expose": [],
