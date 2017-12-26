@@ -46,7 +46,10 @@
         "lblDot1",
         "lblDot2",
         "lblDot3",
-        "lblDot4"
+        "lblDot4",
+        "lblDot5",
+        "lblDot6",
+        "lblDot7"
     ],
     "clipbounds": true,
     "containerweight": 100,

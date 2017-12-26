@@ -38,9 +38,10 @@
     "children": [
         "lbl36",
         "lbl37",
-        "flxDot",
+        "lblDot36",
         "lblInvisibleBorder",
-        "lblInvisibleBG"
+        "lblInvisibleBG",
+        "lblDot37"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -49,7 +50,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "fe253e3329654c6fbd04b5f04a80c8a4",
-    "layouttype": 3,
+    "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.FlexContainer",
     "parent": "flxCalendar",

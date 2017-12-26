@@ -24,5 +24,5 @@ define({
   onNavigate : function () {
     this._init();
   },
-
+  
 });

@@ -41,7 +41,7 @@
     "enablescrolling": true,
     "id": "lblDot4",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "ia016107c4e147be9b6ba33764028a91",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

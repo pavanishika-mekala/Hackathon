@@ -7,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "22%"
+        "value": "22.50%"
     },
     "_margin_": [
         0,
@@ -41,7 +41,7 @@
     "enablescrolling": true,
     "id": "lblDot2",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "h18b0b00f8374768a0f45b96d002d944",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
