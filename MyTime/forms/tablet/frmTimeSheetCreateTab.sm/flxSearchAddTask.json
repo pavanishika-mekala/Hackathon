@@ -1,9 +1,13 @@
 {
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "15%"
+    },
     "_height_": {
         "type": "string",
-        "value": "33.30%"
+        "value": "15%"
     },
     "_left_": {
         "type": "string",
@@ -24,10 +28,6 @@
     ],
     "_percent_": true,
     "_skin_": "sec3f93916e8483794b2b479c87bb758",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
     "_width_": {
         "type": "string",
         "value": "100%"

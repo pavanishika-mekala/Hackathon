@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2ac38876f3e49228ba1661d74ac3c27",
+    "_text_": "Confirm",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s2ac38876f3e49228ba1661d74ac3c27",
+    "id": "btnConfirm",
+    "ide_onClick": "AS_Button_fe97ce54477f48d89bc95ae2342272db",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d55e67ff0d044c30a31a7db361f089c0",
+    "name": "kony.ui.Button",
+    "parent": "flxFooterAddAsATask",
+    "pf": "frmTimeSheetCreateTab",
+    "wType": "Button",
+    "zindex": 1
+}

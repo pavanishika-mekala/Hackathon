@@ -48,7 +48,10 @@
         "flxHorizontalLine2",
         "flxDetailsOfSelectedTask",
         "flxTaskSummary",
-        "flxManualTimeSelection"
+        "flxManualTimeSelection",
+        "flxAdvancedSearch",
+        "flxAddAsTaskPopup",
+        "flxRecentTask"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -2,7 +2,7 @@
     "DNDConfig": null,
     "_height_": {
         "type": "string",
-        "value": "13%"
+        "value": "30%"
     },
     "_margin_": [
         0,
@@ -24,7 +24,9 @@
     "canUpdateUI": true,
     "children": [
         "Label0c6e5ff96a70c4b",
-        "Label04360685151bc47"
+        "Label04360685151bc47",
+        "CopyLabel0b6b69a5bb44e46",
+        "FlexContainer030984a80bd2147"
     ],
     "clipbounds": true,
     "containerId": true,

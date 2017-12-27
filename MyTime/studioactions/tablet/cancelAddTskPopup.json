@@ -1,0 +1,25 @@
+{
+    "AS_Button_i14c116d25db4293b47036d615315301": {
+        "id": "AS_Button_i14c116d25db4293b47036d615315301",
+        "type": "ACTION_SEQUENCE",
+        "name": "cancelAddTskPopup",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a9c83b369d69412a97abf52154ed9771",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxAddAsTaskPopup.isVisible=false;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

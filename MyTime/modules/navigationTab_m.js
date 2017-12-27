@@ -35,7 +35,7 @@ kony.apps.coe.ess.myTime.navigationTab.prototype.timesheetcreateactionTab = func
         frmTimeSheetCreateTab.lblVacation.skin="sknlbl777777Tab";
         frmTimeSheetCreateTab.imgWork.src = "workwhite.png";
         frmTimeSheetCreateTab.imgLeave.src = "vacation.png";
-      frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(true);
+      frmTimeSheetCreateTab.segTasks.setVisibility(true);
       frmTimeSheetCreateTab.segLeaveSelection.setVisibility(false);
       frmTimeSheetCreateTab.segTasksSearchResults.setVisibility(false);
       frmTimeSheetCreateTab.segDetailsSelectedTask.setVisibility(false);

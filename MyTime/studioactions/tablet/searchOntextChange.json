@@ -1,0 +1,28 @@
+{
+    "AS_TextField_cb16ab3666c9477d9acd60bf9c7512e1": {
+        "id": "AS_TextField_cb16ab3666c9477d9acd60bf9c7512e1",
+        "type": "ACTION_SEQUENCE",
+        "name": "searchOntextChange",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e41c61d1b0b04439a69bec17486f2458",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Tab.SearchTask.searchParam =\"Free Search\";\ntry{\n\tkony.apps.coe.ess.myTime.Tab.SearchTask.searchProjectTask(kony.apps.coe.ess.myTime.Tab.SearchTask.searchParam);\n}\ncatch(e){\n  handleError(\"Error: \"+e);\n}",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

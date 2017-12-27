@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_ad8d5028f21244a38d77e3391cb5256b": {
+        "id": "AS_FlexContainer_ad8d5028f21244a38d77e3391cb5256b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_cc163be185d3419ca566e145eebb41bf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n\tkony.apps.coe.ess.myTime.Tab.SearchTask.addAsNewTask(kony.apps.coe.ess.myTime.Tab.SearchTask.searchParam);\n}\ncatch(e){\n  handleError(\"Error: \"+e);\n}",
+            "callbackType": null
+        }]
+    }
+}

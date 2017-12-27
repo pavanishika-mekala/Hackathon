@@ -1,0 +1,17 @@
+{
+    "AS_FlexContainer_feaf1f8904a943b7919780439c32c601": {
+        "id": "AS_FlexContainer_feaf1f8904a943b7919780439c32c601",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_j203f5b6582048b1bea26cbc837438fc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggleTab.onClickOfLeave();",
+            "callbackType": null
+        }]
+    }
+}

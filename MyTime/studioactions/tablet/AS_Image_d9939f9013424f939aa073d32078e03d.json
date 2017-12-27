@@ -1,0 +1,23 @@
+{
+    "AS_Image_d9939f9013424f939aa073d32078e03d": {
+        "id": "AS_Image_d9939f9013424f939aa073d32078e03d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchStart_c3d88d8590ba429ea21e61f3080d55b9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab.contractAnimation();",
+            "callbackType": null
+        }]
+    }
+}

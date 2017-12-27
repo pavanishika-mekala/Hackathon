@@ -1,0 +1,25 @@
+{
+    "AS_FlexContainer_b4d5f58365d84219a0c148ccc3d7877f": {
+        "id": "AS_FlexContainer_b4d5f58365d84219a0c148ccc3d7877f",
+        "type": "ACTION_SEQUENCE",
+        "name": "noaction",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__jefe5000805b4927ab720d86ba2f281e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//noaction\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

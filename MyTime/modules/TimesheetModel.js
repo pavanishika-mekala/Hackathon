@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Mon Oct 30 07:03:35 UTC 2017Timesheet*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Mon Dec 11 13:01:27 UTC 2017Timesheet*******************
 // **********************************Start Timesheet's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -747,36 +747,58 @@ com.kony.ESS.MYTIME.Timesheet.remove = function(wcs, successcallback,errorcallba
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function Timesheet_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("Id") ;
 			targetAttributes.push("Timesheet_Id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.ESS.MYTIME.Timesheet_Note.removeCascade, "Timesheet_Note", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.ESS.MYTIME.Timesheet_Note.removeCascade, "Timesheet_Note", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("Id") ;
 			targetAttributes.push("Timesheet_Id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.ESS.MYTIME.Time_Entry.removeCascade, "Time_Entry", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.ESS.MYTIME.Time_Entry.removeCascade, "Time_Entry", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 			var srcAttributes = [];
 			var targetAttributes = [];
 			srcAttributes.push("Id") ;
 			targetAttributes.push("Timesheet_Id") ;
-		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.ESS.MYTIME.Timesheet_Audit.removeCascade, "Timesheet_Audit", false, errorcallback, markForUpload, null, false)){
+ 			record = kony.sync.getOriginalRow(tx, tbname, wcs, errorcallback);
+            if (record === false) {
+                isError = true;
+                return;
+            }
+	if(record !== null){	
+		if(!kony.sync.removeCascadeHelper(tx, srcAttributes, targetAttributes, tbname, wcs, com.kony.ESS.MYTIME.Timesheet_Audit.removeCascade, "Timesheet_Audit", false, errorcallback, markForUpload, record, false)){
 			isError = true;	
 			kony.sync.rollbackTransaction(tx);
 			return;
 		}
+	}
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

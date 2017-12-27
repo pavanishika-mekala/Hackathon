@@ -1,0 +1,18 @@
+{
+    "AS_FlexContainer_a4bf1ccbf4e74aca860a3d37a82385d9": {
+        "id": "AS_FlexContainer_a4bf1ccbf4e74aca860a3d37a82385d9",
+        "type": "ACTION_SEQUENCE",
+        "name": "advOnlineSearch",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_i14c27668dca4c4a83e7f0f740f33ad5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "try{\n\tkony.apps.coe.ess.myTime.Tab.SearchTask.onlineSearch(kony.apps.coe.ess.myTime.Tab.SearchTask.searchParam);\n}\ncatch(e){\n  handleError(\"Error: \"+e);\n}",
+            "callbackType": null
+        }]
+    }
+}

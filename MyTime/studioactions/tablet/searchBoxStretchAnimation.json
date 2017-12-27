@@ -1,0 +1,31 @@
+{
+    "AS_TextField_f2d9b41c86fa45c2b92ceab285483c65": {
+        "id": "AS_TextField_f2d9b41c86fa45c2b92ceab285483c65",
+        "type": "ACTION_SEQUENCE",
+        "name": "searchBoxStretchAnimation",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__d5377cf00a0f48fd8346caa1ef57f606",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "\nsearchBoxStretchAnimation();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

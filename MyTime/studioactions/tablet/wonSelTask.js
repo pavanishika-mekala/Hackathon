@@ -11,7 +11,7 @@ function AS_Label_6f44f92ad1544e99b5aa96d585ab174f(eventobject, x, y) {
     frmTimeSheetCreateTab.addtasklbl.setVisibility(false);
     frmTimeSheetCreateTab.fxsrch.setVisibility(false);
     frmTimeSheetCreateTab.flxsrchCriteria.setVisibility(false);
-    frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(false);
+    frmTimeSheetCreateTab.segTasks.setVisibility(false);
     frmTimeSheetCreateTab.flxTimetypesel.setVisibility(false);
     frmTimeSheetCreateTab.flxBreaksel.setVisibility(false);
     frmTimeSheetCreateTab.flxskinTrans.setVisiblity(true);
