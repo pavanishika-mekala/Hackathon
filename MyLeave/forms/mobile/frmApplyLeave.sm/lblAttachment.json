@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
@@ -61,7 +62,7 @@
     "isvisible": true,
     "kuid": "94a5841488fd426f95bb3132432eeac9",
     "name": "kony.ui.Label",
-    "parent": "flxAttachment",
+    "parent": "FlexContainer0a0edd3cc097e43",
     "pf": "frmApplyLeave",
     "texti18n": "i18n.ess.common.attachment.valueKA",
     "tooltip": "",
