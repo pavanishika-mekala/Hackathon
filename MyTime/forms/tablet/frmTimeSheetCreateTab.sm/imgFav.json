@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "35dp"
+        "value": "19dp"
     },
     "_margin_": [
         0,
@@ -24,21 +24,21 @@
         "value": "5%"
     },
     "_skin_": "sf6cf2253b0c4770b4b174fe11c224a5",
-    "_src_": "starcircle.png",
+    "_src_": "recenttaskblue2x.png",
     "_width_": {
         "type": "string",
-        "value": "35dp"
+        "value": "17dp"
     },
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "50%"
+        "value": "46.6%"
     },
     "containerweight": 100,
     "context": {
         "channel": "tablet",
         "formID": "frmTimeSheetCreateTab",
-        "platform": "ipad",
+        "platform": "tabrcandroid",
         "templateType": "forms",
         "topLevelBox": null
     },

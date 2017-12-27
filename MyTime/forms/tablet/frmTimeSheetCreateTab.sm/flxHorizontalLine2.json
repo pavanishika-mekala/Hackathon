@@ -41,7 +41,7 @@
     "enablescrolling": true,
     "id": "flxHorizontalLine2",
     "info": null,
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "8022b8f528b54a4d9636aa2a39b0edae",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",

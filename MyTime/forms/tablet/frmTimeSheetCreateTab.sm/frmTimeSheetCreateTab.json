@@ -35,7 +35,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPad3",
+    "device": "GalaxyTab7",
     "displayorientation": 2,
     "enabledforidletimeout": false,
     "footer": "frmTimeSheetCreateTab_footer",
@@ -80,11 +80,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "ipad",
-    "prevDevice": "GalaxyTab7",
-    "prevPlatform": "tabrcandroid",
+    "platform": "tabrcandroid",
+    "prevDevice": "iPad3",
+    "prevPlatform": "ipad",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPad3",
+    "shellCSS": "and_Tab_Galaxy7",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaandroidtablet": {

@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5.20%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd4a98a325f8424ca0515ec5591b40e1",
+    "_text_": "Online Search ",
+    "_top_": {
+        "type": "string",
+        "value": "47%"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblOnlineSearchResult",
+    "ide_onTouchEnd": "AS_Label_hb4b9a63506040138994423e0422ee79",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": false,
+    "kuid": "cc70727d0c454b638ee2afc27f5c582f",
+    "name": "kony.ui.Label",
+    "parent": "flxAdvancedSearch",
+    "pf": "frmTimeSheetCreateTab",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 50
+}

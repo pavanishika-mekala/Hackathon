@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "saacf12cfa564f4995479e4c6505107d",
+    "_text_": "Cancel",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "saacf12cfa564f4995479e4c6505107d",
+    "id": "btnCancel",
+    "ide_onClick": "AS_Button_i14c116d25db4293b47036d615315301",
+    "info": null,
+    "isvisible": true,
+    "kuid": "g303bc168ea747a0a3d11f92ed5dd675",
+    "name": "kony.ui.Button",
+    "parent": "flxFooterAddAsATask",
+    "pf": "frmTimeSheetCreateTab",
+    "wType": "Button",
+    "zindex": 1
+}

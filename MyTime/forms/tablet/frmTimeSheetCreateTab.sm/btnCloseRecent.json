@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_skin_": "s5c40837bb424e0baf815ded2d1fa43b",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s7bef9bb85fe4f4093d0a5312e99907e",
+    "id": "btnCloseRecent",
+    "ide_onClick": "AS_Button_eb43a98ff5fa48d88feb5590a4a62dfa",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b2aa3b8295a84432bb0e745ca555a9aa",
+    "name": "kony.ui.Button",
+    "parent": "flxRecentTask",
+    "pf": "frmTimeSheetCreateTab",
+    "wType": "Button",
+    "zindex": 1
+}

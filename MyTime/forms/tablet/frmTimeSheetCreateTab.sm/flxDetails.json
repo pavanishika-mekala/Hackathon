@@ -38,12 +38,11 @@
     "children": [
         "txtBoxSearch",
         "imgCancel",
-        "segProjectTaskSelection",
+        "segTasks",
         "flxSelectedTaskTimeTypeSelection",
         "segLeaveSelection",
         "flxSelectedLeave",
         "segTasksSearchResults",
-        "lblNoResultsTask",
         "flxSearchPopup",
         "flxOnlineSearch"
     ],

@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Mon Oct 30 07:03:35 UTC 2017notification*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Mon Dec 11 13:01:27 UTC 2017notification*******************
 // **********************************Start notification's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -696,9 +696,10 @@ com.kony.MYTIME.notification.remove = function(wcs, successcallback,errorcallbac
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function notification_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

@@ -1192,7 +1192,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.sqlSuccess = function(res) {
             } else {
                 projectTask.lblProjectName = (kony.apps.coe.ess.myTime.ViewTimeSheetUI.isData(res[i][j].Project_Name)) ? res[i][j].Project_Name : res[i][j].Task_Name;
                 projectTask.Project_Task_Type = (res[i][j].Type === "") ? "" : res[i][j].Type;
-                projectTask.template = flxSegProjectSelection;
+                projectTask.template = flxTaskList;
             }
             rows.push(projectTask);
         }

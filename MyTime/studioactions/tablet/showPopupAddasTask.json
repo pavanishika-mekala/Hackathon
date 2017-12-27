@@ -1,0 +1,31 @@
+{
+    "AS_Label_fdc0d2219f3f4dca9cc7b1f7ab02637b": {
+        "id": "AS_Label_fdc0d2219f3f4dca9cc7b1f7ab02637b",
+        "type": "ACTION_SEQUENCE",
+        "name": "showPopupAddasTask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ibe272fb037544e6b0d62359cee29add",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Tab.SearchTask.showPopupAddasTask();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

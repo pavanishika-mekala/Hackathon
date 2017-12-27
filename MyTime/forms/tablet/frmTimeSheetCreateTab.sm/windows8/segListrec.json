@@ -12,6 +12,10 @@
             },
             [
                 {
+                    "CopyLabel0b6b69a5bb44e46": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
                     "Label04360685151bc47": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                         "text": "Research"
@@ -22,6 +26,10 @@
                     }
                 },
                 {
+                    "CopyLabel0b6b69a5bb44e46": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
                     "Label04360685151bc47": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                         "text": "Design"
@@ -32,6 +40,10 @@
                     }
                 },
                 {
+                    "CopyLabel0b6b69a5bb44e46": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
                     "Label04360685151bc47": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
                         "text": "Imp"
@@ -132,6 +144,7 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "CopyLabel0b6b69a5bb44e46": "CopyLabel0b6b69a5bb44e46",
         "FlexContainer030984a80bd2147": "FlexContainer030984a80bd2147",
         "Label04360685151bc47": "Label04360685151bc47",
         "Label09ce9a158d8e149": "Label09ce9a158d8e149",

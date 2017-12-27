@@ -1,0 +1,61 @@
+{
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "45%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s46bf8a8b8e84a60a26eb7dc19478a40",
+    "_top_": {
+        "type": "string",
+        "value": "52%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "61%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lbRecent",
+        "imgRecent",
+        "segRecentTasks",
+        "lblNoTasks",
+        "btnCloseRecent"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxRecentTask",
+    "info": null,
+    "isvisible": false,
+    "kuid": "dab20293c9764db8abcf4e05eb5654ec",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTimesheetCreateTab",
+    "pf": "frmTimeSheetCreateTab",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 50
+}

@@ -17,7 +17,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_postShow_af5f97795ca74d02aef96e5c00269b8e",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "//new kony.apps.coe.ess.loginAnimations().animationLoginScreen();\n//(new kony.apps.coe.ess.QRCode()).onPostShowOfLogin();\n",
+            "codeSnippet": "//new kony.apps.coe.ess.loginAnimations().animationLoginScreen();\n//(new kony.apps.coe.ess.QRCode()).onPostShowOfLogin();\nmaster_data =frmTimeSheetCreateTab.segAdvancedSearch.data;",
             "callbackType": null
         }]
     }

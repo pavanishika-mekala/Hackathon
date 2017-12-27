@@ -1,0 +1,50 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "sd31dabb825b490ab7c8c7f74afdcebe",
+    "_text_": "Go",
+    "_top_": {
+        "type": "string",
+        "value": "44%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd31dabb825b490ab7c8c7f74afdcebe",
+    "id": "btnStartSearch",
+    "ide_onClick": "AS_Button_e0033909dcf3429fb8bc373d55596182",
+    "info": null,
+    "isvisible": false,
+    "kuid": "e183cb33db5945ba80fd959bc437241a",
+    "name": "kony.ui.Button",
+    "parent": "flxAdvancedSearch",
+    "pf": "frmTimeSheetCreateTab",
+    "wType": "Button",
+    "zindex": 43
+}
