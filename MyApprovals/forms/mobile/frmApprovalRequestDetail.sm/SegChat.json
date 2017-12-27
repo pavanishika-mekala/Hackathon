@@ -119,7 +119,10 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
+        "flxAppliedData": "flxAppliedData",
+        "flxCommentArea": "flxCommentArea",
         "flxCornerShape": "flxCornerShape",
+        "flxDetails": "flxDetails",
         "flxImg": "flxImg",
         "flxRequesterComments": "flxRequesterComments",
         "flxcomment": "flxcomment",

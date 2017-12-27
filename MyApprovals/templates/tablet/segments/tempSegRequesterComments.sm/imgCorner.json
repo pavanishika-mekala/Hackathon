@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
@@ -34,11 +35,10 @@
         "value": "preferred"
     },
     "canUpdateUI": true,
-    "containerId": true,
     "containerweight": 100,
     "context": {
         "channel": "tablet",
-        "platform": "ipad",
+        "platform": "tabrcandroid",
         "templateType": "segments",
         "topLevelBox": null
     },
@@ -47,7 +47,7 @@
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "g05b4db1cd6f41e9bff4f27a91480334",
+    "kuid": "i148c77cd3f94af8a383a4bc44888830",
     "name": "kony.ui.Image2",
     "parent": "flxCornerShape",
     "pf": "tempSegRequesterComments",
