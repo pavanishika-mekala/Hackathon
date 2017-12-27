@@ -84,7 +84,7 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
 
             //if (response_data[index].StatusName == "Pending") {
           if (response_data[index].StatusName == kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")) {
-                processedRequest.status_value = {text:response_data[index].StatusName,skin:"sknLblredErr"};
+                processedRequest.status_value = {text:response_data[index].StatusName,skin:"sknlblyellow"};
             } else {
                 var approvedDate = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].ApprovedDate).toDDmmmYY();
                 if(response_data[index].StatusName == "Approved"){
@@ -95,7 +95,7 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
                   processedRequest.status_value = {text: kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate,skin:"sknLblredErr"};
                 }
               else
-                processedRequest.status_value = {text: response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate,skin:"sknLblredErr"};
+                processedRequest.status_value = {text: response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate,skin:"sknlblyellow"};
             }
 
             // For informational leave types make sure there is a type defined

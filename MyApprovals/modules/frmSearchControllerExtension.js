@@ -152,7 +152,7 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
             secondPart = "";
           }
           if(firstPart == "Pending"){
-            data[i].status_value = {text : kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending"),skin : "sknLblredErr"};
+            data[i].status_value = {text : kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending"),skin : "sknlblyellow"};
           }else if(firstPart == "Approved"){
             data[i].status_value = {text : kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+secondPart,skin : "sknlblGreenApp"}
           }else if(firstPart == "Rejected"){
