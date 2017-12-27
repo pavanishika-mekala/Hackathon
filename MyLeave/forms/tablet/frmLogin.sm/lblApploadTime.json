@@ -4,8 +4,8 @@
     "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "ref",
-        "value": "preferred"
+        "type": "string",
+        "value": "48%"
     },
     "_left_": {
         "type": "string",
@@ -25,6 +25,10 @@
     ],
     "_skin_": "s28a1be4da82497fb151553c5c0cbf90",
     "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
     "_width_": {
         "type": "string",
         "value": "100%"
@@ -37,10 +41,6 @@
         }
     },
     "canUpdateUI": true,
-    "centery": {
-        "type": "string",
-        "value": "50%"
-    },
     "containerweight": 100,
     "contentalignment": 5,
     "id": "lblApploadTime",
@@ -50,7 +50,7 @@
             "wrapping": 2
         }
     },
-    "isvisible": true,
+    "isvisible": false,
     "kuid": "g51de9069b324eaea1f25e215697ad51",
     "name": "kony.ui.Label",
     "parent": "flxApploadTime",

@@ -213,6 +213,7 @@ function userDetailsSucess(response) {
         var appInstance = kony.sdk.mvvm.KonyApplicationContext.getAppInstance();
         if (appInstance) {
           	frmLogin.lblApploadTime.setVisibility(true);
+          	frmLogin.lblwait.setVisibility(true);
             kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.initializing"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
             //Initialize ApplicationForms
             kony.sdk.mvvm.initApplicationForms(appInstance);
@@ -315,12 +316,14 @@ function userDetailsSucess(response) {
                               	var successEnablePush = function() {
                                   frmSettings.imgPushNotification.src = "on.png";
                                   frmLogin.lblApploadTime.setVisibility(false);
+                                  frmLogin.lblwait.setVisibility(false);
                                   kony.application.dismissLoadingScreen();
                                 };
                                 var failureEnablePush = function() {
                                   frmSettings.imgPushNotification.src = "off.png";
                                   toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.common.errorOnEnableNotifications"), 3000);
                                   frmLogin.lblApploadTime.setVisibility(false);
+                                  frmLogin.lblwait.setVisibility(false);
                                   kony.application.dismissLoadingScreen();
                                 };
                                 if (isNewUser) {
@@ -339,6 +342,7 @@ function userDetailsSucess(response) {
                             //ToDo : What to show on Sync Failure
                             kony.application.dismissLoadingScreen();
                           	frmLogin.lblApploadTime.setVisibility(false);
+                          	frmLogin.lblwait.setVisibility(false);
                             kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
                             //#ifdef windows8
                             frmLogin.flxLogin.onClick = function() {
@@ -358,6 +362,7 @@ function userDetailsSucess(response) {
                             }
                             else {
                               	frmLogin.lblApploadTime.setVisibility(true);
+                              	frmLogin.lblwait.setVisibility(true);
                                 // //After Successfull verification of New user, Start Sync Session
                                 kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
                               	kony.apps.coe.ess.Sync.resetSyncDb(mfresetLocalDBSucess, mfresetLocalDBError);
@@ -366,6 +371,7 @@ function userDetailsSucess(response) {
                         };
                       	var mfresetLocalDBSucess = function() {
                          frmLogin.lblApploadTime.setVisibility(true);
+                         frmLogin.lblwait.setVisibility(true);
                          kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
                          kony.apps.coe.ess.Sync.doDownload = true;
                          kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
@@ -390,6 +396,7 @@ function userDetailsSucess(response) {
                                             if (kony.application.getCurrentForm() === frmLogin) {
                                                 kony.apps.coe.ess.frmLogin.showEnableTouchIDPopup(syncAndShowLandingForm);
                                               	frmLogin.lblApploadTime.setVisibility(false);
+                                              	frmLogin.lblwait.setVisibility(false);
                                                 kony.application.dismissLoadingScreen();
                                                 return;
                                             }
@@ -469,6 +476,7 @@ function applicationErrorCallback(error) {
     }
     kony.print("Error Occured on LoginAction : " + JSON.stringify(error));
   	frmLogin.lblApploadTime.setVisibility(false);
+  	frmLogin.lblwait.setVisibility(false);
     kony.application.dismissLoadingScreen();
     kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
     //#ifdef windows8
@@ -557,6 +565,7 @@ kony.sdk.mvvm.LogoutAction = function() {
   function sucCallback() {
     kony.application.dismissLoadingScreen();
     frmLogin.lblApploadTime.setVisibility(false);
+    frmLogin.lblwait.setVisibility(false);
     frmLogin.show();
     frmLeaveHome.destroy();
   }
@@ -564,6 +573,7 @@ kony.sdk.mvvm.LogoutAction = function() {
   function errCallback(err) {
     kony.application.dismissLoadingScreen();
     frmLogin.lblApploadTime.setVisibility(false);
+    frmLogin.lblwait.setVisibility(false);
     frmLogin.show();
     frmLeaveHome.destroy();
     kony.print(JSON.stringify(err));

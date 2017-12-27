@@ -36,7 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblApploadTime"
+        "lblApploadTime",
+        "lblwait"
     ],
     "clipbounds": true,
     "containerweight": 100,

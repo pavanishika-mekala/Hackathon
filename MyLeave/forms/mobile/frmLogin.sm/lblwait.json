@@ -4,8 +4,8 @@
     "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
-        "type": "string",
-        "value": "48%"
+        "type": "ref",
+        "value": "preferred"
     },
     "_left_": {
         "type": "string",
@@ -27,7 +27,7 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "50%"
     },
     "_width_": {
         "type": "string",
@@ -43,7 +43,7 @@
     "canUpdateUI": true,
     "containerweight": 100,
     "contentalignment": 5,
-    "id": "lblApploadTime",
+    "id": "lblwait",
     "info": null,
     "ipad": {
         "psp": {
@@ -56,11 +56,10 @@
         }
     },
     "isvisible": false,
-    "kuid": "a3efaeb010384e168c62f9f57a812fce",
+    "kuid": "i1e30c249d8245569a39bbf6184f1969",
     "name": "kony.ui.Label",
     "parent": "flxApploadTime",
     "pf": "frmLogin",
-    "texti18n": "i18n.ess.myleave.appload.text",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
