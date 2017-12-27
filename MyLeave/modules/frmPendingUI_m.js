@@ -263,15 +263,15 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
             // } else
             //  pendingData.lblDays = ((parseInt(data[i].no_of_hours) * 1) / 7.5).toFixed() + " DAYS";
           	var currHrs = data[i].no_of_hours;
-          	kony.print("currHrs is::"+currHrs);
+          	kony.print("currHrs is::"+currHrs+"leaveaDays : "+leaveaDays);
 			if(leaveaDays !== undefined && leaveaDays !== null && leaveaDays !== ""){
-				if(leaveaDays === 1){
+				if(Number(leaveaDays) === 1){
 					pendingData.lblDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
-				}else if(leaveaDays > 1){
-					pendingData.lblDays = leaveaDays + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+				}else if(Number(leaveaDays) > 1){
+					pendingData.lblDays = Number(leaveaDays) + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
 				}else{
 					if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
-					  pendingData.lblDays = (currHrs.toString() +" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+                        pendingData.lblDays = (currHrs.toString() +" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
 					}else{
 					  pendingData.lblDays = "";
 					}
