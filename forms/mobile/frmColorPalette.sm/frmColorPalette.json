@@ -27,13 +27,14 @@
     },
     "canUpdateUI": true,
     "children": [
-        "ColorPalette"
+        "flxBody",
+        "CustomizedHeader"
     ],
     "containerweight": 100,
     "controllerInfo": {
         "default": {
             "channel": "mobile",
-            "name": "frmHomeController"
+            "name": "frmColorPaletteController"
         }
     },
     "currentLocale": "default",
@@ -43,7 +44,7 @@
     "device": "iPhone6",
     "displayorientation": 1,
     "enabledforidletimeout": false,
-    "id": "frmHome",
+    "id": "frmColorPalette",
     "info": null,
     "initdone": false,
     "inputaccessoryviewtype": 4,

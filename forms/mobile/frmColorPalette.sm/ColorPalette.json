@@ -1,9 +1,11 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "100%"
     },
     "_left_": {
         "type": "string",
@@ -15,7 +17,7 @@
         0,
         0
     ],
-    "_orientation_": 6,
+    "_orientation_": 1,
     "_padding_": [
         0,
         0,
@@ -23,7 +25,8 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s98617c1b43040ea8251cfbd4aef913e",
+    "_render_": true,
+    "_skin_": "s52785a2b9894e5aa408903deef47c32",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -32,25 +35,20 @@
         "type": "string",
         "value": "100%"
     },
-    "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxHome"
-    ],
     "clipbounds": true,
-    "containerweight": 100,
-    "enablescrolling": true,
-    "id": "CustomizedHeader",
+    "containerweight": 0,
+    "data": {},
+    "id": "ColorPalette",
     "info": null,
     "isvisible": true,
-    "kuid": "ja0d0a767d624ba1bdd61b1c7dd23c1d",
+    "kuid": "g2634d06541d4fa2ae9e1f3d091d6cea",
     "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
-    "parent": "userwidgetmodel",
-    "pf": "userwidgetmodel",
-    "snapgridsize": 10,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxBody",
+    "pf": "frmColorPalette",
     "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1
+    "sourceUserWidget": "ecd9360aed3e40a6943462556bbe39b0",
+    "wType": "UserWidgetInstance"
 }

@@ -1,6 +1,8 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_children_": [],
     "_height_": {
         "type": "string",
         "value": "10%"
@@ -15,7 +17,7 @@
         0,
         0
     ],
-    "_orientation_": 6,
+    "_orientation_": 1,
     "_padding_": [
         0,
         0,
@@ -23,7 +25,8 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s98617c1b43040ea8251cfbd4aef913e",
+    "_render_": true,
+    "_skin_": "s52785a2b9894e5aa408903deef47c32",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -32,25 +35,25 @@
         "type": "string",
         "value": "100%"
     },
-    "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "flxHome"
-    ],
     "clipbounds": true,
-    "containerweight": 100,
-    "enablescrolling": true,
+    "containerweight": 0,
+    "data": {
+        "leftImageSrc": "leftarrow.png",
+        "rightImageIsVisible": false,
+        "titleText": "Wall Calendar"
+    },
     "id": "CustomizedHeader",
     "info": null,
     "isvisible": true,
-    "kuid": "ja0d0a767d624ba1bdd61b1c7dd23c1d",
+    "kuid": "b3d292dc2859466982bd14625df21647",
     "layouttype": 2,
-    "name": "kony.ui.FlexContainer",
-    "parent": "userwidgetmodel",
-    "pf": "userwidgetmodel",
-    "snapgridsize": 10,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "frmWallCalendar",
+    "pf": "frmWallCalendar",
     "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1
+    "sourceUserWidget": "ja0d0a767d624ba1bdd61b1c7dd23c1d",
+    "wType": "UserWidgetInstance"
 }

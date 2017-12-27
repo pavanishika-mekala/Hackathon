@@ -42,7 +42,7 @@
     "isvisible": true,
     "kuid": "e7fe312f68274bab930a509b9eaeb8b0",
     "name": "kony.ui.Button",
-    "parent": "flxLandingPage",
+    "parent": "flxBody",
     "pf": "frmLandingPage",
     "wType": "Button",
     "zindex": 1

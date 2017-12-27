@@ -46,8 +46,9 @@
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "frmWristCalendar",
+    "parent": "flxBody",
     "pf": "frmWristCalendar",
+    "snaptogrid": true,
     "sourceUserWidget": "a04e54774a9d4d39862b5f477fbba022",
     "wType": "UserWidgetInstance"
 }

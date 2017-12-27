@@ -7,6 +7,10 @@ define(function() {
 		//Logic for getters/setters of custom properties
 		initGettersSetters: function() {
 
-		}
+		},
+      
+      setBackgroundColor : function(color){
+        this.view.flxHome.backgroundColor = color;
+      }
 	};
 });

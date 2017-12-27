@@ -46,8 +46,9 @@
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "frmMenu",
+    "parent": "flxBody",
     "pf": "frmMenu",
+    "snaptogrid": true,
     "sourceUserWidget": "e5a2246162b645a08ba52cd86debc74c",
     "wType": "UserWidgetInstance"
 }

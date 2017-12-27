@@ -27,7 +27,8 @@
     },
     "canUpdateUI": true,
     "children": [
-        "LoginRotate"
+        "flxBody",
+        "CustomizedHeader"
     ],
     "containerweight": 100,
     "controllerInfo": {

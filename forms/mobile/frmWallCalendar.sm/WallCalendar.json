@@ -46,8 +46,9 @@
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "frmWallCalendar",
+    "parent": "flxBody",
     "pf": "frmWallCalendar",
+    "snaptogrid": true,
     "sourceUserWidget": "h27f818538fe4816a8e37b98921aab5d",
     "wType": "UserWidgetInstance"
 }

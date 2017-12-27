@@ -1,11 +1,9 @@
 {
-    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
     "__parentReadjusting__": false,
-    "_children_": [],
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
@@ -17,7 +15,7 @@
         0,
         0
     ],
-    "_orientation_": 1,
+    "_orientation_": 6,
     "_padding_": [
         0,
         0,
@@ -25,29 +23,34 @@
         0
     ],
     "_percent_": true,
-    "_render_": true,
     "_skin_": "s52785a2b9894e5aa408903deef47c32",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10%"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
+    "allboxes": [],
+    "autogrowmode": 0,
     "canUpdateUI": true,
+    "children": [
+        "WristCalendar"
+    ],
     "clipbounds": true,
-    "containerweight": 0,
-    "data": {},
-    "id": "ColorPalette",
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxBody",
     "info": null,
     "isvisible": true,
-    "kuid": "g2634d06541d4fa2ae9e1f3d091d6cea",
+    "kuid": "c8425bc74ce04b46af05cbd9273bae45",
     "layouttype": 2,
-    "masterType": 1,
-    "name": "kony.ui.UserWidgetInstance",
-    "parent": "frmHome",
-    "pf": "frmHome",
-    "sourceUserWidget": "ecd9360aed3e40a6943462556bbe39b0",
-    "wType": "UserWidgetInstance"
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmWristCalendar",
+    "pf": "frmWristCalendar",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
 }

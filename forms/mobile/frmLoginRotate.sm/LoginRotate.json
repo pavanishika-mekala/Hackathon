@@ -46,8 +46,9 @@
     "layouttype": 2,
     "masterType": 1,
     "name": "kony.ui.UserWidgetInstance",
-    "parent": "frmLoginRotate",
+    "parent": "flxBody",
     "pf": "frmLoginRotate",
+    "snaptogrid": true,
     "sourceUserWidget": "a92da4d943f54d3b9f2e270e9a0d294e",
     "wType": "UserWidgetInstance"
 }

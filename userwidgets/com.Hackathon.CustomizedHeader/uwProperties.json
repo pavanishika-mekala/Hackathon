@@ -2,7 +2,24 @@
     "classname": "CustomizedHeader",
     "definitions": {
         "apis": {
-            "custom": [],
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c71e452c6d0241c999d80ca5fbb6feb5",
+                    "paramList": [
+                        {
+                            "name": "color"
+                        }
+                    ],
+                    "propertyKey": "setBackgroundColor",
+                    "pw": {
+                        "displayName": "setBackgroundColor",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ja0d0a767d624ba1bdd61b1c7dd23c1d",
+                    "type": "event"
+                }
+            ],
             "passthrough": []
         },
         "events": {
@@ -11,7 +28,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "f5b84aae2994457e8c5e8945ddfd7050",
+                    "kuid": "d6d00b6f4ae64fa396f42ff0a16a5fab",
                     "originalPropertyKey": "onTouchEnd",
                     "propertyIndex": 1,
                     "propertyKey": "leftClickEvent",
@@ -29,7 +46,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "e6d2c07d4d17435181f24fde255861d4",
+                    "kuid": "f6b1abd3b08b408ab422fa5bd472f593",
                     "originalPropertyKey": "onTouchEnd",
                     "propertyIndex": 2,
                     "propertyKey": "rightClickEvent",
@@ -47,7 +64,9 @@
             ]
         },
         "groups": {
-            "apis": [],
+            "apis": [
+                "General"
+            ],
             "events": [],
             "properties": [],
             "widgets": []
@@ -58,7 +77,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "ef2d3be3ae3d472eb73954abb73297c1",
+                    "kuid": "e26c45e0d35e4fcd856132a43592d0c7",
                     "originalPropertyKey": "skin",
                     "propertyIndex": 1,
                     "propertyKey": "headerSkin",
@@ -74,7 +93,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "hde3513aaa0649d0b41556a3b131b3bc",
+                    "kuid": "ccbf8ff3441540a78fcfebec47828892",
                     "originalPropertyKey": "text",
                     "propertyIndex": 2,
                     "propertyKey": "titleText",
@@ -92,7 +111,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "b86769cf4aa24810a372b56e8f0b5cc7",
+                    "kuid": "ic1995ba1d0647318921799202992222",
                     "originalPropertyKey": "src",
                     "propertyIndex": 3,
                     "propertyKey": "leftImageSrc",
@@ -119,7 +138,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "a9ae2b99bddf431b98a00c8fad99a933",
+                    "kuid": "j754fa714c53491f9a4fdf0fc51de5f1",
                     "originalPropertyKey": "src",
                     "propertyIndex": 4,
                     "propertyKey": "rightImageSrc",
@@ -142,6 +161,42 @@
                         "wType": "Image"
                     },
                     "srcWgtKUID": "ac31f741654d48b9bbf7276c59cf0c9b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i9f99627584a412cb634254e75003b4e",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 5,
+                    "propertyKey": "rightImageIsVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Right Image Visibility",
+                        "srcWidget": "imgRight",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ac31f741654d48b9bbf7276c59cf0c9b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ff3278f589c84d96a260f2d8b3cab75d",
+                    "originalPropertyKey": "isVisible",
+                    "propertyIndex": 6,
+                    "propertyKey": "leftImageIsVisible",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Left Image Visibility",
+                        "srcWidget": "imgLeft",
+                        "type": "boolean",
+                        "uiRepresentation": "Label-Radiobuttongroup",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "be09e72106ec429da70b7e0b017c5101"
                 }
             ]
         },

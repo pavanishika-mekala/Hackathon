@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
@@ -23,10 +23,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s98617c1b43040ea8251cfbd4aef913e",
+    "_skin_": "s52785a2b9894e5aa408903deef47c32",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10%"
     },
     "_width_": {
         "type": "string",
@@ -36,19 +36,19 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "flxHome"
+        "WallCalendar"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "CustomizedHeader",
+    "id": "flxBody",
     "info": null,
     "isvisible": true,
-    "kuid": "ja0d0a767d624ba1bdd61b1c7dd23c1d",
+    "kuid": "cadc11fa969247eb8eca0efe9db8fc42",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "userwidgetmodel",
-    "pf": "userwidgetmodel",
+    "parent": "frmWallCalendar",
+    "pf": "frmWallCalendar",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
