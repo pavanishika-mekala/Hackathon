@@ -7,7 +7,44 @@
         },
         "events": {
             "custom": [],
-            "passthrough": []
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f5b84aae2994457e8c5e8945ddfd7050",
+                    "originalPropertyKey": "onTouchEnd",
+                    "propertyIndex": 1,
+                    "propertyKey": "leftClickEvent",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "leftClickEvent",
+                        "srcWidget": "imgLeft",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "be09e72106ec429da70b7e0b017c5101"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e6d2c07d4d17435181f24fde255861d4",
+                    "originalPropertyKey": "onTouchEnd",
+                    "propertyIndex": 2,
+                    "propertyKey": "rightClickEvent",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "rightClickEvent",
+                        "srcWidget": "imgRight",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ac31f741654d48b9bbf7276c59cf0c9b"
+                }
+            ]
         },
         "groups": {
             "apis": [],
