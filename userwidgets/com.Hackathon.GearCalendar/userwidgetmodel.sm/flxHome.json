@@ -39,7 +39,8 @@
     "children": [
         "flxCalendar",
         "flxGO",
-        "flxYear"
+        "flxYear",
+        "flxInvisible"
     ],
     "clipbounds": true,
     "containerweight": 100,

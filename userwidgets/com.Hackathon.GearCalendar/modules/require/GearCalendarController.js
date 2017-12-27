@@ -23,6 +23,13 @@ define(function() {
       this.view.preShow = this._initializeEvents;
 
       this.view.flxGO.onClick = this._showTime;
+      var me = this;
+      me.view.flxAM.onClick =  function(){
+        me._selectMeridian("am");
+      };
+      me.view.flxPM.onClick = function(){
+        me._selectMeridian("pm");
+      };
 
     },
     //Logic for getters/setters of custom properties
@@ -118,9 +125,6 @@ define(function() {
       this.view.flxDimensionMin.onTouchStart = this._circleStart;
       this.view.flxDimensionMin.onTouchMove = this._circleMove;
       this.view.flxDimensionMin.onTouchEnd = this._circleEnd;
-
-      this.view.flxAM.onClick =  this._selectMeridian("am");
-      this.view.flxPM.onClick =  this._selectMeridian("pm");
 
       var me =this;
       me.view.txtYear4.onTextChange =  function(){

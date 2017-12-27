@@ -1,6 +1,5 @@
 {
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
@@ -8,7 +7,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "50%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -24,36 +23,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s9d3d052caed44ce84bde73581cb459a",
+    "_skin_": "s52785a2b9894e5aa408903deef47c32",
     "_top_": {
         "type": "string",
         "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "50%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblPM",
-        "imgPM"
+        "imgInvisibleBulbOn",
+        "lblPMYellowInvisible",
+        "lblPMGreyInvisible"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxPM",
+    "id": "flxInvisible",
     "info": null,
-    "isvisible": true,
-    "kuid": "eba548de96794470b1011ce55f6a11e2",
+    "isvisible": false,
+    "kuid": "ccab9ea927374f05a72bb0b05382df89",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxAMPM",
+    "parent": "flxHome",
     "pf": "userwidgetmodel",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "widgetalignment": 1
 }
