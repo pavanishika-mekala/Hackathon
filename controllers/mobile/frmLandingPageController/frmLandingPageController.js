@@ -13,6 +13,7 @@ define({
       controller.view.btnMenu.onClick = this._gotToMenuForm;
       controller.view.btnWristCalendar.onClick = this._goToWristCalendarForm;
       controller.view.btnGearCalendar.onClick = this._goToGearCalendarForm;
+      controller.view.btnLoginRotate.onClick = this._goToLoginRotateForm;
     }
   },
   _goToColoPaletteForm : function(){
@@ -32,6 +33,9 @@ define({
   },
   _goToGearCalendarForm : function(){
     new kony.mvc.Navigation("frmGearCalendar").navigate();
+  },
+  _goToLoginRotateForm : function(){
+    new kony.mvc.Navigation("frmLoginRotate").navigate();
   },
   onNavigate : function () {
     this._init();
