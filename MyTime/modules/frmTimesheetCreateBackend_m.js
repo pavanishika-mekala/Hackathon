@@ -263,7 +263,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.Backend = {
                         Task_Id: data[i][j].Task_Id,
                         Project_Task_Type: data[i][j].Project_Task_Type,
                         lblProjectName: data[i][j].Task_Name.toString().titleCase(),
-                        template: flxSegProjectSelection
+                        template: flxTaskList
                     });
                 }
                 //                 if(header.lblProjectNameHeader === "") {
@@ -315,11 +315,11 @@ kony.apps.coe.ess.myTime.TimesheetCreate.Backend = {
                             var temp = projectname;
                             projectname = taskname;
                             taskname = temp;
-                            templatename = flxSegProjectSelection;
+                            templatename = flxTaskList;
                         } else if (projectname !== "" && taskname === "") {
-                            templatename = flxSegProjectSelection;
+                            templatename = flxTaskList;
                         } else {
-                            templatename = flxSegProjectTaskSelection;
+                            templatename = h;
                         }
                         secdata.push({
                             Project_Task_Id: tempdata[i].Project_Task_Id,

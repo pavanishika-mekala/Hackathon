@@ -1,0 +1,20 @@
+{
+    "AS_TextField_j2a9d2a99dc24c81964adb1b59df9a37": {
+        "id": "AS_TextField_j2a9d2a99dc24c81964adb1b59df9a37",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTextChange_j1fc28094a74480b97b27eb71d780dc9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Tab.SearchTask.searchParam =\"Free Search\";\ntry{\n\tkony.apps.coe.ess.myTime.Tab.SearchTask.searchProjectTask(kony.apps.coe.ess.myTime.Tab.SearchTask.searchParam);\n}\ncatch(e){\n  handleError(\"Error: \"+e);\n}",
+            "callbackType": null
+        }]
+    }
+}

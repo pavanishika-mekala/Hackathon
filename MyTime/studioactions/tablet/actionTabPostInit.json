@@ -18,6 +18,12 @@
             "callbackType": null,
             "disabled": null,
             "source": "module"
+        }, {
+            "id": "ADD_SNIPPET__id4ee67b5a7f4383a6750f05ef8b9744",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

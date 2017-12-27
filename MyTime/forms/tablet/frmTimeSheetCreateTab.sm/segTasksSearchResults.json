@@ -6,48 +6,76 @@
     "_data_": [
         [
             {
-                "lblProjectNameHeader": {
+                "Label09ce9a158d8e149": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Label"
+                    "text": "Market Research"
                 }
             },
             [
                 {
-                    "lblActivityId": {
+                    "CopyLabel0b6b69a5bb44e46": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "Overtime"
                     },
-                    "lblProjectName": {
+                    "Label04360685151bc47": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "Label"
                     },
-                    "lblTaskName": {
+                    "Label0c6e5ff96a70c4b": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "Production"
+                    }
+                },
+                {
+                    "CopyLabel0b6b69a5bb44e46": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Overtime"
+                    },
+                    "Label04360685151bc47": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "Label0c6e5ff96a70c4b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Production"
                     }
                 }
             ]
         ],
         [
             {
-                "lblProjectNameHeader": {
+                "Label09ce9a158d8e149": {
                     "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                    "text": "Label"
+                    "text": "Market Research"
                 }
             },
             [
                 {
-                    "lblActivityId": {
+                    "CopyLabel0b6b69a5bb44e46": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "Overtime"
                     },
-                    "lblProjectName": {
+                    "Label04360685151bc47": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "Label"
                     },
-                    "lblTaskName": {
+                    "Label0c6e5ff96a70c4b": {
                         "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
-                        "text": ""
+                        "text": "Production"
+                    }
+                },
+                {
+                    "CopyLabel0b6b69a5bb44e46": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Overtime"
+                    },
+                    "Label04360685151bc47": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "Label0c6e5ff96a70c4b": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Production"
                     }
                 }
             ]
@@ -86,7 +114,7 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "containerweight": 100,
-    "counter": "10",
+    "counter": "11",
     "disabledSkins": {
         "rowSkin": "sbf33e776bf049d1944a800b8d836199"
     },
@@ -117,16 +145,16 @@
     "parent": "flxDetails",
     "pf": "frmTimeSheetCreateTab",
     "retainselection": false,
-    "rowTemplateId": "14f9d8c1012844459e280843a070957e",
-    "rowcounter": 0,
+    "rowTemplateId": "6603d1a3102d4db1becc81d68f676258",
+    "rowcounter": 1,
     "rowfocusskin": "s3fe7255b9da4bc08fb8ad82e9f1c719",
     "rowskin": "sbf33e776bf049d1944a800b8d836199",
-    "rowtemplate": "flxSegProjectTaskActivityIdSelection",
+    "rowtemplate": "flxsegwtasks",
     "screenlevelwidget": false,
     "seccounter": 1,
-    "sectionHeaderTemplateId": "63540f4e90d247f7881960c4d17056d5",
+    "sectionHeaderTemplateId": "7f38fa7336f14925b1c8a1866ae25f77",
     "sectionheaderskin": "sbf33e776bf049d1944a800b8d836199",
-    "sectionheadertemplate": "flxSegHeaderProjectSelection",
+    "sectionheadertemplate": "flxsegwtaskshead",
     "selectedRows": null,
     "selectedState": false,
     "selectedindex": null,
@@ -140,13 +168,13 @@
     "wType": "Segment",
     "widgetalignment": 5,
     "widgetdatamap": {
-        "flxSegHeaderProjectSelection": "flxSegHeaderProjectSelection",
-        "flxSegProjectTaskActivityIdSelection": "flxSegProjectTaskActivityIdSelection",
-        "flxSeparator": "flxSeparator",
-        "lblActivityId": "lblActivityId",
-        "lblProjectName": "lblProjectName",
-        "lblProjectNameHeader": "lblProjectNameHeader",
-        "lblTaskName": "lblTaskName"
+        "CopyLabel0b6b69a5bb44e46": "CopyLabel0b6b69a5bb44e46",
+        "FlexContainer030984a80bd2147": "FlexContainer030984a80bd2147",
+        "Label04360685151bc47": "Label04360685151bc47",
+        "Label09ce9a158d8e149": "Label09ce9a158d8e149",
+        "Label0c6e5ff96a70c4b": "Label0c6e5ff96a70c4b",
+        "flxsegwtasks": "flxsegwtasks",
+        "flxsegwtaskshead": "flxsegwtaskshead"
     },
     "widgetskin": "sbf33e776bf049d1944a800b8d836199",
     "zindex": 3

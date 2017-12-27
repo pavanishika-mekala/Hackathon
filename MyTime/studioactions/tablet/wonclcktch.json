@@ -23,7 +23,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__d517adc563c2457ab749f83da2e6b326",
             "type": "ADD_SNIPPET",
-            "codeSnippet": " frmTimeSheetCreateTab.flxrecenttasks.setVisibility(false);\n frmTimeSheetCreateTab.flxsrchmain.setVisibility(true);\n frmTimeSheetCreateTab.flxsrchmain0.setVisibility(false);\n frmTimeSheetCreateTab.flxAddvsrch.setVisibility(false);\n frmTimeSheetCreateTab.flsrchcriteria.setVisibility(false);\n frmTimeSheetCreateTab.segListrec.setVisibility(false);\n frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(true);",
+            "codeSnippet": " frmTimeSheetCreateTab.flxrecenttasks.setVisibility(false);\n frmTimeSheetCreateTab.flxsrchmain.setVisibility(true);\n frmTimeSheetCreateTab.flxsrchmain0.setVisibility(false);\n frmTimeSheetCreateTab.flxAddvsrch.setVisibility(false);\n frmTimeSheetCreateTab.flsrchcriteria.setVisibility(false);\n frmTimeSheetCreateTab.segListrec.setVisibility(false);\n frmTimeSheetCreateTab.segTasks.setVisibility(true);",
             "parentId": null,
             "callbackType": null
         }]

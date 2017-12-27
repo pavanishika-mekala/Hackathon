@@ -22,6 +22,7 @@ kony.apps.coe.ess.myTime.SearchTask = function() {
  * return       None.
  * desc         This method searches project according to content entered in textbox and based on listbox selection
  */
+
 kony.apps.coe.ess.myTime.SearchTask.executeQuery = function(query) {
     try {
         kony.print("-- Start searchProject --");

@@ -1,0 +1,23 @@
+{
+    "AS_Label_hb4b9a63506040138994423e0422ee79": {
+        "id": "AS_Label_hb4b9a63506040138994423e0422ee79",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchEnd_d8030ad81f104c6bab4ca7f039cd87a0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.Tab.SearchTask.showPopupAddasTask();",
+            "callbackType": null
+        }]
+    }
+}

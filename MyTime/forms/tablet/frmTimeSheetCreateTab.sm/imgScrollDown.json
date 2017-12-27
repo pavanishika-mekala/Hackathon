@@ -46,7 +46,7 @@
     "context": {
         "channel": "tablet",
         "formID": "frmTimeSheetCreateTab",
-        "platform": "ipad",
+        "platform": "tabrcandroid",
         "templateType": "forms",
         "topLevelBox": null
     },

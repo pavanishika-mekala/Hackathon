@@ -28,7 +28,7 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index,selectedApprova
   try {
     kony.print("selectedApprovalID is::"+selectedApprovalID);
 	if (selectedApprovalID !== "") {
-      var sqlQuery = "SELECT approval_request.id  AS ID,approval_request.request_date AS RequestDate,approval_request.leave_hours AS Leave_hours,request_approver.status_id AS StatusId,status.status_name AS StatusName,t2.TEXT_DISPLAY As	Category,"+
+      var sqlQuery = "SELECT approval_request.id  AS ID,approval_request.request_date AS RequestDate,approval_request.leave_hours AS Leave_hours,approval_request.leave_days AS Leave_days,request_approver.status_id AS StatusId,status.status_name AS StatusName,t2.TEXT_DISPLAY As	Category,"+
           "attribute.id AS attributeID,attribute.attribute_def_id AS Attribute_DEF,attribute_def.attribute_section_id AS AttributeSection,Group_concat(attribute.value) AS Attributevalue,Group_concat(attribute_def.label)  AS AttributeNAME "+
           "FROM approval_request LEFT JOIN request_approver ON ( approval_request.id = request_approver.approval_id ) "+
           "LEFT JOIN status ON ( request_approver.status_id = status.id ) "+
@@ -62,13 +62,19 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index,selectedApprova
             }
             var startDateString = String(res[0].RequestDate);
             var leaveHours = String(res[0].Leave_hours);
+            var leaveDays = String(res[0].Leave_days);
             kony.print("leaveHours::"+leaveHours);
             if(leaveHours !== null && leaveHours !== "" && leaveHours !== "null"){
               var hours = Number(leaveHours).toFixed();
+              var days = Number(leaveDays).toFixed();
               kony.print(";hours::"+hours);
               if(hours == 1){
                 dataItem.timeDuration = {text:hours + " " + kony.i18n.getLocalizedString("i18n.ess.myApprovals.hour"),isVisible:true,centerX:"50%"};
-              }else{
+              }else if(days == 1){
+                  dataItem.timeDuration = {text:"1" +" "+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Day.text"),isVisible:true,centerX:"50%"};
+                }else if(days > 1){
+                	dataItem.timeDuration = {text:days +" "+kony.i18n.getLocalizedString("i18n.ess.MyApprovals.common.Days.text"),isVisible:true,centerX:"50%"};
+                }else if(hours > 1){
                 dataItem.timeDuration = {text:hours +" "+kony.i18n.getLocalizedString("i18n.ess.myApprovals.hours"),isVisible:true,centerX:"50%"};
               }
             }else{

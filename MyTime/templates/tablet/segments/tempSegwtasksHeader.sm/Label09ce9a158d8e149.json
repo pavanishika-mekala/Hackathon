@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "2%"
     },
     "_margin_": [
         1,
@@ -23,10 +23,10 @@
         0
     ],
     "_skin_": "sfeedae556624c438356c429a2a97107",
-    "_text_": "Label",
+    "_text_": "Market Research",
     "_top_": {
         "type": "string",
-        "value": "20%"
+        "value": "10%"
     },
     "_width_": {
         "type": "ref",
