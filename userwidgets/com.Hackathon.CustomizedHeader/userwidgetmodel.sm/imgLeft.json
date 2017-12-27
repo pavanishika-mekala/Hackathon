@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc404832e576479d81afb2a6a26c155b",
+    "_src_": "imagedrag.png",
+    "_width_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "10%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "context": {
+        "channel": "mobile",
+        "formID": "uwua6f70848101489182112c3d1d003a22",
+        "templateType": "userwidgets",
+        "topLevelBox": null
+    },
+    "id": "imgLeft",
+    "imagescalemode": 1,
+    "info": null,
+    "isvisible": true,
+    "kuid": "be09e72106ec429da70b7e0b017c5101",
+    "name": "kony.ui.Image2",
+    "parent": "flxHome",
+    "pf": "userwidgetmodel",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

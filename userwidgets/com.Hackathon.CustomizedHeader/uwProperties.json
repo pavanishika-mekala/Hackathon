@@ -1,0 +1,118 @@
+{
+    "classname": "CustomizedHeader",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ef2d3be3ae3d472eb73954abb73297c1",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "headerSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Header Skin",
+                        "srcWidget": "flxHome",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "bf872e616c8b43edbc00e642f0368000"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "hde3513aaa0649d0b41556a3b131b3bc",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "titleText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Title Text",
+                        "srcWidget": "lblHeaderTitle",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a2ba6e7f8a2c4d6dad58df59472f108a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b86769cf4aa24810a372b56e8f0b5cc7",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 3,
+                    "propertyKey": "leftImageSrc",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Left Image Source",
+                        "srcWidget": "imgLeft",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "be09e72106ec429da70b7e0b017c5101"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a9ae2b99bddf431b98a00c8fad99a933",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 4,
+                    "propertyKey": "rightImageSrc",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Right Image Source",
+                        "srcWidget": "imgRight",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "ac31f741654d48b9bbf7276c59cf0c9b"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Hackathon",
+    "version": "1.0.0"
+}
