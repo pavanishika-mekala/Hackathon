@@ -284,13 +284,16 @@ kony.apps.coe.myLeave.search.prototype.execQuery = function (sqlquery,filterIcon
         temp.lblAppliedDate = parseInt(mdate.substring(6, 8) * 1) + " " + kony.apps.coe.ess.myLeave.nToStr.month[(parseInt(mdate.substring(4, 6) * 1) - 1).toString()] +
           " " + parseInt(mdate.substring(0, 4) * 1) + " " + hrs + ":" + sec + " " + AP;
       }
-      if (res[k].hrs < 7)
+      if (res[k].hrs == 1){
         temp.lblDays = (res[k].hrs+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
-      else if(parseFloat(res[k].hrs)===7.5){
+      }else if(res[k].hrs < Number(kony.apps.coe.ess.appconfig.workingHours)){
+        temp.lblDays = (res[k].hrs+kony.i18n.getLocalizedString("i18n.ess.common.hour.valueKA")).replace(".", ",");
+      }
+      if(parseFloat(res[k].hrs) ===  Number(kony.apps.coe.ess.appconfig.workingHours)){//7.5){
         temp.lblDays = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
       }
       else
-        temp.lblDays = ((parseInt(res[k].hrs) * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+        temp.lblDays = ((parseInt(res[k].hrs) * 1) / Number(kony.apps.coe.ess.appconfig.workingHours)).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days"); //7.5
       temp.imgCal = "cal.png";
       temp.lblLine1 = " ";
       temp.lblLeaveId = res[k].id + "$" + sdate;
