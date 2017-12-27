@@ -1,31 +1,38 @@
 {
-    "classname": "Menu",
+    "classname": "MenuUI",
     "definitions": {
         "apis": {
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "eecd07b703474a78a5450da17373195c",
+                    "kuid": "c4553b0a68f944d18faaa6637fd4c60e",
+                    "paramList": [
+                        {
+                            "name": "icon"
+                        }
+                    ],
+                    "propertyKey": "setIcon",
+                    "pw": {
+                        "displayName": "setIcon",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f6c72e0363154d4ea85c74f7a0588718",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a93b4bbe5fce42ecbc45a1693d9cf29a",
                     "paramList": [
                         {
                             "name": "name"
-                        },
-                        {
-                            "name": "icon"
-                        },
-                        {
-                            "name": "bgColor"
-                        },
-                        {
-                            "name": "onClick"
                         }
                     ],
-                    "propertyKey": "addMenu",
+                    "propertyKey": "setName",
                     "pw": {
-                        "displayName": "addMenu",
+                        "displayName": "setName",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
-                    "srcWgtKUID": "e5a2246162b645a08ba52cd86debc74c",
+                    "srcWgtKUID": "f6c72e0363154d4ea85c74f7a0588718",
                     "type": "event"
                 }
             ],

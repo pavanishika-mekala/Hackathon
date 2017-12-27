@@ -10,6 +10,7 @@ define({
       controller.view.btnColorPalette.onClick = this._goToColoPaletteForm;
       controller.view.btnLoginUI.onClick = this._goToLoginUIForm;
       controller.view.btnWallCalendar.onClick = this._goToWallCalendarForm;
+      controller.view.btnMenu.onClick = this._gotToMenuForm;
     }
   },
   _goToColoPaletteForm : function(){
@@ -20,6 +21,9 @@ define({
   },
   _goToWallCalendarForm : function(){
     new kony.mvc.Navigation("frmWallCalendar").navigate();
+  },
+  _gotToMenuForm: function(){
+    new kony.mvc.Navigation("frmMenu").navigate();
   },
   onNavigate : function () {
     this._init();

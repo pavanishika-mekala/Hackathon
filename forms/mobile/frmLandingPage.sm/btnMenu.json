@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "7%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1ccace811374e6a8877bfa0f8957808",
+    "_text_": "Menu",
+    "_top_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sd20d3361cb841afbe4b8d5634d8d1ef",
+    "id": "btnMenu",
+    "info": null,
+    "isvisible": true,
+    "kuid": "h11ecb6e77c04ef6b828b63982138776",
+    "name": "kony.ui.Button",
+    "parent": "flxLandingPage",
+    "pf": "frmLandingPage",
+    "wType": "Button",
+    "zindex": 1
+}

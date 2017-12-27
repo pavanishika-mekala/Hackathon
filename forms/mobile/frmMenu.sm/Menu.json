@@ -1,6 +1,8 @@
 {
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
     "DNDConfig": null,
     "__parentReadjusting__": false,
+    "_children_": [],
     "_height_": {
         "type": "string",
         "value": "100%"
@@ -15,7 +17,7 @@
         0,
         0
     ],
-    "_orientation_": 6,
+    "_orientation_": 1,
     "_padding_": [
         0,
         0,
@@ -23,6 +25,7 @@
         0
     ],
     "_percent_": true,
+    "_render_": true,
     "_skin_": "s52785a2b9894e5aa408903deef47c32",
     "_top_": {
         "type": "string",
@@ -32,29 +35,19 @@
         "type": "string",
         "value": "100%"
     },
-    "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
-    "children": [
-        "btnColorPalette",
-        "btnLoginUI",
-        "btnWallCalendar",
-        "btnMenu"
-    ],
     "clipbounds": true,
-    "containerweight": 100,
-    "enablescrolling": true,
-    "id": "flxLandingPage",
+    "containerweight": 0,
+    "data": {},
+    "id": "Menu",
     "info": null,
     "isvisible": true,
-    "kuid": "bb8ff18487434c61abf7f8d041409b3b",
-    "layouttype": 4,
-    "name": "kony.ui.FlexContainer",
-    "parent": "frmLandingPage",
-    "pf": "frmLandingPage",
-    "snapgridsize": 10,
-    "snaptogrid": true,
-    "wType": "FlexContainer",
-    "widgetalignment": 1,
-    "zindex": 1
+    "kuid": "b939e331c49c40e69c2668c3236418e1",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "frmMenu",
+    "pf": "frmMenu",
+    "sourceUserWidget": "e5a2246162b645a08ba52cd86debc74c",
+    "wType": "UserWidgetInstance"
 }
