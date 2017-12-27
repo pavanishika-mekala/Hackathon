@@ -125,7 +125,7 @@ frmLogin.flxSplash.animate(
     frmLogin.flxBrowserContainer.animate(
     kony.ui.createAnimation({
         "100": {
-            "top": "29%",
+            "top": "32%",
             "stepConfig": {
                 "timingFunction": kony.anim.EASE
             }

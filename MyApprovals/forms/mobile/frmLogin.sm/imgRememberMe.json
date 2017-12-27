@@ -42,7 +42,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmLogin",
-        "platform": "android",
+        "platform": "iphone",
         "templateType": "forms",
         "topLevelBox": null
     },
