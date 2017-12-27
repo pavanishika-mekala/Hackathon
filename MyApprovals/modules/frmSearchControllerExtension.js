@@ -152,14 +152,14 @@ kony.sdk.mvvm.frmSearchControllerExtension = Class(kony.sdk.mvvm.BaseFormControl
             secondPart = "";
           }
           if(firstPart == "Pending"){
-            data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")+" "+secondPart;
+            data[i].status_value = {text : kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending"),skin : "sknLblredErr"};
           }else if(firstPart == "Approved"){
-            data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+secondPart;
+            data[i].status_value = {text : kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+secondPart,skin : "sknlblGreenApp"}
           }else if(firstPart == "Rejected"){
-            data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+secondPart;
+            data[i].status_value = {text: kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+secondPart ,skin:"sknLblredErr"}
           }
           else if(firstPart=="Cancelled"){
-             data[i].status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+secondPart;
+            data[i].status_value = {text : kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+secondPart,skin: "sknLblredErr"}
           }
         }
       }

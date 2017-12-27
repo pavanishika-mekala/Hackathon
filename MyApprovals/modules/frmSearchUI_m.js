@@ -84,18 +84,18 @@ kony.apps.coe.ess.Approvals.frmSearch.ProcessData = function(response_data) {
 
             //if (response_data[index].StatusName == "Pending") {
           if (response_data[index].StatusName == kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Pending")) {
-                processedRequest.status_value = response_data[index].StatusName;
+                processedRequest.status_value = {text:response_data[index].StatusName,skin:"sknLblredErr"};
             } else {
                 var approvedDate = new Date().modifyByYYYYMMDDHHMMSS(response_data[index].ApprovedDate).toDDmmmYY();
                 if(response_data[index].StatusName == "Approved"){
-                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                   processedRequest.status_value = {text: kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Approved")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate,skin: "sknlblGreenApp"};
                 }else if(response_data[index].StatusName == "Rejected"){
-                   processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                   processedRequest.status_value = {text: kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Rejected")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate,skin:"sknLblredErr"};
                 } else if(response_data[index].StatusName == "Cancelled"){
-                  processedRequest.status_value = kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate;
+                  processedRequest.status_value = {text: kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.Cancelled")+" "+kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+approvedDate,skin:"sknLblredErr"};
                 }
               else
-                processedRequest.status_value = response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate;
+                processedRequest.status_value = {text: response_data[index].StatusName +" "+ kony.i18n.getLocalizedString("i18n.ess.frmHistoryDW.On")+" "+ approvedDate,skin:"sknLblredErr"};
             }
 
             // For informational leave types make sure there is a type defined
