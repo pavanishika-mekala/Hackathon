@@ -1,13 +1,10 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
-    },
-    "_left_": {
-        "type": "string",
-        "value": "0dp"
+        "value": "150dp"
     },
     "_margin_": [
         0,
@@ -23,37 +20,36 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s52785a2b9894e5aa408903deef47c32",
-    "_top_": {
-        "type": "string",
-        "value": "0dp"
-    },
+    "_skin_": "sc328d251bf04e99971835fc4d05a411",
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "150dp"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "122%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "35%"
+    },
     "children": [
-        "btnColorPalette",
-        "btnLoginUI",
-        "btnWallCalendar",
-        "btnMenu",
-        "btnWristCalendar",
-        "btnGearCalendar"
+        "CopyimgGear08050faa9a02543"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxLandingPage",
+    "id": "flxCircleHour",
     "info": null,
     "isvisible": true,
-    "kuid": "bb8ff18487434c61abf7f8d041409b3b",
-    "layouttype": 4,
+    "kuid": "ia593bd42af14b7a9fa93267988ef267",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmLandingPage",
-    "pf": "frmLandingPage",
+    "parent": "flxCalendar",
+    "pf": "userwidgetmodel",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",

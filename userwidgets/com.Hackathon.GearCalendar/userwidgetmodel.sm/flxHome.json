@@ -1,5 +1,6 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
@@ -23,7 +24,7 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s52785a2b9894e5aa408903deef47c32",
+    "_skin_": "s63196b2e8534ffa9e9460ba35e43d81",
     "_top_": {
         "type": "string",
         "value": "0dp"
@@ -36,27 +37,24 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "btnColorPalette",
-        "btnLoginUI",
-        "btnWallCalendar",
-        "btnMenu",
-        "btnWristCalendar",
-        "btnGearCalendar"
+        "flxCalendar",
+        "flxGO",
+        "flxYear"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxLandingPage",
+    "id": "flxHome",
     "info": null,
     "isvisible": true,
-    "kuid": "bb8ff18487434c61abf7f8d041409b3b",
-    "layouttype": 4,
+    "kuid": "df570d1862f24708bcfbd8421d8fac87",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmLandingPage",
-    "pf": "frmLandingPage",
+    "parent": "GearCalendar",
+    "pf": "userwidgetmodel",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 2
 }

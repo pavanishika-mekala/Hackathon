@@ -1,13 +1,18 @@
 {
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
+    "_bottom_": {
+        "type": "string",
+        "value": "2%"
+    },
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "11%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "72%"
     },
     "_margin_": [
         0,
@@ -23,40 +28,39 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s52785a2b9894e5aa408903deef47c32",
-    "_top_": {
+    "_right_": {
         "type": "string",
-        "value": "0dp"
+        "value": "2%"
     },
+    "_skin_": "s9d3d052caed44ce84bde73581cb459a",
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "20%"
     },
     "allboxes": [],
-    "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
-        "btnColorPalette",
-        "btnLoginUI",
-        "btnWallCalendar",
-        "btnMenu",
-        "btnWristCalendar",
-        "btnGearCalendar"
+        "imgGo",
+        "lblGo"
     ],
-    "clipbounds": true,
+    "clipbounds": false,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxLandingPage",
+    "id": "flxGO",
     "info": null,
     "isvisible": true,
-    "kuid": "bb8ff18487434c61abf7f8d041409b3b",
-    "layouttype": 4,
+    "kuid": "i50f662ad72f40baa209c80e677c4f23",
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "parent": "frmLandingPage",
-    "pf": "frmLandingPage",
+    "parent": "flxHome",
+    "pf": "userwidgetmodel",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 2
 }

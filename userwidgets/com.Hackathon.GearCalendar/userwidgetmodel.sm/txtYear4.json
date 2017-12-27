@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "sf9c44f7cb4b4224ae8e02300a44bdf1",
+    "_text_": "9",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "focusskin": "sf9c44f7cb4b4224ae8e02300a44bdf1",
+    "id": "txtYear4",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "showClearButton": false,
+            "showCloseButton": false
+        }
+    },
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "c18df0c6fb174a2eb0b1b1fa7b0fb73a",
+    "mode": "N",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxYear",
+    "pf": "userwidgetmodel",
+    "securetextentry": false,
+    "textinputmode": "N",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 2
+}

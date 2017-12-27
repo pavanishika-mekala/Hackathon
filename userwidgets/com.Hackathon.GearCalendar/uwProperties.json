@@ -1,0 +1,29 @@
+{
+    "namespace": "com.Hackathon",
+    "classname": "GearCalendar",
+    "version": "1.0.0",
+    "definitions": {
+        "properties": {
+            "passthrough": [],
+            "custom": []
+        },
+        "events": {
+            "passthrough": [],
+            "custom": []
+        },
+        "apis": {
+            "passthrough": [],
+            "custom": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        },
+        "groups": {
+            "properties": [],
+            "events": [],
+            "apis": [],
+            "widgets": []
+        }
+    }
+}
