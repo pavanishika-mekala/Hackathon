@@ -5,7 +5,7 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "c4553b0a68f944d18faaa6637fd4c60e",
+                    "kuid": "h3a522f1666541ab8788aeb9a01d8dfe",
                     "paramList": [
                         {
                             "name": "icon"
@@ -21,7 +21,7 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "a93b4bbe5fce42ecbc45a1693d9cf29a",
+                    "kuid": "e4675dfd3d1e4ec98517e317be30cadd",
                     "paramList": [
                         {
                             "name": "name"
@@ -30,6 +30,34 @@
                     "propertyKey": "setName",
                     "pw": {
                         "displayName": "setName",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f6c72e0363154d4ea85c74f7a0588718",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c9063dd5c27246bcae773c266e9cfa69",
+                    "paramList": [
+                        {
+                            "name": "onClick"
+                        }
+                    ],
+                    "propertyKey": "setMenuOnClick",
+                    "pw": {
+                        "displayName": "setMenuOnClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f6c72e0363154d4ea85c74f7a0588718",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b022235790884095beb93ae39e89ba31",
+                    "paramList": [],
+                    "propertyKey": "applyLookAndFeel",
+                    "pw": {
+                        "displayName": "applyLookAndFeel",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "f6c72e0363154d4ea85c74f7a0588718",

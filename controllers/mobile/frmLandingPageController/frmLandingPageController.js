@@ -26,7 +26,7 @@ define({
   _goToWallCalendarForm : function(){
     new kony.mvc.Navigation("frmWallCalendar").navigate();
   },
-  _gotToMenuForm: function(){
+  _goToMenuForm: function(){
     new kony.mvc.Navigation("frmMenu").navigate();
   },
   _goToWristCalendarForm : function(){

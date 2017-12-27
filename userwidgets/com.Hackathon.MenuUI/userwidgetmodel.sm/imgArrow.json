@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "50%"
+        "value": "10%"
     },
     "_margin_": [
         0,
@@ -20,14 +20,14 @@
         0
     ],
     "_skin_": "sc404832e576479d81afb2a6a26c155b",
-    "_src_": "imagedrag.png",
+    "_src_": "arrowdownw.png",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "88%"
     },
     "_width_": {
         "type": "string",
-        "value": "30%"
+        "value": "3%"
     },
     "canUpdateUI": true,
     "centerx": {
@@ -42,11 +42,11 @@
         "templateType": "userwidgets",
         "topLevelBox": null
     },
-    "id": "imgMenuUIIcon",
+    "id": "imgArrow",
     "imagescalemode": 0,
     "info": null,
-    "isvisible": true,
-    "kuid": "ac6546da6ede4a03a09b4e1f63a73b77",
+    "isvisible": false,
+    "kuid": "faf60e6f52ee46c9890d36002552c510",
     "name": "kony.ui.Image2",
     "parent": "flxMenuUI",
     "pf": "userwidgetmodel",
