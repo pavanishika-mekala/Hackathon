@@ -60,6 +60,7 @@
     "name": "kony.ui.Label",
     "parent": "flxApploadTime",
     "pf": "frmLogin",
+    "texti18n": "i18n.ess.myleave.wait.text",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1
