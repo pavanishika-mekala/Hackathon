@@ -19,7 +19,7 @@
         0
     ],
     "_skin_": "s28fe4d000814417a7924816a57b8d25",
-    "_text_": "Menu",
+    "_text_": "Wrist Calendar",
     "_top_": {
         "type": "string",
         "value": "5%"
@@ -37,10 +37,10 @@
     "contentalignment": 5,
     "displaytext": true,
     "focusskin": "sd20d3361cb841afbe4b8d5634d8d1ef",
-    "id": "btnMenu",
+    "id": "btnWristCalendar",
     "info": null,
     "isvisible": true,
-    "kuid": "h11ecb6e77c04ef6b828b63982138776",
+    "kuid": "d5fcfd4e440643d5a6d1b189deb3ecdf",
     "name": "kony.ui.Button",
     "parent": "flxLandingPage",
     "pf": "frmLandingPage",

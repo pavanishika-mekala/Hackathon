@@ -1,0 +1,240 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__markedForDelete__": true,
+    "__parentReadjusting__": false,
+    "_bounces_": false,
+    "_data_": [
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "0"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "2"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "3"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "4"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "5"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "6"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "7"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "8"
+            }
+        },
+        {
+            "lblYearValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "9"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "android": {
+        "viewType": "pageview"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "seg2",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "bounces": false,
+            "indicator": "none"
+        },
+        "viewType": "pageview"
+    },
+    "isvisible": true,
+    "kuid": "e34b237608f7421d8dffde8e52410ba6",
+    "masterdata": {},
+    "mobile": {
+        "_data_": [
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "0"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "1"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "2"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "3"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "4"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "5"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "6"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "7"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "8"
+                }
+            },
+            {
+                "lblYearValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "9"
+                }
+            }
+        ],
+        "rowTemplateId": "253ac95223ba4217aed84496812d297d",
+        "rowtemplate": "flxYearContainer",
+        "widgetdatamap": {
+            "flxYearContainer": "flxYearContainer",
+            "lblYearValue": "lblYearValue"
+        }
+    },
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": false,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom",
+        "vdistance": 1
+    },
+    "parent": "flxYear",
+    "pf": "userwidgetmodel",
+    "retainselection": false,
+    "rowTemplateId": "253ac95223ba4217aed84496812d297d",
+    "rowcounter": 9,
+    "rowfocusskin": "s6bbe2c6a8be4f08a0a771a402a340d5",
+    "rowskin": "s946e8b338154369a2bcedbe1f58e771",
+    "rowtemplate": "flxYearContainer",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s7aa28f80e6b410294818b35f3c31fe0",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "64646400",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "swipeContext": {
+        "currentPage": 0,
+        "imageWidth": 94,
+        "widthRatio": 0
+    },
+    "viewtype": "pageview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxYearContainer": "flxYearContainer",
+        "lblYearValue": "lblYearValue"
+    },
+    "zindex": 5
+}

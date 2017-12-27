@@ -1,0 +1,51 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s837f023dc9841b794065a14e191dce4",
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblYearValue"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "flxYearContainerController"
+        }
+    },
+    "enablescrolling": true,
+    "id": "flxYearContainer",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "6c966557c782450d91a66e8805407cb7",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "tmpYear",
+    "pf": "tmpYear",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

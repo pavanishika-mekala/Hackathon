@@ -11,6 +11,7 @@ define({
       controller.view.btnLoginUI.onClick = this._goToLoginUIForm;
       controller.view.btnWallCalendar.onClick = this._goToWallCalendarForm;
       controller.view.btnMenu.onClick = this._gotToMenuForm;
+      controller.view.btnWristCalendar.onClick = this._goToWristCalendarForm;
     }
   },
   _goToColoPaletteForm : function(){
@@ -24,6 +25,9 @@ define({
   },
   _gotToMenuForm: function(){
     new kony.mvc.Navigation("frmMenu").navigate();
+  },
+  _goToWristCalendarForm : function(){
+    new kony.mvc.Navigation("frmWristCalendar").navigate();
   },
   onNavigate : function () {
     this._init();
