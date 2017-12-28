@@ -18,6 +18,7 @@ kony.apps.coe.ess.Approvals.RequestedLists.MakeSegmentMultipleSelect=function(){
 					//"imgCategory" : "requestTypeImage",
 					"lblUserName" : "UserName",
 					"lblCreateDate" : "RequestDate",
+      				"lblMidRight":"lblMidRight",
 					"lblDueDateValue" : "dueDate",
 					"lblRequestInfo" : "RequestInfo",
 					"btnAdditionalInfo" : "AdditionalData",
