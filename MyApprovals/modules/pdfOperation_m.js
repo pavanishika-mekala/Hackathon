@@ -62,6 +62,12 @@ kony.apps.ess.myApprovals.pdfOperation.prototype.openPdf = function(pageNum,orig
           alert("not found");
         }
   	//#endif 
+  	//#ifdef tabrcandroid 
+  		var flag1 = OpenFile.openFile(orignalFilePath);
+		if(flag1 === 1){
+          alert("not found");
+        }
+  	//#endif 
   	//#ifdef iphone
   		kony.apps.coe.ess.globalVariables.filePath = orignalFilePath;
   		frmPdfReader.show();
