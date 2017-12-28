@@ -22,7 +22,7 @@
     "_text_": "Wall Calendar",
     "_top_": {
         "type": "string",
-        "value": "5%"
+        "value": "5.00%"
     },
     "_width_": {
         "type": "string",
@@ -31,12 +31,13 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "50.05%"
     },
     "containerweight": 100,
     "contentalignment": 5,
+    "disabledSkins": {},
     "displaytext": true,
-    "focusskin": "sd20d3361cb841afbe4b8d5634d8d1ef",
+    "focusskin": "s2e0da30af7144c48d1a48ef31d90897",
     "id": "btnWallCalendar",
     "info": null,
     "isvisible": true,

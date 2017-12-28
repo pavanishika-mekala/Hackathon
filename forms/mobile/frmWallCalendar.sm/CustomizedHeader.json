@@ -40,7 +40,7 @@
     "clipbounds": true,
     "containerweight": 0,
     "data": {
-        "leftImageSrc": "leftarrow.png",
+        "leftImageSrc": "leftarrowwhite.png",
         "rightImageIsVisible": false,
         "titleText": "Wall Calendar"
     },

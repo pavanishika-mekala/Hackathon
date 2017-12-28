@@ -41,7 +41,8 @@
     "containerweight": 0,
     "data": {
         "leftImageSrc": "leftarrow.png",
-        "rightImageIsVisible": false
+        "rightImageIsVisible": false,
+        "titleText": "Login Rotate"
     },
     "id": "CustomizedHeader",
     "info": null,

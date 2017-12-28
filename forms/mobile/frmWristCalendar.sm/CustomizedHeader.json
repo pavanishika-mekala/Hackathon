@@ -41,7 +41,7 @@
     "containerweight": 0,
     "data": {
         "leftImageIsVisible": true,
-        "leftImageSrc": "leftarrow.png",
+        "leftImageSrc": "leftarrowwhite.png",
         "rightImageIsVisible": false,
         "titleText": "Wrist Calendar"
     },

@@ -5,7 +5,7 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "c71e452c6d0241c999d80ca5fbb6feb5",
+                    "kuid": "ia4d20b8b90148deb531e77d00fc8152",
                     "paramList": [
                         {
                             "name": "color"
@@ -14,6 +14,38 @@
                     "propertyKey": "setBackgroundColor",
                     "pw": {
                         "displayName": "setBackgroundColor",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ja0d0a767d624ba1bdd61b1c7dd23c1d",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ga981de9b1bb4568989b9b73d01977ba",
+                    "paramList": [
+                        {
+                            "name": "skin"
+                        }
+                    ],
+                    "propertyKey": "setSkinToHeaderTitle",
+                    "pw": {
+                        "displayName": "setSkinToHeaderTitle",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ja0d0a767d624ba1bdd61b1c7dd23c1d",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c0dc17c900f344a4806073b5ce317f33",
+                    "paramList": [
+                        {
+                            "name": "skin"
+                        }
+                    ],
+                    "propertyKey": "setSkinToHeader",
+                    "pw": {
+                        "displayName": "setSkinToHeader",
                         "uiRepresentation": "Label-Label-Button-Button"
                     },
                     "srcWgtKUID": "ja0d0a767d624ba1bdd61b1c7dd23c1d",

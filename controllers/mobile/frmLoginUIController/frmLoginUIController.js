@@ -7,6 +7,7 @@ define({
       this._isInit=true;
       var controller = this;
       controller.view.CustomizedHeader.setBackgroundColor("6849e3");
+      this.view.CustomizedHeader.setSkinToHeaderTitle("sknlblWhite");
       controller.view.CustomizedHeader.leftClickEvent = this._goBack;
     }
   },

@@ -6,7 +6,9 @@ define({
     if(!this._isInit) {
       this._isInit=true;
       var controller = this;
-      controller.view.CustomizedHeader.backgroundColor = "";
+      //controller.view.CustomizedHeader.backgroundColor = "";
+      controller.view.CustomizedHeader.setSkinToHeader("slFbox");
+      this.view.CustomizedHeader.setSkinToHeaderTitle("sknlblWhite");
       controller.view.CustomizedHeader.leftClickEvent = this._goBack;
     }
   },
