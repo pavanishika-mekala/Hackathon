@@ -196,6 +196,7 @@ kony.sdk.mvvm.frmIsLaterSearchControllerExtension = Class(kony.sdk.mvvm.BaseForm
         //"imgCategory": "requestTypeImage",
         "lblUserName": "UserName",
         "lblCreateDate": "RequestDate",
+        "lblMidRight":kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.lblDueDateHeader"),
         "lblDueDateValue": "dueDate",
         "lblRequestInfo": "RequestInfo",
         "btnAdditionalInfo": "AdditionalData",
@@ -210,6 +211,13 @@ kony.sdk.mvvm.frmIsLaterSearchControllerExtension = Class(kony.sdk.mvvm.BaseForm
       };
       frmIsLaterSearch.SegDetails.widgetDataMap = WidgetDatamap;
       frmIsLaterSearch.SegDetails.setData(processedData.ISLaterRequestsData);
+      if(processedData.ISLaterRequestsData.length >0){
+        frmIsLaterSearch.SegDetails.setVisibility(true);
+        frmIsLaterSearch.lblNoRecordsFound.setVisibility(false);
+      }else{
+        frmIsLaterSearch.SegDetails.setVisibility(false);
+        frmIsLaterSearch.lblNoRecordsFound.setVisibility(true);
+      }
       frmIsLaterSearch.show();
       kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
       kony.apps.coe.ess.Approvals.IsLaterSearch.onClickOfAll();
