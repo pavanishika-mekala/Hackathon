@@ -1,0 +1,122 @@
+{
+    "classname": "HamburgerMenu",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cb206731d33848efb471de0d8b3f2ef9",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "firstMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "First Menu Text",
+                        "srcWidget": "lblMenu1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i2dcbb47772f4abb9ea55626020696bd"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a1aae577b9a240d6b1203273b3647e5d",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "secondMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Second Menu Text",
+                        "srcWidget": "lblMenu2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ca48b8e809a84ec6be6423f3231aa9f0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g41c2d5b417a4bd09fb63b6143893f9c",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "thirdMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Third Menu Text",
+                        "srcWidget": "lblMenu3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b90b9ae89c434973b321662f94203f4c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "hd943f206a3b4f659a737f7d4659dff2",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "fourthMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Fourth Menu Text",
+                        "srcWidget": "lblMenu4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b10f5e263c644e4ca802cabd38c16eff"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a5b60efbb02e425f8b7400b12339a3d9",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 5,
+                    "propertyKey": "fifthMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Fifth Menu Text",
+                        "srcWidget": "lblMenu5",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g130e28794a4488580b4dffdafb2e0aa"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Hackathon",
+    "version": "1.0.0"
+}

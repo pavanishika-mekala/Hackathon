@@ -11,6 +11,7 @@ define(function() {
       
       setBackgroundColor : function(color){
         this.view.flxHome.backgroundColor = color;
-      }
+      },
+      
 	};
 });
