@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "61%"
+        "value": "8%"
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "0%"
     },
     "_margin_": [
         0,
@@ -23,10 +23,10 @@
         0
     ],
     "_percent_": true,
-    "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
+    "_skin_": "sdde3b7f150842fa8d1e271ad10fc933",
     "_top_": {
         "type": "string",
-        "value": "132%"
+        "value": "124%"
     },
     "_width_": {
         "type": "string",
@@ -36,15 +36,16 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "browserOkta"
+        "lblApploadTime",
+        "lblwait"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxBrowserContainer",
+    "id": "flxApploadTime",
     "info": null,
     "isvisible": true,
-    "kuid": "j4b02e68514943ec99d4c9c0f2a90941",
+    "kuid": "i81ef49af3f2447e80a1a8c3249e2f14",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "frmLogin",
@@ -53,5 +54,5 @@
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 4
+    "zindex": 50
 }

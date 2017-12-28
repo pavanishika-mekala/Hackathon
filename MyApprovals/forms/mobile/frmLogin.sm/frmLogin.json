@@ -32,6 +32,7 @@
         "flxPopups",
         "flxSplash",
         "flxAfterSplash",
+        "flxApploadTime",
         "flxBrowserContainer"
     ],
     "containerweight": 100,
@@ -39,7 +40,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "GalaxyS2",
+    "device": "iPhone4",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "enablescrolling": false,
@@ -83,11 +84,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "android",
-    "prevDevice": "GalaxyS5",
-    "prevPlatform": "iphone",
+    "platform": "iphone",
+    "prevDevice": "iPhone6",
+    "prevPlatform": "android",
     "retainscrollposition": false,
-    "shellCSS": "and_GalaxyS2",
+    "shellCSS": "iOS_iPhone4",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
