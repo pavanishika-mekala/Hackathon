@@ -48,7 +48,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.Backend = {
 
         reset: function() {
             frmTimeSheetCreate.segTimeType.selectedRowIndex = null;
-            frmTimeSheetCreate.segProjectTaskSelection.selectedRowIndex = null;
+            frmTimeSheetCreate.segTasks.selectedRowIndex = null;
             frmTimeSheetCreate.segLeaveSelection.selectedRowIndex = null;
             kony.apps.coe.Reusable.TimelineCreation.updateTaskName("");
             this.data = {
@@ -367,7 +367,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.Backend = {
     bindData: {
         projectTask: function(data) {
             kony.print("---- setData in bindData projectTask");
-            frmTimeSheetCreate.segProjectTaskSelection.setData(data);
+            frmTimeSheetCreate.segTasks.setData(data);
         },
 
         leaves: function(data) {
