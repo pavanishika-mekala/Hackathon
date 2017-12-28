@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "76%"
+        "value": "79%"
     },
     "_left_": {
         "type": "string",
@@ -17,7 +17,7 @@
         0
     ],
     "_padding_": [
-        5,
+        1,
         0,
         0,
         0
@@ -28,10 +28,10 @@
         "value": "3.40%"
     },
     "_skin_": "s7fb653bdde240c7961e0052de6d8017",
-    "_text_": "",
+    "_text_": "Search or Select from favourite tasks",
     "_top_": {
         "type": "string",
-        "value": "12%"
+        "value": "15%"
     },
     "_width_": {
         "type": "string",
@@ -44,14 +44,14 @@
     "canUpdateUI": true,
     "centery": {
         "type": "string",
-        "value": "43%"
+        "value": "50%"
     },
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,
     "contentalignment": 4,
     "id": "tbxSearch",
-    "ide_onTextChange": "AS_TextField_idb5408135504cc9a3946faf2139acf7",
+    "ide_onTouchStart": "AS_TextField_f2d9b41c86fa45c2b92ceab285483c65",
     "info": null,
     "isvisible": true,
     "keyboardtype": "A",
@@ -66,5 +66,5 @@
     "textinputmode": "A",
     "viewtype": "default",
     "wType": "TextField",
-    "zindex": 1
+    "zindex": 12
 }

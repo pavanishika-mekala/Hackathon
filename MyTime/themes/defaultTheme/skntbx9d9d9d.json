@@ -1,9 +1,9 @@
 {
   "android": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
-  "background_color": "9d9d9d0c",
+  "background_color": "9d9d9d3f",
   "bg_type": "one",
   "border_color": "d8d8d8ff",
   "border_radius": 25,
@@ -11,72 +11,74 @@
   "border_type": 0,
   "border_width": 1,
   "desktopweb": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "fontSizeInPx": false,
   "font_color": "9d9d9dff",
   "font_name": "Helvetica",
-  "font_size": 100,
+  "font_size": 90,
   "font_style": "normal",
   "font_weight": "normal",
   "ipad": {
-    "font_size": 100,
+    "font_name": "AvenirLTStd-Medium",
+    "font_size": 90,
     "isForked": false
   },
   "iphone": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "isDefaultSkin": false,
   "kiosk": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "kuid": "s7fb653bdde240c7961e0052de6d8017",
   "spaan": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "spaandroidtablet": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "spabb": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "spaip": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "spaipad": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "spawindowstablet": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "spawinphone8": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "tabrcandroid": {
-    "font_size": 100,
+    "font_name": "AvenirLTStd-Medium",
+    "font_size": 90,
     "isForked": false
   },
   "wType": "TextField",
   "watchos": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "windows8": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   },
   "winphone8": {
-    "font_size": 100,
+    "font_size": 90,
     "isForked": false
   }
 }

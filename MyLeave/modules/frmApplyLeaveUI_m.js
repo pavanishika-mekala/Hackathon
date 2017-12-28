@@ -503,6 +503,8 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
     //frmApplyLeave[eventobject.id].skin = "sknBtnBg1C7393S28pxRoman";
     var leave_type_id = id;//parseInt((eventobject.id).split("btnLeaveType")[1]);
     this.selectedLeaveType = id;//eventobject.id;
+    kony.print("this.selectedLeaveType is::"+this.selectedLeaveType);
+    kony.print("kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType is::"+kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType)
     var sqlquery = "select * from employee_leave_type where leave_type_id = '" + leave_type_id + "'";
     kony.sync.single_select_execute(kony.sync.getDBName(), sqlquery, null, function(data) {
       if (data.length > 0 && data !== undefined && data[0].balance !== undefined) {
@@ -512,11 +514,17 @@ kony.apps.coe.ess.myLeave.applyLeave.LeaveType = {
         //remove frmApplyLeave.lblLeaveTypeBalance.text = "Available " + id+ " leave";
         frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1];
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;
+        frmApplyLeave.lblRequiredComments.isVisible = false;
+        frmApplyLeave.lblProof.isVisible = false;
       } else if(kony.apps.coe.ess.myLeave.applyLeave.LeaveType.selectedLeaveType == "XABS"){
-      		frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
+      		frmApplyLeave.flxLeaveBalanceDetails.isVisible = false
+            frmApplyLeave.lblProof.isVisible = true;
+        	frmApplyLeave.lblRequiredComments.isVisible = true;
         	frmApplyLeave.lblLeaveBalanceCount.text = ("0").replace(".",",");
       }else {
         //frmApplyLeave.flxLeaveBalanceDetails.isVisible = false;
+        frmApplyLeave.lblRequiredComments.isVisible = false;
+        frmApplyLeave.lblProof.isVisible = false;
         frmApplyLeave.lblLeaveBalanceCount.text = ("0").replace(".",",");
         frmApplyLeave.lblLeaveTypeBalance.text = kony.i18n.getLocalizedString("i18n.ess.common.availed.valueKA")+" " + frmApplyLeave.lstLeaveType.selectedKeyValue[1];
         frmApplyLeave.flxLeaveBalanceDetails.isVisible = true;

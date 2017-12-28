@@ -24,10 +24,7 @@
     "canUpdateUI": true,
     "children": [
         "flxImg",
-        "lblAppliedOn",
-        "lblName",
-        "flxCornerShape",
-        "flxcomment"
+        "flxDetails"
     ],
     "clipbounds": true,
     "containerId": true,
@@ -39,7 +36,7 @@
     "isTemplate": true,
     "isvisible": true,
     "kuid": "a4b5f08079444ce799d57565f981c890",
-    "layouttype": 2,
+    "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "tempSegRequesterComments",
     "pf": "tempSegRequesterComments",

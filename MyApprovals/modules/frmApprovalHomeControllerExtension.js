@@ -315,7 +315,26 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
       // Start Lazy loading for the approvals list Segment
       //kony.apps.coe.ess.Approvals.ApprovalsHome.lazyLoading();
       //Making label count
+      var nowCount = 0;
+      var laterCount = 0
+      var totalCount = 0;
       if (data.ApprovalRequestData && data.ApprovalRequestData.length) {
+        nowCount = data.ApprovalRequestData.length.toFixed();
+      }
+      if (data.IslaterRequestsCount || data.IslaterRequestsCount == 0) {
+        laterCount = data.IslaterRequestsCount.toFixed()
+      }
+      totalCount = parseFloat(nowCount) + parseFloat(laterCount);
+      if(totalCount > 0){
+        frmApprovalHome.lblNowCount.text = data.ApprovalRequestData.length.toFixed();
+        flxNavigateFooter.lblNowCount.text = totalCount.toFixed();
+        frmApprovalHome.lblNotificationsCount.text = data.ApprovalRequestData.length.toFixed();
+      }else{
+        frmApprovalHome.lblNowCount.text = "0";
+        flxNavigateFooter.lblNowCount.text = "0";
+        frmApprovalHome.lblNotificationsCount.text = "0";
+      }
+      /*if (data.ApprovalRequestData && data.ApprovalRequestData.length) {
         frmApprovalHome.lblNowCount.text = data.ApprovalRequestData.length.toFixed();
         flxNavigateFooter.lblNowCount.text = data.ApprovalRequestData.length.toFixed();
         frmApprovalHome.lblNotificationsCount.text = data.ApprovalRequestData.length.toFixed();
@@ -323,7 +342,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
         frmApprovalHome.lblNowCount.text = "0";
         flxNavigateFooter.lblNowCount.text = "0";
         frmApprovalHome.lblNotificationsCount.text = "0";
-      }
+      }*/
       //kony.sdk.mvvm.KonyApplicationContext.dismissLoadingScreen();
       kony.print("---- before showing form ----");
       this.getController().showForm();

@@ -1,0 +1,31 @@
+{
+    "AS_Segment_f4b7bf5d709049b7b70e901b2090e954": {
+        "id": "AS_Segment_f4b7bf5d709049b7b70e901b2090e954",
+        "type": "ACTION_SEQUENCE",
+        "name": "onadvancedSearchSelection",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "sectionNumber"
+        }, {
+            "datatype": "number",
+            "name": "rowNumber"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c54cde5f77144817b5625679215c2146",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "onadvancedSearchSelection();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Button_fe97ce54477f48d89bc95ae2342272db": {
+        "id": "AS_Button_fe97ce54477f48d89bc95ae2342272db",
+        "type": "ACTION_SEQUENCE",
+        "name": "confirmAddTask",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__g304aeaac9f04283b28bedc6a2b5d39e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"Yet to write logic for add task in timeline :)\");\nfrmTimeSheetCreateTab.flxAddAsTaskPopup.isVisible=false;\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

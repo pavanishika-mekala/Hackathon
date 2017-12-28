@@ -264,7 +264,7 @@ kony.apps.mytime.timelineselection.prototype.onclickof_flxlneforward = function(
     this.frmname.flxscrollts.onScrolling = this.onscroll.bind(this);
   //TODO 
   // Segment row CLICK - ad segment using config file
-    this.frmname.segProjectTaskSelection.onRowClick = this.onclick_flxcreate.bind(this);
+    this.frmname.segTasks.onRowClick = this.onclick_flxcreate.bind(this);
    // this.frmname.flxlneforward.onTouchStart = this.onclick_flxcreate.bind(this);
 };
 /**
@@ -317,8 +317,8 @@ kony.apps.mytime.timelineselection.prototype.Calculateanddraw = function() {
     }
     var ltext = this.formatAMPM(7 + Number(this.startfrom));
     var rtext = this.formatAMPM(7 + (left + width) / 20);
-    var projecttxt = this.frmname.segProjectTaskSelection.selectedRowItems[0].lblProjectName;
-  	this.frmname.segProjectTaskSelection.onRowClick = this.noaction;
+    var projecttxt = this.frmname.segTasks.selectedRowItems[0].lblProjectName;
+  	this.frmname.segTasks.onRowClick = this.noaction;
     var tempflx = {
         id: this.startfrom + "selectedflx" + rtext,
         //text:ltext+"-"+rtext,

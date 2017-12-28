@@ -1016,7 +1016,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfLeaveTimeTypeTab = functio
 kony.apps.coe.ess.myTime.TimesheetCreate.onSelectionOfTaskTab = function (selectedTask) {
 
   if (kony.apps.coe.Reusable.TimelineCreationTab.isSliderEmpty) {
-    frmTimeSheetCreateTab.segProjectTaskSelection.selectedRowIndex = null;
+    frmTimeSheetCreateTab.segTasks.selectedRowIndex = null;
     return;
   }	
   function updateSelectedTask() {
@@ -1269,18 +1269,18 @@ kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfigTab = {
   showTasks: function(data) {
     frmTimeSheetCreateTab.flxSelectedLeave.isVisible = false;
     frmTimeSheetCreateTab.flxSelectedTaskTimeTypeSelection.isVisible = false;
-    frmTimeSheetCreateTab.segProjectTaskSelection.isVisible = true;
+    frmTimeSheetCreateTab.segTasks.isVisible = true;
   },
 
   showSelectedTaskTimeType: function(data) {
     // frmTimeSheetCreateTab.flxProjectTaskSelection.isVisible = false;
     //frmTimeSheetCreate.flxSelectedLeave.isVisible = false;
-    frmTimeSheetCreateTab.segProjectTaskSelection.isVisible = false;
+    frmTimeSheetCreateTab.segTasks.isVisible = false;
     frmTimeSheetCreateTab.flxSelectedTaskTimeTypeSelection.isVisible = true;
   },
 
   showSelectedLeave: function() {
-    frmTimeSheetCreateTab.segProjectTaskSelection.isVisible = false;
+    frmTimeSheetCreateTab.segTasks.isVisible = false;
     frmTimeSheetCreateTab.flxSelectedTaskTimeTypeSelection.isVisible = false;
     frmTimeSheetCreateTab.flxSelectedLeave.isVisible = true;
   },
@@ -1743,10 +1743,10 @@ kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggleTab = {
     frmTimeSheetCreateTab.lblSelectTask.text = kony.i18n.getLocalizedString("i18n.ess.frmTimeSheetCreate.selectaTask");
     this.isWork = true;
     kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.CurrentTaskTimelineData.reset();
-    frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(true);
+    frmTimeSheetCreateTab.segTasks.setVisibility(true);
     frmTimeSheetCreateTab.txtBoxSearch.setVisibility(true);
     frmTimeSheetCreateTab.imgCancel.setVisibility(true);
-    //frmTimeSheetCreate.segProjectTaskSelection.setVisibility(true);
+    //frmTimeSheetCreate.segTasks.setVisibility(true);
     frmTimeSheetCreateTab.segLeaveSelection.setVisibility(false);
     frmTimeSheetCreateTab.segTasksSearchResults.setVisibility(false);
     frmTimeSheetCreateTab.flxSelectedTaskTimeTypeSelection.setVisibility(false);
@@ -1771,10 +1771,10 @@ kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggleTab = {
     kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.CurrentTaskTimelineData.reset();
     frmTimesheetCreateTab.lblSelectTask.text = "Select Leave Type";
     frmTimesheetCreateTab.btnStep2.isVisible = false;
-    //frmTimeSheetCreate.segProjectTaskSelection.setVisibility(false);
+    //frmTimeSheetCreate.segTasks.setVisibility(false);
     //frmTimeSheetCreate.segLeaveSelection.setVisibility(true);
     frmTimeSheetCreateTab.segTasksSearchResults.setVisibility(false);
-    frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(false);
+    frmTimeSheetCreateTab.segTasks.setVisibility(false);
     frmTimeSheetCreateTab.segLeaveSelection.setVisibility(true);
     // frmTimeSheetCreate.txtBoxSearch.setVisibility(false);
     kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.populateData.leaves();
@@ -1948,7 +1948,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab = {
     kony.apps.coe.ess.myTime.TimesheetCreate.SearchConfigTab.showSearchButton();
     if (kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggleTab.isWork) {
       //Work is active
-      frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(false);
+      frmTimeSheetCreateTab.segTasks.setVisibility(false);
     } else {
       //Leaves is active
       frmTimeSheetCreateTab.segLeaveSelection.setVisibility(false);
@@ -1960,14 +1960,14 @@ kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab = {
   },
 
   contractAnimation: function() {
-    var animObj = kony.ui.createAnimation({
+   // var animObj = kony.ui.createAnimation({
       /* "100": {
                 "width": "49.4%",
                 "stepConfig": {
                     "timingFunction": kony.anim.EASE_OUT
                 }
             }*/
-    });
+ //   });
 
     var timingObj = {
       //  "duration": 0.5,
@@ -1977,7 +1977,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab = {
     var animCallbacks = {
       "animationEnd": function() {
         // frmTimeSheetCreateTab.flxTimeLine.removeAll();
-        frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(true);
+        frmTimeSheetCreateTab.segTasks.setVisibility(true);
         frmTimeSheetCreateTab.segLeaveSelection.setVisibility(false);
         frmTimeSheetCreateTab.segTasksSearchResults.setVisibility(false);
         frmTimeSheetCreateTab.flxSelectedTaskDeatilsType.setVisibility(false);
@@ -1993,8 +1993,8 @@ kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab = {
         frmTimeSheetCreateTab.txtBoxSearch.text = "";
         // if (kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggleTab.isWork) {
         //Work is active
-        //frmTimeSheetCreate.segProjectTaskSelection.setVisibility(true);
-        //frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(true);
+        //frmTimeSheetCreate.segTasks.setVisibility(true);
+        //frmTimeSheetCreateTab.segTasks.setVisibility(true);
         // } else {
         //Leaves is active
         //frmTimeSheetCreate.segLeaveSelection.setVisibility(true);
@@ -2057,11 +2057,11 @@ kony.apps.coe.ess.myTime.TimesheetCreate.sqlSuccessTab = function(res) {
         projectTask.lblProjectName = res[i][j].Project_Name;
         projectTask.Project_Task_Type = res[i][j].Type;
         projectTask.lblTaskName = (res[i][j].Task_Name !== null) ? res[i][j].Task_Name : " - ";
-        projectTask.template = flxSegProjectTaskSelection;
+        projectTask.template = flxTaskList;
       } else {
         projectTask.lblProjectName = (kony.apps.coe.ess.myTime.ViewTimeSheetUI.isData(res[i][j].Project_Name)) ? res[i][j].Project_Name : res[i][j].Task_Name;
         projectTask.Project_Task_Type = res[i][j].Type;
-        projectTask.template = flxSegProjectSelection;
+        projectTask.template = flxTaskList;
       }
       rows.push(projectTask);
     }
@@ -2070,7 +2070,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.sqlSuccessTab = function(res) {
   }
   frmTimeSheetCreateTab.segTasksSearchResults.setData(finalData);
   frmTimeSheetCreateTab.segLeaveSelection.setVisibility(false);
-  frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(false);
+  frmTimeSheetCreateTab.segTasks.setVisibility(false);
   frmTimeSheetCreateTab.segTasksSearchResults.setVisibility(true);
   frmTimeSheetCreateTab.lblNoResultsTask.setVisibility(false);
   kony.application.dismissLoadingScreen();

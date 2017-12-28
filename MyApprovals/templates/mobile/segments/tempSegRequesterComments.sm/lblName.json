@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizLabel",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_height_": {
         "type": "ref",
@@ -8,7 +9,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "19.70%"
+        "value": "0%"
     },
     "_margin_": [
         1,
@@ -22,19 +23,15 @@
         0,
         0
     ],
-    "_right_": {
-        "type": "string",
-        "value": "9.70%"
-    },
     "_skin_": "s9500784b73d489da4c07acc8586e563",
-    "_text_": "Rose ",
+    "_text_": "Rose",
     "_top_": {
         "type": "string",
-        "value": "12dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "string",
-        "value": "40%"
+        "value": "50%"
     },
     "_wrapping_": 2,
     "android": {
@@ -62,7 +59,7 @@
     "isvisible": true,
     "kuid": "d08da677c4654b988e1ad85afaf31ce9",
     "name": "kony.ui.Label",
-    "parent": "flxRequesterComments",
+    "parent": "flxAppliedData",
     "pf": "tempSegRequesterComments",
     "tooltip": "",
     "wType": "Label",

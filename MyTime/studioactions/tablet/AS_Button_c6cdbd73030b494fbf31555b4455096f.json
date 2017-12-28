@@ -1,0 +1,24 @@
+{
+    "AS_Button_c6cdbd73030b494fbf31555b4455096f": {
+        "id": "AS_Button_c6cdbd73030b494fbf31555b4455096f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__dc3ec3b542d740d7bf154603ea67c58f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "fetchDataForRecentTasks();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

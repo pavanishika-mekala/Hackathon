@@ -1,0 +1,31 @@
+{
+    "AS_Button_d34ba35d382c4f6b92d21a35ba479e3e": {
+        "id": "AS_Button_d34ba35d382c4f6b92d21a35ba479e3e",
+        "type": "ACTION_SEQUENCE",
+        "name": "closeAdvSearch",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b186f5b0c98d40bf93a7356a632e5afe",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.apps.coe.ess.myTime.TimesheetCreate.SearchTab.contractAnimation();\nfrmTimeSheetCreateTab.flxOuterTask.isVisible=true;\nfrmTimeSheetCreateTab.flxDayData.isVisible=true;\nfrmTimeSheetCreateTab.flxAdvancedSearch.isVisible=false;\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

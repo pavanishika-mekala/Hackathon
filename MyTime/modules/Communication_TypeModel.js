@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Mon Oct 30 07:03:34 UTC 2017Communication_Type*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Mon Dec 11 13:01:26 UTC 2017Communication_Type*******************
 // **********************************Start Communication_Type's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -657,9 +657,10 @@ com.kony.EMPLOYEE.Communication_Type.remove = function(wcs, successcallback,erro
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function Communication_Type_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

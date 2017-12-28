@@ -131,6 +131,7 @@ kony.apps.coe.ess.Approvals.IsLaterSearch.set_data_ForLaterSegment = function (r
 			//"imgCategory": "requestTypeImage",
 			"lblUserName": "UserName",
 			"lblCreateDate": "RequestDate",
+          	"lblMidRight":kony.i18n.getLocalizedString("i18n.ess.MyApprovals.tempSegApprovalRequest.lblDueDateHeader"),
 			"lblDueDateValue": "dueDate",
 			"lblRequestInfo": "RequestInfo",
 			"btnAdditionalInfo": "AdditionalData",
@@ -151,6 +152,13 @@ kony.apps.coe.ess.Approvals.IsLaterSearch.set_data_ForLaterSegment = function (r
 			processedData[i]["btnLaterApprove"]={"isVisible":false};
 		}
 		frmIsLaterSearch.SegDetails.setData(processedData);
+      	if(processedData.length >0){
+        frmIsLaterSearch.SegDetails.setVisibility(true);
+        frmIsLaterSearch.lblNoRecordsFound.setVisibility(false);
+      }else{
+        frmIsLaterSearch.SegDetails.setVisibility(false);
+        frmIsLaterSearch.lblNoRecordsFound.setVisibility(true);
+      }
 	} catch (err) {
 		handleError(new appException(kony.i18n.getLocalizedString("i18n.ess.peopleSearch.ErrorMessage.bindData")));
 	}

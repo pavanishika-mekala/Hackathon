@@ -31,7 +31,7 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "4%"
+        "value": "2%"
     },
     "_width_": {
         "type": "string",
@@ -50,7 +50,7 @@
     "focusskin": "s9e5f48c35174d2c824313502612d3ca",
     "id": "txtBoxSearch",
     "ide_onDone": "AS_TextField_d59e279185924895a91eac058e715143",
-    "ide_onTouchStart": "AS_TextField_74c915ff511347a297f2652bd30d25d4",
+    "ide_onTextChange": "AS_TextField_cb16ab3666c9477d9acd60bf9c7512e1",
     "info": null,
     "isvisible": true,
     "keyboardtype": "A",

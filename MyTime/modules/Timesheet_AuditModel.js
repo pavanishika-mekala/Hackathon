@@ -1,5 +1,5 @@
-//****************Sync Version:Sync-Dev-8.0.0_v201709040903_r7*******************
-// ****************Generated On Mon Oct 30 07:03:35 UTC 2017Timesheet_Audit*******************
+//****************Sync Version:Sync-Dev-8.0.0_v201711101237_r14*******************
+// ****************Generated On Mon Dec 11 13:01:27 UTC 2017Timesheet_Audit*******************
 // **********************************Start Timesheet_Audit's helper methods************************
 if (typeof(kony) === "undefined") {
 	kony = {};
@@ -700,9 +700,10 @@ com.kony.ESS.MYTIME.Timesheet_Audit.remove = function(wcs, successcallback,error
 	var twcs = wcs;
 	var isError = false;
 	var rowsDeleted;
+	var record = "";
 
 	function Timesheet_Audit_removeTransactioncallback(tx){
-		wcs = " " + wcs;
+			wcs = " " + wcs;
 		rowsDeleted = kony.sync.deleteBatch(tx, tbname, wcs, false, markForUpload, errorcallback)
 		if(rowsDeleted === false){
 			isError = true;

@@ -1,0 +1,144 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_data_": [
+        {
+            "lblActivity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Activity Operation - 0023"
+            },
+            "lblLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNetworkOrder": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Network Order - 0008082839023"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Project Name"
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Task Name"
+            }
+        },
+        {
+            "lblActivity": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Activity Operation - 0023"
+            },
+            "lblLine": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblNetworkOrder": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Network Order - 0008082839023"
+            },
+            "lblProjectName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Project Name"
+            },
+            "lblTaskName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Task Name"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "01",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segAdvancedSearchResults",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": false,
+    "kuid": "b19641a481424d82aeaecfb28b3353ff",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSearchResults",
+    "pf": "frmTimeSheetCreateTab",
+    "retainselection": false,
+    "rowTemplateId": "69e24b4bb08d4042b2fae8b912a223b5",
+    "rowcounter": 1,
+    "rowfocusskin": "s3fe7255b9da4bc08fb8ad82e9f1c719",
+    "rowskin": "s720317a253447758c66824a5d12d0e0",
+    "rowtemplate": "flxTaskList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "see7ae05c0fc4700ada1483918c0fc29",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxTaskList": "flxTaskList",
+        "lblActivity": "lblActivity",
+        "lblLine": "lblLine",
+        "lblNetworkOrder": "lblNetworkOrder",
+        "lblProjectName": "lblProjectName",
+        "lblTaskName": "lblTaskName"
+    },
+    "zindex": 1
+}

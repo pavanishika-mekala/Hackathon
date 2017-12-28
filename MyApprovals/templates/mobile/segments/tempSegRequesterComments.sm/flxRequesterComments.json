@@ -24,10 +24,7 @@
     "canUpdateUI": true,
     "children": [
         "flxImg",
-        "lblAppliedOn",
-        "lblName",
-        "flxCornerShape",
-        "flxcomment"
+        "flxDetails"
     ],
     "clipbounds": true,
     "containerId": true,

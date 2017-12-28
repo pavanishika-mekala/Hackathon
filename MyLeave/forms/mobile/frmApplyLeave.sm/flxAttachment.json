@@ -36,9 +36,8 @@
     "autogrowmode": 0,
     "canUpdateUI": true,
     "children": [
-        "lblAttachment",
-        "lblProof",
-        "imgCamera"
+        "FlexContainer0a0edd3cc097e43",
+        "lblProof"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -47,7 +46,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "6c9212efd1ba46a98b0750c1a70058e8",
-    "layouttype": 3,
+    "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "flexMain",
     "pf": "frmApplyLeave",
