@@ -71,8 +71,14 @@ kony.apps.coe.ess.Sync.startSyncSession = function (successCallback, failureCall
 					if (err.errorInfo[scopeName].errorMessage && err.errorInfo[scopeName].errorMessage.toLowerCase().match(/session|token/)) {
 						//handle token expairy issue
 						kony.apps.coe.ess.frmLogin.handleSessionExpairyError();
-					}
-				}
+					}else{
+                      kony.application.dismissLoadingScreen();
+                      handleError(kony.i18n.getLocalizedString("i18n.ess.myApproval.genericErrorMsg.text"));
+                    }
+				}else{
+                  kony.application.dismissLoadingScreen();
+                  handleError(kony.i18n.getLocalizedString("i18n.ess.myApproval.genericErrorMsg.text"));
+                }
 			}else{
               kony.application.dismissLoadingScreen();
               handleError(kony.i18n.getLocalizedString("i18n.ess.myApproval.genericErrorMsg.text"));
