@@ -44,7 +44,7 @@
         "topLevelBox": null
     },
     "id": "imgStatus",
-    "imagescalemode": 0,
+    "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
