@@ -33,6 +33,9 @@ kony.sdk.mvvm.frmDelegationRequestCreateFormModelExtension = Class({
       var date = toDaysDate.getDate();
       var month = toDaysDate.getMonth();
       frmDelegationRequestCreate.clndFromDate.validEndDate = [date, month+1, year+1];
+      frmDelegationRequestCreate.clndToDate.validEndDate = [date, month+1, year+1];
+      frmDelegationRequestCreate.clndToDate.validStartDate = [date, month+1, year];
+      frmDelegationRequestCreate.clndFromDate.validStartDate = [date, month+1, year];
       kony.apps.coe.ess.Approvals.DelegationRequestCreate.UI.getInstance().enableToDate();
     }
 });
