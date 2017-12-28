@@ -26,7 +26,7 @@
     "_text_": "Network Order - 0008082839023",
     "_top_": {
         "type": "string",
-        "value": "6dp"
+        "value": "0dp"
     },
     "_width_": {
         "type": "ref",

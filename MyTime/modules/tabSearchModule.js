@@ -285,6 +285,12 @@ kony.apps.coe.ess.myTime.Tab.SearchTask.searchProjectTask = function(selectedVal
  */
 kony.apps.coe.ess.myTime.Tab.SearchTask.onlineSearch = function(selectedValue) {
   kony.application.showLoadingScreen("", "", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+  
+  if(frmTimeSheetCreateTab.tbxSearch1.text === null)
+  frmTimeSheetCreateTab.tbxSearch1.text="";
+  if(frmTimeSheetCreateTab.tbxSearch2.text === null)
+  frmTimeSheetCreateTab.tbxSearch2.text="";
+  
   var modelName = "MYTIME";
   var dataObject = "Project_Task";
   var ccID = "";

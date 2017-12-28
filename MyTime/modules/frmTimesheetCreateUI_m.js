@@ -1085,7 +1085,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.Search = {
                 kony.apps.coe.ess.myTime.TimesheetCreate.SearchConfig.showSearchButton();
                 if (kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggle.isWork) {
                     //Work is active
-                    frmTimeSheetCreate.segProjectTaskSelection.setVisibility(false);
+                    frmTimeSheetCreate.segTasks.setVisibility(false);
                 } else {
                     //Leaves is active
                     frmTimeSheetCreate.segLeaveSelection.setVisibility(false);
@@ -1118,7 +1118,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.Search = {
                 frmTimeSheetCreate.txtBoxSearch.text = "";
                 if (kony.apps.coe.ess.myTime.TimesheetCreate.WorkLeaveToggle.isWork) {
                     //Work is active
-                    frmTimeSheetCreate.segProjectTaskSelection.setVisibility(true);
+                    frmTimeSheetCreate.segTasks.setVisibility(true);
                 } else {
                     //Leaves is active
                     frmTimeSheetCreate.segLeaveSelection.setVisibility(true);
@@ -1188,7 +1188,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.sqlSuccess = function(res) {
                 projectTask.lblProjectName = (res[i][j].Project_Name === "") ? "" : (res[i][j].Project_Name);
                 projectTask.Project_Task_Type = (res[i][j].Type === "") ? "" : res[i][j].Type;
                 projectTask.lblTaskName = (res[i][j].Task_Name !== null) ? res[i][j].Task_Name : "";
-                projectTask.template = flxSegProjectTaskSelection;
+                projectTask.template = flxsegTasks;
             } else {
                 projectTask.lblProjectName = (kony.apps.coe.ess.myTime.ViewTimeSheetUI.isData(res[i][j].Project_Name)) ? res[i][j].Project_Name : res[i][j].Task_Name;
                 projectTask.Project_Task_Type = (res[i][j].Type === "") ? "" : res[i][j].Type;
@@ -1202,7 +1202,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.sqlSuccess = function(res) {
     kony.print("---- setData in finalData");
     frmTimeSheetCreate.segTasksSearchResults.setData(finalData);
     frmTimeSheetCreate.segLeaveSelection.setVisibility(false);
-    frmTimeSheetCreate.segProjectTaskSelection.setVisibility(false);
+    frmTimeSheetCreate.segTasks.setVisibility(false);
     frmTimeSheetCreate.segTasksSearchResults.setVisibility(true);
     frmTimeSheetCreate.lblNoResultsTask.setVisibility(false);
     kony.application.dismissLoadingScreen();
@@ -1231,7 +1231,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.onlineSuccess = function(res) {
         kony.apps.coe.ess.myTime.TimesheetCreate.sqlSuccess(projectTasks);
     } else {
         frmTimeSheetCreate.segLeaveSelection.setVisibility(false);
-        frmTimeSheetCreate.segProjectTaskSelection.setVisibility(false);
+        frmTimeSheetCreate.segTasks.setVisibility(false);
         frmTimeSheetCreate.segTasksSearchResults.setVisibility(false);
         frmTimeSheetCreate.lblNoResultsTask.setVisibility(true);
         kony.application.dismissLoadingScreen();
