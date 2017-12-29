@@ -34,11 +34,11 @@ kony.apps.coe.Reusable.TimelineCreationTab.createSliderCallbackTab = function ()
 };
 
 kony.apps.coe.Reusable.TimelineCreationTab.removeSliderCallback = function () {
-  kony.apps.coe.ess.myTime.TimesheetCreate.popups.disableCloneTaskTo();
+  kony.apps.coe.ess.myTime.TimesheetCreate.popupsTab.disableCloneTaskTo();
 };
 
 kony.apps.coe.Reusable.TimelineCreationTab.deleteTimelineCallback = function () {
-  kony.apps.coe.ess.myTime.TimesheetCreate.popups.disableCloneTaskTo();
+  kony.apps.coe.ess.myTime.TimesheetCreate.popupsTab.disableCloneTaskTo();
   kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showTasks();
   kony.apps.coe.ess.myTime.TimesheetCreate.Backend.CurrentTaskTimelineData.reset();
 };
@@ -69,7 +69,7 @@ kony.apps.coe.Reusable.TimelineCreationTab.selectTimelineTaskCallback = function
 };
 
 kony.apps.coe.Reusable.TimelineCreationTab.editTimelineTaskCallback = function (data) {
-  kony.apps.coe.ess.myTime.TimesheetCreate.popups.disableCloneTaskTo();
+  kony.apps.coe.ess.myTime.TimesheetCreate.popupsTab.disableCloneTaskTo();
   kony.apps.coe.ess.myTime.TimesheetCreate.HoursFullDayHalfDaySelection.isBlocked = false;
   //     alert("editTimelineTaskCallback" + JSON.stringify(data));
   function callback(isLeave, data) {
@@ -565,10 +565,10 @@ kony.apps.coe.Reusable.TimelineCreationTab.prototype.showManualTimeEntryTab = fu
     kony.apps.coe.ess.myTime.TimesheetHome.popluateTimePickerDataTab();
     var startsAt = parseInt(frmTimeSheetCreateTab.flexSlider.left);
     var endsAt = startsAt + parseInt(frmTimeSheetCreateTab.flexSlider.width);
-    startsAt = kony.apps.coe.Reusable.TimelineCreation.searchNearestCoordinate(startsAt);
-    endsAt = kony.apps.coe.Reusable.TimelineCreation.searchNearestCoordinate(endsAt);
-    startsAt = kony.apps.coe.Reusable.TimelineCreation.XCoordinatesOfTimeLine[startsAt][0];
-    endsAt = kony.apps.coe.Reusable.TimelineCreation.XCoordinatesOfTimeLine[endsAt][0];
+    startsAt = kony.apps.coe.Reusable.TimelineCreationTab.searchNearestCoordinate(startsAt);
+    endsAt = kony.apps.coe.Reusable.TimelineCreationTab.searchNearestCoordinate(endsAt);
+    startsAt = kony.apps.coe.Reusable.TimelineCreationTab.XCoordinatesOfTimeLine[startsAt][0];
+    endsAt = kony.apps.coe.Reusable.TimelineCreationTab.XCoordinatesOfTimeLine[endsAt][0];
     startsAt = startsAt.toString();
     endsAt = endsAt.toString();
     frmTimeSheetCreateTab.timePicker.selectedKeys = [startsAt, endsAt];
@@ -795,29 +795,36 @@ kony.apps.coe.Reusable.TimelineCreationTab.prototype.setCallback = function (sta
   kony.apps.coe.Reusable.TimelineCreationTab.startCallback = startCallback;
   kony.apps.coe.Reusable.TimelineCreationTab.endCallback = endCallback;
 };
+
+
 /**
- * @class          TimelineCreation
+ * @class          TimelineCreationTab
  * @type           prototype function
  * @param          None
  * @return         None
  * @description    This method deletes selected task in TimeLine.
  */
-kony.apps.coe.Reusable.TimelineCreationTab.prototype.deleteTask = function () {
+kony.apps.coe.Reusable.TimelineCreationTab.prototype.deleteTask = function (start_time) {
   kony.apps.coe.Reusable.TimelineCreationTab.isUnfixedTaskPresent = false;
   var frmName = kony.apps.coe.Reusable.TimelineCreationTab.parentWidgetName;
   var TimeSheetData = kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData;
   var loop;
+  var indexForDelete;
+
   if (TimeSheetData.length !== undefined) {
     for (loop = 0; loop < TimeSheetData.length; loop++) {
       if (TimeSheetData[loop] !== null) {
         if (TimeSheetData[loop].flexName !== "" && TimeSheetData[loop].flexName !== undefined) {
           var id = TimeSheetData[loop].flexName;
-          if (frmName[id] !== null && kony.apps.coe.Reusable.TimelineCreationTab.selectedFlexName === TimeSheetData[loop].flexName) {
-            TimeSheetData[loop] = this.removeConflictedTime(TimeSheetData[loop], id);
-            kony.apps.coe.Reusable.TimelineCreationTab.previousTimeline = null;
+          if (frmName[id] !== null && start_time === TimeSheetData[loop].startTime) {
+           //if (frmName[id] !== null && kony.apps.coe.Reusable.TimelineCreationTab.selectedFlexName === TimeSheetData[loop].flexName) {
+              TimeSheetData[loop] = this.removeConflictedTime(TimeSheetData[loop], id);
+              indexForDelete = loop;
+              kony.apps.coe.Reusable.TimelineCreationTab.previousTimeline = null;
+            }
+           }
           }
-        }
-      }
+       
     }
     kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData = (new kony.apps.coe.Reusable.TimelineCreationTab()).removeEmptyDataInTimeSheetData(TimeSheetData);
   }
@@ -848,31 +855,48 @@ kony.apps.coe.Reusable.TimelineCreationTab.prototype.deleteTask = function () {
           break;
         }
       }
-    }
+    }    
     if (flexId !== undefined && flexId !== null) {
-      frmName[flexId].skin = "sknFlxMobBg1C7393Op80";
+      //frmName[flexId].skin = "sknFlxMobBg1C7393Op80";
       kony.apps.coe.Reusable.TimelineCreationTab.deleteFlag = 1;
       kony.apps.coe.Reusable.TimelineCreationTab.previousTimeline = flexId;
       kony.apps.coe.Reusable.TimelineCreationTab.selectedFlexName = flexId;
-      kony.apps.coe.Reusable.TimelineCreationTab.selectTimelineTaskCallback(sortedArray[index].data);
+      //       kony.apps.coe.Reusable.TimelineCreationTab.selectTimelineTaskCallback(sortedArray[index].data);
+      kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.addTimeEntriesInDB(kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData[indexForDelete]);
     } else {
       frmName.flexSlider.isVisible = true;
-      kony.apps.coe.Reusable.TimelineCreationTab.setDefaultSlider("9 AM", "11 AM");
+      kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.addTimeEntriesInDB(kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData[indexForDelete]);
+      kony.apps.coe.Reusable.TimelineCreationTab.setDefaultSlider(kony.apps.coe.ess.appconfig.defaultSliderStartTime, kony.apps.coe.ess.appconfig.defaultSliderEndTime);
+      //kony.apps.coe.ess.myTime.TimesheetCreate.popluateTimePickerData();
+      //frmTimeSheetCreate.timePicker.selectedKeys = [kony.apps.coe.ess.appconfig.defaultSliderStartTime, kony.apps.coe.ess.appconfig.defaultSliderEndTime];
+      //kony.apps.coe.ess.myTime.TimesheetCreate.resetUI();
       kony.apps.coe.Reusable.TimelineCreationTab.isSliderEmpty = false;
-      kony.apps.coe.ess.myTime.TimesheetCreate.Backend.CurrentTaskTimelineData.reset();
-      kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showTasks();
+      kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.CurrentTaskTimelineData.reset();
+      kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfigTab.showTasks();
     }
 
   } else {
-    kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfig.showTasks();
+    kony.apps.coe.ess.myTime.TimesheetCreate.TaskTimeTypeSelectionConfigTab.showTasks();
     frmName.flexSlider.isVisible = false;
     kony.apps.coe.Reusable.TimelineCreationTab.isSliderEmpty = true;
   }
   kony.apps.coe.Reusable.TimelineCreationTab.deleteFlag = 0;
-  kony.apps.coe.ess.myTime.TimesheetCreate.popups.hideAllPopups();
+  //kony.apps.coe.ess.myTime.TimesheetCreate.popups.hideAllPopups();
   kony.apps.coe.ess.myTime.TimesheetCreate.updateTotalTimeTab();
   kony.apps.coe.Reusable.TimelineCreationTab.removeSliderCallback();
+  var delFlag = 0
+  for(var i=0; i<kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData.length; i++){
+    if(kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData[i].data.Time_Line_Status !== "deleted"){
+      delFlag = 1;
+    }
+  }
+  if(kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData.length <= 0 || delFlag != 1){
+    showListViewForm(kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab.contextData.date);    
+
+  }
 };
+
+
 /**
  * @class          TimelineCreation
  * @type           prototype function
