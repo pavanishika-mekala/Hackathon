@@ -271,7 +271,11 @@ kony.apps.coe.ess.myLeave.PendingLeaveRequestUI.prototype.getPendingData = funct
 					pendingData.lblDays = Number(leaveaDays) + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
 				}else{
 					if(currHrs !== undefined && currHrs !== null && currHrs !== ""){
+                      if(currHrs == 1){
+                        pendingData.lblDays = (currHrs.toString() +" "+kony.i18n.getLocalizedString("i18n.ess.common.hour.valueKA")).replace(".", ",");
+                      }else if(currHrs > 1){
                         pendingData.lblDays = (currHrs.toString() +" "+kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
+                      }
 					}else{
 					  pendingData.lblDays = "";
 					}

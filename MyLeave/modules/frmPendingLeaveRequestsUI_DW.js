@@ -152,12 +152,14 @@ kony.apps.coe.ess.myLeave.frmPendingLeaveRequests.populate = function(empLeaveDa
   }
   if (empLeaveData[i].no_of_hours <
    8) {
-   if (empLeaveData[i].no_of_hours == 7.5) {
+   if (empLeaveData[i].no_of_hours == Number(kony.apps.coe.ess.appconfig.workingHours)) {
     hoursTime = "1 "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.day");
-   } else
+   } else if(empLeaveData[i].no_of_hours == 1){
+    hoursTime = (empLeaveData[i].no_of_hours + " " + kony.i18n.getLocalizedString("i18n.ess.common.hour.valueKA")).replace(".", ",");
+   }else if(empLeaveData[i].no_of_hours > 1){
     hoursTime = (empLeaveData[i].no_of_hours + " " + kony.i18n.getLocalizedString("i18n.ess.myLeave.frmLeaveHome.Hours")).replace(".", ",");
   } else
-   hoursTime = ((parseInt(empLeaveData[i].no_of_hours) * 1) / 7.5).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
+   hoursTime = ((parseInt(empLeaveData[i].no_of_hours) * 1) / Number(kony.apps.coe.ess.appconfig.workingHours)).toFixed() + " "+kony.i18n.getLocalizedString("i18.ess.frmTeamView.days");
   sampleJson.lblLeaveType = leaveTypes;
   sampleJson.lblLeaveDuration = hoursTime;
   sampleJson.lblDummyDivider = " ";
