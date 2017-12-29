@@ -2341,7 +2341,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.settingTaskSummaryTab = function (dataS
     finalData.Task_Name = dataSet[index].Task_Name;
     var endTimeForCal = getHHMMSS(dataSet[index].End_Time);
     endTimeForCal = "" + endTimeForCal.hh + ((endTimeForCal.mm) * 60) / 100;
-    var startTimeForCal = getHHMMSS(dataSet[index].start_Time);
+    var startTimeForCal = getHHMMSS(dataSet[index].Start_Time);
     startTimeForCal = "" + startTimeForCal.hh + ((startTimeForCal.mm) * 60) / 100;
     finalData.actual_Hours = kony.apps.coe.ess.myTime.TimesheetCreate.timeEntryCreate.getTimeDiff(endTimeForCal, startTimeForCal) + " " + kony.i18n.getLocalizedString("i18n.ess.frmListViewH");
     if (dataSet[index].data === null || dataSet[index].data === undefined) {
@@ -2689,7 +2689,7 @@ kony.apps.coe.ess.myTime.TimesheetCreate.pickerViewOnClickApplyTab = function() 
     kony.apps.coe.Reusable.TimelineCreationTab.setDefaultSlider(startTime, endTime);
     frmTimeSheetCreateTab.flxTimePicker.setVisibility(false);
     frmTimeSheetCreateTab.flexSlider.setVisibility(true);
-    frmTimeSheetCreateTab.segProjectTaskSelection.setVisibility(true);    
+    frmTimeSheetCreateTab.segTasks.setVisibility(true);    
     //         frmTimeSheetCreate.tbxSelectedTaskDescription.text = "";
     //         frmTimeSheetCreate.lblSummary.setVisibility(false);
     //         frmTimeSheetCreate.labPopupHeader.top = "30.5%";

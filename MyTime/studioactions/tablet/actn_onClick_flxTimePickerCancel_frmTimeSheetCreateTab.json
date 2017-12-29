@@ -1,0 +1,18 @@
+{
+    "AS_Button_dd4a43635f9348d6b5f266843b550a82": {
+        "id": "AS_Button_dd4a43635f9348d6b5f266843b550a82",
+        "type": "ACTION_SEQUENCE",
+        "name": "actn_onClick_flxTimePickerCancel_frmTimeSheetCreateTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_fb6048c2fcf24d26b7029de6ad3d7643",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxTimePicker.setVisibility(false);",
+            "callbackType": null
+        }]
+    }
+}

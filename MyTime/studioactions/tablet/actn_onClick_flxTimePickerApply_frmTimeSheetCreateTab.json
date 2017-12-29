@@ -1,0 +1,18 @@
+{
+    "AS_Button_ib6b87bd0a57421b8dbc695447adbca4": {
+        "id": "AS_Button_ib6b87bd0a57421b8dbc695447adbca4",
+        "type": "ACTION_SEQUENCE",
+        "name": "actn_onClick_flxTimePickerApply_frmTimeSheetCreateTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_g378e604951c4ddb863ea5db887a627c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myTime.TimesheetCreate.pickerViewOnClickApplyTab();",
+            "callbackType": null
+        }]
+    }
+}
