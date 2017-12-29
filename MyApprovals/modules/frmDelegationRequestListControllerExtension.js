@@ -81,13 +81,14 @@ kony.sdk.mvvm.frmDelegationRequestListControllerExtension = Class(kony.sdk.mvvm.
             return String(num);
         }
         function formatRequestInterval(data) {
+          	kony.print("data.startDate is::"+data.startDate+"    data.endDate is::"+data.endDate);
             var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
             var dateInterval = "";
             if(data.startDate !== undefined && data.startDate !== null && data.startDate !== "") {
-                dateInterval = makeItOfTwoDigits(data.startDate.substring(6, 8)) + " " + month[parseInt(data.startDate.substring(4, 6)) - 1];
+                dateInterval = makeItOfTwoDigits(data.startDate.substring(6, 8)) + " " + month[parseInt(data.startDate.substring(4, 6)) - 1]+" '"+parseInt(data.startDate.substring(2, 4));
             }
             if(data.endDate !== undefined && data.endDate !== null && data.endDate !== "") {
-                dateInterval += " - " + makeItOfTwoDigits(data.endDate.substring(6, 8)) + " " + month[parseInt(data.endDate.substring(4, 6)) - 1];
+                dateInterval += " - " + makeItOfTwoDigits(data.endDate.substring(6, 8)) + " " + month[parseInt(data.endDate.substring(4, 6)) - 1]+" '"+parseInt(data.endDate.substring(2, 4));
             }
             return dateInterval;
         }
