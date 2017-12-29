@@ -223,10 +223,26 @@ kony.apps.coe.ess.loginAnimations.prototype.animationsForAndroid = function() {
 		}
     }
     );
+	frmLogin.flxApploadTime.animate(
+     kony.ui.createAnimation({
+         "100": {
+             "top": "24%",
+             "stepConfig": {
+                 "timingFunction": kony.anim.EASE
+             }
+         }
+     }), {
+         "delay": 1.3,
+         "iterationCount": 1,
+         "fillMode": kony.anim.FILL_MODE_FORWARDS,
+         "duration": 1
+     }, {
+         "animationEnd": function(){}
+     });   
     frmLogin.flxBrowserContainer.animate(
     kony.ui.createAnimation({
         "100": {
-            "top": "25%",
+            "top": "32%",
             "stepConfig": {
                 "timingFunction": kony.anim.EASE
             }
@@ -351,10 +367,26 @@ kony.apps.coe.ess.loginAnimations.prototype.animationsForIphone = function()
         });
 		}
     });
+  	frmLogin.flxApploadTime.animate(
+     kony.ui.createAnimation({
+         "100": {
+             "top": "24%",
+             "stepConfig": {
+                 "timingFunction": kony.anim.EASE
+             }
+         }
+     }), {
+         "delay": 1.3,
+         "iterationCount": 1,
+         "fillMode": kony.anim.FILL_MODE_FORWARDS,
+         "duration": 1
+     }, {
+         "animationEnd": function(){}
+     }); 
     frmLogin.flxBrowserContainer.animate(
     kony.ui.createAnimation({
         "100": {
-            "top": "25%",
+            "top": "32%",
             "stepConfig": {
                 "timingFunction": kony.anim.EASE
             }
@@ -477,10 +509,26 @@ frmLogin.flxSplash.animate(
     }, {
         "animationEnd": function(){}
     });
+  	frmLogin.flxApploadTime.animate(
+     kony.ui.createAnimation({
+         "100": {
+             "top": "24%",
+             "stepConfig": {
+                 "timingFunction": kony.anim.EASE
+             }
+         }
+     }), {
+         "delay": 1.3,
+         "iterationCount": 1,
+         "fillMode": kony.anim.FILL_MODE_FORWARDS,
+         "duration": 1
+     }, {
+         "animationEnd": function(){}
+     });  
     frmLogin.flxBrowserContainer.animate(
      kony.ui.createAnimation({
          "100": {
-             "top": "25%",
+             "top": "32%",
              "stepConfig": {
                  "timingFunction": kony.anim.EASE
              }

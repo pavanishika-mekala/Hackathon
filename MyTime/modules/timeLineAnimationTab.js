@@ -1,5 +1,5 @@
 /**
- * @class          TimelineCreation
+ * @class          TimelineCreationTab
  * @type           prototype function
  * @param          {Number}-searchElement
  * @param          Array to be searched
@@ -26,7 +26,7 @@ kony.apps.coe.Reusable.TimelineCreationTab.prototype.searchTab = function (searc
 
 };
 /**
- * @class          TimelineCreation
+ * @class          TimelineCreationTab
  * @type           prototype function
  * @param          {Number}-startTime
  * @return         Time with AM/PM
@@ -46,7 +46,7 @@ kony.apps.coe.Reusable.TimelineCreationTab.prototype.getTimeFormatWithAMPM = fun
 	return ampmtime;
 };
 /**
- * @class          TimelineCreation
+ * @class          TimelineCreationTab
  * @type           prototype function
  * @param          {String}-field based on which array to be sorted
  * @return         sorted Array
@@ -62,8 +62,45 @@ kony.apps.coe.Reusable.TimelineCreationTab.prototype.sortTimeSheetData = functio
 		return 0;
 	};
 };
+
+
 /**
- * @class          TimelineCreation
+ * @class          TimelineCreationTab
+ * @type           prototype function
+ * @param          None
+ * @return         None
+ * @description    On taking the left of the slider this tries to rettain scroll flex position intact to the user.
+ */
+kony.apps.coe.Reusable.TimelineCreationTab.scrollTimelineFrameSearchTab = function() {
+    try {
+        kony.print("---- scrollTimelineFrameSearch start");
+        var left = kony.apps.coe.ess.globalVariables.sliderLeftValue;
+        var x;
+        var coords = kony.apps.coe.Reusable.TimelineCreationTab.XCoordinatesOfTimeLine;
+        var curr_iter = kony.apps.coe.Reusable.TimelineCreationTab.searchNearestCoordinate(left);
+        //Searching for the nearest timeline flexid for a given hour
+        if (curr_iter + 2 < coords.length) {
+            while (coords[curr_iter][3].length < 1) {
+                curr_iter++;
+            }
+            x = frmTimeSheetCreateTab.timeLineScrollFlex[coords[curr_iter][3].toString()];
+            frmTimeSheetCreateTab.timeLineScrollFlex.scrollToWidget(x);
+
+        } else {
+            //Index 93 is an containing the last timeline flex id
+            x = frmTimeSheetCreateTab.timeLineScrollFlex[coords[93][3].toString()];
+            frmTimeSheetCreateTab.timeLineScrollFlex.scrollToWidget(x);
+        }
+        frmTimeSheetCreateTab.timeLineScrollFlex.forceLayout();
+    } catch (error) {
+        kony.print("---- error in scrollTimelineFrameSearch: " + error);
+        handleError(error);
+    }
+    kony.print("---- scrollTimelineFrameSearch end");
+};
+
+/**
+ * @class          TimelineCreationTab
  * @type           prototype function
  * @param          {Number}-startIndex of Slider
  * @param          {Number}-endIndex of the Slider
@@ -843,4 +880,27 @@ kony.apps.coe.Reusable.TimelineCreationTab.setDefaultSlider = function(startTime
         sliderObj.animateSlider(left,width);
         kony.apps.coe.Reusable.TimelineCreationTab.updateTaskName("");
         
+};
+
+kony.apps.coe.Reusable.TimelineCreationTab.searchNearestCoordinate = function(left) {
+    var coords = kony.apps.coe.Reusable.TimelineCreationTab.XCoordinatesOfTimeLine;
+    var iter = 0;
+    //Taking up a huge number to find the minimum difference on left of slider and timelines
+    var min_diff = 10000;
+    var curr_diff;
+    var curr_iter = 0;
+    while (iter < coords.length) {
+        //Subtracting the actual left of slider to its timeline left values stored in  XCoordinatesOfTimeLine reusable varaible
+        curr_diff = coords[iter][0] - left;
+
+        if (curr_diff < 0) {
+            curr_diff = curr_diff * -1;
+        }
+        if (curr_diff < min_diff) {
+            min_diff = curr_diff;
+            curr_iter = iter;
+        }
+        iter++;
+    }
+    return curr_iter;
 };

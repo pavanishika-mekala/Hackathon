@@ -309,7 +309,6 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
                         }
                     }
                     var header = {"lblProjectNameHeader" : "Recent Tasks"};
-                    var secdata = [];
                     for(var i = 0; i < tempdata.length; i++) {
                         var projectname = tempdata[i].Project_Name === null ? "" : tempdata[i].Project_Name;
                         var taskname = tempdata[i].Task_Name === null ? "" : tempdata[i].Task_Name;
@@ -322,19 +321,20 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
                         } else if(projectname !== "" && taskname === "") {
                             templatename = flxTaskList;
                         } else {
-                            templatename = flxSegProjectTaskSelection;
+                            templatename = flxTaskList;
                         }
-                        secdata.push({
+                        var secdata={
                             Project_Task_Id : tempdata[i].Project_Task_Id,
                             Project_Id : tempdata[i].Project_Id,
                             Task_Id : tempdata[i].Task_Id,
                             Project_Task_Type : tempdata[i].Project_Task_Type,
                             lblProjectName : projectname.toString().titleCase(),
-                            lblTaskName : taskname.toString().titleCase(),
+                            taskName : taskname.toString().titleCase(),
                           // template : templatename,
-                        });
+                        }
                     }
-                    data.unshift([header, secdata]);
+                  //  data.unshift([header, secdata]);
+                  data.unshift(secdata);
                 }
                 if(callback !== null && callback !== undefined && typeof(callback) === "function") {
                     callback(data);
