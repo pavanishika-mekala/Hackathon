@@ -99,7 +99,7 @@ NotificationHistory.prototype.fetchLeaveDetails = function(index, leaveId) {
                 dataItem.notificationIcon = "notifications.png";
                 break;
               case "Error":
-                dataItem.notificationIcon = "systemerror.png";
+                dataItem.notificationIcon = "system_error.png";
                 break;
               case "Submitted":
                 dataItem.notificationIcon = "submitted.png";
