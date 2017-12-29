@@ -1,0 +1,25 @@
+{
+    "AS_Form_f850880c59934f24b71afcfe873ca7f3": {
+        "id": "AS_Form_f850880c59934f24b71afcfe873ca7f3",
+        "type": "ACTION_SEQUENCE",
+        "name": "actn_PostShow_frmTimeSheetCreateTab",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTimeSheetCreateTab",
+            "type": "forms",
+            "platform": "",
+            "KUID": "0af6fa7c9343419ea7d88cdf8876fd02"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__b1ef44fd3d2c41c793d3dd96711d6e23",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "frmTimeSheetCreateTab.flxTimesheetDetails.top=\"22.8%\";\nfrmTimeSheetCreateTab.flxTimeLine.top=\"31.6%\";\nfrmTimeSheetCreateTab.forceLayout(); ",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

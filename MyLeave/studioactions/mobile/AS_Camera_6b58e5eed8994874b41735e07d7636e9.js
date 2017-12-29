@@ -8,6 +8,6 @@ function AS_Camera_6b58e5eed8994874b41735e07d7636e9(eventobject) {
         kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfCancel();
         toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.myLeave.common.imagesize"), 3000);
     } else {
-        kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture.onClickOfTakePicture(base64Val, "");
+        kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture(base64Val, "");
     }
 }

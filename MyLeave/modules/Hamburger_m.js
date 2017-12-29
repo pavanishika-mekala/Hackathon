@@ -287,7 +287,19 @@ kony.apps.coe.ess.Hamburger.prototype.showHamburger = function() {
         }, {});
         kony.application.getCurrentForm().add(overlayContainer);
     }
+  	var swipeOnCard = {
+      fingers : 1,
+    };
+	kony.application.getCurrentForm().flxOverlayContainer.setGestureRecognizer(constants.GESTURE_TYPE_SWIPE, swipeOnCard,function(widgetID, gestureInfo){
+      if(gestureInfo.swipeDirection == 1)
+  	  {
+        kony.print("calling onSwipe close menu");
+      	this.isHamburgerVisible = false;
+      	this.hideHamburger();
+      }
+    }.bind(this));
     kony.application.getCurrentForm().flxOverlayContainer.onClick = function() {
+      	kony.print("calling onClick close menu");
         this.isHamburgerVisible = false;
         this.hideHamburger();
     }.bind(this);

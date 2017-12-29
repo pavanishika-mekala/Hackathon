@@ -69,7 +69,13 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
         }
     },
   
-    addTimeEntriesInDB : function() {
+    addTimeEntriesInDB : function(timeEntryData) {
+      if (timeEntryData === null || timeEntryData === undefined) {
+      return;
+    }
+    if (!Array.isArray(timeEntryData)) {
+      timeEntryData = [timeEntryData];
+    }
         kony.application.showLoadingScreen("", "Loading Data...", constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
         var successCallbackForDeletion = function(res) {kony.print("Succesfully deleted: Time_Entry : " + res);};
         var errorCallbackForDeletion = function(err) {handleError(JSON.stringify(err));};
@@ -104,14 +110,13 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
             hh = makeItTwoDigits(hh);
             return hh + "" + mm + "00";
         }
-        var timelinedataset = kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData;
-//         alert(JSON.stringify(timelinedataset));
+        //var timelinedataset = kony.apps.coe.Reusable.TimelineCreationTab.TimeSheetData;
         var added = [];
         var modified_deleted = [];
-        for(var i = 0; i < timelinedataset.length; i++) {
+        for(var i = 0; i < timeEntryData.length; i++) {
            // var date = kony.apps.coe.ess.myTime.timesheetHome.TimesheetRowObj.getSelectedItemData().date.toYYYYMMDD("");
             var date = kony.apps.coe.ess.myTime.timesheetHome.TimesheetRowObjTab.getSelectedItemData().date.toYYYYMMDD("");
-            var temp = timelinedataset[i];
+            var temp = timeEntryData[i];
             var Time_entry_record;
             if(temp.data.Time_Line_Status === "added") {
                 Time_entry_record = {};
@@ -159,20 +164,38 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
                     kony.apps.coe.ess.myTime.TimesheetCreate.TimeEntry.create(added, function() {
                         kony.application.dismissLoadingScreen();
                        kony.apps.coe.ess.Sync.syncAsynchronously();
-                    }, function(e) {kony.application.dismissLoadingScreen();handleError(JSON.stringify(e));});
+                    }, function(e) {
+                      kony.application.dismissLoadingScreen();
+                      handleError(JSON.stringify(e));
+                    });
                 } else {
                     kony.application.dismissLoadingScreen();
                 }
-            }, function(err) {kony.application.dismissLoadingScreen();handleError(JSON.stringify(err));});
+            }, function(err) {
+              kony.application.dismissLoadingScreen();
+              handleError(JSON.stringify(err));
+            });
         } else if(added.length > 0) {
              kony.apps.coe.ess.myTime.TimesheetCreate.TimeEntry.create(added, function() {
-                 kony.application.dismissLoadingScreen();
-                 kony.apps.coe.ess.Sync.syncAsynchronously();
-             }, function(e) {kony.application.dismissLoadingScreen();handleError(JSON.stringify(e));});
-        } else {
+                if (modified_deleted.length > 0) {
+          kony.apps.coe.ess.myTime.TimesheetCreate.TimeEntry.update(modified_deleted, function() {
             kony.application.dismissLoadingScreen();
+            kony.apps.coe.ess.Sync.syncAsynchronously();
+          }, function(err) {
+            kony.application.dismissLoadingScreen();
+            handleError(err);
+          });
+        }else{
+          kony.application.dismissLoadingScreen();
         }
-    },
+      }, function(e) {
+        kony.application.dismissLoadingScreen();
+        handleError(e);
+      });
+    } else {
+      kony.application.dismissLoadingScreen();
+    }
+  },
 
 	populateData : {
 		projectTask : function () {
@@ -309,7 +332,6 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
                         }
                     }
                     var header = {"lblProjectNameHeader" : "Recent Tasks"};
-                    var secdata = [];
                     for(var i = 0; i < tempdata.length; i++) {
                         var projectname = tempdata[i].Project_Name === null ? "" : tempdata[i].Project_Name;
                         var taskname = tempdata[i].Task_Name === null ? "" : tempdata[i].Task_Name;
@@ -322,19 +344,20 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
                         } else if(projectname !== "" && taskname === "") {
                             templatename = flxTaskList;
                         } else {
-                            templatename = flxSegProjectTaskSelection;
+                            templatename = flxTaskList;
                         }
-                        secdata.push({
+                        var secdata={
                             Project_Task_Id : tempdata[i].Project_Task_Id,
                             Project_Id : tempdata[i].Project_Id,
                             Task_Id : tempdata[i].Task_Id,
                             Project_Task_Type : tempdata[i].Project_Task_Type,
                             lblProjectName : projectname.toString().titleCase(),
-                            lblTaskName : taskname.toString().titleCase(),
+                            taskName : taskname.toString().titleCase(),
                           // template : templatename,
-                        });
+                        }
                     }
-                    data.unshift([header, secdata]);
+                  //  data.unshift([header, secdata]);
+                  data.unshift(secdata);
                 }
                 if(callback !== null && callback !== undefined && typeof(callback) === "function") {
                     callback(data);
@@ -375,6 +398,10 @@ kony.apps.coe.ess.myTime.TimesheetCreate.BackendTab = {
                     "lblActivity": "activityOrder"};
          //  frmTimeSheetCreateTab.segTasks.widgetDataMap = {"lblProjectNameHeader" : "lblProjectNameHeader", "lblProjectName" : "lblProjectName", "lblTaskName" : "taskName","lblNetworkOrder": "orderId",
            //         "lblActivity": "activityOrder"};
+          frmTimeSheetCreateTab.flxSelectedLeave.isVisible = false;
+      frmTimeSheetCreateTab.flxSelectedTaskTimeTypeSelection.isVisible = false;
+      frmTimeSheetCreateTab.segTasks.isVisible = true;    
+      
                frmTimeSheetCreateTab.segTasks.setData(data);
         },
 

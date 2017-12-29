@@ -324,7 +324,7 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
       if (data.IslaterRequestsCount || data.IslaterRequestsCount == 0) {
         laterCount = data.IslaterRequestsCount.toFixed()
       }
-      totalCount = nowCount + laterCount;
+      totalCount = parseFloat(nowCount) + parseFloat(laterCount);
       if(totalCount > 0){
         frmApprovalHome.lblNowCount.text = data.ApprovalRequestData.length.toFixed();
         flxNavigateFooter.lblNowCount.text = totalCount.toFixed();

@@ -46,6 +46,8 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
  */
  kony.apps.coe.ess.frmLogin._errorCallback =
    function(error, isRefresh) {
+   	 frmLogin.lblApploadTime.setVisibility(false);
+	 frmLogin.lblwait.setVisibility(false);
      if(kony.sdk.getCurrentInstance() !== undefined && kony.sdk.getCurrentInstance() !== null ) {
        // Remove token headers, if present
        kony.sdk.getCurrentInstance().removeGlobalRequestParam(kony.apps.coe.ess.globalVariables.login_sap_spnego_token, "headers");
@@ -64,6 +66,8 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
   */
   kony.apps.coe.ess.frmLogin._axwayAuth = function(data, action, successCallBack, errorCallback, isRefresh) {
    try {
+     frmLogin.lblApploadTime.setVisibility(true);
+	 frmLogin.lblwait.setVisibility(true);
      if(isRefresh === null || isRefresh === undefined || isRefresh ===false){
        kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.Authenticating"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
      }
@@ -136,6 +140,8 @@ kony.apps.coe.ess.frmLogin.isValidInputs =
      } else {
        frmLogin.lblLoginErrorMessage.text = kony.i18n.getLocalizedString("i18n.ess.Login.validateCredentials");
        frmLogin.lblLoginErrorMessage.isVisible = true;
+       frmLogin.lblApploadTime.setVisibility(false);
+	   frmLogin.lblwait.setVisibility(false);
        kony.application.dismissLoadingScreen();
      }
      kony.print("-- End  kony.apps.coe.ess.frmLogin.btnLoginOnclick -- ");
@@ -179,6 +185,8 @@ kony.apps.coe.ess.frmLogin.oktaLogin = function() {
     // If there is an active login, logout first
     if (kony.apps.coe.ess.globalVariables.active_login_service !== "") {
       kony.apps.coe.ess.globalVariables.active_login_service = "";
+      frmLogin.lblApploadTime.setVisibility(false);
+	  frmLogin.lblwait.setVisibility(false);
       kony.sdk.mvvm.LogoutAction();
     } else {
       new kony.sdk().init(kony.apps.coe.ess.appconfig.appkey, kony.apps.coe.ess.appconfig.appsecret, kony.apps.coe.ess.appconfig.serviceurl, function() {

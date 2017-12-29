@@ -16,7 +16,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_ide_onCapture_ge72517eaab34e7a953cabcdd06d5cd0",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "frmApplyLeave.flxCameraOptions.isVisible = false;\nvar base64Val=frmApplyLeave.camTakePicture.base64;\n//image size calculation\nvar bytes = 2*Math.ceil((parseFloat(base64Val.length/3)));\nvar sizeinkb= bytes/1000;\nif(sizeinkb >3072){\n  kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfCancel();\n  toastMsg.showToastMsg(kony.i18n.getLocalizedString(\"i18n.ess.myLeave.common.imagesize\"), 3000);\n}else{\n  kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture.onClickOfTakePicture(base64Val,\"\");\n}",
+            "codeSnippet": "frmApplyLeave.flxCameraOptions.isVisible = false;\nvar base64Val=frmApplyLeave.camTakePicture.base64;\n//image size calculation\nvar bytes = 2*Math.ceil((parseFloat(base64Val.length/3)));\nvar sizeinkb= bytes/1000;\nif(sizeinkb >3072){\n  kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfCancel();\n  toastMsg.showToastMsg(kony.i18n.getLocalizedString(\"i18n.ess.myLeave.common.imagesize\"), 3000);\n}else{\n  kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfTakePicture(base64Val,\"\");\n}",
             "callbackType": null
         }]
     }

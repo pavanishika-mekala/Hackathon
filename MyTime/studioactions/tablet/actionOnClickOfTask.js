@@ -16,6 +16,8 @@ function AS_Segment_bd222c980701453b8be558e85c5ab2aa(eventobject, sectionNumber,
             frmTimeSheetCreateTab.segTasksSearchResults.setVisibility(false);
             frmTimeSheetCreateTab.txtBoxSearch.setVisibility(false);
             frmTimeSheetCreateTab.imgCancel.setVisibility(false);
+            frmTimeSheetCreateTab.flxSearchPopup.setVisibility(false);
+            frmTimeSheetCreateTab.flxOnlineSearch.setVisibility(false);
         } else {
             handleCustomAlert(kony.i18n.getLocalizedString("i18n.ess.mytime.createtimesheet.selecttimeInterval"));
         }

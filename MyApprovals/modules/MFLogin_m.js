@@ -189,6 +189,8 @@ function userDetailsSucess(response) {
         var appInstance = kony.sdk.mvvm.KonyApplicationContext.getAppInstance();
         kony.print("------------ appInstance: " + JSON.stringify(appInstance));
         if (appInstance) {
+          	frmLogin.lblApploadTime.setVisibility(true);
+			frmLogin.lblwait.setVisibility(true);
             kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.initializing"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
             //Initialize ApplicationForms
             kony.sdk.mvvm.initApplicationForms(appInstance);
@@ -270,11 +272,15 @@ function userDetailsSucess(response) {
                             updateSyncDate();
                           	var success = function () {
                               frmSettings.imgPushNotification.src = "on.png";
+                              frmLogin.lblApploadTime.setVisibility(false);
+							  frmLogin.lblwait.setVisibility(false);
                               kony.application.dismissLoadingScreen();
                             };
                             var failure = function () {
                               frmSettings.imgPushNotification.src = "off.png"
                               toastMsg.showToastMsg(kony.i18n.getLocalizedString("i18n.ess.common.errorOnEnableNotifications"), 3000);
+                              frmLogin.lblApploadTime.setVisibility(false);
+							  frmLogin.lblwait.setVisibility(false);
                               kony.application.dismissLoadingScreen();
                             };
                             if (kony.apps.coe.ess.globalVariables.isNativeTablet === true) {
@@ -321,6 +327,8 @@ function userDetailsSucess(response) {
                         var syncSessionFailure = function(err) {
                             //Incase of Any Sync Failure
                             //ToDo : What to show on Sync Failure
+                          	frmLogin.lblApploadTime.setVisibility(false);
+							frmLogin.lblwait.setVisibility(false);
                             kony.application.dismissLoadingScreen();
                             kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
                             //#ifdef windows8
@@ -340,6 +348,8 @@ function userDetailsSucess(response) {
                                 // we call syncSessionSuccess in case of offline mode
                                 syncSessionSuccess();
                             } else {
+                              	frmLogin.lblApploadTime.setVisibility(true);
+								frmLogin.lblwait.setVisibility(true);
                                 // //After Successfull verification of New user, Start Sync Session
                                 kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
                                 //kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
@@ -348,6 +358,8 @@ function userDetailsSucess(response) {
                         };
                         var mfresetLocalDBSucess = function() {
                           kony.application.showLoadingScreen("", kony.i18n.getLocalizedString("i18n.ess.Login.SyncingData"), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
+                          frmLogin.lblApploadTime.setVisibility(true);
+						  frmLogin.lblwait.setVisibility(true);
                           kony.apps.coe.ess.Sync.doDownload = true;
                           kony.apps.coe.ess.Sync.startSyncSession(syncSessionSuccess, syncSessionFailure);
                         };
@@ -365,6 +377,8 @@ function userDetailsSucess(response) {
                                         syncAndShowLandingForm();
                                         return;
                                     } else {
+                                      	frmLogin.lblApploadTime.setVisibility(false);
+										frmLogin.lblwait.setVisibility(false);
                                         kony.application.dismissLoadingScreen();
                                         //Show ToucID enable popup only if it's not enabled
                                         if (kony.store.getItem("useTouchID") === null || kony.store.getItem("useTouchID") === false) {
@@ -429,6 +443,8 @@ function applicationErrorCallback(error) {
         frmLoginDesk.show();
     }
     kony.print("Error Occured on LoginAction : " + JSON.stringify(error));
+    frmLogin.lblApploadTime.setVisibility(false);
+	frmLogin.lblwait.setVisibility(false);
     kony.application.dismissLoadingScreen();
 	  frmLoginDesk.imgLogin.onClick = function() {
         kony.apps.coe.ess.frmLogin.btnLoginOnclick();
@@ -454,6 +470,8 @@ function applicationErrorCallback(error) {
         frmLogin.show();
     }
     kony.print("Error Occured on LoginAction : " + JSON.stringify(error));
+    frmLogin.lblApploadTime.setVisibility(false);
+	frmLogin.lblwait.setVisibility(false);
     kony.application.dismissLoadingScreen();
     kony.apps.coe.ess.QRCode.navigatingThroughQRCode = false;
     //#ifdef windows8
@@ -506,7 +524,8 @@ kony.sdk.mvvm.LogoutAction = function() {
     kony.store.removeItem("oktaToken");
     kony.sdk.util.deleteSSOToken();
     kony.apps.coe.ess.globalVariables.active_login_service = "";
-
+	frmLogin.lblApploadTime.setVisibility(true);
+	frmLogin.lblwait.setVisibility(true);
     kony.application.showLoadingScreen("", kony.i18n.getLocalizedString(""), constants.LOADING_SCREEN_POSITION_ONLY_CENTER, true, true, {});
     // Destroy Okta session
     try {
@@ -538,6 +557,8 @@ kony.sdk.mvvm.LogoutAction = function() {
   }
 
   function sucCallback() {
+    frmLogin.lblApploadTime.setVisibility(false);
+	frmLogin.lblwait.setVisibility(false);
     kony.application.dismissLoadingScreen();
     if(kony.application.getCurrentForm().id !== "frmLogin") {
       frmLogin.show();
@@ -548,6 +569,8 @@ kony.sdk.mvvm.LogoutAction = function() {
   }
 
   function errCallback(err) {
+    frmLogin.lblApploadTime.setVisibility(false);
+	frmLogin.lblwait.setVisibility(false);
     kony.application.dismissLoadingScreen();
     if(kony.application.getCurrentForm().id !== "frmLogin") {
       frmLogin.show();

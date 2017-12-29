@@ -129,8 +129,15 @@ Date.prototype.toDDmmmHHMMtt = function() {
 //     } else {
 //         tt = "AM";
 //     }
-  	var formattedDate=day + " " + month + " " ;
-  	if(hours==0&&minutes==0){
+  var formattedDate=day + " " + month + " " ;
+  	if(parseInt(minutes) < 10 && parseInt(minutes) !== 0) {
+			minutes = "0" + parseInt(minutes);
+	}
+  	if(parseInt(hours) < 10 && parseInt(hours) !== 0) {
+			hours = "0" + parseInt(hours);
+	}
+  	
+  	if(hours===0&&minutes===0){
       
     }else{
       formattedDate+=hours + ":" + minutes; //+ " " + tt
@@ -168,8 +175,12 @@ Date.prototype.toDDmmmYY = function() {
  	var month="";
  	if(monthName){
   	   month = monthName.substring(0, 3);
-  	}  
+  	} 
+  	kony.print("day is::"+day+"   monthName is::"+monthName+"   month is::"+month+"  year is::"+this.getFullYear());
     var year = this.getFullYear().toString().substring(2,4);
+  	if(year == "00"){
+      year = this.getFullYear().toString()
+    }
     return day + " " + month + "'" + year;
   
 };

@@ -1,0 +1,23 @@
+{
+    "AS_Image_e30fd3cb18c546de9ff663087248ec21": {
+        "id": "AS_Image_e30fd3cb18c546de9ff663087248ec21",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchEnd_aa0d09eb9bcb4986bbfa14840a197bff",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.apps.coe.ess.myLeave.applyLeave.Attachment.onClickOfCamera();",
+            "callbackType": null
+        }]
+    }
+}
