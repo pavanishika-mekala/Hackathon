@@ -346,6 +346,9 @@ kony.apps.ess.myApprovals.pdfOperation.prototype.getFileStatus = function(fileNa
     var filePath = "";
     //#ifdef android
     filePath = "/storage/emulated/0/Download/MyApprovals/";
+    //#endif
+  	//#ifdef tabrcandroid
+    filePath = "/storage/emulated/0/Download/MyApprovals/";
     //#else
     filePath = "" + kony.io.FileSystem.getDataDirectoryPath() + "/MyApprovals/";
     //#endif
@@ -384,6 +387,9 @@ kony.apps.ess.myApprovals.pdfOperation.prototype.writeRawBytesToFile = function(
     var filePath = "";
     //#ifdef android
     filePath = "/storage/emulated/0/Download/MyApprovals/";
+  	//#endif
+ 	//#ifdef tabrcandroid 
+  	filePath = "/storage/emulated/0/Download/MyApprovals/";
     //#else
     filePath = "" + kony.io.FileSystem.getDataDirectoryPath() + "/MyApprovals/";
     //#endif
