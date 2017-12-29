@@ -511,7 +511,11 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.PdfFetchingSucessCallback =
           	//#ifdef android
           		filename = selectedData + ".png";
           	//#else
+          		//#ifdef tabrcandroid
+          		filename = selectedData + ".png";
+          		//#else
           		filename = selectedData + ".jpg";
+          		//#endif
           	//#endif
           //#endif
         }
