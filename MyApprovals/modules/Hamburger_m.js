@@ -282,7 +282,20 @@ kony.apps.coe.ess.Hamburger.prototype.showHamburger = function() {
         }, {});
         kony.application.getCurrentForm().add(overlayContainer);
     }
+      var swipeOnCard = {
+          fingers : 1,
+      };
+	kony.application.getCurrentForm().flxOverlayContainer.setGestureRecognizer(constants.GESTURE_TYPE_SWIPE, swipeOnCard,function(widgetID, gestureInfo){
+      if(gestureInfo.swipeDirection == 1)
+  	  {
+        kony.print("calling onswipe close menu");
+      	this.isHamburgerVisible = false;
+      	this.hideHamburger();
+      }
+    }.bind(this));
+ 
     kony.application.getCurrentForm().flxOverlayContainer.onClick = function() {
+      	kony.print("calling onclick close menu");
         this.isHamburgerVisible = false;
         this.hideHamburger();
     }.bind(this);
@@ -300,9 +313,10 @@ kony.apps.coe.ess.Hamburger.prototype.showHamburger = function() {
  * @description    close hamburger
  */
 kony.apps.coe.ess.Hamburger.prototype.hideHamburger = function() {
-    kony.print("---------- Hamburger close initiated");
+    kony.print("---------- Hamburger close initiated::");
     /* Shows footer in Approvals App
      */
+  	kony.print("current form is::"+kony.application.getCurrentForm().id);
     kony.application.getCurrentForm().remove(kony.application.getCurrentForm().flxOverlayContainer);
     kony.application.getCurrentForm().flxHamburger.setEnabled(false);
     kony.application.getCurrentForm().flxMainContainer.animate(
