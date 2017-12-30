@@ -45,7 +45,7 @@
     "id": "flxApploadTime",
     "info": null,
     "isvisible": true,
-    "kuid": "jd8516e6ae7c4a229e41f36c7579472a",
+    "kuid": "f68c055faf7645549543ee571bdfcf1f",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
     "parent": "frmLogin",

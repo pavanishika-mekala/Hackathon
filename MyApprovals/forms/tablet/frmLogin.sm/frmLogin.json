@@ -32,6 +32,7 @@
         "flxPopups",
         "flxSplash",
         "flxAfterSplash",
+        "flxApploadTime",
         "flxBrowserContainer"
     ],
     "containerweight": 100,

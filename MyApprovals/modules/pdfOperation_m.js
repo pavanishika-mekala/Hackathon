@@ -137,7 +137,10 @@ kony.apps.ess.myApprovals.pdfOperation.prototype.getBinaryToMail = function(form
             var filePath = "";
             //#ifdef android
             filePath = "file:///storage/emulated/0/Download/myApprovals/" + fileName;
-            //#else
+            //#endif
+          	//#ifdef tabrcandroid
+          	filePath = "file:///storage/emulated/0/Download/myApprovals/" + fileName;
+          	//#else
             filePath = "" + kony.io.FileSystem.getDataDirectoryPath() + "/myApprovals/" + fileName;
             //#endif
             var file = new kony.io.File(filePath);
@@ -175,6 +178,10 @@ kony.apps.ess.myApprovals.pdfOperation.prototype.getBinaryToMailSuccess = functi
     //#ifdef android
     filePath = "file://" + filePath;
     pdfObj.mailPdfOnSuccess(filePath, returnedValue);
+ 	//#endif 
+  	//#ifdef tabrcandroid
+  	filePath = "file://" + filePath;
+    pdfObj.mailPdfOnSuccess(filePath, returnedValue);
     //#else
     pdfObj.mailPdfOnSuccess(filePath, returnedValue);
     //#endif
@@ -197,6 +204,12 @@ kony.apps.ess.myApprovals.pdfOperation.prototype.mailPdfOnSuccess = function(fil
         var isMsgBodyHtml = false;
         //Creating mail attachment JSON
         //#ifdef android
+        attachment = [{
+            mimetype: "text/pdf",
+            attachment: filePath
+        }];
+      	//#endif
+      	//#ifdef tabrcandroid
         attachment = [{
             mimetype: "text/pdf",
             attachment: filePath
@@ -274,6 +287,9 @@ kony.apps.ess.myApprovals.pdfOperation.prototype.downloadPDFToDevice = function(
             kony.application.dismissLoadingScreen();
             var filePath = "";
             //#ifdef android
+            filePath = "/storage/emulated/0/Download/myApprovals/" + fileName;
+          	//#endif
+          	//#ifdef tabrcandroid
             filePath = "/storage/emulated/0/Download/myApprovals/" + fileName;
             //#else
             filePath = "" + kony.io.FileSystem.getDataDirectoryPath() + "/myApprovals/" + fileName;
