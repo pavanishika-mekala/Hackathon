@@ -37,6 +37,7 @@
     "canUpdateUI": true,
     "children": [
         "lblDetail",
+        "lblAttachmentName",
         "imgDetail",
         "lblAddeed"
     ],

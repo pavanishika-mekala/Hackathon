@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "sefb9af5499f4c6aa7ba9803f0bdb0f2",
+    "_skin_": "sc674264d79d45eba2d5382ed3b4b770",
     "_text_": "Label",
     "_top_": {
         "type": "string",
-        "value": "12.50%"
+        "value": "40%"
     },
     "_width_": {
         "type": "ref",

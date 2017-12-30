@@ -38,7 +38,8 @@
     "children": [
         "lblDetail",
         "imgDetail",
-        "lblAddeed"
+        "lblAddeed",
+        "lblAttachmentName"
     ],
     "clipbounds": true,
     "containerId": true,

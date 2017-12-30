@@ -22,11 +22,11 @@
         0,
         0
     ],
-    "_skin_": "sc674264d79d45eba2d5382ed3b4b770",
+    "_skin_": "sefb9af5499f4c6aa7ba9803f0bdb0f2",
     "_text_": "Label",
     "_top_": {
         "type": "string",
-        "value": "40%"
+        "value": "12.50%"
     },
     "_width_": {
         "type": "ref",
@@ -43,7 +43,7 @@
     "containerId": true,
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "lblDetail",
+    "id": "lblAttachmentName",
     "info": null,
     "ipad": {
         "psp": {
@@ -51,10 +51,11 @@
         }
     },
     "isvisible": true,
-    "kuid": "d7455d1480604873a6b48286b7ab98f3",
+    "kuid": "ad58a59b0a6a4f1c993b10f25326b57f",
     "name": "kony.ui.Label",
     "parent": "flxAttachments",
     "pf": "tmpSegAttachments",
     "tooltip": "",
-    "wType": "Label"
+    "wType": "Label",
+    "zindex": 2
 }

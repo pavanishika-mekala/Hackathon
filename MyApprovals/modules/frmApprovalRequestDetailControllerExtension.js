@@ -258,8 +258,14 @@ kony.sdk.mvvm.frmApprovalRequestDetailControllerExtension = Class(kony.sdk.mvvm.
 					//Making the visiblity to true or false based on the user Attachemnts
 					if (ApprovalRequestDetailData.userAttachments && ApprovalRequestDetailData.userAttachments.length && ApprovalRequestDetailData.userAttachments.length > 0) {
 						var WidgetDatamap = {
-							"lblDetail": "Media"
+							"lblDetail": "Media",
+                          	"lblAttachmentName":"lblAttachmentName"
 						};
+                      	for(var imageindex in ApprovalRequestDetailData.userAttachments ){
+                   		ApprovalRequestDetailData.userAttachments [imageindex].lblAttachmentName ={
+                          		"text" : kony.i18n.getLocalizedString("i18n.ess.myApprovals.PdfReader.Attachment")+parseInt(imageindex+1),
+                            };
+                        }
 						frmApprovalRequestDetail.flxattachmentDetails.SegAttachments.widgetDataMap = WidgetDatamap;
 						frmApprovalRequestDetail.flxattachmentDetails.SegAttachments.setData(ApprovalRequestDetailData.userAttachments);
 						frmApprovalRequestDetail.flxHeaderSwitch.setVisibility(true);
