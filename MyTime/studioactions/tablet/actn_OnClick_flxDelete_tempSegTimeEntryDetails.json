@@ -1,0 +1,28 @@
+{
+    "AS_FlexContainer_gd5cf31b499e4f33a926c47b619a7744": {
+        "id": "AS_FlexContainer_gd5cf31b499e4f33a926c47b619a7744",
+        "type": "ACTION_SEQUENCE",
+        "name": "actn_OnClick_flxDelete_tempSegTimeEntryDetails",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "context"
+        }],
+        "contextObj": {
+            "name": "tempSegTimeEntryDetails",
+            "type": "templates",
+            "platform": "",
+            "KUID": "8d4fa6516ba849698f66959b9f8625a7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__c67bff2c729647fc82ad2cfd7a6a1235",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "(new kony.apps.coe.ess.myTime.TimesheetDatesSectionTab()).timeSheetDeleteTask();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

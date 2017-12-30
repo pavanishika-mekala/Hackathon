@@ -146,7 +146,7 @@ kony.apps.coe.ess.locale.notificationLanguageServiceLocale=function(){
                                createService.create(optionsCreate,
                                                     function(res){kony.print("Record created");},
                                                     function(err){kony.print("Error in record creation"+JSON.stringify(err));
-													 //alert("unable to set the language in notification service");
+													 alert("unable to set the language in notification service");
 													}
                                                    );
                              }

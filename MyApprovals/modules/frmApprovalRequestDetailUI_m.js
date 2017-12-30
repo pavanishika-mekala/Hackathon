@@ -1,4 +1,3 @@
-/*** @Author Sumeet.bartha@kony.com
  * @category UI data Binding
  * @desc  ExpenseReportDetail class
  * @ © 2016 kony Inc. */
@@ -510,12 +509,12 @@ kony.apps.coe.ess.Approvals.frmApprovalRequestDetail.PdfFetchingSucessCallback =
           //#else
           	//#ifdef android
           		filename = selectedData + ".png";
-          	//#else 
-          		//#ifdef tabrcandroid
+          	//#else
+				//#ifdef tabrcandroid
           		filename = selectedData + ".png";
-          		//#else
+				//#else
           		filename = selectedData + ".jpg";
-          		//#endif
+				//#endif
           	//#endif
           //#endif
         }
