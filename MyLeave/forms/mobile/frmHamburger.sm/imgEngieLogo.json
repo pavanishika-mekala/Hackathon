@@ -38,7 +38,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmHamburger",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },

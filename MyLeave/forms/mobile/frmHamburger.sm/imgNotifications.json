@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "s82580abaae041919a6f0dcd806a8358",
-    "_src_": "notifications.png",
+    "_src_": "notifications_old.png",
     "_top_": {
         "type": "string",
         "value": "0%"
@@ -42,7 +42,7 @@
     "context": {
         "channel": "mobile",
         "formID": "frmHamburger",
-        "platform": "iphone",
+        "platform": "android",
         "templateType": "forms",
         "topLevelBox": null
     },

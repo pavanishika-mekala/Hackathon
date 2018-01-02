@@ -34,7 +34,7 @@
     "desktopweb": {
         "needAppMenu": false
     },
-    "device": "iPhone6",
+    "device": "GalaxyS2",
     "displayorientation": 1,
     "enabledforidletimeout": false,
     "id": "frmHamburger",
@@ -76,11 +76,11 @@
     "name": "kony.ui.Form2",
     "needappmenu": true,
     "paddinginpixel": false,
-    "platform": "iphone",
+    "platform": "android",
     "prevDevice": "GalaxyS5",
-    "prevPlatform": "android",
+    "prevPlatform": "iphone",
     "retainscrollposition": false,
-    "shellCSS": "iOS_iPhone6",
+    "shellCSS": "and_GalaxyS2",
     "snapgridsize": 10,
     "snaptogrid": true,
     "spaan": {
