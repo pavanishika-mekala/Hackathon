@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "50%"
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -24,10 +24,6 @@
     ],
     "_percent_": true,
     "_skin_": "s48f4302abc24be9938d58f355ca9ccc",
-    "_top_": {
-        "type": "string",
-        "value": "0%"
-    },
     "_width_": {
         "type": "string",
         "value": "100%"
@@ -35,25 +31,32 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "42%"
+    },
     "children": [
-        "lblNoRecordsFound",
-        "flxApprovalSegments",
-        "flxNoPending"
+        "lblNoPending",
+        "flxNoPendingTick"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "flxApprovalList",
+    "id": "flxNoPending",
     "info": null,
-    "isvisible": true,
-    "kuid": "f914d56313e0409489e71f4751a11c11",
-    "layouttype": 2,
+    "isvisible": false,
+    "kuid": "e385b18f563a40c4af369d0c6a6019fd",
+    "layouttype": 4,
     "name": "kony.ui.FlexContainer",
-    "parent": "flxApprovalBoard",
+    "parent": "flxApprovalList",
     "pf": "frmApprovalHome",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
     "widgetalignment": 1,
-    "zindex": 1
+    "zindex": 10
 }

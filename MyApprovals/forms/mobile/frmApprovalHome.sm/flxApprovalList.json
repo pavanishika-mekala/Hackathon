@@ -37,7 +37,8 @@
     "canUpdateUI": true,
     "children": [
         "lblNoRecordsFound",
-        "flxApprovalSegments"
+        "flxApprovalSegments",
+        "flxNoPending"
     ],
     "clipbounds": true,
     "containerweight": 100,

@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        2,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "s0165e0ead334697afb06f06f433f379",
+    "_text_": "You do not have any request to approve yet.",
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "20%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblNoPending",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "a988ced23311420d85e5b0d26c490486",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxNoPending",
+    "pf": "frmApprovalHome",
+    "texti18n": "i18n.ess.myApproval.noPending",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}
