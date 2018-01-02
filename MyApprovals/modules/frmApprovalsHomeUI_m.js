@@ -618,11 +618,11 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.refreshISlaterSegment = function() {
         "lblRequestCount": "COUNT",
 
       };
-      frmApprovalHome.flxNoPending.setVisiblity(false);
-      frmApprovalHome.lblNoRecordsFound.setVisiblity(false);
+      frmApprovalHome.flxNoPending.setVisibility(false);
+      frmApprovalHome.lblNoRecordsFound.setVisibility(false);
       if(IslaterRequestsCount === 0){
-        frmApprovalHome.flxNoPending.setVisiblity(true);
-        frmApprovalHome.lblNoRecordsFound.setVisiblity(false);
+        frmApprovalHome.flxNoPending.setVisibility(true);
+        frmApprovalHome.lblNoRecordsFound.setVisibility(false);
       }
       frmApprovalHome.segLaterApprovals.widgetDataMap = IslaterWidgetDataMap;
       frmApprovalHome.segLaterApprovals.setData(processedIslaterRequestData);
@@ -807,6 +807,11 @@ animateApprovalHome = function(boolFlag) {
 
     frmApprovalHome.flxFilterButton.isVisible = false;
     frmApprovalHome.flxLaterApprovals.isVisible = true;
+    var data = frmApprovalHome.segLaterApprovals.data;
+    if(data === null ){
+     frmApprovalHome.flxNoPending.setVisibility(true);
+      frmApprovalHome.lblNoRecordsFound.setVisibility(false);
+  	}
   } else {
     frmApprovalHome.flxApprovalList.isVisible = true;
     frmApprovalHome.flxLaterApprovals.isVisible = false;
@@ -1036,6 +1041,7 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.set_data_ForNowSegment = function(resp
       frmApprovalHome.flxNoPending.setVisibility(true);
       if(frmApprovalHome.flxFiter.isVisible === true){
       	frmApprovalHome.lblNoRecordsFound.setVisibility(true);
+        frmApprovalHome.flxNoPending.setVisibility(false); 
       }  
     } else {
       frmApprovalHome.lblNoRecordsFound.setVisibility(false);
