@@ -254,7 +254,8 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
         }
 
       }
-
+		// no pending request flex
+      frmApprovalHome.flxNoPending.setVisibility(false);
       //elimination of the non-zero islater request types
       var processed_IslaterRequests = [];
       for (var index in ISLaterRequestsData) {
@@ -273,7 +274,9 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
       frmApprovalHome.segLaterApprovals.setData(processed_IslaterRequests);
 
       if (data.IslaterRequestsCount || data.IslaterRequestsCount == 0) {
-        frmApprovalHome.lblLaterCount.text = data.IslaterRequestsCount.toFixed()
+        frmApprovalHome.lblLaterCount.text = data.IslaterRequestsCount.toFixed();
+        frmApprovalHome.flxNoPending.setVisiblity(true);
+        frmApprovalHome.lblNoRecordsFound.setVisiblity(false);
       }
       //setting the data to the approval request Segement
       var WidgetDatamap = {
@@ -333,6 +336,10 @@ kony.sdk.mvvm.frmApprovalHomeControllerExtension = Class(kony.sdk.mvvm.BaseFormC
         frmApprovalHome.lblNowCount.text = "0";
         flxNavigateFooter.lblNowCount.text = "0";
         frmApprovalHome.lblNotificationsCount.text = "0";
+        frmApprovalHome.flxNoPending.setVisibility(true);
+        if(frmApprovalHome.flxFiter.isVisible === true){
+      		frmApprovalHome.lblNoRecordsFound.setVisibility(true);
+      	}
       }
       /*if (data.ApprovalRequestData && data.ApprovalRequestData.length) {
         frmApprovalHome.lblNowCount.text = data.ApprovalRequestData.length.toFixed();
