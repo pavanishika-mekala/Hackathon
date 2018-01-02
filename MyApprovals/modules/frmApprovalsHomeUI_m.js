@@ -618,6 +618,12 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.refreshISlaterSegment = function() {
         "lblRequestCount": "COUNT",
 
       };
+      frmApprovalHome.flxNoPending.setVisiblity(false);
+      frmApprovalHome.lblNoRecordsFound.setVisiblity(false);
+      if(IslaterRequestsCount === 0){
+        frmApprovalHome.flxNoPending.setVisiblity(true);
+        frmApprovalHome.lblNoRecordsFound.setVisiblity(false);
+      }
       frmApprovalHome.segLaterApprovals.widgetDataMap = IslaterWidgetDataMap;
       frmApprovalHome.segLaterApprovals.setData(processedIslaterRequestData);
       //label count
@@ -1027,9 +1033,13 @@ kony.apps.coe.ess.Approvals.ApprovalsHome.set_data_ForNowSegment = function(resp
       return;
     }
     if (processedData.length <= 0 || isEmpty(processedData)) {
-      frmApprovalHome.lblNoRecordsFound.setVisibility(true);
+      frmApprovalHome.flxNoPending.setVisibility(true);
+      if(frmApprovalHome.flxFiter.isVisible === true){
+      	frmApprovalHome.lblNoRecordsFound.setVisibility(true);
+      }  
     } else {
       frmApprovalHome.lblNoRecordsFound.setVisibility(false);
+      frmApprovalHome.flxNoPending.setVisibility(false);
     }
     var WidgetDatamap = {
       "lblShortName": "CreatedUserShortName",
@@ -1122,9 +1132,11 @@ kony.apps.coe.ess.Approvals.DynamicSegmentSetDatabyEmployeeSearch = function(sea
       if(Response.length != null && Response.length >0){
           DynamicWidget.setData(Response);
           frmApprovalHome.lblNoRecordsFound1.setVisibility(false);
+          frmApprovalHome.flxNoPending.setVisibility(false);
       }else{
           DynamicWidget.setData(Response);
           frmApprovalHome.lblNoRecordsFound1.setVisibility(true);
+          frmApprovalHome.flxNoPending.setVisibility(false);
       }
       //lazy loading
       var segmentConfiguration = {
