@@ -39,6 +39,7 @@
         "lblEmpName",
         "flxEmpId",
         "flxRequestDuration",
+        "flxDays",
         "flxStatus"
     ],
     "clipbounds": true,

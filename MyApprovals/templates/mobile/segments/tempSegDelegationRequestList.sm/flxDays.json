@@ -35,6 +35,10 @@
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
     "children": [
         "lblDays"
     ],
@@ -45,7 +49,7 @@
     "id": "flxDays",
     "info": null,
     "isvisible": true,
-    "kuid": "ca49996667a74f439c0640cfa1801d28",
+    "kuid": "i7488ded3b5f4957994aaa75cdfed677",
     "layouttype": 3,
     "name": "kony.ui.FlexContainer",
     "parent": "flxColumn2",
