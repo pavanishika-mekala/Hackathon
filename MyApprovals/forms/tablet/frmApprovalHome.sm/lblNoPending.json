@@ -19,7 +19,7 @@
         0
     ],
     "_skin_": "s0165e0ead334697afb06f06f433f379",
-    "_text_": "You do not have any request to approve yet.",
+    "_text_": "",
     "_width_": {
         "type": "string",
         "value": "80%"
@@ -55,7 +55,6 @@
     "paddinginpixel": false,
     "parent": "flxNoPending",
     "pf": "frmApprovalHome",
-    "texti18n": "i18n.ess.myApproval.noPending",
     "tooltip": "",
     "wType": "Label",
     "zindex": 1

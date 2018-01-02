@@ -24,7 +24,7 @@
         0
     ],
     "_skin_": "sda0c04ae5814098a8111842b264a413",
-    "_src_": "tick_inside_circle.png",
+    "_src_": null,
     "_top_": {
         "type": "string",
         "value": "0dp"
