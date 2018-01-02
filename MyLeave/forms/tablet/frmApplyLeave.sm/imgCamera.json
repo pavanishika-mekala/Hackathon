@@ -1,6 +1,7 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
+    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
@@ -51,14 +52,14 @@
         "topLevelBox": null
     },
     "id": "imgCamera",
-    "ide_onTouchEnd": "AS_Image_h04ce59c8c7b442687b2eda1a9a90cac",
+    "ide_onTouchEnd": "AS_Image_c6feca24daec44899df4060de2fa579b",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
     "kuid": "h0f016822c6e4e74af1fe784fe58357b",
     "name": "kony.ui.Image2",
-    "parent": "flxAttachment",
+    "parent": "FlexContainer0e6da6f75f5204d",
     "pf": "frmApplyLeave",
     "srcType": 1,
     "wType": "Image",

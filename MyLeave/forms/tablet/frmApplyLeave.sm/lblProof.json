@@ -18,12 +18,12 @@
         0,
         0
     ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
     "_skin_": "sb10176c068848939ce1531dcca03bc2",
     "_text_": "REQUIRED",
-    "_top_": {
-        "type": "string",
-        "value": "7%"
-    },
     "_width_": {
         "type": "ref",
         "value": "preferred"
@@ -36,9 +36,9 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
+    "centery": {
         "type": "string",
-        "value": "30%"
+        "value": "50%"
     },
     "containerweight": 100,
     "contentalignment": 1,
@@ -50,11 +50,12 @@
         }
     },
     "isvisible": false,
-    "kuid": "a66c9208e72544daa7dab97ee33396ab",
+    "kuid": "d2483d9a2dfb4a0aac1993c5f10f3461",
     "name": "kony.ui.Label",
     "parent": "flxAttachment",
     "pf": "frmApplyLeave",
     "texti18n": "i18n.ess.common.required.valueKA",
     "tooltip": "",
-    "wType": "Label"
+    "wType": "Label",
+    "zindex": 1
 }
