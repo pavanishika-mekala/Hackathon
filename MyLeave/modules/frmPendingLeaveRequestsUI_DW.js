@@ -174,6 +174,7 @@ kony.apps.coe.ess.myLeave.frmPendingLeaveRequests.populate = function(empLeaveDa
   RequestTypesTable.push(sampleJson);
  }
  frmPendingLeaveRequestsDW.segPendingLeaves.setData(RequestTypesTable);
+ }
  /**
  *
  /**
