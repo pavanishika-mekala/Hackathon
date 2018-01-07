@@ -90,6 +90,12 @@ define(function() {
     _animGear:function(widget, delayVal, centerXVal, angle) {
       var trans100 = kony.ui.makeAffineTransform();
       trans100.rotate(angle);
+      //#ifdef android
+      if(widget == "flxCircleMonth" || widget == "flxCircleDay")
+        this.view[widget].centerX = "8%";
+      else
+        this.view[widget].centerX = "92%";
+      //#else
       this.view[widget].animate(
         kony.ui.createAnimation({
           "100": {
@@ -106,6 +112,7 @@ define(function() {
           "duration": 1
         }
       );
+      //#endif
     },
 
     _initializeEvents:function(){

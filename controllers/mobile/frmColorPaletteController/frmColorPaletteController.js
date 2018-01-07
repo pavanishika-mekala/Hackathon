@@ -18,7 +18,7 @@ define({
       controller.view.ColorPalette.add(new PalatteEntry("Entry8","f441df",function () {alert("click 1");}));
       controller.view.ColorPalette.add(new PalatteEntry("Entry9","f1f441",function () {alert("click 1");}));
       controller.view.ColorPalette.add(new PalatteEntry("Entry10","FFBC00",function () {alert("click 1");}));
-      controller.view.CustomizedHeader.backgroundColor = "";
+//       controller.view.CustomizedHeader.backgroundColor = "";
       controller.view.CustomizedHeader.leftClickEvent = this._goBack;
     }
   },

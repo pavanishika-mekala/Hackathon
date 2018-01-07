@@ -21,6 +21,7 @@ define(function() {
     },
     _createMenus : function(){
       if(this._menus!== null && this._menus.length>0){
+        this.view.flxMainMenu.removeAll();
         var numberOfMenus = this._menus.length;
         var eachMenuHeight = (100/numberOfMenus);
         var top = 0;

@@ -87,23 +87,26 @@ define(function() {
       }
     },
     hideEventFlex : function(){
-      this.view.flxEvent.setVisibility(false);
-      if(this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin!==null){
-        var info = {
-          "eventContent" : this.view.txtBoxEvent.text,
-          "eventTitle": this.view.lstBoxEvents.selectedKey,
-          "eventSkin": this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin,
-          "eventYear": this.view.txtBoxYear.text,
-          "eventMonth": this.view.txtBoxMonth.text,
-          "eventDay": this.selectedDateDetails.text,
-        };
-
-
-        this.availabeEventsArray.push(info);
-        var id = parseInt((this.selectedDateDetails.id).replace("lbl",""));
-        var dotWidget=this.view.DefaultCalendar.getDotWidgetDetails(id);
-        dotWidget.skin = this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin;
-        dotWidget.isVisible = true;
+      if(this.view.lstBoxEvents.selectedKey !==null && this.view.lstBoxEvents.selectedKey !==undefined){
+        if(this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin!==null ){
+          var info = {
+            "eventContent" : this.view.txtBoxEvent.text,
+            "eventTitle": this.view.lstBoxEvents.selectedKey,
+            "eventSkin": this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin,
+            "eventYear": this.view.txtBoxYear.text,
+            "eventMonth": this.view.txtBoxMonth.text,
+            "eventDay": this.selectedDateDetails.text,
+          };
+          this.view.flxEvent.setVisibility(false);
+          this.availabeEventsArray.push(info);
+          var id = parseInt((this.selectedDateDetails.id).replace("lbl",""));
+          var dotWidget=this.view.DefaultCalendar.getDotWidgetDetails(id);
+          dotWidget.skin = this.view["flxDot"+this.view.lstBoxEvents.selectedKey].skin;
+          dotWidget.isVisible = true;
+        }
+      }
+      else{
+        alert("select event type");
       }
 
     },

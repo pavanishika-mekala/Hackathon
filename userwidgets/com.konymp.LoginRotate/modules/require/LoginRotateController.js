@@ -10,7 +10,7 @@ define(function() {
     },
     constructor: function(baseConfig, layoutConfig, pspConfig) {
 
-      this.view.preShow = this.initializeTemplates;
+      this.view.postShow = this.initializeTemplates;
 
       this.view.btnLogin.onClick = this.loginAnimSeq1;
 

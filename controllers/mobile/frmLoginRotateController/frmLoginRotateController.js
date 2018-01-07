@@ -6,7 +6,7 @@ define({
     if(!this._isInit) {
       this._isInit=true;
       var controller = this;
-      controller.view.CustomizedHeader.backgroundColor = "";
+//       controller.view.CustomizedHeader.backgroundColor = "";
       controller.view.CustomizedHeader.leftClickEvent = this._goBack;
     }
   },
