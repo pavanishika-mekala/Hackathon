@@ -1,12 +1,11 @@
 {
     "@class": "com.kony.gen.viz.model.component.KVizImage2",
     "DNDConfig": null,
-    "__markedForDelete__": true,
     "__parentReadjusting__": false,
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "20%"
     },
     "_left_": {
         "type": "string",
@@ -25,14 +24,14 @@
         0
     ],
     "_skin_": "sd633a92e783495f8a635580f4324c49",
-    "_src_": "dial.png",
+    "_src_": "konymp_gc_bulb_on.png",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "10%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "10%"
     },
     "canUpdateUI": true,
     "containerweight": 100,
@@ -43,14 +42,14 @@
         "templateType": "userwidgets",
         "topLevelBox": null
     },
-    "id": "CopyimgGear0c4ef6a52a91e4d",
+    "id": "imgInvisibleBulbOn",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "ee114f2b18f444f5852d91c3d14625e1",
+    "kuid": "a454060516ac4ecca01c8995a6fcac07",
     "name": "kony.ui.Image2",
-    "parent": "flxCircleMin",
+    "parent": "flxInvisible",
     "pf": "userwidgetmodel",
     "srcType": 1,
     "wType": "Image",

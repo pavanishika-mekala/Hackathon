@@ -25,14 +25,14 @@
         0
     ],
     "_skin_": "sd633a92e783495f8a635580f4324c49",
-    "_src_": "dial.png",
+    "_src_": "konymp_gc_bulb_off.png",
     "_top_": {
         "type": "string",
-        "value": "0dp"
+        "value": "-10%"
     },
     "_width_": {
         "type": "string",
-        "value": "100%"
+        "value": "50%"
     },
     "canUpdateUI": true,
     "containerweight": 100,
@@ -43,14 +43,14 @@
         "templateType": "userwidgets",
         "topLevelBox": null
     },
-    "id": "imgGear2",
+    "id": "imgAM",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "e1b32ef3139e43afbc73bfc64784fa19",
+    "kuid": "hd6cca38c33c4933b9fb5201786ed62e",
     "name": "kony.ui.Image2",
-    "parent": "flxCircleDay",
+    "parent": "flxAM",
     "pf": "userwidgetmodel",
     "srcType": 1,
     "wType": "Image",

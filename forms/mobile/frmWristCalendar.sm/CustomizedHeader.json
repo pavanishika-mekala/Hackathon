@@ -41,7 +41,7 @@
     "containerweight": 0,
     "data": {
         "leftImageIsVisible": true,
-        "leftImageSrc": "leftarrowwhite.png",
+        "leftImageSrc": "konymp_leftarrowwhite.png",
         "rightImageIsVisible": false,
         "titleText": "Wrist Calendar"
     },

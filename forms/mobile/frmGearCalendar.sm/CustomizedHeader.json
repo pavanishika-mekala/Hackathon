@@ -40,7 +40,7 @@
     "clipbounds": true,
     "containerweight": 0,
     "data": {
-        "leftImageSrc": "leftarrowwhite.png",
+        "leftImageSrc": "konymp_leftarrowwhite.png",
         "rightImageIsVisible": false,
         "titleText": "Gear Calendar"
     },

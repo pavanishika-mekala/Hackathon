@@ -40,7 +40,7 @@
     "clipbounds": true,
     "containerweight": 0,
     "data": {
-        "leftImageSrc": "leftarrow.png",
+        "leftImageSrc": "konymp_leftarrow.png",
         "rightImageIsVisible": false,
         "titleText": "Login Rotate"
     },

@@ -10,7 +10,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0dp"
+        "value": "5%"
     },
     "_margin_": [
         0,
@@ -25,15 +25,9 @@
         0
     ],
     "_skin_": "sd633a92e783495f8a635580f4324c49",
-    "_src_": "bulb_off.png",
-    "_top_": {
-        "type": "string",
-        "value": "-10%"
-    },
-    "_width_": {
-        "type": "string",
-        "value": "50%"
-    },
+    "_src_": "go2.png",
+    "_top_": "0dp",
+    "_width_": "100%",
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
@@ -43,14 +37,14 @@
         "templateType": "userwidgets",
         "topLevelBox": null
     },
-    "id": "imgAM",
+    "id": "imgGo",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
-    "isvisible": true,
-    "kuid": "hd6cca38c33c4933b9fb5201786ed62e",
+    "isvisible": false,
+    "kuid": "f859fd7833d5480295c11df9fdbe217a",
     "name": "kony.ui.Image2",
-    "parent": "flxAM",
+    "parent": "flxGO",
     "pf": "userwidgetmodel",
     "srcType": 1,
     "wType": "Image",

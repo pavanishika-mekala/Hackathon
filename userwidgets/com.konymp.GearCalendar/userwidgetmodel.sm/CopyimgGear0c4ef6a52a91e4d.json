@@ -10,7 +10,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "5%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -25,9 +25,15 @@
         0
     ],
     "_skin_": "sd633a92e783495f8a635580f4324c49",
-    "_src_": "go2.png",
-    "_top_": "0dp",
-    "_width_": "100%",
+    "_src_": "konymp_gc_dial.png",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
     "canUpdateUI": true,
     "containerweight": 100,
     "context": {
@@ -37,14 +43,14 @@
         "templateType": "userwidgets",
         "topLevelBox": null
     },
-    "id": "imgGo",
+    "id": "CopyimgGear0c4ef6a52a91e4d",
     "imagescalemode": 1,
     "info": null,
     "invokedProperty": "src",
     "isvisible": true,
-    "kuid": "f859fd7833d5480295c11df9fdbe217a",
+    "kuid": "ee114f2b18f444f5852d91c3d14625e1",
     "name": "kony.ui.Image2",
-    "parent": "flxGO",
+    "parent": "flxCircleMin",
     "pf": "userwidgetmodel",
     "srcType": 1,
     "wType": "Image",
