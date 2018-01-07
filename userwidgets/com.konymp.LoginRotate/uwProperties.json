@@ -1,0 +1,313 @@
+{
+    "classname": "LoginRotate",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d767552cbe184bb58fa2b6eb18efae11",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 1,
+                    "propertyKey": "signupEvent",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "signupEvent",
+                        "srcWidget": "btnSignUp",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "b57706b87d1543a38e4b281c45820ecf"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e18f2a4cd2ff4a0a9ecf5cde8139d510",
+                    "originalPropertyKey": "onClick",
+                    "propertyIndex": 2,
+                    "propertyKey": "loginEvent",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "loginEvent",
+                        "srcWidget": "btnLogin",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "e5f6016ecac14ffd94afd726dff4d544"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "jd03ffaec8a54400957b2900edd71a81",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 1,
+                    "propertyKey": "signUpBackground",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Sign Up Background",
+                        "srcWidget": "flxSignUp",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ccf79cc5678f4ad99cc8b94c7440d392"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i62c44aa34d149ce8e5c3fd9fa823cc8",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 2,
+                    "propertyKey": "loginBackground",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Login Background",
+                        "srcWidget": "flxLogin",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "jcd8e988618040f3af12d1ee27c8dceb"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ff9884086c2e40a6b88afcc18d764358",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "signupBtnText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Signup Button Text",
+                        "srcWidget": "btnSignUp",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "b57706b87d1543a38e4b281c45820ecf"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "gf49264f4a8149f681748530937262d1",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "loginBtnText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Login Button Text",
+                        "srcWidget": "btnLogin",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "e5f6016ecac14ffd94afd726dff4d544"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "fb769ff954244e8ea638460903fbb996",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 5,
+                    "propertyKey": "signupEmailPlaceholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Signup Email Placeholder",
+                        "srcWidget": "txtSUEmail",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "ec80a0a408584fb0a6eaaff1ca702e3d"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c7ce69dc0b044f97a5c7a744b0d96bc8",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 6,
+                    "propertyKey": "signupPasswordPlaceholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Signup Password Placeholder",
+                        "srcWidget": "txtSUPassword",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "ie46bb3adbd94720ad46e6935e719711"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "eceebbec7dfd423182ba30757f486ea9",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 7,
+                    "propertyKey": "loginEmailPlaceholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Login Email Placeholder",
+                        "srcWidget": "txtEmail",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "dc5f080d6035460683f689dd1d54a17a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "gea1e3ad35ef482e9319a366a4888fb7",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 8,
+                    "propertyKey": "loginPasswordPlaceholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Login Password Placeholder",
+                        "srcWidget": "txtPassword",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "b5824604725743aeba7e698c126d4eba"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ab892fa8f7f14fba8c2df62532fd1845",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 9,
+                    "propertyKey": "confirmPwdPlaceholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "displayName": "Confirm Password Placeholder",
+                        "srcWidget": "txtSUConfirmPassword",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "h55b865c8b4b4eea8282979ab3312f26"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b5c2fcfbe3dd428ca8e44d14df577a39",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 10,
+                    "propertyKey": "forgotPasswordText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Forgot Password Text",
+                        "srcWidget": "lblForgotPassword",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "e62af67410da44f2947873fe9b6cf56e"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.konymp",
+    "version": "1.0.0"
+}

@@ -1,6 +1,6 @@
 {
-    "namespace": "com.Hackathon",
-    "classname": "LoginRotate",
+    "namespace": "com.konymp",
+    "classname": "WristCalendar",
     "version": "1.0.0",
     "definitions": {
         "properties": {

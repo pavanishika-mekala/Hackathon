@@ -7,7 +7,7 @@ define({
     if (this._isInit===false) {
       this._isInit=true;
       var controller = this;
-      var PalatteEntry = require("com/Hackathon/ColorPalette/ColorPaletteEntry");
+      var PalatteEntry = require("com/konymp/ColorPalette/ColorPaletteEntry");
       controller.view.ColorPalette.add(new PalatteEntry("Entry1","00B898",function () {alert("click 1");}));
       controller.view.ColorPalette.add(new PalatteEntry("Entry2","3aa339",function () {alert("click 1");}));
       controller.view.ColorPalette.add(new PalatteEntry("Entry3","633EA5",function () {alert("click 1");}));

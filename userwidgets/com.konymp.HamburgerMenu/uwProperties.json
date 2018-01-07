@@ -1,0 +1,230 @@
+{
+    "classname": "HamburgerMenu",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e9263ffc39d34d5ea880fd15d7928810",
+                    "originalPropertyKey": "onTouchEnd",
+                    "propertyIndex": 1,
+                    "propertyKey": "onFirstMenuClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onFirstMenuClick",
+                        "srcWidget": "lblMenu1",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i2dcbb47772f4abb9ea55626020696bd"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "cdadd887e35b464489c0abcb23a6fd29",
+                    "originalPropertyKey": "onTouchEnd",
+                    "propertyIndex": 2,
+                    "propertyKey": "onSecondMenuClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onSecondMenuClick",
+                        "srcWidget": "lblMenu2",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ca48b8e809a84ec6be6423f3231aa9f0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f78c156ee9ac437e853b0c2cc5f79cd4",
+                    "originalPropertyKey": "onTouchEnd",
+                    "propertyIndex": 3,
+                    "propertyKey": "onThirdMenuClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onThirdMenuClick",
+                        "srcWidget": "lblMenu3",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b90b9ae89c434973b321662f94203f4c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "h43390be53c94ba89371aa60396bc38e",
+                    "originalPropertyKey": "onTouchEnd",
+                    "propertyIndex": 4,
+                    "propertyKey": "onFourthMenuClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onFourthMenuClick",
+                        "srcWidget": "lblMenu4",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b10f5e263c644e4ca802cabd38c16eff"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e44c9ab70b1c4b65b146af5a83b524a2",
+                    "originalPropertyKey": "onTouchEnd",
+                    "propertyIndex": 5,
+                    "propertyKey": "onFifthMenuClick",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "onFifthMenuClick",
+                        "srcWidget": "lblMenu5",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g130e28794a4488580b4dffdafb2e0aa"
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b7f1b8c5e8614e988c0f2f915ce09863",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "firstMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "First Menu Text",
+                        "srcWidget": "lblMenu1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "i2dcbb47772f4abb9ea55626020696bd"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "hd139ee4b0db491d9329aee1484966a1",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 2,
+                    "propertyKey": "secondMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Second Menu Text",
+                        "srcWidget": "lblMenu2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ca48b8e809a84ec6be6423f3231aa9f0"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "fd1ea7760e7e4b13b57d3590c86aaeba",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "thirdMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Third Menu Text",
+                        "srcWidget": "lblMenu3",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b90b9ae89c434973b321662f94203f4c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a55b9da823c94a65b58d145b4ee0c96b",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 4,
+                    "propertyKey": "fourthMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Fourth Menu Text",
+                        "srcWidget": "lblMenu4",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "b10f5e263c644e4ca802cabd38c16eff"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b084d1921f80496aafafc77082ad8c11",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 5,
+                    "propertyKey": "fifthMenuText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "displayName": "Fifth Menu Text",
+                        "srcWidget": "lblMenu5",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "g130e28794a4488580b4dffdafb2e0aa"
+                },
+                {
+                    "access": "Enable",
+                    "defaultSkinKUID": "s585bb5fd1bc4ad29ccd024a10c95537",
+                    "group": "General",
+                    "kuid": "edf2dce4e466465ca6ca2575d2aa44e3",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 6,
+                    "propertyKey": "backgroundSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Background Skin",
+                        "srcWidget": "flxParent",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "ie97b56834694629a46b669aa928f87b"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.konymp",
+    "version": "1.0.0"
+}

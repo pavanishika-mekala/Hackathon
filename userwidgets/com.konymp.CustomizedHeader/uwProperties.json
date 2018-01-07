@@ -5,7 +5,7 @@
             "custom": [
                 {
                     "group": "General",
-                    "kuid": "ia4d20b8b90148deb531e77d00fc8152",
+                    "kuid": "fd4c4e471c06458b92ef1dda6446a57b",
                     "paramList": [
                         {
                             "name": "color"
@@ -21,7 +21,7 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "ga981de9b1bb4568989b9b73d01977ba",
+                    "kuid": "c3834d411fcb4abd8dc5999a4dbc7771",
                     "paramList": [
                         {
                             "name": "skin"
@@ -37,7 +37,7 @@
                 },
                 {
                     "group": "General",
-                    "kuid": "c0dc17c900f344a4806073b5ce317f33",
+                    "kuid": "j58c568e68194f29bbb1d4a578e9aa14",
                     "paramList": [
                         {
                             "name": "skin"
@@ -109,7 +109,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "e26c45e0d35e4fcd856132a43592d0c7",
+                    "kuid": "af37120f3b164fd3a7478d1fa63f1125",
                     "originalPropertyKey": "skin",
                     "propertyIndex": 1,
                     "propertyKey": "headerSkin",
@@ -125,7 +125,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "ccbf8ff3441540a78fcfebec47828892",
+                    "kuid": "a56756aeaa5e43a9b5a872a7fbcd4a7a",
                     "originalPropertyKey": "text",
                     "propertyIndex": 2,
                     "propertyKey": "titleText",
@@ -143,7 +143,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "ic1995ba1d0647318921799202992222",
+                    "kuid": "e4cd66da34464e688a62200e009528de",
                     "originalPropertyKey": "src",
                     "propertyIndex": 3,
                     "propertyKey": "leftImageSrc",
@@ -170,7 +170,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "j754fa714c53491f9a4fdf0fc51de5f1",
+                    "kuid": "f346476528ad44fe817e8866035e1115",
                     "originalPropertyKey": "src",
                     "propertyIndex": 4,
                     "propertyKey": "rightImageSrc",
@@ -197,7 +197,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "i9f99627584a412cb634254e75003b4e",
+                    "kuid": "i6b9bc0650ca478987c75759f9c61961",
                     "originalPropertyKey": "isVisible",
                     "propertyIndex": 5,
                     "propertyKey": "rightImageIsVisible",
@@ -215,7 +215,7 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "ff3278f589c84d96a260f2d8b3cab75d",
+                    "kuid": "a41d5e5a45294106a43301d7e68a4c4c",
                     "originalPropertyKey": "isVisible",
                     "propertyIndex": 6,
                     "propertyKey": "leftImageIsVisible",
@@ -229,6 +229,23 @@
                         "wType": "Image"
                     },
                     "srcWgtKUID": "be09e72106ec429da70b7e0b017c5101"
+                },
+                {
+                    "access": "Enable",
+                    "defaultSkinKUID": "sdfa8b5e6007443c9234197b1ba240c8",
+                    "group": "General",
+                    "kuid": "d7fc39e7833447ffbcc8891e7d20601b",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 7,
+                    "propertyKey": "headerTitleSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Header Title Skin",
+                        "srcWidget": "lblHeaderTitle",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "a2ba6e7f8a2c4d6dad58df59472f108a"
                 }
             ]
         },
@@ -237,6 +254,6 @@
             "passthrough": []
         }
     },
-    "namespace": "com.Hackathon",
+    "namespace": "com.konymp",
     "version": "1.0.0"
 }

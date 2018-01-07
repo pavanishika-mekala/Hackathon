@@ -1,5 +1,5 @@
 {
-    "classname": "HamburgerMenu",
+    "classname": "WallCalendar",
     "definitions": {
         "apis": {
             "custom": [],
@@ -10,9 +10,7 @@
             "passthrough": []
         },
         "groups": {
-            "apis": [
-                "General"
-            ],
+            "apis": [],
             "events": [],
             "properties": [],
             "widgets": []
@@ -23,92 +21,90 @@
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "cb206731d33848efb471de0d8b3f2ef9",
+                    "kuid": "jb0a1b3b6dac42f1a593f328c0902de3",
                     "originalPropertyKey": "text",
                     "propertyIndex": 1,
-                    "propertyKey": "firstMenuText",
+                    "propertyKey": "lblFamilyText",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
-                        "displayName": "First Menu Text",
-                        "srcWidget": "lblMenu1",
+                        "displayName": "Event Family Text",
+                        "srcWidget": "lblFamily",
                         "type": "string",
                         "uiRepresentation": "Label-Textbox",
                         "wType": "Label"
                     },
-                    "srcWgtKUID": "i2dcbb47772f4abb9ea55626020696bd"
+                    "srcWgtKUID": "ddd6f17a23db4aa2a94f6fe018d960ca"
                 },
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "a1aae577b9a240d6b1203273b3647e5d",
+                    "kuid": "d8bb1e0373534629a475551267b10dd2",
                     "originalPropertyKey": "text",
                     "propertyIndex": 2,
-                    "propertyKey": "secondMenuText",
+                    "propertyKey": "lblLifeText",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
-                        "displayName": "Second Menu Text",
-                        "srcWidget": "lblMenu2",
+                        "displayName": "Event Life Text",
+                        "srcWidget": "lblLife",
                         "type": "string",
                         "uiRepresentation": "Label-Textbox",
                         "wType": "Label"
                     },
-                    "srcWgtKUID": "ca48b8e809a84ec6be6423f3231aa9f0"
+                    "srcWgtKUID": "f1fac65fc771475898e6d0a6d21bb46a"
                 },
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "g41c2d5b417a4bd09fb63b6143893f9c",
+                    "kuid": "iff4830d5f1e4036bb9305d02b39829c",
                     "originalPropertyKey": "text",
                     "propertyIndex": 3,
-                    "propertyKey": "thirdMenuText",
+                    "propertyKey": "lblWorkText",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
-                        "displayName": "Third Menu Text",
-                        "srcWidget": "lblMenu3",
+                        "displayName": "Event Work Text",
+                        "srcWidget": "lblWork",
                         "type": "string",
                         "uiRepresentation": "Label-Textbox",
                         "wType": "Label"
                     },
-                    "srcWgtKUID": "b90b9ae89c434973b321662f94203f4c"
+                    "srcWgtKUID": "c744f5321a6244f6ba0fc80a35c7c187"
                 },
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "hd943f206a3b4f659a737f7d4659dff2",
+                    "kuid": "ad2c3a8e6dff44a7bccf4b610e259d88",
                     "originalPropertyKey": "text",
                     "propertyIndex": 4,
-                    "propertyKey": "fourthMenuText",
+                    "propertyKey": "lblStudyText",
                     "pw": {
                         "access": "readwrite",
                         "category": "look",
-                        "displayName": "Fourth Menu Text",
-                        "srcWidget": "lblMenu4",
+                        "displayName": "Event Study Text",
+                        "srcWidget": "lblStudy",
                         "type": "string",
                         "uiRepresentation": "Label-Textbox",
                         "wType": "Label"
                     },
-                    "srcWgtKUID": "b10f5e263c644e4ca802cabd38c16eff"
+                    "srcWgtKUID": "hf923221789f4ade8b8a60b01c0ed4b3"
                 },
                 {
                     "access": "Enable",
                     "group": "General",
-                    "kuid": "a5b60efbb02e425f8b7400b12339a3d9",
-                    "originalPropertyKey": "text",
+                    "kuid": "a63846216d3148e79bdc498e9c328ba7",
+                    "originalPropertyKey": "skin",
                     "propertyIndex": 5,
-                    "propertyKey": "fifthMenuText",
+                    "propertyKey": "wallCalendarSkin",
                     "pw": {
                         "access": "readwrite",
-                        "category": "look",
-                        "displayName": "Fifth Menu Text",
-                        "srcWidget": "lblMenu5",
-                        "type": "string",
-                        "uiRepresentation": "Label-Textbox",
-                        "wType": "Label"
+                        "category": "skin",
+                        "displayName": "Wall Calendar Skin",
+                        "srcWidget": "flxUpperBody",
+                        "wType": "FlexContainer"
                     },
-                    "srcWgtKUID": "g130e28794a4488580b4dffdafb2e0aa"
+                    "srcWgtKUID": "c039e985780b4ffc9c3f0c6ccd118f0c"
                 }
             ]
         },
@@ -117,6 +113,6 @@
             "passthrough": []
         }
     },
-    "namespace": "com.Hackathon",
+    "namespace": "com.konymp",
     "version": "1.0.0"
 }
